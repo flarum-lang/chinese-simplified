@@ -597,8 +597,8 @@ core:
     admin: 管理员
     admins: 管理组
     guest: 游客
-    guests: 游客组
+    guests: 游客
     member: 注册用户
-    members: 用户组
+    members: 注册用户
     mod: 版主
     mods: 版主组

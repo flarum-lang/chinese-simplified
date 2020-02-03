@@ -1,11 +1,11 @@
 # https://github.com/kilowhat/flarum-ext-mailing/blob/master/resources/locale/en.yml
 # 69fffe4 on 29 Oct 2019
-# 2020年2月3日11:00:34 +0800
+# 2020-2-3 20:54:48 +0800
 
 kilowhat-mailing:
     admin:
         permissions:
-            mail_individual: 允许向选定的单个用户发送邮件
+            mail_individual: 向选定的单个用户私发邮件
             mail_all: 允许群发邮件
 
     forum:
@@ -20,6 +20,16 @@ kilowhat-mailing:
             default_subject: => kilowhat-mailing.ref.default_subject
             message_label: 正文
             submit_button: 发送
+        modal_sent:
+            title_text: 已发送！
+            on_its_way: Nice！您的邮件正在发送给 {recipientsCount} 个收件人！
+        recipient_kinds:
+            user: 用户
+            group: 用户组
+            email: 邮件地址
+
+    api:
+        no_recipients: 没有匹配的收件人
 
     email:
         default_subject: => kilowhat-mailing.ref.default_subject

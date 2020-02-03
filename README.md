@@ -3,7 +3,7 @@
 
 相较于 Csineneo 的语言包，整体语言风格较细腻自然，符合多数中国人思维习惯。
 
-This language pack is based on [flarum/lang-english](https://github.com/flarum/lang-english),[Flarum China](https://discuss.flarum.org/d/612), and is optimized for [Csineneo's Simplified Chinese Language Pack](https://github.com/Csineneo/lang-simplified-chinese).
+This language pack is based on [flarum/lang-english](https://github.com/flarum/lang-english),[Flarum China](https://discuss.flarum.org/d/612), and optimized a lot of speech descriptions of [Csineneo's Simplified Chinese Language Pack](https://github.com/Csineneo/lang-simplified-chinese).
 
 Compared with Csineneo's language pack, the overall language style is more delicate and natural, which conforms to the thinking habits of most Chinese people.
 

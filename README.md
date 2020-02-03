@@ -167,7 +167,7 @@ php flarum cache:clear
   - [bbs.csur.fun](https://bbs.csur.fun/)
 
 ### 链接 / Links
-  - [Flarum](https://discuss.flarum.org/d/)
+  - [Flarum](https://discuss.flarum.org/d/22690)
   - [Github](https://github.com/Littlegolden/flarum-lang-simplified-chinese)
   - [Packagist](https://packagist.org/packages/littlegolden/flarum-lang-simplified-chinese)
   - [Flagrow](https://flagrow.io/extensions/littlegolden/flarum-lang-simplified-chinese)

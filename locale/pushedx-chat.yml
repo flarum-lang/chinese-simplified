@@ -21,7 +21,7 @@ pushedx-chat:
     permissions:
       post: 发送
       edit: 编辑
-      delete: 撤回
+      delete: 删除
       moderate:
         delete: 删除消息
 

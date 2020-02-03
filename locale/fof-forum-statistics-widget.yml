@@ -1,0 +1,18 @@
+# https://github.com/FriendsOfFlarum/forum-statistics-widget/blob/master/resources/locale/en.yml
+# ef6fe5e on 28 Dec 2019
+# 2020-2-3 14:00:06 +0800
+
+fof-forum-statistics-widget:
+  forum:
+    navbar:
+      widget_title: 论坛统计
+      discussions_count: "主题数：{discussionsCount}"
+      posts_count: "回复数：{postsCount}"
+      users_count: "会员数：{usersCount}"
+      latest_member: "最近注册："
+  admin:
+    settings:
+      title: 控件设置
+      widget_order_label: 控件顺序
+      widget_helper_text: "更改此设置来调整统计控件在论坛侧边栏上的位置。
+      值越大位置位置越高（此值可为负数）。"

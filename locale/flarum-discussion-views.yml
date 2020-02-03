@@ -1,0 +1,30 @@
+# https://github.com/MichaelBelgium/flarum-discussion-views/blob/master/locale/en.yml
+# 9329208 13 days ago
+# 2020年2月3日00:05:56 +0800
+
+core:
+  forum:
+    index_sort:
+      popular_button: 热门
+      unpopular_button: 冷门
+
+flarum_discussion_views:
+  forum:
+    modal_resetviews:
+      title: 重置浏览次数
+      submit: 确定
+      label: 这将会清除这个讨论的 {count} 次浏览计数. 确定要继续吗？|这将会清除这个讨论的 {count} 次浏览计数. 确定要继续吗？
+    discussion_controls:
+      resetviews_button: 重置浏览次数
+    viewlist:
+      title: 最近浏览的人
+  admin:
+      permissions:
+        reset_views_label: 设置讨论浏览次数
+      settings:
+        title: 讨论浏览量设置
+        track_unique: 仅追踪 UV（独立访客）
+        abbr_numbers: 缩写浏览次数
+        show_filter: 添加“热门 / 冷门”排序字段
+        max_viewcount: 设置“最近浏览的人”的展示人数
+        show_viewlist: 在讨论页面中展示“最近浏览的人”列表

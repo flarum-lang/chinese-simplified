@@ -1,0 +1,20 @@
+# https://github.com/ziymed/BackToWebsite/blob/master/locale/en.yml
+# 36b1832
+# Sun, 02 Jan 2020 15:36:30 +0800
+
+backtowebsite:
+
+  # Translations in this namespace are used by the forum user interface.
+  forum:
+    header:
+      back_button: 返回[URL]
+
+
+  # Translations in this namespace are used by the admin interface.
+  admin:
+
+    # These translations are used in the Back To Website Settings modal dialog.
+    settings:
+      backto_label_label: 按钮标题
+      backto_url_label: 返回链接
+      title: 「返回指定链接」设置

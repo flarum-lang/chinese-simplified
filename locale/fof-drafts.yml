@@ -1,0 +1,19 @@
+# https://github.com/FriendsOfFlarum/drafts/blob/master/resources/locale/en.yml
+# 6f5c37d on 22 Nov 2019
+# 2020-2-3 12:49:49 +0800
+
+fof-drafts:
+  admin:
+    permissions:
+      start: 新建主题草稿
+  forum:
+    composer:
+      title: 保存草稿
+      alert: 草稿已保存。
+      exit_alert: 确定放弃对草稿的更改吗？
+    dropdown:
+      empty_text: 你还没有草稿
+      title: 草稿
+      button: 删除草稿
+      tooltip: => fof-drafts.forum.dropdown.title
+      alert: 确定要删除草稿吗？

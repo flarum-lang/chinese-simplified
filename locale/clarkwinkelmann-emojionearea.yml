@@ -1,0 +1,19 @@
+# https://github.com/clarkwinkelmann/flarum-ext-emojionearea/blob/master/locale/en.yml
+# 9360095
+# Sun, 02 Jan 2020 15:53:03 +0800
+
+clarkwinkelmann-emojionearea:
+    forum:
+        picker_button: Emoji 表情
+        search_placeholder: 搜索...
+
+    admin:
+        settings:
+            title: Emoji 表情设置
+            enableSearch: 开启搜索
+            enableRecent: 开启最近使用
+            enableTones: 开启肤色选择
+            filtersPosition: 在底部显示分类
+            searchPosition: 在底部显示搜索和肤色
+            hideFlarumButton: 隐藏 FLarum 原生表情按钮
+            hideFlarumButtonHelp: 本扩展程序需开启原生 emoji 插件后方可使用

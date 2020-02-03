@@ -1,0 +1,24 @@
+# https://github.com/Dem13n/nickname-changer/blob/master/resources/locale/en.yml
+# b388c26
+# https://github.com/Dem13n/quad-theme/blob/master/resources/locale/en.yml
+# 146a68c
+# Sun, 02 Jan 2020 21:15:22 +0800
+
+dem13n:
+  forum:
+    nickname:
+      head_title: 昵称
+      new_nickname: 输入新昵称
+      change: 修改昵称
+      submit_button: => core.ref.save_changes
+  admin:
+    nickname:
+      settings_modal_title: 昵称修改设置
+      unlimited_nickname_change: 无限制修改昵称
+      allow_nickname_change: 允许修改昵称
+      submit_button: => core.ref.save_changes
+    quad_theme:
+      title: Quad 主题设置
+      fod: 新主题标记
+      submit_button: => core.ref.save_changes
+

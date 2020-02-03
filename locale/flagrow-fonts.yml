@@ -1,0 +1,32 @@
+# https://github.com/flagrow/fonts/blob/master/resources/locale/en.yml
+# 02b45bf
+# 2020年2月2日22:49:30 +0800
+
+flagrow-fonts:
+    admin:
+        nav:
+            title: 字体
+            description: 管理用于论坛的字体
+        browse:
+            label:
+                sort: 排序
+                search: 搜索
+            sort:
+                alpha: 字母序
+                date: 最近添加/更新
+                popularity: 热度
+                trending: 趋势
+                enabled: 已启用
+            loader:
+                more: 加载更多
+                loading: 正在加载...
+            select:
+                enable: 启用
+                update: 更新
+            sample-text: The quick brown fox jumps over the lazy dog. ^_^
+        modal:
+            settings:
+                title: Flagrow 字体设置
+                field:
+                    googleApiKey: Google API Key
+                    googleApiKeyDescription: 您必须创建一个 Google Fonts API Key 并填入此处。最快的方式是访问<a>这里</a>并点击“Get a key”

@@ -1,0 +1,16 @@
+# https://github.com/FriendsOfFlarum/recaptcha/blob/master/resources/locale/en.yml
+# 0408ad6 on 10 Jan 2019
+# 2020-2-3 16:14:03 +0800
+
+fof-recaptcha:
+  admin:
+    settings:
+      help_text: 点击<a>此处</a>获取 Google reCAPTCHA 证书。
+
+      type_label: reCAPTCHA 类型
+
+      site_key_label: Site Key
+      secret_key_label: Secret Key
+
+validation:
+  recaptcha: reCAPTCHA 验证失败。

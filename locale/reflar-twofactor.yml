@@ -1,0 +1,58 @@
+# https://github.com/ReFlar/twofactor/blob/master/resources/locale/en.yml
+# 911c2b2 on 7 Dec 2018
+# 2020-2-3 12:25:57 +0800
+
+reflar-twofactor:
+  forum:
+    text: "{forum} 验证码是： {code}"
+    onetouch:  "请求登录 {forum}"
+    accountlabel: 两步验证
+    incorrect_2fa: 验证码无效
+    2fa_disabled: 两步验证已停用
+    2fa_enabled: 两步验证已启用
+    email:
+      body: 恭喜！您的账号已启用两步验证。今后您在登录时，除了要输入由 TOTP 应用程序、Authy 或手机上的短信生成的验证码，还需输入您的账户名和密码。请务必将救援代码保存在安全的地方，在您无法访问移动设备时，您将需要救援代码登陆您的账号。
+      subject: 您的账号已启用两步验证
+    modal:
+      useACode: 使用验证码
+      twofactor_title: 两步验证设置
+      oneTouchTitle: 需要 Authy 授权
+      oneTouchHeader: 等待 OneTouch 授权
+      oneTouchCodeHeader: 请输入来自 Authy 应用程序的验证码
+      oneTouchHeaderVerified: 已授权！
+      heading: 两步验证设置
+      switch: 两步验证
+      2fa_heading: 两步验证码
+      authy_heading: Authy 设置
+      phone_heading: 短信认证
+      helpQR: 扫描二维码，或者手动添加编码至 Google Authenticator 或其他 TOTP 应用程序。
+      helpPhone: '选择您的运营商，填入电话号码并点击“保存电话号码”'
+      helpPhone2: '您现在应该收到了带有验证码的短信，请在下方输入并点击“提交”'
+      helpAuthy: '选择国家或地区，输入您的电话号码并点击“设置”'
+      helpAuthy2: '您现在应该收到了包含 Authy 设置的说明的文本，或者来自 Authy 应用程序的通知。设置完成后，请在下面输入验证码并点击“提交”'
+      submitPhone: 保存电话号码
+      otSetup: 设置
+      placeholder: 一次性密码
+      button: 提交
+      2fa_help: 请输入来自短信或 TOTP 应用程序的动态令牌
+      close: 我已保存好救援代码
+      recov: 救援代码
+      login_title: 两步验证
+      recov_header: 救援代码
+      recov_help1: 请保存救援代码，它们将不会再显示！
+      recov_help2: 这是在没有 TOTP 应用程序访问权限时访问账号的唯一方法。
+      stPhone: 切换至电话设置
+      stAuthy: 切换至 Authy 设置
+      stTOTP: 切换至 TOTP 设置
+      back: 返回
+  admin:
+      settings:
+        title: 两步验证
+        help: 从 twilio.com/console 获取您账号的 SID 和 Auth Token，或者从 twilio.com/console/phone-numbers/incoming 获取您的电话号码 
+        enable: 启用 Twillio
+        authyHelp: '在此处获取您的 API 密钥并自定义论坛在 Authy 应用中的外观：<a> https://www.twilio.com/console/authy </a>'
+        enableAuthy: 启用 Authy OneTouchauthyApi
+        authyApi: Authy API 密钥
+        sid: Twillio 账号 SID
+        token: Twillio Auth Token
+        number: Twillio 电话号码

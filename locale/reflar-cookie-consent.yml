@@ -1,0 +1,31 @@
+# https://github.com/ReFlar/cookie-consent/blob/master/resources/locale/en.yml
+# e04f359 on 13 Apr 2019
+# 2020-2-3 11:58:32 +0800
+
+reflar-cookie-consent:
+  admin:
+    settings:
+      title: Reflar Cookie 同意
+      
+      configuration_title: 设置选项
+      consentText: 提示文本
+      buttonText: 「取消」按钮文本
+      configuration_button_title: 「了解更多」按钮文本
+      learnMoreLinkText: 文本
+      learnMoreLinkUrl: 链接
+
+      theme_title: 风格选项
+      ccTheme: 风格
+      theme_popup_title: 弹窗颜色
+      backgroundColor: 背景色
+      textColor: 文本颜色
+      theme_dismiss_title: 「取消」按钮颜色
+      buttonBackgroundColor: 按钮背景颜色
+      buttonTextColor: 按钮文本颜色
+
+    themes:
+        blocky: 方形
+        edgeless: 无边框
+        classic: 经典
+        custom: 自定义
+        no_css: 无风格

@@ -1,0 +1,20 @@
+# https://github.com/tpokorra/flarum-ext-post-notification/blob/master/resources/locale/en.yml
+# 898c11e on 9 Nov 2019
+# 2020年2月3日01:20:53 +0800
+
+tpokorra-post-notification:
+  admin:
+    settings:
+      title: 发帖通知设置
+
+      recipients.post_approval.to: 新贴审核通知收件人地址，半角逗号分隔
+      recipients.new_discussion.to: 新主题通知收件人地址，半角逗号分隔
+      recipients.new_discussion.bcc: 新主题通知抄送地址，半角逗号分隔
+      recipients.new_post.to: 新回帖通知收件人地址，半角逗号分隔
+      recipients.new_post.bcc: 新回帖通知抄送地址，半角逗号分隔
+      recipients.revised_post.to: 贴文被编辑通知收件人地址，半角逗号分隔
+      recipients.revised_post.bcc: 贴文被编辑通知抄送地址，半角逗号分隔
+      new_discussion: 用于描述新主题的标签
+      new_post: 用于描述新回帖的标签
+      revised_post: 用于描述贴文被编辑的标签
+      post_approval: 用于描述待审核新帖的标签

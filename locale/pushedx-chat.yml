@@ -1,0 +1,30 @@
+# https://github.com/Xelson/flarum-ext-chat/blob/master/resources/locale/en.yaml
+# f5e0899 4 days ago
+# 2020-2-3 17:49:39
+
+pushedx-chat:
+  forum:
+    toolbar:
+      title: 聊天室
+      enable_sounds: 开启声音
+      disable_sounds: 关闭声音
+      enable_notifications: 开启通知
+      disable_notifications: 关闭通知
+      minimize: 最小化
+      maximize: 窗口化
+    chat:
+      placeholder: 请自觉遵守互联网相关的政策法规，严禁发布色情、暴力、反动的言论...
+    errors:
+      unauthenticated: 请登录后发言
+      chatdenied: 您所在的用户组没有权限参与聊天
+  admin:
+    permissions:
+      post: 发送
+      edit: 编辑
+      delete: 撤回
+      moderate:
+        delete: 删除消息
+
+    settings:
+      title: 聊天室设置
+      charlimit: 限制每条消息的最大字数（不区分中英文）

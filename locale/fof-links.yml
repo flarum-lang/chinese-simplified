@@ -1,0 +1,43 @@
+# https://github.com/FriendsOfFlarum/links/blob/master/locale/en.yml
+# 088dc71 on 7 Jan 2019
+# 2020-2-3 14:40:35 +0800
+
+fof-links:
+
+  ##
+  # UNIQUE KEYS - The following keys are used in only one location each.
+  ##
+
+  # Translations in this namespace are used by the admin interface.
+  admin:
+
+    # These strings are used in the Edit Link modal dialog.
+    edit_link:
+      delete_link_button: 删除链接
+      delete_link_confirmation: "确定要删除这个链接吗？"
+      internal_link: "这是 Flarum 论坛链接吗？"
+      open_newtab: "在新标签页中打开"
+      submit_button: => core.ref.save_changes
+      title: => fof-links.ref.create_link
+      title_label: => fof-links.ref.title
+      title_placeholder: => fof-links.ref.title
+      url_label: => fof-links.ref.url
+      url_placeholder: => fof-links.ref.url
+
+    # These strings are used in the Links page.
+    links:
+      about_text:  管理菜单栏链接
+      create_button: => fof-links.ref.create_link
+      links: => fof-links.ref.links
+
+    # These strings are used in the navigation bar.
+    nav:
+      links_button: => fof-links.ref.links
+      links_text: 管理菜单栏列表
+
+  # Strings in this namespace are referenced by two or more unique keys.
+  ref:
+    create_link: 新建链接
+    links: 菜单栏链接
+    title: 标题
+    url: 链接

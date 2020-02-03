@@ -1,0 +1,32 @@
+# https://github.com/NomisCZ/flarum-ext-auth-steam/blob/master/resources/locale/en.yml
+# d0bf629 24 days ago
+# 2020-2-3 19:32:15 +0800
+
+nomiscz-auth-steam:
+  forum:
+    buttons:
+      login: Steam 账号登录
+      link: 绑定 Steam 账号
+      unlink: 解绑 Steam 账号
+    alerts:
+      already_linked: Steam 账号已绑定！
+      already_used: Steam 账号已绑定至其他账号！
+      link_success: Steam 账号绑定成功！
+      unlink_success: Steam 账号解绑成功！
+      error: 出现了些问题，请稍后再试！
+    modals:
+      link:
+        title: 绑定 Steam 账号
+      unlink:
+        title: 解绑 Steam 账号
+        info:
+          confirm: 您确定要解绑你的 Steam 账号吗？
+          no_providers: 您还没有可用的其他登录方式，请先重置账户密码。
+        buttons:
+          confirm: 是的，我确定。
+          cancel: 不，取消！
+  admin:
+    settings:
+      title: Steam 登录设置
+      api_key_label: API 秘钥
+      use_steam_powered_domain: 使用 steampowered.com 域名代替 steamcommunity.com（后者在中国大陆被墙）

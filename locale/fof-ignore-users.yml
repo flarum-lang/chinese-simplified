@@ -1,0 +1,27 @@
+# https://github.com/FriendsOfFlarum/ignore-users/blob/master/resources/locale/en.yml
+# 764d42e on 17 Jul 2019
+# 2020-2-3 14:24:38 +0800
+
+fof-ignore-users:
+
+  ##
+  # UNIQUE KEYS - The following keys are used in only one location each.
+  ##
+
+  # Translations in this namespace are used by the admin interface.
+  admin:
+    permissions:
+      can_not_be_ignored_label: 不可被忽视
+
+
+  # Translations in this namespace are used by the forum interface.
+  forum:
+
+    profile_link: 被忽视的用户
+
+    # These strings are used in the User Controls menu.
+    user_controls:
+      ignore_button: 忽视
+      ignore_confirmation: 确定忽视此人？
+      unignore_button: 取消忽视
+      unignore_confirmation: 确定取消忽视此人？

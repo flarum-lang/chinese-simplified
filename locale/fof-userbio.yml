@@ -1,0 +1,7 @@
+# https://github.com/FriendsOfFlarum/user-bio/blob/master/resources/locale/en.yml
+# 83a5735 on 30 Nov 2018
+# 2020-2-3 17:29:04 +0800
+
+fof-userbio:
+  forum:
+    userbioPlaceholder: 这个人很懒，什么都没有写...

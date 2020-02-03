@@ -1,0 +1,13 @@
+# https://github.com/FriendsOfFlarum/custom-footer/blob/master/resources/locale/en.yml
+# fe18bf1 on 22 Sep 2018
+# 2020-2-3 12:44:00 +0800
+
+fof-custom-footer:
+  admin:
+    settings:
+      title: 自定义页脚
+
+      text: 页脚文本
+      height: 页脚高度
+      css: CSS
+      js: JS

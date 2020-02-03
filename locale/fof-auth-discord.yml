@@ -1,0 +1,14 @@
+# https://github.com/FriendsOfFlarum/auth-discord/blob/master/resources/locale/en.yml
+# 8c68976 on 28 May 2019
+# 2020-2-3 18:08:20 +0800
+
+fof-auth-discord:
+  admin:
+    discord_settings:
+      client_id_label: Client ID
+      client_secret_label: Client Secret
+      title: FoF Discord 登录
+
+  forum:
+    log_in:
+      with_discord_button: Discord 账号登录

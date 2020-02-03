@@ -1,0 +1,23 @@
+# https://github.com/flagrow/ads/blob/master/locale/en.yml
+# 1b8a401 on 16 May 2017
+# 2020年2月2日22:19:27 +0800
+
+flagrow-ads:
+    admin:
+        buttons:
+            save: 保存设置
+        positions:
+            under-header:
+                title: 顶部导航栏下方的广告位
+                placeholder: 请将广告代码粘贴到此处
+            between-posts:
+                title: 主题页面帖子之间的广告位
+                placeholder: => flagrow-ads.admin.positions.under-header.placeholder
+            under-nav-items:
+                title: 首页左侧侧边栏下方的广告位
+                placeholder: => flagrow-ads.admin.positions.under-header.placeholder
+        settings:
+            start-from-post: 指定从第几个帖子开始显示广告（0 表示从一楼开始显示广告）
+            between-n-posts: 指定每隔几个帖子显示一次广告
+        tab:
+            description: 广告位置及偏好设置

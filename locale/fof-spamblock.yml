@@ -1,0 +1,14 @@
+# https://github.com/FriendsOfFlarum/spamblock/blob/master/locale/en.yml
+# 8820a39 on 22 Nov 2018
+# 2020-2-3 16:34:00 +0800
+
+fof-spamblock:
+  forum:
+    user_controls:
+      spammer_button: 破坏者
+      spammer_confirmation: "你确定要 \n• 隐藏该用户的全部主题及回复 \n• [flarum/suspend] 封禁此用户"
+
+  admin:
+    permissions:
+      spamblock_users_label: 标记为破坏者（滥发邮件、消息者）
+

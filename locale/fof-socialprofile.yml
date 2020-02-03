@@ -1,0 +1,15 @@
+# https://github.com/FriendsOfFlarum/socialprofile/blob/master/resources/locale/en.yml
+# af8862b on 6 Feb 2019
+# 2020-2-3 16:28:04 +0800
+
+fof-socialprofile:
+  forum:
+    edit:
+      edit: 编辑
+      add: 添加
+      headtitle: 添加按钮
+      title: 名称
+      url: 链接
+      submit: 保存
+      delete: 删除
+      deletetitle: 删除按钮

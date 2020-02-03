@@ -1,0 +1,67 @@
+# https://github.com/FriendsOfFlarum/masquerade/blob/master/resources/locale/en.yml
+# 291d499 on 22 Oct 2019
+# 2020-2-3 18:49:25
+
+fof-masquerade:
+    forum:
+        alerts:
+            profile-completion-required: >
+                请完善下方必填的个人资料。
+        buttons:
+            view-profile: 查看个人资料
+            save-profile: 保存
+        fields:
+            select:
+                none-optional: 未选择任何选项（可选）
+                none-required: 请选择一个选项（必选）
+            boolean:
+                yes: Yes
+                no: No
+    admin:
+        title: 化装舞会
+        general-options: 常规选项
+        buttons:
+            add-field: 创建字段
+            edit-field: 保存更改
+            delete-field: 删除字段
+        permissions:
+            have-profile: 允许个人设置自己的“假面舞会”资料
+            view-profile: 允许查看他人的“化装舞会”资料
+        menu:
+            description: >
+                配置用户资料
+        fields:
+            title: 字段
+            add: 添加字段 {field}
+            edit: 编辑字段 {field}
+            name: 字段名称
+            name-help: >
+                公开的可见（不可翻译）字段标签。
+            description: 字段描述
+            description-help: >
+                可选说明，用来解释这个字段的用途。
+            required: 强制标记必填字段
+            on_bio: 在 UserBio（个性签名插件）中显示此字段的答案
+            type: 类型
+            validation: 验证
+            validation-help: >
+                检查支持的 <a>Laravel 验证规则</a>. 例如：
+                "string|min:5" 或 "url".
+            prefix: 字段前缀
+            prefix-help: >
+                在用户输入的此字段的值前面显示前缀
+            icon: Icon
+            icon-help: >
+                在用户输入的值前显示一个图标。有哪些可用的图标？
+                请前往 <a>FontAwesome 官网</a>挑选图标。
+                图标名称包含前缀 “fa-”，例如 “fas fa-info”.
+            force-user-to-completion: 强制用户完成资料配置
+            options: 选项
+            option-new: 新选项
+            option-comma-warning: 选项的标签不能包含任何逗号（","）！
+        types:
+            advanced: 高级
+            boolean: 复选框
+            email: 电子邮件
+            select: 下拉菜单
+            url: 网址

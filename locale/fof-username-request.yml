@@ -1,0 +1,43 @@
+# https://github.com/FriendsOfFlarum/username-request/blob/master/resources/locale/en.yml
+# 25c22c0 on 30 Sep 2019
+# 2020-2-3 17:35:19 +0800
+
+fof-username-request:
+  admin:
+    permissions:
+      start: 申请更改用户名
+      moderate: 同意更改用户名
+  forum:
+    action:
+      title: => fof-username-request.forum.results.title
+      help_text: 请确保用户名遵循论坛守则
+      decision_title: 审核
+      approval_label: 同意
+      rejected_label: 拒绝
+      submit_button: 提交
+      reason_title: 拒绝原因
+      success: 审核结果已发送
+      name: '{username} 申请更改用户名为「{newUsername}」'
+    results:
+      title: 更改用户名
+      approved: '您的用户名更改申请已通过！'
+      new_username: '您的用户名已更改为「{username}」'
+      rejected: 您的用户名更改申请被拒绝。
+      reason: '拒绝原因：<i>"{reason}"</i>'
+      resubmit: 您可以重新提交一个新的用户名。
+    request:
+      title: 申请更改用户名
+      current_request: 您已申请更改用户名为「{username}」，您可以更新或刪除该申请。
+      submit_button: 提交申请
+      delete_button: 刪除申请
+      confirmation_message: 您的申请已提交，我们将在稍后进行审核。
+      dismiss_button: 明白
+      deleted: 申请已刪除。
+    account_label: 更改用户名
+    profile_link: 曾用名
+    dropdown:
+      empty_text: 暂无申请
+      tooltip: => fof-username-request.forum.dropdown.title
+      title: 用户名更改申请
+      item_text: "{username} 申请更改用户名"
+      exerpt: "申请更改用户名为：{requestedUsername}"

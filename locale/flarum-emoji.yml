@@ -1,0 +1,15 @@
+# https://github.com/flarum/lang-english/blob/master/locale/flarum-emoji.yml
+# fc83cb0 on 12 Nov 2018
+# 2020年2月3日00:08:08 +0800
+
+flarum-emoji:
+   ##
+   # UNIQUE KEYS - The following keys are used in only one location each.
+   ##
+
+   # Translations in this namespace are used by the forum user interface.
+   forum:
+      # These translations are used by the composer (emoji autocompletion function).
+      composer:
+         emoji_tooltip: 表情
+         type_to_search_text: 搜索 Emoji 表情

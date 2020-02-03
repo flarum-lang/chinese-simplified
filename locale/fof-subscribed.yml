@@ -1,0 +1,23 @@
+# https://github.com/FriendsOfFlarum/subscribed/blob/master/resources/locale/en.yml
+# 776490d on 1 Nov 2019
+# 2020-2-3 16:55:28 +0800
+
+fof-subscribed:
+    forum:
+        settings:
+            defaults_label: 默认启用设置「{setting}」
+            forced_label: 强制对所有用户开启「{setting}」
+            notify_discussion_created_label: 有新主题
+            notify_post_unapproved_label: 新主题需要审核
+            notify_user_created_label: 有新人注册
+        notifications:
+            discussion_created_text: "{username} 发布了新主题"
+            post_unapproved_text: "{username} 发布了新主题需要审核"
+            user_created_text: "{username} 刚刚加入论坛"
+    admin:
+        menu:
+            description: 用户订阅配置（默认）
+        permission:
+            subscribe_to_discussion_created: 允许用户接收新主题通知
+            subscribe_to_post_unapproved: 允许用户接收新主题审核通知
+            subscribe_to_user_created: 允许用户接收新注册通知

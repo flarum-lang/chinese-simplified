@@ -1,0 +1,29 @@
+# https://github.com/FriendsOfFlarum/geoip/blob/master/resources/locale/en.yml
+# 039f781 on 29 Sep 2019
+# 2020-2-3 14:21:04 +0800
+
+fof-geoip:
+  admin:
+    settings:
+      title: FoF GeoIP
+
+      service_label: 服务
+
+      service_freegeoip_label: FreeGeoIP
+      service_freegeoip_description: <b>https://freegeoip.app/</b>，每小时可免费查询 15,000 个 IP 国家代码。
+
+      service_ipstack_label: IPStack
+      service_ipstack_description: <b>https://ipstack.com</b>，每月可免费查询 10,000 次。付费方案包含连接信息（ISP、组织）以及威胁等级。
+
+      service_ipdata_label: IPData
+      service_ipdata_description: <b>https://ipdata.co</b>，每日可免费查询 1,500 次。
+
+      service_ipapi_label: IP Api
+      service_ipapi_description: <b>http://ip-api.com</b>，每分钟可免费查询 150 次。请求数超额的话，可能会将您的 IP 列入黑名单，您可以访问 <b>http://ip-api.com/docs/unban</b> 申请解除。
+
+      access_key_label: Access Key
+      security_label: 安全模块（需要 professional plus）
+
+  forum:
+    alerts:
+      ip_copied: 已复制 IP 地址

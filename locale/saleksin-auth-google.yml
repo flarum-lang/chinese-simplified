@@ -1,0 +1,25 @@
+# https://github.com/saleksin/flarum-auth-google/blob/master/locale/en.yml
+# 0ed8e4e on 30 Dec 2018
+# 2020年2月3日01:11:20 +0800
+
+saleksin-auth-google:
+
+  ##
+  # UNIQUE KEYS - The following keys are used in only one location each.
+  ##
+
+  # Translations in this namespace are used by the admin interface.
+  admin:
+
+    # These translations are used in the Google Settings modal dialog.
+    google_settings:
+      client_id_label: App ID
+      client_secret_label: App Secret
+      title: Google 登陆设置
+
+  # Translations in this namespace are used by the forum user interface.
+  forum:
+
+    # These translations are used in the Log In modal dialog.
+    log_in:
+      with_google_button: Google 账号登录

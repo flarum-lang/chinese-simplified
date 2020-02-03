@@ -1,0 +1,68 @@
+/* System Latin */
+/* @font-face {
+  font-family: 'System Latin';
+  font-style: normal;
+  font-weight: 400;
+  src:  local(".HelveticaNeueDeskInterface-Light"),
+        local(".SFNSText-Light"),
+        local(".LucidaGrandeUI"),
+        local("Segoe UI Light"),
+        local("Ubuntu Light"),
+        local("Roboto-Light"),
+        local("DroidSans"),
+        local("Fira Sans"),
+        local("Cantarell"),
+        local("Oxygen");
+} */
+
+/* Simplified Chinese */
+/* @font-face {
+  font-family: 'System SC';
+  font-style: normal;
+  font-weight: 400;
+  src:  local("PingFangSC-Light"),
+        local("HiraginoSansGB-W3"),
+        local("Microsoft YaHei UI"),
+        local("NotoSansCJKsc-Light"),
+        local("SourceHanSansSC-Light");
+} */
+
+/*  Traditional Chinese */
+/* @font-face {
+  font-family: 'System TC';
+  font-style: normal;
+  font-weight: 400;
+  src:  local("PingFangTC-Light"),
+        local("HiraginoSansTC-W3"),
+        local("Microsoft JhengHei UI"),
+        local("NotoSansCJKtc-Light"),
+        local("SourceHanSansTC-Light");
+} */
+
+/* Monospace */
+/* @font-face {
+  font-family: 'System Mono';
+  font-style: normal;
+  font-weight: 400;
+  src:  local("SFMono-Light"),
+        local("SourceCodePro-Light"),
+        local("Menlo"),
+        local("Consolas"),
+        local("Courier New");
+} */
+
+/* Emoji */
+/* @font-face {
+  font-family: 'System Emoji';
+  font-style: normal;
+  font-weight: normal;
+  src:  local("AppleColorEmoji"),
+        local("Android Emoji"),
+        local("SourceEmoji-BnW"),
+        local("Segoe UI Emoji"),
+        local("Segoe UI Symbol");
+  unicode-range: U+1F300-1F5FF, U+1F600-1F64F, U+1F680-1F6FF, U+2600-27FF;
+}
+
+body { font-family: -apple-system, BlinkMacSystemFont, 'System Latin', 'System Emoji', 'System SC', sans-serif; }
+code, pre { font-family: 'System Mono', Monospace; } */

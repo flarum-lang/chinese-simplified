@@ -1,0 +1,31 @@
+# https://github.com/datitisev/flarum-ext-dashboard/blob/master/resources/locale/en.yml
+# 1216997
+# Sun, 02 Jan 2020 21:08:48 +0800
+
+datitisev-dashboard:
+  admin:
+    dashboard:
+      months:
+        january: 一月
+        february: 二月
+        march: 三月
+        april: 四月
+        may: 五月
+        june: 六月
+        july: 七月
+        august: 八月
+        september: 九月
+        october: 十月
+        november: 十一月
+        december: 十二月
+
+      graph:
+        users: 会员
+        discussions: 主题
+        posts: 回复
+
+      updates:
+        check_button: 检查插件更新
+        checking: "正在检查更新..."
+        available: "{count} 个更新可用|{count} 个更新可用"
+        none: 暂无更新

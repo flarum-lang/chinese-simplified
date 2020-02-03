@@ -1,0 +1,7 @@
+# https://github.com/FriendsOfFlarum/disposable-emails/blob/master/locale/en.yml
+# c1e9a00 on 17 Nov 2018
+# 2020-2-3 14:01:28 +0800
+
+fof-email-checker:
+  error:
+    disposable_email_message: 您不可以使用一次性邮箱进行注册！

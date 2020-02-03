@@ -1,0 +1,8 @@
+# https://github.com/FriendsOfFlarum/nightmode/blob/master/resources/locale/en.yml
+# 5156bcf on 28 Sep 2019
+# 2020-2-3 14:43:57 +0800
+
+fof-nightmode:
+  forum:
+    night: 夜间模式
+    day: 日间模式

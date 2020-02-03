@@ -1,0 +1,85 @@
+# https://github.com/FriendsOfFlarum/ban-ips/blob/master/resources/locale/en.yml
+# c5e12b1 on 11 Jun 2019
+# 2020-2-3 12:36:59 +0800
+
+fof-ban-ips:
+  forum:
+    ban_ip_button: => fof-ban-ips.ref.ban_ip_button
+    unban_ip_button: => fof-ban-ips.ref.unban_ip_button
+
+    modal:
+      ban_options_only_ip: 仅封禁当前 IP (<code>{ip}</code>)
+      ban_options_all_ip: 封禁 <i>{username}</i> 使用过的所有 IP
+      ban_ip_no_users: 没有人被封禁
+
+    user_badge:
+      banned_tooltip: 已封禁
+
+    user_controls:
+      ban_button: => fof-ban-ips.ref.ban_label
+      unban_button: => fof-ban-ips.ref.unban_label
+
+  admin:
+    permissions:
+      ban_ip_label: => fof-ban-ips.ref.ban_ip_addresses
+      view_banned_ip_list_label: 查看已封禁 IP 地址列表
+
+    page:
+      create_button: => fof-ban-ips.ref.ban_ip_button
+
+      creator_label: 创建者
+      user_label: 用户
+      address_label: => fof-ban-ips.ref.address_label
+      reason_label: => fof-ban-ips.ref.reason_label
+      date_label: 日期
+
+    modal:
+      update_title: 更新已封禁 IP
+      ban_ip_no_users: 没有人被封禁
+
+    nav:
+      title: 封禁 IP
+
+      desc: 新增、删除、查看封禁 IP 地址
+
+    empty_text: 暂无
+
+  error:
+    banned_ip_message: 验证失败
+    no_ips_found_message: 未找到该用户使用的 IP
+
+  lib:
+    modal:
+      title: => fof-ban-ips.ref.ban_ip_addresses
+      unban_title: => fof-ban-ips.ref.unban_ip_addresses
+
+      address_label: => fof-ban-ips.ref.address_label
+      reason_label: => fof-ban-ips.ref.reason_label
+
+      check_button: 检查
+      save_button: 保存
+
+      ban_ip_confirmation: "你确定要封禁这个 IP 吗？所有使用这个 IP 的用户将无法登陆和注册论坛。"
+      ban_ip_users: 用户 {users} 将被封禁|用户 {users} 将被封禁
+
+      unban_ip_confirmation: 你确定要取消封禁该用户以及未被其他 IP 封禁的所有用户？
+      unban_options_only_ip: 仅取消封禁当前 IP (<code>{ip}</code>)
+      unban_options_all_ip: 取消封禁 <i>{username}</i> 使用过的所有 IP
+      unban_ip_no_users: 没有人被取消封禁
+      unban_ip_users: 用户 {users} 将被取消封禁|用户 {users} 将被取消封禁
+      unbanned_ips: 取消封禁 <code>{ips}</code>.
+
+      ban_button: => fof-ban-ips.ref.ban_label
+      unban_button: => fof-ban-ips.ref.unban_label
+
+  ref:
+    ban_label: 封禁
+    ban_ip_addresses: 封禁 IP
+    ban_ip_button: 封禁 IP
+
+    unban_label: 取消封禁
+    unban_ip_addresses: 取消封禁 IP
+    unban_ip_button: 取消封禁 IP
+
+    address_label: IP 地址
+    reason_label: 原因

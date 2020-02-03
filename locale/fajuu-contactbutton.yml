@@ -1,0 +1,12 @@
+# https://github.com/fajuu/ContactButton/blob/master/locale/en.yml
+# 0016486 on 17 Apr
+# 2020年2月2日22:04:50 +0800
+
+fajuu-contactbutton:
+  admin:
+    settings:
+      title: 联系按钮
+      label: 按钮名称
+      url: 邮箱地址或网站链接
+      icon: 按钮图标
+      newtab: 在新标签页中打开链接

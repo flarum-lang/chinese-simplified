@@ -1,0 +1,16 @@
+# https://github.com/FriendsOfFlarum/frontpage/blob/master/resources/locale/en.yml
+# e143158 on 10 Mar 2019
+# 2020-2-3 14:04:27 +0800
+
+core:
+  forum:
+    index_sort:
+      front_button: 头版头条
+    badge:
+      frontpage_tooltip: 标记为头条主题
+    post_controls:
+      push_to_front_button: 推送至头版头条
+      pull_from_front_button: 从头版头条撤下
+  admin:
+    permissions:
+      can_push_to_frontpage_label: 可推送至头版头条

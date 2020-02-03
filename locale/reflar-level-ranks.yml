@@ -1,0 +1,15 @@
+# https://github.com/ReFlar/level-ranks/blob/master/resources/locale/en.yml
+# 8408255 on 5 Dec 2018
+# 2020-2-3 12:10:32 +0800
+
+reflar-level-ranks:
+  admin:
+    settings:
+      title: 等级设置
+      levelText: 输入经验条的前缀文字（例如：“等级” “Lv.”）
+  forum:
+    desc:
+      expText: 点经验值
+  lib:
+    defaults:
+      level: 等级

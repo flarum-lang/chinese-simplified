@@ -1,0 +1,11 @@
+# https://github.com/FriendsOfFlarum/sentry/blob/master/resources/locale/en.yml
+# f7fdd3b on 27 Oct 2019
+# 2020-2-3 16:21:17 +0800
+
+fof-sentry:
+  admin:
+    settings:
+      dsn_label: Sentry DSN
+      user_feedback_label: 用户反馈
+      javascript_label: 提交 JavaScript 错误
+      javascript_console_label: 捕捉 JavaScript 控制台

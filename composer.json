@@ -1,0 +1,49 @@
+{
+  "name": "golden/flarum-lang-simplified-chinese",
+  "description": "Flarum 简体中文语言包 2020",
+  "keywords": [
+    "flarum",
+    "locale",
+    "extension",
+    "Chinsese",
+    "中文",
+    "简体中文"
+  ],
+  "type": "flarum-extension",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Golden",
+      "email": "littlegolden@vip.qq.com",
+      "homepage": "https://bbs.csr.fun/"
+    }
+  ],
+  "suggest": {
+		"csineneo/lang-traditional-chinese": "Traditional Chinese language pack for Flarum by Csineneo."
+	},
+  "support": {
+    "source": "https://github.com/Littlegolden/flarum-lang-simplified-chinese",
+    "issues": "https://github.com/Littlegolden/flarum-lang-simplified-chinese/issues"
+  },
+  "require": {
+    "flarum/core": "^0.1.0-beta.8"
+  },
+  "extra": {
+    "flarum-extension": {
+      "title": "简体中文语言包",
+        "icon": {
+          "image": "icon.svg",
+          "backgroundColor": "#fff",
+          "backgroundSize": "cover",
+          "backgroundPosition": "center"
+        }
+    },
+    "flagrow": {
+			"discuss": "https://discuss.flarum.org/d/"
+		},
+    "flarum-locale": {
+      "code": "zh-hans",
+      "title": "简体中文"
+    }
+  }
+}

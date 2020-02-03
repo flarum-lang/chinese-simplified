@@ -1,0 +1,25 @@
+# https://github.com/FriendsOfFlarum/prevent-necrobumping/blob/master/resources/locale/en.yml
+# 18e0c98 on 24 Oct 2019
+# 2020-2-3 15:27:54 +0800
+
+fof-prevent-necrobumping:
+  forum:
+    composer:
+      warning:
+        title: 此贴已经闲置 <b>{time}</b>很久啦
+        description: 看起了它已经没有讨论的意义了
+        checkbox_label: 我知道，但是我觉得仍然有必要回复一下。
+        error: 这贴太久远了，请勿挖坟！
+
+  admin:
+    settings:
+      days_label: 设置默认天数
+      days_help: 如果一个主题超过 n 天没有新回复，则将这个主题标记为旧贴。<code>0</code> 表示禁用。
+
+      message_title_label: 自定义警告标题
+      message_title_help: '使用 <code>[time]</code> 来代替时间，例如「此贴已经闲置 14 天啦」。'
+      message_description_label: 自定义警告内容
+      message_agreement_label: 自定义复选框条款
+
+      tags_title: 分类标签
+      tags_help: 为每个标签单独设置帖子判断过期的天数，留空表示使用默认值。如果一个主题被添加了好几个标签，则这几个标签中最短的天数将成为该主题的判断标准。

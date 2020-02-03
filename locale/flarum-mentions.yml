@@ -1,0 +1,41 @@
+# https://github.com/flarum/flarum-ext-english/blob/master/locale/flarum-mentions.yml
+# 438857f on 12 Nov 2018
+# 2020年2月3日00:34:37 +0800
+
+flarum-mentions:
+
+  ##
+  # UNIQUE KEYS - The following keys are used in only one location each.
+  ##
+
+  # Translations in this namespace are used by the forum user interface.
+  forum:
+
+    # These translations are used by the composer (reply autocompletion function).
+    composer:
+      mention_tooltip: 提及用户或主题
+      reply_to_post_text: "回复 #{number}"
+
+    # These translations are used by the Notifications dropdown, a.k.a. "the bell".
+    notifications:
+      others_text: => core.ref.some_others
+      post_mentioned_text: "{username} 回复了你的主题"  # Can be pluralized to agree with the number of users!
+      user_mentioned_text: "{username} 提到了你"
+
+    # These translations are displayed beneath individual posts.
+    post:
+      mentioned_by_self_text: "{users} 回复了此帖"  # Can be pluralized to agree with the number of users!
+      mentioned_by_text: "{users} 回复了此帖"       # Can be pluralized to agree with the number of users!
+      others_text: => core.ref.some_others
+      quote_button: 引用
+      reply_link: => core.ref.reply
+      you_text: => core.ref.you
+
+    # These translations are used in the Settings page.
+    settings:
+      notify_post_mentioned_label: 有人回复了你
+      notify_user_mentioned_label: 有人提到了你
+
+    # These translations are used in the user profile page and profile popup.
+    user:
+      mentions_link: 提及

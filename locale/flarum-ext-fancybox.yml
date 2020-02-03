@@ -1,0 +1,10 @@
+# https://github.com/squeevee/flarum-ext-fancybox/blob/master/locale/en.yml
+# 2fcf88a on 2 Apr 2019
+# 2020年2月3日00:15:15 +0800
+
+fancybox:
+  forum:
+    next: 下一张
+    prev: 上一张
+    error: 加载图片时出错。
+

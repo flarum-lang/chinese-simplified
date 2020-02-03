@@ -1,0 +1,29 @@
+# https://github.com/FriendsOfFlarum/user-directory/blob/master/resources/locale/en.yml
+# 0270b1b on 11 Jun 2019
+# 2020-2-3 17:24:21 +0800
+
+fof-user-directory:
+    forum:
+        search:
+            users_heading: '搜索用户「{query}」'
+        page:
+            nav: 会员名录
+            sort:
+                relevance: 相关度
+                default: 默认
+                username_az: 用户名（a-z）
+                username_za: 用户名（z-a）
+                newest: 最新注册
+                oldest: 最早注册
+                seen_recent: 最近上线
+                seen_oldest: 离线最久
+                most_posts: 回复最多
+                least_posts: 回复最少
+                most_discussions: 主题最多
+                least_discussions: 主题最少
+    admin:
+        permissions:
+            view_user_directory: 查看会员名录
+        settings:
+            title: 会员名录设置
+            link: 在论坛首页侧边栏添加「会员名录」选项卡

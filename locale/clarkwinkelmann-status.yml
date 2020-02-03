@@ -1,0 +1,23 @@
+# https://github.com/clarkwinkelmann/flarum-ext-status/blob/master/resources/locale/en.yml
+# bc4573c
+# Sun, 02 Jan 2020 16:09:49 +0800
+
+clarkwinkelmann-status:
+    admin:
+        settings:
+            title: 状态设置
+            only-countries: 仅国旗
+            enable-text: 允许文字状态
+        permissions:
+            see: 查看状态
+            set: 设置状态
+            mod: 监管用户状态
+
+    forum:
+        menu:
+            set-status: 设置状态
+        modal:
+            title: 设置状态
+            text-placeholder: 发生了什么？
+            submit: 提交
+            clear: 清空

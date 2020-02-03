@@ -1,0 +1,16 @@
+# https://github.com/xmugenx/flarum-ext-post-blacklist/blob/master/resources/locale/en.yml
+# da438d1 on 21 Oct 2019
+# 2020年2月3日01:25:11 +0800
+
+xmugenx-post-blacklist:
+  admin:
+    settings:
+      title: 黑名单设置
+      labelText: 含有敏感词的帖子将被隐藏并移入黑名单
+      help: 使用空格分隔
+    permissions:
+      blacklist_discussions_label: 敏感词
+  forum:
+    post_controls:
+      unblacklist_button: 移出黑名单
+      blacklist_button: 敏感词

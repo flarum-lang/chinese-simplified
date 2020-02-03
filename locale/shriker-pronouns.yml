@@ -1,0 +1,21 @@
+# https://github.com/shriker/flarum-pronouns/blob/master/resources/locale/en.yml
+# 7caa86b on 28 Aug 2019
+# 2020年2月3日01:15:34 +0800
+
+shriker-pronouns:
+
+  admin:
+    settings:
+      title: 人称代词设置
+      prefix_label: 人称代词前缀
+      prefix_help_text: 此文本将显示于用户人称代词之前（例如：性别）。
+
+  forum:
+    change_pronouns_title: 修改人称代词
+    change_pronouns_button: 修改人称代词
+    my_pronouns_are_label: 我的人称代词是
+    my_pronouns_are_placeholder: '例如：“他/她” “男/女” “She/Her”'
+    my_pronouns_are_help_text: 您的人称代词将显示于个人主页及用户卡片中。<a>什么是人称代词以及为什么需要它们？</a>
+    submit_button: 保存修改
+    submit_success_text: 您的人称代词已保存。
+    dismiss_button: 取消

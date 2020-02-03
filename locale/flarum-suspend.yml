@@ -1,0 +1,41 @@
+# https://github.com/flarum/flarum-ext-english/blob/master/locale/flarum-suspend.yml
+# f8f58dd on 20 Jul 2018
+# 2020年2月3日00:46:30 +0800
+
+flarum-suspend:
+
+  ##
+  # UNIQUE KEYS - The following keys are used in only one location each.
+  ##
+
+  # Translations in this namespace are used by the admin interface.
+  admin:
+
+    # These translations are used in the Permissions page of the admin interface.
+    permissions:
+      suspend_users_label: 封禁用户
+
+  # Translations in this namespace are used by the forum user interface.
+  forum:
+    # These translations are used in the suspension notifications
+    notifications:
+      user_suspended_text: "{username} 将你封禁了 {timeReadable}"
+      user_unsuspended_text: "{username} 已将你解封"
+
+    # These translations are used in the Suspend User modal dialog (admin function).
+    suspend_user:
+      indefinitely_label: 永久封禁
+      limited_time_label: 自定义封禁时间
+      limited_time_days_text: " 天"
+      not_suspended_label: 不封禁
+      status_heading: 封禁状态
+      submit_button: => core.ref.save_changes
+      title: "{username} 已被封禁"
+
+    # These translations are displayed as tooltips for user badges.
+    user_badge:
+      suspended_tooltip: 已封禁
+
+    # These translations are found on the user profile page (admin function).
+    user_controls:
+      suspend_button: 封禁

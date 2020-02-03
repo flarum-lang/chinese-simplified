@@ -1,0 +1,54 @@
+# https://github.com/FriendsOfFlarum/byobu/blob/master/resources/locale/en.yml
+# eba21cb on 19 Oct 2019
+# 2020-2-3 12:43:02 +0800
+
+fof-byobu:
+  forum:
+    badges:
+      is_private:
+        tooltip: 私密主题
+    buttons:
+      add_recipients: 改为私密主题
+      submit: 确认
+      edit_recipients: 编辑参与者
+      send_pd: "给 {username} 发送消息"
+    labels:
+      recipients: "仅 {count} 人可见"
+      user_deleted: --已删除--
+    nav:
+      private_discussions: 私密主题
+    input:
+      search_recipients: 输入用户名前三个字符搜索用户
+    search:
+      headings:
+        groups: 用户组
+    modal:
+      titles:
+        update_recipients: 更新私密主题“{title}”的参与者
+        add_recipients: 添加参与者到私密主题
+    post:
+      recipients_modified:
+        added_and_removed: "{username} 添加“{added}”并移除“{removed}”"
+        added: "{username} 添加“{added}”"
+        removed: "{username} 移除“{removed}”"
+    user:
+      settings:
+        block_pd: 禁用私密主题
+      byobu_link: 私密主题
+    notifications:
+      pd_label: 某人将我加入了私密主题
+      pd_text: "{username} 创建私密主题并邀请了你"
+
+  admin:
+    permission:
+      create_private_discussions_with_users: 创建私密主题并可添加参与者
+      create_private_discussions_with_groups: 创建私密主题并可添加群组
+      create_private_discussions_with_blocking_users: 允许添加已禁用私密主题的用户
+      edit_user_recipients: 编辑参与私密讨论的参与者
+      edit_group_recipients: 编辑参与私密讨论的群组
+    settings:
+      byobu_users_page_label: 添加私密主题至用户页面
+
+  notifications:
+    private_discussion_created:
+      title: "[forum-name] 创建私密主题"

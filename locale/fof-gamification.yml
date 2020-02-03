@@ -1,0 +1,74 @@
+# https://github.com/FriendsOfFlarum/gamification/blob/master/resources/locale/en.yml
+# 58e501d on 10 Aug 2019
+# 2020-2-3 14:19:02 +0800
+
+core:
+  forum:
+    index_sort:
+      hot_button: 最多被赞
+      
+fof-gamification:
+  forum:
+    votes: 点赞
+    vote_title: 点赞的人
+    nav:
+      name: 排名
+    ranking:
+      rank: 排名
+      name: 用户
+      amount: 👍
+    notification:
+      upvote: "{username} 赞了您的帖文"
+      downvote: "{username} 踩了您的帖文"
+    user:
+      points: "👍: {points}"
+      rank: "{rank}"
+    modal:
+      title: 打分
+      upvotes_label: 赞
+      downvotes_label: 踩
+    mod_item: 点赞的人
+  admin:
+    permissions:
+      vote_label: 赞/踩帖子
+      see_votes_label: 查看帖子赞/踩
+      see_ranking_page: 查看等级
+    nav:
+      desc: 增强 Flarum 论坛的游戏性
+    page:
+      rankings:
+        blocked:
+          placeholder: CDK2020, Ralkage, AngelAvila
+          title: 忽略的用户
+          help: 这些用户不会在排名页面上显示。 用户名应以半角逗号分隔，后跟空格。
+        title: 排名页面
+        enable: 启用自定义图片
+        custom_image_1: 冠军标志
+        custom_image_2: 亚军标志
+        custom_image_3: 季军标志
+      votes:
+        points_title: 占位符
+        points_placeholder: "👍: "
+        color_holder: '#ffffff'
+        auto_upvote: 当帖子发布时自动点赞
+        rate_limit: 点赞频率限制（10 秒）
+        discussion_page: 在帖子列表中显示点赞总数
+        title: 赞
+        vote_color: 点赞颜色
+        icon_name: 赞/踩图标
+        icon_help: "输入任何 Font Awesome 图标，后缀为 -up 和 -down。 示例：arrow（箭头），thumbs（拇指），chevron（指向箭头）"
+      save_settings: 保存设置
+      convert:
+        button: 同步原生点赞数据
+        help: 同步 Flarum 论坛原生 Likes 插件产生的点赞数据，并计算所有当前讨论的热度
+        converting: 原生 LIkes 插件的点赞数据正在同步中，请等待几分钟后刷新页面查看同步结果。（同步可能需要一段时间，具体取决于您服务器性能）
+        converted: "成功同步 {number} 个喜欢"
+      ranks:
+        title: 头衔
+        ranks: 自定义头衔
+        number_title: 要显示多少个头衔？
+        help:
+          color: '#ffffff'
+          help: "输入所需数量的赞，头衔名称，以及头衔颜色"
+          points: 👍
+          name: 名称

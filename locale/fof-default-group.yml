@@ -1,0 +1,8 @@
+# https://github.com/FriendsOfFlarum/default-group/blob/master/resources/locale/en.yml
+# 0428491 on 23 Dec 2018
+# 2020-2-3 12:47:04 +0800
+
+fof-default-group:
+  admin:
+    settings:
+      info: 请在下方选择新用户激活账号后默认分配的用户组。

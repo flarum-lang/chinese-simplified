@@ -1,0 +1,110 @@
+# https://github.com/flarum/flarum-ext-english/blob/master/locale/flarum-tags.yml
+# da35609 on 2 Jul 2019
+# 2020年2月3日01:00:57 +0800
+
+flarum-tags:
+
+  ##
+  # UNIQUE KEYS - The following keys are used in only one location each.
+  ##
+
+  # Translations in this namespace are used by the admin interface.
+  admin:
+
+    # These translations are used in the Basics page.
+    basics:
+      tags_label: => flarum-tags.ref.tags
+
+    # These translations are used in the Edit Tag modal dialog.
+    edit_tag:
+      color_label: => core.ref.color
+      delete_tag_button: 删除标签
+      delete_tag_confirmation: "确定要删除此标签？此标签下的主题将不会被删除。"
+      description_label: 描述
+      hide_label: 从“全部主题”中隐藏
+      icon_label: => core.ref.icon
+      icon_text: => core.ref.icon_text
+      name_label: => flarum-tags.ref.name
+      name_placeholder: => flarum-tags.ref.name
+      slug_label: 英文名称
+      submit_button: => core.ref.save_changes
+      title: => flarum-tags.ref.create_tag
+
+    # These translations are used in the navigation bar.
+    nav:
+      tags_button: 节点标签
+      tags_text: 管理论坛标签列表
+
+    # These translations are used in the Permissions page of the admin interface.
+    permissions:
+      allow_edit_tags_label: 允许编辑标签
+      restrict_by_tag_heading: 按标签分类
+      tag_discussions_label: 更改标签
+
+    # These translations are used in the Tag Settings modal dialog.
+    tag_settings:
+      range_separator_text: " 至 "
+      required_primary_heading: 主标签数量
+      required_primary_text: 设置单个主题可添加的主标签数量
+      required_secondary_heading: 次标签数量
+      required_secondary_text: 设置单个主题可添加的次标签数量
+      title: 标签设置
+
+    # These translations are used in the Tags page.
+    tags:
+      about_tags_text: "标签用于主题的分类。主标签类似于传统论坛的板块，可以分成两级；次标签无层级或顺序，可作为子板块。"
+      create_tag_button: => flarum-tags.ref.create_tag
+      primary_heading: 主标签
+      secondary_heading: 次标签
+      settings_button: 设置
+
+  # Translations in this namespace are used by the forum user interface.
+  forum:
+
+    # These translations are used by the Choose Tags modal dialog.
+    choose_tags:
+      choose_primary_placeholder: "选择一个主标签|最多选择 {count} 个主标签"
+      choose_secondary_placeholder: "选择一个次标签|最多选择 {count} 个次标签"
+      edit_title: "更改“{title}”的标签"
+      submit_button: => core.ref.okay
+      title: 添加标签
+
+    # These translations are used by the composer when starting a discussion.
+    composer_discussion:
+      choose_tags_link: 添加标签
+
+    # These translations are used by the discussion control buttons.
+    discussion_controls:
+      edit_tags_button: 编辑标签
+
+    header:
+      back_to_tags_tooltip: 返回标签列表
+
+    # These translations are used on the index page, peripheral to the discussion list.
+    index:
+      more_link: 更多标签...
+      tags_link: => flarum-tags.ref.tags
+      untagged_link: 移除标签
+
+    # These translations are displayed between posts in the post stream.
+    post_stream:
+      added_tags_text: "{username} 添加标签 {tagsAdded}"
+      added_and_removed_tags_text: "{username} 添加标签 {tagsAdded} 并移除标签 {tagsRemoved}"
+      removed_tags_text: "{username} 移除了标签 {tagsRemoved}"
+      tags_text: "{tags} 标签|{tags} 标签"
+
+  # Translations in this namespace are used by the forum and admin interfaces.
+  lib:
+
+    # This string is displayed in place of the name of a tag that's been deleted.
+    deleted_tag_text: 已删除
+
+  ##
+  # REUSED TRANSLATIONS - These keys should not be used directly in code!
+  ##
+
+  # Translations in this namespace are referenced by two or more unique keys.
+  ref:
+    create_tag: 新建标签
+    name: 标签名称
+    tags: 标签

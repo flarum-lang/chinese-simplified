@@ -1,0 +1,53 @@
+# https://github.com/kilowhat/flarum-ext-affiliation-links/blob/master/resources/locale/en.yml
+# 7fb230c on 1 Nov 2019
+# 2020年2月3日10:49:05 +0800
+
+kilowhat-affiliation-links:
+    admin:
+        settings:
+            title: 推广链接设置
+
+        titles:
+            rules: 链接规则
+
+        buttons:
+            new-rule: 新建规则
+            edit-rule: 编辑
+            add-rule: 添加
+            save-rule: 保存
+            delete-rule: 删除
+
+        messages:
+            delete-rule-confirmation: 确定要永久删除规则 {match_pattern} 吗？
+
+        rules:
+            match-component: 匹配组件
+            match-component-help: 您要匹配的 URL 部分
+            match-type: 匹配类型
+            match-type-help: >
+                用于匹配的策略。
+                "精确" 精确匹配。
+                "简单" 允许使用通配符「*」进行匹配。
+                "正则" 允许使用正则表达式进行匹配。
+            match-pattern: 匹配模式
+            match-pattern-help: >
+                将使用选定类型的方法来比对给定组件的值。
+                如果你选择了「正则」方式，不要忘记表达式分隔符。
+            replacement: 替换值
+            replacement-help: >
+                如果匹配将替换原始 URL。
+                您可以使用 { url } 来访问原始链接（括号和名称之间没有空格）
+                如果使用「正则」匹配，您可以使用 { 1 }, { 2 } 等来取得匹配值。
+                值将自动进行 URL 转义以作为参数使用。
+                如果需要取得原始值，请在名称前加入前缀「raw」（{ rawurl }, { raw1 } 等）
+            comment: 备注（可选，仅用于文档说明）
+
+        component-options:
+            uri: URI（完整 URL）
+            host: Host（域名）
+            path: Path（路径）
+
+        type-options:
+            exact: 精准
+            simple: 简单
+            regex: 正则

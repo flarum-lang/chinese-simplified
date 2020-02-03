@@ -1,0 +1,36 @@
+# https://github.com/FriendsOfFlarum/linguist/blob/master/resources/locale/en.yml
+# 652e5e3 on 22 Oct 2019
+# 2020-2-3 14:33:04 +0800
+
+fof-linguist:
+    admin:
+        menu:
+            title: 翻译
+            description: 自定义翻译
+        buttons:
+            apply: 应用
+            reset: 重置
+            copy-original: 复制原文
+            load-more: 加载更多
+        locales:
+            all: 全部
+        placeholder:
+            not-translated: 未翻译
+            all-locales: 定义其他语言的默认翻译
+            hint: 原文内容：
+        filters:
+            search: 搜索翻译文本...
+            with-own-translations: 自定义翻译
+            with-original-translations-in-locales: 有原文翻译
+            without-original-translations-in-locales: 无原文翻译
+            for-extension: 筛选插件
+            for-extension-unavailable: >
+              命名空间「{namespace}」没有翻译资源。
+              这个插件可能没有需要翻译的内容，或者使用了其他命名空间。
+              尝试搜索翻译文本来定位翻译资源吧。
+            results: 已显示 {shown} 条匹配翻译，共 {total} 条 
+        clear-cache:
+            text: >
+                新增翻译尚未部署。
+                Note: 清理缓存会导致论坛短暂性运行缓慢。
+            button: 立刻清理缓存

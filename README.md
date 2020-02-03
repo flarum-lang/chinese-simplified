@@ -34,7 +34,6 @@ php flarum cache:clear
 
 ### 本地化 / Localization
   - 调整时间格式
-  - 优化简体中文字体显示
 
 ### 支持的扩展 / Supported Extensions
 <details>

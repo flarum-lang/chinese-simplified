@@ -1,6 +1,6 @@
 # https://github.com/FriendsOfFlarum/share-social/blob/master/resources/locale/en.yml
-# fdcf1f7 on 18 Jun 2019
-# 2020-2-3 16:26:55 +0800
+# 66203a7 16 hours ago
+# 2020-2-5 22:50:08 +0800
 
 fof-share-social:
   forum:
@@ -24,3 +24,6 @@ fof-share-social:
       vkontakte: VKontakte
       odnoklassniki: Odnoklassniki
       my_mail: My World
+
+      qq: QQ
+      qzone: QQ 空间

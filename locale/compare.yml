@@ -5,6 +5,7 @@ fof-reactions:
     notification: '{username} reacted with {reaction} to your post'
     settings:
         notify_post_reacted_label: Someone reacts to one of my posts
+    reacting-own-post: You cannot react to your own post
 
   admin:
     permissions:

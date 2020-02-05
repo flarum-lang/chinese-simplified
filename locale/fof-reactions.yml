@@ -1,6 +1,6 @@
 # https://github.com/FriendsOfFlarum/reactions/blob/master/resources/locale/en.yml
-# 0223f8b 15 days ago
-# 2020-2-3 16:12:55 +0800
+# a000ecd 2 days ago
+# 2020-2-6 00:18:41 +0800
 
 fof-reactions:
   forum:
@@ -9,6 +9,7 @@ fof-reactions:
     notification: '{username} 以 {reaction} 的态度回应了您'
     settings:
         notify_post_reacted_label: 某人回应了您的主题
+    reacting-own-post: 您不能表态自己的帖子
 
   admin:
     permissions:

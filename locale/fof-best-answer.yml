@@ -1,6 +1,6 @@
 # https://github.com/FriendsOfFlarum/best-answer/blob/master/resources/locale/en.yml
-# d90b6d8 17 hours ago
-# 2020-2-6 00:14:03 +0800
+# e1c918c 7 hours ago
+# 2020-2-6 14:21:43 +0800
 
 fof-best-answer:
     admin:
@@ -20,3 +20,8 @@ fof-best-answer:
 
         notification:
           content: 如果您的问题已解决请选择一个最佳回复
+          awarded: 您的帖子被 {username} 选为最佳答案
+          awarded-email: 您的帖子被选为最佳答案
+          select-email-title: 您是否设法解决了问题？
+          preferences:
+            awarded-best-answer: 当有人将我的帖子选为最佳答案

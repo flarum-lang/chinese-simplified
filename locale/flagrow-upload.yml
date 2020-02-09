@@ -1,0 +1,95 @@
+# https://github.com/FriendsOfFlarum/upload/blob/master/resources/locale/en.yml
+# 87377b4 3 days ago
+# 2020-2-9 20:16:21 +0800
+
+flagrow-upload:
+  admin:
+    buttons:
+      save: 保存设置
+    help_texts:
+      description: |
+        文件上传服务与设置
+      disable-download-logging: |
+        停用下载日志记录功能。若保持开启，将可以查看下载记录及其他数据。（默认启用）
+      disable-hotlink-protection: |
+        防盗链将通过验证 CSRF TOKEN 和 POST ID 来保护你的文件不会被其他站点调用下载。（默认启用）
+      download_templates: |
+        启用模板后，您上传的内容将套用模板样式后显示于论坛中，例如“预览”、“下载”等按钮。 当前可用：
+      mime_types: |
+        请设置 MIME（多用途互联网邮件扩展类型）。每一种类型都将会使用设置好的上传方式处理。
+      resize: |
+        配置文件缩放功能，以像素为单位，超过最大宽度及高度后会被缩放，图片横纵比不变。
+      watermark: |
+        选择上传图片时是否添加水印。水印会根据下面的偏好设置来添加到非 GIF 图片上。
+    labels:
+      aws-s3:
+        bucket: Bucket
+        key: Key
+        region: 地区
+        secret: Secret
+        title: AWS S3 存储设置
+      disable-download-logging:
+          title: 停用下载历史统计
+          toggle: 停用
+      disable-hotlink-protection:
+          title: 停用防盗链保护
+          toggle: 停用
+      imgur:
+        title: Imgur 图片存储设置
+        client_id: Imgur 客户ID
+      local:
+        cdn_url: CDN 网址 (附加在文件前面)
+        title: 本地存储设置
+      ovh-svfs:
+        title: OVH SVFS 存储设置
+        container: 容器
+        tenantid: 租户ID
+        username: 用户名
+        password: 密码
+        region: 地区
+      qiniu:
+        title: 七牛存储设置
+        key: Key
+        secret: Secret
+        bucket: Bucket
+      preferences:
+        max_file_size: 最大文件大小（单位：KB）
+        mime_types: 设置可上传的文件类型及上传方式
+        title: 偏好设置
+      resize:
+        title: 调整图片大小
+        toggle: 切换图片调整
+        max_width: 最大图片宽度
+        max_height: 最大图片高度
+      watermark:
+        file: 上传水印图片
+        position: 水印位置
+        title: 水印图片
+        toggle: 水印图片
+    permissions:
+      download_label: 下载文件
+      upload_label: 文件上传设置
+    templates:
+      file: 默认文件下载模板
+      file_description: |
+        显示文件名以及一些基本信息，经 php 代理下载，允许统计以及热链保护。
+      image: 默认图片下载模板
+      image-preview: 完整图片预览模板
+      image-preview_description: |
+        在行内显示完整图片。不支持下载、统计和热链保护。
+      image_description: |
+        显示图片缩略图，并有 php 代理下载，支持统计和热链保护。
+    upload_methods:
+      aws-s3: 亚马逊 S3
+      imgur: Imgur
+      local: 本地
+      ovh-svfs: OVH SVFS
+      qiniu: 七牛
+  forum:
+    buttons:
+      attach: 添加附件
+    states:
+      loading: 加载中
+      success: 成功
+      error: 错误
+      unauthorized: 您没有下载权限

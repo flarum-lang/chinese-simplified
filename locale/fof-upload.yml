@@ -1,8 +1,8 @@
-# https://github.com/FriendsOfFlarum/upload/blob/master/resources/locale/zh.yml
-# 8ffaa7f on 24 Oct 2019
-# 2020年2月2日23:35:07 +0800
+# https://github.com/FriendsOfFlarum/upload/blob/master/resources/locale/en.yml
+# 87377b4 3 days ago
+# 2020-2-9 20:16:21 +0800
 
-flagrow-upload:
+fof-upload:
   admin:
     buttons:
       save: 保存设置
@@ -23,11 +23,11 @@ flagrow-upload:
         选择上传图片时是否添加水印。水印会根据下面的偏好设置来添加到非 GIF 图片上。
     labels:
       aws-s3:
-        title: AWS S3 存储设置
+        bucket: Bucket
         key: Key
         region: 地区
         secret: Secret
-        bucket: Bucket
+        title: AWS S3 存储设置
       disable-download-logging:
           title: 停用下载历史统计
           toggle: 停用
@@ -38,8 +38,8 @@ flagrow-upload:
         title: Imgur 图片存储设置
         client_id: Imgur 客户ID
       local:
-        title: 本地存储设置
         cdn_url: CDN 网址 (附加在文件前面)
+        title: 本地存储设置
       ovh-svfs:
         title: OVH SVFS 存储设置
         container: 容器
@@ -48,14 +48,14 @@ flagrow-upload:
         password: 密码
         region: 地区
       qiniu:
-        title: 七牛 存储设置
+        title: 七牛存储设置
         key: Key
         secret: Secret
         bucket: Bucket
       preferences:
-        title: 偏好设置
         max_file_size: 最大文件大小（单位：KB）
         mime_types: 设置可上传的文件类型及上传方式
+        title: 偏好设置
       resize:
         title: 调整图片大小
         toggle: 切换图片调整
@@ -67,8 +67,8 @@ flagrow-upload:
         title: 水印图片
         toggle: 水印图片
     permissions:
-      upload_label: 文件上传设置
       download_label: 下载文件
+      upload_label: 文件上传设置
     templates:
       file: 默认文件下载模板
       file_description: |
@@ -92,3 +92,4 @@ flagrow-upload:
       loading: 加载中
       success: 成功
       error: 错误
+      unauthorized: 您没有下载权限

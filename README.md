@@ -151,7 +151,10 @@ php flarum cache:clear
   - saleksin-auth-google（[Google Login](https://discuss.flarum.org/d/18250)）
   - shriker-pronouns（[Personal Pronouns](https://discuss.flarum.org/d/21188)）
   - simonxeko/follow-users（[Follow Users (WIP)](https://discuss.flarum.org/d/22628)）
+  - simonxeko-preview-discussion（[Preview Discussion Post (WIP)](https://discuss.flarum.org/d/22636)）
   - the-turk-password-strength（[Password Strength Indicator](https://discuss.flarum.org/d/22624)）
+  - therealsujitk（[Show Password](https://discuss.flarum.org/d/22727)）
+  - tituspijean-auth-ldap（[LDAP Login](https://discuss.flarum.org/d/9515)）
   - tpokorra-post-notification（[Post Notifications per E-Mail](https://discuss.flarum.org/d/20750)）
   - v17development-flarum-seo（[Flarum SEO](https://discuss.flarum.org/d/18316)）
   - xmugenx-post-blacklist（[Post Blacklist](https://discuss.flarum.org/d/21750)）

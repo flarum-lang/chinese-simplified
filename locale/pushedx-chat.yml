@@ -1,6 +1,6 @@
 # https://github.com/Xelson/flarum-ext-chat/blob/master/resources/locale/en.yaml
-# f5e0899 4 days ago
-# 2020-2-3 17:49:39
+# d580c37 10 hours ago
+# 2020-2-9 13:57:50 +0800
 
 pushedx-chat:
   forum:
@@ -14,8 +14,12 @@ pushedx-chat:
       maximize: 窗口化
     chat:
       placeholder: 请自觉遵守互联网相关的政策法规，严禁发布色情、暴力、反动的言论...
+      message:
+        actions:
+          hide: 隐藏
+          resend: 重新发送
     errors:
-      unauthenticated: 请登录后发言
+      unauthenticated: 登录后才能参与聊天
       chatdenied: 您所在的用户组没有权限参与聊天
   admin:
     permissions:
@@ -28,3 +32,7 @@ pushedx-chat:
     settings:
       title: 聊天室设置
       charlimit: 限制每条消息的最大字数（不区分中英文）
+      floodgate:
+        title: 防刷屏
+        number: 最多可连发消息数
+        time: 刷屏后需等待时间

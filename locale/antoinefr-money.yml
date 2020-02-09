@@ -9,7 +9,7 @@ antoinefr-money:
       moneyforpost: 每条回复可获取
       moneyfordiscussion: 每篇主题可获取
       moneyname: 货币名称（例如： [money] 元）
-      postminimumlength: 可获取奖励的最小主题长度（0 表示不限制）
+      postminimumlength: 可获取奖励的最少帖子正文字数（0 表示不限制）
       noshowzero: 若值为 0 则不显示
     permissions:
       edit_money_label: 修改资产

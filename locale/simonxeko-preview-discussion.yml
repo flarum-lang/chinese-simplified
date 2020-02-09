@@ -1,0 +1,7 @@
+# https://github.com/simonxeko/flarum-ext-preview-discussion/blob/master/resources/locale/en.yml
+# 8cf1eab 13 days ago
+# 2020-2-9 13:58:44 +0800
+
+simonxeko-preview-discussion:
+    forum:
+        preview_tooltip: 预览

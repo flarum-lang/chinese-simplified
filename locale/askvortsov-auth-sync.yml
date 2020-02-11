@@ -1,0 +1,12 @@
+# https://github.com/askvortsov1/flarum-auth-sync/blob/master/resources/locale/en.yml
+# 3a81962 yesterday
+# 2020-2-11 19:06:50 +0800
+
+askvortsov-auth-sync:
+  admin:
+    title: 用户授权同步 - 设置
+    labels:
+      sync_avatar: 同步头像？
+      sync_groups: 同步用户组？
+      sync_bio: 同步个性签名？ (需要安装 FoF User Bio 插件)
+      sync_masquerade: 同步化装舞会属性？（需要安装 FoF Masquerade 插件）

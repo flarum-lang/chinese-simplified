@@ -218,11 +218,11 @@ core:
 
     # These translations are used by the composer when starting a discussion.
     composer_discussion:
-      body_placeholder: 写点什么吧...
+      body_placeholder: 说点什么吧...
       discard_confirmation: "主题尚未发布，确定要丢弃吗？"
       submit_button: 发布
       title: => core.ref.start_a_discussion
-      title_placeholder: 主题标题
+      title_placeholder: 标题
 
     # These translations are used by the composer when editing a post.
     composer_edit:
@@ -290,7 +290,7 @@ core:
       log_out_button: => core.ref.log_out
       profile_button: 个人主页
       search_placeholder: 搜索
-      settings_button: 设置
+      settings_button: 个人设置
       sign_up_link: => core.ref.sign_up
 
     # These translations are used on the index page, peripheral to the discussion list.
@@ -585,7 +585,7 @@ core:
     start_a_discussion: 发布主题
     username: 用户名
     users: 用户
-    write_a_reply: 写点什么吧...
+    write_a_reply: 说点什么吧...
     you: 你                                     # Referenced by flarum-likes.yml, flarum-mentions.yml
 
   ##

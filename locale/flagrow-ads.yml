@@ -8,16 +8,16 @@ flagrow-ads:
             save: 保存设置
         positions:
             under-header:
-                title: 顶部导航栏下方的广告位
+                title: 横幅广告位 - 位于网页顶部导航栏下方
                 placeholder: 请将广告代码粘贴到此处
             between-posts:
-                title: 主题页面帖子之间的广告位
+                title: 信息流广告位 - 位于每个主题中的帖子之间
                 placeholder: => flagrow-ads.admin.positions.under-header.placeholder
             under-nav-items:
-                title: 首页左侧侧边栏下方的广告位
+                title: 侧边栏广告位 - 首页左侧侧边栏下方的广告位
                 placeholder: => flagrow-ads.admin.positions.under-header.placeholder
         settings:
-            start-from-post: 指定从第几个帖子开始显示广告（0 表示从一楼开始显示广告）
-            between-n-posts: 指定每隔几个帖子显示一次广告
+            start-from-post: 信息流广告位设置 - 指定从第几个帖子开始显示广告（0 表示从一楼开始显示广告）
+            between-n-posts: 信息流广告位设置 - 指定每隔几个帖子显示一次广告
         tab:
             description: 广告位置及偏好设置

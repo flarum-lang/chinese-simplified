@@ -19,7 +19,7 @@ fof-linguist:
             all-locales: 定义其他语言的默认翻译
             hint: 原文内容：
         filters:
-            search: 搜索翻译文本...
+            search: 搜索翻译文本、翻译键...
             with-own-translations: 自定义翻译
             with-original-translations-in-locales: 有原文翻译
             without-original-translations-in-locales: 无原文翻译

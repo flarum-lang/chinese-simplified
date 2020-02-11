@@ -8,6 +8,6 @@ fof-formatting:
       Autoimage: 自动识别图片链接，并实时显示图片
       Autovideo: 自动识别视频链接，并在帖子中嵌入视频
       FancyPants: 使用精美的文本排版
-      HTMLEntities: 使用 <a href="http://t.cn/A6PjdWuG">HTML 字符实体</a>
-      MediaEmbed: 嵌入<a href="http://t.cn/A6Pjenoe">受支持的网站</a>的内容
+      HTMLEntities: 使用 HTML 字符实体（http://t.cn/A6PjdWuG）
+      MediaEmbed: 嵌入受支持的网站的内容（http://t.cn/A6Pjenoe）
       PipeTables: ASCII 风格表格

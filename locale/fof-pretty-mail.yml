@@ -17,9 +17,9 @@ fof-pretty-mail:
       notifications: 通知模板
       notificationHelp: '在通知模板中，建议您使用 "$forumStyle" 引用论坛 CSS 样式表，因为邮件中可能包含 BBCODE，引用论坛 CSS 可以顺利显示这些内容。这些模板也可以使用 "$user" 来引用收信人的完整用户资料。'
       help: |
-        请您注意，很多邮件服务商的邮件<strong>仅支持<a href="http://t.cn/A6PYUQZF">内联样式</a></strong>，考虑到不同服务商的兼容性，强烈建议您使用<strong>表格布局+内联样式</strong>代替 div 布局制作模板。
+        请您注意，很多邮件服务商的邮件<strong>仅支持 内联样式（http://t.cn/A6PYUQZF）</strong>，考虑到不同服务商的兼容性，强烈建议您使用<strong>表格布局+内联样式</strong>代替 div 布局制作模板。
         您在模板中可以使用变量，"$body" 代表邮件正文，"$forumStyle" 代表<strong>论坛所有的 CSS 样式</strong>，"$baseUrl" 代表论坛的 URL，"$settings" 允许您与 SettingsRepositoryInterface 进行交互，"$link" 代表邮件中的链接。请您参考默认模板来了解如何使用以上每个变量。
     css_settings:
       label: CSS 设置
-      help: 您可以在邮件 HTML 代码中嵌入论坛 CSS。请您谨慎开启此功能，在大多数邮件服务商中，邮件 HTML 仅支持<a href="http://t.cn/A6PYUQZF">内联样式</a>。
+      help: 您可以在邮件 HTML 代码中嵌入论坛 CSS。请您谨慎开启此功能，在大多数邮件服务商中，邮件 HTML 仅支持 内联样式（http://t.cn/A6PYUQZF）。
       switch_label: 包含所有论坛 CSS

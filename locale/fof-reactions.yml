@@ -23,7 +23,7 @@ fof-reactions:
         title: 自定义“态度”
         reactions: 已有“态度”
         Helptext: |
-          输入 emoji 的英文名称，您可以在论坛文本编辑器中打开 Emoji 表情选择器，鼠标停留到表情上方查看表情名称。或者输入 font-awesome （http://t.cn/RBcdSZ5）的名称并选择您喜欢的类型。
+          输入 emoji 的英文名称，您可以在论坛文本编辑器中打开 Emoji 表情选择器，鼠标停留到表情上方查看表情名称。或者输入 font-awesome 的名称并选择您喜欢的类型（http://t.cn/RBcdSZ5）。
         help:
           display: 描述
           identifier: 标识名

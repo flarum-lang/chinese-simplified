@@ -19,7 +19,7 @@ flagrow-analytics:
         piwikSiteId: Site ID
         piwikTrackSubdomain: 追踪所有 Flarum 子域访客
         piwikPrependDomain: 追踪时将网站域名放置在网页标题开头
-        piwikHideAliasUrl: 在「导出链（http://t.cn/A6PlyGj6）」报表中隐藏已知别名网页的点击
+        piwikHideAliasUrl: 在「导出链」报表中隐藏已知别名网页的点击（什么是导出链：http://t.cn/A6PlyGj6）
         piwikAliasUrl: 别名链接
         piwikTrackAccounts: 追踪独立访客账户
         piwikAuthToken: 验证 Token

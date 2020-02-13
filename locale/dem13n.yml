@@ -1,5 +1,6 @@
 # https://github.com/Dem13n/nickname-changer/blob/master/resources/locale/en.yml
 # 6307596 2 days ago
+
 # https://github.com/Dem13n/quad-theme/blob/master/resources/locale/en.yml
 # 146a68c
 # 2020-2-13 12:54:33 +0800
@@ -25,4 +26,3 @@ dem13n:
       title: Quad 主题设置
       fod: 新主题标记
       submit_button: => core.ref.save_changes
-

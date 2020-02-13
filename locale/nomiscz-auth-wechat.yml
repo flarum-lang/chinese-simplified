@@ -5,7 +5,7 @@
 nomiscz-auth-wechat:
   forum:
     buttons:
-      login: 微信登录
+      login: 微信账号登录
   admin:
     settings:
       title: 微信登录 - 设置

@@ -1,52 +1,52 @@
 # https://github.com/FriendsOfFlarum/reactions/blob/master/resources/locale/en.yml
 # a000ecd 2 days ago
-# 2020-2-6 00:18:41 +0800
+# 2020-2-13 23:15:13 +0800
 
 fof-reactions:
   forum:
-    disabled-reaction: 您暂时不能表达态度，请刷新后重试。
-    warning: 您的态度已转换为“赞”
-    notification: '{username} 以 {reaction} 的态度回应了您'
+    disabled-reaction: 您暂时不能发心情，请刷新后重试。
+    warning: 您的心情已转换为“赞”
+    notification: '{username} 戳了一个 {reaction} '
     settings:
-        notify_post_reacted_label: 某人回应了您的主题
-    reacting-own-post: 您不能表态自己的帖子
+        notify_post_reacted_label: 有人回应我的帖子
+    reacting-own-post: 您不能对自己的帖子发心情
 
   admin:
     permissions:
-        react_posts_label: 回应帖文
+        react_posts_label: 对帖子发心情
   
     nav:
-      desc: 添加自定义回应及更改设置
+      desc: 添加自定义心情及更改设置
 
     page:
       reactions:
-        title: 自定义“态度”
-        reactions: 已有“态度”
+        title: 自定义「心情」
+        reactions: 已有「心情」
         Helptext: |
-          输入 emoji 的英文名称，您可以在论坛文本编辑器中打开 Emoji 表情选择器，鼠标停留到表情上方查看表情名称。或者输入 font-awesome 的名称并选择您喜欢的类型（http://t.cn/RBcdSZ5）。
+          在标识名文本框中，输入 emoji 的英文名称，您可以在论坛文本编辑器中打开 Emoji 表情选择器，鼠标停留到表情上方查看表情名称。或者输入 font-awesome 的名称并选择您喜欢的类型（传送门：http://t.cn/RBcdSZ5）。
         help:
           display: 描述
           identifier: 标识名
 
       convert:
-        help: 如果您刚刚安装/更新了本插件，您的“态度”将被转换。若您已安装此插件，请放心忽略这条消息。
-        button: 转换旧的“态度”
-        converting: 正在转换“态度”中，请于几分钟后重载页面以查看进度。（转换时间取决于数据量大小）
-        converted: "成功转换了全部的 {number} 个赞"
+        help: 如果您刚刚安装或更新了本插件，所有帖子的「心情」将被转换。若您已安装此插件，请放心忽略这条消息。
+        button: 转换旧的「心情」
+        converting: 正在转换「心情」中，请于几分钟后重载页面以查看进度。（转换时间取决于数据量大小）
+        converted: "成功转换了所有 {number} 个赞"
 
       settings:
         save_settings: 保存设置
         integrations:
           legend: 整合
-          warning: 相同的回应<strong>不会</strong>转换为“喜欢”和“顶”
+          warning: 相同的心情<strong>不会</strong>转换为“喜欢”和“顶”
           gamification:
             legend: 游戏化
             upvoteLabel: 转换态度为“顶”
-            upvoteHelptext: 输入您想要自动转换为“顶”的态度的标识
+            upvoteHelptext: 输入您想要自动转换为“顶”的心情的标识
             downvoteLabel: 转换回应为“踩”
-            downvoteHelptext: 输入您想要自动转换为“踩”的态度的标识
+            downvoteHelptext: 输入您想要自动转换为“踩”的心情的标识
 
           likes:
             legend: 点赞
             Label: 转换态度为“赞”
-            Helptext: 想要将某个态度自动转换为“赞”吗？请在下方输入这个态度的标识名
+            Helptext: 想要将某个「心情」自动转换为“赞”吗？请在下方输入这个心情的标识名

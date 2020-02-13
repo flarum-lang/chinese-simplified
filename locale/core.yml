@@ -304,9 +304,9 @@ core:
 
     # These translations are used by the sorting control above the discussion list.
     index_sort:
-      latest_button: 最近回复
-      newest_button: 最新主题
-      oldest_button: 最旧主题
+      latest_button: 最新回复
+      newest_button: 近期主题
+      oldest_button: 历史主题
       relevance_button: 关联推荐
       top_button: 最多回复
 
@@ -348,7 +348,7 @@ core:
       now_link: 最新回复
       original_post_link: 一楼
       unread_text: "{count} 未读"
-      viewing_text: "{index} / {count}|{index} / {count}"
+      viewing_text: "{index} / {count} 条|{index} / {count} 条"
 
     # These translations are displayed between posts in the post stream.
     post_stream:
@@ -376,7 +376,7 @@ core:
       change_password_button: => core.ref.change_password
       notifications_heading: => core.ref.notifications
       notify_by_email_heading: => core.ref.email
-      notify_by_web_heading: 论坛通知
+      notify_by_web_heading: 通知
       notify_discussion_renamed_label: 我的主题标题被更改
       privacy_disclose_online_label: 允许他人看到我的在线状态
       privacy_heading: 隐私设置
@@ -444,9 +444,9 @@ core:
 
     # These translations are used to punctuate a series of items.
     series:
-      glue_text: ", "
-      three_text: "{first}, {second} 以及 {third}"
-      two_text: "{first} 及 {second}"
+      glue_text: "，"
+      three_text: "{first}，{second} 还有 {third}"
+      two_text: "{first} 和 {second}"
 
     # These translations are used to modify usernames.
     username:
@@ -486,7 +486,7 @@ core:
     # Translations in this namespace are displayed by the Log Out confirmation interface.
     log_out:
       log_out_button: => core.ref.log_out
-      log_out_confirmation: "确定要注销 {forum}?"
+      log_out_confirmation: "确定要退出登录 {forum}?"
       title: => core.ref.log_out
 
     # Translations in this namespace are displayed by the Reset Password interface.
@@ -565,10 +565,10 @@ core:
     icon_text: "输入任意一个 <a>Font Awesome</a> 图标名称，<strong>包括</strong>前缀 <code>fas fa-</code>"
     load_more: 加载更多
     log_in: 登录
-    log_out: 注销
+    log_out: 退出
     mark_all_as_read: 标记所有主题为已读
     next_page: 下一页
-    notifications: 通知
+    notifications: 消息通知
     okay: 确定                                  # Referenced by flarum-tags.yml
     password: 密码
     posts: 回复                                 # Referenced by flarum-statistics.yml
@@ -579,7 +579,7 @@ core:
     reset_your_password: 重置密码
     restore: 还原
     save_changes: 保存                          # Referenced by flarum-tags.yml
-    settings: 设置
+    settings: 个人设置
     sign_up: 注册
     some_others: "{count} 人|{count} 人"        # Referenced by flarum-likes.yml, flarum-mentions.yml
     start_a_discussion: 发布主题

@@ -136,10 +136,11 @@ php flarum cache:clear
   - kilowhat-mailing（[Mailing](https://discuss.flarum.org/d/20443)）
   - kvothe-sub（[Sign Up Button](https://discuss.flarum.org/d/18812)）
   - maicol07-sso（[Single Sign On (SSO)](https://discuss.flarum.org/d/21666)）
-  - migratetoflarum-canonical（[Canonical url redirect](https://discuss.flarum.org/d/19307)）
   - michaelBelgium-profile-views（[Profile views](https://discuss.flarum.org/d/7596)）
+  - migratetoflarum-canonical（[Canonical url redirect](https://discuss.flarum.org/d/19307)）
   - migratetoflarum-fake-data（[Fake Data](https://discuss.flarum.org/d/21160)）
   - migratetoflarum-vbulletin-redirects（[vbulletin Redirects](https://github.com/migratetoflarum/vbulletin-redirects)）
+  - minr-auth-qq（[QQ Login](https://github.com/minr/flarum-ext-auth-qq）
   - mybbtoflarum（[MyBB to flarum](https://discuss.flarum.org/d/5506)）
   - nikovonlas-webpush（[OneSignal web push notifications](https://discuss.flarum.org/d/20784)）
   - nomiscz-auth-steam（[Steam Auth](https://discuss.flarum.org/d/19750)）
@@ -155,6 +156,7 @@ php flarum cache:clear
   - shriker-pronouns（[Personal Pronouns](https://discuss.flarum.org/d/21188)）
   - simonxeko/follow-users（[Follow Users (WIP)](https://discuss.flarum.org/d/22628)）
   - simonxeko-preview-discussion（[Preview Discussion Post (WIP)](https://discuss.flarum.org/d/22636)）
+  - sycho-profile-cover（[Profile Cover](https://github.com/SychO9/flarum-profile-cover)）
   - the-turk-diff（[Diff for Flarum](https://discuss.flarum.org/d/22779)）
   - the-turk-password-strength（[Password Strength Indicator](https://discuss.flarum.org/d/22624)）
   - therealsujitk（[Show Password](https://discuss.flarum.org/d/22727)）

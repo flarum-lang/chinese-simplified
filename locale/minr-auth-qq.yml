@@ -1,0 +1,25 @@
+# https://github.com/minr/flarum-ext-auth-qq/blob/master/locale/en.yml
+# 46923b3 on 30 Dec 2019
+# 2020-2-13 23:54:03 +0800
+
+minr-auth-qq:
+
+  ##
+  # UNIQUE KEYS - The following keys are used in only one location each.
+  ##
+
+  # Translations in this namespace are used by the admin interface.
+  admin:
+
+    # These translations are used in the Google Settings modal dialog.
+    qq_settings:
+      client_id_label: App ID
+      client_secret_label: App Secret
+      title: QQ 登录 - 设置
+
+  # Translations in this namespace are used by the forum user interface.
+  forum:
+
+    # These translations are used in the Log In modal dialog.
+    log_in:
+      with_qq_button: QQ 账号登录

@@ -6,4 +6,4 @@ flarum_profile_views:
   forum:
     user:
       title_last_viewers: 最近访客
-      views_count_text: '被浏览 {viewcount} 次|被浏览 {viewcount} 次'
+      views_count_text: '访客总量 {viewcount}|访客总量 {viewcount}'

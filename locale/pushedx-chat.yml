@@ -23,11 +23,11 @@ pushedx-chat:
       chatdenied: 您所在的用户组没有权限参与聊天
   admin:
     permissions:
-      post: 发送
-      edit: 编辑
-      delete: 删除
+      post: 聊天室：发送消息
+      edit: 聊天室：编辑自己的消息
+      delete: 聊天室：删除自己的消息
       moderate:
-        delete: 删除消息
+        delete: 聊天室：删除消息
 
     settings:
       title: 聊天室设置

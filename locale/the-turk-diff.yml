@@ -7,25 +7,25 @@ the-turk-diff:
         oldVersion:             旧
         newVersion:             新
         differences:            变化
-        revisionInfo:           "已编辑 {revisionCount} 次，最新版本在顶部"
-        emptyText:              无修订
+        revisionInfo:           "已编辑 {revisionCount} 次，新到旧排序"
+        emptyText:              无修订记录
     admin:
         settings:
-            title:              差异 - 设置
+            title:              修订记录 - 设置
             displayMode:        显示模式 (HTML)
             customHTML:         不带行号的代码高亮视图
             tabularHTML:        带行号的代码高亮视图
             renderMode:         对比模式
             inline:             单栏对比 (HTML)
             sideBySide:         双栏对比 (HTML)
-            neighborLines:      相邻行数
-            neighborLinesHelp:  设置要显示的相邻行数。
+            neighborLines:      上下文行数
+            neighborLinesHelp:  设置要显示的被修改段落的上下文行数。
             onlyUnsigned:       请输入<strong>无符号整数</strong>！
-            detailLevel:        细节程度
-            noneLevel:          None-level
-            lineLevel:          行级变化
-            wordLevel:          单词级变化
-            charLevel:          字符级变化
+            detailLevel:        细节程度（推荐字符级）
+            noneLevel:          无
+            lineLevel:          行级
+            wordLevel:          单词级
+            charLevel:          字符级
             seperateBlock:      Show a separator between different diff hunks in HTML renderers
             notice:             <strong>细节程度</strong>和<strong>相邻行数</strong>设置的更改不会影响以前计算的历史版本变化。
         permissions:

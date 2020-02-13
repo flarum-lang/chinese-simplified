@@ -42,6 +42,8 @@ php flarum cache:clear
   - amaurycarrade-syndication（[Syndication extension](https://discuss.flarum.org/d/4395)）
   - antoinefr-money（[Money extension](https://discuss.flarum.org/d/4699)）
   - antoinefr-online（[Online users extension](https://discuss.flarum.org/d/8302)）
+  - askvortsov-auth-sync（[Flarum Auth Sync](https://discuss.flarum.org/d/22759)）
+  - askvortsov-saml（[Flarum SAML](https://discuss.flarum.org/d/22757)）
   - backtowebsite（[Back to Website Button](https://discuss.flarum.org/d/18285)）
   - clarkwinkelmann-author-change（[Discussion and post author change](https://discuss.flarum.org/d/21731)）
   - clarkwinkelmann-create-user-modal（[Create User Modal](https://discuss.flarum.org/d/22608)）
@@ -141,6 +143,7 @@ php flarum cache:clear
   - mybbtoflarum（[MyBB to flarum](https://discuss.flarum.org/d/5506)）
   - nikovonlas-webpush（[OneSignal web push notifications](https://discuss.flarum.org/d/20784)）
   - nomiscz-auth-steam（[Steam Auth](https://discuss.flarum.org/d/19750)）
+  - nomiscz-auth-wechat（[WeChat Login](https://discuss.flarum.org/d/6038)）
   - perspective（[Perspective API](https://discuss.flarum.org/d/21784)）
   - pushedx-chat（[Realtime chat with Pusher (Alpha)](https://discuss.flarum.org/d/5133-wip-extension-realtime-chat-with-pusher/12)）
   - reflar-cookie-consent（[Cookie Consent](https://discuss.flarum.org/d/10395)）
@@ -152,6 +155,7 @@ php flarum cache:clear
   - shriker-pronouns（[Personal Pronouns](https://discuss.flarum.org/d/21188)）
   - simonxeko/follow-users（[Follow Users (WIP)](https://discuss.flarum.org/d/22628)）
   - simonxeko-preview-discussion（[Preview Discussion Post (WIP)](https://discuss.flarum.org/d/22636)）
+  - the-turk-diff（[Diff for Flarum](https://discuss.flarum.org/d/22779)）
   - the-turk-password-strength（[Password Strength Indicator](https://discuss.flarum.org/d/22624)）
   - therealsujitk（[Show Password](https://discuss.flarum.org/d/22727)）
   - tituspijean-auth-ldap（[LDAP Login](https://discuss.flarum.org/d/9515)）

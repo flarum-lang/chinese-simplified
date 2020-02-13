@@ -1,8 +1,8 @@
 # https://github.com/Dem13n/nickname-changer/blob/master/resources/locale/en.yml
-# b388c26
+# 6307596 2 days ago
 # https://github.com/Dem13n/quad-theme/blob/master/resources/locale/en.yml
 # 146a68c
-# Sun, 02 Jan 2020 21:15:22 +0800
+# 2020-2-13 12:54:33 +0800
 
 dem13n:
   forum:
@@ -16,6 +16,10 @@ dem13n:
       settings_modal_title: 昵称修改设置
       unlimited_nickname_change: 无限制修改昵称
       allow_nickname_change: 允许修改昵称
+      allow_nickname_unique: 允许昵称重名
+      regex: 用于验证的正则表达式
+      min_char: 昵称的最小字符数
+      max_char: 昵称的最大字符数
       submit_button: => core.ref.save_changes
     quad_theme:
       title: Quad 主题设置

@@ -1,6 +1,6 @@
 # https://github.com/FriendsOfFlarum/best-answer/blob/master/resources/locale/en.yml
-# e1c918c 7 hours ago
-# 2020-2-6 14:21:43 +0800
+# 61dfcb0 5 days ago
+# 2020-2-13 13:39:05 +0800
 
 fof-best-answer:
     admin:
@@ -11,6 +11,11 @@ fof-best-answer:
             title: FoF 最佳回复
             allow_select_own_post: 允许用户选择自己的回复
             select_best_answer_reminder_days: 于 n 天后提醒用户选择最佳回复
+            schedule_on_one_server: 将 “onOneServer()” 方法用于任务计划的部署（需要 PHP 扩展：Redis / Memcache）
+            schedule_stop_overnight: 夜间免打扰（服务器时间晚上 9 点至早上 8 点，禁用提醒服务）
+            schedule_log_output: 在日志中添加计划任务的执行
+            remind_tag_ids: 若要将提醒功能仅用于特定标签，请在此输入标签 ID （英文逗号分隔）
+            use_alt_ui: 切换布局（“最佳答案”标志移动到帖子的页脚）
     forum:
         answered_badge: 已解决
         this_best_answer: 设为最佳回复

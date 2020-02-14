@@ -26,7 +26,7 @@ fof-best-answer:
         notification:
           content: 如果您的问题已解决请选择一个最佳回复
           awarded: 您的帖子被 {username} 选为最佳答案
-          awarded-email: 您的帖子被选为最佳答案
-          select-email-title: 您是否设法解决了问题？
+          awarded_email: 您的帖子被选为最佳答案
+          select_email_title: 您是否设法解决了问题？
           preferences:
-            awarded-best-answer: 当有人将我的帖子选为最佳答案
+            awarded_best_answer: 当有人将我的帖子选为最佳答案

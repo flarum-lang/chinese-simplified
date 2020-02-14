@@ -1,6 +1,6 @@
 # https://github.com/the-turk/flarum-diff/blob/master/locale/en.yml
 # b68c0b0 2 days ago
-# 2020-2-13 12:57:39 +0800
+# 2020-2-15 00:39:40 +0800
 
 the-turk-diff:
     forum:
@@ -12,21 +12,21 @@ the-turk-diff:
     admin:
         settings:
             title:              修订记录 - 设置
-            displayMode:        显示模式 (HTML)
+            displayMode:        显示模式
             customHTML:         不带行号的代码高亮视图
             tabularHTML:        带行号的代码高亮视图
-            renderMode:         对比模式
-            inline:             单栏对比 (HTML)
-            sideBySide:         双栏对比 (HTML)
+            renderMode:         对比视图
+            inline:             单栏对比
+            sideBySide:         双栏对比
             neighborLines:      上下文行数
-            neighborLinesHelp:  设置要显示的被修改段落的上下文行数。
+            neighborLinesHelp:  被修改段落（差异块）的上下文行数。若设置为 2 ，则表示会在对比视图中加入两行被修改段落的上文和下文内容。
             onlyUnsigned:       请输入<strong>无符号整数</strong>！
             detailLevel:        细节程度（推荐字符级）
             noneLevel:          无
             lineLevel:          行级
             wordLevel:          单词级
             charLevel:          字符级
-            seperateBlock:      Show a separator between different diff hunks in HTML renderers
-            notice:             <strong>细节程度</strong>和<strong>相邻行数</strong>设置的更改不会影响以前计算的历史版本变化。
+            seperateBlock:      在相距很远的两个被修改段落（差异块）之间加入灰色分隔符（示例：http://t.cn/A6hcIybR）。
+            notice:             <strong>细节程度</strong> 和 <strong>上下文行数</strong> 设置的更改，不会影响以前计算的历史版本文本差异。
         permissions:
             viewEditHistory:    查看编辑记录

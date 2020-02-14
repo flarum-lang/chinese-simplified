@@ -33,4 +33,4 @@ fof-merge-discussions:
       deleting_failed: 删除空主题失败。
 
   ref:
-    merge: 合并
+    merge: 合并主题

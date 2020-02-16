@@ -30,7 +30,7 @@ flarum-approval:
 
     # These translations are used by the post control buttons.
     post_controls:
-      approve_button: 审核
+      approve_button: 通过审核
 
   ##
   # REUSED TRANSLATIONS - These keys should not be used directly in code!
@@ -38,4 +38,4 @@ flarum-approval:
 
   # Translations in this namespace are referenced by two or more unique keys.
   ref:
-    awaiting_approval: 等待审核中
+    awaiting_approval: 审核中

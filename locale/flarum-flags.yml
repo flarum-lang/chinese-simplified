@@ -14,12 +14,12 @@ flarum-flags:
     # These translations are used in the Permissions page of the admin interface.
     permissions:
       flag_posts_label: 举报主题
-      view_flags_label: 查看被举报的主题
+      view_flags_label: 查看小黑屋
 
     # These translations are used in the Flags Settings modal dialog.
     settings:
       guidelines_url_label: 论坛守则链接
-      title: 举报设置
+      title: 小黑屋设置
 
   # Translations in this namespace are used by the forum user interface.
   forum:
@@ -47,7 +47,7 @@ flarum-flags:
 
     # These translations are used by the frame displayed around flagged posts.
     post:
-      dismiss_flag_button: 撤销举报
+      dismiss_flag_button: 撤销举报标记
       flagged_by_text: "已被 {username} 举报"
       flagged_by_with_reason_text: "因 {reason} 被 {username} 举报"
 
@@ -62,4 +62,4 @@ flarum-flags:
   # Translations in this namespace are referenced by two or more unique keys.
   ref:
     flag_post: 举报主题
-    flagged_posts: 被举报的主题
+    flagged_posts: 小黑屋

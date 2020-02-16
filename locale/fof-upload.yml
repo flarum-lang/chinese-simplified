@@ -67,8 +67,8 @@ fof-upload:
         title: 图片水印功能
         toggle: 开启水印
     permissions:
-      download_label: 下载文件
-      upload_label: 文件上传设置
+      download_label: 允许下载文件
+      upload_label: 允许上传文件
     templates:
       file: 默认文件下载模板
       file_description: |

@@ -1,0 +1,36 @@
+# https://github.com/FriendsOfFlarum/filter/blob/master/resources/locale/en.yml
+# ed632db 6 hours ago
+# 2020-2-16 15:12:58 +0800
+
+fof-filter:
+    forum:
+        flagger_name: 自动审查
+        flaged_text: 包含敏感词
+    admin:
+        title: 过滤器
+        help: 输入要过滤的敏感词，用 半角逗号+空格 分隔。
+        help2: 冷却时间内（分钟）的重复帖将会被合并。
+        email_help: 违规贴被自动标记后的通知邮件正文，支持 HTML 或纯文本。
+        filter_label: 要过滤的敏感词
+        countLabel: 过滤敏感度
+        cooldownLabel: Merge Post Cooldown
+        input:
+            placeholder: 输入敏感词
+            filter_title: 要过滤的敏感词
+            email_label: 邮箱设置
+            switch: 
+              email: 当帖子被过滤时，向用户发送通知邮件。
+              merge: 自动合并重复的帖子
+            email_subject: 主题
+            email_body: 正文
+        nav:
+            text: 过滤器
+            desc: 按照敏感词过滤帖子
+        email:
+            default_subject: 您刚刚发布的帖子已被删除
+            default_text: |
+                检测到您的帖子包含敏感词、违禁词，已被自动删除。
+                
+                如果您对此有异议，请联系管理员申请人工核查。如果确实没有违规内容，我们将恢复您的帖子。
+                
+                感谢您的理解与配合！

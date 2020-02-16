@@ -579,7 +579,7 @@ core:
     reset_your_password: 重置密码
     restore: 还原
     save_changes: 保存                          # Referenced by flarum-tags.yml
-    settings: 个人设置
+    settings: 设置
     sign_up: 注册
     some_others: "{count} 人|{count} 人"        # Referenced by flarum-likes.yml, flarum-mentions.yml
     start_a_discussion: 发布主题

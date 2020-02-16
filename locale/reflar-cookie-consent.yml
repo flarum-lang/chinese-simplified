@@ -1,6 +1,6 @@
 # https://github.com/ReFlar/cookie-consent/blob/master/resources/locale/en.yml
 # e04f359 on 13 Apr 2019
-# 2020-2-3 11:58:32 +0800
+# 2020-2-15 23:41:22 +0800
 
 reflar-cookie-consent:
   admin:
@@ -23,9 +23,9 @@ reflar-cookie-consent:
       buttonBackgroundColor: 按钮背景颜色
       buttonTextColor: 按钮文本颜色
 
-    themes:
-        blocky: 方形
-        edgeless: 无边框
-        classic: 经典
-        custom: 自定义
-        no_css: 无风格
+      themes:
+          blocky: 方形
+          edgeless: 无边框
+          classic: 经典
+          custom: 自定义
+          no_css: 无风格

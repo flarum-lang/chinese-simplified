@@ -29,4 +29,4 @@ fof-best-answer:
           awarded_email: 您的帖子被选为最佳答案
           select_email_title: 您是否设法解决了问题？
           preferences:
-            awarded_best_answer: 当有人将我的帖子选为最佳答案
+            awarded_best_answer: 有人将我的帖子选为最佳回复

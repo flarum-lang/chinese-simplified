@@ -1,6 +1,6 @@
 # https://github.com/oaklinq/flarum-signup-button/blob/master/resources/locale/en.yml
 # ef2ffe3 on 17 Feb 2019
-# 2020年2月3日11:02:05 +0800
+# 2020-2-18 23:28:01 +0800
 
 kvothe-sub:
   forum:
@@ -10,4 +10,4 @@ kvothe-sub:
       title: 注册按钮设置
       field:
         hide-desktop: 不在桌面端显示注册按钮
-        replace-discussion-button: 替换首页发布主题按钮
+        replace-discussion-button: 替换未登录时首页的发帖按钮

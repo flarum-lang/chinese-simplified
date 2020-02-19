@@ -1,6 +1,6 @@
 # https://github.com/flarum/lang-english/blob/master/locale/core.yml
 # 80328f1
-# Sun, 02 Jan 2020 21:07:19 +0800
+# 2020-2-18 23:06:26 +0800
 
 core:
 
@@ -101,6 +101,7 @@ core:
       mail_encryption_label: 加密方式
       mail_host_label: 主机
       mail_mailgun_domain_label: 域名
+      mail_mailgun_region_label: 区域
       mail_mailgun_secret_label: Secret key
       mail_mandrill_secret_label: Secret key
       mail_password_label: => core.ref.password
@@ -147,9 +148,9 @@ core:
 
     # These translations are used in the Permissions page of the admin interface.
     permissions:
-      allow_post_editing_label: 编辑主题内容
+      allow_post_editing_label: 编辑帖子内容
       allow_renaming_label: 更改主题标题
-      create_heading: 主题相关
+      create_heading: 帖子相关
       delete_discussions_forever_label: 永久删除主题
       delete_discussions_label: 删除主题
       delete_posts_forever_label: 永久删除回复
@@ -161,10 +162,10 @@ core:
       new_group_button: 添加用户组
       participate_heading: 操作相关
       read_heading: 访问相关
-      rename_discussions_label: 更改主题标题
+      rename_discussions_label: 更改自己的主题标题
       reply_to_discussions_label: 回复
       sign_up_label: 注册
-      start_discussions_label: 发布主题
+      start_discussions_label: 发表新主题
       view_discussions_label: 查看主题
       view_last_seen_at_label: 查看用户上次在线时间
       view_post_ips_label: 查看 IP 地址
@@ -240,10 +241,10 @@ core:
 
     # These translations are used by the discussion control buttons.
     discussion_controls:
-      cannot_reply_button: 无法回复
-      cannot_reply_text: 您没有权限回复此主题。
+      cannot_reply_button: 回复已关闭
+      cannot_reply_text: 您没有权限回复这个贴子。
       delete_button: => core.ref.delete
-      delete_confirmation: "确定删除这个主题？"
+      delete_confirmation: "确定删除这个帖子？"
       delete_forever_button: => core.ref.delete_forever
       log_in_to_reply_button: 登录以回复
       rename_button: => core.ref.rename
@@ -296,8 +297,8 @@ core:
     # These translations are used on the index page, peripheral to the discussion list.
     index:
       all_discussions_link: => core.ref.all_discussions
-      cannot_start_discussion_button: 无法发布主题
-      mark_all_as_read_confirmation: "确定要标记所有主题为已读吗？"
+      cannot_start_discussion_button: 发帖功能已关闭
+      mark_all_as_read_confirmation: "确定要标记所有帖子为已读吗？"
       mark_all_as_read_tooltip: => core.ref.mark_all_as_read
       refresh_tooltip: 刷新
       start_discussion_button: => core.ref.start_a_discussion
@@ -305,8 +306,8 @@ core:
     # These translations are used by the sorting control above the discussion list.
     index_sort:
       latest_button: 最新回复
-      newest_button: 近期主题
-      oldest_button: 历史主题
+      newest_button: 新鲜出炉
+      oldest_button: 陈年旧贴
       relevance_button: 关联推荐
       top_button: 最多回复
 
@@ -378,7 +379,7 @@ core:
       notify_by_email_heading: => core.ref.email
       notify_by_web_heading: 通知
       notify_discussion_renamed_label: 我的主题标题被更改
-      privacy_disclose_online_label: 允许他人看到我的在线状态
+      privacy_disclose_online_label: 公开我的在线状态
       privacy_heading: 隐私设置
       title: => core.ref.settings
 
@@ -396,7 +397,7 @@ core:
     # These translations are used in the user profile page and profile popup.
     user:
       avatar_remove_button: => core.ref.remove
-      avatar_upload_button: 上传头像
+      avatar_upload_button: 上传
       avatar_upload_tooltip: 上传新头像
       discussions_link: => core.ref.discussions
       in_discussion_text: "于 {discussion}"
@@ -566,7 +567,7 @@ core:
     load_more: 加载更多
     log_in: 登录
     log_out: 退出
-    mark_all_as_read: 标记所有主题为已读
+    mark_all_as_read: 将所有帖子标记为已读
     next_page: 下一页
     notifications: 消息通知
     okay: 确定                                  # Referenced by flarum-tags.yml
@@ -582,7 +583,7 @@ core:
     settings: 设置
     sign_up: 注册
     some_others: "{count} 人|{count} 人"        # Referenced by flarum-likes.yml, flarum-mentions.yml
-    start_a_discussion: 发布主题
+    start_a_discussion: 发贴
     username: 用户名
     users: 用户
     write_a_reply: 说点什么吧...

@@ -1,15 +1,15 @@
 # https://github.com/FriendsOfFlarum/filter/blob/master/resources/locale/en.yml
 # ed632db 6 hours ago
-# 2020-2-16 17:06:14 +0800
+# 2020-2-18 00:22:26 +0800
 
 fof-filter:
     forum:
         flagger_name: 该贴包含敏感词，已被隐藏
         flaged_text: 包含敏感词
     admin:
-        title: FoF 过滤器 - 设置
+        title: FoF 过滤器
         help: 请输入要过滤的敏感词，用 半角逗号+空格 分隔。当用户发表的帖子内容包含敏感词时，自动送入审核列表，审核通过后才会公开。
-        help2: 在冷却时间内合并多个重复帖。防止用户发帖时因触发敏感词，导致帖子送入审核列表后，用户在不知情的情况下再次发同样内容的帖子。
+        help2: 当用户发布主题/回复主题后，在冷却时间内，其在此主题下的多次回复将被合并为一个帖子。此设置全局有效，与帖子内容是否含敏感词无关。
         email_help: 帖子触发敏感词需要审核时，发送邮件通知用户，支持 HTML 或纯文本。
         filter_label: 自定义敏感词词库
         countLabel: 过滤敏感度
@@ -20,12 +20,12 @@ fof-filter:
             email_label: 邮件通知设置
             switch: 
               email: 当帖子被过滤时，向用户发送通知邮件。
-              merge: 自动合并重复帖
+              merge: 防刷屏
             email_subject: 主题
             email_body: 正文
         nav:
             text: 过滤器
-            desc: 按照敏感词过滤帖子
+            desc: 自动敏感词过滤
         email:
             default_subject: 您的帖子已被隐藏
             default_text: |

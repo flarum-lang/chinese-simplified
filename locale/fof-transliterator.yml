@@ -1,15 +1,15 @@
 # https://github.com/FriendsOfFlarum/transliterator/blob/master/locale/en.yml
 # 85f3851 on 25 Aug 2019
-# 2020-2-3 17:18:53 +0800
+# 2020-2-18 23:26:49 +0800
 
 fof-transliterator:
   admin:
     settings:
-      title: FoF 网址后缀转换设置
-      parse_button: 转换已有主题
-      result: "已转换 {count} 个主题|已转换 {count} 个主题"
+      title: FoF 网址后缀转译设置
+      parse_button: 转译已有主题
+      result: "已转译 {count} 个主题|已转译 {count} 个主题"
 
-      package_label: 转换包
+      package_label: 转译包
       package_behat_label: Behat（默认）
       package_php_label: PHP (需要安装 PHP 扩展：ext-intl)
       package_php2_label: "PHP #2 (需要安装 PHP 扩展： ext-intl)"

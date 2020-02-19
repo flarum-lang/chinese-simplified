@@ -31,7 +31,7 @@ flarum-flags:
       reason_inappropriate_label: 不雅
       reason_inappropriate_text: "此帖包含攻击性、侮辱性语言或违反了<a>论坛守则</a>"
       reason_off_topic_label: "跑题"
-      reason_off_topic_text: 此帖与当前的主题讨论无关，应当移动到其他地方。
+      reason_off_topic_text: 此帖与当前的主题无关，应当移动到其他地方。
       reason_other_label: 其他
       reason_spam_label: 垃圾
       reason_spam_text: 这是一个广告贴。

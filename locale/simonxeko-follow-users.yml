@@ -1,6 +1,6 @@
 # https://github.com/simonxeko/follow-users/blob/master/resources/locale/en.yml
 # 7b4c395 8 days ago
-# 2020-2-3 19:56:29 +0800
+# 2020-2-19 00:58:02 +0800
 
 simonxeko-follow-users:
 
@@ -9,7 +9,7 @@ simonxeko-follow-users:
       can_not_be_followed_label: 不允许被关注
 
   forum:
-    profile_link: 已关注
+    profile_link: 关注的人
     user_controls:
       follow_button: 关注
       follow_confirmation: 确定要关注这个用户吗？
@@ -51,7 +51,7 @@ simonxeko-follow-users:
 
   ref:
     follow: 关注
-    following: 已关注
-    hiding: 已隐藏
-    ignoring: 已忽略
-    lurking: 吃瓜中
+    following: 关注中
+    hiding: 隐藏中
+    ignoring: 忽略中
+    lurking: 暗中观察

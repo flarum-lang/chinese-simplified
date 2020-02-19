@@ -1,6 +1,6 @@
 # https://github.com/FriendsOfFlarum/follow-tags/blob/master/resources/locale/en.yml
 # b004903 on 29 Jun 2019
-# 2020-2-3 12:53:08 +0800
+# 2020-2-18 23:24:26 +0800
 
 fof-follow-tags:
   forum:
@@ -19,7 +19,7 @@ fof-follow-tags:
       following_button: => fof-follow-tags.ref.following
       following_text: 有新主题时提醒
       hiding_button: => fof-follow-tags.ref.hiding
-      hiding_text: 在全部主题页面中隐藏主题
+      hiding_text: 在全部主题页面中隐藏旗下主题
       ignoring_button: => fof-follow-tags.ref.ignoring
       ignoring_text: 从不提醒
       lurking_button: => fof-follow-tags.ref.lurking
@@ -39,7 +39,7 @@ fof-follow-tags:
 
   ref:
     follow: 关注
-    following: 已关注
-    hiding: 已隐藏
-    ignoring: 已忽略
+    following: 关注中
+    hiding: 隐藏中
+    ignoring: 忽略中
     lurking: 吃瓜中

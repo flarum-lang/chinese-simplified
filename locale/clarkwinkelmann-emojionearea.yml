@@ -1,6 +1,6 @@
 # https://github.com/clarkwinkelmann/flarum-ext-emojionearea/blob/master/locale/en.yml
 # 9360095
-# Sun, 02 Jan 2020 15:53:03 +0800
+# 2020-2-18 22:06:44 +0800
 
 clarkwinkelmann-emojionearea:
     forum:
@@ -10,9 +10,9 @@ clarkwinkelmann-emojionearea:
     admin:
         settings:
             title: Emoji 表情设置
-            enableSearch: 开启搜索
-            enableRecent: 开启最近使用
-            enableTones: 开启肤色选择
+            enableSearch: 显示搜索框
+            enableRecent: 显示最近使用
+            enableTones: 允许肤色选择
             filtersPosition: 在底部显示分类
             searchPosition: 在底部显示搜索和肤色
             hideFlarumButton: 隐藏 FLarum 原生表情按钮

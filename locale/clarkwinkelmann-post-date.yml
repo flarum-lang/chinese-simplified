@@ -1,16 +1,16 @@
 # https://github.com/clarkwinkelmann/flarum-ext-post-date/blob/master/resources/locale/en.yml
 # ee594a2
-# Sun, 02 Jan 2020 16:03:35 +0800
+# 2020-2-18 22:11:56 +0800
 
 clarkwinkelmann-post-date:
     forum:
         post_controls:
-            edit_button: 编辑时间
+            edit_button: 修改日期
         modal:
-            title: 编辑发帖时间
-            created_at: 发布时间
-            edited_at: 编辑时间
+            title: 修改日期
+            created_at: 发布日期
+            edited_at: 编辑日期
             submit: 保存
     admin:
         permissions:
-            edit-post-date: 编辑发帖时间
+            edit-post-date: 修改发帖、编辑日期

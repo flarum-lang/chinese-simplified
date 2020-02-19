@@ -1,14 +1,14 @@
 # https://github.com/clarkwinkelmann/flarum-ext-author-change/blob/master/resources/locale/en.yml
 # 2f32219
-# Sun, 02 Jan 2020 15:44:14 +0800
+# 2020-2-18 22:06:32 +0800
 
 clarkwinkelmann-author-change:
     forum:
         controls:
             edit: 修改作者
         modal:
-            title-post: 修改回帖作者
-            title-discussion: 修改主题作者
+            title-post: 变更回帖者
+            title-discussion: 变更发帖者
             search_placeholder: 搜索用户
             submit: 保存
             cancel: 取消
@@ -18,4 +18,4 @@ clarkwinkelmann-author-change:
             no-results: 用户不存在，请检查输入是否有误
     admin:
         permissions:
-            edit: 更新主题及回帖作者
+            edit: 更新发帖及回帖者

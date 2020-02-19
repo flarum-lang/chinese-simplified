@@ -4,8 +4,8 @@
 
 the-turk-diff:
     forum:
-        oldVersion:             旧
-        newVersion:             新
+        oldVersion:             "　旧"
+        newVersion:             "　新"
         differences:            变化
         revisionInfo:           "已编辑 {revisionCount} 次，新到旧排序"
         emptyText:              无修订记录
@@ -26,7 +26,7 @@ the-turk-diff:
             lineLevel:          行级
             wordLevel:          单词级
             charLevel:          字符级
-            seperateBlock:      在相距很远的两个被修改段落（差异块）之间加入灰色分隔符（示例：http://t.cn/A6hcIybR）。
+            separateBlock:      在相距很远的两个被修改段落（差异块）之间加入灰色分隔符（示例：http://t.cn/A6hcIybR）。
             notice:             <strong>细节程度</strong> 和 <strong>上下文行数</strong> 设置的更改，不会影响以前计算的历史版本文本差异。
         permissions:
             viewEditHistory:    查看编辑记录

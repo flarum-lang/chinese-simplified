@@ -1,6 +1,6 @@
 # https://github.com/HiQStd/flarum-ext-close/blob/master/resources/locale/en.yml
 # db3b7f0 on 17 Oct 2019
-# 2020年2月3日00:11:26 +0800
+# 2020-2-18 23:10:04 +0800
 
 flarum-ext-close:
 
@@ -13,7 +13,7 @@ flarum-ext-close:
 
     # These translations are used in the Permissions page of the admin interface.
     permissions:
-      close_discussions_label: 关闭主题讨论
+      close_discussions_label: 关闭主题
 
   # Translations in this namespace are used by the forum user interface.
   forum:
@@ -33,8 +33,8 @@ flarum-ext-close:
 
     # These translations are displayed between posts in the post stream.
     post_stream:
-      discussion_closed_text: "{username} 已关闭主题讨论。"
-      discussion_unclosed_text: "{username} 已打开主题讨论。"
+      discussion_closed_text: "{username} 已关闭此主题。"
+      discussion_unclosed_text: "{username} 已打开此主题。"
 
       closed_discussion_title: 这个主题已关闭
       closed_discussion_text: 内容仅主题发布者可见。
@@ -44,4 +44,4 @@ flarum-ext-close:
 
     # These translations are used in the Settings page.
     settings:
-      notify_discussion_closed_label: 有人关闭了我发布的主题
+      notify_discussion_closed_label: 有人关闭了我的主题

@@ -11,7 +11,7 @@ bazaar:
             close: 关闭
             report_issue: 报告问题
         nav:
-            title: 巴扎
+            title: 巴扎市场
             description: 插件市场
         header:
             extensions: 浏览插件

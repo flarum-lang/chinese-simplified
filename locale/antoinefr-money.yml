@@ -1,15 +1,15 @@
 # https://github.com/AntoineFr/flarum-ext-money/blob/master/locale/en.yml
 # 389e8b0
-# Sun, 02 Jan 2020 15:31:26 +0800
+# 2020-2-18 19:15:57 +0800
 
 antoinefr-money:
   admin:
     settings:
       title: 设置
-      moneyforpost: 每条回复可获取
-      moneyfordiscussion: 每篇主题可获取
+      moneyforpost: 回帖一次可获得
+      moneyfordiscussion: 发一次新帖可获得
       moneyname: 货币名称（例如： [money] 元）
-      postminimumlength: 可获取奖励的最少帖子正文字数（0 表示不限制）
+      postminimumlength: 可获得奖励的最少帖子正文字数（0 表示不限制）
       noshowzero: 若值为 0 则不显示
     permissions:
       edit_money_label: 修改资产

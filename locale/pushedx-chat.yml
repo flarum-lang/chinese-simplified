@@ -5,7 +5,7 @@
 pushedx-chat:
   forum:
     toolbar:
-      title: 在线聊天室
+      title: 聊天室
       enable_sounds: 开启声音
       disable_sounds: 关闭声音
       enable_notifications: 开启通知

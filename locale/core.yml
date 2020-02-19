@@ -149,7 +149,7 @@ core:
     # These translations are used in the Permissions page of the admin interface.
     permissions:
       allow_post_editing_label: 编辑帖子内容
-      allow_renaming_label: 更改主题标题
+      allow_renaming_label: 更改自己的主题标题
       create_heading: 帖子相关
       delete_discussions_forever_label: 永久删除主题
       delete_discussions_label: 删除主题
@@ -162,10 +162,10 @@ core:
       new_group_button: 添加用户组
       participate_heading: 操作相关
       read_heading: 访问相关
-      rename_discussions_label: 更改自己的主题标题
+      rename_discussions_label: 更改主题标题
       reply_to_discussions_label: 回复
       sign_up_label: 注册
-      start_discussions_label: 发表新主题
+      start_discussions_label: 发布主题
       view_discussions_label: 查看主题
       view_last_seen_at_label: 查看用户上次在线时间
       view_post_ips_label: 查看 IP 地址

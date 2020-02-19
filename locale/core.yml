@@ -309,7 +309,7 @@ core:
       newest_button: 新鲜出炉
       oldest_button: 陈年旧贴
       relevance_button: 关联推荐
-      top_button: 最多回复
+      top_button: 热门回复
 
     # These translations are used in the Log In modal dialog.
     log_in:
@@ -346,7 +346,7 @@ core:
 
     # These translations are used in the scrubber to the right of the post stream.
     post_scrubber:
-      now_link: 最新回复
+      now_link: 底楼
       original_post_link: 一楼
       unread_text: "{count} 未读"
       viewing_text: "{index} / {count} 条|{index} / {count} 条"

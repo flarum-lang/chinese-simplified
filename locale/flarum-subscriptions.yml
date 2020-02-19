@@ -1,6 +1,6 @@
 # https://github.com/flarum/flarum-ext-english/blob/master/locale/flarum-subscriptions.yml
 # c28c3a6 on 4 Jun 2016
-# 2020年2月3日00:42:25 +0800
+# 2020-2-19 22:45:30 +0800
 
 flarum-subscriptions:
 
@@ -54,5 +54,5 @@ flarum-subscriptions:
   # Translations in this namespace are referenced by two or more unique keys.
   ref:
     follow: 关注
-    following: 已关注
-    ignoring: 忽视
+    following: 关注中
+    ignoring: 忽略中

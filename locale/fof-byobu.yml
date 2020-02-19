@@ -1,6 +1,6 @@
 # https://github.com/FriendsOfFlarum/byobu/blob/master/resources/locale/en.yml
 # 2c66711 25 minutes ago
-# 2020-2-19 18:04:27 +0800
+# 2020-2-19 22:45:46 +0800
 
 fof-byobu:
     forum:
@@ -10,7 +10,7 @@ fof-byobu:
         buttons:
             add_recipients: 公开
             submit: 确定
-            edit_recipients: 编辑成员
+            edit_recipients: 谁可以看
             send_pd: "向 {username} 发起私聊"
             cancel: 取消
         composer_private_discussion:
@@ -29,7 +29,7 @@ fof-byobu:
                 groups: 用户组
         modal:
             titles:
-                update_recipients: 更新私人讨论“{title}”的成员 
+                update_recipients: 更新私人讨论「{title}」的成员
                 add_recipients: 邀请用户加入讨论
             help:
                 add_recipients: 此讨论仅选中的用户可见。至少添加一个用户（您除外）才能发起私人讨论。

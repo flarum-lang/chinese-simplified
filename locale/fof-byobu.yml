@@ -1,5 +1,5 @@
 # https://github.com/FriendsOfFlarum/byobu/blob/master/resources/locale/en.yml
-# d002f4d 12 hours ago
+# 2c66711 25 minutes ago
 # 2020-2-19 18:04:27 +0800
 
 fof-byobu:
@@ -62,6 +62,7 @@ fof-byobu:
 
         settings:
             byobu_users_page_label: 将私人讨论添加到个人主页
+            nothing_here: 这里空空如也
 
     notifications:
         private_discussion_created:

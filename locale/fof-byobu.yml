@@ -14,7 +14,7 @@ fof-byobu:
             send_pd: "向 {username} 发起私聊"
             cancel: 取消
         composer_private_discussion:
-            submit_button: 发布私人讨论
+            submit_button: 发起私人讨论
             title_placeholder: 私人讨论标题
         labels:
             recipients: "仅 {count} 人可见|仅 {count} 人可见"
@@ -56,15 +56,15 @@ fof-byobu:
             create_private_discussions_with_users: 邀请用户创建私人讨论
             create_private_discussions_with_groups: 邀请用户组创建私人讨论
             create_private_discussions_with_blocking_users: 强制已屏蔽私聊的用户加入私人讨论
-            edit_user_recipients: 编辑参与私人讨论的成员
+            edit_user_recipients: 编辑私人讨论的成员
             edit_group_recipients: 编辑参与私人讨论的用户组
-            view_private_discussions-when-flagged: 在小黑屋显示被举报的私人讨论
+            view_private_discussions-when-flagged: 查看他人被举报的私人讨论
 
         settings:
             byobu_users_page_label: 将私人讨论添加到个人主页
 
     notifications:
         private_discussion_created:
-            title: "【私人讨论】有人发起了私人讨论并邀请了你"
+            title: "【私人讨论】新邀请"
         private_discussion_replied:
-            title: "【私人讨论】有人发帖"
+            title: "【私人讨论】有新帖"

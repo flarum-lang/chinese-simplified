@@ -1,32 +1,37 @@
 # https://github.com/the-turk/flarum-diff/blob/master/locale/en.yml
-# b68c0b0 2 days ago
-# 2020-2-15 00:39:40 +0800
+# f279a82 8 hours ago
+# 2020-2-20 11:37:17 +0800
 
 the-turk-diff:
     forum:
-        oldVersion:             "　旧"
-        newVersion:             "　新"
-        differences:            变化
-        revisionInfo:           "已编辑 {revisionCount} 次，新到旧排序"
-        emptyText:              无修订记录
+        differences:                差异
+        revisionInfo:               "已编辑 {revisionCount} 次，新到旧排序|已编辑 {revisionCount} 次，新到旧排序"
+        emptyText:                  无修订记录
+        confirmDelete:              确定要删除此条编辑记录吗？
+        deleteSuccessMessage:       编辑记录已删除
+        deleteErrorMessage:         删除编辑记录失败
+        deletedText:                （已删除）
+        deletedTooltip:             "{username} 于 {ago} 删除了此条编辑记录"
     admin:
         settings:
-            title:              修订记录 - 设置
-            displayMode:        显示模式
-            customHTML:         不带行号的代码高亮视图
-            tabularHTML:        带行号的代码高亮视图
-            renderMode:         对比视图
-            inline:             单栏对比
-            sideBySide:         双栏对比
-            neighborLines:      上下文行数
-            neighborLinesHelp:  被修改段落（差异块）的上下文行数。若设置为 2 ，则表示会在对比视图中加入两行被修改段落的上文和下文内容。
-            onlyUnsigned:       请输入<strong>无符号整数</strong>！
-            detailLevel:        细节程度（推荐字符级）
-            noneLevel:          无
-            lineLevel:          行级
-            wordLevel:          单词级
-            charLevel:          字符级
-            separateBlock:      在相距很远的两个被修改段落（差异块）之间加入灰色分隔符（示例：http://t.cn/A6hcIybR）。
-            notice:             <strong>细节程度</strong> 和 <strong>上下文行数</strong> 设置的更改，不会影响以前计算的历史版本文本差异。
+            title:                  修订记录 - 设置
+            displayMode:            显示模式
+            customHTML:             不带行号的高亮视图
+            tabularHTML:            带行号的高亮视图
+            renderMode:             对比模式
+            inline:                 单栏对比
+            sideBySide:             双栏对比
+            neighborLines:          上下文行数
+            neighborLinesHelp:      被修改段落（差异块）的上下文行数。若设置为 2 ，则表示会在对比视图中加入两行被修改段落的上文和下文内容。
+            onlyUnsigned:           请输入<strong>无符号整数</strong>！
+            detailLevel:            细节程度（推荐字符级）
+            noneLevel:              无
+            lineLevel:              行级
+            wordLevel:              单词级
+            charLevel:              字符级
+            separateBlock:          在相隔很多行的两个被修改段落（差异块）之间加入灰色分隔符（示例：http://t.cn/A6hcIybR）。
+            notice:                 <strong>细节程度</strong> 和 <strong>上下文行数</strong> 设置的更改，不会对之前生成的编辑记录生效。
         permissions:
-            viewEditHistory:    查看编辑记录
+            viewEditHistory:        查看编辑记录
+            deleteEditHistory:      删除他人的编辑记录
+            selfDeleteEditHistory:  删除自己的编辑记录

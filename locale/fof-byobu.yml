@@ -11,7 +11,7 @@ fof-byobu:
             add_recipients: 公开
             submit: 确定
             edit_recipients: 谁可以看
-            send_pd: "向 {username} 发起私聊"
+            send_pd: "私信 {username}"
             cancel: 取消
         composer_private_discussion:
             submit_button: 发起私人讨论
@@ -30,7 +30,7 @@ fof-byobu:
         modal:
             titles:
                 update_recipients: 更新私人讨论「{title}」的成员
-                add_recipients: 邀请用户加入讨论
+                add_recipients: 邀请用户加入私人讨论
             help:
                 add_recipients: 此讨论仅选中的用户可见。至少添加一个用户（您除外）才能发起私人讨论。
                 update_recipients: 此讨论仅选中的用户可见。

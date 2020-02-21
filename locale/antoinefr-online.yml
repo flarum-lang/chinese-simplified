@@ -1,13 +1,13 @@
 # https://github.com/AntoineFr/flarum-ext-online/blob/master/locale/en.yml
-# 4ec0460
-# Sun, 02 Jan 2020 15:34:32 +0800
+# 4ec0460 on 3 Sep 2019
+# 2020-2-21 14:25:06 +0800
 
 antoinefr-online:
   forum:
     title: 在线会员
-    andmore: "还有 {more} 个..."
+    andmore: "还有 {more} 人..."
   admin:
     settings:
-      title: 设置
-      displaymax: 显示数量
-      titleoflist: 列表标题
+      title: 在线会员 - 设置
+      displaymax: 显示在线人数
+      titleoflist: 自定义列表标题

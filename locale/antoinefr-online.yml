@@ -9,5 +9,5 @@ antoinefr-online:
   admin:
     settings:
       title: 在线会员 - 设置
-      displaymax: 显示在线人数
+      displaymax: 显示人数
       titleoflist: 自定义列表标题

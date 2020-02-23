@@ -1,0 +1,13 @@
+# https://github.com/NomisCZ/flarum-ext-auth-linkedin/blob/master/resources/locale/en.yml
+# d727637 on 4 Jun 2019
+# 2020-2-23 14:22:26 +0800
+
+nomiscz-auth-linkedin:
+  forum:
+    buttons:
+      login: 领英账号登录
+  admin:
+    settings:
+      title: 领英登录 - 设置
+      api_app_id: API App ID
+      api_app_secret: API App Secret

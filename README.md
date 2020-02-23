@@ -143,6 +143,7 @@ php flarum cache:clear
   - minr-auth-qq（[QQ Login](https://github.com/minr/flarum-ext-auth-qq）
   - mybbtoflarum（[MyBB to flarum](https://discuss.flarum.org/d/5506)）
   - nikovonlas-webpush（[OneSignal web push notifications](https://discuss.flarum.org/d/20784)）
+  - nomiscz-auth-linkedin（[LinkedIn Auth](https://discuss.flarum.org/d/20263)）
   - nomiscz-auth-steam（[Steam Auth](https://discuss.flarum.org/d/19750)）
   - nomiscz-auth-wechat（[WeChat Login](https://discuss.flarum.org/d/6038)）
   - perspective（[Perspective API](https://discuss.flarum.org/d/21784)）

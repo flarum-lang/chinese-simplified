@@ -346,9 +346,9 @@ core:
 
     # These translations are used in the scrubber to the right of the post stream.
     post_scrubber:
-      now_link: 底楼
+      now_link: 最新回复
       original_post_link: 一楼
-      unread_text: "{count} 未读"
+      unread_text: "{count} 条未读"
       viewing_text: "{index} / {count} 条|{index} / {count} 条"
 
     # These translations are displayed between posts in the post stream.

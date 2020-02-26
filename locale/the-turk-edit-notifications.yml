@@ -1,0 +1,17 @@
+# https://github.com/the-turk/flarum-edit-notifications/blob/master/locale/en.yml
+# ee14ce5 5 hours ago
+# 2020-2-26 11:21:14 +0800
+
+the-turk-edit-notifications:
+    forum:
+      notifications:
+        interacted_post_edited_text:          "{username} 更新了帖子内容"
+        post_edited_text:                     "{username} 编辑了您的帖子"
+      settings:
+        notify_interacted_post_edited_label:  有人编辑了我参与互动的帖子
+        notify_post_edited_label:             有人编辑了我的帖子
+
+    admin:
+      settings:
+        title:                                帖子改动通知 - 设置
+        enableInteracts:                      自动通知参与互动的用户帖子内容有改动

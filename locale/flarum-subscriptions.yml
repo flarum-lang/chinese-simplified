@@ -55,4 +55,4 @@ flarum-subscriptions:
   ref:
     follow: 关注
     following: 关注中
-    ignoring: 忽略中
+    ignoring: 忽视中

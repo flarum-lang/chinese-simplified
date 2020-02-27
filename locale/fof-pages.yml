@@ -1,6 +1,6 @@
 # https://github.com/FriendsOfFlarum/pages/blob/master/resources/locale/en.yml
-# 560a99d on 16 Aug 2019
-# 2020-2-3 14:51:39 +0800
+# d8d3662 yesterday
+# 2020-2-27 17:34:23 +0800
 
 fof-pages:
 
@@ -15,9 +15,10 @@ fof-pages:
     edit_page:
       content_label: => fof-pages.ref.content
       content_placeholder: => fof-pages.ref.content
-      delete_page_button: Delete Page
+      delete_page_button: 删除页面
       delete_page_confirmation: "确定要删除此页面吗？"
       hidden_label: 保存为草稿
+      restricted_label: 访问限制（前往权限页面设置谁可以访问自定义页面）
       html_label: 启用 HTML
       set_as_home_page_confirmation: "确定要将此页面设为首页吗？"
       slug_label: => fof-pages.ref.slug
@@ -36,7 +37,7 @@ fof-pages:
 
     # Strings in this namespace are referenced by two or more unique keys.
     pages:
-      about_text: 新建、管理静态页面
+      about_text: 新建、管理自定义静态页面
       create_button: => fof-pages.ref.create_page
 
     # These strings are used in the pages list.

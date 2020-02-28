@@ -1,6 +1,6 @@
 # https://github.com/FriendsOfFlarum/pages/blob/master/resources/locale/en.yml
-# d8d3662 yesterday
-# 2020-2-27 17:34:23 +0800
+# d8d3662 2 days ago
+# 2020-2-28 16:21:00 +0800
 
 fof-pages:
 
@@ -44,6 +44,13 @@ fof-pages:
     pages_list:
       empty_text: 这里还没有内容。
       title: => fof-pages.ref.title
+    
+    # These Strings are used in the permission page.
+    permissions:
+      restricted: 访问自定义静态页面
+    badges:
+      hidden: 草稿
+      restricted: 部分人可见
 
   # These strings are used in the navigation bar.
   ref:

@@ -4,7 +4,7 @@
 
 nikovonlas-webpush:
   forum:
-    subscribe: 订阅推送通知
+    subscribe: 允许浏览器推送消息通知（仅支持 Firefox 或 Chromium 内核浏览器）
   admin:
     settings:
       title: 网页推送设置

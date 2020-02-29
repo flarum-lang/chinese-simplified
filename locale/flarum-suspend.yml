@@ -1,6 +1,6 @@
 # https://github.com/flarum/flarum-ext-english/blob/master/locale/flarum-suspend.yml
 # f8f58dd on 20 Jul 2018
-# 2020年2月3日00:46:30 +0800
+# 2020-2-29 22:27:08 +0800
 
 flarum-suspend:
 
@@ -38,4 +38,4 @@ flarum-suspend:
 
     # These translations are found on the user profile page (admin function).
     user_controls:
-      suspend_button: 封禁
+      suspend_button: 封禁用户

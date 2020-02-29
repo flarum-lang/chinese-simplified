@@ -1,6 +1,6 @@
 # https://github.com/FriendsOfFlarum/terms/blob/master/resources/locale/en.yml
 # 33d6443 on 27 Oct 2019
-# 2020-2-3 17:16:36 +0800
+# 2020-2-28 17:16:36 +0800
 
 fof-terms:
     admin:
@@ -43,9 +43,9 @@ fof-terms:
                 服务条款更新时间（点击“现在”按钮可生成协调世界时）。
                 设置此值将要求已接受条款的用户再次接受条款。
                 必须为过去的时间（否则用户将无法接受来自“未来”的条款并跳过对话框）。
-            export-url: 导出链接
+            export-url: 导出数据
             export-url-help: >
-                具有权限「导出全部条款数据」的用户可以访问下方的链接并下载接受条款的用户列表。
+                具有「导出全部条款数据」权限的用户可以点击上方的按钮并下载接受条款的用户列表。
                 您可以在 <a>插件 wiki</a> 上找到更多关于此选项的详细信息。
 
         permissions:

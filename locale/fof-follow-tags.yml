@@ -1,12 +1,12 @@
 # https://github.com/FriendsOfFlarum/follow-tags/blob/master/resources/locale/en.yml
 # b004903 on 29 Jun 2019
-# 2020-2-18 23:24:26 +0800
+# 2020-2-28 21:51:44 +0800
 
 fof-follow-tags:
   forum:
     settings:
-      notify_new_discussion_label: 有人在我关注的标签中发帖
-      notify_new_post_label: 有人在我关注的标签中回复
+      notify_new_discussion_label: 我关注的标签有新主题
+      notify_new_post_label: 我关注的标签有新回复
 
 
     index:

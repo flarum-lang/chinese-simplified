@@ -1,0 +1,22 @@
+# https://github.com/FriendsOfFlarum/moderator-notes/blob/master/resources/locale/en.yml
+# dc9664b 3 days ago
+# 2020-2-29 11:05:32 +0800
+
+fof-moderator-notes:
+  admin:
+    permissions:
+      createnotes: 发表留言
+      viewnotes: 查看留言板
+  forum:
+    moderatorNotes:
+      add_button: 我要留言
+      confirmation_message: 留言成功！您需要刷新页面才能看到它。
+      create-heading: 发表您的留言
+      dismiss_button: 好的
+      input_heading: 您正在向 <strong>{username}</strong> 留言
+      no_content_given: 无法发表空留言。
+      noNotes: 还没有人发表留言，何不坐第一个沙发？
+      submit_button: 发表
+
+    user:
+      notes: 留言板

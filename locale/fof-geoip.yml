@@ -1,6 +1,6 @@
 # https://github.com/FriendsOfFlarum/geoip/blob/master/resources/locale/en.yml
 # 039f781 on 29 Sep 2019
-# 2020-2-3 14:21:04 +0800
+# 2020-2-28 14:21:04 +0800
 
 fof-geoip:
   admin:
@@ -8,6 +8,8 @@ fof-geoip:
       title: FoF GeoIP
 
       service_label: 服务
+
+      service__description: 请选择一个 IP 查询服务。
 
       service_freegeoip_label: FreeGeoIP
       service_freegeoip_description: <b>https://freegeoip.app/</b>，每小时可免费查询 15,000 个 IP 国家代码。

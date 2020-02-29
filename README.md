@@ -65,7 +65,6 @@ php flarum cache:clear
   - flagrow-impersonate（[Flagrow Impersonate](https://discuss.flarum.org/d/9868)）
   - ~~flagrow-mason（[Flagrow Mason](https://discuss.flarum.org/d/7028)）~~ Not compatible with the latest version.
   - flagrow-passport（[Flagrow passport](https://discuss.flarum.org/d/5203)）
-  - flagrow-upload（[Flagrow upload](https://discuss.flarum.org/d/4154)）
   - flarum-akismet（[Flarum Core](https://github.com/flarum/lang-english/tree/master/locale)）
   - flarum-approval（[Flarum Core](https://github.com/flarum/lang-english/tree/master/locale)）
   - flarum-auth-facebook（[Flarum Core](https://github.com/flarum/lang-english/tree/master/locale)）
@@ -109,6 +108,7 @@ php flarum cache:clear
   - fof-links（[Links](https://discuss.flarum.org/d/18335)）
   - fof-masquerade（[Masquerade by FriendsOfFlarum](https://discuss.flarum.org/d/5791)）
   - fof-merge-discussions（[Masquerade](https://discuss.flarum.org/d/5791)）
+  - fof-moderator-notes（[Moderator Notes](https://discuss.flarum.org/d/22925)）
   - fof-nightmode（[Night Mode](https://discuss.flarum.org/d/21492)）
   - fof-open-collective（[Open Collective](https://discuss.flarum.org/d/22256)）
   - fof-pages（[Pages](https://discuss.flarum.org/d/18301)）
@@ -128,6 +128,7 @@ php flarum cache:clear
   - fof-subscribed（[Subscribed](https://discuss.flarum.org/d/20917)）
   - fof-terms（[Terms](https://discuss.flarum.org/d/11714)）
   - fof-transliterator（[URL Transliterator](https://discuss.flarum.org/d/18074)）
+  - fof-upload（[FoF upload](https://discuss.flarum.org/d/4154)）
   - fof-user-directory（[User directory](https://discuss.flarum.org/d/5682)）
   - fof-userbio（[User Bio](https://discuss.flarum.org/d/17775)）
   - fof-username-request（[Username Request](https://discuss.flarum.org/d/20956)）
@@ -160,6 +161,7 @@ php flarum cache:clear
   - sycho-profile-cover（[Profile Cover](https://github.com/SychO9/flarum-profile-cover)）
   - the-turk-diff（[Diff for Flarum](https://discuss.flarum.org/d/22779)）
   - the-turk-mathren（[MathRen](https://discuss.flarum.org/d/22439)）
+  - the-turk-edit-notifications（[Edit Notifications](https://discuss.flarum.org/d/22896)）
   - the-turk-password-strength（[Password Strength Indicator](https://discuss.flarum.org/d/22624)）
   - therealsujitk（[Show Password](https://discuss.flarum.org/d/22727)）
   - tituspijean-auth-ldap（[LDAP Login](https://discuss.flarum.org/d/9515)）

@@ -1,6 +1,6 @@
 # https://github.com/flagrow/analytics/blob/master/resources/locale/en.yml
 # d234eb1
-# 2020年2月2日22:44:29 +0800
+# 2020-2-28 11:17:20 +0800
 
 flagrow-analytics:
   admin:
@@ -35,5 +35,5 @@ flagrow-analytics:
 
     page:
       nav:
-        title: 统计
-        description: 查看统计数据
+        title: Piwik 统计
+        description: 查看 Piwik 统计数据

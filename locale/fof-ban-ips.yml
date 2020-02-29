@@ -62,7 +62,7 @@ fof-ban-ips:
       ban_ip_confirmation: "你确定要封禁这个 IP 吗？所有使用这个 IP 的用户将无法登陆和注册论坛。"
       ban_ip_users: 用户 {users} 将被封禁|用户 {users} 将被封禁
 
-      unban_ip_confirmation: 你确定要解禁此用户以及所有使用此 IP 的其他用户吗？
+      unban_ip_confirmation: 你确定要解禁此用户以及所有使用此 IP 的其他用户吗？（如果其他用户有使用黑名单中别的 IP，那么该用户仍然会处于封禁状态）
       unban_options_only_ip: 仅取消封禁当前 IP (<code>{ip}</code>)
       unban_options_all_ip: 取消封禁 <i>{username}</i> 使用过的所有 IP
       unban_ip_no_users: 没有使用此 IP 的其他用户

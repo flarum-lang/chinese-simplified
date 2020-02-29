@@ -10,7 +10,7 @@ fof-ban-ips:
     modal:
       ban_options_only_ip: 仅封禁当前 IP (<code>{ip}</code>)
       ban_options_all_ip: 封禁 <i>{username}</i> 使用过的所有 IP
-      ban_ip_no_users: 未检索到使用此 IP 的用户
+      ban_ip_no_users: 没有使用此 IP 的其他用户
 
     user_badge:
       banned_tooltip: 已封禁
@@ -35,7 +35,7 @@ fof-ban-ips:
 
     modal:
       update_title: 更新已封禁 IP
-      ban_ip_no_users: 未检索到使用此 IP 的用户
+      ban_ip_no_users: 没有使用此 IP 的其他用户
 
     nav:
       title: 封禁 IP
@@ -62,10 +62,10 @@ fof-ban-ips:
       ban_ip_confirmation: "你确定要封禁这个 IP 吗？所有使用这个 IP 的用户将无法登陆和注册论坛。"
       ban_ip_users: 用户 {users} 将被封禁|用户 {users} 将被封禁
 
-      unban_ip_confirmation: 你确定要取消封禁该用户以及未被其他 IP 封禁的所有用户？
+      unban_ip_confirmation: 你确定要解禁此用户以及所有使用此 IP 的其他用户吗？
       unban_options_only_ip: 仅取消封禁当前 IP (<code>{ip}</code>)
       unban_options_all_ip: 取消封禁 <i>{username}</i> 使用过的所有 IP
-      unban_ip_no_users: 没有人被取消封禁
+      unban_ip_no_users: 没有使用此 IP 的其他用户
       unban_ip_users: 用户 {users} 将被取消封禁|用户 {users} 将被取消封禁
       unbanned_ips: 取消封禁 <code>{ips}</code>.
 

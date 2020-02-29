@@ -1,0 +1,27 @@
+# https://github.com/clarkwinkelmann/flarum-ext-who-read/blob/master/resources/locale/en.yml
+# ce02745 10小时前
+# 2020-2-29 16:17:40 +0800
+
+clarkwinkelmann-who-read:
+    forum:
+        tooltip:
+            last_read_at: "{username} {ago} 阅读"
+            last_read_at_behind: "{username} {ago} 阅读过"
+            last_read_at_up_to_date: "{username} {ago} 查看了最新回复"
+        show-more: 展开（{count} 人）
+        stats:
+            to_end: "{count} 人看完了"
+            to_at_least_here: "{count} 人看到这里"
+
+    admin:
+        permissions:
+            see-read: 查看阅读进度
+            see-subscription: 查看订阅状态
+        settings:
+            title: 阅读进度 - 设置
+            show-in-discussion-list: 在首页主题列表中显示读者
+            show-in-hero: 在主题页面的头部横幅显示读者
+            show-between-posts: 在帖子信息流中显示阅读进度
+            hide-when-behind: 不显示阅读进度落后太多的用户（单位：贴）如果值为1，则表示只要用户在主题中有1个帖子未读，就不在读者列表中展示他/她。清空此值恢复默认。
+            max-visible: 横幅读者列表的初始最大展示人数（人数过多后，需要点击展开按钮查看完整列表）
+            only-groups: 仅显示群组用户的阅读进度

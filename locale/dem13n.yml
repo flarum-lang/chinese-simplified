@@ -1,5 +1,6 @@
 # https://github.com/Dem13n/nickname-changer/blob/master/resources/locale/en.yml
-# 6307596 2 days ago
+# 6307596 18 days ago
+# 2020-2-29 18:48:16 +0800
 
 # https://github.com/Dem13n/quad-theme/blob/master/resources/locale/en.yml
 # 146a68c
@@ -14,11 +15,11 @@ dem13n:
       submit_button: => core.ref.save_changes
   admin:
     nickname:
-      settings_modal_title: 昵称修改设置
+      settings_modal_title: 昵称修改 - 设置
       unlimited_nickname_change: 无限制修改昵称
       allow_nickname_change: 允许修改昵称
-      allow_nickname_unique: 允许昵称重名
-      regex: 用于验证的正则表达式
+      allow_nickname_unique: 允许重名昵称
+      regex: "昵称合法性检测（正则表达式）默认为：<code>/^([[:alnum:]]{2,}[\\r\\n\\t\\f\\v ]{0,1})+$/iu</code>"
       min_char: 昵称的最小字符数
       max_char: 昵称的最大字符数
       submit_button: => core.ref.save_changes

@@ -42,7 +42,7 @@ fof-ban-ips:
 
       desc: 新增、删除、查看封禁 IP 地址
 
-    empty_text: 暂无
+    empty_text: 暂无 IP 被封禁
 
   error:
     banned_ip_message: 验证失败

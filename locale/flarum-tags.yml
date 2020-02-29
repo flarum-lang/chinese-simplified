@@ -1,6 +1,6 @@
 # https://github.com/flarum/flarum-ext-english/blob/master/locale/flarum-tags.yml
 # da35609 on 2 Jul 2019
-# 2020-2-18 23:18:47 +0800
+# 2020-2-29 16:03:31 +0800
 
 flarum-tags:
 
@@ -89,9 +89,9 @@ flarum-tags:
     # These translations are displayed between posts in the post stream.
     post_stream:
       added_tags_text: "{username} 添加标签 {tagsAdded}"
-      added_and_removed_tags_text: "{username} 添加标签 {tagsAdded} 并移除标签 {tagsRemoved}"
+      added_and_removed_tags_text: "{username} 添加标签 {tagsAdded}，并移除标签 {tagsRemoved}。"
       removed_tags_text: "{username} 移除了标签 {tagsRemoved}"
-      tags_text: "{tags} 标签|{tags} 标签"
+      tags_text: "{tags}|{tags}"
 
   # Translations in this namespace are used by the forum and admin interfaces.
   lib:

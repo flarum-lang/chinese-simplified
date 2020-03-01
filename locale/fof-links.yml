@@ -15,7 +15,7 @@ fof-links:
     edit_link:
       delete_link_button: 删除链接
       delete_link_confirmation: "确定要删除这个链接吗？"
-      internal_link: "这是 Flarum 论坛链接吗？"
+      internal_link: "这是 Flarum 论坛链接吗？勾选后，当用户访问此链接时，此链接会在导航栏高亮。"
       open_newtab: "在新标签页中打开"
       submit_button: => core.ref.save_changes
       title: => fof-links.ref.create_link
@@ -26,18 +26,18 @@ fof-links:
 
     # These strings are used in the Links page.
     links:
-      about_text:  管理菜单栏链接
+      about_text:  管理导航栏链接
       create_button: => fof-links.ref.create_link
       links: => fof-links.ref.links
 
     # These strings are used in the navigation bar.
     nav:
       links_button: => fof-links.ref.links
-      links_text: 管理菜单栏列表
+      links_text: 管理导航栏链接
 
   # Strings in this namespace are referenced by two or more unique keys.
   ref:
     create_link: 新建链接
-    links: 菜单栏链接
+    links: 导航栏链接
     title: 标题
     url: 链接

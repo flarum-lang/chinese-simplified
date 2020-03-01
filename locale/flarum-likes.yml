@@ -1,6 +1,6 @@
 # https://github.com/flarum/flarum-ext-english/blob/master/locale/flarum-likes.yml
 # 389fea3 on 30 Nov 2015
-# 2020年2月3日00:29:26 +0800
+# 2020-3-1 01:24:31 +0800
 
 flarum-likes:
 
@@ -13,7 +13,7 @@ flarum-likes:
 
     # These translations are used in the Permissions page of the admin interface.
     permissions:
-      like_posts_label: 赞
+      like_posts_label: 点赞
 
   # Translations in this namespace are used by the forum user interface.
   forum:

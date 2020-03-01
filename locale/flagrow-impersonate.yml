@@ -1,12 +1,12 @@
 # https://github.com/flagrow/impersonate/blob/master/resources/locale/en.yml
 # 84b258a
-# 2020年2月2日22:51:40 +0800
+# 2020-3-1 01:47:48 +0800
 
 flagrow-impersonate:
     admin:
         permissions:
-            login: 以其他用户的账号登录
+            login: 以其他用户的身份登录
 
     forum:
         user_controls:
-            impersonate_button: 以该用户账号登录
+            impersonate_button: 以该用户身份登录

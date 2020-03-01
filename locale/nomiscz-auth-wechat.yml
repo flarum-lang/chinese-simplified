@@ -1,11 +1,30 @@
 # https://github.com/NomisCZ/flarum-ext-auth-wechat/blob/master/resources/locale/en.yml
-# ce5631f 20 hours ago
-# 2020-2-13 12:57:30 +0800
+# 80d0acb 3 days ago
+# 2020-3-1 00:22:15 +0800
 
 nomiscz-auth-wechat:
   forum:
     buttons:
       login: 微信账号登录
+      link: 绑定微信账号
+      unlink: 解绑微信账号
+    alerts:
+      already_linked: 微信账号已绑定！
+      already_used: 这个微信账号已被其他用户绑定！
+      link_success: 微信账号绑定成功！
+      unlink_success: 微信账号解绑成功！
+      error: 有些地方出了问题，请稍后再试！
+    modals:
+      link:
+        title: 绑定微信账号
+      unlink:
+        title: 解绑微信账号
+        info:
+          confirm: 您确定要解绑微信账号吗？
+          no_providers: 您没有其他登录手段，请先重置账户密码。
+        buttons:
+          confirm: 是的，我确定
+          cancel: 不，我不确定！
   admin:
     settings:
       title: 微信登录 - 设置

@@ -1,13 +1,13 @@
 # https://github.com/clarkwinkelmann/flarum-ext-create-user-modal/blob/master/resources/locale/en.yml
 # b0c4b53
-# Sun, 02 Jan 2020 15:44:49 +0800
+# 2020-3-1 01:53:44 +0800
 
 clarkwinkelmann-create-user-modal:
     admin:
         permissions:
-            view: 查看创建用户模组对话框
+            view: 查看手动创建用户模组对话框
     forum:
         link: 创建新用户
         modal:
             title: 创建用户
-            submit: 创建用户
+            submit: 创建

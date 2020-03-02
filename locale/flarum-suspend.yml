@@ -34,7 +34,7 @@ flarum-suspend:
 
     # These translations are displayed as tooltips for user badges.
     user_badge:
-      suspended_tooltip: 已封禁
+      suspended_tooltip: 封禁中
 
     # These translations are found on the user profile page (admin function).
     user_controls:

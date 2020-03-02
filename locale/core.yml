@@ -1,6 +1,6 @@
 # https://github.com/flarum/lang-english/blob/master/locale/core.yml
 # 80328f1
-# 2020-2-18 23:06:26 +0800
+# 2020-3-2 18:53:13 +0800
 
 core:
 
@@ -291,7 +291,7 @@ core:
       log_out_button: => core.ref.log_out
       profile_button: 个人主页
       search_placeholder: 搜索
-      settings_button: 个人设置
+      settings_button: 设置
       sign_up_link: => core.ref.sign_up
 
     # These translations are used on the index page, peripheral to the discussion list.

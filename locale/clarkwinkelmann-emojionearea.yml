@@ -1,11 +1,11 @@
 # https://github.com/clarkwinkelmann/flarum-ext-emojionearea/blob/master/locale/en.yml
 # 9360095
-# 2020-2-18 22:06:44 +0800
+# 2020-3-1 13:46:19 +0800
 
 clarkwinkelmann-emojionearea:
     forum:
         picker_button: Emoji 表情
-        search_placeholder: 搜索...
+        search_placeholder: 搜索 emoji
 
     admin:
         settings:

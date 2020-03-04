@@ -1,6 +1,6 @@
 # https://github.com/flarum/flarum-ext-english/blob/master/locale/flarum-flags.yml
-# 8ee305a on 11 May 2017
-# 2020年2月3日00:22:48 +0800
+# 6473f49 26 days ago
+# 2020-3-4 20:08:20 +0800
 
 flarum-flags:
 
@@ -18,6 +18,7 @@ flarum-flags:
 
     # These translations are used in the Flags Settings modal dialog.
     settings:
+      flag_own_posts_label: 允许用户标记（举报）自己的帖子
       guidelines_url_label: 论坛守则链接
       title: 小黑屋设置
 
@@ -28,11 +29,13 @@ flarum-flags:
     flag_post:
       confirmation_message: 感谢举报，管理员很快就会处理。
       dismiss_button: => core.ref.okay
+      reason_details_placeholder: 详细描述（可选）
       reason_inappropriate_label: 不雅
       reason_inappropriate_text: "此帖包含攻击性、侮辱性语言或违反了<a>论坛守则</a>"
+      reason_missing_message: 请向我们提供一些详细信息。
       reason_off_topic_label: "跑题"
       reason_off_topic_text: 此帖与当前的主题无关，应当移动到其他地方。
-      reason_other_label: 其他
+      reason_other_label: 其他（请补充说明）
       reason_spam_label: 垃圾
       reason_spam_text: 这是一个广告贴。
       submit_button: => flarum-flags.ref.flag_post

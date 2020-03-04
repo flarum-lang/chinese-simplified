@@ -1,6 +1,6 @@
 # https://github.com/flarum/lang-english/blob/master/locale/core.yml
-# 80328f1
-# 2020-3-2 18:53:13 +0800
+# fc80447 26 days ago
+# 2020-3-4 20:16:54 +0800
 
 core:
 
@@ -112,6 +112,7 @@ core:
       mail_username_label: => core.ref.username
       mailgun_heading: Mailgun 设置
       mandrill_heading: Mandrill 设置
+      not_sending_message: Flarum 当前无法发送电子邮件，请检查邮件驱动及其配置。
       ses_heading: SES 设置
       smtp_heading: SMTP 设置
       submit_button: => core.ref.save_changes
@@ -161,6 +162,7 @@ core:
       moderate_heading: 管理相关
       new_group_button: 添加用户组
       participate_heading: 操作相关
+      post_without_throttle_label: 无需等待即可多次回复
       read_heading: 访问相关
       rename_discussions_label: 更改主题标题
       reply_to_discussions_label: 回复

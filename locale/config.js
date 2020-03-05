@@ -17,45 +17,14 @@
        longDateFormat : {
            LT : 'HH:mm',
            LTS : 'HH:mm:ss',
-           L : 'YYYY/MM/DD',
+           L : 'YYYY-MM-DD',
            LL : 'YYYY年M月D日',
-           LLL : 'YYYY年M月D日Ah点mm分',
-           LLLL : 'YYYY年M月D日ddddAh点mm分',
-           l : 'YYYY/M/D',
-           ll : 'YYYY年M月D日',
-           lll : 'YYYY年M月D日 HH:mm',
-           llll : 'YYYY年M月D日dddd HH:mm'
-       },
-       meridiemParse: /凌晨|早上|上午|中午|下午|晚上/,
-       meridiemHour: function (hour, meridiem) {
-           if (hour === 12) {
-               hour = 0;
-           }
-           if (meridiem === '凌晨' || meridiem === '早上' ||
-                   meridiem === '上午') {
-               return hour;
-           } else if (meridiem === '下午' || meridiem === '晚上') {
-               return hour + 12;
-           } else {
-               // '中午'
-               return hour >= 11 ? hour : hour + 12;
-           }
-       },
-       meridiem : function (hour, minute, isLower) {
-           var hm = hour * 100 + minute;
-           if (hm < 600) {
-               return '凌晨';
-           } else if (hm < 900) {
-               return '早上';
-           } else if (hm < 1130) {
-               return '上午';
-           } else if (hm < 1230) {
-               return '中午';
-           } else if (hm < 1800) {
-               return '下午';
-           } else {
-               return '晚上';
-           }
+           LLL : 'YYYY年M月D日 HH点mm分',
+           LLLL : 'YYYY年M月D日dddd HH点mm分',
+           l : 'YYYY-MM-DD',
+           ll : 'YYYY-MM-DD',
+           lll : 'YYYY-MM-DD HH:mm',
+           llll : 'YYYY-MM-DD HH:mm'
        },
        calendar : {
            sameDay : '[今天]LT',

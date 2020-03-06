@@ -244,7 +244,7 @@ core:
     # These translations are used by the discussion control buttons.
     discussion_controls:
       cannot_reply_button: 回复已关闭
-      cannot_reply_text: 您没有权限回复这个贴子。
+      cannot_reply_text: 您没有权限回复这个帖子。
       delete_button: => core.ref.delete
       delete_confirmation: "确定删除这个帖子？"
       delete_forever_button: => core.ref.delete_forever

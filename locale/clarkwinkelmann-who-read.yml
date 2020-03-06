@@ -1,6 +1,6 @@
 # https://github.com/clarkwinkelmann/flarum-ext-who-read/blob/master/resources/locale/en.yml
-# ce02745 10小时前
-# 2020-2-29 16:17:40 +0800
+# 43cea10 12小时前
+# 2020-3-6 13:08:53 +0800
 
 clarkwinkelmann-who-read:
     forum:
@@ -12,11 +12,19 @@ clarkwinkelmann-who-read:
         stats:
             to_end: "{count} 人看完了"
             to_at_least_here: "{count} 人看到这里"
+        controls:
+            set-unread: 标记为未读
+            remove-unread: 标记为已读
+        badges:
+            unread: 标记为未读
 
     admin:
         permissions:
+            heading: 谁看过
             see-read: 查看阅读进度
             see-subscription: 查看订阅状态
+            see-unread: 查看其他用户的未读状态
+            mark-unread: 允许用户标记主题为未读
         settings:
             title: 阅读进度 - 设置
             show-in-discussion-list: 在首页主题列表中显示读者

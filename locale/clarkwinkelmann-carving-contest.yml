@@ -1,0 +1,48 @@
+# https://github.com/clarkwinkelmann/flarum-ext-carving-contest/blob/master/resources/locale/en.yml
+# 05fa595 on 13 Dec 2019
+# 2020-3-6 14:29:40 +0800
+
+clarkwinkelmann-carving-contest:
+    forum:
+        nav:
+            contest: 雕刻比赛
+
+        page:
+            title: 南瓜雕刻比赛
+            loading: 载入作品中...
+            participate: 参加
+            delete-confirmation: 您确定要删除 {username} 的 “{name}” 吗？
+            like: 赞
+            already-liked: 我觉得很赞
+            unlike: 踩
+            refresh: 刷新
+            load-more: 加载更多作品
+            sort:
+                mostLikes: 最受欢迎
+                fewerLikes: 赞数最少
+                mostRecent: 最新发布
+                leastRecent: 最早发布
+            likes:
+                you_text: => core.ref.you
+                others_link: => core.ref.some_others
+                liked_by_self_text: "{users} 觉得很赞"
+                liked_by_text: "{users} 觉得很赞|{users} 觉得很赞"
+
+        modal:
+            title: 参加
+            name: 给您的作品命名
+            submit: 提交
+            tools:
+                circle: 圆
+                square: 正方形
+
+        likes_modal:
+            title: 喜欢这个作品的用户
+
+    admin:
+        permissions:
+            heading: 雕刻比赛
+            view: 查看作品
+            like: 点赞作品
+            participate: 参加比赛
+            moderate: 主持

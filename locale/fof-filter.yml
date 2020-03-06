@@ -1,6 +1,6 @@
 # https://github.com/FriendsOfFlarum/filter/blob/master/resources/locale/en.yml
 # 130d54f 5 hours ago
-# 2020-2-20 11:13:44 +0800
+# 2020-3-6 12:57:24 +0800
 
 fof-filter:
     forum:
@@ -31,6 +31,6 @@ fof-filter:
             default_text: |
                 检测到您的帖子包含敏感词、违禁词，已被自动隐藏。
                 
-                如有异议，请联系论坛管理员申请人工核查。如果确实没有违规内容，我们将恢复您的帖子。
+                如有异议，请联系论坛管理员申请人工核查。如果核实没有违规内容，我们将恢复您的帖子。
                 
                 感谢您的理解与配合！

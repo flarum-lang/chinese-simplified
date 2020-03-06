@@ -1,0 +1,16 @@
+# https://github.com/clarkwinkelmann/flarum-ext-silent-mailchimp/blob/master/resources/locale/en.yml
+# c801702 9 days ago
+# 2020-3-6 14:21:15 +0800
+
+clarkwinkelmann-silent-mailchimp:
+    admin:
+        settings:
+            title: Silent Mailchimp 设置
+            api-key: API 密钥
+            api-key-help: 前往 Account（账户） > Extras（其他）下的 <a>API Keys</a> 选项创建密钥。
+            list-id: List ID
+            list-id-help: 您可以在 <a>Audiences</a> 页面找到 ID。单击列表，然后 Settings > Audience name > Audience ID。
+            when: 何时将用户添加到列表
+            when-options:
+                activated: 用户激活后
+                registered: 用户注册时

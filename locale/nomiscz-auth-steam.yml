@@ -28,5 +28,5 @@ nomiscz-auth-steam:
   admin:
     settings:
       title: Steam 登录 - 设置
-      api_key_label: API 秘钥
+      api_key_label: API 密钥
       use_steam_powered_domain: 使用 steampowered.com 域名代替 steamcommunity.com（后者在中国大陆被墙）

@@ -21,10 +21,10 @@
            LL : 'YYYY年M月D日',
            LLL : 'YYYY年M月D日 HH点mm分',
            LLLL : 'YYYY年M月D日dddd HH点mm分',
-           l : 'YYYY-MM-DD',
-           ll : 'YYYY-MM-DD',
-           lll : 'YYYY-MM-DD HH:mm',
-           llll : 'YYYY-MM-DD HH:mm'
+           l : 'YYYY/M/D',
+           ll : 'YYYY年M月D日',
+           lll : 'YYYY年M月D日 HH:mm',
+           llll : 'YYYY年M月D日dddd HH:mm'
        },
        calendar : {
            sameDay : '[今天]LT',

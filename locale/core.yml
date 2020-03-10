@@ -585,7 +585,7 @@ core:
     settings: 设置
     sign_up: 注册
     some_others: "{count} 人|{count} 人"        # Referenced by flarum-likes.yml, flarum-mentions.yml
-    start_a_discussion: 发贴
+    start_a_discussion: 发布主题
     username: 用户名
     users: 用户
     write_a_reply: 说点什么吧...

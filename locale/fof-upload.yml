@@ -38,8 +38,8 @@ fof-upload:
         title: Imgur 图片存储设置
         client_id: Imgur 客户ID
       local:
-        cdn_url: CDN 网址 (附加在文件前面)
-        title: 本地存储设置
+        cdn_url: OSS 外链域名 / CDN 域名
+        title: 本地、OSS 存储设置
       ovh-svfs:
         title: OVH SVFS 存储设置
         container: 容器

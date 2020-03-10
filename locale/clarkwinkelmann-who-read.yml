@@ -1,6 +1,6 @@
 # https://github.com/clarkwinkelmann/flarum-ext-who-read/blob/master/resources/locale/en.yml
-# 43cea10 12小时前
-# 2020-3-6 13:08:53 +0800
+# afd3f23 12 hours ago
+# 2020-3-10 18:06:27 +0800
 
 clarkwinkelmann-who-read:
     forum:
@@ -8,15 +8,26 @@ clarkwinkelmann-who-read:
             last_read_at: "{username} {ago} 阅读"
             last_read_at_behind: "{username} {ago} 阅读过"
             last_read_at_up_to_date: "{username} {ago} 查看了最新回复"
-        show-more: 展开（{count} 人）
-        stats:
-            to_end: "{count} 人看完了"
-            to_at_least_here: "{count} 人看到这里"
+        more:
+            show: 展开（{count} 人）
+            info: 还有 {count} 人
+        footer:
+            to-here-some-stopped: "{total} 人看到这里， {stopped} 人没有接着往下看。"
+            to-here-none-stopped: "{total} 人看到这里， 所有人都接着往下看了。"
+            to-here-nobody: "没有人看到这里"
+            to-end: "{total} 人看完了"
+            to-end-nobody: "没有人看完"
         controls:
             set-unread: 标记为未读
             remove-unread: 标记为已读
         badges:
             unread: 标记为未读
+        modal:
+            title: 读者
+            up-to-this-post: 只看到这里的用户
+            past-this-post: 这里看过了的用户
+            to-the-end: 全部看完的用户
+            behind: 没看完的用户
 
     admin:
         permissions:
@@ -30,6 +41,8 @@ clarkwinkelmann-who-read:
             show-in-discussion-list: 在首页主题列表中显示读者
             show-in-hero: 在主题页面的头部横幅显示读者
             show-between-posts: 在帖子信息流中显示阅读进度
+            show-count-of-readers-who-stopped: 在帖子信息流中，仅显示有多少人没接着往下看。
             hide-when-behind: 不显示阅读进度落后太多的用户（单位：贴）如果值为1，则表示只要用户在主题中有1个帖子未读，就不在读者列表中展示他/她。清空此值恢复默认。
             max-visible: 横幅读者列表的初始最大展示人数（人数过多后，需要点击展开按钮查看完整列表）
+            unread-icon: 头像的未读徽章图标
             only-groups: 仅显示群组用户的阅读进度

@@ -1,6 +1,6 @@
 # https://github.com/FriendsOfFlarum/upload/blob/master/resources/locale/en.yml
 # 87377b4 3 days ago
-# 2020-2-28 20:16:21 +0800
+# 2020-3-10 18:38:12 +0800
 
 fof-upload:
   admin:
@@ -25,7 +25,7 @@ fof-upload:
       aws-s3:
         bucket: Bucket
         key: Key
-        region: 地区
+        region: 区域
         secret: Secret
         title: AWS S3 存储设置
       disable-download-logging:
@@ -46,7 +46,7 @@ fof-upload:
         tenantid: 租户ID
         username: 用户名
         password: 密码
-        region: 地区
+        region: 区域
       qiniu:
         title: 七牛存储设置（需要先安装 composer require overtrue/flysystem-qiniu）
         key: Key

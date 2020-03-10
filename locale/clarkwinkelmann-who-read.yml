@@ -5,9 +5,9 @@
 clarkwinkelmann-who-read:
     forum:
         tooltip:
-            last_read_at: "{username} {ago} 阅读"
-            last_read_at_behind: "{username} {ago} 阅读过"
-            last_read_at_up_to_date: "{username} {ago} 查看了最新回复"
+            last-read-at: "{username} 于 {ago} 阅读"
+            last-read-at-behind: "{username} 于 {ago} 阅读过"
+            last-read-at-up-to-date: "{username} 于 {ago} 查看了最新回复"
         more:
             show: 展开（{count} 人）
             info: 还有 {count} 人

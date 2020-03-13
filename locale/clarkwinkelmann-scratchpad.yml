@@ -1,0 +1,52 @@
+# https://github.com/clarkwinkelmann/flarum-ext-scratchpad/blob/master/resources/locale/en.yml
+# 5921ddf 7 days ago
+# 2020-3-13 20:48:49 +0800
+
+clarkwinkelmann-scratchpad:
+    admin:
+        settings:
+            title: 便笺 - 设置
+            single-column: 单列编辑器视图
+            theme: CodeMirror 主题（刷新后生效）
+            indent: 缩进用空格数
+            compile-automatically: 保存时自动编译 JS
+
+        controls:
+            refresh: 刷新
+            save: 保存
+            compile: 编译 JS
+            settings: 编辑器设置
+            new: 新建
+            new-confirmation: 当前便笺未保存，确定丢弃并创建新的吗？ 
+            delete: 删除
+            delete-confirmation: 确定要删除 "{title}" 吗？
+            enable: 点击启用
+            disable: 点击禁用
+
+        fields:
+            title: 
+            admin_js: 后台管理界面 JS
+            forum_js: 前台论坛界面 JS
+            admin_less: 后台管理界面 Less
+            forum_less: 前台论坛界面 Less
+            php: PHP
+
+        placeholders:
+            untitled: 未命名
+            php-comment: 在此处注册 extender
+            js-log: Hello, {frontend}!
+
+        compilation-alert:
+            success: 编译完成!
+            failure: 编译失败!
+            view-output: 查看日志
+
+        compilation-modal:
+            title: 编译日志
+            webpack: Webpack 日志
+            npm: NPM 日志
+            npm-not-run: NPM 未运行
+
+        menu:
+            title: 开发者便笺
+            description: 在开发环境中方便地测试代码

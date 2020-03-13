@@ -1,6 +1,6 @@
 # https://github.com/clarkwinkelmann/flarum-ext-who-read/blob/master/resources/locale/en.yml
-# afd3f23 12 hours ago
-# 2020-3-10 18:06:27 +0800
+# 5404c17 20 hours ago
+# 2020-3-13 19:48:26 +0800
 
 clarkwinkelmann-who-read:
     forum:
@@ -12,15 +12,15 @@ clarkwinkelmann-who-read:
             show: 展开（{count} 人）
             info: 还有 {count} 人
         footer:
-            to-here-some-stopped: "{total} 人看到这里， {stopped} 人没有接着往下看。"
-            to-here-none-stopped: "{total} 人看到这里， 所有人都接着往下看了。"
-            to-here-nobody: "没有人看到这里"
-            to-end: "{total} 人看完了"
-            to-end-nobody: "没有人看完"
+            read-this-post: "{0} 没有人看过此贴|{1} 1 人看了此贴|]1,Inf] {count} 人看了此贴"
+            read-no-further: "{0} 所有人都接着往下看了|{1} 1 人没有接着往下看|]1,Inf] {count} 人没有接着往下看"
+            read-to-end: "{0} 没有人看完|{1} 1 人看完了|]1,Inf] {count} 人看完了"
         controls:
             set-unread: 标记为未读
             remove-unread: 标记为已读
         badges:
+            following: => flarum-subscriptions.forum.badge.following_tooltip
+            ignoring: => flarum-subscriptions.forum.badge.ignoring_tooltip
             unread: 标记为未读
         modal:
             title: 读者

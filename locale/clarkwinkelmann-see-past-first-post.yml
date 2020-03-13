@@ -1,16 +1,16 @@
 # https://github.com/clarkwinkelmann/flarum-ext-see-past-first-post/blob/master/resources/locale/en.yml
 # 26d6d6e 9 days ago
-# 2020-3-6 14:15:33 +0800
+# 2020-3-13 20:36:57 +0800
 
 clarkwinkelmann-see-past-first-post:
     forum:
         cant-see: 您没有权限查看回复
-        login-to-see: 登录以查看回复
+        login-to-see: 登录以查看全部回复
 
     admin:
         permissions:
-            see-past-first-post: 查看一楼帖
+            see-past-first-post: 登录后查看回复
         settings:
-            title: 查看一楼帖 - 设置
-            hide-comment-count: 隐藏主题列表的评论数
-            hide-last-post: 隐藏主题列表的最新回复者、最新回复日期
+            title: 只给看一楼贴 - 设置
+            hide-comment-count: 隐藏主题列表中的评论数
+            hide-last-post: 隐藏主题列表中的最新回复者、最新回复日期

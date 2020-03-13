@@ -6,8 +6,8 @@ fof-prevent-necrobumping:
   forum:
     composer:
       warning:
-        title: 此贴已经闲置久达 <b>{time}</b> 之久啦
-        description: 看起来它好像没有讨论的必要了
+        title: 此贴已经闲置 <b>{time}</b> 之久啦
+        description: 看起来好像没有讨论的必要了
         checkbox_label: 我知道，但是我觉得仍然有必要回复一下。
         error: 这贴太久远了，请勿挖坟！
 

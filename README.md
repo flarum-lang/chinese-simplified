@@ -54,10 +54,11 @@ php flarum cache:clear
   - clarkwinkelmann-emojionearea（[Emoji Picker](https://discuss.flarum.org/d/4787)）
   - clarkwinkelmann-passwordless（[Passwordless login](https://discuss.flarum.org/d/22606)）
   - clarkwinkelmann-post-date（[Change post date](https://discuss.flarum.org/d/21247)）
-  - clarkwinkelmann-see-past-first-post（[See Past First Post](https://github.com/clarkwinkelmann/flarum-ext-see-past-first-post)）
-  - clarkwinkelmann-silent-mailchimp（[Silent Mailchimp](https://github.com/clarkwinkelmann/flarum-ext-silent-mailchimp)）
+  - clarkwinkelmann-scratchpad（[Scratchpad](https://discuss.flarum.org/d/23016)）
+  - clarkwinkelmann-see-past-first-post（[See Past First Post](https://discuss.flarum.org/d/23077)）
+  - clarkwinkelmann-silent-mailchimp（[Silent Mailchimp](https://discuss.flarum.org/d/23079-)）
   - clarkwinkelmann-status（[User status](https://discuss.flarum.org/d/21983)）
-  - clarkwinkelmann-who-read（[Who Read](https://github.com/clarkwinkelmann/flarum-ext-who-read)）
+  - clarkwinkelmann-who-read（[Who Read](https://discuss.flarum.org/d/23066)）
   - datitisev-dashboard（[Datitisev Admin Dashboard](https://discuss.flarum.org/d/2958)）
   - dem13n-nickname-changer（[NickName Changer](https://discuss.flarum.org/d/21238)）
   - dem13n-quad-theme（[Quad theme](https://discuss.flarum.org/d/22618)）
@@ -170,7 +171,7 @@ php flarum cache:clear
   - the-turk-mathren（[MathRen](https://discuss.flarum.org/d/22439)）
   - the-turk-edit-notifications（[Edit Notifications](https://discuss.flarum.org/d/22896)）
   - the-turk-password-strength（[Password Strength Indicator](https://discuss.flarum.org/d/22624)）
-  - therealsujitk（[Show Password](https://discuss.flarum.org/d/22727)）
+  - therealsujitk（[Show Password](https://discuss.flarum.org/d/22727)、[GIFs](https://discuss.flarum.org/d/23101)）
   - tituspijean-auth-ldap（[LDAP Login](https://discuss.flarum.org/d/9515)）
   - tpokorra-post-notification（[Post Notifications per E-Mail](https://discuss.flarum.org/d/20750)）
   - v17development-flarum-seo（[Flarum SEO](https://discuss.flarum.org/d/18316)）

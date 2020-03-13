@@ -20,4 +20,4 @@ askvortsov-saml:
     log_in:
       with_saml_button: "SAML2 单点登录"
       open_popup: 点此登录
-      enable_popups: 启用登陆/注册弹窗
+      enable_popups: 启用登录/注册弹窗

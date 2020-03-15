@@ -1,6 +1,6 @@
 # https://github.com/flagrow/analytics/blob/master/resources/locale/en.yml
-# d234eb1
-# 2020-2-28 11:17:20 +0800
+# 503bc57 3 days ago
+# 2020-3-15 16:07:12 +0800
 
 flagrow-analytics:
   admin:
@@ -19,15 +19,15 @@ flagrow-analytics:
         piwikSiteId: Site ID
         piwikTrackSubdomain: 追踪所有 Flarum 子域访客
         piwikPrependDomain: 追踪时将网站域名放置在网页标题开头
-        piwikHideAliasUrl: 在「导出链」报表中隐藏已知别名网页的点击（什么是导出链：http://t.cn/A6PlyGj6）
+        piwikHideAliasUrl: 在「导出链」报表中隐藏已知别名链接的点击（什么是导出链：http://t.cn/A6PlyGj6）
         piwikAliasUrl: 别名链接
         piwikTrackAccounts: 追踪独立访客账户
         piwikAuthToken: 验证 Token
 
       placeholder:
         piwikAuthToken: |
-          填入 token 以启用 Piwik 统计管理面板。
-          你可以在设置→个人→API 验证 Token 中找到。
+          填入 token 以在后台管理菜单启用 Piwik 统计面板。
+          你可以在 设置 > 个人 > API 验证 Token 中找到。
       trackAccounts:
         none: 不要追踪
         username: 按用户名追踪

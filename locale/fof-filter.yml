@@ -20,7 +20,7 @@ fof-filter:
             email_label: 邮件通知设置
             switch: 
               email: 当帖子被过滤时，向用户发送通知邮件。
-              merge: 防刷屏
+              merge: 防刷帖
             email_subject: 主题
             email_body: 正文
         nav:

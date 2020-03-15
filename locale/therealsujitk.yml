@@ -1,8 +1,9 @@
 # https://github.com/therealsujitk/flarum-ext-show-password/blob/master/resources/locale/en.yml
 # cded280 7 hours ago
+# 2020-1-26 18:37:58
 # https://github.com/therealsujitk/flarum-ext-gifs/blob/master/resources/locale/en.yml
-# a95bf52 2 minutes ago
-# 2020-3-13 22:08:36 +0800
+# 9035286 16 hours ago
+# 2020-3-15 15:41:55 +0800
 
 therealsujitk:
   forum:
@@ -10,8 +11,15 @@ therealsujitk:
     gifs:
       label: '插入 GIF'
       title: '选择 GIF'
-      searchGiphy: '搜索 Giphy'
+      searchbar: '搜索 GIFs'
+      search: '搜索'
+      loading: '载入中...'
+      noresults: '没有找到图片'
+      loadmore: '加载更多'
   admin:
     gifs:
       title: 'GIF API 设置'
       giphyAPIkey: 'Giphy API 密钥'
+    about:
+      stringA: '插件制作：'
+      stringB: '捐赠：'

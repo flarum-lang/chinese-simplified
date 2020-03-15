@@ -27,7 +27,7 @@ fof-upload:
         key: Key
         region: 区域
         secret: Secret
-        title: AWS S3 存储设置
+        title: AWS S3 存储设置（配置请参阅 http://t.cn/A6zX0V3N）
       disable-download-logging:
           title: 下载历史统计
           toggle: 停用
@@ -80,7 +80,7 @@ fof-upload:
       image_description: |
         显示图片缩略图，并有 php 代理下载，支持统计和热链保护。
     upload_methods:
-      aws-s3: 亚马逊 S3
+      aws-s3: AWS S3
       imgur: Imgur
       local: 本地
       ovh-svfs: OVH SVFS

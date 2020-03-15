@@ -61,6 +61,11 @@ flarum-tags:
   # Translations in this namespace are used by the forum user interface.
   forum:
 
+    # These translations are displayed on the page that lists all tags.
+    all_tags:
+      meta_description_text: 全部标签
+      meta_title_text: => flarum-tags.ref.tags
+
     # These translations are used by the Choose Tags modal dialog.
     choose_tags:
       choose_primary_placeholder: "选择一个主标签|最多选择 {count} 个主标签"
@@ -92,6 +97,10 @@ flarum-tags:
       added_and_removed_tags_text: "{username} 添加标签 {tagsAdded}，并移除标签 {tagsRemoved}。"
       removed_tags_text: "{username} 移除了标签 {tagsRemoved}"
       tags_text: "{tags}|{tags}"
+
+    # These translations are used when visiting a single tag's discussion list.
+    tag:
+      meta_description_text: "{tag} 标签下的所有主题"
 
   # Translations in this namespace are used by the forum and admin interfaces.
   lib:

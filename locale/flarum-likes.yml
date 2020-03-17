@@ -38,4 +38,4 @@ flarum-likes:
 
     # These translations are used in the Settings page.
     settings:
-      notify_post_liked_label: 有人赞了我
+      notify_post_liked_label: 有人赞我

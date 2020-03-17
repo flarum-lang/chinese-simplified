@@ -1,0 +1,53 @@
+# https://github.com/studosi-flarum/mail-filter/blob/master/locale/en.yml
+# 81f979c 21 hours ago
+# 2020-3-17 22:20:50 +0800
+
+studosi-mail-filter:
+    admin:
+        nav:
+            title: 邮箱过滤器
+            desc: 添加注册邮箱黑白名单
+
+        settings:
+            rule:
+                name_placeholder: 规则名称
+
+                delete:
+                    question: 确定要删除规则「{rule_name}」吗？
+                    yes: 确定
+                    no: 取消
+
+        whitelist:
+            label: 白名单
+            desc: 确切的白名单邮箱地址
+            placeholder: 输入白名单邮箱...
+
+        whitelist_regex:
+            label: 白名单正则表达式
+            desc: 白名单邮箱正则表达式
+            placeholder: 输入正则表达式...
+
+        blacklist:
+            label: 黑名单
+            desc: 确切的黑名单邮箱地址 
+            placeholder: 输入黑名单邮箱...
+
+        blacklist_regex:
+            label: 黑名单正则表达式
+            desc: 黑名单邮箱正则表达式
+            placeholder: 输入正则表达式...
+
+        import:
+            label: 导入设置
+            desc: 导入邮箱黑白名单、黑白名单正则表达式。
+            button: 导入
+
+        error:
+            invalid_regex: 无效的正则表达式！
+
+    forum:
+        error:
+            generic: 一些地方出了点问题，请联系论坛管理员。
+
+            blacklisted: 禁止使用该邮箱或域名注册！请更换邮箱后再试。
+            not_whitelisted: 该邮箱或域名不在白名单中，请更换邮箱后再试。

@@ -1,6 +1,6 @@
 # https://github.com/FriendsOfFlarum/best-answer/blob/master/resources/locale/en.yml
-# 61dfcb0 5 days ago
-# 2020-2-13 13:39:05 +0800
+# 1d04f84 18 hours ago
+# 2020-3-19 18:53:39 +0800
 
 fof-best-answer:
     admin:
@@ -24,9 +24,11 @@ fof-best-answer:
         best_answer_label: 由 <a>{username}</a> 选择
 
         notification:
+          best_answer_in_discussion: "{username} 选择了最佳回复"
           content: 如果您的问题已解决请选择一个最佳回复
           awarded: 您的帖子被 {username} 选为最佳答案
           awarded_email: 您的帖子被选为最佳答案
           select_email_title: 您是否设法解决了问题？
           preferences:
             awarded_best_answer: 有人将我的帖子选为最佳回复
+            best_answer_in_discussion: 我互动的主题有了最佳回复

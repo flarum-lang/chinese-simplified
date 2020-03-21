@@ -5,7 +5,7 @@
 fof-linguist:
     admin:
         menu:
-            title: 翻译
+            title: 语言学家
             description: 自定义翻译
         buttons:
             apply: 应用

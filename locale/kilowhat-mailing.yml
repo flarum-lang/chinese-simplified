@@ -10,7 +10,7 @@ kilowhat-mailing:
 
     forum:
         links:
-            mail_individual: 向该用户发送邮件
+            mail_individual: 发送邮件
             mail_all: 群发邮件
         modal_mail:
             title_text: 写信

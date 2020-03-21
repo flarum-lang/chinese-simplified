@@ -1,0 +1,9 @@
+# https://github.com/Extum/material/blob/master/resources/locale/en.yml
+# 0254ba0 5 days ago
+# 2020-3-21 17:21:06 +0800
+
+extum-flarum-ext-material2:
+  admin:
+    settings:
+      title: "Extum Material"
+      adaptiveMode: "自适应模式"

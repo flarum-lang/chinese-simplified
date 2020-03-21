@@ -1,0 +1,28 @@
+# https://github.com/askvortsov1/flarum-categories/blob/master/resources/locale/en.yml
+# a618af7 5 hours ago
+# 2020-3-21 17:28:16 +0800
+
+askvortsov-categories:
+  admin:
+    basics:
+      categories_label: 版块
+    labels:
+      keep_tags_nav: 保留首页侧边栏「标签」按钮
+      parent_remove_icon: 隐藏主版块图标
+      parent_remove_description: 隐藏主版块描述信息
+      parent_remove_stats: 隐藏主版块的统计信息
+      parent_remove_last_discussion: 隐藏主版块的最新主题
+    title: 传统版块 - 设置
+  forum:
+    categories:
+    header:
+      back_to_categories_tooltip: 返回版块
+    index:
+      categories_link: 版块
+    meta:
+      categories_title: 全部版块
+    stat-widgets:
+      discussion_label: 主题
+      post_label: 帖子
+    last_discussion_widget:
+      no_discussions: 暂无主题

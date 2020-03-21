@@ -1,0 +1,25 @@
+# https://github.com/clarkwinkelmann/flarum-ext-post-license/blob/master/resources/locale/en.yml
+# 4d1d389 on 13 Dec 2018
+# 2020-3-21 20:22:49 +0800
+
+clarkwinkelmann-post-license:
+    admin:
+        settings:
+            title: 许可证设置
+            field:
+                require-license: 强制要求用户选择许可证
+                allow-custom-license: 允许自定义许可证
+                enabled-licenses: 启用许可证
+                filter-licenses: 关键词过滤
+
+    forum:
+        license-meta:
+            label: "{license} 许可"
+            custom: 自定义许可证
+            custom-explanation: 该用户使用以下自定义许可证
+            more: 详情
+        license-picker:
+            label: 文章许可证
+            select: 选择许可证
+            default: 不使用许可证
+            custom: 自定义许可证

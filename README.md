@@ -43,6 +43,7 @@ php flarum cache:clear
   - antoinefr-money（[Money extension](https://discuss.flarum.org/d/4699)）
   - antoinefr-online（[Online users extension](https://discuss.flarum.org/d/8302)）
   - askvortsov-auth-sync（[Flarum Auth Sync](https://discuss.flarum.org/d/22759)）
+  - askvortsov-categories（[Flarum Categories](https://discuss.flarum.org/d/23184)）
   - askvortsov-help-tags（[Help Tags](https://discuss.flarum.org/d/23004)）
   - askvortsov-saml（[Flarum SAML](https://discuss.flarum.org/d/22757)）
   - backtowebsite（[Back to Website Button](https://discuss.flarum.org/d/18285)）
@@ -54,6 +55,7 @@ php flarum cache:clear
   - clarkwinkelmann-emojionearea（[Emoji Picker](https://discuss.flarum.org/d/4787)）
   - clarkwinkelmann-passwordless（[Passwordless login](https://discuss.flarum.org/d/22606)）
   - clarkwinkelmann-post-date（[Change post date](https://discuss.flarum.org/d/21247)）
+  - clarkwinkelmann-post-license（[Post License](https://github.com/clarkwinkelmann/flarum-ext-post-license)）
   - clarkwinkelmann-scratchpad（[Scratchpad](https://discuss.flarum.org/d/23016)）
   - clarkwinkelmann-see-past-first-post（[See Past First Post](https://discuss.flarum.org/d/23077)）
   - clarkwinkelmann-silent-mailchimp（[Silent Mailchimp](https://discuss.flarum.org/d/23079-)）
@@ -63,6 +65,7 @@ php flarum cache:clear
   - dem13n-nickname-changer（[NickName Changer](https://discuss.flarum.org/d/21238)）
   - dem13n-quad-theme（[Quad theme](https://discuss.flarum.org/d/22618)）
   - extiverse-bazaar（[Bazaar extension marketplace](https://discuss.flarum.org/d/5151)）
+  - extum-flarum-ext-material2（[Material Theme 2](https://github.com/Extum/material)）
   - fajuu-contactbutton（[Contact Button](https://discuss.flarum.org/d/18228)）
   - fajuu-icons（[Icons by Fajuu](https://discuss.flarum.org/d/21401)）
   - flagrow-ads（[Flagrow Ads](https://discuss.flarum.org/d/4785)）
@@ -149,7 +152,8 @@ php flarum cache:clear
   - migratetoflarum-canonical（[Canonical url redirect](https://discuss.flarum.org/d/19307)）
   - migratetoflarum-fake-data（[Fake Data](https://discuss.flarum.org/d/21160)）
   - migratetoflarum-vbulletin-redirects（[vbulletin Redirects](https://github.com/migratetoflarum/vbulletin-redirects)）
-  - minr-auth-qq（[QQ Login](https://github.com/minr/flarum-ext-auth-qq）
+  - minr-auth-qq（[QQ Login](https://github.com/minr/flarum-ext-auth-qq)）
+  - minr-auth-weibo（[Weibo Login](https://discuss.flarum.org/d/22456)）
   - mybbtoflarum（[MyBB to flarum](https://discuss.flarum.org/d/5506)）
   - nikovonlas-webpush（[OneSignal web push notifications](https://discuss.flarum.org/d/20784)）
   - nomiscz-auth-linkedin（[LinkedIn Auth](https://discuss.flarum.org/d/20263)）
@@ -165,6 +169,7 @@ php flarum cache:clear
   - shriker-pronouns（[Personal Pronouns](https://discuss.flarum.org/d/21188)）
   - simonxeko/follow-users（[Follow Users (WIP)](https://discuss.flarum.org/d/22628)）
   - simonxeko-preview-discussion（[Preview Discussion Post (WIP)](https://discuss.flarum.org/d/22636)）
+  - studosi-mail-filter（[Mail Filter](https://discuss.flarum.org/d/23132)）
   - sycho-profile-cover（[Profile Cover](https://github.com/SychO9/flarum-profile-cover)）
   - tank-perspective（[Perspective API](https://discuss.flarum.org/d/21784)）
   - the-turk-diff（[Diff for Flarum](https://discuss.flarum.org/d/22779)）

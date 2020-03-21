@@ -1,6 +1,6 @@
 # https://github.com/flarum/lang-english/blob/master/locale/core.yml
 # fc80447 26 days ago
-# 2020-3-4 20:16:54 +0800
+# 2020-3-21 20:14:24 +0800
 
 core:
 
@@ -98,7 +98,7 @@ core:
       driver_label: 驱动
       from_label: 发件地址
       heading: => core.ref.email
-      mail_encryption_label: 加密方式
+      mail_encryption_label: 加密方式（小写字母）
       mail_host_label: 主机
       mail_mailgun_domain_label: 域名
       mail_mailgun_region_label: 区域
@@ -109,7 +109,7 @@ core:
       mail_ses_key_label: Key
       mail_ses_region_label: 区域
       mail_ses_secret_label: Secret
-      mail_username_label: => core.ref.username
+      mail_username_label: 用户名（一般同发件地址）
       mailgun_heading: Mailgun 设置
       mandrill_heading: Mandrill 设置
       not_sending_message: Flarum 当前无法发送电子邮件，请检查邮件驱动及其配置。
@@ -123,6 +123,13 @@ core:
       add_button: 添加插件
       settings_button: => core.ref.settings
       uninstall_button: 卸载
+
+    advanced:
+      help_text: 请注意这些设置仅适用于高级用户
+      heading_security: 安全设置
+      post_flood_interval: 发送多个帖子之间的等待时间
+      post_flood_interval_text: 配置用户在创建另一条帖子之前必须等待的时间（以秒为单位）
+      enter_positive_number: 请输入一个正数
 
     # This string is used in the session dropdown menu.
     header:
@@ -144,6 +151,8 @@ core:
       email_text: "配置论坛邮箱服务"
       extensions_button: 插件
       extensions_text: 为您的论坛添加插件扩展
+      advanced_button: 高级
+      advanced_text: 配置专门针对高级用户的设置。
       permissions_button: 权限
       permissions_text: 设置各用户组访问及操作权限
 
@@ -355,8 +364,8 @@ core:
 
     # These translations are displayed between posts in the post stream.
     post_stream:
-      discussion_renamed_old_tooltip: '原标题：“{old}”'
-      discussion_renamed_text: "{username} 将标题更改为 “{new}”。"
+      discussion_renamed_old_tooltip: '原标题：「{old}」'
+      discussion_renamed_text: "{username} 将标题更改为 「{new}」。"
       load_more_button: => core.ref.load_more
       reply_placeholder: => core.ref.write_a_reply
       time_lapsed_text: "{period} 后"

@@ -19,22 +19,22 @@ studosi-mail-filter:
 
         whitelist:
             label: 白名单
-            desc: 确切的白名单邮箱地址
+            desc: 完整的白名单注册邮箱地址
             placeholder: 输入白名单邮箱...
 
         whitelist_regex:
             label: 白名单正则表达式
-            desc: 白名单邮箱正则表达式
+            desc: 白名单注册邮箱正则表达式
             placeholder: 输入正则表达式...
 
         blacklist:
             label: 黑名单
-            desc: 确切的黑名单邮箱地址 
+            desc: 完整的黑名单注册邮箱地址 
             placeholder: 输入黑名单邮箱...
 
         blacklist_regex:
             label: 黑名单正则表达式
-            desc: 黑名单邮箱正则表达式
+            desc: 黑名单注册邮箱正则表达式
             placeholder: 输入正则表达式...
 
         import:

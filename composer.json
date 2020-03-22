@@ -18,9 +18,6 @@
       "homepage": "https://bbs.csr.fun/"
     }
   ],
-  "suggest": {
-		"csineneo/lang-traditional-chinese": "Traditional Chinese language pack for Flarum by Csineneo."
-	},
   "support": {
     "source": "https://github.com/Littlegolden/flarum-lang-simplified-chinese",
     "issues": "https://github.com/Littlegolden/flarum-lang-simplified-chinese/issues"

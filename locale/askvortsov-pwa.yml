@@ -1,0 +1,42 @@
+# https://github.com/askvortsov1/flarum-pwa/blob/master/resources/locale/en.yml
+# ede2d67 4 hours ago
+# 2020-3-25 09:00:15 +0800
+
+askvortsov-pwa:
+  admin:
+    nav:
+      pwa_button: 渐进式 Web 应用（PWA）
+      pwa_text: 配置 Flarum 以渐进式 Web 应用运行，使论坛可安装在移动设备上。
+    pwa:
+      enable_label: 启用？
+      about:
+        description_text: 您可以在管理面板的「常规」页面设置应用描述。
+        name_text: 输入要在 PWA 中使用的较长名称。
+        heading: 关于
+        short_name_text: 您可以在管理面板的「常规」页面设置简称。
+      colors:
+        heading: 颜色
+        background_color_text: PWA 加载时显示的初始屏幕占位颜色，实际加载应用后不会使用它。
+        theme_color_text: 沉浸式模式颜色。跟随管理面板「外观」页面的论坛主色调。
+      heading: 渐进式 Web 应用配置
+      text: 将您的 Flarum 站点配置为渐进式 Web 应用！请注意，这不会自动将您的站点发布到到应用商店中。相反，PWA 为您的网站提供了「添加到主屏幕」选项。
+      status_check_heading: 状态检查
+      logo_heading: 徽标（Logo）和图标（Icon）
+      logo_text: |
+        您必须至少上传一个徽标，才能安装渐进式 Web 应用。请注意，所有徽标必须为正方形。如果不是，它们将被拉伸调整为正方形。
+        以下有许多尺寸选择。建议您上传尽可能多的尺寸的徽标：支持更多屏幕尺寸的设备。
+        请注意，您可以将一个大尺寸徽标上传到小尺寸徽标。例如，您可以将 1000px * 1000px 的徽标上传到下面所有的尺寸中。但是，如果您尝试将 50px * 50px 的徽标上传到 512px * 512px 中，徽标会被拉伸失真很多。
+      logo_size_text: 上传徽标，徽标将按 {size} 像素大小缩放为 {size} 像素。
+      submit_button: 保存设置
+      refreshed_message: PWA 配置刷新成功
+    status:
+      disabled: 您必须启用渐进式 Web 应用。
+      config_no_https: config.php 文件中的 URL 未使用 HTTPS。HTTPS 是渐进式 Web 应用正常运行所必需的。
+      possible_https_disabled: 您的网站可能未在 HTTPS 上运行。如果已是 HTTPS，请忽略此消息。如果没有，请记住渐进式Web 应用需要 HTTPS 才能起作用。
+      no_logo: 您必须至少上传一个徽标才能使您的应用正常运行。
+      no_name: 您必须提供全名才能使您的应用正常工作。
+      manifest_does_not_exist: Web 清单文件不存在，请尝试保存设置并刷新配置。
+      manifest_not_accessible: 无法通过互联网访问 Web 清单文件，请检查您的 Web 服务器配置。 如果您在Docker 容器中运行 Flarum，则可以忽略此操作。
+      sw_does_not_exist: Service Worker 文件不存在，请尝试保存设置以刷新配置。
+      sw_not_accessible: 无法通过互联网访问 Service Worker 文件，请检查您的 Web 服务器配置。如果您在 Docker 容器中运行 Flarum，则可以忽略此操作。
+      success: 没有潜在问题！

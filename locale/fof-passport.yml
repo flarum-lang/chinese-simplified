@@ -1,0 +1,21 @@
+# https://github.com/FriendsOfFlarum/passport/blob/master/locale/en.yml
+# 1117c23 2 days ago
+# 2020-3-25 10:27:44 +0800
+
+fof-passport:
+    admin:
+        popup:
+            title: FoF Passport
+            field:
+                app-auth-url: OAuth 授权链接
+                app-token-url: OAuth token 链接
+                app-user-url: 在验证成功后 Api URL 将提供用户信息
+                app-id: OAuth 应用 ID
+                app-secret: OAuth 应用 Secret
+                app-scopes: OAuth 请求作用域
+                button-title: 登录按钮标签
+                button-title-placeholder: => fof-passport.api.default-login-button-title
+                button-icon: 登录按钮图标
+
+    api:
+        default-login-button-title: => core.ref.log_in

@@ -43,11 +43,11 @@ studosi-mail-filter:
             button: 导入
 
         error:
-            invalid_regex: 无效的正则表达式！
+            invalid_regex: "无效的正则表达式！"
 
     forum:
         error:
-            generic: 一些地方出了点问题，请联系论坛管理员。
+            generic: "一些地方出了点问题，请联系论坛管理员。"
 
-            blacklisted: 禁止使用该邮箱或域名注册！请更换邮箱后再试。
-            not_whitelisted: 该邮箱或域名不在白名单中，请更换邮箱后再试。
+            blacklisted: "禁止使用该邮箱或域名注册！请更换邮箱后再试。"
+            not_whitelisted: "该邮箱或域名不在白名单中，请更换邮箱后再试。"

@@ -13,7 +13,7 @@ therealsujitk:
       title: '选择 GIF'
       searchbar: '搜索 GIFs'
       search: '搜索'
-      loading: '载入中...'
+      loading: '正在加载...'
       noresults: '没有找到图片'
       loadmore: '加载更多'
   admin:

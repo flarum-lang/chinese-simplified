@@ -1,6 +1,7 @@
 # https://github.com/flagrow/passport/blob/master/locale/en.yml
 # 96fb206 on 18 Mar 2017
 # 2020年2月2日23:02:56 +0800
+# 兼容旧版
 
 flagrow-passport:
     admin:

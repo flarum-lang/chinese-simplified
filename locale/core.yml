@@ -319,7 +319,7 @@ core:
       latest_button: 最新回复
       newest_button: 新鲜出炉
       oldest_button: 陈年旧贴
-      relevance_button: 关联推荐
+      relevance_button: 相关推荐
       top_button: 热门回复
 
     # These translations are used in the Log In modal dialog.
@@ -423,7 +423,7 @@ core:
     user_controls:
       button: 操作 
       delete_button: => core.ref.delete
-      delete_confirmation: "确定要删除此用户？此用户的所有帖子都将被删除。"
+      delete_confirmation: "确定要删除此用户？此账号会被注销，已发布的帖子仍会保留。"
       delete_error_message: "删除用户 <i>{username} ({email})</i> 失败"
       delete_success_message: "用户 <i>{username} ({email})</i> 已删除"
       edit_button: => core.ref.edit
@@ -469,9 +469,9 @@ core:
 
     # Translations in this namespace are displayed by the basic HTML content loader.
     content:
-      javascript_disabled_message: 请使用更先进的浏览器并启用 JavaScript 以获取最佳浏览体验。
+      javascript_disabled_message: 请使用更现代的浏览器并启用 JavaScript 以获得最佳浏览体验。
       load_error_message: 加载论坛时出错，请强制刷新页面重试。
-      loading_text: 加载中...
+      loading_text: 正在加载...
 
     # Translations in this namespace are displayed in the basic HTML discussion view.
     discussion:

@@ -45,6 +45,7 @@ php flarum cache:clear
   - askvortsov-auth-sync（[Flarum Auth Sync](https://discuss.flarum.org/d/22759)）
   - askvortsov-categories（[Flarum Categories](https://discuss.flarum.org/d/23184)）
   - askvortsov-help-tags（[Help Tags](https://discuss.flarum.org/d/23004)）
+  - askvortsov-pwa（[Flarum PWA](https://discuss.flarum.org/d/23219)）
   - askvortsov-saml（[Flarum SAML](https://discuss.flarum.org/d/22757)）
   - backtowebsite（[Back to Website Button](https://discuss.flarum.org/d/18285)）
   - clarkwinkelmann-carving-contest（[Pumpkin Carving Contest](https://discuss.flarum.org/d/21828)）
@@ -123,6 +124,7 @@ php flarum cache:clear
   - fof-nightmode（[Night Mode](https://discuss.flarum.org/d/21492)）
   - fof-open-collective（[Open Collective](https://discuss.flarum.org/d/22256)）
   - fof-pages（[Pages](https://discuss.flarum.org/d/18301)）
+  - fof-passport（[FoF Passport](https://discuss.flarum.org/d/5203)）
   - fof-polls（[Polls](https://discuss.flarum.org/d/20586)）
   - fof-pretty-mail（[Pretty Mail](https://discuss.flarum.org/d/11178)）
   - fof-prevent-necrobumping（[Prevent Necrobumping](https://discuss.flarum.org/d/18312)）

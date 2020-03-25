@@ -1,6 +1,6 @@
 # https://github.com/askvortsov1/flarum-categories/blob/master/resources/locale/en.yml
-# 96980fe 5 hours ago
-# 2020-3-22 11:04:39 +0800
+# 7f33ed0 yesterday
+# 2020-3-25 10:20:35 +0800
 
 askvortsov-categories:
   admin:
@@ -8,6 +8,7 @@ askvortsov-categories:
       categories_label: 版块
     labels:
       keep_tags_nav: 保留首页侧边栏「标签」按钮
+      child_bare_icon: 隐藏子版块图标的圆形背景
       full_page_desktop: 是否横排显示侧边栏（如原生标签页那样）？此设置同时会隐藏版块页面的第三方小部件（例如 FoF 论坛统计）
       parent_remove_icon: 隐藏主版块图标
       parent_remove_description: 隐藏主版块描述信息

@@ -45,6 +45,7 @@ php flarum cache:clear
   - askvortsov-auth-sync（[Flarum Auth Sync](https://discuss.flarum.org/d/22759)）
   - askvortsov-categories（[Flarum Categories](https://discuss.flarum.org/d/23184)）
   - askvortsov-help-tags（[Help Tags](https://discuss.flarum.org/d/23004)）
+  - askvortsov-moderator-warnings（[Moderator Warnings](https://discuss.flarum.org/d/23228)）
   - askvortsov-pwa（[Flarum PWA](https://discuss.flarum.org/d/23219)）
   - askvortsov-saml（[Flarum SAML](https://discuss.flarum.org/d/22757)）
   - backtowebsite（[Back to Website Button](https://discuss.flarum.org/d/18285)）
@@ -178,7 +179,7 @@ php flarum cache:clear
   - the-turk-mathren（[MathRen](https://discuss.flarum.org/d/22439)）
   - the-turk-edit-notifications（[Edit Notifications](https://discuss.flarum.org/d/22896)）
   - the-turk-password-strength（[Password Strength Indicator](https://discuss.flarum.org/d/22624)）
-  - therealsujitk（[Show Password](https://discuss.flarum.org/d/22727)、[GIFs](https://discuss.flarum.org/d/23101)）
+  - therealsujitk（[Show Password](https://discuss.flarum.org/d/22727)、[GIFs](https://discuss.flarum.org/d/23101)）、[Highlight.js](https://discuss.flarum.org/d/23229)
   - tituspijean-auth-ldap（[LDAP Login](https://discuss.flarum.org/d/9515)）
   - tpokorra-post-notification（[Post Notifications per E-Mail](https://discuss.flarum.org/d/20750)）
   - v17development-flarum-seo（[Flarum SEO](https://discuss.flarum.org/d/18316)）

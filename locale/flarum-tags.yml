@@ -26,7 +26,7 @@ flarum-tags:
       icon_text: => core.ref.icon_text
       name_label: => flarum-tags.ref.name
       name_placeholder: => flarum-tags.ref.name
-      slug_label: 英文名称
+      slug_label: 英文名称（Slug）
       submit_button: => core.ref.save_changes
       title: => flarum-tags.ref.create_tag
 

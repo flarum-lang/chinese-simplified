@@ -1,9 +1,14 @@
 # https://github.com/therealsujitk/flarum-ext-show-password/blob/master/resources/locale/en.yml
 # cded280 7 hours ago
 # 2020-1-26 18:37:58
+
 # https://github.com/therealsujitk/flarum-ext-gifs/blob/master/resources/locale/en.yml
 # 9035286 16 hours ago
 # 2020-3-15 15:41:55 +0800
+
+# https://github.com/therealsujitk/flarum-ext-hljs/blob/master/resources/locale/en.yml
+# 753c69b 8 hours ago
+# 2020-3-26 10:12:10 +0800
 
 therealsujitk:
   forum:
@@ -20,6 +25,9 @@ therealsujitk:
     gifs:
       title: 'GIF API 设置'
       giphyAPIkey: 'Giphy API 密钥'
+    hljs:
+        title: 'highlight.js 设置'
+        themename: '主题名称'
     about:
-      stringA: '插件制作：'
+      stringA: '插件作者：'
       stringB: '捐赠：'

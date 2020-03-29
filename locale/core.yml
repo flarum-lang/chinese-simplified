@@ -1,6 +1,6 @@
 # https://github.com/flarum/lang-english/blob/master/locale/core.yml
 # fc80447 26 days ago
-# 2020-3-21 20:14:24 +0800
+# 2020-3-30 00:47:38 +0800
 
 core:
 
@@ -35,9 +35,9 @@ core:
       edit_header_button: => core.ref.custom_header_title
       enter_hex_message: 请输入十六进制颜色代码。
       favicon_heading: 站点图标（Favicon）
-      favicon_text: 上传图片做为论坛的站点图标。
+      favicon_text: 上传图片做为论坛的站点图标，该图标会显示在浏览器标签页、搜索引擎结果条目及书签等多个地方。
       logo_heading: Logo
-      logo_text: 上传图片代替论坛名称，并展示在导航栏左上方。
+      logo_text: 上传图片代替论坛名称，并展示在导航栏左侧。
       submit_button: => core.ref.save_changes
 
     # These translations are used in the Basics page.
@@ -45,15 +45,15 @@ core:
       all_discussions_label: => core.ref.all_discussions
       default_language_heading: 默认语言
       forum_description_heading: 论坛介绍描述
-      forum_description_text: '输入一两句话简单描述论坛。这将会显示为<Meta name="description"> 标签，并出现在搜索引擎结果中。'
+      forum_description_text: '输入一两句话简单描述论坛。这将会显示为 <meta name="description"> 描述标签，一般为 160 字的文本，用于介绍网页的内容。平常多被搜索引擎截取网页简介用。'
       forum_title_heading: 论坛名称
       home_page_heading: 论坛首页
-      home_page_text: "选择一个页面作为论坛首页。"
+      home_page_text: "选择一种页面作为论坛首页。"
       saved_message: 您的更改已保存
       show_language_selector_label: 显示选择语言菜单
       submit_button: => core.ref.save_changes
       welcome_banner_heading: 欢迎横幅
-      welcome_banner_text: 横幅文本将显示于“全部主题”页面顶部，可以用于欢迎论坛访客。
+      welcome_banner_text: 横幅文本将显示于「全部主题」页面顶部，可以用于欢迎论坛访客。
 
     # These translations are used in the Dashboard page.
     dashboard:
@@ -94,8 +94,8 @@ core:
     # These translations are used in the email page of the admin interface.
     email:
       addresses_heading: 地址
-      driver_heading: 选择驱动
-      driver_label: 驱动
+      driver_heading: 驱动
+      driver_label: 邮件驱动
       from_label: 发件地址
       heading: => core.ref.email
       mail_encryption_label: 加密方式（小写字母）
@@ -517,7 +517,7 @@ core:
 
     # These translations are used in emails sent when users register new accounts.
     activate_account:
-      subject: 激活您的账号
+      subject: 账号激活
       body: |
         您好，{username}！
 

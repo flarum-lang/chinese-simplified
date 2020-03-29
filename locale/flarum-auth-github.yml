@@ -1,6 +1,6 @@
 # https://github.com/flarum/flarum-ext-english/blob/master/locale/flarum-auth-github.yml
 # 6bde361 on 29 Nov 2015
-# 2020年2月2日23:58:16 +0800
+# 2020-3-30 00:47:496 +0800
 
 flarum-auth-github:
 
@@ -22,4 +22,4 @@ flarum-auth-github:
 
     # These translations are used in the Log In modal dialog.
     log_in:
-      with_github_button: GitHub 帐号登录
+      with_github_button: GitHub 账号登录

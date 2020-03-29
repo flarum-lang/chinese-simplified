@@ -77,28 +77,28 @@ php flarum cache:clear
   - flagrow-impersonate（[Flagrow Impersonate](https://discuss.flarum.org/d/9868)）
   - ~~flagrow-mason（[Flagrow Mason](https://discuss.flarum.org/d/7028)）~~ Not compatible with the latest version.
   - flagrow-passport（[Flagrow passport](https://discuss.flarum.org/d/5203)）
-  - flarum-akismet（[Flarum Core](https://github.com/flarum/lang-english/tree/master/locale)）
-  - flarum-approval（[Flarum Core](https://github.com/flarum/lang-english/tree/master/locale)）
-  - flarum-auth-facebook（[Flarum Core](https://github.com/flarum/lang-english/tree/master/locale)）
-  - flarum-auth-github（[Flarum Core](https://github.com/flarum/lang-english/tree/master/locale)）
-  - flarum-auth-twitter（[Flarum Core](https://github.com/flarum/lang-english/tree/master/locale)）
-  - flarum-core（[Flarum Core](https://github.com/flarum/lang-english/tree/master/locale)）
-  - flarum-discussion-views（[Flarum Core](https://github.com/flarum/lang-english/tree/master/locale)）
-  - flarum-emoji（[Flarum Core](https://github.com/flarum/lang-english/tree/master/locale)）
-  - flarum-ext-close（[Flarum Core](https://github.com/flarum/lang-english/tree/master/locale)）
-  - flarum-ext-fancybox（[Flarum Core](https://github.com/flarum/lang-english/tree/master/locale)）
-  - flarum-flags（[Flarum Core](https://github.com/flarum/lang-english/tree/master/locale)）
-  - flarum-likes（[Flarum Core](https://github.com/flarum/lang-english/tree/master/locale)）
-  - flarum-lock（[Flarum Core](https://github.com/flarum/lang-english/tree/master/locale)）
-  - flarum-markdown（[Flarum Core](https://github.com/flarum/lang-english/tree/master/locale)）
-  - flarum-mentions（[Flarum Core](https://github.com/flarum/lang-english/tree/master/locale)）
+  - flarum-akismet（[Flarum Core](https://github.com/flarum/akismet)）
+  - flarum-approval（[Flarum Core](https://github.com/flarum/approval)）
+  - flarum-auth-facebook（[Facebook Login](https://github.com/flarum/auth-facebook)）
+  - flarum-auth-github（[GitHub Login](https://github.com/flarum/auth-github)）
+  - flarum-auth-twitter（[Twitter Login](https://github.com/flarum/auth-twitter)）
+  - flarum-core（[Flarum Core](https://github.com/flarum/core)）
+  - flarum-discussion-views（[Discussion Views](https://discuss.flarum.org/d/7339)）
+  - flarum-emoji（[Flarum Core](https://github.com/flarum/emoji)）
+  - flarum-ext-close（[Closed Discussion](https://discuss.flarum.org/d/21698)）
+  - flarum-ext-fancybox（[FancyBox](https://discuss.flarum.org/d/19535)）
+  - flarum-flags（[Flarum Core](https://github.com/flarum/flags)）
+  - flarum-likes（[Flarum Core](https://github.com/flarum/likes)）
+  - flarum-lock（[Flarum Core](https://github.com/flarum/likes)）
+  - flarum-markdown（[Flarum Core](https://github.com/flarum/markdown)）
+  - flarum-mentions（[Flarum Core](https://github.com/flarum/mentions)）
   - ~~flarum-notify（[Notify](https://discuss.flarum.org/d/4345)）~~ Incompatible
-  - flarum-pusher（[Flarum Core](https://github.com/flarum/lang-english/tree/master/locale)）
-  - flarum-statistics（[Flarum Core](https://github.com/flarum/lang-english/tree/master/locale)）
-  - flarum-sticky（[Flarum Core](https://github.com/flarum/lang-english/tree/master/locale)）
-  - flarum-subscriptions（[Flarum Core](https://github.com/flarum/lang-english/tree/master/locale)）
-  - flarum-suspend（[Flarum Core](https://github.com/flarum/lang-english/tree/master/locale)）
-  - flarum-tags（[Flarum Core](https://github.com/flarum/lang-english/tree/master/locale)）
+  - flarum-pusher（[Flarum Core](https://github.com/flarum/pusher)）
+  - flarum-statistics（[Flarum Core](https://github.com/flarum/statistics)）
+  - flarum-sticky（[Flarum Core](https://github.com/flarum/sticky)）
+  - flarum-subscriptions（[Flarum Core](https://github.com/flarum/subscriptions)）
+  - flarum-suspend（[Flarum Core](https://github.com/flarum/suspend)）
+  - flarum-tags（[Flarum Core](https://github.com/flarum/tags)）
   - fof-amazon-affiliation（[Amazon Affiliation](https://discuss.flarum.org/d/12389)）
   - fof-auth-gitlab（[GitLab Login](https://discuss.flarum.org/d/20371)）
   - fof-auth-discord（[Discord Login](https://discuss.flarum.org/d/20184)）
@@ -183,6 +183,7 @@ php flarum cache:clear
   - tituspijean-auth-ldap（[LDAP Login](https://discuss.flarum.org/d/9515)）
   - tpokorra-post-notification（[Post Notifications per E-Mail](https://discuss.flarum.org/d/20750)）
   - v17development-flarum-seo（[Flarum SEO](https://discuss.flarum.org/d/18316)）
+  - veroz1-users-list（[User List](https://github.com/VeroZ1/users-list)）
   - xmugenx-post-blacklist（[Post Blacklist](https://discuss.flarum.org/d/21750)）
   - zerosonesfun-announce（[Announce](https://discuss.flarum.org/d/21651)）
   

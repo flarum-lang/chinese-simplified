@@ -1,0 +1,30 @@
+# https://github.com/VeroZ1/users-list/blob/master/resources/locale/en.yml
+# bf4341b on 5 Aug 2019
+# 2020-3-30 00:29:24 +0800
+
+veroz1-users-list:
+  admin:
+    nav:
+      users_button: => veroz1-users-list.ref.users_title
+      users_text: 查看用户列表
+    page:
+      about_text:  查看注册用户列表
+      online_text: => core.forum.user.online_text
+      load_more_button: => core.ref.load_more
+      list_title: => veroz1-users-list.ref.users_title
+      mail_all_button: 写信给全体用户
+    modal_mail:
+      title_text: 写信给
+      title_all_text: 全体用户
+      email_label: 收件人
+      subject_label: 主题
+      default_subject: => veroz1-users-list.ref.default_subject
+      message_label: 正文
+      submit_button: 发送
+
+  email:
+    default_subject: => veroz1-users-list.ref.default_subject
+
+  ref:
+    default_subject: 来自论坛管理员的邮件
+    users_title: 用户列表

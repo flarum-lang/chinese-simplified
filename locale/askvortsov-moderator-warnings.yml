@@ -1,6 +1,6 @@
 # https://github.com/askvortsov1/flarum-moderator-warnings/blob/master/resources/locale/en.yml
 # 30fdb55 6 hours ago
-# 2020-3-26 08:24:45 +0800
+# 2020-3-30 00:47:26 +0800
 
 askvortsov-moderator-warnings:
   admin:
@@ -27,7 +27,7 @@ askvortsov-moderator-warnings:
       delete_forever_button: 永久删除
     warning_list:
       add_button: 新建警告
-      no-warnings: 该账号暂未收到任何警告
+      no-warnings: 该用户暂未收到任何警告
       warnings: "站务警告: {strikes} 次"
       warnings_no_strikes: "站务警告：0 次"
     warning_list_item:

@@ -1,6 +1,6 @@
 # https://github.com/the-turk/flarum-diff/blob/master/locale/en.yml
 # b993352 5 hours ago
-# 2020-3-29 10:08:37 +0800
+# 2020-3-30 00:48:00 +0800
 
 the-turk-diff:
     forum:
@@ -8,7 +8,7 @@ the-turk-diff:
         revisions:                   "共 {revisionCount} 次修订|共 {revisionCount} 次修订"
         emptyText:                   无修订记录
         confirmDelete:               确定要删除此条编辑记录吗？
-        confirmRollback:             确定要回滚到此版本吗？此版本后的所有编辑记录将会被删除。
+        confirmRollback:             确定要回滚到此版本吗？
         deleteSuccessMessage:        编辑记录已删除
         deleteErrorMessage:          删除编辑记录失败
         rollbackSuccessMessage:      回滚成功
@@ -21,7 +21,7 @@ the-turk-diff:
         rollbackToOriginalButton:    回滚到初始版本
         revertChangesButton:         还原更改
         noDiff:                      未找到任何差异
-        mostRecent:                  最近
+        mostRecent:                  最新版本
         sideBySide:                  双栏对比
         inline:                      单栏对比
         combined:                    组合对比
@@ -30,7 +30,7 @@ the-turk-diff:
         differences:                 "您正在查看版本 {old} 与 {new} 之间的差异"
         previewMode:                 "预览模式（{content}）" # other languages may use: You're in preview mode ({content})
         originalContent:             初始版本 # may be {old}, {new} or {content}
-        currentContent:              当前内容 # may be {old}, {new} or {content}
+        currentContent:              当前版本 # may be {old}, {new} or {content}
         revisionWithNumber:          "修订版本 {number}" # may be {old}, {new} or {content}
     admin:
         settings:

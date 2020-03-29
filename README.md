@@ -77,28 +77,28 @@ php flarum cache:clear
   - flagrow-impersonate（[Flagrow Impersonate](https://discuss.flarum.org/d/9868)）
   - ~~flagrow-mason（[Flagrow Mason](https://discuss.flarum.org/d/7028)）~~ Not compatible with the latest version.
   - flagrow-passport（[Flagrow passport](https://discuss.flarum.org/d/5203)）
-  - flarum-akismet（[Flarum Core](https://github.com/flarum/akismet)）
-  - flarum-approval（[Flarum Core](https://github.com/flarum/approval)）
+  - flarum-akismet（[Flarum Akismet](https://github.com/flarum/akismet)）
+  - flarum-approval（[Flarum Approval](https://github.com/flarum/approval)）
   - flarum-auth-facebook（[Facebook Login](https://github.com/flarum/auth-facebook)）
   - flarum-auth-github（[GitHub Login](https://github.com/flarum/auth-github)）
   - flarum-auth-twitter（[Twitter Login](https://github.com/flarum/auth-twitter)）
   - flarum-core（[Flarum Core](https://github.com/flarum/core)）
   - flarum-discussion-views（[Discussion Views](https://discuss.flarum.org/d/7339)）
-  - flarum-emoji（[Emoji](https://github.com/flarum/emoji)）
+  - flarum-emoji（[Flarum Emoji](https://github.com/flarum/emoji)）
   - flarum-ext-close（[Closed Discussion](https://discuss.flarum.org/d/21698)）
   - flarum-ext-fancybox（[FancyBox](https://discuss.flarum.org/d/19535)）
-  - flarum-flags（[Flags](https://github.com/flarum/flags)）
-  - flarum-likes（[Likes](https://github.com/flarum/likes)）
-  - flarum-lock（[Lock](https://github.com/flarum/likes)）
-  - flarum-markdown（[Markdown](https://github.com/flarum/markdown)）
-  - flarum-mentions（[Mentions](https://github.com/flarum/mentions)）
-  - ~~flarum-notify（[Notify](https://discuss.flarum.org/d/4345)）~~ Incompatible
-  - flarum-pusher（[Pusher](https://github.com/flarum/pusher)）
-  - flarum-statistics（[Statistics](https://github.com/flarum/statistics)）
-  - flarum-sticky（[Sticky](https://github.com/flarum/sticky)）
-  - flarum-subscriptions（[Subscriptions](https://github.com/flarum/subscriptions)）
-  - flarum-suspend（[Suspend](https://github.com/flarum/suspend)）
-  - flarum-tags（[Tags](https://github.com/flarum/tags)）
+  - flarum-flags（[Flarum Flags](https://github.com/flarum/flags)）
+  - flarum-likes（[Flarum Likes](https://github.com/flarum/likes)）
+  - flarum-lock（[Flarum Lock](https://github.com/flarum/likes)）
+  - flarum-markdown（[Flarum Markdown](https://github.com/flarum/markdown)）
+  - flarum-mentions（[Flarum Mentions](https://github.com/flarum/mentions)）
+  - ~~flarum-notify（[Flarum Notify](https://discuss.flarum.org/d/4345)）~~ Incompatible
+  - flarum-pusher（[Flarum Pusher](https://github.com/flarum/pusher)）
+  - flarum-statistics（[Flarum Statistics](https://github.com/flarum/statistics)）
+  - flarum-sticky（[Flarum Sticky](https://github.com/flarum/sticky)）
+  - flarum-subscriptions（[Flarum Subscriptions](https://github.com/flarum/subscriptions)）
+  - flarum-suspend（[Flarum Suspend](https://github.com/flarum/suspend)）
+  - flarum-tags（[Flarum Tags](https://github.com/flarum/tags)）
   - fof-amazon-affiliation（[Amazon Affiliation](https://discuss.flarum.org/d/12389)）
   - fof-auth-gitlab（[GitLab Login](https://discuss.flarum.org/d/20371)）
   - fof-auth-discord（[Discord Login](https://discuss.flarum.org/d/20184)）

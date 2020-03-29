@@ -44,7 +44,7 @@ flarum-flags:
     # These translations are used by the Flagged Posts dropdown, a.k.a. "the flag".
     flagged_posts:
       empty_text: 暂无举报
-      item_text: "{username} 在 <em>{discussion}</em>"
+      item_text: "{username} 发布于 <em>{discussion}</em>"
       title: => flarum-flags.ref.flagged_posts
       tooltip: => flarum-flags.ref.flagged_posts
 

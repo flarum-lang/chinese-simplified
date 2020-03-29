@@ -27,7 +27,7 @@ therealsujitk:
       giphyAPIkey: 'Giphy API 密钥'
     hljs:
         title: 'highlight.js 设置'
-        themename: '主题名称'
+        themename: '主题样式（预览：http://t.cn/A6ZtzMiG）'
     about:
       stringA: '插件作者：'
       stringB: '捐赠：'

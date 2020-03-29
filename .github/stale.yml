@@ -14,4 +14,6 @@ markComment: >
   recent activity. It will be closed if no further activity occurs. Thank you
   for your contributions.
 # Comment to post when closing a stale issue. Set to `false` to disable
-closeComment: false
+closeComment: >
+  We are closing this issue as it seems to have grown stale. If you still
+  encounter this problem with the latest version, feel free to re-open it.

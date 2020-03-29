@@ -84,21 +84,21 @@ php flarum cache:clear
   - flarum-auth-twitter（[Twitter Login](https://github.com/flarum/auth-twitter)）
   - flarum-core（[Flarum Core](https://github.com/flarum/core)）
   - flarum-discussion-views（[Discussion Views](https://discuss.flarum.org/d/7339)）
-  - flarum-emoji（[Flarum Core](https://github.com/flarum/emoji)）
+  - flarum-emoji（[Emoji](https://github.com/flarum/emoji)）
   - flarum-ext-close（[Closed Discussion](https://discuss.flarum.org/d/21698)）
   - flarum-ext-fancybox（[FancyBox](https://discuss.flarum.org/d/19535)）
-  - flarum-flags（[Flarum Core](https://github.com/flarum/flags)）
-  - flarum-likes（[Flarum Core](https://github.com/flarum/likes)）
-  - flarum-lock（[Flarum Core](https://github.com/flarum/likes)）
-  - flarum-markdown（[Flarum Core](https://github.com/flarum/markdown)）
-  - flarum-mentions（[Flarum Core](https://github.com/flarum/mentions)）
+  - flarum-flags（[Flags](https://github.com/flarum/flags)）
+  - flarum-likes（[Likes](https://github.com/flarum/likes)）
+  - flarum-lock（[Lock](https://github.com/flarum/likes)）
+  - flarum-markdown（[Markdown](https://github.com/flarum/markdown)）
+  - flarum-mentions（[Mentions](https://github.com/flarum/mentions)）
   - ~~flarum-notify（[Notify](https://discuss.flarum.org/d/4345)）~~ Incompatible
-  - flarum-pusher（[Flarum Core](https://github.com/flarum/pusher)）
-  - flarum-statistics（[Flarum Core](https://github.com/flarum/statistics)）
-  - flarum-sticky（[Flarum Core](https://github.com/flarum/sticky)）
-  - flarum-subscriptions（[Flarum Core](https://github.com/flarum/subscriptions)）
-  - flarum-suspend（[Flarum Core](https://github.com/flarum/suspend)）
-  - flarum-tags（[Flarum Core](https://github.com/flarum/tags)）
+  - flarum-pusher（[Pusher](https://github.com/flarum/pusher)）
+  - flarum-statistics（[Statistics](https://github.com/flarum/statistics)）
+  - flarum-sticky（[Sticky](https://github.com/flarum/sticky)）
+  - flarum-subscriptions（[Subscriptions](https://github.com/flarum/subscriptions)）
+  - flarum-suspend（[Suspend](https://github.com/flarum/suspend)）
+  - flarum-tags（[Tags](https://github.com/flarum/tags)）
   - fof-amazon-affiliation（[Amazon Affiliation](https://discuss.flarum.org/d/12389)）
   - fof-auth-gitlab（[GitLab Login](https://discuss.flarum.org/d/20371)）
   - fof-auth-discord（[Discord Login](https://discuss.flarum.org/d/20184)）

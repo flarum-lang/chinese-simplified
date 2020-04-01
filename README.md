@@ -1,9 +1,9 @@
 ## Flarum 简体中文语言包 / Simplified Chinese Language Pack
-本语言包基于 [flarum/lang-english](https://github.com/flarum/lang-english) 、 [Flarum China](https://discuss.flarum.org/d/612)，并对[Csineneo 的简中语言包](https://github.com/Csineneo/lang-simplified-chinese)言语进行了优化调整。
+本语言包基于 [flarum/lang-english](https://github.com/flarum/lang-english) 、 [FlarumCN 2015](https://discuss.flarum.org/d/612)。
 
-相较于 Csineneo 的语言包，整体语言风格较细腻自然，符合多数中国人思维习惯。
+整体语言风格较细腻自然，符合多数中国人思维习惯。
 
-This language pack is based on [flarum/lang-english](https://github.com/flarum/lang-english),[Flarum China](https://discuss.flarum.org/d/612), and optimized a lot of speech descriptions of [Csineneo's Simplified Chinese Language Pack](https://github.com/Csineneo/lang-simplified-chinese).
+This language pack is based on [flarum/lang-english](https://github.com/flarum/lang-english),[FlarumCN 2015](https://discuss.flarum.org/d/612).
 
 Compared with Csineneo's Simplified Chinese language pack, the overall language style is more delicate and natural, which conforms to the thinking habits of most Chinese people.
 

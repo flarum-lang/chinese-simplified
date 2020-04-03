@@ -1,0 +1,35 @@
+# https://github.com/clarkwinkelmann/flarum-ext-colorful-borders/blob/master/resources/locale/en.yml
+# dc3bc5d 2 days ago
+# 2020-4-3 08:46:52 +0800
+
+clarkwinkelmann-colorful-borders:
+    forum:
+        edit: 编辑样式
+        default: 默认
+        apply: 应用
+        reset: 删除自定义样式
+        borderColor: 边框颜色
+        backgroundColor: 背景颜色
+        textColor: 文本颜色
+        borderWidth: 边框宽度
+        borderRadius: 圆角半径
+
+    admin:
+        permissions:
+            heading: 彩色边框
+            editOwnPost: 编辑自己的帖子样式
+            editAnyPost: 编辑任何帖子样式
+        settings:
+            title: 彩色边框设置
+            enableBorderColor: 自定义边框颜色
+            enableBackgroundColor: 自定义背景颜色
+            enableTextColor: 自定义文本颜
+            enableBorderWidth: 自定义边框宽度
+            enableBorderRadius: 自定义边框半径
+            min: 最小
+            max: 最大
+            colors:
+                simple: 简单颜色设置
+                all: 任何颜色
+                custom: 自定义颜色列表
+                custom-help: '请使用 #十六进制颜色代码 或 rgb() 值，并以逗号分隔。'

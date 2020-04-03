@@ -44,8 +44,8 @@ core:
     basics:
       all_discussions_label: => core.ref.all_discussions
       default_language_heading: 默认语言
-      forum_description_heading: 论坛介绍描述
-      forum_description_text: '输入一两句话简单描述论坛。这将会显示为 <meta name="description"> 描述标签，一般为 160 字的文本，用于介绍网页的内容。平常多被搜索引擎截取网页简介用。'
+      forum_description_heading: 论坛描述
+      forum_description_text: '输入一两句话简单介绍您的论坛。这将会显示为 <meta name="description"> 描述标签，一般为 160 字的文本，用于介绍网页的内容。平常多被搜索引擎截取网页简介用。'
       forum_title_heading: 论坛名称
       home_page_heading: 论坛首页
       home_page_text: "选择一种页面作为论坛首页。"
@@ -137,7 +137,7 @@ core:
 
     # This string is used in the modal dialog displayed when loading extensions.
     loading:
-      title: 请稍后...
+      title: 请稍候...
 
     # These translations are used in the navigation bar.
     nav:
@@ -255,7 +255,7 @@ core:
       cannot_reply_button: 回复已关闭
       cannot_reply_text: 您没有权限回复这个帖子。
       delete_button: => core.ref.delete
-      delete_confirmation: "确定删除这个帖子？"
+      delete_confirmation: "确定要永久删除这个帖子？"
       delete_forever_button: => core.ref.delete_forever
       log_in_to_reply_button: 登录以回复
       rename_button: => core.ref.rename

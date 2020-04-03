@@ -52,6 +52,7 @@ php flarum cache:clear
   - clarkwinkelmann-carving-contest（[Pumpkin Carving Contest](https://discuss.flarum.org/d/21828)）
   - clarkwinkelmann-catch-the-fish（[Catch The Fish](https://discuss.flarum.org/d/19532)）
   - clarkwinkelmann-author-change（[Discussion and post author change](https://discuss.flarum.org/d/21731)）
+  - clarkwinkelmann-colorful-borders（[Colorful Borders](https://discuss.flarum.org/d/23303)）
   - clarkwinkelmann-create-user-modal（[Create User Modal](https://discuss.flarum.org/d/22608)）
   - clarkwinkelmann-email-as-display-name（[Email as Display Name](https://discuss.flarum.org/d/22603)）
   - clarkwinkelmann-emojionearea（[Emoji Picker](https://discuss.flarum.org/d/4787)）

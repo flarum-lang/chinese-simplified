@@ -10,7 +10,7 @@ fof-username-request:
   forum:
     action:
       title: => fof-username-request.forum.results.title
-      help_text: 请确保用户名遵循论坛守则
+      help_text: 请确保用户名符合社区规范
       decision_title: 审核
       approval_label: 同意
       rejected_label: 拒绝

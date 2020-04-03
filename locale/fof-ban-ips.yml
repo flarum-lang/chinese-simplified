@@ -1,6 +1,6 @@
 # https://github.com/FriendsOfFlarum/ban-ips/blob/master/resources/locale/en.yml
 # c5e12b1 on 11 Jun 2019
-# 2020-2-3 12:36:59 +0800
+# 2020-3-31 17:33:02 +0800
 
 fof-ban-ips:
   forum:
@@ -8,12 +8,12 @@ fof-ban-ips:
     unban_ip_button: => fof-ban-ips.ref.unban_ip_button
 
     modal:
-      ban_options_only_ip: 仅封禁当前 IP (<code>{ip}</code>)
-      ban_options_all_ip: 封禁 <i>{username}</i> 使用过的所有 IP
+      ban_options_only_ip: 仅拉黑当前 IP (<code>{ip}</code>)
+      ban_options_all_ip: 拉黑 <i>{username}</i> 使用过的所有 IP
       ban_ip_no_users: 没有使用此 IP 的其他用户
 
     user_badge:
-      banned_tooltip: 已封禁
+      banned_tooltip: IP已拉黑
 
     user_controls:
       ban_button: => fof-ban-ips.ref.ban_label
@@ -22,7 +22,7 @@ fof-ban-ips:
   admin:
     permissions:
       ban_ip_label: => fof-ban-ips.ref.ban_ip_addresses
-      view_banned_ip_list_label: 查看已封禁 IP 地址列表
+      view_banned_ip_list_label: 查看已拉黑 IP 地址列表
 
     page:
       create_button: => fof-ban-ips.ref.ban_ip_button
@@ -34,15 +34,15 @@ fof-ban-ips:
       date_label: 日期
 
     modal:
-      update_title: 更新已封禁 IP
+      update_title: 更新已拉黑 IP 地址
       ban_ip_no_users: 没有使用此 IP 的其他用户
 
     nav:
-      title: 封禁 IP
+      title: 拉黑 IP 地址
 
-      desc: 新增、删除、查看封禁 IP 地址
+      desc: 新增、删除、查看拉黑 IP 地址
 
-    empty_text: 暂无 IP 被封禁
+    empty_text: 暂无 IP 被拉黑
 
   error:
     banned_ip_message: 验证失败
@@ -59,27 +59,27 @@ fof-ban-ips:
       check_button: 检查
       save_button: 保存
 
-      ban_ip_confirmation: "你确定要封禁这个 IP 吗？所有使用这个 IP 的用户将无法登录和注册论坛。"
-      ban_ip_users: 用户 {users} 将被封禁|用户 {users} 将被封禁
+      ban_ip_confirmation: "你确定要将此 IP 加入黑名单吗？所有使用这个 IP 的用户将无法登录和注册论坛。"
+      ban_ip_users: 用户 {users} 将被拉黑|用户 {users} 将被拉黑
 
-      unban_ip_confirmation: 你确定要解禁此用户以及所有使用此 IP 的其他用户吗？（如果其他用户有使用黑名单中别的 IP，那么该用户仍然会处于封禁状态）
-      unban_options_only_ip: 仅取消封禁当前 IP (<code>{ip}</code>)
-      unban_options_all_ip: 取消封禁 <i>{username}</i> 使用过的所有 IP
+      unban_ip_confirmation: 你确定要解禁此用户以及所有使用此 IP 的其他用户吗？（如果其他用户有使用黑名单中的其他 IP，那么该用户仍然会处于拉黑状态）
+      unban_options_only_ip: 仅取消拉黑当前 IP (<code>{ip}</code>)
+      unban_options_all_ip: 取消拉黑 <i>{username}</i> 使用过的所有 IP
       unban_ip_no_users: 没有使用此 IP 的其他用户
-      unban_ip_users: 用户 {users} 将被取消封禁|用户 {users} 将被取消封禁
-      unbanned_ips: 取消封禁 <code>{ips}</code>.
+      unban_ip_users: 用户 {users} 将被取消拉黑|用户 {users} 将被取消拉黑
+      unbanned_ips: 取消拉黑 <code>{ips}</code>.
 
       ban_button: => fof-ban-ips.ref.ban_label
       unban_button: => fof-ban-ips.ref.unban_label
 
   ref:
-    ban_label: 封禁 IP
-    ban_ip_addresses: 封禁 IP
-    ban_ip_button: 封禁 IP
+    ban_label: 拉黑 IP 地址
+    ban_ip_addresses: 拉黑 IP 地址
+    ban_ip_button: 拉黑 IP 地址
 
-    unban_label: 取消封禁
-    unban_ip_addresses: 取消封禁 IP
-    unban_ip_button: 取消封禁 IP
+    unban_label: 取消拉黑
+    unban_ip_addresses: 取消拉黑 IP 地址
+    unban_ip_button: 取消拉黑 IP 地址
 
     address_label: IP 地址
     reason_label: 原因（非必填）

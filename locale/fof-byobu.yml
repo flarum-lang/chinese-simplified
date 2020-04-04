@@ -22,7 +22,7 @@ fof-byobu:
             recipients: "仅 {count} 人可见|仅 {count} 人可见"
             user_deleted: --已删除--
         nav:
-            private_discussions: 私人讨论
+            start_button: 发起私人讨论
 
         input:
             search_recipients: 输入至少三个字符以搜索用户...

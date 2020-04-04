@@ -1,6 +1,6 @@
 # https://github.com/FriendsOfFlarum/byobu/blob/master/resources/locale/en.yml
-# 009c3f1 16 hours ago
-# 2020-3-2 18:45:41 +0800
+# cac53a3 3 days ago
+# 2020-4-4 19:31:28 +0800
 
 fof-byobu:
     forum:
@@ -13,6 +13,8 @@ fof-byobu:
             edit_recipients: 谁可以看
             send_pd: "私信 {username}"
             cancel: 取消
+            remove_from_discussion: 退出讨论
+            make_public: 转为公开
         composer_private_discussion:
             submit_button: 发起私人讨论
             title_placeholder: 私人讨论标题
@@ -21,7 +23,7 @@ fof-byobu:
             user_deleted: --已删除--
         nav:
             private_discussions: 私人讨论
-            start_button: 发起私人讨论
+
         input:
             search_recipients: 输入至少三个字符以搜索用户...
         search:
@@ -39,6 +41,7 @@ fof-byobu:
                 added_and_removed: "{username} 邀请 {added} 加入了讨论，并将 {removed} 移出讨论。"
                 added: "{username} 邀请 {added} 加入了讨论。"
                 removed: "{username} 将 {removed} 移除了讨论。"
+                removed_self: "{username} 退出私人讨论。"
         user:
             settings:
                 block_pd: 屏蔽私人讨论
@@ -47,10 +50,17 @@ fof-byobu:
             dropdown_label: 私人讨论
 
         notifications:
-            pd_label: 有人邀请我加入私人讨论
+            pd_label: 有人邀请我创建私人讨论
             pd_reply_label: 我加入的私人讨论有新贴
             pd_reply_text: "{username} 在私人讨论中发表了新帖"
             pd_text: "{username} 创建了私人讨论并邀请了你"
+            pd_user_left_label: 有人退出了我参与的私人讨论
+            pd_user_left_text: "{username} 退出了私人讨论"
+            pd_added_text: "{username} 邀请您加入私人讨论"
+            pd_added_label: "有人邀请我加入私人讨论"
+
+        confirm:
+            make_public: 这将使所有人都可以看到此私人讨论，请谨慎操作。
 
     admin:
         permission:
@@ -59,6 +69,7 @@ fof-byobu:
             create_private_discussions_with_blocking_users: 强制屏蔽私人讨论的用户加入私人讨论
             edit_user_recipients: 编辑私人讨论的成员
             edit_group_recipients: 编辑参与私人讨论的用户组
+            make_private_into_public: 将私人讨论转为公开
             view_private_discussions-when-flagged: 查看他人被举报的私人讨论
 
         settings:
@@ -70,3 +81,7 @@ fof-byobu:
             title: "【私人讨论】新邀请"
         private_discussion_replied:
             title: "【私人讨论】有新帖"
+        recipient_removed:
+            title: "【私人讨论】有人退出"
+        private_discussion_added:
+            title: "【私人讨论】有人邀请您加入"

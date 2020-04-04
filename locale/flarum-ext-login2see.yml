@@ -1,0 +1,8 @@
+# https://github.com/892768447/flarum-ext-login2see/blob/master/resources/locale/zh-hans.yml
+# b913c1a on 19 Nov 2019
+# 2020-4-3 21:48:11 +0800
+
+flarum-ext-login2see:
+  forum:
+    hidden_content: 隐藏的内容
+    login_to_see: "此内容 {login} 并刷新后可见"

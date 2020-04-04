@@ -100,6 +100,7 @@ php flarum cache:clear
   - flarum-subscriptions（[Flarum Subscriptions](https://github.com/flarum/subscriptions)）
   - flarum-suspend（[Flarum Suspend](https://github.com/flarum/suspend)）
   - flarum-tags（[Flarum Tags](https://github.com/flarum/tags)）
+  - flarum-ext-login2see（[Login to See](https://github.com/892768447/flarum-ext-login2see)）
   - fof-amazon-affiliation（[Amazon Affiliation](https://discuss.flarum.org/d/12389)）
   - fof-auth-gitlab（[GitLab Login](https://discuss.flarum.org/d/20371)）
   - fof-auth-discord（[Discord Login](https://discuss.flarum.org/d/20184)）
@@ -185,6 +186,7 @@ php flarum cache:clear
   - tpokorra-post-notification（[Post Notifications per E-Mail](https://discuss.flarum.org/d/20750)）
   - v17development-flarum-seo（[Flarum SEO](https://discuss.flarum.org/d/18316)）
   - veroz1-users-list（[User List](https://github.com/VeroZ1/users-list)）
+  - wiseclock-reply2see（[Reply to See](https://discuss.flarum.org/d/18899)）
   - xmugenx-post-blacklist（[Post Blacklist](https://discuss.flarum.org/d/21750)）
   - zerosonesfun-announce（[Announce](https://discuss.flarum.org/d/21651)）
   

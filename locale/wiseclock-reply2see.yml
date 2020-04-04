@@ -1,0 +1,8 @@
+# https://github.com/oaklinq/flarum-ext-reply2see/blob/master/resources/locale/en.yml
+# 5ce0bfb on 14 Feb 2019
+# 2020-4-4 22:21:21 +0800
+
+wiseclock-reply2see:
+  forum:
+    hidden_content: 隐藏的内容
+    reply_to_see: "此内容 {reply} 并刷新后可见"

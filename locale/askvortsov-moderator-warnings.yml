@@ -37,7 +37,7 @@ askvortsov-moderator-warnings:
       private_comment: 备注
       linked_post: 相关帖子
     warning_modal:
-      confirmation_message: 您的警告已保存，也许刷新后可见。
+      confirmation_message: 您的警告已发出，也许刷新后可见。
       dismiss_button: 完成
       heading: 警告 <strong>{username}</strong>
       strikes_heading: 严重程度：记几分？

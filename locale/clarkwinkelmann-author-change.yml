@@ -5,10 +5,10 @@
 clarkwinkelmann-author-change:
     forum:
         controls:
-            edit: 修改作者
+            edit: 变更作者
         modal:
-            title-post: 变更回帖者
-            title-discussion: 变更发帖者
+            title-post: 变更帖子作者
+            title-discussion: 变更主题作者
             search_placeholder: 搜索用户
             submit: 保存
             cancel: 取消

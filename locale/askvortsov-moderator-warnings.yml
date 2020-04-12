@@ -26,7 +26,7 @@ askvortsov-moderator-warnings:
       restore_button: 还原
       delete_forever_button: 永久删除
     warning_list:
-      add_button: 新建警告
+      add_button: 发送警告
       no-warnings: 该用户暂未收到任何警告
       warnings: "站务警告: {strikes} 次"
       warnings_no_strikes: "站务警告：0 次"

@@ -54,7 +54,7 @@ fof-byobu:
             pd_reply_label: 我加入的私人讨论有新贴
             pd_reply_text: "{username} 在私人讨论中发表了新帖"
             pd_text: "{username} 创建了私人讨论并邀请了你"
-            pd_user_left_label: 有人退出了我参与的私人讨论
+            pd_user_left_label: 有人退出了我加入的私人讨论
             pd_user_left_text: "{username} 退出了私人讨论"
             pd_added_text: "{username} 邀请您加入私人讨论"
             pd_added_label: "有人邀请我加入私人讨论"

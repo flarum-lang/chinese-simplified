@@ -1,0 +1,16 @@
+# https://github.com/FriendsOfFlarum/discussion-language/blob/master/resources/locale/en.yml
+# ba88158 2 days ago
+# 2020-4-14 19:00:49 +0800
+
+fof-discussion-language:
+  forum:
+    index_language:
+      any: 任何语言
+
+  admin:
+    settings:
+      title: FoF 主题语言
+
+  api:
+    discussion:
+      validation_error: 您必须选择主题使用的语言。

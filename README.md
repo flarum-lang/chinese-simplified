@@ -51,7 +51,7 @@ php flarum cache:clear
   - backtowebsite（[Back to Website Button](https://discuss.flarum.org/d/18285)）
   - clarkwinkelmann-carving-contest（[Pumpkin Carving Contest](https://discuss.flarum.org/d/21828)）
   - clarkwinkelmann-catch-the-fish（[Catch The Fish](https://discuss.flarum.org/d/19532)）
-  - clarkwinkelmann-author-change（[Discussion and post author change](https://discuss.flarum.org/d/21731)）
+  - clarkwinkelmann-author-change（[Author change](https://discuss.flarum.org/d/21731)）
   - clarkwinkelmann-colorful-borders（[Colorful Borders](https://discuss.flarum.org/d/23303)）
   - clarkwinkelmann-create-user-modal（[Create User Modal](https://discuss.flarum.org/d/22608)）
   - clarkwinkelmann-email-as-display-name（[Email as Display Name](https://discuss.flarum.org/d/22603)）
@@ -109,6 +109,7 @@ php flarum cache:clear
   - fof-byobu（[Byōbu](https://discuss.flarum.org/d/4762)）
   - fof-custom-footer（[Custom Footer](https://discuss.flarum.org/d/17774)）
   - fof-default-group（[Default Group](https://discuss.flarum.org/d/18158)）
+  - fof-discussion-language（[Discussion Language](https://github.com/FriendsOfFlarum/discussion-language)）
   - fof-drafts（[Drafts](https://discuss.flarum.org/d/20957)）
   - fof-email-checker（[Disposable Emails](https://discuss.flarum.org/d/20457)）
   - fof-filter（[FoF Filter](https://discuss.flarum.org/d/5131)）

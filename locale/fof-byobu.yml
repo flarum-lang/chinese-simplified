@@ -25,7 +25,7 @@ fof-byobu:
             start_button: 发起私人讨论
 
         input:
-            search_recipients: 输入至少三个字符以搜索用户...
+            search_recipients: 至少输入用户名前三位以搜索用户...
         search:
             headings:
                 groups: 用户组

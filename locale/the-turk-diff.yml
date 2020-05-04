@@ -1,6 +1,6 @@
 # https://github.com/the-turk/flarum-diff/blob/master/locale/en.yml
 # cd3c0ed 44 minutes ago
-# 2020-4-14 18:20:52 +0800
+# 2020-5-4 19:28:53 +0800
 
 the-turk-diff:
     forum:
@@ -25,7 +25,7 @@ the-turk-diff:
         deleteButton:                 => core.forum.post_controls.delete_button
         rollbackButton:               "回滚到版本 {number}"
         rollbackToOriginalButton:     回滚到初始版本
-        revertChangesButton:          还原更改
+        revertChangesButton:          撤销更改
 
         # Confirmation Messages
         confirmRollback:              确定要回滚到此版本吗？

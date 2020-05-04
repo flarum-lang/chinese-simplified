@@ -1,6 +1,6 @@
 # https://github.com/flarum/lang-english/blob/master/locale/core.yml
-# fc80447 26 days ago
-# 2020-3-30 00:47:38 +0800
+# ca40dd2 10 days ago
+# 2020-5-4 18:54:13 +0800
 
 core:
 
@@ -77,6 +77,7 @@ core:
       color_label: => core.ref.color
       delete_button: 删除用户组
       delete_confirmation: "确定删除此用户组？该用户组中的用户<strong>不会</strong>被删除。"
+      hide_label: 在论坛中隐藏
       icon_label: => core.ref.icon
       icon_text: => core.ref.icon_text
       name_label: 名称
@@ -178,6 +179,7 @@ core:
       sign_up_label: 注册
       start_discussions_label: 发布主题
       view_discussions_label: 查看主题
+      view_hidden_groups_label: 查看隐藏的用户组徽章
       view_last_seen_at_label: 查看用户上次在线时间
       view_post_ips_label: 查看 IP 地址
       view_user_list_label: 访问用户资料
@@ -264,7 +266,7 @@ core:
 
     # These translations are used in the discussion list.
     discussion_list:
-      empty_text: "道生一，一生二，二生三，三生万物"
+      empty_text: "这里空空如也..."
       load_more_button: => core.ref.load_more
       mark_as_read_tooltip: 标记为已读
       replied_text: "{username} 回复于 {ago}"
@@ -351,8 +353,10 @@ core:
     # These translations are used by the post control buttons.
     post_controls:
       delete_button: => core.ref.delete
+      delete_confirmation: "确定要永久删除这个贴子吗？此操作不可撤销。"
       delete_forever_button: => core.ref.delete_forever
       edit_button: => core.ref.edit
+      hide_confirmation: "确定要删除这个帖子吗？"
       restore_button: => core.ref.restore
 
     # These translations are used in the scrubber to the right of the post stream.

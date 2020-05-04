@@ -1,6 +1,6 @@
 # https://github.com/MichaelBelgium/flarum-discussion-views/blob/master/locale/en.yml
-# 9329208 13 days ago
-# 2020-2-18 23:10:10 +0800
+# 702b98f 28 days ago
+# 2020-5-4 19:11:01 +0800
 
 core:
   forum:
@@ -15,7 +15,8 @@ flarum_discussion_views:
       submit: 确定
       label: 这将会清除这个讨论的 {count} 次浏览计数. 确定要继续吗？|这将会清除这个讨论的 {count} 次浏览计数. 确定要继续吗？
     discussion_controls:
-      resetviews_button: 重置浏览次数
+      can_reset_views: 重置浏览次数
+      can_view_number: 查看浏览次数
     viewlist:
       title: 最近浏览的人
   admin:

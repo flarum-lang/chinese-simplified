@@ -1,6 +1,6 @@
 # https://github.com/clarkwinkelmann/flarum-ext-scratchpad/blob/master/resources/locale/en.yml
-# 5921ddf 7 days ago
-# 2020-3-13 20:48:49 +0800
+# d997605 3 hours ago
+# 2020-5-9 09:06:43 +0800
 
 clarkwinkelmann-scratchpad:
     admin:
@@ -8,7 +8,11 @@ clarkwinkelmann-scratchpad:
             title: 便笺 - 设置
             single-column: 单列编辑器视图
             theme: CodeMirror 主题（刷新后生效）
+            theme-auto: 自动（默认为浅色主题，深色主题是 darcula）
             indent: 缩进用空格数
+            npm-install-command: NPM 安装命令
+            webpack-command: Webpack 命令
+            empty-for-default: 留空则使用默认命令
             compile-automatically: 保存时自动编译 JS
 
         controls:

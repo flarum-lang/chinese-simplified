@@ -109,7 +109,7 @@ php flarum cache:clear
   - fof-byobu（[Byōbu](https://discuss.flarum.org/d/4762)）
   - fof-custom-footer（[Custom Footer](https://discuss.flarum.org/d/17774)）
   - fof-default-group（[Default Group](https://discuss.flarum.org/d/18158)）
-  - fof-discussion-language（[Discussion Language](https://github.com/FriendsOfFlarum/discussion-language)）
+  - fof-discussion-language（[Discussion Language](https://discuss.flarum.org/d/23702)）
   - fof-drafts（[Drafts](https://discuss.flarum.org/d/20957)）
   - fof-email-checker（[Disposable Emails](https://discuss.flarum.org/d/20457)）
   - fof-filter（[FoF Filter](https://discuss.flarum.org/d/5131)）

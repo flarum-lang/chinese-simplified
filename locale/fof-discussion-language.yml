@@ -1,16 +1,33 @@
 # https://github.com/FriendsOfFlarum/discussion-language/blob/master/resources/locale/en.yml
-# ba88158 2 days ago
-# 2020-4-14 19:00:49 +0800
-
+# 8f64a56 5 days ago
+# 2020-5-8 21:43:02 +0800
+  
 fof-discussion-language:
   forum:
+    change_language:
+      edit_title: 设定主题「{title}」的语言
+      title: 设定语言
+
+      submit_button: => core.ref.save_changes
+
+    composer_discussion:
+      choose_language_link: 语言
+
+    discussion_controls:
+      change_language_button: 设定语言
+
     index_language:
-      any: 任何语言
+      any: 所有语言
 
   admin:
     settings:
       title: FoF 主题语言
 
+      native_label: 使用母语
+
+    permissions:
+      allow_change_language_label: 允许编辑语言
+
   api:
     discussion:
-      validation_error: 您必须选择主题使用的语言。
+      validation_error: 您必须选择主题帖的语言。

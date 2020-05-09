@@ -1,6 +1,6 @@
 # https://github.com/FriendsOfFlarum/moderator-notes/blob/master/resources/locale/en.yml
-# dc9664b 3 days ago
-# 2020-2-29 22:21:52 +0800
+# 922c098 2 hours ago
+# 2020-5-9 08:38:25 +0800
 
 fof-moderator-notes:
   admin:
@@ -20,3 +20,7 @@ fof-moderator-notes:
 
     user:
       notes: 留言板
+
+  api:
+    auto-note: 我使用 FoF Impersonate 切换到当前用户账户。
+    auto-note-actor: 使用 FoF Impersonate 替代 '用户名'

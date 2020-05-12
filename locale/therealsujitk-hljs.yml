@@ -1,0 +1,12 @@
+# https://github.com/therealsujitk/flarum-ext-hljs/blob/master/resources/locale/en.yml
+# 753c69b 8 hours ago
+# 2020-3-26 10:12:10 +0800
+
+therealsujitk:
+  admin:
+    hljs:
+        title: 'highlight.js 设置'
+        themename: '主题样式（预览：http://t.cn/A6ZtzMiG）'
+    about:
+      stringA: '插件作者：'
+      stringB: '捐赠：'

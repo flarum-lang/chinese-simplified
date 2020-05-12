@@ -48,7 +48,6 @@ php flarum cache:clear
   - askvortsov-moderator-warnings（[Moderator Warnings](https://discuss.flarum.org/d/23228)）
   - askvortsov-pwa（[Flarum PWA](https://discuss.flarum.org/d/23219)）
   - askvortsov-saml（[Flarum SAML](https://discuss.flarum.org/d/22757)）
-  - backtowebsite（[Back to Website Button](https://discuss.flarum.org/d/18285)）
   - clarkwinkelmann-carving-contest（[Pumpkin Carving Contest](https://discuss.flarum.org/d/21828)）
   - clarkwinkelmann-catch-the-fish（[Catch The Fish](https://discuss.flarum.org/d/19532)）
   - clarkwinkelmann-author-change（[Author change](https://discuss.flarum.org/d/21731)）
@@ -68,7 +67,7 @@ php flarum cache:clear
   - dem13n-nickname-changer（[NickName Changer](https://discuss.flarum.org/d/21238)）
   - dem13n-quad-theme（[Quad theme](https://discuss.flarum.org/d/22618)）
   - extiverse-bazaar（[Bazaar extension marketplace](https://discuss.flarum.org/d/5151)）
-  - extum-flarum-ext-material2（[Material Theme 2](https://github.com/Extum/material)）
+  - extum-material2（[Material Theme 2](https://github.com/Extum/material)）
   - fajuu-contactbutton（[Contact Button](https://discuss.flarum.org/d/18228)）
   - fajuu-icons（[Icons by Fajuu](https://discuss.flarum.org/d/21401)）
   - flagrow-ads（[Flagrow Ads](https://discuss.flarum.org/d/4785)）
@@ -84,23 +83,19 @@ php flarum cache:clear
   - flarum-auth-github（[GitHub Login](https://github.com/flarum/auth-github)）
   - flarum-auth-twitter（[Twitter Login](https://github.com/flarum/auth-twitter)）
   - flarum-core（[Flarum Core](https://github.com/flarum/core)）
-  - flarum-discussion-views（[Discussion Views](https://discuss.flarum.org/d/7339)）
   - flarum-emoji（[Flarum Emoji](https://github.com/flarum/emoji)）
-  - flarum-ext-close（[Closed Discussion](https://discuss.flarum.org/d/21698)）
-  - flarum-ext-fancybox（[FancyBox](https://discuss.flarum.org/d/19535)）
   - flarum-flags（[Flarum Flags](https://github.com/flarum/flags)）
   - flarum-likes（[Flarum Likes](https://github.com/flarum/likes)）
   - flarum-lock（[Flarum Lock](https://github.com/flarum/likes)）
   - flarum-markdown（[Flarum Markdown](https://github.com/flarum/markdown)）
   - flarum-mentions（[Flarum Mentions](https://github.com/flarum/mentions)）
-  - ~~flarum-notify（[Flarum Notify](https://discuss.flarum.org/d/4345)）~~ Incompatible
   - flarum-pusher（[Flarum Pusher](https://github.com/flarum/pusher)）
   - flarum-statistics（[Flarum Statistics](https://github.com/flarum/statistics)）
   - flarum-sticky（[Flarum Sticky](https://github.com/flarum/sticky)）
   - flarum-subscriptions（[Flarum Subscriptions](https://github.com/flarum/subscriptions)）
   - flarum-suspend（[Flarum Suspend](https://github.com/flarum/suspend)）
   - flarum-tags（[Flarum Tags](https://github.com/flarum/tags)）
-  - flarum-ext-login2see（[Login to See](https://github.com/892768447/flarum-ext-login2see)）
+  - flarumite-decontaminator（[Decontaminator](https://discuss.flarum.org/d/23735)）
   - fof-amazon-affiliation（[Amazon Affiliation](https://discuss.flarum.org/d/12389)）
   - fof-auth-gitlab（[GitLab Login](https://discuss.flarum.org/d/20371)）
   - fof-auth-discord（[Discord Login](https://discuss.flarum.org/d/20184)）
@@ -147,25 +142,29 @@ php flarum cache:clear
   - fof-transliterator（[URL Transliterator](https://discuss.flarum.org/d/18074)）
   - fof-upload（[FoF upload](https://discuss.flarum.org/d/4154)）
   - fof-user-directory（[User directory](https://discuss.flarum.org/d/5682)）
-  - fof-userbio（[User Bio](https://discuss.flarum.org/d/17775)）
+  - fof-user-bio（[User Bio](https://discuss.flarum.org/d/17775)）
   - fof-username-request（[Username Request](https://discuss.flarum.org/d/20956)）
-  - imgur-upload（[Imgur Upload](https://discuss.flarum.org/d/18491)）
+  - hiqstd-ext-close（[Closed Discussion](https://discuss.flarum.org/d/21698)）
+  - irony-login2see（[Login to See](https://github.com/892768447/flarum-ext-login2see)）
   - kilowhat-affiliation-links（[Multi-Purpose Affiliation Links Generator](https://discuss.flarum.org/d/21833)）
   - kilowhat-mailing（[Mailing](https://discuss.flarum.org/d/20443)）
-  - kvothe-sub（[Sign Up Button](https://discuss.flarum.org/d/18812)）
+  - kvothe-reply-ro-see（[Reply to See](https://discuss.flarum.org/d/18899)）
+  - kvothe-signup-button（[Sign Up Button](https://discuss.flarum.org/d/18812)）
   - maicol07-sso（[Single Sign On (SSO)](https://discuss.flarum.org/d/21666)）
+  - ~~manelzzard-notify（[Flarum Notify](https://discuss.flarum.org/d/4345)）~~ Incompatible
+  - matpompili-imgur-upload（[Imgur Upload](https://discuss.flarum.org/d/18491)）
+  - michaelbelgium-discussion-views（[Discussion Views](https://discuss.flarum.org/d/7339)）
+  - michaelbelgium-mybb-to-flarum（[MyBB to flarum](https://discuss.flarum.org/d/5506)）
   - michaelBelgium-profile-views（[Profile views](https://discuss.flarum.org/d/7596)）
   - migratetoflarum-canonical（[Canonical url redirect](https://discuss.flarum.org/d/19307)）
   - migratetoflarum-fake-data（[Fake Data](https://discuss.flarum.org/d/21160)）
   - migratetoflarum-vbulletin-redirects（[vbulletin Redirects](https://github.com/migratetoflarum/vbulletin-redirects)）
   - minr-auth-qq（[QQ Login](https://github.com/minr/flarum-ext-auth-qq)）
   - minr-auth-weibo（[Weibo Login](https://discuss.flarum.org/d/22456)）
-  - mybbtoflarum（[MyBB to flarum](https://discuss.flarum.org/d/5506)）
-  - nikovonlas-webpush（[OneSignal web push notifications](https://discuss.flarum.org/d/20784)）
+  - nikovonlas-web-push（[OneSignal web push notifications](https://discuss.flarum.org/d/20784)）
   - nomiscz-auth-linkedin（[LinkedIn Auth](https://discuss.flarum.org/d/20263)）
   - nomiscz-auth-steam（[Steam Auth](https://discuss.flarum.org/d/19750)）
   - nomiscz-auth-wechat（[WeChat Login](https://discuss.flarum.org/d/6038)）
-  - pushedx-chat（[Realtime chat with Pusher (Alpha)](https://discuss.flarum.org/d/5133-wip-extension-realtime-chat-with-pusher/12)）
   - reflar-cookie-consent（[Cookie Consent](https://discuss.flarum.org/d/10395)）
   - reflar-doorman（[Doorman](https://discuss.flarum.org/d/17845)）
   - reflar-level-ranks（[Levels Ranks](https://discuss.flarum.org/d/15052)）
@@ -175,6 +174,7 @@ php flarum cache:clear
   - shriker-pronouns（[Personal Pronouns](https://discuss.flarum.org/d/21188)）
   - simonxeko/follow-users（[Follow Users (WIP)](https://discuss.flarum.org/d/22628)）
   - simonxeko-preview-discussion（[Preview Discussion Post (WIP)](https://discuss.flarum.org/d/22636)）
+  - squeevee-fancybox（[FancyBox](https://discuss.flarum.org/d/19535)）
   - studosi-mail-filter（[Mail Filter](https://discuss.flarum.org/d/23132)）
   - sycho-profile-cover（[Profile Cover](https://github.com/SychO9/flarum-profile-cover)）
   - tank-perspective（[Perspective API](https://discuss.flarum.org/d/21784)）
@@ -182,14 +182,18 @@ php flarum cache:clear
   - the-turk-mathren（[MathRen](https://discuss.flarum.org/d/22439)）
   - the-turk-edit-notifications（[Edit Notifications](https://discuss.flarum.org/d/22896)）
   - the-turk-password-strength（[Password Strength Indicator](https://discuss.flarum.org/d/22624)）
-  - therealsujitk（[Show Password](https://discuss.flarum.org/d/22727)、[GIFs](https://discuss.flarum.org/d/23101)）、[Highlight.js](https://discuss.flarum.org/d/23229)
+  - the-turk-quiets-edits（[Quiets Edits](https://discuss.flarum.org/d/5151)）
+  - therealsujitk-gifs（[GIFs](https://discuss.flarum.org/d/23101)）
+  - therealsujitk-hljs（[Highlight.js](https://discuss.flarum.org/d/23229)）
+  - therealsujitk-show-password（[Show Password](https://discuss.flarum.org/d/22727)）
   - tituspijean-auth-ldap（[LDAP Login](https://discuss.flarum.org/d/9515)）
   - tpokorra-post-notification（[Post Notifications per E-Mail](https://discuss.flarum.org/d/20750)）
-  - v17development-flarum-seo（[Flarum SEO](https://discuss.flarum.org/d/18316)）
+  - v17development-seo（[Flarum SEO](https://discuss.flarum.org/d/18316)）
   - veroz1-users-list（[User List](https://github.com/VeroZ1/users-list)）
-  - wiseclock-reply2see（[Reply to See](https://discuss.flarum.org/d/18899)）
+  - xelson-chat（[Realtime chat with Pusher (Alpha)](https://discuss.flarum.org/d/5133-wip-extension-realtime-chat-with-pusher/12)）
   - xmugenx-post-blacklist（[Post Blacklist](https://discuss.flarum.org/d/21750)）
   - zerosonesfun-announce（[Announce](https://discuss.flarum.org/d/21651)）
+  - ziymed-backtowebsite（[Back to Website Button](https://discuss.flarum.org/d/18285)）
   
 </details>
 

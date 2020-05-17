@@ -1,0 +1,17 @@
+# https://github.com/the-turk/flarum-extended-appearance/blob/master/locale/en.yml
+# 47eda5c 8小时前
+# 2020-5-17 08:02:56 +0800
+
+the-turk-extended-appearance:
+    admin:
+      rightSidebar:           侧边栏右置
+      saveAndReload:          保存并刷新
+      reloadInfo:             刷新页面后您的修改才会在管理面板生效。
+      codeMirror:
+        title:                CodeMirror 主题
+        autoTheme:            "自动（浅色：默认，深色：darcula）"
+        helpText:             "<a>选择</a>您的浏览器内代码编辑器<a>主题</a>。"
+        scratchpad:           CodeMirror 的主题设置将通过 Scratchpad（开发者便笺）扩展调整。
+      pickr:
+        save:                 保存
+        cancel:               取消

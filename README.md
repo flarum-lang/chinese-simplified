@@ -74,7 +74,6 @@ php flarum cache:clear
   - flagrow-analytics（[Flagrow analytics extension](https://discuss.flarum.org/d/1983)）
   - flagrow-fonts（[Flagrow Fonts](https://discuss.flarum.org/d/6207)）
   - flagrow-html-errors（[Custom HTML Error Pages](https://discuss.flarum.org/d/10784)）
-  - flagrow-impersonate（[Flagrow Impersonate](https://discuss.flarum.org/d/9868)）
   - ~~flagrow-mason（[Flagrow Mason](https://discuss.flarum.org/d/7028)）~~ Not compatible with the latest version.
   - flagrow-passport（[Flagrow passport](https://discuss.flarum.org/d/5203)）
   - flarum-akismet（[Flarum Akismet](https://github.com/flarum/akismet)）
@@ -117,6 +116,7 @@ php flarum cache:clear
   - fof-ignore-users（[Ignore Users](https://discuss.flarum.org/d/20681)）
   - fof-linguist（[Linguist](https://discuss.flarum.org/d/7026)）
   - fof-links（[Links](https://discuss.flarum.org/d/18335)）
+  - fof-impersonate（[FoF Impersonate](https://discuss.flarum.org/d/9868)）
   - fof-masquerade（[Masquerade by FriendsOfFlarum](https://discuss.flarum.org/d/5791)）
   - fof-merge-discussions（[Masquerade](https://discuss.flarum.org/d/5791)）
   - fof-moderator-notes（[Moderator Notes](https://discuss.flarum.org/d/22925)）
@@ -181,6 +181,7 @@ php flarum cache:clear
   - the-turk-diff（[Diff for Flarum](https://discuss.flarum.org/d/22779)）
   - the-turk-mathren（[MathRen](https://discuss.flarum.org/d/22439)）
   - the-turk-edit-notifications（[Edit Notifications](https://discuss.flarum.org/d/22896)）
+  - the-turk-extended-appearance（[Extend Appearance Settings](https://discuss.flarum.org/d/23827)）
   - the-turk-password-strength（[Password Strength Indicator](https://discuss.flarum.org/d/22624)）
   - the-turk-quiets-edits（[Quiets Edits](https://discuss.flarum.org/d/5151)）
   - therealsujitk-gifs（[GIFs](https://discuss.flarum.org/d/23101)）

@@ -99,7 +99,7 @@ core:
       driver_label: 邮件驱动
       from_label: 发件地址
       heading: => core.ref.email
-      mail_encryption_label: 加密协议（ssl或tsl）
+      mail_encryption_label: 加密协议（ssl 或 tls）
       mail_host_label: 主机
       mail_mailgun_domain_label: 域名
       mail_mailgun_region_label: 区域

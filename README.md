@@ -7,7 +7,7 @@ This language pack is based on [flarum/lang-english](https://github.com/flarum/l
 
 Compared with Csineneo's Simplified Chinese language pack, the overall language style is more delicate and natural, which conforms to the thinking habits of most Chinese people.
 
-繁体中文语言包请查阅此处：[正体中文语言包](https://discuss.flarum.org/d/17954)。
+繁体中文语言包请查阅此处：[繁体中文语言包](https://discuss.flarum.org/d/17954)。
 
 ### 要求 / Requirement
   - Flarum v0.1.0-beta.8 及以上版本

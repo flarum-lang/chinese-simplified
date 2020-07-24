@@ -7,7 +7,7 @@ antoinefr-money:
     permissions:
       edit_money_label: 修改资产
     settings:
-      moneyfordiscussion: 发一次主题贴可获得
+      moneyfordiscussion: 发布一次主题贴可获得
       moneyforpost: 回帖一次可获得
       moneyname: '货币名称（例如： [money] 元）'
       noshowzero: '若值为 0 则不显示'

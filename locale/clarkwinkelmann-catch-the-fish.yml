@@ -23,8 +23,8 @@ clarkwinkelmann-catch-the-fish:
     cannot-catch-hold-fish: 先前的捕手将鱼释放后您才能捕捉它
     cannot-catch-own-fish: 您不能捕您自己放置的鱼
     default-fish-name: '鱼 #{number}'
-    fish-update-expired: 太晚了，您无法再编辑这条鱼了。它已经被自动放到了别的地方。
-    fish-update-wrong-user: 您无法再编辑这条鱼了，别人可能把它给抓走了。
+    fish-update-expired: 太晚了，您无法再编辑这条鱼了。它已经被自动放到了别的地方
+    fish-update-wrong-user: 您无法再编辑这条鱼了，别人可能已经把它抓走了
     inactive-discussion: '不能将鱼放置在闲置了 {days} 天的帖子中'
     inactive-post: '不能将鱼放置在 {days} 前创建的主题中'
     inactive-user: '不能将鱼放在超过 {days} 天没上线的用户这里'
@@ -39,7 +39,7 @@ clarkwinkelmann-catch-the-fish:
     round-not-started: 此回合尚未开始
     too-many-placement-models: 一次只能放在一个地方
     user-suspended: 不能将鱼放在被封禁的用户这里
-    wrong-catch-placement: '这里没有鱼。 也许您手速不够快，鱼被其他人抓光了。'
+    wrong-catch-placement: '这里没有鱼。 也许您手速不够快，鱼被其他人抓光了'
   forum:
     basket:
       drag-help: 将鱼拖放到主题贴、回复贴或用户主页中
@@ -63,29 +63,29 @@ clarkwinkelmann-catch-the-fish:
       message: 您不能将鱼放到这里
       missing-from-store: 在数据存储中找不到这条鱼
     edit-fish-modal:
-      title: '编辑鱼 "{name}"'
+      title: '编辑鱼「{name}」'
     edit-fish:
       create: 造鱼
       delete: 删除鱼
-      delete-confirmation: '确定要删除鱼 “{name}” 吗？'
+      delete-confirmation: '确定要删除鱼「{name}」吗？'
       name: 名字
-      name-help: 鱼的名字。如果玩家拥有权限，即可编辑鱼的名字。
+      name-help: 这条鱼的名字。如果玩家拥有权限，即可编辑鱼的名字
       save: 保存鱼
     edit-round-modal:
-      title: '编辑回合 “{name}”'
+      title: '编辑回合「{name}」'
     edit-round:
       create: 创建回合
       delete: 删除回合
-      delete-confirmation: '确定要删除回合 “{name}” 吗？'
+      delete-confirmation: '确定要删除回合「{name}」吗？'
       ends-at: 结束时间
       name: 名称
       name-help: 此回合的名称将会显示在横幅和排行榜中
       save: 保存回合
       starting-pack: 初始包
-      starting-pack-help: 初始包包含几条鱼，无需自行设计即可马上开始游戏。
+      starting-pack-help: 初始包包含几条鱼，无需自行设计即可马上开始游戏
       starts-at: 开始时间
     fish-image:
-      alt: '鱼 “{name}” 的图像'
+      alt: '鱼「{name}」的图像'
       missing: 缺少鱼的图像
     moderate:
       add: 添加
@@ -107,13 +107,13 @@ clarkwinkelmann-catch-the-fish:
       permission: 您没有权限查看排行榜
       title: 排行榜
     round-alert:
-      message: '回合 “{name}”，尽情抓鱼吧！倒计时 {time}'
+      message: '回合「{name}」，尽情抓鱼吧！倒计时 {time}'
       rankings: 查看排行榜
     table-fish:
       actions: 动作
       edit: 编辑
       image: 图像
-      loading: 载入中...
+      loading: 载入中……
       name: 名字
       new: 新鱼
       new-from-image: 批量导入图像并创建新鱼
@@ -121,11 +121,11 @@ clarkwinkelmann-catch-the-fish:
       no-user-place: 随机
       title: '回合 {name} 的鱼'
       upload: 上传新图像
-      user-name: 最后的命名人：
-      user-place: 最后的放置人：
+      user-name: 最后命名人：
+      user-place: 最后放置人：
     table-ranking:
       count: 捕获数
-      loading: 载入中...
+      loading: 载入中……
       rank: 名称
       title: '回合 {name} 排行榜'
       user: 用户

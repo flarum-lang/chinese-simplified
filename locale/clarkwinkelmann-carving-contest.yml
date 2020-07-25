@@ -14,7 +14,7 @@ clarkwinkelmann-carving-contest:
     likes_modal:
       title: 喜欢这个作品的用户
     modal:
-      name: 给您的作品命名
+      name: 命名您的作品
       submit: 提交
       title: 参加
       tools:
@@ -23,8 +23,8 @@ clarkwinkelmann-carving-contest:
     nav:
       contest: 雕刻比赛
     page:
-      already-liked: 我觉得很赞
-      delete-confirmation: '您确定要删除 {username} 的 “{name}” 吗？'
+      already-liked: 我喜欢它
+      delete-confirmation: '您确定要删除 {username} 的「{name}」吗？'
       like: 赞
       likes:
         liked_by_self_text: '{users} 觉得很赞'
@@ -32,13 +32,13 @@ clarkwinkelmann-carving-contest:
         others_link: '=> core.ref.some_others'
         you_text: '=> core.ref.you'
       load-more: 加载更多作品
-      loading: 载入作品中...
+      loading: 载入作品中……
       participate: 参加
       refresh: 刷新
       sort:
         fewerLikes: 赞数最少
         leastRecent: 最早发布
         mostLikes: 最受欢迎
-        mostRecent: 最新发布
+        mostRecent: 最新作品
       title: 南瓜雕刻比赛
       unlike: 踩

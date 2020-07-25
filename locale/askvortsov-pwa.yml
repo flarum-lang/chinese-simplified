@@ -5,29 +5,51 @@
 askvortsov-pwa:
   admin:
     nav:
-      pwa_button: 渐进式网页应用
-      pwa_text: '配置 Flarum 为渐进式网页应用，使论坛可安装在移动设备上。'
+      pwa_button: '渐进式 Web 应用'
+      pwa_text: '配置 Flarum 为渐进式 Web 应用，使论坛可安装在移动设备上。'
     pwa:
       about:
         description_text: 您可以在管理面板的「常规」页面设置应用描述。
         heading: 关于
-        name_text: '输入要在 PWA 中使用的较长名称。'
+        name_text: '输入要在 PWA 中使用的长名称。'
         short_name_text: 您可以在管理面板的「常规」页面设置简称。
       colors:
-        background_color_text: 'PWA 加载时显示的初始屏幕占位颜色，实际加载应用后不会使用它。'
+        background_color_text: 'PWA 加载时显示的初始屏幕占位颜色，应用实际加载后不会使用它。'
         heading: 颜色
-        theme_color_text: 沉浸式模式颜色。跟随管理面板「外观」页面的论坛主色调。
-      heading: 渐进式网页应用（PWA）配置
+        theme_color_text: 此颜色被移动设备用于呈现您的应用，例如安卓的沉浸式状态栏。此颜色跟随管理面板「外观」页面的论坛主色调。
+      heading: '渐进式 Web 应用（PWA）配置'
       logo_heading: 标志（Logo）和图标（Icon）
       logo_size_text: '上传标志，标志将缩放为 {size} × {size} 像素。'
-      logo_text: "您必须至少上传一个标志，才能安装渐进式网页应用。请注意，所有标志必须为正方形。如果不是，它们将被拉伸调整为正方形。\n以下有多种尺寸选择。建议您补全所有尺寸的标志：以适配更多屏幕尺寸的设备。\n请注意，您可以将一个大尺寸标志上传到小尺寸标志。例如，您可以将 1000px * 1000px 的标志上传到下面所有的尺寸中。但是，如果您尝试将 50px * 50px 的标志上传到 512px * 512px 中，标志会被拉伸失真很多。\n"
-      refreshed_message: 'PWA 配置刷新成功'
+      logo_text: "您必须至少上传一个标志使您的渐进式 Web 应用可被安装。请注意，所有标志必须为正方形。如果不是，它们将被拉伸调整为正方形。\n以下有多种尺寸选择。建议您补全所有尺寸的标志：以适配更多屏幕尺寸的设备。\n请注意，您可以将一个大尺寸标志上传到小尺寸标志。例如，您可以将 1000px * 1000px 的标志上传到下面所有的尺寸中。但是，如果您尝试将 50px * 50px 的标志上传到 512px * 512px 中，标志会被拉伸失真很多。\n"
+      refreshed_message: 'PWA 配置刷新成功。'
       status_check_heading: 状态检查
       submit_button: 保存设置
-      text: '将您的 Flarum 站点配置为渐进式网页应用！请注意，这不会自动将您的站点发布到应用商店，而是仅为您的网站提供了「添加到主屏幕」或类似选项，请注意支持 PWA 的浏览器会自动弹窗询问是否安装，不支持 PWA 的浏览器无法使用此功能。我们提供一些状态检查，但是测试应用运行状态的最佳方法是安装并试用它（百度如何安装 PWA）。另外，「添加到主屏幕」弹窗是由浏览器控制，开发人员/管理员/程序无法触发。建议您在社区文档中添加有关如何安装 PWA 的说明。'
+      text: '将您的 Flarum 站点配置为渐进式 Web 应用！请注意，本插件不会自动将您的站点发布到应用商店，而是仅为您的网站提供了「添加到主屏幕」或类似选项，请注意支持 PWA 的浏览器会自动弹窗询问是否安装，不支持 PWA 的浏览器无法使用此功能。我们提供一些状态检查，但是测试应用运行状态的最佳方法是安装并试用它（百度如何安装渐进式 Web 应用）。此外，「添加到主屏幕」弹窗是由浏览器控制的，开发人员/管理员/程序无法触发。建议您在自己的社区文档中添加有关如何安装 PWA 的说明。'
     status:
-      config_no_https: 'config.php 文件中的 URL 未使用 HTTPS。HTTPS 是渐进式网页应用正常运行所必需的。'
-      no_logo: 您必须至少上传一个标志才能使您的应用正常运行。
-      no_name: 您必须提供全名才能使您的应用正常工作。
-      possible_https_disabled: '您的网站可能未在 HTTPS 上运行。如果已是 HTTPS，请忽略此消息。如果没有，请记住渐进式Web 应用需要 HTTPS 才能起作用。'
-      success: 没有潜在问题！
+      config_no_https: '您 config.php 文件中的 URL 未使用 HTTPS。渐进式 Web 应用必须使用 HTTPS 方可正常工作。'
+      no_logo: '您必须至少上传一张 192px 尺寸的标志才能使您的应用程序正常工作。'
+      no_name: 您必须设置应用全名才能使您的应用程序正常工作。
+      possible_https_disabled: '您的网站可能未以 HTTPS 运行。如果已是 HTTPS，请忽略此消息。如果没有，请记住渐进式 Web 应用需要 HTTPS 才能工作。'
+      push_needs_gmp_and_web_push: '必须启用 PHP 扩展 gmp 和 minishlink/web-push 依赖库（composer require minishlink/web-push）才能使通知推送功能起作用。'
+      success: 恭喜，没有发现潜在问题！
+  forum:
+    alerts:
+      optin: 您已启用推送通知，但还没有配置此设备。
+      optin_button: 配置
+    discussion_controls:
+      share_button: 分享
+    post_controls:
+      share_api:
+        title: '{username} 发表回复于 {title}'
+      share_button: 分享
+    settings:
+      push_header: 推送
+      pwa_notifications:
+        access_default: 由于浏览器限制，您必须选择同意在此设备上接收推送通知。
+        access_default_button: 同意
+        access_denied: 您必须调整您的浏览器设置才能在此设备上接收推送通知。
+        access_denied_button: 如何设置
+        no_browser_support: '抱歉，该浏览器不支持渐进式 Web 应用程序的推送通知。'
+        no_browser_support_button: 了解更多
+    user_controls:
+      share_button: 分享

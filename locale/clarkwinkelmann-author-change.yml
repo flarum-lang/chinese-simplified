@@ -6,16 +6,21 @@ clarkwinkelmann-author-change:
   admin:
     permissions:
       edit: 更新发帖及回帖者
+      edit-date: 更新主题和帖子日期
+      edit-user: 更新主题和帖子作者
   forum:
     controls:
-      edit: 变更作者
+      edit: 变更作者和日期
     modal:
       cancel: 取消
+      created_at: 创建时间
+      edited_at: 编辑时间
       search_placeholder: 搜索用户
       submit: 保存
-      title-discussion: 变更主题作者
-      title-post: 变更帖子作者
+      title-discussion: 变更主题作者和日期
+      title-post: 变更帖子作者和日期
+      user: 作者
     search:
-      no-results: 用户不存在，请检查输入是否有误
+      no-results: 用户不存在
       placeholder: 搜索用户
-      type-more: 搜索需要至少三个字符
+      type-more: 键入至少3个字符以搜索

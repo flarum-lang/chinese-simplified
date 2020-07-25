@@ -5,19 +5,22 @@
 askvortsov-saml:
   admin:
     labels:
-      idp_metadata: '身份验证服务商元数据 XML（代替 URL）'
-      idp_metadata_url: '身份验证服务商元数据 URL（代替 XML）'
+      idp_metadata: '身份标识提供商元数据 XML（替代 URL）'
+      idp_metadata_url: '身份标识提供商元数据 URL（替代 XML）'
+      nameid_format: 'NameID 格式'
       only_option: '使用 SAML2 SSO 作为唯一登录选项吗？'
-      sync_attributes: '同步属性（头像、用户组、个性签名、个人资料）？需要安装 askvortsov/auth-sync 插件（传送门：http://t.cn/A6hwoQnb）。'
+      sync_attributes: '同步属性（头像、用户组、签名、资料）？需要安装 askvortsov/auth-sync 插件（传送门：http://t.cn/A6yDXTRB）。'
     nameid_format: 'NameID 格式'
     options:
       nameid_format:
         emailAddress: 邮箱（默认，如果不支持持久化）
         persistent: 持久化（如果支持，推荐使用此项）
         unspecified: 不指定
-    title: 'SAML2 SSO - 设置'
+    title: 'SAML2 SSO 配置'
   forum:
     log_in:
       enable_popups: 启用登录/注册弹窗
       open_popup: 点此登录
       with_saml_button: 'SAML2 单点登录'
+    sign_up:
+      post_saml_title: 最后一步……

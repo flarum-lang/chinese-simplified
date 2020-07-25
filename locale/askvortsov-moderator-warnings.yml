@@ -21,6 +21,9 @@ askvortsov-moderator-warnings:
       warning_notification_label: 收到站务警告
     user:
       warnings: 站务警告
+    validation:
+      invalid_strike_count: '记分范围只能是 0 到 5 分。'
+      public_comment_required: 您必须填写一个公开评论。
     warning_controls:
       delete_button: 撤销
       delete_forever_button: 永久撤销
@@ -28,20 +31,21 @@ askvortsov-moderator-warnings:
     warning_list:
       add_button: 发送警告
       no-warnings: 该用户暂未收到任何警告
+      no_warnings: 该用户暂未收到任何警告。
       warnings: '站务警告：共记 {strikes} 分'
       warnings_no_strikes: 站务警告
     warning_list_item:
-      linked_post: 相关帖子
-      list_item_heading: '来自 <strong>{mod_username}</strong> 的警告，记 <strong>{strikes}</strong> 分'
-      list_item_heading_hidden: '来自 <strong>{mod_username}</strong> 的警告，记 <strong>{strikes}</strong> 分 <strong>（已移除）</strong>'
-      private_comment: 备注
-      public_comment: 批注
+      linked_post: 关联帖子
+      list_item_heading: '记 <strong>{strikes}</strong> 分，{time}|记 <strong>{strikes}</strong> 分，{time}'
+      list_item_heading_hidden: '记 <strong>{strikes}</strong> 分，{time} <strong>（已撤销）</strong>|记 <strong>{strikes}</strong> 分，{time}<strong>（已撤销）</strong>'
+      private_comment: 管理员备注
+      public_comment: 警告
     warning_modal:
-      confirmation_message: 您的警告已发出，也许刷新后可见。
+      confirmation_message: 您的警告已发出，可能需要刷新后显示。
       dismiss_button: 完成
       heading: '警告 <strong>{username}</strong>'
       no_content_given: 警告不可为空。
-      private_comment_heading: '备注。为什么警告 <strong>{username}</strong>？备注仅对您和其他警告发起者可见。'
-      public_comment_heading: '批注。为什么警告 <strong>{username}</strong>？ 批注仅对该用户和其他警告发起者可见。'
+      private_comment_heading: '管理员备注。为什么警告 <strong>{username}</strong>？备注仅对您和其他管理员可见。'
+      public_comment_heading: '用户批注。为什么警告 <strong>{username}</strong>？ 批注仅对该用户和其他管理员可见。'
       strikes_heading: 严重程度：记几分？
       submit_button: 发送警告

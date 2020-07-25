@@ -7,7 +7,7 @@ askvortsov-auth-sync:
     labels:
       ignored_avatar: '如果返回的头像与此相等，则不会通过 auth 设置。此项可以用于忽略默认头像值。'
       stop_avatar_change: '禁止用户从 Flarum 更换头像？'
-      stop_bio_change: '禁止用户从 Flarum 更改个性签名（需要插件 fof/user-bio）'
+      stop_bio_change: '禁止用户从 Flarum 更改个性签名？（需要安装 fof/user-bio 插件）'
       sync_avatar: 同步头像？
       sync_bio: '同步个性签名？ (需要安装 FoF User Bio 插件)'
       sync_groups: 同步用户组？

@@ -10,7 +10,7 @@ askvortsov-moderator-warnings:
       view_warnings: 查看站务警告
   forum:
     notifications:
-      warning_no_strikes_text: '收到来自 {mod_username} 的站务通知'
+      warning_no_strikes_text: '收到来自 {mod_username} 的站务警告'
       warning_text: '收到来自 {mod_username} 的警告并记 {strikes} 分'
     post:
       warning: '内容违规，记 {strikes} 分'
@@ -22,13 +22,13 @@ askvortsov-moderator-warnings:
     user:
       warnings: 站务警告
     warning_controls:
-      delete_button: 移除
-      delete_forever_button: 永久删除
+      delete_button: 撤销
+      delete_forever_button: 永久撤销
       restore_button: 还原
     warning_list:
       add_button: 发送警告
       no-warnings: 该用户暂未收到任何警告
-      warnings: '站务警告: 共记 {strikes} 分'
+      warnings: '站务警告：共记 {strikes} 分'
       warnings_no_strikes: 站务警告
     warning_list_item:
       linked_post: 相关帖子

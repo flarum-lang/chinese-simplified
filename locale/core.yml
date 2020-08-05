@@ -98,6 +98,10 @@ core:
       mailgun_heading: 'Mailgun 设置'
       mandrill_heading: 'Mandrill 设置'
       not_sending_message: 'Flarum 当前无法发送电子邮件，请检查邮件驱动及其配置。'
+      send_test_mail_button: 发送
+      send_test_mail_heading: 发送测试邮件
+      send_test_mail_success: 测试邮件发送成功！
+      send_test_mail_text: '这将会使用上述设置发送发送邮件到您的邮箱，{email}。'
       ses_heading: 'SES 设置'
       smtp_heading: 'SMTP 设置'
       submit_button: '=> core.ref.save_changes'
@@ -176,6 +180,9 @@ core:
     reset_password:
       body: "{username}，您好！\n\n您在 {forum} 请求重置密码，若是您本人所为，请点击下面的链接重置密码：\n\n{url}\n\n如非您本人行为，请忽略此邮件，我们不会受理这个操作。\n"
       subject: '=> core.ref.reset_your_password'
+    send_test:
+      body: "{username}，您好！\n\n这是一个测试邮件，用于测试您的邮箱设置是否正确。\n\n若是您本人发送了测试邮件，那么恭喜，这意味着您的设置有效！\n\n若非您本人发送测试邮件，请忽略此内容。\n"
+      subject: 'Flarum 邮件测试'
   forum:
     change_email:
       confirm_password_placeholder: '=> core.ref.confirm_password'

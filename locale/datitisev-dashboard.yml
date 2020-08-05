@@ -25,5 +25,5 @@ datitisev-dashboard:
       updates:
         available: '{count} 个更新可用|{count} 个更新可用'
         check_button: 检查插件更新
-        checking: 正在检查更新...
+        checking: 正在检查更新…
         none: 暂无更新

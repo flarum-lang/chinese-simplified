@@ -3,9 +3,37 @@
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
 clarkwinkelmann-group-invitation:
+  admin:
+    permissions:
+      use: 使用用户组邀请链接
+    settings:
+      create: 创建
+      delete: 删除
+      empty: 目前还没有创建任何邀请链接。
+      head:
+        code: 邀请码
+        group: 用户组
+        usage: 使用
+      placeholder:
+        code: 自动生成
+        group: 选择……
+        usage: 留空表示无限制
+      title: 用户组邀请
+      unlimited: 无限制
+  api:
+    error:
+      no-usages-left: 邀请已失效
+      not-found: 邀请码不存在
   forum:
+    apply: 加入用户组
     generic-title: 用户组邀请
+    invitation:
+      no-usages-left: 很抱歉，这个用户组的邀请失效了。
+      not-found: 很抱歉，这个用户组的邀请不存在。
+    success-alert: 您已成功加入了这个用户组！
     title: '您被邀请加入「{group}」用户组！'
     user:
-      already-connected: "用户「{username}」将加入「{group}」用户组。用户不对？<a>登录其他账号</a>。\n"
-      not-connected: '<a>Sign in</a> to accept the invitation.'
+      already-connected: "用户「{username}」将加入「{group}」用户组。用户不对？<a>登录到另一个帐户</a>。\n"
+      already-member: "好消息，您的账号「{username}」已经是「{group}」用户组的成员了！想和其他用户一起加入用户组？<a>登录到另一个帐户</a>。\n"
+      not-authorized: '当前用户「{username}」没有加入用户组的权限。<a>登录到另一个帐户</a>。'
+      not-connected: '<a>登录</a> 以接受邀请。'

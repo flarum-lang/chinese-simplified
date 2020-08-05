@@ -27,7 +27,7 @@ askvortsov-pwa:
       text: '将您的 Flarum 站点配置为渐进式 Web 应用！请注意，本插件不会自动将您的站点发布到应用商店，而是仅为您的网站提供了「添加到主屏幕」或类似选项，请注意支持 PWA 的浏览器会自动弹窗询问是否安装，不支持 PWA 的浏览器无法使用此功能。我们提供一些状态检查，但是测试应用运行状态的最佳方法是安装并试用它（百度如何安装渐进式 Web 应用）。此外，「添加到主屏幕」弹窗是由浏览器控制的，开发人员/管理员/程序无法触发。建议您在自己的社区文档中添加有关如何安装 PWA 的说明。'
     status:
       config_no_https: '您 config.php 文件中的 URL 未使用 HTTPS。渐进式 Web 应用必须使用 HTTPS 方可正常工作。'
-      no_logo: '您必须至少上传一张 192px 尺寸的标志才能使您的应用程序正常工作。'
+      no_logo: '您必须至少上传一张 196px 尺寸的标志才能使您的应用程序正常工作。'
       no_name: 您必须设置应用全名才能使您的应用程序正常工作。
       possible_https_disabled: '您的网站可能未以 HTTPS 运行。如果已是 HTTPS，请忽略此消息。如果没有，请记住渐进式 Web 应用需要 HTTPS 才能工作。'
       push_needs_gmp_and_web_push: '必须启用 PHP 扩展 gmp 和 minishlink/web-push 依赖库（composer require minishlink/web-push）才能使通知推送功能起作用。'

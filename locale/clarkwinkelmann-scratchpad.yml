@@ -5,18 +5,18 @@
 clarkwinkelmann-scratchpad:
   admin:
     compilation-alert:
-      failure: 编译失败!
-      success: 编译完成!
-      view-output: 查看日志
+      failure: 编译失败！
+      success: 编译完成！
+      view-output: 查看输出
     compilation-modal:
-      npm: 'NPM 日志'
+      npm: 'NPM 输出'
       npm-not-run: 'NPM 未运行'
-      title: 编译日志
-      webpack: 'Webpack 日志'
+      title: 编译输出
+      webpack: 'Webpack 输出'
     controls:
       compile: '编译 JS'
       delete: 删除
-      delete-confirmation: '确定要删除 "{title}" 吗？'
+      delete-confirmation: '确定要删除「{title}」吗？'
       disable: 点击禁用
       enable: 点击启用
       new: 新建
@@ -30,6 +30,7 @@ clarkwinkelmann-scratchpad:
       forum_js: '前台论坛界面 JS'
       forum_less: '前台论坛界面 Less'
       php: PHP
+      title: 便笺名
     menu:
       description: 在开发环境中方便地测试代码
       title: 开发者便笺

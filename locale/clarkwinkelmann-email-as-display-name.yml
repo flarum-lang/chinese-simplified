@@ -6,10 +6,10 @@ clarkwinkelmann-email-as-display-name:
   admin:
     permissions:
       heading: 以邮箱作为显示昵称
-      view-all: 公开（显示于全部个人资料中）
-      view-own: 隐私（显示于我的个人资料中）
+      view-all: 将效果应用于所有用户（公开可见性）
+      view-own: 将效果应用于登入账号自身（私密可见性）
     settings:
-      remove-username-registration: 从注册窗口中移除用户名选项
+      remove-username-registration: 从注册窗口中移除用户名输入框
       title: 扩展程序设置
   forum:
     log_in:

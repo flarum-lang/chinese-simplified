@@ -5,10 +5,31 @@
 clarkwinkelmann-popular-discussion-badge:
   admin:
     settings:
-      mode: 工作原理
-      mode_help: "前台模式是一种不使用数据库的高效解决方案。调度模式需要进行 CRON 计划任务设置，并允许在条件中设置时间段。\n"
+      add: 添加条件
+      and: 且
+      comments: 评论数
+      comments_placeholder: '0'
+      conditions: 热门标记的获得条件
+      conditions_help: "评论数是指包括一楼帖在内的所有评论帖子的总数。浏览量通过 MichaelBelgium 或 Flarumite 扩展获得。给出的时间范围将被用来计算过去 n 小时内的评论数或浏览量。只有 MichaelBelgium 扩展支持计算范围时间内的浏览量。留空时间范围或设置为 0 小时则表示计算所有评论数或浏览量。\n"
+      hours: 小时内
+      mode: 工作模式
+      mode_help: "前端模式是一种不使用数据库的高效解决方案。计划模式需要进行 CRON 计划任务设置，并允许限定时间范围。\n"
       mode_options:
-        frontend: 前台
+        frontend: 前端
+        scheduler: 计划（CRON）
+      or: 或
+      scheduler_frequency: 计划模式的频率
+      scheduler_frequency_help: "在计划 (Cron) 模式下，热门状态多久更新一次？（在前端模式下，状态总是即时更新）\n"
+      scheduler_frequency_options:
+        everyFifteenMinutes: '每 15 分钟'
+        everyFiveMinutes: '每 5 分钟'
+        everyTenMinutes: '每 10 分钟'
+        everyThirtyMinutes: '每 30 分钟'
+        hourly: 每小时一次
       title: '热门主题标记 - 设置'
+      views: 浏览量
+      views_placeholder: '0'
+      within: 在
+      within_placeholder: 所有
   forum:
     badge_label: 热门

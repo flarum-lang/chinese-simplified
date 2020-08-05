@@ -3,6 +3,9 @@
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
 clarkwinkelmann-likes-received:
+  admin:
+    permission:
+      view: 查看个人资料总赞数
   forum:
     user-card:
       likes: '{likes} 赞'

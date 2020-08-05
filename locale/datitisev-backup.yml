@@ -13,10 +13,10 @@ datitisev-backup:
           description: 您的身份认证访问令牌密钥
           label: 'Access Key'
         bucket:
-          description: 要使用的存储桶
+          description: 要使用的存储桶。
           label: 桶
         endpoint:
-          description: '存储终端的 URL'
+          description: '存储终端的 URL。'
           label: 终端
         path-prefix:
           description: 可选的默认文件路径前缀。
@@ -46,7 +46,7 @@ datitisev-backup:
           description: 'Azure 容器'
           label: 容器
         endpoint:
-          description: '存储终端的 URL'
+          description: '存储终端的 URL。'
           label: 终端
       dropbox:
         access-token:
@@ -63,7 +63,7 @@ datitisev-backup:
           description: '要在 FTP 服务器上进行身份验证的密码。'
           label: 密码
         port:
-          description: 'FTP 端口（默认 21）'
+          description: 'FTP 端口（默认 21）。'
           label: 端口
         private-key:
           description: 'FTP 连接认证时使用的私钥的路径（最好是绝对路径）。'
@@ -71,6 +71,12 @@ datitisev-backup:
         root:
           description: 存储备份的远程根路径（子目录）。
           label: 根路径
+        ssl:
+          description: '是否使用加密 SSL 连接到服务器。'
+          toggle: SSL
+        timeout:
+          description: '等待与 FTP 服务器连接的秒数。'
+          label: 超时时间
         username:
           description: '要在 FTP 服务器上进行身份验证的用户名。'
           label: 用户名
@@ -80,6 +86,7 @@ datitisev-backup:
             description: "按照 @ https://github.com/ivanvermeyen/laravel-google-drive-demo/blob/master/README/1-getting-your-dlient-id-and-secret.md 的指示，创建一个 Google 项目，并取回您的 Client ID 和 Client Secret。\n"
             label: 'Client ID'
           secret:
+            description: ' '
             label: 'Client Secret'
         folder:
           description: 'https://drive.google.com/drive/u/0/folders/ID'
@@ -98,10 +105,17 @@ datitisev-backup:
       azure: '微软 Azure'
       dospaces: 'Digital Ocean Spaces'
       dropbox: Dropbox
+      ftp: FTP
       gdrive: 'Google Drive'
       gridfs: GridFS
       local: 本地存储
       rackspace: Rackspace
+      sftp: SFTP
+      webdav: Webdav
+      zip: 'Zip Archive'
+    nav:
+      description: 存储您的论坛副本。
+      label: 备份
     required-package-modal:
       content: "为了使用这个驱动程序，您需要安装一个特定的软件包。您可以通过 Flarum 安装目录下运行 <code>composer require {package}</code> 命令来安装。\n"
       title: '{adapter} 所需的软件包'

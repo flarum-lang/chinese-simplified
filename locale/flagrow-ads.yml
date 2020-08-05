@@ -9,15 +9,15 @@ flagrow-ads:
     positions:
       between-posts:
         placeholder: '=> flagrow-ads.admin.positions.under-header.placeholder'
-        title: "信息流广告位 - \n位于每个主题中的帖子之间\n"
+        title: "信息流广告位 - \n位于每个主题中的帖子之间"
       under-header:
-        placeholder: 请将广告代码粘贴到此处
-        title: "横幅广告位 - \n位于网页顶部导航栏下方\n"
+        placeholder: 请将广告代码粘贴到此处。
+        title: "横幅广告位 - \n位于网页顶部导航栏下方"
       under-nav-items:
         placeholder: '=> flagrow-ads.admin.positions.under-header.placeholder'
-        title: "侧边栏广告位 - \n首页左侧侧边栏下方的广告位\n"
+        title: "侧边栏广告位 - \n首页左侧侧边栏下方的广告位"
     settings:
       between-n-posts: "信息流广告位设置 - \n指定每隔几个帖子显示一次广告"
-      start-from-post: "信息流广告位设置 - \n指定从第几个帖子开始显示广告（0 表示从一楼开始显示广告）\n"
+      start-from-post: "信息流广告位设置 - \n指定从第几个帖子开始显示广告（0 表示从一楼开始显示广告）"
     tab:
-      description: 广告位置及偏好设置
+      description: 广告位置及偏好设置。

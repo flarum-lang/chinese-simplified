@@ -11,7 +11,7 @@ flagrow-fonts:
       loader:
         loading: 正在加载...
         more: 加载更多
-      sample-text: 'The quick brown fox jumps over the lazy dog. ^_^'
+      sample-text: "花朵豔麗終散落，誰人世間能長久。\n今日翻過高山嶺，醉生夢死不再有。"
       select:
         enable: 启用
         update: 更新
@@ -28,5 +28,5 @@ flagrow-fonts:
           googleApiKeyDescription: '您必须创建一个 Google Fonts API Key 并填入此处。最快的方式是访问<a>这里</a>并点击“Get a key”'
         title: 'Flagrow 字体设置'
     nav:
-      description: 管理用于论坛的字体
+      description: 管理用于论坛的字体。
       title: 字体

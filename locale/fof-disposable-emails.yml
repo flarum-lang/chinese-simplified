@@ -4,4 +4,4 @@
 
 fof-email-checker:
   error:
-    disposable_email_message: 您不可以使用一次性邮箱进行注册！
+    disposable_email_message: 禁止使用一次性邮箱注册。

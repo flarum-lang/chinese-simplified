@@ -13,8 +13,11 @@ fof-byobu:
       make_private_into_public: 将私人讨论转为公开
       view_private_discussions-when-flagged: 查看他人被举报的私人讨论
     settings:
-      use_tag_slug: 设置私人讨论创建时自动归入的分类标签
-      use_tag_slug_help: 此设置仅对生效后创建的私人讨论有效，留空则允许用户自行选择标签。
+      byobu_index: 在首页显示「私人讨论」入口
+      byobu_index_help: 启用此选项后，论坛左侧边栏将会添加一个私人讨论的入口链接
+      use_tag_slug: 指定私人讨论创建时自动归入的分类标签
+      use_tag_slug_help: '此设置仅对生效后创建的私人讨论有效，选择「{no_restriction}」则允许用户自行选择标签。'
+      use_tag_slug_no_restriction: '- 不限制 -'
   forum:
     badges:
       is_private:
@@ -50,6 +53,8 @@ fof-byobu:
       pd_added_label: 有人邀请我加入私人讨论
       pd_added_text: '{username} 邀请您加入私人讨论'
       pd_label: 有人邀请我创建私人讨论
+      pd_made_public_label: 一个私人讨论已转为公开
+      pd_made_public_text: '{username} 已将此讨论转为公开'
       pd_reply_label: 我加入的私人讨论有新贴
       pd_reply_text: '{username} 在私人讨论中发表了新帖'
       pd_text: '{username} 创建了私人讨论并邀请了你'
@@ -70,6 +75,8 @@ fof-byobu:
       settings:
         block_pd: 屏蔽私人讨论
   notifications:
+    made_public:
+      title: 【私人讨论】有讨论转为公开
     private_discussion_added:
       title: 【私人讨论】有人邀请您加入
     private_discussion_created:

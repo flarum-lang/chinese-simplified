@@ -5,13 +5,13 @@
 fof-discussion-language:
   admin:
     permissions:
-      allow_change_language_label: 允许编辑语言
+      allow_change_language_label: 允许编辑主题语言
     settings:
       native_label: 使用母语
       title: 'FoF 主题语言'
   api:
     discussion:
-      validation_error: 您必须选择主题帖的语言。
+      validation_error: 您必须选择主题帖使用的语言。
   forum:
     change_language:
       edit_title: '设定主题「{title}」的语言'

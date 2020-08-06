@@ -4,12 +4,12 @@
 
 fof-ban-ips:
   admin:
-    empty_text: '暂无 IP 被拉黑'
+    empty_text: '暂无 IP 被拉黑。'
     modal:
       ban_ip_no_users: '没有使用此 IP 的其他用户'
       update_title: '更新已拉黑 IP 地址'
     nav:
-      desc: '新增、删除、查看拉黑 IP 地址'
+      desc: '新增、删除、查看拉黑 IP 地址。'
       title: '拉黑 IP 地址'
     page:
       address_label: '=> fof-ban-ips.ref.address_label'
@@ -22,8 +22,8 @@ fof-ban-ips:
       ban_ip_label: '=> fof-ban-ips.ref.ban_ip_addresses'
       view_banned_ip_list_label: '查看已拉黑 IP 地址列表'
   error:
-    banned_ip_message: 验证失败
-    no_ips_found_message: '未找到该用户使用的 IP'
+    banned_ip_message: 验证失败。
+    no_ips_found_message: '未找到该用户使用的 IP。'
   forum:
     ban_ip_button: '=> fof-ban-ips.ref.ban_ip_button'
     modal:
@@ -47,13 +47,13 @@ fof-ban-ips:
       save_button: 保存
       title: '=> fof-ban-ips.ref.ban_ip_addresses'
       unban_button: '=> fof-ban-ips.ref.unban_label'
-      unban_ip_confirmation: '你确定要解禁此用户以及所有使用此 IP 的其他用户吗？（如果其他用户有使用黑名单中的其他 IP，那么该用户仍然会处于拉黑状态）'
+      unban_ip_confirmation: '你确定要解封此用户以及所有使用此 IP 的其他用户吗？（如果其他用户有使用黑名单中的其他 IP，那么该用户仍然会处于拉黑状态）'
       unban_ip_no_users: '没有使用此 IP 的其他用户'
       unban_ip_users: '用户 {users} 将被取消拉黑|用户 {users} 将被取消拉黑'
       unban_options_all_ip: '取消拉黑 <i>{username}</i> 使用过的所有 IP'
       unban_options_only_ip: '仅取消拉黑当前 IP (<code>{ip}</code>)'
       unban_title: '=> fof-ban-ips.ref.unban_ip_addresses'
-      unbanned_ips: '取消拉黑 <code>{ips}</code>.'
+      unbanned_ips: '取消拉黑 <code>{ips}</code>。'
   ref:
     address_label: 'IP 地址'
     ban_ip_addresses: '拉黑 IP 地址'

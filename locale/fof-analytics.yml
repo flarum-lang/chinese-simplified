@@ -10,15 +10,17 @@ fof-analytics:
         title: 'Piwik 统计'
     popup:
       field:
+        googleGTMCode: 'GTM 代码 ID（可选）'
         googleTrackingCode: 'Tracking Code ID'
-        piwikAliasUrl: 别名链接
+        optTrackingCode: 自定义跟踪代码（可选）
+        piwikAliasUrl: '别名 URL'
         piwikAuthToken: '验证 Token'
         piwikHideAliasUrl: '在「导出链」报表中隐藏已知别名链接的点击（什么是导出链：http://t.cn/A6PlyGj6）'
         piwikPrependDomain: 追踪时将网站域名放置在网页标题开头
         piwikSiteId: 'Site ID'
         piwikTrackAccounts: 追踪独立访客账户
         piwikTrackSubdomain: '追踪所有 Flarum 子域访客'
-        piwikUrl: 'Piwik 域名或链接'
+        piwikUrl: 'Piwik 域名或 URL'
         statusGoogle: '启用 Google 分析'
         statusPiwik: '启用 Piwik'
       placeholder:
@@ -26,7 +28,7 @@ fof-analytics:
       section:
         googleAnalytics: 'Google 分析'
         piwik: Piwik
-      title: 统计设置
+      title: 'FoF 分析'
       trackAccounts:
         email: 按邮箱追踪
         none: 不要追踪

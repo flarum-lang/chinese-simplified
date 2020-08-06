@@ -20,10 +20,13 @@ fof-best-answer:
     answered_badge: 已解决
     best_answer_button: 最佳回复
     best_answer_label: '由 <a>{username}</a> 选择'
+    errors:
+      mismatch: 您所选的帖子在当前主题中不存在
     notification:
       awarded: '您的帖子被 {username} 选为最佳答案'
       awarded_email: 您的帖子被选为最佳答案
       best_answer_in_discussion: '{username} 选择了最佳回复'
+      best_answer_set_in_discussion_email: 有新的最佳回复
       content: 如果您的问题已解决请选择一个最佳回复
       preferences:
         awarded_best_answer: 有人将我的帖子选为最佳回复

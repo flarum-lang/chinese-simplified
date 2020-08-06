@@ -8,8 +8,8 @@ flarum-suspend:
       suspend_users_label: 封禁用户
   forum:
     notifications:
-      user_suspended_text: '{username} 将你封禁了 {timeReadable}'
-      user_unsuspended_text: '{username} 已将你解封'
+      user_suspended_text: '您已被 {username} 封禁 {timeReadable}'
+      user_unsuspended_text: '您已被 {username} 解封'
     suspend_user:
       indefinitely_label: 永久封禁
       limited_time_days_text: ' 天'

@@ -9,6 +9,6 @@ dem13n-auth-yandex:
       app_id_label: 'App ID'
       app_p: '回调 URL'
       app_password_label: 'App 密码'
-      title: 'Yandex 登录 - 设置'
+      title: 'Yandex 登录设置'
   forum:
     login_with_yandex_button: 'Yandex 账号登录'

@@ -11,6 +11,8 @@ flarum-subscriptions:
       follow_button: '=> flarum-subscriptions.ref.follow'
       unfollow_button: 取消关注
       unignore_button: 取消忽视
+    following:
+      meta_title_text: '=> flarum-subscriptions.ref.following'
     index:
       following_link: 我的关注
     notifications:
@@ -21,11 +23,11 @@ flarum-subscriptions:
     sub_controls:
       follow_button: '=> flarum-subscriptions.ref.follow'
       following_button: '=> flarum-subscriptions.ref.following'
-      following_text: 当有人回复此主题时通知我
+      following_text: 当有人回复此主题时通知我。
       ignoring_button: '=> flarum-subscriptions.ref.ignoring'
       ignoring_text: 不接收任何通知并从主题列表中隐藏此主题。
       not_following_button: 不关注
-      not_following_text: 仅当有人提到我时通知我
+      not_following_text: 仅当有人提及我时通知我。
       notify_alert_tooltip: 有新回复时通知提醒
       notify_email_tooltip: 有新回复时发送邮件
   ref:

@@ -9,6 +9,6 @@ dem13n-auth-mailru:
       app_id_label: 'App ID'
       app_p: '回调 URL'
       app_secret_label: 'App Secret Key'
-      title: 'Mail.ru 登录 - 设置'
+      title: 'Mail.ru 登录设置'
   forum:
     login_with_mailru_button: 'Mail.ru 账号登录'

@@ -13,9 +13,9 @@ flarum-lock:
       lock_button: 锁定主题
       unlock_button: 解锁主题
     notifications:
-      discussion_locked_text: '{username} 锁定了主题'
+      discussion_locked_text: '{username} 已锁定此帖'
     post_stream:
-      discussion_locked_text: '{username} 锁定了此贴'
-      discussion_unlocked_text: '{username} 解锁了此贴'
+      discussion_locked_text: '{username} 已锁定此帖'
+      discussion_unlocked_text: '{username} 已解锁此帖'
     settings:
-      notify_discussion_locked_label: 我的主题被锁定
+      notify_discussion_locked_label: 我的主题帖被锁定

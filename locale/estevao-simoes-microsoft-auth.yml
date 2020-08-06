@@ -8,7 +8,7 @@ flarum-microsoft-auth:
       client_id_label: 'App ID'
       client_secret_label: 'App Secret'
       tenant_id_label: 'Tenant ID（可选）'
-      title: 'Microsoft - 设置'
+      title: 'Microsoft 设置'
   forum:
     log_in:
       with_microsoft_button: 'Microsoft 账号登录'

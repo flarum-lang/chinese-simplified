@@ -9,6 +9,6 @@ dem13n-auth-vkontakte:
       app_id_label: 'App ID'
       app_key_label: 'App Secret Key'
       app_p: '回调 URL'
-      title: 'Vkontakte 登录 - 设置'
+      title: 'Vkontakte 登录设置'
   forum:
     login_with_vkontakte_button: 'Vkontakte 账号登录'

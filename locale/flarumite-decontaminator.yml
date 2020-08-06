@@ -10,17 +10,17 @@ flarumite-decontaminator:
     delete_rule_confirmation: 确定？
     edit_rule:
       action:
-        load: 加载帖子（此项可能会影响性能）
-        save: 发布帖子
-      applywhen_help: 默认选择「发布帖子」，请谨慎并仅在需要时选择「加载帖子」。
+        load: 加载时（此项可能会影响性能）
+        save: 发布时
+      applywhen_help: 默认选择「发布时」，请谨慎并仅在需要时选择「加载时」。
       applywhen_label: 触发事件
       delete_button: 删除
       delete_confirmation: 确定要删除这个规则吗？
-      flag_help: '如果找到匹配项，且已启用 flarum/flags 插件，则该帖将被推送至小黑屋，并通知管理员。'
+      flag_help: '如果找到匹配项，且已启用 flarum/flags 插件，则该帖将被推送至小黑屋，并通知管理员。目前不支持针对用户个性签名的举报。'
       flag_label: 举报
       name_help: 当前规则的名称。该名称会同时显示到小黑屋通知中。
       name_label: 规则名
-      regex_help: 完整正则表达式
+      regex_help: 要匹配的完整的正则表达式。
       regex_label: 正则表达式
       replacement_help: 如果找到匹配项，将使用此文本替换。留空表示不替换。
       replacement_label: 文字替换
@@ -30,3 +30,5 @@ flarumite-decontaminator:
       empty_text: 您还没有创建任何规则。
     permissions:
       bypass-filter: 免疫净化器规则
+  forum:
+    tooltip: 此内容已被屏蔽

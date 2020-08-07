@@ -11,67 +11,67 @@ fof-mason:
       delete-field: 删除字段
       edit-answer: 编辑答案
       edit-answer-prompt: 编辑所有使用的内容
-      edit-field: 点击编辑字段
+      edit-field: 点击以编辑字段
       new-field: 添加字段
       save-answer: 保存答案
       save-field: 保存字段
-      show-user-answers: '显示（{count}）条不建议的答案'
+      show-user-answers: '显示非建议答案 ({count})'
     fields:
       add: '添加字段 {field}'
-      description: 字段说明
-      description-help: "可选说明以解释这个字段的用途\n"
+      description: 字段描述
+      description-help: "可选的描述，以解释这个字段的用途/要求。\n"
       edit: '编辑字段 {field}'
-      enable-user-values-for-validation: 启用「用户输入」来配置校验规则
+      enable-user-values-for-validation: 启用「用户自定义值」以配置表单验证规则
       icon: 图标
-      icon-help: "在这个字段前显示小图标。可用的图标请查看 <a>FontAwesome 网站</a>，请使用完整图表类名，包括前缀，例如：「fas fa-bolt」。\n"
+      icon-help: "显示在这个字段前的图标。可用的图标请查看 <a>FontAwesome 网站</a>，请使用完整图标名，包括前缀，例如「fas fa-bolt」。\n"
       icon-preview: '预览： {preview}'
-      is_suggested: 向用户展示建议
+      is_suggested: 推荐答案
       max_answers_count: 最大答案数
       min_answers_count: 最小答案数
       name: 字段名称
-      name-help: "公开可见且不可翻译的字段标签\n"
+      name-help: "公开可见（不可翻译）的字段名。\n"
       new-answer: 新建答案
-      new-answer-placeholder: 一些文本
-      required: 必填项
-      save-field-for-answers: 保存此字段以添加答案
+      new-answer-placeholder: 在此键入文本
+      required: 必填
+      save-field-for-answers: 保存此字段以添加选项答案
       show_when_empty: 显示空字段
-      show_when_empty-help: 不论字段是否为空均在帖文中显示
-      user_values_allowed: 允许用户输入的内容
-      user_values_allowed-help: "如果启用，用户可以添加自己的值而不是管理员定义的值。 这些值将根据「校验」设置进行检查。 如果禁用，他们只能使用「建议」的答案。\n"
-      validation: 校验用户输入
-      validation-help: "查看支持的 <a>Laravel validation rules</a>，例如: \"string|min:5\" 或 \"url\".\n"
+      show_when_empty-help: 不论字段是否为空均在主题中显示
+      user_values_allowed: 允许用户输入自定义值
+      user_values_allowed-help: "如果启用此项，用户可以添加自己的值，可以不选择管理员指定的值。 这些值将根据「校验」设置进行检查。 如果禁用此项，他们只能使用「建议」的答案。\n"
+      validation: 校验用户输入的值
+      validation-help: "查看支持的 <a>Laravel 验证规则</a>，例：\"string|min:5\" 或 \"url\"。\n"
     menu:
-      description: "配置自定义帖文字段\n"
+      description: "配置自定义主题帖的表单字段。\n"
     messages:
       delete-answer-confirmation: "确定要删除答案「{content}」？ 这将从所有使用它的主题中移除该答案，如果您想要保留现有答案请停用答案建议。 删除答案？\n"
-      delete-field-confirmation: "你确定要删除表单「{name}」？ 这将从所有使用它们的主题中移除该表单及其答案。删除表单？\n"
+      delete-field-confirmation: "你确定要删除字段「{name}」？ 这将从所有使用它们的主题中移除该字段及其答案。删除字段？\n"
     permissions:
-      fill-fields: 在新主题填充字段
-      mason-heading: Mason
-      see-other-fields: 字段显示于全部主题
-      see-own-fields: 字段显示于自己的主题
+      fill-fields: 填写新主题的表单
+      mason-heading: 梅森表单
+      see-other-fields: 查看所有现有主题的表单
+      see-own-fields: 查看自己现有主题的表单
       skip-required-fields: 允许跳过必填字段
-      update-other-fields: 更新任意主题字段
-      update-own-fields: 更新本人主题的表单
+      update-other-fields: 更新任意主题的表单
+      update-own-fields: 更新自己主题的表单
     settings:
-      column-count: 显示字段数目
-      fields-in-hero: 字段作为帖文横幅展示，而不是首帖
-      fields-section-title: 自定义字段标题
-      fields-section-title-help: "用户将在字段上看到这个文本\n"
-      fields-section-title-placeholder: 默认不显示标题
-      hide-empty-fields-section: 当所有字段都为空且不可见时，隐藏标题及控制项
-      hide-empty-fields-section-help: "默认为始终显示，启用此选项后，当所有字段都为空时，「编辑字段」按钮仅在「回复」下拉列表中可用\n"
-      labels-as-placeholders: 在表单中显示标签作为占位
-      labels-as-placeholders-help: "字段将使用较少的纵向空间，小图标将不再显示。请注意，这可能会影响可用性，尤其是在编辑现有字段时。\n"
-      n-columns: '{count} 个直栏'
-      tags-as-field: 将节点击择作为一个字段显示
-      tags-as-field-help: "这将隐藏默认节点击择并以自定义下拉列表代替。这仅适用于最多一个主节点和一个次节点！\n"
-      tags-field-name: 节点字段标签
+      column-count: 表单栏数
+      fields-in-hero: 在主题顶部横幅中显示表单（而非首贴中）
+      fields-section-title: 自定义表单标题
+      fields-section-title-help: "用户将在文本编辑器和主题中看到这个文本。\n"
+      fields-section-title-placeholder: 默认为空标题且不显示
+      hide-empty-fields-section: 当所有字段为空且隐藏时，隐藏标题和控件。
+      hide-empty-fields-section-help: "默认情况下，如果用户可以编辑字段或设置标题，则即使所有字段都被隐藏，也会始终显示该部分。启用此选项后，该部分将被隐藏，并且当所有字段均为空白时，「编辑字段」按钮仅在「回复」下拉菜单中可用。\n"
+      labels-as-placeholders: 在表单的占位符中显示字段名
+      labels-as-placeholders-help: "表单将占用更少的纵向空间，字段图标将不再显示。请注意，这可能会影响可用性，尤其是在编辑现有字段时。\n"
+      n-columns: '{count} 栏'
+      tags-as-field: 将标签选择器作为一个字段显示
+      tags-as-field-help: "这将隐藏默认的标签选择器，并显示一个自定义的下拉框。只有当您在标签设置中最多允许单个主体选择一个主标签和一个次标签时，此功能才会生效！\n"
+      tags-field-name: 标签字段名
       tags-field-name-placeholder: '=> fof-mason.forum.tags.tags-label'
     titles:
-      field-answers: 表单答案
-      field-settings: 表单设置
-      fields: 字段
+      field-answers: 字段答案
+      field-settings: 字段设置
+      fields: 表单字段
       settings: 设置
   forum:
     answers-modal:
@@ -85,5 +85,5 @@ fof-mason:
     post-answers:
       no-answer: 无答案
     tags:
-      inadequate-settings: "标签设置配置不正确。最多允许一个主标签和次标签，或者停用此特性。\n"
+      inadequate-settings: "标签设置配置不正确。最多允许一个主标签和次标签，或者停用「标签字段」特性。\n"
       tags-label: 标签

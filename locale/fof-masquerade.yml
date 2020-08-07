@@ -19,7 +19,7 @@ fof-masquerade:
       name: 字段名称
       name-help: "公开的可见（不可翻译）字段标签。\n"
       on_bio: '在 UserBio（个性签名插件）中显示此字段的答案'
-      option-comma-warning: '选项的标签不能包含任何逗号（","）！'
+      option-comma-warning: '选项名不能包含任何半角逗号 (",")。'
       option-new: 新选项
       options: 选项
       prefix: 字段前缀

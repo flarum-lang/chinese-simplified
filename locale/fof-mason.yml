@@ -9,6 +9,8 @@ fof-mason:
       add-field: 添加字段
       delete-answer: 删除答案
       delete-field: 删除字段
+      edit-answer: 编辑答案
+      edit-answer-prompt: 编辑所有使用的内容
       edit-field: 点击编辑字段
       new-field: 添加字段
       save-answer: 保存答案
@@ -28,6 +30,7 @@ fof-mason:
       min_answers_count: 最小答案数
       name: 字段名称
       name-help: "公开可见且不可翻译的字段标签\n"
+      new-answer: 新建答案
       new-answer-placeholder: 一些文本
       required: 必填项
       save-field-for-answers: 保存此字段以添加答案
@@ -40,8 +43,8 @@ fof-mason:
     menu:
       description: "配置自定义帖文字段\n"
     messages:
-      delete-answer-confirmation: "你确定要删除答案「{content}」？ 这将从所有使用它的帖文中移除，如果你想要保留现有答案请停用答案建议。 删除答案？\n"
-      delete-field-confirmation: "你确定要删除字段「{name}」？ 这将从所有使用它的帖文中移除 删除字段？\n"
+      delete-answer-confirmation: "确定要删除答案「{content}」？ 这将从所有使用它的主题中移除该答案，如果您想要保留现有答案请停用答案建议。 删除答案？\n"
+      delete-field-confirmation: "你确定要删除表单「{name}」？ 这将从所有使用它们的主题中移除该表单及其答案。删除表单？\n"
     permissions:
       fill-fields: 在新主题填充字段
       mason-heading: Mason
@@ -49,6 +52,7 @@ fof-mason:
       see-own-fields: 字段显示于自己的主题
       skip-required-fields: 允许跳过必填字段
       update-other-fields: 更新任意主题字段
+      update-own-fields: 更新本人主题的表单
     settings:
       column-count: 显示字段数目
       fields-in-hero: 字段作为帖文横幅展示，而不是首帖
@@ -65,6 +69,8 @@ fof-mason:
       tags-field-name: 节点字段标签
       tags-field-name-placeholder: '=> fof-mason.forum.tags.tags-label'
     titles:
+      field-answers: 表单答案
+      field-settings: 表单设置
       fields: 字段
       settings: 设置
   forum:
@@ -72,12 +78,12 @@ fof-mason:
       edit-title: '编辑 {title} 的字段'
       save: 保存字段
     answers:
-      choose-option: 选择一个选项
+      choose-option: 请选择
       no-option-selected: 未选择
     discussion-controls:
       edit-answers: 编辑字段
     post-answers:
       no-answer: 无答案
     tags:
-      inadequate-settings: "节点设置未正确配置。最多允许一个主标签和次标签，或者停用此特性。\n"
+      inadequate-settings: "标签设置配置不正确。最多允许一个主标签和次标签，或者停用此特性。\n"
       tags-label: 标签

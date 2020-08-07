@@ -23,7 +23,7 @@ fof-linguist:
     locales:
       all: 全部
     menu:
-      description: 自定义翻译
+      description: 自定义界面翻译。
       title: 语言学家
     placeholder:
       all-locales: 定义其他语言的默认翻译

@@ -9,3 +9,20 @@ flagrow-impersonate:
   forum:
     user_controls:
       impersonate_button: 以该用户身份登录
+fof-impersonate:
+  admin:
+    permissions:
+      login: 以其他用户的身份登录
+    settings:
+      no_settings_available: '当前没有更多选项可用。请尝试安装插件 fof/moderator-notes'
+      require_reason: 要求在登录他人账户前输入理由
+      title: 'FoF 身份模拟'
+  forum:
+    modal:
+      impersonate_username: '以 {username} 身份登录'
+      label: '能力越大，责任越大。继续操作，您将使用「{username}」的身份直到退出登录。'
+      placeholder_optional: （可选）提供切换身份的理由
+      placeholder_required: 在继续之前，您必须提供切换到该用户的理由。
+      title: 登录到他人账户
+    user_controls:
+      impersonate_button: 以该用户身份登录

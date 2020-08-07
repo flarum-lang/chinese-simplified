@@ -5,11 +5,11 @@
 fof-ignore-users:
   admin:
     permissions:
-      can_not_be_ignored_label: 不可被忽视
+      can_not_be_ignored_label: 不可屏蔽
   forum:
-    profile_link: 被忽视的用户
+    profile_link: 已屏蔽用户
     user_controls:
-      ignore_button: 忽视
-      ignore_confirmation: 确定忽视此人？
-      unignore_button: 取消忽视
-      unignore_confirmation: 确定取消忽视此人？
+      ignore_button: 屏蔽
+      ignore_confirmation: 确定要屏蔽此人？
+      unignore_button: 取消屏蔽
+      unignore_confirmation: 确定要取消屏蔽此人？

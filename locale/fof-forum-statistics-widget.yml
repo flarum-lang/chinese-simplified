@@ -7,11 +7,12 @@ fof-forum-statistics-widget:
     settings:
       title: 控件设置
       widget_helper_text: '更改此设置来调整统计控件在论坛侧边栏上的位置。 值越大位置位置越高（此值可为负数）。'
+      widget_ignore_private_discussions_label: 不统计私人讨论
       widget_order_label: 控件顺序
   forum:
     navbar:
       discussions_count: '主题数：{discussionsCount}'
-      latest_member: 最近注册：
+      latest_member: '最近注册： '
       posts_count: '回复数：{postsCount}'
       users_count: '会员数：{usersCount}'
       widget_title: 论坛统计

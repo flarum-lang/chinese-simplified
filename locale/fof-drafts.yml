@@ -5,15 +5,43 @@
 fof-drafts:
   admin:
     permissions:
+      schedule: 定时发布
       start: 新建草稿
+    settings:
+      enable_scheduled_drafts: 启用定时发布功能
+      schedule_log_output: 保存计划任务日志
+      schedule_on_one_server: '将使用 onOneServer() 方法用于计划任务（需要 Redis/Memcache）'
+      title: 'FoF 草稿箱'
+  console:
+    scheduled_drafts_disabled: 定时发布功能已被禁用。
   forum:
     composer:
       alert: 草稿已保存。
+      discard_empty_draft_alert: 丢弃空草稿？
       exit_alert: 确定放弃对草稿的更改吗？
+      saved: 保存成功！
+      saving: 正在保存……
       title: 保存草稿
     dropdown:
       alert: 确定要删除草稿吗？
       button: 删除草稿
-      empty_text: 你还没有草稿
+      delete_button: 删除草稿
+      empty_text: 您还没有草稿
+      schedule_button: 定时发布
       title: 草稿
       tooltip: '=> fof-drafts.forum.dropdown.title'
+    schedule_draft_modal:
+      reschedule_button: 重新定时
+      schedule_button: 定时
+      scheduled_error: '发布失败：{error}。'
+      scheduled_text: '定时发布于 {datetime}。'
+      text: 选择一个稍后的时间自动发布您的草稿！
+      title: 定时发布
+      unschedule_button: 取消定时
+    user:
+      settings:
+        draft_autosave_enable: 自动保存草稿
+        draft_autosave_interval_button: 更新频率
+        draft_autosave_interval_invalid: 请输入大于4的整数。
+        draft_autosave_interval_label: 自动保存频率（秒）
+        drafts_heading: 草稿箱

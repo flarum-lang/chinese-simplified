@@ -3,34 +3,59 @@
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
 fof-follow-tags:
+  admin:
+    settings:
+      following_all_label: '=> fof-follow-tags.ref.filtering_options.all'
+      following_none_label: '=> fof-follow-tags.ref.filtering_options.none'
+      following_page_default_label: 「我的关注」默认内容
+      following_tags_label: '=> fof-follow-tags.ref.filtering_options.tags'
+      title: 'FriendsOfFlarum 关注标签'
   email:
-    newDiscussionInTag: '[节点 | 新主题] 标题'
-    newPostInTag: '[节点 | 新回复] 标题'
+    newDiscussionInTag: '[Tag | New Discussion] title'
+    newDiscussionTag: '[Tag | Changed Tag] title'
+    newPostInTag: '[Tag | New Post] title'
   forum:
+    badge:
+      following_tag_tooltip: 关注中
+      lurking_tag_tooltip: 吃瓜中
     index:
       follow_tag_button: 关注
+      following:
+        following_all_label: '=> fof-follow-tags.ref.filtering_options.all'
+        following_none_label: '=> fof-follow-tags.ref.filtering_options.none'
+        following_tags_label: '=> fof-follow-tags.ref.filtering_options.tags'
       unfollow_tag_button: 取消关注
     notifications:
+      new_discussion_tag_text: '{username} 修改了标签'
       new_discussion_text: '{username} 发布了新主题'
       new_post_text: '{username} 发布了新回复'
     settings:
-      notify_new_discussion_label: 我关注的标签有新主题
+      notify_new_discussion_label: 我关注的标签有新建主题
+      notify_new_discussion_tag_label: 有人将主题添加到我关注的标签
       notify_new_post_label: 我关注的标签有新回复
     sub_controls:
       follow_button: '=> fof-follow-tags.ref.follow'
       following_button: '=> fof-follow-tags.ref.following'
-      following_text: 有新主题时提醒
+      following_text: 有新主题时提醒。
       hiding_button: '=> fof-follow-tags.ref.hiding'
-      hiding_text: 在全部主题页面中隐藏旗下主题
+      hiding_text: 在全部主题页面中隐藏旗下主题。
       ignoring_button: '=> fof-follow-tags.ref.ignoring'
-      ignoring_text: 从不提醒
+      ignoring_text: 从不提醒。
       lurking_button: '=> fof-follow-tags.ref.lurking'
-      lurking_text: 有新主题或新回复时提醒
+      lurking_text: 有新主题或新回复时提醒。
       not_following_button: 不关注
-      not_following_text: 仅当有人提到我时提醒
+      not_following_text: 仅当有人提及我时提醒。
       notify_alert_tooltip: 有新主题或新回复时推送论坛提醒
       notify_email_tooltip: 有新主题或新回复时发送邮件提醒
+    user:
+      settings:
+        filter_label: 在「我的关注」中默认显示的内容
+        heading: 关注标签
   ref:
+    filtering_options:
+      all: 所有关注
+      none: 关注的主题
+      tags: 关注的标签
     follow: 关注
     following: 关注中
     hiding: 隐藏中

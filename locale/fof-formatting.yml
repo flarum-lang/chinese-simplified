@@ -11,3 +11,4 @@ fof-formatting:
       HTMLEntities: '使用 HTML 字符实体（详情：http://t.cn/A6PjdWuG）'
       MediaEmbed: '嵌入受支持的网站的内容（支持的网站：http://t.cn/A6Pjenoe）'
       PipeTables: 'ASCII 风格表格'
+      TaskLists: 'GitHub/GitLab 风格待办清单'

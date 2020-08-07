@@ -15,7 +15,7 @@ fof-gamification:
         button: 同步原生点赞数据
         converted: '成功同步 {number} 个喜欢'
         converting: '原生 LIkes 插件的点赞数据正在同步中，请等待几分钟后刷新页面查看同步结果。（同步可能需要一段时间，具体取决于您服务器性能）'
-        help: '同步 Flarum 论坛原生 Likes 插件产生的点赞数据，并计算所有当前讨论的热度'
+        help: '同步 Flarum 论坛原生 Likes 插件产生的点赞数据，并计算所有当前讨论的热度。'
       rankings:
         blocked:
           help: '这些用户不会在排名页面上显示。 用户名应以半角逗号分隔，后跟空格。'
@@ -37,6 +37,7 @@ fof-gamification:
         title: 头衔
       save_settings: 保存设置
       votes:
+        alternate_layout: '使用仿 Reddit 投票布局'
         auto_upvote: 当帖子发布时自动点赞
         color_holder: '#ffffff'
         discussion_page: 在帖子列表中显示点赞总数

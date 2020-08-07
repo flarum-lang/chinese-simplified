@@ -11,47 +11,47 @@ fof-masquerade:
     fields:
       add: '添加字段 {field}'
       description: 字段描述
-      description-help: "可选说明，用来解释这个字段的用途。\n"
+      description-help: "可选描述，用来解释这个字段的用途/需求。\n"
       edit: '编辑字段 {field}'
-      force-user-to-completion: 强制用户完成资料配置
-      icon: Icon
-      icon-help: "在用户输入的值前显示一个图标。有哪些可用的图标？ 请前往 <a>FontAwesome 官网</a>挑选图标。 图标名称包含前缀 “fa-”，例如 “fas fa-info”.\n"
-      name: 字段名称
-      name-help: "公开的可见（不可翻译）字段标签。\n"
+      force-user-to-completion: 强制用户填写资料
+      icon: 图标
+      icon-help: "在字段名称前显示一个图标。可用的图标详情，请前往 <a>FontAwesome 官网</a>。图标名称包含前缀 \"fa-\"，例如 \"fas fa-info\"。\n"
+      name: 字段名
+      name-help: "公开可见（不可翻译）的字段名。\n"
       on_bio: '在 UserBio（个性签名插件）中显示此字段的答案'
       option-comma-warning: '选项名不能包含任何半角逗号 (",")。'
-      option-new: 新选项
+      option-new: 添加选项
       options: 选项
       prefix: 字段前缀
-      prefix-help: "在用户输入的此字段的值前面显示前缀\n"
-      required: 强制标记必填字段
+      prefix-help: "在用户为该字段填写的值前添加前缀。\n"
+      required: 标记字段为必填项
       title: 字段
       type: 类型
       validation: 验证
-      validation-help: "检查支持的 <a>Laravel 验证规则</a>. 例如： \"string|min:5\" 或 \"url\".\n"
+      validation-help: "检查支持的 <a>Laravel 验证规则</a>. 例如： \"string|min:5\" 或 \"url\"。\n"
     general-options: 常规选项
     menu:
-      description: "配置用户资料\n"
+      description: "配置用户个人资料字段。\n"
     permissions:
-      have-profile: 允许个人设置自己的“假面舞会”资料
-      view-profile: 允许查看他人的“化装舞会”资料
+      have-profile: 拥有「化装舞会」个人资料
+      view-profile: 查看「化装舞会」个人资料
     title: 化装舞会
     types:
       advanced: 高级
-      boolean: 复选框
+      boolean: 是/否单选按钮
       email: 电子邮件
-      select: 下拉菜单
+      select: 下拉列表
       url: 网址
   forum:
     alerts:
       profile-completion-required: "请完善下方必填的个人资料。\n"
     buttons:
       save-profile: 保存
-      view-profile: 查看个人资料
+      view-profile: 个人资料
     fields:
       boolean:
-        'no': 'No'
-        'yes': 'Yes'
+        'no': 否
+        'yes': 是
       select:
-        none-optional: 未选择任何选项（可选）
+        none-optional: 未选择选项（可选）
         none-required: 请选择一个选项（必选）

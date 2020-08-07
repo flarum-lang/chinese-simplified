@@ -3,6 +3,35 @@
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
 fof-nightmode:
+  admin:
+    settings:
+      modal:
+        default_theme: 默认模式
+        default_theme_helper: 将自动为新用户和访客使用默认模式。
+        default_theme_important: 这也会影响没有手动选择日夜模式的现有用户！
+        theme_auto: '=> fof-nightmode.ref.auto'
+        theme_dark: '=> fof-nightmode.ref.dark'
+        theme_light: '=> fof-nightmode.ref.light'
+        title: 'FoF 夜间模式'
   forum:
-    day: 日间模式
-    night: 夜间模式
+    day: '=> fof-nightmode.ref.light'
+    night: '=> fof-nightmode.ref.dark'
+    user:
+      settings:
+        description: 选择您想在论坛上使用的日夜模式。
+        description2: 这个模式将绑定到您的账户，并适用于所有的设备，除非您开启下方的独立设备配置，以为不同的设备单独选择日夜模式。
+        device_specific_setting_checkbox: 独立设备配置
+        device_specific_setting_checkbox_tooltip: 您的模式选择将为不同设备单独保存。
+        heading: 日夜模式
+        option_descriptions:
+          auto: '您的日夜模式将根据您的浏览器设置或设备自动选择。例如，如果您在 iOS 系统中启用了深色模式，论坛就会使用夜间模式。'
+          day: 您绝对熟悉的经典体验，广受欢迎且完美兼容。
+          night: 您是个夜猫子。当鸟儿在睡觉，狐狸在打猎的时候，您会在晚上守着论坛。或者您只是喜欢深色的配色！
+        options:
+          auto: '=> fof-nightmode.ref.auto'
+          day: '=> fof-nightmode.ref.light'
+          night: '=> fof-nightmode.ref.dark'
+  ref:
+    auto: 自动（继承浏览器或设备）
+    dark: 夜间模式
+    light: 日间模式

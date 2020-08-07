@@ -26,9 +26,9 @@ fof-pages:
       url_placeholder: '=> fof-pages.ref.url'
     nav:
       pages_button: '=> fof-pages.ref.pages'
-      pages_text: 新建自定义静态页面
+      pages_text: 新建自定义静态页面。
     pages:
-      about_text: 新建、管理自定义静态页面
+      about_text: 新建、管理自定义静态页面。
       create_button: '=> fof-pages.ref.create_page'
     pages_list:
       empty_text: 这里还没有内容。

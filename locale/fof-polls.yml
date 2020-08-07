@@ -33,7 +33,7 @@ fof-polls:
       delete_confirm: 确定要删除这个投票吗？
       edit: 编辑投票
     no_permission: 您没有投票权限
-    poll_ended: 投票已结束
+    poll_ended: 投票已结束。
     public_poll: 查看投票参与者
     tooltip:
       badge: 投票

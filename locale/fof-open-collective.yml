@@ -7,6 +7,6 @@ fof-open-collective:
     settings:
       api_key_label: 'API Key'
       desc: '从 <a>https://opencollective.com/applications</a> 获取 API Key。'
-      group_label: 指定群组
+      group_label: 指定用户组
       slug_label: 'Collective Slug'
       title: 'FoF Open Collective 赞助服务'

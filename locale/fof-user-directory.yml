@@ -22,7 +22,7 @@ fof-user-directory:
         oldest: 老用户
         relevance: 相关度
         seen_oldest: 离线最久
-        seen_recent: 刚刚上线
+        seen_recent: 最近上线
         username_az: 用户名（a-z）
         username_za: 用户名（z-a）
     search:

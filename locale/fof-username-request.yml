@@ -12,15 +12,15 @@ fof-username-request:
     action:
       approval_label: 同意
       decision_title: 审核
-      help_text: 请确保用户名符合社区规范
+      help_text: 请确保用户名符合社区规范。
       name: '{username} 申请更改用户名为「{newUsername}」'
       reason_title: 拒绝原因
       rejected_label: 拒绝
       submit_button: 提交
-      success: 审核结果已发送
+      success: 审核结果已发送。
       title: '=> fof-username-request.forum.results.title'
     dropdown:
-      empty_text: 暂无申请
+      empty_text: 暂无用户名申请。
       exerpt: '申请更改用户名为：{requestedUsername}'
       item_text: '{username} 申请更改用户名'
       title: 用户名更改申请
@@ -35,9 +35,9 @@ fof-username-request:
       submit_button: 提交申请
       title: 申请更改用户名
     results:
-      approved: 您的用户名更改申请已通过！
+      approved: 您的用户名申请已通过
       new_username: '您的用户名已更改为「{username}」'
-      reason: '拒绝原因：<i>"{reason}"</i>'
-      rejected: 您的用户名更改申请被拒绝。
+      reason: '拒绝原因：<i>「{reason}」</i>。'
+      rejected: 您的用户名申请被拒绝
       resubmit: 您可以重新提交一个新的用户名。
       title: 更改用户名

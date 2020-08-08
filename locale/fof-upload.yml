@@ -7,6 +7,7 @@ fof-upload:
     buttons:
       save: 保存设置
     help_texts:
+      client_extension: "默认情况下，上传器将根据 MIME 类型选择一个安全的文件扩展名。\n对于某些基于 ZIP 或二进制数据的文件类型，这可能导致使用不正确的通用扩展名。\n在这里，您可以输入一个逗号分隔的文件扩展名列表，该列表将被逐字保留。\n"
       description: "文件上传服务与设置\n"
       disable-download-logging: "（默认启用）保持开启，将可以查看下载记录及其他数据。打开下方的开关，停用下载日志记录功能。\n"
       disable-hotlink-protection: "（默认启用）防盗链将通过验证 CSRF TOKEN 和 POST ID 来保护你的文件不会被其他站点调用下载。\n"
@@ -21,6 +22,8 @@ fof-upload:
         region: 区域
         secret: Secret
         title: 'AWS S3 存储设置（配置请参阅 http://t.cn/A6zX0V3N）'
+      client_extension:
+        title: 用户自定义文件扩展名
       disable-download-logging:
         title: 下载历史统计
         toggle: 停用
@@ -45,13 +48,13 @@ fof-upload:
         mime_types: 设置可上传的文件类型及上传方式
         title: 偏好设置
       qiniu:
-        bucket: Bucket
+        bucket: 空间名称
         key: Key
         secret: Secret
         title: '七牛存储设置（需要先安装 composer require overtrue/flysystem-qiniu）'
       resize:
         max_height: 最大图片高度
-        max_width: 最大图片宽度
+        max_width: 最大图片宽高
         title: 图片缩放功能
         toggle: 开启缩放
       watermark:
@@ -69,12 +72,19 @@ fof-upload:
       image-preview: 完整图片预览模板
       image-preview_description: "在行内显示完整图片。不支持下载、统计和热链保护。\n"
       image_description: "显示图片缩略图，并有 php 代理下载，支持统计和热链保护。\n"
+      just-url: 仅链接
+      just-url_description: "仅插入 URL。 渲染可以由具有自动链接功能的其他插件处理。没有下载功能，没有统计功能，且没有热链保护。\n"
     upload_methods:
       aws-s3: 'AWS S3'
       imgur: Imgur
       local: 本地
       ovh-svfs: 'OVH SVFS'
       qiniu: 七牛
+  api:
+    upload_errors:
+      could_not_detect_mime: '无法检测到该文件的 MIME 类型，请重试。'
+      forbidden_type: 不支持此类型文件。
+      unsupported_type: '您提供的 MIME 类型 {mime} 不受上传适配器支持。'
   forum:
     buttons:
       attach: 添加附件

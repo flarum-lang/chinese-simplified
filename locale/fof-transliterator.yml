@@ -6,9 +6,9 @@ fof-transliterator:
   admin:
     settings:
       package_behat_label: Behat（默认）
-      package_label: 转译包
+      package_label: 音译包
       package_php2_label: 'PHP #2 (需要安装 PHP 扩展： ext-intl)'
       package_php_label: 'PHP (需要安装 PHP 扩展：ext-intl)'
-      parse_button: 转译已有主题
-      result: '已转译 {count} 个主题|已转译 {count} 个主题'
-      title: 'FoF 网址后缀转译设置'
+      parse_button: 音译已有主题
+      result: '已音译 {count} 个主题|已音译 {count} 个主题'
+      title: 'FoF 音译器设置'

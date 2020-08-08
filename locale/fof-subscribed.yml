@@ -9,7 +9,7 @@ fof-subscribed:
     permission:
       subscribe_to_discussion_created: 允许用户接收新主题通知
       subscribe_to_post_unapproved: 允许用户接收新主题审核通知
-      subscribe_to_user_created: 允许用户接收新注册通知
+      subscribe_to_user_created: 允许用户接收新人注册通知
   forum:
     notifications:
       discussion_created_text: '{username} 发布了新主题'
@@ -17,7 +17,7 @@ fof-subscribed:
       user_created_text: '{username} 刚刚加入论坛'
     settings:
       defaults_label: '设置「{setting}」为默认开启'
-      forced_label: '强制对所有用户启用「{setting}」'
+      forced_label: '强制对所有用户开启「{setting}」'
       notify_discussion_created_label: 有新主题
       notify_post_unapproved_label: 有帖子需要审核
       notify_user_created_label: 有新人注册

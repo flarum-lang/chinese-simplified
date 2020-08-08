@@ -12,29 +12,29 @@ fof-terms:
       save-policy: 保存条款
       set-to-now: 现在
     messages:
-      delete-policy-confirmation: "这将从数据库中永久移除条款 {name} 及相关接受日期。 若有法律相关需求，请确保备份这些日期。 您确定要删除这项条款吗？\n"
+      delete-policy-confirmation: "这将从数据库中永久移除条款 {name} 及相关接受日期。 若有法律需求，请自行备份这些信息。 您确定要删除这项条款吗？\n"
     permissions:
       export-policies: 导出全部用户及服务条款信息
       postpone-policies-accept: 允许推迟接受新服务条款
       see-user-policies-state: 查看用户服务条款状态
     policies:
       export-url: 导出数据
-      export-url-help: "具有「导出全部条款数据」权限的用户可以点击上方的按钮并下载接受条款的用户列表。 您可以在 <a>插件 wiki</a> 上找到更多关于此选项的详细信息。\n"
+      export-url-help: "具有「导出全部条款数据」权限的用户可以点击上方的按钮并下载接受条款的用户列表。 您可以在 <a>插件 wiki</a> 上了解有关此选项的详情信息。\n"
       name: 名称
-      name-help: 这个名称将显示在复选框右侧，并作为更新提示框中的标题。
+      name-help: 这个名称将显示在勾选框右侧，并作为更新提示弹窗的标题。
       terms-updated-at: 更新于
-      terms-updated-at-help: "服务条款更新时间（点击“现在”按钮可生成协调世界时）。 设置此值将要求已接受条款的用户再次接受条款。 必须为过去的时间（否则用户将无法接受来自“未来”的条款并跳过对话框）。\n"
+      terms-updated-at-help: "条款更新时间（点击「现在」按钮可生成当前的协调世界时）。设置此值将要求用户重新接受更新后的条款。此时间必须为过去的时间（否则用户将无法接受来自「未来」的条款并关闭对话框）。\n"
       terms-updated-at-placeholder: 'YYYY-MM-DD (hh:mm:ss)'
       update-message: 推送消息
-      update-message-help: 用户接受条款时的提示信息、更新条款后用户看到的提示信息。
+      update-message-help: 向条款更新后，尚未接受最新条款的现有用户显示的消息。
       url: 链接
-      url-help: 服务条款详情页面的链接，点击后将在新标签页中打开。
+      url-help: 可以查看服务条款详情的页面链接，此链接将在新标签页中打开。
     settings:
       field:
         date-format: 日期格式
         date-format-help: '您可以使用任何有效的 <a>Moment.js</a> 格式，留空为默认格式。'
-        hide-updated-at: 更新时不显示服务条款的更新日期
-        signup-legal-text: 在接受条款复选框上方添加附加提示文本（可选）
+        hide-updated-at: 条款更新时不显示服务条款的更新日期
+        signup-legal-text: 在注册窗口中附加提示文本（可选）
       title: 服务条款设置
     titles:
       policies: 已生效条款
@@ -42,20 +42,20 @@ fof-terms:
     accept-modal:
       accept: 确认
       close: 您现在可以关闭此对话框
-      i-accept: '我接受新服务条款 <a>{policy}</a>'
+      i-accept: '我已阅读并同意新<a>{policy}</a>'
       title: 服务条款更新
-      updated-at: '服务条款更新于 {date}'
+      updated-at: '服务条款已于 {date} 更新'
       updated-recently: 自您上次访问后服务条款已更新
     signup:
-      i-accept: '我接受服务条款 <a>{policy}</a>'
-      must-accept: '您必须接受服务条款 {policy}'
+      i-accept: '我已阅读并同意<a>{policy}</a>'
+      must-accept: '您必须同意{policy}。'
     state-modal:
       accepted-at: '接受于 {date}'
       not-accepted: 不接受
       title: '用户 {username} 服务条款接受状态'
     update-alert:
-      can-accept-message: 我们最近更新了服务条款，您必须接受才能继续使用本网站。
-      must-accept-message: 在您查看新条款时，我们临时限制了您的帐户访问权限。
-      review: 点击此处查看并接受新服务条款
+      can-accept-message: 我们最近更新了服务条款，您必须阅读并同意才能继续使用本网站。
+      must-accept-message: 在您查看并同意新服务条款前，我们临时限制了您帐户的操作权限。
+      review: 点击此处查看并同意新服务条款
     user_controls:
       state_button: 服务条款接受状态

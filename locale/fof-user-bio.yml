@@ -2,6 +2,14 @@
 # Use https://weblate.rob006.net/projects/flarum/fof-user-bio/zh_Hans/ for translation.
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
+fof-user-bio:
+  admin:
+    permission:
+      editAny: 编辑所有人的个性签名
+      editOwn: 编辑自己的个性签名
+      view: 查看个性签名
+  forum:
+    userbioPlaceholder: 这个人很懒，什么都没有写……
 fof-userbio:
   forum:
     userbioPlaceholder: 这个人很懒，什么都没有写...

@@ -28,3 +28,9 @@ flarum_discussion_views:
       title: 重置浏览次数
     viewlist:
       title: 最近浏览的人
+michaelbelgium-discussion-views:
+  forum:
+    modal_resetviews:
+      label: '这将会清除这个主题的 {count} 浏览量，确定要继续吗？|这将会清除这个主题的 {count} 浏览量，确定要继续吗？'
+      submit_button: 确定，清楚所有
+      title: 重置主题浏览量

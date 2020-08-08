@@ -9,5 +9,5 @@ imgur-upload:
   forum:
     done: 完成！
     error: 错误
-    loading: 正在上传...
-    upload: 点击或粘贴来上传
+    loading: 正在上传……
+    upload: 拖动或粘贴上传

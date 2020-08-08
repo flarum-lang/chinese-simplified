@@ -5,8 +5,8 @@
 kilowhat-mailing:
   admin:
     permissions:
-      mail_all: 允许群发邮件
-      mail_individual: 向选定的单个用户私发邮件
+      mail_all: 向用户群发邮件
+      mail_individual: 向用户单独发送邮件
   api:
     no_recipients: 没有匹配的收件人
   email:

@@ -7,7 +7,7 @@ minr-auth-qq:
     qq_settings:
       client_id_label: 'App ID'
       client_secret_label: 'App Secret'
-      title: 'QQ 登录 - 设置'
+      title: 'QQ 登录设置'
   forum:
     log_in:
       with_qq_button: 'QQ 账号登录'

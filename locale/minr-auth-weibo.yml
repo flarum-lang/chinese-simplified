@@ -7,7 +7,7 @@ minr-auth-weibo:
     weibo_settings:
       client_id_label: 'App ID'
       client_secret_label: 'App Secret'
-      title: '微博登录 - 设置'
+      title: 微博登录设置
   forum:
     log_in:
       with_weibo_button: 微博账号登录

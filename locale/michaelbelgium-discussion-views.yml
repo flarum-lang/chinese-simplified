@@ -29,8 +29,23 @@ flarum_discussion_views:
     viewlist:
       title: 最近浏览的人
 michaelbelgium-discussion-views:
+  admin:
+    permissions:
+      reset_views_label: 重置主题浏览量
+      view_number_label: 查看主题浏览量
+    settings:
+      abbr_numbers_label: 缩写浏览量
+      max_viewcount_label: 「最近浏览的人」列表最多展示人数
+      show_filter_label: 添加「最多人看/最少人看」排序选项
+      show_viewlist_label: 在主题页面展示「最近浏览的人」列表
+      title: 主题浏览量设置
+      track_unique_label: '仅追踪 UV（独立访客）'
   forum:
+    discussion_controls:
+      resetviews_button: 重置浏览量
     modal_resetviews:
       label: '这将会清除这个主题的 {count} 浏览量，确定要继续吗？|这将会清除这个主题的 {count} 浏览量，确定要继续吗？'
       submit_button: 确定，清楚所有
       title: 重置主题浏览量
+    viewlist:
+      title: 最近浏览的人

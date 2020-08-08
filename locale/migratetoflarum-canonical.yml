@@ -7,18 +7,18 @@ migratetoflarum-canonical:
     settings:
       field:
         status: 重定向类型
-        wrong_url: 当您通过规范网址访问论坛时，插件设置就会出现
+        wrong_url: 通过规范网址访问论坛后，扩展设置就会出现
       option:
         301: 301（永久重定向，适用于网站调整、网页地址迁移等场景）
         302: 302（临时重定向，适用于测试、暂时性的网址迁移等场景）
         disabled: 禁用（本插件不会执行任何操作）
       step:
-        admin_on_canonical: '通过自定义的安全入口（规范 URL）访问后台管理面板'
+        admin_on_canonical: 通过规范网址访问后台管理面板
         check_config_url: '检查 config.php 中定义的网址是否是您首选的规范网址（当前：{url}）'
         enable_permanent: 启用永久重定向
         enable_temporary: 启用临时重定向，并检查一切是否正常
-        how_to: 如何启动规范重定向
+        how_to: 如何开启规范重定向
         suggestions: 本插件未强制执行或未覆盖的其他建议
-        use_hsts: '使用 HSTS 防止将级攻击'
+        use_hsts: '使用 HSTS 防止降级攻击'
         use_https: '强制 HTTPS 访问'
-      title: 规范网址设置
+      title: '规范网址设置（Canonical URL）'

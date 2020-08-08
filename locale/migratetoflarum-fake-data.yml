@@ -5,6 +5,8 @@
 migratetoflarum-fake-data:
   admin:
     generator:
+      bulk-mode: '=> migratetoflarum-fake-data.ref.bulk-mode'
+      bulk-mode-description: '=> migratetoflarum-fake-data.ref.bulk-mode-description'
       discussion-count: 修改主题数
       post-count: 修改回复数
       send: 生成数据
@@ -15,9 +17,18 @@ migratetoflarum-fake-data:
     no-users-matched: 用户不存在
   forum:
     generator:
+      bulk-mode: '=> migratetoflarum-fake-data.ref.bulk-mode'
+      bulk-mode-description: '=> migratetoflarum-fake-data.ref.bulk-mode-description'
       post-count: 修改回复数
       send: 生成数据
       title: 生成虚假回复
       user-count: 修改用户数
     link:
       generate-replies: 生成虚假回复
+  ref:
+    bulk-mode: 批量模式
+    bulk-mode-description: 生成一个随机值，并在每个条目中重复使用
+    discussion-count: 要创建的主题数
+    post-count: 要创建的回复数
+    send: 生成数据
+    user-count: 要创建的用户数

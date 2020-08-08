@@ -6,17 +6,17 @@ fof-prevent-necrobumping:
   admin:
     settings:
       days_help: '如果一个主题超过 n 天没有新回复，则将这个主题标记为旧贴。<code>0</code> 表示禁用。'
-      days_label: 设置默认天数
-      message_agreement_label: 自定义复选框条款
+      days_label: 默认天数
+      message_agreement_label: 自定义同意条款（复选框）
       message_description_label: 自定义警告内容
-      message_title_help: '使用 <code>[time]</code> 来代替时间，例如「此贴已经闲置 14 天啦」。'
+      message_title_help: '使用 <code>[time]</code> 表示天数，例如「此贴已经闲置 [time] 了」。'
       message_title_label: 自定义警告标题
-      tags_help: 为每个标签单独设置帖子判断过期的天数，留空表示使用默认值。如果一个主题被添加了好几个标签，则这几个标签中最短的天数将成为该主题的判断标准。
+      tags_help: 为每个标签单独设置判断主题帖过时的天数，留空表示使用默认天数。如果一个主题被添加了好几个标签，则这几个标签中最短的天数将成为该主题的判断标准。
       tags_title: 分类标签
   forum:
     composer:
       warning:
-        checkbox_label: 我知道，但是我觉得仍然有必要回复一下。
-        description: 看起来好像没有讨论的必要了
-        error: 这贴太久远了，请勿挖坟！
-        title: '此贴已经闲置 <b>{time}</b> 之久啦'
+        checkbox_label: 我已知晓此主题过时，但仍有回复的必要。
+        description: 很可能已经没有回复的必要了。
+        error: 这个主题太久远了，请勿挖坟。
+        title: '此贴已闲置 <b>{time}</b> 之久。'

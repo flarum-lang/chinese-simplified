@@ -12,8 +12,8 @@ fof-split:
       submit_button: 确认
       title: 拆分主题
     post:
-      was_split_from: '从「{target}」拆分来 {count} 条回复'
-      was_split_to: '{count} 条回复被拆分至「{target}」'
+      was_split_from: '从「{target}」拆分来 {count} 条回复。'
+      was_split_to: '{count} 条回复被拆分至「{target}」。'
     split:
       from: 开始拆分主题
       to: 结束拆分主题

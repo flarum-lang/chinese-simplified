@@ -5,19 +5,19 @@
 kilowhat-affiliation-links:
   admin:
     buttons:
-      add-rule: 添加
-      delete-rule: 删除
-      edit-rule: 编辑
+      add-rule: 添加规则
+      delete-rule: 删除规则
+      edit-rule: 编辑规则
       new-rule: 新建规则
-      save-rule: 保存
+      save-rule: 保存规则
     component-options:
-      host: Host（域名）
-      path: Path（路径）
+      host: 主机（域名）
+      path: 路径
       uri: 'URI（完整 URL）'
     messages:
       delete-rule-confirmation: '确定要永久删除规则 {match_pattern} 吗？'
     rules:
-      comment: 备注（可选，仅用于文档说明）
+      comment: 备注（可选，仅用于文档用途说明）
       match-component: 匹配组件
       match-component-help: '您要匹配的 URL 部分'
       match-pattern: 匹配模式
@@ -31,6 +31,6 @@ kilowhat-affiliation-links:
     titles:
       rules: 链接规则
     type-options:
-      exact: 精准
+      exact: 精确
       regex: 正则
       simple: 简单

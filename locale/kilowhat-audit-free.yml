@@ -8,7 +8,7 @@ kilowhat-audit:
       discuss: 'Flarum 社区发布帖'
       documentation: 完整的在线文档
       free: 免费版
-      pro: Pro
+      pro: 专业版
       title: 审计
       upgrade: 升级到专业版
       version: '版本 {version}'
@@ -110,5 +110,17 @@ kilowhat-audit:
         email_change_requested: '请求变更 {username} 的邮箱为 {new_email}'
         email_changed: '变更 {username} 的邮箱 {old_email} 为 {new_email}'
         groups_changed: '变更 {username} 的用户组 {old_groups} 为 {new_groups}'
-        impersonated: 'Impersonated {username}'
+        impersonated: '以 {username} 身份扮演登录'
+        logged_in: '登录 {username} 账户'
+        logged_in_with_provider: '使用 {provider} 登录到 {username} 账户'
+        logged_out: '退出登录 {username} 账户'
+        password_change_requested: '请求修改 {username} 的密码'
+        password_changed: '修改 {username} 的密码'
+        provider_connected: '连接提供商 {provider} 到 {username} 账户'
+        suspended: '封禁 {username} 到 {until}'
+        unsuspended: '解除封禁 {username}'
+        username_changed: '变更 {username} 用户名 {old_username} 为 {new_username}'
+        username_request_approved: '批准 {username} 用户名 {old_username} 变更为 {new_username}'
+        username_request_rejected: '拒绝 {username} 的用户名变更请求'
+        username_requested: '请求变更 {username} 用户名为 {new_username}'
       withoutActor: '=> core.group.guest'

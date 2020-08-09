@@ -8,14 +8,14 @@ fof-best-answer:
       best_answer: 为自己的主题选择最佳回复
       best_answer_not_own_discussion: 为他人的主题选择最佳回复
     settings:
-      allow_select_own_post: 允许用户选择自己的回复
+      allow_select_own_post: 允许用户将自己的帖子设为最佳回复
       remind_tag_ids: '若要将提醒功能仅用于特定标签，请在此输入标签 ID （英文逗号分隔）'
       schedule_log_output: 在日志中记录计划任务的执行
-      schedule_on_one_server: '将 “onOneServer()” 方法用于任务计划的部署（需要 PHP 扩展：Redis / Memcache）'
+      schedule_on_one_server: '将 “onOneServer()” 方法用于任务计划服务（需要 PHP 扩展：Redis / Memcache）'
       schedule_stop_overnight: '夜间免打扰（服务器时间晚上 9 点至早上 8 点，禁用提醒服务）'
       select_best_answer_reminder_days: '于 n 天后提醒用户选择最佳回复'
       title: 'FoF 最佳回复'
-      use_alt_ui: 将“最佳答案”的设置按钮显示在帖子的页脚中
+      use_alt_ui: 将「最佳回复」按钮显示在帖子的页脚
   forum:
     answered_badge: 已解决
     best_answer_button: 最佳回复
@@ -23,14 +23,14 @@ fof-best-answer:
     errors:
       mismatch: 您所选的帖子在当前主题中不存在
     notification:
-      awarded: '您的帖子被 {username} 选为最佳答案'
-      awarded_email: 您的帖子被选为最佳答案
+      awarded: '您的帖子被 {username} 设为最佳答案'
+      awarded_email: 您的帖子被设为最佳回复
       best_answer_in_discussion: '{username} 选择了最佳回复'
       best_answer_set_in_discussion_email: 有新的最佳回复
       content: 如果您的问题已解决请选择一个最佳回复
       preferences:
-        awarded_best_answer: 有人将我的帖子选为最佳回复
+        awarded_best_answer: 有人将我的帖子设为最佳回复
         best_answer_in_discussion: 我互动的主题有了最佳回复
-      select_email_title: 您是否设法解决了问题？
+      select_email_title: 您是否设法自行解决问题？
     remove_best_answer: 移除最佳回复
     this_best_answer: 设为最佳回复

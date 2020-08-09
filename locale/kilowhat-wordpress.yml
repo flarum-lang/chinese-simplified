@@ -9,15 +9,33 @@ kilowhat-wordpress:
     edit_css:
       customize_text: '您的 LESS/CSS 将仅覆盖 WordPress 框架内的 Flarum <a>默认样式</a>。'
       title: '编辑自定义嵌入 CSS'
+    header:
+      discuss: 'Flarum 论坛主题帖'
+      documentation: 完整的在线文档
+      title: '高级 WordPress 集成'
+      version: '版本 {version}'
+    health:
+      check: 立即检查
+      errors: 我们发现了一些问题。
+      healthy: 一切都很好！
+      not-run: '在您连接 Wordpress 和 Flarum 后，方可使用「健康检查」。'
+      request-error: 无法执行健康检查。
+      title: 健康检查
     menu:
       description: '配置 WordPress 集成。'
       title: WordPress
     permissions:
       gambits: 第三方策略（详见文档）
       heading: WordPress
+    save-controls:
+      no-unsaved-changes: 所有内容已保存
+      save: 保存
+      saved-at: '{ago} 已保存'
+      unsaved-changes: 有未保存的更改
+      validation-errors: 您提交的内容有误
     settings:
       api_key: 'Flarum API Key'
-      comment_tag: 新评论主题的标签
+      comment_tag: 新评论主题贴的标签
       comment_tag_custom: 自定义值
       comment_tag_custom_help: '标签 ID（半角逗号分隔）'
       comment_tag_none: 不分配标签
@@ -34,26 +52,26 @@ kilowhat-wordpress:
       post_delete_options:
         delete: '永久删除 Flarum 主题帖'
         hide: '隐藏 Flarum 主题帖'
-        ignore: '忽略（保持 Flarum 主题帖的现状）'
+        ignore: '无视（保持 Flarum 主题帖的现状）'
         lock: '保留并锁定 Flarum 主题帖'
       post_hide: 'WordPress 文章被隐藏（丢弃或移至草稿）后的操作'
       post_hide_options:
         delete: '永久删除 Flarum 主题帖'
         hide: '隐藏 Flarum 主题帖'
-        ignore: 忽略（根据允许评论锁定主题帖）
+        ignore: 无视（根据允许评论锁定主题帖）
         lock: '锁定 Flarum 主题帖'
-      section_comments_intro: "此功能使用 Flarum 框架替换 Wordpress 评论模块。这会使未登录访客无法发表评论。只有在 WordPress 中启用了评论功能的帖子才会创建对应的主题帖。启用或禁用评论功能时，Flarum 会同步锁定主题。如果您启用此功能时，您的博客已经包含了文章，您需要在每篇文章上再次禁用并启用评论功能以创建 Flarum 主题帖。\n"
+      section_comments_intro: "此功能使用 Flarum 框架替换 Wordpress 评论模块。这会使未登录访客无法发表评论。只有在 WordPress 中启用了评论功能的帖子才会创建对应的主题帖。启用或禁用评论功能时，Flarum 会同步锁定主题。如果您启用此功能时，您的博客已经有文章存在，您需要在每篇文章上手动禁用并重新启用评论功能以创建 Flarum 主题帖。\n"
       section_general_intro: 本插件工作所需的基本设置。
-      section_sso_intro: "此功能将无缝连接 WordPress 用户和 Flarum。系统将自动为他们创建账户并与 Wordpress 保持同步。如果您在 Flarum 中已有账户，系统将自动通过邮箱地址绑定重复的账户。如果您通过 Flarum 删除了一个用户，那么下次该用户仍然可以使用 Wordpress 账户登录重新创建账户。要封禁一个 Flarum 用户，请在 Flarum 中封禁该账户。\n"
+      section_sso_intro: "此功能将无缝绑定 WordPress 和 Flarum 账号。系统将自动为他们创建账号并与 Wordpress 保持同步。如果您在 Flarum 中已有账号，系统将自动通过邮箱绑定重复的账号。如果您通过 Flarum 删除了一个用户，那么下次该用户仍然可以使用 Wordpress 账号登录恢复账号。要封禁一个 Flarum 用户，请在 Flarum 中封禁该账户。\n"
       summary_as_last_post: 将摘要帖设置为新主题的末帖
-      summary_as_last_post_help: "一旦发布 WordPress 文章，新的评论主题帖就会立即升到 Flarum 主题列表的顶部。 默认情况下，只有在用户发表第一个评论后，主题帖才会上浮至顶部。\n"
+      summary_as_last_post_help: "这将使得发布 WordPress 文章后，新的评论主题帖立即浮动到 Flarum 主题列表的顶部。 默认情况下，只有在用户发表第一个评论后，主题帖才会上浮至顶部。\n"
       use_post_date: '使用 WordPress 文章的发布日期作为主题帖的创建日期'
       use_post_date_help: "默认情况下，Flarum 主题帖将使用当前时间作为其创建日期。 如果 WordPress 文章属于过去的日期，开启此选项将允许主题帖使用过去的日期作为创建时间。\n"
-      user_delete: 'Wordpress 中删除用户后的操作'
+      user_delete: '在 Wordpress 删除用户后的操作'
       user_delete_desc: '如果选择「删除」，则只删除用户，不删除 Flarum 中已发表的内容。'
       user_delete_options:
         delete: '删除 Flarum 用户'
-        ignore: '忽略（保留 Flarum 用户）'
+        ignore: '无视（保留 Flarum 用户）'
         suspend: '永久封禁 Flarum 用户（必须已启用 Suspend 插件）'
       username_strategy: 新用户的用户名
       username_strategy_help: '如果用户名已被 Flarum 的其他用户占用，则在用户名后附加随机数字'
@@ -64,7 +82,7 @@ kilowhat-wordpress:
       welcome_message: 介绍信息
       welcome_message_help: 该信息将在用户首次访问论坛时显示，同时还将显示用户名选择（如果启用）。
       wordpress_login_only: '仅允许 WordPress 登录'
-      wordpress_login_only_help: "禁用 Flarum 登录，当需要登录时直接打开 Wordpress 登录模块。这将自动将 Flarum 的「注册」权限设置为关闭。\n"
+      wordpress_login_only_help: "禁用 Flarum 登录，当需要登录时直接打开 Wordpress 登录模块。这将自动关闭 Flarum 的「注册」权限。\n"
       wordpress_login_path: 'WordPress 登录路径'
       wordpress_login_path_help: 仅当您手动或通过插件修改端点名时才需填写
       wordpress_url: 'WordPress URL'
@@ -76,3 +94,49 @@ kilowhat-wordpress:
       general: 常规设置
       sso: 单点登录集成
       wizard: 安装向导
+    wizard:
+      install: 安装
+      intro: "感谢您购买我的 WordPress 高级扩展！请在下方填写您的注册码，以自动连接您的 Flarum 和 WordPress。\n"
+      wordpress_password: 'WordPress 管理员密码'
+      wordpress_password_help: 该密码仅用于初始化配置，不被任何形式存储。
+      wordpress_url: 'WordPress URL'
+      wordpress_url_help: '您的 WordPress 首页地址'
+      wordpress_username: 'WordPress 管理员用户名'
+  api:
+    blocked_actions:
+      email_change: '此账号已与 WordPress 绑定。请前往主站个人资料页面修改邮箱。'
+      login: '此账号已与 WordPress 绑定。请使用主站登录表单进行关联。'
+      password_reset: '此账号已与 WordPress 绑定。请使用主站登录表单重置密码。'
+    wizard:
+      already_installed: "Flarum 已与 Wordpress 连接。要再次运行向导，请删除 Flarum 中的「WordPress URL」设置以及 WordPress 中的「Flarum API Key」设置。\n"
+      api_error_get: '对 WordPress 设置执行 GET 请求时出错（{exception}）。'
+      api_error_post: '对 WordPress 设置执行 POST 请求时出错（{exception}）。'
+      api_unauthorized: "我们无法使用给定的凭证进行身份验证。请再次检查 URL、用户名和密码。查看文档以了解更多故障排查步骤。\n"
+      invalid_wordpress_url: 'WordPress 中的「WordPress 地址 (URL)」设置似乎不是有效的 URL ({actual})。'
+      plugin_not_installed: "WordPress 插件似乎未在该 WordPress 站点上安装或启用。请确保您至少安装了 1.2.0 版本。\n"
+  forum:
+    edit-user-modal:
+      edit_in_wordpress: '在 WordPress 中编辑'
+      should_not_edit_email: '您应该在 WordPress 中修改电子邮件。<a>仍要修改</a>'
+      unlink: '解除此用户与 WordPress 账号的链接'
+      unlink_help: '如果邮箱与 WordPress 账号匹配，则该用户下次使用 WordPress 登录时，将再次链接。'
+      warning: "该用户与 WordPress 保持同步，请从 WordPress 中修改电子邮件和密码。\n"
+    embed:
+      title: 评论
+    log_in:
+      with_wordpress_button: 'WordPress 账号登录'
+    settings:
+      edit_on_wordpress: 在主站修改邮箱和密码
+    summary-post:
+      blog_link: 前往博客阅读
+      head_label: 'WordPress 文章'
+      read_more: 阅读更多
+    welcome-modal:
+      default_message: 欢迎访问论坛。一切都已准备就绪，请选择一个用户名！
+      not_now: 暂且跳过并以访客身份浏览
+      submit: 启用论坛账户
+      title: 欢迎访问！
+      username: 选择用户名
+  views:
+    error:
+      missing_wordpress_embed: "这篇文章尚未拥有评论主题贴。如果您是博客管理员，请发布该文章，或禁用评论功能后重新启用以生成属于该文章的主题帖。\n"

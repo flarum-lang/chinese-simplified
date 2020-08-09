@@ -6,7 +6,7 @@ the-turk-extended-appearance:
   admin:
     codeMirror:
       autoTheme: 自动（浅色：默认，深色：darcula）
-      helpText: '<a>选择</a>您的浏览器内代码编辑器<a>主题</a>。'
+      helpText: 选择基于浏览器的代码编辑器<a>主题</a>。
       scratchpad: 'CodeMirror 的主题设置将通过 Scratchpad（开发者便笺）扩展调整。'
       title: 'CodeMirror 主题'
     pickr:

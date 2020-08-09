@@ -25,7 +25,7 @@ the-turk-diff:
       neighborLinesHelp: '被修改段落（差异块）的上下文行数。若设置为 2 ，则表示会在对比视图中加入两行被修改段落的上文和下文内容。'
       noneLevel: 无
       onlyUnsigned: 请输入<strong>无符号整数</strong>！
-      separateBlock: '在相隔很多行的两个被修改段落（差异块）之间加入灰色分隔符（示例：http://t.cn/A6hcIybR）。'
+      separateBlock: '在相隔很多行的两个被修改段落（差异块）之间加入灰色分隔符（示例：http://t.cn/A6hcIybR）'
       textFormatting: 启用文本格式化扩展用于预览
       title: '修订记录 - 设置'
       useCrons: '使用 Cron 计划任务归档旧修订记录'
@@ -37,8 +37,8 @@ the-turk-diff:
     confirmRollback: 确定要回滚到此版本吗？
     createdInfo: '{username} 创建于 {ago}'
     deleteButton: '=> core.forum.post_controls.delete_button'
-    deleteErrorMessage: 删除编辑记录失败
-    deleteSuccessMessage: 编辑记录已删除
+    deleteErrorMessage: 删除编辑记录失败。
+    deleteSuccessMessage: 编辑记录已删除。
     deletedInfo: '{username} 于 {ago} 删除了此条编辑记录'
     deletedText: （已删除）
     differences:
@@ -49,7 +49,7 @@ the-turk-diff:
     editedInfo: '=> core.forum.post.edited_tooltip'
     editedText: '=> core.forum.post.edited_text'
     emptyText: 无修订记录
-    noDiff: 未找到任何差异
+    noDiff: 这两个内容之间没有发现差异。
     optionsButton: 更多
     previewMode:
       currentContent: '=> the-turk-diff.ref.currentContent'
@@ -60,8 +60,8 @@ the-turk-diff:
     revisionInfo: '已编辑 {revisionCount} 次，新到旧排序|已编辑 {revisionCount} 次，新到旧排序'
     revisions: '共 {revisionCount} 次修订|共 {revisionCount} 次修订'
     rollbackButton: '回滚到版本 {number}'
-    rollbackErrorMessage: 回滚失败！
-    rollbackSuccessMessage: 回滚成功
+    rollbackErrorMessage: 回滚失败。
+    rollbackSuccessMessage: 回滚成功。
     rollbackToOriginalButton: 回滚到初始版本
     tooltips:
       combined: 组合对比

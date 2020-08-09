@@ -8,44 +8,53 @@ the-turk-mathren:
       aliasBlockDelimiters: 块表达式定界符的别名
       aliasDelimitersHelp: '它们是 <em>BBCode 主定界符</em> 的 <strong>别名</strong>。 如果您在定界符别名列表中定义了特殊（符号）定界符 （比如 <code>$$</code>），则在保存帖子时，MathRen 会扫描整个帖子，并用 BBCode 的主定界符替换特殊（符号）定界符。 此举可能会增加帖子的保存时间，建议您使用自定义的 BBCode 定界符，而不是特殊（符号）定界符。 因为自定义 BBCode 分隔符可以与主定界符共存，不会被主定界符替换。'
       aliasInlineDelimiters: 内联表达式定界符的别名
+      blockDelimiters: '用于段落表达式的 <strong>BBCode</strong> 定界符'
       blockMathClass: '块表达式的 <code>span</code> 标签'
       decisiveKeywords: 忽略功能的关键词列表
-      decisiveKeywordsHelp: '要让帖子中的数学表达式不被渲染成可视化的数学公式，您可以自己设置一个关键词，默认是“ignore”。 您需要在<em>特殊字符定界符</em>右侧填写您的关键词（例如：<code>$$%e%$${<strong>您的关键词</strong>}</code>）； 或者在 BBCode 中加入关键词（例如：<code>[math=<strong>您的关键词</strong>]%e%[/math]</code>）； 又或是使用反引号（`）包裹 BBCode 数学表示（例如：`[math]...[math]`）。 <strong>请注意</strong> <code>[math]%e%[/math]{<strong>您的关键词</strong>}</code> 这样的用法是 <u>无效的</u>。'
+      decisiveKeywordsHelp: '要让表达式不被渲染成可视化的数学公式，请将关键词以如下形式填写到代码中 <code>[math=<strong>关键词</strong>]%e%[/math]</code>。'
       decisiveKeywordsInfo: 此列表中的第一个关键词将被作为默认关键词。
       decisiveKeywordsWarning: 请勿使用特殊符号！否则将引起异常。
       delimiters: 定界符
-      delimitersHelp: '用半角逗号分隔。 <strong>%e%</strong> 代表数学表达式'
-      description: '配置 TeX 数学渲染器'
+      delimitersHelp: '定界符之间用半角逗号分隔。<strong>%e%</strong> 代表数学表达式。'
+      description: '配置 TeX 数学公式渲染器。'
       enableColorIsTextColor: '允许<code>\color</code> 命令接受两个参数 （colorIsTextColor）'
+      enableCopyTeX: '允许复制 KaTeX 公式源码'
       enableFleqn: '开启行间公式左对齐 (（fleqn 参数）'
       enableLeqno: '开启在公式左侧自动编号 （leqno 参数）'
       enableTextEditorButtons: 在文本编辑器上显示按钮
       enableThrowOnError: '对于不支持的命令或无效的 LaTeX 排版格式弹出错误提示'
       errorColor: '选择不支持的命令或无效的 LaTeX 格式的颜色'
-      errorColorHelp: '选择在禁用错误提示时显示不支持的命令和无效的 LaTeX 格式的颜色'
+      errorColorHelp: '选择错误提示被禁用时，提示不支持的命令和无效的 LaTeX 格式的颜色。'
       ignoredClasses: 递归遍历时要忽略的DOM节点类名称列表
       ignoredClassesInfo: 此列表中的第一个类将用作默认值，用于封装已忽略的表达式。
       ignoredTags: '递归遍历时要忽略的 DOM 节点类型列表'
       ignoringExpressions: 忽略渲染功能
       ignoringExpressionsHelp: 用半角逗号分隔。
+      inlineDelimiters: '用于行内表达式的 <strong>BBCode</strong> 定界符'
       inlineMathClass: '内联（行内）表达式 <code>span</code> 标签'
       katexOptionsHeading: 'KaTeX 引擎设置'
-      katexOptionsInfo: '您可以在 https://katex.org/ 上了解 KaTex 选项的更多信息。'
+      katexOptionsInfo: '<a>点击此处</a> 了解 KaTex 选项的更多信息。'
       macros: 宏
-      macrosHelp: 自定义宏集合
+      macrosHelp: 自定义宏集合。
       mainBlockDelimiter: '块表达式 <strong>BBCode</strong> 的主定界符'
+      mainDelimitersInfo: 上方列表中的第一个定界符将被文本编辑器作为默认定界符。
       mainInlineDelimiter: '内联表达式 <strong>BBCode</strong> 的主定界符'
       mathClasses: '<code>span</code> 标签的类名'
       mathClassesHelp: '您可以使用此类名轻松自定义 <code>span</code> 标签的样式。'
       maxExpand: 最大扩展极限
       maxSize: 最大尺寸（em）
+      mentions: '您必须启用 <code>flarum/mentions</code> 扩展才能激活引用按钮。'
       minRuleThickness: 最小厚度（em）
       otherOptionsHeading: 其它选项
       outputMode: 输出模式
       outputModeHelp: 选择用于输出的标记语言
+      regexInfo: 定界符只能由大小写字母、连字符构成。
+      saved_message: '=> core.admin.basics.saved_message'
       sizeSettings: 尺寸调整选项
-      sizeSettingsHelp: '使用 <strong>英文句点</strong>作为小数点符号。不接受 <em>无限值</em> ！ 最小厚度：分数线、顶线、垂线等。 最大尺寸：调整可视化视图、空格等的大小。'
+      sizeSettingsHelp: 使用<strong>英文句点</strong>作为小点数分隔符。
+      syntaxInfo: '您必须使用 JavaScript 语法编写宏代码。'
       title: 'MathRen 数学渲染'
+      validation: '"{field_key}" 字段验证失败。'
       wrapperOptionsHeading: 封装选项
       wrapperStyle: '风格化 <code>span</code> 标签样式'
   forum:

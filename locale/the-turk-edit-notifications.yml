@@ -5,8 +5,8 @@
 the-turk-edit-notifications:
   admin:
     settings:
-      enableInteracts: 自动通知参与互动的用户帖子内容有改动
-      title: '帖子改动通知 - 设置'
+      enableInteracts: 自动通知参与互动的用户帖子内容有变动
+      title: 内容变动通知设置
   forum:
     notifications:
       interacted_post_edited_text: '{username} 更新了帖子内容'

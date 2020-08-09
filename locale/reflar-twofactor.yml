@@ -15,7 +15,7 @@ reflar-twofactor:
       title: 两步验证
       token: 'Twillio Auth Token'
   forum:
-    2fa_disabled: 两步验证已停用
+    2fa_disabled: 两步验证停用成功。
     2fa_enabled: 两步验证已启用
     accountlabel: 两步验证
     email:
@@ -24,7 +24,7 @@ reflar-twofactor:
     incorrect_2fa: 验证码无效
     modal:
       2fa_heading: 两步验证码
-      2fa_help: '请输入来自短信或 TOTP 应用程序的动态令牌'
+      2fa_help: '请输入来自短信或 TOTP 应用程序的动态令牌。'
       authy_heading: 'Authy 设置'
       back: 返回
       button: 提交

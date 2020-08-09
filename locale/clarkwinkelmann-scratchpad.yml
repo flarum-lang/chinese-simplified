@@ -35,7 +35,7 @@ clarkwinkelmann-scratchpad:
       description: 在开发环境中方便地测试代码
       title: 开发者便笺
     placeholders:
-      js-log: 'Hello, {frontend}!'
+      js-log: '你好，{frontend}！'
       php-comment: '在此处注册 extender'
       untitled: 未命名
     settings:

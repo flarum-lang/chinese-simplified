@@ -11,7 +11,7 @@ fof-analytics:
     popup:
       field:
         googleGTMCode: 'GTM 代码 ID（可选）'
-        googleTrackingCode: 'Tracking Code ID'
+        googleTrackingCode: '跟踪代码 ID'
         optTrackingCode: 自定义跟踪代码（可选）
         piwikAliasUrl: '别名 URL'
         piwikAuthToken: '验证 Token'

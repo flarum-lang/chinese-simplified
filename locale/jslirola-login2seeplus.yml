@@ -6,6 +6,8 @@ jslirola-login2seeplus:
   admin:
     code: 代码
     hide: 隐藏
+    image: 图片
+    link: 链接
     php:
       help: '*不推荐* 用于兼容旧浏览器，插件在后台处理工作。需要启用 <code>mb_substr</code> 和 <code>mb_strlen</code>。'
       label: '使用 PHP'

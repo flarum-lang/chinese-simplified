@@ -5,54 +5,54 @@
 nikovonlas-webpush:
   admin:
     settings:
-      api_key: 'Onesignal api key'
-      app_id: 'Onesignal app id'
-      autoprompt: 自动请求（立即显示权限请求)
+      api_key: 'OneSignal api key'
+      app_id: 'OneSignal app id'
+      autoprompt: 立即显示权限提示以授权用户
       excerpt: 通知的摘要长度
-      subdomain: 'Onesignal subdomain'
-      title: 网页推送设置
+      subdomain: 'OneSignal 子域名'
+      title: 'Web 推送设置'
       type:
         custom: 自定义
-        description: 'Onesignal 连接类型'
+        description: 'OneSignal 连接类型'
         standart: 标准
-      user_key: 'Onesignal user key'
+      user_key: 'OneSignal user key'
   forum:
     subscribe: '允许浏览器推送消息通知（仅支持 Firefox 或 Chromium 内核浏览器）'
   notify:
     delete:
-      message: '@{from} 删除了你的主题「{title}」'
-      title: '{title}'
+      message: '{from} 删除您的主题「{title}」'
+      title: 主题被删除
     flag:
-      message: '{post}'
-      title: '{from} 标记了帖子'
+      message: '{from} 举报帖子「{post}」'
+      title: 新举报
     like:
-      message: '{post}'
-      title: '{from} 赞了你的帖子'
+      message: '{from} 点赞您的帖子：{post}'
+      title: 帖子被赞
     lock:
-      message: '@{from} 锁定了你的主题「{title}」'
-      title: '{title}'
+      message: '{from} 锁定您的主题「{title}」'
+      title: 主题被锁定
     mention-post:
-      message: '{post}'
-      title: '{from} 回复了你的帖子'
+      message: '{from} 回复您的帖子：{post}'
+      title: '{title} 有新回复'
     mention:
-      message: '{post}'
-      title: '{from} 提及了你'
+      message: '{from} 提及您的帖子：{post}'
+      title: '{from} 提及您'
     post:
-      message: '@{from}: {post}'
+      message: '{from} 发表新回复：{post}'
       title: '「{title}」有新回复'
     rename:
-      message: '@{from} 将你的主题重命名为「{title}」'
-      title: '{title}'
+      message: '{from} 重命名您的主题为「{title}」'
+      title: 主题被重命名
     suspend:
-      message: '@{from} 已将您封禁'
-      title: 你的账号被封禁
+      message: '{from} 封禁您的账户'
+      title: 您的账号被封禁
     tag:
       discussion:
-        message: '@{from} 发布了新主题'
-        title: '{title}'
+        message: '{from} 发布新主题：{title}'
+        title: 订阅的标签有新主题
       post:
-        message: '@{from}: {post}'
+        message: '{from} 发表回复：{post}'
         title: '「{title}」有新回复'
     unsuspend:
-      message: '@{from} 已将您解禁'
-      title: 你的账号被解除封禁
+      message: '{from} 解除封禁您的账户'
+      title: 您的账号被解除封禁

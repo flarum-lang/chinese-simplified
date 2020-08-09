@@ -5,13 +5,13 @@
 reflar-cookie-consent:
   admin:
     settings:
-      backgroundColor: 背景色
+      backgroundColor: 背景颜色
       buttonBackgroundColor: 按钮背景颜色
       buttonText: 「取消」按钮文本
       buttonTextColor: 按钮文本颜色
       ccTheme: 风格
       configuration_button_title: 「了解更多」按钮文本
-      configuration_title: 设置选项
+      configuration_title: 配置选项
       consentText: 提示文本
       learnMoreLinkText: 文本
       learnMoreLinkUrl: 链接

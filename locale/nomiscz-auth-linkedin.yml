@@ -7,7 +7,7 @@ nomiscz-auth-linkedin:
     settings:
       api_app_id: 'API App ID'
       api_app_secret: 'API App Secret'
-      title: '领英登录 - 设置'
+      title: 领英登录设置
   forum:
     buttons:
       login: 领英账号登录

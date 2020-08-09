@@ -7,14 +7,14 @@ nomiscz-auth-wechat:
     settings:
       api_app_id: 'API App ID'
       api_app_secret: 'API App Secret'
-      title: '微信登录 - 设置'
+      title: 微信登录设置
   forum:
     alerts:
       already_linked: 微信账号已绑定！
       already_used: 这个微信账号已被其他用户绑定！
-      error: 有些地方出了问题，请稍后再试！
-      link_success: 微信账号绑定成功！
-      unlink_success: 微信账号解绑成功！
+      error: 有些地方出了问题，请稍后重试！
+      link_success: 微信账号绑定成功。
+      unlink_success: 微信账号解绑成功。
     buttons:
       link: 绑定微信账号
       login: 微信账号登录
@@ -24,9 +24,9 @@ nomiscz-auth-wechat:
         title: 绑定微信账号
       unlink:
         buttons:
-          cancel: 不，我不确定！
-          confirm: 是的，我确定
+          cancel: 取消！
+          confirm: 确定解绑
         info:
           confirm: 您确定要解绑微信账号吗？
-          no_providers: 您没有其他登录手段，请先重置账户密码。
+          no_providers: 您没有其他登录方式，请先重置账户密码。
         title: 解绑微信账号

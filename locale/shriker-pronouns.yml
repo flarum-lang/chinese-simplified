@@ -5,7 +5,7 @@
 shriker-pronouns:
   admin:
     settings:
-      prefix_help_text: 此文本将显示于用户人称代词之前（例如：性别）。
+      prefix_help_text: '此文本将显示于用户人称代词之前（例如：性别）。有关人称代词可以访问 mypronouns.org 或 pronouns.is'
       prefix_label: 人称代词前缀
       title: 人称代词设置
   forum:

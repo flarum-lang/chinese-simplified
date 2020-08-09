@@ -13,14 +13,14 @@ studosi-mail-filter:
       label: 黑名单正则表达式
       placeholder: 输入正则表达式...
     error:
-      invalid_regex: 无效的正则表达式！
+      invalid_regex: 无效的正则表达式。
     import:
       button: 导入
       desc: 导入邮箱黑白名单、黑白名单正则表达式。
       label: 导入设置
     nav:
-      desc: 添加注册邮箱黑白名单
-      title: 邮箱过滤器
+      desc: 设置注册邮箱黑白名单
+      title: 邮件地址过滤器
     settings:
       rule:
         delete:

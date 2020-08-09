@@ -5,43 +5,43 @@
 simonxeko-follow-users:
   admin:
     permissions:
-      can_not_be_followed_label: 不允许被关注
+      can_not_be_followed_label: 禁止被关注
   email:
-    newDiscussionInTag: '[节点 | 新主题] 标题'
-    newPostInTag: '[节点 | 新回复] 标题'
+    newDiscussionInTag: '[Tag | New Discussion] title'
+    newPostInTag: '[Tag | New Post] title'
   forum:
     index:
       follow_tag_button: 关注
       unfollow_tag_button: 停止关注
     notifications:
-      new_discussion_text: '{username} 发布了新主题'
-      new_post_text: '{username} 发布了新回复'
-    profile_link: 关注的人
+      new_discussion_text: '{username} 发布新主题'
+      new_post_text: '{username} 发表回复'
+    profile_link: 正在关注
     settings:
       notify_new_discussion_label: 我关注的人发布了新主题
-      notify_new_post_label: 我关注的人有新的回复
+      notify_new_post_label: 我关注的人发表新回复
     sub_controls:
       follow_button: '=> simonxeko-follow-users.ref.follow'
       following_button: '=> simonxeko-follow-users.ref.following'
-      following_text: 有新主题时提醒我
+      following_text: 有新主题时提醒我。
       hiding_button: '=> simonxeko-follow-users.ref.hiding'
-      hiding_text: 在全部主题页面中隐藏主题
+      hiding_text: 在全部主题页面中隐藏主题。
       ignoring_button: '=> simonxeko-follow-users.ref.ignoring'
-      ignoring_text: 从不提醒
+      ignoring_text: 从不提醒。
       lurking_button: '=> simonxeko-follow-users.ref.lurking'
-      lurking_text: 有新主题或新回复时提醒我
+      lurking_text: 有新主题或新回复时提醒我。
       not_following_button: 不关注
-      not_following_text: 仅当有人提到我时提醒
-      notify_alert_tooltip: 有新主题或新回复时推送论坛提醒
-      notify_email_tooltip: 有新主题或新回复时发送邮件提醒
+      not_following_text: 仅当提及我时提醒我。
+      notify_alert_tooltip: 有新主题或新回复时站内通知我
+      notify_email_tooltip: 有新主题或新回复时发送邮件通知
     user_controls:
       follow_button: 关注
       follow_confirmation: 确定要关注这个用户吗？
-      unfollow_button: 取消关注
-      unfollow_confirmation: 确定要取消关注此这个用户吗？
+      unfollow_button: 停止关注
+      unfollow_confirmation: 停止关注此这个用户？
   ref:
     follow: 关注
     following: 关注中
     hiding: 隐藏中
-    ignoring: 忽略中
+    ignoring: 忽视中
     lurking: 暗中观察

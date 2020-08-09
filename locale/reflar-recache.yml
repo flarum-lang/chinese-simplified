@@ -7,15 +7,19 @@ reflar-recache:
     nav:
       desc: 配置缓存设置。
     page:
+      check_button: 检查
       connection_failed: 连接失败。
       heading: ReCache
       redis:
         check: 保存前请检查连接状态！
         database: 数据库
+        failed: '保存设置失败，请确保 "vendor/flarum/core/src/Database/" 可以被您的 Web 服务器写入'
+        fillin: '请完整填写 Redis 表单'
         host: 主机
         label: Redis
         password: 密码
         port: 端口
+        success: '已成功连接至 Redis 服务器。'
       switches:
         avatar: 启用图片优化
         cache: 启用缓存

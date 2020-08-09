@@ -5,38 +5,38 @@
 reflar-webhooks:
   actions:
     discussion:
-      deleted: '已删除的主题 `{1}`'
-      hidden: '已隐藏主题 `{1}`'
+      deleted: '删除主题 `{1}`'
+      hidden: '隐藏主题 `{1}`'
       renamed:
-        description: '新标题: {1}'
-        title: '已重命名主题 `{1}`'
-      restored: '已恢复主题 `{1}`'
-      started: '已发布主题 `{1}`'
+        description: '新标题：{1}'
+        title: '重命名主题 `{1}`'
+      restored: '恢复主题 `{1}`'
+      started: '发布主题 `{1}`'
     group:
-      created: '已添加用户组 `{1}`'
-      deleted: '已删除用户组`{1}`'
-      renamed: '已重命名用户组为 `{1}`'
+      created: '创建用户组 `{1}`'
+      deleted: '删除用户组`{1}`'
+      renamed: '重命名用户组为 `{1}`'
     post:
-      deleted: '已删除回复于 `{1}`'
+      deleted: '删除回复于 `{1}`'
       hidden: '隐藏回复于 `{1}`'
-      posted: '已添加回复于 `{1}`'
-      restored: '已恢复回复于 `{1}`'
-      revised: '已编辑回复于 `{1}`'
+      posted: '新回复于 `{1}`'
+      restored: '恢复回复于 `{1}`'
+      revised: '编辑回复于 `{1}`'
     user:
-      deleted: '已删除会员 `{1}`'
-      registered: 已添加会员
+      deleted: '删除用户 `{1}`'
+      registered: 新注册会员
       renamed:
-        description: '新会员名: {1}'
-        title: '已更改会员名为 `{1}`'
+        description: '新用户名：{1}'
+        title: '`{1}` 变更用户名'
   adapters:
     errors:
-      404: 'Webhook 您要访问的服务未找到或不存在'
+      404: 'Webhook 服务未找到或不存在'
   admin:
     errors:
-      service_not_found: '服务 ''{service}'' 未找到或不存在。'
+      service_not_found: '"{service}" 服务未找到或不存在。'
       url_invalid: '所选服务的 URL 无效。'
     nav:
-      desc: '为您的论坛设置自定义 webhook。'
+      desc: '为您的论坛设置自定义 Outgoing Webhooks。'
     settings:
       actions:
         flarum:
@@ -45,38 +45,38 @@ reflar-webhooks:
             hidden: '=> reflar-webhooks.ref.hidden'
             renamed: '=> reflar-webhooks.ref.renamed'
             restored: '=> reflar-webhooks.ref.restored'
-            started: 已添加
+            started: 已发布
             title: 'Flarum 主题'
           group:
-            created: 已添加
+            created: 创建
             deleted: '=> reflar-webhooks.ref.deleted'
             renamed: '=> reflar-webhooks.ref.renamed'
             title: 'Flarum 用户组'
           post:
             deleted: '=> reflar-webhooks.ref.deleted'
             hidden: '=> reflar-webhooks.ref.hidden'
-            posted: 已回复
+            posted: 回复
             restored: '=> reflar-webhooks.ref.restored'
-            revised: 已编辑
+            revised: 编辑
             title: 'Flarum 回复'
           user:
             deleted: '=> reflar-webhooks.ref.deleted'
-            registered: 已注册
+            registered: 注册
             renamed: '=> reflar-webhooks.ref.renamed'
-            title: 'Flarum 会员'
+            title: 'Flarum 用户'
       help:
-        disabled: '这个 webhook 因没有启用任何 event 而已停用。'
-        general: '于此您可以添加、编辑、移除 webhook。'
-        url: 'Webhook 运行端点。'
+        disabled: '此 Webhook 已被禁用，因为它未启用任何事件。'
+        general: '您可以在这里添加、编辑、删除论坛中的 webhooks。'
+        url: '要运行的 Webhook 终端'
       modal:
-        description: '在这里您可以更改 webhook 调用的 event。'
+        description: '您可以在这里修改出发 webhook 的事件。'
         title: 'Webhook 设置'
       services:
         discord: Discord
         slack: Slack
       title: Webhooks
   ref:
-    deleted: 已删除
-    hidden: 已隐藏
-    renamed: 已重命名
-    restored: 已恢复
+    deleted: 删除
+    hidden: 隐藏
+    renamed: 重命名
+    restored: 恢复

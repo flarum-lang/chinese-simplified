@@ -9,7 +9,7 @@ reflar-twofactor:
       authyHelp: '在此处获取您的 API 密钥并自定义论坛在 Authy 应用中的外观：<a> https://www.twilio.com/console/authy </a>'
       enable: '启用 Twillio'
       enableAuthy: '启用 Authy OneTouchauthyApi'
-      help: '从 twilio.com/console 获取您账号的 SID 和 Auth Token，或者从 twilio.com/console/phone-numbers/incoming 获取您的电话号码'
+      help: '从 <a>twilio.com/console</a> 获取您账号的 SID 和 Auth Token，从 <a2>twilio.com/console/phone-numbers/incoming</a2> 获取您的电话号码'
       number: 'Twillio 电话号码'
       sid: 'Twillio 账号 SID'
       title: 两步验证
@@ -55,4 +55,4 @@ reflar-twofactor:
       twofactor_title: 两步验证设置
       useACode: 使用验证码
     onetouch: '请求登录 {forum}'
-    text: '{forum} 验证码是： {code}'
+    text: '您的 {forum} 验证码是：{code}'

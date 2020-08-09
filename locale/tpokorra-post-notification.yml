@@ -5,20 +5,20 @@
 tpokorra-post-notification:
   admin:
     settings:
-      new_discussion: 用于描述新主题的标签
+      new_discussion: 用于描述新主题贴的标签
       new_post: 用于描述新回帖的标签
       post_approval: 用于描述待审核新帖的标签
       recipients:
         new_discussion:
-          bcc: 新主题通知抄送地址，半角逗号分隔
-          to: 新主题通知收件人地址，半角逗号分隔
+          bcc: 新主题发布的邮件通知密送地址，半角逗号分隔
+          to: 新主题发布的邮件通知收件人地址，半角逗号分隔
         new_post:
-          bcc: 新回帖通知抄送地址，半角逗号分隔
-          to: 新回帖通知收件人地址，半角逗号分隔
+          bcc: 新回帖的邮件通知密送地址，半角逗号分隔
+          to: 新回帖的邮件通知收件人地址，半角逗号分隔
         post_approval:
-          to: 新贴审核通知收件人地址，半角逗号分隔
+          to: 新贴审核的邮件通知收件人地址，半角逗号分隔
         revised_post:
-          bcc: 贴文被编辑通知抄送地址，半角逗号分隔
-          to: 贴文被编辑通知收件人地址，半角逗号分隔
-      revised_post: 用于描述贴文被编辑的标签
+          bcc: 帖子被编辑的邮件通知密送地址，半角逗号分隔
+          to: 帖子被编辑的邮件通知收件人地址，半角逗号分隔
+      revised_post: 用于描述帖子被编辑的标签
       title: 发帖通知设置

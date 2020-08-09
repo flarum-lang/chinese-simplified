@@ -5,15 +5,15 @@
 therealsujitk:
   admin:
     about:
-      stringA: 插件作者：
-      stringB: 捐赠：
+      stringA: '插件作者： '
+      stringB: '捐助作者： '
     gifs:
       giphyAPIkey: 'Giphy API 密钥'
       title: 'GIF API 设置'
   forum:
     gifs:
       label: '插入 GIF'
-      loading: 正在加载...
+      loading: 正在加载……
       loadmore: 加载更多
       noresults: 没有找到图片
       search: 搜索

@@ -4,18 +4,71 @@
 
 v17development-flarum-support:
   forum:
+    article:
+      article: 文章
+      articles: 所有文章
+      author: 作者
+      authors: 所有作者
+      created_at: '创建于 {date}'
+      hidden: 已隐藏
+      last_modified: '最后修改于 {date}'
+      not_found: 文章不存在
+      share_article:
+        perma_link: 固定链接：
+        title: 分享文章
+      tools:
+        audit_log: 查看审计日志
+        delete_forever: 永久删除
+        edit_article: 编辑文章
+        edit_tags: 编辑文章标签
+        hide_article: 隐藏文章
+        recover_article: 还原文章
+        rename_article: 重命名文章
+        view_ratings: 查看评价
     article_events:
       article_hidden: '文章已被 {username} 隐藏'
       article_modified: '{username} 编辑了这篇文章。'
       article_public: '文章已被 {username} 公开'
     ask_a_question_on_forums: 在论坛上提问
     ask_your_question_on_forum: 在论坛上提问
+    composer:
+      article_saved: 文章已保存
+      compose_article: 撰写文章
+      enter_message_here: 在此输入您的消息
+      manage_tags: 管理标签
+      new_article_title: 新文章标题
+      nothing_to_preview: 没有什么可预览的
+      publish_article: 发布文章
+      publish_article_hint: 回帖后发布文章
+      view: 预览
+      warning_save_changes: "警告：您即将离开此页面，系统不会保存您所做的更改。是否保存更改然后离开？\n\n[OK] = 保存并离开 [CANCEL] = 不保存\n"
+      write: 写文章
     create: 发布
     discard: 丢弃
     hero:
       check_forum: 如果这里没有您想要的内容，<a>到论坛找找？</a>
-      help_question: 我们能在哪方面帮您？
+      help_question: 我们能在哪方面帮助您？
     knowledge_base: 知识库
+    modals:
+      article_ratings:
+        article_not_rated: 这篇文章尚未被评价。
+        confirm_delete_rating: 确定要删除这条评价吗？
+        feedback: 反馈
+        loading_ratings: 正在加载评价
+        no_ratings_found: 找不到符合您搜索条件的评价
+        rated_on: 评价时间
+        rating: 评价
+        title: 文章评价
+        username: '=> core.ref.username'
+      audit_log:
+        article_created: 文章已发布
+        loading_auditlog: 正在加载审计日志
+        no_more_events: 未发现更多事件
+        title: 文章审计日志
+    not_found:
+      description: 抱歉，这篇文章或分类目录已经丢失了。
+      solution: 您可以使用上面的搜索框搜索要找的内容。
+      title: 项目未找到
     or: 或
     overview:
       back_to: '返回 {category}'
@@ -29,15 +82,35 @@ v17development-flarum-support:
       tools:
         change_icon: 更换图标
         edit_description: 编辑描述
-        new_article: 新建文章
+        new_article: 撰写文章
         rename_category: 重命名分类目录
     return_to_home: 返回知识库首页
     search:
       back_to_search_results: 返回搜索结果
+      no_results: '没有找到与 {searchterm} 相关的结果。'
       search_knowledge_base: 搜索我们的知识库
       searched_for: '搜索 {searchterm} 完毕，找到约 {results} 条结果。'
       searching: 正在搜索
       searching_for: '搜索 {searchterm}'
       title: 搜索
+      use_searchbox_below: 使用下面的搜索框搜索我们的知识库。
     send: 发送
     settings: '=> core.ref.settings'
+    support_ratings:
+      enter_feedback: 在此填写反馈
+      feedback: 感谢您的评价，还有其他要反馈的吗？
+      feedback_not_helpful: 很抱歉这篇文章没有帮助到您，您在寻找什么呢？
+      finished: 感谢！您的反馈已保存。
+      helful_article: 以上信息是否解决了您的问题？
+      helful_support: 您满意我们对您的支持服务吗？
+      validation:
+        cannot_rate_article: 您无法评价这篇文章。
+        guest: 请登录后再评价。
+        invalid_discussion: 糟糕，出了点问题。您无法评价这篇文章/服务记录。
+        invalid_points: 无效评价，请重试。
+        missing_article_id: '文章 ID 缺失或无效'
+        neutral_emoji_disabled: 中性表情符号已被禁用。
+    utils:
+      redirect:
+        link: '<a>点击此处</a>手动跳转'
+        title: 正在跳转到我们的知识库文章……

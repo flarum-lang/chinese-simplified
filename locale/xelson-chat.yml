@@ -14,7 +14,7 @@ pushedx-chat:
       charlimit: 限制每条消息的最大字数（不区分中英文）
       floodgate:
         number: 最多可连发消息数
-        time: 刷屏后需等待时间
+        time: 刷屏后的冷静时间
         title: 防刷屏
       title: 聊天室设置
   forum:
@@ -23,9 +23,9 @@ pushedx-chat:
         actions:
           hide: 隐藏
           resend: 重新发送
-      placeholder: 请自觉遵守互联网相关的政策法规，严禁发布色情、暴力、反动的言论...
+      placeholder: 发条友善的消息……
     errors:
-      chatdenied: 您所在的用户组没有权限参与聊天
+      chatdenied: 您所在的用户组没有发送消息的权限
       unauthenticated: 登录后才能参与聊天
     toolbar:
       disable_notifications: 关闭通知

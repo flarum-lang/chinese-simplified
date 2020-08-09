@@ -11,7 +11,7 @@ reflar-recache:
       connection_failed: 连接失败。
       heading: ReCache
       redis:
-        check: 保存前请检查连接状态！
+        check: 保存前检查连接状态！
         database: 数据库
         failed: '保存设置失败，请确保 "vendor/flarum/core/src/Database/" 可以被您的 Web 服务器写入'
         fillin: '请完整填写 Redis 表单'
@@ -28,4 +28,4 @@ reflar-recache:
       text: "在下面配置当前活动的缓存驱动。可以随时预先配置任何\n可用的其他驱动程序，之后再切换。\n"
   forum:
     redis:
-      error_alert: 'Redis 连接已于 {time} 开始出现了故障。请检查您的设置，在此期间论坛性能将受到很大影响。'
+      error_alert: 'Redis 连接已于 {time} 发生故障。请检查您的设置，在此期间论坛性能将受到很大影响。'

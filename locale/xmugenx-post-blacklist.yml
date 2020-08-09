@@ -5,11 +5,11 @@
 xmugenx-post-blacklist:
   admin:
     permissions:
-      blacklist_discussions_label: 敏感词
+      blacklist_discussions_label: 贴文黑名单
     settings:
-      help: 使用空格分隔
+      help: 使用空格分隔。
       labelText: 含有敏感词的帖子将被隐藏并移入黑名单
-      title: 黑名单设置
+      title: 贴文黑名单设置
   forum:
     post_controls:
       blacklist_button: 敏感词

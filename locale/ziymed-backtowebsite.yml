@@ -10,4 +10,4 @@ backtowebsite:
       title: 「返回指定链接」设置
   forum:
     header:
-      back_button: '返回[URL]'
+      back_button: '回到 [URL]'

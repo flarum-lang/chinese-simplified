@@ -17,7 +17,7 @@ flarum-suspend:
       not_suspended_label: 不封禁
       status_heading: 封禁状态
       submit_button: '=> core.ref.save_changes'
-      title: '{username} 已被封禁'
+      title: '封禁 {username}'
     user_badge:
       suspended_tooltip: 封禁中
     user_controls:

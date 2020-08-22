@@ -12,4 +12,4 @@ flarum-pusher:
       title: 'Pusher 设置'
   forum:
     discussion_list:
-      show_updates_text: '有 {count} 条更新内容，点击查看|有 {count} 条更新内容，点击查看'
+      show_updates_text: '有 {count} 条新内容，点击查看|有 {count} 条新内容，点击查看'

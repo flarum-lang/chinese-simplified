@@ -415,7 +415,7 @@ core:
     log_out: 退出
     mark_all_as_read: 将所有帖子标记为已读
     next_page: 下一页
-    notifications: 消息通知
+    notifications: 通知中心
     okay: 确定
     password: 密码
     posts: 回复

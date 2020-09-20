@@ -26,5 +26,5 @@ tituspijean-auth-ldap:
       use_ssl: '使用 SSL'
       use_tls: '使用 TLS'
   forum:
-    log_in_with: 'Login with'
+    log_in_with: '{server} 登录'
     log_out: '=> core.ref.log_out'

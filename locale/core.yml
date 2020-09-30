@@ -280,7 +280,7 @@ core:
       forgot_password_link: 忘记密码？
       invalid_login_message: 登录信息有误
       password_placeholder: '=> core.ref.password'
-      remember_me_label: 记住我
+      remember_me_label: 记住我的登录状态
       sign_up_text: '还没有帐户？ <a>立即注册</a>'
       submit_button: '=> core.ref.log_in'
       title: '=> core.ref.log_in'

@@ -3,6 +3,13 @@
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
 flarum-mentions:
+  email:
+    post_mentioned:
+      body: "{recipient_display_name}，您好！\n\n{replier_display_name} 回复了您在《{title}》(#{post_number}) 的发言：\n\n{url}\n\n---\n\n{content}\n"
+      subject: '{replier_display_name} 回复您【{title}】'
+    user_mentioned:
+      body: "{recipient_display_name}，您好！\n\n{mentioner_display_name} 在《{title}》提及了您：\n\n{url}\n\n---\n\n{content}\n"
+      subject: '{mentioner_display_name} 提及您【{title}】'
   forum:
     composer:
       mention_tooltip: 提及用户或楼层

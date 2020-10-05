@@ -3,6 +3,10 @@
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
 flarum-subscriptions:
+  email:
+    new_post:
+      body: "{recipient_display_name}，您好！\n\n您关注的主题《{title}》，【{poster_display_name}】发表了新内容\n\n点击下方链接即可查看完整内容。\n{url}\n\n---\n\n{content}\n\n---\n\n在您已读前，您不会再收到任何关于这个主题的通知。\n"
+      subject: '【新帖】{title}'
   forum:
     badge:
       following_tooltip: '=> flarum-subscriptions.ref.following'

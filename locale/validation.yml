@@ -80,7 +80,7 @@ validation:
     numeric: ':attribute 不得大于 :max'
     string: ':attribute 不得多于 :max 个字符'
   mimes: ':attribute 必须是 :values 类型的文件'
-  mimetypes: ':attribute 必须是 :values 文档类型。'
+  mimetypes: ':attribute 必须是 :values 类型的文件'
   min:
     array: ':attribute 不得少于 :min 项'
     file: ':attribute 不得小于 :min KB'
@@ -89,6 +89,7 @@ validation:
   not_in: '所选的 :attribute 无效'
   not_regex: ':attribute 的格式非法'
   numeric: ':attribute 必须由数字组成'
+  password: 密码错误
   present: ':attribute 字段不能为空'
   regex: ':attribute 的格式非法'
   required: ':attribute 不能为空'

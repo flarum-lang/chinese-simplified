@@ -12,6 +12,8 @@ kilowhat-formulaire:
       listForms: 查看未删除的表单列表
       listSubmissions: 查看提交列表
       moderate: 管理所有表单
+      seeAnyDiscussion: 查看提交的主题帖字段
+      seeAnyUser: 查看提交的用户资料
     settings:
       history-controls: 在提交页面上显示撤销/重做按钮
       max-file-size: '最大文件大小 (kB)'
@@ -26,9 +28,24 @@ kilowhat-formulaire:
     submission-link-discussion-invalid: 该主题的标签与此表单所需的标签不匹配
     submission-link-user-invalid: 该用户的用户组与此表单所需的用户组不匹配
   forum:
+    auto-discussion-options-modal:
+      field:
+        content: 回帖内容
+        tags: 主题标签
+        tags-help: "标记分隔符的列表，以逗号分隔。选定的标签将被添加到此表单所连接的标签之后。\n"
+        title: 主题标题
+      introduction: "这些设置将应用于通过提交标签连接的表单自动创建的新讨论。您可以使用一对大括号包裹字段的 slug 来使用表单提交的值。默认情况下，将依次使用 {title} 和 {content}。\n"
+      submit: 验证变化
+      title: 自动主题选项
     badge:
       hidden: 已隐藏
       locked: 已锁定
+    confirmation-email-options-modal:
+      field:
+        message: 正文
+        title: 标题
+      submit: 验证变化
+      title: 邮件模板
     error-page:
       denied-description: 您没有访问此内容的权限，请登陆后重试。
       denied-title: 权限不足
@@ -41,13 +58,21 @@ kilowhat-formulaire:
         title: 标题
       title: 新建表单
     form-edit:
+      auto-discussion-options: 新主题选项
       delete: 永久删除
       delete-confirmation: '表单「{title}」将被永久删除'
+      email-confirmation-options: 确认邮件模板
+      email-notification-options: 通知邮件模板
       expert-mode: 专家模式
       field:
         accept-submissions: 接受新的提交结果
         allow-modification: 允许用户编辑他们已提交的结果
+        automatic-discussion: 根据提交内容自动创建主题帖
+        automatic-discussion-help: "启用后，该表单仍像独立表单一样可访问。提交的内容将自动创建并连接新主题帖。\n"
         email-confirmation-message: 通过邮件确认信息（格式化启用，必须启用上方确认项）
+        email-confirmation-title: 确认邮件的标题（发给参与者）
+        email-notification-message: 邮件通知消息
+        email-notification-title: 通知邮件的标题
         link: 特殊表单类型
         max-submissions: 最多提交量（留空表示不限制）
         notify-emails: 将数据副本发送至以下以逗号分隔的电子邮箱中

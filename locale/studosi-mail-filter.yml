@@ -20,14 +20,14 @@ studosi-mail-filter:
       label: 导入设置
     nav:
       desc: 设置注册邮箱黑白名单
-      title: 邮件地址过滤器
+      title: 邮箱过滤器
     settings:
       rule:
         delete:
           'no': 取消
           question: '确定要删除规则「{rule_name}」吗？'
           'yes': 确定
-        name_placeholder: 规则名称
+        name_placeholder: 规则名
     whitelist:
       desc: 完整的白名单注册邮箱地址
       label: 白名单

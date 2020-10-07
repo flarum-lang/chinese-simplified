@@ -7,10 +7,10 @@ fof-ban-ips:
     empty_text: '暂无 IP 被拉黑。'
     modal:
       ban_ip_no_users: '没有使用此 IP 的其他用户'
-      update_title: '更新已拉黑 IP 地址'
+      update_title: '更新 IP 黑名单'
     nav:
-      desc: '新增、删除、查看拉黑 IP 地址。'
-      title: '拉黑 IP 地址'
+      desc: '新增、删除、查看 IP 黑名单。'
+      title: 'IP 黑名单'
     page:
       address_label: '=> fof-ban-ips.ref.address_label'
       create_button: '=> fof-ban-ips.ref.ban_ip_button'
@@ -20,10 +20,10 @@ fof-ban-ips:
       user_label: 用户
     permissions:
       ban_ip_label: '=> fof-ban-ips.ref.ban_ip_addresses'
-      view_banned_ip_list_label: '查看已拉黑 IP 地址列表'
+      view_banned_ip_list_label: '查看 IP 黑名单'
   error:
     banned_ip_message: 验证失败。
-    no_ips_found_message: '未找到该用户使用的 IP。'
+    no_ips_found_message: '未获取到该用户使用的 IP。'
   forum:
     ban_ip_button: '=> fof-ban-ips.ref.ban_ip_button'
     modal:
@@ -32,7 +32,7 @@ fof-ban-ips:
       ban_options_only_ip: '仅拉黑当前 IP (<code>{ip}</code>)'
     unban_ip_button: '=> fof-ban-ips.ref.unban_ip_button'
     user_badge:
-      banned_tooltip: IP已拉黑
+      banned_tooltip: 'IP 已拉黑'
     user_controls:
       ban_button: '=> fof-ban-ips.ref.ban_label'
       unban_button: '=> fof-ban-ips.ref.unban_label'
@@ -40,7 +40,7 @@ fof-ban-ips:
     modal:
       address_label: '=> fof-ban-ips.ref.address_label'
       ban_button: '=> fof-ban-ips.ref.ban_label'
-      ban_ip_confirmation: '你确定要将此 IP 加入黑名单吗？所有使用这个 IP 的用户将无法登录和注册论坛。'
+      ban_ip_confirmation: '你确定要拉黑此 IP 吗？所有使用这个 IP 的用户将无法登录和注册论坛。'
       ban_ip_users: '用户 {users} 将被拉黑|用户 {users} 将被拉黑'
       check_button: 检查
       reason_label: '=> fof-ban-ips.ref.reason_label'
@@ -56,10 +56,10 @@ fof-ban-ips:
       unbanned_ips: '取消拉黑 <code>{ips}</code>。'
   ref:
     address_label: 'IP 地址'
-    ban_ip_addresses: '拉黑 IP 地址'
-    ban_ip_button: '拉黑 IP 地址'
+    ban_ip_addresses: '拉黑 IP'
+    ban_ip_button: '拉黑 IP'
     ban_label: '拉黑 IP 地址'
     reason_label: 原因（非必填）
-    unban_ip_addresses: '取消拉黑 IP 地址'
-    unban_ip_button: '取消拉黑 IP 地址'
+    unban_ip_addresses: '取消拉黑 IP'
+    unban_ip_button: '取消拉黑 IP'
     unban_label: 取消拉黑

@@ -6,8 +6,8 @@ clarkwinkelmann-author-change:
   admin:
     permissions:
       edit: 更新发帖及回帖者
-      edit-date: 更新主题和帖子日期
-      edit-user: 更新主题和帖子作者
+      edit-date: 变更主题和帖子日期
+      edit-user: 变更主题和帖子作者
   forum:
     controls:
       edit: 变更作者和日期

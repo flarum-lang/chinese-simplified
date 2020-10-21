@@ -11,7 +11,7 @@ fof-moderator-notes:
   api:
     auto-note: '我使用 FoF Impersonate 切换到当前用户账户。'
     auto-note-actor: '使用 FoF Impersonate 替代 ''用户名'''
-    auto_note: '_我切换到此账号：_ reason'
+    auto_note: '_切换到此账号：_ reason'
     auto_note_actor: '_切换到_ @username：reason'
     no_reason_provided: 无理由
   forum:

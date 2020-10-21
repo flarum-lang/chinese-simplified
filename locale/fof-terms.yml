@@ -32,7 +32,7 @@ fof-terms:
     settings:
       field:
         date-format: 日期格式
-        date-format-help: '您可以使用任何有效的 <a>Moment.js</a> 格式，留空为默认格式。'
+        date-format-help: '您可以使用任何有效的 <a>Day.js</a> 格式，留空为默认格式。'
         hide-updated-at: 条款更新时不显示服务条款的更新日期
         signup-legal-text: 在注册窗口中附加提示文本（可选）
       title: 服务条款设置

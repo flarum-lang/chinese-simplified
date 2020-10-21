@@ -8,9 +8,9 @@ validation:
   after: ':attribute 必须是 :date 之后的日期'
   after_or_equal: ':attribute 必须是 :date 当天或之后的日期'
   alpha: ':attribute 只能由字母组成'
-  alpha_dash: ':attribute 只能包含字母、数字、连字符或下划线'
-  alpha_num: ':attribute 只能包含字母或数字'
-  array: ':attribute 必须是一个数字'
+  alpha_dash: ':attribute 只能由字母、数字、连字符或下划线组成'
+  alpha_num: ':attribute 只能由字母或数字组成'
+  array: ':attribute 必须是数字'
   attributes:
     content: 正文
     email: 邮箱
@@ -21,8 +21,8 @@ validation:
     tag_count_secondary: 次标签数量
     title: 标题
     username: 用户名
-  before: ':attribute 必须是 :date 之前的日期'
-  before_or_equal: ':attribute 必须是一个 :date 当天或之前的日期'
+  before: ':attribute 必须是早于 :date 的日期'
+  before_or_equal: ':attribute 必须是 :date 当天或之前的日期'
   between:
     array: ':attribute 必须介于 :min 至 :max 项之间'
     file: ':attribute 必须介于 :min 至 :max KB 之间'
@@ -79,22 +79,22 @@ validation:
     file: ':attribute 不得大于 :max KB'
     numeric: ':attribute 不得大于 :max'
     string: ':attribute 不得多于 :max 个字符'
-  mimes: ':attribute 必须是 :values 类型的文件'
-  mimetypes: ':attribute 必须是 :values 类型的文件'
+  mimes: ':attribute 文件类型只能是 :values'
+  mimetypes: ':attribute 文件类型只能是 :values'
   min:
     array: ':attribute 不得少于 :min 项'
     file: ':attribute 不得小于 :min KB'
     numeric: ':attribute 不得小于 :min'
     string: ':attribute 不得少于 :min 个字符'
-  not_in: '所选的 :attribute 无效'
-  not_regex: ':attribute 的格式非法'
+  not_in: '所选 :attribute 无效'
+  not_regex: ':attribute 格式非法'
   numeric: ':attribute 必须由数字组成'
   password: 密码错误
   present: ':attribute 字段不能为空'
-  regex: ':attribute 的格式非法'
+  regex: ':attribute 格式非法'
   required: ':attribute 不能为空'
   required_if: '当 :other 为 :value 时 :attribute 不能为空'
-  required_unless: ':attribute 不能为空，除非 :other 位于 :values 中'
+  required_unless: ':attribute 不能为空，除非 :other 是 :values'
   required_with: '当 :values 存在时 :attribute 不能为空'
   required_with_all: '当 :values 都存在时 :attribute 不能为空'
   required_without: '当 :values 不存在时 :attribute 不能为空'

@@ -6,33 +6,33 @@ Beta.14 Compatibility
 2. Compatible with Day.js and Moment.js.
 
 Add Support
-1. [Clarkwinkelmann First-Post-Approval](https://discuss.flarum.org/d/25055) 前置审核。
-2. [FoF OAuth](https://discuss.flarum.org/d/25182) 第三方登录。
-3. [Funkeye Custom-Welcome-Hero](https://discuss.flarum.org/d/24664) HTML 欢迎横幅。
-4. [Kyrne Evergreen](https://discuss.flarum.org/d/24695) 树型评论区。
-5. [Nearata Signup-Confirm-Password](https://discuss.flarum.org/d/24689) 注册确认密码。
-6. [Nearta Copy-Code-To-Clipboard](https://discuss.flarum.org/d/24852) 复制代码。
+1. [Clarkwinkelmann First-Post-Approval](https://discuss.flarum.org/d/25055)
+2. [FoF OAuth](https://discuss.flarum.org/d/25182)
+3. [Funkeye Custom-Welcome-Hero](https://discuss.flarum.org/d/24664)
+4. [Kyrne Evergreen](https://discuss.flarum.org/d/24695)
+5. [Nearata Signup-Confirm-Password](https://discuss.flarum.org/d/24689)
+6. [Nearta Copy-Code-To-Clipboard](https://discuss.flarum.org/d/24852)
 
 Update
-1. [Flarum Mentions](https://github.com/flarum/mentions)：新增通知邮件。
-2. [Flarum Subscriptions](https://github.com/flarum/subscriptions)：新增通知邮件。
-3. [FoF Auth-GitLab](https://discuss.flarum.org/d/20371)：GitLab 登录。
-4. [FoF Formatting](https://discuss.flarum.org/d/17770)：格式化。
+1. [Flarum Mentions](https://github.com/flarum/mentions)：New Notification Email。
+2. [Flarum Subscriptions](https://github.com/flarum/subscriptions)：New Notification Email。
+3. [FoF Auth-GitLab](https://discuss.flarum.org/d/20371)
+4. [FoF Formatting](https://discuss.flarum.org/d/17770)
 5. [FoF Terms](https://discuss.flarum.org/d/11714)
-6. [Kilowhat Audit-Log-Free](https://discuss.flarum.org/d/24432) 审计日志免费版。
-7. [Kilowhat Audit-Log-Pro](https://discuss.flarum.org/d/24206) 审计日志专业版💰。
-8. [Kilowhat Formulaire](https://discuss.flarum.org/d/23063) 表单生成器💰。
-9. [Therealsujitk Show-Password](https://discuss.flarum.org/d/22727) 新增眼睛模式。
+6. [Kilowhat Audit-Log-Free](https://discuss.flarum.org/d/24432)
+7. [Kilowhat Audit-Log-Pro](https://discuss.flarum.org/d/24206) 💰
+8. [Kilowhat Formulaire](https://discuss.flarum.org/d/23063) 💰
+9. [Therealsujitk Show-Password](https://discuss.flarum.org/d/22727) New eye mode。
 10. [Tituspijean Auth-LDAP](https://discuss.flarum.org/d/9515) 
 
 Optimize
-1. [Clarkwinkelmann Author-Change](https://discuss.flarum.org/d/21731) 作者变更。
+1. [Clarkwinkelmann Author-Change](https://discuss.flarum.org/d/21731)
 2. [Flarum Lock](https://github.com/flarum/lock)
-3. [Flarum Pusher](https://github.com/flarum/pusher)：修改刷新提示用词。
+3. [Flarum Pusher](https://github.com/flarum/pusher)：Modify the wording of the refresh prompt。
 4. [Flarum Suspend](https://github.com/flarum/suspend)
-5. [FoF Ban-IPs](https://discuss.flarum.org/d/20949)：IP 黑名单。
+5. [FoF Ban-IPs](https://discuss.flarum.org/d/20949)
 6. [FoF Best-Answer](https://discuss.flarum.org/d/21894)
-7. [FoF Moderator-Notes](https://discuss.flarum.org/d/22925)。
+7. [FoF Moderator-Notes](https://discuss.flarum.org/d/22925)
 8. [FoF Reactions](https://discuss.flarum.org/d/20655)
 9. [Kyrne Shout](https://discuss.flarum.org/d/24073)
 10. [Studosi Mail-Filter](https://discuss.flarum.org/d/23132)

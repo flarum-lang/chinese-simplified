@@ -8,7 +8,7 @@ core:
       can_push_to_frontpage_label: 可推送至头版头条
   forum:
     badge:
-      frontpage_tooltip: 标记为头条主题
+      frontpage_tooltip: 头条
     index_sort:
       front_button: 头版头条
     post_controls:

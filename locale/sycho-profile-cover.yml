@@ -6,6 +6,8 @@ sycho-profile-cover:
   admin:
     cover_size: 图片大小
     max_size: 个人资料背景图片的最大大小（KB）
+    permission:
+      set_cover: 设置个人资料背景
     settings: 个人资料背景设置
     size_of_images: '{count} 张图片共 {size}|{count} 张图片共 {size}'
     size_of_thumbs: '{count} 张缩略图共 {size}|{count} 张缩略图共 {size}'

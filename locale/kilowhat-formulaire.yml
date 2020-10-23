@@ -34,7 +34,7 @@ kilowhat-formulaire:
         tags: 主题标签
         tags-help: "标记分隔符的列表，以逗号分隔。选定的标签将被添加到此表单所连接的标签之后。\n"
         title: 主题标题
-      introduction: "这些设置将应用于通过提交标签连接的表单自动创建的新讨论。您可以使用一对大括号包裹字段的 slug 来使用表单提交的值。默认情况下，将依次使用 {title} 和 {content}。\n"
+      introduction: "这些设置将应用于通过提交标签连接的表单自动创建的新讨论。您可以使用一对大括号包裹字段的 slug 来使用表单提交的值。默认情况下，将依次使用 { title } 和 { content }。\n"
       submit: 验证变化
       title: 自动主题选项
     badge:
@@ -99,11 +99,16 @@ kilowhat-formulaire:
         allow-modification: 修改
         submissions: 提交结果
         title: 标题
+        type: 类型
       edit: 编辑
       new: 新建表单
       show: 显示
       submissions: 提交结果
       title: 表单管理员
+      type-options:
+        groups: 用户资料
+        standalone: 独立
+        tags: 主题字段
     items-editor:
       add: 添加行
       remove: 删除行

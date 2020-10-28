@@ -218,7 +218,7 @@ core:
       discard_confirmation: 回复尚未发布，确定要丢弃吗？
       posted_message: 回复成功。
       submit_button: 回复
-      view_button: 查看
+      view_button: '=> core.ref.view'
     discussion_controls:
       cannot_reply_button: 回复已关闭
       cannot_reply_text: 您没有权限回复这个帖子。

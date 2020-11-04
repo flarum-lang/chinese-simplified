@@ -5,11 +5,14 @@
 clarkwinkelmann-carving-contest:
   admin:
     permissions:
-      heading: 雕刻比赛
+      heading: 雕刻大赛
       like: 点赞作品
       moderate: 主持
       participate: 参加比赛
       view: 查看作品
+    settings:
+      maxEntriesPerUser: 每个用户提交数量限制
+      title: 雕刻大赛设置
   forum:
     likes_modal:
       title: 喜欢这个作品的用户
@@ -24,6 +27,7 @@ clarkwinkelmann-carving-contest:
       contest: 雕刻比赛
     page:
       already-liked: 我喜欢它
+      already-participated: 已参加
       delete-confirmation: '您确定要删除 {username} 的「{name}」吗？'
       like: 赞
       likes:

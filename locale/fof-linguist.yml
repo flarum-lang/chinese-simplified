@@ -15,8 +15,17 @@ fof-linguist:
     filters:
       for-extension: 筛选插件
       for-extension-unavailable: "命名空间「{namespace}」没有翻译资源。 这个插件可能没有需要翻译的内容，或者使用了其他命名空间。 尝试搜索翻译文本来定位翻译资源吧。\n"
+      missing: 查找缺失的翻译
+      missing-middle-label: 语言
+      negation-options:
+        with: 有
+        without: 没有
       results: '已显示 {shown} 条匹配翻译，共 {total} 条'
       search: 搜索翻译文本、翻译键...
+      type-options:
+        any: 原始或自定义翻译
+        original: 原始翻译
+        own: 自定义翻译
       with-original-translations-in-locales: 有原文翻译
       with-own-translations: 自定义翻译
       without-original-translations-in-locales: 无原文翻译
@@ -26,6 +35,6 @@ fof-linguist:
       description: 自定义界面翻译。
       title: 语言学家
     placeholder:
-      all-locales: 定义其他语言的默认翻译
+      all-locales: 所有语言的最高优先级翻译
       hint: 原文内容：
       not-translated: 未翻译

@@ -47,4 +47,5 @@ clarkwinkelmann-scratchpad:
       theme: 'CodeMirror 主题（刷新后生效）'
       theme-auto: '自动（默认为浅色主题，深色主题是 darcula）'
       title: '便笺 - 设置'
+      validate-live: '在保存前对主页进行请求以验证 Less 和 PHP'
       webpack-command: 'Webpack 命令'

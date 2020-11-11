@@ -23,7 +23,7 @@
     "issues": "https://github.com/Littlegolden/flarum-lang-simplified-chinese/issues"
   },
   "require": {
-    "flarum/core": ">=0.1.0-beta.14 <0.1.0-beta.15"
+    "flarum/core": "^0.1.0-beta.8"
   },
   "extra": {
     "flarum-extension": {

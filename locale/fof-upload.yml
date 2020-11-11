@@ -62,6 +62,9 @@ fof-upload:
         position: 水印位置
         title: 图片水印功能
         toggle: 开启水印
+    pane:
+      description: 设置上传服务和首选项。
+      title: 上传
     permissions:
       download_label: 允许下载文件
       upload_label: 允许上传文件

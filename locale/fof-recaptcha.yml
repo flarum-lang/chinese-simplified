@@ -8,6 +8,7 @@ fof-recaptcha:
       help_text: '点击<a>此处</a>获取 Google reCAPTCHA 证书。'
       secret_key_label: 'Secret Key'
       site_key_label: 'Site Key'
+      title: 'FriendsOfFlarum reCAPTCHA'
       type_label: 'reCAPTCHA 类型'
 validation:
   recaptcha: 'reCAPTCHA 验证失败。'

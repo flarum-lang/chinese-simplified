@@ -1,3 +1,32 @@
+# 2020-11-00
+# 🌟 v0.1.0-beta.14.1
+
+Beta.14.1
+1. [Flarum Core](https://github.com/flarum/core)
+
+New Update
+1. [Clarkwinkelmann Carving-Contest](https://discuss.flarum.org/d/21828) 
+2. [Clarkwinkelmann Passwordless](https://discuss.flarum.org/d/22606)
+3. [Clarkwinkelmann Scratchpad](https://discuss.flarum.org/d/22016)
+4. [FoF Linguist](https://discuss.flarum.org/d/7026)
+5. [FoF Links](https://discuss.flarum.org/d/18335)
+6. [FoF Mason](https://discuss.flarum.org/d/7028)
+7. [FoF Share-Social](https://discuss.flarum.org/d/20401)
+8. [FoF upload](https://discuss.flarum.org/d/4154)
+9.  [Kilowhat Formulaire](https://discuss.flarum.org/d/23063)
+10. [Kyrne Websocket](https://discuss.flarum.org/d/23473)
+11. [Maicol07 SSO](https://discuss.flarum.org/d/21666)
+12. [SychO Profile-Cover](https://discuss.flarum.org/d/23437-profile-cover)
+13. [Tank Perspective](https://discuss.flarum.org/d/21784)
+
+Fix
+1. [FoF Frontpage](https://discuss.flarum.org/d/19256)
+
+Optimize
+1. [Flarum Tags](https://github.com/flarum/tags)
+
+<!--  -->
+
 # 2020-10-21
 # 🌟 v0.1.0-beta.14
 

@@ -1,3 +1,32 @@
+# 2020-11-00
+# 🌟 v0.1.0-beta.14.1
+
+Beta.14.1
+1. [Flarum Core](https://github.com/flarum/core)：添加遗漏的编辑提示、修改灌水权限。
+
+更新
+1. [Clarkwinkelmann Carving-Contest](https://discuss.flarum.org/d/21828) 雕刻大赛：万圣节新增作品限制功能。
+2. [Clarkwinkelmann Passwordless](https://discuss.flarum.org/d/22606) 邮箱链接登录。
+3. [Clarkwinkelmann Scratchpad](https://discuss.flarum.org/d/22016) 开发便笺：新增保存前验证。
+4. [FoF Linguist](https://discuss.flarum.org/d/7026) 语言学家：新增查找缺失翻译筛选项。
+5. [FoF Links](https://discuss.flarum.org/d/18335) 导航栏链接：新增图标。
+6. [FoF Mason](https://discuss.flarum.org/d/7028) 梅森表单：
+7. [FoF Share-Social](https://discuss.flarum.org/d/20401) 分享：增加电报、Whatsapp。
+8. [FoF upload](https://discuss.flarum.org/d/4154) 文件上传器：新增标题介绍。
+9.  [Kilowhat Formulaire](https://discuss.flarum.org/d/23063) 表单生成器💰：变量添加了空格，新增类型。
+10. [Kyrne Websocket](https://discuss.flarum.org/d/23473) 新增开放范围。
+11. [Maicol07 SSO](https://discuss.flarum.org/d/21666) 新增颁发域设置。
+12. [SychO Profile-Cover](https://discuss.flarum.org/d/23437-profile-cover) 个人资料背景：新增权限。
+13. [Tank Perspective](https://discuss.flarum.org/d/21784) Perspective API 内容安全：增加某些标题的释义、提供检测基分切换。
+
+修复
+1. [FoF Frontpage](https://discuss.flarum.org/d/19256) 修正徽章提示条。
+
+优化
+1. [Flarum Tags](https://github.com/flarum/tags) 清晰描述标签数量限制的描述。
+
+<!--  -->
+
 # 2020-10-21
 # 🌟 v0.1.0-beta.14
 

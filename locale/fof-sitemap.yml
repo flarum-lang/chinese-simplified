@@ -20,6 +20,7 @@ fof-sitemap:
       mode_help_runtime: '适用于小型论坛，比如在共享主机环境下，主题数、用户数、标签数和页面数的总和小于 1 万（最终生成的对应链接数小于 1 万）。此模式下，站点地图是在每次请求时即时生成的。'
       mode_help_runtime_label: 运行时模式
       mode_help_schedule: '以下模式将会添加相应的计划任务到 Flarum 调度程序。'
+      mode_help_schedule_setup: '如果没有正确设置 Flarum 调度器，以下模式将无法运行。<a>点击这里</a>了解更多信息。'
       mode_label: 运行模式
       modes:
         cache: 缓存

@@ -1,5 +1,26 @@
-# 2020-11-00
-# 🌟 v0.1.0-beta.14.1
+# 2020-11-23
+# 🌟 v0.1.70-beta.14.1.2
+Add Support
+1. [v17development Blog](https://discuss.flarum.org/d/25392)
+
+# 2020-11-18
+# 🌟 v0.1.70-beta.14.1.1
+
+Update
+1. 
+2. [Clarkwinkelmann Mailing](https://discuss.flarum.org/d/20443)：Original text changed, translation remains the same.
+3. [FoF Pretty-Mail](https://discuss.flarum.org/d/11178)：$baseUrl changed into $url。
+4. [FoF Sitemap](https://discuss.flarum.org/d/14941)
+5. [FoF User-Directory](https://discuss.flarum.org/d/5682)
+6. [Nearata Minecraft-Avatars](https://discuss.flarum.org/d/24468)
+7. 
+
+Add Support
+1. [Clarkwinkelmann Bookmarks](https://discuss.flarum.org/d/25357-bookmarks)
+2. [Clarkwinkelmann Group-List](https://discuss.flarum.org/d/25386)
+
+# 2020-11-11
+# 🌟 v0.1.70-beta.14.1
 
 Beta.14.1
 1. [Flarum Core](https://github.com/flarum/core)
@@ -28,7 +49,7 @@ Optimize
 <!--  -->
 
 # 2020-10-21
-# 🌟 v0.1.0-beta.14
+# 🌟 v0.1.70-beta.14
 
 Beta.14 Compatibility
 1. [Flarum Core](https://github.com/flarum/core)：Add extension dependency check.

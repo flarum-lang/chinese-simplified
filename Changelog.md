@@ -1,5 +1,26 @@
-# 2020-11-00
-# 🌟 v0.1.0-beta.14.1
+# 2020-11-23
+# 🌟 v0.1.70-beta.14.1.2
+新增支持
+1. [v17development Blog](https://discuss.flarum.org/d/25392) Flarum 博客。
+
+# 2020-11-18
+# 🌟 v0.1.70-beta.14.1.1
+
+迁移并更新
+1. Kilowhat-mailing 至 [Clarkwinkelmann Mailing](https://discuss.flarum.org/d/20443) 邮件发送：原文变更，翻译不更。
+
+更新
+1. [FoF Pretty-Mail](https://discuss.flarum.org/d/11178) 邮件美化：$baseUrl 变更为 $url。
+2. [FoF Sitemap](https://discuss.flarum.org/d/14941) 站点地图：新增个别模式无法运行的条件提示。
+3. [FoF User-Directory](https://discuss.flarum.org/d/5682) 会员名录：新增帖子数排序字段。
+4. [Nearata Minecraft-Avatars](https://discuss.flarum.org/d/24468) 我的世界头像：取消留空表示禁用的机制，变为值无效提醒。
+
+新增支持
+1. [Clarkwinkelmann Bookmarks](https://discuss.flarum.org/d/25357-bookmarks) 书签。
+2. [Clarkwinkelmann Group-List](https://discuss.flarum.org/d/25386) 用户组列表。
+
+# 2020-11-11
+# 🌟 v0.1.70-beta.14.1
 
 Beta.14.1
 1. [Flarum Core](https://github.com/flarum/core)：添加遗漏的编辑提示、修改灌水权限。
@@ -28,7 +49,7 @@ Beta.14.1
 <!--  -->
 
 # 2020-10-21
-# 🌟 v0.1.0-beta.14
+# 🌟 v0.1.70-beta.14
 
 兼容 Beta.14
 1. [Flarum Core](https://github.com/flarum/core) 核心：新增插件依赖检查。

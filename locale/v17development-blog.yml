@@ -20,7 +20,7 @@ v17development-flarum-blog:
     no_more_posts: 没有更多文章了
     read_more: 阅读更多
     recent_posts: 近期文章
-    return_to_overview: '返回博客概览 '
+    return_to_overview: '返回博客首页 '
     review_article:
       approve_article: 批准文章
       approve_article_approved: 此文章已批准并发布

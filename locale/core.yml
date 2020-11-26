@@ -5,10 +5,10 @@
 core:
   admin:
     add_extension:
-      developer_text: 如果您是开发者，您可以阅读<a>开发文档</a>自行开发新的插件。
-      install_text: '同时，您可以在 <a>Flarum 社区</a>搜索插件，并通过 Composer 手动安装。'
-      temporary_text: 不远的将来，这里将能更便捷地添加扩展插件。正如我们所说，我们正在建立一套生态系统！
-      title: 添加插件
+      developer_text: 如果您是一个开发者，您可以阅读<a>开发文档</a>自行开发扩展程序。
+      install_text: '同时，您可以在 <a>Flarum 社区</a>搜索扩展程序，并通过 Composer 手动安装。'
+      temporary_text: 在不远的将来，这里将为您提供添加扩展程序的便捷途径。如我们所说，我们正在建立一套生态系统！
+      title: 添加扩展程序
     advanced:
       enter_positive_number: 请输入一个正数
       heading_security: 安全设置
@@ -26,6 +26,7 @@ core:
       custom_styles_heading: 自定义样式
       custom_styles_text: '添加 LESS/CSS 代码以自定义论坛外观样式，此设置将覆盖 Flarum 默认样式。'
       dark_mode_label: 夜间模式
+      description: 自定义论坛色调、图标以及其他元素
       edit_css_button: '编辑自定义 CSS'
       edit_footer_button: '=> core.ref.custom_footer_title'
       edit_header_button: '=> core.ref.custom_header_title'
@@ -35,9 +36,11 @@ core:
       logo_heading: Logo
       logo_text: 上传图片代替论坛名称，并展示在导航栏左侧。
       submit_button: '=> core.ref.save_changes'
+      title: 常规
     basics:
       all_discussions_label: '=> core.ref.all_discussions'
       default_language_heading: 默认语言
+      description: 设置论坛名称、语言以及其他基础设置
       display_name_heading: 用户外显昵称
       display_name_text: 选择外显昵称的种类，默认为用户名。
       forum_description_heading: 论坛描述
@@ -48,10 +51,13 @@ core:
       saved_message: 您的更改已保存
       show_language_selector_label: 显示选择语言菜单
       submit_button: '=> core.ref.save_changes'
+      title: 常规
       welcome_banner_heading: 欢迎横幅
       welcome_banner_text: 横幅文本将显示于「全部主题」页面顶部，可以用于欢迎论坛访客。
     dashboard:
       clear_cache_button: 清除缓存
+      description: 论坛各项数据一览
+      title: 仪表盘
       tools_button: 工具
     edit_css:
       customize_text: '通过增加 LESS/CSS 代码以自定义论坛外观样式，此设置将覆盖 Flarum <a>默认样式</a>。'
@@ -79,6 +85,7 @@ core:
       title: '=> core.ref.custom_header_title'
     email:
       addresses_heading: 地址
+      description: 配置论坛邮件服务
       driver_heading: 驱动
       driver_label: 邮件驱动
       from_label: 发件地址
@@ -106,29 +113,64 @@ core:
       smtp_heading: 'SMTP 设置'
       submit_button: '=> core.ref.save_changes'
       text: 配置论坛发信服务方式。
+      title: '=> core.ref.email'
+    extension:
+      confirm_uninstall: 该扩展程序相关的数据库内容和文件资源将被永久性删除。确定要卸载吗？
+      disabled: 关闭
+      enable_to_see: 开启扩展程序以查看或变更设置。
+      enabled: 开启
+      info_links:
+        discuss: 讨论帖
+        documentation: 文档
+        donate: 捐助
+        source: 源码
+        support: 支持
+        website: 网站
+      no_permissions: 无权限项
+      no_settings: 无设置项
+      open_modal: 打开设置
+      permissions_title: 权限
+      saved_message: 您的修改已保存。
+      uninstall_button: 卸载
     extensions:
-      add_button: 添加插件
+      add_button: 添加扩展程序
       settings_button: '=> core.ref.settings'
       uninstall_button: 卸载
     header:
+      get_help: 求助
       log_out_button: '=> core.ref.log_out'
     loading:
-      title: 请稍候...
+      title: 请稍后……
     nav:
       advanced_button: 高级
       advanced_text: 配置专门针对高级用户的设置。
       appearance_button: 外观
       appearance_text: 自定义论坛色调、图标以及其他元素。
+      appearance_title: '=> core.admin.appearence.description'
       basics_button: 常规
       basics_text: 设置论坛名称、语言以及其他常规设置
+      basics_title: '=> core.admin.basics.description'
+      categories:
+        authentication: 认证
+        discussion: 主题
+        feature: 功能
+        formatting: 格式化
+        language: 语言包
+        moderation: 内容审核
+        other: 其他类型
+        theme: 主题样式
       dashboard_button: 概览
       dashboard_text: 论坛统计数据概览
+      dashboard_title: '=> core.admin.dashboard.description'
       email_button: '=> core.ref.email'
       email_text: 配置论坛邮件服务
-      extensions_button: 插件
-      extensions_text: 为您的论坛添加插件
+      email_title: '=> core.admin.email.description'
+      extensions_button: 扩展程序
+      extensions_text: 为您的论坛添加额外的功能
       permissions_button: 权限
       permissions_text: 设置各用户组访问及操作权限
+      permissions_title: '=> core.admin.permissions.description'
+      search_placeholder: 搜索扩展程序
     permissions:
       allow_post_editing_label: 编辑帖子内容
       allow_renaming_label: 更改自己的主题标题
@@ -137,6 +179,7 @@ core:
       delete_discussions_label: 删除主题
       delete_posts_forever_label: 永久删除回复
       delete_posts_label: 删除回复
+      description: 设置各用户组访问及操作权限
       edit_posts_label: 编辑回复
       edit_users_label: 编辑用户
       global_heading: 全局
@@ -149,6 +192,7 @@ core:
       reply_to_discussions_label: 回复
       sign_up_label: 注册
       start_discussions_label: 发布主题
+      title: 权限
       view_discussions_label: 查看主题
       view_hidden_groups_label: 查看隐藏的用户组徽章
       view_last_seen_at_label: 查看用户上次在线时间

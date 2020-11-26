@@ -48,7 +48,8 @@ fof-byobu:
         add_recipients: 邀请用户加入私人讨论
         update_recipients: '更新私人讨论「{title}」的成员'
     nav:
-      start_button: 发起私人讨论
+      nav_item: 私密讨论
+      start_button: 私密讨论
     notifications:
       pd_added_label: 有人邀请我加入私人讨论
       pd_added_text: '{username} 邀请您加入私人讨论'
@@ -74,6 +75,7 @@ fof-byobu:
       dropdown_label: 私人讨论
       settings:
         block_pd: 屏蔽私人讨论
+        unified_index: 合并私密讨论至统一的索引
   notifications:
     made_public:
       title: 【私人讨论】有讨论转为公开

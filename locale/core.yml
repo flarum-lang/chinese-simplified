@@ -321,7 +321,7 @@ core:
       newest_button: 新鲜出炉
       oldest_button: 陈年旧贴
       relevance_button: 相关推荐
-      top_button: 热门回复
+      top_button: 热门主题
     log_in:
       forgot_password_link: 忘记密码？
       invalid_login_message: 登录信息有误

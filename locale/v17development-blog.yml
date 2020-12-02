@@ -32,7 +32,7 @@ v17development-flarum-blog:
       delete_forever: 永久删除
       disable_comments: 关闭评论
       edit_article: 编辑文章
-      enable_comments: 启用评论
+      enable_comments: 开启评论
       hide_article: 隐藏文章
       recover_article: 恢复文章
       rename_article: 重命名文章
@@ -40,6 +40,6 @@ v17development-flarum-blog:
     utils:
       redirect:
         link: 如果没有任何响应，请<a>单击此处</a>
-        title: 正在将您重定向至博客文章…
+        title: 正在将您重定向至博客文章……
     validation:
       missing_id: 'ID 缺失'

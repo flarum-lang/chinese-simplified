@@ -5,8 +5,8 @@
 askvortsov-saml:
   admin:
     labels:
-      idp_metadata: '身份标识提供商元数据 XML（替代 URL）'
-      idp_metadata_url: '身份标识提供商元数据 URL（替代 XML）'
+      idp_metadata: '身份提供商元数据 XML（替代 URL）'
+      idp_metadata_url: '身份提供商元数据 URL（替代 XML）'
       nameid_format: 'NameID 格式'
       only_option: '使用 SAML2 SSO 作为唯一登录选项吗？'
       sync_attributes: '同步属性（头像、用户组、签名、资料）？需要安装 askvortsov/auth-sync 插件（传送门：http://t.cn/A6yDXTRB）。'

@@ -10,7 +10,7 @@ fof-github-sponsors:
     settings:
       account_type_label: 账户类型
       api_token_label: 'API 令牌'
-      desc: '从 <a>https://github.com/settings/tokens</a> 获取您的 API 令牌。本扩展需要 <code>user</code> 和 <code>read:org</code> 权限。'
+      desc: '从 <a>https://github.com/settings/tokens/new</a> 获取您的 API 令牌。本扩展需要 <code>user</code> 和 <code>read:org</code> 权限。'
       group_label: 用户组分配
       login_label: 登录
       title: 'FriendsOfFlarum GitHub Sponsors'

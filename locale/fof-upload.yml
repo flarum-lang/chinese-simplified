@@ -9,23 +9,25 @@ fof-upload:
     help_texts:
       client_extension: "默认情况下，上传器将根据 MIME 类型选择一个安全的文件扩展名。\n对于某些基于 ZIP 或二进制数据的文件类型，这可能导致使用不正确的通用扩展名。\n在这里，您可以输入一个逗号分隔的文件扩展名列表，该列表将被逐字保留。\n"
       description: "文件上传服务与设置\n"
-      disable-download-logging: "（默认启用）保持开启，将可以查看下载记录及其他数据。打开下方的开关，停用下载日志记录功能。\n"
+      disable-download-logging: "（默认启用）保持开启，以便在将来查看下载记录及其他数据。打开下方的开关，即可停止记录下载日志。\n"
       disable-hotlink-protection: "（默认启用）防盗链将通过验证 CSRF TOKEN 和 POST ID 来保护你的文件不会被其他站点调用下载。\n"
       download_templates: "启用模板后，您上传的文件将按模板样式显示于帖子中，并增加了“预览”、“下载”等按钮。 当前可用：\n"
-      mime_types: "文件类型使用 MIME 媒体类型区分（详情：http://t.cn/RIVXXlX）。每一种类型都将会使用设置好的上传方式处理。\n"
+      mime_types: "文件类型使用 MIME 媒体类型区分（详情：https://iflarum.cn/http-mime）。每一种类型都将会使用设置好的上传方式处理。\n"
       resize: "配置图片缩放功能，以像素为单位，超过最大宽度及高度后会被缩放，图片横纵比不变。\n"
-      s3_acl: "应用于上传对象的读写权限 ACL（默认私有读写）。 有关可用的值，请参阅 https://docs.aws.amazon.com/AmazonS3/latest/dev/acl-overview.html#canned-acl\n"
-      s3_compatible_storage: "开启下方设置以配置 S3 兼容存储模式。如果您使用 AWS，请保持留空。\n"
+      s3_acl: "应用于上传对象的读写权限 ACL（默认私有读写）。 有关可用的值，请参阅 https://iflarum.cn/aws-s3acl\n"
+      s3_compatible_storage: "开启下方设置以配置 S3 兼容存储模式。如果您使用 AWS，请保持留空。有关 S3 兼容配置详情，请查阅各大提供商文档（七牛云：https://iflarum.cn/qiniu-s3）\n"
       watermark: "选择上传图片时是否添加水印。水印会根据下面的偏好设置来添加到非 GIF 图片上。\n"
     labels:
       aws-s3:
+        acl: 访问控制列表（ACL）
         advanced_title: '高级 S3 存储设置'
         bucket: 存储空间（Bucket）
         endpoint: 访问域名（Endpoint）
         key: Key
-        region: 区域（Region）
+        region: 地域（Region）
         secret: Secret
         title: 'AWS S3 存储设置（配置请参阅 http://t.cn/A6zX0V3N）'
+        use_path_style_endpoint: '请使用 path-style 访问域名'
       client_extension:
         title: 用户自定义文件扩展名
       disable-download-logging:
@@ -82,7 +84,7 @@ fof-upload:
       just-url: 仅链接
       just-url_description: "仅插入 URL。 渲染可以由具有自动链接功能的其他插件处理。没有下载功能，没有统计功能，且没有热链保护。\n"
     upload_methods:
-      aws-s3: 'AWS S3'
+      aws-s3: 'AWS S3 或 S3 兼容'
       imgur: Imgur
       local: 本地
       ovh-svfs: 'OVH SVFS'

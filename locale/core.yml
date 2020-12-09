@@ -50,6 +50,8 @@ core:
       home_page_text: 选择一种页面作为论坛首页。
       saved_message: 您的更改已保存
       show_language_selector_label: 显示选择语言菜单
+      slug_driver_heading: '别名驱动：{model}'
+      slug_driver_text: 选择要用于此实体的驱动程序。
       submit_button: '=> core.ref.save_changes'
       title: 常规
       welcome_banner_heading: 欢迎横幅
@@ -126,8 +128,8 @@ core:
         source: 源码
         support: 支持
         website: 网站
-      no_permissions: 无权限项
-      no_settings: 无设置项
+      no_permissions: 此扩展无新增权限。
+      no_settings: 此扩展无设置项。
       open_modal: 打开设置
       permissions_title: 权限
       saved_message: 您的修改已保存。
@@ -152,6 +154,7 @@ core:
       basics_title: '=> core.admin.basics.description'
       categories:
         authentication: 认证
+        core: 核心配置
         discussion: 主题
         feature: 功能
         formatting: 格式化

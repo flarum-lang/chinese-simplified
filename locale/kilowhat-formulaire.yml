@@ -6,6 +6,7 @@ kilowhat-formulaire:
   admin:
     permissions:
       create: '创建表单 (beta)'
+      export: 导出提交数据
       fill: 填写独立表单
       heading: Formulaire
       heading-advanced: Formulaire（第三方扩展选项）
@@ -21,7 +22,18 @@ kilowhat-formulaire:
       title: 表单全局设置
   api:
     cannot-change-form-type: 您不能更改已收到提交内容的表格类型
-    duplicate-field-key: 密钥应该是唯一的
+    duplicate-field-key: 属性名不得重复
+    export:
+      meta:
+        created_at: 创建日期
+        hidden_at: 软删除日期
+        link_id: '链接的资源 ID'
+        locked_at: 锁定日期
+        uid: '提交 ID'
+        updated_at: 更新日期
+        user_displayname: 用户外显昵称
+        user_id: '用户 ID'
+        user_username: 用户名
     formatter-parsing-error: '无法解析内容：{message}'
     not-allowed-to-fill-field: 您无权更改此字段的值
     submission-link-already-exists: 链接重复
@@ -51,6 +63,35 @@ kilowhat-formulaire:
       denied-title: 权限不足
       notfound-description: 这个内容不存在，或者您没有访问权限。
       notfound-title: 未找到
+    export:
+      fields: 表单
+      format: 格式
+      format-options:
+        csv: 'CSV (逗号分隔)(*.cvs)'
+        json: 'JS 对象简谱(*.json)'
+        ods: 'OpenDocument 电子表格(*.ods)'
+        xls: 'Excel 97-2003 工作簿(*.xls)'
+        xlsx: 'Excel 工作簿(*.xlsx)'
+      heading: '标题 / 属性名'
+      heading-options:
+        key: 表单属性名
+        none: 不要标题行
+        title: 表单标题
+      meta: 元数据
+      meta-options:
+        created_at: 创建日期
+        hidden_at: 软删除日期
+        link_id: '链接的资源 ID'
+        locked_at: 锁定日期
+        uid: '提交 ID'
+        updated_at: 更新日期
+        user_displayname: 用户外显昵称
+        user_id: '用户 ID'
+        user_username: 用户名
+      more-meta: 更多元选项
+      preview: 预览
+      submit: 下载
+      title: 导出收集数据
     form-create:
       button:
         create: 创建表单
@@ -101,14 +142,27 @@ kilowhat-formulaire:
         title: 标题
         type: 类型
       edit: 编辑
+      empty: 无表单
+      header:
+        discuss: 'Flarum 社区讨论帖'
+        documentation: 完整在线文档
+        title: 表单管理者
+      load-more: 加载更多
       new: 新建表单
       show: 显示
       submissions: 提交结果
+      tabs:
+        discussion: 主题帖字段
+        standalone: 独立表单
+        user: 用户资料
       title: 表单管理员
       type-options:
         groups: 用户资料
         standalone: 独立
         tags: 主题字段
+    form-sort:
+      latest: 最新
+      oldest: 最旧
     items-editor:
       add: 添加行
       remove: 删除行
@@ -132,10 +186,16 @@ kilowhat-formulaire:
         actions: 动作
         date: 日期
         user: 用户
+      empty: 暂未收集到数据
+      export: 导出
       form-edit: 编辑表单
       form-show: 新提交
       guest: 访客
+      load-more: 加载更多
       show: 显示
+    submission-sort:
+      latest: 最新
+      oldest: 最旧
     submission:
       delete: 永久删除
       delete-confirmation: '即将删除 {date} 提交的结果'
@@ -156,7 +216,7 @@ kilowhat-formulaire:
       duplicate: 重复字段
       email: 邮箱
       integer: 整数
-      key: '提交有效载荷中的 JSON Key'
+      key: '在提交数据中有效载荷的 JSON 属性名'
       max: 最大
       mime: 'MIME 类型（半角逗号分隔，可用通配符作为第二部分）'
       min: 最小

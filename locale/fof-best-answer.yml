@@ -16,6 +16,15 @@ fof-best-answer:
       select_best_answer_reminder_days: '于 n 天后提醒用户选择最佳回复'
       title: 'FoF 最佳回复'
       use_alt_ui: 将「最佳回复」按钮显示在帖子页脚
+  email:
+    body:
+      awarded: "{recipient_display_name}，你好！\n\n干得漂亮，您在【{discussion_title}】发表的回复刚刚被 {actor_display_name} 选为最佳回复。感谢你的耐心帮助。\n\n点击此处查看回复：{discussion_url}\n"
+      ba-set: "{recipient_display_name}，你好！\n\n{actor_display_name} 刚刚为你参与讨论的主题【{discussion_title}】选择了最佳回复。\n\n去看看吧：{discussion_url}\n"
+      select: "{recipient_display_name}，你好！\n\n稍微提醒一下你哦，到目前为止，你可能已经收到了很多条回复针对你的提问——【{discussion_title}】。希望有回复能帮助你解决问题。\n\n如果确实是这样，希望你能够将那条回复设为最佳回复，这样可以帮助后来者快速找到能够解决类似问题的办法，同时，这也是对为你提供帮助的社区成员的鼓励。\n\n点击此处查看主题：{discussion_url}，并将最合适的回复选为最佳回复。\n\n感谢！\n"
+    subject:
+      awarded: '您的帖子被 {display_name} 设为最佳回复'
+      ba-set: '{display_name} 选择了一个最佳回复'
+      select: 您是否已自行解决了问题？
   forum:
     answered_badge: 已解决
     best_answer_button: 最佳回复

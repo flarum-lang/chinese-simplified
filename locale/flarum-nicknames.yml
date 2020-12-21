@@ -11,6 +11,17 @@ flarum-nicknames:
       min_label: 最小昵称长度
       regex_label: 验证用正则表达式
       unique_label: 需要唯一昵称？
-    wrong_driver: '您必须在 <a><strong>常规设置</strong></a> 中将「昵称」设置为外显昵称，此扩展才会起作用。'
+    wrong_driver: '您必须在 <a><strong>常规设置</strong></a> 中将「昵称」设置为外显名称，此扩展才会起作用。'
   api:
     invalid_nickname_message: 昵称无效。请联系论坛管理员获取有关昵称规则的详情信息。
+  forum:
+    change_nickname:
+      submit_button: '=> core.ref.save_changes'
+      title: '=> flarum-nicknames.ref.change_nickname'
+    edit_user:
+      nicknames_heading: '=> flarum-nicknames.ref.change_nickname'
+      nicknames_text: 昵称
+    settings:
+      change_nickname_button: '=> flarum-nicknames.ref.change_nickname'
+  ref:
+    change_nickname: 更改昵称

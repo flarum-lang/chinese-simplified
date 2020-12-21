@@ -6,7 +6,7 @@ fof-custom-footer:
   admin:
     settings:
       css: CSS
-      height: 页脚高度
+      height: '页脚高度 (px)'
       js: JS
       text: 页脚文本
       title: 自定义页脚

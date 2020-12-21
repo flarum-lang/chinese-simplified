@@ -18,7 +18,7 @@ flarum-tags:
       name_placeholder: '=> flarum-tags.ref.name'
       slug_label: 英文名称（Slug）
       submit_button: '=> core.ref.save_changes'
-      title: '=> flarum-tags.ref.create_tag'
+      title: 新建标签
     nav:
       tags_button: 节点标签
       tags_text: 管理论坛标签列表。

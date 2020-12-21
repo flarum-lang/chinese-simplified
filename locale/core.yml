@@ -146,10 +146,10 @@ core:
     nav:
       advanced_button: 高级
       advanced_text: 配置专门针对高级用户的设置。
-      appearance_button: 外观
+      appearance_button: '=> core.admin.appearance.title'
       appearance_text: 自定义论坛色调、图标以及其他元素。
-      appearance_title: '=> core.admin.appearence.description'
-      basics_button: 常规
+      appearance_title: '=> core.admin.appearance.description'
+      basics_button: '=> core.admin.basics.title'
       basics_text: 设置论坛名称、语言以及其他常规设置
       basics_title: '=> core.admin.basics.description'
       categories:
@@ -162,7 +162,7 @@ core:
         moderation: 内容审核
         other: 其他类型
         theme: 主题样式
-      dashboard_button: 概览
+      dashboard_button: '=> core.admin.dashboard.title'
       dashboard_text: 论坛统计数据概览
       dashboard_title: '=> core.admin.dashboard.description'
       email_button: '=> core.ref.email'
@@ -170,7 +170,7 @@ core:
       email_title: '=> core.admin.email.description'
       extensions_button: 扩展程序
       extensions_text: 为您的论坛添加额外的功能
-      permissions_button: 权限
+      permissions_button: '=> core.admin.permissions.title'
       permissions_text: 设置各用户组访问及操作权限
       permissions_title: '=> core.admin.permissions.description'
       search_placeholder: 搜索扩展程序

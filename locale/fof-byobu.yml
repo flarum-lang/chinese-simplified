@@ -13,11 +13,24 @@ fof-byobu:
       make_private_into_public: 将私人讨论转为公开
       view_private_discussions-when-flagged: 查看他人被举报的私人讨论
     settings:
+      badge-icon: 'Byobu 主题帖徽章'
       byobu_index: 在首页显示「私人讨论」入口
       byobu_index_help: 启用此选项后，论坛左侧边栏将会添加一个私人讨论的入口链接
+      post-event-icon: 'Byobu 发帖事件'
       use_tag_slug: 指定私人讨论创建时自动归入的分类标签
       use_tag_slug_help: '此设置仅对生效后创建的私人讨论有效，选择「{no_restriction}」则允许用户自行选择标签。'
       use_tag_slug_no_restriction: '- 不限制 -'
+  email:
+    body:
+      private_discussion_added: "{recipient_display_name}，你好！\n\n{actor_display_name} 将您加入私密主题《{discussion_title}》。\n\n点此查看完整内容：\n{discussion_url}\n\n您需要登录方可访问链接。\n"
+      private_discussion_created: "{recipient_display_name}，你好！\n\n{actor_display_name} 与您创建了一个私密主题《{discussion_title}》。\n\n点此查看完整内容：\n{discussion_url}\n\n您需要登录方可访问链接。\n"
+      private_discussion_replied: "{recipient_display_name}，你好！\n\n{actor_display_name} 发表新内容于您参与的私密主题《{discussion_title}》。\n\n点此查看完整内容：\n{post_url}\n\n您需要登录方可访问链接。\n"
+      recipient_removed: "{recipient_display_name}，你好！\n\n{actor_display_name} 离开了您参与的私密主题《{discussion_title}》，他们将无法再查看此主题的任何内容。\n\n点此查看主题帖：\n{discussion_url}\n\n您需要登录方可访问链接。\n"
+    subject:
+      private_discussion_added: '【私密主题】{display_name} 将您加入私密主题'
+      private_discussion_created: '【私密主题】{display_name} 与您创建私密主题'
+      private_discussion_replied: '【私密主题】{display_name} 发表新帖'
+      recipient_removed: '【私密主题】{display_name} 退出'
   forum:
     badges:
       is_private:

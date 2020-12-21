@@ -9,9 +9,14 @@ fof-best-answer:
       best_answer_not_own_discussion: 为他人的主题选择最佳回复
     settings:
       allow_select_own_post: 允许用户将自己的帖子设为最佳回复
+      label:
+        advanced: 高级
+        general: 常规
+        reminders: 提醒事项
+        reminders_notice: '为了使提醒功能正常运行，您必须正确设置 Flarum 调度器。'
       remind_tag_ids: '若要将提醒功能仅用于特定标签，请在此输入标签 ID （英文逗号分隔）'
-      schedule_log_output: 在日志中记录计划任务的执行
-      schedule_on_one_server: '将 “onOneServer()” 用于计划任务服务（需要 PHP 扩展：Redis / Memcache）'
+      schedule_log_output: 将调度程序的输出添加到日志存储中
+      schedule_on_one_server: '在任务调度器中使用「onOneServer()」指令（需要 PHP 扩展：Redis / Memcache）'
       schedule_stop_overnight: '夜间免打扰（服务器时间晚上 9 点至早上 8 点，禁用提醒服务）'
       select_best_answer_reminder_days: '于 n 天后提醒用户选择最佳回复'
       title: 'FoF 最佳回复'

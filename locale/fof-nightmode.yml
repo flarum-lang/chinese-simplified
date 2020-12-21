@@ -7,7 +7,7 @@ fof-nightmode:
     settings:
       modal:
         default_theme: 默认模式
-        default_theme_helper: 将自动为新用户和访客使用默认模式。
+        default_theme_helper: 自动为新用户、访客和未自定义的用户应用的颜色模式。
         default_theme_important: 这也会影响没有手动选择日夜模式的现有用户！
         theme_auto: '=> fof-nightmode.ref.auto'
         theme_dark: '=> fof-nightmode.ref.dark'

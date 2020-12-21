@@ -25,6 +25,10 @@ fof-oauth:
           client_secret_label: '=> fof-oauth.ref.settings.app_secret'
           description: '在 {link} 创建应用程序，并给予该应用 <code>read_user</code> 权限。'
           domain_label: 'GitLab 域名'
+        google:
+          client_id_label: '=> fof-oauth.ref.settings.client_id'
+          client_secret_label: '=> fof-oauth.ref.settings.client_secret'
+          description: '前往此处创建应用：{link}'
         twitter:
           api_key_label: 'API Key'
           api_secret_label: 'API Secret'
@@ -42,6 +46,7 @@ fof-oauth:
       facebook: Facebook
       github: GitHub
       gitlab: GitLab
+      google: Google
       twitter: Twitter
   ref:
     settings:

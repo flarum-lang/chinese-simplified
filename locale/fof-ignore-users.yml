@@ -7,6 +7,9 @@ fof-ignore-users:
     permissions:
       can_not_be_ignored_label: 不可屏蔽
   forum:
+    badge:
+      discussion_label: 由被屏蔽用户发布
+      user_label: 已屏蔽
     profile_link: 已屏蔽用户
     user_controls:
       ignore_button: 屏蔽

@@ -1,3 +1,46 @@
+# 2020-12-22
+# 🌟 v0.1.70-beta.15.1
+
+核心调整
+1. Dayjs 日期库支持（Moment.js 自 beta.15 弃用）
+2. 后台导航栏：「求助」更改为「帮助」
+3. 后台：常规选项名变更「显示选择语言菜单」→「显示语言选择器」
+4. 后台：测试邮件发送描述。
+5. 昵称：更改个人昵称权限名。
+
+其他调整
+1. [FoF Frontpage](https://discuss.flarum.org/d/19256) 头版头条变更为精华。
+2. [FoF Spamblock](https://discuss.flarum.org/d/17772) 标记破坏者 → 标记垃圾用户。
+
+全部变化：[v0.1.70-beta.15...v0.1.70-beta.15.1](https://github.com/Littlegolden/flarum-lang-simplified-chinese/compare/v0.1.70-beta.15...v0.1.70-beta.15.1)
+
+# 2020-12-21
+# 🌟 v0.1.70-beta.15
+
+新增
+1. [Luuhai48 Oauth-Google](https://discuss.flarum.org/d/25577) 谷歌登陆。
+1. [Luuhai48 Oauth-LinkedIn](https://discuss.flarum.org/d/25575) 领英登录。
+2. [Sycho GitHub-Milestone](https://discuss.flarum.org/d/25521) GitHub 里程碑。
+
+更新
+1. [Askvortsov Moderator-Warnings](https://discuss.flarum.org/d/23228) 站务警告：邮件通知翻译支持。
+2. [FoF Best-Answer](https://discuss.flarum.org/d/21894) 最佳回复：邮件内容翻译支持、新增「问题是否已自行解决」询问、设置项分类展示。
+3. [FoF Byōbu](https://discuss.flarum.org/d/4762) 私密主题（原私人讨论）：发起按钮名变更、新增侧边栏入口、新增合并索引功能、发帖事件设置、邮件内容翻译支持。
+4. [FoF Custom-Footer](https://discuss.flarum.org/d/17774) 自定义页脚：Beta 14/15 兼容。
+5. [FoF Follow-Tags](https://discuss.flarum.org/d/20525) 关注标签：邮件内容翻译支持。
+6. [FoF GitHub-Sponsors](https://discuss.flarum.org/d/22260) 应用申请链接更新。
+7. [FoF Ignore-Users](https://discuss.flarum.org/d/20681) 屏蔽用户：新增屏蔽用户头像徽章、被屏蔽用户发帖会有提示。
+8. [FoF Nightmode](https://discuss.flarum.org/d/21492) 夜间模式：可以对未自定义的用户应用默认颜色模式。
+9. [FoF Subscribed](https://discuss.flarum.org/d/20917) 高级通知订阅：邮件内容翻译支持。
+10. [FoF Upload](https://discuss.flarum.org/d/4154) 文件上传器：新增 S3 兼容模式。
+11. [Flarum Tags](https://github.com/flarum/tags)：主次标签分家，使用独立新增按钮。
+12. [Flarum Core](https://github.com/flarum/core)：后台管理面板侧边栏标题复用及描述翻译键变更；扩展程序开启关闭提醒；新增扩展程序讨论帖、文档、捐助、源码、支持超链接；新增扩展权限/设置有误提醒；新增打开设置按钮；新增求助按钮；新增扩展程序分类筛选；新增别名驱动设置。
+13. [Flarum Nicknames](https://github.com/flarum/nicknames) 昵称：新增外显名称设置，管理员可以选择将用户名、昵称设为外显名称。
+14. [Kilowhat Formulaire](https://discuss.flarum.org/d/23063) 表单生成器💰：新增数据导出、新增创建/更新/删除日期显示。
+
+变更
+1. 默认排序字段「热门回复」改为「热门主题」
+
 # 2020-11-23
 # 🌟 v0.1.70-beta.14.1.2
 新增支持
@@ -34,7 +77,7 @@ Beta.14.1
 6. [FoF Mason](https://discuss.flarum.org/d/7028) 梅森表单：
 7. [FoF Share-Social](https://discuss.flarum.org/d/20401) 分享：增加电报、Whatsapp。
 8. [FoF upload](https://discuss.flarum.org/d/4154) 文件上传器：新增标题介绍。
-9.  [Kilowhat Formulaire](https://discuss.flarum.org/d/23063) 表单生成器💰：变量添加了空格，新增类型。
+9. [Kilowhat Formulaire](https://discuss.flarum.org/d/23063) 表单生成器💰：变量添加了空格，新增类型。
 10. [Kyrne Websocket](https://discuss.flarum.org/d/23473) 新增开放范围。
 11. [Maicol07 SSO](https://discuss.flarum.org/d/21666) 新增颁发域设置。
 12. [SychO Profile-Cover](https://discuss.flarum.org/d/23437-profile-cover) 个人资料背景：新增权限。

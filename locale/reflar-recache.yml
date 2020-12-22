@@ -9,7 +9,7 @@ reflar-recache:
     page:
       check_button: 检查
       connection_failed: 连接失败。
-      heading: ReCache
+      heading: 设置
       redis:
         check: 保存前检查连接状态！
         database: 数据库

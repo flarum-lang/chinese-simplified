@@ -9,7 +9,7 @@ clarkwinkelmann-emojionearea:
       enableSearch: 显示搜索框
       enableTones: 启用肤色选择
       filtersPosition: 在底部显示分类
-      hideFlarumButton: '隐藏 FLarum 原生表情按钮'
+      hideFlarumButton: '隐藏 Flarum 原生表情按钮'
       hideFlarumButtonHelp: '本扩展程序需开启原生 emoji 插件后方可使用'
       searchPosition: 在底部显示搜索和肤色
       title: 'Emoji 表情设置'

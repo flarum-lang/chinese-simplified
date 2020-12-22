@@ -36,7 +36,7 @@ core:
       logo_heading: Logo
       logo_text: 上传图片代替论坛名称，并展示在导航栏左侧。
       submit_button: '=> core.ref.save_changes'
-      title: 常规
+      title: 外观
     basics:
       all_discussions_label: '=> core.ref.all_discussions'
       default_language_heading: 默认语言

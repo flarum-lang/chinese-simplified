@@ -15,7 +15,13 @@
     {
       "name": "Golden",
       "email": "littlegolden@vip.qq.com",
-      "homepage": "https://bbs.csr.fun/"
+      "homepage": "https://github.com/Littlegolden"
+    }
+  ],
+  "funding":[
+    {
+      "type": "website",
+      "url": "https://pay.csur.fun/"
     }
   ],
   "support": {

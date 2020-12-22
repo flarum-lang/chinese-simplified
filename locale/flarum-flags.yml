@@ -8,7 +8,7 @@ flarum-flags:
       flag_posts_label: 举报帖子
       view_flags_label: 查看小黑屋
     settings:
-      flag_own_posts_label: 允许用户标记（举报）自己的帖子
+      flag_own_posts_label: 允许用户举报自己的帖子
       guidelines_url_label: 论坛守则链接
       title: 小黑屋设置
   forum:

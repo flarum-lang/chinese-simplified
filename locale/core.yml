@@ -49,7 +49,7 @@ core:
       home_page_heading: 论坛首页
       home_page_text: 选择一种页面作为论坛首页。
       saved_message: 您的更改已保存
-      show_language_selector_label: 显示选择语言菜单
+      show_language_selector_label: 显示语言选择器
       slug_driver_heading: '别名驱动：{model}'
       slug_driver_text: 选择要用于此实体的驱动程序。
       submit_button: '=> core.ref.save_changes'
@@ -110,7 +110,7 @@ core:
       send_test_mail_button: 发送
       send_test_mail_heading: 发送测试邮件
       send_test_mail_success: 测试邮件发送成功！
-      send_test_mail_text: '这将会使用上述设置发送发送邮件到您的邮箱，{email}。'
+      send_test_mail_text: '使用上述设置发送测试邮件到您的邮箱：{email}'
       ses_heading: 'SES 设置'
       smtp_heading: 'SMTP 设置'
       submit_button: '=> core.ref.save_changes'
@@ -139,7 +139,7 @@ core:
       settings_button: '=> core.ref.settings'
       uninstall_button: 卸载
     header:
-      get_help: 求助
+      get_help: 帮助
       log_out_button: '=> core.ref.log_out'
     loading:
       title: 请稍后……

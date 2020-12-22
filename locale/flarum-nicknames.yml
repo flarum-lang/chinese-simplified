@@ -5,7 +5,7 @@
 flarum-nicknames:
   admin:
     permissions:
-      edit_own_nickname_label: 修改个人昵称
+      edit_own_nickname_label: 更改个人昵称
     settings:
       max_label: 最大昵称长度
       min_label: 最小昵称长度

@@ -34,7 +34,7 @@ flarum-tags:
       required_secondary_text: 设置每个主题帖需添加的次标签数量。
       title: 标签设置
     tags:
-      about_tags_text: 标签用于主题贴的分类。主标签类似于传统论坛的板块，可以分成两级；次标签无层级或顺序，可作为次板块。鼠标拖动标签即可排序或调整主次位置。
+      about_tags_text: 使用标签对主题帖分类。主标签类似于传统论坛的板块，可以分成两级。次标签无层级无顺序，可作为次板块。鼠标拖动标签即可排序或调整层级位置。
       create_primary_tag_button: 新建主标签
       create_secondary_tag_button: 新建次标签
       create_tag_button: '=> flarum-tags.ref.create_tag'

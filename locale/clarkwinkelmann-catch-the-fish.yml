@@ -32,7 +32,7 @@ clarkwinkelmann-catch-the-fish:
     invalid-post-id: 回复帖似乎不存在，可能最近被删除了
     invalid-user-id: 用户似乎不存在，可能最近被删除了
     model-deleted: 无法将鱼放在已删除的主题贴或回复帖上
-    model-private: 不能在私人讨论中放置鱼
+    model-private: 不能在私密主题中放置鱼
     non-comment-post: 您只能把鱼放在回复帖中
     random-error: 无法随机生成放置鱼的位置
     round-finished: 此回合已结束

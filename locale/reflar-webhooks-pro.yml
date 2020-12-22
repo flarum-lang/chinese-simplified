@@ -35,7 +35,7 @@ reflar-webhooks:
             title: 'FriendsOfFlarum 拉黑 IP'
           byobu:
             discussionmadepublic: 讨论转公开
-            title: 'FriendsOfFlarum 私人讨论'
+            title: 'FriendsOfFlarum 私密主题'
           gamification:
             postwasvoted: 帖子顶/踩
             title: 'FriendsOfFlarum  游戏化'

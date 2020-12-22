@@ -7,13 +7,13 @@ fof-stopforumspam:
     settings:
       api_key_instructions_text: '<register>注册 StopForumSpam</register>，然后<key>申请 API 密钥</key>。'
       api_key_label: 'API Key'
-      api_key_text: '您必须启用 fof/spamblock 插件，您现在可以向 StopForumSpam 举报破坏者以协助社区免受垃圾侵蚀。'
+      api_key_text: '您必须启用 fof/spamblock 插件，您现在可以向 StopForumSpam 举报垃圾用户以协助社区免受垃圾侵蚀。'
       email_label: 邮箱地址检查
       frequency_example_text: '例如：假设邮箱检查有 1 个命中，IP 检查有 1 个命中，用户名检查有 1 个命中，合计 3 个。如果阈值设为 3 或更少，那么将会禁止该用户注册。'
       frequency_label: 阈值
       frequency_text: 触发拦截的检查命中数量。
       ip_label: 'IP 地址检查'
-      title: 'FoF 论坛破坏者防止'
+      title: 'FoF 论坛垃圾用户防止'
       username_label: 用户名检查
   api:
     error:

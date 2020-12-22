@@ -5,8 +5,8 @@
 fof-spamblock:
   admin:
     permissions:
-      spamblock_users_label: 标记破坏者（滥发垃圾信息者）
+      spamblock_users_label: 标记垃圾用户
   forum:
     user_controls:
-      spammer_button: 破坏者
+      spammer_button: 垃圾用户
       spammer_confirmation: "您确定要\n• 隐藏该用户的全部主题及回复\n• [flarum/suspend] 封禁此用户"

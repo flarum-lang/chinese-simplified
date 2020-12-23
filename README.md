@@ -13,16 +13,12 @@ The overall language style is more delicate and natural, which conforms to the t
   - Flarum v0.1.0-beta.14 及以上版本
 
 ### 安装 / Installation
-**_Beta 13 及以下版本_**
+**_仅支持 Beta 14+_**
 ```
 composer require ffans/lang-simplified-chinese
 php flarum cache:clear
 ```
-**_Beta 14 及以上版本_**
-```
-composer require ffans/lang-simplified-chinese:^v0.1.70
-php flarum cache:clear
-```
+**_Beta 13 及以下请前往[此仓库](https://github.com/Littlegolden/flarum-lang-simplified-chinese)_**
 
 ### 升级 / Update
 ```

@@ -13,9 +13,9 @@
   "license": "MIT",
   "authors": [
     {
-      "name": "Golden",
+      "name": "Flarum Fans",
       "email": "littlegolden@vip.qq.com",
-      "homepage": "https://github.com/Littlegolden"
+      "homepage": "https://github.com/FFans"
     }
   ],
   "funding":[
@@ -33,7 +33,7 @@
   },
   "extra": {
     "flarum-extension": {
-      "title": "简体中文语言包 2020",
+      "title": "简体中文语言包",
         "icon": {
           "image": "icon.svg",
           "backgroundColor": "#fff",

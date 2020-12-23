@@ -1,7 +1,7 @@
 /* 精华 */
-.Badge--frontpage {
-  background: #fbbd08 !important;
+.Badge--span.Badge.Badge--frontpage {
+  background: #fbbd08;
 }
-.fa-medal:before {
-  content: "\f091" !important;
+.Badge--frontpage .fa-home::before {
+  content: "\f091";
 }

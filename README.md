@@ -10,28 +10,28 @@ The overall language style is more delicate and natural, which conforms to the t
 繁体中文语言包请查阅此处：[繁体中文语言包](https://discuss.flarum.org/d/17954)。
 
 ### 要求 / Requirement
-  - Flarum v0.1.0-beta.8 及以上版本
+  - Flarum v0.1.0-beta.14 及以上版本
 
 ### 安装 / Installation
 **_Beta 13 及以下版本_**
 ```
-composer require littlegolden/flarum-lang-simplified-chinese
+composer require ffans/lang-simplified-chinese
 php flarum cache:clear
 ```
 **_Beta 14 及以上版本_**
 ```
-composer require littlegolden/flarum-lang-simplified-chinese:^v0.1.70
+composer require ffans/lang-simplified-chinese:^v0.1.70
 php flarum cache:clear
 ```
 
 ### 升级 / Update
 ```
-composer update littlegolden/flarum-lang-simplified-chinese
+composer update ffans/lang-simplified-chinese
 ```
 
 ### 卸载 / Remove
 ```
-composer remove littlegolden/flarum-lang-simplified-chinese
+composer remove ffans/lang-simplified-chinese
 ```
 
 ### 本地化 / Localization
@@ -44,7 +44,7 @@ composer remove littlegolden/flarum-lang-simplified-chinese
   - [Flarum 中文社区](https://discuss.flarum.org.cn)
 
 ### 报告问题 / Report Issue
-  - [Github](https://github.com/Littlegolden/flarum-lang-simplified-chinese/issues)
+  - [Github](https://github.com/ffans/lang-simplified-chinese/issues)
   - [Flarum 中文社区](https://discuss.flarum.org.cn)
 
 ### 贡献
@@ -53,9 +53,9 @@ composer remove littlegolden/flarum-lang-simplified-chinese
 
 ### 链接 / Links
   - [Flarum](https://discuss.flarum.org/d/22690)
-  - [Github](https://github.com/Littlegolden/flarum-lang-simplified-chinese)
-  - [Packagist](https://packagist.org/packages/littlegolden/flarum-lang-simplified-chinese)
-  - [Flagrow](https://flagrow.io/extensions/littlegolden/flarum-lang-simplified-chinese)
+  - [Github](https://github.com/ffans/lang-simplified-chinese)
+  - [Packagist](https://packagist.org/packages/ffans/lang-simplified-chinese)
+  - [Flagrow](https://flagrow.io/extensions/ffans/lang-simplified-chinese)
 
 ### 捐赠 / Donate
 请我喝杯咖啡 \^_\^

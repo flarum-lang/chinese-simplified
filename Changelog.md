@@ -1,5 +1,5 @@
 # 2020-12-21
-# 🌟 v0.1.70-beta.15
+# 🌟 v0.1.0-beta.15
 
 新增
 1. [Luuhai48 Oauth-Google](https://discuss.flarum.org/d/25577) 谷歌登陆。

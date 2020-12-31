@@ -25,7 +25,7 @@ kilowhat-wordpress:
       description: '配置 WordPress 集成。'
       title: WordPress
     permissions:
-      gambits: 第三方策略（详见文档）
+      gambits: 'Wordpress 第三方策略（详见文档）'
       heading: WordPress
     save-controls:
       no-unsaved-changes: 所有内容已保存

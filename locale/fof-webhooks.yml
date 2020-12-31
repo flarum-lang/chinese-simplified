@@ -65,14 +65,22 @@ fof-webhooks:
             renamed: '=> fof-webhooks.ref.renamed'
             title: 'Flarum 用户'
       help:
-        disabled: '此 Webhook 已被禁用，因为它未启用任何事件。'
+        disabled: '此 Webhook 已被禁用，因为它没有启用事件。'
         general: '您可以在这里添加、编辑、删除论坛中的 webhooks。'
         url: '要运行的 Webhook 终端'
+      item:
+        tag_any_label: 任一
       modal:
         description: '您可以在这里修改出发 webhook 的事件。'
+        events_label: 事件
+        extra_text_help: '附加文本到发送的 Webhook 中'
+        extra_text_label: 附加文本
+        group_help: 发送该组群可见的资源
+        group_label: 组群
         title: 'Webhook 设置'
       services:
         discord: Discord
+        microsoft-teams: 'Microsoft Teams'
         slack: Slack
       title: Webhooks
   ref:

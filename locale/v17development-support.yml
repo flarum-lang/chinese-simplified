@@ -84,6 +84,7 @@ v17development-flarum-support:
         edit_description: 编辑描述
         new_article: 撰写文章
         rename_category: 重命名分类目录
+    reopen: 重新打开
     return_to_home: 返回知识库首页
     search:
       back_to_search_results: 返回搜索结果

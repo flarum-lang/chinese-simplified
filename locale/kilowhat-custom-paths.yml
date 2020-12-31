@@ -11,6 +11,7 @@ kilowhat-custom-paths:
         flarum-flags: 'Flarum 举报相关'
         flarum-subscriptions: 'Flarum 订阅相关'
         flarum-tags: 'Flarum 标签相关'
+        fof-gamification: 'FriendsOfFlarum 游戏化'
         fof-pages: 'FoF 静态页面'
         fof-user-directory: 'FoF 会员名录'
       head:
@@ -20,6 +21,7 @@ kilowhat-custom-paths:
         askvortsov-categories: 传统板块
         discussion: 主题
         flags: 举报（移动端）
+        fof-gamification: 排名
         fof-pages: 静态页面
         fof-user-directory: 会员名录
         following: 我的关注
@@ -29,6 +31,8 @@ kilowhat-custom-paths:
         tag: 标签主题
         tags: 全部标签
         user: 个人主页
+        user-discussions: 用户主题帖
+        user-mentions: 用户提及
       redirect: '将默认 Flarum 路径重定向到新路径'
       reset: 重置路径
       title: 自定义路径

@@ -5,6 +5,7 @@
 imgur-upload:
   admin:
     settings:
+      hide-markdown-image: '隐藏 Markdown 图片按钮'
       title: 'Imgur 上传设置'
   forum:
     done: 完成！

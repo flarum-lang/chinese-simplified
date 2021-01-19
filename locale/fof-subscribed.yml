@@ -16,9 +16,9 @@ fof-subscribed:
       newUser: "{recipient_display_name}，你好！\n\n{actor_display_name} 刚刚加入 {forum_url}。\n\n点击下方链接查看用户资料：\n{user_url}\n"
       postUnapproved: "{recipient_display_name}，你好！\n\n{actor_display_name} 发表于 {discussion_title} 的回复需要人工审核。\n\n点击下方链接查看回复内容：\n{post_url}\n\n---\n\n{post_content}\n"
     subject:
-      newDiscussion: '【新主题订阅】{title}'
-      newUser: '【新用户订阅】{username}'
-      postUnapproved: '【审核订阅】{username} 发表回复于 {title}'
+      newDiscussion: '【新主题】{title}'
+      newUser: '【新用户】{username}'
+      postUnapproved: '【审核通知】{username} 发表回复于 {title}'
   forum:
     notifications:
       discussion_created_text: '{username} 发布了新主题'

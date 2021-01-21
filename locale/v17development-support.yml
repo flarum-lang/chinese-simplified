@@ -3,6 +3,22 @@
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
 v17development-flarum-support:
+  emails:
+    replied_to_ticket:
+      body: "尊敬的用户 {recipient_display_name},\n\n{replier_display_name} 回复了您的工单 #{ticket_id}《{subject}》。\n\n请点击下方链接查看回复：\n{url}\n\n我们正在等待您的回复，若问题已解决，请将工单标记为已解决。\n"
+      subject: '{replier_display_name} 回复了你的工单 #{ticket_id}'
+    ticket_pending_reply:
+      body: "尊敬的用户 {recipient_display_name}，\n\n近期 {replier_display_name} 于  {replied_date} 回复了您的工单 #{ticket_id}，我们正在等候您的回复。\n\n您的工单链接：\n{url}\n\n如果此问题已解决，请将工单标记为已解决。\n"
+      subject: '工单 #{ticket_id} 需要您的回复'
+    ticket_pending_reply_closed:
+      body: "尊敬的用户 {recipient_display_name}，\n\n近期 {replier_display_name} 回复了您的工单 #{ticket_id}。很遗憾我们没有收到您的回复。因此我们已经关闭了您的工单。\n\n如果您还需回复，请点击下方工单链接：\n{url}"
+      subject: '工单 #{ticket_id} 由于没有活动现已关闭'
+    ticket_resolved:
+      body: "尊敬的用户 {recipient_display_name}，\n\n您的工单 #{ticket_id} 被标记为已解决，并已关闭。\n\n您的工单链接：\n{url}\n\n如果您对此标记有异议，请回复工单以重新打开。\n"
+      subject: '工单 #{ticket_id} 被标记为已解决'
+    ticket_status_update:
+      body: "尊敬的用户 {recipient_display_name}，\n\n您的工单 #{ticket_id} 状态变更为 {new_status}。\n\n您的工单链接：\n{url}\n"
+      subject: '工单 #{ticket_id} 被标记为 {new_status}'
   forum:
     article:
       article: 文章
@@ -111,6 +127,85 @@ v17development-flarum-support:
         invalid_points: 无效评价，请重试。
         missing_article_id: '文章 ID 缺失或无效'
         neutral_emoji_disabled: 中性表情符号已被禁用。
+    support_tickets: 客服工单
+    tickets:
+      compose_ticket:
+        not_allowed: 您当前无法创建新客服工单
+        private_support: 若需要一对一支持，您可以使用此表单在我们的客服平台上创建一个新的工单。对于非一对一支持，请参见<a>我们的公共论坛</a>。
+        title: 发表新工单
+      fields:
+        assignees:
+          placeholder: 工单状态
+          title: 专员
+        information:
+          placeholder: 请告诉我们您需要哪些帮助
+          title: 工单信息
+        language:
+          description: '您的客服工单将以 {language} 处理。'
+          empty: 尚未选择语言
+          placeholder: 选择一个语言
+          title: 语言
+        status:
+          placeholder: 工单状态
+          title: 状态
+        subject:
+          description: 试着用一句简短的话来描述你的问题。
+          placeholder: 工单主题
+          title: 主题
+      load_more:
+        title: 加载更多工单
+      my_tickets:
+        description: 在此页面您可以找到所有一对一工单。
+        no_tickets: 您尚无工单。
+        title: 我的工单
+      new_tickets_dropdown:
+        no_tickets: 尚无工单通知
+        ticket_new: '{username} 创建工单{ticket}'
+        ticket_updated: '{username} 回复 {ticket}'
+        title: 工单通知
+      opened_on: 打开于
+      overview:
+        all_tickets: 所有工单
+        description: 真棒，今天又是帮助别人的一天~
+        title: 工单概览
+      return_to_overview: 返回工单概览。
+      status:
+        closed:
+          close_after_posting: 回复并关闭工单
+          description: 此工单已被关闭。
+          is_closed: 此工单已关闭，回复工单以重新打开。当问题尚未解决时请重新打开工单，若有新问题，请创建新工单。
+          title: 已关闭
+        duplicate:
+          description: 此工单被标记为重复。
+          title: 重复
+        new:
+          description: 未答复工单
+          title: 新建
+        on_hold:
+          description: 工单状态变更为保留。
+          title: 保留
+        open:
+          description: 此工单有新回复，等待答复中。
+          title: 跟进中
+        pending:
+          description: 此工单等待用户回复中。
+          description_user: 我们正在等待您的回复，若问题已解决，请将此工单标记为已解决。
+          title: 待答复
+        solved:
+          description: 此工单被标记为已解决
+          mark_as_solved: 标记工单为已解决
+          title: 已解决
+      subject: 主题
+      ticket: 工单
+      ticket_does_not_exist: 请求的客服工单不存在。
+      ticket_overview: 工单概览
+      tools:
+        assign_me: 分配给我
+        close_ticket: 关闭工单
+        remove_me: 移除我
+        update_status: 更新工单状态
+        update_subject: 更新工单
+        view_ticket: 查看工单
     utils:
       redirect:
         link: '<a>点击此处</a>手动跳转'

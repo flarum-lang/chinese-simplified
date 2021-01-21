@@ -10,6 +10,8 @@ askvortsov-saml:
       nameid_format: 'NameID 格式'
       only_option: '使用 SAML2 SSO 作为唯一登录选项吗？'
       sync_attributes: '同步属性（头像、用户组、签名、资料）？需要安装 askvortsov/auth-sync 插件（传送门：http://t.cn/A6yDXTRB）。'
+      want_assertions_signed: 'Want Assertions Signed?'
+      want_messages_signed: 'Want Messages Signed?'
     nameid_format: 'NameID 格式'
     options:
       nameid_format:

@@ -8,6 +8,8 @@ fof-user-bio:
       editAny: 编辑所有人的个性签名
       editOwn: 编辑自己的个性签名
       view: 查看个性签名
+    setting:
+      bioLimit: 个性签名字符数上限
   forum:
     userbioPlaceholder: 这个人很懒，什么都没有写……
 fof-userbio:

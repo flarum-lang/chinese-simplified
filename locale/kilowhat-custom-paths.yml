@@ -14,6 +14,7 @@ kilowhat-custom-paths:
         fof-gamification: 'FriendsOfFlarum 游戏化'
         fof-pages: 'FoF 静态页面'
         fof-user-directory: 'FoF 会员名录'
+        kilowhat-formulaire: 'KILOWHAT Formulaire'
       head:
         name: 页面名称
         path: 路径
@@ -25,6 +26,8 @@ kilowhat-custom-paths:
         fof-pages: 静态页面
         fof-user-directory: 会员名录
         following: 我的关注
+        formulaire-form: 表格
+        formulaire-submission: 我的关注
         index: 全部主题列表（非首页时）
         notifications: 通知（移动端）
         settings: 设置

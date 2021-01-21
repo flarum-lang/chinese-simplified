@@ -7,6 +7,7 @@ kyrne-shout:
     permissions:
       start_label: 私信功能
     settings:
+      return_key: 按回车键发送消息
       set_own_password: '让用户设置独立密码完成初始化 - SSO兼容'
       title: 'Shout 设置'
   forum:

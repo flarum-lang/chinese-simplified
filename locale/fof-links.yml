@@ -7,9 +7,12 @@ fof-links:
     edit_link:
       delete_link_button: 删除链接
       delete_link_confirmation: 确定要删除这个链接吗？
+      everyone-label: 所有人
+      guests-label: 访客
       icon_label: '=> core.ref.icon'
       icon_text: '=> core.ref.icon_text'
       internal_link: 这是内部链接吗？勾选后，当用户访问此链接时，此链接会在导航栏高亮。
+      members-label: 注册用户
       open_newtab: 在新标签页中打开
       submit_button: '=> core.ref.save_changes'
       title: '=> fof-links.ref.create_link'
@@ -17,6 +20,7 @@ fof-links:
       title_placeholder: '=> fof-links.ref.title'
       url_label: '=> fof-links.ref.url'
       url_placeholder: '=> fof-links.ref.url'
+      visibility: 链接可见范围
     links:
       about_text: 管理导航栏链接。
       create_button: '=> fof-links.ref.create_link'

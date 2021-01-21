@@ -8,6 +8,7 @@ kyrne-websocket:
       app_id: 'Pusher App ID - 如果使用内置 WebSocket 服务器，请保持默认值。'
       app_key: 'Pusher App Key - 如果使用内置 WebSocket 服务器，请保持默认值。'
       auth_only: '只允许经过身份认证的用户连接到 websocket 服务器，可以减少 CPU 的负载。'
+      auto_update: 即时更新全部主题列表，不再显示「有新内容」黄色横幅。
       cert_path: '仅在使用 SSL 而非反向代理时开启。您服务器上的 SSL (HTTPS) 证书路径 - 通常是一个 .crt 或 .pem 文件。'
       host: '您的 WebSocket 服务器主机 - 如果服务器和论坛位于同一主机，请保持默认值。'
       passphrase: '仅在使用 SSL 而非反向代理时开启。用于启用证书私钥的密码 - 通常不需要填写。'
@@ -24,6 +25,7 @@ kyrne-websocket:
       app_port_label: 端口
       app_secret_label: 'App Secret'
       auth_only: '仅向登录用户开放 Websocket'
+      auto_update: 自动更新主题帖
       cert_self_signed: 自签证书支持
       local_cert_path: '本地 SSL 证书路径'
       local_pk_path: '本地 SSL 私钥路径'

@@ -4,11 +4,15 @@
 
 fof-recaptcha:
   admin:
+    permissions:
+      post_without_captcha: 发帖不需要验证码
     settings:
       help_text: '点击<a>此处</a>获取 Google reCAPTCHA 证书。'
       secret_key_label: 'Secret Key'
       site_key_label: 'Site Key'
       title: 'FriendsOfFlarum reCAPTCHA'
       type_label: 'reCAPTCHA 类型'
+  forum:
+    error: '提交 reCAPTCHA 时出错，请重试。'
 validation:
   recaptcha: 'reCAPTCHA 验证失败。'

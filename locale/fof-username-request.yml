@@ -6,6 +6,9 @@ fof-username-request:
   admin:
     permissions:
       moderate: 同意更改用户名
+      moderate_requests: 批准更改用户名/昵称
+      request_nickname: 申请更改昵称
+      request_username: 申请更改用户名
       start: 申请更改用户名
   forum:
     account_label: 更改用户名
@@ -25,6 +28,24 @@ fof-username-request:
       item_text: '{username} 申请更改用户名'
       title: 用户名更改申请
       tooltip: '=> fof-username-request.forum.dropdown.title'
+    nickname_modals:
+      action:
+        approval_label: 批准
+        decision_title: 决定
+        help_text: 请您确保昵称没有违反社区规范。
+        name: '{name} 请求将昵称更改为「{requestedName}」'
+        reason_title: 驳回原因
+        rejected_label: 驳回
+        submit_button: 提交
+        success: 决定已送出。
+        title: '=> fof-username-request.ref.nickname_change_request'
+      results:
+        approved: 您的昵称更改已批准
+        dismiss_button: '=> core.ref.okay'
+        new_name: '您的昵称已成功更改为：{name}'
+        reason: '驳回原因：<i>"{reason}"</i>.'
+        rejected: 您的昵称更改已被驳回
+        title: 昵称更改请求
     profile_link: 曾用名
     request:
       confirmation_message: 您的申请已提交，我们将在稍后进行审核。

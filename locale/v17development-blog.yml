@@ -3,6 +3,35 @@
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
 v17development-flarum-blog:
+  admin:
+    blog: 博客
+    permissions:
+      approve_posts: 发布博客文章
+      auto_approve_posts: 发布文章无需审核
+      write_articles: 撰写和编辑博客文章
+    settings:
+      add_sidebar_nav_label: 添加到侧边栏
+      add_sidebar_nav_text: 在侧边栏添加博客入口。
+      allow_comments_label: 允许评论
+      allow_comments_text: 允许他人在新文章中发表评论。此项关闭时，只能为每篇文章单独开启。<b>注意：</b>此项设置的变更不会影响已存在的文章。
+      blog_heading: 博客
+      categories_heading: 分类目录
+      hide_on_discussion_list_label: 不在主题列表中显示
+      hide_on_discussion_list_text: 在「全部主题」列表中隐藏博客文章。
+      hide_tags_in_taglist_label: 对标签列表不可见
+      hide_tags_in_taglist_text: 开启后，将在首页中隐藏博客标签。
+      no_categories_selected: 请选择分类目录
+      redirect_articles_label: 重定向博客文章
+      redirect_articles_text: 开启后，原始主题帖将重定向至其博客页面。
+      redirect_tags_label: 重定向博客标签
+      redirect_tags_text: 开启后，博客标签将重定向至分类目录页面。
+      redirects_heading: 重定向
+      require_review_label: 文章必须经人工审核
+      require_review_text: 发布文章时，经管理员人工审核后才会公开可见。
+      select_categories_button: 选择博客分类目录
+      selected_category_count: '已指定 {count} 个分类目录|已指定 {count} 个分类目录'
+      show_tag_hierarchy_label: 显示标签层次
+      show_tag_hierarchy_text: 在子分类目录之间添加空格，并为分类目录列表提供层次结构视图。
   forum:
     article:
       slug: 别名
@@ -16,6 +45,19 @@ v17development-flarum-blog:
       locked: 评论已关闭
     compose:
       write_article: 写文章
+    composer:
+      comment_section: 撰写文章时，评论区无法使用。
+      edit_categories: 编辑分类目录
+      enter_message_here: 在此输入正文内容
+      no_blog_tags_selected: 您选择的标签中没有一个是博客标签，请至少选择一个博客标签。
+      no_title: 未命名标题
+      nothing_to_preview: 什么都还没有写
+      post_article: 发布文章
+      post_without_blog_info: 确定要发布这篇文章吗？您还没有输入博客摘要或头图。
+      select_category: 选择分类目录
+      view: 预览
+      write: 写作
+    forum_nav: 论坛导航
     hidden: 隐藏
     no_more_posts: 没有更多文章了
     read_more: 阅读更多
@@ -23,7 +65,7 @@ v17development-flarum-blog:
     return_to_overview: '返回博客首页 '
     review_article:
       approve_article: 批准文章
-      approve_article_approved: 此文章已批准并发布
+      approve_article_approved: 已批准发布此文章
       pending_review: 此文章需要审核后才会发布
       pending_review_title: 待审核
     tools:

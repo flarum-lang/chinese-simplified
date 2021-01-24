@@ -6,15 +6,21 @@ kilowhat-formulaire:
   admin:
     permissions:
       create: '创建表单 (beta)'
+      editAnyDiscussion: '=> kilowhat-formulaire.ref.permissions.editAnyDiscussion'
+      editAnyUser: '=> kilowhat-formulaire.ref.permissions.editAnyUser'
+      editOwnDiscussion: '=> kilowhat-formulaire.ref.permissions.editOwnDiscussion'
+      editOwnUser: '=> kilowhat-formulaire.ref.permissions.editOwnUser'
       export: 导出提交数据
-      fill: 填写独立表单
+      fill: '=> kilowhat-formulaire.ref.permissions.fill'
       heading: Formulaire
       heading-advanced: Formulaire（第三方扩展选项）
       listForms: 查看未删除的表单列表
       listSubmissions: 查看提交列表
       moderate: 管理所有表单
-      seeAnyDiscussion: 查看提交的主题帖字段
-      seeAnyUser: 查看提交的用户资料
+      seeAnyDiscussion: '=> kilowhat-formulaire.ref.permissions.seeAnyDiscussion'
+      seeAnyUser: '=> kilowhat-formulaire.ref.permissions.seeAnyUser'
+      seeOwnDiscussion: '=> kilowhat-formulaire.ref.permissions.seeOwnDiscussion'
+      seeOwnUser: '=> kilowhat-formulaire.ref.permissions.seeOwnUser'
     settings:
       history-controls: 在提交页面上显示撤销/重做按钮
       max-file-size: '最大文件大小 (kB)'
@@ -98,6 +104,17 @@ kilowhat-formulaire:
       field:
         title: 标题
       title: 新建表单
+    form-edit-header:
+      back: 返回
+      category:
+        discussion: '=> kilowhat-formulaire.ref.type.discussion'
+        standalone: '=> kilowhat-formulaire.ref.type.standalone'
+        user: '=> kilowhat-formulaire.ref.type.user'
+      tabs:
+        access: 权限
+        notifications: 通知
+        submissions: 提交项
+        template: 模板
     form-edit:
       auto-discussion-options: 新主题选项
       delete: 永久删除
@@ -146,15 +163,15 @@ kilowhat-formulaire:
       header:
         discuss: 'Flarum 社区讨论帖'
         documentation: 完整在线文档
-        title: 表单管理者
+        title: '=> kilowhat-formulaire.ref.manager'
       load-more: 加载更多
       new: 新建表单
       show: 显示
       submissions: 提交结果
       tabs:
-        discussion: 主题帖字段
-        standalone: 独立表单
-        user: 用户资料
+        discussion: '=> kilowhat-formulaire.ref.type.discussion'
+        standalone: '=> kilowhat-formulaire.ref.type.standalone'
+        user: '=> kilowhat-formulaire.ref.type.user'
       title: 表单管理员
       type-options:
         groups: 用户资料
@@ -163,11 +180,24 @@ kilowhat-formulaire:
     form-sort:
       latest: 最新
       oldest: 最旧
+    global-settings:
+      admin-only: 只有论坛管理员才能编辑全局设置
+      permissions:
+        editAnyDiscussion: '=> kilowhat-formulaire.ref.permissions.editAnyDiscussion'
+        editAnyUser: '=> kilowhat-formulaire.ref.permissions.editAnyUser'
+        editOwnDiscussion: '=> kilowhat-formulaire.ref.permissions.editOwnDiscussion'
+        editOwnUser: '=> kilowhat-formulaire.ref.permissions.editOwnUser'
+        fill: '=> kilowhat-formulaire.ref.permissions.fill'
+        seeAnyDiscussion: '=> kilowhat-formulaire.ref.permissions.seeAnyDiscussion'
+        seeAnyUser: '=> kilowhat-formulaire.ref.permissions.seeAnyUser'
+        seeOwnDiscussion: '=> kilowhat-formulaire.ref.permissions.seeOwnDiscussion'
+        seeOwnUser: '=> kilowhat-formulaire.ref.permissions.seeOwnUser'
+      title: 全局权限
     items-editor:
       add: 添加行
       remove: 删除行
     nav:
-      forms: 表单管理员
+      forms: '=> kilowhat-formulaire.ref.manager'
     permission-controls:
       everyone_button: '=> core.admin.permissions_controls.everyone_button'
       inherit: 使用默认

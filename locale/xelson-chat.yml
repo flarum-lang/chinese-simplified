@@ -35,3 +35,39 @@ pushedx-chat:
       maximize: 窗口化
       minimize: 最小化
       title: 聊天室
+xelson-chat:
+  forum:
+    chat:
+      edit_modal:
+        form:
+          color:
+            validator: 十六进制格式
+          delete:
+            title: 确定要删除这个聊天吗？
+          icon:
+            validator: '=> core.ref.icon_text'
+          leave: 退出聊天
+          return: 加入聊天
+          title:
+            validator: '至少 1 个字符'
+          users:
+            edit: 选择或编辑用户
+        moderator:
+          got: '你获得了审阅人权限：{chatname}！'
+          lost: '你失去了审阅人权限：{chatname}！'
+        title: 聊天设置
+      kick: 抖一抖
+      leave: 离开
+      moder: 审阅人
+      welcome:
+        header: '欢迎来到 Neon 聊天室！'
+    toolbar:
+      chat:
+        settings: 聊天室设置
+      disable_notifications: 关闭通知
+      disable_sounds: 关闭声音
+      enable_notifications: 开启通知
+      enable_sounds: 开启声音
+      maximize: 最大化
+      minimize: 最小化
+      title: 聊天室

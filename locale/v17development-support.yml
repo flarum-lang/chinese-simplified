@@ -50,6 +50,7 @@ v17development-flarum-support:
     composer:
       article_saved: 文章已保存
       compose_article: 撰写文章
+      compose_ticket: 新建工单
       enter_message_here: 在此输入您的消息
       manage_tags: 管理标签
       new_article_title: 新文章标题
@@ -166,9 +167,10 @@ v17development-flarum-support:
       opened_on: 打开于
       overview:
         all_tickets: 所有工单
-        description: 真棒，今天又是帮助别人的一天~
+        description: 真棒，今天又是帮助他人的一天。
+        no_tickets: 暂无工单分配给您。
         title: 工单概览
-      return_to_overview: 返回工单概览。
+      return_to_overview: 返回工单概览
       status:
         closed:
           close_after_posting: 回复并关闭工单

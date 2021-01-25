@@ -20,4 +20,4 @@ fof-stopforumspam:
       unknown: '提交至 StopForumSpam 失败。'
   forum:
     message:
-      spam: 您的内容被标记为垃圾。
+      spam: 注册信息含有垃圾内容

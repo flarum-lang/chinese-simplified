@@ -38,7 +38,7 @@ the-turk-diff:
     createdInfo: '{username} 创建于 {ago}'
     deleteButton: '=> core.forum.post_controls.delete_button'
     deleteErrorMessage: 删除编辑记录失败。
-    deleteSuccessMessage: 编辑记录已删除。
+    deleteSuccessMessage: 已删除编辑记录。
     deletedInfo: '{username} 于 {ago} 删除了此条编辑记录'
     deletedText: （已删除）
     differences:

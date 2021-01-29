@@ -43,7 +43,7 @@ fof-username-request:
         confirmation_message: 您的昵称更改请求已经提交，请等待批准。
         current_request: '您已申请将您的昵称改为「{name}」。您可以更新或删除请求。'
         delete_button: 删除请求
-        deleted: 昵称请求已删除。
+        deleted: 已删除昵称请求。
         dismiss_button: '=> core.ref.okay'
         submit_button: 提交请求
         title: 申请更改昵称
@@ -99,7 +99,7 @@ fof-username-request:
         confirmation_message: 您的昵称更改请求已经提交，请等待批准。
         current_request: '您已申请将您的昵称改为「{name}」。您可以更新或删除请求。'
         delete_button: 删除请求
-        deleted: 用户名请求已删除。
+        deleted: 已删除用户名请求。
         dismiss_button: '=> core.ref.okay'
         submit_button: 提交请求
         title: 申请更改用户名

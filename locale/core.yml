@@ -407,7 +407,7 @@ core:
       delete_button: '=> core.ref.delete'
       delete_confirmation: 确定要删除此用户？此账号会被注销，已发布的帖子仍会保留。
       delete_error_message: '删除用户 <i>{username} ({email})</i> 失败'
-      delete_success_message: '用户 <i>{username} ({email})</i> 已删除'
+      delete_success_message: '已删除用户 <i>{username} ({email})</i>'
       edit_button: '=> core.ref.edit'
     user_email_confirmation:
       alert_message: '=> core.ref.confirmation_email_sent'

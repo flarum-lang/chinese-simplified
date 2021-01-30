@@ -13,7 +13,7 @@ flarum-nicknames:
       unique_label: 需要唯一昵称？
     wrong_driver: '您必须在 <a><strong>常规设置</strong></a> 中将「昵称」设置为外显名称，此扩展才会起作用。'
   api:
-    invalid_nickname_message: 昵称无效。请联系论坛管理员获取有关昵称规则的详情信息。
+    invalid_nickname_message: 昵称非法。请联系论坛管理员获取昵称规则。
   forum:
     change_nickname:
       submit_button: '=> core.ref.save_changes'

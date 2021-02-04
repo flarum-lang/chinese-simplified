@@ -11,8 +11,8 @@ jasper-chevereto:
     permissions:
       upload: 'Chevereto 图床上传'
     setting:
-      auto-insert: 在文本编辑器中自动插入图片上传后的嵌入代码
+      auto-insert: 自动嵌入的图片代码类型
       lang: 语言代码（默认自动）
-      src: 'Chevereto 图床的 PUP (pup.js) 上传窗口插件源地址'
+      src: 'Chevereto 图床上传窗口插件 PUP (pup.js) 源地址'
       title: 'Chevereto 图床上传设置'
       url: 'Chevereto 图床上传地址'

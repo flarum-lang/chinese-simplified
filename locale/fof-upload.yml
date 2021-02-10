@@ -27,7 +27,7 @@ fof-upload:
         region: 地域（Region）
         secret: Secret
         title: 'AWS S3 存储设置（配置请参阅 http://t.cn/A6zX0V3N）'
-        use_path_style_endpoint: '请使用 path-style 访问域名'
+        use_path_style_endpoint: '使用 path-style 访问域名'
       client_extension:
         title: 用户自定义文件扩展名
       disable-download-logging:

@@ -15,7 +15,7 @@ fof-upload:
       mime_types: "文件类型使用 MIME 媒体类型区分（详情：https://iflarum.cn/http-mime）。每一种类型都将会使用设置好的上传方式处理。\n"
       resize: "配置图片缩放功能，以像素为单位，超过最大宽度及高度后会被缩放，图片横纵比不变。\n"
       s3_acl: "应用于上传对象的读写权限 ACL（默认私有读写）。 有关可用的值，请参阅 https://iflarum.cn/aws-s3acl\n"
-      s3_compatible_storage: "开启下方设置以配置 S3 兼容存储模式。如果您使用 AWS，请保持留空。有关 S3 兼容配置详情，请查阅各大提供商文档（七牛云：https://iflarum.cn/qiniu-s3）\n"
+      s3_compatible_storage: "填写下方设置以配置 S3 兼容存储模式。如果您使用 AWS，请保持留空。有关 S3 兼容配置详情，请查阅各大云服务商的文档（七牛云：https://iflarum.cn/qiniu-s3）\n"
       watermark: "选择上传图片时是否添加水印。水印会根据下面的偏好设置来添加到非 GIF 图片上。\n"
     labels:
       aws-s3:

@@ -6,7 +6,7 @@ v17development-flarum-blog:
   admin:
     blog: 博客
     permissions:
-      approve_posts: 发布博客文章
+      approve_posts: 审核博客文章
       auto_approve_posts: 发布文章无需审核
       write_articles: 撰写和编辑博客文章
     settings:

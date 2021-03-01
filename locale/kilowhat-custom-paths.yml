@@ -8,6 +8,7 @@ kilowhat-custom-paths:
       disabled: 未启用该扩展
       extensions:
         askvortsov-categories: 'Askvortsov 传统板块'
+        clarkwinkelmann-group-list: 'ClarkWinkelmann 组群一览'
         flarum-flags: 'Flarum 小黑屋'
         flarum-subscriptions: 'Flarum 我的关注'
         flarum-tags: 'Flarum 标签'
@@ -22,8 +23,11 @@ kilowhat-custom-paths:
         path: 路径
       paths:
         askvortsov-categories: 传统板块
+        clarkwinkelmann-group-list: 组群一览
         discussion: 主题
         flags: 举报（移动端）
+        fof-byobu: 私密主题
+        fof-byobu-profile: 个人主题页
         fof-gamification: 排名
         fof-pages: 静态页面
         fof-user-directory: 会员名录
@@ -38,6 +42,10 @@ kilowhat-custom-paths:
         user: 个人主页
         user-discussions: 用户主题帖
         user-mentions: 用户提及
+        v17development-blog-category: 分类目录
+        v17development-blog-compose: 写文章
+        v17development-blog-overview: 博客首页
+        v17development-blog-post: 帖子
       redirect: '将默认 Flarum 路径重定向到新路径'
       reset: 重置路径
       title: 自定义路径

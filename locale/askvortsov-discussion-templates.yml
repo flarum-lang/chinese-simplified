@@ -4,6 +4,9 @@
 
 askvortsov-discussion-templates:
   admin:
+    permissions:
+      manage_all_reply_templates: 管理所有主题帖的回复模板
+      manage_own_discussion_reply_templates: 管理标签旗下主题贴的回复模板
     tag_template_modal:
       customize_text: 编辑在此标签下创建新主题时的默认模板。
       submit_button: 保存模板
@@ -12,3 +15,9 @@ askvortsov-discussion-templates:
       tag_template_button: 编辑模板
       tag_template_heading: 新主题模板
       tag_template_text: 编辑在此标签下创建新主题时的默认模板。
+  forum:
+    discussion_controls:
+      reply_template_button: 编辑回复模板
+    reply_template:
+      submit_button: 保存回复模板
+      title: 编辑回复模板

@@ -5,6 +5,12 @@
 imgur-upload:
   admin:
     settings:
+      embed-type:
+        full-with-link: 全尺寸原图带超链接
+        full-without-link: 全尺寸原图无链接
+        preview-with-link: '预览图 (1024px) 并链接至原图'
+        preview-without-link: 无链接预览图
+        title: 嵌入类型
       hide-markdown-image: '隐藏 Markdown 图片按钮'
       title: 'Imgur 上传设置'
   forum:

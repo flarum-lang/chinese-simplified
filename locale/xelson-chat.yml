@@ -36,6 +36,28 @@ pushedx-chat:
       minimize: 最小化
       title: 聊天室
 xelson-chat:
+  admin:
+    permissions:
+      create:
+        channel: 发起聊天频道
+      delete: 删除聊天消息
+      edit: 编辑聊天消息
+      enabled: 启用聊天
+      moderate:
+        delete: 删除聊天消息
+        vision: 查看删除的消息
+      post: 发送聊天消息
+    settings:
+      charlimit: 最大消息字符数
+      display:
+        censor: 对未经授权的用户进行信息审查
+        minimize: 最小化
+        title: 显示
+      floodgate:
+        number: 连续发送消息数
+        time: 冷静期
+        title: 防刷屏
+      title: 聊天设置
   forum:
     chat:
       edit_modal:
@@ -43,6 +65,9 @@ xelson-chat:
           color:
             validator: 十六进制格式
           delete:
+            button: 删除聊天
+            desc: 复制并粘贴聊天名称以继续
+            placeholder: 聊天名称
             title: 确定要删除这个聊天吗？
           icon:
             validator: '=> core.ref.icon_text'
@@ -54,13 +79,86 @@ xelson-chat:
             edit: 选择或编辑用户
         moderator:
           got: '你获得了审阅人权限：{chatname}！'
-          lost: '你失去了审阅人权限：{chatname}！'
+          lost: '你已被取消 {chatname} 的管理员身份。'
+        save_button: '=> core.ref.save_changes'
+        search:
+          failed: 找不到用户
+          invited: 已邀请
+          placeholder: 搜索用户
         title: 聊天设置
       kick: 抖一抖
       leave: 离开
+      list:
+        add_modal:
+          alerts:
+            exists: 已存在一个与此用户的私人会话！
+          channel: 频道
+          chat: 聊天
+          create:
+            channel: 发起新频道
+            chat: 发起新聊天
+          form:
+            color:
+              validator: '=> xelson-chat.forum.chat.edit_modal.form.color.validator'
+            icon:
+              validator: '=> core.ref.icon_text'
+            title:
+              channel: 频道名称
+              chat: 聊天名称
+              validator: '至少 1 字符'
+            users: 已选择用户
+          search:
+            failed: 找不到用户
+            invited: 已邀请
+            placeholder: 搜索用户
+          title: 选择用户
+        pin: 固定
+        placeholder: 筛选会话
+        preview:
+          empty: 暂无消息
+        unpin: 取消固定
+      message:
+        actions:
+          hide: 隐藏
+          resend: 重试
+        censored: 登录以查看消息！
+        deleted: 已删除
+        deleted_forever: 永久删除
+        events:
+          channel:
+            created: '{creatorname} 创建频道 {chatname}'
+          chat:
+            created: '{creatorname} 创建 {chatname} 并邀请 {usernames}'
+          color:
+            edited: '{editorname} 将聊天颜色 {old} 修改为 {new}'
+          icon:
+            edited: '{editorname} 将聊天图标 {old} 修改为 {new}'
+          pm:
+            created: '{creatorname} 和 {username} 创建聊天'
+          self:
+            entered: '{username} 进入聊天'
+            leaved: '{username} 离开了聊天'
+          title:
+            edited: '{editorname} 将聊天名称 {old} 修改为 {new}'
+          users:
+            invited: '{editorname} 邀请 {usernames}'
+            invited_kicked: '{editorname} 邀请 {invitednames} 并移出 {kickednames}'
+            kicked: '{editorname} 移出 {usernames}'
+        type:
+          code: '<Code />'
+          event: 事件
+          url: URL
+        you: 你
       moder: 审阅人
+      placeholder: 输入消息...
       welcome:
         header: '欢迎来到 Neon 聊天室！'
+    errors:
+      chatdenied: 你的用户组无消息发送权限
+      removed: 你被移出聊天
+      unauthenticated: 此聊天仅限注册用户加入
+    index:
+      chat_link: 聊天
     toolbar:
       chat:
         settings: 聊天室设置

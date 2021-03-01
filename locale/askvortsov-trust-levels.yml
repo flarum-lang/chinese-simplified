@@ -6,6 +6,14 @@ askvortsov-trust-levels:
   admin:
     group_selector:
       placeholder: 选择一个用户组
+    metric_drivers:
+      best_answers: 最佳回复
+      discussions_entered: 查看的主题
+      discussions_participated: 参与的主题
+      discussions_started: 发布的主题
+      likes_given: 点赞
+      likes_received: 获得赞
+      posts_made: 发表的回复
     range_drivers:
       discussions_entered: 点击的主题帖
       discussions_participated: 参与的主题帖
@@ -23,7 +31,7 @@ askvortsov-trust-levels:
     trust_level_page:
       create_trust_level_button: 新建信任级别
       instructions_header: 功能介绍
-      instructions_text: "<li>信任级别允许您根据用户的活动自动管理用户组成员。</li>\n<li>每个信任级别都定义了必须满足的认定范围（例如发布的主题帖、发表的回复等）和一个用户组。</li>\n<li>用户在登录时，会自动添加到他们符合的所有信任级别的用户组中。</li>\n<li>由于这些组是自动管理的，因此我们建议为信任级别设置专门维护的一个或多个用户组。</li>\n<li>如果您删除了一个信任级别，您还应该删除相关的用户组；否则，该信任级别中的用户将继续留在该组中。</li>\n<li>为了防止出错，您不能在创建信任级别的用户组之后，编辑该组。</li>\n<li>未包含的范围不会被计算。如果一个信任级别的所有认定范围都被禁用，所有用户都将达到该信任级别。</li>\n<li>如果一个用户组由多个信任级别管理，只要用户达到其中任意一个信任级别，就会被添加到对应用户组中。</li>\n"
+      instructions_text: "<li>信任级别允许您根据用户的活动自动管理用户组成员。</li>\n<li>每个信任级别都定义了必须满足的指标（例如发布的主题帖、发表的回复等）和一个用户组。</li>\n<li>用户在登录时，会自动添加到他们符合的所有信任级别的用户组中。</li>\n<li>由于这些组是自动管理的，因此我们建议为信任级别设置专门维护的一个或多个用户组。</li>\n<li>如果您删除了一个信任级别，您还应该删除相关的用户组；否则，该信任级别中的用户将继续留在该组中。</li>\n<li>为了防止出错，您不能在创建信任级别的用户组之后，编辑该组。</li>\n<li>未包含的指标不会纳入计算。如果一个信任级别的所有认定指标都被禁用，所有用户都将达到该信任级别。</li>\n<li>如果一个用户组由多个信任级别管理，只要用户达到其中任意一个信任级别，就会被添加到对应用户组中。</li>\n"
       list_heading: 信任级别
   forum:
     edit_user:

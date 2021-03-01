@@ -24,6 +24,7 @@ flarum-tags:
       tags_text: 管理论坛标签列表。
     permissions:
       allow_edit_tags_label: 允许编辑标签
+      bypass_tag_counts_label: 不受标签数量限制
       restrict_by_tag_heading: 按标签分类
       tag_discussions_label: 更改标签
     tag_settings:

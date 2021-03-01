@@ -44,6 +44,7 @@ fof-masquerade:
       url: 网址
   forum:
     alerts:
+      profile-completed: 填写完成！<a>转到首页</a>
       profile-completion-required: "请完善下方必填的个人资料。\n"
     buttons:
       save-profile: 保存

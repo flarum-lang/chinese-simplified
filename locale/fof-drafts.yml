@@ -25,6 +25,7 @@ fof-drafts:
     dropdown:
       alert: 确定要删除草稿吗？
       button: 删除草稿
+      delete_all_alert: 确定要删除所有草稿吗？
       delete_button: 删除草稿
       empty_text: 您还没有草稿
       schedule_button: 定时发布

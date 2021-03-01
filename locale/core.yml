@@ -92,7 +92,7 @@ core:
       driver_label: 邮件驱动
       from_label: 发件地址
       heading: '=> core.ref.email'
-      mail_encryption_label: '加密协议（ssl 或 tls）'
+      mail_encryption_label: '加密协议（小写 ssl 或 tls）'
       mail_host_label: 主机
       mail_mailgun_domain_label: 域名
       mail_mailgun_region_label: 区域
@@ -103,7 +103,7 @@ core:
       mail_ses_key_label: Key
       mail_ses_region_label: 区域
       mail_ses_secret_label: Secret
-      mail_username_label: 用户名（一般同发件地址）
+      mail_username_label: 用户名（部分邮件服务商要求用户名必须与发件地址一致）
       mailgun_heading: 'Mailgun 设置'
       mandrill_heading: 'Mandrill 设置'
       not_sending_message: 'Flarum 当前无法发送电子邮件，请检查邮件驱动及其配置。'
@@ -117,6 +117,7 @@ core:
       text: 配置论坛发信服务方式。
       title: '=> core.ref.email'
     extension:
+      configure_scopes: 设置范围
       confirm_uninstall: 该扩展程序相关的数据库内容和文件资源将被永久性删除。确定要卸载吗？
       disabled: 关闭
       enable_to_see: 开启扩展程序以查看或修改设置。
@@ -211,6 +212,7 @@ core:
       signup_closed_button: 关闭注册
       signup_open_button: 开放注册
     settings:
+      saved_message: 您的修改已保存。
       submit_button: '=> core.ref.save_changes'
     upload_image:
       remove_button: '=> core.ref.remove'

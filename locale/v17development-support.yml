@@ -11,7 +11,7 @@ v17development-flarum-support:
       body: "尊敬的用户 {recipient_display_name}，\n\n近期 {replier_display_name} 于  {replied_date} 回复了您的工单 #{ticket_id}，我们正在等候您的回复。\n\n您的工单链接：\n{url}\n\n如果此问题已解决，请将工单标记为已解决。\n"
       subject: '工单 #{ticket_id} 需要您的回复'
     ticket_pending_reply_closed:
-      body: "尊敬的用户 {recipient_display_name}，\n\n近期 {replier_display_name} 回复了您的工单 #{ticket_id}。很遗憾我们没有收到您的回复。因此我们已经关闭了您的工单。\n\n如果您还需回复，请点击下方工单链接：\n{url}"
+      body: "尊敬的用户 {recipient_display_name}，\n\n近期 {replier_display_name} 回复了您的工单 #{ticket_id}。由于长时间未得到您的回复，您的工单已被自动关闭。\n\n如您的问题没有解决，您可以再次回帖：\n{url}"
       subject: '工单 #{ticket_id} 由于没有活动现已关闭'
     ticket_resolved:
       body: "尊敬的用户 {recipient_display_name}，\n\n您的工单 #{ticket_id} 被标记为已解决，并已关闭。\n\n您的工单链接：\n{url}\n\n如果您对此标记有异议，请回复工单以重新打开。\n"
@@ -170,11 +170,13 @@ v17development-flarum-support:
         description: 真棒，今天又是帮助他人的一天。
         no_tickets: 暂无工单分配给您。
         title: 工单概览
+      reminders_sent: '一条提醒已发送|{count} 条提醒已发送'
       return_to_overview: 返回工单概览
       status:
         closed:
           close_after_posting: 回复并关闭工单
           description: 此工单已被关闭。
+          is_auto_closed: 由于长时间未得到您的回复，此工单已关闭。
           is_closed: 此工单已关闭，回复工单以重新打开。当问题尚未解决时请重新打开工单，若有新问题，请创建新工单。
           title: 已关闭
         duplicate:
@@ -199,6 +201,7 @@ v17development-flarum-support:
           title: 已解决
       subject: 主题
       ticket: 工单
+      ticket_activity: '由 {username} 创建 · 最后更新 {date}'
       ticket_does_not_exist: 请求的客服工单不存在。
       ticket_overview: 工单概览
       tools:

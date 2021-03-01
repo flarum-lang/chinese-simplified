@@ -8,13 +8,15 @@ kilowhat-custom-paths:
       disabled: 未启用该扩展
       extensions:
         askvortsov-categories: 'Askvortsov 传统板块'
-        flarum-flags: 'Flarum 举报相关'
-        flarum-subscriptions: 'Flarum 订阅相关'
-        flarum-tags: 'Flarum 标签相关'
+        flarum-flags: 'Flarum 小黑屋'
+        flarum-subscriptions: 'Flarum 我的关注'
+        flarum-tags: 'Flarum 标签'
+        fof-byobu: 'FoF 私密主题'
         fof-gamification: 'FriendsOfFlarum 游戏化'
         fof-pages: 'FoF 静态页面'
         fof-user-directory: 'FoF 会员名录'
         kilowhat-formulaire: 'KILOWHAT Formulaire'
+        v17development-blog: 'v17development Flarum 博客'
       head:
         name: 页面名称
         path: 路径

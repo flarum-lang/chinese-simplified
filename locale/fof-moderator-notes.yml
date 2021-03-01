@@ -27,5 +27,6 @@ fof-moderator-notes:
       noNotes: 还没有人发表留言，何不坐第一个沙发？
       no_content_given: 无法发表空留言。
       submit_button: 发表
+    no_content_given: 禁止空留言。
     user:
       notes: 留言板

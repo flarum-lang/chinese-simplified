@@ -3,6 +3,23 @@
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
 nearata-embed-video:
+  admin:
+    settings:
+      options:
+        airplay: 隔空播放
+        hotkey: 热键
+        lang: 播放器语言
+        logo: '标志 URL'
+        quality_switching: 允许切换视频质量
+        theme: 主题色
+      permissions:
+        can_create_video_player: 允许创建视频播放器
+      video_types:
+        dash: DASH（自适应流媒体传输）
+        flv: FLV
+        hls: HLS
+        shaka: Shaka
+        webtorrent: WebTorrent
   forum:
     button_tooltip_title: 嵌入视频
     modal:

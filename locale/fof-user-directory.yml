@@ -11,8 +11,11 @@ fof-user-directory:
       link: 在论坛首页侧边栏添加「会员名录」选项卡
       title: 会员名录设置
   forum:
+    header:
+      back_to_user_directory_tooltip: 返回会员名录
     page:
       empty_text: 抱歉，没有找到匹配的用户。
+      filter_button: 筛选群组
       load_more_button: '=> core.ref.load_more'
       nav: 会员名录
       refresh_tooltip: '=> core.forum.index.refresh_tooltip'
@@ -30,6 +33,8 @@ fof-user-directory:
         username_az: 用户名（a-z）
         username_za: 用户名（z-a）
     search:
+      field:
+        placeholder: 搜索用户
       users_heading: '搜索用户「{query}」'
   lib:
     sort:

@@ -8,6 +8,7 @@ fof-discussion-language:
       allow_change_language_label: 允许编辑主题语言
     settings:
       composer_default_label: 在文本编辑器中预选当前语言
+      locale_sort_label: 将用户语言环境设为默认筛选
       native_label: 使用母语
       show_flag_label: 在国旗后显示语言名称
       title: 'FoF 主题语言'

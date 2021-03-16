@@ -118,7 +118,7 @@ core:
       title: '=> core.ref.email'
     extension:
       configure_scopes: 设置范围
-      confirm_uninstall: 该扩展程序相关的数据库内容和文件资源将被永久性删除。确定要卸载吗？
+      confirm_uninstall: 此扩展的的数据库条目和文件资源都将被永久性删除，确定要继续吗？
       disabled: 关闭
       enable_to_see: 开启扩展程序以查看或修改设置。
       enabled: 开启
@@ -185,7 +185,9 @@ core:
       delete_posts_label: 删除回复
       description: 设置各用户组访问及操作权限
       edit_posts_label: 编辑回复
-      edit_users_label: 编辑用户
+      edit_users_credentials_label: 编辑用户身份标识
+      edit_users_groups_label: 编辑用户组
+      edit_users_label: 编辑用户入口
       global_heading: 全局
       moderate_heading: 管理相关
       new_group_button: 添加用户组
@@ -289,6 +291,7 @@ core:
       email_heading: '=> core.ref.email'
       email_label: '=> core.ref.email'
       groups_heading: 用户组
+      nothing_available: 暂无可供您编辑的项目。
       password_heading: '=> core.ref.password'
       password_label: '=> core.ref.password'
       set_password_label: 设置新密码

@@ -40,6 +40,7 @@ xelson-chat:
     permissions:
       create:
         channel: 发起聊天频道
+        chat: 发起聊天
       delete: 删除聊天消息
       edit: 编辑聊天消息
       enabled: 启用聊天
@@ -63,6 +64,7 @@ xelson-chat:
       edit_modal:
         form:
           color:
+            label: 颜色
             validator: 十六进制格式
           delete:
             button: 删除聊天
@@ -70,10 +72,12 @@ xelson-chat:
             placeholder: 聊天名称
             title: 确定要删除这个聊天吗？
           icon:
+            label: '=> core.ref.icon'
             validator: '=> core.ref.icon_text'
           leave: 退出聊天
           return: 加入聊天
           title:
+            label: 聊天名称
             validator: '至少 1 个字符'
           users:
             edit: 选择或编辑用户
@@ -99,8 +103,10 @@ xelson-chat:
             chat: 发起新聊天
           form:
             color:
+              label: '=> xelson-chat.forum.chat.edit_modal.form.color.label'
               validator: '=> xelson-chat.forum.chat.edit_modal.form.color.validator'
             icon:
+              label: '=> core.ref.icon'
               validator: '=> core.ref.icon_text'
             title:
               channel: 频道名称
@@ -151,14 +157,17 @@ xelson-chat:
         you: 你
       moder: 审阅人
       placeholder: 输入消息...
+      rejoin: 重新加入
       welcome:
         header: '欢迎来到 Neon 聊天室！'
+        subheader: 请选择左边的聊天以进行会话
     errors:
       chatdenied: 你的用户组无消息发送权限
       removed: 你被移出聊天
       unauthenticated: 此聊天仅限注册用户加入
     index:
       chat_link: 聊天
+    pusher_not_found: '实时聊天需要 Pusher 或 Websockets。'
     toolbar:
       chat:
         settings: 聊天室设置

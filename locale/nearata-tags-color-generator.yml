@@ -22,3 +22,12 @@ nearata-tags-color-generator:
       light: 浅色
       random: 随机
     generate_color_button: 生成随机颜色
+    text_color:
+      custom_helptext: '请使用十六进制、RGB(A) 或 HLS(A) 色码。'
+      custom_label: 自定义文本色
+      label: 文本色
+      options:
+        custom: 自定义颜色
+        default: 默认
+        theme_primary_color: 主题主色调
+        theme_secondary_color: 主题次色调

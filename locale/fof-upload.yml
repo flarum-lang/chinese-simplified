@@ -8,6 +8,7 @@ fof-upload:
       save: 保存设置
     help_texts:
       client_extension: "默认情况下，上传器将根据 MIME 类型选择一个安全的文件扩展名。\n对于某些基于 ZIP 或二进制数据的文件类型，这可能导致使用不正确的通用扩展名。\n在这里，您可以输入一个逗号分隔的文件扩展名列表，该列表将被逐字保留。\n"
+      composer_buttons: "默认情况下，媒体管理按钮和上传按钮皆可见。您可以选择只显示其中一个按钮。\n"
       description: "文件上传服务与设置\n"
       disable-download-logging: "（默认启用）保持开启，以便在将来查看下载记录及其他数据。打开下方的开关，即可停止记录下载日志。\n"
       disable-hotlink-protection: "（默认启用）防盗链将通过验证 CSRF TOKEN 和 POST ID 来保护你的文件不会被其他站点调用下载。\n"
@@ -30,6 +31,12 @@ fof-upload:
         use_path_style_endpoint: '使用 path-style 访问域名'
       client_extension:
         title: 用户自定义文件扩展名
+      composer_buttons:
+        options:
+          both: 全部显示
+          media-btn: 仅媒体管理按钮
+          upload-btn: 仅上传按钮
+        title: 编辑器按钮
       disable-download-logging:
         title: 下载历史统计
         toggle: 停用
@@ -72,8 +79,10 @@ fof-upload:
       description: 设置上传服务和首选项。
       title: 上传
     permissions:
+      delete_uploads_of_others_label: 删除用户上传的文件
       download_label: 允许下载文件
       upload_label: 允许上传文件
+      view_user_uploads_label: 查看用户上传的文件
     templates:
       file: 默认文件下载模板
       file_description: "显示文件名以及一些基本信息，经 php 代理下载，允许统计以及热链保护。\n"
@@ -97,6 +106,26 @@ fof-upload:
   forum:
     buttons:
       attach: 添加附件
+      cancel: 取消
+      media: 我的文件
+      upload: 上传
+      user_uploads: 用户上传
+    file_list:
+      confirm_selection_btn: 嵌入|嵌入
+      empty: 没有可展示的文件。
+      hide_file:
+        btn_a11y_label: '在文件管理器中隐藏「{fileName}」'
+        hide_confirmation: '确定要隐藏「{fileName}」吗？文件只会从你的文件管理器中消失，并不会影响已嵌入文件的帖子。'
+        hide_fail: '无法隐藏文件「{fileName}」'
+        hide_success: 文件隐藏
+        loading: 正在隐藏文件……
+      load_more_files_btn: 加载更多
+      loading: 加载文件中……
+      modal_empty_desktop: 你还没有上传过文件。点击按钮或拖拽文件到这里开始上传吧。
+      modal_empty_phone: 你还没有上传过文件。点击上方按钮开始上传吧。
+      release_to_upload: 松开鼠标上传
+      select_file_a11y_label: '选择文件「{fileName}」'
+    media_manager: 媒体管理器
     states:
       error: 错误
       loading: 加载中

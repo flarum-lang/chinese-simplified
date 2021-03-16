@@ -35,7 +35,7 @@ validation:
       regex: 用户名只能包含字母、数字及连字符（-）
   date: ':attribute 不是一个合法的日期'
   date_equals: ':attribute 必须是等于 :date 的日期'
-  date_format: ':attribute 的格式必须为 :other'
+  date_format: ':attribute 的格式必须为 :format'
   different: ':attribute 及 :other 不得相同'
   digits: ':attribute 必须是 :digits 位数字'
   digits_between: ':attribute 必须介于 :min 至 :max 位数字之间'

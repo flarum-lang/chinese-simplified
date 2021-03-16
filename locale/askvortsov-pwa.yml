@@ -21,6 +21,9 @@ askvortsov-pwa:
       logo_heading: 标志（Logo）和图标（Icon）
       logo_size_text: '上传标志，标志将缩放为 {size} × {size} 像素。'
       logo_text: "您必须至少上传一个标志使您的渐进式 Web 应用可被安装。请注意，所有标志必须为正方形。如果不是，它们将被拉伸调整为正方形。\n以下有多种尺寸选择。建议您补全所有尺寸的标志：以适配更多屏幕尺寸的设备。\n请注意，您可以将一个大尺寸标志上传到小尺寸标志。例如，您可以将 1000px * 1000px 的标志上传到下面所有的尺寸中。但是，如果您尝试将 50px * 50px 的标志上传到 512px * 512px 中，标志会被拉伸失真很多。\n"
+      maintenance:
+        debug_label: '调试模式？这将会在 `storage/logs` 中记录通知信息。'
+        heading: 维护
       refreshed_message: 'PWA 配置刷新成功。'
       status_check_heading: 状态检查
       submit_button: 保存设置

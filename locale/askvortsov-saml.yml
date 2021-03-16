@@ -4,6 +4,8 @@
 
 askvortsov-saml:
   admin:
+    header:
+      text: '请确保元数据 URL 或元数据都已填写。'
     labels:
       idp_metadata: '身份提供商元数据 XML（替代 URL）'
       idp_metadata_url: '身份提供商元数据 URL（替代 XML）'

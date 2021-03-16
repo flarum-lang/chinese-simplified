@@ -5,7 +5,7 @@
 askvortsov-rich-text:
   admin:
     settings:
-      toggle_on_editor: 在编辑器显示富文本模式开关
+      toggle_on_editor: 在编辑器显示富文本切换按钮
   forum:
     composer:
       additional_items_tooltip: 杂项

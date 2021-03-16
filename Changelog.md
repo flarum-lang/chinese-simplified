@@ -1,3 +1,30 @@
+# 2021-3-16
+# 🌟 v0.1.0-beta.16
+【Beta 16】
+1. [`flarum/core`](https://github.com/flarum/core) 新增：编辑用户权限分离（入口、用户组和身份标识）。
+
+【新增】
+1. [askvortsov/checklist](https://github.com/askvortsov1/flarum-checklist) Markdown 清单。
+2. [askvortsov/markdown-tables](https://github.com/askvortsov1/flarum-markdown-tables) Markdown 表格。
+3. [askvortsov/rich-text](https://github.com/askvortsov1/flarum-rich-text) 所及即所得富文本编辑器。
+4. [`davwheat/custom-sidenav-links`](https://github.com/davwheat/flarum-ext-custom-sidenav-links) 侧栏链接。
+5. [`flarumi/oauth-instagram`](https://github.com/flarumi/oauth-instagram) Instagram 登录。
+6. [`flarumi/oauth-vkontakte`](https://github.com/flarumi/oauth-vkontakte) VK 登录。
+7. [`flarumi/oauth-yandex`](https://github.com/flarumi/oauth-yandex) Yandex 登录。
+8. [`flarumite/simple-spoilers`](https://github.com/flarumite/simple-spoilers) 折叠文字。
+9. [`sycho/flarum-action-log`](https://github.com/SychO9/flarum-action-log) 活动日志。
+
+【更新】
+1. [`askvortsov/flarum-pwa`](https://github.com/askvortsov1/flarum-pwa) 新增：通知信息日志。
+2. [`dem13n/discussion-cards`](https://github.com/Dem13n/discussion-cards) 卡片布局。新增：回复数；电脑和平板端主卡片宽度自定义。
+3. [`fof/discussion-language`](https://github.com/FriendsOfFlarum/discussion-language) 新增：检测用户语言环境，并自动选择默认筛选。
+4. [`fof/linguist`](https://github.com/FriendsOfFlarum/linguist) 语言学家。新增：前端筛选；缺失翻译筛选子项；语言包翻译统计；导入导出；
+5. [`fof/upload`](https://github.com/FriendsOfFlarum/upload) 文件上传器。新增：文件管理器。
+6. [`fof/user-directory`](https://github.com/FriendsOfFlarum/user-directory) 会员名录。新增：用户搜索；用户组筛选；返回按钮。
+7. [`nearata/flarum-ext-embed-video`](https://github.com/Nearata/flarum-ext-embed-video) 视频嵌入。新增：播放器语言；隔空播放；视频质量切换；视频类型。
+8. [`nearata/flarum-ext-tags-color-generator`](https://github.com/Nearata/flarum-ext-tags-color-generator) 标签颜色生成器。新增：文本颜色；
+9. [`xelson/flarum-ext-chat`](https://github.com/Xelson/flarum-ext-chat) 聊天室。新增：发起聊天权限；聊天名称和颜色修改。
+
 # 2021-3-1
 # 🌟 v0.1.0-beta.15.2
 【Beta 16 准备】
@@ -24,7 +51,7 @@
 17. [`v17development/flarum-support`](https://extiverse.com/extension/v17development/flarum-support) 工单系统 💰。新增：创建者和更新日期显示；发送提醒提示；长时间未回复的工单会被关闭。
 18. [`xelson/flarum-ext-chat`](https://github.com/Xelson/flarum-ext-chat) 聊天室。新增：私人会话。
 
-
+全部变化：[v0.1.0-beta.15.1...v0.1.0-beta.15.2](https://github.com/FFans/lang-simplified-chinese/compare/v0.1.0-beta.15.1...v0.1.0-beta.15.2)
 
 # 2021-1-24
 # 🌟 v0.1.0-beta.15.1

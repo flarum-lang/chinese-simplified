@@ -29,7 +29,7 @@
     "issues": "https://github.com/FFans/lang-simplified-chinese/issues"
   },
   "require": {
-    "flarum/core": ">=0.1.0-beta.14 <0.1.0-beta.16"
+    "flarum/core": ">=0.1.0-beta.14 <0.1.0-beta.17"
   },
   "replace": {
     "littlegolden/flarum-lang-simplified-chinese": "*"

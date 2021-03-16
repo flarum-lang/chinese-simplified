@@ -9,7 +9,13 @@ dem13n:
       badges: 显示徽章
       choose_tags: 选择标签
       default_img: 默认头图
+      desktop_card_width: '桌面屏幕主卡片宽度：{percent}%'
+      output_on_index_page: 首页输出
       preview_text: 显示短文本
-      small_cards: 小尺寸卡片数量
+      settings_error: 清除缓存，禁用那个扩展，点击右上角的卸载按钮，确认删除数据。然后重新启用本扩展
+      show_replies: 显示回复数
+      small_cards: 主卡片数量
+      tablet_card_width: '平板端主卡片宽度：{percent}%'
   forum:
     last_reply: '最新回复： '
+    replies: '{count} 回复'

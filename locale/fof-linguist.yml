@@ -7,28 +7,88 @@ fof-linguist:
     buttons:
       apply: 应用
       copy-original: 复制原文
+      delete-all: 删除所有翻译
+      delete-all-confirm: "这将会删除所有 {count} 条自定义翻译。为了防止你后悔，请在导出或备份所有翻译后再执行此操作。\n"
+      delete-redundant: 删除冗余的翻译
+      delete-redundant-confirm: "这将会删除 {count} 条原始值与自定义值相同的翻译。这对语言包更新后产生的冗余内容具有不错的清理效果。\n"
       load-more: 加载更多
       reset: 重置
     clear-cache:
       button: 立刻清理缓存
       text: "新增翻译尚未部署。注意：清理缓存后的论坛首次加载速度会变慢。\n"
+    coverage:
+      all-namespaces: 全部
+      apply-missing-filter: 显示匹配的缺失翻译
+      column-options:
+        locale: 语言包
+        namespace: 前端
+      columns:
+        all-except-admin: 论坛和其他前端项
+        all-frontends: 展开所有前端项
+        namespace: 命名空间
+        total: 总计
+      count:
+        details: '总计 {total} / 原始 {original} / 自定义 {custom}'
+        percent: '{percent} %'
+        total: '{translated} / {total}'
+      total-options:
+        count: 计数
+        percent: 百分比
+    export:
+      download: 下载
+      include-all: 包含定义为「全部」语言的翻译
+      include-originals: 包含原始翻译
+      locale: 语言
+      locale-all: 伪语言「全部」
+      namespace: 命名空间
+      namespace-all: 全部
+      output: 输出
+      output-empty: 空输出
+      output-loading: 正在加载输出……
+      title: 导出
+      warning: "导出的翻译格式是 Flarum 使用的 Yaml 文件，此功能旨在论坛之间或与语言包维护者共享翻译。该格式不是为了将所有翻译移到新的论坛上而设计的。根据您的使用情况，直接复制数据库可能是一个更好的办法。\n"
     filters:
       for-extension: 筛选插件
       for-extension-unavailable: "命名空间「{namespace}」没有翻译资源。 这个插件可能没有需要翻译的内容，或者使用了其他命名空间。 尝试搜索翻译文本来定位翻译资源吧。\n"
-      missing: 查找缺失的翻译
-      missing-middle-label: 语言
+      frontend: 前端筛选
+      frontend-all-except-admin: 全部
+      mass-edit: 更多
+      missing: 查找缺失翻译
+      missing-middle-label: 翻译
       negation-options:
         with: 有
-        without: 没有
+        without: 无
+      operation-options:
+        and: 同时存在于
+        or: 任意存在于
       results: '已显示 {shown} 条匹配翻译，共 {total} 条'
       search: 搜索翻译文本、翻译键...
       type-options:
-        any: 原始或自定义翻译
-        original: 原始翻译
-        own: 自定义翻译
+        any: 原始或自定义
+        original: 原始
+        own: 自定义
       with-original-translations-in-locales: 有原文翻译
       with-own-translations: 自定义翻译
       without-original-translations-in-locales: 无原文翻译
+    import:
+      input: 在此输入
+      input-placeholder: '拖拽或粘贴 Yaml 文件到此处'
+      locale: 语言
+      locale-all: 伪语言「全部」
+      override-existing: 覆盖已存在的自定义翻译
+      results: "导入完成。已导入 {imported} 字符串，已跳过 {identical} 重复的字符串。当前页面即将刷新以加载新翻译。\n"
+      results-with-ignore: "导入完成。已导入 {imported} 字符串，已跳过 {ignored} 已存在的字符串、{identical} 重复的字符串。当前页面即将刷新以加载新翻译。\n"
+      submit: 导入
+      title: 导入
+    known-frontend:
+      admin: 管理面板
+      api: 接口
+      forum: 论坛
+      lib: Lib（论坛和管理面板共用）
+      ref: 'Ref (被其他键复用)'
+    known-namespace:
+      core: 'Flarum 核心'
+      validation: 数据校验错误
     locales:
       all: 全部
     menu:
@@ -38,3 +98,8 @@ fof-linguist:
       all-locales: 所有语言的最高优先级翻译
       hint: 原文内容：
       not-translated: 未翻译
+    tabs:
+      coverage: 覆盖率
+      export: 导出
+      import: 导入
+      strings: 翻译

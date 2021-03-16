@@ -4,7 +4,93 @@
 
 sycho-action-log:
   admin:
-    action_settings: 在这里设置记录哪些类型的活动
+    action_settings: 在这里设置记录哪些类型的活动。
+    actions:
+      administration:
+        extension:
+          disabled:
+            action: '禁用扩展 {extension}'
+            label: 禁用
+          enabled:
+            action: '启用扩展 {extension}'
+            label: 启用
+          label: 扩展
+          uninstalled:
+            action: '卸载扩展 {extension}'
+            label: 卸载
+        group:
+          created:
+            action: '创建用户组 {group}'
+            label: 创建
+          deleted:
+            action: '删除用户组 {group}'
+            label: 删除
+          label: 用户组
+        label: 管理员
+        permission:
+          edited:
+            action: '设置权限 {permission} 到 {groups}'
+            label: 设置
+          label: 权限
+        tag:
+          created:
+            action: '创建标签 {tag}'
+            label: 创建
+          deleted:
+            action: '删除标签 {tag}'
+            label: 删除
+          label: 标签
+      moderation:
+        discussion:
+          deleted:
+            action: '删除主题 {discussion}'
+            label: 删除
+          hidden:
+            action: '隐藏主题 {discussion}'
+            label: 隐藏
+          label: 主题帖
+          locked:
+            action: '锁定主题 {discussion}'
+            label: 锁定
+          renamed:
+            action: '重命名 {oldTitle} 为 {discussion}'
+            label: 重命名
+          restored:
+            action: '还原主题 {discussion}'
+            label: 还原
+          stickied:
+            action: '置顶主题 {discussion}'
+            label: 置顶
+          tagged:
+            action:
+              add: '添加 {tags} 于 {discussion}'
+              add_remove: '添加 {tags}，删除 {oldTags} 于 {discussion}'
+              remove: '删除 {oldTags} 于 {discussion}'
+              tags_text: '{tags} 标签|{tags} 标签'
+            label: 标签
+          unlocked:
+            action: '解锁主题 {discussion}'
+            label: 解锁
+          unstickied:
+            action: '取消置顶主题 {discussion}'
+            label: 取消置顶
+        label: 版主
+        post:
+          approved:
+            action: '批准 {author} 发表于 {discussion} 的 {post}'
+            label: 批准
+          label: 帖子
+        user:
+          activated:
+            action: '激活用户 {u}'
+            label: 激活
+          label: 用户
+          suspended:
+            action: '封禁用户 {u}'
+            label: 封禁
+          unsuspended:
+            action: '解除封禁用户 {u}'
+            label: 解除封禁
     clear: 清空日志
     clear_confirmation: 确定要清空日志吗？此操作不可撤销。
     description: 查看过去一周所有版主和管理员的活动日志。
@@ -12,6 +98,8 @@ sycho-action-log:
       description: 您可以在搜索时使用以下筛选（例如筛选类型：版主）
       items:
         action: 活动名称（删除、创建、启用、标签等等）
+        actor: 行动实施者姓名
+        resource: 采取行动的资源类型（例如主题帖）
         type: '活动类型（版主 / 管理员）'
       label: 高级搜索
     no_entries: 无日志
@@ -23,4 +111,4 @@ sycho-action-log:
       newest: '=> core.forum.index_sort.newest_button'
       oldest: '=> core.forum.index_sort.oldest_button'
     title: 活动日志
-    total_entries: '总计 {count} 条日志'
+    total_entries: '总计 {count} 条日志。'

@@ -98,7 +98,7 @@ sycho-action-log:
       description: 您可以在搜索时使用以下筛选（例如筛选类型：版主）
       items:
         action: 活动名称（删除、创建、启用、标签等等）
-        actor: 行动实施者姓名
+        actor: 行动实施者的外显名称。
         resource: 采取行动的资源类型（例如主题帖）
         type: '活动类型（版主 / 管理员）'
       label: 高级搜索

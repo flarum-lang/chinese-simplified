@@ -1,12 +1,38 @@
+# 2021-3-22
+# 🌟 v0.1.0-beta.16.1
+
+【核心】
+1. [`flarum/core`](https://github.com/flarum/core) 新增：各类下拉菜单开关。
+
+【新增】
+1. [`clarkwinkelmann/flarum-ext-post-permissions`](https://github.com/clarkwinkelmann/flarum-ext-post-permissions) 额外帖子权限。
+2. [nearata/flarum-ext-embed-twitch](https://github.com/Nearata/flarum-ext-embed-twitch) Twitch 嵌入。
+
+【更新】
+1. [`fof/forum-statistics-widget`](https://github.com/FriendsOfFlarum/forum-statistics-widget) 论坛小部件。新增：各统计项目独立展示权限。
+2. [`jslirola/flarum-ext-login2seeplus`](https://github.com/jslirola/flarum-ext-login2seeplus) 新增：显示全部内容长度功能。
+3. [`migratetoflarum/fake-data`](https://github.com/migratetoflarum/fake-data) 新增：生成主题数、主题标签、生成时间设置。
+4. [`nearata/flarum-ext-minecraft-avatars`](https://github.com/Nearata/flarum-ext-minecraft-avatars) 恢复：用户名功能。有修改
+5. [`sycho/…advanced-extension-categories`](https://github.com/SychO9/flarum-advanced-extension-categories) 新增：插件启用状态排序。
+6. [`v17development/flarum-user-badges`](https://github.com/v17development/flarum-user-badges) 用户徽章。
+
+全部变化：[v0.1.0-beta.16...v0.1.0-beta.16.1](https://github.com/FFans/lang-simplified-chinese/compare/v0.1.0-beta.16...v0.1.0-beta.16.1)
+
+
 # 2021-3-16
 # 🌟 v0.1.0-beta.16
+
+兼容范围：beta 14, 15, 16
+
+以下是更新内容：
+
 【Beta 16】
 1. [`flarum/core`](https://github.com/flarum/core) 新增：编辑用户权限分离（入口、用户组和身份标识）。
 
 【新增】
-1. [askvortsov/checklist](https://github.com/askvortsov1/flarum-checklist) Markdown 清单。
-2. [askvortsov/markdown-tables](https://github.com/askvortsov1/flarum-markdown-tables) Markdown 表格。
-3. [askvortsov/rich-text](https://github.com/askvortsov1/flarum-rich-text) 所及即所得富文本编辑器。
+1. [`askvortsov/checklist`](https://github.com/askvortsov1/flarum-checklist) Markdown 清单。
+2. [`askvortsov/markdown-tables`](https://github.com/askvortsov1/flarum-markdown-tables) Markdown 表格。
+3. [`askvortsov/rich-text`](https://github.com/askvortsov1/flarum-rich-text) 所及即所得富文本编辑器。
 4. [`davwheat/custom-sidenav-links`](https://github.com/davwheat/flarum-ext-custom-sidenav-links) 侧栏链接。
 5. [`flarumi/oauth-instagram`](https://github.com/flarumi/oauth-instagram) Instagram 登录。
 6. [`flarumi/oauth-vkontakte`](https://github.com/flarumi/oauth-vkontakte) VK 登录。
@@ -24,6 +50,8 @@
 7. [`nearata/flarum-ext-embed-video`](https://github.com/Nearata/flarum-ext-embed-video) 视频嵌入。新增：播放器语言；隔空播放；视频质量切换；视频类型。
 8. [`nearata/flarum-ext-tags-color-generator`](https://github.com/Nearata/flarum-ext-tags-color-generator) 标签颜色生成器。新增：文本颜色；
 9. [`xelson/flarum-ext-chat`](https://github.com/Xelson/flarum-ext-chat) 聊天室。新增：发起聊天权限；聊天名称和颜色修改。
+
+全部变化：[v0.1.0-beta.15.2...v0.1.0-beta.16](https://github.com/FFans/lang-simplified-chinese/compare/v0.1.0-beta.15.2...v0.1.0-beta.16)
 
 # 2021-3-1
 # 🌟 v0.1.0-beta.15.2

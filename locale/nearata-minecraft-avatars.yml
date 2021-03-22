@@ -7,8 +7,9 @@ nearata-minecraft-avatars:
     avatar_changed: 头像更换成功。
     change_button: 更换我的世界头像
     dismiss_button: 好的
-    help_text: UUID（纯文本或连字符）
+    help_text: '必须为有效的用户名或 UUID（纯文本或连字符）'
     submit_button: 保存
     title: 我的世界头像
     use_button: 使用我的世界头像
-    username_uuid_not_valid: 'UUID 无效。'
+    username_not_found: 用户名不存在。
+    username_uuid_not_valid: '用户名或 UUID 无效。'

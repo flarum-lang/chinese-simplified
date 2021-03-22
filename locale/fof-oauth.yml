@@ -29,6 +29,10 @@ fof-oauth:
           client_id_label: '=> fof-oauth.ref.settings.client_id'
           client_secret_label: '=> fof-oauth.ref.settings.client_secret'
           description: '前往此处创建应用：{link}'
+        linkedin:
+          client_id_label: '=> fof-oauth.ref.settings.client_id'
+          client_secret_label: 你好
+          description: '前往 {link} 创建应用。'
         twitter:
           api_key_label: 'API Key'
           api_secret_label: 'API Secret'
@@ -47,6 +51,7 @@ fof-oauth:
       github: GitHub
       gitlab: GitLab
       google: Google
+      linkedin: 领英
       twitter: Twitter
   ref:
     settings:

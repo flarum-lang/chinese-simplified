@@ -5,10 +5,13 @@
 sycho-ace:
   admin:
     categories:
+      disabled: 禁用
+      enabled: 启用
       none: A-Z
     category_selection:
       label: 分类
       options:
+        availability: 启用状态
         default: 默认
         none: 无
         vendor: 供应商

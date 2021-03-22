@@ -4,6 +4,11 @@
 
 fof-forum-statistics-widget:
   admin:
+    permissions:
+      view_discussions_count_label: 查看论坛小部件主题数
+      view_lastest_member_label: 查看论坛小部件最新会员
+      view_posts_count_label: 查看论坛小部件回复数
+      view_users_count_label: 查看论坛小部件用户数
     settings:
       title: 控件设置
       widget_helper_text: '更改此设置来调整统计控件在论坛侧边栏上的位置。 值越大位置位置越高（此值可为负数）。'

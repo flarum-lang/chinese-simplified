@@ -14,7 +14,7 @@ jslirola-login2seeplus:
       title: 传统模式
     post:
       help: '值为 <em>-1</em> 表示显示全部内容。'
-      title: 隐藏超过此长度的内容
+      title: '隐藏超过此长度的内容（<em>-1</em> 表示显示全部）'
     title: '登录后可见 Plus'
   forum:
     code: 代码登录后可见

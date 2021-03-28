@@ -15,7 +15,7 @@ fof-user-directory:
       back_to_user_directory_tooltip: 返回会员名录
     page:
       empty_text: 抱歉，没有找到匹配的用户。
-      filter_button: 筛选群组
+      filter_button: 筛选用户组
       load_more_button: '=> core.ref.load_more'
       nav: 会员名录
       refresh_tooltip: '=> core.forum.index.refresh_tooltip'

@@ -7,7 +7,7 @@ fof-formatting:
     plugins:
       Autoimage: 自动识别图片链接，并实时显示图片
       Autovideo: 自动识别视频链接，并在帖子中嵌入视频
-      FancyPants: 使用精美的文本排版
+      FancyPants: '转换 ASCII 为 Unicode 标点符号'
       HTMLEntities: '使用 HTML 字符实体（详情：https://iflarum.cn/html-entities）'
       MediaEmbed: '嵌入受支持的网站的内容（支持的网站：https://iflarum.cn/s9e-embed）'
       PipeTables: 'ASCII 风格表格'

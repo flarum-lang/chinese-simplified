@@ -5,6 +5,7 @@
 imgur-upload:
   admin:
     settings:
+      allow-paste: 允许粘贴上传
       embed-type:
         full-with-link: 全尺寸原图带超链接
         full-without-link: 全尺寸原图无链接

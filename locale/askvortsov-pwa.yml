@@ -11,8 +11,9 @@ askvortsov-pwa:
       about:
         description_text: 您可以在管理面板的「常规」页面设置应用描述。
         heading: 关于
+        long_name_text: '显示给用户的 web 应用名称'
         name_text: '输入要在 PWA 中使用的长名称。'
-        short_name_text: 您可以在管理面板的「常规」页面设置简称。
+        short_name_text: 应用简称（无空间显示长名称时）
       colors:
         background_color_text: 'PWA 加载时显示的初始屏幕占位颜色，应用实际加载后不会使用它。'
         heading: 颜色

@@ -5,9 +5,11 @@
 fof-polls:
   admin:
     permissions:
+      change_vote: 修改投票
       moderate: 编辑或删除投票
       self_edit: 允许用户编辑自己发起的投票
       start: 发起投票
+      view_results_without_voting: 无需参与投票直接查看结果
       vote: 参与投票
   forum:
     composer_discussion:

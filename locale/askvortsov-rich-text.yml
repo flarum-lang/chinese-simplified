@@ -39,4 +39,5 @@ askvortsov-rich-text:
       unordered_list_tooltip: '无序列表 <shift-{modifierKey}-8>'
     settings:
       composer_heading: 文本编辑器
+      rich_text_compact_paragraphs_label: 换行时继承上行样式
       use_rich_text_editor_label: 使用富文本编辑器

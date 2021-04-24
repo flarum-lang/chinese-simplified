@@ -53,5 +53,7 @@ v17development-flarum-badges:
       remove_badge: 移除徽章
       remove_badge_confirm: 确定要移除该用户的这个徽章吗？
     select_badge: 选择徽章
+    uncategorized: '=> v17development-flarum-badges.admin.uncategorized'
     update_badge: 更新徽章
     user_has_badge: 该用户已拥有此徽章。
+    user_no_badges: 该用户尚未拥有徽章。

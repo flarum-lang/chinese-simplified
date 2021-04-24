@@ -175,6 +175,8 @@ core:
       permissions_text: 设置各用户组访问及操作权限
       permissions_title: '=> core.admin.permissions.description'
       search_placeholder: 搜索扩展程序
+      userlist_button: '=> core.admin.users.title'
+      userlist_title: '=> core.admin.users.description'
     permissions:
       allow_post_editing_label: 编辑帖子内容
       allow_renaming_label: 更改自己的主题标题
@@ -219,6 +221,35 @@ core:
     upload_image:
       remove_button: '=> core.ref.remove'
       upload_button: 选择图片...
+    users:
+      description: 论坛用户分页列表。
+      grid:
+        columns:
+          edit_user:
+            button: '=> core.ref.edit'
+            title: '=> core.ref.edit_user'
+            tooltip: '编辑 {username}'
+          email:
+            title: '=> core.ref.email'
+            visibility_hide: 隐藏邮箱地址
+            visibility_show: 显示邮箱地址
+          group_badges:
+            no_badges: 无
+            title: 用户组
+          join_time:
+            title: 已加入
+          user_id:
+            title: ID
+          username:
+            profile_link_tooltip: '访问 {username} 的主页'
+            title: '=> core.ref.username'
+        invalid_column_content: 非法
+      pagination:
+        back_button: 上一页
+        next_button: 下一页
+        page_counter: '第 {current} 页 / 共 {total} 页'
+      title: '=> core.ref.users'
+      total_users: '用户数：{count}'
   api:
     invalid_username_message: '用户名只能由字母、数字及连字符 (-) 组成'
   email:
@@ -440,6 +471,18 @@ core:
       hidden_tooltip: 隐藏
     dropdown:
       toggle_dropdown_accessible_label: 下拉菜单开关
+    edit_user:
+      activate_button: 激活用户
+      email_heading: '=> core.ref.email'
+      email_label: '=> core.ref.email'
+      groups_heading: 用户组
+      password_heading: '=> core.ref.password'
+      password_label: '=> core.ref.password'
+      set_password_label: 修改密码
+      submit_button: '=> core.ref.save_changes'
+      title: '=> core.ref.edit_user'
+      username_heading: '=> core.ref.username'
+      username_label: '=> core.ref.username'
     error:
       dependent_extensions_message: '无法停用「{extension}」，请先停用依赖扩展「{extensions}」'
       generic_message: 糟糕，出错啦！请刷新页面重试。
@@ -447,6 +490,8 @@ core:
       not_found_message: 您请求的资源不存在。
       permission_denied_message: 您没有权限进行此操作。
       rate_limit_exceeded_message: 您的操作太频繁，请稍后再试。
+    loading_indicator:
+      accessible_label: '=> core.ref.loading'
     number_suffix:
       kilo_text: 千
       mega_text: 百万
@@ -472,11 +517,13 @@ core:
     delete_forever: 永久删除
     discussions: 主题
     edit: 编辑
+    edit_user: 编辑用户
     email: 邮箱
     icon: 图标
     icon_label: 图标
     icon_text: '输入任意一个 <a>Font Awesome</a> 图标名称。<em>包括</em>前缀，例如 <code>fas fa-</code>'
     load_more: 加载更多
+    loading: 正在加载……
     log_in: 登录
     log_out: 退出
     mark_all_as_read: 将所有帖子标记为已读

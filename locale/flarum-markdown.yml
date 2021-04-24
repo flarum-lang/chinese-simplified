@@ -3,6 +3,10 @@
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
 flarum-markdown:
+  admin:
+    settings:
+      mdarea_help: 'mdarea 是一个 textarea 实用程序，可以自动接续列表、自动代码格式化和帮助缩进。'
+      mdarea_label: '启用 mdarea'
   forum:
     composer:
       bold_tooltip: 粗体

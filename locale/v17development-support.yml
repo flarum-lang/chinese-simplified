@@ -20,6 +20,7 @@ v17development-flarum-support:
       body: "尊敬的用户 {recipient_display_name}，\n\n您的工单 #{ticket_id} 状态变更为 {new_status}。\n\n您的工单链接：\n{url}\n"
       subject: '工单 #{ticket_id} 被标记为 {new_status}'
   forum:
+    admin_overview: 开启管理员评分
     article:
       article: 文章
       articles: 所有文章
@@ -121,6 +122,10 @@ v17development-flarum-support:
       finished: 感谢！您的反馈已保存。
       helful_article: 以上信息是否解决了您的问题？
       helful_support: 您满意我们对您的支持服务吗？
+      score: 评分
+      switch_sort_score:
+        description: 只看有反馈（按最低评分排序）
+        label: 从低到高评分
       validation:
         cannot_rate_article: 您无法评价这篇文章。
         guest: 请登录后再评价。
@@ -134,6 +139,10 @@ v17development-flarum-support:
         not_allowed: 您当前无法创建新客服工单
         private_support: 若需要一对一支持，您可以使用此表单在我们的客服平台上创建一个新的工单。对于非一对一支持，请参见<a>我们的公共论坛</a>。
         title: 发表新工单
+      convert_to_ticket:
+        button: 转为工单
+        confirm: 确定要将此主题帖转为工单吗？
+        event: '主题帖 {ticket_title} 已转为工单'
       fields:
         assignees:
           placeholder: 工单状态

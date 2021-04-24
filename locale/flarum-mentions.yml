@@ -3,6 +3,10 @@
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
 flarum-mentions:
+  admin:
+    settings:
+      allow_username_format_label: 允许@用户名
+      allow_username_format_text: "默认提及格式为「@昵称#ID」\n此设置允许使用旧格式「@用户名」，但是保存后仍将自动转换为新格式。\n"
   email:
     post_mentioned:
       body: "{recipient_display_name}，您好！\n\n{replier_display_name} 回复了您在《{title}》(#{post_number}) 的发言：\n\n{url}\n\n---\n\n{content}\n"
@@ -25,6 +29,8 @@ flarum-mentions:
       quote_button: 引用
       reply_link: '=> core.ref.reply'
       you_text: '=> core.ref.you'
+    post_mention:
+      deleted_text: '[未知]'
     settings:
       notify_post_mentioned_label: 有人回复了我
       notify_user_mentioned_label: 有人提到了我

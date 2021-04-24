@@ -28,8 +28,8 @@ the-turk-diff:
       separateBlock: '在相隔很多行的两个被修改段落（差异块）之间加入灰色分隔符（示例：http://t.cn/A6hcIybR）'
       textFormatting: 启用文本格式化扩展用于预览
       title: '修订记录 - 设置'
-      useCrons: '使用 Cron 计划任务归档旧修订记录'
-      useCronsHelp: '您必须将 Cron 计划任务条目添加至服务器才能使此选项生效。计划任务将在每周日凌晨 2 点执行。如果您启用了上方的归档功能，却禁用本项，那么在每次编辑完帖子后，将会扫描该帖的修订记录，以检查是否应该执行归档操作。'
+      useCrons: 使用计划任务归档旧修订记录
+      useCronsHelp: '您必须将计划任务条目添加至服务器才能使此选项生效。计划任务将在每周日凌晨 2 点执行。如果您启用了上方的归档功能，却禁用本项，那么在每次编辑完帖子后，将会扫描该帖的修订记录，以检查是否应该执行归档操作。'
       usePoint: 请使用<strong>英文句点</strong>作为浮点数的小数点分隔符。
       wordLevel: 单词级
   forum:
@@ -45,11 +45,11 @@ the-turk-diff:
       currentContent: '=> the-turk-diff.ref.currentContent'
       originalContent: '=> the-turk-diff.ref.originalContent'
       revisionWithNumber: '=> the-turk-diff.ref.revisionWithNumber'
-      sentence: '正在查看 {old} 与 {new} 之间的差异'
+      sentence: '正在查看 {old} 与 {new} 的差异'
     editedInfo: '=> core.forum.post.edited_tooltip'
     editedText: '=> core.forum.post.edited_text'
     emptyText: 无修订记录
-    noDiff: 这两个内容之间没有发现差异。
+    noDiff: 此版本之间无差异。
     optionsButton: 更多
     previewMode:
       currentContent: '=> the-turk-diff.ref.currentContent'

@@ -5,24 +5,24 @@
 flarum-ext-contactme:
   admin:
     settings:
-      emaillabel: 将向其发送联系人表单的电子邮件
+      emaillabel: 消息接收邮箱
   email:
     contact:
-      body: "你好！\n\n您已经收到来自{username}的新联系表单提交信息（电子邮件：{email}）\n\n他们的信息是：\n\n{message}\n"
-      subject: 通过表单建立新的联系
+      body: "你好！\n\n{username} 提交了一封联系表单（来源邮箱：{email}）\n\n表单内容是：\n\n{message}\n"
+      subject: 新联系表单
   forum:
     backsoon: 我们将很快回复你
-    emailfield: 写下你的电子邮件地址
-    messagesent: 信息发送！
-    notloggedin: 请登入以使用联络表格
-    pText: "<p>通过填写此联系表，您可以向我们发送商业通讯，合伙关系或任何其他类型的问题，这些问题最多可在7天内得到答复。</p>\n<p><strong>个人资料处理</strong></p>\n<p>（《隐私权政策》第13 del d.lgs。196/2003条）</p>\n<p>我们通知您，您在填写网站本身的“联系表格”（也称为表格邮件）时将提供给本网站运营商的数据，将按照第196/2003号法令（法规）的规定进行处理。在个人数据保护方面。\n   在站点上提供的联系表的唯一目的是允许站点访问者（如果他们愿意）通过上述表单向管理者发送电子邮件来与站点管理员联系。\n   此信息与访客用户在填写联系表时发送的个人数据有关。</p>\n<p>请遵守以下规则：</p>\n<li>不要滥用可以在论坛中提出的请求的联系表格</li>\n<li>不要多次发送同一封电子邮件</li>\n"
+    emailfield: 您的邮箱地址
+    messagesent: 发送成功！
+    notloggedin: 请登录以联系我们
+    pText: "<p>通过填写此表单，你可以向我们发送商业邀约、合伙讯息，或任何其他问题，我们将在 7 天答复。</p>\n<p><strong>【个人资料处理】</strong></p>\n<p>（隐私政策法律 art. 13 del d.lgs. 196/2003）</p>\n<p>请你知晓，在填写此处的「联系表单」（也称表单邮件）数据将提供给本网站运营商，我们将按照 196/2003 法律有关个人数据保护的规定进行处理。\n   联系表单的唯一用途是使本站访客基于自愿的原则，通过向网站管理人员发送电子邮件来取得联系。\n   此信息与访客用户在填写联系表时发送的个人数据有关。</p>\n<p>请遵守以下规则：</p>\n<li>不要滥用。能在论坛中发送的消息，请不要使用联系表单。</li>\n<li>不要多次发送同一内容的电子邮件。</li>\n"
     pageTitle: 联系我们
-    placeholderName: 把你的名字写在这里
+    placeholderName: 您的姓名
     plsregister: 请注册或登录
-    sendForm: 发送消息
-    subject: 联系表格中的消息
-    textAreaField: 在这里写下您的讯息
+    sendForm: 发送
+    subject: 联系表单消息
+    textAreaField: 在此处填写消息
     title: 联系我们
-    tocontinue: 要继续使用此联系人窗体
+    tocontinue: 留在此处
   settings:
-    emaillabel: 将向其发送联系人表单的电子邮件
+    emaillabel: 接收消息的邮箱

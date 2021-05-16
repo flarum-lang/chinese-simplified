@@ -1,5 +1,5 @@
 {
-  "name": "ffans-0.1.x-dev/lang-simplified-chinese",
+  "name": "0.1.x-dev/lang-simplified-chinese",
   "description": "Flarum 简体中文语言包 2020",
   "keywords": [
     "flarum",
@@ -13,7 +13,7 @@
   "license": "MIT",
   "authors": [
     {
-      "name": "Flarum Fans",
+      "name": "Flarum Chinese",
       "email": "littlegolden@vip.qq.com",
       "homepage": "https://github.com/FFans"
     }

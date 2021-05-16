@@ -35,6 +35,9 @@
     "littlegolden/flarum-lang-simplified-chinese": "*"
   },
   "extra": {
+    "branch-alias": {
+            "dev-master": "0.1.x-dev"
+        },
     "flarum-extension": {
       "title": "简体中文语言包",
       "icon": {

@@ -12,6 +12,7 @@ fof-user-bio:
       bioLimit: 个性签名字符数上限
   forum:
     userbioPlaceholder: 这个人很懒，什么都没有写……
+    userbioPlaceholderOtherUser: '为{username}设置个性签名'
 fof-userbio:
   forum:
     userbioPlaceholder: 这个人很懒，什么都没有写...

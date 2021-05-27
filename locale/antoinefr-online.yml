@@ -9,5 +9,6 @@ antoinefr-online:
       title: '在线会员 - 设置'
       titleoflist: 自定义列表标题
   forum:
-    andmore: '还有 {more} 人...'
-    title: 在线会员
+    andmore: '更多{more}..'
+    online_users: '在线用户{more}|所有在线用户{more}'
+    title: '有谁在线?'

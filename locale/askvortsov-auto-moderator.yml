@@ -11,6 +11,7 @@ askvortsov-auto-moderator:
       suspend: 暂停
       unsuspend: 解禁
     criterion_status:
+      action_validation_errors: '遇到了以下行动驱动验证错误:'
       heading: 状态检查
       invalid: 该规范目前无效。请检查以下驱动程序是否存在错误。
       no_actions: 此规范没有定义任何操作。当用户获得或失去这个规范时，什么也不会发生。

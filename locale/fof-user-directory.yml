@@ -10,6 +10,7 @@ fof-user-directory:
       default-sort: 默认排序
       link: 在论坛首页侧边栏添加「会员名录」选项卡
       title: 会员名录设置
+      use-small-cards: 使用小型用户卡片
   forum:
     header:
       back_to_user_directory_tooltip: 返回会员名录

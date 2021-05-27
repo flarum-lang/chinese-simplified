@@ -7,13 +7,17 @@ askvortsov-saml:
     header:
       text: '请确保元数据 URL 或元数据都已填写。'
     labels:
+      authn_requests_signed: 签名请求？
       idp_metadata: '身份提供商元数据 XML（替代 URL）'
       idp_metadata_url: '身份提供商元数据 URL（替代 XML）'
       nameid_format: 'NameID 格式'
       only_option: '使用 SAML2 SSO 作为唯一登录选项吗？'
+      slo: 启用SLO？如果你的IDP不支持这一点，这将没有任何作用。
       sync_attributes: '同步属性（头像、用户组、签名、资料）？需要安装 askvortsov/auth-sync 插件（传送门：http://t.cn/A6yDXTRB）。'
       want_assertions_signed: 'Want Assertions Signed?'
       want_messages_signed: 'Want Messages Signed?'
+      x509_cert: x509证书（需要签名，如果启用的话）
+      x509_key: x509私钥（需要签名，如果启用的话）
     nameid_format: 'NameID 格式'
     options:
       nameid_format:

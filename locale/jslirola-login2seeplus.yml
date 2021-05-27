@@ -8,12 +8,7 @@ jslirola-login2seeplus:
     hide: 隐藏
     image: 图片
     link: 链接
-    php:
-      help: '*不推荐* 用于兼容旧浏览器，插件在后台处理工作。需要启用 <code>mb_substr</code> 和 <code>mb_strlen</code>。'
-      label: '使用 PHP'
-      title: 传统模式
     post:
-      help: '值为 <em>-1</em> 表示显示全部内容。'
       title: '隐藏超过此长度的内容（<em>-1</em> 表示显示全部）'
     title: '登录后可见 Plus'
   forum:

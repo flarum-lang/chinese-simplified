@@ -11,7 +11,6 @@ clarkwinkelmann-status:
     settings:
       enable-text: 允许文字状态
       only-countries: 仅国旗
-      title: 状态设置
   forum:
     menu:
       set-status: 设置状态

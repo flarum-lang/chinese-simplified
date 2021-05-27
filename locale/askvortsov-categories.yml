@@ -30,8 +30,6 @@ askvortsov-categories:
       categories_link: 版块
     last_discussion_widget:
       no_discussions: 暂无主题
-    meta:
-      categories_title: 全部版块
     stat-widgets:
       discussion_label: 主题
       post_label: 帖子

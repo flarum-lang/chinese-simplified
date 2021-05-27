@@ -31,9 +31,6 @@ clarkwinkelmann-scratchpad:
       forum_less: '前台论坛界面 Less'
       php: PHP
       title: 便笺名
-    menu:
-      description: 在开发环境中方便地测试代码
-      title: 开发者便笺
     placeholders:
       js-log: '你好，{frontend}！'
       php-comment: '在此处注册 extender'

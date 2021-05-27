@@ -4,17 +4,6 @@
 
 core:
   admin:
-    add_extension:
-      developer_text: 如果您是一个开发者，您可以阅读<a>开发文档</a>自行开发扩展程序。
-      install_text: '同时，您可以在 <a>Flarum 社区</a>搜索扩展程序，并通过 Composer 手动安装。'
-      temporary_text: 在不远的将来，这里将为您提供添加扩展程序的便捷途径。如我们所说，我们正在建立一套生态系统！
-      title: 添加扩展程序
-    advanced:
-      enter_positive_number: 请输入一个正数
-      heading_security: 安全设置
-      help_text: 请注意这些设置仅适用于高级用户
-      post_flood_interval: 发送多个帖子之间的等待时间
-      post_flood_interval_text: 配置用户在创建另一条帖子之前必须等待的时间（以秒为单位）
     appearance:
       colored_header_label: 彩色导航栏
       colors_heading: 颜色
@@ -35,7 +24,6 @@ core:
       favicon_text: 上传图片做为论坛的站点图标，该图标会显示在浏览器标签页、搜索引擎结果条目及书签等多个地方。
       logo_heading: Logo
       logo_text: 上传图片代替论坛名称，并展示在导航栏左侧。
-      submit_button: '=> core.ref.save_changes'
       title: 外观
     basics:
       all_discussions_label: '=> core.ref.all_discussions'
@@ -48,11 +36,9 @@ core:
       forum_title_heading: 论坛名称
       home_page_heading: 论坛首页
       home_page_text: 选择一种页面作为论坛首页。
-      saved_message: 您的更改已保存
       show_language_selector_label: 显示语言选择器
       slug_driver_heading: '别名驱动：{model}'
       slug_driver_text: 选择要用于此实体的驱动程序。
-      submit_button: '=> core.ref.save_changes'
       title: 常规
       welcome_banner_heading: 欢迎横幅
       welcome_banner_text: 横幅文本将显示于「全部主题」页面顶部，可以用于欢迎论坛访客。
@@ -91,30 +77,21 @@ core:
       driver_heading: 驱动
       driver_label: 邮件驱动
       from_label: 发件地址
-      heading: '=> core.ref.email'
       mail_encryption_label: '加密协议（小写 ssl 或 tls）'
       mail_host_label: 主机
       mail_mailgun_domain_label: 域名
       mail_mailgun_region_label: 区域
       mail_mailgun_secret_label: 'Secret key'
-      mail_mandrill_secret_label: 'Secret key'
       mail_password_label: '=> core.ref.password'
       mail_port_label: 端口
-      mail_ses_key_label: Key
-      mail_ses_region_label: 区域
-      mail_ses_secret_label: Secret
       mail_username_label: 用户名（部分邮件服务商要求用户名必须与发件地址一致）
       mailgun_heading: 'Mailgun 设置'
-      mandrill_heading: 'Mandrill 设置'
       not_sending_message: 'Flarum 当前无法发送电子邮件，请检查邮件驱动及其配置。'
       send_test_mail_button: 发送
       send_test_mail_heading: 发送测试邮件
       send_test_mail_success: 测试邮件发送成功！
       send_test_mail_text: '使用上述设置发送测试邮件到您的邮箱：{email}'
-      ses_heading: 'SES 设置'
       smtp_heading: 'SMTP 设置'
-      submit_button: '=> core.ref.save_changes'
-      text: 配置论坛发信服务方式。
       title: '=> core.ref.email'
     extension:
       configure_scopes: 设置范围
@@ -133,11 +110,6 @@ core:
       no_settings: 此扩展无设置项。
       open_modal: 打开设置
       permissions_title: 权限
-      saved_message: 您的修改已保存。
-      uninstall_button: 卸载
-    extensions:
-      add_button: 添加扩展程序
-      settings_button: '=> core.ref.settings'
       uninstall_button: 卸载
     header:
       get_help: 帮助
@@ -145,13 +117,9 @@ core:
     loading:
       title: 请稍后……
     nav:
-      advanced_button: 高级
-      advanced_text: 配置专门针对高级用户的设置。
       appearance_button: '=> core.admin.appearance.title'
-      appearance_text: 自定义论坛色调、图标以及其他元素。
       appearance_title: '=> core.admin.appearance.description'
       basics_button: '=> core.admin.basics.title'
-      basics_text: 设置论坛名称、语言以及其他常规设置
       basics_title: '=> core.admin.basics.description'
       categories:
         authentication: 认证
@@ -164,15 +132,10 @@ core:
         other: 其他
         theme: 样式
       dashboard_button: '=> core.admin.dashboard.title'
-      dashboard_text: 论坛统计数据概览
       dashboard_title: '=> core.admin.dashboard.description'
       email_button: '=> core.ref.email'
-      email_text: 配置论坛邮件服务
       email_title: '=> core.admin.email.description'
-      extensions_button: 扩展程序
-      extensions_text: 为您的论坛添加额外的功能
       permissions_button: '=> core.admin.permissions.title'
-      permissions_text: 设置各用户组访问及操作权限
       permissions_title: '=> core.admin.permissions.description'
       search_placeholder: 搜索扩展程序
       userlist_button: '=> core.admin.users.title'
@@ -202,12 +165,10 @@ core:
       sign_up_label: 注册
       start_discussions_label: 发布主题
       title: 权限
-      view_discussions_label: 查看主题
       view_forum_label: 查看论坛（讨论和用户）
       view_hidden_groups_label: 查看隐藏的用户组徽章
       view_last_seen_at_label: 查看用户上次在线时间
       view_post_ips_label: '查看 IP 地址'
-      view_user_list_label: 访问用户资料
     permissions_controls:
       allow_indefinitely_button: 无限制
       allow_some_minutes_button: '发布 {count} 分钟内|发布 {count} 分钟内'
@@ -320,19 +281,6 @@ core:
       mark_as_read_tooltip: 标记为已读
       replied_text: '{username} 回复于 {ago}'
       started_text: '{username} 发布于 {ago}'
-    edit_user:
-      activate_button: 激活账号
-      email_heading: '=> core.ref.email'
-      email_label: '=> core.ref.email'
-      groups_heading: 用户组
-      nothing_available: 暂无可供您编辑的项目。
-      password_heading: '=> core.ref.password'
-      password_label: '=> core.ref.password'
-      set_password_label: 设置新密码
-      submit_button: '=> core.ref.save_changes'
-      title: 编辑用户
-      username_heading: '=> core.ref.username'
-      username_label: '=> core.ref.username'
     forgot_password:
       dismiss_button: '=> core.ref.okay'
       email_placeholder: '=> core.ref.email'
@@ -497,7 +445,6 @@ core:
     number_suffix:
       kilo_text: 千
       mega_text: 百万
-      ten_kilo_text: 万
     series:
       glue_text: '， '
       three_text: '{first}，{second} 和 {third}'
@@ -522,7 +469,6 @@ core:
     edit_user: 编辑用户
     email: 邮箱
     icon: 图标
-    icon_label: 图标
     icon_text: '输入任意一个 <a>Font Awesome</a> 图标名称。<em>包括</em>前缀，例如 <code>fas fa-</code>'
     load_more: 加载更多
     loading: 正在加载……

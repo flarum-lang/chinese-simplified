@@ -9,4 +9,3 @@ fof-custom-footer:
       height: '页脚高度 (px)'
       js: JS
       text: 页脚文本
-      title: 自定义页脚

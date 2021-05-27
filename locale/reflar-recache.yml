@@ -25,7 +25,6 @@ reflar-recache:
         cache: 启用缓存
         lazy: 启用图片懒加载
         query: '启用查询缓存（仅限 Redis）'
-      text: "在下面配置当前活动的缓存驱动。可以随时预先配置任何\n可用的其他驱动程序，之后再切换。\n"
   forum:
     redis:
       error_alert: 'Redis 连接已于 {time} 发生故障。请检查您的设置，在此期间论坛性能将受到很大影响。'

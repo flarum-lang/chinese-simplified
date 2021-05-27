@@ -10,16 +10,10 @@ fof-byobu:
       create_private_discussions_with_users: 与他人创建私密主题
       edit_group_recipients: 设置私密主题用户组可见范围
       edit_user_recipients: 设置私密主题用户可见范围
-      make_private_into_public: 将私人讨论转为公开
       view_private_discussions-when-flagged: 查看他人被举报的私密主题
     settings:
       badge-icon: 'Byobu 主题帖徽章'
-      byobu_index: 在首页显示「私人讨论」入口
-      byobu_index_help: 启用此选项后，论坛左侧边栏将会添加一个私人讨论的入口链接
       post-event-icon: 'Byobu 发帖事件'
-      use_tag_slug: 指定私人讨论创建时自动归入的分类标签
-      use_tag_slug_help: '此设置仅对生效后创建的私人讨论有效，选择「{no_restriction}」则允许用户自行选择标签。'
-      use_tag_slug_no_restriction: '- 不限制 -'
   email:
     body:
       private_discussion_added: "{recipient_display_name}，你好！\n\n{actor_display_name} 将您加入私密主题《{discussion_title}》。\n\n点此查看完整内容：\n{discussion_url}\n\n您需要登录方可访问链接。\n"
@@ -39,15 +33,12 @@ fof-byobu:
       add_recipients: 公开
       cancel: 取消
       edit_recipients: 可见范围
-      make_public: 转为公开
       remove_from_discussion: 退出私密主题
       send_pd: '发送消息至 {username}'
       submit: 确定
     composer_private_discussion:
       submit_button: 新建私密主题
       title_placeholder: 私密主题标题
-    confirm:
-      make_public: 这将对所与人公开私密主题，请谨慎考虑后操作。
     input:
       search_recipients: 至少输入用户名前三位以搜索用户……
     labels:
@@ -67,8 +58,6 @@ fof-byobu:
       pd_added_label: 有人邀请我加入私密主题
       pd_added_text: '{username} 邀请您加入私密主题'
       pd_label: 有人和我创建私密主题
-      pd_made_public_label: 一个私人讨论已转为公开
-      pd_made_public_text: '{username} 已将此讨论转为公开'
       pd_reply_label: 参与的私密主题有新贴
       pd_reply_text: '{username} 在私密主题中发表新帖'
       pd_text: '{username} 和我创建私密主题'
@@ -88,15 +77,3 @@ fof-byobu:
       dropdown_label: 私密主题
       settings:
         block_pd: 屏蔽私密主题
-        unified_index: 合并私密主题至统一的索引
-  notifications:
-    made_public:
-      title: 【私人讨论】有讨论转为公开
-    private_discussion_added:
-      title: 【私人讨论】有人邀请您加入
-    private_discussion_created:
-      title: 【私人讨论】新邀请
-    private_discussion_replied:
-      title: 【私人讨论】有新帖
-    recipient_removed:
-      title: 【私人讨论】有人退出

@@ -21,4 +21,3 @@ migratetoflarum-canonical:
         suggestions: 本插件未强制执行或未覆盖的其他建议
         use_hsts: '使用 HSTS 防止降级攻击'
         use_https: '强制 HTTPS 访问'
-      title: '规范网址设置（Canonical URL）'

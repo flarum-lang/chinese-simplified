@@ -30,9 +30,6 @@ validation:
     string: ':attribute 必须介于 :min 至 :max 个字符之间'
   boolean: ':attribute 必须是布尔值（true 或 false）'
   confirmed: ':attribute 两次输入不一致'
-  custom:
-    username:
-      regex: 用户名只能包含字母、数字及连字符（-）
   date: ':attribute 不是一个合法的日期'
   date_equals: ':attribute 必须是等于 :date 的日期'
   date_format: ':attribute 的格式必须为 :format'

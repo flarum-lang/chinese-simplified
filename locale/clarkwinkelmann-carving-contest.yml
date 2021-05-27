@@ -10,7 +10,6 @@ clarkwinkelmann-carving-contest:
       custom-help: '#十六进制或 rgb() 值列表（逗号分隔）'
       simple: 简单颜色设置
     permissions:
-      heading: 雕刻大赛
       like: 点赞作品
       moderate: 主持
       participate: 参加比赛
@@ -18,7 +17,6 @@ clarkwinkelmann-carving-contest:
     settings:
       colorMode: 使用彩色模式而不是雕刻模式
       maxEntriesPerUser: 每个用户提交数量限制
-      title: 雕刻大赛设置
   forum:
     likes_modal:
       title: 喜欢这个作品的用户

@@ -5,8 +5,6 @@
 maicol07-sso:
   admin:
     settings:
-      disable_login_btn: 禁用登录按钮
-      disable_signup_btn: 禁用注册按钮
       jwt_iss: 'Issuer Domain'
       jwt_section_subtitle: 'JWT Addon 设置'
       jwt_signer_key: 'Signer key'

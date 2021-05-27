@@ -18,7 +18,6 @@ clarkwinkelmann-group-invitation:
         code: 自动生成
         group: 选择……
         usage: 留空表示无限制
-      title: 用户组邀请
       unlimited: 无限制
   api:
     error:

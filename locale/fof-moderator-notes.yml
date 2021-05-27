@@ -9,8 +9,6 @@ fof-moderator-notes:
       deletenotes: 删除留言
       viewnotes: 查看留言
   api:
-    auto-note: '我使用 FoF Impersonate 切换到当前用户账户。'
-    auto-note-actor: '使用 FoF Impersonate 替代 ''用户名'''
     auto_note: '_切换到此账号：_ reason'
     auto_note_actor: '_切换到_ @username：reason'
     no_reason_provided: 无理由
@@ -18,14 +16,12 @@ fof-moderator-notes:
     moderatorNotes:
       add_button: 我要留言
       confirm: 确定要删除这条留言吗？
-      confirmation_message: 留言成功！您也许需要刷新页面才能看到它。
       create-heading: 发表您的留言
       created_text: '{username} 留言于 {date}'
       delete: 删除
       dismiss_button: 好的
       input_heading: '您正在向 <strong>{username}</strong> 留言（支持 Markdown）'
       noNotes: 还没有人发表留言，何不坐第一个沙发？
-      no_content_given: 无法发表空留言。
       submit_button: 发表
     no_content_given: 禁止空留言。
     user:

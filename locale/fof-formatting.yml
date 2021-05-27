@@ -12,4 +12,3 @@ fof-formatting:
       MediaEmbed: '嵌入受支持的网站的内容（支持的网站：https://iflarum.cn/s9e-embed）'
       PipeTables: 'ASCII 风格表格'
       TaskLists: 'GitHub/GitLab 风格待办清单'
-    title: 'FriendsOfFlarum 格式化'

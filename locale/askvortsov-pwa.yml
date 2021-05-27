@@ -12,7 +12,6 @@ askvortsov-pwa:
         description_text: 您可以在管理面板的「常规」页面设置应用描述。
         heading: 关于
         long_name_text: '显示给用户的 web 应用名称'
-        name_text: '输入要在 PWA 中使用的长名称。'
         short_name_text: 应用简称（无空间显示长名称时）
       colors:
         background_color_text: 'PWA 加载时显示的初始屏幕占位颜色，应用实际加载后不会使用它。'
@@ -34,7 +33,6 @@ askvortsov-pwa:
       no_logo: '您必须至少上传一张 196px 尺寸的标志才能使您的应用程序正常工作。'
       no_name: 您必须设置应用全名才能使您的应用程序正常工作。
       possible_https_disabled: '您的网站可能未以 HTTPS 运行。如果已是 HTTPS，请忽略此消息。如果没有，请记住渐进式 Web 应用需要 HTTPS 才能工作。'
-      push_needs_gmp_and_web_push: '必须启用 PHP 扩展 gmp 和 minishlink/web-push 依赖库（composer require minishlink/web-push）才能使通知推送功能起作用。'
       success: 恭喜，没有发现潜在问题！
   forum:
     alerts:

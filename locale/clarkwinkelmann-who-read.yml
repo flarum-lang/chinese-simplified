@@ -5,7 +5,6 @@
 clarkwinkelmann-who-read:
   admin:
     permissions:
-      heading: 谁看过
       mark-unread: 允许用户标记主题为未读
       see-read: 查看阅读进度
       see-subscription: 查看订阅状态
@@ -18,7 +17,6 @@ clarkwinkelmann-who-read:
       show-count-of-readers-who-stopped: 在帖子信息流中，仅显示有多少人没接着往下看。
       show-in-discussion-list: 在首页主题列表中显示读者
       show-in-hero: 在主题页面的头部横幅显示读者
-      title: '阅读进度 - 设置'
       unread-icon: 头像的未读徽章图标
   forum:
     badges:

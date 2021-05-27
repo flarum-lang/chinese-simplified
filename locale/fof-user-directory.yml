@@ -9,7 +9,6 @@ fof-user-directory:
     settings:
       default-sort: 默认排序
       link: 在论坛首页侧边栏添加「会员名录」选项卡
-      title: 会员名录设置
       use-small-cards: 使用小型用户卡片
   forum:
     header:
@@ -20,19 +19,6 @@ fof-user-directory:
       load_more_button: '=> core.ref.load_more'
       nav: 会员名录
       refresh_tooltip: '=> core.forum.index.refresh_tooltip'
-      sort:
-        default: 默认
-        least_discussions: 主题最少
-        least_posts: 回复最少
-        most_discussions: 主题最多
-        most_posts: 回复最多
-        newest: 新用户
-        oldest: 老用户
-        relevance: 相关度
-        seen_oldest: 离线最久
-        seen_recent: 最近上线
-        username_az: 用户名（a-z）
-        username_za: 用户名（z-a）
     search:
       field:
         placeholder: 搜索用户
@@ -47,7 +33,5 @@ fof-user-directory:
       newest: 新用户
       not_specified: '使用 Flarum 默认排序'
       oldest: 老用户
-      seen_oldest: 离线最久
-      seen_recent: 最近上线
       username_az: 用户名（a-z）
       username_za: 用户名（z-a）

@@ -49,7 +49,6 @@ fof-linguist:
       warning: "导出的翻译格式是 Flarum 使用的 Yaml 文件，此功能旨在论坛之间或与语言包维护者共享翻译。该格式不是为了将所有翻译移到新的论坛上而设计的。根据您的使用情况，直接复制数据库可能是一个更好的办法。\n"
     filters:
       for-extension: 筛选插件
-      for-extension-unavailable: "命名空间「{namespace}」没有翻译资源。 这个插件可能没有需要翻译的内容，或者使用了其他命名空间。 尝试搜索翻译文本来定位翻译资源吧。\n"
       frontend: 前端筛选
       frontend-all-except-admin: 全部
       mass-edit: 更多
@@ -67,9 +66,7 @@ fof-linguist:
         any: 原始或自定义
         original: 原始
         own: 自定义
-      with-original-translations-in-locales: 有原文翻译
       with-own-translations: 自定义翻译
-      without-original-translations-in-locales: 无原文翻译
     import:
       input: 在此输入
       input-placeholder: '拖拽或粘贴 Yaml 文件到此处'
@@ -91,9 +88,6 @@ fof-linguist:
       validation: 数据校验错误
     locales:
       all: 全部
-    menu:
-      description: 自定义界面翻译。
-      title: 语言学家
     placeholder:
       all-locales: 所有语言的最高优先级翻译
       hint: 原文内容：

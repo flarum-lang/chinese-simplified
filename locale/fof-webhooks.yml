@@ -85,7 +85,6 @@ fof-webhooks:
         discord: Discord
         microsoft-teams: 'Microsoft Teams'
         slack: Slack
-      title: Webhooks
   ref:
     deleted: 删除
     hidden: 隐藏

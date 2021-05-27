@@ -2,13 +2,6 @@
 # Use https://weblate.rob006.net/projects/flarum/fof-impersonate/zh_Hans/ for translation.
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
-flagrow-impersonate:
-  admin:
-    permissions:
-      login: 以其他用户的身份登录
-  forum:
-    user_controls:
-      impersonate_button: 以该用户身份登录
 fof-impersonate:
   admin:
     permissions:

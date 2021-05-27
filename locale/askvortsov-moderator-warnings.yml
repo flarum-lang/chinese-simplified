@@ -37,7 +37,6 @@ askvortsov-moderator-warnings:
       restore_button: 还原
     warning_list:
       add_button: 发送警告
-      no-warnings: 该用户暂未收到任何警告
       no_warnings: 该用户暂未收到任何警告。
       warnings: '站务警告：共记 {strikes} 分'
       warnings_no_strikes: 站务警告
@@ -49,9 +48,7 @@ askvortsov-moderator-warnings:
       public_comment: 警告
     warning_modal:
       confirmation_message: 您的警告已发出，可能需要刷新后显示。
-      dismiss_button: 完成
       heading: '警告 <strong>{username}</strong>'
-      no_content_given: 警告不可为空。
       private_comment_heading: '管理员备注。为什么警告 <strong>{username}</strong>？备注仅对您和其他管理员可见。'
       public_comment_heading: '用户批注。为什么警告 <strong>{username}</strong>？ 批注仅对该用户和其他管理员可见。'
       strikes_heading: 严重程度：记几分？

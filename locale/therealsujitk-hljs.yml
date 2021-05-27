@@ -4,9 +4,5 @@
 
 therealsujitk:
   admin:
-    about:
-      stringA: '插件作者： '
-      stringB: '捐助作者： '
     hljs:
       themename: '主题样式（预览：http://t.cn/A6ZtzMiG）'
-      title: 'highlight.js 设置'

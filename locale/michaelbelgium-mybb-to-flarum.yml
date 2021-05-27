@@ -27,34 +27,3 @@ michaelbelgium-mybb-to-flarum:
           migrate_userGroups_label: 迁移用户组
           migrate_users_label: 迁移用户
           title: 常规迁移选项
-    nav:
-      description_text: '将 MyBB 论坛转换为 Flarum 实例'
-      title: 'MyBB 到 Flarum'
-mybbtoflarum:
-  admin:
-    nav:
-      description: '将 MyBB 论坛转换为 Flarum'
-      title: 'MyBB to Flarum'
-    page:
-      btnConvert: 迁移
-      form:
-        general:
-          migrateAvatars: 迁移头像
-          migrateSoftPosts: 迁移软删除回复
-          migrateSoftThreads: 迁移软删除主题
-          title: 常规设置
-        mybb:
-          db: 数据库名
-          host: 数据库地址
-          mybbPath: 'MyBB 绝对路径'
-          password: 数据库密码
-          prefix: 表前缀
-          title: 'MyBB 设置'
-          user: 数据库用户名
-        options:
-          migrateCategories: 迁移分类
-          migrateThreadsPosts: 迁移主题及回复
-          migrateUserGroups: 迁移用户组
-          migrateUsers: 迁移用户
-          title: 迁移选项
-      text: '将 MyBB 论坛转换为 Flarum，填写以下信息后点击“迁移”。'

@@ -2,39 +2,6 @@
 # Use https://weblate.rob006.net/projects/flarum/xelson-chat/zh_Hans/ for translation.
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
-pushedx-chat:
-  admin:
-    permissions:
-      delete: 聊天室：删除自己的消息
-      edit: 聊天室：编辑自己的消息
-      moderate:
-        delete: 聊天室：删除消息
-      post: 聊天室：发送消息
-    settings:
-      charlimit: 限制每条消息的最大字数（不区分中英文）
-      floodgate:
-        number: 最多可连发消息数
-        time: 刷屏后的冷静时间
-        title: 防刷屏
-      title: 聊天室设置
-  forum:
-    chat:
-      message:
-        actions:
-          hide: 隐藏
-          resend: 重新发送
-      placeholder: 发条友善的消息……
-    errors:
-      chatdenied: 您所在的用户组没有发送消息的权限
-      unauthenticated: 登录后才能参与聊天
-    toolbar:
-      disable_notifications: 关闭通知
-      disable_sounds: 关闭声音
-      enable_notifications: 开启通知
-      enable_sounds: 开启声音
-      maximize: 窗口化
-      minimize: 最小化
-      title: 聊天室
 xelson-chat:
   admin:
     permissions:

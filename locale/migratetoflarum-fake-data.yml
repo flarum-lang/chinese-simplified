@@ -16,7 +16,6 @@ migratetoflarum-fake-data:
       discussion-tags-random: 随机
       post-count: 修改回复数
       send: 生成数据
-      title: 生成虚假数据
       user-count: 修改用户数
   api:
     no-discussions-matched: 主题不存在
@@ -40,7 +39,6 @@ migratetoflarum-fake-data:
     date: 种子
     date-interval-placeholder: '间隔（默认 1 秒）'
     date-start-placeholder: 开始日期（默认现在）
-    discussion-count: 要创建的主题数
     post-count: 要创建的回复数
     send: 生成数据
     user-count: 要创建的用户数

@@ -30,12 +30,9 @@ fof-masquerade:
       validation: 验证
       validation-help: "检查支持的 <a>Laravel 验证规则</a>. 例如： \"string|min:5\" 或 \"url\"。\n"
     general-options: 常规选项
-    menu:
-      description: "配置用户个人资料字段。\n"
     permissions:
       have-profile: 拥有「化装舞会」个人资料
       view-profile: 查看「化装舞会」个人资料
-    title: 化装舞会
     types:
       advanced: 高级
       boolean: 是/否单选按钮

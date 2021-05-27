@@ -5,19 +5,14 @@
 fof-follow-tags:
   admin:
     settings:
-      following_all_label: '=> fof-follow-tags.ref.filtering_options.all'
       following_none_label: '=> fof-follow-tags.ref.filtering_options.none'
       following_page_default_label: 「我的关注」默认内容
       following_tags_label: '=> fof-follow-tags.ref.filtering_options.tags'
-      title: 'FriendsOfFlarum 关注标签'
   email:
     body:
       newDiscussionInTag: "{recipient_display_name}，你好！\n\n{actor_display_name} 发布新主题于你关注的标签：{discussion_title}\n\n点击下方链接查看主题帖：\n{discussion_url}\n\n---\n\n{post_content}\n"
       newDiscussionTag: "{recipient_display_name}，你好！\n\n{actor_display_name} 刚刚将 {author_display_name} 的主题标签变更为你关注的标签：{discussion_title}\n\n点击下方链接查看主题帖：\n{discussion_url}\n"
       newPostInTag: "{recipient_display_name}，你好！\n\n{actor_display_name} 发表回复于你关注的标签：{discussion_title}\n\n点击下方链接查看主题新动态：\n{post_url}\n\n---\n\n{post_content}\n\n---\n\n在您跟上最新进度前，您不会再收到有关此主题的更多通知。\n"
-    newDiscussionInTag: '[Tag | New Discussion] title'
-    newDiscussionTag: '[Tag | Changed Tag] title'
-    newPostInTag: '[Tag | New Post] title'
     subject:
       newDiscussionInTag: '【标签新主题】{title}'
       newDiscussionTag: '【标签变更】{title}'
@@ -29,7 +24,6 @@ fof-follow-tags:
     index:
       follow_tag_button: 关注
       following:
-        following_all_label: '=> fof-follow-tags.ref.filtering_options.all'
         following_none_label: '=> fof-follow-tags.ref.filtering_options.none'
         following_tags_label: '=> fof-follow-tags.ref.filtering_options.tags'
       unfollow_tag_button: 取消关注
@@ -61,7 +55,6 @@ fof-follow-tags:
         heading: 关注标签
   ref:
     filtering_options:
-      all: 所有关注
       none: 关注的主题
       tags: 关注的标签
     follow: 关注

@@ -17,5 +17,4 @@ dem13n:
       small_cards: 主卡片数量
       tablet_card_width: '平板端主卡片宽度：{percent}%'
   forum:
-    last_reply: '最新回复： '
     replies: '{count} 回复'

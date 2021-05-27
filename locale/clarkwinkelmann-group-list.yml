@@ -12,6 +12,5 @@ clarkwinkelmann-group-list:
       showAvatarBadges: 在头像上展示其他用户组徽章
       showOnlineStatus: 展示在线状态
       showSideNavLink: 添加侧边栏入口
-      title: 组群一览表设置
   forum:
     nav: 组群一览

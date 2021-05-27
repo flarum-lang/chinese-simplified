@@ -48,4 +48,3 @@ kilowhat-custom-paths:
         v17development-blog-post: 帖子
       redirect: '将默认 Flarum 路径重定向到新路径'
       reset: 重置路径
-      title: 自定义路径

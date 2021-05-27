@@ -4,10 +4,6 @@
 
 fof-analytics:
   admin:
-    page:
-      nav:
-        description: '查看 Piwik 统计数据'
-        title: 'Piwik 统计'
     popup:
       field:
         googleGTMCode: 'GTM 代码 ID（可选）'
@@ -28,7 +24,6 @@ fof-analytics:
       section:
         googleAnalytics: 'Google 分析'
         piwik: Piwik
-      title: 'FoF 分析'
       trackAccounts:
         email: 按邮箱追踪
         none: 不要追踪

@@ -9,4 +9,3 @@ clarkwinkelmann-first-post-approval:
     settings:
       discussionCount: 主题发布所需的前置审核额度
       postCount: 回帖所需的前置审核额度
-      title: '前置审核 - 设置'

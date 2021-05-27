@@ -5,10 +5,7 @@
 tank-perspective:
   admin:
     settings:
-      api_key_help: '您的 Google API 密钥（用于 Perspective API）'
       donotstore: 不存储
-      donotstore_help: '启用此项以通知 Google 不要存储发送给它的数据'
-      experimental_help: '仅当 Perspective 模态框不支持您的语言时才应启用此项'
       field:
         api_key: 'API 密钥'
         flirtation: 低俗、骚扰
@@ -17,8 +14,6 @@ tank-perspective:
         threat: 威胁恐吓
         threshold: 阈值
         toxicity: 有毒有害
-      maxscore_help: 启用此项后插件将使用最大值而不是平均值进行判定
-      threshold_help: 达到最高分时标记帖子（请使用整数值）
       title: 'Perspective 设置'
       useexperimental: 使用实验模型
       usemax: 使用最高分

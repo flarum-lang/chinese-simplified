@@ -5,16 +5,10 @@
 kilowhat-audit:
   admin:
     header:
-      discuss: 'Flarum 社区发布帖'
-      documentation: 完整的在线文档
       free: 免费版
       pro: 专业版
       title: 审计
       upgrade: 升级到专业版
-      version: '版本 {version}'
-    menu:
-      description: 审查近期的论坛活动。
-      title: 审计日志
     permissions:
       view: 查看审计日志
   forum:

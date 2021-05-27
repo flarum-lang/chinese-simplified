@@ -22,12 +22,8 @@ fof-links:
       url_placeholder: '=> fof-links.ref.url'
       visibility: 链接可见范围
     links:
-      about_text: 管理导航栏链接。
       create_button: '=> fof-links.ref.create_link'
       links: '=> fof-links.ref.links'
-    nav:
-      links_button: '=> fof-links.ref.links'
-      links_text: 管理导航栏链接。
   ref:
     create_link: 新建链接
     links: 导航栏链接

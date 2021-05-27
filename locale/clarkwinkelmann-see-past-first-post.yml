@@ -9,7 +9,6 @@ clarkwinkelmann-see-past-first-post:
     settings:
       hide-comment-count: 隐藏主题列表中的评论数
       hide-last-post: 隐藏主题列表中的最新回复者、最新回复日期
-      title: '只给看一楼贴 - 设置'
   forum:
     cant-see: 您没有权限查看回复
     login-to-see: 登录以查看全部回复

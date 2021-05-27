@@ -26,8 +26,6 @@ fof-mason:
       icon-help: "显示在这个字段前的图标。可用的图标请查看 <a>FontAwesome 网站</a>，请使用完整图标名，包括前缀，例如「fas fa-bolt」。\n"
       icon-preview: '预览： {preview}'
       is_suggested: 推荐答案
-      max_answers_count: 最大答案数
-      min_answers_count: 最小答案数
       name: 字段名称
       name-help: "公开可见（不可翻译）的字段名。\n"
       new-answer: 新建答案
@@ -40,15 +38,11 @@ fof-mason:
       user_values_allowed-help: "如果启用此项，用户可以添加自己的值，可以不选择管理员指定的值。 这些值将根据「校验」设置进行检查。 如果禁用此项，他们只能使用「建议」的答案。\n"
       validation: 校验用户输入的值
       validation-help: "查看支持的 <a>Laravel 验证规则</a>，例：\"string|min:5\" 或 \"url\"。\n"
-    menu:
-      description: 配置自定义主题帖的表单字段。
-      title: 梅森表单
     messages:
       delete-answer-confirmation: "确定要删除答案「{content}」？ 这将从所有使用它的主题中移除该答案，如果您想要保留现有答案请停用答案建议。 删除答案？\n"
       delete-field-confirmation: "你确定要删除字段「{name}」？ 这将从所有使用它们的主题中移除该字段及其答案。删除字段？\n"
     permissions:
       fill-fields: 填写新主题的表单
-      mason-heading: 梅森表单
       see-other-fields: 查看所有现有主题的表单
       see-own-fields: 查看自己现有主题的表单
       skip-required-fields: 允许跳过必填字段

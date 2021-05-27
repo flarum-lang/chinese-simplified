@@ -16,7 +16,6 @@ fof-drafts:
     scheduled_drafts_disabled: 定时发布功能已被禁用。
   forum:
     composer:
-      alert: 草稿已保存。
       discard_empty_draft_alert: 丢弃空草稿？
       exit_alert: 确定放弃对草稿的更改吗？
       saved: 保存成功！
@@ -24,7 +23,6 @@ fof-drafts:
       title: 保存草稿
     dropdown:
       alert: 确定要删除草稿吗？
-      button: 删除草稿
       delete_all_alert: 确定要删除所有草稿吗？
       delete_button: 删除草稿
       empty_text: 您还没有草稿

@@ -26,7 +26,6 @@ clarkwinkelmann-popular-discussion-badge:
         everyTenMinutes: '每 10 分钟'
         everyThirtyMinutes: '每 30 分钟'
         hourly: 每小时一次
-      title: '热门主题标记 - 设置'
       views: 浏览量
       views_placeholder: '0'
       within: 在

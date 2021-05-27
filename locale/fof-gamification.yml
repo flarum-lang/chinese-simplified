@@ -8,8 +8,6 @@ core:
       hot_button: 最多被赞
 fof-gamification:
   admin:
-    nav:
-      desc: '增强 Flarum 论坛的游戏性'
     page:
       convert:
         button: 同步原生点赞数据
@@ -55,7 +53,6 @@ fof-gamification:
   forum:
     mod_item: 点赞的人
     modal:
-      downvotes_label: 踩
       title: 打分
       upvotes_label: 赞
     nav:

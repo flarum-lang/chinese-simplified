@@ -4,8 +4,6 @@
 
 fof-reactions:
   admin:
-    nav:
-      desc: 添加自定义心情或更改设置。
     page:
       convert:
         button: 转换旧的心情

@@ -4,12 +4,8 @@
 
 therealsujitk:
   admin:
-    about:
-      stringA: '插件作者： '
-      stringB: '捐助作者： '
     gifs:
       giphyAPIkey: 'Giphy API 密钥'
-      title: 'GIF API 设置'
   forum:
     gifs:
       label: '插入 GIF'

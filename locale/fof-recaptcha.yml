@@ -10,7 +10,6 @@ fof-recaptcha:
       help_text: '点击<a>此处</a>获取 Google reCAPTCHA 证书。'
       secret_key_label: 密钥
       site_key_label: 网站密钥
-      title: 'FriendsOfFlarum reCAPTCHA'
       type_label: 'reCAPTCHA 类型'
   forum:
     error: '提交 reCAPTCHA 时出错，请重试。'

@@ -19,7 +19,6 @@ fof-best-answer:
       schedule_on_one_server: '在任务调度器中使用「onOneServer()」指令（需要 PHP 扩展：Redis / Memcache）'
       schedule_stop_overnight: '夜间免打扰（服务器时间晚上 9 点至早上 8 点，禁用提醒服务）'
       select_best_answer_reminder_days: '于 n 天后提醒用户选择最佳回复'
-      title: 'FoF 最佳回复'
       use_alt_ui: 将「最佳回复」按钮显示在帖子页脚
   email:
     body:
@@ -38,13 +37,10 @@ fof-best-answer:
       mismatch: 您选择的帖子在当前主题中不存在
     notification:
       awarded: '您的帖子被 {username} 设为最佳回复'
-      awarded_email: 您的帖子被设为最佳回复
       best_answer_in_discussion: '{username} 选择了最佳回复'
-      best_answer_set_in_discussion_email: 有新的最佳回复
       content: 如果您的问题已解决，请选择一个最佳回复
       preferences:
         awarded_best_answer: 有人将我的帖子设为最佳回复
         best_answer_in_discussion: 我互动的主题有了最佳回复
-      select_email_title: 您解决问题了吗？
     remove_best_answer: 移除最佳回复
     this_best_answer: 设为最佳回复

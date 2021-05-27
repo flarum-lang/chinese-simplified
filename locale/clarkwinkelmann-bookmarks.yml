@@ -6,7 +6,6 @@ clarkwinkelmann-bookmarks:
   admin:
     settings:
       independentButton: 将下拉书签栏改为主题帖侧边栏显示
-      title: 书签设置
   forum:
     badge: 已添加书签
     dropdownButton:

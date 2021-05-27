@@ -15,6 +15,5 @@ fof-passport:
         button-icon: 登录按钮图标
         button-title: 登录按钮标签
         button-title-placeholder: '=> fof-passport.api.default-login-button-title'
-      title: 'FoF Passport'
   api:
     default-login-button-title: '=> core.ref.log_in'

@@ -38,10 +38,8 @@ flarum-tags:
       about_tags_text: 使用标签对主题帖分类。主标签类似于传统论坛的板块，可以分成两级。次标签无层级无顺序，可作为次板块。鼠标拖动标签即可排序或调整层级位置。
       create_primary_tag_button: 新建主标签
       create_secondary_tag_button: 新建次标签
-      create_tag_button: '=> flarum-tags.ref.create_tag'
       primary_heading: 主标签
       secondary_heading: 次标签
-      settings_button: 设置
       settings_heading: 设置
   forum:
     all_tags:
@@ -73,6 +71,5 @@ flarum-tags:
   lib:
     deleted_tag_text: 已删除
   ref:
-    create_tag: 新建标签
     name: 标签名称
     tags: 标签

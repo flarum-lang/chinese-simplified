@@ -2,16 +2,10 @@
 # Use https://weblate.rob006.net/projects/flarum/michaelbelgium-profile-views/zh_Hans/ for translation.
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
-flarum_profile_views:
-  forum:
-    user:
-      title_last_viewers: 最近访客
-      views_count_text: '访客总量 {viewcount}|访客总量 {viewcount}'
 michaelbelgium-flarum-profile-views:
   admin:
     settings:
       max_viewcount_label: 访客列表的最多展示人数
-      title: 访客统计设置
       track_guests_label: 追踪未登录访客
   forum:
     user:

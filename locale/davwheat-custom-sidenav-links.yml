@@ -22,22 +22,6 @@ davwheat:
             fix_errors: 请改正以上错误再保存。
           confirm_delete: '确认删除链接「{link}」'
           heading: 自定义链接
-          new_link_modal:
-            labels:
-              icon: '=> davwheat.custom_sidenav_links.admin.settings_page.table.header.icon'
-              internal: '=> davwheat.custom_sidenav_links.admin.settings_page.table.header.internal'
-              text: '=> davwheat.custom_sidenav_links.admin.settings_page.table.header.text'
-              url: '=> davwheat.custom_sidenav_links.admin.settings_page.table.header.url'
-            placeholders:
-              icon: '=> davwheat.custom_sidenav_links.admin.settings_page.table.placeholders.icon'
-              text: '=> davwheat.custom_sidenav_links.admin.settings_page.table.placeholders.text'
-              url: '=> davwheat.custom_sidenav_links.admin.settings_page.table.placeholders.url'
-            submit_btn:
-              add: 新建
-              fix_url: '无效的 URL'
-              invalid_form: 填充到所有字段
-              loading: 添加者
-            title: 新建链接
           save_btn:
             dirty: 保存设置
             fix_errors: 保存前修正错误

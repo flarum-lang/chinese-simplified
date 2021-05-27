@@ -5,7 +5,6 @@
 clarkwinkelmann-author-change:
   admin:
     permissions:
-      edit: 更新发帖及回帖者
       edit-date: 变更主题和帖子日期
       edit-user: 变更主题和帖子作者
   forum:
@@ -15,7 +14,6 @@ clarkwinkelmann-author-change:
       cancel: 取消
       created_at: 创建时间
       edited_at: 编辑时间
-      search_placeholder: 搜索用户
       submit: 保存
       title-discussion: 变更主题作者和日期
       title-post: 变更帖子作者和日期

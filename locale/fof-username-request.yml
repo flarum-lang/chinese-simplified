@@ -5,29 +5,10 @@
 fof-username-request:
   admin:
     permissions:
-      moderate: 同意更改用户名
       moderate_requests: 批准更改用户名/昵称
       request_nickname: 申请更改昵称
       request_username: 申请更改用户名
-      start: 申请更改用户名
   forum:
-    account_label: 更改用户名
-    action:
-      approval_label: 同意
-      decision_title: 审核
-      help_text: 请确保用户名符合社区规范。
-      name: '{username} 申请更改用户名为「{newUsername}」'
-      reason_title: 拒绝原因
-      rejected_label: 拒绝
-      submit_button: 提交
-      success: 审核结果已发送。
-      title: '=> fof-username-request.forum.results.title'
-    dropdown:
-      empty_text: 暂无用户名申请。
-      exerpt: '申请更改用户名为：{requestedUsername}'
-      item_text: '{username} 申请更改用户名'
-      title: 用户名更改申请
-      tooltip: '=> fof-username-request.forum.dropdown.title'
     nickname_modals:
       action:
         approval_label: 批准
@@ -63,22 +44,6 @@ fof-username-request:
       tooltip: '=> fof-username-request.ref.name_change_requests'
       username_exerpt: '请求用户名：{requestedName}'
       username_item_text: '{name} 请求更改用户名'
-    profile_link: 曾用名
-    request:
-      confirmation_message: 您的申请已提交，我们将在稍后进行审核。
-      current_request: '您已申请更改用户名为「{username}」，您可以更新或刪除该申请。'
-      delete_button: 刪除申请
-      deleted: 申请已刪除。
-      dismiss_button: 明白
-      submit_button: 提交申请
-      title: 申请更改用户名
-    results:
-      approved: 您的用户名申请已通过
-      new_username: '您的用户名已更改为「{username}」'
-      reason: '拒绝原因：<i>「{reason}」</i>。'
-      rejected: 您的用户名申请被拒绝
-      resubmit: 您可以重新提交一个新的用户名。
-      title: 更改用户名
     settings:
       nickname_request_button: 更改昵称
       username_request_button: 更改用户名

@@ -37,7 +37,6 @@ fof-oauth:
           api_key_label: 'API Key'
           api_secret_label: 'API Secret'
           description: '在 {link} 创建一个应用。您需要提供服务协议和隐私政策 URL，然后确保添加请求邮件权限。'
-      title: 'FriendsOfFlarum OAuth 认证'
   forum:
     error:
       bad_verification_code: 无效或过期的验证令牌，请重试。

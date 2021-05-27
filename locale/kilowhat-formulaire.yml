@@ -42,9 +42,6 @@ kilowhat-formulaire:
         user_username: 用户名
     formatter-parsing-error: '无法解析内容：{message}'
     not-allowed-to-fill-field: 您无权更改此字段的值
-    submission-link-already-exists: 链接重复
-    submission-link-discussion-invalid: 该主题的标签与此表单所需的标签不匹配
-    submission-link-user-invalid: 该用户的用户组与此表单所需的用户组不匹配
   forum:
     auto-discussion-options-modal:
       field:
@@ -117,28 +114,19 @@ kilowhat-formulaire:
         template: 模板
     form-edit:
       auto-discussion-options: 新主题选项
-      delete: 永久删除
-      delete-confirmation: '表单「{title}」将被永久删除'
       email-confirmation-options: 确认邮件模板
       email-notification-options: 通知邮件模板
-      expert-mode: 专家模式
       field:
         accept-submissions: 接受新的提交结果
         allow-modification: 允许用户编辑他们已提交的结果
         automatic-discussion: 根据提交内容自动创建主题帖
         automatic-discussion-help: "启用后，该表单仍像独立表单一样可访问。提交的内容将自动创建并连接新主题帖。\n"
-        email-confirmation-message: 通过邮件确认信息（格式化启用，必须启用上方确认项）
-        email-confirmation-title: 确认邮件的标题（发给参与者）
-        email-notification-message: 邮件通知消息
-        email-notification-title: 通知邮件的标题
         link: 特殊表单类型
         max-submissions: 最多提交量（留空表示不限制）
         notify-emails: 将数据副本发送至以下以逗号分隔的电子邮箱中
         send-confirmation-to-participants: 向参与者发送确认邮件
-        slug: '别名（URL Slug）'
         title: 标题
         web-confirmation-message: 在网页中确认信息（格式化启用）
-      hide: 删除
       link-options:
         all-groups: 任何用户组
         all-tags: 任何标签
@@ -146,10 +134,7 @@ kilowhat-formulaire:
         standalone: Standalone
         tags: 主题字段（beta）
       preview: 预览
-      restore: 还原
       save-for-preview: 保存并预览
-      template: 模板
-      title: 编辑表单
     form-index:
       columns:
         accept-submissions: 开启
@@ -157,7 +142,6 @@ kilowhat-formulaire:
         allow-modification: 修改
         submissions: 提交结果
         title: 标题
-        type: 类型
       edit: 编辑
       empty: 无表单
       header:
@@ -172,11 +156,6 @@ kilowhat-formulaire:
         discussion: '=> kilowhat-formulaire.ref.type.discussion'
         standalone: '=> kilowhat-formulaire.ref.type.standalone'
         user: '=> kilowhat-formulaire.ref.type.user'
-      title: 表单管理员
-      type-options:
-        groups: 用户资料
-        standalone: 独立
-        tags: 主题字段
     form-sort:
       latest: 最新
       oldest: 最旧

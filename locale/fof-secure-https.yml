@@ -6,7 +6,6 @@ fof-secure-https:
   admin:
     settings:
       replace: '通过 HTTPS 代理图片'
-      title: 配置
   forum:
     removed: '图像因不支持 HTTPS 被隐藏。'
     show: 仍然显示

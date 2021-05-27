@@ -18,7 +18,6 @@ askvortsov-saml:
       want_messages_signed: 'Want Messages Signed?'
       x509_cert: x509证书（需要签名，如果启用的话）
       x509_key: x509私钥（需要签名，如果启用的话）
-    nameid_format: 'NameID 格式'
     options:
       nameid_format:
         emailAddress: 邮箱（默认，如果不支持持久化）

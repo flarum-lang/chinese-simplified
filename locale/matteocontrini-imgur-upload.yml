@@ -13,7 +13,6 @@ imgur-upload:
         preview-without-link: 无链接预览图
         title: 嵌入类型
       hide-markdown-image: '隐藏 Markdown 图片按钮'
-      title: 'Imgur 上传设置'
   forum:
     done: 完成！
     error: 错误

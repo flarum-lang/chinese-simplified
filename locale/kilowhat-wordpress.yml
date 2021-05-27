@@ -9,11 +9,6 @@ kilowhat-wordpress:
     edit_css:
       customize_text: '您的 LESS/CSS 将仅覆盖 WordPress 框架内的 Flarum <a>默认样式</a>。'
       title: '编辑自定义嵌入 CSS'
-    header:
-      discuss: 'Flarum 论坛主题帖'
-      documentation: 完整的在线文档
-      title: '高级 WordPress 集成'
-      version: '版本 {version}'
     health:
       check: 立即检查
       errors: 我们发现了一些问题。
@@ -21,12 +16,8 @@ kilowhat-wordpress:
       not-run: '在您连接 Wordpress 和 Flarum 后，方可使用「健康检查」。'
       request-error: 无法执行健康检查。
       title: 健康检查
-    menu:
-      description: '配置 WordPress 集成。'
-      title: WordPress
     permissions:
       gambits: 'Wordpress 第三方策略（详见文档）'
-      heading: WordPress
     save-controls:
       no-unsaved-changes: 所有内容已保存
       save: 保存

@@ -24,7 +24,7 @@ core:
       custom_header_heading: 自定义页眉
       custom_header_text: '=> core.ref.custom_header_text'
       custom_styles_heading: 自定义样式
-      custom_styles_text: '添加 LESS/CSS 代码以自定义论坛外观样式，此设置将覆盖 Flarum 默认样式。'
+      custom_styles_text: '添加 Less/CSS 代码以自定义论坛外观样式，此设置将覆盖 Flarum 默认样式。'
       dark_mode_label: 夜间模式
       description: 自定义论坛色调、图标以及其他元素
       edit_css_button: '编辑自定义 CSS'
@@ -62,7 +62,7 @@ core:
       title: 仪表盘
       tools_button: 工具
     edit_css:
-      customize_text: '通过增加 LESS/CSS 代码以自定义论坛外观样式，此设置将覆盖 Flarum <a>默认样式</a>。'
+      customize_text: '通过增加 Less/CSS 代码以自定义论坛外观样式，此设置将覆盖 Flarum <a>默认样式</a>。'
       submit_button: '=> core.ref.save_changes'
       title: '编辑自定义 CSS'
     edit_footer:
@@ -198,10 +198,12 @@ core:
       read_heading: 访问相关
       rename_discussions_label: 更改主题标题
       reply_to_discussions_label: 回复
+      search_users_label: 搜索用户
       sign_up_label: 注册
       start_discussions_label: 发布主题
       title: 权限
       view_discussions_label: 查看主题
+      view_forum_label: 查看论坛（讨论和用户）
       view_hidden_groups_label: 查看隐藏的用户组徽章
       view_last_seen_at_label: 查看用户上次在线时间
       view_post_ips_label: '查看 IP 地址'
@@ -399,7 +401,7 @@ core:
       now_link: 最新回复
       original_post_link: 最早内容
       unread_text: '{count} 条未读'
-      viewing_text: '{index} / {count} 条|{index} / {count} 条'
+      viewing_text: '{index} / {formattedCount} 条|{index} / {formattedCount} 条'
     post_stream:
       discussion_renamed_old_tooltip: '原标题：「{old}」'
       discussion_renamed_text: '{username} 将标题更改为 「{new}」。'
@@ -541,7 +543,7 @@ core:
     save_changes: 保存
     settings: 设置
     sign_up: 注册
-    some_others: '{count} 人|{count} 人'
+    some_others: '{count, plural, one {# 人} other {# 人}}'
     start_a_discussion: 发布主题
     username: 用户名
     users: 用户

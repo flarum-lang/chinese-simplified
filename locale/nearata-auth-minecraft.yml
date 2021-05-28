@@ -19,3 +19,5 @@ nearata-auth-minecraft:
       title: 用Minecraft登录
     settings:
       change_email_button: 更改电子邮件
+    token_help: '加入服务器<strong>srv.mc-oauth.net:25565</strong>以获得一个访问令牌。'
+    token_placeholder: 令牌

@@ -39,6 +39,6 @@ fof-polls:
     public_poll: 查看投票参与者
     tooltip:
       badge: 投票
-      votes: '已有 {count} 人投票|已有 {count} 人投票'
+      votes: '{count, plural, one {#} other {#}} 人投票'
     votes_modal:
       title: 投票人

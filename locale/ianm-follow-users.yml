@@ -8,14 +8,16 @@ ianm-follow-users:
       be_followed_label: 允许用户关注他人
   email:
     new_discussion_by_user_body: "{recipient_display_name}，你好！\n\n{user_display_name} 发布了一个新主题：{discussion_title}\n\n点击下方链接查看内容：\n\n{discussion_url}\n\n---\n\n{post_content}\n"
-    new_discussion_by_user_subject: '【关注的人】{title}'
+    new_discussion_by_user_subject: '【关注】{title}'
     new_follower_body: "{recipient_display_name}，你好！\n\n{follower_display_name} 关注了你，当你发布新主题时他们会收到通知。\n\n点击下方链接查看粉丝资料：\n\n{profile_url}\n"
-    new_follower_subject: 【关注】你有一个新粉丝！
+    new_follower_subject: 【关注】新粉丝！
     new_post_body: "{recipient_display_name}，你好！\n\n{user_display_name} 发表回复于 {discussion_title}\n\n点击下方链接查看内容：\n\n{post_url}\n\n---\n\n{post_content}\n\n---\n\n在您已读前，您不会再收到此主题的更多新通知。\n"
-    new_post_subject: '【关注的人】新回复于 {title}'
+    new_post_subject: '【关注】新回复于 {title}'
   forum:
     badge:
-      label: 关注的人
+      label: 我的关注
+    filter:
+      following: 我的关注
     index:
       follow_tag_button: 关注
       unfollow_tag_button: 取消关注
@@ -37,4 +39,4 @@ ianm-follow-users:
       unfollow_button: 取消关注
       unfollow_confirmation: 确定要取消关注这个用户吗？
   lib:
-    following_link: 关注的人
+    following_link: 我的关注

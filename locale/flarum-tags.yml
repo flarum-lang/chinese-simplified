@@ -46,8 +46,8 @@ flarum-tags:
       meta_description_text: 全部标签
       meta_title_text: '=> flarum-tags.ref.tags'
     choose_tags:
-      choose_primary_placeholder: '选择一个主标签|最多选择 {count} 个主标签'
-      choose_secondary_placeholder: '选择一个次标签|最多选择 {count} 个次标签'
+      choose_primary_placeholder: '{count, plural, one {选择一个主标签} other {最多选择 # 个主标签}}'
+      choose_secondary_placeholder: '{count, plural, one {选择一个次标签} other {最多选择 # 个次标签}}'
       edit_title: '更改「{title}」的节点标签'
       submit_button: '=> core.ref.okay'
       title: 添加标签
@@ -65,7 +65,7 @@ flarum-tags:
       added_and_removed_tags_text: '{username} 添加标签 {tagsAdded}，并移除标签 {tagsRemoved}。'
       added_tags_text: '{username} 添加标签 {tagsAdded}'
       removed_tags_text: '{username} 移除标签 {tagsRemoved}'
-      tags_text: '{tags}|{tags}'
+      tags_text: '{count, plural, one {{tags}} other {{tags}}} 标签'
     tag:
       meta_description_text: '{tag} 标签下的所有主题'
   lib:

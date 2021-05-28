@@ -57,8 +57,8 @@ the-turk-diff:
       revisionWithNumber: '=> the-turk-diff.ref.revisionWithNumber'
       sentence: '正在预览 {content}'
     revertChangesButton: 撤销更改
-    revisionInfo: '已编辑 {revisionCount} 次，新到旧排序|已编辑 {revisionCount} 次，新到旧排序'
-    revisions: '共 {revisionCount} 次修订|共 {revisionCount} 次修订'
+    revisionInfo: '已编辑 {revisionCount, plural, one {{revisionCount}} other {{revisionCount}}} 次，新到旧排序'
+    revisions: '{revisionCount, plural, one {共 {revisionCount} 次修订} other {共 {revisionCount} 次修订}}'
     rollbackButton: '回滚到版本 {number}'
     rollbackErrorMessage: 回滚失败。
     rollbackSuccessMessage: 回滚成功。

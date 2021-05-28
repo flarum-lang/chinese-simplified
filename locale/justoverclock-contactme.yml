@@ -8,7 +8,7 @@ flarum-ext-contactme:
       emaillabel: 消息接收邮箱
   email:
     contact:
-      body: "你好！\n\n{username} 提交了一封联系表单（来源邮箱：{email}）\n\n表单内容是：\n\n{message}\n"
+      body: "你好！\n\n{username} 提交了一封联系表单（来源邮箱：{email}）\n\n表单内容是：\n\n{message}"
       subject: 新联系表单
   forum:
     backsoon: 我们将很快回复你

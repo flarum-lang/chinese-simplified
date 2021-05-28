@@ -102,7 +102,7 @@ fof-upload:
       upload: 上传
       user_uploads: 用户上传
     file_list:
-      confirm_selection_btn: 嵌入|嵌入
+      confirm_selection_btn: '{fileCount, plural, =0 {未选择} one {嵌入} other {嵌入所选文件}}'
       empty: 没有可展示的文件。
       hide_file:
         btn_a11y_label: '在文件管理器中隐藏「{fileName}」'

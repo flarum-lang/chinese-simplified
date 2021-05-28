@@ -5,7 +5,7 @@
 fof-share-social:
   admin:
     settings:
-      canonical-urls: 使用规范的URL进行分享
+      canonical-urls: '分享权威链接 (canonical URL)'
   forum:
     discussion:
       share_button: 分享

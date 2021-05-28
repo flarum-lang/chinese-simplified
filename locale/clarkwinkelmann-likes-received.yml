@@ -5,7 +5,7 @@
 clarkwinkelmann-likes-received:
   admin:
     permission:
-      view: 查看个人资料总赞数
+      view: 查看资料卡片总赞数
   forum:
     user-card:
       likes: '{likes} 赞'

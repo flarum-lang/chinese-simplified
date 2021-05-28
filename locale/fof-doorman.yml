@@ -5,34 +5,34 @@
 fof-doorman:
   admin:
     doorkey_required: 您必须输入邀请码
-    invalid_doorkey: 您输入的邀请码无效。
+    invalid_doorkey: 邀请码无效。
     modal:
       group: '发送 {group} 用户组邀请'
       help: 列表内容可用半角逗号、空格或逗号+空格分隔。输入单个电子邮件地址或粘贴列表，然后按空格键完成添加。
-      invalid_emails: '无效电子邮件地址：{emails}'
-      max_use_conflict: 电子邮件的数量超过了该代码的最大使用次数。
-      placeholder: 在此输入电子邮件地址
+      invalid_emails: '无效邮件地址：{emails}'
+      max_use_conflict: 邮件数量超出邀请码的最大使用次数。
+      placeholder: 在此输入邮件地址
       send: 发送邮件
       success: 邮件发送成功
       title: 发送邀请码
     nav:
-      desc: 创建邀请码用于用户注册并分配用户组
+      desc: 创建注册邀请码并自动分配用户组
     page:
       doorkey:
         allow-public:
-          switch-label: 将注册时的邀请码设置为可选项
+          switch-label: 设置邀请码为可选项
           title: 允许公开注册
         heading:
-          activate: 激活用户
+          activate: 自动激活
           group: 用户组
-          key: 密钥
+          key: 邀请码
           max_uses: 最大可用次数
         help:
-          activates: 激活用户：通过邀请码注册后，用户账号会被自动激活。
-          group: 用户组：用户在注册后默认分配到的用户组。
-          key: 密钥：用户在注册时输入的邀请码。
-          max: '最大可用次数：一个邀请码最多可以被使用几次，设置为 0 表示无限次使用'
-        key: 密钥
+          activates: 自动激活：通过邀请码注册后，自动激活用户账号。
+          group: 用户组：用户在注册后自动分配的用户组。
+          key: 邀请码：用户在注册时输入的邀请码。
+          max: '最大可用次数：一个邀请码最多可以被使用几次，0 表示无限次'
+        key: 邀请码
         max_uses: 最大可用次数
         title: 邀请码
         used_times: '剩余 1 次邀请|剩余 {remaining} 次邀请'
@@ -46,4 +46,4 @@ fof-doorman:
       doorkey_required: 请输入邀请码。
       doorman_placeholder: 邀请码
       doorman_placeholder_optional: 邀请码（可选）
-      invalid_doorkey: 您输入的邀请码无效。
+      invalid_doorkey: 邀请码无效。

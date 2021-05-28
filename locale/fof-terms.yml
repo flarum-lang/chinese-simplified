@@ -41,7 +41,7 @@ fof-terms:
   forum:
     accept-modal:
       accept: 确认
-      close: 您现在可以关闭此对话框
+      close: 谢谢，您现在可以返回论坛
       i-accept: '我已阅读并同意新<a>{policy}</a>'
       title: 服务条款更新
       updated-at: '服务条款已于 {date} 更新'

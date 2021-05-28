@@ -5,5 +5,5 @@
 itnt-uitab:
   admin:
     settings:
-      help_text: '如果你的Flarum安装在一个子目录下，请在下面指定子目录（以"/"结尾），否则请保留默认值。 例如：<code>/sub/</code>'
+      help_text: '如果你的 Flarum 安装在子目录下，请指定子目录（以"/"结尾），否则请保留默认值。 例如：<code>/sub/</code>'
       home_page_label: 子目录

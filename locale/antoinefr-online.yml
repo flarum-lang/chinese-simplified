@@ -8,6 +8,6 @@ antoinefr-online:
       displaymax: 显示人数
       titleoflist: 自定义列表标题
   forum:
-    andmore: '更多{more}..'
-    online_users: '在线用户{more}|所有在线用户{more}'
-    title: '有谁在线?'
+    andmore: '等 {more} 人…'
+    online_users: '{more} 人在线|{more} 人在线'
+    title: 在线用户

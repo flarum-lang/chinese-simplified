@@ -12,6 +12,10 @@ askvortsov-categories:
       nav: 导航栏
       parent_display: 主版块展示
       performance: 性能
+    help:
+      child_bare_icon: 子类别上的图标是否应在没有圆形背景的情况下显示？
+      full_page_desktop: '侧边栏的导航菜单是否应该折叠成一排（像传统的标签页）？这也会从分类页面的导航栏中隐藏小部件（如 Friends of Flarum Forum Statistics）。'
+      small_forum_optimized: 这将提供更准确的讨论/帖子计数，但会大大降低中型和大型论坛的速度。
     labels:
       child_bare_icon: 隐藏子版块图标的圆形背景
       compact_mobile_mode: 紧凑型移动设备布局
@@ -24,6 +28,9 @@ askvortsov-categories:
       small_forum_optimized: '针对小型论坛进行优化？ 这样可以更精准的统计主题/回复数，但会大大减慢中型和大型论坛的速度。'
     title: '传统版块 - 设置'
   forum:
+    all_categories:
+      meta_description_text: 所有类别
+      meta_title_text: '=> askvortsov-categories.ref.categories'
     header:
       back_to_categories_tooltip: 返回全部版块
     index:
@@ -33,3 +40,5 @@ askvortsov-categories:
     stat-widgets:
       discussion_label: 主题
       post_label: 帖子
+  ref:
+    categories: 分类

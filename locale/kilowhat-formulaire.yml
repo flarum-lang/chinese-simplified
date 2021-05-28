@@ -102,20 +102,39 @@ kilowhat-formulaire:
         title: 标题
       title: 新建表单
     form-edit-header:
+      access-status:
+        both: 创建和编辑
+        closed: 已关闭
+        create: 仅创建
+        edit: 仅编辑
       back: 返回
       category:
         discussion: '=> kilowhat-formulaire.ref.type.discussion'
         standalone: '=> kilowhat-formulaire.ref.type.standalone'
         user: '=> kilowhat-formulaire.ref.type.user'
+      controls: 控制器
+      delete: 永久性地删除
+      delete-confirmation: '表单 "{title}" 将被永久删除'
+      disable-expert-mode: 停用专家模式
+      enable-expert-mode: 开启专家模式
+      fields:
+        private-title: 私有化标题
+        slug: '自定义URL Slug（可选）'
+      hide: 删除
+      restore: 重置
       tabs:
         access: 权限
         notifications: 通知
+        placement: 位置
         submissions: 提交项
         template: 模板
+      template-export: '模板 导入/导出'
     form-edit:
       auto-discussion-options: 新主题选项
       email-confirmation-options: 确认邮件模板
       email-notification-options: 通知邮件模板
+      exiting-with-unsaved-data: 你有未保存的修改。你真的想退出这个页面吗？
+      expert-mode-warning: "专家模式被启用。这可以让你自定义字段标识符和每个字段的权限。请确保你阅读关于这些功能的文档，因为你可能会破坏一些东西。\n"
       field:
         accept-submissions: 接受新的提交结果
         allow-modification: 允许用户编辑他们已提交的结果
@@ -124,17 +143,32 @@ kilowhat-formulaire:
         link: 特殊表单类型
         max-submissions: 最多提交量（留空表示不限制）
         notify-emails: 将数据副本发送至以下以逗号分隔的电子邮箱中
+        permission-edit-any: 编辑任何提交的文件
+        permission-edit-own: 编辑自己提交的文件
+        permission-see-any: 查看任何提交的文件
+        permission-see-own: 参见自己提交的文件
         send-confirmation-to-participants: 向参与者发送确认邮件
-        title: 标题
+        show-on-creation:
+          discussion: '在 discussion composer 展示'
+          user: 在注册页面展示
+        title: 公开标题
         web-confirmation-message: 在网页中确认信息（格式化启用）
       link-options:
         all-groups: 任何用户组
         all-tags: 任何标签
         groups: 用户资料
         standalone: Standalone
-        tags: 主题字段（beta）
-      preview: 预览
+        tags: 主题字段
+      preview: 在新的标签页中预览
       save-for-preview: 保存并预览
+      section:
+        permissions: 权限
+        template: 模板
+      warnings:
+        auto-link-permission-warning: "带有 \"自动创建讨论 \"选项的表格在独立访问时使用全局填充权限。\n"
+        linked-form-is-draft: "这个表单目前处于草稿模式。启用 \"接受新的提交 \"以使这些字段出现在论坛上。\n"
+        show-on-composer-invalid-permissions: "确保 \"查看自己的 \"和 \"编辑自己的 \"权限与可以用所选标签发起讨论的人相匹配，以便使用 \"在合成器中显示\"。如果不确定，请设置为 \"成员\"。即使你的设置是正确的，也会出现这个信息。\n"
+        show-on-signup-invalid-permissions: "你需要将 \"查看自己 \"和 \"编辑自己 \"的权限设置为未批准的成员，以便使用 \"在注册时显示\"。\n"
     form-index:
       columns:
         accept-submissions: 开启
@@ -178,9 +212,10 @@ kilowhat-formulaire:
     nav:
       forms: '=> kilowhat-formulaire.ref.manager'
     permission-controls:
+      disabled_members_button: 未激活和被暂停的成员
       everyone_button: '=> core.admin.permissions_controls.everyone_button'
       inherit: 使用默认
-      members_button: '=> core.group.members'
+      members_button: 已激活的成员
     rich-text:
       preview-placeholder: 开始打字预览
     save-controls:
@@ -224,8 +259,9 @@ kilowhat-formulaire:
       description: 描述
       duplicate: 重复字段
       email: 邮箱
+      fill-permission: （专家）填写权限
       integer: 整数
-      key: '在提交数据中有效载荷的 JSON 属性名'
+      key: '（专家）在提交数据中有效载荷的 JSON 属性名'
       max: 最大
       mime: 'MIME 类型（半角逗号分隔，可用通配符作为第二部分）'
       min: 最小

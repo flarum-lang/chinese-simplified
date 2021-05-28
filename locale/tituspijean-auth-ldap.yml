@@ -5,11 +5,23 @@
 tituspijean-auth-ldap:
   admin:
     settings:
+      account_prefix: 账户前缀
+      account_suffix: 账户后缀
+      admin_dn: LDAP管理员的识别名称（匿名绑定时留空）
+      admin_password: LDAP管理员密码（匿名绑定时留空）
+      base_dn: 基础DNs（分号分隔）
+      filter: 应用的过滤器（可选）
       follow_referrals: 关注推荐
+      hosts: LDAP域或服务器IP地址（以逗号分隔）
+      method_name: 'LDAP服务器的名称（将出现在 "登录 "之后）'
       onlyUse: '禁用 Flarum 登录，仅使用 LDAP 身份认证'
+      port: 端口
+      search_user_fields: LDAP用户搜索字段（以逗号分隔）
       title: 'LDAP 设置'
       use_ssl: '使用 SSL'
       use_tls: '使用 TLS'
+      user_mail: LDAP用户邮件字段
+      user_username: LDAP用户名字段
   forum:
     log_in_with: '{server} 登录'
     log_out: '=> core.ref.log_out'

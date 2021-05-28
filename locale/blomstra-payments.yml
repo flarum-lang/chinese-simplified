@@ -3,13 +3,34 @@
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
 blomstra-payments:
+  admin:
+    edit-group:
+      select-pta-product: (PTA)所需产品
+      select-pta-product-description: "选择一个产品将允许在付款后进入该组。如果是订阅，在取消订阅后，访问权将被自动取消。在您的Stripe仪表板上创建一个产品，并将以<code>prod_</code>开头的ID复制到这个字段。\n"
+    edit-tag:
+      select-ptp-product: (PTP)所需产品
+      select-ptp-product-description: "选择一个产品将需要为该标签中的每个讨论支付该产品的费用。按帖子付费，例如对广告宣传来说是很好的。在您的Stripe仪表板上创建一个具有单一 \"一次性 \"价格的产品，并将以<code>prod_</code>开头的ID复制到这个字段。\n"
+      select-ptv-product: (PTV)所需产品
+      select-ptv-product-description: "选择一个产品将需要支付该产品的费用，以永久获得超过阈值的所有帖子的权限。在您的Stripe仪表板上创建一个产品，并将以<code>prod_</code>开头的ID复制到这个字段。\n"
+      visible-from: 隐藏此门槛的帖子
+      visible-from-description: "你在这里指定的数字定义了在什么时候帖子会被隐藏给没有付费访问内容的用户。用0来隐藏所有的帖子，用1来隐藏OP之后的帖子。\n"
+    settings:
+      link-access-portal: 在用户会话下拉菜单中链接访问门户网站
+      pk: 可发布的(api)密钥
+      sk: key
+      webhook-secret: 'Webhook 加密签名'
   forum:
     access-portal:
       options: 选项
+      purchase: 购买
+    nav:
+      access_portal: 访问门户
     pay-to-post:
+      purchase: 从购买到发布
       purchase-control: 付费发表
       purchase_required: "一旦你通过我们的支付提供商Stripe完成支付，这一讨论将被公布。点击购买，查看费用和付款方式。\n"
     pay-to-view:
+      description: "超过这一点的帖子被锁定在付费墙后面，你可以通过我们的支付提供商Stripe完成付款来解锁。\n"
       purchase-completed: 已解锁
       purchase-control: 付费浏览
       purchase-log-in: 登录并付费浏览

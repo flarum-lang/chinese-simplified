@@ -3,6 +3,9 @@
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
 askvortsov-checklist:
-  forum:
+  admin:
+    settings:
+      cross_out_completed_items: 划掉已完成的检查表项目？
+  lib:
     composer:
-      checklist_tooltip: 清单
+      checklist_tooltip: 切换检查列表

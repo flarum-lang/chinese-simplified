@@ -16,7 +16,7 @@ askvortsov-pwa:
       colors:
         background_color_text: 'PWA 加载时显示的初始屏幕占位颜色，应用实际加载后不会使用它。'
         heading: 颜色
-        theme_color_text: 此颜色被移动设备用于呈现您的应用，例如安卓的沉浸式状态栏。此颜色跟随管理面板「外观」页面的论坛主色调。
+        theme_color_text: 这种颜色有时会被设备在显示你的应用程序时使用，例如在安卓的任务切换器上，作为环绕网站的颜色。
       heading: '渐进式 Web 应用（PWA）配置'
       logo_heading: 标志（Logo）和图标（Icon）
       logo_size_text: '上传标志，标志将缩放为 {size} × {size} 像素。'
@@ -24,16 +24,21 @@ askvortsov-pwa:
       maintenance:
         debug_label: '调试模式？这将会在 `storage/logs` 中记录通知信息。'
         heading: 维护
+      other:
+        force_portrait_text: '强制重定向?'
+        heading: 其他
       refreshed_message: 'PWA 配置刷新成功。'
       status_check_heading: 状态检查
       submit_button: 保存设置
       text: '将您的 Flarum 站点配置为渐进式 Web 应用！请注意，本插件不会自动将您的站点发布到应用商店，而是仅为您的网站提供了「添加到主屏幕」或类似选项，请注意支持 PWA 的浏览器会自动弹窗询问是否安装，不支持 PWA 的浏览器无法使用此功能。我们提供一些状态检查，但是测试应用运行状态的最佳方法是安装并试用它（百度如何安装渐进式 Web 应用）。此外，「添加到主屏幕」弹窗是由浏览器控制的，开发人员/管理员/程序无法触发。建议您在自己的社区文档中添加有关如何安装 PWA 的说明。'
     status:
       config_no_https: '您 config.php 文件中的 URL 未使用 HTTPS。渐进式 Web 应用必须使用 HTTPS 方可正常工作。'
+      key_gen_failed: '推送通知所需密钥的生成失败。错误信息: {error}'
       no_logo: '您必须至少上传一张 196px 尺寸的标志才能使您的应用程序正常工作。'
       no_name: 您必须设置应用全名才能使您的应用程序正常工作。
-      possible_https_disabled: '您的网站可能未以 HTTPS 运行。如果已是 HTTPS，请忽略此消息。如果没有，请记住渐进式 Web 应用需要 HTTPS 才能工作。'
+      possible_https_disabled: 你的网站可能没有在HTTPS上运行。清除你的缓存（管理仪表板页面=>工具按钮）可能有帮助。如果是，请忽略这一点。如果不是，请记住，HTTPS是渐进式网络应用程序工作的必要条件。
       success: 恭喜，没有发现潜在问题！
+      suggest_gmp: '你的服务器上似乎没有启用gmp PHP扩展。这不是严格意义上的必要条件，但可以提高性能，建议使用。不过有些共享主机可能不支持它。'
   forum:
     alerts:
       optin: 您已启用推送通知，但还没有配置此设备。
@@ -55,3 +60,7 @@ askvortsov-pwa:
         no_browser_support_button: 了解更多
     user_controls:
       share_button: 分享
+  views:
+    offline:
+      header: 网络连接错误
+      text: 这个应用程序需要网络连接；它不能离线使用。请检查您的连接。

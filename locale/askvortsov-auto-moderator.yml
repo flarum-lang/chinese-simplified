@@ -10,8 +10,19 @@ askvortsov-auto-moderator:
       remove_from_group: 从组中删除
       suspend: 暂停
       unsuspend: 解禁
+    automoderator_instructions:
+      header: 扩展说明
+      text: "<li>Tl;dr：当一个用户满足X标准时，做Y。当一个用户不再满足X标准时，做Z。</li>\n<li><strong>标准：</strong>标准是这个扩展的核心。它们是任意的指标和要求的集合。当一个用户满足一个标准时，该标准的任何 \"on gain \"动作将被执行。当一个用户失去一个标准时，该标准的任何 \"失去 \"动作都将被执行。</li>\n</li> <ul>\n  <li><strong>度量衡：</strong>一个数字条件。例如，帖子数量或收到的喜欢的数量。一个标准可以要求一个范围/最小/最大的度量。</li>\n  <li><strong>要求：</strong>一个抽象的布尔条件。例如，没有被停职，或有一个与某一重码匹配的电子邮件。</li>\n</ul>\n<li><strong>行动：</strong>当一个条件被满足或失去时自动发生的事情。这可能包括从添加/删除一个组到发送一封电子邮件到暂停一个用户等任何事情。</li>\n<li><strong>触发器：</strong>一组将导致用户的标准组被重新评估的事件。这些是指标和要求的定义的一部分。所有的标准将在登录时被评估：这就是 \"通用触发器\"。</li>。\n<li>\"损失时 \"行动将总是在 \"获得时 \"行动之前运行。这样一来，只要用户满足至少一个标准，就会采取相应的行动。</li>\n<li>请记住，行动只在 \"损失时 \"和 \"收益时 \"运行。当用户符合某个标准时，手动编辑将不会触发该标准的 \"获得时 \"行动被重新应用。</li>\n<li>如果您删除了一个标准，\"损失 \"行动将不会对当前有资格获得该标准的用户运行。</li>\n<li>如果您使用标准来管理组，我们建议维护一组单独的组，由标准来管理。您将无法手动向这些组添加/删除用户</li>\n"
+    automoderator_page:
+      create_criterion_button: 建立新标准
+      criterion_invalid: 该标准目前是无效的。请检查其设置以获得更多信息
+      list_heading: 标准
     criterion_page:
       actions_help: 当用户有资格获得一个新的标准时，对收益的行动就会执行。当用户不再有资格获得某项标准时，损失的行动就会执行。
+      actions_label: 动作
+      actions_on_gain_heading: 对收益的行动
+      actions_on_loss_heading: 对损失的行动
+      add_action: 添加动作
       add_metric: 添加准则
       back: 回到标准列表
       delete_button: '=> core.ref.delete'
@@ -20,10 +31,12 @@ askvortsov-auto-moderator:
       icon_label: 图标
       loading: '=> core.ref.loading'
       metrics_and_requirements_help: 这些定义了用户是否符合这个标准的条件。衡量标准代表数值的范围，要求是布尔条件。
+      metrics_and_requirements_label: 指标和要求
       metrics_heading: 标准
       name_label: 名称
       negated: 被否定？
       new_criterion: 创建准则
+      requirements_heading: 要求
     criterion_status:
       action_validation_errors: '遇到了以下行动驱动验证错误:'
       heading: 状态检查
@@ -55,3 +68,9 @@ askvortsov-auto-moderator:
       indefinitely: 无限期暂停？
     undefined_driver_item:
       text: 'ERROR! 驱动程序<strong>{driverName}</strong>未被定义。最有可能的是，它是由一个当前没有安装的扩展添加的。你需要重新启用该扩展或删除该驱动，以使该标准再次有效。'
+  lib:
+    group_id: 组ID
+    managed_groups:
+      group_item: '<badge></badge> {groupName}'
+      groups_not_editable: 由自动调节器标准管理的组不能手动添加/删除用户，以防止不一致。
+      header: '管理的组:'

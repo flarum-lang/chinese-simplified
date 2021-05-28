@@ -53,3 +53,5 @@ askvortsov-auto-moderator:
     suspend_selector:
       days: 暂停天数
       indefinitely: 无限期暂停？
+    undefined_driver_item:
+      text: 'ERROR! 驱动程序<strong>{driverName}</strong>未被定义。最有可能的是，它是由一个当前没有安装的扩展添加的。你需要重新启用该扩展或删除该驱动，以使该标准再次有效。'

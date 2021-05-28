@@ -42,7 +42,7 @@ fof-byobu:
     input:
       search_recipients: 至少输入用户名前三位以搜索用户……
     labels:
-      recipients: '仅 {count} 人可见|仅 {count} 人可见'
+      recipients: '{count, plural, one {{count}} other {{count}}} 人可见'
       user_deleted: '--已删除--'
     modal:
       help:

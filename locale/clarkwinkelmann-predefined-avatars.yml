@@ -6,23 +6,23 @@ clarkwinkelmann-predefined-avatars:
   admin:
     permissions:
       setCustomAvatarAlways: 随时设置自定义头像
-      setPredefinedAvatar: 从预定义列表中选择一个头像
+      setPredefinedAvatar: 从头像池中选择头像
     settings:
       defaultOptions:
-        first: 列表中的第一个头像
-        none: 没有头像
-        random: 列表中的随机头像
+        first: 头像池中的第一个头像
+        none: 无头像
+        random: 头像池中的随机头像
       predefinedAvatars: 可用头像
       predefinedAvatarsDefault: 默认头像
       predefinedAvatarsDefaultHelp: 适用于新用户的注册。
-      predefinedAvatarsHelp: "这些文件没有调整大小或转换。在上传之前，请确保调整大小，压缩并以你选择的格式导出它们。Flarum在使用100x100的方形png或jpg图片时效果最好，但你可以通过自定义CSS来利用其他分辨率。\n"
-      predefinedAvatarsNoRemove: 防止设定无头像
-      predefinedAvatarsNoRemoveHelp: '已经拥有自定义或预定义头像的用户将不能回到默认的 "首字母 "头像，除非他们有以下权限。'
-      predefinedAvatarsOnly: 仅允许预定义的头像
-      predefinedAvatarsOnlyHelp: 移除上传自定义头像的能力，除非你有以下权限。
+      predefinedAvatarsHelp: "系统不会调整这些文件的大小或格式。在上传之前，请自行调整大小，压缩并转换为你选择的格式。Flarum 推荐使用 100x100 的方形 png 或 jpg 图片，效果最好。不过你仍然可以通过自定义 CSS 来使用其他分辨率。\n"
+      predefinedAvatarsNoRemove: 禁止移除头像
+      predefinedAvatarsNoRemoveHelp: 已设置头像的用户将不能回到默认的「字母」样头像，拥有以下权限的用户除外。
+      predefinedAvatarsOnly: 仅允许挑选给定头像
+      predefinedAvatarsOnlyHelp: 禁止上传自定义头像，拥有以下权限的用户除外。
   forum:
     editor:
-      setPredefinedAvatar: 选择预定义的头像
+      setPredefinedAvatar: 选择头像
     modal:
       imageAlt: 头像
       title: 选择头像

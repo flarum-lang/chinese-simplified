@@ -12,7 +12,7 @@ flarumite-simple-discussion-views:
     permissions:
       reset_views_label: 设置主题浏览量
     settings:
-      ignore_crawlers: 忽略爬虫的访问
+      ignore_crawlers: 忽略爬虫访问
   forum:
     discussion_controls:
       resetviews_button: 设置浏览量

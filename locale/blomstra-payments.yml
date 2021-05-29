@@ -8,7 +8,7 @@ blomstra-payments:
       select-pta-product: (PTA)所需产品
       select-pta-product-description: "选择一个产品将允许在付款后进入该组。如果是订阅，在取消订阅后，访问权将被自动取消。在您的Stripe仪表板上创建一个产品，并将以<code>prod_</code>开头的ID复制到这个字段。\n"
     edit-tag:
-      select-ptp-product: (PTP)所需产品
+      select-ptp-product: '付款计划（PTP 付费发表）'
       select-ptp-product-description: "选择一个产品将需要为该标签中的每个讨论支付该产品的费用。按帖子付费，例如对广告宣传来说是很好的。在您的Stripe仪表板上创建一个具有单一 \"一次性 \"价格的产品，并将以<code>prod_</code>开头的ID复制到这个字段。\n"
       select-ptv-product: (PTV)所需产品
       select-ptv-product-description: "选择一个产品将需要支付该产品的费用，以永久获得超过阈值的所有帖子的权限。在您的Stripe仪表板上创建一个产品，并将以<code>prod_</code>开头的ID复制到这个字段。\n"
@@ -22,20 +22,20 @@ blomstra-payments:
   forum:
     access-portal:
       options: 选项
-      purchase: 购买
+      purchase: 付款
     nav:
       access_portal: 访问门户
     pay-to-post:
-      purchase: 从购买到发布
+      purchase: 付款
       purchase-control: 付费发表
-      purchase_required: "一旦你通过我们的支付提供商Stripe完成支付，这一讨论将被公布。点击购买，查看费用和付款方式。\n"
+      purchase_required: "通过第三方支付平台 Stripe 完成付款后，您的主题即可发布。点击付款，查看费用并选择付款方式。\n"
     pay-to-view:
-      description: "超过这一点的帖子被锁定在付费墙后面，你可以通过我们的支付提供商Stripe完成付款来解锁。\n"
+      description: "此贴需要您通过第三方支付平台 Stripe 完成付款来解锁内容。\n"
       purchase-completed: 已解锁
       purchase-control: 付费浏览
       purchase-log-in: 登录并付费浏览
     payment-options-modal:
-      description: "选择以下任何一个选项，开始进入该组。您将被重新定向到我们的支付提供商Stripe进行支付处理。\n"
-      title: '选择 {group} 付款方式'
+      description: "选择一个选项开始解锁用户组。您将被跳转到第三方支付平台 Stripe 完成付款。\n"
+      title: '用户组 {group} 付款方式'
     tag:
-      require-payment-label: 需要支付的费用
+      require-payment-label: 费用

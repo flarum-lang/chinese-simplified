@@ -6,7 +6,7 @@ fof-amazon-affiliation:
   admin:
     settings:
       field:
-        help-mediaembed: '当与 fof/formatting 同时使用时，rich embed将始终删除任何现有标记'
+        help-mediaembed: '当与 fof/formatting 同时使用时，富文本嵌入将删除任何现有标记'
         keep-existing-tag: 保留原始链接中的联盟标签
         keep-existing-tag-help: 默认使用下方定义的标签替换原始链接中的标签。
         remove-tag-if-unhandled: 删除未覆盖的亚马逊联盟标签
@@ -16,4 +16,4 @@ fof-amazon-affiliation:
       title:
         modal: 亚马逊联盟设置
         tags: 联盟标签
-        tags-mediaembed: 以下Amazon站点目前不支持MediaEmbed，因此将始终显示为普通链接（遵守上述设置）：CN、BR、MX、AU
+        tags-mediaembed: '以下 Amazon 站点目前不支持媒体嵌入，将以普通链接形式显示（且服从上述设置）：CN, BR, MX, AU'

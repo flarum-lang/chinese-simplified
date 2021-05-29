@@ -10,7 +10,7 @@ fof-moderator-notes:
       viewnotes: 查看留言
   api:
     auto_note: '_切换到此账号：_ {reason}'
-    auto_note_actor: '_切换到_ @{username}: {reason}'
+    auto_note_actor: '_切换到_ @{username}：{reason}'
     no_reason_provided: 无理由
   forum:
     moderatorNotes:

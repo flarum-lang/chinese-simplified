@@ -5,10 +5,10 @@
 clarkwinkelmann-email-as-display-name:
   admin:
     permissions:
-      view-all: 查看所有资料的电子邮件
-      view-own: 在自己的资料中查看电子邮件
+      view-all: 查看个人资料中每个人的电子邮件
+      view-own: 查看个人资料中自己的电子邮件
     settings:
-      remove-username-registration: 从注册窗口中移除用户名输入框
+      remove-username-registration: 注册时不需要用户名
   forum:
     log_in:
       username_or_email_placeholder: '=> core.ref.email'

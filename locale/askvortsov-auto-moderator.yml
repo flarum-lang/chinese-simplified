@@ -6,71 +6,71 @@ askvortsov-auto-moderator:
   admin:
     action_drivers:
       activate_email: 激活邮箱
-      add_to_group: 添加到用户组
-      remove_from_group: 从用户组中删除
+      add_to_group: 添加用户组
+      remove_from_group: 移除用户组
       suspend: 封禁
       unsuspend: 解除封禁
     automoderator_instructions:
-      header: 扩展说明
-      text: "<li>Tl;dr: 当一个用户满足 X 条件时，执行 Y。当一个用户不再满足 X 条件时，执行 Z。</li>\n<li><strong>条件：</strong>条件是这个扩展的核心。它们是任意的指标和要求的集合。当一个用户满足一个条件时，该条件的任何「达成动作」将被执行。当一个用户不再达到条件时，该条件的任何「失去动作」将被执行。</li>\n<ul>\n  <li><strong>指标：</strong>一个数字条件。例如，帖子数量或收到的喜欢的数量。一个条件可以要求一个范围/最小/最大的指标。</li>\n  <li><strong>要求：</strong>一个抽象的布尔条件。例如，没有被封禁，或有一个与特定正则匹配的邮箱地址。</li>\n</ul>\n<li><strong>动作：</strong>当一个条件被满足或失去时自动发生的事情。如添加/删除一个组、发送一封电子邮件、封禁用户等任何事情。</li>\n<li><strong>触发器：</strong>一组将导致用户的条件组被重新评估的事件。这些是指标和要求定义的一部分。所有的条件将在登录时被评估：这就是「通用触发器」。</li>\n<li>「失去动作」将总在「达成动作」之前执行。这样一来，只要用户满足至少一个条件，就会采取相应的动作。</li>\n<li>请记住，动作只在 「失去」和「达成」时执行。当用户符合某个条件时，手动编辑将不会触发该条件的「达成」动作执行。</li>\n<li>如果您删除了一个条件，该条件的「失去动作」不会被执行。</li>\n<li>如果您使用条件来管理用户组，我们建议创建单独的用户组，由条件来管理。您无法手动向这些组添加/删除用户。</li>\n"
+      header: 使用说明
+      text: "<li>太长不看：用户满足 X 条件时，执行 Y。用户不再满足 X 条件时，执行 Z。</li>\n<li><strong>评判标准：</strong>此扩展的核心思想。评判标准是多个判定指标和附加要求的集合。当一个用户满足或不满足一个标准时，执行相应的动作。</li>\n<ul>\n  <li><strong>判定指标：</strong>一个数值范围。例如，发帖数量或获赞数量。你可以设置指标为一个区间值/上限/下限值。</li>\n  <li><strong>附加要求：</strong>一个布尔条件。例如，是否被封禁、邮箱是否成功匹配正则表达式。</li>\n</ul>\n<li><strong>行为动作：</strong>当满足或不再满足评判标准时自动发生的事情。例如，移入/移出用户组、发送电子邮件、封禁用户等。</li>\n<li><strong>触发器：</strong>导致开始评判用户标准的事件，是判定指标和附加要求定义的一部分。如「通用触发器」，用户登录时会触发评判用户是否满足标准。</li>\n<li>「不满足动作」永远执行在「达成动作」之前。只要用户满足至少一个评判标准，就会执行相应的动作。</li>\n<li>❗行为动作只会在 「不满足」和「达成」时执行。当用户满足标准时，手动编辑将不会触发执行「达成动作」。</li>\n<li>❗删除一个评判标准，不会执行该标准的「不满足动作」。</li>\n<li>❗使用评判标准来管理用户组时，强烈建议您另建用户组，不要和平常的用户组共用。因为由此扩展管理的用户组，不允许手动移入/移出用户的。</li>\n"
     automoderator_page:
-      create_criterion_button: 创建条件
-      criterion_invalid: 无效的条件。请检查设置
-      list_heading: 条件
+      create_criterion_button: 创建标准
+      criterion_invalid: 此评判标准无效，点击查看详情信息。
+      list_heading: 评判标准
     criterion_page:
-      actions_help: 当用户达到一个新的条件时，动作就会执行。当用户不再具有资格获得某项指标时，动作会停止。
-      actions_label: 动作
+      actions_help: 在此指定当用户满足、或不再满足评判标准时，要执行的动作。
+      actions_label: 行为动作
       actions_on_gain_heading: 达成动作
       actions_on_loss_heading: 失去动作
       add_action: 添加动作
       add_metric: 添加指标
-      back: 返回条件列表
+      back: 返回评判标准列表
       delete_button: '=> core.ref.delete'
       description_label: 描述
       driver_missing_ext: 此驱动的依赖扩展未启用。
       icon_label: 图标
       loading: '=> core.ref.loading'
-      metrics_and_requirements_help: 这些内容定义了用户是否符合条件。指标代表数值的范围，要求采用布尔条件。
-      metrics_and_requirements_label: 指标和要求
-      metrics_heading: 指标
+      metrics_and_requirements_help: 在此处定义用户满足评判标准的条件。判定指标可以是区间值/上限/下限值，附加要求是某个布尔条件。
+      metrics_and_requirements_label: 判定指标与附加要求
+      metrics_heading: 判定指标
       name_label: 名称
-      negated: 取消
-      new_criterion: 创建条件
-      requirements_heading: 要求
+      negated: 否？
+      new_criterion: 创建评判标准
+      requirements_heading: 附加要求
     criterion_status:
-      action_validation_errors: 以下动作驱动出现验证错误：
-      heading: 状态检查
-      invalid: 条件无效。请检查以下驱动是否存在错误。
-      no_actions: 未定义条件动作。当用户达到或失去此条件时，什么也不会发生。
-      no_metrics_or_reqs: 没有为此条件设定任何指标或需求。这意味着所有用户都满足此条件。
-      requirement_validation_errors: 以下必要驱动出现验证错误：
-      valid: 条件有效！
+      action_validation_errors: 以下行为动作驱动出错：
+      heading: 当前状态
+      invalid: 当前评判标准无效，请检查下方出错的条件。
+      no_actions: 尚未指定行为动作。当用户满族或不再满足评判标准时，将无事发生。
+      no_metrics_or_reqs: 尚未设定任何指标或附加要求。这意味着所有用户都满足此评判标准。
+      requirement_validation_errors: 以下附加要求驱动出错：
+      valid: 评判标准有效！
     group_selector:
-      placeholder: 选择用户组
+      placeholder: 请选择用户组
     in_group_settings:
-      regex: 应用于邮箱的正则表达式（无斜杠）
+      regex: 要匹配的正则表达式（无首尾斜杠）
     metric_drivers:
       best_answers: 最佳答案
-      discussions_entered: 浏览主题
-      discussions_participated: 参与讨论
+      discussions_entered: 浏览主题帖
+      discussions_participated: 参与主题
       discussions_started: 发布主题
       likes_given: 点赞
       likes_received: 获赞
       moderator_strikes: 站务警告记分
-      posts_made: 回帖
+      posts_made: 发帖
     requirement_drivers:
-      email_confirmed: 验证邮箱
-      email_matches_regex: 邮箱匹配正则
-      in_group: 加入用户组
+      email_confirmed: 邮箱已验证
+      email_matches_regex: 邮箱地址匹配正则
+      in_group: 位于用户组
       suspended: 被封禁
     suspend_selector:
       days: 封禁天数
-      indefinitely: 无限期封禁
+      indefinitely: 无期徒刑
     undefined_driver_item:
-      text: '错误！驱动 <strong>{driverName}</strong> 未被定义。此驱动可能是由一个当前没有安装的扩展添加的。你需要重新启用该扩展或删除该驱动，以使条件有效。'
+      text: '错误，未定义的 <strong>{driverName}</strong> 驱动！此驱动可能是由一个尚未安装的扩展添加的。重新启用该扩展或删除该驱动后，评判标准方可有效。'
   lib:
     group_id: '用户组 ID'
     managed_groups:
       group_item: '<badge></badge> {groupName}'
-      groups_not_editable: 为防止数据不一致，由本扩展管理的用户组无法手动添加/删除用户。
-      header: 管理的用户组：
+      groups_not_editable: 为防止数据不一致，由本扩展管理的用户组，不允许手动移入/移出用户。
+      header: 托管用户组：

@@ -7,13 +7,13 @@ askvortsov-markdown-tables:
     composer:
       table_menu:
         column: 列
-        insert_column_after: 在此之后插入行
-        insert_column_before: 在此之前插入行
-        insert_row_after: 在此之后插入列
-        insert_row_before: 在此之前插入列
-        label_cells: '# 单元格标签？'
+        insert_column_after: 插入后行
+        insert_column_before: 插入前行
+        insert_row_after: 插入后列
+        insert_row_before: 插入前列
+        label_cells: '# 单元格'
         num_cols: '# 列'
-        num_rows: '# 行（包括头部）'
+        num_rows: '# 行（包括表头）'
         remove_column: 移除行
         remove_row: 移除行
         row: 列

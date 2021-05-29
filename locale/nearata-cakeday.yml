@@ -20,8 +20,8 @@ nearata-cakeday:
     anniversary: 周年纪念日
     new_member_label: 新用户
     page:
-      anniversaries_between_label: '在  {date1} 间 {date2} 的周年纪念日'
-      anniversaries_for_label: '{date} 的纪念日'
+      anniversaries_between_label: '在  {date1} 至 {date2} 间的周年纪念日'
+      anniversaries_for_label: '{date} 纪念日'
       empty: 没有纪念日。
       filter_options:
         all: 全部

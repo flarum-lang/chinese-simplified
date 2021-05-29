@@ -5,6 +5,6 @@
 blomstra-readme:
   admin:
     modal:
-      no_readme: '此扩展似乎没有  README 文件'
+      no_readme: '此扩展似乎没有 README 文件'
       title: '{displayName} README'
     readme_button_label: README

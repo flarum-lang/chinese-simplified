@@ -5,53 +5,55 @@
 malago-achievements:
   admin:
     achievement_modal:
-      active_label: 可用
-      add_delete_instructions: 如果用户没有该成就，它将被添加到该成就中。如果用户拥有该成就，它将被移除。
-      add_delete_title: 给用户添加或删除成就
+      active_label: 激活
+      add_delete_instructions: 用户未获得此成就时，添加成就。已拥有成就时，取消成就。
+      add_delete_title: '给予 / 取消用户的成就'
       col_label: 列
       col_placeholder: '0'
-      computation_label: "影响因子计算：帖子、喜欢、自赞、讨论、评论、编辑、头像、含有、年\n"
+      computation_label: "要计算的条件：帖子、点赞、自赞、主题帖、回复帖、编辑数、上传头像、消息关键词、注册年数\n"
       computation_placeholder: 数字
       delete_button: 删除成就
-      delete_confirmation: 你确定要删除这个成就吗？
+      delete_confirmation: 确定要删除这个成就吗？
       description_label: 描述
       description_placeholder: 成就描述
       height_label: 图片高度
       height_placeholder: '32'
-      image_label: 图片链接或图标代码
-      image_placeholder: 成就图标链接
+      image_label: '图片链接 / 图标代码'
+      image_placeholder: 成就的图标链接
       name_label: 名称
       name_placeholder: 成就名称
-      points_label: 此成就要求的积分
+      points_label: 成就积分
       points_placeholder: "0\n"
       row_label: 列
       row_placeholder: '0'
       submit_button: '=> core.ref.save_changes'
-      title: 创造成就
+      title: 创建成就
       username: 用户名
       username_placeholder: 用户名
       variable:
-        avatar: 上次头像
-        comments: 在讨论中收到的回应
-        contains: 消息框
-        discussions: 讨论
-        edits: 编辑帖子
-        likes: 给出喜欢
-        manual: 说明书
+        avatar: 上传头像
+        comments: 主题帖中收到回应
+        contains: 消息包含
+        discussions: 主题帖
+        edits: 编辑的帖子
+        likes: 点赞
+        manual: 手动
         meanwords: 平均字数
         posts: 帖子
-        selflikes: 收到的喜欢
-        tagposts: 帖子标签
-        years: 注册年限
-      variable_label: 可变因素
+        selflikes: 获赞
+        tagposts: 发表到指定标签
+        years: 注册年数
+      variable_label: 条件
       width_label: 图片宽度
       width_placeholder: '32'
     achievements_page:
-      create_achievement_button: 创建新成就
+      add_delete_users: 为用户添加/删除成就
+      create_achievement_button: 创建成就
       instructions_header: 功能介绍
+      instructions_text: "<li>要创建一个成就，你必须为其设置名字。</li>。\n<li>描述是可选的。</li>\n<li>从列表中选择你要为这个成就计算的变量。</li>\n<li>介绍要激活的成就的阈值。你可以引入两个用逗号(,)隔开的数字来表示最小阈值和最大阈值（两个数字都包括在内）。</li>\n<li>如果计数超过上限，有两个阈值的成就将被删除。</li>\n<li>对于「信息包含」成就，你必须介绍指定的词，然后是阈值，用逗号隔开（例如，「菠菜,5」或 「菠菜,5,10」为最低和最高阈值。</li>\n<li>设置图像链接，其中包括将用于该成就的图标。</li>\n<li>设置图标的宽度和高度。</li>\n<li>可选的：如果有一个以上的成就图标，你可以选择为图标显示的行和列。</li>\n"
       list_heading: 成就
   forum:
-    achievement_points: 👍
-    new_achievement_close: 明白了！
-    new_achievement_name: 点赞
-    new_achievement_title: 新的点赞！
+    achievement_points: 积分
+    new_achievement_close: 收到！
+    new_achievement_name: 成就
+    new_achievement_title: 新成就！

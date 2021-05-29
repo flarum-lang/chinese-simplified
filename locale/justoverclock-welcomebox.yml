@@ -7,7 +7,7 @@ flarum-ext-welcomebox:
     enablepostbox: 针对访客启用欢迎框
   forum:
     discussion: '=> core.forum.user.discussions_link'
-    notregistered: 当前你还未注册此论坛账号。
+    notregistered: 你还未注册我们的论坛账号。
     npost: '=> core.forum.user.posts_link'
     wback: 欢迎回来，
-    welcomeguest: 欢迎访客
+    welcomeguest: 你好！新访客

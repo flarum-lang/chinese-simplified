@@ -48,16 +48,16 @@ askvortsov-auto-moderator:
     group_selector:
       placeholder: 选择用户组
     in_group_settings:
-      regex: 应用于邮箱的正则表达式（没有斜杠）
+      regex: 应用于邮箱的正则表达式（无斜杠）
     metric_drivers:
       best_answers: 最佳答案
       discussions_entered: 浏览主题
       discussions_participated: 参与讨论
-      discussions_started: 发起主题
+      discussions_started: 发布主题
       likes_given: 点赞
-      likes_received: 收到赞
+      likes_received: 获赞
       moderator_strikes: 站务警告记分
-      posts_made: 发布帖子
+      posts_made: 发表帖子
     requirement_drivers:
       email_confirmed: 确认邮箱
       email_matches_regex: 邮箱匹配正则

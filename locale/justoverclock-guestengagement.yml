@@ -4,20 +4,20 @@
 
 flarum-ext-guestengagement:
   admin:
-    afterxpost: '在 X 个帖子后显示提醒框'
-    afterxpostdesc: '允许数字，默认为 0 （方框将显示在帖子流的顶部）'
-    autohide: 'X 秒后自动隐藏框'
-    autohidedesc: '使用毫秒，例如用「5000」表示 5 秒'
-    changetextbox: 更改框内文本
-    changetextboxdesc: 你可以在这设置位于帖子间的提示框文本
-    enablealbox: 在主页启用或停用提示框
-    enablepostbox: 启用或禁用位于帖子间的框
-    maintitle: 修改框的标题
-    maintitledesc: 你可以在这设置位于帖子间的提示框标题
+    afterxpost: '在第 X 个帖子后显示'
+    afterxpostdesc: '只允许数字，默认为 0 显示在帖子流顶部'
+    autohide: 'X 秒后隐藏提示'
+    autohidedesc: '单位毫秒，例如用「5000」表示 5 秒'
+    changetextbox: 修改提示文本
+    changetextboxdesc: 设置位于帖子间的提示文本
+    enablealbox: 启用/关闭首页提示
+    enablepostbox: 启用/关闭帖子间提示
+    maintitle: 修改提示标题
+    maintitledesc: 设置位于帖子间的提示标题
   forum:
-    hello: 你好！你似乎对这个论坛很感兴趣，但是你还没有注册账号。
-    hellops: 你好！你似乎对这个帖子很感兴趣！
-    uwillreceive: 当有人回复你时，你将会通过通过浏览器或电子邮件收到通知。你也可以使用「喜欢」来表达你的感激之情。
-    uwillreceiveps: 当有人回复你时，会通过浏览器或电子邮件通知你。你也可以用「喜欢」来表达你的感激之情。
-    whenucreate: 在你创建帐户后，我们将能够准确地记住你所读过的内容，这使得你可以准确地从你上次阅读过的地方继续。
-    whenucreateps: 在你创建帐户后，我们将能够准确地记住你已经阅读的帖子，另外你也会收到通知
+    hello: 嗨！你似乎对这个论坛很感兴趣，但是还没有注册账号。
+    hellops: 嗨！你似乎对这个帖子很感兴趣！
+    uwillreceive: 当有人回复你时，你会收到站内或邮件通知。你也可以通过「点赞」表示赞赏。
+    uwillreceiveps: 当有人回复你时，你会收到站内或邮件通知。你也可以通过「点赞」表示赞赏。
+    whenucreate: 创建帐户后，我们能够准确地记录你已读的内容，方便你接着从上次离开的地方阅读。
+    whenucreateps: 创建帐户后，我们能够准确地记录你已读的帖子，方便你接着从上次离开的地方阅读。

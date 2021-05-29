@@ -5,7 +5,7 @@
 flarum-ext-keywords:
   admin:
     definition: 定义
-    parseonce: 只解析帖子中首现的术语
+    parseonce: 只解析帖子中首次出现的术语
     removedef: 删除
     word: 词条
   forum:

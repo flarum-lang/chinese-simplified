@@ -5,7 +5,7 @@
 flarum-ext-readmore:
   admin:
     AlsoPost: 「全部主题」列表启用摘要
-    AlsoPostdesc: '将此扩展功能应用至所有 Flarum 帖子（不局限于个人主页）'
+    AlsoPostdesc: '将此扩展功能应用至所有 Flarum 帖子（不仅限于个人主页）'
     charlenght: 字符长度
     charlenghtdesc: 设置字符上限，以插入「阅读更多」按钮
   forum:

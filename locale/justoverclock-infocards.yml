@@ -4,23 +4,23 @@
 
 flarum-ext-infocards:
   admin:
-    apikeyhelp: '在 https://countapi.xyz/上创建免费的 api 密钥'
+    apikeyhelp: '前往 https://countapi.xyz/ 创建免费 api 密钥'
     createapikey: 'Api 密钥'
   forum:
     forumstats: 论坛统计
     friday: 星期五
-    geninfo: 一般信息
-    groups: 您的实际用户组
+    geninfo: 其他信息
+    groups: 您的用户组
     monday: 星期一
-    opthread: 打开的帖子
+    opthread: 浏览主题
     saturday: 星期六
     sunday: 星期天
     thursday: 星期四
-    times: 时间
-    totalpost: 总计帖子
-    totdisc: 总计讨论
+    times: 次
+    totalpost: 总计发帖
+    totdisc: 总计发布主题
     tuesday: 星期二
     viscounter: 访问量
-    wasviewed: 已浏览此贴
+    wasviewed: 已浏览此页
     wednesday: 星期三
-    welcome_back: 欢迎回来，
+    welcome_back: 欢迎回来！

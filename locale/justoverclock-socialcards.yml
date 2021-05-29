@@ -7,9 +7,9 @@ flarum-ext-socialcards:
     settings:
       fblink: 脸书链接
       ghlink: 'GitHub 链接'
-      showGithub: '启用 GitHub'
-      showfacebook: 启用脸书
-      showtwitter: 启用推特
-      showyoutube: '启用 YouTube'
+      showGithub: GitHub
+      showfacebook: 脸书
+      showtwitter: 推特
+      showyoutube: 油管
       twlink: 推特链接
-      ytlink: 'YouTube 链接'
+      ytlink: 油管链接

@@ -4,10 +4,10 @@
 
 flarum-ext-welcomebox:
   admin:
-    enablepostbox: 针对访客启用欢迎框
+    enablepostbox: 向访客展示欢迎卡片
   forum:
     discussion: '=> core.forum.user.discussions_link'
-    notregistered: 你还未注册我们的论坛账号。
+    notregistered: 你目前还没有在这里注册。
     npost: '=> core.forum.user.posts_link'
-    wback: 欢迎回来，
+    wback: 欢迎回来！
     welcomeguest: 你好！新访客

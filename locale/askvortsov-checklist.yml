@@ -5,7 +5,7 @@
 askvortsov-checklist:
   admin:
     settings:
-      cross_out_completed_items: 划掉已完成的检查表项目？
+      cross_out_completed_items: 划掉已完成的清单
   lib:
     composer:
-      checklist_tooltip: 切换检查列表
+      checklist_tooltip: 标记清单

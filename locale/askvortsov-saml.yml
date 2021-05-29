@@ -11,17 +11,17 @@ askvortsov-saml:
       idp_metadata: '身份提供商元数据 XML（替代 URL）'
       idp_metadata_url: '身份提供商元数据 URL（替代 XML）'
       logout_request_signed: 签名注销请求？
-      logout_response_signed: '签名注销的响应?'
+      logout_response_signed: '签名注销响应?'
       nameid_format: 'NameID 格式'
       only_option: '使用 SAML2 SSO 作为唯一登录选项吗？'
       sign_metadata: '签名元数据?'
-      slo: 启用SLO？如果你的IDP不支持这一点，这将没有任何作用。
+      slo: '启用 SLO？如果 IDP 不支持则没有效果。'
       sync_attributes: '同步属性（头像、用户组、签名、资料）？需要安装 askvortsov/auth-sync 插件（传送门：http://t.cn/A6yDXTRB）。'
-      want_assertions_encrypted: '想要加密 Assertions 吗?'
+      want_assertions_encrypted: '加密 Assertions?'
       want_assertions_signed: 'Want Assertions Signed?'
       want_messages_signed: 'Want Messages Signed?'
-      x509_cert: x509证书（需要签名，如果启用的话）
-      x509_key: x509私钥（需要签名，如果启用的话）
+      x509_cert: 'x509 证书（用于签名）'
+      x509_key: 'x509 私钥（用于签名）'
     options:
       nameid_format:
         emailAddress: 邮箱（默认，如果不支持持久化）

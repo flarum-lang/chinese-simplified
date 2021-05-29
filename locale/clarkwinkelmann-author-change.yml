@@ -15,6 +15,9 @@ clarkwinkelmann-author-change:
       created_at: 创建时间
       edited_at: 编辑时间
       submit: 保存
+      sync-impossible: 无法定位首贴。请尝试滚动到主题帖起始处。
+      sync-with-discussion: 与主题同步
+      sync-with-post: 与首贴同步
       title-discussion: 变更主题作者和日期
       title-post: 变更帖子作者和日期
       user: 作者

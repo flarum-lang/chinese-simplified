@@ -8,7 +8,7 @@ blomstra-realtime:
       view-who-types: 查看输入状态
   forum:
     push:
-      discussion-list-new-activity: '显示 {count} 条内容更新主题|显示 {count} 条内容更新主题'
+      discussion-list-new-activity: '有 {count} 条内容更新|有 {count} 条内容更新'
     typing-indicator:
       no-activity: 无人活动
       people-are-typing: '{number} 人正在输入|{number} 人正在输入'

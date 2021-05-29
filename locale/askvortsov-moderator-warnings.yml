@@ -10,17 +10,17 @@ askvortsov-moderator-warnings:
       view_warnings: 查看站务警告
   emails:
     post_warned:
-      body: "{warnee_display_name}，你好！\n\n您在【{discussion_title}】发表的内容被 {warner_display_name} 警告并记 {strikes} 分。\n\n原因如下：\n\n---\n\n{public_comment}\n"
-      subject: '您在【{discussion_title}】发表的内容被 {warner_display_name} 警告并记 {strikes} 分'
+      body: "{warnee_display_name}，你好！\n\n您在【{discussion_title}】发表的内容被 {warner_display_name} 警告并记 {strikes, plural, one {# 分} other {# 分}}。\n\n原因：\n\n---\n\n{public_comment}\n"
+      subject: '您在【{discussion_title}】发表的内容被 {warner_display_name} 警告并记 {strikes, plural, one {# 分} other {# 分}}'
     user_warned:
-      body: "{warnee_display_name}，你好！\n\n你收到来自 {warnee_display_name} 的警告并记 {strikes} 分\n\n原因如下\n\n---\n\n{public_comment}\n"
-      subject: '收到 {warner_display_name} 的警告并记 {strikes} 分'
+      body: "{warnee_display_name}，你好！\n\n你收到来自 {warnee_display_name} 的警告并记 {strikes, plural, one {#} other {#}} 分\n\n原因如下\n\n---\n\n{public_comment}\n"
+      subject: '收到 {warner_display_name} 的警告并记 {strikes, plural, one {# 分} other {# 分}}'
   forum:
     notifications:
       warning_no_strikes_text: '收到来自 {mod_username} 的站务警告'
-      warning_text: '收到来自 {mod_username} 的警告并记 {strikes} 分'
+      warning_text: '收到来自 {mod_username} 的警告并记 {strikes, plural, one {#} other {#}} 分'
     post:
-      warning: '内容违规，记 {strikes} 分'
+      warning: '内容违规，由 {mod_username} 记 {strikes, plural, one {#} other {#}} 分'
       warning_no_strikes: 警告
     post_controls:
       warning_button: 警告
@@ -38,12 +38,12 @@ askvortsov-moderator-warnings:
     warning_list:
       add_button: 发送警告
       no_warnings: 该用户暂未收到任何警告。
-      warnings: '站务警告：共记 {strikes} 分'
+      warnings: '站务警告：共记 {strikes, plural, one {#} other {#}} 分'
       warnings_no_strikes: 站务警告
     warning_list_item:
       linked_post: 关联帖子
-      list_item_heading: '记 <strong>{strikes}</strong> 分，{time}|记 <strong>{strikes}</strong> 分，{time}'
-      list_item_heading_hidden: '记 <strong>{strikes}</strong> 分，{time} <strong>（已撤销）</strong>|记 <strong>{strikes}</strong> 分，{time}<strong>（已撤销）</strong>'
+      list_item_heading: '记 {strikes, plural, one {<strong>#</strong> 分，{time}} other {<strong>#</strong> 分，{time}}}'
+      list_item_heading_hidden: '记 {strikes, plural, one {<strong>#</strong> 分，{time} <strong>（已撤销）</strong>} other {<strong>#</strong> 分，{time} <strong>（已撤销）</strong>}}'
       private_comment: 管理员备注
       public_comment: 警告
     warning_modal:

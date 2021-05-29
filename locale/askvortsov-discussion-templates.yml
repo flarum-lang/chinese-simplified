@@ -8,8 +8,8 @@ askvortsov-discussion-templates:
       manage_all_reply_templates: 管理所有主题帖的回复模板
       manage_own_discussion_reply_templates: 管理标签旗下主题贴的回复模板
     settings:
-      append_template_on_tag_change: 在标签变化时附加模板？
-      append_template_on_tag_change_help: 当标签被改变时，即使用户已经开始写作，新标签的模板是否应该被追加？不管这个设置如何，如果标签被改变，而用户没有进行修改，模板就会被调换。
+      append_template_on_tag_change: 标签变化后重载模板
+      append_template_on_tag_change_help: 当用户已撰写内容的情况下，标签发生了变更，此时是否重新载入模板？不论此项开启与否，在未撰写内容的情况下，标签变更都会重新载入模板。
       no_tag_template: 默认模板（适用于无自定义模板的标签）：
     tag_template_modal:
       customize_text: 编辑在此标签下创建新主题时的默认模板。

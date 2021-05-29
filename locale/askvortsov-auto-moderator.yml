@@ -5,69 +5,69 @@
 askvortsov-auto-moderator:
   admin:
     action_drivers:
-      activate_email: 激活电子邮箱
-      add_to_group: 添加到组
-      remove_from_group: 从组中删除
-      suspend: 暂停
-      unsuspend: 解禁
+      activate_email: 激活邮箱
+      add_to_group: 添加到用户组
+      remove_from_group: 从用户组中删除
+      suspend: 封禁
+      unsuspend: 解除封禁
     automoderator_instructions:
       header: 扩展说明
-      text: "<li>Tl;dr：当一个用户满足X标准时，做Y。当一个用户不再满足X标准时，做Z。</li>\n<li><strong>标准：</strong>标准是这个扩展的核心。它们是任意的指标和要求的集合。当一个用户满足一个标准时，该标准的任何 \"on gain \"动作将被执行。当一个用户失去一个标准时，该标准的任何 \"失去 \"动作都将被执行。</li>\n</li> <ul>\n  <li><strong>度量衡：</strong>一个数字条件。例如，帖子数量或收到的喜欢的数量。一个标准可以要求一个范围/最小/最大的度量。</li>\n  <li><strong>要求：</strong>一个抽象的布尔条件。例如，没有被停职，或有一个与某一重码匹配的电子邮件。</li>\n</ul>\n<li><strong>行动：</strong>当一个条件被满足或失去时自动发生的事情。这可能包括从添加/删除一个组到发送一封电子邮件到暂停一个用户等任何事情。</li>\n<li><strong>触发器：</strong>一组将导致用户的标准组被重新评估的事件。这些是指标和要求的定义的一部分。所有的标准将在登录时被评估：这就是 \"通用触发器\"。</li>。\n<li>\"损失时 \"行动将总是在 \"获得时 \"行动之前运行。这样一来，只要用户满足至少一个标准，就会采取相应的行动。</li>\n<li>请记住，行动只在 \"损失时 \"和 \"收益时 \"运行。当用户符合某个标准时，手动编辑将不会触发该标准的 \"获得时 \"行动被重新应用。</li>\n<li>如果您删除了一个标准，\"损失 \"行动将不会对当前有资格获得该标准的用户运行。</li>\n<li>如果您使用标准来管理组，我们建议维护一组单独的组，由标准来管理。您将无法手动向这些组添加/删除用户</li>\n"
+      text: "<li>Tl;dr：当一个用户满足 X 条件时，执行 Y。当一个用户不再满足 X 条件时，执行 Z。</li>\n<li><strong>条件：</strong>条件是这个扩展的核心。它们是任意的指标和要求的集合。当一个用户满足一个条件时，该条件的任何「达成动作」将被执行。当一个用户不再达到条件时，该条件的任何「失去动作」将被执行。</li>\n</li> <ul>\n  <li><strong>指标：</strong>一个数字条件。例如，帖子数量或收到的喜欢的数量。一个条件可以要求一个范围/最小/最大的指标。</li>\n  <li><strong>要求：</strong>一个抽象的布尔条件。例如，没有被封禁，或有一个与特定正则匹配的邮箱地址。</li>\n</ul>\n<li><strong>动作：</strong>当一个条件被满足或失去时自动发生的事情。如添加/删除一个组、发送一封电子邮件、封禁用户等任何事情。</li>\n<li><strong>触发器：</strong>一组将导致用户的条件组被重新评估的事件。这些是指标和要求定义的一部分。所有的条件将在登录时被评估：这就是「通用触发器」。</li>。\n<li>「失去动作」将总在「达成动作」之前执行。这样一来，只要用户满足至少一个条件，就会采取相应的动作。</li>\n<li>请记住，行动只在 \"损失时 \"和 \"收益时 \"运行。当用户符合某个条件时，手动编辑将不会触发该条件的 \"获得时 \"行动被重新应用。</li>\n<li>如果您删除了一个条件，\"损失 \"行动将不会对当前有资格获得该条件的用户运行。</li>\n<li>如果您使用条件来管理组，我们建议维护一组单独的组，由条件来管理。您将无法手动向这些组添加/删除用户</li>\n"
     automoderator_page:
-      create_criterion_button: 建立新标准
-      criterion_invalid: 该标准目前是无效的。请检查其设置以获得更多信息
-      list_heading: 标准
+      create_criterion_button: 创建条件
+      criterion_invalid: 无效的条件。请检查设置
+      list_heading: 条件
     criterion_page:
-      actions_help: 当用户有资格获得一个新的标准时，对收益的行动就会执行。当用户不再有资格获得某项标准时，损失的行动就会执行。
+      actions_help: 当用户达到一个新的条件时，动作就会执行。当用户不再具有资格获得某项指标时，动作会停止。
       actions_label: 动作
-      actions_on_gain_heading: 对收益的行动
-      actions_on_loss_heading: 对损失的行动
+      actions_on_gain_heading: 达成动作
+      actions_on_loss_heading: 失去动作
       add_action: 添加动作
-      add_metric: 添加准则
-      back: 回到标准列表
+      add_metric: 添加指标
+      back: 返回条件列表
       delete_button: '=> core.ref.delete'
       description_label: 描述
-      driver_missing_ext: 该驱动程序依赖于未启用的扩展。
+      driver_missing_ext: 此驱动的依赖扩展未启用。
       icon_label: 图标
       loading: '=> core.ref.loading'
-      metrics_and_requirements_help: 这些定义了用户是否符合这个标准的条件。衡量标准代表数值的范围，要求是布尔条件。
+      metrics_and_requirements_help: 这些内容定义了用户是否符合条件。指标代表数值的范围，要求采用布尔条件。
       metrics_and_requirements_label: 指标和要求
-      metrics_heading: 标准
+      metrics_heading: 指标
       name_label: 名称
-      negated: 被否定？
-      new_criterion: 创建准则
+      negated: 取消
+      new_criterion: 创建条件
       requirements_heading: 要求
     criterion_status:
-      action_validation_errors: '遇到了以下行动驱动验证错误:'
+      action_validation_errors: 以下动作驱动出现验证错误：
       heading: 状态检查
-      invalid: 该规范目前无效。请检查以下驱动程序是否存在错误。
-      no_actions: 此规范没有定义任何操作。当用户获得或失去这个规范时，什么也不会发生。
-      no_metrics_or_reqs: 没有为此规范设定任何指标或需求。这意味着所有用户都满足此规范。
-      requirement_validation_errors: 遇到了以下请求驱动验证错误：
-      valid: 此规范有效！
+      invalid: 条件无效。请检查以下驱动是否存在错误。
+      no_actions: 未定义条件动作。当用户达到或失去此条件时，什么也不会发生。
+      no_metrics_or_reqs: 没有为此条件设定任何指标或需求。这意味着所有用户都满足此条件。
+      requirement_validation_errors: 以下必要驱动出现验证错误：
+      valid: 条件有效！
     group_selector:
-      placeholder: 选择一组
+      placeholder: 选择用户组
     in_group_settings:
-      regex: 正则表达式获取有效电子邮件（没有斜杠）
+      regex: 应用于邮箱的正则表达式（没有斜杠）
     metric_drivers:
       best_answers: 最佳答案
-      discussions_entered: 进入讨论
-      discussions_participated: 参加讨论
-      discussions_started: 开始讨论
-      likes_given: 给出喜欢
-      likes_received: 收到喜欢
-      moderator_strikes: 版主警告罢工
+      discussions_entered: 浏览主题
+      discussions_participated: 参与讨论
+      discussions_started: 发起主题
+      likes_given: 点赞
+      likes_received: 收到赞
+      moderator_strikes: 站务警告记分
       posts_made: 发布帖子
     requirement_drivers:
-      email_confirmed: 电子邮箱已确认
-      email_matches_regex: 电子邮件匹配正则表达式
-      in_group: 成组
-      suspended: 暂停
+      email_confirmed: 确认邮箱
+      email_matches_regex: 邮箱匹配正则
+      in_group: 加入用户组
+      suspended: 被封禁
     suspend_selector:
-      days: 暂停天数
-      indefinitely: 无限期暂停？
+      days: 封禁天数
+      indefinitely: 无限期封禁
     undefined_driver_item:
-      text: 'ERROR! 驱动程序<strong>{driverName}</strong>未被定义。最有可能的是，它是由一个当前没有安装的扩展添加的。你需要重新启用该扩展或删除该驱动，以使该标准再次有效。'
+      text: '错误！驱动 <strong>{driverName}</strong> 未被定义。此驱动可能是由一个当前没有安装的扩展添加的。你需要重新启用该扩展或删除该驱动，以使条件有效。'
   lib:
     group_id: 组ID
     managed_groups:

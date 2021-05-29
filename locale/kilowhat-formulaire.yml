@@ -113,13 +113,13 @@ kilowhat-formulaire:
         standalone: '=> kilowhat-formulaire.ref.type.standalone'
         user: '=> kilowhat-formulaire.ref.type.user'
       controls: 控制器
-      delete: 永久性地删除
-      delete-confirmation: '表单 "{title}" 将被永久删除'
+      delete: 永久删除
+      delete-confirmation: '表单「{title}」将被永久删除'
       disable-expert-mode: 停用专家模式
       enable-expert-mode: 开启专家模式
       fields:
-        private-title: 私有化标题
-        slug: '自定义URL Slug（可选）'
+        private-title: 私密标题
+        slug: '自定义 URL Slug（可选）'
       hide: 删除
       restore: 重置
       tabs:
@@ -128,7 +128,7 @@ kilowhat-formulaire:
         placement: 位置
         submissions: 提交项
         template: 模板
-      template-export: '模板 导入/导出'
+      template-export: 模板导入/导出
     form-edit:
       auto-discussion-options: 新主题选项
       email-confirmation-options: 确认邮件模板
@@ -167,8 +167,8 @@ kilowhat-formulaire:
       warnings:
         auto-link-permission-warning: "带有 \"自动创建讨论 \"选项的表格在独立访问时使用全局填充权限。\n"
         linked-form-is-draft: "这个表单目前处于草稿模式。启用 \"接受新的提交 \"以使这些字段出现在论坛上。\n"
-        show-on-composer-invalid-permissions: "确保 \"查看自己的 \"和 \"编辑自己的 \"权限与可以用所选标签发起讨论的人相匹配，以便使用 \"在合成器中显示\"。如果不确定，请设置为 \"成员\"。即使你的设置是正确的，也会出现这个信息。\n"
-        show-on-signup-invalid-permissions: "你需要将 \"查看自己 \"和 \"编辑自己 \"的权限设置为未批准的成员，以便使用 \"在注册时显示\"。\n"
+        show-on-composer-invalid-permissions: "确保 \"查看自己的\" 和 \"编辑自己的\" 权限与可以用所选标签发起讨论的人相匹配，以便使用 \"在合成器中显示\"。如果不确定，请设置为 \"成员\"。即使你的设置是正确的，也会出现这个信息。\n"
+        show-on-signup-invalid-permissions: "你需要将 \"查看自己\" 和 \"编辑自己\" 的权限设置为未批准的成员，以便使用 \"在注册时显示\"。\n"
     form-index:
       columns:
         accept-submissions: 开启

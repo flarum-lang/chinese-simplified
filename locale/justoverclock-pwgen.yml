@@ -4,7 +4,7 @@
 
 flarum-ext-pwgen:
   admin:
-    passlenght: 密码强度
+    passlenght: 密码长度
     pwhelp: 在此输入安全密码的长度
   forum:
     generatebtn: 生成安全密码

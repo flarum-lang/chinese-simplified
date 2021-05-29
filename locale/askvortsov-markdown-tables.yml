@@ -2,19 +2,19 @@
 # Use https://weblate.rob006.net/projects/flarum/askvortsov-markdown-tables/zh_Hans/ for translation.
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
-askvortsov-pipetables:
-  forum:
+askvortsov-markdown-tables:
+  lib:
     composer:
       table_menu:
         column: 列
-        insert_column_after: 在后面插入列
-        insert_column_before: 在前面插入列
-        insert_row_after: 在后面插入行
-        insert_row_before: 在前面插入行
-        label_cells: 添加占位
-        num_cols: 列数
-        num_rows: 行数（含标题行）
-        remove_column: 删除列
-        remove_row: 删除行
-        row: 行
+        insert_column_after: 在此之后插入行
+        insert_column_before: 在此之前插入行
+        insert_row_after: 在此之后插入列
+        insert_row_before: 在此之前插入列
+        label_cells: '# 单元格标签？'
+        num_cols: '# 列'
+        num_rows: '# 行（包括头部）'
+        remove_column: 移除行
+        remove_row: 移除行
+        row: 列
       table_tooltip: 表格

@@ -13,7 +13,7 @@ core:
       custom_header_heading: 自定义页眉
       custom_header_text: '=> core.ref.custom_header_text'
       custom_styles_heading: 自定义样式
-      custom_styles_text: '添加 Less/CSS 代码以自定义论坛外观样式，此设置将覆盖 Flarum 默认样式。'
+      custom_styles_text: '添加 Less/CSS 代码以自定义论坛外观，此设置将覆盖 Flarum 默认样式。'
       dark_mode_label: 夜间模式
       description: 自定义论坛色调、图标以及其他元素
       edit_css_button: '编辑自定义 CSS'
@@ -48,7 +48,7 @@ core:
       title: 仪表盘
       tools_button: 工具
     edit_css:
-      customize_text: '通过增加 Less/CSS 代码以自定义论坛外观样式，此设置将覆盖 Flarum <a>默认样式</a>。'
+      customize_text: '添加 Less/CSS 代码以自定义论坛外观，此设置将覆盖 Flarum  <a>默认样式</a>。'
       submit_button: '=> core.ref.save_changes'
       title: '编辑自定义 CSS'
     edit_footer:
@@ -165,13 +165,13 @@ core:
       sign_up_label: 注册
       start_discussions_label: 发布主题
       title: 权限
-      view_forum_label: 查看论坛（讨论和用户）
+      view_forum_label: 浏览论坛（讨论和用户）
       view_hidden_groups_label: 查看隐藏的用户组徽章
       view_last_seen_at_label: 查看用户上次在线时间
       view_post_ips_label: '查看 IP 地址'
     permissions_controls:
       allow_indefinitely_button: 无限制
-      allow_some_minutes_button: '发布 {count} 分钟内|发布 {count} 分钟内'
+      allow_some_minutes_button: '{count, plural, one {发布 # 分钟内} other {发布 # 分钟内}}'
       allow_ten_minutes_button: '发布 10 分钟内'
       allow_until_reply_button: 直到被回复
       everyone_button: 所有人
@@ -349,7 +349,7 @@ core:
       now_link: 最新回复
       original_post_link: 最早内容
       unread_text: '{count} 条未读'
-      viewing_text: '{index} / {formattedCount} 条|{index} / {formattedCount} 条'
+      viewing_text: '{count, plural, one {{index} / {formattedCount} 条} other {{index} / {formattedCount} 条}}'
     post_stream:
       discussion_renamed_old_tooltip: '原标题：「{old}」'
       discussion_renamed_text: '{username} 将标题更改为 「{new}」。'
@@ -471,7 +471,7 @@ core:
     icon: 图标
     icon_text: '输入任意一个 <a>Font Awesome</a> 图标名称。<em>包括</em>前缀，例如 <code>fas fa-</code>'
     load_more: 加载更多
-    loading: 正在加载……
+    loading: 正在加载…
     log_in: 登录
     log_out: 退出
     mark_all_as_read: 将所有帖子标记为已读
@@ -500,7 +500,7 @@ core:
     content:
       javascript_disabled_message: '请使用更现代的浏览器并启用 JavaScript 以获得最佳浏览体验。'
       load_error_message: 加载论坛时出错，请强制刷新页面重试。
-      loading_text: 正在加载...
+      loading_text: '=> core.ref.loading'
     discussion:
       next_page_button: '=> core.ref.next_page'
       previous_page_button: '=> core.ref.previous_page'

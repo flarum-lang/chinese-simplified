@@ -4,9 +4,9 @@
 
 flarum-ext-readmore:
   admin:
-    AlsoPost: 启用PostStream的摘录功能
-    AlsoPostdesc: 这将允许扩展功能与您的所有Flarum帖子一起使用（不仅仅是在简介页）
+    AlsoPost: 「全部主题」列表启用摘要
+    AlsoPostdesc: '将此扩展功能应用至所有 Flarum 帖子（不局限于个人主页）'
     charlenght: 字符长度
-    charlenghtdesc: '设置超过的字符数，以插入 "阅读更多 "链接'
+    charlenghtdesc: 设置字符上限，以插入「阅读更多」按钮
   forum:
-    readmore: 阅读全文...
+    readmore: 阅读全文…

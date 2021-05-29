@@ -4,23 +4,23 @@
 
 flarum-ext-dontgoaway:
   admin:
-    altdesc: '为你的图片设置 "alt "属性'
-    altext: 图片的Alt属性
+    altdesc: 为图片设置「alt」属性说明文本
+    altext: '图片 Alt 属性'
     btn: 自定义按钮。占位符中的语法示例
-    btndesc: 你可以为按钮设置你的Fontawesome图标和文本
-    enableExtLink: 启用外部链接的弹窗
-    heightdesc: 设置你的图片的高度（例如450）
+    btndesc: '你可以为按钮设置 Fontawesome 图标和文本'
+    enableExtLink: 启用外部链接弹窗
+    heightdesc: '设置图片的高度（例如 450）'
     heightext: 图片高度
-    modtext: 模态文本
-    modtextdesc: 在这里，你可以自定义你的模态弹窗的文本。
-    modtitle: 模态标题
-    modtitledesc: 自定义弹窗的标题
-    urltext: 你的自定义图像的网址
-    urltextdesc: 在这里粘贴你的自定义图像的网址
-    widthdesc: 设置你的图片的宽度（如450）
+    modtext: 对话框文本
+    modtextdesc: 自定义对话框描述文本。
+    modtitle: 对话框标题
+    modtitledesc: 自定义弹窗标题
+    urltext: '自定义图片 URL'
+    urltextdesc: '粘贴自定义图片 URL'
+    widthdesc: '设置图片的宽度（如 450）'
     widthtext: 图片宽度
   forum:
-    cancelbutton: 留在这里！
+    cancelbutton: 留下
     confbutton: 继续
-    extlinktext: 您是通过点击一个外部链接离开本站的
+    extlinktext: 点击继续跳转到外链地址
     extlinktitle: 外链

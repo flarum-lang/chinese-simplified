@@ -4,5 +4,5 @@
 
 flarum-ext-newsfeed:
   admin:
-    feedurldesc: '在此粘贴您的Rss feed的有效URL'
-    feedutltitle: 'Rss Feed网址'
+    feedurldesc: '在此粘贴有效的 RSS 订阅源链接'
+    feedutltitle: 'RSS 订阅源'

@@ -4,20 +4,20 @@
 
 nearata-auth-minecraft:
   api:
-    error_403: 无效或过期的令牌。
-    invalid_token_format: 令牌必须是数字。
+    error_403: 令牌无效或过期。
+    invalid_token_format: 令牌只能由数字组成。
   forum:
     change_email_modal:
-      confirmation_message: '我们已经向{email}发送了一封确认邮件。如果它没有很快到达，请检查您的垃圾箱。'
+      confirmation_message: '我们已经向 {email} 发送了一封确认邮件。如未收到，请检查垃圾箱。'
       dismiss_button: 好
-      submit_button: 更改电子邮件
-      title: 更改电子邮件
+      submit_button: 更改邮箱
+      title: 更改邮箱
       token_placeholder: 令牌
-    log_in_button_title: 用Minecraft登录
+    log_in_button_title: 'Minecraft 账号登录'
     log_in_modal:
       submit_button: 验证
-      title: 用Minecraft登录
+      title: 'Minecraft 账号登录'
     settings:
-      change_email_button: 更改电子邮件
-    token_help: '加入服务器<strong>srv.mc-oauth.net:25565</strong>以获得一个访问令牌。'
+      change_email_button: 更改邮箱
+    token_help: '加入服务器 <strong>srv.mc-oauth.net:25565</strong> 以获得访问令牌。'
     token_placeholder: 令牌

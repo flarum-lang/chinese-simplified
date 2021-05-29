@@ -4,12 +4,12 @@
 
 flarum-ext-keywords:
   admin:
-    definition: 术语定义
-    parseonce: 在帖子中解析一次单词
-    removedef: 删除定义
+    definition: 定义
+    parseonce: 只解析帖子中首现的术语
+    removedef: 删除
     word: 词条
   forum:
-    pagetitle: 词汇表页面
-    searchtext: 键入以搜索术语表...
-    tagline: 你想知道更多关于本网站使用的术语吗？请参阅术语表以了解更多信息
-    title: 词汇表
+    pagetitle: 术语表
+    searchtext: 搜索术语…
+    tagline: 想了解更多本站使用的术语吗？请查阅术语表
+    title: 术语表

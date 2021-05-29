@@ -4,4 +4,4 @@
 
 clarkwinkelmann-poll-quiz:
   forum:
-    set-answer-as-correct: "把此答案设为正确答案。它会导致将投票变为测验。\n"
+    set-answer-as-correct: "将此答案设为正确答案，即可将投票转为测验。\n"

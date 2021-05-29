@@ -16,7 +16,7 @@ fof-gamification:
         help: '同步 Flarum 论坛原生 Likes 插件产生的点赞数据，并计算所有当前讨论的热度。'
       rankings:
         blocked:
-          help: '这些用户不会在排名页面上显示。 用户名应以半角逗号分隔，后跟空格。'
+          help: 这些用户不会在排名页面上显示。用户名请用半角逗号+空格分隔。
           placeholder: 'CDK2020, Ralkage, AngelAvila'
           title: 忽略的用户
         custom_image_1: 冠军标志

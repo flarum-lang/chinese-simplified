@@ -16,6 +16,7 @@ fof-pages:
       html_label: '启用 HTML'
       restricted_label: 访问限制（前往权限页面设置谁可以访问自定义页面）
       set_as_home_page_confirmation: 确定要将此页面设为首页吗？
+      set_as_home_page_done: 首页更换成功
       slug_label: '=> fof-pages.ref.slug'
       slug_placeholder: '=> fof-pages.ref.slug'
       submit_button: '=> core.ref.save_changes'

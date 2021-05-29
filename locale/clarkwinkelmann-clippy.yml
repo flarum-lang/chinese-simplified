@@ -5,18 +5,18 @@
 clarkwinkelmann-clippy:
   admin:
     events:
-      animation: 动画
+      animation: 动作
       name: 事件
-      text: 文本
+      text: 说话
     settings:
-      agent: Agent
-      agent-help: '每个 Agent 都有一组不同的动画。更改 Agent 将从你的设置中删除所有不兼容的动画。'
+      agent: 助手
+      agent-help: 每个卡通助手均有一套不同的动画。
       cdn: CDN
       cdn-options:
         custom: 自定义
         jsdelivr: jsDelivr
         s3: 'Amazon S3'
       events: 事件
-      events-help: 选择在每个事件中显示哪些动画和会话框
+      events-help: 为每个事件设置要执行的动作和对用户说的话
       path: '自定义 CDN 路径'
-      path-help: '一个不含尾部斜线的完全合格的链接，指向包含<a>clippy.js 仓库</a>内容的文件夹。'
+      path-help: '结尾无斜线的有效目录链接，该目录存放 <a>clippy.js 仓库</a>内容。'

@@ -7,8 +7,15 @@ miniflar-sidenav-download-button:
     permissions:
       view_download_button_label: 查看侧边栏的下载按钮
     settings:
+      button_link_heading: 下载链接
+      button_link_text: '输入有效链接（例如 https://example.com）。'
       button_order_heading: 按钮顺序
-      button_order_text: '编辑此设置来调整挂件在你的 Flrum 论坛侧边栏中的位置。数字越大，挂件在侧边栏项目列表中的位置越高（这个值可以为正，也可以为负）。'
+      button_order_text: '此设置可调整挂件在 Flrum 论坛侧边栏中的位置。数字越大，挂件在侧边栏列表中的位置越靠前（这个值可以为正，也可以为负）。'
+      enter_link_message: 请输入有效链接。
       labels:
-        add_separator: 添加分割线？
+        add_separator: 添加分割线
       separator_order_heading: 分割线顺序
+      separator_order_text: '编辑此设置来调整分割线在你的 Flrum 论坛侧边栏挂件中的位置。数字越大，分割线在侧边栏项目列表中的位置越高（这个值可以为正，也可以为负）。'
+  forum:
+    index:
+      download_button: 下载

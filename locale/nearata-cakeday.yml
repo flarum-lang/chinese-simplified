@@ -5,16 +5,16 @@
 nearata-cakeday:
   admin:
     permissions:
-      can_view_anniversaries_page: 访问纪念日页面
+      can_view_anniversaries_page: 查看纪念日页面
     settings:
       anniversaries_page_label: 启用纪念日页面
       cake_bg_color_help: 帮助：此设置用于更改蛋糕的背景色。留空即使用默认色。
       cake_bg_color_label: 背景颜色
       cake_txt_color_help: 帮助：此设置用于修改蛋糕的字体颜色。留空即使用默认值。
       cake_txt_color_label: 图标颜色
-      new_members: 在新成员中显示蛋糕图标
-      new_members_changelabel: '将新成员的标签改为：New Member'
-      new_members_howlong: 加入多久算新成员
+      new_members: 为新成员添加蛋糕图标
+      new_members_changelabel: 将新成员的标签改为：新成员
+      new_members_howlong: 新成员身份时效
       new_members_howlong_help: 以天为单位。
   forum:
     anniversary: 周年纪念日

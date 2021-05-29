@@ -7,14 +7,14 @@ askvortsov-markdown-tables:
     composer:
       table_menu:
         column: 列
-        insert_column_after: 插入后行
-        insert_column_before: 插入前行
-        insert_row_after: 插入后列
-        insert_row_before: 插入前列
-        label_cells: '# 单元格'
-        num_cols: '# 列'
-        num_rows: '# 行（包括表头）'
-        remove_column: 移除行
-        remove_row: 移除行
-        row: 列
+        insert_column_after: 插入后列
+        insert_column_before: 插入前列
+        insert_row_after: 插入后行
+        insert_row_before: 插入前行
+        label_cells: 添加占位
+        num_cols: 列数
+        num_rows: 行数（含标题行）
+        remove_column: 删除列
+        remove_row: 删除行
+        row: 行
       table_tooltip: 表格

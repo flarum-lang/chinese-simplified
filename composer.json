@@ -1,6 +1,6 @@
 {
   "name": "ffans/lang-simplified-chinese",
-  "description": "Flarum 简体中文语言包 2020",
+  "description": "Flarum 简体中文语言包 2021",
   "keywords": [
     "flarum",
     "locale",
@@ -26,10 +26,11 @@
   ],
   "support": {
     "source": "https://github.com/FFans/lang-simplified-chinese",
-    "issues": "https://github.com/FFans/lang-simplified-chinese/issues"
+    "issues": "https://github.com/FFans/lang-simplified-chinese/issues",
+    "forum": "https://discuss.flarum.org/d/22690"
   },
   "require": {
-    "flarum/core": ">=0.1.0-beta.14 <0.1.0-beta.17"
+    "flarum/core": "^1.0.0"
   },
   "replace": {
     "littlegolden/flarum-lang-simplified-chinese": "*"

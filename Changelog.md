@@ -1,3 +1,90 @@
+# 2021-4-24
+# 🌟 v1.0.0
+
+【核心】
+1. Validation 更新。
+2. [Core](https://github.com/flarum/core) 适配 ICU 格式。
+3. [Likes](https://github.com/flarum/likes) 适配 ICU 格式。
+4. [Pusher](https://github.com/flarum/pusher) 适配 ICU 格式。
+5. [Tags](https://github.com/flarum/tags) 标签。适配 ICU 格式。
+
+【新增】
+1. [Achievements by Malago](https://github.com/malago86/flarum-achievements) 成就系统。
+2. [Auto Moderator by Askvortsov](https://github.com/askvortsov1/flarum-auto-moderator) 自动论坛审阅。
+3. [Clippy by Clarkwinkelmann](https://github.com/clarkwinkelmann/flarum-ext-clippy) Office 桌面助手。
+4. [Dontgoaway by Justoverclock](https://github.com/justoverclockl/flarum-ext-dontgoaway) 外链跳转。
+5. [Guestengagement by Justoverclock](https://github.com/justoverclockl/flarum-ext-guestengagement) 访客互动。
+6. [Infocards by Justoverclock](https://github.com/justoverclockl/flarum-ext-infocards) 首页欢迎卡片 升级版。
+7. [Keywords by Justoverclock](https://github.com/justoverclockl/flarum-ext-keywords) 术语提示。
+8. [NewsFeed by Justoverclock](https://github.com/justoverclockl/flarum-ext-newsfeed) RSS 订阅。
+9. [Newsletter by Justoverclock](https://github.com/justoverclockl/flarum-ext-newsletter) 邮件订阅。 
+10. [Predefined Avatars by Clarkwinkelmann](https://github.com/clarkwinkelmann/flarum-ext-predefined-avatars) 头像池。
+11. [Pwgen by Justoverclock](https://github.com/justoverclockl/flarum-ext-pwgen) 密码生成器。
+12. [Quiz Polls by Clarkwinkelmann](https://github.com/clarkwinkelmann/flarum-ext-quiz-polls) 投票转测验。
+13. [ReadMore by Justoverclock](https://github.com/justoverclockl/flarum-ext-readmore) 展开全文。
+14. [Realtimecode by Justoverclock](https://github.com/justoverclockl/flarum-ext-realtimecode) 实时代码编辑器。
+15. [Socialcards by Justoverclock](https://github.com/justoverclockl/flarum-ext-socialcards) 社交磁贴卡片。
+16. [ToastMe by Justoverclock](https://github.com/justoverclockl/flarum-ext-toastme) ToastMe 弹窗消息提示。
+17. [Welcomebox by Justoverclock](https://github.com/justoverclockl/flarum-ext-welcomebox) 首页欢迎卡片。
+
+【更新】
+1. [Author Change by Clarkwinkelmann](https://github.com/clarkwinkelmann/flarum-ext-author-change) 作者变更。新增：主题/首贴同步。
+2. [Blog by V17development](https://github.com/v17development/flarum-blog) 博客。适配 1.0.0
+3. [Categories by Askvortsov](https://github.com/askvortsov1/flarum-categories) 传统板块。
+4. [Davwheat Custom-sidenav-links`](https://github.com/davwheat/flarum-ext-custom-sidenav-links) 侧栏链接：错字修正。
+5. [Diff by Ianm](https://github.com/imorland/flarum-diff) 修订记录。适配 ICU 格式。
+6. [FoF Doorman](https://github.com/FriendsOfFlarum/doorman) 看门人。适配 ICU 格式。
+7. [FoF Drafts](https://github.com/FriendsOfFlarum/drafts) 草稿。时间格式允许本地化。
+8. [FoF Pages](https://github.com/FriendsOfFlarum/pages) 静态页面。新增：首页更换提示。
+9. [FoF Polls](https://github.com/FriendsOfFlarum/polls) 投票。适配 ICU 格式。
+10. [FoF Split](https://github.com/FriendsOfFlarum/split) 适配 ICU 格式。
+11. [FoF Terms](https://github.com/FriendsOfFlarum/terms) 服务条款。
+12. [FoF Upload](https://github.com/FriendsOfFlarum/upload) 文件上传器。适配 ICU 格式。
+13. [Moderator Warnings by Askvortsov](https://github.com/askvortsov1/flarum-moderator-warnings) 适配 ICU 格式。
+14. [Rich Text by Askvortsov](https://github.com/askvortsov1/flarum-rich-text) 富文本编辑器。
+
+【优化】
+1. [Cakeday by Nearata](https://github.com/Nearata/flarum-ext-cakeday) 纪念日。
+2. [Contactme by Justoverclock](https://github.com/justoverclockl/flarum-ext-contactme)
+3. [Discussion Templates by Askvortsov](https://github.com/askvortsov1/flarum-discussion-templates) 主题模板。
+4. [Flarumite Simple Discussion Views by Flarumite](https://github.com/flarumite/simple-discussion-views)
+5. [FoF Amazon Affiliation](https://github.com/FriendsOfFlarum/amazon-affiliation)。
+6. [FoF Share Social](https://github.com/FriendsOfFlarum/share-social)：权威链接分享。
+7. [Follow Users by Ianm](https://github.com/imorland/follow-users) 关注用户。
+8. [Markdown Tables by Askvortsov](https://github.com/askvortsov1/flarum-markdown-tables)。
+9.  [Online by Antoinefr](https://github.com/AntoineFr/flarum-ext-online) 在线用户小挂件。
+10. [Payments by Blomstra](https://extiverse.com/extension/blomstra/payments) 付费系统 💰。
+11. [Progressive Web App by Askvortsov](https://github.com/askvortsov1/flarum-pwa) PWA。
+
+全部变化：[v0.1.0-beta.16.2...v1.0.0](https://github.com/FFans/lang-simplified-chinese/compare/v0.1.0-beta.16.2...v1.0.0)
+
+# 2021-4-24
+# 🌟 v0.1.0-beta.16.2
+
+【新版本准备】
+1. [`flarum/core`](https://github.com/flarum/core) 新增：用户列表。
+2. [`flarum/mentions`](https://github.com/flarum/mentions) 提及。默认只能@昵称，新增@用户名开关。
+
+【核心】
+1. [`flarum/markdown`](https://github.com/flarum/markdown) 新增：mdarea 开关。 
+
+【新增】
+1. [`ianm/flarum-diff`](https://github.com/imorland/flarum-diff) 编辑记录。更换维护仓库。
+2. [`justoverclock/flarum-ext-contactme`](https://github.com/justoverclockl/flarum-ext-contactme) 联系我们。
+
+【更新】
+1. [`askvortsov/flarum-discussion-templates`](https://github.com/askvortsov1/flarum-discussion-templates) 主题模板。新增：通用默认模板。
+2. [`askvortsov/flarum-pwa`](https://github.com/askvortsov1/flarum-pwa) 更新：应用简称。
+3. [`askvortsov/rich-text`](https://github.com/askvortsov1/flarum-rich-text) 所见即所得编辑器。新增：全新换行。
+4. [`clarkwinkelmann/flarum-ext-carving-contest`](https://github.com/clarkwinkelmann/flarum-ext-carving-contest) 雕刻比赛。新增：自定义色表。
+5. [`davwheat/custom-sidenav-links`](https://github.com/davwheat/flarum-ext-custom-sidenav-links) 侧栏链接。
+6. [`fof/polls`](https://github.com/FriendsOfFlarum/polls) 投票。新增：不参与直接查看结果、修改投票。
+7. [`matteocontrini/flarum-imgur-upload`](https://github.com/matteocontrini/flarum-imgur-upload) 新增：粘贴上传。
+8. [`v17development/flarum-support`](https://extiverse.com/extension/v17development/flarum-support) 工单系统 💰。新增：管理员评分、主题帖转工单。
+9. [`v17development/flarum-user-badges`](https://github.com/v17development/flarum-user-badges) 用户徽章。新增：无拥有徽章提示。
+
+全部变化：[v0.1.0-beta.16.1...v0.1.0-beta.16.2](https://github.com/FFans/lang-simplified-chinese/compare/v0.1.0-beta.16.1...v0.1.0-beta.16.2)
+
 # 2021-3-22
 # 🌟 v0.1.0-beta.16.1
 

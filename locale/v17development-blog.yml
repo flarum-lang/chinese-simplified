@@ -16,8 +16,8 @@ v17development-flarum-blog:
       allow_comments_text: 允许他人在新文章中发表评论。此项关闭时，只能为每篇文章单独开启。<b>注意：</b>此项设置的变更不会影响已存在的文章。
       blog_heading: 博客
       categories_heading: 分类目录
-      default_article_image_label: 默认文章头图
-      default_article_image_text: 选择在未指定头图时，默认使用的文章头图。
+      default_article_image_label: 默认封面图
+      default_article_image_text: 设置默认使用的文章封面图。
       hide_on_discussion_list_label: 不在主题列表中显示
       hide_on_discussion_list_text: 在「全部主题」列表中隐藏博客文章。
       hide_tags_in_taglist_label: 对标签列表不可见
@@ -31,7 +31,7 @@ v17development-flarum-blog:
       require_review_label: 文章必须经人工审核
       require_review_text: 发布文章时，经管理员人工审核后才会公开可见。
       select_categories_button: 选择博客分类目录
-      selected_category_count: '已指定 {count} 个分类目录|已指定 {count} 个分类目录'
+      selected_category_count: '已指定 {count, plural, one {#} other {#}} 个分类目录'
       show_tag_hierarchy_label: 显示标签层次
       show_tag_hierarchy_text: 在子分类目录之间添加空格，并为分类目录列表提供层次结构视图。
   forum:
@@ -52,11 +52,12 @@ v17development-flarum-blog:
       edit_categories: 编辑分类目录
       enter_message_here: 在此输入正文内容
       no_blog_tags_selected: 您选择的标签中没有一个是博客标签，请至少选择一个博客标签。
-      no_title: 未命名标题
-      nothing_to_preview: 什么都还没有写
+      no_title: 标题
+      nothing_to_preview: 什么都还没写呢
       post_article: 发布文章
-      post_without_blog_info: 确定要发布这篇文章吗？您还没有输入博客摘要或头图。
+      post_without_blog_info: 确定要发布这篇文章吗？您还没有输入博客摘要或上传封面图。
       select_category: 选择分类目录
+      update_settings: 文章设置
       view: 预览
       write: 写作
     forum_nav: 论坛导航
@@ -83,7 +84,7 @@ v17development-flarum-blog:
       update_category: 更新分类目录
     utils:
       redirect:
-        link: 如果没有任何响应，请<a>单击此处</a>
+        link: 如果没有任何响应，请<a>点击此处</a>
         title: 正在将您重定向至博客文章……
     validation:
       missing_id: 'ID 缺失'

@@ -12,7 +12,7 @@ fof-pages:
       content_placeholder: '=> fof-pages.ref.content'
       delete_page_button: 删除页面
       delete_page_confirmation: 确定要删除此页面吗？
-      hidden_label: 保存为草稿
+      hidden_label: 保存草稿
       html_label: '启用 HTML'
       restricted_label: 访问限制（前往权限页面设置谁可以访问自定义页面）
       set_as_home_page_confirmation: 确定要将此页面设为首页吗？

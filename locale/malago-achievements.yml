@@ -10,7 +10,7 @@ malago-achievements:
       add_delete_title: '给予 / 收回用户成就'
       col_label: 列
       col_placeholder: '0'
-      computation_label: "要计算的条件：帖子、点赞、自赞、主题帖、回复帖、编辑数、上传头像、消息关键词、注册年数\n"
+      computation_label: "要计算的条件：帖子、点赞、自赞、主题帖、回复帖、编辑数、上传头像、关键词、注册年数\n"
       computation_placeholder: 数字
       delete_button: 删除成就
       delete_confirmation: 确定要删除这个成就吗？
@@ -29,12 +29,23 @@ malago-achievements:
       row_placeholder: '0'
       submit_button: '=> core.ref.save_changes'
       title: 创建成就
+      tooltip:
+        comments: '最小从同一主题收到的回应数（例如 10）或范围区间（例如 10,19）'
+        contains: '最小帖子内关键词出现次数（例如 小鸡,10）或范围区间（例如 小鸡,10,19）'
+        discussions: '最小发布主题数（例如 10）或范围区间（例如 10,19）'
+        edits: '最小编辑帖子数（例如 10）或范围区间（例如 10,19）'
+        likes: '最小点赞数（例如 10）或范围区间（例如 10,19）'
+        meanwords: '最小关键词平均出现次数（例如 小鸡,10）或范围区间（例如 小鸡,10,19）'
+        posts: '最小回帖数（例如 10）或范围区间（例如 10,19）'
+        selflikes: '最小获赞数（例如 10）或范围区间（例如 10,19）'
+        tagposts: '最小标签英文名称 (Slug) 出现关键词的主题数（例如 off-topic,10）或范围区间（例如 小鸡,10,19）'
+        years: '最小已注册年数（例如 10）或范围区间（例如 10,19）'
       username: 用户名
       username_placeholder: 用户名
       variable:
         avatar: 上传头像
         comments: 主题帖中收到回应
-        contains: 消息包含
+        contains: 包含关键词
         discussions: 主题帖
         edits: 编辑的帖子
         likes: 点赞
@@ -51,7 +62,7 @@ malago-achievements:
       add_delete_users: '给予 / 收回用户成就'
       create_achievement_button: 创建成就
       instructions_header: 功能介绍
-      instructions_text: "<li>要创建一个成就，请必须为其设置名字。</li>。\n<li>成就描述是可选项。</li>\n<li>从条件列表中为成就选择一个达成条件。</li>\n<li>填写激活成就的门槛。填写两个数字并用逗号 (,) 分隔，表示下限和上限。</li>\n<li>如果计数超过上限，有两个阈值的成就将被移除。</li>\n<li>对于「消息包含」成就，需要先指定关键词，然后填写上下限（例如「菠菜,5」或 「菠菜,5,10」。</li>\n<li>可设置图像链接，用作该成就的图标。</li>\n<li>可调整成就图标的宽度和高度。</li>\n<li>其他项：如果你是用雪碧图作为成就图标，你可以设置图标的行列偏移量。</li>\n"
+      instructions_text: "<li>创建成就时，需要先起个名字。</li>。\n<li>成就描述是可选项。</li>\n<li>创建后，可在条件列表中选择成就的达成条件。</li>\n<li>然后为条件设置门槛。你可以用一个数字表示上下限，也可以用两个数字并用逗号 (,) 分隔表示区间范围。</li>\n<li>如果一个成就的所有达成条件，均由区间门槛构成，则仅当用户处于区间范围内时，才会获得该成就。当用户超出区间时，会失去该成就。</li>\n<li>对于「包含关键词」成就，需要先指定关键词，然后填写出现的次数或区间（例如「菠菜,5」或 「菠菜,5,10」）。</li>\n<li>创建成就时，你可以使用 FontAwesome 代码或 URL 图片自定义成就的图标。</li>\n<li>使用 URL 图片作为图标时，你可以调整它的宽度和高度。</li>\n<li>另外，如果你使用雪碧图作为成就图标，也能够调整图片的行列偏移量。</li>\n"
       list_heading: 成就
   forum:
     achievement_points: 积分

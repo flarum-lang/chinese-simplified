@@ -18,6 +18,7 @@ malago-achievements:
       description_placeholder: 成就描述
       height_label: 图片高度
       height_placeholder: '32'
+      hidden_label: 从成就列表中隐藏
       image_label: '图片链接 / 图标代码'
       image_placeholder: 成就的图标链接
       name_label: 名称
@@ -54,6 +55,11 @@ malago-achievements:
       list_heading: 成就
   forum:
     achievement_points: 积分
+    achievement_total_points: 总计
+    hidden_achievements: 隐藏成就
+    list_heading: 成就
     new_achievement_close: 达成！
     new_achievement_name: 成就
     new_achievement_title: 新成就！
+    other_achievements: 其他成就
+    your_achievements: 你的成就

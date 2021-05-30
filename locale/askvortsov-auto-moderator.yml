@@ -72,5 +72,5 @@ askvortsov-auto-moderator:
     group_id: '用户组 ID'
     managed_groups:
       group_item: '<badge></badge> {groupName}'
-      groups_not_editable: 为防止数据不一致，由本扩展管理的用户组，不允许手动移入/移出用户。
+      groups_not_editable: 为防止数据不一致，由自动审阅扩展管理的用户组，不允许手动移入/移出用户。
       header: 托管用户组：

@@ -13,10 +13,10 @@ askvortsov-rich-text:
       use_rich_text_editor_label: 使用富文本编辑器
   lib:
     composer:
-      additional_items_tooltip: 附加控制
-      bold_tooltip: '粗体文本  <{modifierKey}-b>'
-      code_block_tooltip: 插入代码区块
-      code_tooltip: '内联代码 <{modifierKey}-`>'
+      additional_items_tooltip: 其他
+      bold_tooltip: '粗体  <{modifierKey}-b>'
+      code_block_tooltip: 代码块
+      code_tooltip: '行内代码 <{modifierKey}-`>'
       header_tooltip: '更改为标题 {level} <shift-{modifierKey}-{level}>'
       horizontal_rule_tooltip: 分割线
       image_tooltip: 添加图片
@@ -30,15 +30,15 @@ askvortsov-rich-text:
         text_placeholder: 文本
         title_placeholder: 标题（在悬停时显示）
       italic_tooltip: '意大利体 <{modifierKey}-i>'
-      link_tooltip: 添加链接
+      link_tooltip: 超链接
       ordered_list_tooltip: '有序列表 <shift-{modifierKey}-9>'
       paragraph_tooltip: '修改为段落  <shift-{modifierKey}-0>'
       quote_tooltip: '插入引用 <{modifierKey}-q>'
-      spoiler_block_tooltip: 黑幕/下拉菜单
+      spoiler_block_tooltip: 折叠文本
       spoiler_inline_tooltip: '黑幕  <{modifierKey}-;>'
       strike_tooltip: '删除线 <alt-shift-5>'
       sub_tooltip: '下标 <{modifierKey}-,>'
       sup_tooltip: '上标 <{modifierKey}-.>'
-      text_type_tooltip: 选择文本类型
+      text_type_tooltip: 文本类型
       toggle_button: 切换富文本模式
-      unordered_list_tooltip: '带标题列表 <shift-{modifierKey}-8>'
+      unordered_list_tooltip: '无序列表 <shift-{modifierKey}-8>'

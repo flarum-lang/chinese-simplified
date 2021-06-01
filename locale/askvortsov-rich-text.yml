@@ -19,7 +19,7 @@ askvortsov-rich-text:
       code_tooltip: '行内代码 <{modifierKey}-`>'
       header_tooltip: '更改为标题 {level} <shift-{modifierKey}-{level}>'
       horizontal_rule_tooltip: 分割线
-      image_tooltip: 添加图片
+      image_tooltip: 图片
       insert_button: 插入
       insert_image:
         src_placeholder: 链接
@@ -29,7 +29,7 @@ askvortsov-rich-text:
         remove_button: 移除
         text_placeholder: 文本
         title_placeholder: 标题（在悬停时显示）
-      italic_tooltip: '意大利体 <{modifierKey}-i>'
+      italic_tooltip: '斜体 <{modifierKey}-i>'
       link_tooltip: 超链接
       ordered_list_tooltip: '有序列表 <shift-{modifierKey}-9>'
       paragraph_tooltip: '修改为段落  <shift-{modifierKey}-0>'

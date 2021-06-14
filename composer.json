@@ -1,5 +1,5 @@
 {
-  "name": "ffans/lang-simplified-chinese",
+  "name": "flarum-lang/chinese-simplified",
   "description": "Flarum 简体中文语言包 2021",
   "keywords": [
     "flarum",
@@ -18,22 +18,17 @@
       "homepage": "https://github.com/FFans"
     }
   ],
-  "funding": [
-    {
-      "type": "website",
-      "url": "https://pay.csur.fun/"
-    }
-  ],
   "support": {
-    "source": "https://github.com/FFans/lang-simplified-chinese",
-    "issues": "https://github.com/FFans/lang-simplified-chinese/issues",
+    "source": "https://github.com/flarum-lang/chinese-simplified",
+    "issues": "https://github.com/flarum-lang/chinese-simplified/issues",
     "forum": "https://discuss.flarum.org/d/22690"
   },
   "require": {
     "flarum/core": "^1.0.0"
   },
   "replace": {
-    "littlegolden/flarum-lang-simplified-chinese": "*"
+    "littlegolden/flarum-lang-simplified-chinese": "*",
+    "ffans/lang-simplified-chinese": "*"
   },
   "extra": {
     "flarum-extension": {

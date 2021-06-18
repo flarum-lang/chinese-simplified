@@ -35,4 +35,4 @@ kyrne-websocket:
       title: 'WebSocket / Pusher 设置'
   forum:
     discussion_list:
-      show_updates_text: '{count} 个主题有新回复，点击查看|{count} 个主题有新回复，点击查看'
+      show_updates_text: '有 {count, plural, one {#} other {#}} 条新内容，点击查看'

@@ -41,7 +41,7 @@ askvortsov-auto-moderator:
       action_validation_errors: 以下行为动作驱动出错：
       heading: 当前状态
       invalid: 当前评判标准无效，请检查下方出错的条件。
-      no_actions: 尚未指定行为动作。当用户满族或不再满足评判标准时，将无事发生。
+      no_actions: 尚未指定行为动作。当用户满足或不再满足评判标准时，将无事发生。
       no_metrics_or_reqs: 尚未设定任何指标或附加要求。这意味着所有用户都满足此评判标准。
       requirement_validation_errors: 以下附加要求驱动出错：
       valid: 评判标准有效！

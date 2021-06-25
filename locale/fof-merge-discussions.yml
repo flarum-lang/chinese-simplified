@@ -23,6 +23,6 @@ fof-merge-discussions:
       type_target_help_text: '选择一个主题合并至「<b>{title}</b>」。'
       type_target_label: 合并至此主题
     post:
-      merged: '已合并主题「{titles}」下的 <b>{count}</b> 条回复。|已合并主题「{titles}」下的 <b>{count}</b> 条回复。'
+      merged: '{count, plural, one {已合并主题「{titles}」下的 <b>#</b> 条回复。} other {已合并主题「{titles}」下的 <b>#</b> 条回复。}}'
   ref:
     merge: 合并主题

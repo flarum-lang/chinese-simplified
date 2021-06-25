@@ -40,14 +40,19 @@ fof-byobu:
       submit_button: 新建私密主题
       title_placeholder: 私密主题标题
     input:
-      search_recipients: 至少输入用户名前三位以搜索用户……
+      search_recipients: 输入用户名前三位……
     labels:
       recipients: '{count, plural, one {{count}} other {{count}}} 人可见'
       user_deleted: '--已删除--'
     modal:
       help:
         add_recipients: 此主题仅选中的用户可见。至少添加一个用户（您除外）才能创建私密主题。
+        click_user_to_remove_tooltip: 单击移除
+        selected_users: 单击以移除用户。
         update_recipients: 此主题仅选中的用户可见。
+      labels:
+        search_field: 搜索用户
+        selected_users: 已选用户
       titles:
         add_recipients: 邀请用户加入私密主题
         update_recipients: '更新「{title}」的可见范围'

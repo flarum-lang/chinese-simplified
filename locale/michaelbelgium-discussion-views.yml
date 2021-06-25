@@ -23,7 +23,7 @@ michaelbelgium-discussion-views:
     discussion_controls:
       resetviews_button: 重置浏览量
     modal_resetviews:
-      label: '这将会清除这个主题的 {count} 浏览量，确定要继续吗？|这将会清除这个主题的 {count} 浏览量，确定要继续吗？'
+      label: '这将会清除这个主题的 {count, plural, one {{count}} other {{count}}} 浏览量，确定继续吗？'
       submit_button: 确定清除
       title: 重置主题浏览量
     viewlist:

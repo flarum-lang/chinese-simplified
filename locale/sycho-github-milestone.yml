@@ -7,7 +7,7 @@ sycho-github-milestone:
     all: '=> sycho-github-milestone.ref.all'
     closed: '=> sycho-github-milestone.ref.closed'
     default_filter: 默认过滤条件
-    milestone: '里程碑 ID'
+    milestone: 'Milestone ID'
     open: '=> sycho-github-milestone.ref.open'
     repository: 'GitHub 存储库'
     repository_example: 示例：flarum/core
@@ -15,7 +15,7 @@ sycho-github-milestone:
     all: '=> sycho-github-milestone.ref.all'
     closed: '=> sycho-github-milestone.ref.closed'
     complete: '{progress} 已完成'
-    last_updated: '上次更新 {time}'
+    last_updated: '最新进展 {time}'
     load_more: '=> core.forum.discussion_list.load_more_button'
     open: '=> sycho-github-milestone.ref.open'
     tasks_done: '{number} / {total}'
@@ -23,4 +23,4 @@ sycho-github-milestone:
   ref:
     all: 所有
     closed: 已关闭
-    open: 开启的
+    open: 进行中

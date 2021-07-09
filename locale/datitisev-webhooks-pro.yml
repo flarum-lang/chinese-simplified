@@ -47,6 +47,9 @@ fof-webhooks:
             postwasreacted: 戳表情
             postwasunreacted: 移除表情
             title: 'FriendsOfFlarum 表情反应'
+          twofactor:
+            title: 'FriendsOfFlarum 两步验证'
+            userenabledtwofactor: '用户启用 2FA'
         reflar:
           twofactor:
             title: 'ReFlar 两步验证'

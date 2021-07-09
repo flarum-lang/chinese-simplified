@@ -9,5 +9,5 @@ antoinefr-online:
       titleoflist: 自定义列表标题
   forum:
     andmore: '等 {more} 人…'
-    online_users: '{more} 人在线|{more} 人在线'
+    online_users: '{more, plural, one {#} other {#}} 人在线'
     title: 在线用户

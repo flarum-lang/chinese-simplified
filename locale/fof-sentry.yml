@@ -10,4 +10,5 @@ fof-sentry:
       javascript_label: '提交 JavaScript 错误'
       javascript_trace_sample_rate: '前端性能监测率 (0 - 100)'
       monitor_performance_label: 后端性能监测率(0-100)
+      send_user_emails_label: '发送 Sentry 报告时附加用户邮箱'
       user_feedback_label: 用户反馈

@@ -13,7 +13,7 @@ clarkwinkelmann-external-email-validation:
       headers-help: 一个请求头占一行
       method: 请求方法
       response-success-key: 具有有效状态的JSON属性的路径
-      uri: 请求的URL
+      uri: '请求 URL'
       uri-help: 您可以插入要替换为电子邮件值的短代码，请参阅自述。
       use-response-status: 使用HTTP响应状态作为有效性状态
       use-response-status-help: '状态码为 2xx 响应将被视为有效，4xx 响应将被视为无效。'

@@ -10,4 +10,4 @@ michaelbelgium-flarum-profile-views:
   forum:
     user:
       last_viewers_heading: 最近访客
-      view_count_text: '访客总量 {viewcount}|访客总量 {viewcount}'
+      view_count_text: '访问量 {viewcount, plural, one {{viewcount}} other {{viewcount}}}'

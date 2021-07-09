@@ -64,6 +64,10 @@ malago-achievements:
       instructions_header: 功能介绍
       instructions_text: "<li>创建成就时，需要先起个名字。</li>。\n<li>成就描述是可选项。</li>\n<li>创建后，可在条件列表中选择成就的达成条件。</li>\n<li>然后为条件设置门槛。你可以用一个数字表示上下限，也可以用两个数字并用逗号 (,) 分隔表示区间范围。</li>\n<li>如果一个成就的所有达成条件，均由区间门槛构成，则仅当用户处于区间范围内时，才会获得该成就。当用户超出区间时，会失去该成就。</li>\n<li>对于「包含关键词」成就，需要先指定关键词，然后填写出现的次数或区间（例如「菠菜,5」或 「菠菜,5,10」）。</li>\n<li>创建成就时，你可以使用 FontAwesome 代码或 URL 图片自定义成就的图标。</li>\n<li>使用 URL 图片作为图标时，你可以调整它的宽度和高度。</li>\n<li>另外，如果你使用雪碧图作为成就图标，也能够调整图片的行列偏移量。</li>\n"
       list_heading: 成就
+      show: 显示成就列表于：
+    settings:
+      show-post-footer: 每个帖子下方
+      show-user-card: 用户资料卡片
   forum:
     achievement_points: 积分
     achievement_total_points: 总计

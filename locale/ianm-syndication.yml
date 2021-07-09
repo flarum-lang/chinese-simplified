@@ -5,13 +5,13 @@
 ianm-syndication:
   admin:
     settings:
-      entries-count: 订阅源条目数量是多少？
+      entries-count: 订阅信息流条目数量是多少？
       full-text:
-        help: 如果禁用，订阅源将仅包含摘要，用户需要访问论坛查看全部内容。
+        help: 如果禁用此项，订阅信息流将仅展示摘要，用户需要访问论坛查看全部内容。
         label: 全文输出
         recommendation: '建议开启此选项以尊重使用 RSS 聚合器的用户。'
       html:
-        help: '开启此选项以保留 HTML 内容。如果禁用，订阅源将以纯文本格式展示。'
+        help: '开启此选项以保留 HTML 内容。如果禁用，订阅信息流将以纯文本格式展示。'
         label: 格式化内容
       title: 订阅源设置
   forum:
@@ -19,8 +19,8 @@ ianm-syndication:
       discussion_last_posts: 这篇主题
       forum_activity: 论坛活动
       forum_new_discussions: 论坛新帖
-      tag_activity: '{tag} 节点活动'
-      tag_new_discussions: '{tag} 节点新帖'
+      tag_activity: '{tag} 标签活动'
+      tag_new_discussions: '{tag} 标签新帖'
     feeds:
       titles:
         discussion_subtitle: 这篇帖子的最新回复
@@ -29,7 +29,7 @@ ianm-syndication:
         main_d_title: '{forum_name} 的新帖'
         main_subtitle: 论坛最新回帖
         main_title: '{forum_name}'
-        tag_d_subtitle: '{tag} 节点新帖'
-        tag_d_title: '{tag} 节点新帖'
-        tag_subtitle: '{tag} 节点新回帖'
-        tag_title: '{tag} 节点活动'
+        tag_d_subtitle: '{tag} 标签新帖'
+        tag_d_title: '{tag} 标签新帖'
+        tag_subtitle: '{tag} 标签新回帖'
+        tag_title: '{tag} 标签活动'

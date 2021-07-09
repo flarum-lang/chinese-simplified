@@ -10,12 +10,12 @@ the-turk-mathren:
       aliasInlineDelimiters: 内联表达式定界符的别名
       blockDelimiters: '用于段落表达式的 <strong>BBCode</strong> 定界符'
       blockMathClass: '块表达式的 <code>span</code> 标签'
-      decisiveKeywords: 忽略功能的关键词列表
+      decisiveKeywords: 忽略渲染功能的关键词列表
       decisiveKeywordsHelp: '要让表达式不被渲染成可视化的数学公式，请将关键词以如下形式填写到代码中 <code>[math=<strong>关键词</strong>]%e%[/math]</code>。'
       decisiveKeywordsInfo: 此列表中的第一个关键词将被作为默认关键词。
       decisiveKeywordsWarning: 请勿使用特殊符号！否则将引起异常。
       delimiters: 定界符
-      delimitersHelp: '定界符之间用半角逗号分隔。<strong>%e%</strong> 代表数学表达式。'
+      delimitersHelp: '定界符之间用半角逗号分隔。<strong>%e%</strong> 表示数学表达式。'
       description: '配置 TeX 数学公式渲染器。'
       enableColorIsTextColor: '允许<code>\color</code> 命令接受两个参数 （colorIsTextColor）'
       enableCopyTeX: '允许复制 KaTeX 公式源码'
@@ -23,13 +23,13 @@ the-turk-mathren:
       enableLeqno: '开启在公式左侧自动编号 （leqno 参数）'
       enableTextEditorButtons: 在文本编辑器上显示按钮
       enableThrowOnError: '对于不支持的命令或无效的 LaTeX 排版格式弹出错误提示'
-      errorColor: '选择不支持的命令或无效的 LaTeX 格式的颜色'
-      errorColorHelp: '选择错误提示被禁用时，提示不支持的命令和无效的 LaTeX 格式的颜色。'
-      ignoredClasses: 递归遍历时要忽略的DOM节点类名称列表
-      ignoredClassesInfo: 此列表中的第一个类将用作默认值，用于封装已忽略的表达式。
-      ignoredTags: '递归遍历时要忽略的 DOM 节点类型列表'
+      errorColor: '选择不支持命令或无效 LaTeX 代码的提示颜色'
+      errorColorHelp: '选择当错误提示被禁用时，不支持命令或无效 LaTeX 代码的提示颜色。'
+      ignoredClasses: '遍历渲染时要忽略的DOM节点 class 类名列表'
+      ignoredClassesInfo: 此列表中的第一个类名将作为默认值，用于封装忽略渲染的表达式。
+      ignoredTags: '遍历渲染时要忽略的 DOM 节点类型列表'
       ignoringExpressions: 忽略渲染功能
-      ignoringExpressionsHelp: 用半角逗号分隔。
+      ignoringExpressionsHelp: 半角逗号分隔。
       inlineDelimiters: '用于行内表达式的 <strong>BBCode</strong> 定界符'
       inlineMathClass: '内联（行内）表达式 <code>span</code> 标签'
       katexOptionsHeading: 'KaTeX 引擎设置'
@@ -37,22 +37,22 @@ the-turk-mathren:
       macros: 宏
       macrosHelp: 自定义宏集合。
       mainBlockDelimiter: '块表达式 <strong>BBCode</strong> 的主定界符'
-      mainDelimitersInfo: 上方列表中的第一个定界符将被文本编辑器作为默认定界符。
+      mainDelimitersInfo: 上方列表中的第一个定界符将被编辑器视为默认定界符。
       mainInlineDelimiter: '内联表达式 <strong>BBCode</strong> 的主定界符'
       mathClasses: '<code>span</code> 标签的类名'
       mathClassesHelp: '您可以使用此类名轻松自定义 <code>span</code> 标签的样式。'
       maxExpand: 最大扩展极限
       maxSize: 最大尺寸（em）
-      mentions: '您必须启用 <code>flarum/mentions</code> 扩展才能激活引用按钮。'
+      mentions: '你必须启用 <code>flarum/mentions</code> 扩展才能激活引用按钮。'
       minRuleThickness: 最小厚度（em）
       otherOptionsHeading: 其它选项
       outputMode: 输出模式
       outputModeHelp: 选择用于输出的标记语言
       regexInfo: 定界符只能由大小写字母、连字符构成。
       saved_message: '=> core.admin.basics.saved_message'
-      sizeSettings: 尺寸调整选项
+      sizeSettings: 尺寸调整
       sizeSettingsHelp: 使用<strong>英文句点</strong>作为小点数分隔符。
-      syntaxInfo: '您必须使用 JavaScript 语法编写宏代码。'
+      syntaxInfo: '你必须使用 JavaScript 语法编写宏代码。'
       title: 'MathRen 数学渲染'
       validation: '"{field_key}" 字段验证失败。'
       wrapperOptionsHeading: 封装选项

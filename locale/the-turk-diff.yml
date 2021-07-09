@@ -11,15 +11,15 @@ the-turk-diff:
       selfRollbackEditHistory: 回滚自己的编辑记录
       viewEditHistory: 查看编辑记录
     settings:
-      archiveInfo: '请记住，您可以在禁用下方两个选项的情况下，运行 <code>php flarum diff:archive</code> 命令来手动归档旧修订记录。'
+      archiveInfo: '此外，您可以在禁用下方两个选项的情况下，运行 <code>php flarum diff:archive</code> 命令来手动归档旧修订记录。'
       archiveOlds: 归档旧修订记录
-      archiveOldsInfo: '当 <strong>x ≥ A</strong> 时，一个帖子早期的 <strong>y=mx+b</strong> 个修订记录将被合并、压缩后归档。<strong>x</strong> 表示该贴的修订次数。当 <strong>y</strong> 的值为浮点数时，将会被四舍五入为整数值。'
+      archiveOldsInfo: '当 <strong>x ≥ A</strong> 时，一个帖子早期的 <strong>y=mx+b</strong> 条修订记录将被合并、压缩后归档。<strong>x</strong> 表示该贴的修订次数。当 <strong>y</strong> 的值为浮点数时，将会被四舍五入为整数。'
       charLevel: 字符级
       dbOptimisation: 数据库优化
       detailLevel: 细节程度（推荐字符级）
       lineLevel: 行级
       mainPostOnly: 仅存储一楼帖子的修订记录
-      mergeThreshold: 组合渲染器的合并阈值
+      mergeThreshold: 组合差异渲染器的合并阈值
       mergeThresholdHelp: '根据内容更改比率（0 到 1 之间的值）确定是否合并取代类型的块。'
       neighborLines: 上下文行数
       neighborLinesHelp: '被修改段落（差异块）的上下文行数。若设置为 2 ，则表示会在对比视图中加入两行被修改段落的上文和下文内容。'
@@ -33,8 +33,8 @@ the-turk-diff:
       usePoint: 请使用<strong>英文句点</strong>作为浮点数的小数点分隔符。
       wordLevel: 单词级
   forum:
-    confirmDelete: 确定要删除此条编辑记录吗？
-    confirmRollback: 确定要回滚到此版本吗？
+    confirmDelete: 确定要删除此条编辑记录？
+    confirmRollback: 确定要回滚到此版本？
     createdInfo: '{username} 创建于 {ago}'
     deleteButton: '=> core.forum.post_controls.delete_button'
     deleteErrorMessage: 删除编辑记录失败。
@@ -45,7 +45,7 @@ the-turk-diff:
       currentContent: '=> the-turk-diff.ref.currentContent'
       originalContent: '=> the-turk-diff.ref.originalContent'
       revisionWithNumber: '=> the-turk-diff.ref.revisionWithNumber'
-      sentence: '正在查看 {old} 与 {new} 的差异'
+      sentence: '正在查看 {old} 与 {new} 之间的差异'
     editedInfo: '=> core.forum.post.edited_tooltip'
     editedText: '=> core.forum.post.edited_text'
     emptyText: 无修订记录

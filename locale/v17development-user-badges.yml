@@ -10,6 +10,7 @@ v17development-flarum-badges:
         give_badge: 授予徽章
         remove_badge: 移除徽章
       badge_selector:
+        loading_badges: 加载徽章中
         placeholder: 选择徽章
       metric_drivers:
         badges_received: 收到徽章
@@ -35,7 +36,7 @@ v17development-flarum-badges:
       name: 分组名
     confirm_dialog:
       'no': 取消
-      title: 确认
+      title: 危险！
       'yes': 是
     confirm_messages:
       delete_badge: 确定要删除这个徽章吗？所有用户将失去此徽章，此操作不可撤销。
@@ -56,14 +57,16 @@ v17development-flarum-badges:
     all_users: 查看所有用户
     badge:
       badge: 徽章
+      badge_details: 徽章详情
       badges: 徽章
       category: 徽章分组
       description: 徽章描述
-      earned_count: '<b>{count} 用户</b> 已获得此徽章|<b>{count} 用户</b> 已获得此徽章'
+      earned_count: '{count, plural, one {<b># 用户</b>已获得此徽章} other {<b># 用户</b>已获得此徽章}}'
       earned_on: 徽章授予于
       earning_reason: 徽章授予理由
       name: 徽章名
       no_earning_reason: 无授予理由
+      received_on: '获得于 {date}'
       update_earning_reason: 更新授予理由
     badge_information: 徽章详情
     give_badge: 授予徽章
@@ -71,6 +74,7 @@ v17development-flarum-badges:
       give_badge: 授予徽章
       remove_badge: 移除徽章
       remove_badge_confirm: 确定要移除该用户的这个徽章吗？
+    no_received: 没有人获得此徽章。
     select_badge: 选择徽章
     uncategorized: '=> v17development-flarum-badges.admin.uncategorized'
     update_badge: 更新徽章

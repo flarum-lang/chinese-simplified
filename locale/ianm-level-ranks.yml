@@ -5,11 +5,11 @@
 ianm-level-ranks:
   admin:
     settings:
-      levelText: '输入经验条的前缀文字（例如：“等级” “Lv.”）'
+      levelText: 输入经验条的前缀文字（例如「等级」「Lv.」）
       title: 等级设置
   forum:
     desc:
-      expText: 点经验值
+      expText: '{expTotal} 点经验'
   lib:
     defaults:
       level: 等级

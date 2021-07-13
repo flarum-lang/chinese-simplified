@@ -6,8 +6,8 @@ flarum-ext-welcomebox:
   admin:
     enablepostbox: 向访客展示欢迎卡片
   forum:
-    discussion: '=> core.forum.user.discussions_link'
+    discussion: '=> core.ref.discussions'
     notregistered: 你目前还没有在这里注册。
-    npost: '=> core.forum.user.posts_link'
+    npost: '=> core.ref.posts'
     wback: 欢迎回来！
     welcomeguest: 你好！新访客

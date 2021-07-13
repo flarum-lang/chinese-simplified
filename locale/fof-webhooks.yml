@@ -34,6 +34,7 @@ fof-webhooks:
   admin:
     errors:
       service_not_found: '"{service}" 服务未找到或不存在。'
+      tag_invalid: '此 Webhook 被限制于无效的标签上。该限制将不可用。请确保这是您有意所为。'
       url_invalid: '所选服务的 URL 无效。'
     nav:
       desc: '为您的论坛设置自定义 Outgoing Webhooks。'
@@ -64,6 +65,8 @@ fof-webhooks:
             registered: 注册
             renamed: '=> fof-webhooks.ref.renamed'
             title: 'Flarum 用户'
+      debug_help: '当 Webhook 或事件工作不正常时，你可以启用此项。更多日志信息会输出到 Flarum 日志文件，以帮助你调试问题。'
+      debug_label: 调试
       help:
         disabled: '此 Webhook 已被禁用，因为它没有启用事件。'
         general: '您可以在这里添加、编辑、删除论坛中的 webhooks。'

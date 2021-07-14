@@ -8,3 +8,10 @@ the-turk-nodp:
       double_posting_label: 重复发帖
     settings:
       time_limit_label: 时限
+      time_limit_text: '最新回复者距上次回复 <b>xxx</b> 分钟内，将不可发布新回复，只能编辑上次回帖。输入 <b>0</b> 表示禁用此功能。'
+  forum:
+    composer_edit:
+      double_posting_warning_description: 短时间内您无法发表新回复，请重新编辑上次回帖。
+      double_posting_warning_title: 您是最新回复者
+    discussion:
+      cannot_reply_alert_message: 在有人回帖前您无法发表新回复。

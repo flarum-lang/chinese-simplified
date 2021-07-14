@@ -7,7 +7,11 @@ the-turk-quiet-edits:
     settings:
       gracePeriod: 静音期限（秒）
       gracePeriodHelp: 发帖后开始计时，在静音期限内进行编辑不会被记载到编辑记录。
+      grace_period_label: 静默期限（秒）
+      grace_period_text: 发帖后开始计时，在静默期限内进行编辑不会被记载到编辑记录。
       ignoreCase: 忽略大小写差异
       ignoreWhitespace: 忽略空格差异
+      ignore_case_differences_label: 忽略大小写差异
+      ignore_whitespace_differences_label: 忽略空格差异
       onlyUnsigned: '仅允许输入 <strong>无符号整数</strong>！'
       title: 静音编辑设置

@@ -7,7 +7,7 @@ core:
     appearance:
       colored_header_label: 彩色导航栏
       colors_heading: 颜色
-      colors_text: 选择两种颜色作为论坛主色调。第一种作为突出显示颜色，第二种作为背景等元素的颜色。
+      colors_text: 选择两种颜色作为论坛配色。第一种作为突出显示内容的颜色，第二种作为背景等元素的颜色。
       custom_footer_heading: 自定义页脚
       custom_footer_text: '=> core.ref.custom_footer_text'
       custom_header_heading: 自定义页眉
@@ -15,7 +15,7 @@ core:
       custom_styles_heading: 自定义样式
       custom_styles_text: '添加 Less/CSS 代码以自定义论坛外观，此设置将覆盖 Flarum 默认样式。'
       dark_mode_label: 夜间模式
-      description: 自定义论坛色调、图标以及其他元素
+      description: 自定义论坛配色、图标以及其他元素
       edit_css_button: '编辑自定义 CSS'
       edit_footer_button: '=> core.ref.custom_footer_title'
       edit_header_button: '=> core.ref.custom_header_title'

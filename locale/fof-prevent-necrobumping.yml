@@ -11,7 +11,7 @@ fof-prevent-necrobumping:
       message_description_label: 自定义警告内容
       message_title_help: '使用 <code>[time]</code> 表示天数，例如「此贴已经闲置 [time] 了」。'
       message_title_label: 自定义警告标题
-      tags_help: 为每个标签单独设置判断主题帖过时的天数，留空表示使用默认天数。如果一个主题被添加了好几个标签，则这几个标签中最短的天数将成为该主题的判断标准。
+      tags_help: 为每个标签单独设置判断主题帖过时的天数，留空表示使用默认天数。如果一个主题添加了多个标签，则取标签中最短的天数作为判断标准。
       tags_title: 分类标签
   forum:
     composer:

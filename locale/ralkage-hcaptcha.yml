@@ -4,6 +4,14 @@
 
 ralkage-hcaptcha:
   admin:
+    permissions:
+      post_without_hcaptcha: '发布主题和回帖时无需 hCaptcha 验证码'
     settings:
       help_text: '<a>点击此处</a> 获取 hCaptcha 秘钥。'
       secret_key_label: 'Secret Key'
+      site_key_label: 'Site Key'
+      type_label: 'hCaptcha 类型'
+  forum:
+    error: '提交 h-captcha 验证码时出错，请重试。'
+validation:
+  hcaptcha: 'hCaptcha 验证失败。'

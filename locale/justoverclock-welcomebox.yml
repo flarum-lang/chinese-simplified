@@ -5,14 +5,16 @@
 flarum-ext-welcomebox:
   admin:
     enablepostbox: 向访客展示欢迎卡片
+    img: 图片链接（访客端）
+    img-help: 在此填写向访客展示的图片链接
   forum:
     SettingsLink: 设置
     discussion: '=> core.ref.discussions'
     goToProfile: 个人主页
-    notregistered: 你目前还没有在这里注册。
+    notregistered: 您好像还不是注册用户。
     npost: '=> core.ref.posts'
     tooltipDisclist: 我的主题
     tooltipMentions: 被提及
     tooltipProfile: 个人主页
     wback: 欢迎回来
-    welcomeguest: 你好！新访客
+    welcomeguest: 欢迎光临

@@ -15,18 +15,32 @@ ianm-follow-users:
     new_post_subject: '【关注】新回复于 {title}'
   forum:
     badge:
-      label: 我的关注
+      label:
+        follow: 关注主题
+        lurk: 特别关注
     filter:
       following: 我的关注
     index:
-      follow_tag_button: 关注
-      unfollow_tag_button: 取消关注
+      follow_tag_button: '=> ianm-follow-users.lib.follow'
+      unfollow_tag_button: '=> ianm-follow-users.lib.change_follow_type'
+    modals:
+      select_follow_level:
+        cancel_btn: 取消
+        description: '您想要如何关注 <em>{username}</em>？'
+        follow_levels_heading: 关注级别
+        follow_select_label: 关注类型
+        no_user_attr_provided_err: 哎呀，打开弹窗时发生了错误。
+        no_user_attr_provided_err_debug: '创建选择关注级别 (SelectFollowUserLevel) 弹窗时 `user` 用户属性传入，因此弹窗生成失败。'
+        save_btn: 保存
+        title: '关注 {username}'
     notifications:
       new_discussion_text: '{username} 发布主题'
       new_follower_text: '{username} 关注了你'
       new_post_text: '{username} 发表回复'
       new_unfollower_text: '{username} 取关了你'
     profile_link: '=> ianm-follow-users.lib.following_link'
+    profile_page:
+      no_following: 您还没有关注任何人。
     settings:
       block_follow: 禁止他人关注我
       notify_new_discussion_label: 我关注的人发布了新主题
@@ -34,9 +48,21 @@ ianm-follow-users:
       notify_new_post_label: 我关注的人发表了新回复
       notify_new_unfollower_label: 有人取关我
     user_controls:
-      follow_button: 关注
+      follow_button: '=> ianm-follow-users.lib.follow'
       follow_confirmation: 确定要关注这个用户吗？
-      unfollow_button: 取消关注
+      unfollow_button: '=> ianm-follow-users.lib.change_follow_type'
       unfollow_confirmation: 确定要取消关注这个用户吗？
   lib:
+    change_follow_type: 修改关注类型
+    follow: 关注
+    follow_levels:
+      follow:
+        description: "接收 <em>{username}</em> 发布新主题的通知。\n"
+        name: 关注主题
+      lurk:
+        description: "接收 <em>{username}</em> 发布新主题和回复的所有通知。\n"
+        name: 特别关注
+      unfollow:
+        description: "不接收 <em>{username}</em> 的任何活动通知。\n"
+        name: 取消关注
     following_link: 我的关注

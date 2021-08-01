@@ -10,14 +10,14 @@ clarkwinkelmann-who-read:
       see-subscription: 查看订阅状态
       see-unread: 查看其他用户的未读状态
     settings:
-      hide-when-behind: 不显示阅读进度落后太多的用户（单位：贴）如果值为1，则表示只要用户在主题中有1个帖子未读，就不在读者列表中展示他/她。清空此值恢复默认。
+      hide-when-behind: 不显示阅读进度落后太多的用户（单位：贴）。如果值为1，则表示只要用户在主题中有1个帖子未读，就不在读者列表中展示他/她。留空此值恢复默认。
       max-visible: 横幅读者列表的初始最大展示人数（人数过多后，需要点击展开按钮查看完整列表）
-      only-groups: 仅显示群组用户的阅读进度
+      only-groups: 仅显示组群用户的阅读进度
       show-between-posts: 在帖子信息流中显示阅读进度
-      show-count-of-readers-who-stopped: 在帖子信息流中，仅显示有多少人没接着往下看。
+      show-count-of-readers-who-stopped: 在帖子信息流中，仅显示有多少人阅读止步于此。
       show-in-discussion-list: 在首页主题列表中显示读者
-      show-in-hero: 在主题页面的头部横幅显示读者
-      unread-icon: 头像的未读徽章图标
+      show-in-hero: 在主题页面的顶部标题区域显示读者
+      unread-icon: 头像左上角未读徽章图标
   forum:
     badges:
       following: '=> flarum-subscriptions.forum.badge.following_tooltip'
@@ -27,19 +27,19 @@ clarkwinkelmann-who-read:
       remove-unread: 标记为已读
       set-unread: 标记为未读
     footer:
-      read-no-further: '{0} 所有人都接着往下看了|{1} 1 人没有接着往下看|]1,Inf] {count} 人没有接着往下看'
-      read-this-post: '{0} 没有人看过此贴|{1} 1 人看了此贴|]1,Inf] {count} 人看了此贴'
-      read-to-end: '{0} 没有人看完|{1} 1 人看完了|]1,Inf] {count} 人看完了'
+      read-no-further: '{count, plural, =0 {所有人都阅读过} one {1 人阅读止步于此} other {# 人阅读止步于此}}'
+      read-this-post: '{count, plural, =0 {无人阅读} one {1 人阅读} other {# 人阅读}}'
+      read-to-end: '{count, plural, =0 {无人阅读到底} one {1 人阅读到底} other {# 人阅读到底}}'
     modal:
-      behind: 没看完的用户
-      past-this-post: 这里看过了的用户
+      behind: 尚未阅读到底
+      past-this-post: 接着往下阅读
       title: 读者
-      to-the-end: 全部看完的用户
-      up-to-this-post: 只看到这里的用户
+      to-the-end: 阅读到底
+      up-to-this-post: 止步于此
     more:
-      info: '还有 {count} 人'
-      show: '展开（{count} 人）'
+      info: '以及 {count} 人'
+      show: '展开 {count} 人'
     tooltip:
-      last-read-at: '{username} {ago} 看过'
-      last-read-at-behind: '{username} {ago} 看过'
-      last-read-at-up-to-date: '{username} 于 {ago} 查看了最新回复'
+      last-read-at: '{username} {ago} 阅读'
+      last-read-at-behind: '{username} {ago} 阅读'
+      last-read-at-up-to-date: '{username} {ago} 阅读最新回复'

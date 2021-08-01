@@ -10,10 +10,12 @@ dem13n:
       choose_tags: 选择标签
       default_img: 默认头图
       desktop_card_width: '桌面屏幕主卡片宽度：{percent}%'
+      mark_cards: 标记未读主题
       output_on_index_page: 首页输出
       preview_text: 显示短文本
       settings_error: 清除缓存，禁用那个扩展，点击右上角的卸载按钮，确认删除数据。然后重新启用本扩展
       show_replies: 显示回复数
+      show_views: '显示点击次数（需要安装 Flarumite Simple Discussion Views 扩展程序）'
       small_cards: 主卡片数量
       tablet_card_width: '平板端主卡片宽度：{percent}%'
   forum:

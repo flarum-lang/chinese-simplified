@@ -4,25 +4,42 @@
 
 the-turk-flamoji:
   admin:
+    custom_emojis_section:
+      export_json_button: '导出 JSON'
+      heading_title: '自定义 Emoji'
+      import_emojis_message: '仅导入 emoji'
+      import_json_button: '导入 JSON'
     settings:
       auto_hide_label: 自动隐藏
-      auto_hide_text: '选择表情后，自动隐藏 Emoji 选择器。'
+      auto_hide_text: 选择表情后自动关闭表情选择器。
       category_settings_heading: 分类设置
+      emoji_categories:
+        activities: '=> the-turk-flamoji.ref.emoji_categories.activities'
+        animals: '=> the-turk-flamoji.ref.emoji_categories.animals'
+        flags: '=> the-turk-flamoji.ref.emoji_categories.flags'
+        food: '=> the-turk-flamoji.ref.emoji_categories.food'
+        objects: '=> the-turk-flamoji.ref.emoji_categories.objects'
+        people: '=> the-turk-flamoji.ref.emoji_categories.people'
+        smileys: '=> the-turk-flamoji.ref.emoji_categories.smileys'
+        symbols: '=> the-turk-flamoji.ref.emoji_categories.symbols'
+        travel: '=> the-turk-flamoji.ref.emoji_categories.travel'
       emoji_data_label: 'Emoji 语言代码'
-      emoji_settings_heading: 'Emoji 设置'
-      emoji_style_label: 'Emoji 样式'
-      emoji_version_label: 'Emoji 版本'
+      emoji_data_text: 鼠标悬浮在表情上时，要用哪种语言显示表情描述。
+      emoji_settings_heading: 表情设置
+      emoji_style_label: 表情样式
+      emoji_style_native_option: 原生
+      emoji_version_label: 表情版本
       emoji_version_text: '要使用的 Emoji 表情版本。'
       general_ui_settings_heading: 常规界面设置
       initial_category_label: 首屏分类
       initial_category_text: '打开 Emoji 选择器时，默认显示的分类页面。'
       recents_count_label: 最近表情数量
-      recents_count_text: 要显示的最近使用的表情数量
+      recents_count_text: 要显示的最近使用的表情数量。
       show_category_buttons_label: 显示分类
       show_preview_label: 显示预览窗口
       show_recents_label: 显示最近使用的表情
-      show_search_label: 允许搜索表情
+      show_search_label: 显示搜索框
       show_variants_label: 显示肤色
-      show_variants_text: '一些 Emoji 有不同的肤色。开启此项后，点击有肤色的表情时，会弹出肤色选择框。'
+      show_variants_text: 一些表情有不同的肤色。开启此项后，点击有肤色的表情时，会弹出肤色选择框。
       specify_categories_label: 启用分类
       specify_categories_text: 勾选要显示的表情分类。

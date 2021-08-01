@@ -4,13 +4,15 @@
 
 kyrne-websocket:
   admin:
+    chart:
+      title: 'Websocket 统计'
     help:
       app_id: 'Pusher App ID - 如果使用内置 WebSocket 服务器，请保持默认值。'
       app_key: 'Pusher App Key - 如果使用内置 WebSocket 服务器，请保持默认值。'
       auth_only: '只允许经过身份认证的用户连接到 websocket 服务器，可以减少 CPU 的负载。'
       auto_update: 即时更新全部主题列表，不再显示「有新内容」黄色横幅。
       cert_path: '仅在使用 SSL 而非反向代理时开启。您服务器上的 SSL (HTTPS) 证书路径 - 通常是一个 .crt 或 .pem 文件。'
-      host: '您的 WebSocket 服务器主机 - 如果服务器和论坛位于同一主机，请保持默认值。'
+      host: '您的 WebSocket 服务器主机 - 如果服务器和管理员位于同一主机，请保持默认值。'
       passphrase: '仅在使用 SSL 而非反向代理时开启。用于启用证书私钥的密码 - 通常不需要填写。'
       pk_path: '仅在使用 SSL 而非反向代理时开启。您服务器上的 SSL (HTTPS) 私钥路径 - 通常是一个 .key 或 .pem 文件。'
       port: 'WebSocket 服务器端口 - 如果您没有修改服务器内置端口，请保持默认值。'
@@ -18,6 +20,7 @@ kyrne-websocket:
       secret: 'Pusher App Secret - 如果使用内置 WebSocket 服务器，请保持默认值。'
       secure: '强制 WebSocket 使用安全协议 - 如果您使用的是安全的 WebSocket 服务器而非网站，请启用此功能。'
       self_signed: '仅在使用 SSL 而非反向代理时开启。如果您的 SSL (HTTPS) 证书是自签证书，请开启此项。'
+      stats: '两次统计的间隔时间，单位秒。推荐填写一小时共 3600 秒至六小时共 21600 秒之间。默认为 7200 秒。'
     pusher_settings:
       app_host_label: 主机
       app_id_label: 'App ID'
@@ -32,7 +35,10 @@ kyrne-websocket:
       passphrase: SSL密钥密码（可选）
       reverse_proxy: 反向代理支持
       secure: '强制 WebSocket WSS/HTTPS'
+      stats_label: 统计间隔
       title: 'WebSocket / Pusher 设置'
   forum:
     discussion_list:
       show_updates_text: '有 {count, plural, one {#} other {#}} 条新内容，点击查看'
+    discussion_page:
+      viewing_title: 此时此刻：

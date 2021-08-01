@@ -4,6 +4,9 @@
 
 the-turk-stickiest:
   admin:
+    permissions:
+      super_sticky_discussions_label: 超级置顶主题
+      tag_sticky_discussions_label: 标签内置顶主题
     settings:
       badge_icon_label: 超级置顶图标
       badge_icon_text: '=> core.ref.icon_text'

@@ -2,6 +2,25 @@
 # Use https://weblate.rob006.net/projects/flarum/therealsujitk-gifs/zh_Hans/ for translation.
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
+therealsujitk-gifs:
+  admin:
+    apiKey: 'API 秘钥'
+    engine: 搜索引擎
+    rating: 内容等级与过滤
+    ratingHigh: 'G / 严格'
+    ratingLow: 'PG-13 / 宽松'
+    ratingMedium: 'PG / 中等'
+    ratingOff: 'R / 关闭'
+  forum:
+    addFavourite: 收藏
+    favourites: 我的收藏
+    label: 动图
+    removeFavourite: 删除表情
+    search: 搜索
+    searchGiphy: '搜索 Giphy'
+    searchTenor: '搜索 Tenor'
+    title: 插入动图
+    trending: 热门
 therealsujitk:
   admin:
     gifs:

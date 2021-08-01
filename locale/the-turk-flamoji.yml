@@ -5,9 +5,20 @@
 the-turk-flamoji:
   admin:
     custom_emojis_section:
+      edit_emoji:
+        delete_emoji_button: '删除 Emoji'
+        delete_emoji_confirmation: '确定要删除这个 Emoji ？'
+        emoji_title_label: 'Emoji 标题'
+        modal_title: '添加 Emoji'
+        path_or_url_label: '图片路径或 URL'
+        saved_message: '=> core.admin.settings.saved_message'
+        submit_button: '=> core.ref.save_changes'
+        text_to_replace_label: 表情代码
+      emoji_list:
+        load_more_button: '=> core.forum.post_stream.load_more_button'
       export_json_button: '导出 JSON'
       heading_title: '自定义 Emoji'
-      import_emojis_message: '仅导入 emoji'
+      import_emojis_message: '仅导入 Emoji 配置，Emoji 图片需要手动上传到相应的目录中。'
       import_json_button: '导入 JSON'
     settings:
       auto_hide_label: 自动隐藏
@@ -43,3 +54,34 @@ the-turk-flamoji:
       show_variants_text: 一些表情有不同的肤色。开启此项后，点击有肤色的表情时，会弹出肤色选择框。
       specify_categories_label: 启用分类
       specify_categories_text: 勾选要显示的表情分类。
+  forum:
+    composer:
+      emoji_tooltip: 'Emoji 表情'
+    emoji-button:
+      categories:
+        activities: '=> the-turk-flamoji.ref.emoji_categories.activities'
+        animals: '=> the-turk-flamoji.ref.emoji_categories.animals'
+        custom: '=> the-turk-flamoji.ref.emoji_categories.custom'
+        flags: '=> the-turk-flamoji.ref.emoji_categories.flags'
+        food: '=> the-turk-flamoji.ref.emoji_categories.food'
+        objects: '=> the-turk-flamoji.ref.emoji_categories.objects'
+        people: '=> the-turk-flamoji.ref.emoji_categories.people'
+        recents: '=> the-turk-flamoji.ref.emoji_categories.recents'
+        smileys: '=> the-turk-flamoji.ref.emoji_categories.smileys'
+        symbols: '=> the-turk-flamoji.ref.emoji_categories.symbols'
+        travel: '=> the-turk-flamoji.ref.emoji_categories.travel'
+      no_emojis_found_message: 未找到相关表情
+      search_placeholder: '搜索 Emoji'
+  ref:
+    emoji_categories:
+      activities: 活动
+      animals: '动物 & 自然'
+      custom: 自定义
+      flags: 旗帜
+      food: '食物 & 饮料'
+      objects: 物品
+      people: '人物 & 身体'
+      recents: 最近使用
+      smileys: 笑脸和情感
+      symbols: 标志
+      travel: '旅行 & 地点'

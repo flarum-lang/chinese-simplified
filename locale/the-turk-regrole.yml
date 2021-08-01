@@ -5,14 +5,31 @@
 the-turk-regrole:
   admin:
     settings:
+      allow_multiple_roles_label: 允许一个用户拥有多个角色
+      allowed_roles_label: 角色池
+      allowed_roles_text: 这里的角色用户可以自行选择分配。
       forceUsers: 强制用户至少挑选一个角色
+      force_users_label: 强制一个用户必须有一个角色
+      force_users_text: 启用后，没有任何角色的用户将被封禁，在他们选择一个角色后才可继续使用论坛（不含有用户组编辑权限的用户）。
       multipleRoles: 允许用户挑选多个角色
       otherOptions: 其它选项
+      other_options_heading: 其他选项
       roleIds: 开放角色
       roleIdsHelp: 选择允许用户自行挑选的角色。
       title: 注册角色设置
   forum:
     chooseRole: 选择角色
     chooseRoleHelp: 要继续使用论坛，请挑选一个角色。
+    choose_role_button_label: '=> the-turk-regrole.ref.choose_a_role'
+    choose_role_modal:
+      choose_role_heading: '=> the-turk-regrole.ref.choose_a_role'
+      choose_role_text: 要继续使用论坛，请选择一个角色。
+      save_button: '=> core.ref.save_changes'
     requiredRegRole: 您必须挑选一个角色才能完成注册。
+    required_role_message: 您必须选择一个角色。
     save: '=> core.ref.save_changes'
+    sign_up_modal:
+      choose_role_heading: '=> the-turk-regrole.ref.choose_a_role'
+    suspended_temporarily_message: 我们暂时封禁了您的账号，请选择一个角色以解禁。
+  ref:
+    choose_a_role: 选择一个角色

@@ -8,14 +8,22 @@ the-turk-mathren:
       aliasBlockDelimiters: 块表达式定界符的别名
       aliasDelimitersHelp: '它们是 <em>BBCode 主定界符</em> 的 <strong>别名</strong>。 如果您在定界符别名列表中定义了特殊（符号）定界符 （比如 <code>$$</code>），则在保存帖子时，MathRen 会扫描整个帖子，并用 BBCode 的主定界符替换特殊（符号）定界符。 此举可能会增加帖子的保存时间，建议您使用自定义的 BBCode 定界符，而不是特殊（符号）定界符。 因为自定义 BBCode 分隔符可以与主定界符共存，不会被主定界符替换。'
       aliasInlineDelimiters: 内联表达式定界符的别名
+      alias_block_delimiters_text: 段落表达式定界符<strong>别名</strong>
+      alias_inline_delimiters_text: 行内表达式定界符<strong>别名</strong>
+      aliases_as_primary_label: 将别名定界符转换为主定界符
+      bbcode_delimiters_rule_text: 'BBCode 定界符只能由大小写字母和破折号组成。'
       blockDelimiters: '用于段落表达式的 <strong>BBCode</strong> 定界符'
       blockMathClass: '块表达式的 <code>span</code> 标签'
+      block_delimiters_text: '<strong>BBCode</strong> 段落表达式定界符'
+      color_is_text_color_label: '允许 <code>\color</code> 命令接收双参数 (colorIsTextColor)'
       decisiveKeywords: 忽略渲染功能的关键词列表
       decisiveKeywordsHelp: '要让表达式不被渲染成可视化的数学公式，请将关键词以如下形式填写到代码中 <code>[math=<strong>关键词</strong>]%e%[/math]</code>。'
       decisiveKeywordsInfo: 此列表中的第一个关键词将被作为默认关键词。
       decisiveKeywordsWarning: 请勿使用特殊符号！否则将引起异常。
       delimiters: 定界符
       delimitersHelp: '定界符之间用半角逗号分隔。<strong>%e%</strong> 表示数学表达式。'
+      delimiters_label: 定界符
+      delimiters_text: '多个定界符使用英文逗号分隔。<strong>%e%</strong> 表示数学表达式。'
       description: '配置 TeX 数学公式渲染器。'
       enableColorIsTextColor: '允许 <code>\color</code> 命令接受两个参数 （colorIsTextColor）'
       enableCopyTeX: '允许复制 KaTeX 公式源码'
@@ -23,8 +31,14 @@ the-turk-mathren:
       enableLeqno: '开启公式左侧自动编号 （leqno 参数）'
       enableTextEditorButtons: 在文本编辑器中显示公式按钮
       enableThrowOnError: '对不支持的命令或无效的 LaTeX 代码弹出错误提示'
+      enable_copy_tex_label: '允许复制 KaTeX 公式源码'
+      enable_editor_buttons_label: 文本编辑器显示公式按钮
+      enable_fleqn_label: '多行公式左对齐 (fleqn)'
+      enable_leqno_label: '多行公式自动编号 (leqno)'
       errorColor: '选择不支持命令或无效 LaTeX 代码的提示颜色'
       errorColorHelp: '选择当错误提示被禁用时，不支持命令或无效 LaTeX 代码的提示颜色。'
+      error_color_label: '命令不支持或 LaTeX 格式错误时的提示颜色'
+      error_color_text: '<strong>禁用错误抛出时</strong>，命令不支持或 LaTex 格式错误的提示颜色。'
       ignoredClasses: '遍历渲染时要忽略的DOM节点 class 类名列表'
       ignoredClassesInfo: 此列表中的第一个类名将作为默认值，用于封装忽略渲染的表达式。
       ignoredTags: '遍历渲染时要忽略的 DOM 节点类型列表'
@@ -32,10 +46,15 @@ the-turk-mathren:
       ignoringExpressionsHelp: 半角逗号分隔。
       inlineDelimiters: '用于行内表达式的 <strong>BBCode</strong> 定界符'
       inlineMathClass: '内联（行内）表达式 <code>span</code> 标签'
+      inline_delimiters_text: '<strong>BBCode</strong> 行内表达式定界符'
+      java_syntax_text: '请使用 JavaScript 语法编写宏。'
       katexOptionsHeading: 'KaTeX 引擎设置'
       katexOptionsInfo: '<a>点击此处</a> 了解 KaTex 选项的更多信息。'
+      katex_options_heading: 'KaTeX 引擎设置'
       macros: 宏
       macrosHelp: 自定义宏集合。
+      macros_label: 宏
+      macros_text: 自定义宏集合。
       mainBlockDelimiter: '块表达式 <strong>BBCode</strong> 的主定界符'
       mainDelimitersInfo: 上方列表中的第一个定界符将被文本编辑器视为默认定界符。
       mainInlineDelimiter: '内联表达式 <strong>BBCode</strong> 的主定界符'
@@ -43,21 +62,34 @@ the-turk-mathren:
       mathClassesHelp: '您可以使用此类名轻松自定义 <code>span</code> 标签的样式。'
       maxExpand: 最大扩展极限
       maxSize: 最大尺寸（em）
+      maximum_expand_limit_text: 最大扩展极限
+      maximum_size_text: '最大尺寸 (em)'
       mentions: '你必须启用 <code>flarum/mentions</code> 扩展才能激活引用按钮。'
       minRuleThickness: 最小厚度（em）
+      minimum_thickness_text: '最小厚度 (em)'
       otherOptionsHeading: 其它项
+      other_options_heading: 其他选项
       outputMode: 输出模式
       outputModeHelp: 选择用于输出的标记语言
+      output_mode_label: 输出模式
+      output_mode_text: 选择输出的标记语言
+      primary_delimiters_text: 列表中的第一个定界符将作为主定界符。
+      quote_button_text: '要使用引用按钮，请启用 <code>flarum/mentions</code> 扩展程序。'
       regexInfo: 定界符只能由大小写字母、连字符构成。
       saved_message: '=> core.admin.basics.saved_message'
       sizeSettings: 尺寸调整
       sizeSettingsHelp: 使用<strong>英文句点</strong>作为小点数分隔符。
+      sizing_options_heading: 尺寸调整
       syntaxInfo: '你必须使用 JavaScript 语法编写宏代码。'
+      throw_on_error_label: '命令不支持或 LaTex 格式错误时抛出错误'
       title: 'MathRen 数学渲染'
       validation: '"{field_key}" 字段验证失败。'
       wrapperOptionsHeading: 封装选项
       wrapperStyle: '风格化 <code>span</code> 标签样式'
   forum:
+    composer:
+      block_expression: 段落公式
+      inline_expression: 行内公式
     textEditor:
       blockExpression: 段落公式
       inlineExpression: 行内公式

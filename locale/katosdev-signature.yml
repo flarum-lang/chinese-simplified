@@ -23,7 +23,7 @@ Xengine-signature:
       save: 保存
       signature: 小尾巴
     errors:
-      max_char_limit_exceed: 字符数超过上限
+      max_char_limit_exceed: 字符数量超过上限
       max_image_count_exceed: 图片数量超过上限
       max_image_height_exceed: 图片高度超过上限。
       max_image_width_exceed: 图片宽度超过上限。

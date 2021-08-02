@@ -5,9 +5,9 @@
 custom-header:
   admin:
     button-text: 左侧按钮文本
-    button-text-help: 设置你的左侧按钮文本
+    button-text-help: 设置横幅左侧按钮文本
     button2-text: 右侧按钮文本
-    button2-text-help: 设置你的右侧按钮文本
+    button2-text-help: 设置横幅右侧按钮文本
     facebookIcon: 脸书主页链接
     facebookIcon-help: 粘贴你的脸书主页地址
     githubIcon: 'GitHub 主页链接'
@@ -16,7 +16,18 @@ custom-header:
     headerTagline-help: 你可以修改标语
     headerTitle: 横幅标题
     headerTitle-help: 你可以修改横幅的标题
+    link-button-one: 左侧按钮超链接
+    link-button-one-help: 设置横幅左侧按钮的超链接
+    link-button-two: 右侧按钮超链接
+    link-button-two-help: 设置横幅右侧按钮的超链接
     twitterIcon: 推特主页链接
     twitterIcon-help: 粘贴你的推特主页地址
     youtubeIcon: 油管主页链接
     youtubeIcon-help: 粘贴你的油管主页地址
+  forum:
+    facebook: 关注我们的脸书
+    github: 'GitHub 主页'
+    login: 登录
+    signup: 注册
+    twitter: 关注我们的推特
+    youtube: 关注我们的油管

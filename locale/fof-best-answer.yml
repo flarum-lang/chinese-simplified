@@ -24,7 +24,7 @@ fof-best-answer:
     body:
       awarded: "{recipient_display_name}，你好！\n\n干得漂亮，您在【{discussion_title}】发表的回复刚刚被 {actor_display_name} 选为最佳回复。感谢你的耐心帮助。\n\n点击此处查看回复：{discussion_url}\n"
       ba-set: "{recipient_display_name}，你好！\n\n{actor_display_name} 刚刚为你参与讨论的主题【{discussion_title}】选择了最佳回复。\n\n去看看吧：{discussion_url}\n"
-      select: "{recipient_display_name}，你好！\n\n稍微提醒一下，你的主题「{discussion_title}」已收到许多回复，希望有回复已帮助你解决问题。\n\n如果是这样，希望你能将其设为最佳回复，这样可以帮助后来者快速找到解决类似问题的办法，同时，这也不失为对帮助者的鼓励。\n\n点击此处查看主题：{discussion_url}，并将最合适的回复选为最佳回复。\n\n感谢！\n"
+      select: "{recipient_display_name}，你好！\n\n你的主题「{discussion_title}」已经有了很多回复。\n\n如果其中有可以帮助你解决问题的，你可以把他选为最佳回复，这样不仅能让后来者快速找到解决问题的办法，也可以激励帮助你的人。\n\n点击此处查看主题：{discussion_url}，并选择最佳回复。\n\n此致\n"
     subject:
       awarded: '您的帖子被 {display_name} 设为最佳回复'
       ba-set: '{display_name} 选择了一个最佳回复'

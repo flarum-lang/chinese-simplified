@@ -14,6 +14,7 @@ miniflar-sidenav-download-button:
       enter_link_message: 请输入合法链接。
       labels:
         add_separator: 添加分割线
+        disable_widget: '禁用原生挂件并使用 Afrux 挂件'
       separator_order_heading: 分割线顺序
       separator_order_text: '此设置可调整分割线在 Flrum 论坛侧边栏挂件中的位置。数字越大，分割线在侧边栏列表中的位置越靠前（这个值可以为正，也可以为负）。'
   forum:

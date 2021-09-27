@@ -42,6 +42,8 @@ validation:
   ends_with: ':attribute 应以下列任一值结尾：:values。'
   exists: '您选择的 :attribute 无效。'
   file: ':attribute 须是一个文件。'
+  file_too_large: ':attribute 过大。'
+  file_upload_failed: ':attribute 上传失败。'
   filled: ':attribute 不能为空。'
   gt:
     array: ':attribute 须多于 :value 项。'

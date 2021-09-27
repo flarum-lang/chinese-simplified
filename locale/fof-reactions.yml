@@ -6,43 +6,43 @@ fof-reactions:
   admin:
     page:
       convert:
-        button: 转换旧的心情
-        converted: '成功转换了所有 {number} 个赞'
-        converting: 正在转换心情中，请于几分钟后重载页面以查看进度。（转换时间取决于数据量大小）
-        help: 如果您刚刚安装或更新了本插件，所有帖子的心情将被转换。若您已安装此插件，请放心忽略这条消息。
+        button: 转换旧表情
+        converted: '成功转换了全部 {number} 个赞'
+        converting: 正在转换表情中，请于几分钟后刷新页面以查看进度（转换时间取决于数据量大小）
+        help: 如果您刚刚更新本扩展，此操作将转换所有帖子的戳一戳表情。如果您刚刚安装本插件，请忽略本条消息。
       reactions:
-        Helptext: '在标识名文本框中，输入 emoji 的英文名称，您可以在论坛文本编辑器中打开 Emoji 表情选择器，鼠标停留到表情上方查看表情名称。或者输入 font-awesome 的名称并选择图标类型（传送门：http://t.cn/RBcdSZ5）。'
+        Helptext: '在标识名文本框中，输入 emoji 的英文名称，您可以打开文本编辑器的 Emoji 表情弹窗，鼠标停留到表情上方查看表情名称。或者输入 font-awesome 的名称并切换到 icon 类型（传送门：http://t.cn/RBcdSZ5）。'
         help:
           display: 描述
           identifier: 标识名
-        reactions: 已有心情
-        title: 自定义心情
+        reactions: 已有表情
+        title: 自定义表情
       settings:
         integrations:
           gamification:
-            downvoteHelptext: 输入您想要自动转换为「踩」的心情的标识
-            downvoteLabel: 转换心情为「踩」
+            downvoteHelptext: 输入要自动转换为「踩」的表情标识
+            downvoteLabel: 转换表情为「踩」
             legend: 游戏化
-            upvoteHelptext: 输入您想要自动转换为「顶」的心情的标识
-            upvoteLabel: 转换心情为「顶」
+            upvoteHelptext: 输入要自动转换为「顶」的表情标识
+            upvoteLabel: 转换表情为「顶」
           legend: 整合
           likes:
-            Helptext: 想要将某个心情自动转换为「赞」吗？请在下方输入这个心情的标识名
-            Label: 转换心情为「赞」
+            Helptext: 要将某个表情自动转换为「赞」？请在下方输入该表情的标识名
+            Label: 转换表情为「赞」
             legend: 点赞
-          warning: 相同的心情<strong>不会</strong>转换为「赞」<strong>和</strong>「顶」
+          warning: 同一个戳一戳表情<strong>不会</strong>转换为「赞」<strong>或</strong>「顶」
         save_settings: 保存设置
     permissions:
-      react_posts_label: 对帖子戳心情
-      see_reactions_label: 查看戳心情的人
+      react_posts_label: 戳表情
+      see_reactions_label: 查看戳表情的人
   forum:
-    disabled-reaction: 您暂时不能戳心情，请刷新后重试。
-    mod_item: 查看心情
+    disabled-reaction: 您暂时不能戳表情，请刷新后重试。
+    mod_item: 查看表情
     modal:
-      title: 心情
+      title: 表情
     notification: '{username} 戳了一个 {reaction}'
     react_button_label: 戳表情
-    reacting-own-post: 您不能对自己的帖子戳心情
+    reacting-own-post: 您不能对自己的帖子戳表情
     settings:
-      notify_post_reacted_label: 有人对我的帖子戳心情
-    warning: 您的心情已转换为“赞”
+      notify_post_reacted_label: 有人对我的帖子戳表情
+    warning: 您的表情已转换为「赞」

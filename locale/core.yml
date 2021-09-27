@@ -296,7 +296,9 @@ core:
       log_in_link: '=> core.ref.log_in'
       log_out_button: '=> core.ref.log_out'
       profile_button: 个人主页
+      search_clear_button_accessible_label: 清空搜索
       search_placeholder: 搜索
+      search_role_label: 搜索论坛
       session_dropdown_accessible_label: 会话下拉菜单开关
       settings_button: 设置
       sign_up_link: '=> core.ref.sign_up'
@@ -438,6 +440,7 @@ core:
       generic_message: 糟糕，出错啦！请刷新页面重试。
       missing_dependencies_message: '无法启用「{extension}」，请先启用依赖扩展「{extensions}」'
       not_found_message: 您请求的资源不存在。
+      payload_too_large_message: 请求负载过大。
       permission_denied_message: 您没有权限进行此操作。
       rate_limit_exceeded_message: 您的操作太频繁，请稍后再试。
     loading_indicator:
@@ -456,6 +459,7 @@ core:
     change_email: 更改邮箱
     change_password: 更改密码
     color: 颜色
+    confirm_email: 确认邮箱
     confirm_password: 确认密码
     confirmation_email_sent: '账号激活邮件已发送至 {email}，请激活账号，若未收到请检查垃圾箱。'
     custom_footer_text: '添加显示于页面底部的 HTML 代码。'
@@ -468,6 +472,7 @@ core:
     edit: 编辑
     edit_user: 编辑用户
     email: 邮箱
+    extensions: 扩展程序
     icon: 图标
     icon_text: '输入任意一个 <a>Font Awesome</a> 图标名称。<em>包括</em>前缀，例如 <code>fas fa-</code>'
     load_more: 加载更多
@@ -497,6 +502,22 @@ core:
     write_a_reply: 说点什么吧...
     you: 你
   views:
+    admin:
+      extensions:
+        caption: '=> core.ref.extensions'
+        disable: 关闭
+        empty: 尚未安装扩展程序
+        enable: 启用
+        name: 扩展名
+        package_name: 软件包
+        version: 版本
+      info:
+        caption: 说明
+      title: 开发者
+    confirm_email:
+      submit_button: '=> core.ref.confirm_email'
+      text: 点击下方按钮确认您的邮箱。
+      title: '=> core.ref.confirm_email'
     content:
       javascript_disabled_message: '请使用更现代的浏览器并启用 JavaScript 以获得最佳浏览体验。'
       load_error_message: 加载论坛时出错，请强制刷新页面重试。

@@ -41,6 +41,7 @@ fof-reactions:
     modal:
       title: 心情
     notification: '{username} 戳了一个 {reaction}'
+    react_button_label: 戳表情
     reacting-own-post: 您不能对自己的帖子戳心情
     settings:
       notify_post_reacted_label: 有人对我的帖子戳心情

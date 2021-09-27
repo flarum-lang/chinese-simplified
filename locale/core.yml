@@ -37,8 +37,8 @@ core:
       home_page_heading: 论坛首页
       home_page_text: 选择一种页面作为论坛首页。
       show_language_selector_label: 显示语言选择器
-      slug_driver_heading: '个人主页 URL 格式：{model}'
-      slug_driver_text: '切换个人主页 URL 格式，默认 u/用户名。'
+      slug_driver_heading: '固定链接驱动：{model}'
+      slug_driver_text: '选择当前模态的 URL 驱动。'
       title: 常规
       welcome_banner_heading: 欢迎横幅
       welcome_banner_text: 横幅文本将显示于「全部主题」页面顶部，可以用于欢迎论坛访客。

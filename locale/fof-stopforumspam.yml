@@ -7,15 +7,23 @@ fof-stopforumspam:
     settings:
       api_key_instructions_text: '<register>注册 StopForumSpam</register>，然后<key>申请 API 密钥</key>。'
       api_key_label: 'API Key'
-      api_key_text: '您必须启用 fof/spamblock 插件，您现在可以向 StopForumSpam 举报垃圾用户以协助社区免受垃圾侵蚀。'
+      api_key_text: '检测到您已启用 fof/spamblock 插件，配置下方秘钥即可在标记垃圾用户的同时向 StopForumSpam 数据库提交该用户的信息以协助社区用户免受垃圾侵蚀。'
+      confidence_help: 风险分用于评价用户自身的风险程度。此处填写百分比值，如果用户的检查报告显示其风险分等于或高于设置的值，注册将无法完成。特别需要说明的是，风险分检查不受宽容度影响。
+      confidence_label: 风险分
+      email_hash_help: '发送邮箱地址的 MD5 哈希值以隐藏真实地址。此方法免疫所有黑名单、规范化和混淆检查。'
+      email_hash_label: 散列邮箱地址
       email_label: 邮箱地址检查
       frequency_example_text: '例如：假设邮箱检查有 1 个命中，IP 检查有 1 个命中，用户名检查有 1 个命中，合计 3 个。如果阈值设为 3 或更少，那么将会禁止该用户注册。'
-      frequency_help: "Spam 报告数量宽容程度。假设一个用户同时命中邮箱、IP 和用户名共 3 种检查，在阈值设为 3 或更少时，该用户无法完成注册。\n"
-      frequency_label: 阈值
+      frequency_help: "Spam 报告数量宽容程度。\n假设一个用户同时命中邮箱、IP 和用户名共 3 种检查，在阈值设为 3 或更少时，该用户无法完成注册。\n"
+      frequency_label: 宽容度
       frequency_text: 触发拦截的检查命中数量。
       introduction: "根据 <a>StopForumSpam</a> 数据库检查新用户。如果<code>宽容度</code>超标或 <code>信誉分</code>不达标，则该用户无法完成注册。\n\n支持 <code>fof/oauth</code> 和 <code>fof/passport</code> 的 SSO 扩展程序。其他的 SSO 提供程序应该也支持，但尚未测试过。\n"
       ip_label: 'IP 地址检查'
-      regional_endpoint_label: 地理访问
+      region_closest_label: 最近
+      region_europe_label: 欧洲
+      region_us_label: 美国
+      regional_endpoint_help: 默认向最近的服务器发起查询，以提供最快的响应速度。如果因公司或国家的隐私规定，你可以将请求强制发往特定地区的查询服务器。
+      regional_endpoint_label: 查询服务器
       title: 'FoF 论坛垃圾用户防止'
       username_label: 用户名检查
   api:

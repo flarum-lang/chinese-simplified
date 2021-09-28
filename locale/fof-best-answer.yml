@@ -8,17 +8,21 @@ fof-best-answer:
       best_answer: 为自己的主题选择最佳回复
       best_answer_not_own_discussion: 为他人的主题选择最佳回复
     settings:
-      allow_select_own_post: 允许用户将自己的帖子设为最佳回复
+      allow_select_own_post: 允许自选
+      allow_select_own_post_help: 允许提问者将自己的帖子设为最佳回复
+      enable_all_tags_button: 为所有标签启用最佳回复
+      enable_all_tags_reminder_button: 为所有标签启用提醒功能
       label:
         advanced: 高级
         general: 常规
         reminders: 提醒事项
-        reminders_notice: '为了使提醒功能正常运行，您必须正确设置 Flarum 调度器。'
+        reminders_notice: '要运行提醒功能，你必须正确配置 Flarum 调度器。'
       remind_tag_ids: '若要将提醒功能仅用于特定标签，请在此输入标签 ID （英文逗号分隔）'
       schedule_log_output: 将调度程序的输出添加到日志存储中
       schedule_on_one_server: '在任务调度器中使用「onOneServer()」（需要 PHP 扩展：Redis / Memcache）'
       schedule_stop_overnight: '夜间免打扰（服务器时间晚上 9 点至早上 8 点，禁用提醒服务）'
-      select_best_answer_reminder_days: '于 n 天后提醒用户选择最佳回复'
+      select_best_answer_reminder_days: 提醒计时
+      select_best_answer_reminder_days_help: '于 n 天后提问者选择最佳回复。'
       use_alt_ui: 将「最佳回复」按钮显示在帖子页脚
   email:
     body:

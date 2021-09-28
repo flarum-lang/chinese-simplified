@@ -5,9 +5,12 @@
 michaelbelgium-flarum-profile-views:
   admin:
     settings:
-      max_viewcount_label: 访客列表的最多展示人数
-      track_guests_label: 追踪未登录访客
+      max_viewcount_label: 足迹列表的最多展示人数
+      track_guests_label: 记录未登录访客
   forum:
     user:
       last_viewers_heading: 最近访客
       view_count_text: '访问量 {viewcount, plural, one {{viewcount}} other {{viewcount}}}'
+      viewlist:
+        guest: 访客
+        title: 足迹

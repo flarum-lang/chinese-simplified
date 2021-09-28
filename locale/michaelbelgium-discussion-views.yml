@@ -5,8 +5,8 @@
 core:
   forum:
     index_sort:
-      popular_button: 最多人看
-      unpopular_button: 最少人看
+      popular_button: 最多翻阅
+      unpopular_button: 最少翻阅
 michaelbelgium-discussion-views:
   admin:
     permissions:
@@ -14,17 +14,26 @@ michaelbelgium-discussion-views:
       view_number_label: 查看主题浏览量
     settings:
       abbr_numbers_label: 缩写浏览量
-      max_viewcount_label: 「最近浏览的人」列表最多展示人数
-      show_filter_label: 添加「最多人看/最少人看」排序选项
-      show_viewlist_label: 在主题页面展示「最近浏览的人」列表
+      max_viewcount_label: 「足迹」列表最多展示人数
+      max_viewcount_text: 侧边栏和页脚足迹列表的展示条目上限
+      show_filter_label: 添加「最多翻阅/最少翻阅」排序项
+      show_footer_viewlist_label: 在帖子页脚展示「足迹」
+      show_viewlist_label: 在主题帖展示「足迹」
       title: 主题浏览量设置
-      track_unique_label: '仅追踪 UV（独立访客）'
+      track_guests: 记录未登录访客
+      track_unique_label: 记录首次查阅（UV）
   forum:
     discussion_controls:
       resetviews_button: 重置浏览量
     modal_resetviews:
-      label: '这将会清除这个主题的 {count, plural, one {{count}} other {{count}}} 浏览量，确定继续吗？'
+      label: '这将清除这个主题的 {count, plural, one {{count}} other {{count}}} 浏览量，确定继续吗？'
       submit_button: 确定清除
       title: 重置主题浏览量
+    post:
+      modal_title_text: 足迹
+      others_link: '=> core.ref.some_others'
+      viewed_by: '{users} 来过。'
+      you: '=> core.ref.you'
     viewlist:
-      title: 最近浏览的人
+      guest: 访客
+      title: 足迹

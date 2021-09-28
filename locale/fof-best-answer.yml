@@ -4,14 +4,19 @@
 
 fof-best-answer:
   admin:
+    edit_tag:
+      qna_label: 启用最佳回复
+      reminders: 提醒选择最佳回复
     permissions:
       best_answer: 为自己的主题选择最佳回复
       best_answer_not_own_discussion: 为他人的主题选择最佳回复
     settings:
       allow_select_own_post: 允许自选
       allow_select_own_post_help: 允许提问者将自己的帖子设为最佳回复
+      documentation: 文档
       enable_all_tags_button: 为所有标签启用最佳回复
       enable_all_tags_reminder_button: 为所有标签启用提醒功能
+      introduction: "你需要前往 <code><a>flarum/tags</a></code> 为特定标签开启最佳回复和提醒功能。你可以在「权限」页面为全局或特定标签设置最佳回复的操作权限。\n"
       label:
         advanced: 高级
         general: 常规
@@ -19,11 +24,16 @@ fof-best-answer:
         reminders_notice: '要运行提醒功能，你必须正确配置 Flarum 调度器。'
       remind_tag_ids: '若要将提醒功能仅用于特定标签，请在此输入标签 ID （英文逗号分隔）'
       schedule_log_output: 将调度程序的输出添加到日志存储中
-      schedule_on_one_server: '在任务调度器中使用「onOneServer()」（需要 PHP 扩展：Redis / Memcache）'
-      schedule_stop_overnight: '夜间免打扰（服务器时间晚上 9 点至早上 8 点，禁用提醒服务）'
+      schedule_on_one_server: '使用 onOneServer() 方法建立计划任务'
+      schedule_on_one_server_help: '需要 Redis/Memcache'
+      schedule_stop_overnight: 非工作时间禁用提醒
+      schedule_stop_overnight_help: '服务器时间 20:00 至 9:00'
       select_best_answer_reminder_days: 提醒计时
       select_best_answer_reminder_days_help: '于 n 天后提问者选择最佳回复。'
-      use_alt_ui: 将「最佳回复」按钮显示在帖子页脚
+      show_filter_help: 在启用最佳回复的标签页面显示「已解决/未解决」过滤项
+      show_filter_label: 显示已解决过滤项
+      use_alt_ui: 按钮布局
+      use_alt_ui_help: 在帖子底部显示最佳回复选择按钮
   email:
     body:
       awarded: "{recipient_display_name}，你好！\n\n干得漂亮，您在【{discussion_title}】发表的回复刚刚被 {actor_display_name} 选为最佳回复。感谢你的耐心帮助。\n\n点击此处查看回复：{discussion_url}\n"
@@ -37,8 +47,20 @@ fof-best-answer:
     answered_badge: 已解决
     best_answer_button: 最佳回复
     best_answer_label: '由 <a>{username}</a> 选择'
+    composer:
+      titlePlaceholder: 标题
     errors:
       mismatch: 您选择的帖子在当前主题中不存在
+    filter:
+      accessible_label: 已解决/未解决
+      all_label: 全部问题
+      solved_label: 已解决
+      unsolved_label: 等待解决
+    index:
+      ask_question: 提问
+      cannot_ask_question: 提问已关闭
+      solved_link: 已解决
+      unsolved_link: 等待解决
     notification:
       awarded: '您的帖子被 {username} 设为最佳回复'
       best_answer_in_discussion: '{username} 选择了最佳回复'

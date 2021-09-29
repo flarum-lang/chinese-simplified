@@ -8,7 +8,7 @@ v17development-flarum-support:
       body: "尊敬的用户 {recipient_display_name},\n\n{replier_display_name} 回复了您的工单 #{ticket_id}《{subject}》。\n\n请点击下方链接查看回复：\n{url}\n\n我们正在等待您的回复，若问题已解决，请将工单标记为已解决。\n"
       subject: '{replier_display_name} 回复了你的工单 #{ticket_id}'
     ticket_pending_reply:
-      body: "尊敬的用户 {recipient_display_name}，\n\n近期 {replier_display_name} 于  {replied_date} 回复了您的工单 #{ticket_id}，我们正在等候您的回复。\n\n您的工单链接：\n{url}\n\n如果此问题已解决，请将工单标记为已解决。\n"
+      body: "尊敬的用户 {recipient_display_name}，\n\n近期 {replier_display_name} 于 {replied_date} 回复了您的工单 #{ticket_id}，我们正在等候您的回复。\n\n您的工单链接：\n{url}\n\n如果此问题已解决，请将工单标记为已解决。\n"
       subject: '工单 #{ticket_id} 需要您的回复'
     ticket_pending_reply_closed:
       body: "尊敬的用户 {recipient_display_name}，\n\n近期 {replier_display_name} 回复了您的工单 #{ticket_id}。由于长时间未得到您的回复，您的工单已被自动关闭。\n\n如您的问题没有解决，您可以再次回帖：\n{url}\n"

@@ -1,3 +1,59 @@
+# 2021-9-30
+# 🌟 v1.0.4.0930
+
+【核心】
+1. 更新：「Slug Driver」的翻译。
+2. 更新：* Laraval 验证提示。
+3. 更新：* 新增清空搜索按钮、请求负载过大提示、扩展程序管理。
+
+【Markdown】
+1. 更新：* 新增黑幕、删除线按钮
+
+> \* 下一版本功能。 
+
+【新增】
+1. [`afrux-forum-widgets-core`](https://weblate.rob006.net/projects/flarum/afrux-forum-widgets-core) 可视化小部件排布系统。
+2. [`askvortsov-article-series`](https://weblate.rob006.net/projects/flarum/askvortsov-article-series) 系列博文。
+3. [`clarkwinkelmann-featured-discussions`](https://weblate.rob006.net/projects/flarum/clarkwinkelmann-featured-discussions) 精选主题。
+4. [`justoverclock-discussion-hero-showtags`](https://weblate.rob006.net/projects/flarum/justoverclock-discussion-hero-showtags) 主题帖页眉标签。
+5. [`justoverclock-discussion-info`](https://weblate.rob006.net/projects/flarum/justoverclock-discussion-info) 主题信息。
+6. [`justoverclock-edit-posts`](https://weblate.rob006.net/projects/flarum/justoverclock-edit-posts) 帖子操作按钮。
+7. [`justoverclock-hot-discussions`](https://weblate.rob006.net/projects/flarum/justoverclock-hot-discussions) 热门主题。
+8. [`justoverclock-imdb-api`](https://weblate.rob006.net/projects/flarum/justoverclock-imdb-api) IMDb 电影资料卡片。💰
+9. [`justoverclock-last-registered-users`](https://weblate.rob006.net/projects/flarum/justoverclock-last-registered-users) 最新用户小部件。
+10. [`justoverclock-last-users-posts`](https://weblate.rob006.net/projects/flarum/justoverclock-last-users-posts) 最新帖子小部件。
+11. [`justoverclock-related-discussions`](https://weblate.rob006.net/projects/flarum/justoverclock-related-discussions) 相关讨论。💰
+12. [`justoverclock-youtube-video-feed`](https://weblate.rob006.net/projects/flarum/justoverclock-youtube-video-feed) 油管视频小部件。
+13. [`miniflar-top-like-givers-widget`](https://weblate.rob006.net/projects/flarum/miniflar-top-like-givers-widget) 赞不要钱排行榜。
+14. [`sycho-move-posts`](https://weblate.rob006.net/projects/flarum/sycho-move-posts) 移动帖子。
+
+【更新】
+1. [`flarumi-oauth-vkontakte`](https://weblate.rob006.net/projects/flarum/flarumi-oauth-vkontakte) vkontakte 账号登录。
+2. [`fof-best-answer`](https://weblate.rob006.net/projects/flarum/fof-best-answer) 最佳回复：可以为标签单独选择是否开启最佳回复功能。
+3. [`fof-discussion-language`](https://weblate.rob006.net/projects/flarum/fof-discussion-language) 主题帖语言：新增检取数据错误提示。
+4. [`fof-filter`](https://weblate.rob006.net/projects/flarum/fof-filter) 过滤器：新增无视顾虑器权限，更新敏感词说明，抵制 Leet 从你做起。
+5. [`fof-reactions`](https://weblate.rob006.net/projects/flarum/fof-reactions) 戳表情：增加戳表情按钮的鼠标悬浮态标题。
+6. [`fof-socialprofile`](https://weblate.rob006.net/projects/flarum/fof-socialprofile) 社交网络：抽离权限。
+7. [`fof-stopforumspam`](https://weblate.rob006.net/projects/flarum/fof-stopforumspam) 风险数据库：新增邮箱地址散列、查询服务器地区更改功能。
+8. [`fof-upload`](https://weblate.rob006.net/projects/flarum/fof-upload) 文件上传器：新增 Markdown 和 BBCode 图片预览模板。
+9. [`justoverclock-events-countdown`](https://weblate.rob006.net/projects/flarum/justoverclock-events-countdown) 活动倒计时：可以自定义倒计时图标了。
+10. [`justoverclock-guestengagement`](https://weblate.rob006.net/projects/flarum/justoverclock-guestengagement) 访客推销：新增帖子间注册按钮；修改提示翻译。
+11. [`justoverclock-welcomebox`](https://weblate.rob006.net/projects/flarum/justoverclock-welcomebox) 欢迎卡片：新增上次在线时间。
+12. [`kilowhat-custom-paths`](https://weblate.rob006.net/projects/flarum/kilowhat-custom-paths) 自定义页面路径：新增 Flammarkt 系列扩展程序。💰
+13. [`kyrne-websocket`](https://weblate.rob006.net/projects/flarum/kyrne-websocket) 新增在线用户数量。
+14. [`malago-achievements`](https://weblate.rob006.net/projects/flarum/malago-achievements) 成就系统：新增侧边栏入口。
+15. [`michaelbelgium-discussion-views`](https://weblate.rob006.net/projects/flarum/michaelbelgium-discussion-views) 浏览量：「最近查阅的人」更名为足迹、列表条目更新。
+16. [`michaelbelgium-profile-views`](https://weblate.rob006.net/projects/flarum/michaelbelgium-profile-views) 主页访问量。
+
+> 💰 付费扩展。
+
+全部变化：[v1.0.4 (0810)...v1.0.4 (0930)](https://github.com/FFans/lang-simplified-chinese/compare/v1.0.4.0810...v1.0.4.0930)
+
+# 2021-8-10
+# 🌟 v1.0.4.0810
+
+【更新】
+1. [Moderator Warnings by Askvortsov](https://github.com/askvortsov1/flarum-moderator-warnings)
 
 
 # 2021-8-9

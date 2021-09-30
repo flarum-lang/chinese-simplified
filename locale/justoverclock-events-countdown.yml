@@ -8,6 +8,8 @@ justoverclock-events-countdown:
     endTime-help: '请按照此格式输入时间，如圣诞节时间为「Dec 24 2021 00:00」'
     evTitle: 事件名
     evTitle-help: 自定义事件名称
+    fontaw: '自定义 Font Awesome 图标'
+    fontaw-help: '使用自定义 Font Awesome 图标 （如 fas fa-bullhorn）'
   forum:
     days: 天
     endDateText: 活动进行中！

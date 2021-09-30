@@ -75,14 +75,18 @@ fof-upload:
       upload_label: 允许上传文件
       view_user_uploads_label: 查看用户上传的文件
     templates:
+      bbcode-image: 'BBCode 图片预览模板'
+      bbcode-image_description: "使用 BBCode 在行内完整显示图片。<strong>此模板依赖于 flarum/bbcode 扩展程序。</strong>无下载、统计和热链保护功能。\n"
       file: 默认文件下载模板
       file_description: "显示文件名以及一些基本信息，经 php 代理下载，允许统计以及热链保护。\n"
       image: 默认图片下载模板
       image-preview: 完整图片预览模板
       image-preview_description: "在行内显示完整图片。不支持下载、统计和热链保护。\n"
-      image_description: "显示图片缩略图，并有 php 代理下载，支持统计和热链保护。\n"
+      image_description: "显示图片缩略图，并由 php 代理下载，支持统计和热链保护。\n"
       just-url: 仅链接
-      just-url_description: "仅插入 URL。 渲染可以由具有自动链接功能的其他插件处理。没有下载功能，没有统计功能，且没有热链保护。\n"
+      just-url_description: "仅插入 URL。 渲染可以由具有自动链接功能的其他插件处理。无下载、统计和热链保护功能。\n"
+      markdown-image: 'Markdown 图片预览模板'
+      markdown-image_description: "使用 Markdown 格式在行内完整显示图片。<strong>此模板依赖于 flarum/markdown 扩展程序。</strong>无下载、统计和热链保护功能。\n"
     upload_methods:
       aws-s3: 'AWS S3 或 S3 兼容'
       imgur: Imgur

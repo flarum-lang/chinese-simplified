@@ -12,7 +12,11 @@ fof-oauth:
           description: '请在此注册应用 {link}'
   forum:
     log_in:
+      with_button: '{provider} 账号登录'
       with_vkontakte: '{provider} 账号登陆'
+      with_vkontakte_button: '=> fof-oauth.forum.log_in.with_button'
   lib:
     providers:
       vkontakte: Vkontakte
+  providers:
+    vkontakte: '=> fof-oauth.lib.providers.vkontakte'

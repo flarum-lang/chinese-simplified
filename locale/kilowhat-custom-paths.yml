@@ -9,6 +9,11 @@ kilowhat-custom-paths:
       extensions:
         askvortsov-categories: 'Askvortsov 传统板块'
         clarkwinkelmann-group-list: 'ClarkWinkelmann 组群一览'
+        flamarkt-balance: 'Flamarkt 余额'
+        flamarkt-categories: 'Flamarkt 分类目录'
+        flamarkt-core: 'Flamarkt Core'
+        flamarkt-identity: 'Flamarkt 身份认证'
+        flamarkt-signup-page: 'Flamarkt 注册页面'
         flarum-flags: 'Flarum 小黑屋'
         flarum-subscriptions: 'Flarum 我的关注'
         flarum-tags: 'Flarum 标签'
@@ -26,6 +31,17 @@ kilowhat-custom-paths:
         clarkwinkelmann-group-list: 组群一览
         discussion: 主题
         flags: 举报（移动端）
+        flamarkt-account: 账户
+        flamarkt-balance: 账户余额
+        flamarkt-cart: 购物车
+        flamarkt-categories: 分类列表
+        flamarkt-category: 分类商品
+        flamarkt-identity: 账户身份认证
+        flamarkt-order: 订单
+        flamarkt-orders: 我的订单
+        flamarkt-product: 商品
+        flamarkt-products: 商品中心
+        flamarkt-signup: 注册
         fof-byobu: 私密主题
         fof-byobu-profile: 个人主题页
         fof-gamification: 排名

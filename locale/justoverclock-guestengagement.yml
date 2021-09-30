@@ -5,19 +5,20 @@
 flarum-ext-guestengagement:
   admin:
     afterxpost: '在第 X 个帖子后显示'
-    afterxpostdesc: '只允许数字，默认为 0 显示在帖子流顶部'
-    autohide: 'X 秒后隐藏提示'
-    autohidedesc: '单位毫秒，例如用「5000」表示 5 秒'
+    afterxpostdesc: '填写数字，默认为 0 显示在帖子流顶部'
+    autohide: 定时隐藏提示
+    autohidedesc: '单位毫秒，例如用「5000」表示 5 秒，默认 0，即不显示提示'
     changetextbox: 修改提示文本
     changetextboxdesc: 设置位于帖子间的提示文本
-    enablealbox: 启用/关闭首页提示
-    enablepostbox: 启用/关闭帖子间提示
+    enablealbox: 启用首页提示
+    enablepostbox: 启用帖子间提示
     maintitle: 修改提示标题
     maintitledesc: 设置位于帖子间的提示标题
   forum:
-    hello: 嗨！你似乎对这个论坛很感兴趣，但是还没有注册账号。
-    hellops: 嗨！你似乎对这个帖子很感兴趣！
-    uwillreceive: 当有人回复你时，你会收到站内或邮件通知。你也可以通过「点赞」表示赞赏。
-    uwillreceiveps: 当有人回复你时，你会收到站内或邮件通知。你也可以通过「点赞」表示赞赏。
-    whenucreate: 创建帐户后，我们能够准确地记录你已读的内容，方便你接着从上次离开的地方阅读。
-    whenucreateps: 创建帐户后，我们能够准确地记录你已读的帖子，方便你接着从上次离开的地方阅读。
+    hello: 嗨！觉得这个论坛还不错？欢迎加入我们！
+    hellops: 觉得这个帖子怎么样？
+    signupbtn: 注册
+    uwillreceive: 你也可以和他人互动评论和点赞，一切新动态都可以通过邮件通知到你。
+    uwillreceiveps: 你也可以和他人进行互动，一切新动态都可以通过邮件通知到你。
+    whenucreate: 注册账号后，你可以保留自己的阅读记录，方便下次接着阅读。
+    whenucreateps: 不考虑加入我们吗？注册账号后，你可以保存自己的阅读记录方便下次阅读。

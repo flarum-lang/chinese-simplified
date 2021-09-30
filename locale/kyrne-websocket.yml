@@ -42,3 +42,7 @@ kyrne-websocket:
       show_updates_text: '有 {count, plural, one {#} other {#}} 条新内容，点击查看'
     discussion_page:
       viewing_title: 此时此刻：
+    widget:
+      empty: 暂无在线用户。
+      guests: '{count, plural, one {1 位用户在线} other {{count} 位用户在线}}'
+      title: 在线用户

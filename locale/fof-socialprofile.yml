@@ -3,13 +3,22 @@
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
 fof-socialprofile:
+  admin:
+    permissions:
+      editAny: 编辑他人的社交网络
+      editOwn: 编辑自己的社交网络
+      view: 查看社交网络
+    settings:
+      allow_external_favicons_label: 允许外部网站图标
   forum:
     edit:
-      add: 添加
+      add: 添加社交网络
       delete: 删除
-      deletetitle: 删除按钮
-      edit: 编辑
-      headtitle: 添加按钮
+      deletetitle: 删除
+      edit: 编辑社交网络
+      favicon: 站点图标
+      grey_favicon: 灰度站点图标
+      headtitle: 社交网络
       save_disabled_fetching_favicons: 正在获取一个或多个图标，请稍后。
       submit: 保存
       title: 名称

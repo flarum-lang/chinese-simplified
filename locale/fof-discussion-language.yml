@@ -8,6 +8,8 @@ fof-discussion-language:
       allow_change_language_label: 允许编辑主题语言
     settings:
       composer_default_label: 在文本编辑器中预选当前语言
+      errors:
+        loading_data: 检取国家和地区数据时发生错误，请尝试重启本扩展。
       locale_sort_label: 将用户语言环境设为默认筛选
       native_label: 使用母语
       show_any_lang_opt_label: 显示筛选按钮「所有语言」

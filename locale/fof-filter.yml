@@ -4,6 +4,8 @@
 
 fof-filter:
   admin:
+    auto_merge_title: 自动合并
+    bad_words_help: 请输入要过滤的敏感词，一行一个。当用户发表的帖子内容包含敏感词时，自动送入审核列表。抵制黑话，从我做起。
     cooldownLabel: 防刷帖冷却时间（分钟）
     countLabel: 过滤敏感度
     email:
@@ -25,6 +27,8 @@ fof-filter:
     nav:
       desc: 自动敏感词过滤
       text: 过滤器
+    permission:
+      bypass_filter_label: 无视过滤器
     title: 'FoF 过滤器'
   forum:
     flag_message: 敏感词匹配

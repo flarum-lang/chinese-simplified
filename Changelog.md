@@ -1,3 +1,10 @@
+# 2021-10-2
+# 🌟 v1.0.4.1002
+【更新】
+1. [FoF OAuth](https://weblate.rob006.net/projects/flarum/fof-oauth) 第三方登录：领英 Client Secret 未翻译问题。
+
+全部变化：[v1.0.4 (0930)...v1.0.4 (1002)](https://github.com/FFans/lang-simplified-chinese/compare/v1.0.4.0930...v1.0.4.1002)
+
 # 2021-9-30
 # 🌟 v1.0.4.0930
 

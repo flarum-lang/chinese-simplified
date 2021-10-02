@@ -7,7 +7,7 @@ flarum-calendar:
     basics:
       homepage: 当前月份
     permissions:
-      add: 创建新的活动日程
+      add: 创建新活动日程
       moderate: 移除或编辑日程活动（所有用户都可以编辑他们自己的活动）
       view: 浏览活动
   forum:
@@ -16,6 +16,6 @@ flarum-calendar:
       landing: 活动日程
       login: '添加你的活动 '
     event:
-      details: 添加此活动的更多细节
+      details: 添加活动细节
     modal:
       submit: 提交

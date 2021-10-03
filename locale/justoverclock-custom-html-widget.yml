@@ -4,5 +4,5 @@
 
 justoverclock-custom-html-widget:
   admin:
-    warningmessage: '粘贴来源不明的 HTML 代码可能给你的网站带来安全风险，请自行编写或从可信来源获取 HTML 代码。请务必设置好 HTML 元素宽度，以匹配小部件侧边栏。'
+    warningmessage: '来源不明的 HTML 代码有安全风险，请自写或粘贴可信来源 HTML 代码。记得设置 HTML 元素宽度，以匹配小部件侧边栏。'
     warningtext: '自定义 HTML 代码'

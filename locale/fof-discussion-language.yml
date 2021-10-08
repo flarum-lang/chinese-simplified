@@ -10,10 +10,12 @@ fof-discussion-language:
       composer_default_label: 在文本编辑器中预选当前语言
       errors:
         loading_data: 检取国家和地区数据时发生错误，请尝试重启本扩展。
+        missing_assets: '无法载入此扩展的资源。请运行 <code>php flarum assets:publish</code> 尝试修复此问题。'
       locale_sort_label: 将用户语言环境设为默认筛选
       native_label: 使用母语
       show_any_lang_opt_label: 显示筛选按钮「所有语言」
       show_flag_label: 在国旗后显示语言名称
+      tags_page_discussion_locale_label: 标签页只显示用户语言的主题帖
   api:
     discussion:
       validation_error: 您必须选择主题帖使用的语言。

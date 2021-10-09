@@ -393,7 +393,7 @@ core:
       in_discussion_text: '于 {discussion}'
       joined_date_text: '注册于 {ago}'
       online_text: 在线
-      posts_empty_text: 暂无回复
+      posts_empty_text: 暂无内容
       posts_link: '=> core.ref.posts'
       posts_load_more_button: '=> core.ref.load_more'
       settings_link: '=> core.ref.settings'

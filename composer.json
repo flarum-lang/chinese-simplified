@@ -1,6 +1,6 @@
 {
   "name": "flarum-lang/chinese-simplified",
-  "description": "Flarum 简体中文语言包 2021",
+  "description": "Chinese language pack for Flarum 2021.",
   "keywords": [
     "flarum",
     "locale",
@@ -33,6 +33,7 @@
   "extra": {
     "flarum-extension": {
       "title": "简体中文",
+      "category": "language",
       "icon": {
         "image": "icon.svg",
         "backgroundColor": "#fff",

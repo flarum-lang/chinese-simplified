@@ -3,6 +3,7 @@
 
 【核心】
 1. 更正「暂无回复」为「暂无内容」（[#10](https://github.com/flarum-lang/chinese-simplified/issues/10)）
+2. 「选择一个主标签」更改为「选择主标签    」以消除裁剪。（[d/28828](https://discuss.flarum.org/d/28828-linguist-to-show-up-the-whole-content-choose-primary-placeholder/2)）
 
 【新增】
 1. [`afrux/asirem`](https://github.com/afrux/asirem) Afrux 主题翻译。

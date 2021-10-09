@@ -1,6 +1,25 @@
+# 2021-10-9
+# 🌟 v1.0.4.1009
+
+【核心】
+1. 更正「暂无回复」为「暂无内容」（[#10](https://github.com/flarum-lang/chinese-simplified/issues/10)）
+
+【新增】
+1. [`afrux/asirem`](https://github.com/afrux/asirem) Afrux 主题翻译。
+2. [`davwheat/flarum-ext-share`](https://github.com/davwheat/flarum-ext-share) 分享。
+3. [`justoverclock/feautured-discussions-widget`](https://github.com/justoverclockl/feautured-discussions-widget) 精选主题挂件。
+4. [`justoverclock/flachat`](https://github.com/justoverclockl/flachat) 建议聊天。
+
+【更新】
+1. [`fof/discussion-language`](https://github.com/FriendsOfFlarum/discussion-language) 主题帖语言。
+2. [`nosun/reply-to-see`](https://github.com/nosun/flarum-ext-reply2see) 回复可见。
+
+全部变化：[v1.0.4 (1002)...v1.0.4 (1009)](https://github.com/FFans/lang-simplified-chinese/compare/v1.0.4.1002...v1.0.4.1009)
+
 # 2021-10-2
 # 🌟 v1.0.4.1002
-【更新】
+
+【修复】
 1. [FoF OAuth](https://weblate.rob006.net/projects/flarum/fof-oauth) 第三方登录：领英 Client Secret 未翻译问题。
 
 全部变化：[v1.0.4 (0930)...v1.0.4 (1002)](https://github.com/FFans/lang-simplified-chinese/compare/v1.0.4.0930...v1.0.4.1002)

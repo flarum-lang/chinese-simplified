@@ -5,6 +5,6 @@
 justoverclock-hot-discussions:
   admin:
     discLimit: 展示数量
-    discLimit-help: 要显示的热门主题数量（阿拉伯数字）
+    discLimit-help: '要显示的热门主题数量（阿拉伯数字，留空默认 10）'
   forum:
     widget-title: 热门

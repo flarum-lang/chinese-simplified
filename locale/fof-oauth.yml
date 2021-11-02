@@ -4,6 +4,7 @@
 
 fof-oauth:
   admin:
+    configure_button_label: '配置 FoF OAuth'
     settings:
       only_icons_label: 仅显示登录按钮图标（可选布置）
       providers:
@@ -58,6 +59,8 @@ fof-oauth:
       google: '=> fof-oauth.lib.providers.google'
       linkedin: '=> fof-oauth.lib.providers.linkedin'
       twitter: '=> fof-oauth.lib.providers.twitter'
+    signup:
+      username_help: 请选择一个用户名
   lib:
     providers:
       discord: Discord

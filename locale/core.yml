@@ -95,6 +95,7 @@ core:
       title: '=> core.ref.email'
     extension:
       configure_scopes: 设置范围
+      confirm_purge: '重置操作会清除数据库中所有该扩展相关的记录和资源。如要卸载扩展，请通过 Composer 操作。确定要重置扩展吗？'
       confirm_uninstall: 此扩展的的数据库条目和文件资源都将被永久性删除，确定要继续吗？
       disabled: 关闭
       enable_to_see: 开启扩展程序以查看或修改设置。
@@ -110,6 +111,11 @@ core:
       no_settings: 此扩展无设置项。
       open_modal: 打开设置
       permissions_title: 权限
+      purge_button: 重置
+      readme:
+        button_label: 自述文件
+        no_readme: 此扩展未提供自述文件
+        title: '{extName} 文档'
       uninstall_button: 卸载
     header:
       get_help: 帮助
@@ -281,6 +287,8 @@ core:
       mark_as_read_tooltip: 标记为已读
       replied_text: '{username} 回复于 {ago}'
       started_text: '{username} 发布于 {ago}'
+      total_replies_a11y_label: '{count, plural, one {# 条回复} other {# 条回复}}'
+      unread_replies_a11y_label: '{count, plural, one {# 条未读} other {# 条未读}}，全部标记为已读。'
     forgot_password:
       dismiss_button: '=> core.ref.okay'
       email_placeholder: '=> core.ref.email'
@@ -421,6 +429,7 @@ core:
   lib:
     badge:
       hidden_tooltip: 隐藏
+    debug_button: 调试
     dropdown:
       toggle_dropdown_accessible_label: 下拉菜单开关
     edit_user:
@@ -428,6 +437,7 @@ core:
       email_heading: '=> core.ref.email'
       email_label: '=> core.ref.email'
       groups_heading: 用户组
+      nothing_available: 您无权编辑此用户。
       password_heading: '=> core.ref.password'
       password_label: '=> core.ref.password'
       set_password_label: 修改密码
@@ -443,6 +453,7 @@ core:
       payload_too_large_message: 请求负载过大。
       permission_denied_message: 您没有权限进行此操作。
       rate_limit_exceeded_message: 您的操作太频繁，请稍后再试。
+      render_failed_message: 抱歉，加载此内容时出错，请刷新页面重试。如果您是管理员，请查看论坛日志文件查看详情。
     loading_indicator:
       accessible_label: '=> core.ref.loading'
     number_suffix:

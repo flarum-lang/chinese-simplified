@@ -52,9 +52,9 @@ askvortsov-pwa:
     settings:
       push_header: 推送
       pwa_notifications:
-        access_default: 由于浏览器限制，您必须选择同意在此设备上接收推送通知。
-        access_default_button: 同意
-        access_denied: 您必须调整您的浏览器设置才能在此设备上接收推送通知。
+        access_default: 由于浏览器隐私政策，您必须授权本站在此设备上推送通知。
+        access_default_button: 授权
+        access_denied: 您必须在浏览器中授权本站，才能接收通知。
         access_denied_button: 如何设置
         no_browser_support: '抱歉，该浏览器不支持渐进式 Web 应用程序的推送通知。'
         no_browser_support_button: 了解更多

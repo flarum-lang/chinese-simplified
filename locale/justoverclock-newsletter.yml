@@ -7,7 +7,7 @@ flarum-ext-newsletter:
     listn: 列表名称
     listndesc: '填写在 Elastic Email 创建的列表名称'
     pubacc: '公共账户 ID'
-    pubaccdesc: '在此处复制你的公共账账户 ID https://elasticemail.com/account#/account/security'
+    pubaccdesc: '在此处复制你的公共账户 ID https://elasticemail.com/account#/account/security'
   forum:
     accept: 我想订阅
     modaltext: 订阅成功。

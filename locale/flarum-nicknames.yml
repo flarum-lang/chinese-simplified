@@ -9,6 +9,7 @@ flarum-nicknames:
     settings:
       max_label: 最大昵称长度
       min_label: 最小昵称长度
+      random_username_label: 随机用户昵称
       regex_label: 验证用正则表达式
       unique_label: 需要唯一昵称？
     wrong_driver: '您必须在 <a><strong>常规设置</strong></a> 中将「昵称」设置为外显名称，此扩展才会起作用。'

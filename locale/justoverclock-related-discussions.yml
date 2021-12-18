@@ -7,6 +7,8 @@ justoverclock-related-discussions:
     DiscussionPageLayout: 在主题页面底部显示相关讨论
     relatedLimit: '展示数量（默认 4）'
     relatedLimit-help: 设置要显示的相关讨论帖条数
+    relatedTitle: 「相关主题」标题
+    relatedTitle-help: 自定义「相关主题」的标题
   forum:
     participants: 参与者
     postnumber: 回复数

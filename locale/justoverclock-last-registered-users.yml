@@ -8,4 +8,5 @@ justoverclock-last-registered-users:
     showUsers-help: 设置要显示的用户数（阿拉伯数字）
   forum:
     welcomeText: 欢迎新人
+    welcomeTexts: 热烈欢迎新成员：
     widget-title: 刚刚加入

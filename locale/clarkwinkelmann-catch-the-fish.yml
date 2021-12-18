@@ -12,13 +12,34 @@ clarkwinkelmann-catch-the-fish:
       participate: 参与捕鱼回合
       visible: 可以看到鱼
     settings:
-      alert-round: 在首页上显示回合和持续时间的提醒
+      alert-round: 在首页上显示回合和持续时间提醒
       animate-flip: 根据方向翻转鱼的图像
+      discussion: 主题帖
       discussion-age: 一条鱼能放置在主题帖中几天
+      discussion-tags: 标签白名单
+      discussion-tags-help: "如不指定标签，即可选择符合时间范围内的任意主题帖。若指定了标签，则仅可选择此标签下的主题帖。概率用于设置其他选择都用了之后的被选中几率。白名单中最后一个标签将作为备用标签，请确保此标签下至少有一个有效的主题帖。\n"
+      discussion-tags-unavailable: 当前设置不可用：标签扩展已禁用。
+      general: 常规
+      post: 帖子
       post-age: 一条鱼能放在回复帖中几天
+      post-probability: 出现在回复帖而非主题的概率（%）
+      tags-control:
+        add: 添加到白名单
+        choose: 选择一个标签
+        delete: 移出白名单
+        down: 向下移动
+        up: 向上移动
+      tags-fallback:
+        last-line: 撤销
+        single-line: 至少需要两个标签
+      tags-header:
+        probability: 概率
+        tag: 标签
       time-to-place: 随机放置鱼之前允许放置的时间（分钟）
       title: '捕鱼达人 - 设置'
+      user: 用户
       user-age: 用户必须活跃多久才能放置鱼（天）
+      user-probability: 出现在用户个人主页的概率（%）
   api:
     cannot-catch-hold-fish: 先前的捕手将鱼释放后您才能捕捉它
     cannot-catch-own-fish: 您不能捕您自己放置的鱼
@@ -37,6 +58,7 @@ clarkwinkelmann-catch-the-fish:
     random-error: 无法随机生成放置鱼的位置
     round-finished: 此回合已结束
     round-not-started: 此回合尚未开始
+    tag-not-allowed: 您不可以把鱼放到这个标签中
     too-many-placement-models: 一次只能放在一个地方
     user-suspended: 不能将鱼放在被封禁的用户这里
     wrong-catch-placement: '这里没有鱼。 也许您手速不够快，鱼被其他人抓光了'
@@ -119,6 +141,7 @@ clarkwinkelmann-catch-the-fish:
       new-from-image: 批量导入图像并创建新鱼
       no-user-name: 不重命名
       no-user-place: 随机
+      placement: 当前位置
       title: '回合 {name} 的鱼'
       upload: 上传新图像
       user-name: 最后命名人：

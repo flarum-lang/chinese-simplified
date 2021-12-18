@@ -6,10 +6,18 @@ ianm-synopsis:
   admin:
     settings:
       excerpt-label: 摘要字符长度
+      excerpt-length:
+        help: 要展示的帖子摘要字符数量。
+        label: 摘要字符长度上限
       excerpt-type: 选择作为摘要的帖子
+      excerpt-type.help: 选择首贴或最新回复作为摘要。
+      excerpt-type.label: 摘要内容源
       first-label: 首贴
       last-label: 最新回复
       rich-excerpts: 使用富文本显示摘要（慎用）
+      rich-excerpts.help: 启用后，摘要中可包含图片和嵌入式媒体等非文本内容。
+      rich-excerpts.label: 展示富文本摘要
+      tags-enabled: '<code>flarum/tags</code> 已启用。所有设置将作为默认设置，您也可以针对特定标签独立配置摘要。'
   forum:
     user:
       settings:

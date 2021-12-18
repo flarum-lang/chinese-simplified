@@ -9,9 +9,11 @@ flarum-nicknames:
     settings:
       max_label: 最大昵称长度
       min_label: 最小昵称长度
-      random_username_label: 随机用户昵称
+      random_username_help: 注册时隐藏「用户名」输入框，自动生成随机数字组成的用户名。且显示必填「昵称」输入框。此设置仅在开启「注册时允许设置昵称」时奏效。
+      random_username_label: 随机用户名
       regex_label: 验证用正则表达式
-      unique_label: 需要唯一昵称？
+      set_on_registration_label: 注册时允许设置昵称
+      unique_label: 昵称唯一
     wrong_driver: '您必须在 <a><strong>常规设置</strong></a> 中将「昵称」设置为外显名称，此扩展才会起作用。'
   api:
     invalid_nickname_message: 昵称非法。请联系论坛管理员获取昵称规则。
@@ -24,5 +26,8 @@ flarum-nicknames:
       nicknames_text: 昵称
     settings:
       change_nickname_button: '=> flarum-nicknames.ref.change_nickname'
+    sign_up:
+      nickname_placeholder: '=> flarum-nicknames.ref.nickname'
   ref:
     change_nickname: 更改昵称
+    nickname: 昵称

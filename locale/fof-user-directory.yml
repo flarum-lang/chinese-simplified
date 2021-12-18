@@ -8,6 +8,7 @@ fof-user-directory:
       view_user_directory: 查看会员名录
     settings:
       default-sort: 默认排序
+      disable-global-search-source: 不要将会员名录添加到论坛搜索建议中
       link: 在论坛首页侧边栏添加「会员名录」选项卡
       use-small-cards: 使用小尺寸卡片
   forum:
@@ -22,6 +23,9 @@ fof-user-directory:
     search:
       field:
         placeholder: 搜索用户
+      kinds:
+        group: 用户组
+        text: 关键词
       users_heading: '搜索用户「{query}」'
   lib:
     sort:

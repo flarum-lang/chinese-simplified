@@ -5,5 +5,11 @@
 itnt-uitab:
   admin:
     settings:
+      composer_icon_label: 发布图标
+      discussions_icon_label: 首页图标
       help_text: '如果你的 Flarum 安装在子目录下，请指定子目录（以"/"结尾），否则请保留默认值。 例如：<code>/sub/</code>'
       home_page_label: 子目录
+      icon_help: 留空使用默认图标。
+      notifications_icon_label: 通知页图标
+      settings_icon_label: 设置页图标
+      tags_icon_label: 标签页图标

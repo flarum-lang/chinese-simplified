@@ -15,11 +15,11 @@ clarkwinkelmann-carving-contest:
       participate: 参加比赛
       view: 查看作品
     settings:
-      colorMode: 使用彩色模式而不是雕刻模式
-      maxEntriesPerUser: 每个用户提交数量限制
+      colorMode: 使用色彩模式而不是雕刻模式
+      maxEntriesPerUser: 每位用户提交数量限制
   forum:
     likes_modal:
-      title: 喜欢这个作品的用户
+      title: 喜欢的人
     modal:
       name: 命名您的作品
       submit: 提交
@@ -30,7 +30,7 @@ clarkwinkelmann-carving-contest:
     nav:
       contest: 雕刻比赛
     page:
-      already-liked: 我喜欢它
+      already-liked: 我喜欢
       already-participated: 已参加
       delete-confirmation: '您确定要删除 {username} 的「{name}」吗？'
       like: 赞
@@ -40,11 +40,11 @@ clarkwinkelmann-carving-contest:
         others_link: '=> core.ref.some_others'
         you_text: '=> core.ref.you'
       load-more: 加载更多作品
-      loading: 载入作品中……
+      loading: 作品载入中……
       participate: 参加
       refresh: 刷新
       sort:
-        fewerLikes: 赞数最少
+        fewerLikes: 热度最少
         leastRecent: 最早发布
         mostLikes: 最受欢迎
         mostRecent: 最新作品

@@ -15,8 +15,10 @@ fof-oauth:
       with_button: '{provider} 账号登录'
       with_vkontakte: '{provider} 账号登陆'
       with_vkontakte_button: '=> fof-oauth.forum.log_in.with_button'
+    providers:
+      vkontakte: '=> fof-oauth.lib.providers.vkontakte'
   lib:
     providers:
-      vkontakte: Vkontakte
+      vkontakte: VK
   providers:
     vkontakte: '=> fof-oauth.lib.providers.vkontakte'

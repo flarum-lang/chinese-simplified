@@ -22,8 +22,15 @@ v17development-flarum-badges:
       requirement_drivers:
         has_badge: 已有徽章
     badge:
+      background_color: 背景颜色
       description: 徽章描述
       icon: 徽章图标
+      icon_color: 图标颜色
+      image: 图片地址
+      image_placeholder: '输入图片的 URL'
+      is_image: 图片徽章
+      is_image_description: 使用图片作为默认徽章
+      label_color: 文本颜色
       name: 徽章名
       visible: 可见性
       visible_description: 启用此徽章。禁用时，此徽章将不可见。

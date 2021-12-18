@@ -5,10 +5,11 @@
 clarkwinkelmann-see-past-first-post:
   admin:
     permissions:
-      see-past-first-post: 查看回复贴
+      see-past-first-post: 查看回贴
     settings:
-      hide-comment-count: 隐藏主题列表中的评论数
-      hide-last-post: 隐藏主题列表中的最新回复者、最新回复日期
+      hide-comment-count: 在主题列表中隐藏评论数
+      hide-first-post: 同时隐藏首贴
+      hide-last-post: 在主题列表中的隐藏回复者与回复日期
   forum:
-    cant-see: 您没有权限查看回复
+    cant-see: 没有权限查看回帖
     login-to-see: 登录以查看全部回复

@@ -18,6 +18,7 @@ fof-links:
       title: '=> fof-links.ref.create_link'
       title_label: '=> fof-links.ref.title'
       title_placeholder: '=> fof-links.ref.title'
+      url_description: 留空作为菜单标题。
       url_label: '=> fof-links.ref.url'
       url_placeholder: '=> fof-links.ref.url'
       visibility: 链接可见范围

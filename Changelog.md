@@ -1,5 +1,78 @@
+# 2021-12-19
+# 🌟 v1.1.1.1219
+
+【核心】*
+- 新增 ：
+  1. 欢迎横幅可以通过开关隐藏。
+  2. 关闭按键。
+  3. 导航抽屉开关。
+  4. 标题增加页码
+
+【原生】*
+1. [`flarum/nicknames`](https://github.com/flarum/nicknames) 昵称。注册时允许设置昵称、用户名可自动生成了。
+2. [`flarum/suspend`](https://github.com/flarum/suspend) 封禁。新增封禁通知。
+
+> \* 下一版本功能。 
+
+【新增】
+1. [`acpl/flarum-lscache`](https://github.com/android-com-pl/flarum-lscache) LiteSpeed 缓存。
+2. [`blomstra/mark-unread`](https://github.com/blomstra/flarum-ext-mark-unread) 标记未读。
+3. [`blomstra/search`](https://github.com/blomstra/flarum-ext-search) 全文搜索。
+4. [`clarkwinkelmann/flarum-ext-collapsible-posts`](https://github.com/clarkwinkelmann/flarum-ext-collapsible-posts) 折叠帖子。
+5. [`datitisev/flarum-discussion-agree-message`](https://github.com/datitisev/flarum-discussion-agree-message) 发帖同意书。
+6. [`datlechin/flarum-add-like-controls`](https://github.com/datlechin/flarum-add-like-controls) 下拉菜单点赞。
+7. [`ganuonglachanh/sonic`](https://github.com/ganuonglachanh/flarum-sonic) Sonic 搜索服务。
+8. [`ianm/oauth-amazon`](https://github.com/imorland/flarum-ext-oauth-amazon) 亚马逊账号登录。
+9. [`justoverclock/auto-post-count-badge`](https://github.com/justoverclockl/auto-post-count-badge) 自动头衔授予。
+10. [`justoverclock/discussion-sentiment-analyzer`](https://github.com/justoverclockl/discussion-sentiment-analyzer) 情绪分析器。
+11. [`justoverclock/flarum-ext-hashtag`](https://github.com/justoverclockl/flarum-ext-hashtag) 话题。
+12. [`ramesh-dada/flarum-gui-image-and-link`](https://github.com/ramesh-dada/Flarum-GUI-Image-and-Link) 弹窗形式添加图片和链接。
+13. [`ramesh-dada/realtime`](https://github.com/ramesh-dada/realtime) 定时器刷新新帖。
+14. [`tokenjenny/flarum-ext-web3`](https://github.com/tokenjenny/flarum-ext-web3) Web3 账号登录。
+15. [`webbinaro/flarum-age-check`](https://github.com/eddiewebb/flarum-age-check) 知情同意书。
+16. [`zerosonesfun/flarum-bbcode-button`](https://github.com/zerosonesfun/flarum-bbcode-button) BBCode 按钮。
+
+【更新】
+1. [`afrux/news-widget`](https://github.com/afrux/news-widget) 公告小部件。增加代码安全提示。
+2. [`askvortsov/flarum-pwa`](https://github.com/askvortsov1/flarum-pwa) 新增 VAPID 重置功能。
+3. [`clarkwinkelmann/flarum-ext-see-past-first-post`](https://github.com/clarkwinkelmann/flarum-ext-see-past-first-post) 隐藏回帖。新增权限设置。
+4. [`davwheat/flarum-ext-ads`](https://github.com/davwheat/flarum-ext-ads) 调整广告代码格式提示翻译。
+5. [`extiverse/mercury`](https://github.com/extiverse/mercury) 调整更新通知邮件翻译。
+6. [`fof/gamification`](https://github.com/FriendsOfFlarum/gamification) 游戏化。
+7. [`fof/masquerade`](https://github.com/FriendsOfFlarum/masquerade) 新增个人资料编辑权限。
+8. [`fof/merge-discussions`](https://github.com/FriendsOfFlarum/merge-discussions) 合并主题。新增帖子编号修复失败提醒。
+9. [`fof/nightmode`](https://github.com/FriendsOfFlarum/nightmode) 夜间模式。新增自动夜间模式的浏览器支持检测。
+10. [`fof/upload`](https://github.com/FriendsOfFlarum/upload) 文件上传器。新增 php 和 nginx 上限提示；文件大小上限提示。
+11. [`fof/user-directory`](https://github.com/FriendsOfFlarum/user-directory) 会员名录。可以关闭搜索建议了。
+12. [`ianm/synopsis`](https://github.com/imorland/synopsis) 摘要。增加富文本展示、标签独立配置。
+13. [`justoverclock/first-visit-indexpage`](https://github.com/justoverclockl/first-visit-indexpage) 调整守则翻译。
+14. [`justoverclock/flarum-ext-welcomebox`](https://github.com/justoverclockl/flarum-ext-welcomebox) 欢迎卡片。新增支持转为小部件。
+15. [`justoverclock/last-registered-users`](https://github.com/justoverclockl/last-registered-users) 新增新用户欢迎语。
+16. [`v17development/flarum-user-badges`](https://github.com/v17development/flarum-user-badges) 新增图片徽章。
+
+【付费】
+1. [`justoverclock/auto-post-badge-pro`](https://extiverse.com/extension/justoverclock/auto-post-badge-pro) 自动头衔授予 Pro。
+2. [`justoverclock/related-discussions`](https://extiverse.com/extension/justoverclock/related-discussions) 相关主题。允许自定义标题。
+3. [`justoverclock/theaudiodb-api`](https://extiverse.com/extension/justoverclock/theaudiodb-api) TheAudioDb 数据库。
+4. [`justoverclock/website-live-screenshot`](https://extiverse.com/extension/justoverclock/website-live-screenshot) 链接预览。
+5. [`v17development/flarum-support`](https://extiverse.com/extension/v17development/flarum-support) 工单系统。新增筛选项。
+
+全部变化：[v1.0.4.1009.1 (1009)...v1.1.1 (1218)](https://github.com/FFans/lang-simplified-chinese/compare/v1.0.4.1009.1...v1.1.1.1219)
+
+
+# 2021-11-2
+# 🌟 v1.1.1
+
+【核心】
+1. 新增：* 扩展重置功能；主题数量、回复数量展示；编辑用户权限提示；出错提示更新。
+
+【更新】
+[`fof/links`](https://github.com/FriendsOfFlarum/links) 导航栏链接。新增二级菜单标题模式。
+
+> \* 下一版本功能。 
+
 # 2021-10-9
-# 🌟 v1.0.4.1009
+# 🌟 v1.0.4.1009.1
 
 【核心】
 1. 更正「暂无回复」为「暂无内容」（[#10](https://github.com/flarum-lang/chinese-simplified/issues/10)）
@@ -9,13 +82,13 @@
 1. [`afrux/asirem`](https://github.com/afrux/asirem) Afrux 主题翻译。
 2. [`davwheat/flarum-ext-share`](https://github.com/davwheat/flarum-ext-share) 分享。
 3. [`justoverclock/feautured-discussions-widget`](https://github.com/justoverclockl/feautured-discussions-widget) 精选主题挂件。
-4. [`justoverclock/flachat`](https://github.com/justoverclockl/flachat) 建议聊天。
+4. [`justoverclock/flachat`](https://github.com/justoverclockl/flachat) 简易聊天。
 
 【更新】
 1. [`fof/discussion-language`](https://github.com/FriendsOfFlarum/discussion-language) 主题帖语言。
 2. [`nosun/reply-to-see`](https://github.com/nosun/flarum-ext-reply2see) 回复可见。
 
-全部变化：[v1.0.4 (1002)...v1.0.4 (1009)](https://github.com/FFans/lang-simplified-chinese/compare/v1.0.4.1002...v1.0.4.1009)
+全部变化：[v1.0.4 (1002)...v1.0.4 (1009)](https://github.com/FFans/lang-simplified-chinese/compare/v1.0.4.1002...v1.0.4.1009.1)
 
 # 2021-10-2
 # 🌟 v1.0.4.1002

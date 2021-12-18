@@ -3,3 +3,4 @@ locale/*.md
 archive/
 wiki/
 resources
+node_modules

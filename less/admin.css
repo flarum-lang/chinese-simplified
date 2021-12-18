@@ -1,0 +1,9 @@
+.ChineseNoticePage {
+  padding: 40px;
+}
+.ChineseNoticePage .Form-group > label {
+  color: #de2910;
+}
+.ChineseNoticePage .Form-group a {
+  color: #de2910;
+}

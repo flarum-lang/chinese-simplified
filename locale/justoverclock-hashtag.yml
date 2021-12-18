@@ -3,6 +3,10 @@
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
 justoverclock-hashtag:
+  admin:
+    settings:
+      regexdesc: 根据占位文本填写正则表达式。如果您不懂正则表达式，请勿修改。
+      regexlabel: 话题正则表达式
   forum:
     post:
-      hashtag_link_tooltip: '在 Flarum 中搜索此话题'
+      hashtag_link_tooltip: 搜索相关帖子

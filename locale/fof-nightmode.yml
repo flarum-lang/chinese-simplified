@@ -16,6 +16,7 @@ fof-nightmode:
     night: '=> fof-nightmode.ref.dark'
     user:
       settings:
+        auto_unsupported: 您的浏览器不支持自动夜间模式。
         description: 选择您想在论坛上使用的日夜模式。
         description2: 这个模式将绑定到您的账户，并适用于所有的设备，除非您开启下方的独立设备配置，以为不同的设备单独选择日夜模式。
         device_specific_setting_checkbox: 独立设备配置

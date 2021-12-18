@@ -417,6 +417,8 @@ core:
       alert_message: '=> core.ref.confirmation_email_sent'
       resend_button: 重新发送验证邮件
       sent_message: 发送
+    welcome_hero:
+      hide: 隐藏欢迎横幅内容
   group:
     admin: 管理员
     admins: 管理组
@@ -456,6 +458,10 @@ core:
       render_failed_message: 抱歉，加载此内容时出错，请刷新页面重试。如果您是管理员，请查看论坛日志文件查看详情。
     loading_indicator:
       accessible_label: '=> core.ref.loading'
+    modal:
+      close: 关闭
+    nav:
+      drawer_button: 打开导航抽屉
     number_suffix:
       kilo_text: 千
       mega_text: 百万
@@ -553,6 +559,9 @@ core:
       log_out_button: '=> core.ref.log_out'
       log_out_confirmation: '确定要退出登录 {forum}?'
       title: '=> core.ref.log_out'
+    meta_titles:
+      with_page_title: '{pageNumber, plural, =1 {{pageTitle} - {forumName}} other {{pageTitle} - 第 # 页 - {forumName}}}'
+      without_page_title: '{pageNumber, plural, =1 {{forumName}} other {第 # 页 - {forumName}}}'
     reset_password:
       confirm_password_label: '=> core.ref.confirm_password'
       new_password_label: 新密码

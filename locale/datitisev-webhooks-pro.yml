@@ -38,7 +38,7 @@ fof-webhooks:
             title: 'FriendsOfFlarum 私密主题'
           gamification:
             postwasvoted: 帖子顶/踩
-            title: 'FriendsOfFlarum  游戏化'
+            title: 'FriendsOfFlarum 游戏化'
           polls:
             pollwascreated: 发起投票
             pollwasvoted: 投票

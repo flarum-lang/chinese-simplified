@@ -51,6 +51,7 @@ fof-upload:
       preferences:
         max_file_size: 最大文件大小（单位：KB）
         mime_types: 设置可上传的文件类型及上传方式
+        php_ini_values: '当前 <code>php.ini</code> 配置上限为 <code>post_max_size={post}</code>，<code>upload_max_filesize={upload}</code>。请确保下方设置的值小于上限，或调高上限。如果您使用 <code>Nginx</code> 服务器，请确保 <code>client_max_body_size</code> 高于您选择的上限值。'
         title: 偏好设置
       qiniu:
         bucket: 空间名称
@@ -125,3 +126,5 @@ fof-upload:
       error: 错误
       loading: 加载中
       unauthorized: 您没有下载权限
+    validation:
+      max_size: '文件需小于 {max} KB。'

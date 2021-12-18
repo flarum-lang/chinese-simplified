@@ -4,6 +4,7 @@
 
 flarum-ext-welcomebox:
   admin:
+    UseWidget: 转为小部件
     enablepostbox: 向访客展示欢迎卡片
     img: 图片链接（访客端）
     img-help: 在此填写向访客展示的图片链接

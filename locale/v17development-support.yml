@@ -177,7 +177,26 @@ v17development-flarum-support:
       overview:
         all_tickets: 所有工单
         description: 真棒，今天又是帮助他人的一天。
+        filter:
+          assignees:
+            search: 搜索负责人
+            title: 负责人
+            unassigned: 未指派
+          language:
+            any: 全部语言
+          status:
+            filter_count: '{count, plural, one {# 过滤条件} other {# 过滤条件}}'
+            title: 工单状态
         no_tickets: 暂无工单分配给您。
+        refresh: 刷新
+        selection_closed: 已结单
+        selection_open: 进行中
+        selection_unfiltered: 清除过滤条件
+        sort:
+          least_recent: 非新动态
+          newest: 最新
+          oldest: 最早
+          recent_activity: 新动态
         title: 工单概览
       reminders_sent: '{count, plural, one {1 条提醒已发送} other {# 条提醒已发送}}'
       return_to_overview: 返回工单概览

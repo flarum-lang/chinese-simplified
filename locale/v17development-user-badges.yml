@@ -24,6 +24,10 @@ v17development-flarum-badges:
     badge:
       description: 徽章描述
       icon: 徽章图标
+      image: 图片地址
+      image_placeholder: '输入图片的 URL'
+      is_image: 图片徽章
+      is_image_description: 使用图片作为默认徽章
       name: 徽章名
       visible: 可见性
       visible_description: 启用此徽章。禁用时，此徽章将不可见。

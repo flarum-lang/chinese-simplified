@@ -2,7 +2,7 @@
 # 🌟 v1.1.1.1220
 
 【新增】
-[`clarkwinkelmann/flarum-ext-roll-die`](https://github.com/clarkwinkelmann/flarum-ext-roll-die) 随机骰子。
+1. [`clarkwinkelmann/flarum-ext-roll-die`](https://github.com/clarkwinkelmann/flarum-ext-roll-die) 随机骰子。
 
 全部变化：[v1.1.1 (1219)...v1.1.1 (1220)](https://github.com/FFans/lang-simplified-chinese/compare/v1.1.1.1219...v1.1.1.1220)
 

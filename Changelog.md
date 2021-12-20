@@ -1,5 +1,16 @@
 # 2021-12-19
+# 🌟 v1.1.1.1220
+
+【新增】
+[`clarkwinkelmann/flarum-ext-roll-die`](https://github.com/clarkwinkelmann/flarum-ext-roll-die) 随机骰子。
+
+全部变化：[v1.1.1 (1219)...v1.1.1 (1220)](https://github.com/FFans/lang-simplified-chinese/compare/v1.1.1.1219...v1.1.1.1220)
+
+# 2021-12-19
 # 🌟 v1.1.1.1219
+
+【中文语言包】
+- 增加设置提示。
 
 【核心】*
 - 新增 ：
@@ -57,8 +68,7 @@
 4. [`justoverclock/website-live-screenshot`](https://extiverse.com/extension/justoverclock/website-live-screenshot) 链接预览。
 5. [`v17development/flarum-support`](https://extiverse.com/extension/v17development/flarum-support) 工单系统。新增筛选项。
 
-全部变化：[v1.0.4.1009.1 (1009)...v1.1.1 (1218)](https://github.com/FFans/lang-simplified-chinese/compare/v1.0.4.1009.1...v1.1.1.1219)
-
+全部变化：[v1.0.4.1009.1 (1009)...v1.1.1 (1219)](https://github.com/FFans/lang-simplified-chinese/compare/v1.0.4.1009.1...v1.1.1.1219)
 
 # 2021-11-2
 # 🌟 v1.1.1

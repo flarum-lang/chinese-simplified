@@ -6,21 +6,27 @@ davwheat:
   ads:
     admin:
       settings:
+        add_script: 添加
         alert:
           code_has_script: '一个或多个广告单元含有 script 标签，请移除后重试。'
           fix_errors: 请在保存前修正错误
         allow_after_placeholder: 在回复文本编辑器下方显示帖子流广告
         between_posts_gap: 帖子流广告间隔楼层数
-        code_input: '「{for}」广告单元代码'
+        code_input: 'HTML 代码'
         code_input_disabled: '启用此广告单元以编辑 HTML 代码'
         enabled_locations: 启用广告单元
+        js_input: 'JavaScript 代码'
+        js_input_disabled: '启用此广告单元以编辑 JS 代码。'
         pub_id: 'AdSense Publisher ID'
         save_btn:
           dirty: 保存
           fix_errors: 保存前修正错误
           saved: 所有修改已保存
           saving: 保存中……
-        warning: "脚本代码由本扩展自动运行。广告代码 <b>仅可</b> 含有 <code>ins</code> 标签，同时不得含有 script 脚本标签。\n"
+        script_deletion: 要删除脚本，请删除文本框所有内容然后保存。
+        script_urls: 自定义（多个）脚本链接
+        use_adsense: '使用 AdSense'
+        warning: "<b>使用指南：</b>\n<br></br>\n<b>HTML</b> - 在此插入广告 HTML 代码。请勿插入任何 {script} 标签，插入无效。\n<br></br>\n<b>JS</b> - 在此插入广告 JavaScript 代码。<b>不含</b> {script} 标签。\n"
     lib:
       locations:
         between_posts: 帖子流

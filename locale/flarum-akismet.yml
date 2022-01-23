@@ -6,7 +6,11 @@ flarum-akismet:
   admin:
     akismet_settings:
       api_key_label: 'API Key'
+      delete_blatant_spam_help: 直接删除检测到问题的内容
+      delete_blatant_spam_label: 自动删除问题内容
       title: 'Akismet 设置'
+    permissions:
+      bypass_akismet: '跳过 Akismet 内容审查'
   forum:
     post:
       akismet_flagged_text: 'Akismet 标记为垃圾内容'

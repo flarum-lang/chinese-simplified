@@ -6,12 +6,19 @@ fof-merge-discussions:
   admin:
     permissions:
       merge_discussions_label: 合并主题
+    settings:
+      search_result_help: '`合并主题` 搜索框数量。默认 4'
+      search_result_label: 合并主题搜索上限
   api:
     error:
       deleting_failed: 删除空主题失败。
       fixing_posts_number_failed: 修复帖子编号失败。
       merging_failed: 合并主题失败。
       updating_failed: 更新主题内容失败。
+  email:
+    merged:
+      body: "{recipient_display_name}，您好！\n\n你的主题「{merged_discussion_title}」被 {actor_display_name} 合并至「{discussion_title}」。\n\n点击查看详情：{discussion_url}。\n"
+      subject: '主题合并「{merged_discussion_title}」'
   forum:
     discussion:
       merge: '=> fof-merge-discussions.ref.merge'
@@ -23,6 +30,10 @@ fof-merge-discussions:
       type_from_label: 合并至其他主题
       type_target_help_text: '选择一个主题合并至「<b>{title}</b>」。'
       type_target_label: 合并至此主题
+    notification:
+      discussion_merged: '{username} 合并了你的主题 <b>{oldTitle}</b>。'
+      preferences:
+        discussion_merged: 有人合并我的主题
     post:
       merged: '{count, plural, one {已合并主题「{titles}」下的 <b>#</b> 条回复。} other {已合并主题「{titles}」下的 <b>#</b> 条回复。}}'
   ref:

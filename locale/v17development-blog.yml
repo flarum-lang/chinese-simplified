@@ -18,6 +18,8 @@ v17development-flarum-blog:
       categories_heading: 分类目录
       default_article_image_label: 默认封面图
       default_article_image_text: 设置默认使用的文章封面图。
+      featured_count_label: 精选评论上限
+      featured_count_text: 博客页面顶部最多可显示多少评论？
       hide_on_discussion_list_label: 不在主题列表中显示
       hide_on_discussion_list_text: 在「全部主题」列表中隐藏博客文章。
       hide_tags_in_taglist_label: 对标签列表不可见

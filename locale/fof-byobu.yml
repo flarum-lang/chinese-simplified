@@ -10,9 +10,12 @@ fof-byobu:
       create_private_discussions_with_users: 与他人创建私密主题
       edit_group_recipients: 设置私密主题用户组可见范围
       edit_user_recipients: 设置私密主题用户可见范围
+      make_private_into_public: 将私密主题转为公开
       view_private_discussions-when-flagged: 查看他人被举报的私密主题
     settings:
       badge-icon: 'Byobu 主题帖徽章'
+      enable-make-public-option: 启用「私密转公开」功能
+      enable-make-public-option-help: 转公开时，所有参与者自动退出私密主题，私密主题转为普通公开主题。
       post-event-icon: 'Byobu 发帖事件'
   email:
     body:
@@ -33,12 +36,15 @@ fof-byobu:
       add_recipients: 公开
       cancel: 取消
       edit_recipients: 可见范围
+      make_public: 公开主题
       remove_from_discussion: 退出私密主题
       send_pd: '发送消息至 {username}'
       submit: 确定
     composer_private_discussion:
       submit_button: 新建私密主题
       title_placeholder: 私密主题标题
+    confirm:
+      make_public: 确定移除所有参与者，并公开此主题吗？
     input:
       search_recipients: 输入用户名前三位……
     labels:
@@ -72,6 +78,7 @@ fof-byobu:
       recipients_modified:
         added: '{username} 邀请 {added} 加入。'
         added_and_removed: '{username} 邀请 {added} 加入，并移出 {removed}。'
+        made_public: '{username} 将主题公开'
         removed: '{username} 将 {removed} 移出。'
         removed_self: '{username} 退出私密主题。'
     search:

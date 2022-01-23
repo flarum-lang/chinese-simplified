@@ -13,6 +13,8 @@ fof-nightmode:
         theme_light: '=> fof-nightmode.ref.light'
   forum:
     day: '=> fof-nightmode.ref.light'
+    header:
+      nightmode_button: 切换论坛主题
     night: '=> fof-nightmode.ref.dark'
     user:
       settings:

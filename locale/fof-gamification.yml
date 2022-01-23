@@ -65,6 +65,7 @@ fof-gamification:
   forum:
     mod_item: 投票详情
     modal:
+      downvotes_label: 'TA 们反对：'
       title: 投票详情
       upvotes_label: 'TA 们赞同：'
     nav:

@@ -6,7 +6,12 @@ blomstra-flag-duplicates:
   admin:
     settings:
       event_post_help: '在已引发“重复”标志的讨论中创建一个事件帖子。 这可以通知用户该讨论可能与另一个讨论重复，而无需让他们访问已提出的整体标志。'
+      event_post_label: 活动帖子
   forum:
     flags:
       duplicate_discussion: 重复讨论
       reason_duplicate_label: 'Duplicate discussion'
+flarum-flags:
+  forum:
+    flag_post:
+      reason_duplicate_label: 复制

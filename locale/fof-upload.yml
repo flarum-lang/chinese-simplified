@@ -88,6 +88,8 @@ fof-upload:
       just-url_description: "仅插入 URL。 渲染可以由具有自动链接功能的其他插件处理。无下载、统计和热链保护功能。\n"
       markdown-image: 'Markdown 图片预览模板'
       markdown-image_description: "使用 Markdown 格式在行内完整显示图片。<strong>此模板依赖于 flarum/markdown 扩展程序。</strong>无下载、统计和热链保护功能。\n"
+      text-preview: 文本文档预览
+      text-preview_description: "显示文本文件的前 5 行预览，附带展开全文按钮。\n"
     upload_methods:
       aws-s3: 'AWS S3 或 S3 兼容'
       imgur: Imgur
@@ -126,5 +128,11 @@ fof-upload:
       error: 错误
       loading: 加载中
       unauthorized: 您没有下载权限
+    text_preview:
+      collapse: 收起全文
+      error: "文件预览无法加载。此文件或已被删除，文件 ID 或已失效。\n"
+      expand: 展开全文
+      no_snippet: '<暂无可用的预览代码片段>'
+      no_snippet_preview: '<文本文档的预览将会在此处展示>'
     validation:
       max_size: '文件需小于 {max} KB。'

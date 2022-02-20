@@ -53,9 +53,11 @@ fof-gamification:
         upvotes_only: 禁用踩
         vote_color: 点赞颜色
     permissions:
+      downvote_notifications: 接收反对票通知
       see_ranking_page: 查看排名
       see_voters_label: 查看投票详情
       see_votes_label: 查看赞同/踩数量
+      upvote_notifications: 接收赞同票通知
       vote_label: 赞同/踩
   email:
     body:

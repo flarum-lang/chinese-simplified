@@ -12,6 +12,8 @@ custom-header:
     facebookIcon-help: 粘贴你的脸书主页地址
     githubIcon: 'GitHub 主页链接'
     githubIcon-help: '粘贴你的 GitHub 主页地址'
+    headerBackgroundImage: 背景头图
+    headerBackgroundImage-help: '在此处粘贴背景头图 URL'
     headerTagline: 横幅标语
     headerTagline-help: 你可以修改标语
     headerTitle: 横幅标题

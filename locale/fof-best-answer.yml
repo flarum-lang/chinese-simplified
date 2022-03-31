@@ -68,5 +68,6 @@ fof-best-answer:
       preferences:
         awarded_best_answer: 有人将我的帖子设为最佳回复
         best_answer_in_discussion: 我互动的主题有了最佳回复
+        select_best_answer: 提醒我选择自己主题的最佳回复
     remove_best_answer: 移除最佳回复
     this_best_answer: 设为最佳回复

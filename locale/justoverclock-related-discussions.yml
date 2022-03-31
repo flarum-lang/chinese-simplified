@@ -11,6 +11,7 @@ justoverclock-related-discussions:
     relatedTitle-help: 自定义「相关主题」的标题
     showExcerpt: 显示摘要
   forum:
+    hasBestAnswer: 已解决
     participants: 参与者
     postedOn: 于
     postnumber: 回复数

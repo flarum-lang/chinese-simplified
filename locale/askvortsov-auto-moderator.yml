@@ -48,23 +48,23 @@ askvortsov-auto-moderator:
     group_selector:
       placeholder: 请选择用户组
     in_group_settings:
-      regex: 要匹配的正则表达式（无首尾斜杠）
+      regex: 用于匹配的正则表达式（无首尾斜杠）
     metric_drivers:
-      best_answers: 最佳答案
-      discussions_entered: 浏览主题帖
-      discussions_participated: 参与主题
-      discussions_started: 发布主题
-      likes_given: 点赞
-      likes_received: 获赞
-      moderator_strikes: 站务警告记分
-      posts_made: 发帖
+      best_answers: 最佳答案得成量
+      discussions_entered: 主题帖浏览量
+      discussions_participated: 主题参与数
+      discussions_started: 主题发布量
+      likes_given: 点赞量
+      likes_received: 获赞量
+      moderator_strikes: 站务警告总记分
+      posts_made: 回复量
     requirement_drivers:
-      email_confirmed: 邮箱已验证
-      email_matches_regex: 邮箱地址匹配正则
-      in_group: 位于用户组
-      suspended: 被封禁
+      email_confirmed: 已验证邮箱
+      email_matches_regex: 正则匹配邮箱地址
+      in_group: 拥有用户组
+      suspended: 账号被封禁
     suspend_selector:
-      days: 封禁天数
+      days: 请输入封禁天数
       indefinitely: 无期徒刑
     undefined_driver_item:
       text: '错误，未定义的 <strong>{driverName}</strong> 驱动！此驱动可能是由一个尚未安装的扩展添加的。重新启用该扩展或删除该驱动后，评判标准方可有效。'

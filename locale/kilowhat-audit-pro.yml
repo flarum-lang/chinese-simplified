@@ -9,15 +9,25 @@ kilowhat-audit:
       pro: 专业版
       title: 审计
       upgrade: 升级到专业版
+    limitedSettings:
+      configure: 配置
+      introduction: 选择「有限审计」权限用户可见的日志类型
+      requiresExtension: '需要先启用扩展程序「{extension}」'
+      title: 有限审计
     permissions:
       view: 查看审计日志
+      viewLimited: 查看有限审计日志
+    settings:
+      limitedIpAddress: '查看 IP 地址'
   forum:
     link:
       actor-audit: 审计日志（用户作为行为人）
+      all-audit: 审计日志
       discussion-audit: 审计日志
       user-audit: 审计日志（账户编辑）
     modal:
       actor-title: 行为人审计日志
+      all-title: 审计日志
       discussion-title: 讨论审计日志
       user-title: 用户审计日志
   lib:

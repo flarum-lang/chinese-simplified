@@ -24,10 +24,10 @@ fof-merge-discussions:
       merge: '=> fof-merge-discussions.ref.merge'
     modal:
       load_preview_button: 预览
-      ordering_date_help: 由此产生的讨论中的帖子会根据各自的创建日期重新排序
-      ordering_date_label: 按创建日期合并帖子
-      ordering_heading: 合并排序
-      ordering_suffix_help: 合并到尚存讨论中的帖子将被附加在讨论的最后
+      ordering_date_help: 合并后的帖子会根据原始的创建时间排序
+      ordering_date_label: 按创建时间合并帖子
+      ordering_heading: 合并与排序
+      ordering_suffix_help: 将帖子合并到讨论的末尾
       ordering_suffix_label: 将合并的帖子添加到讨论的末尾
       submit_button: '=> fof-merge-discussions.ref.merge'
       title: 合并主题

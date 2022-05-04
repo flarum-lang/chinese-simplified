@@ -20,7 +20,16 @@ fof-upload:
       watermark: "选择上传图片时是否添加水印。水印会根据下面的偏好设置来添加到非 GIF 图片上。\n"
     inspect-mime:
       description: "由于 PHP Fileinfo 扩展在不同服务器上返回的文件类型会有所不同，因此 FoF Upload 仅将其作为备用选项。\n一般情况下，均使用 <a>PHP Mime Detector</a> 库检测 MIME 类型。\n"
+      guessed-extension: 默认文件扩展名
+      laravel-validation: 'Laravel 文件验证消息'
+      mime-detector: 'Mime 检测器（主）'
+      mime-fileinfo: 'PHP Fileinfo（备）'
+      no-file-selected: 请选择文件
+      not-available: 暂无结果
+      select: 选择一个文件，并检测类型。您选择的文件不会被保存。
       title: '检查 MIME'
+      validation-failed: '失败：{error}'
+      validation-passed: 通过
     labels:
       aws-s3:
         acl: 访问控制列表（ACL）

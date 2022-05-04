@@ -4,6 +4,9 @@
 
 antoinefr-money:
   admin:
+    automoderator:
+      action_name: 奖励资产
+      metric_name: 资产
     permissions:
       edit_money_label: 修改资产
     settings:
@@ -11,7 +14,7 @@ antoinefr-money:
       moneyfordiscussion: 发布一次主题贴可获得
       moneyforlike: 获得点赞时奖励资产
       moneyforpost: 回帖一次可获得
-      moneyname: '货币名称（例如： [money] 元）'
+      moneyname: '定义资产货币（格式：[money] 元）'
       noshowzero: '若值为 0 则不显示'
       postminimumlength: '可获得奖励的最少回帖字数（0 表示不限制）'
       title: 设置

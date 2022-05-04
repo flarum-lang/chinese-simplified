@@ -13,14 +13,15 @@ fof-share-social:
       title: 分享到
   lib:
     networks:
-      facebook: Facebook
-      linkedin: LinkedIn
+      facebook: 脸书
+      linkedin: 领英
       my_mail: 'My World'
+      native: 系统分享
       odnoklassniki: Odnoklassniki
       qq: QQ
       qzone: 'QQ 空间'
       reddit: Reddit
-      telegram: Telegram
-      twitter: Twitter
+      telegram: 电报
+      twitter: 推特
       vkontakte: VKontakte
       whatsapp: WhatsApp

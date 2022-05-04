@@ -49,7 +49,7 @@ xelson-chat:
           users:
             edit: 选择或编辑用户
         moderator:
-          got: '你获得了审阅人权限：{chatname}！'
+          got: '你已成为「{chatname}」的审阅人！'
           lost: '你已被取消 {chatname} 的管理员身份。'
         save_button: '=> core.ref.save_changes'
         search:
@@ -83,6 +83,7 @@ xelson-chat:
           search:
             failed: 找不到用户
             invited: 已邀请
+            more_results: '显示更多「{more_results}」的结果……'
             placeholder: 搜索用户
           title: 选择用户
         pin: 固定

@@ -5,6 +5,7 @@
 flarum-ext-auth-keycloak:
   admin:
     keycloak_settings:
+      attribute_mapping_label: 自定义属性映射
       client_id_label: 'Client ID'
       client_secret_label: 'Client Secret'
       delegate_avatars_label: 代理头像

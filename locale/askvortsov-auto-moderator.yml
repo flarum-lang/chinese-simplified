@@ -12,62 +12,62 @@ askvortsov-auto-moderator:
       unsuspend: 解除封禁
     automoderator_instructions:
       header: 使用说明
-      text: "<li>以下是此扩展机制的释义，一句话概括：用户满足 X 条件时，执行 Y。用户不再满足 X 条件时，执行 Z。</li>\n<li><strong>评判标准：</strong>此扩展的核心思想。评判标准是多个判定指标和附加要求的集合。当一个用户满足或不满足一个标准时，执行相应的动作。</li>\n<ul>\n  <li><strong>判定指标：</strong>一个数值范围。例如，发帖数量或获赞数量。你可以设置指标为一个区间值/上限/下限值。</li>\n  <li><strong>附加要求：</strong>一个布尔条件。例如，是否被封禁、邮箱是否成功匹配正则表达式。</li>\n</ul>\n<li><strong>行为动作：</strong>当满足或不再满足评判标准时自动发生的事情。例如，移入/移出用户组、发送电子邮件、封禁用户等。</li>\n<li><strong>触发器：</strong>导致开始评判用户标准的事件，是判定指标和附加要求定义的一部分。如「通用触发器」，用户登录时会触发评判用户是否满足标准。</li>\n<li>「不满足动作」永远执行在「达成动作」之前。只要用户满足至少一个评判标准，就会执行相应的动作。</li>\n<li>❗ 行为动作只会在 「不满足」和「达成」时执行。当用户满足标准时，手动编辑将不会触发执行「达成动作」。</li>\n<li>❗ 删除一个评判标准，不会执行该标准的「不满足动作」。</li>\n<li>❗ 使用评判标准来管理用户组时，强烈建议您另建用户组，不要和平常的用户组共用。因为由此扩展管理的用户组，不允许手动移入/移出用户的。</li>\n"
+      text: "<li>以下是对此扩展机制的释义，一句话概括就是：用户满足 X 条件时，执行 Y。用户不再满足 X 条件时，执行 Z。</li>\n<li><strong>评判标准：</strong>此扩展的核心思想。一个评判标准由多个「判定指标」和「附加要求」组成，当用户对评判标准的满足状态发生变化时，会触发相应的动作。</li>\n<ul>\n  <li><strong>判定指标：</strong>数值范围，可为区间值、上限值或下限值。例如，发帖数量或获赞数量。</li>\n  <li><strong>附加要求：</strong>布尔值条件。例如，是否被封禁、邮箱是否匹配正则。</li>\n</ul>\n<li><strong>行为动作：</strong>用户对评判标准的满足状态发生变化时，触发的动作。例如，移入或移出用户组、发送电子邮件、封禁用户等。</li>\n<li><strong>触发器：</strong>何时使用标准去评判用户。设置「判定指标」和「附加要求」时自动定义。如用户每次登陆时都会触发的「通用触发器」，触发后进行一次评判。</li>\n<li>「失去动作」永远执行在「达成动作」之前。只要用户满足至少一个评判标准，就会执行相应的动作。</li>\n<li>❗ 行为动作只会在 「失去」和「达成」时执行。标准被编辑时，不会二次触发动作。</li>\n<li>❗ 删除一个评判标准，不会执行该标准的「失去动作」。</li>\n<li>❗ 使用评判标准来管理用户组时，强烈建议您另建用户组，不要和平常的用户组共用。因为由此扩展管理的用户组，不允许手动移入/移出用户的。</li>\n"
     automoderator_page:
       create_criterion_button: 创建标准
-      criterion_invalid: 此评判标准无效，点击查看详情信息。
+      criterion_invalid: 此评判标准无效，请查看配置页详情信息。
       list_heading: 评判标准
     criterion_page:
-      actions_help: 在此指定当用户满足、或不再满足评判标准时，要执行的动作。
+      actions_help: 在此指定当用户「满足」「不再满足」评判标准时，要执行的动作。
       actions_label: 行为动作
       actions_on_gain_heading: 达成动作
       actions_on_loss_heading: 失去动作
       add_action: 添加动作
       add_metric: 添加指标
-      back: 返回评判标准列表
+      back: 返回标准列表
       delete_button: '=> core.ref.delete'
       description_label: 描述
-      driver_missing_ext: 此驱动的依赖扩展未启用。
+      driver_missing_ext: 此驱动所需扩展未启用。
       icon_label: 图标
       loading: '=> core.ref.loading'
-      metrics_and_requirements_help: 在此处定义用户满足评判标准的条件。判定指标可以是区间值/上限/下限值，附加要求是某个布尔条件。
+      metrics_and_requirements_help: 在此处定义用户满足标准的条件。判定指标可以是区间值/上限/下限值，附加要求为布尔条件。
       metrics_and_requirements_label: 判定指标与附加要求
       metrics_heading: 判定指标
-      name_label: 名称
-      negated: 否？
-      new_criterion: 创建评判标准
+      name_label: 标准名称
+      negated: 取反？
+      new_criterion: 创建
       requirements_heading: 附加要求
     criterion_status:
       action_validation_errors: 以下行为动作驱动出错：
-      heading: 当前状态
+      heading: 评判标准状态
       invalid: 当前评判标准无效，请检查下方出错的条件。
-      no_actions: 尚未指定行为动作。当用户满足或不再满足评判标准时，将无事发生。
-      no_metrics_or_reqs: 尚未设定任何指标或附加要求。这意味着所有用户都满足此评判标准。
+      no_actions: 尚未指定行为动作。用户满足或不再满足评判标准时，不会发生任何事。
+      no_metrics_or_reqs: 尚未设定任何指标或附加要求。所有用户都将满足此评判标准。
       requirement_validation_errors: 以下附加要求驱动出错：
       valid: 评判标准有效！
     group_selector:
       placeholder: 请选择用户组
     in_group_settings:
-      regex: 要匹配的正则表达式（无首尾斜杠）
+      regex: 用于匹配的正则表达式（无首尾斜杠）
     metric_drivers:
-      best_answers: 最佳答案
-      discussions_entered: 浏览主题帖
-      discussions_participated: 参与主题
-      discussions_started: 发布主题
-      likes_given: 点赞
-      likes_received: 获赞
-      moderator_strikes: 站务警告记分
-      posts_made: 发帖
+      best_answers: 最佳答案得成量
+      discussions_entered: 主题帖浏览量
+      discussions_participated: 主题参与数
+      discussions_started: 主题发布量
+      likes_given: 点赞量
+      likes_received: 获赞量
+      moderator_strikes: 站务警告总记分
+      posts_made: 回复量
     requirement_drivers:
-      email_confirmed: 邮箱已验证
-      email_matches_regex: 邮箱地址匹配正则
-      in_group: 位于用户组
-      suspended: 被封禁
+      email_confirmed: 已验证邮箱
+      email_matches_regex: 正则匹配邮箱地址
+      in_group: 拥有用户组
+      suspended: 账号被封禁
     suspend_selector:
-      days: 封禁天数
+      days: 请输入封禁天数
       indefinitely: 无期徒刑
     undefined_driver_item:
-      text: '错误，未定义的 <strong>{driverName}</strong> 驱动！此驱动可能是由一个尚未安装的扩展添加的。重新启用该扩展或删除该驱动后，评判标准方可有效。'
+      text: '错误，未知的 <strong>{driverName}</strong> 驱动！此驱动所需扩展可能尚未安装，请重启所需扩展或删除此驱动，否则评判标准无法应用。'
   lib:
     group_id: '用户组 ID'
     managed_groups:

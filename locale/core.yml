@@ -429,6 +429,8 @@ core:
     mod: 版主
     mods: 版主组
   lib:
+    alert:
+      dismiss_a11y_label: 忽略警告
     badge:
       hidden_tooltip: 隐藏
     debug_button: 调试
@@ -458,6 +460,9 @@ core:
       render_failed_message: 抱歉，加载此内容时出错，请刷新页面重试。如果您是管理员，请查看论坛日志文件查看详情。
     loading_indicator:
       accessible_label: '=> core.ref.loading'
+    meta_titles:
+      with_page_title: '{pageNumber, plural, =1 {{pageTitle} - {forumName}} other {{pageTitle} - 第 # 页 - {forumName}}}'
+      without_page_title: '{pageNumber, plural, =1 {{forumName}} other {第 # 页 - {forumName}}}'
     modal:
       close: 关闭
     nav:

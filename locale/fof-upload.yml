@@ -16,7 +16,11 @@ fof-upload:
       resize: "配置图片缩放功能，以像素为单位，超过最大宽度及高度后会被缩放，图片横纵比不变。\n"
       s3_acl: "应用于上传对象的读写权限 ACL（默认私有读写）。 有关可用的值，请参阅 https://iflarum.cn/aws-s3acl\n"
       s3_compatible_storage: "填写下方设置以配置 S3 兼容存储模式。如果您使用 AWS，请保持留空。有关 S3 兼容配置详情，请查阅各大云服务商的文档（七牛云：https://iflarum.cn/qiniu-s3）\n"
+      s3_instance_profile: "公钥和秘钥留空时，可为实例单独配置。\n"
       watermark: "选择上传图片时是否添加水印。水印会根据下面的偏好设置来添加到非 GIF 图片上。\n"
+    inspect-mime:
+      description: "由于 PHP Fileinfo 扩展在不同服务器上返回的文件类型会有所不同，因此 FoF Upload 仅将其作为备用选项。\n一般情况下，均使用 <a>PHP Mime Detector</a> 库检测 MIME 类型。\n"
+      title: '检查 MIME'
     labels:
       aws-s3:
         acl: 访问控制列表（ACL）
@@ -45,6 +49,7 @@ fof-upload:
       imgur:
         client_id: 'Imgur 客户ID'
         title: 'Imgur 图片存储设置'
+      inspect-mime: '测试文件 MIME 类型'
       local:
         cdn_url: '文件链接前缀 / 对象存储 CDN 或访问域名（含 http/https）'
         title: 存储设置

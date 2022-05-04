@@ -10,6 +10,8 @@ v17development-flarum-blog:
       auto_approve_posts: 发布文章无需审核
       write_articles: 撰写和编辑博客文章
     settings:
+      add_hero_label: 展示欢迎横幅
+      add_hero_text: 允许在博客页面展示首页的欢迎横幅。
       add_sidebar_nav_label: 添加到侧边栏
       add_sidebar_nav_text: 在侧边栏添加博客入口。
       allow_comments_label: 允许评论

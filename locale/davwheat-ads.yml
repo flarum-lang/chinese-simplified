@@ -5,8 +5,11 @@
 davwheat:
   ads:
     admin:
+      permissions:
+        bypassAds: 跳过所有广告
       settings:
         add_script: 添加
+        admin_bypass_warning: "因 Flarum 权限系统限制，管理组成员将无法看到任何广告。\n要测试广告，请打开浏览器无痕窗口访问 Flarum\n"
         alert:
           code_has_script: '一个或多个广告单元含有 script 标签，请移除后重试。'
           fix_errors: 请在保存前修正错误

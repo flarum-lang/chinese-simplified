@@ -1,3 +1,49 @@
+# 2022-5-4
+# 🌟 v1.2.0-220504
+【核心】
+
+【原生】
+
+【新增】
+
+【更新】
+fof-upload
+davwheat-ads
+fof-share-social
+fof-merge-discussions
+v17development-blog
+fof-ban-ips
+
+【改进】
+
+# 2022-2-20
+# 🌟 v1.2.0-220220
+【更新】
+[`malago/flarum-achievements`](https://github.com/malago86/flarum-achievements)
+[`fof/gamification`](https://github.com/FriendsOfFlarum/gamification)
+[`fof/upload`](https://github.com/FriendsOfFlarum/upload)
+[`justoverclock/related-discussions`](https://extiverse.com/extension/justoverclock/related-discussions) 💰
+[`spookygames/flarum-ext-auth-keycloak`](https://github.com/spookygames/flarum-ext-auth-keycloak)
+
+# 2022-1-23
+# 🌟 v1.2.0
+【原生】
+[`flarum/nicknames`](https://github.com/flarum/nicknames)
+[`flarum/tags`](https://github.com/flarum/tags)。新增跳过标签选择。
+
+【更新】
+[`davwheat/flarum-ext-ads`](https://github.com/davwheat/flarum-ext-ads)
+[`flarum/akismet`](https://github.com/flarum/akismet)
+[`fof/byobu`](https://github.com/FriendsOfFlarum/byobu)
+[`fof/gamification`](https://github.com/FriendsOfFlarum/gamification) 游戏化。
+[`fof/merge-discussions`](https://github.com/FriendsOfFlarum/merge-discussions)
+[`fof/nightmode`](https://github.com/FriendsOfFlarum/nightmode)
+[`justoverclock/related-discussions`](https://extiverse.com/extension/justoverclock/related-discussions) 💰
+[`v17development/flarum-blog`](https://github.com/v17development/flarum-blog)
+[`xelson/flarum-ext-chat`](https://github.com/Xelson/flarum-ext-chat)
+
+全部变化：[v1.1.1 (1220)...v1.2.0 (0123)](https://github.com/FFans/lang-simplified-chinese/compare/v1.1.1.1220...v1.2.0.0123)
+
 # 2021-12-20
 # 🌟 v1.1.1.1220
 

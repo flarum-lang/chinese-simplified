@@ -19,10 +19,10 @@ nearata-twofactor:
         copy_button: 复制
         download_button: 下载
         download_file_format: "{website_title} | {website_url}\n\n请妥善保存您的恢复代码。\n\n恢复代码：\n\n{codes}\n\n* 每个恢复代码仅可使用一次。\n* 恢复代码必须按照此处所列顺序使用。\n* 此次恢复代码生成于 {date}。\n"
-        modal_message: "请将恢复代码妥善保存在安全的地方。如果您丢失了两步验证设备，恢复代码是您找回账号的唯一救命稻草。\n"
+        modal_message: "请妥善保管恢复代码妥。若遗失验证设备，恢复代码是登录账号的唯一方式。\n"
       close_button: 关闭
       disabled: 两步验证已关闭。
-      enabled: 两部验证已启用。
+      enabled: 两步验证已开启。
       enter_code_disable: 输入验证码以关闭两步验证。
       enter_code_manually: 无法扫描二维码？手动输入设置秘钥
       passcode_placeholder: 两步验证码

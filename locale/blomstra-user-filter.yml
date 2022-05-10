@@ -5,16 +5,16 @@
 blomstra-user-filter:
   admin:
     settings:
-      min_length: 开始搜索的最小字符数
-      result_count: 自动下拉的最大值
+      min_length: 最小搜索关键词字符数
+      result_count: 最大搜索建议数
   forum:
     index_page:
       filter_user:
-        accessible_label: 按作者筛选
+        accessible_label: 筛选作者
         all: 全部
-        keep_typing: 请继续输入...
-        label: '按作者筛选: {text}'
-        no_results: 无结果
-        remove_filter: 移除按作者筛选
-        search_label: 搜索中...
-        start_typing: 请输入以开始搜索
+        keep_typing: 请继续……
+        label: '筛选作者：{text}'
+        no_results: 未找到任何内容
+        remove_filter: 清除作者筛选
+        search_label: 搜索中……
+        start_typing: 搜索……

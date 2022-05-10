@@ -18,16 +18,16 @@ nearata-twofactor:
       backups:
         copy_button: 复制
         download_button: 下载
-        download_file_format: "{website_title} | {website_url}\n\n请妥善保存您的恢复代码。\n\n恢复代码：\n\n{codes}\n\n* 每个恢复代码仅可使用一次。\n* 恢复代码必须按照此处所列顺序使用。\n* 此次恢复代码生成于 {date}。\n"
-        modal_message: "请妥善保管恢复代码妥。若遗失验证设备，恢复代码是登录账号的唯一方式。\n"
+        download_file_format: "{website_title} | {website_url}\n\n请妥善保存您的恢复代码。\n\n恢复代码：\n\n{codes}\n\n* 每个恢复代码仅限使用一次。\n* 恢复代码必须按照上方所列顺序依次使用。\n* 当期恢复代码生成时间 {date}。\n"
+        modal_message: "请妥善保存恢复代码。验证设备遗失或不可用时，恢复代码是登录账号的唯一方式。\n"
       close_button: 关闭
       disabled: 两步验证已关闭。
       enabled: 两步验证已开启。
       enter_code_disable: 输入验证码以关闭两步验证。
-      enter_code_manually: 无法扫描二维码？手动输入设置秘钥
+      enter_code_manually: 无法扫描二维码？手动输入验证器秘钥
       passcode_placeholder: 两步验证码
       password_placeholder: 账号密码
-      scan_qr: 使用两步验证设备扫描二维码添加您的账号。
+      scan_qr: 使用验证设备扫描二维码以添加账号。
       submit_button:
         disable: 禁用
         enable: 启用

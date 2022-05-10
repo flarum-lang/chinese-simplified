@@ -38,12 +38,13 @@ fof-oauth:
           api_key_label: 'API Key'
           api_secret_label: 'API Secret'
           description: '在 {link} 创建一个应用。您需要提供服务协议和隐私政策 URL，然后确保添加请求邮件权限。'
+    settings_accessibility_label: '{name}设置'
   forum:
     error:
       bad_verification_code: 无效或过期的验证令牌，请重试。
       invalid_state: 无效状态，请重试。
     log_in:
-      with_button: '{provider} 账号登录'
+      with_button: '{provider}账号登录'
       with_discord_button: '=> fof-oauth.forum.log_in.with_button'
       with_facebook_button: '=> fof-oauth.forum.log_in.with_button'
       with_github_button: '=> fof-oauth.forum.log_in.with_button'
@@ -60,7 +61,7 @@ fof-oauth:
       linkedin: '=> fof-oauth.lib.providers.linkedin'
       twitter: '=> fof-oauth.lib.providers.twitter'
     signup:
-      username_help: 请选择一个用户名
+      username_help: 请选择用户名
   lib:
     providers:
       discord: Discord

@@ -4,7 +4,7 @@
 
 afrux-forum-widgets-core:
   admin:
-    cache_not_writable_warning: 缓存当前不可写，这将阻止某些小部件工作。请修复存储目录的权限。
+    cache_not_writable_warning: 目前服务器缓存不可写入，部分小部件无法工作。请检查存储目录权限。
     settings:
       prefer_data_with_initial_load: 预加载所有组件数据
-      prefer_data_with_initial_load_help: '在首次加载页面时同步加载部件数据，关闭此项时，部件数据将在页面首次加载后通过 API 异步请求。'
+      prefer_data_with_initial_load_help: '页面首次加载时同步加载部件数据。关闭此项，部件数据将在页面首次加载后通过 API 异步请求。'

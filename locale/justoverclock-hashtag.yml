@@ -5,6 +5,7 @@
 justoverclock-hashtag:
   admin:
     settings:
+      oldregexdesc: '原正则表达式：<code>{regex}</code>'
       regexdesc: 根据占位文本填写正则表达式。如果您不懂正则表达式，请勿修改。
       regexlabel: 话题正则表达式
   forum:

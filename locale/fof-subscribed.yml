@@ -8,25 +8,35 @@ fof-subscribed:
       description: 用户订阅配置（默认）
     permission:
       subscribe_to_discussion_created: 允许用户接收新主题通知
+      subscribe_to_post_created: 订阅全站新帖或回帖通知
+      subscribe_to_post_flagged: 订阅全站举报通知
       subscribe_to_post_unapproved: 允许用户接收新主题审核通知
       subscribe_to_user_created: 允许用户接收新人注册通知
   email:
     body:
       newDiscussion: "{recipient_display_name}，你好！\n\n{actor_display_name} 发布了一个主题：{discussion_title}\n\n点击下方链接查看主题帖：\n{discussion_url}\n\n---\n\n{post_content}\n"
       newUser: "{recipient_display_name}，你好！\n\n{actor_display_name} 刚刚加入 {forum_url}。\n\n点击下方链接查看用户资料：\n{user_url}\n"
+      postCreated: "{recipient_display_name}，你好！\n\n{actor_display_name} 刚刚发表了新的帖子在「{discussion_title}」。\n\n点击下方链接查看详细内容：\n{post_url}\n\n---\n\n{post_content}\n"
+      postFlagged: "{recipient_display_name}，你好！\n\n{actor_display_name} 刚刚举报了一个帖子在「{discussion_title}」\n\n点击下方链接查看详细内容：\n{post_url}\n"
       postUnapproved: "{recipient_display_name}，你好！\n\n{actor_display_name} 发表于 {discussion_title} 的回复需要人工审核。\n\n点击下方链接查看回复内容：\n{post_url}\n\n---\n\n{post_content}\n"
     subject:
       newDiscussion: '【新主题】{title}'
       newUser: '【新用户】{username}'
+      postCreated: '[Subscribed | New Post] {username} 发表新帖于「{title}」'
+      postFlagged: '[Subscribed | New Flag] {username} 举报帖子于「{title}」'
       postUnapproved: '【审核通知】{username} 发表回复于 {title}'
   forum:
     notifications:
       discussion_created_text: '{username} 发布了新主题'
+      post_created_text: '{username} 发表新帖'
+      post_flagged_text: '{username} 举报帖子'
       post_unapproved_text: '{username} 的帖子需要审核'
       user_created_text: '{username} 刚刚加入论坛'
     settings:
       defaults_label: '将「{setting}」设为默认开启'
       forced_label: '强制对所有用户开启「{setting}」'
       notify_discussion_created_label: 有新主题
+      notify_post_created_label: 有人发帖或回复
+      notify_post_flagged_label: 有人举报帖子
       notify_post_unapproved_label: 有帖子需要审核
       notify_user_created_label: 有新人注册

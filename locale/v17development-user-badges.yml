@@ -15,7 +15,7 @@ v17development-flarum-badges:
       metric_drivers:
         badges_received: 收到徽章
       not_installed:
-        content: '需要安装额外的扩展。当安装并启用了 <a>Auto Moderator</a> 扩展后，将解锁此功能。此高级功能可以根据设定的条件自动奖励用户徽章，无需管理员人工操作！'
+        content: '安装并启用了 <a>Auto Moderator</a> 扩展即可解锁。此高级功能允许您设定条件自动奖励用户徽章，解放双手！'
         dismiss: 不再显示
         install: 安装
         title: 自动奖励用户徽章

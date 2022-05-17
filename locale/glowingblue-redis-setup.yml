@@ -8,3 +8,5 @@ glowingblue-redis-setup:
       enable_cache: '启用 Redis 缓存'
       enable_queue: '启用 Redis 消息队列'
       enable_redis_sessions: '启用 Redis sessions（修改此项设置会清除所有用户的登录状态）'
+      horizon_config: 'Horizon 配置（JSON 格式）'
+      horizon_help_text: '最终转换为 <code>(new \Blomstra\Horizon\Extend\Horizon)->config(...))</code>'

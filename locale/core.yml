@@ -451,6 +451,7 @@ core:
       username_label: '=> core.ref.username'
     error:
       dependent_extensions_message: '无法停用「{extension}」，请先停用依赖扩展「{extensions}」'
+      extension_initialiation_failed_message: '初始化「{extension}」失败，详情信息请查看控制台。'
       generic_message: 糟糕，出错啦！请刷新页面重试。
       missing_dependencies_message: '无法启用「{extension}」，请先启用依赖扩展「{extensions}」'
       not_found_message: 您请求的资源不存在。

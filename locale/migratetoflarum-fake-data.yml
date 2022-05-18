@@ -33,6 +33,22 @@ migratetoflarum-fake-data:
       user-count: 修改用户数
     link:
       generate-replies: 生成虚假回复
+  lib:
+    generator:
+      bulk-mode: 复用
+      bulk-mode-description: 随机生成单条数据，并应用于全部条目
+      date: 种子日期
+      date-interval-placeholder: '间隔（默认 1 秒）'
+      date-start-placeholder: 起始日期（默认当天）
+      discussion-count: 主题生成数量
+      discussion-tags: 主题标签
+      discussion-tags-none: 无
+      discussion-tags-random: 随机
+      post-count: 回帖生成数量
+      refresh: 完成并刷新页面
+      reset: 生成成功！点击重置
+      send: 生成数据
+      user-count: 用户生成数量
   ref:
     bulk-mode: 批量模式
     bulk-mode-description: 生成一个随机值，并在每个条目中重复使用

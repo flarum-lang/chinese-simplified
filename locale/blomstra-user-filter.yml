@@ -5,6 +5,7 @@
 blomstra-user-filter:
   admin:
     settings:
+      intro: '<code>Search users</code> will not see the search box. Set to <code>Everyone</code> for all users, or whatever your preference level is.'
       min_length: 最小搜索关键词字符数
       result_count: 最大搜索建议数
   forum:

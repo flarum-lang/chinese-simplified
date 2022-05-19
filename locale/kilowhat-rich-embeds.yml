@@ -5,6 +5,7 @@
 kilowhat-rich-embeds:
   admin:
     settings:
+      blacklist: 'URL 黑名单'
       cacheProxy: 缓存代理图片
       cacheProxyHelp: 客户端将缓存图片到本地
       imageProxy: 图片代理

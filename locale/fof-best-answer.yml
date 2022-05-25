@@ -71,3 +71,5 @@ fof-best-answer:
         select_best_answer: 提醒我选择自己主题的最佳回复
     remove_best_answer: 移除最佳回复
     this_best_answer: 设为最佳回复
+    user:
+      best-answer-count: 最佳回答

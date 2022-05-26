@@ -72,4 +72,4 @@ fof-best-answer:
     remove_best_answer: 移除最佳回复
     this_best_answer: 设为最佳回复
     user:
-      best-answer-count: 最佳回答
+      best-answer-count: '{count, plural, { {count} 次助人} other {{count} 次助人}}'

@@ -6,6 +6,8 @@ ianm-follow-users:
   admin:
     permissions:
       be_followed_label: 允许用户关注他人
+    settings:
+      button-on-profile-label: 在用户资料卡片头部区域展示以下按钮
   email:
     new_discussion_by_user_body: "{recipient_display_name}，你好！\n\n{user_display_name} 发布了一个新主题：{discussion_title}\n\n点击下方链接查看内容：\n\n{discussion_url}\n\n---\n\n{post_content}\n"
     new_discussion_by_user_subject: '【关注】{title}'

@@ -7,6 +7,7 @@ flarum-suspend:
     permissions:
       suspend_users_label: 封禁用户
   email:
+    no_reason_given: 管理员并未给出封禁原因。
     suspended:
       body: "{recipient_display_name} 你好，\n\n你的账号因以下原因已被封禁：\n\n---\n{suspension_message}\n---\n"
       subject: 你的账号已被封禁

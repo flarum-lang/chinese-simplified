@@ -52,10 +52,15 @@ v17development-flarum-badges:
     edit_category: 编辑分组
     new_badge: 新建徽章
     nothing_here_yet: 您还没有创建任何徽章或分组。
+    number_of_badges_on_user_card: 限量
+    number_of_badges_on_user_card_help: 最多展示多少个徽章到资料卡片
     permissions:
       badge_detail_users: 在徽章详情页列出用户
+      edit_card_badges: 编辑所有用户的资料卡片徽章
+      edit_own_card_badges: 编辑自己的资料卡片徽章
       give_badge: 授予用户徽章
       take_badge: 撤除用户徽章
+    show_badges_on_user_card: 在资料卡片展示徽章
     uncategorized: 未命名分组
     update_badge: 更新徽章
     update_category: 更新分组
@@ -74,9 +79,16 @@ v17development-flarum-badges:
       earning_reason: 授予理由
       name: 徽章名
       no_earning_reason: 无授予理由
+      others_link: '+ {count}'
       received_on: '获得于 {date}'
       update_earning_reason: 更新授予理由
     badge_information: 徽章详情
+    badges_in_card:
+      description: 您可以挑选要展示的徽章。
+      hit_limit: '只能展示 <b> {limit, plural, one {<b>1 个徽章</b>} other {<b># 个徽章</b>}}</b> 到资料卡片，请先取消展示其他徽章。'
+      manage_badges: 管理徽章
+      select_limit: '您可以挑选 {limit, plural, one {<b>1 个徽章</b>} other {<b># 个徽章</b>}} 展示到资料卡片。'
+      title: 资料卡片徽章
     give_badge: 授予徽章
     moderation:
       give_badge: 授予徽章
@@ -86,6 +98,7 @@ v17development-flarum-badges:
     notification:
       settings: 获得徽章
       title: 获得新徽章
+    save_changes: 保存修改
     select_badge: 选择徽章
     uncategorized: '=> v17development-flarum-badges.admin.uncategorized'
     update_badge: 更新徽章

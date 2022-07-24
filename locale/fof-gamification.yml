@@ -85,8 +85,11 @@ fof-gamification:
       name: 用户
       rank: 排名
     user:
+      card:
+        points: '{count, plural, one {{count} 👍} other {{count} 👍}}'
       points: '👍: {points}'
       rank: '{rank}'
+      votes_link: 投票
     vote_title: 投票详情
     voters:
       label: 投票详情

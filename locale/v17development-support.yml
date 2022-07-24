@@ -87,6 +87,13 @@ v17development-flarum-support:
       description: 抱歉，这篇文章或分类目录已经丢失了。
       solution: 您可以使用上面的搜索框搜索要找的内容。
       title: 项目未找到
+    notifications:
+      replied_to_ticket:
+        content: '=> v17development-flarum-support.emails.replied_to_ticket.subject'
+        name: 有人回复我的工单
+      ticket_resolved:
+        content: '=> v17development-flarum-support.emails.ticket_resolved.subject'
+        name: 工单已解决
     or: 或
     overview:
       back_to: '返回 {category}'
@@ -155,6 +162,12 @@ v17development-flarum-support:
           empty: 尚未选择语言
           placeholder: 选择一个语言
           title: 语言
+        private_note:
+          edit_button: 编辑备注
+          info: 个人备注对客服和客户不可见。
+          placeholder: '例如：2022.1.1 - 处理：删除数据库'
+          tip: 提示：如果一个工单有多个客服处理，请在备注时加上你的姓名和日期。
+          title: 个人备注
         status:
           placeholder: 工单状态
           title: 状态
@@ -236,6 +249,7 @@ v17development-flarum-support:
         assign_me: 分配给我
         close_ticket: 关闭工单
         remove_me: 移除我
+        update_note: 更新私密备注
         update_status: 更新工单状态
         update_subject: 更新工单
         view_ticket: 查看工单

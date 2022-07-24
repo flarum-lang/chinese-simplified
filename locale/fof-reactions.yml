@@ -31,6 +31,8 @@ fof-reactions:
             Label: 转换表情为「赞」
             legend: 点赞
           warning: 同一个戳一戳表情<strong>不会</strong>转换为「赞」<strong>或</strong>「顶」
+        react_own_posts_help: 启用此项，添加一个权限，允许用户戳自己的帖子。如需禁止，请禁用此项。
+        react_own_posts_label: 允许用户戳自己
         save_settings: 保存设置
     permissions:
       react_posts_label: 戳表情

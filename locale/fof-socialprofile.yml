@@ -9,7 +9,7 @@ fof-socialprofile:
       editOwn: 编辑自己的社交网络
       view: 查看社交网络
     settings:
-      allow_external_favicons_label: 允许外部网站图标
+      allow_external_favicons_label: '允许外部网站图标（使用 DuckDuckGo 站点图标接口）'
   forum:
     edit:
       add: 添加社交网络

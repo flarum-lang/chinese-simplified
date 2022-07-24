@@ -43,6 +43,19 @@ v17development-flarum-blog:
       slug: 别名
       summary: 摘要
       title: 标题
+    article_settings:
+      fields:
+        highlight:
+          helper_text: 使用大尺寸图片展示本文章。
+          title: 大图
+        image:
+          helper_text: '最佳分辨率 1200x630'
+          title: 头图
+        summary:
+          helper_text: '摘要用于 SEO，以及博客主页的预览。'
+          placeholder: 请输入摘要
+          title: 摘要
+      title: 博客文章设置
     blog: 博客
     categories: 分类目录
     category_empty: 此分类目录中没有文章

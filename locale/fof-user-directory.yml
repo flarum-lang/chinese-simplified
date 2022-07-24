@@ -20,6 +20,9 @@ fof-user-directory:
       load_more_button: '=> core.ref.load_more'
       nav: 会员名录
       refresh_tooltip: '=> core.forum.index.refresh_tooltip'
+      usercard:
+        discussion-count: '{count, plural, one {主题 {count}} other {主题 {count}}}'
+        post-count: '{count, plural, one {回复 {count}} other {回复 {count}}}'
     search:
       field:
         placeholder: 搜索用户

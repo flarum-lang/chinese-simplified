@@ -43,6 +43,8 @@ CHANGELOG
 * [`afrux/forum-widgets-core`](https://github.com/afrux/forum-widgets-core)
 * [`antoinefr/flarum-ext-money`](https://github.com/AntoineFr/flarum-ext-money)
 * [`askvortsov/flarum-auto-moderator`](https://github.com/askvortsov1/flarum-auto-moderator)
+* [`clarkwinkelmann/flarum-ext-carving-contest`](https://github.com/clarkwinkelmann/flarum-ext-carving-contest)
+* [`clarkwinkelmann/flarum-ext-colorful-borders`](https://github.com/clarkwinkelmann/flarum-ext-colorful-borders)
 * [`davwheat/flarum-ext-ads`](https://github.com/davwheat/flarum-ext-ads)
 * [`flarum/akismet`](https://github.com/flarum/akismet)
 * [`flarum/markdown`](https://github.com/flarum/markdown)
@@ -78,6 +80,7 @@ CHANGELOG
 * [`v17development/flarum-user-badges`](https://github.com/v17development/flarum-user-badges)
 * [`xelson/flarum-ext-chat`](https://github.com/Xelson/flarum-ext-chat)
 * [`zerosonesfun/flarum-bbcode-button`](https://github.com/zerosonesfun/flarum-bbcode-button)
+* [`zerosonesfun/expired-posts`](https://github.com/zerosonesfun/expired-posts)
 
 
 All changes: [v1.1.1.1220...v1.2.0](https://github.com/flarum-lang/chinese-simplified/compare/v1.1.1.1220...v1.2.0).

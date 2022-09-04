@@ -12,6 +12,7 @@ CHANGELOG
 
 **Added support for new extensions**:
 
+* [`akr/chevereto`](https://github.com/AKR-Developers/flarum-chevereto)
 * [`blessing/flarum-oauth-client`](https://github.com/bs-community/flarum-oauth-client)
 * [`blomstra/flag-duplicates`](https://github.com/blomstra/flarum-ext-flag-duplicate)
 * [`blomstra/notification-deleter`](https://github.com/blomstra/flarum-ext-notification-deleter)

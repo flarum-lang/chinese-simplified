@@ -11,6 +11,7 @@ blomstra-flag-duplicates:
     flags:
       deselect_discussion_a11y_label: 取消选择主题帖
       duplicate_discussion: 主题重复
+      reason_discussion_deleted: '[已删除讨论]'
       reason_duplicate_label: 主题重复
       reason_duplicate_text: 主题撞车。
     post_stream:

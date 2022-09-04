@@ -5,4 +5,4 @@
 akr-chevereto:
   admin:
     setting:
-      url: Chevereto的网站地址
+      url: '远端 Chevereto 网站地址'

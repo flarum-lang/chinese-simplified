@@ -5,4 +5,5 @@
 blomstra-sort-order-toggle:
   forum:
     sort-toggle:
+      asc-label: 升序排序（按下切换）
       desc-label: 降序排序（按下切换）

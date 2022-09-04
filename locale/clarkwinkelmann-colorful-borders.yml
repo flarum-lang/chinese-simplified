@@ -10,9 +10,9 @@ clarkwinkelmann-colorful-borders:
       heading: 彩色边框
     settings:
       colors:
-        all: 任何颜色
+        all: 所有颜色
         custom: 自定义颜色列表
-        custom-help: '请使用 #十六进制颜色代码 或 rgb() 值，并以逗号分隔'
+        custom-help: '请使用 #十六进制颜色代码 或 rgb() 值，多个颜色以逗号分隔'
         simple: 简单颜色设置
       enableBackgroundColor: 自定义背景颜色
       enableBorderColor: 自定义边框颜色

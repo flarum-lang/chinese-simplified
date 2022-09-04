@@ -6,6 +6,7 @@ fof-nightmode:
   admin:
     settings:
       modal:
+        always_show_theme_toggle_on_header: 始终在导航栏显示日夜切换按钮
         default_theme: 默认模式
         default_theme_helper: 自动为新用户、访客和未自定义的用户应用的颜色模式。
         theme_auto: '=> fof-nightmode.ref.auto'

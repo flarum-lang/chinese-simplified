@@ -5,7 +5,7 @@
 blomstra-secondary-tags-toggler:
   admin:
     permissions:
-      view_toggler: 在讨论中使用辅助标签切换器
+      view_toggler: 在主题帖中使用次标签切换器
     settings:
-      only_one_secondary_tag: 一次最多选择一个辅助标签
-      only_one_secondary_tag_help: '不影响现有讨论. 向讨论添加新的辅助标签将删除所有其他辅助标签.'
+      only_one_secondary_tag: 一次最多选择一个次标签
+      only_one_secondary_tag_help: 不影响已有主题帖。添加新的次标签到一个主题帖，将删除该帖其他的次标签。

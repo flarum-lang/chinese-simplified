@@ -84,7 +84,7 @@ v17development-flarum-badges:
       update_earning_reason: 更新授予理由
     badge_information: 徽章详情
     badges_in_card:
-      description: 您可以挑选要展示的徽章。
+      description: 您可以挑选要展示的徽章。如果不选择任何徽章，则会自动选择徽章展示。
       hit_limit: '只能展示 <b> {limit, plural, one {<b>1 个徽章</b>} other {<b># 个徽章</b>}}</b> 到资料卡片，请先取消展示其他徽章。'
       manage_badges: 管理徽章
       select_limit: '您可以挑选 {limit, plural, one {<b>1 个徽章</b>} other {<b># 个徽章</b>}} 展示到资料卡片。'

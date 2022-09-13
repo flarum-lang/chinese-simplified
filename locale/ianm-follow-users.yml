@@ -8,6 +8,7 @@ ianm-follow-users:
       be_followed_label: 允许用户关注他人
     settings:
       button-on-profile-label: 在用户资料卡片头部区域展示以下按钮
+      stats-on-profile-label: 在个人主页显示用户的关注者和关注用户者的数量
   email:
     new_discussion_by_user_body: "{recipient_display_name}，你好！\n\n{user_display_name} 发布了一个新主题：{discussion_title}\n\n点击下方链接查看内容：\n\n{discussion_url}\n\n---\n\n{post_content}\n"
     new_discussion_by_user_subject: '【关注】{title}'
@@ -22,6 +23,8 @@ ianm-follow-users:
         lurk: 特别关注
     filter:
       following: 我的关注
+    followed: 关注中
+    followers: 被关注
     index:
       follow_tag_button: '=> ianm-follow-users.lib.follow'
       unfollow_tag_button: '=> ianm-follow-users.lib.change_follow_type'

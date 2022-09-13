@@ -47,6 +47,7 @@ CHANGELOG
 * [`clarkwinkelmann/flarum-ext-colorful-borders`](https://github.com/clarkwinkelmann/flarum-ext-colorful-borders)
 * [`davwheat/flarum-ext-ads`](https://github.com/davwheat/flarum-ext-ads)
 * [`flarum/akismet`](https://github.com/flarum/akismet)
+* [`flarum/likes`](https://github.com/flarum/likes)
 * [`flarum/markdown`](https://github.com/flarum/markdown)
 * [`flarum/nicknames`](https://github.com/flarum/nicknames)
 * [`flarum/suspend`](https://github.com/flarum/suspend)

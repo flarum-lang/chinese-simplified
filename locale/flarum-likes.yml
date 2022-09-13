@@ -21,3 +21,5 @@ flarum-likes:
       title: 点赞的用户
     settings:
       notify_post_liked_label: 有人赞我
+    user:
+      likes_link: 赞

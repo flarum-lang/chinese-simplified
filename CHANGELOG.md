@@ -89,6 +89,7 @@ CHANGELOG
 * [`kilowhat/flarum-ext-audit-pro`](https://extiverse.com/extension/kilowhat/flarum-ext-audit-pro)
 * [`malago/flarum-achievements`](https://github.com/malago86/flarum-achievements)
 * [`migratetoflarum/fake-data`](https://github.com/migratetoflarum/fake-data)
+* [`nearata/flarum-ext-embed-video`](https://github.com/Nearata/flarum-ext-embed-video)
 * [`nearata/flarum-ext-twofactor`](https://github.com/Nearata/flarum-ext-twofactor)
 * [`spookygames/flarum-ext-auth-keycloak`](https://github.com/spookygames/flarum-ext-auth-keycloak)
 * [`the-turk/flarum-nodp`](https://github.com/the-turk/flarum-nodp)

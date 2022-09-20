@@ -21,6 +21,8 @@ ianm-syndication:
       forum_new_discussions: 论坛新帖
       tag_activity: '{tag} 标签活动'
       tag_new_discussions: '{tag} 标签新帖'
+    discussion:
+      feed_link: Feed链接
     feeds:
       titles:
         discussion_subtitle: 这篇帖子的最新回复

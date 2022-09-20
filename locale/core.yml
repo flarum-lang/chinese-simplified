@@ -7,6 +7,8 @@ core:
     appearance:
       colored_header_label: 彩色导航栏
       colors_heading: 颜色
+      colors_primary_label: 主要颜色
+      colors_secondary_label: 次要颜色
       colors_text: 选择两种颜色作为论坛配色。第一种作为突出显示内容的颜色，第二种作为背景等元素的颜色。
       custom_footer_heading: 自定义页脚
       custom_footer_text: '=> core.ref.custom_footer_text'
@@ -45,8 +47,12 @@ core:
     dashboard:
       clear_cache_button: 清除缓存
       description: 论坛各项数据一览
+      io_error_message: '无法写入文件系统。 请检查您的文件系统权限，然后重试。 或者尝试从命令行运行。'
       title: 仪表盘
       tools_button: 工具
+    debug-warning:
+      detail: "当 <code>debug</code> 模式处于活动状态时，Flarum 将在每个请求上重建其 <code>JavaScript</code> 和 <code>CSS</code> ，并且还可能泄露其他信息，例如数据库秘钥，环境变量等。\n\n强烈建议在生产环境中禁用 <code>config.php</code> 文件中的 <code>debug</code>。 请参阅 <link>Flarum 文档</link> 了解更多信息。\n"
+      label: 调试模式激活
     edit_css:
       customize_text: '添加 Less/CSS 代码以自定义论坛外观，此设置将覆盖 Flarum <a>默认样式</a>。'
       submit_button: '=> core.ref.save_changes'
@@ -336,6 +342,8 @@ core:
       title: '=> core.ref.log_in'
       username_or_email_placeholder: 用户名或邮箱
     notifications:
+      delete_all_confirm: '您确定要删除所有通知吗？ 此操作不可逆'
+      delete_all_tooltip: 删除所有通知
       discussion_renamed_text: '{username} 更改了标题'
       empty_text: 没有新通知
       mark_all_as_read_tooltip: '=> core.ref.mark_all_as_read'
@@ -377,6 +385,7 @@ core:
       account_heading: 帐户设置
       change_email_button: '=> core.ref.change_email'
       change_password_button: '=> core.ref.change_password'
+      notification_checkbox_a11y_label_template: '通过 {method} 接收“{description}”通知'
       notifications_heading: '=> core.ref.notifications'
       notify_by_email_heading: '=> core.ref.email'
       notify_by_web_heading: 通知

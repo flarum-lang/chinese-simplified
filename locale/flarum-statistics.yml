@@ -10,7 +10,12 @@ flarum-statistics:
       last_12_months_label: 过去一年
       last_28_days_label: 过去二十八天
       last_7_days_label: 过去一周
+      loading: '=> core.ref.loading'
+      mini_heading: 论坛统计
       posts_heading: '=> core.ref.posts'
+      previous_28_days_label: '28 天前'
+      previous_7_days_label: '7 天前'
       today_label: 今日
       total_label: 累计
       users_heading: '=> core.ref.users'
+      view_full: 查看更多统计信息

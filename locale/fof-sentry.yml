@@ -6,6 +6,7 @@ fof-sentry:
   admin:
     settings:
       dsn_label: 'Sentry DSN'
+      environment_label: 'Sentry 环境'
       javascript_console_label: '捕捉 JavaScript 控制台'
       javascript_label: '提交 JavaScript 错误'
       javascript_trace_sample_rate: '前端性能监测率 (0 - 100)'

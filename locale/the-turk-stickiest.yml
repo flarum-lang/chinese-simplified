@@ -10,15 +10,18 @@ the-turk-stickiest:
     settings:
       badge_icon_label: 超级置顶图标
       badge_icon_text: '=> core.ref.icon_text'
+      display_tag_sticky_label: 在“所有讨论”列表中显示置顶主题标签
+      display_tag_sticky_text: 他们将被视为常规的主题，不会停留在顶部。
   forum:
     badge:
       sticky_tooltip: '=> the-turk-stickiest.ref.sticky'
       super_sticky_tooltip: '=> the-turk-stickiest.ref.super_sticky'
+      super_tag_sticky_tooltip: '=> the-turk-stickiest.ref.super_tag_sticky'
       tag_sticky_tooltip: '=> the-turk-stickiest.ref.tag_sticky'
     discussion_controls:
       all_sticky_button: 全部置顶
       common_sticky_button: 常规置顶
-      sticky_button: '=> the-turk-stickiest.ref.sticky'
+      sticky_button: '=> flarum-sticky.forum.discussion_controls.sticky_button'
       super_sticky_button: '=> the-turk-stickiest.ref.super_sticky'
       tag_sticky_button: '=> the-turk-stickiest.ref.tag_sticky'
       unsticky_button: '=> flarum-sticky.forum.discussion_controls.unsticky_button'
@@ -27,7 +30,18 @@ the-turk-stickiest:
       discussion_stickied_text: '=> flarum-sticky.forum.post_stream.discussion_stickied_text'
       discussion_super_stickied_text: '{username} 超级置顶了此帖'
       discussion_unstickied_text: '=> flarum-sticky.forum.post_stream.discussion_unstickied_text'
+    stickiest_modal:
+      sticky_label: '=> flarum-sticky.ref.sticky'
+      sticky_text: '如果未读，置顶主题将停留在“所有主题”列表的顶部。 查看属于主题的特定标签时，他们将始终保持在顶部。'
+      submit_button: '=> core.ref.save_changes'
+      super_sticky_label: '=> the-turk-stickiest.ref.super_sticky'
+      super_sticky_text: 无论如何，超级置顶的主题都会停留在最上面。
+      tag_sticky_label: '=> the-turk-stickiest.ref.tag_sticky'
+      tag_sticky_text: '默认情况下，置顶标签隐藏在“所有主题”列表中。 它们只会在查看特定标签时显示并固定在顶部，这是您将在此处选择的标签之一。 此选项可以与“超级置顶”结合使用。'
+      tags_label: '=> flarum-tags.ref.tags'
+      title: '置顶 {title}'
   ref:
     sticky: '=> flarum-sticky.ref.sticky'
     super_sticky: 超级置顶
+    super_tag_sticky: 超级置顶标签
     tag_sticky: 标签内置顶

@@ -11,6 +11,13 @@ fof-pretty-mail:
     nav:
       desc: '自定义 HTML 邮件模板。'
     settings:
+      attributes:
+        body: 包含电子邮件的实际内容
+        forumStyle: '包含<strong>整个论坛的 CSS</strong>'
+        link: 包含电子邮件中的链接
+        settings: 允许您与设置存储库界面交互
+        url: 'Flarum 的 <code>网址生成器</code>'
+      attributes_label: 可用属性
       confirm: 您确定要恢复邮件模板为
       default: 默认模板
       help: '请您注意，很多邮件服务商的邮件 仅支持内联样式 （http://t.cn/A6PYUQZF），考虑到不同服务商的兼容性，强烈建议您使用 表格布局+内联样式 代替 div 布局制作模板。您在模板中可以使用变量，"$body" 代表邮件正文，"$forumStyle" 代表<strong>论坛所有的 CSS 样式</strong>，"$url" 代表 Flarum 的 urlGenerator（URL 生成器），通过 「$url->to(''forum'')->base()」获取基本 URL，"$settings" 允许您与 SettingsRepositoryInterface 进行交互，"$link" 代表邮件中的链接。请您参考默认模板来了解如何使用以上每个变量。'
@@ -20,4 +27,5 @@ fof-pretty-mail:
       notifications: 通知模板
       postMentioned: 'Flarum/mentions 帖子被回复的通知邮件'
       reset: 恢复默认
+      template_help: 请参阅每个模板以了解如何使用每个属性。
       userMentioned: 'Flarum/mentions 用户被提及的通知邮件'

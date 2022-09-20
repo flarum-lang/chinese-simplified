@@ -23,6 +23,7 @@ flarum-subscriptions:
       new_post_text: '{username} 回复了你关注的主题'
     settings:
       follow_after_reply_label: 自动关注我回复的主题
+      notify_for_all_posts_label: 通知每个新帖子，而不仅仅是讨论中的最后一个
       notify_new_post_label: 我关注的主题有新回复
     sub_controls:
       follow_button: '=> flarum-subscriptions.ref.follow'

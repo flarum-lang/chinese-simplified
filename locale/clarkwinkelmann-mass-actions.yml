@@ -8,14 +8,24 @@ clarkwinkelmann-mass-actions:
       controls: 显示多选选择器
   forum:
     actions:
+      delete: 选择永久删除
+      deleteConfirmation: '{count, plural, one {您确定要永久删除所选的讨论吗？} other {确定要永久删除 # 个所选的主题吗？}}'
       hide: 删除所选
       lock: 锁定所选
       markAsRead: 标记为已读
       restore: 恢复已选
+      sticky: 置顶所选
       tags: 标签
       tags-add: '添加 <em>{tag}</em>'
       tags-edit: 编辑标签
       unlock: 解锁所选
+      unsticky: 取消置顶所选
     select:
       all: 全选
+      hidden: 软删除
+      locked: 锁定
       none: 取消全选
+      read: 已读
+      unlocked: 解锁
+      unread: 未读
+      visible: 未删除

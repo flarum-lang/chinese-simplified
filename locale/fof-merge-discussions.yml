@@ -7,7 +7,7 @@ fof-merge-discussions:
     permissions:
       merge_discussions_label: 合并主题
     settings:
-      search_result_help: '`合并主题` 搜索框数量。默认 4'
+      search_result_help: '`合并主题` 搜索框数量。'
       search_result_label: 合并主题搜索上限
   api:
     error:

@@ -6,6 +6,9 @@ flarum-likes:
   admin:
     permissions:
       like_posts_label: 点赞
+    settings:
+      like_own_posts_help: '启用后，在获得许可的情况下，用户可以“喜欢”他们在论坛上的帖子。 要防止用户在自己的帖子上点“赞”，请禁用此设置。'
+      like_own_posts_label: 用户可以喜欢他们自己的帖子
   forum:
     notifications:
       others_text: '=> core.ref.some_others'

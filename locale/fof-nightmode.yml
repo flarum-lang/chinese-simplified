@@ -2,6 +2,13 @@
 # Use https://weblate.rob006.net/projects/flarum/fof-nightmode/zh_Hans/ for translation.
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
+fof-default-user-preferences:
+  admin:
+    settings:
+      fofNightMode: 'FoF Nightmode：使用默认主题颜色'
+      fofNightMode-help: '0 - 自动，1 - 日间模式，2 - 夜间模式'
+      fofNightMode_perDevice: 'FoF 夜间模式：按设备设置使用'
+      fofNightMode_perDevice-help: 为每台设备首选项设置为夜间模式
 fof-nightmode:
   admin:
     settings:

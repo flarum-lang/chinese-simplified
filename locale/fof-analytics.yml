@@ -19,7 +19,7 @@ fof-analytics:
         piwikTrackAccounts: 追踪独立访客账户
         piwikTrackSubdomain: '追踪所有 Flarum 子域访客'
         piwikUrl: 'Matomo 域名或 URL'
-        statusGoogle: '启用 Google 分析'
+        statusGoogle: '启用 Google 分析 (UA/GA4)'
         statusPiwik: '启用 Matomo'
       placeholder:
         piwikAuthToken: "填入 token 以在后台管理菜单启用 Matomo 统计部件。\n你可以在 设置 > 个人 > API 验证 Token 中找到。\n"

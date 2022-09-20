@@ -10,10 +10,13 @@ nearata-embed-video:
         hotkey: 热键
         lang: 播放器语言
         logo: '标志 URL'
-        quality_switching: 允许切换视频质量
+        modal_enabled: '启用 Modal'
+        modal_enabled_help: '启用 Modal 或只是在作曲家中插入 BBCode。'
+        quality_switching: 切换视频质量
         theme: 主题色
       permissions:
         can_create_video_player: 允许创建视频播放器
+        can_view_video_player: 可以查看视频播放器
       video_types:
         dash: DASH（自适应流媒体传输）
         flv: FLV
@@ -24,6 +27,7 @@ nearata-embed-video:
     button_tooltip_title: 嵌入视频
     modal:
       live_mode: 直播模式
+      quality_switching_tutorial: 视频质量切换教程
       submit_button: 保存
       title: 嵌入视频
       video_type_label: 视频类型

@@ -6,8 +6,14 @@ ianm-syndication:
   admin:
     settings:
       entries-count: 订阅信息流条目数量是多少？
+      forum-icons:
+        help: 在所有主题、标签和主题中显示图标，以便轻松访问Feed(s)。
+        label: '在论坛上显示 Atom/RSS feed链接'
+      forum-link-format:
+        help: '选择在论坛上显示链接时应使用哪种格式（Atom 或 RSS）。'
+        label: 论坛Feed格式
       full-text:
-        help: 如果禁用此项，订阅信息流将仅展示摘要，用户需要访问论坛查看全部内容。
+        help: '如果禁用此项，订阅信息流将仅展示摘要，用户需要访问论坛查看全部内容。我建议保持此选项处于活动状态，以尊重从 RSS 聚合器关注论坛的人（如果有的话）。'
         label: 全文输出
         recommendation: '建议开启此选项以尊重使用 RSS 聚合器的用户。'
       html:

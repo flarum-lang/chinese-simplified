@@ -51,7 +51,7 @@ core:
       title: 仪表盘
       tools_button: 工具
     debug-warning:
-      detail: "当 <code>debug</code> 模式处于活动状态时，Flarum 将在每个请求上重建其 <code>JavaScript</code> 和 <code>CSS</code> ，并且还可能泄露其他信息，例如数据库秘钥，环境变量等。\n\n强烈建议在生产环境中禁用 <code>config.php</code> 文件中的 <code>debug</code>。 请参阅 <link>Flarum 文档</link> 了解更多信息。\n"
+      detail: "当 <code>debug</code> 模式处于活动状态时，Flarum 将在每个请求上重建其 <code>JavaScript</code> 和 <code>CSS</code> 资产，并且还可能泄露其他信息，例如数据库秘密，环境变量等。\n\n强烈建议在生产环境中禁用 <code>config.php</code> 文件中的 <code>debug</code>。 请参阅 <link>Flarum 文档</link> 了解更多信息。\n"
       label: 调试模式激活
     edit_css:
       customize_text: '添加 Less/CSS 代码以自定义论坛外观，此设置将覆盖 Flarum <a>默认样式</a>。'

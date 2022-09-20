@@ -23,6 +23,7 @@ CHANGELOG
 * [`blomstra/s3-assets`](https://extiverse.com/extension/blomstra/s3-assets)
 * [`blomstra/secondary-tags-toggler`](https://github.com/blomstra/flarum-ext-secondary-tags-toggler)
 * [`blomstra/sort-order-toggle`](https://github.com/blomstra/flarum-ext-sort-order-toggle)
+* [`blomstra/trello`](https://github.com/blomstra/flarum-ext-trello)
 * [`blomstra/user-filter`](https://github.com/blomstra/flarum-ext-user-filter)
 * [`blomstra/usercard-stats`](https://github.com/blomstra/flarum-ext-usercard-stats)
 * [`blomstra/welcome-login`](https://github.com/blomstra/flarum-ext-welcome-login)

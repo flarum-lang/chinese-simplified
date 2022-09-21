@@ -5,12 +5,12 @@ CHANGELOG
 1.2.0 (XXXX-XX-XX)
 ------------------
 
-**一般变化**:
+**例行更新**:
 
-* 更新了Flarum核心翻译.
+* 更新 Flarum 核心翻译.
 
 
-**添加了对最新扩展的支持**:
+**新增扩展程序翻译**:
 
 * [`akr/chevereto`](https://github.com/AKR-Developers/flarum-chevereto)
 * [`annonny/flarum-dice`](https://github.com/mizhiyugan529/flarum-dice)
@@ -47,7 +47,7 @@ CHANGELOG
 * [`webbinaro/flarum-affiliator`](https://github.com/eddiewebb/flarum-affiliator)
 
 
-**更新了扩展的翻译**:
+**更新扩展程序翻译**:
 
 * [`afrux/forum-widgets-core`](https://github.com/afrux/forum-widgets-core)
 * [`antoinefr/flarum-ext-money`](https://github.com/AntoineFr/flarum-ext-money)
@@ -103,6 +103,6 @@ CHANGELOG
 * [`zerosonesfun/expired-posts`](https://github.com/zerosonesfun/expired-posts)
 
 
-所有更改: [v1.1.1.1220...v1.2.0](https://github.com/flarum-lang/chinese-simplified/compare/v1.1.1.1220...v1.2.0).
+全部变化：[v1.1.1.1220...v1.2.0](https://github.com/flarum-lang/chinese-simplified/compare/v1.1.1.1220...v1.2.0)
 
 

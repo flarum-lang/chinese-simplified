@@ -15,6 +15,7 @@ blomstra-flag-duplicates:
       reason_duplicate_label: 主题重复
       reason_duplicate_text: 主题撞车。
     post_stream:
+      deleted_discussion: '[已删除讨论]'
       flagged_duplicate_text: '此主题疑似撞车 {duplicate}，管理员查证中。'
       not_found: 没有找到相关内容
 flarum-flags:

@@ -9,9 +9,9 @@ blessing-oauth-client:
         app-id: 'OAuth 客户端 ID'
         app-secret: 'OAuth 客户端 Secret'
         base-url: 'Blessing Skin 根 URL'
-        button-icon: 登录按钮的图标
-        button-title: 登录按钮的文本
+        button-icon: 登录按钮图标
+        button-title: 登录按钮文案
         button-title-placeholder: '=> blessing-oauth-client.api.default-login-button-title'
-      title: 'Blessing Skin 登录'
+      title: 'Blessing Skin 账号登录'
   api:
-    default-login-button-title: '使用 Blessing Skin 登录'
+    default-login-button-title: 'Blessing Skin 账号登录'

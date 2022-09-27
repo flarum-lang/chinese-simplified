@@ -5,10 +5,10 @@
 blomstra-s3-assets:
   admin:
     settings:
-      aws-section: 'AWS S3 和 S3 兼容的存储桶都需要这些设置'
-      configured_by_environment: 您的存储桶设置已预先配置，此处没有可查看的内容。
-      s3-compatible-section: '只有与 S3 兼容的存储桶才需要这些设置'
-      s3-compatible-section-help: '如果使用 AWS S3，这些设置请留空'
+      aws-section: '以下设置可用于 AWS S3 和 S3 兼容存储桶'
+      configured_by_environment: 当前环境已存在存储桶配置，暂无可设置的内容。
+      s3-compatible-section: '以下设置仅用于 S3 兼容存储桶'
+      s3-compatible-section-help: '以下设置在使用 AWS S3 时请留空'
       s3key:
         help: 帮助
         label: Key

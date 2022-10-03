@@ -5,15 +5,15 @@
 clarkwinkelmann-discussion-bookmarks:
   admin:
     settings:
-      independentButton: 在主题侧边栏中显示书签按钮而不是下拉菜单
+      independentButton: 主题页侧栏单独显示书签按钮
   forum:
-    badge: 已收藏
+    badge: 书签夹
     dropdownButton:
-      add: 添加到书签
-      remove: 从书签中移除
+      add: 添加书签
+      remove: 移除书签
     independentButton:
-      add: 书签
-      remove: 已收藏
+      add: 添加书签
+      remove: 已添加书签
     page:
-      link: 加入书签的主题
-      title: 加入书签的主题
+      link: 主题书签夹
+      title: 主题书签夹

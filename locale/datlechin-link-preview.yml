@@ -5,10 +5,10 @@
 datlechin-link-preview:
   admin:
     settings:
-      blacklist_help: 输入禁止预览的域名或网址，以逗号分隔
+      blacklist_help: 输入禁止预览的域名或链接，以逗号分隔。
       blacklist_label: 排除列表
-      blacklist_placeholder: '例如 facebook.com，https://domain.com/path'
-      convert_media_urls_help: '如果启用，这会将所有媒体 URL 转换为链接预览。'
-      convert_media_urls_label: 转换媒体URLs地址
+      blacklist_placeholder: '如「baidu.com,https://pornhub.com/categories」'
+      convert_media_urls_help: 启用以转换所有媒体链接为预览帖。
+      convert_media_urls_label: 预览媒体链接
   forum:
-    site_cannot_be_reached: 此网站无法打开。
+    site_cannot_be_reached: 无法访问此站点。

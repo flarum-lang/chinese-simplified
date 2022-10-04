@@ -16,7 +16,7 @@ fof-subscribed:
     body:
       newDiscussion: "{recipient_display_name}，你好！\n\n{actor_display_name} 发布了一个主题：{discussion_title}\n\n点击下方链接查看主题帖：\n{discussion_url}\n\n---\n\n{post_content}\n"
       newUser: "{recipient_display_name}，你好！\n\n{actor_display_name} 刚刚加入 {forum_url}。\n\n点击下方链接查看用户资料：\n{user_url}\n"
-      postCreated: "{recipient_display_name}，你好！\n\n{actor_display_name} 刚刚发表了新的帖子在「{discussion_title}」。\n\n点击下方链接查看详细内容：\n{post_url}\n\n---\n\n{post_content}\n"
+      postCreated: "{recipient_display_name}，你好！\n\n{actor_display_name} 刚刚发表了新帖于「{discussion_title}」。\n\n点击下方链接查看详细内容：\n{post_url}\n\n---\n\n{post_content}\n"
       postFlagged: "{recipient_display_name}，你好！\n\n{actor_display_name} 刚刚举报了一个帖子在「{discussion_title}」\n\n点击下方链接查看详细内容：\n{post_url}\n"
       postUnapproved: "{recipient_display_name}，你好！\n\n{actor_display_name} 发表于 {discussion_title} 的回复需要人工审核。\n\n点击下方链接查看回复内容：\n{post_url}\n\n---\n\n{post_content}\n"
     subject:

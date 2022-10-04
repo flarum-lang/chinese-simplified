@@ -12,11 +12,11 @@ fof-pretty-mail:
       desc: '自定义 HTML 邮件模板。'
     settings:
       attributes:
-        body: 包含电子邮件的实际内容
-        forumStyle: '包含<strong>整个论坛的 CSS</strong>'
-        link: 包含电子邮件中的链接
-        settings: 允许您与设置存储库界面交互
-        url: 'Flarum 的 <code>网址生成器</code>'
+        body: 包含邮件内容
+        forumStyle: '包含<strong>所有论坛 CSS</strong>'
+        link: 包含邮件中的链接
+        settings: 允许与设置存储库界面交互
+        url: 'Flarum <code>链接生成器</code>'
       attributes_label: 可用属性
       confirm: 您确定要恢复邮件模板为
       default: 默认模板
@@ -27,5 +27,5 @@ fof-pretty-mail:
       notifications: 通知模板
       postMentioned: 'Flarum/mentions 帖子被回复的通知邮件'
       reset: 恢复默认
-      template_help: 请参阅每个模板以了解如何使用每个属性。
+      template_help: 请参阅邮件模板以了解属性用法。
       userMentioned: 'Flarum/mentions 用户被提及的通知邮件'

@@ -5,10 +5,10 @@
 fof-default-user-preferences:
   admin:
     settings:
-      fofNightMode: 'FoF Nightmode：使用默认主题颜色'
-      fofNightMode-help: '0 - 自动，1 - 日间模式，2 - 夜间模式'
-      fofNightMode_perDevice: 'FoF 夜间模式：按设备设置使用'
-      fofNightMode_perDevice-help: 为每台设备首选项设置为夜间模式
+      fofNightMode: 'FoF Nightmode：默认模式'
+      fofNightMode-help: '0 - 跟随系统，1 - 日间模式，2 - 夜间模式'
+      fofNightMode_perDevice: 'FoF Nightmode：按设备设置'
+      fofNightMode_perDevice-help: 为每台设备配置夜间模式
 fof-nightmode:
   admin:
     settings:

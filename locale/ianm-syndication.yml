@@ -7,13 +7,13 @@ ianm-syndication:
     settings:
       entries-count: 订阅信息流条目数量是多少？
       forum-icons:
-        help: 在所有主题、标签和主题中显示图标，以便轻松访问Feed(s)。
-        label: '在论坛上显示 Atom/RSS feed链接'
+        help: '在所有主题、标签中显示图标，以便轻松查看 Feed(s)。'
+        label: '在论坛上显示 Atom/RSS 订阅链接'
       forum-link-format:
-        help: '选择在论坛上显示链接时应使用哪种格式（Atom 或 RSS）。'
-        label: 论坛Feed格式
+        help: '选择订阅源格式（Atom 或 RSS）。'
+        label: '论坛 Feed 格式'
       full-text:
-        help: '如果禁用此项，订阅信息流将仅展示摘要，用户需要访问论坛查看全部内容。我建议保持此选项处于活动状态，以尊重从 RSS 聚合器关注论坛的人（如果有的话）。'
+        help: '如果禁用此项，订阅信息流将仅展示摘要，查看完整内容需要转至论坛。建议开启此项以尊重 RSS 用户。'
         label: 全文输出
         recommendation: '建议开启此选项以尊重使用 RSS 聚合器的用户。'
       html:
@@ -28,7 +28,7 @@ ianm-syndication:
       tag_activity: '{tag} 标签活动'
       tag_new_discussions: '{tag} 标签新帖'
     discussion:
-      feed_link: Feed链接
+      feed_link: 'Feed 订阅链接'
     feeds:
       titles:
         discussion_subtitle: 这篇帖子的最新回复

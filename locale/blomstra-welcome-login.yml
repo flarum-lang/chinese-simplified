@@ -6,5 +6,5 @@ blomstra-welcome-login:
   admin:
     settings:
       welcome-only-mobile:
-        help: '默认情况下，额外的登录按钮会显示给所有人（如果他们没有登录）。 启用此选项以仅在移动设备上显示其他注册和登录按钮。'
-        label: 只在手机上显示
+        help: 在没有登录的情况下，本扩展的注册登录按钮会在所有终端显示。启用此项以仅在移动设备上显示。
+        label: 仅在移动设备显示

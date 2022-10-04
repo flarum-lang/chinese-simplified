@@ -18,7 +18,7 @@ xelson-chat:
     settings:
       charlimit: 最大消息字符数
       display:
-        censor: 对未经授权的用户进行信息审查
+        censor: 审查为授权用户的消息
         minimize: 最小化
         title: 显示
       floodgate:
@@ -49,11 +49,11 @@ xelson-chat:
           users:
             edit: 选择或编辑用户
         moderator:
-          got: '你已成为「{chatname}」的审阅人！'
-          lost: '你已被取消 {chatname} 的管理员身份。'
+          got: '你已成为「{chatname}」的管理员！'
+          lost: '「{chatname}」已取消你的管理员身份。'
         save_button: '=> core.ref.save_changes'
         search:
-          failed: 找不到用户
+          failed: 找不到此用户
           invited: 已邀请
           placeholder: 搜索用户
         title: 聊天设置
@@ -62,12 +62,12 @@ xelson-chat:
       list:
         add_modal:
           alerts:
-            exists: 已存在一个与此用户的私人会话！
+            exists: 已存在与此用户的私人会话！
           channel: 频道
           chat: 聊天
           create:
-            channel: 发起新频道
-            chat: 发起新聊天
+            channel: 创建频道
+            chat: 发起聊天
           form:
             color:
               label: '=> xelson-chat.forum.chat.edit_modal.form.color.label'
@@ -81,16 +81,16 @@ xelson-chat:
               validator: '至少 1 字符'
             users: 已选择用户
           search:
-            failed: 找不到用户
+            failed: 找不到此用户
             invited: 已邀请
-            more_results: '显示更多「{more_results}」的结果……'
+            more_results: '显示「{more_results}」的更多结果……'
             placeholder: 搜索用户
           title: 选择用户
-        pin: 固定
+        pin: 置顶
         placeholder: 筛选会话
         preview:
           empty: 暂无消息
-        unpin: 取消固定
+        unpin: 取消置顶
       message:
         actions:
           hide: 隐藏
@@ -108,12 +108,12 @@ xelson-chat:
           icon:
             edited: '{editorname} 将聊天图标 {old} 修改为 {new}'
           pm:
-            created: '{creatorname} 和 {username} 创建聊天'
+            created: '{creatorname} 创建了与 {username} 的会话'
           self:
             entered: '{username} 进入聊天'
             leaved: '{username} 离开了聊天'
           title:
-            edited: '{editorname} 将聊天名称 {old} 修改为 {new}'
+            edited: '{editorname} 将聊天 {old} 重命名为 {new}'
           users:
             invited: '{editorname} 邀请 {usernames}'
             invited_kicked: '{editorname} 邀请 {invitednames} 并移出 {kickednames}'
@@ -123,22 +123,22 @@ xelson-chat:
           event: 事件
           url: URL
         you: 你
-      moder: 审阅人
+      moder: 管理员
       placeholder: 输入消息...
       rejoin: 重新加入
       welcome:
         header: '欢迎来到 Neon 聊天室！'
-        subheader: 请选择左边的聊天以进行会话
+        subheader: 选择一个聊天以开始会话
     errors:
-      chatdenied: 你的用户组无消息发送权限
+      chatdenied: 你的用户组无权限发送消息
       removed: 你被移出聊天
       unauthenticated: 此聊天仅限注册用户加入
     index:
       chat_link: 聊天
-    pusher_not_found: '实时聊天需要 Pusher 或 Websockets。'
+    pusher_not_found: '即时通讯需要 Pusher 或 Websockets。'
     toolbar:
       chat:
-        settings: 聊天室设置
+        settings: 聊天设置
       disable_notifications: 关闭通知
       disable_sounds: 关闭声音
       enable_notifications: 开启通知

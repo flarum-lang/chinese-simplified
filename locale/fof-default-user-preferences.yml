@@ -5,9 +5,9 @@
 fof-default-user-preferences:
   admin:
     settings:
-      followAfterReply: 回复后关注
-      followAfterReply-help: 启用后，新用户将自动关注他们回复或评论的讨论。
-      postMentioned: 发布提及的电子邮件
-      postMentioned-help: 启用后，新用户将在提及其中一个帖子时自动选择接收电子邮件通知。
-      userMentioned: 用户提到的电子邮件
-      userMentioned-help: 启用后，新用户在被@提及时将自动选择接收电子邮件通知。
+      followAfterReply: 回复并关注
+      followAfterReply-help: 启用后，新用户将自动关注回复或评论的主题帖。
+      postMentioned: 回复邮件通知
+      postMentioned-help: 启用后，新用户将默认开启「有人回复了我」邮件通知。
+      userMentioned: 提及邮件通知
+      userMentioned-help: 启用后，新用户将默认开启「有人提到了我」邮件通知。

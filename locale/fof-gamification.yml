@@ -18,14 +18,14 @@ fof-gamification:
         converting: '原生 LIkes 插件的点赞数据正在同步中，请等待几分钟后刷新页面查看同步结果。（同步可能需要一段时间，具体取决于您服务器性能）'
         help: '同步 Flarum 论坛原生 Likes 插件产生的点赞数据，并计算所有当前讨论的热度。'
       groups:
-        add: 添加新规则
+        add: 添加规则
         column:
           group: 用户组
-          maxPoints: 最高点数（包含）
-          minPoints: 最低点数（包含）
+          maxPoints: 最高点数（含）
+          minPoints: 最低点数（含）
         delete: 删除规则
-        help: "当用户的点数发生变化时，将根据需要自动添加或删除所选的组。如果您对配置进行了更改，您应该运行该 <code>php flarum fof:gamification:assign-groups</code>命令来更新现有用户。如果您希望删除规则并从组中删除所有用户，请将最小值和最大值都设置为空字符串，保存设置并运行命令行命令。最后，您可以从设置中完全删除规则。\n"
-        title: 自动分配组
+        help: "当用户的点数发生变化时，将自动添加或删除组。修改设置后，请运行 <code>php flarum fof:gamification:assign-groups</code> 命令更新现有用户。如果您希望删除规则并从组中删除所有用户，请将最低最高点数均设为空，保存设置并执行命令后，在设置中删除规则。\n"
+        title: 自动分配用户组
       rankings:
         blocked:
           help: 以下用户不会出现在排行榜。请用半角逗号+空格分隔用户名。

@@ -12,15 +12,15 @@ flarum-suspend:
       body: "{recipient_display_name} 你好，\n\n你的账号因以下原因已被封禁：\n\n---\n{suspension_message}\n---\n"
       subject: 你的账号已被封禁
     unsuspended:
-      body: "{recipient_display_name} 你好，\n\n你的账号已被解封。\n\n{forum_url}\n"
-      subject: 你的账号已被解封
+      body: "{recipient_display_name} 你好，\n\n你的账号已解封。\n\n{forum_url}\n"
+      subject: 你的账号已解封
   forum:
     notifications:
       user_suspended_indefinite_text: 你已被永久封禁
       user_suspended_text: '你已被封禁 {timeReadable}'
-      user_unsuspended_text: 你已被解封
+      user_unsuspended_text: 你已解封
     suspend_user:
-      display_message: 向用户展示封禁信息
+      display_message: 封禁原因（用户联）
       indefinitely_label: 永久封禁
       limited_time_days_text: ' 天'
       limited_time_label: 自定义封禁时间
@@ -33,7 +33,7 @@ flarum-suspend:
     suspension_info:
       dismiss_button: 申诉
       indefinite: 封禁期限：永久
-      limited: '封禁期限至 {date}'
+      limited: '封禁期至 {date}'
       title: 此账号已被封禁
     user_badge:
       suspended_tooltip: 封禁中

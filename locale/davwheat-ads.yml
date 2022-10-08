@@ -9,11 +9,11 @@ davwheat:
         bypassAds: 跳过所有广告
       settings:
         add_script: 添加
-        admin_bypass_warning: "因 Flarum 权限系统限制，管理组成员将无法看到任何广告。\n要测试广告，请打开浏览器无痕窗口访问 Flarum\n"
+        admin_bypass_warning: "受 Flarum 权限系统限制，管理员无法看到任何广告。\n要测试广告，请打开浏览器无痕窗口访问 Flarum。\n"
         alert:
-          code_has_script: '一个或多个广告单元含有 script 标签，请移除后重试。'
+          code_has_script: '一个或多个广告单元中含有 script 标签，请移除后重试。'
           fix_errors: 请在保存前修正错误
-        allow_after_placeholder: 在回复文本编辑器下方显示帖子流广告
+        allow_after_placeholder: 在主题页文本编辑器下方显示广告
         between_posts_gap: 帖子流广告间隔楼层数
         code_input: 'HTML 代码'
         code_input_disabled: '启用此广告单元以编辑 HTML 代码'
@@ -34,7 +34,7 @@ davwheat:
       locations:
         between_posts: 帖子流
         discussion_header: 主题帖页面（标题横幅下方）
-        discussion_sidebar: 主题页面侧边栏【仅桌面端】
+        discussion_sidebar: 主题页面侧边栏（仅桌面端）
         footer: 网站页脚
         header: 首页欢迎横幅下方
-        sidebar: 首页侧边栏【仅桌面端】
+        sidebar: 首页侧边栏（仅桌面端）

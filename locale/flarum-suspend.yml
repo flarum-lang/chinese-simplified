@@ -31,7 +31,7 @@ flarum-suspend:
       submit_button: '=> core.ref.save_changes'
       title: '封禁 {username}'
     suspension_info:
-      dismiss_button: 申诉
+      dismiss_button: 我知道了
       indefinite: 封禁期限：永久
       limited: '封禁期至 {date}'
       title: 此账号已被封禁

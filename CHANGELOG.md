@@ -2,6 +2,17 @@ CHANGELOG
 =========
 
 
+1.2.1 (XXXX-XX-XX)
+------------------
+
+**更新扩展程序翻译**:
+
+* [`flarum/suspend`](https://github.com/flarum/suspend)
+
+
+全部变化：[v1.2.0...v1.2.1](https://github.com/flarum-lang/chinese-simplified/compare/v1.2.0...v1.2.1)
+
+
 1.2.0 (2022-10-08)
 ------------------
 

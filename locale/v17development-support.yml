@@ -146,6 +146,8 @@ v17development-flarum-support:
         not_allowed: 您当前无法创建新客服工单
         private_support: 若需要一对一支持，您可以使用此表单在我们的客服平台上创建一个新的工单。对于非一对一支持，请参见<a>我们的公共论坛</a>。
         title: 发表新工单
+      convert_to_discussion:
+        button: 转换为主题帖
       convert_to_ticket:
         button: 转为工单
         confirm: 确定要将此主题帖转为工单吗？

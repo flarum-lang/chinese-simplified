@@ -8,6 +8,7 @@ CHANGELOG
 **更新扩展程序翻译**:
 
 * [`flarum/suspend`](https://github.com/flarum/suspend)
+* [`v17development/flarum-support`](https://extiverse.com/extension/v17development/flarum-support)
 
 
 全部变化：[v1.2.0...v1.2.1](https://github.com/flarum-lang/chinese-simplified/compare/v1.2.0...v1.2.1)

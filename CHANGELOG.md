@@ -9,6 +9,7 @@ CHANGELOG
 
 * [`flarum/statistics`](https://github.com/flarum/statistics)
 * [`flarum/suspend`](https://github.com/flarum/suspend)
+* [`fof/gamification`](https://github.com/FriendsOfFlarum/gamification)
 * [`v17development/flarum-support`](https://extiverse.com/extension/v17development/flarum-support)
 
 

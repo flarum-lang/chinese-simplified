@@ -7,6 +7,7 @@ CHANGELOG
 
 **更新扩展程序翻译**:
 
+* [`flarum/statistics`](https://github.com/flarum/statistics)
 * [`flarum/suspend`](https://github.com/flarum/suspend)
 * [`v17development/flarum-support`](https://extiverse.com/extension/v17development/flarum-support)
 

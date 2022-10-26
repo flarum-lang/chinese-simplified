@@ -5,29 +5,29 @@
 flarum-statistics:
   admin:
     date_selection_modal:
-      description: "选择一个自定义日期范围来显示统计信息. \n在有大量活动的论坛上加载数据可能需要几分钟.\n"
-      end_date: '结束日期 (广泛)'
+      description: "自定义一段时间内的论坛数据统计。\n数据分析耗时会根据论坛活跃度有所浮动。\n"
+      end_date: 结束日期（含）
       errors:
-        end_before_start: 结束日期必须晚于开始日期.
-      start_date: '开始日期 (广泛)'
-      submit_button: 确认日期范围
-      title: 选择自定义日期范围
+        end_before_start: 结束日期必须晚于开始日期。
+      start_date: 开始日期（含）
+      submit_button: 确定
+      title: 自定义日期范围
     statistics:
       active_users_text: '{count} 活跃用户'
-      current_period: 本期
-      custom_label: 选择自定义范围...
-      custom_label_specified: '{fromDate} 到 {toDate}'
+      current_period: 当前周期
+      custom_label: 自定义范围……
+      custom_label_specified: '{fromDate} 至 {toDate}'
       discussions_heading: '=> core.ref.discussions'
       last_12_months_label: 过去一年
       last_28_days_label: 过去二十八天
       last_7_days_label: 过去一周
       loading: '=> core.ref.loading'
       mini_heading: 统计数据
-      no_data: 这个日期范围内没有可用数据.
+      no_data: 当前时间段没有可用于分析的数据。
       posts_heading: '=> core.ref.posts'
       previous_28_days_label: 更早二十八天
       previous_7_days_label: 更早一周
-      previous_period: 上一期
+      previous_period: 上一周期
       today_label: 今日
       total_label: 累计
       users_heading: '=> core.ref.users'

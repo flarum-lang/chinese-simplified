@@ -47,7 +47,7 @@ fof-gamification:
         title: 头衔
       save_settings: 保存设置
       votes:
-        allow_self_votes: 用户可以在自己的帖子中进行投票
+        allow_self_votes: 允许用户投票自己的帖子
         alternate_layout: '使用仿 Reddit 投票布局（全部主题列表）'
         alternate_post_layout: '使用仿 Reddit 投票布局（帖子页面）'
         auto_upvote: 当帖子发布时自动赞同

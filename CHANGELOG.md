@@ -22,6 +22,7 @@ CHANGELOG
 * [`nearata/flarum-ext-embed-video`](https://github.com/Nearata/flarum-ext-embed-video)
 * [`nearata/flarum-ext-twofactor`](https://github.com/Nearata/flarum-ext-twofactor)
 * [`v17development/flarum-support`](https://extiverse.com/extension/v17development/flarum-support)
+* [`v17development/flarum-user-badges`](https://github.com/v17development/flarum-user-badges)
 
 
 全部变化：[v1.2.0...v1.2.1](https://github.com/flarum-lang/chinese-simplified/compare/v1.2.0...v1.2.1)

@@ -32,7 +32,7 @@ v17development-flarum-badges:
       is_image_description: 使用图片作为默认徽章
       label_color: 文本颜色
       name: 徽章名
-      visible: 可见性
+      visible: 启用此徽章
       visible_description: 启用此徽章。禁用时，此徽章将不可见。
     badge_category:
       blockview: 卡片视图

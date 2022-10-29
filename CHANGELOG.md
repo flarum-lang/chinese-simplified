@@ -7,9 +7,18 @@ CHANGELOG
 
 **更新扩展程序翻译**:
 
+* [`blomstra/realtime`](https://extiverse.com/extension/blomstra/realtime)
+* [`blomstra/trello`](https://github.com/blomstra/flarum-ext-trello)
+* [`clarkwinkelmann/flarum-ext-composer-page`](https://github.com/clarkwinkelmann/flarum-ext-composer-page)
+* [`clarkwinkelmann/flarum-ext-default-image-alt`](https://github.com/clarkwinkelmann/flarum-ext-default-image-alt)
+* [`clarkwinkelmann/flarum-ext-discussion-open-position`](https://github.com/clarkwinkelmann/flarum-ext-discussion-open-position)
+* [`datlechin/flarum-birthdays`](https://github.com/datlechin/flarum-birthdays)
 * [`flarum/statistics`](https://github.com/flarum/statistics)
 * [`flarum/suspend`](https://github.com/flarum/suspend)
 * [`fof/gamification`](https://github.com/FriendsOfFlarum/gamification)
+* [`jslirola/flarum-ext-login2seeplus`](https://github.com/jslirola/flarum-ext-login2seeplus)
+* [`nearata/flarum-ext-embed-video`](https://github.com/Nearata/flarum-ext-embed-video)
+* [`nearata/flarum-ext-twofactor`](https://github.com/Nearata/flarum-ext-twofactor)
 * [`v17development/flarum-support`](https://extiverse.com/extension/v17development/flarum-support)
 
 

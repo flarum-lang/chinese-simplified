@@ -3,5 +3,12 @@
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
 datlechin-copy-links:
+  forum:
+    discussion_controls:
+      copy_link_button: '=> datlechin-copy-links.lib.copy_link_button'
+    post_controls:
+      copy_link_button: '=> datlechin-copy-links.lib.copy_link_button'
+    user_controls:
+      copy_link_button: '=> datlechin-copy-links.lib.copy_link_button'
   lib:
     copy_link_button: 复制链接

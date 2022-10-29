@@ -32,14 +32,38 @@ blomstra-trello:
         boards: 看板设置
         general: 一般
         labels: 标题设置
+      mapping:
+        add_new: 添加映射
+        modal_title: 新建标签映射
+        no_mappings_for_board: 此看板尚未建立标签映射
+      mappings_label: '论坛标签到 Trello 标签映射'
+      member_id_help: '输入用于获取机构看板的 Trello 成员 ID（https://trello.com/你的-trello-面板）'
+      member_id_label: '成员 ID'
+      no_available_boards_label: 无可用看板
+      no_label_name: 无标签名
+      no_selected_boards_label: 请选择看板
+      save: 保存设置
+      selected_boards_label: 已选择看板
+      tag: 标签
+      unmapped_warning_help: '如果有论坛标签和 Trello 标签未建立映射关系，在发送主题帖到 Trello 时显示警告'
+      unmapped_warning_label: 警示未映射的标签
   forum:
+    badges:
+      trello:
+        tooltip: '已在 Trello 中存在'
     controls:
       send_to_trello_button: '发送到 Trello'
       view_on_trello_button: '查看 Trello 卡片'
     modals:
       fields:
         board: 选择一个看板
+        lane: '选择 Trello lane'
         member: 选择一个成员
-        member_selected: '已选择 {count, plural, one {#}, other {#}} 位成员'
+        member_selected: '已选择 {count, plural, one {# 位成员} other {# 位成员}}'
+      no_available_board_lanes: '无可用看板 lanes'
       no_available_board_members: 无看板成员
       no_available_boards_label: 无看板
+      no_mappings_for_board: 所选的看板没有与论坛便签建立映射关系
+      title: '发送到 Trello'
+  lib:
+    original_post: 原始帖子

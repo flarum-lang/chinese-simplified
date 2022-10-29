@@ -7,20 +7,20 @@ flamarkt-taxonomies:
     edit-taxonomy:
       field:
         allowCustomValues: 允许随机变量名
-        countRequired: 字段数量限制
-        countRequiredDescription: "设置每个主题帖需添加的字段数量\n"
-        customValueValidation: 随机变量命名方式确认
+        countRequired: 条目数量限制
+        countRequiredDescription: "设置每个主题帖允许添加的条目数量\n"
+        customValueValidation: 随机变量名校验
         showFilter: 在首页显示分类筛选按钮
-        showLabel: 分类信息标签与词条一起显示
+        showLabel: 分类标签与条目一起显示
         type: 类别
-        typeDescription: "分类信息可以被用在论坛的多个方面。创建分类信息的后类别则无法改变。同样命名的分类信息可以应用于不同类别。\n"
+        typeDescription: "分类信息可以被用在论坛的多个方面。创建分类信息后，类别无法改变。你可以创建同名分类名和英文短语应用到不同的类别。\n"
       title:
         edit: 编辑分类
         new: 创建分类
     edit-term:
       title:
-        edit: 编辑字段
-        new: 创建分类信息的字段
+        edit: 编辑条目
+        new: 创建分类条目
   lib:
     modal:
       custom: '选择 {value}'

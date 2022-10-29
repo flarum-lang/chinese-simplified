@@ -108,6 +108,7 @@ v17development-flarum-support:
         change_icon: 更换图标
         edit_description: 编辑描述
         new_article: 撰写文章
+        recount_articles: 重新计算文章
         rename_category: 重命名分类目录
     reopen: 重新打开
     return_to_home: 返回知识库首页
@@ -148,6 +149,8 @@ v17development-flarum-support:
         title: 发表新工单
       convert_to_discussion:
         button: 转换为主题帖
+        confirm: 确定要将此工单转为主题帖吗？所有隐私信息都将公开展示。
+        event: "已将工单「{ticket_title}」转为主题帖\n\n要调整到主题帖页面吗？\n"
       convert_to_ticket:
         button: 转为工单
         confirm: 确定要将此主题帖转为工单吗？
@@ -166,7 +169,7 @@ v17development-flarum-support:
           title: 语言
         private_note:
           edit_button: 编辑备注
-          info: 个人备注对客服和客户不可见。
+          info: 备注仅对其他客服可见，客户不可见。
           placeholder: '例如：2022.1.1 - 处理：删除数据库'
           tip: 提示：如果一个工单有多个客服处理，请在备注时加上你的姓名和日期。
           title: 个人备注

@@ -4,6 +4,8 @@
 
 nearata-twofactor:
   admin:
+    permissions:
+      can_enable_twofactor: 启用两步验证
     settings:
       generate_backups: 生成恢复代码
   forum:

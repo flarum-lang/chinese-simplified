@@ -16,3 +16,4 @@ jslirola-login2seeplus:
     image: 图片登录后可见
     link: 链接登录后可见
     post: '此内容 {login} 或 {register} 后可见'
+    post_login: '{login}以查看全部内容'

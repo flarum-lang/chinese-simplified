@@ -10,13 +10,13 @@ nearata-embed-video:
         hotkey: 热键
         lang: 播放器语言
         logo: '标志 URL'
-        modal_enabled: '启用 Modal'
-        modal_enabled_help: '启用 Modal 或只是在作曲家中插入 BBCode。'
+        modal_enabled: 启用编辑对话框
+        modal_enabled_help: '启用对话框或直接在文本编辑器中键入 BBCode。'
         quality_switching: 切换视频质量
         theme: 主题色
       permissions:
         can_create_video_player: 允许创建视频播放器
-        can_view_video_player: 可以查看视频播放器
+        can_view_video_player: 允许使用视频播放器
       video_types:
         dash: DASH（自适应流媒体传输）
         flv: FLV
@@ -25,9 +25,18 @@ nearata-embed-video:
         webtorrent: WebTorrent
   forum:
     button_tooltip_title: 嵌入视频
+    cannot_view: 错误：无权访问的内容
     modal:
+      add_pointer: 添加指示器
+      add_quality: 添加质量
       live_mode: 直播模式
+      pointer_label: 指示器
+      pointer_option_new: 新建
+      qualities_label: 质量（可选）
+      quality_option_new: 新建
       quality_switching_tutorial: 视频质量切换教程
+      remove_pointer: 移除指示器
+      remove_quality: 移除质量
       submit_button: 保存
       title: 嵌入视频
       video_type_label: 视频类型

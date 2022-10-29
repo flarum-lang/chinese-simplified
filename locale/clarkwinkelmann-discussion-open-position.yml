@@ -3,17 +3,30 @@
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
 clarkwinkelmann-discussion-open-position:
+  admin:
+    settings:
+      defaultOpenLastRead: 默认回到上次的阅读位置
+      openLastOptions:
+        always: '=> clarkwinkelmann-discussion-open-position.ref.openLastOptions.always'
+        never: '=> clarkwinkelmann-discussion-open-position.ref.openLastOptions.never'
+        unread: '=> clarkwinkelmann-discussion-open-position.ref.openLastOptions.unread'
+      suggestFirstTime: 在用户首次打开主题帖时，询问是否更改定位模式
   forum:
     firstTimePrompt:
+      fromAlways: 打开主题时回到上次的阅读位置
+      fromNever: 打开主题时跳转到一楼
       more: 更多选项
-    preferences:
-      discussionOpenLastRead: 看帖跳转方式选择
       openLastOptions:
-        always: 打开帖子时总是跳转到最新未读回复
-        never: 打开帖子时总是跳转到主楼
-        unread: 无未读回复时默认跳转主楼，有未读回复时跳转至未读回复
+        always: 总是在打开主题时回到上次的阅读位置
+        never: 总是在打开主题时跳转到一楼
+    preferences:
+      discussionOpenLastRead: 主题帖打开模式
+      openLastOptions:
+        always: '=> clarkwinkelmann-discussion-open-position.ref.openLastOptions.always'
+        never: '=> clarkwinkelmann-discussion-open-position.ref.openLastOptions.never'
+        unread: '=> clarkwinkelmann-discussion-open-position.ref.openLastOptions.unread'
   ref:
     openLastOptions:
-      always: 打开帖子时总是跳转到最新未读回复
-      never: 打开帖子时总是跳转到主楼
-      unread: 无未读回复时默认跳转主楼，有未读回复时跳转至未读回复
+      always: 总是在打开主题时回到上次的阅读位置
+      never: 总是在打开主题时跳转到一楼
+      unread: 打开主题时仅在有新回复时回到上次的阅读位置

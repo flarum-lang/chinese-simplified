@@ -4,4 +4,5 @@
 
 clarkwinkelmann-default-image-alt:
   api:
-    alt-text-generic: 用户生成内容中的图像
+    alt-text-author: '由用户「{username}」上传的图片'
+    alt-text-generic: 被用户引用的图片

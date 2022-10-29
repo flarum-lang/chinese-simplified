@@ -29,4 +29,17 @@ blomstra-trello:
       include_secondary_tags_help: 当禁用时，只有主要讨论标签将被发送到Trello。当启用时，所有标签将被发送到Trello。
       include_secondary_tags_label: 包括次要标签
       label:
+        boards: 看板设置
         general: 一般
+        labels: 标题设置
+  forum:
+    controls:
+      send_to_trello_button: '发送到 Trello'
+      view_on_trello_button: '查看 Trello 卡片'
+    modals:
+      fields:
+        board: 选择一个看板
+        member: 选择一个成员
+        member_selected: '已选择 {count, plural, one {#}, other {#}} 位成员'
+      no_available_board_members: 无看板成员
+      no_available_boards_label: 无看板

@@ -7,11 +7,12 @@ blomstra-realtime:
     permission:
       view-who-types: 查看输入状态
     settings:
-      release-discussion-updates-interval: 自动推送新讨论活动的间隔
+      release-discussion-updates-interval: 自动推送新活动内容的时间频率
+      release-discussion-updates-interval-help: '单位秒，0 表示禁用自动推送。'
   forum:
     push:
-      discussion-list-new-activity: '{count, plural, one {有 # 条内容更新} other {有 # 条内容更新}}'
-      discussion-list-new-activity-with-auto-release: '{count, plural, one {有 # 条内容} other {有 # 条内容}} 更新，将在 {releaseTimeout} 秒内刷新。 点击立即显示。'
+      discussion-list-new-activity: '{count, plural, one {有 #} other {有 #}} 条内容更新'
+      discussion-list-new-activity-with-auto-release: '{count, plural, one {有 #} other {有 #}} 条内容更新，{releaseTimeout} 秒后自动刷新。点击此处立即刷新。'
     typing-indicator:
       no-activity: 无人活动
-      people-are-typing: '{number, plural, one {# 人正在输入} other {# 人正在输入}}'
+      people-are-typing: '{number, plural, one {# 人} other {# 人}}正在输入'

@@ -29,11 +29,11 @@ v17development-flarum-badges:
       image: 图片地址
       image_placeholder: '输入图片的 URL'
       is_image: 图片徽章
-      is_image_description: 使用图片作为默认徽章
+      is_image_description: 使用图片作为徽章
       label_color: 文本颜色
       name: 徽章名
       visible: 启用此徽章
-      visible_description: 启用此徽章。禁用时，此徽章将不可见。
+      visible_description: 关闭此选项，使徽章不可见。
     badge_category:
       blockview: 卡片视图
       blockview_description: 在徽章页采用卡片样式展示所有徽章。此项禁用时，采用默认的列表样式展示。

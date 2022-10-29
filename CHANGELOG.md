@@ -2,8 +2,13 @@ CHANGELOG
 =========
 
 
-1.2.1 (XXXX-XX-XX)
+1.3.0 (XXXX-XX-XX)
 ------------------
+
+**新增扩展程序翻译**:
+
+* [`cadiducho/bbcode`](https://github.com/EdorasMinecraft/BBcode)
+
 
 **更新扩展程序翻译**:
 
@@ -25,7 +30,7 @@ CHANGELOG
 * [`v17development/flarum-user-badges`](https://github.com/v17development/flarum-user-badges)
 
 
-全部变化：[v1.2.0...v1.2.1](https://github.com/flarum-lang/chinese-simplified/compare/v1.2.0...v1.2.1)
+全部变化：[v1.2.0...v1.3.0](https://github.com/flarum-lang/chinese-simplified/compare/v1.2.0...v1.3.0)
 
 
 1.2.0 (2022-10-08)

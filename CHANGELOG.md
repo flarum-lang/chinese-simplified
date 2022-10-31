@@ -9,6 +9,7 @@ CHANGELOG
 
 * [`cadiducho/bbcode`](https://github.com/EdorasMinecraft/BBcode)
 * [`clarkwinkelmann/flarum-ext-money-rewards`](https://github.com/clarkwinkelmann/flarum-ext-money-rewards)
+* [`datlechin/flarum-usercard-uid`](https://github.com/datlechin/flarum-usercard-uid)
 
 
 **更新扩展程序翻译**:

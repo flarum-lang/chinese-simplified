@@ -8,6 +8,7 @@ CHANGELOG
 **新增扩展程序翻译**:
 
 * [`cadiducho/bbcode`](https://github.com/EdorasMinecraft/BBcode)
+* [`clarkwinkelmann/flarum-ext-money-rewards`](https://github.com/clarkwinkelmann/flarum-ext-money-rewards)
 
 
 **更新扩展程序翻译**:

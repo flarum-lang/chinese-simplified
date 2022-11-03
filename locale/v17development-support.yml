@@ -108,7 +108,7 @@ v17development-flarum-support:
         change_icon: 更换图标
         edit_description: 编辑描述
         new_article: 撰写文章
-        recount_articles: 重新计算文章
+        recount_articles: 修正文章数
         rename_category: 重命名分类目录
     reopen: 重新打开
     return_to_home: 返回知识库首页

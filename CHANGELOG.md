@@ -14,6 +14,7 @@ CHANGELOG
 
 **更新扩展程序翻译**:
 
+* [`askvortsov/flarum-moderator-warnings`](https://github.com/askvortsov1/flarum-moderator-warnings)
 * [`blomstra/realtime`](https://extiverse.com/extension/blomstra/realtime)
 * [`blomstra/trello`](https://github.com/blomstra/flarum-ext-trello)
 * [`clarkwinkelmann/flarum-ext-composer-page`](https://github.com/clarkwinkelmann/flarum-ext-composer-page)

@@ -238,7 +238,7 @@ core:
       body: "{username}，您好！\n\n您请求重置 {forum} 的密码。\n\n若是您本人所为，请点击下方链接重置密码：\n{url}\n\n如非您本人操作，请忽略这封邮件，我们不会受理重置操作。\n"
       subject: '=> core.ref.reset_your_password'
     send_test:
-      body: "{username}，您好！\n\n这是一个测试邮件，用于测试您的邮箱设置是否正确。\n\n若是您本人发送了测试邮件，那么恭喜，这意味着您的设置有效！\n\n若非您本人发送测试邮件，请忽略此内容。\n"
+      body: "{username}，恭喜您！\n\n您的论坛邮箱服务可用。\n\n本邮件用于测试邮箱服务配置是否正确。\n\n若非本人发送测试邮件，请忽略。\n"
       subject: 'Flarum 邮件测试'
   forum:
     change_email:

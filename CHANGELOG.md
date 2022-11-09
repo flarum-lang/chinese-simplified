@@ -5,6 +5,11 @@ CHANGELOG
 1.3.0 (XXXX-XX-XX)
 ------------------
 
+**例行更新**:
+
+* 更新 Flarum 核心翻译.
+
+
 **新增扩展程序翻译**:
 
 * [`cadiducho/bbcode`](https://github.com/EdorasMinecraft/BBcode)

@@ -13,14 +13,25 @@ CHANGELOG
 **新增扩展程序翻译**:
 
 * [`blomstra/oauth-apple`](https://github.com/blomstra/flarum-ext-oauth-apple)
+* [`blomstra/turnstile`](https://github.com/blomstra/flarum-ext-turnstile)
+* [`blomstra/web3`](https://github.com/blomstra/flarum-ext-web3)
 * [`cadiducho/bbcode`](https://github.com/EdorasMinecraft/BBcode)
+* [`cccyun/flarum-clogin-oauth`](https://github.com/netcccyun/flarum-clogin-oauth)
+* [`clarkwinkelmann/flarum-ext-discussion-lists`](https://github.com/clarkwinkelmann/flarum-ext-discussion-lists)
+* [`clarkwinkelmann/flarum-ext-ipsum-autocomplete`](https://github.com/clarkwinkelmann/flarum-ext-ipsum-autocomplete)
 * [`clarkwinkelmann/flarum-ext-money-rewards`](https://github.com/clarkwinkelmann/flarum-ext-money-rewards)
+* [`clarkwinkelmann/flarum-ext-money-to-all`](https://github.com/clarkwinkelmann/flarum-ext-money-to-all)
+* [`clarkwinkelmann/flarum-ext-prominent-post-numbers`](https://github.com/clarkwinkelmann/flarum-ext-prominent-post-numbers)
+* [`clarkwinkelmann/flarum-ext-readonly-profile`](https://github.com/clarkwinkelmann/flarum-ext-readonly-profile)
+* [`clarkwinkelmann/flarum-ext-reset-preferences`](https://github.com/clarkwinkelmann/flarum-ext-reset-preferences)
 * [`datlechin/flarum-usercard-uid`](https://github.com/datlechin/flarum-usercard-uid)
+* [`ziiven/flarum-daily-check-in`](https://github.com/Ziiven/flarum-daily-check-in)
 
 
 **更新扩展程序翻译**:
 
 * [`askvortsov/flarum-moderator-warnings`](https://github.com/askvortsov1/flarum-moderator-warnings)
+* [`blomstra/payments`](https://extiverse.com/extension/blomstra/payments)
 * [`blomstra/realtime`](https://extiverse.com/extension/blomstra/realtime)
 * [`blomstra/trello`](https://github.com/blomstra/flarum-ext-trello)
 * [`clarkwinkelmann/flarum-ext-composer-page`](https://github.com/clarkwinkelmann/flarum-ext-composer-page)
@@ -33,6 +44,7 @@ CHANGELOG
 * [`flarum/statistics`](https://github.com/flarum/statistics)
 * [`flarum/suspend`](https://github.com/flarum/suspend)
 * [`fof/gamification`](https://github.com/FriendsOfFlarum/gamification)
+* [`fof/geoip`](https://github.com/FriendsOfFlarum/geoip)
 * [`jslirola/flarum-ext-login2seeplus`](https://github.com/jslirola/flarum-ext-login2seeplus)
 * [`nearata/flarum-ext-embed-video`](https://github.com/Nearata/flarum-ext-embed-video)
 * [`nearata/flarum-ext-twofactor`](https://github.com/Nearata/flarum-ext-twofactor)

@@ -20,6 +20,10 @@ blomstra-payments:
       sk: 'Secret (api) key'
       webhook-secret: 'Webhook signing secret'
   forum:
+    accept-terms-modal:
+      accept_label: 我已阅读并接受<link>付款条款</link>。
+      continue_button: 继续付款
+      title: 接受条款
     access-portal:
       options: 选项
       purchase: 付款
@@ -37,5 +41,20 @@ blomstra-payments:
     payment-options-modal:
       description: "选择一个选项开始解锁用户组。您将被跳转到第三方支付平台 Stripe 完成付款。\n"
       title: '用户组 {group} 付款方式'
+    post_stream:
+      bounty_added_text: '{username} 添加了 {amount} 的赏金。'
+    stripe:
+      interval_once: 一次
+    subscription-card:
+      bounty: 赏金
+      cancel-control: 取消
+      none: 无付款或有效订阅
+      pta: 付费访问
+      ptp: 付费发布
+      ptv: 付费观看
     tag:
       require-payment-label: 费用
+core:
+  forum:
+    index_sort:
+      mostBacked_button: 最推荐的方式

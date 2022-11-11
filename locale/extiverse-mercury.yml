@@ -10,11 +10,11 @@ extiverse-mercury:
       highest-version: 最新版本
       installed-version: 当前版本
     header-secondary:
-      no-token: 'Token 不能为空'
+      no-token: 令牌不能为空
       updates: '{count, plural, =0 {无可用更新} one {1 个更新} other {# 个更新}}'
     settings:
-      token: 'Extiverse token（<a>点此获取</a>）'
-      token-description: "从 <a>Extiverse</a> 获取 API 令牌，以便 Mercury 能够安全地与你的 Flarum 社区通信。\n"
+      token: 'Extiverse 接口令牌（<a>点此获取</a>）'
+      token-description: "从 <a>Extiverse</a> 获取 API 令牌，以便 Mercury 与你的 Flarum 安全通信。\n"
   email:
     new-extension-update:
       body: "{recipient_display_name}，您好！\n\n以下 {count} 项扩展发布了新版本，建议尽快更新：\n\n{extensions}\n\n更多信息请访问您的社区：{url}。\n"

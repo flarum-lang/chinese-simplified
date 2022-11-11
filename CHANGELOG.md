@@ -27,6 +27,7 @@ CHANGELOG
 * [`clarkwinkelmann/flarum-ext-discussion-open-position`](https://github.com/clarkwinkelmann/flarum-ext-discussion-open-position)
 * [`datlechin/flarum-birthdays`](https://github.com/datlechin/flarum-birthdays)
 * [`datlechin/flarum-copy-links`](https://github.com/datlechin/flarum-copy-links)
+* [`extiverse/mercury`](https://github.com/extiverse/mercury)
 * [`flamarkt/taxonomies`](https://github.com/flamarkt/taxonomies)
 * [`flarum/statistics`](https://github.com/flarum/statistics)
 * [`flarum/suspend`](https://github.com/flarum/suspend)

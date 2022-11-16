@@ -5,7 +5,7 @@
 flarum-statistics:
   admin:
     date_selection_modal:
-      description: "自定义一段时间内的论坛数据统计。\n数据分析耗时会根据论坛活跃度有所浮动。\n"
+      description: "统计自定义时间内的论坛数据。\n数据分析耗时会根据单位时间内论坛的活跃度有所浮动。\n"
       end_date: 结束日期（含）
       errors:
         end_before_start: 结束日期必须晚于开始日期。

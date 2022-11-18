@@ -49,6 +49,7 @@ CHANGELOG
 * [`fof/gamification`](https://github.com/FriendsOfFlarum/gamification)
 * [`fof/geoip`](https://github.com/FriendsOfFlarum/geoip)
 * [`fof/oauth`](https://github.com/FriendsOfFlarum/oauth)
+* [`fof/upload`](https://github.com/FriendsOfFlarum/upload)
 * [`jslirola/flarum-ext-login2seeplus`](https://github.com/jslirola/flarum-ext-login2seeplus)
 * [`nearata/flarum-ext-embed-video`](https://github.com/Nearata/flarum-ext-embed-video)
 * [`nearata/flarum-ext-twofactor`](https://github.com/Nearata/flarum-ext-twofactor)

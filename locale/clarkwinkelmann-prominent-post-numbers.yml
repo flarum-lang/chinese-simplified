@@ -7,3 +7,5 @@ clarkwinkelmann-prominent-post-numbers:
     settings:
       floating: 将贴文序号移至标题中
       prefix: 前缀
+  views:
+    format: '{number}'

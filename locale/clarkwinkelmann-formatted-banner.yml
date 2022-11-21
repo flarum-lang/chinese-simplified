@@ -6,10 +6,14 @@ clarkwinkelmann-formatted-banner:
   admin:
     settings:
       dismissible: 允许关闭横幅
-      hideWelcomeHero: 隐藏欢迎横幅
+      guestContent: 访客格式化内容
+      guestHtml: '访客 HTML 内容'
+      hideWelcomeHero: 隐藏系统欢迎横幅
+      memberContent: 用户格式化内容
+      memberHtml: '用户 HTML 内容'
       replaceWelcomeHero: 取代系统欢迎横幅
   forum:
     alert:
-      login: 您已自动链接。
-      logout: 您的会话已过期。
+      login: 会话已连接。
+      logout: 您的登录信息已过期。
       refresh: 刷新页面

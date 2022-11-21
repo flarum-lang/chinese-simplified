@@ -18,7 +18,7 @@ flarum-statistics:
       custom_label: 自定义范围……
       custom_label_specified: '{fromDate} 至 {toDate}'
       discussions_heading: '=> core.ref.discussions'
-      export_chart_button: '将图表导出为 SVG'
+      export_chart_button: '导出 SVG 图片'
       last_12_months_label: 过去一年
       last_28_days_label: 过去二十八天
       last_7_days_label: 过去一周

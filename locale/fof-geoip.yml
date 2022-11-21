@@ -9,7 +9,7 @@ fof-geoip:
       security_label: '安全模块（需要 professional plus）'
       service_freegeoip_description: '<b>https://freegeoip.app/</b>，每小时可免费查询 15,000 个 IP 国家代码。'
       service_freegeoip_label: FreeGeoIP
-      service_ipapi_description: '<b>http://ip-api.com</b>，每分钟可免费查询 45 次。请求数超额的话，可能会将您的 IP 列入黑名单，您可以访问 <b>http://ip-api.com/docs/unban</b> 申请解除。'
+      service_ipapi_description: '<b>http://ip-api.com</b> 每分钟可免费查询 45 次。请求数超额时，您的 IP 可能会被列入黑名单。如需解封，请前往 <b>http://ip-api.com/docs/unban</b>。'
       service_ipapi_label: 'IP Api'
       service_ipdata_description: '<b>https://ipdata.co</b>，每日可免费查询 1,500 次。'
       service_ipdata_label: IPData

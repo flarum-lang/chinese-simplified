@@ -6,7 +6,7 @@ fof-oauth:
   admin:
     configure_button_label: '配置 FoF OAuth'
     settings:
-      only_icons_label: 仅显示登录按钮图标（可选布置）
+      only_icons_label: 登录界面只显示第三方账号图标
       providers:
         callback_url_text: '根据需要可将回调 URL 设为 {url}。'
         discord:
@@ -38,7 +38,7 @@ fof-oauth:
           api_key_label: 'API Key'
           api_secret_label: 'API Secret'
           description: '在 {link} 创建一个应用。您需要提供服务协议和隐私政策 URL，然后确保添加请求邮件权限。'
-    settings_accessibility_label: '{name}设置'
+    settings_accessibility_label: '{name} 设置'
   forum:
     error:
       bad_verification_code: 无效或过期的验证令牌，请重试。
@@ -62,17 +62,17 @@ fof-oauth:
       twitter: '=> fof-oauth.lib.providers.twitter'
     signup:
       username_help: 请选择用户名
-    unlink: 移除链接
+    unlink: 解除绑定
     user:
       settings:
         linked-account:
-          help: 这些链接的帐户允许您使用其他提供商登录论坛。
+          help: 绑定第三方帐户，开辟登录捷径。
           identifier-label: '{provider} ID'
-          label: 关联的帐户
+          label: 第三方登录
           last-used-label: 上次使用
-          link-created-label: 已创建链接
-          orphaned-account: 您以前已通过此提供程序登录，但是现在论坛已禁用使用此方法登录。
-          unlink-confirm: '是否确实要删除与 {provider} 的链接？您将无法再登录此论坛，除非您将来重新进行身份验证。'
+          link-created-label: 已绑定
+          orphaned-account: 您以前已通过此账号登录，但是目前论坛已关闭此登录方式。
+          unlink-confirm: '确定要解除绑定 {provider} 账号吗？您将无法使用此账号登录论坛。'
   lib:
     providers:
       discord: Discord

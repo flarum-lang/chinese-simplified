@@ -298,7 +298,7 @@ core:
     forgot_password:
       dismiss_button: '=> core.ref.okay'
       email_placeholder: '=> core.ref.email'
-      email_sent_message: 如果您输入的电子邮件已在此站点注册，我们将向您发送一封电子邮件，其中包含重置密码的链接，若未收到请检查垃圾箱。
+      email_sent_message: 如果您输入的电子邮件已在本站注册过，我们将向其发送一封含有重置密码链接的邮件。若未收到请检查垃圾箱。
       not_found_message: 此邮箱的注册用户不存在
       submit_button: 重置密码
       text: 请输入账户的注册邮箱地址，我们将发送重设密码链接至该邮箱。

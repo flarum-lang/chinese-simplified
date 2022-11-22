@@ -11,6 +11,8 @@ fof-polls:
       start: 发起投票
       view_results_without_voting: 无需参与投票直接查看结果
       vote: 参与投票
+    settings:
+      allow_option_image: 允许图片选项
   forum:
     composer_discussion:
       add_poll: 发起投票
@@ -21,6 +23,7 @@ fof-polls:
       add_title: 发起投票
       date_placeholder: 投票结束时间（可选）
       edit_title: 编辑投票
+      image_option_placeholder: 图片链接（可选）
       include_question: 至少要包含一个问题
       max: '最多 10 个选项'
       min: '最少 2 个选项'

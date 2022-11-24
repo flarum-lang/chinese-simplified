@@ -14,7 +14,7 @@ fof-stopforumspam:
       email_hash_label: 散列邮箱地址
       email_label: 邮箱地址检查
       frequency_example_text: '例如：假设邮箱检查有 1 个命中，IP 检查有 1 个命中，用户名检查有 1 个命中，合计 3 个。如果阈值设为 3 或更少，那么将会禁止该用户注册。'
-      frequency_help: "Spam 报告数量宽容程度。\n假设一个用户同时命中邮箱、IP 和用户名共 3 种检查，在阈值设为 3 或更少时，该用户无法完成注册。\n"
+      frequency_help: "Spam 报告数量上限值。\n在数据库中查询用户注册时使用的邮箱、IP 和用户名，并统计相关的举报次数，大于等于上限时，禁止该用户注册。\n"
       frequency_label: 宽容度
       frequency_text: 触发拦截的检查命中数量。
       introduction: "根据 <a>StopForumSpam</a> 数据库检查新用户。如果<code>宽容度</code>超标或 <code>信誉分</code>不达标，则该用户无法完成注册。\n\n支持 <code>fof/oauth</code> 和 <code>fof/passport</code> 的 SSO 扩展程序。其他的 SSO 提供程序应该也支持，但尚未测试过。\n"

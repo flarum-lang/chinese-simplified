@@ -4,6 +4,7 @@
 
 clarkwinkelmann-selective-mediaembed:
   admin:
-    mustClearCache: 修改设置后，请清除缓存！
+    clearCache: 清除缓存
+    mustClearCache: 修改设置后，需要清除缓存！
     selectAll: 全选
     unselectAll: 取消全选

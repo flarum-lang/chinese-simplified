@@ -39,6 +39,7 @@ CHANGELOG
 * [`askvortsov/flarum-moderator-warnings`](https://github.com/askvortsov1/flarum-moderator-warnings)
 * [`blomstra/payments`](https://extiverse.com/extension/blomstra/payments)
 * [`blomstra/realtime`](https://extiverse.com/extension/blomstra/realtime)
+* [`blomstra/search`](https://github.com/blomstra/flarum-ext-search)
 * [`blomstra/trello`](https://github.com/blomstra/flarum-ext-trello)
 * [`clarkwinkelmann/flarum-ext-composer-page`](https://github.com/clarkwinkelmann/flarum-ext-composer-page)
 * [`clarkwinkelmann/flarum-ext-default-image-alt`](https://github.com/clarkwinkelmann/flarum-ext-default-image-alt)

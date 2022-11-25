@@ -5,9 +5,13 @@
 blomstra-search:
   admin:
     analyzer:
-      help: "分析器用于理解语义和分词，并对索引进行优化。\n"
+      help: "分析器用于理解语义和分词，并优化索引。\n"
       label: 'Analyzer language 分析语言'
     elastic-endpoint: 'Elastic Endpoint 访问域名'
     elastic-index: 'Index 索引'
     elastic-password: '=> core.ref.password'
     elastic-username: '=> core.ref.username'
+    match-sentences: 长句匹配
+    match-words: 字词匹配
+    search-discussion-subjects: 索引标题
+    search-post-bodies: 索引帖文

@@ -7,12 +7,24 @@ blomstra-realtime:
     permission:
       view-who-types: 查看输入状态
     settings:
+      release-discussion-updates: 全部主题列表更新
+      release-discussion-updates-help: 启用后，新主题将在一段时间后推送到<code>全部主题列表</code>中。
       release-discussion-updates-interval: 自动推送新活动内容的时间频率
       release-discussion-updates-interval-help: '单位秒，0 表示禁用自动推送。'
+      typing-indicator: 输入状态
+      typing-indicator-help: '启用后展示主题中正在输入的用户数量。禁用此项，前端和 websocket 均停止展示输入状态。'
   forum:
     push:
       discussion-list-new-activity: '{count, plural, one {有 #} other {有 #}} 条内容更新'
-      discussion-list-new-activity-with-auto-release: '{count, plural, one {有 #} other {有 #}} 条内容更新，{releaseTimeout} 秒后自动刷新。点击此处立即刷新。'
+      discussion-list-new-activity-with-auto-release: '{count, plural, one {有 #} other {有 #}} 条内容更新，{releaseTimeout} 秒后刷新。立即查看。'
     typing-indicator:
+      anonymous-user: '[匿名]'
       no-activity: 无人活动
       people-are-typing: '{number, plural, one {# 人} other {# 人}}正在输入'
+      users-are-typing: '{count, plural, one {{users} 正在输入} other {{users}{others, plural, =1 { & # other} =0 {} other { & # others}} 正在输入}}'
+    user:
+      settings:
+        heading: 实时活动
+        typing-indicator-type:
+          help: 启用后展示具体用户的键盘输入状态。禁用此项，仅展示用户数量。
+          label: 展示用户输入状态

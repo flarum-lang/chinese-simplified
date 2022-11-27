@@ -5,6 +5,9 @@
 ziven-checkin:
   admin:
     settings:
+      Alert: 提示弹窗
+      Modal: 对话框
+      None: 无
       allow-check-in: 允许签到
       auto-check-in: 自动签到
       auto-check-in-delay: 自动签到延迟（百万秒）

@@ -29,6 +29,7 @@ clarkwinkelmann-discussion-lists:
       delete: 删除
       deleteConfirmation: 是否确实要永久删除此列表？
       name: 名字
+      ordering: 排序
       orderingOptions:
         addedAsc: 添加到列表中（从最少到最新）
         addedDesc: 添加到列表中（从最近到最少）

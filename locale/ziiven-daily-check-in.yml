@@ -5,7 +5,7 @@
 ziven-checkin:
   admin:
     settings:
-      Alert: 提示弹窗
+      Alert: 提示框
       Modal: 对话框
       None: 无
       allow-check-in: 允许签到

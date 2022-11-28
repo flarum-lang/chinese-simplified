@@ -50,7 +50,7 @@ blomstra-payments:
       cancel-control: 取消
       none: 无付款或有效订阅
       pta: 付费访问
-      ptb: 支付费用
+      ptb: 快捷支付
       ptp: 付费发布
       ptv: 付费观看
     tag:

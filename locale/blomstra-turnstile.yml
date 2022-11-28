@@ -5,9 +5,12 @@
 blomstra-turnstile:
   admin:
     settings:
-      secret_key: '私钥（Secret key）'
-      site_key: '站点密匙（Site key）'
+      forgot: '=> core.forum.forgot_password.title'
+      secret_key: 私钥
+      signin: '=> core.forum.log_in.title'
+      signup: '=> core.forum.sign_up.title'
+      site_key: 站点公钥
   forum:
-    not_loaded_error: '未能正确加载Cloudflare Turnstile，请刷新本页面，并检查您的广告拦截程序是否关闭。'
+    not_loaded_error: '未能正确加载 Cloudflare Turnstile 验证服务，请关闭广告拦截器并刷新重试。'
 validation:
-  turnstile: 我们无法验证您是否是一个机器人。请刷新页面并重试。
+  turnstile: 我们无法验证您是否是机器人，请刷新页面重试。

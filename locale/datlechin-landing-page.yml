@@ -5,7 +5,7 @@
 datlechin-landing-page:
   admin:
     settings:
-      body_html_help: 要在网页正文内容中显示的HTML代码
-      body_html_label: 网页正文内容
-      header_html_help: 需要在网页页眉中显示的HTML代码
-      header_html_label: 网页页眉
+      body_html_help: '正文 HTML 代码'
+      body_html_label: 正文内容
+      header_html_help: '替代欢迎横幅的 HTML 代码'
+      header_html_label: 横幅内容

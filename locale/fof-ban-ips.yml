@@ -46,7 +46,7 @@ fof-ban-ips:
       unban_button: '=> fof-ban-ips.ref.unban_label'
       unban_ip_confirmation: '你确定要解封此用户以及所有使用此 IP 的其他用户吗？（如果其他用户有使用黑名单中的其他 IP，那么该用户仍然会处于拉黑状态）'
       unban_ip_no_users: '没有使用此 IP 的其他用户'
-      unban_ip_users: '「{count, plural, one {{users}}, other {{users}}}」即将解除封禁'
+      unban_ip_users: '「{count, plural, one {{users}} other {{users}}}」即将解除封禁'
       unban_options_all_ip: '取消拉黑 <i>{username}</i> 使用过的所有 IP'
       unban_options_only_ip: '仅取消拉黑当前 IP (<code>{ip}</code>)'
       unban_title: '=> fof-ban-ips.ref.unban_ip_addresses'

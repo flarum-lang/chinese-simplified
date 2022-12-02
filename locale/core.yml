@@ -370,7 +370,7 @@ core:
       viewing_text: '{count, plural, one {{index} / {formattedCount} 条} other {{index} / {formattedCount} 条}}'
     post_stream:
       discussion_renamed_old_tooltip: '原标题：「{old}」'
-      discussion_renamed_text: '{username} 将标题更改为 「{new}」。'
+      discussion_renamed_text: '{username} 更改标题为「{new}」'
       load_more_button: '=> core.ref.load_more'
       reply_placeholder: '=> core.ref.write_a_reply'
       time_lapsed_text: '{period} 后'

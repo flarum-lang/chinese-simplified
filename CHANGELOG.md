@@ -51,6 +51,7 @@ CHANGELOG
 * [`flamarkt/taxonomies`](https://github.com/flamarkt/taxonomies)
 * [`flarum/mentions`](https://github.com/flarum/mentions)
 * [`flarum/statistics`](https://github.com/flarum/statistics)
+* [`flarum/sticky`](https://github.com/flarum/sticky)
 * [`flarum/suspend`](https://github.com/flarum/suspend)
 * [`fof/ban-ips`](https://github.com/FriendsOfFlarum/ban-ips)
 * [`fof/gamification`](https://github.com/FriendsOfFlarum/gamification)

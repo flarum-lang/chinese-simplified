@@ -5,4 +5,4 @@
 quick-reply:
   forum:
     composer:
-      title: '回复 {title}'
+      title: '回帖「{title}」'

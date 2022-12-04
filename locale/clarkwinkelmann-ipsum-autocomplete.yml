@@ -4,4 +4,4 @@
 
 clarkwinkelmann-ipsum-autocomplete:
   forum:
-    insert: '插入假文的<input></input> 文段'
+    insert: '插入 <input></input> 段乱数假文'

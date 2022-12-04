@@ -13,7 +13,7 @@ clarkwinkelmann-discussion-lists:
       viewPrivate: 查看所有私人讨论列表
       viewPublic: 查看公共讨论列表
     settings:
-      collapseSeries: 讨论串默认折叠
+      collapseSeries: 默认收起列表
   api:
     manualLimit: '手动排序的列表不能包含超过 50 个主题'
     seriesAnyAddNotAllowed: 您只能将自己的主题添加到系列列表中

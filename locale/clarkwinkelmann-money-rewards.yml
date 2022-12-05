@@ -20,7 +20,7 @@ clarkwinkelmann-money-rewards:
       notEnoughFunds: 没有足够的资金。
   forum:
     modal:
-      balance: '您的余额：{amount}'
+      balance: '余额：{amount}'
       label:
         comment: 评论（公开）
         create: 不消耗余额来进行打赏

@@ -5,15 +5,15 @@
 clarkwinkelmann-money-rewards:
   admin:
     permissions:
-      createMoney: 重新设定新的赏金金额
-      customAmounts: 选择自定义打赏金额
-      rewardWithMoney: 使用货币打赏其他用户
-      seeMoneyRewardHistory: 查看其他用户的打赏记录
+      createMoney: '印发新 money 用于打赏'
+      customAmounts: 自定义打赏金额
+      rewardWithMoney: '使用 money 打赏其他用户'
+      seeMoneyRewardHistory: 查看其他用户的奖赏记录
     settings:
-      decimals: 自定义金额的小数位数上限
-      max: 自定义金额的最大值
-      min: 自定义金额的最小值
-      preselection: '预选金额（英文逗号分隔,可选）'
+      decimals: 最大自定义金额小数位数
+      max: 最高自定义金额
+      min: 最低自定义金额
+      preselection: '预设金额（英文逗号分隔, 可填项）'
   api:
     error:
       decimals: '金额限制为 {decimals} 小数。'
@@ -28,8 +28,8 @@ clarkwinkelmann-money-rewards:
       optionCustom: 自定义
       submit: 提交
       success: 已打赏给发帖作者！
-      target: '由{username}打赏了{number}帖子'
-      title: 打赏该帖
+      target: '「{username}」已打赏 #{number}'
+      title: 打赏
     post:
       action: 打赏
       disallowedOther: 你不能打赏这个帖子。可能作者是匿名的或已被注销。

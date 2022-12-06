@@ -40,6 +40,7 @@ CHANGELOG
 * [`datlechin/flarum-keyboard-shortcuts`](https://github.com/datlechin/flarum-keyboard-shortcuts)
 * [`datlechin/flarum-landing-page`](https://github.com/datlechin/flarum-landing-page)
 * [`datlechin/flarum-offline-indicator`](https://github.com/datlechin/flarum-offline-indicator)
+* [`datlechin/flarum-pronouns`](https://github.com/datlechin/flarum-pronouns)
 * [`datlechin/flarum-usercard-uid`](https://github.com/datlechin/flarum-usercard-uid)
 * [`ianm/translate`](https://extiverse.com/extension/ianm/translate)
 * [`ziiven/flarum-daily-check-in`](https://github.com/Ziiven/flarum-daily-check-in)

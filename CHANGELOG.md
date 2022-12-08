@@ -12,6 +12,7 @@ CHANGELOG
 
 **新增扩展程序翻译**:
 
+* [`blomstra/conversations`](https://github.com/blomstra/flarum-ext-conversations)
 * [`blomstra/oauth-apple`](https://github.com/blomstra/flarum-ext-oauth-apple)
 * [`blomstra/turnstile`](https://github.com/blomstra/flarum-ext-turnstile)
 * [`blomstra/web3`](https://github.com/blomstra/flarum-ext-web3)
@@ -39,8 +40,10 @@ CHANGELOG
 * [`datlechin/flarum-discussion-overview`](https://github.com/datlechin/flarum-discussion-overview)
 * [`datlechin/flarum-keyboard-shortcuts`](https://github.com/datlechin/flarum-keyboard-shortcuts)
 * [`datlechin/flarum-landing-page`](https://github.com/datlechin/flarum-landing-page)
+* [`datlechin/flarum-more-discussions`](https://github.com/datlechin/flarum-more-discussions)
 * [`datlechin/flarum-offline-indicator`](https://github.com/datlechin/flarum-offline-indicator)
 * [`datlechin/flarum-pronouns`](https://github.com/datlechin/flarum-pronouns)
+* [`datlechin/flarum-remove-sidenav`](https://github.com/datlechin/flarum-remove-sidenav)
 * [`datlechin/flarum-usercard-uid`](https://github.com/datlechin/flarum-usercard-uid)
 * [`ianm/translate`](https://extiverse.com/extension/ianm/translate)
 * [`ziiven/flarum-daily-check-in`](https://github.com/Ziiven/flarum-daily-check-in)

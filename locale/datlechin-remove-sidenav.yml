@@ -5,4 +5,4 @@
 datlechin-remove-sidenav:
   admin:
     permissions:
-      view_sidenav_label: 检视侧边栏
+      view_sidenav_label: 查看侧边栏

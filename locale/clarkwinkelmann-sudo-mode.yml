@@ -12,7 +12,7 @@ clarkwinkelmann-sudo-mode:
       incorrectPassword: 密码错误
   lib:
     sudo:
-      message: "您正在进行危险操作！我们需要二次验证您的身份。一段时间内您不会再看到本提醒。\n"
+      message: "您正在进行危险操作！我们需要二次验证您的身份。一段时间内您不会再收到本提醒。\n"
       password: 请输入账号密码
       submit: 确认
       title: 权限确认

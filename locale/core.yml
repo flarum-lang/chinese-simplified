@@ -112,7 +112,7 @@ core:
         donate: 捐助
         source: 源码
         support: 支持
-        website: 网站
+        website: 主页
       no_permissions: 此扩展无新增权限。
       no_settings: 此扩展无设置项。
       open_modal: 打开设置

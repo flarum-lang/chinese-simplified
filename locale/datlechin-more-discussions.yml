@@ -5,4 +5,18 @@
 datlechin-more-discussions:
   admin:
     settings:
+      block_name_help: '主题列表的标题（默认 <code>最新主题</code>)）'
       block_name_label: 列表标题
+      discussion_limit_help: '列表主题帖数量（默认 <code>5</code>）'
+      discussion_limit_label: 主题数量上限
+      filter_by_help: '列表排序方式（默认 <code>最新回复</code>）'
+      filter_by_label: 排序方式
+      filter_dropdown:
+        hot: '趋势（需要 fof/gamification）'
+        latest: 最新回复
+        newest: 新鲜出炉
+        oldest: 陈年旧帖
+        top: 热门主题
+        votes: '高票欢迎（需要 fof/gamification）'
+  forum:
+    block_default_name: 最新主题

@@ -10,7 +10,7 @@ CHANGELOG
 * 更新核心翻译.
 
 
-**新增扩展程序翻译**:
+**新增翻译**:
 
 * [`blomstra/conversations`](https://github.com/blomstra/flarum-ext-conversations)
 * [`blomstra/oauth-apple`](https://github.com/blomstra/flarum-ext-oauth-apple)
@@ -51,7 +51,7 @@ CHANGELOG
 * [`ziiven/flarum-daily-check-in`](https://github.com/Ziiven/flarum-daily-check-in)
 
 
-**更新扩展程序翻译**:
+**更新翻译**:
 
 * [`askvortsov/flarum-moderator-warnings`](https://github.com/askvortsov1/flarum-moderator-warnings)
 * [`blomstra/payments`](https://extiverse.com/extension/blomstra/payments)

@@ -2,6 +2,17 @@ CHANGELOG
 =========
 
 
+1.4.0 (XXXX-XX-XX)
+------------------
+
+**新增翻译**:
+
+* [`ziiven/flarum-pay-to-see`](https://extiverse.com/extension/ziiven/flarum-pay-to-see)
+
+
+全部变化：[v1.3.0...v1.4.0](https://github.com/flarum-lang/chinese-simplified/compare/v1.3.0...v1.4.0)
+
+
 1.3.0 (2022-12-16)
 ------------------
 

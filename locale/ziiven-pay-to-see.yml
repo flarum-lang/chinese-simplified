@@ -3,11 +3,18 @@
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
 pay-to-see:
+  admin:
+    permission:
+      allow_bypass_pay2see: 允许直接查看付费可见内容
+      allow_purchase_pay2see: 允许购买付费可见内容
+      allow_use_pay2see: 允许使用付费可见
   forum:
     cancel: 取消
     confirm: 确认
+    modify_pay_to_see_price: 修改内容价格
     need_pay2see_tag: '使用[pay][/pay]标签来设置付费可见'
     not_support_anonymous: 暂不支持在匿名主题中插入付费可见内容
+    ok: OK
     pay_to_see_content: 内容付费后可见
     pay_to_see_content_bypass: 付费内容（您有查看权限）
     pay_to_see_owner_bypass: 付费内容（楼主可见）
@@ -21,6 +28,7 @@ pay-to-see:
     purchase_unlocked_button: 内容已解锁
     purchased_content: 已购买内容
     remove: 删除
+    remove_pay_to_see_price_success: 付费可见内容已移除
     set_pay_to_see_price: 设置内容价格
     set_pay_to_see_price_success: 内容价格设置
     toolbar_tooltip: 插入付费可见内容

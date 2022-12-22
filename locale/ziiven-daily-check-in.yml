@@ -10,17 +10,19 @@ ziven-checkin:
       None: 无
       allow-check-in: 允许签到
       auto-check-in: 自动签到
-      auto-check-in-delay: 自动签到延迟（百万秒）
+      auto-check-in-delay: 自动签到延迟（毫秒）
       check-in-success-prompt-example-reward-text: '示例：获得 [reward]奖励'
       check-in-success-prompt-example-text: '示例：您已签到 [days] 天'
       check-in-success-prompt-reward-text: 提示奖励文本
       check-in-success-prompt-text: 提示文本
-      check-in-success-prompt-type: 签到成功提示类型
+      check-in-success-prompt-type: 签到成功提示方式
       reward-money: 签到奖励
-      reward-money-requirement: '需要 <code>antoinefr/flarum-ext-money</code> 扩展'
-      timezone: 时区设置
+      reward-money-requirement: '需要 <code>antoinefr/flarum-ext-money</code> 扩展程序'
+      timezone: '时区（填写 8 表示 UTC+8）'
   forum:
     check-in: 签到
+    check-in-failed: 签到失败
     check-in-success: 签到成功
-    checked-in-day: '签到 {count} 天'
-    checked-in-days: '签到 {count} 天'
+    checked-in-day: '已签到 {count} 天'
+    checked-in-days: '已签到 {count} 天'
+    try-again-later: 请稍后再试

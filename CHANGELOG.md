@@ -7,7 +7,13 @@ CHANGELOG
 
 **新增翻译**:
 
+* [`clarkwinkelmann/flarum-ext-meilisearch-dashboard`](https://github.com/clarkwinkelmann/flarum-ext-meilisearch-dashboard)
 * [`ziiven/flarum-pay-to-see`](https://extiverse.com/extension/ziiven/flarum-pay-to-see)
+
+
+**更新翻译**:
+
+* [`ziiven/flarum-daily-check-in`](https://github.com/Ziiven/flarum-daily-check-in)
 
 
 全部变化：[v1.3.0...v1.4.0](https://github.com/flarum-lang/chinese-simplified/compare/v1.3.0...v1.4.0)

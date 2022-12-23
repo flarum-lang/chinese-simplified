@@ -12,8 +12,8 @@ kilowhat-formulaire:
       editOwnUser: '=> kilowhat-formulaire.ref.permissions.editOwnUser'
       export: 导出提交数据
       fill: '=> kilowhat-formulaire.ref.permissions.fill'
-      heading: Formulaire
-      heading-advanced: Formulaire（第三方扩展选项）
+      heading: 表单
+      heading-advanced: 表单（第三方扩展选项）
       listForms: 查看未删除的表单列表
       listSubmissions: 查看提交列表
       moderate: 管理所有表单

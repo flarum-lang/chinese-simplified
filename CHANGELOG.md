@@ -13,6 +13,7 @@ CHANGELOG
 
 **更新翻译**:
 
+* [`kilowhat/flarum-ext-formulaire`](https://extiverse.com/extension/kilowhat/flarum-ext-formulaire)
 * [`ziiven/flarum-daily-check-in`](https://github.com/Ziiven/flarum-daily-check-in)
 
 

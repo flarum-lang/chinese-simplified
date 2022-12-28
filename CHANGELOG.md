@@ -8,6 +8,9 @@ CHANGELOG
 **新增翻译**:
 
 * [`clarkwinkelmann/flarum-ext-meilisearch-dashboard`](https://github.com/clarkwinkelmann/flarum-ext-meilisearch-dashboard)
+* [`datlechin/flarum-signup-button`](https://github.com/datlechin/flarum-signup-button)
+* [`datlechin/flarum-title-length`](https://github.com/datlechin/flarum-title-length)
+* [`finteger/ratings`](https://github.com/finteger/ratings)
 * [`ziiven/flarum-pay-to-see`](https://extiverse.com/extension/ziiven/flarum-pay-to-see)
 
 

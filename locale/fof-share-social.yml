@@ -6,10 +6,12 @@ fof-share-social:
   admin:
     settings:
       canonical-urls: '分享权威链接 (canonical URL)'
+      plain-copy: 显示纯URL副本
   forum:
     discussion:
       share_button: 分享
     modal:
+      copy_button: 复制
       title: 分享到
   lib:
     networks:

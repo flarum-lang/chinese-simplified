@@ -14,13 +14,16 @@ michaelbelgium-discussion-views:
       view_number_label: 查看主题浏览量
     settings:
       abbr_numbers_label: 缩写浏览量
+      abbr_numbers_text: 如果启用，较大的编号将被缩写（例如1000=1K）
       max_viewcount_label: 「足迹」列表最多展示人数
-      max_viewcount_text: 侧边栏和页脚足迹列表的展示条目上限
+      max_viewcount_text: 这适用于页脚视图列表和侧边栏和页脚足迹列表的展示条目上限
       show_filter_label: 添加「最多翻阅/最少翻阅」排序项
       show_footer_viewlist_label: 在帖子页脚展示「足迹」
       show_viewlist_label: 在主题帖展示「足迹」
+      show_viewlist_text: 在讨论的侧栏中启用最新查看器列表
       title: 主题浏览量设置
       track_guests: 记录未登录访客
+      track_guests_label: 跟踪客人
       track_unique_label: 记录首次查阅（UV）
   forum:
     discussion_controls:

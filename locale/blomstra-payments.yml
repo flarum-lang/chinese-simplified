@@ -8,15 +8,23 @@ blomstra-payments:
       select-pta-product: '收费计划（PTA 付费加入）'
       select-pta-product-description: "选择解锁用户组权限的收费计划。如果是订阅制，则访问权跟随订阅期限。前往 Stripe 仪表板创建付费计划，并将 <code>prod_</code> 开头的 ID 粘贴到这里。\n"
     edit-tag:
+      bump-others: （PTB）允许他人推动主题
+      bump-others-description: "如果启用，则不仅讨论作者可以通过付费来推动主题。\n"
+      select-ptb-product: （PTB）所需产品
+      select-ptb-product-description: "选择产品需要先支付该产品的费用，然后才能发起讨论。\n"
       select-ptp-product: '收费计划（PTP 付费发表）'
       select-ptp-product-description: "为标签选择收费计划，标签下主题帖的发表将需要支付相应的费用。按帖子收费，可适用于广告贴。前往 Stripe 仪表板创建「一次性」付费计划，并将 <code>prod_</code> 开头的 ID 粘贴到这里。\n"
       select-ptv-product: '收费计划（PTV 付费浏览）'
       select-ptv-product-description: "选择一个收费计划，以永久解锁限界帖子的浏览权限。前往 Stripe 仪表板创建付费计划，并将 <code>prod_</code> 开头的 ID 粘贴到这里。\n"
       visible-from: 隐藏限界
       visible-from-description: "指定付费才能解锁的帖子。0 表示所有帖子，1 表示首贴后的帖子。\n"
+    permission:
+      enable-bounties: 启用奖励
     settings:
       link-access-portal: 在用户会话下拉菜单中链接访问门户
+      link-to-terms: 付款条款URL
       pk: 公钥（api）
+      recount-total-discussion-bounties: 重新计算讨论奖金总额
       sk: 'Secret (api) key'
       webhook-secret: 'Webhook signing secret'
   forum:
@@ -27,8 +35,27 @@ blomstra-payments:
     access-portal:
       options: 选项
       purchase: 付款
+      subscribed: 已订购的
+    backers-widget:
+      backers: 支持者
+      none: 还没有支持者。
+    bounties:
+      enable-control: 启用奖励
+      purchase-control: 增加奖励
+    choose-bounty-amount-modal:
+      checkout-control: 结账
+      description: '结账选择支持 "{subject}" 的金额或选择自定义金额。'
+      title: 选择奖励金额
+    exceptions:
+      out-of-bounds-amount:
+        max: '不允许支付{amount}， {max} 是最高金额。'
+        min: '不允许支付{amount}，{min} 是最低金额。'
     nav:
       access_portal: 访问门户
+      user_subscriptions: 订阅
+    pay-to-bump:
+      purchase-control: 按需付费
+      purchase-log-in: 登录和按需付费
     pay-to-post:
       purchase: 付款
       purchase-control: 付费发表

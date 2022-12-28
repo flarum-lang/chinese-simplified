@@ -3,6 +3,10 @@
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
 nearata-auth-minecraft:
+  admin:
+    settings:
+      minecraft_server:
+        label: 我的世界服务器IP
   api:
     error_403: 令牌无效或过期。
     invalid_token_format: 令牌只能由数字组成。

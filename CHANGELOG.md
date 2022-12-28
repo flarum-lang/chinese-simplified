@@ -11,12 +11,14 @@ CHANGELOG
 * [`datlechin/flarum-signup-button`](https://github.com/datlechin/flarum-signup-button)
 * [`datlechin/flarum-title-length`](https://github.com/datlechin/flarum-title-length)
 * [`finteger/ratings`](https://github.com/finteger/ratings)
+* [`justoverclock/last-post-useravatar`](https://github.com/justoverclockl/last-post-useravatar)
 * [`ziiven/flarum-pay-to-see`](https://extiverse.com/extension/ziiven/flarum-pay-to-see)
 
 
 **更新翻译**:
 
 * [`kilowhat/flarum-ext-formulaire`](https://extiverse.com/extension/kilowhat/flarum-ext-formulaire)
+* [`nearata/flarum-ext-auth-minecraft`](https://github.com/Nearata/flarum-ext-auth-minecraft)
 * [`ziiven/flarum-daily-check-in`](https://github.com/Ziiven/flarum-daily-check-in)
 
 

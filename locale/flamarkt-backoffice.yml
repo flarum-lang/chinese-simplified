@@ -20,7 +20,7 @@ flamarkt-backoffice:
       head:
         email: 邮箱
       new: 创建账户
-      searchPlaceholder: 搜索账户...
+      searchPlaceholder: 搜索用户……
       title: 账户
   lib:
     header:

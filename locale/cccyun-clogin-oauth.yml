@@ -15,10 +15,10 @@ cccyun-clogin-oauth:
     alerts:
       already_linked: 第三个帐户已链接！
       already_used: 第三方帐户已链接到其他用户！
-      error: 出现了某些问题，请稍后再试！
+      error: 糟糕，出错啦！请刷新页面重试。
       link_success: 第三方帐户链接成功。
       unlink_success: 第三方帐户取消链接成功。
-      unlinked: 第三方帐户未绑定到本网站的帐户，请先注册，然后绑定。
+      unlinked: 此第三方账号未绑定任何用户，请先注册并绑定。
     modals:
       buttons:
         cancel: 不！

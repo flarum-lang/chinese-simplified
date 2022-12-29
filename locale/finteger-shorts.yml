@@ -12,7 +12,7 @@ finteger-shorts:
     uploadLimit: '上传限制（0到1000）。   管理员不受限制。'
     warningtext: 自定义Html代码
   forum:
-    containerMessage: 上传视频。
+    containerMessage: 上传视频
     headerTitle: 上传
     infoComments: 评论：
     infoDiscussion: 讨论：

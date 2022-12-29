@@ -48,7 +48,7 @@ blomstra-payments:
       title: 选择奖励金额
     exceptions:
       out-of-bounds-amount:
-        max: '不允许支付{amount}， {max} 是最高金额。'
+        max: '不允许支付 {amount}，{max} 是最高金额。'
         min: '不允许支付{amount}，{min} 是最低金额。'
     nav:
       access_portal: 访问门户

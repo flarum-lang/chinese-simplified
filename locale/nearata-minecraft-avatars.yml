@@ -3,6 +3,9 @@
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
 nearata-minecraft-avatars:
+  admin:
+    retrieve_avatar_on_register:
+      label: 在注册中搜索头像
   forum:
     avatar_changed: 头像更换成功。
     change_button: 更换我的世界头像

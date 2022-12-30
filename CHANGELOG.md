@@ -11,7 +11,7 @@ CHANGELOG
 * [`datlechin/flarum-signup-button`](https://github.com/datlechin/flarum-signup-button)
 * [`datlechin/flarum-title-length`](https://github.com/datlechin/flarum-title-length)
 * [`datlechin/flarum-who-replied`](https://github.com/datlechin/flarum-who-replied)
-* [`finteger/ratings`](https://github.com/finteger/ratings)
+* `finteger-ratings`
 * [`finteger/shorts`](https://extiverse.com/extension/finteger/shorts)
 * [`flamarkt/backoffice`](https://github.com/flamarkt/backoffice)
 * [`flamarkt/matomo`](https://github.com/flamarkt/matomo)

@@ -11,6 +11,7 @@ CHANGELOG
 * [`datlechin/flarum-signup-button`](https://github.com/datlechin/flarum-signup-button)
 * [`datlechin/flarum-title-length`](https://github.com/datlechin/flarum-title-length)
 * [`datlechin/flarum-who-replied`](https://github.com/datlechin/flarum-who-replied)
+* [`davwheat/virtual-authors`](https://extiverse.com/extension/davwheat/virtual-authors)
 * `finteger-ratings`
 * `finteger-shorts`
 * [`flamarkt/backoffice`](https://github.com/flamarkt/backoffice)
@@ -21,6 +22,8 @@ CHANGELOG
 * [`justoverclock/broken-links-checker`](https://github.com/justoverclockl/broken-links-checker)
 * [`justoverclock/check-duplicate-discussions`](https://extiverse.com/extension/justoverclock/check-duplicate-discussions)
 * [`justoverclock/composer-autocomplete`](https://github.com/justoverclockl/composer-autocomplete)
+* [`justoverclock/frontend-blog`](https://extiverse.com/extension/justoverclock/frontend-blog)
+* [`justoverclock/igdb-api`](https://extiverse.com/extension/justoverclock/igdb-api)
 * [`justoverclock/last-post-useravatar`](https://github.com/justoverclockl/last-post-useravatar)
 * [`maicol07/flarum-oidc-client`](https://extiverse.com/extension/maicol07/flarum-oidc-client)
 * [`ziiven/flarum-pay-to-see`](https://extiverse.com/extension/ziiven/flarum-pay-to-see)
@@ -33,8 +36,10 @@ CHANGELOG
 * [`fof/share-social`](https://github.com/FriendsOfFlarum/share-social)
 * [`kilowhat/flarum-ext-formulaire`](https://extiverse.com/extension/kilowhat/flarum-ext-formulaire)
 * [`michaelbelgium/flarum-discussion-views`](https://github.com/MichaelBelgium/flarum-discussion-views)
+* [`michaelbelgium/mybb-to-flarum`](https://github.com/MichaelBelgium/mybb_to_flarum)
 * [`nearata/flarum-ext-auth-minecraft`](https://github.com/Nearata/flarum-ext-auth-minecraft)
 * [`nearata/flarum-ext-minecraft-avatars`](https://github.com/Nearata/flarum-ext-minecraft-avatars)
+* [`zerosonesfun/flarum-bbcode-button`](https://github.com/zerosonesfun/flarum-bbcode-button)
 * [`ziiven/flarum-daily-check-in`](https://github.com/Ziiven/flarum-daily-check-in)
 
 

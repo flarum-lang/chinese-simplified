@@ -6,7 +6,7 @@ michaelbelgium-mybb-to-flarum:
   admin:
     content:
       convert_button: 迁移
-      description_text: '将 Mybb 论坛转为 Flarum 实例。填写所需数据，然后点击「迁移」即可。'
+      description_text: '将 MyBB 论坛迁移到 Flarum 实例。填写所需数据，然后点击「迁移」即可。'
       form:
         general:
           migrate_avatars_label: 迁移头像

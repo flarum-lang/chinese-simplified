@@ -6,7 +6,7 @@ flarum-bbcode-button:
   admin:
     settings:
       codedesc: 请输入开闭标签。
-      codelabel: 'BBCode 标签'
+      codelabel: '1. BBCode 标签'
       icondesc: '请输入 FontAwesome 图标类名。'
       iconlabel: 按钮图标
       introdesc: '本扩展程序允许您在添加包括但不限于 BBCode 的自定义按钮到文本编辑器工具栏。使用前，请先确保配置按钮并保存。'

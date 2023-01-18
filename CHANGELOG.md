@@ -22,6 +22,7 @@ CHANGELOG
 * [`justoverclock/broken-links-checker`](https://github.com/justoverclockl/broken-links-checker)
 * [`justoverclock/check-duplicate-discussions`](https://extiverse.com/extension/justoverclock/check-duplicate-discussions)
 * [`justoverclock/composer-autocomplete`](https://github.com/justoverclockl/composer-autocomplete)
+* [`justoverclock/country-flags`](https://github.com/justoverclockl/country-flags)
 * [`justoverclock/frontend-blog`](https://extiverse.com/extension/justoverclock/frontend-blog)
 * [`justoverclock/igdb-api`](https://extiverse.com/extension/justoverclock/igdb-api)
 * [`justoverclock/last-post-useravatar`](https://github.com/justoverclockl/last-post-useravatar)
@@ -33,6 +34,7 @@ CHANGELOG
 
 * [`blomstra/payments`](https://extiverse.com/extension/blomstra/payments)
 * [`cccyun/flarum-clogin-oauth`](https://github.com/netcccyun/flarum-clogin-oauth)
+* [`fof/byobu`](https://github.com/FriendsOfFlarum/byobu)
 * [`fof/share-social`](https://github.com/FriendsOfFlarum/share-social)
 * [`kilowhat/flarum-ext-formulaire`](https://extiverse.com/extension/kilowhat/flarum-ext-formulaire)
 * [`michaelbelgium/flarum-discussion-views`](https://github.com/MichaelBelgium/flarum-discussion-views)

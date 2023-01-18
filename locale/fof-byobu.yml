@@ -14,6 +14,7 @@ fof-byobu:
       view_private_discussions-when-flagged: 查看他人被举报的私密主题
     settings:
       badge-icon: 'Byobu 主题帖徽章'
+      delete_on_last_recipient_left: 所有参与者均离开后，自动删除该私密主题
       enable-make-public-option: 启用「私密转公开」功能
       enable-make-public-option-help: 转公开时，所有参与者自动退出私密主题，私密主题转为普通公开主题。
       post-event-icon: 'Byobu 发帖事件'

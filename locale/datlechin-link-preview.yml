@@ -10,5 +10,6 @@ datlechin-link-preview:
       blacklist_placeholder: '如「baidu.com,https://pornhub.com/categories」'
       convert_media_urls_help: 启用以转换所有媒体链接为预览帖。
       convert_media_urls_label: 预览媒体链接
+      use_google_favicons_label: '使用谷歌图标 API'
   forum:
     site_cannot_be_reached: 无法访问此站点。

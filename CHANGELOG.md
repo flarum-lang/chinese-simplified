@@ -34,6 +34,7 @@ CHANGELOG
 
 * [`blomstra/payments`](https://extiverse.com/extension/blomstra/payments)
 * [`cccyun/flarum-clogin-oauth`](https://github.com/netcccyun/flarum-clogin-oauth)
+* [`datlechin/flarum-link-preview`](https://github.com/datlechin/flarum-link-preview)
 * [`fof/byobu`](https://github.com/FriendsOfFlarum/byobu)
 * [`fof/share-social`](https://github.com/FriendsOfFlarum/share-social)
 * [`kilowhat/flarum-ext-formulaire`](https://extiverse.com/extension/kilowhat/flarum-ext-formulaire)

@@ -6,3 +6,5 @@ datlechin-keyboard-shortcuts:
   forum:
     modal:
       title: 键盘快捷键
+  lib:
+    global_heading: 全球

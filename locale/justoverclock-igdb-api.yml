@@ -5,3 +5,4 @@
 justoverclock-igdb-api:
   admin:
     rawgApi: 'RawG Api 密钥'
+    rawgApi-help: '从https://rawg.io/signup获取免费API密钥并粘贴至此'

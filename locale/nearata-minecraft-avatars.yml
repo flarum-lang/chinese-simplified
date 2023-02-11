@@ -5,14 +5,19 @@
 nearata-minecraft-avatars:
   admin:
     retrieve_avatar_on_register:
+      help: 若该用户名不匹配任何《我的世界》账户，Steve或Alex将被设为默认皮肤。
       label: 在注册中搜索头像
   forum:
     avatar_changed: 头像更换成功。
     change_button: 更换我的世界头像
     dismiss_button: 好的
-    help_text: '必须为有效的用户名或 UUID（纯文本或连字符）'
+    help_text: 用户名将被转换为UUID。
+    minotar_enabled: 启用
+    page_title: 《我的世界》头像
+    placeholder: 用户名或UUID
     submit_button: 保存
     title: 我的世界头像
     use_button: 使用我的世界头像
     username_not_found: 用户名不存在。
-    username_uuid_not_valid: '用户名或 UUID 无效。'
+    username_uuid_not_valid: 用户名或UUID无效。
+    userpage_nav_button: 《我的世界》头像

@@ -5,6 +5,7 @@
 ianm-translate:
   admin:
     permission:
+      refresh-translation: 强制重新翻译缓存翻译
       translate: 查看翻译
     settings:
       any-language: 任何语言

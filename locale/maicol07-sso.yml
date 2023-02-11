@@ -13,6 +13,7 @@ maicol07-sso:
       logout_url: 退出登录链接
       manage_account_btn_open_in_new_tab: 在新标签页中打开账户管理
       manage_account_url: 管理账户连接
+      provider_mode: 启用该选项以使用提供商模式（Flarum网站间的SSO），允许其他Flarum网站登录该Flarum网站账户，这将禁用其它网站的SSO功能。
       remove_login_btn: 移除登录按钮
       remove_signup_btn: 移除注册按钮
       signup_url: 注册链接

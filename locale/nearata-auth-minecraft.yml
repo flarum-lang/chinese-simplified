@@ -6,6 +6,7 @@ nearata-auth-minecraft:
   admin:
     settings:
       minecraft_server:
+        help: 示例：mydomain.tld
         label: 我的世界服务器IP
   api:
     error_403: 令牌无效或过期。

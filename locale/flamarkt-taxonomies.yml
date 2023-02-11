@@ -21,6 +21,8 @@ flamarkt-taxonomies:
       title:
         edit: 编辑条目
         new: 创建分类条目
+    menu:
+      title: 分类
   lib:
     modal:
       custom: '选择 {value}'

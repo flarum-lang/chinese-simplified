@@ -11,7 +11,7 @@ nearata-minecraft-avatars:
     avatar_changed: 头像更换成功。
     change_button: 更换我的世界头像
     dismiss_button: 好的
-    help_text: 用户名将被转换为UUID。
+    help_text: '用户名将被转换为 UUID'
     minotar_enabled: 启用
     page_title: 《我的世界》头像
     placeholder: 用户名或UUID

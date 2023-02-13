@@ -7,4 +7,4 @@ fof-oauth:
     settings:
       providers:
         line:
-          description: '用LINE开发者平台注册你的论坛{link}'
+          description: '用 LINE 开发者控制台注册你的论坛 {link}'

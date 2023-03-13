@@ -48,6 +48,9 @@ core:
       clear_cache_button: 清除缓存
       description: 论坛各项数据一览
       io_error_message: 无法写入文件。请检查操作权限，重试或者直接从命令行运行命令。
+      status:
+        scheduler:
+          never-run: 从未运行
       title: 仪表盘
       tools_button: 工具
     debug-warning:
@@ -155,6 +158,7 @@ core:
     permissions:
       allow_post_editing_label: 编辑帖子内容
       allow_renaming_label: 更改自己的主题标题
+      create_access_token_label: 创建访问令牌
       create_heading: 帖子相关
       delete_discussions_forever_label: 永久删除主题
       delete_discussions_label: 删除主题
@@ -173,7 +177,7 @@ core:
       read_heading: 访问相关
       rename_discussions_label: 更改主题标题
       reply_to_discussions_label: 回复
-      search_users_label: 搜索用户
+      search_users_label: '=> core.ref.search_users'
       sign_up_label: 注册
       start_discussions_label: 发布主题
       title: 权限
@@ -221,8 +225,10 @@ core:
         invalid_column_content: 非法
       pagination:
         back_button: 上一页
+        first_button: 返回首页
         next_button: 下一页
         page_counter: '第 {current} 页 / 共 {total} 页'
+      search_placeholder: '=> core.ref.search_users'
       title: '=> core.ref.users'
       total_users: '用户数：{count}'
   api:
@@ -370,7 +376,7 @@ core:
       viewing_text: '{count, plural, one {{index} / {formattedCount} 条} other {{index} / {formattedCount} 条}}'
     post_stream:
       discussion_renamed_old_tooltip: '原标题：「{old}」'
-      discussion_renamed_text: '{username} 更改标题为「{new}」'
+      discussion_renamed_text: '{username} 于 {time} 更改标题为「{new}」'
       load_more_button: '=> core.ref.load_more'
       reply_placeholder: '=> core.ref.write_a_reply'
       time_lapsed_text: '{period} 后'
@@ -524,6 +530,7 @@ core:
     reset_your_password: 重置密码
     restore: 还原
     save_changes: 保存
+    search_users: 搜索用户
     settings: 设置
     sign_up: 注册
     some_others: '{count, plural, one {# 人} other {# 人}}'

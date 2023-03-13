@@ -5,6 +5,11 @@ CHANGELOG
 1.4.0 (XXXX-XX-XX)
 ------------------
 
+**例行更新**:
+
+* 更新核心翻译.
+
+
 **新增翻译**:
 
 * [`clarkwinkelmann/flarum-ext-meilisearch-dashboard`](https://github.com/clarkwinkelmann/flarum-ext-meilisearch-dashboard)

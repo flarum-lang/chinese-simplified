@@ -14,6 +14,7 @@ core:
       custom_footer_text: '=> core.ref.custom_footer_text'
       custom_header_heading: 自定义页眉
       custom_header_text: '=> core.ref.custom_header_text'
+      custom_styles_cannot_use_less_features: '自定义 LESS 中禁止使用 @import 与 data-uri 特性。'
       custom_styles_heading: 自定义样式
       custom_styles_text: '添加 Less/CSS 代码以自定义论坛外观，此设置将覆盖 Flarum 默认样式。'
       dark_mode_label: 夜间模式
@@ -49,7 +50,13 @@ core:
       description: 论坛各项数据一览
       io_error_message: 无法写入文件。请检查操作权限，重试或者直接从命令行运行命令。
       status:
+        headers:
+          queue-driver: 队列驱动器
+          scheduler-status: 调度器
+          session-driver: 会话驱动器
         scheduler:
+          active: 已激活
+          inactive: 未激活
           never-run: 从未运行
       title: 仪表盘
       tools_button: 工具
@@ -170,6 +177,7 @@ core:
       edit_users_groups_label: 编辑用户组
       edit_users_label: 编辑用户入口
       global_heading: 全局
+      moderate_access_tokens_label: 管理访问令牌
       moderate_heading: 管理相关
       new_group_button: 添加用户组
       participate_heading: 操作相关
@@ -204,6 +212,8 @@ core:
       description: 论坛用户分页列表
       grid:
         columns:
+          display_name:
+            title: 显示名称
           edit_user:
             button: '=> core.ref.edit'
             title: '=> core.ref.edit_user'
@@ -226,6 +236,8 @@ core:
       pagination:
         back_button: 上一页
         first_button: 返回首页
+        go_to_page_textbox_a11y_label: 直接前往页码
+        last_button: 前往最后一页
         next_button: 下一页
         page_counter: '第 {current} 页 / 共 {total} 页'
       search_placeholder: '=> core.ref.search_users'
@@ -387,6 +399,29 @@ core:
       all_discussions_button: '搜索“{query}”'
       discussions_heading: '=> core.ref.discussions'
       users_heading: '=> core.ref.users'
+    security:
+      browser_on_operating_system: '{os} 平台上的 {browser}'
+      cannot_terminate_current_session: 无法终止当前活动会话，请登出。
+      created: 创建成功
+      current_active_session: 当前活动会话
+      developer_tokens_heading: 开发者令牌
+      empty_text: 未找到开发者令牌。
+      global_logout:
+        heading: 全局登出
+        help_text: '清除当前的 cookie 会话，终止所有会话，撤销开发者令牌，一切账户确认或密码重置邮件将会失效。'
+      hide_access_token: 隐藏令牌
+      last_activity: 最近活动
+      never: 从未
+      new_access_token_modal:
+        submit_button: 新建令牌
+        title_placeholder: 标题
+      revoke_access_token: 撤销
+      session_termination_failed: 终止会话时出现错误。
+      sessions_heading: 活动会话
+      show_access_token: 查看令牌
+      terminate_all_other_sessions: 终止所有其他会话
+      terminate_session: 终止
+      token_revoked: 令牌已撤销。
     settings:
       account_heading: 帐户设置
       change_email_button: '=> core.ref.change_email'
@@ -467,6 +502,7 @@ core:
     error:
       dependent_extensions_message: '无法停用「{extension}」，请先停用依赖扩展「{extensions}」'
       extension_initialiation_failed_message: '初始化「{extension}」失败，详情信息请查看控制台。'
+      generic_cross_origin_message: 跨域请求时出现问题，请刷新页面后重试。
       generic_message: 糟糕，出错啦！请刷新页面重试。
       missing_dependencies_message: '无法启用「{extension}」，请先启用依赖扩展「{extensions}」'
       not_found_message: 您请求的资源不存在。
@@ -511,6 +547,7 @@ core:
     edit_user: 编辑用户
     email: 邮箱
     extensions: 扩展程序
+    generic_confirmation_message: 此操作无法撤销，你确定要继续吗？
     icon: 图标
     icon_text: '输入任意一个 <a>Font Awesome</a> 图标名称。<em>包括</em>前缀，例如 <code>fas fa-</code>'
     load_more: 加载更多
@@ -518,6 +555,7 @@ core:
     log_in: 登录
     log_out: 退出
     mark_all_as_read: 将所有帖子标记为已读
+    new_token: 新建令牌
     next_page: 下一页
     notifications: 通知中心
     okay: 确定
@@ -531,6 +569,7 @@ core:
     restore: 还原
     save_changes: 保存
     search_users: 搜索用户
+    security: 安全
     settings: 设置
     sign_up: 注册
     some_others: '{count, plural, one {# 人} other {# 人}}'

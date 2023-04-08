@@ -409,6 +409,7 @@ core:
       global_logout:
         heading: 全局登出
         help_text: '清除当前的 cookie 会话，终止所有会话，撤销开发者令牌，一切账户确认或密码重置邮件将会失效。'
+        log_out_button: 退出
       hide_access_token: 隐藏令牌
       last_activity: 最近活动
       never: 从未

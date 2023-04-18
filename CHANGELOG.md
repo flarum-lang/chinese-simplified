@@ -17,7 +17,7 @@ CHANGELOG
 * [`datlechin/flarum-title-length`](https://github.com/datlechin/flarum-title-length)
 * [`datlechin/flarum-who-replied`](https://github.com/datlechin/flarum-who-replied)
 * [`davwheat/virtual-authors`](https://extiverse.com/extension/davwheat/virtual-authors)
-* `finteger-ratings`
+* [`finteger/ratings`](https://github.com/finteger/ratings)
 * `finteger-shorts`
 * [`flamarkt/backoffice`](https://github.com/flamarkt/backoffice)
 * [`flamarkt/matomo`](https://github.com/flamarkt/matomo)

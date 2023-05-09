@@ -50,6 +50,7 @@ CHANGELOG
 * [`maicol07/flarum-oidc-client`](https://extiverse.com/extension/maicol07/flarum-oidc-client)
 * [`matteociaroni/flarum-public-suspensions`](https://github.com/matteociaroni/flarum-public-suspensions)
 * [`nearata/flarum-ext-related-discussions`](https://github.com/Nearata/flarum-ext-related-discussions)
+* [`peruguitar/flarum-ext-user-portrait`](https://github.com/Anexsoft/peruguitar-flarum-ext-user-portrait)
 * [`serakoi/flarumstaffbadge`](https://github.com/Serakoi/flarumstaffbadge)
 * [`tohsakarat/save-and-load-draft-automatically`](https://github.com/tohsakrat/save-and-load-draft-automatically)
 * [`tohsakarat/tags-filter`](https://github.com/tohsakrat/flarum-tags-filter)

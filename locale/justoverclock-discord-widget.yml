@@ -5,3 +5,8 @@
 justoverclock-discord-widget:
   admin:
     channelId: 频道ID
+    channelId-help: 在您的服务器开启小组件并粘贴您的频道ID
+  forum:
+    channels: 频道
+    joinUs: 加入我们
+    onlineUsers: '在线用户： '

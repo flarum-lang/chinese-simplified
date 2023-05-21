@@ -6,3 +6,7 @@ davwheat-virtual-authors:
   admin:
     permissions:
       set_virtual_authors: 在讨论中设置虚拟作者
+    settings:
+      create_new: 创建新虚拟作者
+      errored: 无法从服务器加载虚拟作者。
+      search_placeholder: 通过名字搜索

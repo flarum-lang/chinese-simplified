@@ -45,6 +45,11 @@ core:
       title: 常规
       welcome_banner_heading: 欢迎横幅
       welcome_banner_text: 横幅文本将显示于「全部主题」页面顶部，可以用于欢迎论坛访客。
+    create_user:
+      email_confirmed_label: 需要用户确认此邮件
+      submit_button: 创建用户
+      title: 创建新用户
+      use_random_password: 生成随机密码
     dashboard:
       clear_cache_button: 清除缓存
       description: 论坛各项数据一览
@@ -163,6 +168,7 @@ core:
       userlist_button: '=> core.admin.users.title'
       userlist_title: '=> core.admin.users.description'
     permissions:
+      allow_hide_own_posts_label: 允许删除自己的账户
       allow_post_editing_label: 编辑帖子内容
       allow_renaming_label: 更改自己的主题标题
       create_access_token_label: 创建访问令牌
@@ -209,6 +215,7 @@ core:
       remove_button: '=> core.ref.remove'
       upload_button: 选择图片...
     users:
+      create_user_button: 新用户
       description: 论坛用户分页列表
       grid:
         columns:
@@ -558,6 +565,7 @@ core:
     log_in: 登录
     log_out: 退出
     mark_all_as_read: 将所有帖子标记为已读
+    never: 从不
     new_token: 新建令牌
     next_page: 下一页
     notifications: 通知中心

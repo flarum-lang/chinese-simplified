@@ -5,3 +5,8 @@
 datlechin-discussion-overview:
   forum:
     created: 创建
+    last_reply: 最后回复
+    likes: 赞
+    replies: 回复
+    users: 用户
+    views: 阅读量

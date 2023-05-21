@@ -6,3 +6,5 @@ justoverclock-discussion-tags:
   admin:
     permissions:
       canEditDiscussionTags: 可编辑讨论标签
+  forum:
+    dTags: 讨论标签

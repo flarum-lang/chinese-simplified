@@ -4,6 +4,7 @@
 
 acpl-lscache:
   admin:
+    cache_enabled_label: '开启 LSCache'
     cache_exclude_help: '一行一个关键词，匹配的路径将不会被缓存。如不想缓存 <code>/mypath/mypage?aa=bb</code>，可以使用 <code>mypage?aa=</code> 匹配。要匹配字符串开头，请以 <code>^</code> 作为前缀。要进行完全匹配，请以 <code>$</code> 作为 URL 后缀。'
     cache_exclude_label: 禁用路径缓存
     clearing_cache_listener_label: '清除 Flarum 缓存时同步清除 LSCache'

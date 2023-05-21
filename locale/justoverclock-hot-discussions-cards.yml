@@ -5,3 +5,4 @@
 justoverclock-hot-discussion-cards:
   forum:
     hot: 置顶！
+    post: '{count, plural, one {POST} other {POSTS}}'

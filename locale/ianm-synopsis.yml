@@ -5,6 +5,8 @@
 ianm-synopsis:
   admin:
     settings:
+      disable-when-searching:
+        label: 搜索时不显示内容摘要
       excerpt-label: 摘要字符长度
       excerpt-length:
         help: 要展示的帖子摘要字符数量。

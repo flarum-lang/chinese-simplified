@@ -7,6 +7,7 @@ nearata-twofactor:
     permissions:
       can_enable_twofactor: 启用两步验证
     settings:
+      generate_app_backups: 生成应用的备份码
       generate_backups: 生成恢复代码
   forum:
     invalid_twofa_code: 两步验证码错误

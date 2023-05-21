@@ -37,6 +37,7 @@ CHANGELOG
 * [`justoverclock/discord-widget`](https://extiverse.com/extension/justoverclock/discord-widget)
 * [`justoverclock/discussion-tags`](https://extiverse.com/extension/justoverclock/discussion-tags)
 * [`justoverclock/export-post-to-pdf`](https://extiverse.com/extension/justoverclock/export-post-to-pdf)
+* [`justoverclock/first-visit-popup`](https://github.com/justoverclockl/first-visit-popup)
 * [`justoverclock/frontend-blog`](https://extiverse.com/extension/justoverclock/frontend-blog)
 * [`justoverclock/hot-discussions-cards`](https://github.com/justoverclockl/hot-discussions-cards)
 * [`justoverclock/igdb-api`](https://extiverse.com/extension/justoverclock/igdb-api)
@@ -63,6 +64,7 @@ CHANGELOG
 
 **更新翻译**:
 
+* [`acpl/flarum-lscache`](https://github.com/android-com-pl/flarum-lscache)
 * [`blomstra/payments`](https://extiverse.com/extension/blomstra/payments)
 * [`cccyun/flarum-clogin-oauth`](https://github.com/netcccyun/flarum-clogin-oauth)
 * [`convo-extensions/flarum-ext-guest-posting`](https://extiverse.com/extension/convo-extensions/flarum-ext-guest-posting)
@@ -72,8 +74,10 @@ CHANGELOG
 * [`datlechin/flarum-link-preview`](https://github.com/datlechin/flarum-link-preview)
 * [`flamarkt/taxonomies`](https://github.com/flamarkt/taxonomies)
 * [`fof/byobu`](https://github.com/FriendsOfFlarum/byobu)
+* [`fof/linguist`](https://github.com/FriendsOfFlarum/linguist)
 * [`fof/share-social`](https://github.com/FriendsOfFlarum/share-social)
 * [`hehongyuanlove/flarum-auth-qq`](https://github.com/Hehongyuanlove/flarum-auth-qq)
+* [`ianm/synopsis`](https://github.com/imorland/synopsis)
 * [`ianm/translate`](https://extiverse.com/extension/ianm/translate)
 * [`kilowhat/flarum-ext-formulaire`](https://extiverse.com/extension/kilowhat/flarum-ext-formulaire)
 * [`maicol07/flarum-ext-sso`](https://github.com/maicol07/flarum-ext-sso)
@@ -81,6 +85,7 @@ CHANGELOG
 * [`michaelbelgium/mybb-to-flarum`](https://github.com/MichaelBelgium/mybb_to_flarum)
 * [`nearata/flarum-ext-auth-minecraft`](https://github.com/Nearata/flarum-ext-auth-minecraft)
 * [`nearata/flarum-ext-minecraft-avatars`](https://github.com/Nearata/flarum-ext-minecraft-avatars)
+* [`nearata/flarum-ext-twofactor`](https://github.com/Nearata/flarum-ext-twofactor)
 * [`zerosonesfun/flarum-bbcode-button`](https://github.com/zerosonesfun/flarum-bbcode-button)
 * [`ziiven/flarum-daily-check-in`](https://github.com/Ziiven/flarum-daily-check-in)
 

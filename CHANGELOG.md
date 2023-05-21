@@ -13,6 +13,7 @@ CHANGELOG
 **新增翻译**:
 
 * [`clarkwinkelmann/flarum-ext-meilisearch-dashboard`](https://github.com/clarkwinkelmann/flarum-ext-meilisearch-dashboard)
+* [`datlechin/flarum-chatgpt`](https://github.com/datlechin/flarum-chatgpt)
 * [`datlechin/flarum-signup-button`](https://github.com/datlechin/flarum-signup-button)
 * [`datlechin/flarum-title-length`](https://github.com/datlechin/flarum-title-length)
 * [`datlechin/flarum-who-replied`](https://github.com/datlechin/flarum-who-replied)
@@ -64,11 +65,15 @@ CHANGELOG
 
 * [`blomstra/payments`](https://extiverse.com/extension/blomstra/payments)
 * [`cccyun/flarum-clogin-oauth`](https://github.com/netcccyun/flarum-clogin-oauth)
+* [`convo-extensions/flarum-ext-guest-posting`](https://extiverse.com/extension/convo-extensions/flarum-ext-guest-posting)
+* [`datlechin/flarum-birthdays-widget`](https://github.com/datlechin/flarum-birthdays-widget)
+* [`datlechin/flarum-discussion-overview`](https://github.com/datlechin/flarum-discussion-overview)
 * [`datlechin/flarum-keyboard-shortcuts`](https://github.com/datlechin/flarum-keyboard-shortcuts)
 * [`datlechin/flarum-link-preview`](https://github.com/datlechin/flarum-link-preview)
 * [`flamarkt/taxonomies`](https://github.com/flamarkt/taxonomies)
 * [`fof/byobu`](https://github.com/FriendsOfFlarum/byobu)
 * [`fof/share-social`](https://github.com/FriendsOfFlarum/share-social)
+* [`hehongyuanlove/flarum-auth-qq`](https://github.com/Hehongyuanlove/flarum-auth-qq)
 * [`ianm/translate`](https://extiverse.com/extension/ianm/translate)
 * [`kilowhat/flarum-ext-formulaire`](https://extiverse.com/extension/kilowhat/flarum-ext-formulaire)
 * [`maicol07/flarum-ext-sso`](https://github.com/maicol07/flarum-ext-sso)

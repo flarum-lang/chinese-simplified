@@ -436,6 +436,7 @@ core:
         title_placeholder: 标题
       revoke_access_token: 撤销
       revoke_access_token_confirmation: 你真的要这么做吗？本操作无法撤销
+      session_terminated: '{count, plural, one {会话结束 } other {# 个会话结束}}.'
       session_termination_failed: 终止会话时出现错误。
       sessions_heading: 活动会话
       show_access_token: 查看令牌

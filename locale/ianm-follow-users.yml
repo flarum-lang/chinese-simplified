@@ -24,7 +24,7 @@ ianm-follow-users:
     filter:
       following: 我的关注
     followed: 追随
-    followers: 粉丝
+    followers: '{count, plural, one {粉丝} other {粉丝}}'
     index:
       follow_tag_button: '=> ianm-follow-users.lib.follow'
       unfollow_tag_button: '=> ianm-follow-users.lib.change_follow_type'

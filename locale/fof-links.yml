@@ -25,6 +25,8 @@ fof-links:
     links:
       create_button: '=> fof-links.ref.create_link'
       links: '=> fof-links.ref.links'
+    settings:
+      show_icons_only_on_tablet: 在平板设备上仅显示图标
   ref:
     create_link: 新建链接
     links: 导航栏链接

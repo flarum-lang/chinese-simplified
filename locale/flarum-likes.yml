@@ -21,6 +21,7 @@ flarum-likes:
       unlike_link: 取消赞
       you_text: '=> core.ref.you'
     post_likes:
+      load_more_button: '=> core.ref.load_more'
       title: 点赞的用户
     settings:
       notify_post_liked_label: 有人赞我

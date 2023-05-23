@@ -36,6 +36,7 @@ askvortsov-pwa:
       other:
         force_portrait_text: '强制重定向?'
         heading: 其他
+        push_notif_preference_default_to_email_label: 默认推送至电子邮箱吗？
       refreshed_message: 'PWA 配置刷新成功。'
       status_check_heading: 状态检查
       submit_button: 保存设置

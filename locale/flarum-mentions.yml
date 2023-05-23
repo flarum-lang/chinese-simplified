@@ -25,12 +25,16 @@ flarum-mentions:
       reply_to_post_text: '回复 #{number}'
     group_mention:
       deleted_text: '[未知组群]'
+    mentioned_by:
+      load_more_button: '=> core.ref.load_more'
+      title: 回复本帖
     notifications:
       group_mentioned_text: '{username} 提到了您所属的组群'
       others_text: '=> core.ref.some_others'
       post_mentioned_text: '{username} 回复了您'
       user_mentioned_text: '{username} 提及了您'
     post:
+      mentioned_by_more_text: '{count} 个回帖。'
       mentioned_by_self_text: '{users} 回复了此帖'
       mentioned_by_text: '{users} 回复了此帖'
       others_text: '=> core.ref.some_others'

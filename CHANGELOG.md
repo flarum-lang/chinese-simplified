@@ -66,6 +66,7 @@ CHANGELOG
 **更新翻译**:
 
 * [`acpl/flarum-lscache`](https://github.com/android-com-pl/flarum-lscache)
+* [`askvortsov/flarum-pwa`](https://github.com/askvortsov1/flarum-pwa)
 * [`blomstra/payments`](https://extiverse.com/extension/blomstra/payments)
 * [`cccyun/flarum-clogin-oauth`](https://github.com/netcccyun/flarum-clogin-oauth)
 * [`convo-extensions/flarum-ext-guest-posting`](https://extiverse.com/extension/convo-extensions/flarum-ext-guest-posting)
@@ -74,10 +75,14 @@ CHANGELOG
 * [`datlechin/flarum-keyboard-shortcuts`](https://github.com/datlechin/flarum-keyboard-shortcuts)
 * [`datlechin/flarum-link-preview`](https://github.com/datlechin/flarum-link-preview)
 * [`flamarkt/taxonomies`](https://github.com/flamarkt/taxonomies)
+* [`flarum/likes`](https://github.com/flarum/likes)
+* [`flarum/mentions`](https://github.com/flarum/mentions)
 * [`fof/byobu`](https://github.com/FriendsOfFlarum/byobu)
 * [`fof/linguist`](https://github.com/FriendsOfFlarum/linguist)
+* [`fof/links`](https://github.com/FriendsOfFlarum/links)
 * [`fof/share-social`](https://github.com/FriendsOfFlarum/share-social)
 * [`hehongyuanlove/flarum-auth-qq`](https://github.com/Hehongyuanlove/flarum-auth-qq)
+* [`ianm/follow-users`](https://github.com/imorland/follow-users)
 * [`ianm/synopsis`](https://github.com/imorland/synopsis)
 * [`ianm/translate`](https://extiverse.com/extension/ianm/translate)
 * [`kilowhat/flarum-ext-formulaire`](https://extiverse.com/extension/kilowhat/flarum-ext-formulaire)

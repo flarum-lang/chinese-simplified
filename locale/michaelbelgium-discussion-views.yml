@@ -15,16 +15,20 @@ michaelbelgium-discussion-views:
     settings:
       abbr_numbers_label: 缩写浏览量
       abbr_numbers_text: '启用此项以缩写计数（如 1000 = 1 千）'
+      ignore_crawlers_label: 忽略机器人/爬虫
+      ignore_crawlers_text: 忽略爬虫和机器人访问时的次数
       max_viewcount_label: 「足迹」列表最多展示人数
       max_viewcount_text: 展示条目上限（侧边栏和页脚足迹列表）
       show_filter_label: 添加「最多翻阅/最少翻阅」排序项
       show_footer_viewlist_label: 在帖子页脚展示「足迹」
+      show_footer_viewlist_text: 在首帖底部显示访客列表
       show_viewlist_label: 在主题帖展示「足迹」
       show_viewlist_text: 启用主题帖侧边栏列表视图
       title: 主题浏览量设置
       track_guests: 记录未登录访客
       track_guests_label: 记录未登录访客
       track_unique_label: 记录首次查阅（UV）
+      track_unique_text: '基于访客 IP 位置增加帖子浏览次数'
   forum:
     discussion_controls:
       resetviews_button: 重置浏览量

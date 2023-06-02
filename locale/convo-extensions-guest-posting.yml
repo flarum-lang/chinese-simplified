@@ -9,6 +9,7 @@ core:
 guest-posting:
   admin:
     settings:
+      enableImport: 在注册时启用现有帖子的导入
       title: 访客发布设置
       usernames: 为访客生成随机用户名
   forum:

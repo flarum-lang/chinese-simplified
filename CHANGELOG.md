@@ -22,6 +22,7 @@ CHANGELOG
 * `finteger-shorts`
 * [`flamarkt/backoffice`](https://github.com/flamarkt/backoffice)
 * [`flamarkt/matomo`](https://github.com/flamarkt/matomo)
+* [`flarum/bbcode`](https://github.com/flarum/bbcode)
 * [`fof/discussion-thumbnail`](https://github.com/FriendsOfFlarum/discussion-thumbnail)
 * [`glowingblue/localizd`](https://extiverse.com/extension/glowingblue/localizd)
 * [`ianm/log-viewer`](https://github.com/imorland/flarum-ext-log-viewer)
@@ -43,6 +44,7 @@ CHANGELOG
 * [`justoverclock/igdb-api`](https://extiverse.com/extension/justoverclock/igdb-api)
 * [`justoverclock/last-post-useravatar`](https://github.com/justoverclockl/last-post-useravatar)
 * [`justoverclock/popular-tags`](https://github.com/justoverclockl/popular-tags)
+* [`justoverclock/random-post`](https://github.com/justoverclockl/random-post)
 * [`justoverclock/staff-members-widget`](https://github.com/justoverclockl/staff-member-widget)
 * [`justoverclock/steam-api`](https://extiverse.com/extension/justoverclock/steam-api)
 * [`justoverclock/thread-read-time`](https://github.com/justoverclockl/thread-read-time)

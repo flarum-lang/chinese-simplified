@@ -15,7 +15,7 @@ flarum-lock:
     notifications:
       discussion_locked_text: '{username} 锁定此帖'
     post_stream:
-      discussion_locked_text: '{username} 锁定此帖'
-      discussion_unlocked_text: '{username} 解锁此帖'
+      discussion_locked_text: '{username} 于 {time} 锁定此帖'
+      discussion_unlocked_text: '{username} 于 {time} 解锁此帖'
     settings:
       notify_discussion_locked_label: 我的主题帖被锁定

@@ -6,6 +6,7 @@ blomstra-turnstile:
   admin:
     settings:
       forgot: '=> core.forum.forgot_password.title'
+      help_text: '在你的 Cloudflare 账号<a>控制台处</a>生成 Turnstile 密钥'
       secret_key: 私钥
       signin: '=> core.forum.log_in.title'
       signup: '=> core.forum.sign_up.title'

@@ -37,6 +37,9 @@ askvortsov-pwa:
         force_portrait_text: '强制重定向?'
         heading: 其他
         push_notif_preference_default_to_email_label: 默认推送至电子邮箱吗？
+        push_notif_preference_default_to_email_text: 开启后，将根据用户的邮件推送设置进行通知推送。若关闭，用户将默认禁用通知。
+        user_max_subscriptions_label: 每个用户的最大推送订阅数
+        user_max_subscriptions_text: '每个用户一次将会收到多少条消息订阅？当用户收到推送通知时，每条订阅都会调用一次 API。每个订阅取决于用户所使用过的浏览器。'
       refreshed_message: 'PWA 配置刷新成功。'
       status_check_heading: 状态检查
       submit_button: 保存设置
@@ -44,7 +47,7 @@ askvortsov-pwa:
     status:
       config_no_https: '您 config.php 文件中的 URL 未使用 HTTPS。渐进式 Web 应用必须使用 HTTPS 方可正常工作。'
       key_gen_failed: '推送通知所需的密钥生成失败。错误信息：{error}'
-      no_logo: '您必须至少上传一张 196px 尺寸的标志才能使您的应用程序正常工作。'
+      no_logo: '请至少上传一张 144x144px 尺寸的标志才能使您的 PWA 应用正常安装。'
       no_name: 您必须设置应用全名才能使您的应用程序正常工作。
       no_vapid_keys: 'VAPID 密钥缺失，发送推送通知需要此秘钥。请在下方重置 VAPID 密钥。'
       possible_https_disabled: '你的网站可能没有在 HTTPS 上运行。清除缓存（仪表盘 → 工具按钮）可能有所帮助。如果已是 HTTPS，请忽略此提示。如果确实是 HTTP，请记住渐进式网络应用程序只能工作在 HTTPS 环境中。'

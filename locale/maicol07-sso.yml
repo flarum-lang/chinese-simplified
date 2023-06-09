@@ -5,6 +5,7 @@
 maicol07-sso:
   admin:
     settings:
+      client_name: 名称
       jwt_iss: 'Issuer Domain'
       jwt_section_subtitle: 'JWT Addon 设置'
       jwt_signer_key: 'Signer key'

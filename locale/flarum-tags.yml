@@ -27,6 +27,8 @@ flarum-tags:
       bypass_tag_counts_label: 不受标签数量限制
       restrict_by_tag_heading: 按标签分类
       tag_discussions_label: 更改标签
+    settings:
+      button_text: '=> flarum-tags.ref.choose_tags'
     tag_settings:
       range_separator_text: ' 至 '
       required_primary_heading: 主标签数量限制
@@ -53,7 +55,7 @@ flarum-tags:
       submit_button: '=> core.ref.okay'
       title: 添加标签
     composer_discussion:
-      choose_tags_link: 添加标签
+      choose_tags_link: '=> flarum-tags.ref.choose_tags'
     discussion_controls:
       edit_tags_button: 编辑标签
     header:
@@ -63,14 +65,23 @@ flarum-tags:
       tags_link: '=> flarum-tags.ref.tags'
       untagged_link: 移除标签
     post_stream:
-      added_and_removed_tags_text: '{username} 添加标签 {tagsAdded}，并移除标签 {tagsRemoved}。'
-      added_tags_text: '{username} 添加标签 {tagsAdded}'
-      removed_tags_text: '{username} 移除标签 {tagsRemoved}'
+      added_and_removed_tags_text: '{username} 于 {time} 添加标签 {tagsAdded}，并移除标签 {tagsRemoved}。'
+      added_tags_text: '{username} 于 {time} 添加标签 {tagsAdded}'
+      removed_tags_text: '{username} 于 {time} 移除标签 {tagsRemoved}'
       tags_text: '{count, plural, one {{tags}} other {{tags}}} 标签'
     tag:
       meta_description_text: '{tag} 标签下的所有主题'
   lib:
     deleted_tag_text: 已删除
+    tag_selection_modal:
+      bypass_requirements: 忽略标签选择
+      choose_primary_placeholder: '{count, plural, one {请选择一个主标签} other {请选择 # 个主标签}}'
+      choose_secondary_placeholder: '=> flarum-tags.ref.choose_tags_placeholder'
+      choose_tags_placeholder: '=> flarum-tags.ref.choose_tags_placeholder'
+      submit_button: '=> core.ref.okay'
+      title: '=> flarum-tags.ref.choose_tags'
   ref:
+    choose_tags: 选择标签
+    choose_tags_placeholder: '{count, plural, one {请再选择一个标签} other {请再选择 # 个标签}}'
     name: 标签名称
     tags: 标签

@@ -16,6 +16,42 @@ nearata-twofactor:
       otp_placeholder: 两步验证码
       submit_button: 登录
       title: 两步验证
+    login:
+      app:
+        invalid_passcode: 通行证无效。
+        passcode_placeholder: 6位通行证
+      auth_buttons:
+        app: '2FA 身份验证器'
+      placeholder_label: 请选择一种验证方式…
+      submit_button_label: 登录
+      title: 双因素身份验证（2FA）
+    settings:
+      app:
+        button_help: '你将在验证器内收到 2FA 验证代码。'
+        button_label: '2FA 验证器'
+        setup:
+          close_button_label: 关闭
+          disable:
+            button_label: 禁用
+            enter_code_disable: '输入验证码以继续禁用 2FA 验证器。'
+            success: 验证器已禁用。
+          enable:
+            backups:
+              copy_button_label: 复制
+              download_button_label: 下载
+              download_file_format: "{website_title} | {website_url}\n\n请将这些备份代码保存在安全但可访问的地方。\n\n代码列表\n\n{codes}\n\n* 每个备份代码你只能使用一次。\n* 这些代码必须按照列出的顺序使用。\n* 这些代码生成于： {date}。\n"
+              message: "请将这些恢复代码保存在一个安全的地方。如果你丢失了启用双因素的设备，这些临时代码可以按照列出的顺序用来登录你的账户。\n"
+            button_label: 启用
+            enter_code_manually: 改为手动输入
+            scan_qr: '使用你的 2FA 设备扫描这个二维码以设置你的账户。'
+            success: 启用验证器成功。
+          invalid_passcode: '密码或 2FA 通行证错误。'
+          passcode_placeholder: 6位通行证
+          password_placeholder: 密码
+          title: '设置你的 2FA 验证器'
+      configured: 已配置
+      not_configured: 未配置
+      section_title: 双因素身份验证（2FA）
     setup_button: 两步验证
     setup_modal:
       backups:
@@ -35,3 +71,10 @@ nearata-twofactor:
         disable: 禁用
         enable: 启用
       title: 两步验证
+  lib:
+    edit_user:
+      app:
+        label: '2FA 身份验证器'
+      disable_confirmation: 你确定吗？你将禁用该用户的本验证方式。
+      placeholder_text: 均未开启，无法禁用
+      section_title: 双因素身份验证（2FA）

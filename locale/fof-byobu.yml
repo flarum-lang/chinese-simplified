@@ -5,6 +5,7 @@
 fof-byobu:
   admin:
     permission:
+      add_more_than_two_user_recipients: '在私人讨论中添加 2 个以上的用户'
       create_private_discussions_with_blocking_users: 强制将私密主题屏蔽的用户加入私密主题
       create_private_discussions_with_groups: 与用户组创建私密主题
       create_private_discussions_with_users: 与他人创建私密主题
@@ -18,6 +19,8 @@ fof-byobu:
       delete_on_last_recipient_left_help: 如果启用本选项，当最后一个用户离开时，私密主题将会被永久删除；否则，私密主题将只会被软删除/隐藏。
       enable-make-public-option: 启用「私密转公开」功能
       enable-make-public-option-help: 转公开时，所有参与者自动退出私密主题，私密主题转为普通公开主题。
+      hide_from_all_discussions_page: '在 "全部主题" 页面中隐藏私密讨论'
+      hide_from_all_discussions_page_help: '只能从用户个人资料或 "私密主题" 界面访问私密主题'
       post-event-icon: 'Byobu 发帖事件'
   email:
     body:

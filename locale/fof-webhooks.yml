@@ -17,6 +17,7 @@ fof-webhooks:
       deleted: '删除用户组`{1}`'
       renamed: '重命名用户组为 `{1}`'
     post:
+      approved: '在 `{1}` 中审核通过的帖子'
       deleted: '删除回复于 `{1}`'
       hidden: '隐藏回复于 `{1}`'
       posted: '新回复于 `{1}`'
@@ -41,6 +42,9 @@ fof-webhooks:
     settings:
       actions:
         flarum:
+          approval:
+            postwasapproved: 已通过的帖子
+            title: 'Flarum 批准'
           discussion:
             deleted: '=> fof-webhooks.ref.deleted'
             hidden: '=> fof-webhooks.ref.hidden'

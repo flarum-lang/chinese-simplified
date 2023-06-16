@@ -38,6 +38,8 @@ fof-oauth:
           api_key_label: 'API Key'
           api_secret_label: 'API Secret'
           description: '在 {link} 创建一个应用。您需要提供服务协议和隐私政策 URL，然后确保添加请求邮件权限。'
+      update_email_from_provider_help: '如果启用，用户的邮箱地址将被更新，以符合 OAuth 提供方在每次登录论坛时提供的地址。不是所有的提供方都提供更新的邮箱地址，在这种情况下，这个设置对这些提供者没有任何影响。'
+      update_email_from_provider_label: '从 OAuth 提供方处更新邮箱地址'
     settings_accessibility_label: '{name} 设置'
   forum:
     error:

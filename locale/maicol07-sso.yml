@@ -5,7 +5,17 @@
 maicol07-sso:
   admin:
     settings:
+      client_api_key: 'API 密钥'
+      client_api_key_help: '本 Flarum 应用的 API 密钥。'
       client_name: 名称
+      client_name_help: 'Flarum 应用的名称'
+      client_password_token: 密码令牌
+      client_password_token_help: '一个随机的密码令牌，用于 Flarum 应用的注册。'
+      client_url: URL
+      client_url_help: 'Flarum 应用的 URL'
+      client_verify_ssl: '验证 SSL'
+      client_verify_ssl_help: '在向 Flarum 应用发送请求时验证 SSL（推荐）。'
+      cookies_prefix: 'Cookie 前缀'
       jwt_iss: 'Issuer Domain'
       jwt_section_subtitle: 'JWT Addon 设置'
       jwt_signer_key: 'Signer key'

@@ -6,3 +6,9 @@ clarkwinkelmann-scout:
   admin:
     setting:
       driver: 驱动
+      driverOption:
+        algolia: Algolia
+        meilisearch: Meilisearch
+        'null': 'Null'
+        tntsearch: TNTSearch
+      prefix: 索引名前缀（可选）

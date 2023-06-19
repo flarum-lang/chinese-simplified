@@ -7,9 +7,14 @@ antoinefr-money:
     automoderator:
       action_name: 奖励资产
       metric_name: 资产
+    autoremove:
+      - 永不移除资产
+      - '隐藏或恢复 主题/帖子 时（默认）'
+      - '当 主题/帖子 被删除时'
     permissions:
       edit_money_label: 修改资产
     settings:
+      autoremove: 自动更新资产
       helpextensionlikes: '需要 <code>flarum/likes</code> 扩展程序'
       moneyfordiscussion: 发布一次主题贴可获得
       moneyforlike: 获得点赞时奖励资产

@@ -12,6 +12,7 @@ nearata-cakeday:
       cake_bg_color_label: 背景颜色
       cake_txt_color_help: 帮助：此设置用于修改蛋糕的字体颜色。留空即使用默认值。
       cake_txt_color_label: 图标颜色
+      general_section_title: 一般
       new_members: 为新成员添加蛋糕图标
       new_members_changelabel: 将新成员的标签改为：新成员
       new_members_howlong: 新成员身份时效

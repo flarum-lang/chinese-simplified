@@ -5,3 +5,4 @@
 justoverclock-steam-api:
   admin:
     steamApiKey: 'Steam API密钥'
+    steamApiKey-help: '在https://steamcommunity.com/dev/apikey，获取你的免费api密钥'

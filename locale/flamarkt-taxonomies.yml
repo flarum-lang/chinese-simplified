@@ -22,6 +22,7 @@ flamarkt-taxonomies:
         edit: 编辑条目
         new: 创建分类条目
     menu:
+      discussions: 讨论分类法
       title: 分类
   lib:
     modal:

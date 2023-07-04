@@ -11,6 +11,7 @@ flarum-ext-auth-keycloak:
       delegate_avatars_label: 代理头像
       encryption_algorithm_label: 加密算法
       encryption_key_label: 加密秘钥（或证书）
+      keycloak_version_label: 钥匙环版本
       realm_label: Realm
       role_mapping_label: 角色到用户组映射
       server_url_label: 服务器地址

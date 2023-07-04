@@ -32,3 +32,5 @@ pay-to-see:
     set_pay_to_see_price: 设置内容价格
     set_pay_to_see_price_success: 内容价格设置
     toolbar_tooltip: 插入付费可见内容
+  lib:
+    ok: 认可

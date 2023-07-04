@@ -5,6 +5,7 @@
 fof-sentry:
   admin:
     settings:
+      dsn_help: '如果你使用一个中继DSN作为主要的DSN，不要勾选 "用户反馈"，因为它将不会起作用。'
       dsn_label: 'Sentry DSN'
       environment_label: 'Sentry 监控环境'
       javascript_console_label: '捕获 JavaScript 控制台'

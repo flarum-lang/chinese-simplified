@@ -5,5 +5,8 @@
 maicol07-oidc-client:
   admin:
     settings:
+      client:
+        subtitle: "在这里添加你的OpenID Connect提供商提供的客户资料。如需进一步帮助，请查看文档.\n"
+        title: 客户端设置
       client_settings_title: 客户设置
       provider_name: 'OpenID Connect 认证服务提供方'

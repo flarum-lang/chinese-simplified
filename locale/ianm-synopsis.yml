@@ -6,6 +6,7 @@ ianm-synopsis:
   admin:
     settings:
       disable-when-searching:
+        help: 启用后，将使用默认的最相关的帖子摘录，而不是概要
         label: 搜索时不显示内容摘要
       excerpt-label: 摘要字符长度
       excerpt-length:

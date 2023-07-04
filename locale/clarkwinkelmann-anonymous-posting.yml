@@ -20,6 +20,7 @@ clarkwinkelmann-anonymous-posting:
       composerHelpTextPositionHidden: 不提示
       composerHelpTextPositionTooltip: 图标
       composerHelpTextPositionVisible: 独行
+      defaultAnonymity: 新内容默认为匿名
   forum:
     composerControls:
       anonymize: 匿名发布

@@ -5,4 +5,5 @@
 flamarkt-matomo:
   admin:
     settings:
+      siteId: 网站ID
       url: Matomo服务器域或URL

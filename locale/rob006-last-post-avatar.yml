@@ -9,6 +9,7 @@ rob006-last-post-avatar:
         help: 如果您不想在私密主题中改变头像行为，请勾选此选项。
         label: '忽略私密主题（FoF Byōbu）'
       mode:
+        label: 最后一个帖子的头像显示模式
         options:
           all-replies: 仅回复
           always: 显示所有图像

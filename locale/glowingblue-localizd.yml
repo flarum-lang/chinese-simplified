@@ -5,4 +5,5 @@
 glowingblue-localizd:
   admin:
     settings:
+      redirect_en: 重定向英语为论坛默认语言
       title: 局部设置

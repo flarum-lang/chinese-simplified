@@ -5,3 +5,4 @@
 justoverclock-country-flags:
   admin:
     countryColumn: 国家
+    showFlagsOnPosts: 在帖子上显示旗帜

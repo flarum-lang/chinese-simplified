@@ -47,7 +47,7 @@ core:
       welcome_banner_text: 横幅文本将显示于「全部主题」页面顶部，可以用于欢迎论坛访客。
     create_user:
       email_confirmed_label: 需要用户确认此邮件
-      email_placeholder: 邮箱地址
+      email_placeholder: '=> core.ref.email'
       password_placeholder: 密码
       submit_and_create_another_button: 再次创建并添加
       submit_button: 创建用户

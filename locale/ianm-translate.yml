@@ -7,6 +7,7 @@ ianm-translate:
     permission:
       refresh-translation: 强制重新翻译缓存翻译
       translate: 查看翻译
+      translate-to-locale: 查看当前地区的翻译
     settings:
       any-language: 任何语言
       any-language-help: 启用后，当前提供支持的所有语言的翻译都可以使用。若要将翻译文本限制为仅在论坛上启用的语言，请禁用此选项。

@@ -3,5 +3,7 @@
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
 peruguitar-user-portrait:
+  admin:
+    exclude_from_mobile_help: 排除移动设备的用户肖像
   forum:
     welcome_back_label: 欢迎回来

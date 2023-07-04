@@ -6,3 +6,4 @@ justoverclock-users-map-location:
   admin:
     adminLocationField: 位置
     mapBox-api-key: 地图盒公共令牌
+    mapBox-api-key-help: '在<a>https://account.mapbox.com/</a>上取回你的免费公共令牌'

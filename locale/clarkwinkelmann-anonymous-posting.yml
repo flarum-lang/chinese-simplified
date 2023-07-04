@@ -9,6 +9,7 @@ clarkwinkelmann-anonymous-posting:
       reveal: 查看匿名内容发布者
       use: 匿名发布
     settings:
+      alwaysAnonymiseEdits: 始终对编辑进行匿名化处理
       avatarAdd: 添加头像规则
       avatarAvatarUrl: '头像 URL'
       avatarFieldKey: 字段名
@@ -21,6 +22,7 @@ clarkwinkelmann-anonymous-posting:
       composerHelpTextPositionTooltip: 图标
       composerHelpTextPositionVisible: 独行
       defaultAnonymity: 新内容默认为匿名
+      defaultAnonymityWhenAbleToSwitch: 新内容对有切换权限的用户来说默认为匿名的
   forum:
     composerControls:
       anonymize: 匿名发布

@@ -7,4 +7,5 @@ fof-oauth:
     settings:
       providers:
         line:
+          client_id_label: 频道ID
           description: '用 LINE 开发者控制台注册你的论坛 {link}'

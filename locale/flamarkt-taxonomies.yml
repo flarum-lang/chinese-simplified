@@ -24,6 +24,7 @@ flamarkt-taxonomies:
     menu:
       discussions: 讨论分类法
       title: 分类
+      users: 用户分类法
   lib:
     modal:
       custom: '选择 {value}'

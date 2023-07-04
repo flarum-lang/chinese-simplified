@@ -11,6 +11,8 @@ fof-ignore-users:
       discussion_label: 由被屏蔽用户发布
       user_label: 已屏蔽
     profile_link: 已屏蔽用户
+    profile_page:
+      no_ignored: 看起来你没有忽视任何人。
     user_controls:
       ignore_button: 屏蔽
       ignore_confirmation: 确定要屏蔽此人？

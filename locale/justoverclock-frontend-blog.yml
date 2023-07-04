@@ -5,4 +5,5 @@
 justoverclock-frontend-blog:
   admin:
     numberOfPost: 文章数量
+    numberOfPost-help: 在这里输入你想显示的帖子的数量
     setBlogIndexPage: 将前端博客拓展设为主页

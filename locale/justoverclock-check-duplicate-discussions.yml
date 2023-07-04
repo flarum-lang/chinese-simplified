@@ -5,6 +5,7 @@
 justoverclock-check-duplicate-discussions:
   admin:
     similarNumber: 展示相似的讨论
+    similarNumber-help: 插入类似讨论的数量，以显示在编排中
   forum:
     identicalWarning: 警告：您的讨论标题与现有讨论相同！
     title: 找到类似的线程！

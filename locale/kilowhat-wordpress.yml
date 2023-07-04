@@ -76,7 +76,7 @@ kilowhat-wordpress:
       wordpress_login_only_help: "禁用 Flarum 登录，当需要登录时直接打开 Wordpress 登录模块。这将自动关闭 Flarum 的「注册」权限。\n"
       wordpress_login_path: 'WordPress 登录路径'
       wordpress_login_path_help: 仅当您手动或通过插件修改端点名时才需填写
-      wordpress_url: 'WordPress URL'
+      wordpress_url: WordPress网址
       wordpress_username: 'WordPress 管理员用户名'
     tabs:
       comments: 评论集成

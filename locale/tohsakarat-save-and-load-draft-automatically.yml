@@ -6,3 +6,6 @@ tohsakarat-save-and-load-draft-automatically:
   forum:
     buttons:
       load: 加载本地编辑记录
+    states:
+      ask-for-load: 查找本地编辑记录!你想加载它吗？
+      ask-for-save: 你想在线保存草稿吗？

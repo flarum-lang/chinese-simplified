@@ -6,3 +6,5 @@ justoverclock-random-post:
   admin:
     limit: 随机文章的字数限制
     limit-help: 在这里输入随机帖子的最大字符数（默认为280）
+  forum:
+    inThe: ' 在讨论中： '

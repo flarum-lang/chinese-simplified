@@ -4,5 +4,7 @@
 
 xsoft-mason-tag:
   forum:
+    answers-modal:
+      edit-title: '编辑字段为{title}'
     discussion-controls:
       edit-answers: 编辑字段

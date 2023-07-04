@@ -5,4 +5,7 @@
 serakoi-flarumstaffbadge:
   admin:
     staffBadge:
+      help: '工作人员徽章文本（默认为 "STAFF"）'
       label: 员工头衔文字
+    staffBadgeTextColor:
+      label: 职员徽章颜色

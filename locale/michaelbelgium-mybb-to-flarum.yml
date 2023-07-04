@@ -26,4 +26,4 @@ michaelbelgium-mybb-to-flarum:
           migrate_threadsPosts_label: 迁移主题和帖子
           migrate_userGroups_label: 迁移用户组
           migrate_users_label: 迁移用户
-          title: 常规迁移选项
+          title: 其他选择

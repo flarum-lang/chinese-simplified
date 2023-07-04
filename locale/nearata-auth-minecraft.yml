@@ -5,6 +5,8 @@
 nearata-auth-minecraft:
   admin:
     settings:
+      api_url:
+        label: 'API URL'
       minecraft_server:
         help: 示例：mydomain.tld
         label: 我的世界服务器IP

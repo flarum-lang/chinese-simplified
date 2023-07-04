@@ -4,6 +4,7 @@
 
 justoverclock-theaudiodb-api:
   admin:
+    apiKey: '在这里获得你的apiKey https://www.theaudiodb.com/api_apply.php'
     langcode: 语言代码
     langcode-help: '输入语言代码（支持的语言：EN, DE, FR, CN, IT, JP, RU, ES, PT, SE, NL, HU, NO, IL, PL）'
   forum:

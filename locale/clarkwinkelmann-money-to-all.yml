@@ -5,4 +5,5 @@
 clarkwinkelmann-money-to-all:
   lib:
     modal:
+      amount: 数量
       title: 向所有用户发放论坛货币

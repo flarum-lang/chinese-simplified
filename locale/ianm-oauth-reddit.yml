@@ -7,4 +7,5 @@ fof-oauth:
     settings:
       providers:
         reddit:
+          client_id_label: 客户ID
           description: '用Reddit注册你的论坛{link}'

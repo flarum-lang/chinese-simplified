@@ -6,3 +6,4 @@ gpx-preview:
   admin:
     templates:
       gpx: GPX路线预览
+      gpx.file_description: 嵌入一个谷歌地图，上面覆盖着上传的GPX文件。

@@ -6,4 +6,5 @@ glowingblue-localizd:
   admin:
     settings:
       redirect_en: 重定向英语为论坛默认语言
+      redirect_en_help: 有效地允许你在论坛内不提供英语体验，但允许继续安装英语语言包（用于<code>fof/linguist</code>识别键等）
       title: 局部设置

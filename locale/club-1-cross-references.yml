@@ -5,7 +5,7 @@
 club-1-cross-references:
   admin:
     show_discussion_id:
-      help: '在任何主题标题旁展示主题帖 ID'
+      help: '在任何主题标题旁展示主题帖 ID.'
       label: '显示主题帖 ID'
   forum:
     comment: 回复

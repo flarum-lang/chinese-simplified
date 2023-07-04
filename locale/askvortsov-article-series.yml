@@ -9,6 +9,7 @@ askvortsov-article-series:
   forum:
     article_item:
       next_article: 下一篇文章
+      prev_article: 上一篇文章
     article_list:
       title: '{series} 系列文章'
     article_series_modal:

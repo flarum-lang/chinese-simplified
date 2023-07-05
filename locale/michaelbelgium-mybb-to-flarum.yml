@@ -22,6 +22,7 @@ michaelbelgium-mybb-to-flarum:
           title: 'MyBB 设置'
           user_label: 数据库用户
         options:
+          migrate_avatars_label: 迁移头像
           migrate_categories_label: 迁移分类目录（标签）
           migrate_threadsPosts_label: 迁移主题和帖子
           migrate_userGroups_label: 迁移用户组

@@ -8,3 +8,4 @@ justoverclock-country-flags:
     showFlagsOnPosts: 在帖子上显示旗帜
   forum:
     inputCountryCode: 国家代码
+    saveButton: 拯救

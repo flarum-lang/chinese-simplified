@@ -19,3 +19,4 @@ flarum-calendar:
       details: 添加活动细节
     modal:
       submit: 提交
+      title_create: 创建新的日历事件

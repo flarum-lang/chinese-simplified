@@ -7,3 +7,5 @@ justoverclock-igdb-api:
     composerAlert: 在新的讨论中显示作曲家提示
     rawgApi: 'RawG Api 密钥'
     rawgApi-help: '从https://rawg.io/signup获取免费API密钥并粘贴至此'
+  forum:
+    seeOnMetaCritic: 在Metacritic上看到

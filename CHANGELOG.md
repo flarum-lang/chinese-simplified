@@ -125,6 +125,7 @@ CHANGELOG
 * [`ianm/follow-users`](https://github.com/imorland/follow-users)
 * [`ianm/synopsis`](https://github.com/imorland/synopsis)
 * [`ianm/translate`](https://extiverse.com/extension/ianm/translate)
+* [`justoverclock/discussion-info`](https://github.com/justoverclockl/discussions-info)
 * [`justoverclock/theaudiodb-api`](https://extiverse.com/extension/justoverclock/theaudiodb-api)
 * [`kilowhat/flarum-ext-formulaire`](https://extiverse.com/extension/kilowhat/flarum-ext-formulaire)
 * [`kilowhat/flarum-ext-wordpress`](https://extiverse.com/extension/kilowhat/flarum-ext-wordpress)
@@ -139,6 +140,7 @@ CHANGELOG
 * [`nearata/flarum-ext-twofactor`](https://github.com/Nearata/flarum-ext-twofactor)
 * [`spookygames/flarum-ext-auth-keycloak`](https://github.com/spookygames/flarum-ext-auth-keycloak)
 * [`swaggymacro/only-starter`](https://github.com/SwaggyMacro/OnlyStarter)
+* [`webbinaro/flarum-calendar`](https://github.com/eddiewebb/flarum-calendar)
 * [`zerosonesfun/flarum-bbcode-button`](https://github.com/zerosonesfun/flarum-bbcode-button)
 * [`ziiven/flarum-daily-check-in`](https://github.com/Ziiven/flarum-daily-check-in)
 

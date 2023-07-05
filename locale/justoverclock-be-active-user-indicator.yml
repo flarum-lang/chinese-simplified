@@ -5,3 +5,5 @@
 justoverclock-be-active-user-indicator:
   admin:
     active: 活跃
+    activeUI: 帐户是否已激活？
+    notActive: 不活跃

@@ -4,6 +4,8 @@
 
 gpx-preview:
   admin:
+    settings:
+      gkey: 谷歌API密钥，可以访问地图API。
     templates:
       gpx: GPX路线预览
       gpx.file_description: 嵌入一个谷歌地图，上面覆盖着上传的GPX文件。

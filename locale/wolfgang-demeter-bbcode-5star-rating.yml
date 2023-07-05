@@ -7,3 +7,5 @@ flarum-ext-bbcode-5star-rating:
     button:
       label: 五星评级
       tooltip: 选择5星
+    modal:
+      headline: 选择你的评级

@@ -4,4 +4,6 @@
 
 justoverclock-job-cards:
   forum:
+    jobFormTitle: 工作卡
+    jobProfile: 工作简介
     saveBtn: 拯救

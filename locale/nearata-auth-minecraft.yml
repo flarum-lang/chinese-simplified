@@ -6,6 +6,7 @@ nearata-auth-minecraft:
   admin:
     settings:
       api_url:
+        help: '例如：http://localhost:4567/verify'
         label: 'API URL'
       minecraft_server:
         help: 示例：mydomain.tld

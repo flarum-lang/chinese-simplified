@@ -7,3 +7,5 @@ nearata-related-discussions:
     settings:
       allow_guests: 允许访客
       generator: 发电机
+      generator_options:
+        random: 随机

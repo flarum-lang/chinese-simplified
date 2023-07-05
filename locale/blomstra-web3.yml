@@ -7,3 +7,4 @@ blomstra-web3:
     settings:
       allow-sign-up: 支持通过Web3注册
       ffi-disabled: "PHP FFI扩展没有被启用.Dotsama钱包将无法工作.\n"
+      infura-project-id: Infura项目编号

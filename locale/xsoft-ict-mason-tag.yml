@@ -6,5 +6,6 @@ xsoft-mason-tag:
   forum:
     answers-modal:
       edit-title: '编辑字段为{title}'
+      save: 保存字段
     discussion-controls:
       edit-answers: 编辑字段

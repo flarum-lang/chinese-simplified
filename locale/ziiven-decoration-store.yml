@@ -4,4 +4,6 @@
 
 ziven-decoration-store:
   lib:
+    cancel: 取消
     close: 关闭
+    confirm: 确认

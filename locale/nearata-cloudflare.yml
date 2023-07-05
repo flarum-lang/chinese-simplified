@@ -4,5 +4,8 @@
 
 nearata-cloudflare:
   admin:
+    development_mode_widget:
+      title: Cloudflare开发模式激活
     settings:
       api_key: API密钥
+      api_key_help: 按照<strong><url>创建API令牌</url></strong>的指南来创建API令牌。

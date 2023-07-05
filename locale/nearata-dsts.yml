@@ -8,6 +8,7 @@ nearata-dsts:
       can_bypass_like: 无需点赞即可查看首贴
       can_bypass_login: 可以绕过登录
       can_bypass_reply: 无需回复即可查看首贴
+      can_use_bbcode: 可以使用BBCode
     settings:
       require_like: 需要点赞
       require_like_help: '注意：需要 Flarum Likes 扩展程序。'

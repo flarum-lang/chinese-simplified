@@ -5,6 +5,7 @@
 fof-sentry:
   admin:
     settings:
+      dsn_backend_help: 这个DSN将只用于处理后端错误。如果你想用一个不同的项目来处理后端错误，或者想用一个Relay来发送后端错误到Sentry（例如，为了提高性能），这就很有用。
       dsn_backend_label: 'Sentry DSN (仅后端)'
       dsn_help: '如果你使用一个中继DSN作为主要的DSN，不要勾选 "用户反馈"，因为它将不会起作用。'
       dsn_label: 'Sentry DSN'

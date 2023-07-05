@@ -4,6 +4,8 @@
 
 club-1-cross-references:
   admin:
+    enable_short_references:
+      label: 启用简短引用
     show_discussion_id:
       help: '在任何主题标题旁展示主题帖 ID.'
       label: '显示主题帖 ID'

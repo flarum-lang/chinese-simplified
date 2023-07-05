@@ -6,5 +6,6 @@ datlechin-chatgpt:
   admin:
     settings:
       api_key_help: '从<a>openai.com</a>获取OpenAI API key。'
+      api_key_label: 'API Key'
       max_tokens_help: '<a>什么是token以及如何计算？</a>'
       model_label: 模型

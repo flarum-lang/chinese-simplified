@@ -8,6 +8,7 @@ ianm-log-viewer:
       access_logfile_api: 通过API访问日志数据
     settings:
       purge-days: 每天清除日志文件
+      purge-days-help: 依赖于Flarum调度器处于激活状态。0表示禁用。
     viewer:
       available_logs_heading: 可用的文件
       file_contents_heading: 文件内容

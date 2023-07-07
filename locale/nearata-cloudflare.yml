@@ -9,3 +9,13 @@ nearata-cloudflare:
     settings:
       api_key: API密钥
       api_key_help: 按照<strong><url>创建API令牌</url></strong>的指南来创建API令牌。
+      refresh_zone_button_label: '刷新区域 ID'
+      refresh_zone_help: '如果域名已更改，点击 <strong>only</strong> 按钮。'
+      security_level_label: 安全等级
+      security_level_options:
+        essentially_off: 无感
+        high: 高
+        low: 低
+        medium: 中
+        'off': 关闭
+        under_attack: 五秒盾

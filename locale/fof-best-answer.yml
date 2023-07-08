@@ -30,8 +30,12 @@ fof-best-answer:
       schedule_stop_overnight_help: '服务器时间 20:00 至 9:00'
       select_best_answer_reminder_days: 提醒计时
       select_best_answer_reminder_days_help: '于 n 天后提问者选择最佳回复。'
+      select_best_answer_tags_help: 选择哪些标签，如果有的话，在设置最佳答案时添加到主题中。只允许使用二级标签。如果最佳答案被删除，这些标签将被删除。
+      select_best_answer_tags_label: '与 "最佳答案 "主题的标签'
       show_filter_help: 在启用最佳回复的标签页面显示「已解决/未解决」过滤项
       show_filter_label: 显示已解决过滤项
+      show_max_lines_help: 将此项设为0以禁用。如果一个帖子长于配置行数，它将在预览中被截断，并带有淡出的效果。
+      show_max_lines_label: 在帖子预览中显示的最大行数
       use_alt_ui: 按钮布局
       use_alt_ui_help: 在帖子底部显示最佳回复选择按钮
   email:

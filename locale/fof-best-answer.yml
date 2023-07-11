@@ -77,3 +77,8 @@ fof-best-answer:
     this_best_answer: 设为最佳回复
     user:
       best-answer-count: '{count, plural, { {count} 次助人} other {{count} 次助人}}'
+fof-user-directory:
+  lib:
+    sort:
+      least_best_answers: 最少的最佳答案
+      most_best_answers: 最多的最佳答案

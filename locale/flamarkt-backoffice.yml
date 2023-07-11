@@ -8,6 +8,7 @@ flamarkt-backoffice:
   backoffice:
     nav:
       dashboard: 仪表板
+      searchPlaceholder: '=> core.admin.nav.search_placeholder'
       users: 用户
     permissions:
       backoffice: 使用后台
@@ -24,4 +25,5 @@ flamarkt-backoffice:
       title: 账户
   lib:
     header:
+      admin_button: '=> core.forum.header.admin_button'
       backoffice_button: 后台

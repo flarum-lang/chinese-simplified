@@ -120,6 +120,7 @@ CHANGELOG
 * [`fof/linguist`](https://github.com/FriendsOfFlarum/linguist)
 * [`fof/links`](https://github.com/FriendsOfFlarum/links)
 * [`fof/oauth`](https://github.com/FriendsOfFlarum/oauth)
+* [`fof/recaptcha`](https://github.com/FriendsOfFlarum/recaptcha)
 * [`fof/sentry`](https://github.com/FriendsOfFlarum/sentry)
 * [`fof/share-social`](https://github.com/FriendsOfFlarum/share-social)
 * [`fof/webhooks`](https://github.com/FriendsOfFlarum/webhooks)

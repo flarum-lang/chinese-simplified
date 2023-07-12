@@ -7,8 +7,11 @@ fof-recaptcha:
     permissions:
       post_without_captcha: 发帖不需要验证码
     settings:
+      forgot: '=> core.forum.forgot_password.title'
       help_text: '点击<a>此处</a>获取 Google reCAPTCHA 证书。'
       secret_key_label: 密钥
+      signin: '=> core.forum.log_in.title'
+      signup: '=> core.forum.sign_up.title'
       site_key_label: 网站密钥
       type_label: 'reCAPTCHA 类型'
   forum:

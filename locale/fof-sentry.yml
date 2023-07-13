@@ -12,7 +12,12 @@ fof-sentry:
       environment_label: 'Sentry 监控环境'
       javascript_console_label: '捕获 JavaScript 控制台'
       javascript_label: '提交 JavaScript 错误'
+      javascript_replays_error_sample_rate: '前端错误重播率 (0 - 100)'
+      javascript_replays_error_sample_rate_help: '发生错误时记录重放的采样率。错误发生前1分钟内的重放将被记录，并持续到会话结束。{br}✱ 启用任何重放选项都会增加约 150 KB 的数据包大小。'
+      javascript_replays_session_sample_rate: '前端会话重放率 (0 - 100)'
+      javascript_replays_session_sample_rate_help: '立即开始录制并持续整个用户会话的重播的采样率。{br}✱ 启用任何重放选项都会增加约150 KB的数据包大小。'
       javascript_trace_sample_rate: '前端性能监测率 (0 - 100)'
+      javascript_trace_sample_rate_help: '所有交易的采样率。{br}✱ 启用此功能后，数据包大小将增加约30 KB。'
       monitor_performance_label: '后端性能监测率 (0 - 100)'
       profile_rate_help: "这与性能监控速率有关。必须启用性能监控功能才能正常工作。\n\n{br}✱ 启用此功能会影响响应时间，原因是剖析和请求发送到 Sentry 的开销。了解如何抵消@ <a>https://docs.sentry.io/platforms/php/profiling/#improve-response-time></a>。\n{br}{icon} <bold>此功能需要使用维基百科的采样剖析器Excimer，该工具仅适用于Linux。</bold>\n"
       profile_rate_label: '后端分析率 (0 - 100)'

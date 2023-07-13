@@ -14,5 +14,7 @@ fof-sentry:
       javascript_label: '提交 JavaScript 错误'
       javascript_trace_sample_rate: '前端性能监测率 (0 - 100)'
       monitor_performance_label: '后端性能监测率 (0 - 100)'
+      profile_rate_help: "这与性能监控速率有关。必须启用性能监控功能才能正常工作。\n\n{br}✱ 启用此功能会影响响应时间，原因是剖析和请求发送到 Sentry 的开销。了解如何抵消@ <a>https://docs.sentry.io/platforms/php/profiling/#improve-response-time></a>。\n{br}{icon} <bold>此功能需要使用维基百科的采样剖析器Excimer，该工具仅适用于Linux。</bold>\n"
+      profile_rate_label: '后端分析率 (0 - 100)'
       send_user_emails_label: '发送 Sentry 报告时包含用户邮箱'
       user_feedback_label: 用户反馈

@@ -8,3 +8,5 @@ tohsakarat-tags-filter:
       filter_tags:
         accessible_label: 筛选标签
         all: 所有
+        label: '{text}'
+        search_label: 搜索...

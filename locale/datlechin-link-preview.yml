@@ -11,5 +11,6 @@ datlechin-link-preview:
       convert_media_urls_help: 启用以转换所有媒体链接为预览帖。
       convert_media_urls_label: 预览媒体链接
       use_google_favicons_label: '使用谷歌图标 API'
+      whitelist_label: 白名单
   forum:
     site_cannot_be_reached: 无法访问此站点。

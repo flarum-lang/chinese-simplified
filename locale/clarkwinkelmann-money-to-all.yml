@@ -6,5 +6,6 @@ clarkwinkelmann-money-to-all:
   lib:
     modal:
       amount: 数量
+      message: 信息
       notify: 向用户发送网络通知
       title: 向所有用户发放论坛货币

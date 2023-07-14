@@ -7,4 +7,5 @@ justoverclock-popular-tags:
     limit: 已显示的标签数
     limit-help: 在这里输入你想显示的最大标签数
   forum:
+    count: '所有线程: '
     widgetTitle: 热门标签

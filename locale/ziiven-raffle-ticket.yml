@@ -6,4 +6,5 @@ ziven-guaguale:
   forum:
     guaguale-purchase-cancel: 取消
     guaguale-purchase-input-placeholder: 请输入您想要购买的数量
+    guaguale-purchase-ok: OK
     guaguale-purchase-soldout: 对不起，该产品已售完

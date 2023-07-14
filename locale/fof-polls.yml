@@ -7,7 +7,7 @@ fof-polls:
     permissions:
       change_vote: 修改投票
       moderate: 编辑或删除投票
-      self_edit: 允许用户编辑自己发起的投票
+      self_edit: 编辑已创建的投票（需要帖子编辑权限）
       start: 发起投票
       view_results_without_voting: 无需参与投票即可查看结果
       vote: 参与投票

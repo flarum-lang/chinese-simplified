@@ -10,3 +10,6 @@ fof-oauth:
           client_id_label: 客户ID
           client_secret_label: 客户秘密
           description: '用Reddit注册你的论坛{link}'
+  forum:
+    log_in:
+      with_reddit_button: '=> fof-oauth.forum.log_in.with_button'

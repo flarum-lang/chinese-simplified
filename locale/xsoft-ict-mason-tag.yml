@@ -9,3 +9,5 @@ xsoft-mason-tag:
       save: 保存字段
     discussion-controls:
       edit-answers: 编辑字段
+    post-answers:
+      no-answer: 暂无解答

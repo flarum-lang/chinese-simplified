@@ -9,3 +9,4 @@ flarum-ext-bbcode-5star-rating:
       tooltip: 选择5星
     modal:
       headline: 选择你的评级
+      stars_0: 0星

@@ -33,6 +33,7 @@ pay-to-see:
     set_pay_to_see_price_success: 内容价格设置
     toolbar_tooltip: 插入付费可见内容
   lib:
+    cancel: 取消
     confirm: 确认
     ok: 认可
     save: 拯救

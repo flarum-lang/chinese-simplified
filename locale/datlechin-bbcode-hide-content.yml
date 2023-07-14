@@ -9,3 +9,4 @@ datlechin-bbcode-hide-content:
       bypass_reply_label: 绕过答复要求
   forum:
     must_be_logged_in: 您必须登录后才能查看此内容
+    must_liked: 点赞此内容后才能查看

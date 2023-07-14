@@ -7,4 +7,9 @@ fof-oauth:
     settings:
       providers:
         microsoft:
+          client_id_label: '=> fof-oauth.ref.settings.client_id'
+          client_secret_label: '=> fof-oauth.ref.settings.client_secret'
           description: '在微软注册你的论坛{链接}'
+  forum:
+    log_in:
+      with_microsoft_button: '=> fof-oauth.forum.log_in.with_button'

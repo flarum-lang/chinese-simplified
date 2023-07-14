@@ -4,5 +4,9 @@
 
 kilowhat-cimaise:
   forum:
+    album-list:
+      title: '=> kilowhat-cimaise.ref.albums'
     nav:
+      albums: '=> kilowhat-cimaise.ref.albums'
       pictures: '=> kilowhat-cimaise.ref.图片'
+      user-pictures: '=> kilowhat-cimaise.ref.pictures'

@@ -53,7 +53,7 @@ kilowhat-wordpress:
         lock: '锁定 Flarum 主题帖'
       section_comments_intro: "此功能使用 Flarum 框架替换 Wordpress 评论模块。这会使未登录访客无法发表评论。只有在 WordPress 中启用了评论功能的帖子才会创建对应的主题帖。启用或禁用评论功能时，Flarum 会同步锁定主题。如果您启用此功能时，您的博客已经有文章存在，您需要在每篇文章上手动禁用并重新启用评论功能以创建 Flarum 主题帖。\n"
       section_general_intro: 本插件工作所需的基本设置。
-      section_sso_intro: "此功能将无缝绑定 WordPress 和 Flarum 账号。系统将自动为他们创建账号并与 Wordpress 保持同步。如果您在 Flarum 中已有账号，系统将自动通过邮箱绑定重复的账号。如果您通过 Flarum 删除了一个用户，那么下次该用户仍然可以使用 Wordpress 账号登录恢复账号。要封禁一个 Flarum 用户，请在 Flarum 中封禁该账户。\n"
+      section_sso_intro: "此功能将无缝绑定 WordPress 和 Flarum 账号。系统将自动为他们创建账号并与 WordPress 保持同步。如果您在 Flarum 中已有账号，系统将自动通过邮箱绑定重复的账号。如果您通过 Flarum 删除了一个用户，那么下次该用户仍然可以使用 WordPress 账号登录恢复账号。要封禁一个 Flarum 用户，请在 Flarum 中封禁该账户。\n"
       summary_as_last_post: 将摘要帖设置为新主题的末帖
       summary_as_last_post_help: "这将使得发布 WordPress 文章后，新的评论主题帖立即浮动到 Flarum 主题列表的顶部。 默认情况下，只有在用户发表第一个评论后，主题帖才会上浮至顶部。\n"
       use_post_date: '使用 WordPress 文章的发布日期作为主题帖的创建日期'

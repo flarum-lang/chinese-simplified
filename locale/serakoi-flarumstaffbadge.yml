@@ -8,4 +8,5 @@ serakoi-flarumstaffbadge:
       help: '工作人员徽章文本（默认为 "STAFF"）'
       label: 员工头衔文字
     staffBadgeTextColor:
+      help: '徽章颜色（默认为 "#fff"）'
       label: 职员徽章颜色

@@ -17,7 +17,15 @@ flarum-calendar:
       login: '添加你的活动 '
     event:
       details: 添加活动细节
+      ends: '结束于:'
+      hosted_by: '主办方:'
+      starts: '开始于:'
     modal:
+      dates_label: 何时
+      description_label: 内容
+      description_placeholder: 活动详情
+      requirement_message: 活动事件需要名称和描述
       submit: 提交
       title_create: 创建新的日历事件
       title_edit: 编辑活动详情
+      title_label: 什么

@@ -11,4 +11,8 @@ clarkwinkelmann-scout:
         meilisearch: Meilisearch
         'null': 'Null'
         tntsearch: TNTSearch
+      limit: 默认结果限值
+      limitPlaceholder: 自动
       prefix: 索引名前缀（可选）
+      queue: 处理队列中的索引更新
+      queueHelp: '只有在 Flarum 中配置了异步队列驱动程序后，该选项才会生效。'

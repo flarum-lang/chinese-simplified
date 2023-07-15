@@ -8,6 +8,7 @@ fof-polls:
       change_vote: 修改投票
       moderate: 编辑或删除投票
       self_edit: 编辑已创建的投票（需要帖子编辑权限）
+      self_post_edit: '编辑*所有*自己帖子上的投票（需要帖子编辑权限）'
       start: 发起投票
       view_results_without_voting: 无需参与投票即可查看结果
       vote: 参与投票
@@ -15,17 +16,22 @@ fof-polls:
       allow_option_image: 允许图片选项
   forum:
     composer_discussion:
-      add_poll: 发起投票
+      add_poll: '=> fof-polls.forum.moderation.add'
       edit_poll: '=> fof-polls.forum.moderation.edit'
+      no_permission_alert: 你没有权限添加投票。
     days_remaining: '投票将于 {time} 结束。'
+    max_votes_allowed: '允许投票给 {max, plural, one {# option} other {# options}}.'
     modal:
       add_option_label: 添加选项
       add_title: 发起投票
+      allow_multiple_votes_label: 允许用户对多个选项进行投票
       date_placeholder: 投票结束时间（可选）
       edit_title: 编辑投票
       image_option_placeholder: 图片链接（可选）
       include_question: 至少要有一个议题
       max: '最多 10 个选项'
+      max_votes_help: 设置为0，允许用户对所有选项投票。
+      max_votes_label: 每个用户的最大投票数
       min: '最少 2 个选项'
       no_voters: 零票
       option_placeholder: 选项
@@ -34,6 +40,7 @@ fof-polls:
       question_placeholder: 问题
       submit: 提交
     moderation:
+      add: 添加投票
       delete: 删除投票
       delete_confirm: 确定要删除这个投票吗？
       edit: 编辑投票

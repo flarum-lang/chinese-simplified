@@ -35,6 +35,7 @@ fof-webhooks:
   admin:
     errors:
       service_not_found: '"{service}" 服务未找到或不存在。'
+      tag_disabled: '该 WebHook 配置了标签限制。标签扩展已禁用。限制将不适用。请确保这是有意为之。'
       tag_invalid: '此 Webhook 被限制于无效的标签上。该限制将不可用。请确保这是您有意所为。'
       url_invalid: '所选服务的 URL 无效。'
     nav:
@@ -74,9 +75,10 @@ fof-webhooks:
       help:
         disabled: '此 Webhook 已被禁用，因为它没有启用事件。'
         general: '您可以在这里添加、编辑、删除论坛中的 webhooks。'
+        tags: '您可以将 WebHooks 限制为特定的标记。如果您选择了任何标签，则只有当事件在具有所选标签的资源上触发时，才会触发网络钩子。'
         url: '要运行的 Webhook 终端'
       item:
-        tag_any_label: 任一
+        tag_any_label: 任一标签
       modal:
         description: '您可以在这里修改出发 webhook 的事件。'
         events_label: 事件

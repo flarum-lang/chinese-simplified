@@ -5,10 +5,30 @@
 clarkwinkelmann-scout:
   admin:
     setting:
+      algoliaConnectTimeout: 'Algolia 连接超时 (可选)'
+      algoliaId: 'Algolia ID'
+      algoliaReadTimeout: Algolia读取超时（可选）
+      algoliaSecret: 'Algolia Secret'
+      algoliaWriteTimeout: 'Algolia 写入超时（可选）'
       driver: 驱动
       driverOption:
         algolia: Algolia
         meilisearch: Meilisearch
         'null': 'Null'
         tntsearch: TNTSearch
+      limit: 默认结果限值
+      limitHelp: "这将覆盖向搜索引擎请求的结果数量，并影响可生成的结果页数（该限制还包括用户无法看到的内容）。有些引擎可能需要额外的配置来改变允许的最大值。\n"
+      limitPlaceholder: 自动
+      meilisearchHost: 'Meilisearch Host'
+      meilisearchKey: 'Meilisearch Key'
       prefix: 索引名前缀（可选）
+      queryMinLength: 建议的最小查询长度
+      queryMinLengthHelp: "此设置只影响标题中搜索输入的建议下拉菜单。Flarum 在检索建议前的默认查询长度为3个字符，您可以使用此设置覆盖。完整的搜索结果页面没有任何最小查询长度。更改此值后必须清除缓存。\n"
+      queryMinLengthPlaceholder: 自动
+      queue: 处理队列中的索引更新
+      queueHelp: '只有在 Flarum 中配置了异步队列驱动程序后，该选项才会生效。'
+      tntsearchFuzziness: 'TNT 搜索模糊性（拼写错误/变体匹配）'
+      tntsearchFuzzyDistance: 'TNT 搜索模糊编辑距离（可选）'
+      tntsearchFuzzyMaxExpansions: TNT搜索模糊度最大扩展（可选）
+      tntsearchFuzzyPrefixLength: 'TNT 搜索模糊前缀长度（可选）'
+      tntsearchMaxDocs: TNT搜索最大文档数（可选，最大结果数）

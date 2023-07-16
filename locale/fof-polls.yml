@@ -14,6 +14,7 @@ fof-polls:
       vote: 参与投票
     settings:
       allow_option_image: 允许图片选项
+      max_options: 每次投票的最大选项数
   forum:
     composer_discussion:
       add_poll: '=> fof-polls.forum.moderation.add'
@@ -27,9 +28,10 @@ fof-polls:
       allow_multiple_votes_label: 允许用户对多个选项进行投票
       date_placeholder: 投票结束时间（可选）
       edit_title: 编辑投票
+      hide_votes_label: 隐藏投票直到投票结束
       image_option_placeholder: 图片链接（可选）
       include_question: 至少要有一个议题
-      max: '最多 10 个选项'
+      max: '最多 {max} 个选项'
       max_votes_help: 设置为0，允许用户对所有选项投票。
       max_votes_label: 每个用户的最大投票数
       min: '最少 2 个选项'

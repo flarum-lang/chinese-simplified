@@ -11,6 +11,7 @@ hehongyuanlove-auth-qq:
   forum:
     buttons:
       link: 绑定QQ
+      login: '=> hehongyuanlove-auth-qq.forum.log_in.with_qq_button'
       unlink: 解绑QQ
     log_in:
       with_qq_button: 'QQ 账号登录'

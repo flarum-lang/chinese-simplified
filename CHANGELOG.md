@@ -25,6 +25,7 @@ CHANGELOG
 * [`flamarkt/matomo`](https://github.com/flamarkt/matomo)
 * [`flarum/bbcode`](https://github.com/flarum/bbcode)
 * [`fof/discussion-thumbnail`](https://github.com/FriendsOfFlarum/discussion-thumbnail)
+* [`fof/profile-image-crop`](https://github.com/FriendsOfFlarum/profile-image-crop)
 * [`glowingblue/localizd`](https://extiverse.com/extension/glowingblue/localizd)
 * [`ianm/log-viewer`](https://github.com/imorland/flarum-ext-log-viewer)
 * [`ianm/no-meta-title`](https://github.com/imorland/no-meta-title)

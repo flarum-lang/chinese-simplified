@@ -13,3 +13,6 @@ fof-oauth:
   forum:
     log_in:
       with_microsoft_button: '=> fof-oauth.forum.log_in.with_button'
+  lib:
+    providers:
+      microsoft: 微软

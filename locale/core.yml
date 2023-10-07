@@ -14,7 +14,7 @@ core:
       custom_footer_text: '=> core.ref.custom_footer_text'
       custom_header_heading: 自定义页眉
       custom_header_text: '=> core.ref.custom_header_text'
-      custom_styles_cannot_use_less_features: 在自定义LESS中禁止使用@import与data-uri特性
+      custom_styles_cannot_use_less_features: 在自定义LESS中禁止使用@import与data-uri特性。
       custom_styles_heading: 自定义样式
       custom_styles_text: '添加 Less/CSS 代码以自定义论坛外观，此设置将覆盖 Flarum 默认样式。'
       dark_mode_label: 夜间模式

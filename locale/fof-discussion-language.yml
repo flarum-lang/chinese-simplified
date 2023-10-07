@@ -33,3 +33,6 @@ fof-discussion-language:
       change_language_button: 设定语言
     index_language:
       any: 所有语言
+    sub_controls:
+      subscription_language_help: 如果您选择一门语言，您将只收到与该语言相关的新活动通知。
+      subscription_language_label: 讨论语言

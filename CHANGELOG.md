@@ -119,6 +119,7 @@ CHANGELOG
 * [`flarum/tags`](https://github.com/flarum/tags)
 * [`fof/best-answer`](https://github.com/FriendsOfFlarum/best-answer)
 * [`fof/byobu`](https://github.com/FriendsOfFlarum/byobu)
+* [`fof/discussion-language`](https://github.com/FriendsOfFlarum/discussion-language)
 * [`fof/geoip`](https://github.com/FriendsOfFlarum/geoip)
 * [`fof/ignore-users`](https://github.com/FriendsOfFlarum/ignore-users)
 * [`fof/linguist`](https://github.com/FriendsOfFlarum/linguist)

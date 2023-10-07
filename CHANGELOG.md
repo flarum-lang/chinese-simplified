@@ -14,6 +14,7 @@ CHANGELOG
 
 * [`clarkwinkelmann/flarum-ext-meilisearch-dashboard`](https://github.com/clarkwinkelmann/flarum-ext-meilisearch-dashboard)
 * [`club-1/flarum-ext-server-side-highlight`](https://github.com/club-1/flarum-ext-server-side-highlight)
+* [`dalez/flarum-msemoji`](https://github.com/DellZHackintosh/flarum-msemoji)
 * [`datlechin/flarum-chatgpt`](https://github.com/datlechin/flarum-chatgpt)
 * [`datlechin/flarum-oauth-envato`](https://github.com/datlechin/flarum-oauth-envato)
 * [`datlechin/flarum-signup-button`](https://github.com/datlechin/flarum-signup-button)

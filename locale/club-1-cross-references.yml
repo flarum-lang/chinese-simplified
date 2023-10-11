@@ -5,11 +5,16 @@
 club-1-cross-references:
   admin:
     enable_short_references:
+      help: '将消息中的#<ID>文本(例如#42)转换为相应讨论的链接。'
       label: 启用简短引用
+    retrofit_links_in_frontend:
+      label: 改装前端的链接
     show_discussion_id:
       help: '在任何主题标题旁展示主题帖 ID.'
       label: '显示主题帖 ID'
   forum:
     comment: 回复
     post_stream:
+      discussion_referenced_multiple_text: '{username} 从多个来源引用此讨论: {sources}'
       discussion_referenced_text: '「{username}」于「{source}」引用此帖'
+    unknown_discussion: '[未知讨论]'

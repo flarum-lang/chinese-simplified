@@ -25,6 +25,9 @@ flamarkt-taxonomies:
       discussions: 讨论分类法
       title: 分类
       users: 用户分类法
+    page:
+      create:
+        term: 创建协议
   lib:
     modal:
       custom: '选择 {value}'
@@ -32,3 +35,6 @@ flamarkt-taxonomies:
       title:
         edit: '为 {title}编辑 {taxonomy}'
         new: '为你的帖子选择 {taxonomy}'
+  ref:
+    submit:
+      new: 创建

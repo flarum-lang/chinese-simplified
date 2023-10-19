@@ -28,6 +28,8 @@ CHANGELOG
 * [`flarum/bbcode`](https://github.com/flarum/bbcode)
 * [`fof/discussion-thumbnail`](https://github.com/FriendsOfFlarum/discussion-thumbnail)
 * [`fof/profile-image-crop`](https://github.com/FriendsOfFlarum/profile-image-crop)
+* [`foskym/nickname-group-formatter`](https://github.com/FoskyM/flarum-nickname-group-formatter)
+* [`foskym/flarum-oauth-center`](https://github.com/FoskyM/flarum-oauth-center)
 * [`glowingblue/localizd`](https://extiverse.com/extension/glowingblue/localizd)
 * [`ianm/log-viewer`](https://github.com/imorland/flarum-ext-log-viewer)
 * [`ianm/no-meta-title`](https://github.com/imorland/no-meta-title)
@@ -83,6 +85,7 @@ CHANGELOG
 **更新翻译**:
 
 * [`acpl/flarum-lscache`](https://github.com/android-com-pl/flarum-lscache)
+* [`acpl/mobile-tab`](https://github.com/android-com-pl/mobile-tab)
 * [`akr/chevereto`](https://github.com/AKR-Developers/flarum-chevereto)
 * [`antoinefr/flarum-ext-money`](https://github.com/AntoineFr/flarum-ext-money)
 * [`askvortsov/flarum-article-series`](https://github.com/askvortsov1/flarum-article-series)

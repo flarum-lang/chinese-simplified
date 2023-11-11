@@ -2,6 +2,11 @@
 # Use https://weblate.rob006.net/projects/flarum/fof-upload/zh_Hans/ for translation.
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
+blomstra-gdpr:
+  lib:
+    data:
+      uploads:
+        export_description: 所有文件均由用户上传。
 fof-upload:
   admin:
     buttons:

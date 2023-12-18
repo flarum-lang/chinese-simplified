@@ -7,5 +7,6 @@ fof-profile-image-crop:
     modal:
       error:
         failed_to_load_cropper: 无法加载图像裁剪器。
+        generic_resize: 裁剪缩放图像时出错。
       submit_button: 上传
       submit_crop_button: 裁剪并上传

@@ -17,7 +17,7 @@ jeromegillard-map:
         help: 0到18之间的任意整数。
         label: 默认缩放级别
     templates:
-      file_description: 在flarum中显示一个地图。原始文件可供下载。瓷砖的提供者和风格将是在扩展的设置中定义的。<b>你必须安装并启用flarum/bbcode，这样才能工作</b>。
+      file_description: 在Flarum显示一个地图。原始文件可被下载。窗口提供者和样式将作为插件设置的一种定义。<b>您需要已经安装好Flarum/bbcode并弃用它以运行</b>。
       map: 地图
   forum:
     text_editor:

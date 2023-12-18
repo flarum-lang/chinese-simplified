@@ -2,6 +2,11 @@
 # Use https://weblate.rob006.net/projects/flarum/ianm-follow-users/zh_Hans/ for translation.
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
+blomstra-gdpr:
+  lib:
+    data:
+      followuser:
+        export_description: 导出关注用户和关注用户的详细信息。
 ianm-follow-users:
   admin:
     permissions:

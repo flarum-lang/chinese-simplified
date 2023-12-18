@@ -12,7 +12,7 @@ fof-best-answer:
       best_answer_not_own_discussion: 为他人的主题选择最佳回复
     settings:
       allow_select_own_post: 允许自选
-      allow_select_own_post_help: 允许提问者将自己的帖子设为最佳回复
+      allow_select_own_post_help: 允许用户选择自己的帖子作为讨论的最佳答案
       documentation: 文档
       enable_all_tags_button: 为所有标签启用最佳回复
       enable_all_tags_reminder_button: 为所有标签启用提醒功能

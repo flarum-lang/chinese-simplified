@@ -7,6 +7,8 @@ fof-default-user-preferences:
     settings:
       followAfterReply: 回复并关注
       followAfterReply-help: 启用后，新用户将自动关注回复或评论的主题帖。
+      groupMentioned: 提及用户组的邮件通知
+      groupMentioned-help: 启用后，新用户会默认接收用户组被提及时的邮件通知。
       postMentioned: 回复邮件通知
       postMentioned-help: 启用后，新用户将默认开启「有人回复了我」邮件通知。
       userMentioned: 提及邮件通知

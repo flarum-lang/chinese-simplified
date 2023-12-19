@@ -56,7 +56,7 @@ the-turk-flamoji:
       specify_categories_text: 勾选要显示的表情分类。
   forum:
     composer:
-      emoji_tooltip: 'Emoji 表情'
+      emoji_tooltip: 添加表情
     emoji-button:
       categories:
         activities: '=> the-turk-flamoji.ref.emoji_categories.activities'

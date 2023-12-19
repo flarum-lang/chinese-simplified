@@ -15,5 +15,5 @@ flarum-msemoji:
       folderph: 示例：svg
   forum:
     composer:
-      emoji_tooltip: 添加表情（emoji）
+      emoji_tooltip: 添加表情
       type_to_search_text: 输入字符以查询emoji表情

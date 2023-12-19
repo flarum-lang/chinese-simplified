@@ -6,7 +6,7 @@ blomstra-gdpr:
   lib:
     data:
       followuser:
-        export_description: 导出关注用户和关注用户的详细信息。
+        export_description: 导出关注用户列表及详细信息
 ianm-follow-users:
   admin:
     permissions:

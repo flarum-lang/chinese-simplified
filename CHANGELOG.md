@@ -89,6 +89,7 @@ CHANGELOG
 
 * [`acpl/flarum-lscache`](https://github.com/android-com-pl/flarum-lscache)
 * [`acpl/mobile-tab`](https://github.com/android-com-pl/mobile-tab)
+* [`afrux/top-posters-widget`](https://github.com/afrux/top-posters-widget)
 * [`akr/chevereto`](https://github.com/AKR-Developers/flarum-chevereto)
 * [`antoinefr/flarum-ext-money`](https://github.com/AntoineFr/flarum-ext-money)
 * [`askvortsov/flarum-article-series`](https://github.com/askvortsov1/flarum-article-series)
@@ -159,6 +160,7 @@ CHANGELOG
 * [`nearata/flarum-ext-twofactor`](https://github.com/Nearata/flarum-ext-twofactor)
 * [`spookygames/flarum-ext-auth-keycloak`](https://github.com/spookygames/flarum-ext-auth-keycloak)
 * [`swaggymacro/only-starter`](https://github.com/SwaggyMacro/OnlyStarter)
+* [`the-turk/flarum-flamoji`](https://github.com/the-turk/flarum-flamoji)
 * [`webbinaro/flarum-calendar`](https://github.com/eddiewebb/flarum-calendar)
 * [`zerosonesfun/flarum-bbcode-button`](https://github.com/zerosonesfun/flarum-bbcode-button)
 * [`ziiven/flarum-daily-check-in`](https://github.com/Ziiven/flarum-daily-check-in)

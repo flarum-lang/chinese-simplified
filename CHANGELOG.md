@@ -86,7 +86,7 @@ CHANGELOG
 * [`ziiven/flarum-decoration-store`](https://extiverse.com/extension/ziiven/flarum-decoration-store)
 * [`ziiven/flarum-pay-to-see`](https://extiverse.com/extension/ziiven/flarum-pay-to-see)
 * [`ziiven/flarum-post-number`](https://github.com/Ziiven/flarum-post-number)
-* [`ziiven/flarum-raffle-ticket`](https://extiverse.com/extension/ziiven/flarum-raffle-ticket)
+* `ziiven-raffle-ticket`
 
 
 **更新翻译**:

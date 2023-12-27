@@ -95,6 +95,8 @@ fof-upload:
       download_label: 允许下载文件
       upload_label: 允许上传文件
       view_user_uploads_label: 查看用户上传的文件
+    shared-uploads:
+      upload-new-button: 上传新文件
     templates:
       bbcode-image: 'BBCode 图片预览模板'
       bbcode-image_description: "使用 BBCode 在行内完整显示图片。<strong>此模板依赖于 flarum/bbcode 扩展程序。</strong>无下载、统计和热链保护功能。\n"

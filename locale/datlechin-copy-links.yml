@@ -7,6 +7,7 @@ datlechin-copy-links:
     copy_link_button: 复制链接
     discussion_controls:
       copy_link_button: '=> datlechin-copy-links.lib.copy_link_button'
+    link_copied_message: 链接已复制到剪贴板！
     post_controls:
       copy_link_button: '=> datlechin-copy-links.lib.copy_link_button'
     user_controls:

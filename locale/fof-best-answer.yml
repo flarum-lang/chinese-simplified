@@ -16,13 +16,16 @@ fof-best-answer:
       documentation: 文档
       enable_all_tags_button: 为所有标签启用最佳回复
       enable_all_tags_reminder_button: 为所有标签启用提醒功能
+      enabled_tags_label: 启用标签
       introduction: "你需要前往 <code><a>flarum/tags</a></code> 为特定标签开启最佳回复和提醒功能。你可以在「权限」页面为全局或特定标签设置最佳回复的操作权限。\n"
       label:
         advanced: 高级
         general: 常规
         reminders: 提醒事项
         reminders_notice: '要运行提醒功能，你必须正确配置 Flarum 调度器。'
+        tags: 最佳回答标签
       remind_tag_ids: '若要将提醒功能仅用于特定标签，请在此输入标签 ID （英文逗号分隔）'
+      remind_tags_label: 提醒标签
       schedule_log_output: 将调度程序的输出添加到日志存储中
       schedule_on_one_server: '使用 onOneServer() 方法建立计划任务'
       schedule_on_one_server_help: '需要 Redis/Memcache'

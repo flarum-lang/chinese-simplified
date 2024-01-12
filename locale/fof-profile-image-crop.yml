@@ -8,5 +8,6 @@ fof-profile-image-crop:
       error:
         failed_to_load_cropper: 无法加载图像裁剪器。
         generic_resize: 裁剪缩放图像时出错。
+        get_image_data: '裁剪失败。 确保您的浏览器的指纹识别保护已禁用。'
       submit_button: 上传
       submit_crop_button: 裁剪并上传

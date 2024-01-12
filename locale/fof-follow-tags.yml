@@ -2,6 +2,11 @@
 # Use https://weblate.rob006.net/projects/flarum/fof-follow-tags/zh_Hans/ for translation.
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
+blomstra-gdpr:
+  lib:
+    data:
+      tagsubscription:
+        anonymize_description: 移除用户对标签的关注
 fof-follow-tags:
   admin:
     settings:
@@ -49,6 +54,8 @@ fof-follow-tags:
       not_following_text: 仅当有人提及我时提醒。
       notify_alert_tooltip: 有新主题或新回复时推送论坛提醒
       notify_email_tooltip: 有新主题或新回复时发送邮件提醒
+      submit_button: 确认关注
+      subscription_label: '选择你对{tagName}的关注等级'
     user:
       settings:
         filter_label: 在「我的关注」中默认显示的内容

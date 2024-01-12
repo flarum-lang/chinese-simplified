@@ -136,6 +136,8 @@ CHANGELOG
 * [`fof/byobu`](https://github.com/FriendsOfFlarum/byobu)
 * [`fof/default-user-preferences`](https://github.com/FriendsOfFlarum/default-user-preferences)
 * [`fof/discussion-language`](https://github.com/FriendsOfFlarum/discussion-language)
+* [`fof/filter`](https://github.com/FriendsOfFlarum/filter)
+* [`fof/follow-tags`](https://github.com/FriendsOfFlarum/follow-tags)
 * [`fof/geoip`](https://github.com/FriendsOfFlarum/geoip)
 * [`fof/ignore-users`](https://github.com/FriendsOfFlarum/ignore-users)
 * [`fof/linguist`](https://github.com/FriendsOfFlarum/linguist)

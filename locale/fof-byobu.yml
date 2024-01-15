@@ -69,7 +69,7 @@ fof-byobu:
         update_recipients: '更新「{title}」的可见范围'
     nav:
       nav_item: 私密主题
-      start_button: 私密主题
+      start_button: 发布私密主题
     notifications:
       pd_added_label: 有人邀请我加入私密主题
       pd_added_text: '{username} 邀请您加入私密主题'

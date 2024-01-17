@@ -12,6 +12,7 @@ CHANGELOG
 
 **新增翻译**:
 
+* [`blomstra/database-queue`](https://github.com/blomstra/flarum-ext-database-queue)
 * [`clarkwinkelmann/flarum-ext-meilisearch-dashboard`](https://github.com/clarkwinkelmann/flarum-ext-meilisearch-dashboard)
 * [`club-1/flarum-ext-server-side-highlight`](https://github.com/club-1/flarum-ext-server-side-highlight)
 * [`dalez/flarum-msemoji`](https://github.com/DellZHackintosh/flarum-msemoji)
@@ -38,6 +39,7 @@ CHANGELOG
 * [`foskym/nickname-group-formatter`](https://github.com/FoskyM/flarum-nickname-group-formatter)
 * [`foskym/flarum-oauth-center`](https://github.com/FoskyM/flarum-oauth-center)
 * [`glowingblue/localizd`](https://extiverse.com/extension/glowingblue/localizd)
+* [`hikarilan/flarum-passkey-login`](https://github.com/shaokeyibb/flarum-passkey-login)
 * [`ianm/log-viewer`](https://github.com/imorland/flarum-ext-log-viewer)
 * [`ianm/no-meta-title`](https://github.com/imorland/no-meta-title)
 * [`ianm/oauth-line`](https://github.com/imorland/flarum-ext-oauth-line)

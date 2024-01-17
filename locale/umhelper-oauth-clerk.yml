@@ -7,4 +7,4 @@ fof-oauth:
     settings:
       providers:
         clerk:
-          description: 向办事员SSO注册您的论坛｛link｝
+          description: '前往 Clerk SSO 注册您的论坛应用 {link}'

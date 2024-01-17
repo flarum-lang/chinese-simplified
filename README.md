@@ -1,4 +1,4 @@
-# Flarum 简体中文语言包 2021
+# Flarum 简体中文语言包 2022
 # Flarum Simplified Chinese Language Pack
  [![GitHub license](https://img.shields.io/github/license/flarum-lang/chinese-simplified?color=%230172b2)](https://github.com/flarum-lang/chinese-simplified/blob/master/LICENSE) [![Latest Stable Version](https://img.shields.io/packagist/v/flarum-lang/chinese-simplified.svg)](https://packagist.org/packages/flarum-lang/chinese-simplified) ![Packagist](https://img.shields.io/packagist/dt/flarum-lang/chinese-simplified)
 
@@ -20,11 +20,17 @@ composer require flarum-lang/chinese-simplified
 php flarum cache:clear
 ```
 
-_**⭐Flarum 旧版本**_
+_**Flarum 旧版本**_
 
 - 在末尾写上版本号即可安装指定的语言包版本：`composer require flarum-lang/chinese-simplified:^v1.0.0`，语言包版本号与 Flarum 版本号相同。
 
 **_Flarum Beta 16 及以下请翻阅语言包历史版本号_**
+
+**_⭐简体中文语言包 Dev版本_**
+```
+composer require flarum-lang/chinese-simplified:dev-release/master
+php flarum cache:clear
+```
 
 ### 升级、卸载 / Update & Remove
 将安装命令中的 require 替换为 update 或 remove
@@ -33,7 +39,7 @@ _**⭐Flarum 旧版本**_
 
 ### 报告问题 / Report Issue
   - [Github](https://github.com/flarum-lang/chinese-simplified/issues)
-  - 在此跟帖
+  - [在此跟贴](https://discuss.flarum.org.cn/d/1211)
 
 ### 链接 / Links
   - [Discuss](https://discuss.flarum.org/d/22690)

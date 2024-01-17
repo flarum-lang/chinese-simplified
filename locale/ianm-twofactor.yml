@@ -5,4 +5,5 @@
 ianm-twofactor:
   admin:
     edit_group:
+      2fa_help: 要求此组的成员为其帐户启用双因素身份验证（2FA）。
       2fa_label: 需要双重验证

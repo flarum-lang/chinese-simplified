@@ -6,4 +6,5 @@ danirod-plausible:
   admin:
     validation:
       domain:
+        regex: 给定的域无效
         required: 必须指定一个域名

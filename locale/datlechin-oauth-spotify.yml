@@ -7,4 +7,5 @@ fof-oauth:
     settings:
       providers:
         spotify:
+          client_id_label: 客户端ID
           description: '使用 Spotify {link} 注册您的论坛。'

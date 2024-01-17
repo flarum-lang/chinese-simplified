@@ -7,4 +7,5 @@ hikarilan-passkey-login:
     settings:
       relying_party:
         name:
+          help: 依赖方名称是您的网站的一个可读名称。如果保持为空，将使用论坛标题。
           label: 依赖方名称

@@ -5,9 +5,10 @@
 club-1-cross-references:
   admin:
     enable_short_references:
-      help: '将消息中的#<ID>文本(例如#42)转换为相应讨论的链接。'
+      help: '将消息中的#<ID>文本（例如#42）转换为相应讨论的链接。'
       label: 启用简短引用
     retrofit_links_in_frontend:
+      help: "<p><strong>已弃用</strong>（将在<code>v1.2.0</code>中删除）请考虑使用<code>club-1/flarum-ext-chore命令</code>扩展的<code>chore:repase</code>命令。请参阅：＜code＞https://github.com/club-1/flarum-ext-chore-commands</code></p><p>在未启用此扩展时发送的消息中显示讨论链接的标题。这是在前端完成的，因此可能会导致较差的用户体验</p>\n"
       label: 改装前端的链接
     show_discussion_id:
       help: '在任何主题标题旁展示主题帖 ID.'

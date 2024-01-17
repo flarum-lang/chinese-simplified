@@ -6,6 +6,7 @@ blomstra-gdpr:
   lib:
     data:
       uploads:
+        anonymize_description: 从上载的文件中删除用户引用。文件本身仍然可供用户访问，用户可以在匿名前查看这些文件。
         export_description: 所有文件均由用户上传。
 fof-upload:
   admin:

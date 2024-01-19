@@ -183,9 +183,9 @@ core:
       delete_posts_label: 删除回复
       description: 设置各用户组访问及操作权限
       edit_posts_label: 编辑回复
-      edit_users_credentials_label: 编辑用户身份标识
+      edit_users_credentials_label: 编辑用户核心数据（用户名、邮箱和密码）
       edit_users_groups_label: 编辑用户组
-      edit_users_label: 编辑用户入口
+      edit_users_label: 编辑用户（昵称等其他数据）
       global_heading: 全局
       moderate_access_tokens_label: 管理访问令牌
       moderate_heading: 管理相关

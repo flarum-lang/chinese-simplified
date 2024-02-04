@@ -5,6 +5,12 @@
 justoverclock-user-pc-specs:
   forum:
     cabinet: 内阁：
+    cpu: 处理器：
+    gpu: 显卡：
+    motherboard: 主板：
+    pcSpecsOf: 计算机配置：
+    ram: 运行内存：
     savePcSpecs: 保存电脑配置
     so: 操作系统：
+    specsSaved: 成功保存配置！
     storage: 储存：

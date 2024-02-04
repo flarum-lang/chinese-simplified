@@ -7,5 +7,27 @@ justoverclock-steam-api:
     steamApiKey: 'Steam API密钥'
     steamApiKey-help: '在https://steamcommunity.com/dev/apikey，获取你的免费api密钥'
   forum:
-    steamId: 蒸汽配置文件ID或虚荣心的名字
+    LatestGamesPlayed: 最近游玩的游戏
+    accountCreated: '注册时间： '
+    country: '国家： '
+    gamesOwned: '拥有的游戏： '
+    lastLogOff: '上次登出： '
+    lastLogin: '上次登录： '
+    lastLogoff: '上次离线： '
+    noCountry: 未填写
+    noGamesAvailable: 前两周没有玩任何游戏。
+    privateProfile: 私密资料
+    profile: '个人资料： '
+    publicProfile: 公开资料「
+    realName: '真实名字： '
+    status: '状态： '
+    statusAway: 离开
+    statusBusy: 忙碌
+    statusOffline: 离线
+    statusOnline: 在线
+    statusPlay: 找玩伴
+    statusSnooze: 打盹
+    statusTrade: 寻求交易
+    steamId: 'Steam 个人资料 ID 或自定义 URL'
     steamIdSaved: 'Steam ID 保存成功'
+    visitProfile: 查看个人资料

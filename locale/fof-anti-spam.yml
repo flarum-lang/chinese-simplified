@@ -16,3 +16,23 @@ fof-anti-spam:
         delete_user_help: 永久删除该账号，删除后，此帐号将停用。
         delete_user_label: 删除用户
         heading: 默认审核操作
+        introduction: "当一个用户被标记为滥发者时，版主可以从多个操作中选择一个来处理特定的案例。这些设置允许你预先设定你一般会采取的操作，来加快进程，但也允许按需采取变动。\n"
+        move_discussions_to_tags_help: 这会移动所有又该用户发起的帖子到你指定的标签中。清除所选择的标签来让帖子保留在原来的标签中。如果“删除帖子”已启用则该项无效。
+        move_discussions_to_tags_label: 移动帖子到标签中
+      stopforumspam:
+        api_key_instructions_text: '<register>注册 StopForumSpam</register>。然后你将需要<key>获取一个 API 密钥</key>。'
+        api_key_label: 'API 密钥'
+        api_key_text: '你可以选择向 StopForumSpam 来报告滥发者来确保更多的论坛不会遭受滥发侵害。'
+        confidence_label: 信用
+        email_hash_label: 使用哈希后的邮箱地址
+        email_label: 邮箱地址滥用检查
+        frequency_label: 限额
+        heading: StopForumSpam
+        introduction: "在 <a>StopForumSpam</a> 数据库中检查新注册用户。如果<code>信用</code>或<code>频率</code>已到达限制，该用户将无法在你的论坛完成注册。\n\n也支持通过<code>fof/oauth</code>和<code>fof/passport</code>的 SSO 注册。其它 SSO 提供者应该也支持，但未经测试。\n"
+        ip_label: IP地址滥用检查
+        region_closest_label: 最近的
+        region_europe_label: 欧洲
+        region_us_label: 美国
+        regional_endpoint_help: 默认情况下我们会支持查找地理位置最近的服务器来确保最快的反应速度。如果你想要限制流量到指定地区，如为了满足公司或国家隐私规范，你可以强制其连接到指定的地区。
+        regional_endpoint_label: 访问的地理位置
+        username_label: 用户名滥用检查

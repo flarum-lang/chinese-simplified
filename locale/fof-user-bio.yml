@@ -12,6 +12,7 @@ fof-user-bio:
       allowFormatting: 允许在简介中设置格式
       allowFormatting_help: '根据设计，这个格式和文章格式是分开的。如果启用了BBCode和/或Markdown扩展，它们将被用于格式化简介。不允许使用图片或嵌入。添加到 Flarum 格式化的扩展必须 *明确* 添加对简介格式化的支持。'
       bioLimit: 个性签名字符数上限
+      maxLines: 一次显示的最多行数
   forum:
     userbioPlaceholder: 这个人很懒，什么都没有写……
     userbioPlaceholderOtherUser: '为 {username} 设置个性签名'

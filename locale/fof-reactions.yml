@@ -5,6 +5,8 @@
 fof-reactions:
   admin:
     page:
+      cdn:
+        default-url: '默认：{url}'
       convert:
         button: 转换旧表情
         converted: '成功转换了全部 {number} 个赞'
@@ -35,12 +37,15 @@ fof-reactions:
         react_own_posts_label: 允许用户戳自己
         save_settings: 保存设置
     permissions:
+      delete_post_reactions_label: 删除帖子的反应
       react_posts_label: 戳表情
       see_reactions_label: 查看戳表情的人
   forum:
     disabled-reaction: 您暂时不能戳表情，请刷新后重试。
     mod_item: 查看表情
     modal:
+      anonymous_count: '{count} 位匿名用户'
+      no_reactions: 还没有任何反应
       title: 表情
     notification: '{username} 戳了一个 {reaction}'
     react_button_label: 戳表情

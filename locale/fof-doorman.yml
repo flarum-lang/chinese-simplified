@@ -35,7 +35,8 @@ fof-doorman:
         key: 邀请码
         max_uses: 最大可用次数
         title: 邀请码
-        used_times: '{remaining, plural, one {剩余 {remaining} 次} other {剩余 {remaining} 次}}'
+        total_uses: '已使用 {totalUses} 次'
+        used_times: '{remaining, plural, =0 {不限次数} other {剩余 {remaining} 次}}'
         warning: 此邀请码已达最大可用次数。
       title: 看门人
   forum:

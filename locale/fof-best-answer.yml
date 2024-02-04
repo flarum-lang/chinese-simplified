@@ -16,6 +16,7 @@ fof-best-answer:
       documentation: 文档
       enable_all_tags_button: 为所有标签启用最佳回复
       enable_all_tags_reminder_button: 为所有标签启用提醒功能
+      enabled_tags_help: '选择需要启用最佳答案的标签（如果有）。这些标签会变为以"Q&A"为格式的标签，且能够设置最佳答案。'
       enabled_tags_label: 启用标签
       introduction: "你需要前往 <code><a>flarum/tags</a></code> 为特定标签开启最佳回复和提醒功能。你可以在「权限」页面为全局或特定标签设置最佳回复的操作权限。\n"
       label:
@@ -25,6 +26,7 @@ fof-best-answer:
         reminders_notice: '要运行提醒功能，你必须正确配置 Flarum 调度器。'
         tags: 最佳回答标签
       remind_tag_ids: '若要将提醒功能仅用于特定标签，请在此输入标签 ID （英文逗号分隔）'
+      remind_tags_help: 选择需要发送提醒的标签（如果有）。提醒只会被发送到有这些标签的帖子中。
       remind_tags_label: 提醒标签
       schedule_log_output: 将调度程序的输出添加到日志存储中
       schedule_on_one_server: '使用 onOneServer() 方法建立计划任务'
@@ -39,6 +41,7 @@ fof-best-answer:
       show_filter_label: 显示已解决过滤项
       show_max_lines_help: 将此项设为0以禁用。如果一个帖子长于配置行数，它将在预览中被截断，并带有淡出的效果。
       show_max_lines_label: 在帖子预览中显示的最大行数
+      tags_info: "当一个标签启用了最佳答案后，为每一个可以设置答案的用户组分配权限（自己的帖子，任何人的帖子）。权限可以全局设置（给所有启用了最佳答案的标签），或按标签设置。\n"
       use_alt_ui: 按钮布局
       use_alt_ui_help: 在帖子底部显示最佳回复选择按钮
   email:

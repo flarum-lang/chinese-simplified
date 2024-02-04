@@ -6,7 +6,17 @@ fof-oauth:
   admin:
     configure_button_label: '配置 FoF OAuth'
     settings:
+      advanced:
+        heading: 高级
+        log-oauth-errors-help: '如果启用了，OAuth 错误将会被记录到 Flarum 日志中。这对调试 OAuth 问题可能会有帮助，但也会包含敏感信息。'
+        log-oauth-errors-label: '记录 OAuth 错误'
+      fullscreen_popup_help: '启用后，OAuth 登录会打开一个全屏弹窗。如果这个启用了，宽高设置将会被忽略。'
+      fullscreen_popup_label: '对 OAuth 使用全屏弹窗'
       only_icons_label: 登录界面只显示第三方账号图标
+      popup_height_help: '设置 OAuth 弹窗的高度。如果“对 OAuth 使用全屏弹窗”启用了，这个设置将会被忽略。'
+      popup_height_label: 'OAuth 弹窗高度'
+      popup_width_help: '设置 OAuth 弹窗的宽度。如果“对 OAuth 使用全屏弹窗”启用了，这个设置将会被忽略。'
+      popup_width_label: 'OAuth 弹窗宽度'
       providers:
         callback_url_text: '根据需要可将回调 URL 设为 {url}。'
         discord:

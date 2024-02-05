@@ -190,7 +190,6 @@ CHANGELOG
 * [`nearata/flarum-ext-minecraft-avatars`](https://github.com/Nearata/flarum-ext-minecraft-avatars)
 * [`nearata/flarum-ext-twofactor`](https://github.com/Nearata/flarum-ext-twofactor)
 * [`spookygames/flarum-ext-auth-keycloak`](https://github.com/spookygames/flarum-ext-auth-keycloak)
-* [`swaggymacro/only-starter`](https://github.com/SwaggyMacro/OnlyStarter)
 * [`the-turk/flarum-flamoji`](https://github.com/the-turk/flarum-flamoji)
 * [`webbinaro/flarum-calendar`](https://github.com/eddiewebb/flarum-calendar)
 * [`zerosonesfun/flarum-bbcode-button`](https://github.com/zerosonesfun/flarum-bbcode-button)

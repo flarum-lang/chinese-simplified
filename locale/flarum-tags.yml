@@ -65,9 +65,9 @@ flarum-tags:
       tags_link: '=> flarum-tags.ref.tags'
       untagged_link: 移除标签
     post_stream:
-      added_and_removed_tags_text: '{username} 于 {time} 添加标签 {tagsAdded}，并移除标签 {tagsRemoved}。'
-      added_tags_text: '{username} 于 {time} 添加标签 {tagsAdded}'
-      removed_tags_text: '{username} 于 {time} 移除标签 {tagsRemoved}'
+      added_and_removed_tags_text: '{username} 于 {time} 添加 {tagsAdded}，并移除 {tagsRemoved}。'
+      added_tags_text: '{username} 于 {time} 添加 {tagsAdded}'
+      removed_tags_text: '{username} 于 {time} 移除 {tagsRemoved}'
       tags_text: '{count, plural, one {{tags}} other {{tags}}} 标签'
     tag:
       meta_description_text: '{tag} 标签下的所有主题'

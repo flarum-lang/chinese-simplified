@@ -5,5 +5,5 @@
 justoverclock-first-visit-popup:
   admin:
     CookieExp: 'Cookie 有效时间 (小时)'
-    modalContent: 模态内容（HTML）
+    modalContent: 弹窗内容（HTML）
     modalTitle: 对话框标题

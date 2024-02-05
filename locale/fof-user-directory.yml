@@ -10,6 +10,7 @@ fof-user-directory:
       default-sort: 默认排序
       disable-global-search-source: 不要将会员名录添加到论坛搜索建议中
       link: 在论坛首页侧边栏添加「会员名录」选项卡
+      link-group-mentions: 关联在帖子中的用户组提及到用户目录当中
       use-small-cards: 使用小尺寸卡片
   forum:
     header:

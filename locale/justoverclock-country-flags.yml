@@ -7,5 +7,7 @@ justoverclock-country-flags:
     countryColumn: 国家
     showFlagsOnPosts: 在帖子上显示旗帜
   forum:
+    clickToSelectCountry: 点击来选择你的国家
+    countrySaved: 成功保存国家！
     inputCountryCode: 国家代码
-    saveButton: 拯救
+    saveButton: 保存

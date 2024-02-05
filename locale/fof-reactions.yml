@@ -7,6 +7,9 @@ fof-reactions:
     page:
       cdn:
         default-url: '默认：{url}'
+        help: "默认情况下，我们从 Cloudflare 的 CDN 获取反应的图片资源。因有需求，你也可以指定其它的 CDN 地址。\n<code>[codepoint]</code>将会被表情的码位取代。\n\n例如，要切换到 jsDelivr 上的 Noto Emoji，你会输入<code>https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.040/svg/emoji_u[codepoint].svg</code>。这个字段无论如何都不能够留空。\n"
+        label: URL
+        title: CDN
       convert:
         button: 转换旧表情
         converted: '成功转换了全部 {number} 个赞'
@@ -20,6 +23,8 @@ fof-reactions:
         reactions: 已有表情
         title: 自定义表情
       settings:
+        allow-anonymous: 允许匿名（游客）作出反应
+        allow-anonymous-help: 如果启用了，游客和匿名用户将可以对帖子作出反应。请注意匿名翻译不会被关联到一个用户资料且其不会出现在反应列表。
         integrations:
           gamification:
             downvoteHelptext: 输入要自动转换为「踩」的表情标识
@@ -34,7 +39,7 @@ fof-reactions:
             legend: 点赞
           warning: 同一个戳一戳表情<strong>不会</strong>转换为「赞」<strong>或</strong>「顶」
         react_own_posts_help: 启用此项，添加一个权限，允许用户戳自己的帖子。如需禁止，请禁用此项。
-        react_own_posts_label: 允许用户戳自己
+        react_own_posts_label: 允许用户在自己的帖子作出反应，
         save_settings: 保存设置
     permissions:
       delete_post_reactions_label: 删除帖子的反应

@@ -5,3 +5,8 @@
 adblock:
   admin:
     adblock-div: 在出现html代码的位置添加横幅标记
+    adblock-div-placeholder: '例如"#content, .App-content, .IndexPage, container"'
+    adblock-img: 图片
+    adblock-img-placeholder: 'https://domain/picture.png'
+    adblock-url: 链接
+    adblock-url-placeholder: 'https://domain'

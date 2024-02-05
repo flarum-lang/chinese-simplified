@@ -6,3 +6,90 @@ imeepo-more-bbcode:
   admin:
     permissions:
       bypass_like_label: 忽略显示的点赞
+      bypass_reply_label: 忽略显示的答案
+  forum:
+    button_tooltip_audio: 插入音频
+    button_tooltip_bar: 插入进度条
+    button_tooltip_bar_black: 插入黑色进度条
+    button_tooltip_bar_blue: 插入蓝色进度条
+    button_tooltip_bar_red: 插入红色进度条
+    button_tooltip_center: 文字居中
+    button_tooltip_cloud: 下载地址
+    button_tooltip_color: 文字颜色
+    button_tooltip_del: 插入删除线文字
+    button_tooltip_details: 插入详情
+    button_tooltip_down: 插入下载
+    button_tooltip_dropcap: 文字首字下沉
+    button_tooltip_iframe: 插入网页框
+    button_tooltip_img: 插入图片
+    button_tooltip_img_center: 插入居中图片
+    button_tooltip_img_left: 插入左侧浮动图片
+    button_tooltip_img_right: 插入右侧浮动图片
+    button_tooltip_ins: 插入下划线文字
+    button_tooltip_justify: 文字对齐
+    button_tooltip_left: 文字左对齐
+    button_tooltip_like: 点赞可见
+    button_tooltip_login: 登录可见
+    button_tooltip_notification_warning: 插入警告
+    button_tooltip_p_left: 左间距
+    button_tooltip_p_right: 右间距
+    button_tooltip_reply: 回复可见
+    button_tooltip_right: 文字右对齐
+    button_tooltip_size: 文字大小
+    button_tooltip_sub: 插入下标文本
+    button_tooltip_sup: 插入上标文本
+    button_tooltip_tab: '插入 Tab'
+    button_tooltip_table: 插入表格
+    button_tooltip_video: 插入视频
+    button_tooltip_word: 插入单词
+    cloud_title: 标题
+    color_black: 黑色
+    color_blue: 蓝色
+    color_brown: 棕色
+    color_green: 绿色
+    color_grey: 灰色
+    color_orange: 橙色
+    color_pink: 粉色
+    color_purple: 紫色
+    color_red: 红色
+    color_silver: 银色
+    color_white: 白色
+    color_yellow: 黄色
+    h2: 二号标题
+    h3: 三号标题
+    h4: 四号标题
+    h5: 五号标题
+    h6: 六号标题
+    hidden_content: 隐藏内容
+    hidden_content_like: 点赞以显示内容
+    hidden_content_login: 登录以显示内容
+    hidden_content_reply: 回复以显示内容
+    lib:
+      bold_tooltip: 添加粗体文字
+      code_tooltip: 插入代码
+      header_tooltip: 添加标题文字
+      image_tooltip: 添加图片
+      italic_tooltip: 添加斜体文字
+      link_tooltip: 添加一个链接
+      ordered_list_tooltip: 添加一个带序号的列表
+      quote_tooltip: 插入引用
+      spoiler_tooltip: 插入剧透内容
+      strikethrough_tooltip: 插入带删除线的文字
+      unordered_list_tooltip: 插入无序号列表
+    like_to_see: '这个内容需要 {like} 并会在刷新后显示'
+    login_to_see: '这个内容需要 {login} 并会在刷新后显示'
+    quote:
+      wrote: 写道
+    reply_to_see: '这个内容需要 {reply} 并会在刷新后显示'
+    size_18: 字号18
+    size_20: 字号20
+    size_22: 字号22
+    size_24: 字号24
+    size_26: 字号26
+    size_28: 字号28
+    size_30: 字号30
+    size_32: 字号32
+    size_34: 字号34
+    size_36: 字号36
+    size_38: 字号38
+    size_40: 字号40

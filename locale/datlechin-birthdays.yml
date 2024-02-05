@@ -21,11 +21,11 @@ datlechin-birthdays:
     invalid_dob_message: 无效的出生日期
   forum:
     change_dob:
-      date_of_birth_text: 生日
+      date_of_birth_text: '=> datlechin-birthdays.ref.date_of_birth'
       submit_button: '=> core.ref.save_changes'
       title: 编辑生日
     edit_user:
-      dob_heading: 生日
+      dob_heading: '=> datlechin-birthdays.ref.date_of_birth'
     header:
       edit_dob_button: 编辑生日
     nav:
@@ -35,10 +35,14 @@ datlechin-birthdays:
       post_count: '{count, plural, one {回帖：#} other {回帖：#}}'
     settings:
       change_dob_label: 修改生日
-      dob_heading: 生日
+      dob_heading: '=> datlechin-birthdays.ref.date_of_birth'
       show_dob_date_label: 显示生日的月份和具体日期
       show_dob_year_help: 这将公开您的年龄。
       show_dob_year_label: 显示生日的年份
+    sign_up:
+      dob_placeholder: '=> datlechin-birthdays.ref.date_of_birth'
     user:
       age_text: '年龄：{age}'
       birthday_text: '生日：{date}'
+  ref:
+    date_of_birth: 生日

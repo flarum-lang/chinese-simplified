@@ -7,7 +7,7 @@ maicol07-oidc-client:
     settings:
       client:
         enable_pkce: '启用 PCKE (推荐)'
-        id: 客户ID
+        id: '客户端 ID'
         secret: 客户端密钥
         subtitle: "在这里添加你的OpenID Connect提供商提供的客户资料。如需进一步帮助，请查看文档.\n"
         title: 客户端设置

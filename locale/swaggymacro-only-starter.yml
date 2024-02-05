@@ -9,5 +9,5 @@ swaggymacro:
   forum:
     blog_article_author: 层主
     not_only_starter: 全部
-    only_starter: 只显示楼主
+    only_starter: 只看楼主
     topic_starter: 楼主

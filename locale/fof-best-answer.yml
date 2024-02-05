@@ -56,7 +56,7 @@ fof-best-answer:
   forum:
     answered_badge: 已解决
     best_answer_button: 最佳回复
-    best_answer_label: '由 <a>{username}</a> 在 {time_set} 选择'
+    best_answer_label: '由 <a>{username}</a> 于 {time_set} 选择'
     composer:
       titlePlaceholder: 标题
     errors:

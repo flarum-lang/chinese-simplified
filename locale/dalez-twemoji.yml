@@ -6,4 +6,4 @@ flarum-twemoji:
   forum:
     composer:
       emoji_tooltip: 添加表情
-      type_to_search_text: 键入以搜索表情符号
+      type_to_search_text: 键入以搜尋表情符号

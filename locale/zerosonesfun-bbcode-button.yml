@@ -6,9 +6,17 @@ flarum-bbcode-button:
   admin:
     settings:
       codedesc: 请输入开闭标签。
+      codedesc2: '输入 BBCode 开合标签。'
+      codedesc3: '输入 BBCode 开合标签。'
       codelabel: '1. BBCode 标签'
+      codelabel2: '2. BBCode 标签'
+      codelabel3: '3. BBCode 标签'
       icondesc: '请输入 FontAwesome 图标类名。'
+      icondesc2: '输入 Font Awesome 类名。'
+      icondesc3: '输入 Font Awesome 类名。'
       iconlabel: 1.按钮图标
+      iconlabel2: '2. 按钮图标'
+      iconlabel3: '3. 按钮图标'
       introdesc: '本扩展程序允许您在添加包括但不限于 BBCode 的自定义按钮到文本编辑器工具栏。使用前，请先确保配置按钮并保存。'
       introlabel: '自定义 BBCode 按钮'
       posdesc: 数字越大，光标焦点越靠右。
@@ -16,3 +24,5 @@ flarum-bbcode-button:
   forum:
     composer:
       bbcode_tooltip: BBCode
+      bbcode_tooltip2: '插入 BBCode'
+      bbcode_tooltip3: '插入 BBCode'

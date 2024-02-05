@@ -7,6 +7,16 @@ serakoi-flarumstaffbadge:
     staffBadge:
       help: '工作人员徽章文本（默认为 "STAFF"）'
       label: 员工头衔文字
+    staffBadgeTextBg:
+      help: '徽章颜色（默认为"rgb(70, 209, 96)"）'
+      label: 工作人员徽章背景颜色
     staffBadgeTextColor:
       help: '徽章颜色（默认为 "#fff"）'
       label: 职员徽章颜色
+  forum:
+    edit_user:
+      heading: 工作人员徽章已启用
+      placeholder: 输入内容为“true”来启用徽章
+      tagList:
+        heading: 用户标签列表
+        placeholder: '以“,”分隔'

@@ -56,7 +56,7 @@ fof-best-answer:
   forum:
     answered_badge: 已解决
     best_answer_button: 最佳回复
-    best_answer_label: '由 <a>{username}</a> 选择'
+    best_answer_label: '由 <a>{username}</a> 在 {time_set} 选择'
     composer:
       titlePlaceholder: 标题
     errors:
@@ -82,7 +82,7 @@ fof-best-answer:
     remove_best_answer: 移除最佳回复
     this_best_answer: 设为最佳回复
     user:
-      best-answer-count: '{count, plural, { {count} 次助人} other {{count} 次助人}}'
+      best-answer-count: '{count} 次助人'
 fof-user-directory:
   lib:
     sort:

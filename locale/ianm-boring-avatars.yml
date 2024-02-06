@@ -5,4 +5,5 @@
 ianm-boring-avatars:
   admin:
     settings:
+      color1: '颜色 1'
       theme: 风格

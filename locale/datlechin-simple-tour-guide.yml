@@ -5,5 +5,5 @@
 datlechin-simple-tour-guide:
   admin:
     settings:
-      show_progress_help: 这会在弹出层的顶部显示当前步骤和总步骤数，
+      show_progress_help: 在弹出框顶部展示当前步数和步骤总数。
       show_progress_label: 显示进度

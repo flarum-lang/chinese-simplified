@@ -90,6 +90,7 @@ CHANGELOG
 * [`nearata/flarum-ext-related-discussions`](https://github.com/Nearata/flarum-ext-related-discussions)
 * [`nodeloc/dislikes`](https://github.com/nodeloc/Dislikes)
 * [`nodeloc/flarum-ignore-hidden-tags`](https://github.com/nodeloc/flarum-ignore-hidden-tags)
+* [`nodeloc/telegram`](https://github.com/nodeloc/telegram)
 * [`nodeloc/whisper`](https://github.com/nodeloc/whisper)
 * [`peruguitar/flarum-ext-user-portrait`](https://github.com/Anexsoft/peruguitar-flarum-ext-user-portrait)
 * [`rehiy/flarum-reply-to-see`](https://github.com/rehiy/flarum-reply-to-see)

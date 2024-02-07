@@ -6,3 +6,6 @@ askvortsov-article-series:
   admin:
     edit_tags:
       is_article_series: 是文章系列吗？
+  forum:
+    article_item:
+      next_article: 下一篇文章

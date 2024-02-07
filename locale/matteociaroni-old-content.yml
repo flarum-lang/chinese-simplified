@@ -5,3 +5,5 @@
 matteociaroni-old-content:
   admin:
     time_label: 将帖子视为“旧”的天数
+  forum:
+    message: 🟡

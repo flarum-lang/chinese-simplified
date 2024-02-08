@@ -175,6 +175,7 @@ CHANGELOG
 * [`fof/upload`](https://github.com/FriendsOfFlarum/upload)
 * [`fof/user-bio`](https://github.com/FriendsOfFlarum/user-bio)
 * [`fof/user-directory`](https://github.com/FriendsOfFlarum/user-directory)
+* [`fof/username-request`](https://github.com/FriendsOfFlarum/username-request)
 * [`fof/webhooks`](https://github.com/FriendsOfFlarum/webhooks)
 * [`hehongyuanlove/flarum-auth-qq`](https://github.com/Hehongyuanlove/flarum-auth-qq)
 * [`ianm/follow-users`](https://github.com/imorland/follow-users)

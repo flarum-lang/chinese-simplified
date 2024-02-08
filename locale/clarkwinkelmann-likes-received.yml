@@ -8,4 +8,4 @@ clarkwinkelmann-likes-received:
       view: 查看资料卡片总赞数
   forum:
     user-card:
-      likes: '{likes, plural, one {# 赞} other {# 赞}}'
+      likes: '{likes} 赞'

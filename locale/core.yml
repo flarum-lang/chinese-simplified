@@ -14,7 +14,7 @@ core:
       custom_footer_text: '=> core.ref.custom_footer_text'
       custom_header_heading: 自定义页眉
       custom_header_text: '=> core.ref.custom_header_text'
-      custom_styles_cannot_use_less_features: 在自定义LESS中禁止使用@import与data-uri特性。
+      custom_styles_cannot_use_less_features: '自定义 LESS 不支持使用 @import 与 data-uri 特性。'
       custom_styles_heading: 自定义样式
       custom_styles_text: '添加 Less/CSS 代码以自定义论坛外观，此设置将覆盖 Flarum 默认样式。'
       dark_mode_label: 夜间模式
@@ -46,25 +46,25 @@ core:
       welcome_banner_heading: 欢迎横幅
       welcome_banner_text: 横幅文本将显示于「全部主题」页面顶部，可以用于欢迎论坛访客。
     create_user:
-      email_confirmed_label: 需要用户确认此邮件
+      email_confirmed_label: 需要用户验证邮箱
       email_placeholder: '=> core.ref.email'
-      password_placeholder: 密码
-      submit_and_create_another_button: 再次创建并添加
-      submit_button: 创建用户
-      title: 创建新用户
+      password_placeholder: '=> core.ref.password'
+      submit_and_create_another_button: 添加下一个
+      submit_button: 添加用户
+      title: 添加新用户
       use_random_password: 生成随机密码
-      username_placeholder: 用户名
+      username_placeholder: '=> core.ref.username'
     dashboard:
       clear_cache_button: 清除缓存
       description: 论坛各项数据一览
       io_error_message: 无法写入文件。请检查操作权限，重试或者直接从命令行运行命令。
       status:
         headers:
-          queue-driver: 队列驱动器
-          scheduler-status: 调度器
-          session-driver: 会话驱动器
+          queue-driver: 队列驱动程序
+          scheduler-status: 任务调度程序
+          session-driver: 会话驱动程序
         scheduler:
-          active: 已激活
+          active: 激活
           inactive: 未激活
           never-run: 从未运行
       title: 仪表盘
@@ -172,7 +172,7 @@ core:
       userlist_button: '=> core.admin.users.title'
       userlist_title: '=> core.admin.users.description'
     permissions:
-      allow_hide_own_posts_label: 允许删除自己的账户
+      allow_hide_own_posts_label: 允许删除自己的帖子
       allow_post_editing_label: 编辑帖子内容
       allow_renaming_label: 更改自己的主题标题
       create_access_token_label: 创建访问令牌
@@ -205,7 +205,7 @@ core:
       view_post_ips_label: '查看 IP 地址'
     permissions_controls:
       allow_indefinitely_button: 无限制
-      allow_never_button: 从未活动
+      allow_never_button: '=> core.ref.never'
       allow_some_minutes_button: '{count, plural, one {发布 # 分钟内} other {发布 # 分钟内}}'
       allow_ten_minutes_button: '发布 10 分钟内'
       allow_until_reply_button: 直到被回复
@@ -220,12 +220,12 @@ core:
       remove_button: '=> core.ref.remove'
       upload_button: 选择图片...
     users:
-      create_user_button: 新用户
+      create_user_button: 添加用户
       description: 论坛用户分页列表
       grid:
         columns:
           display_name:
-            title: 显示名称
+            title: 外显昵称
           edit_user:
             button: '=> core.ref.edit'
             title: '=> core.ref.edit_user'
@@ -248,7 +248,7 @@ core:
       pagination:
         back_button: 上一页
         first_button: 返回首页
-        go_to_page_textbox_a11y_label: 直接前往页码
+        go_to_page_textbox_a11y_label: 翻页到页码
         last_button: 前往最后一页
         next_button: 下一页
         page_counter: '第 {current} 页 / 共 {total} 页'
@@ -257,9 +257,9 @@ core:
       total_users: '用户数：{count}'
   api:
     invalid_filter_type:
-      must_be_numeric_message: '{filter} 过滤器必须是数字。'
-      must_not_be_array_message: '{filter} 过滤器不能为一个数组。'
-      must_not_be_multidimensional_array_message: '{filter} 过滤器不能是一个多维数组。'
+      must_be_numeric_message: '{filter} 查询条件必须是数值。'
+      must_not_be_array_message: '{filter} 查询条件不能是数组。'
+      must_not_be_multidimensional_array_message: '{filter} 查询条件不能是多维数组。'
     invalid_username_message: '用户名只能由字母、数字及连字符 (-) 组成'
   email:
     activate_account:
@@ -416,34 +416,34 @@ core:
       discussions_heading: '=> core.ref.discussions'
       users_heading: '=> core.ref.users'
     security:
-      browser_on_operating_system: '{os} 平台上的 {browser}'
+      browser_on_operating_system: '{browser}（{os} 平台）'
       cannot_terminate_current_session: 无法终止当前活动会话，请登出。
-      created: 创建成功
+      created: 创建时间
       current_active_session: 当前活动会话
       developer_tokens_heading: 开发者令牌
-      empty_text: 未找到开发者令牌。
+      empty_text: 无可用令牌。
       global_logout:
         heading: 全局登出
-        help_text: '清除当前的 cookie 会话，终止所有会话，撤销开发者令牌，一切账户确认或密码重置邮件将会失效。'
-        log_out_button: 退出
+        help_text: '清除当前 Cookie 会话、终止所有会话、撤销所有开发者令牌，并使一切验证邮箱或重置密码的链接失效。'
+        log_out_button: '=> core.ref.log_out'
       hide_access_token: 隐藏令牌
       last_activity: 最近活动
-      never: 从未活动
-      new_access_token_button: 新建令牌
+      never: '=> core.ref.never'
+      new_access_token_button: '=> core.ref.new_token'
       new_access_token_modal:
-        submit_button: 新建令牌
-        title: 新建令牌
-        title_placeholder: 标题
+        submit_button: 创建令牌
+        title: '=> core.ref.new_token'
+        title_placeholder: 名称
       revoke_access_token: 撤销
-      revoke_access_token_confirmation: 你真的要这么做吗？本操作无法撤销
-      session_terminated: '{count, plural, one {会话结束 } other {# 个会话结束}}.'
+      revoke_access_token_confirmation: '=> core.ref.generic_confirmation_message'
+      session_terminated: '已终止 {#} 个会话。'
       session_termination_failed: 终止会话时出现错误。
       sessions_heading: 活动会话
       show_access_token: 查看令牌
-      terminate_all_other_sessions: 终止所有其他会话
-      terminate_all_other_sessions_confirmation: 你真的要这么做吗？本操作无法撤销
+      terminate_all_other_sessions: 终止其他所有会话
+      terminate_all_other_sessions_confirmation: '=> core.ref.generic_confirmation_message'
       terminate_session: 终止
-      title: 安全
+      title: '=> core.ref.security'
       token_item_title: '{title} - {token}'
       token_revoked: 令牌已撤销。
       token_title_placeholder: /
@@ -479,7 +479,7 @@ core:
       posts_empty_text: 暂无内容
       posts_link: '=> core.ref.posts'
       posts_load_more_button: '=> core.ref.load_more'
-      security_link: 安全
+      security_link: '=> core.ref.security'
       settings_link: '=> core.ref.settings'
     user_controls:
       button: 操作
@@ -510,7 +510,7 @@ core:
     badge:
       hidden_tooltip: 隐藏
     data_segment:
-      label: '{label}:'
+      label: '{label}：'
     debug_button: 调试
     dropdown:
       toggle_dropdown_accessible_label: 下拉菜单开关
@@ -576,7 +576,7 @@ core:
     edit_user: 编辑用户
     email: 邮箱
     extensions: 扩展程序
-    generic_confirmation_message: 此操作无法撤销，你确定要继续吗？
+    generic_confirmation_message: 此操作无法撤销，确定要继续吗？
     icon: 图标
     icon_text: '输入任意一个 <a>Font Awesome</a> 图标名称。<em>包括</em>前缀，例如 <code>fas fa-</code>'
     load_more: 加载更多
@@ -584,8 +584,8 @@ core:
     log_in: 登录
     log_out: 退出
     mark_all_as_read: 将所有帖子标记为已读
-    never: 从不
-    new_token: 新建令牌
+    never: 无
+    new_token: 创建令牌
     next_page: 下一页
     notifications: 通知中心
     okay: 确定

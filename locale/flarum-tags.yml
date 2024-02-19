@@ -81,7 +81,7 @@ flarum-tags:
       submit_button: '=> core.ref.okay'
       title: '=> flarum-tags.ref.choose_tags'
   ref:
-    choose_tags: 添加标签
-    choose_tags_placeholder: '{count, plural, one {请再添加一个标签} other {请再添加 # 个标签}}'
+    choose_tags: 选择标签
+    choose_tags_placeholder: '{count, plural, one {请再选择一个标签} other {请再选择 # 个标签}}'
     name: 标签名称
     tags: 标签

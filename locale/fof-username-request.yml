@@ -5,63 +5,63 @@
 fof-username-request:
   admin:
     permissions:
-      moderate_requests: 批准更改用户名/昵称
+      moderate_requests: 受理用户名/昵称更改申请
       request_nickname: 申请更改昵称
       request_username: 申请更改用户名
   email:
     body:
-      approved: "你好，{recipient_display_name}\n\n你将用户名变更为“{new_username}”的申请已被 {actor_display_name} 通过。\n\n你现在可以通过你的新用户名登录：{login_url}\n"
-      noReasonProvided: 未提供原因。
-      rejected: "你好，{recipient_display_name}\n\n你将用户名从“{old_username}”变更为“{requested_username}”的请求已被 {actor_display_name} 拒绝。\n\n原因：{reason}\n"
+      approved: "{recipient_display_name}，你好!\n\n「{actor_display_name}」通过了你的用户名更改申请。\n\n你现在可以使用新用户名「{new_username}」登录：{login_url}\n"
+      noReasonProvided: 未说明原因
+      rejected: "{recipient_display_name}，你好！\n\n「{actor_display_name}」驳回了你将用户名从「{old_username}」更改为「{requested_username}」的申请。\n\n原因如下：{reason}\n"
     subject:
-      approved: '{display_name} 同意你将用户名变更为 {requested_username}'
-      rejected: '{display_name} 拒绝了你将用户名变更为 {requested_username}'
+      approved: 用户名更改申请已通过
+      rejected: 用户名更改申请已驳回
   forum:
     nickname_modals:
       action:
-        approval_label: 批准
-        decision_title: 决定
-        help_text: 请您确保昵称没有违反社区规范。
+        approval_label: 通过
+        decision_title: 受理
+        help_text: 请确保昵称符合社区规范。
         name: '{name} 申请将昵称更改为「{requestedName}」'
         reason_title: 驳回原因
         rejected_label: 驳回
         submit_button: 提交
-        success: 决定已送出。
+        success: 办结成功。
         title: '=> fof-username-request.ref.nickname_change_request'
       request:
-        confirmation_message: 您的昵称更改请求已经提交，请等待批准。
-        current_request: '您已申请将您的昵称改为「{name}」。您可以更新或删除请求。'
+        confirmation_message: 您的昵称更改请求已经提交，请等候受理。
+        current_request: '您已申请将昵称更改为「{name}」。您可以修改或删除请求。'
         delete_button: 删除请求
         deleted: 已删除昵称请求。
         dismiss_button: '=> core.ref.okay'
         submit_button: 提交请求
         title: 申请更改昵称
       results:
-        approved: 您的昵称更改已批准
+        approved: 您的昵称更改申请已通过
         dismiss_button: '=> core.ref.okay'
-        new_name: '您的昵称已成功更改为：{name}'
+        new_name: '您的昵称已成功更改为「{name}」'
         reason: '驳回原因：<i>「{reason}」</i>.'
-        rejected: 您的昵称更改已被驳回
-        resubmit: 您可以在账户设置中重新提交请求。
-        title: 昵称更改请求
+        rejected: 您的昵称更改申请已被驳回
+        resubmit: 您可以在账户设置中重新申请。
+        title: 昵称更改申请
     pending_requests:
-      empty_text: 没有找到名称更改请求。
-      nickname_exerpt: '请求昵称：{requestedName}'
+      empty_text: 暂无用户名更改申请。
+      nickname_exerpt: '新昵称：{requestedName}'
       nickname_item_text: '{name} 请求更改昵称'
       title: '=> fof-username-request.ref.name_change_requests'
       tooltip: '=> fof-username-request.ref.name_change_requests'
-      username_exerpt: '请求用户名：{requestedName}'
+      username_exerpt: '新用户名：{requestedName}'
       username_item_text: '{name} 请求更改用户名'
     settings:
       nickname_request_button: 更改昵称
       username_request_button: 更改用户名
     user:
-      name_history_link: 名称历史
+      name_history_link: 名称更改记录
     username_modals:
       action:
-        approval_label: 批准
-        decision_title: 决定
-        help_text: 请确保用户名没有违反社区规范。
+        approval_label: 通过
+        decision_title: 受理
+        help_text: 请确保用户名符合社区规范。
         name: '{name} 申请将用户名更改为「{requestedName}」'
         reason_title: 驳回原因
         rejected_label: 驳回
@@ -69,7 +69,7 @@ fof-username-request:
         success: 决定已送出。
         title: '=> fof-username-request.ref.username_change_request'
       request:
-        confirmation_message: 您的昵称更改请求已经提交，请等待批准。
+        confirmation_message: 您的昵称更改请求已经提交，请等候受理。
         current_request: '您已申请将您的昵称改为「{name}」。您可以更新或删除请求。'
         delete_button: 删除请求
         deleted: 已删除用户名请求。
@@ -77,7 +77,7 @@ fof-username-request:
         submit_button: 提交请求
         title: 申请更改用户名
       results:
-        approved: 您的用户名更改依批准
+        approved: 您的用户名更改已通过
         dismiss_button: '=> core.ref.okay'
         new_name: '您的用户名已成功更改为：{name}'
         reason: '驳回原因：<i>「{reason}」</i>.'
@@ -85,9 +85,9 @@ fof-username-request:
         resubmit: 您可以在账户设置中重新提交请求。
         title: 用户名更改请求
   ref:
-    name_change_request: 名称更改请求
-    name_change_requests: 用户名更改请求
-    nickname_change_request: 昵称更改请求
-    nickname_change_requests: 昵称更改请求
-    username_change_request: 用户名更改请求
-    username_change_requests: 用户名更改请求
+    name_change_request: 名称更改申请
+    name_change_requests: 用户名更改申请
+    nickname_change_request: 昵称更改申请
+    nickname_change_requests: 昵称更改申请
+    username_change_request: 用户名更改申请
+    username_change_requests: 用户名更改申请

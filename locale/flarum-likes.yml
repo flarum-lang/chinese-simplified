@@ -16,7 +16,7 @@ flarum-likes:
     post:
       like_link: 赞
       liked_by_self_text: '{users} 觉得很赞'
-      liked_by_text: '{count, plural, one {{users}} other {{users}}} 觉得很赞'
+      liked_by_text: '{users} 觉得很赞'
       others_link: '=> core.ref.some_others'
       unlike_link: 取消赞
       you_text: '=> core.ref.you'

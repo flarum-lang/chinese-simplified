@@ -15,13 +15,15 @@ fof-polls:
     settings:
       allow_option_image: 允许图片选项
       max_options: 每次投票的最大选项数
+      options_color_blend: 在投票选项中使用颜色混合文字
+      options_color_blend_help: 使用该选项来用颜色混合使投票选项更加具有可读性。如果这个功能和你的论坛样式存在冲突，禁用它，但会降低可读性。
   forum:
     composer_discussion:
       add_poll: '=> fof-polls.forum.moderation.add'
       edit_poll: '=> fof-polls.forum.moderation.edit'
       no_permission_alert: 你没有权限添加投票。
     days_remaining: '投票将于 {time} 结束。'
-    max_votes_allowed: '允许投票给 {max, plural, one {# option} other {# options}}.'
+    max_votes_allowed: '允许投票给 {max} 个选项。'
     modal:
       add_option_label: 添加选项
       add_title: 发起投票

@@ -436,7 +436,7 @@ core:
         title_placeholder: 名称
       revoke_access_token: 撤销
       revoke_access_token_confirmation: '=> core.ref.generic_confirmation_message'
-      session_terminated: '已终止 {#} 个会话。'
+      session_terminated: '{count, plural, one {会话已终止} other {已终止 # 个会话}}。'
       session_termination_failed: 终止会话时出现错误。
       sessions_heading: 活动会话
       show_access_token: 查看令牌

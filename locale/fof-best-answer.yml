@@ -24,6 +24,7 @@ fof-best-answer:
         general: 常规
         reminders: 提醒事项
         reminders_notice: '要运行提醒功能，你必须正确配置 Flarum 调度器。'
+        search: 搜索
         tags: 最佳回答标签
       remind_tag_ids: '若要将提醒功能仅用于特定标签，请在此输入标签 ID （英文逗号分隔）'
       remind_tags_help: 选择需要发送提醒的标签（如果有）。提醒只会被发送到有这些标签的帖子中。
@@ -41,6 +42,8 @@ fof-best-answer:
       show_filter_label: 显示已解决过滤项
       show_max_lines_help: 将此项设为0以禁用。如果一个帖子长于配置行数，它将在预览中被截断，并带有淡出的效果。
       show_max_lines_label: 在帖子预览中显示的最大行数
+      solution_search: 解答搜索
+      solution_search_help: 启用搜索带有最佳答案的讨论的功能
       tags_info: "当一个标签启用了最佳答案后，为每一个可以设置答案的用户组分配权限（自己的帖子，任何人的帖子）。权限可以全局设置（给所有启用了最佳答案的标签），或按标签设置。\n"
       use_alt_ui: 按钮布局
       use_alt_ui_help: 在帖子底部显示最佳回复选择按钮
@@ -80,6 +83,9 @@ fof-best-answer:
         best_answer_in_discussion: 我互动的主题有了最佳回复
         select_best_answer: 提醒我选择自己主题的最佳回复
     remove_best_answer: 移除最佳回复
+    search:
+      all_discussions_solutions_button: '搜索所有对“{query}”有答案的讨论'
+      discussions_solutions_heading: 已解答的讨论
     this_best_answer: 设为最佳回复
     user:
       best-answer-count: '{count} 次助人'

@@ -5,4 +5,9 @@
 acpl-mobile-tab:
   forum:
     all_discussions: 主题
+    categories: 版块
     home: 首页
+    log_in: 登录
+    notifications: 通知中心
+    profile: 我的
+    tags: 标签

@@ -6,7 +6,8 @@ blomstra-gdpr:
   lib:
     data:
       tagsubscription:
-        anonymize_description: 移除用户对标签的关注
+        anonymize_description: 移除用户对标签的关注。
+        export_description: 导出标签关注程度细节。
 fof-follow-tags:
   admin:
     settings:
@@ -44,6 +45,7 @@ fof-follow-tags:
       follow_button: '=> fof-follow-tags.ref.follow'
       following_button: '=> fof-follow-tags.ref.following'
       following_text: 有新主题时提醒。
+      header: '关注 {tagName}'
       hiding_button: '=> fof-follow-tags.ref.hiding'
       hiding_text: 在全部主题页面中隐藏旗下主题。
       ignoring_button: '=> fof-follow-tags.ref.ignoring'

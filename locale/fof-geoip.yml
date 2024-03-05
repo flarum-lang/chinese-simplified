@@ -6,15 +6,20 @@ fof-geoip:
   admin:
     settings:
       access_key_label: 'Access Key'
+      quota_label: 查询额度
       security_label: '安全模块（需要 professional plus）'
       service_freegeoip_description: '<b>https://freegeoip.app/</b>，每小时可免费查询 15,000 个 IP 国家代码。'
       service_freegeoip_label: FreeGeoIP
-      service_ipapi_description: '<b>http://ip-api.com</b> 每分钟可免费查询 45 次。请求数超额时，您的 IP 可能会被列入黑名单。如需解封，请前往 <b>http://ip-api.com/docs/unban</b>。'
+      service_ipapi-pro_description: '在 <b>https://members.ip-api.com/#pricing</b> 购买专业版本可升级为无限制使用。'
+      service_ipapi-pro_label: 'IP Api Pro'
+      service_ipapi_description: '<b>http://ip-api.com</b> 每分钟可免费查询 45 次。请求数超额时，您的请求将会放入队列，等待查询次数重置后再查询。'
       service_ipapi_label: 'IP Api'
       service_ipdata_description: '<b>https://ipdata.co</b>，每日可免费查询 1,500 次。'
       service_ipdata_label: IPData
       service_iplocation_description: '使用 <b>https://www.iplocation.net/</b> 检索国家及 ISP 数据。查询速率限制位置。'
       service_iplocation_label: 'IP 属地'
+      service_ipsevenex_description: '使用 <b>https://7x.ax</b> 获取 API Key，并获得每分钟 20 次的免费查询额度。付费计划可获得更高的使用额度。'
+      service_ipsevenex_label: '7x 地理位置定位 API'
       service_ipstack_description: '<b>https://ipstack.com</b>，每月可免费查询 10,000 次。付费方案包含连接信息（ISP、组织）以及威胁等级。'
       service_ipstack_label: IPStack
       service_label: 服务
@@ -22,3 +27,9 @@ fof-geoip:
   forum:
     alerts:
       ip_copied: '已复制 IP 地址'
+    map_button_label: 'IP 信息'
+    map_modal:
+      country_code: 国家缩写
+      ip_address: 'IP 地址'
+      isp: 运营商
+      title: 'IP 信息'

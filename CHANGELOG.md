@@ -173,6 +173,7 @@ CHANGELOG
 * [`fof/sentry`](https://github.com/FriendsOfFlarum/sentry)
 * [`fof/share-social`](https://github.com/FriendsOfFlarum/share-social)
 * [`fof/sitemap`](https://github.com/FriendsOfFlarum/sitemap)
+* [`fof/split`](https://github.com/FriendsOfFlarum/split)
 * [`fof/upload`](https://github.com/FriendsOfFlarum/upload)
 * [`fof/user-bio`](https://github.com/FriendsOfFlarum/user-bio)
 * [`fof/user-directory`](https://github.com/FriendsOfFlarum/user-directory)

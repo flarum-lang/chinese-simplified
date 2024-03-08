@@ -6,10 +6,13 @@ fof-share-social:
   admin:
     settings:
       canonical-urls: '分享权威链接 (canonical URL)'
+      default-option: 默认分享选项
+      default-option-help: "选择默认选项将把模态窗口转换为下拉按钮。\n如果「Native Share」 被选择，当浏览器支持时它将被显示，否则会还原到原始模态窗口。\n"
       plain-copy: 显示纯URL副本
   forum:
     discussion:
       share_button: 分享
+      share_dropdown_accessible_label: 切换讨论的分享菜单
     modal:
       copy_button: 复制
       title: 分享到

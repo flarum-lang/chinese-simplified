@@ -17,6 +17,7 @@ fof-reactions:
         help: 如果您刚刚更新本扩展，此操作将转换所有帖子的戳一戳表情。如果您刚刚安装本插件，请忽略本条消息。
       reactions:
         Helptext: '在标识名文本框中，输入 emoji 的英文名称，您可以打开文本编辑器的 Emoji 表情弹窗，鼠标停留到表情上方查看表情名称。或者输入 font-awesome 的名称并切换到 icon 类型（传送门：http://t.cn/RBcdSZ5）。'
+        delete_confirmation: 你确定要删除此反应吗？此操作无法撤销。
         help:
           display: 描述
           identifier: 标识名

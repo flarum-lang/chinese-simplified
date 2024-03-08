@@ -15,5 +15,6 @@ fof-split:
       was_split_from: '{count, plural, one {从「{target}」拆分来 {count} 条回复。} other {从「{target}」拆分来 {count} 条回复。}}'
       was_split_to: '{count, plural, one {{count} 条回复被拆分至「{target}」。} other {{count} 条回复被拆分至「{target}」。}}'
     split:
+      cancel: 取消拆分
       from: 开始拆分主题
       to: 结束拆分主题

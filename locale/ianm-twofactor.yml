@@ -7,3 +7,38 @@ ianm-twofactor:
     edit_group:
       2fa_help: 要求此组的成员为其帐户启用双因素身份验证（2FA）。
       2fa_label: 需要双重验证
+      admin_2fa_help: '{adminName} 成员必须始终保持启用 2FA。'
+    permissions:
+      manage_others_label: '为其他用户管理 2FA'
+      see_two_factor_status_label: '查看其他用户的 2FA 状态'
+    settings:
+      forum_logo_qr: 在二维码中嵌入论坛的徽标（Logo）
+      forum_logo_qr_help: '向启用 2FA 时会显示的二维码上嵌入论坛的徽标（Logo）。这可能有助于用户识别正确的二维码以进行扫描。'
+      forum_logo_qr_width: 论坛徽标（Logo）二维码宽度
+      forum_logo_qr_width_help: '开启 2FA 时所显示的二维码上的论坛徽标（Logo）的宽度。最大值为 200。'
+      groups:
+        help: '要求这些用户组中的用户为他们的账户开启两步验证（2FA）。用户在指定的用户组中时无法关闭 2FA。'
+        title: '需要 2FA 的用户组'
+      logo_qr: 二维码上的徽标（Logo）
+      logo_qr_help: 如果已上传徽标（Logo），其将嵌入到二维码中。留空以使用论坛徽标（Logo）。
+  forum:
+    security:
+      backup_codes: 你的备份密钥
+      backup_codes_instruction: 请将这组密钥保存在安全的位置。当你无法通过正常的的验证方式访问账户时，它们可以为你所用。它们将不会再次显示。
+      disable_2fa_button: 禁用两步验证
+      enable_2fa_button: 启用两步验证
+      enable_2fa_modal_text: 使用你的身份验证器软件扫描下方的二维码，然后输入提供的验证码以启用两步验证。
+      enter_token: 输入验证码
+      loading_qr: 正在加载二维码……
+      qr_code_alt: 两步验证二维码
+      saved_backup_codes_button: 我已经保存了这组密钥
+      two_factor_apps: '如 {google}、{authy}、{microsoft} 和其它的软件是免费可用的。'
+      two_factor_disabled: '此账户上的 2FA 已禁用。'
+      two_factor_enabled: '此账户上的 2FA 已启用。'
+      two_factor_enabled_confirmation: 两步验证已在你的账户上成功启用。
+      two_factor_heading: 2FA
+      two_factor_help: "两步验证（2FA）为你的账户提供了一个额外的安全层。\n启用后，作为对你的密码采取的的额外措施，当你尝试登录或进行某些其它操作时，你将被要求通过你的身份验证器软件输入验证码。这可以确保你的账户保持安全，即使你的密码面临被盗的风险，因为攻击者也不得不通过输入验证码（每 30 秒改变一次）以访问你的账户。"
+      two_factor_title: 状态：
+      verify_button: 验证
+    user_2fa:
+      alert_message: '你必须启用 2FA 以继续访问你的账户。'

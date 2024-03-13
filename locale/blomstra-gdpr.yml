@@ -13,8 +13,71 @@ blomstra-gdpr:
         help_text: "这些是当前注册的数据类型。列出了每种类型及其关联的导出、匿名化和删除操作。如果扩展程序处理任何属于 GDPR 法规的数据，则应使用 <code>blomstra/gdpr</code> 注册其数据类型。\n<code>user</code> 表中存储的数据是单独处理的，请参阅下面的用户表数据。\n"
         title: 数据类型
         type: 类型
+      description: 多个GDPR操作和集成的状态
       heading: GDPR数据概述
       settings:
         extension_settings_button: 'GDPR 设置'
         heading: 'GDPR 设置'
         help_text: '正在寻找 GDPR 设置？它们可以在扩展页面上找到。'
+      user_table_data:
+        help_text: "多数情况下，任何被添加到<code>用户</code>表格的列会被自动处理，即可导出和擦除。\n然而，会存在一些特殊情况，已在下面列出。\n"
+        title: 用户表格数据
+    nav:
+      gdpr_button: GDPR集成
+    permissions:
+      process_erasure: 处理擦除请求
+      process_export_for_others: 为其他用户申请和接收导出数据
+      see_anonymized_user_badges: 查看匿名的用户徽章
+    settings:
+      allow_anonymization: 允许匿名的擦除申请
+      allow_anonymization_help: '默认的，且对大多数社区的推荐选项。这个模式下，帖子和回复会在被 GDPR 允许的前提下尽量保留，但任何可用于识别用户的信息均被移除。'
+      allow_deletion: 允许删除擦除申请
+      allow_deletion_help: 一个更严格的选项。这个模式下，所有帖子和回复均会被删除，而且用户会从数据库中移除。小心使用。
+      default_anonymous_username: 匿名用户的默认用户名
+      default_anonymous_username_help: '当一个用户被匿名化后，他们的用户名会被替换为该值，加上匿名请求的 ID，如<code>Anonymous123</code>。'
+      default_erasure: 擦除申请的默认操作
+      default_erasure_help: 擦除申请的默认操作应该是？
+      default_erasure_options:
+        anonymization: 匿名化
+        deletion: 删除
+      gdpr_page:
+        help_text: '在决定你的论坛使用哪些操作前，明白数据是如何被继承和其在匿名化和删除时是如何被处理的很重要。查看 GDPR 概览来了解数据是如何被处理的，以及哪些可选扩展已经将它们的数据交由此扩展处理。'
+        title: 数据集成和操作
+    userlist:
+      columns:
+        gdpr_actions:
+          export: '为 {username} 导出数据'
+          title: 'GDPR 操作'
+  email:
+    confirm_erasure:
+      body: "你好，{display_name}！\n\n有人（希望是你）刚刚申请了擦除帐号 `{display_name}`。\n\n要确认这个操作，请访问以下链接，之后你的请求会被我们的团队处理。\n\n{erasure_confirm_url}\n"
+      subject: 确认你的帐号擦除申请
+    erasure_completed:
+      deletion:
+        body: "你好，{display_name}！\n\n这是一个自动的、最后的通知，你的账号已被删除。\n"
+        subject: 帐号删除完成
+  lib:
+    data:
+      avatar:
+        delete_description: 从文件系统删除用户头像。
+        export_description: 从文件系统获取用户头像并包含在导出数据中。
+      discussions:
+        export_description: 导出用户发布的所有讨论。数据仅限于标题和创建日期。
+      forum:
+        export_description: 导出论坛名称、URL、用户名、邮箱和当前日期。
+      no_action: 不采取操作。
+      posts:
+        anonymize_description: '从用户发布的所有帖子中移除 IP 地址。'
+        delete_description: 删除用户发布的所有帖子。
+        export_description: '导出用户发布的所有帖子。数据仅限于内容、创建日期、IP 地址和讨论 ID。'
+      tokens:
+        delete_description: 删除用户创建的所有令牌。
+        export_description: 导出用户创建的所有令牌。数据仅限于创建日期和令牌类型。
+      user:
+        anonymize_description: 将用户表格中的所有列设置为空。不可为空的列将会被设置为默认值或指定值。密码会被修改，偏好设置设置为默认且会被从所有用户组移除。
+        delete_description: 从数据库中删除用户。
+        export_description: '导出用户表格的数据。除了 ID 和密码以外的所有列。'
+    request_data:
+      request_button: 申请归档
+      text: "会为你准备一个 zip 归档文件。当它准备好后，你会收到一个带有下载链接的通知。链接有效期为一天。\n"
+      title: '为 {username} 申请数据'

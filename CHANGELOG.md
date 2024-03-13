@@ -199,7 +199,7 @@ CHANGELOG
 * [`spookygames/flarum-ext-auth-keycloak`](https://github.com/spookygames/flarum-ext-auth-keycloak)
 * [`the-turk/flarum-flamoji`](https://github.com/the-turk/flarum-flamoji)
 * [`webbinaro/flarum-calendar`](https://github.com/eddiewebb/flarum-calendar)
-* [`zerosonesfun/flarum-bbcode-button`](https://github.com/zerosonesfun/flarum-bbcode-button)
+* `zerosonesfun-bbcode-button`
 * [`ziiven/flarum-daily-check-in`](https://github.com/Ziiven/flarum-daily-check-in)
 
 

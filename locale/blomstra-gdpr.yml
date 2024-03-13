@@ -52,10 +52,50 @@ blomstra-gdpr:
     confirm_erasure:
       body: "你好，{display_name}！\n\n有人（希望是你）刚刚申请了擦除帐号 `{display_name}`。\n\n要确认这个操作，请访问以下链接，之后你的请求会被我们的团队处理。\n\n{erasure_confirm_url}\n"
       subject: 确认你的帐号擦除申请
+    erasure_cancelled:
+      body: "你好，{display_name}！\n\n这是一个自动通知，你的帐号删除请求已经被处理。\n\n你的帐号不会被删除。\n"
+      subject: 帐号擦除请求已取消
     erasure_completed:
+      anonymization:
+        body: "你好，{display_name}！\n\n这是一个自动、最终的通知，你的账号已经被匿名化。\n"
+        subject: 帐号匿名化已完成
       deletion:
         body: "你好，{display_name}！\n\n这是一个自动的、最后的通知，你的账号已被删除。\n"
         subject: 帐号删除完成
+    export_available:
+      body: "你好，{display_name}！\n\n你曾请求导出 {username} 的账号数据。本次导出已成功生成并已可被下载：\n\n{url}\n\n本次导出数据将在 {destroys_at} 失效。\n"
+      subject: 导出数据已就绪
+  forum:
+    badges:
+      anonymized_user: 已匿名用户
+    delete_user:
+      delete_button: 擦除
+      modal_delete_button: 使用默认操作擦除
+      text: "你确定要擦除 {username} 的帐号吗？\n\n这个操作不可撤消。\n"
+      title: '擦除 {username} 的帐号'
+    erasure_request_confirmed: '你已确认你的帐号擦除申请。按 GDPR 要求，将会在 30 天内处理申请。'
+    erasure_requests:
+      empty_text: 没有待处理的帐号擦除请求
+      item_text: '{name} 申请擦除账号'
+      title: 帐号擦除请求
+      tooltip: 帐号擦除请求
+    process_erasure:
+      anonymization_button: 匿名化用户
+      comments_label: 回复（可选）
+      confirm: '你确定要使用 {mode} 模式擦除 {name} 的帐号？'
+      deletion_button: 删除用户
+      text: '{name} 申请擦除帐号。'
+      title: 处理擦除请求
+    request_erasure:
+      reason: '你提供了以下原因：{reason}'
+      title: 申请帐号擦除
+    settings:
+      data:
+        heading: 个人数据
+      export_data_button: 导出数据
+      export_data_help: 申请导出数据将会为你提供一个包含所有和你帐号相关信息的可下载副本。这包含了帖子、回复和个人资料详情。
+      request_erasure_button: 擦除帐号
+      request_erasure_help: 申请擦除将会永久删除你的帐号和相关数据。这个操作不可逆。在继续前，确保你已经保存了所有想要保留的内容。
   lib:
     data:
       avatar:

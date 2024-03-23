@@ -10,10 +10,13 @@ fof-polls:
       self_edit: 编辑已创建的投票（需要帖子编辑权限）
       self_post_edit: '编辑*所有*自己帖子上的投票（需要帖子编辑权限）'
       start: 发起投票
+      start_global: 创建一个全局投票
       view_results_without_voting: 无需参与投票即可查看结果
       vote: 参与投票
     settings:
       allow_option_image: 允许图片选项
+      enable_global_polls: 开启全局投票
+      enable_global_polls_help: 全局投票没有与任何帖子绑定，可以从专门的投票页面进行访问。
       max_options: 每次投票的最大选项数
       options_color_blend: 在投票选项中使用颜色混合文字
       options_color_blend_help: 使用该选项来用颜色混合使投票选项更加具有可读性。如果这个功能和你的论坛样式存在冲突，禁用它，但会降低可读性。
@@ -52,6 +55,8 @@ fof-polls:
     no_permission: 您没有投票权限
     poll:
       cannot_change_vote: 投票后不能再次更改。
+      cannot_start_poll_button: 无法开启投票
+      start_poll_button: 创建全局投票
       submit_button: 投票
     poll_ended: 投票已结束。
     public_poll: 查看投票详情

@@ -8,9 +8,16 @@ datlechin-link-preview:
       blacklist_help: 输入禁止预览的域名或链接，以逗号分隔。
       blacklist_label: 排除列表
       blacklist_placeholder: '如「baidu.com,https://pornhub.com/categories」'
+      cache_time_help: '在已爬取的链接刷新前会被缓存的分钟数。设置为 0 来禁用链接缓存。如果未设置默认为 60 分钟。'
+      cache_time_label: 缓存时间
       convert_media_urls_help: 启用以转换所有媒体链接为预览帖。
       convert_media_urls_label: 预览媒体链接
+      open_links_in_new_tab_help: 如果启用了，链接会在新标签页中打开。
+      open_links_in_new_tab_label: 在新标签页中打开链接
+      use_google_favicons_help: '如果启用了，将会在前端使用一个 Google 的服务来请求对应站点的图标。'
       use_google_favicons_label: '使用谷歌图标 API'
+      whitelist_help: 输入一个以半角逗号分隔的允许预览的域名列表。
       whitelist_label: 白名单
+      whitelist_placeholder: '例如：facebook.com,https://domain.com/path'
   forum:
     site_cannot_be_reached: 无法访问此站点。

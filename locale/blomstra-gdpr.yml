@@ -79,6 +79,9 @@ blomstra-gdpr:
       item_text: '{name} 申请擦除账号'
       title: 帐号擦除请求
       tooltip: 帐号擦除请求
+    export_file: '于 {date} 准备的 {username}（{email}）的在 {forumTitle}（{url}）的导出数据'
+    notification:
+      export-ready: '{username} 的导出数据现在已经可以下载。'
     process_erasure:
       anonymization_button: 匿名化用户
       comments_label: 回复（可选）
@@ -87,7 +90,15 @@ blomstra-gdpr:
       text: '{name} 申请擦除帐号。'
       title: 处理擦除请求
     request_erasure:
+      cancel_button: 取消请求
+      password_label: 确认密码
       reason: '你提供了以下原因：{reason}'
+      reason_label: 原因（可选）
+      request_button: 请求擦除
+      status:
+        awaiting_user_confirmation: "你应该已经收到了一封电子邮件来确认你的账号擦除请求。\n"
+        user_confirmed: "你已经确认了你的账号擦除请求。将会按照 GDPR 的要求在 30 天内采取行动。\n"
+      text: '当收到并确认后，一个管理员会按照 GDPR 的要求在 30 天内审核你的请求。'
       title: 申请帐号擦除
     settings:
       data:

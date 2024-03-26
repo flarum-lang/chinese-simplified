@@ -4,5 +4,6 @@
 
 rehiy-reply-to-see:
   forum:
+    button_tooltip: 添加隐藏内容
     hidden_content: 隐藏内容
     reply_to_see: '你需要{reply}并刷新页面来查看内容'

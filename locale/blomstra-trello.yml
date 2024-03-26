@@ -34,6 +34,7 @@ blomstra-trello:
         labels: 标题设置
       mapping:
         add_new: 添加映射
+        mapping_description: 将成为
         modal_title: 新建标签映射
         no_mappings_for_board: 此看板尚未建立标签映射
       mappings_label: '论坛标签到 Trello 标签映射'

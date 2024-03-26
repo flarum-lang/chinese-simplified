@@ -14,6 +14,7 @@ imeepo-more-bbcode:
     button_tooltip_bar_blue: 插入蓝色进度条
     button_tooltip_bar_red: 插入红色进度条
     button_tooltip_center: 文字居中
+    button_tooltip_clip: 插入视频
     button_tooltip_cloud: 下载地址
     button_tooltip_color: 文字颜色
     button_tooltip_del: 插入删除线文字

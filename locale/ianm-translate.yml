@@ -16,7 +16,7 @@ ianm-translate:
       bind-browser-language-help: 当启用后，用户的浏览器语言会被添加到可用语言列表中。
       deepl:
         api_key:
-          help: '在 {link}注册。驱动将自动检测免费/Pro类型'
+          help: '在 {link}注册。驱动将自动检测免费/Pro类型。'
         en_choice:
           help: 当翻译为英语时，选择应使用的变体。
           label: 英语变种

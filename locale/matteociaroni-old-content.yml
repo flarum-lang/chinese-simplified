@@ -7,3 +7,4 @@ matteociaroni-old-content:
     time_label: 将帖子视为“旧”的天数
   forum:
     message: 🟡
+    tooltip: '这个 {contentType} 已经老旧且可能已经过时'

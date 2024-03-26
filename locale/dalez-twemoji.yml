@@ -3,6 +3,9 @@
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
 flarum-twemoji:
+  admin:
+    settings:
+      base: 背景
   forum:
     composer:
       emoji_tooltip: 添加表情

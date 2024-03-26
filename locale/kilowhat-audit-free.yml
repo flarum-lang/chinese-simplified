@@ -52,7 +52,7 @@ kilowhat-audit:
         locked: '锁定主题 {discussion}'
         renamed: '重命名主题 {old_title} 为 {new_title}'
         restored: '恢复主题 {discussion}'
-        split_away: '拆分出 {post_count} 条回复从 {discussion}'
+        split_away: '从 {discussion} 拆分出 {post_count} 条回复至 {new_discussion}'
         split_into: '拆分 {post_count} 条回复至 {discussion}'
         stickied: '置顶主题 {discussion}'
         tagged: '更新 {discussion} 的标签 {old_tags} 为 {new_tags}'

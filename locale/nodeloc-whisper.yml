@@ -6,3 +6,4 @@ nodeloc-whisper:
   admin:
     settings:
       return_key: 回车发送消息
+      title: Whisper设置

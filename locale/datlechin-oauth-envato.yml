@@ -8,4 +8,5 @@ fof-oauth:
       providers:
         envato:
           client_id_label: 用户名
+          client_secret_label: 密钥
           description: '使用 Envato {link} 注册您的论坛。'

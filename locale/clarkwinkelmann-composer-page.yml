@@ -5,6 +5,7 @@
 clarkwinkelmann-composer-page:
   admin:
     settings:
+      forPrivateDiscussions: 应用于私密主题
       onlyInTags: 仅在以下标签中（可选）
       onlyInTagsHelp: "输入标签英文短语，多个短语以英文逗号分隔。留空以全局应用本扩展页面。\n"
   forum:

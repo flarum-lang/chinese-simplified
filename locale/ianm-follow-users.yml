@@ -7,7 +7,8 @@ blomstra-gdpr:
     data:
       followuser:
         anonymize_description: '=> blomstra-gdpr.lib.data.followuser.delete_description'
-        export_description: 导出关注用户列表及详细信息
+        delete_description: 删除全部关注用户的信息。
+        export_description: 导出关注用户列表及详细信息。
 ianm-follow-users:
   admin:
     permissions:

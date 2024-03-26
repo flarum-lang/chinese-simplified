@@ -8,3 +8,5 @@ danirod-plausible:
       domain:
         regex: 给定的域无效
         required: 必须指定一个域名
+      proxy_domain:
+        regex: 此代理服务器地址无效

@@ -4,6 +4,9 @@
 
 fof-anti-spam:
   admin:
+    blocked_registrations:
+      button: 被阻止的注册
+      delete_entry: 删除条目
     permissions:
       spamblock_users_label: 将用户标记为垃圾邮件发送者
     settings:
@@ -23,9 +26,12 @@ fof-anti-spam:
         api_key_instructions_text: '<register>注册 StopForumSpam</register>。然后你将需要<key>获取一个 API 密钥</key>。'
         api_key_label: 'API 密钥'
         api_key_text: '你可以选择向 StopForumSpam 来报告滥发者来确保更多的论坛不会遭受滥发侵害。'
+        confidence_help: '置信度是一个合理的指标，表明所测试的字段会导致不必要的活动。将置信度设为百分比。如果字段等于或高于这个数字，则无论上述 "频率 "测试结果如何，注册都将被阻止。'
         confidence_label: 信用
+        email_hash_help: '如果不希望提供电子邮件地址本身，可提供电子邮件地址的 MD5 哈希值。此方法可绕过所有黑名单、规范化和混淆绕过检查。'
         email_hash_label: 使用哈希后的邮箱地址
         email_label: 邮箱地址滥用检查
+        frequency_help: "将触发垃圾邮件过滤器的所有已启用检查之间的垃圾邮件报告数。\n例如：如果电子邮件有 1 次命中，而 ip 有 2 次命中，则总共会有 3 次命中。如果阈值设置为 3 或更低，我们将阻止注册。\n"
         frequency_label: 限额
         heading: StopForumSpam
         introduction: "在 <a>StopForumSpam</a> 数据库中检查新注册用户。如果<code>信用</code>或<code>频率</code>已到达限制，该用户将无法在你的论坛完成注册。\n\n也支持通过<code>fof/oauth</code>和<code>fof/passport</code>的 SSO 注册。其它 SSO 提供者应该也支持，但未经测试。\n"
@@ -35,4 +41,8 @@ fof-anti-spam:
         region_us_label: 美国
         regional_endpoint_help: 默认情况下我们会支持查找地理位置最近的服务器来确保最快的反应速度。如果你想要限制流量到指定地区，如为了满足公司或国家隐私规范，你可以强制其连接到指定的地区。
         regional_endpoint_label: 访问的地理位置
+        report_blocked_registrations_help: '当一个注册被「寻找注册」功能组织的时候，我们会向 StopForumSpam 报告这次尝试，以便于更好地确认垃圾邮件发送者的活动。需要 StopForumSpam API 密钥的设置（见下文）。'
+        report_blocked_registrations_label: 报告被组织的注册
+        sfs_lookup_help: '如果启用，当有新用户在您的论坛上注册时，我们将检查 StopForumSpam 数据库。如果找到该用户（用户名、IP 地址、电子邮件），且该数据点已启用，同时 SFS 置信度达到您定义的水平，则将阻止该用户完成注册。'
+        sfs_lookup_label: 寻找注册
         username_label: 用户名滥用检查

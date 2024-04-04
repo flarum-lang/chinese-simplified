@@ -42,6 +42,7 @@ CHANGELOG
 * [`foskym/nickname-group-formatter`](https://github.com/FoskyM/flarum-nickname-group-formatter)
 * [`foskym/flarum-oauth-center`](https://github.com/FoskyM/flarum-oauth-center)
 * [`glowingblue/localizd`](https://extiverse.com/extension/glowingblue/localizd)
+* [`gtdxyz/flarum-ext-login`](https://github.com/daocatt/flarum-ext-login)
 * [`hikarilan/flarum-passkey-login`](https://github.com/shaokeyibb/flarum-passkey-login)
 * [`ianm/boring-avatars`](https://github.com/imorland/flarum-ext-boring-avatars)
 * [`ianm/log-viewer`](https://github.com/imorland/flarum-ext-log-viewer)

@@ -8,4 +8,5 @@ fof-oauth:
       providers:
         clerk:
           client_id_label: '=> fof-oauth.ref.settings.client_id'
+          client_secret_label: '=> fof-oauth.ref.settings.client_secret'
           description: '前往 Clerk SSO 注册您的论坛应用 {link}'

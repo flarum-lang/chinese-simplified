@@ -5,5 +5,6 @@
 litalino-top-bar:
   admin:
     settings:
+      intro: 'HTML 标记将会被正确显示，如下列所示'
       topbar_html_help: '这个 HTML 标签会在顶栏显示（例如<ul li>）'
       topbar_html_label: 顶部条形图HTML

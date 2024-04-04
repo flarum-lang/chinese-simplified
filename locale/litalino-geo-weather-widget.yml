@@ -4,6 +4,7 @@
 
 geo-weather:
   forum:
+    temp: 0°
     unknown: 未知
     widget:
       title: 地理天气

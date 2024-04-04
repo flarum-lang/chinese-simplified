@@ -8,3 +8,4 @@ ordinaryjellyfish-automod:
       bypass: 无视管理过滤规则
     settings:
       threshold: 信任阈值
+      threshold_help: '信任阈值介于 0.00 和 1.00 之间，反映了输入或响应属于给定类别的可能性。阈值越低，误报率越低，但误报率也越高。阈值越高，误报率越高，但误报率也越低。'

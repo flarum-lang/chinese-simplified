@@ -6,5 +6,6 @@ nodeloc-telegram:
   admin:
     settings:
       field:
+        botToken: 机器人Token令牌
         botUsername: 机器人用户名
       title: 'Telegram 设置'

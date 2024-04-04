@@ -8,3 +8,5 @@ nearata-maintenance-mode:
       maintenance_widget:
         detail: 在维护期间，只有授权的用户才能查看论坛。
         title: 维护模式激活
+    permissions:
+      bypass: 可以绕过维护模式

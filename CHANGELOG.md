@@ -141,7 +141,7 @@ CHANGELOG
 * [`clarkwinkelmann/flarum-ext-typewriter`](https://github.com/clarkwinkelmann/flarum-ext-typewriter)
 * [`clarkwinkelmann/flarum-ext-vote-with-money`](https://github.com/clarkwinkelmann/flarum-ext-vote-with-money)
 * [`club-1/flarum-ext-cross-references`](https://github.com/club-1/flarum-ext-cross-references)
-* [`convo-extensions/flarum-ext-guest-posting`](https://extiverse.com/extension/convo-extensions/flarum-ext-guest-posting)
+* [`convo-extensions/flarum-ext-guest-posting`](https://github.com/convo-extensions/flarum-ext-guest-posting)
 * [`datlechin/flarum-bbcode-hide-content`](https://github.com/datlechin/flarum-bbcode-hide-content)
 * [`datlechin/flarum-birthdays-widget`](https://github.com/datlechin/flarum-birthdays-widget)
 * [`datlechin/flarum-birthdays`](https://github.com/datlechin/flarum-birthdays)

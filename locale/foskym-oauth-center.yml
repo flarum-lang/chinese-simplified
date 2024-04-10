@@ -48,6 +48,7 @@ foskym-oauth-center:
     authorized:
       load_more: 加载更多
       no_more_records: 没有更多记录了
+      no_records: 暂无记录
     page:
       label:
         authorized: 授权记录

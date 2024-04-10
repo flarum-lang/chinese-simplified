@@ -12,6 +12,7 @@ foskym-oauth-center:
       client_id: '应用 ID'
       client_name: 名称
       client_secret: 应用密钥
+      edit_client: 编辑应用
       grant_types: 授权类型
       redirect_uri: 回调地址
       scope: 权限
@@ -23,6 +24,7 @@ foskym-oauth-center:
       use_oauth: '使用 OAuth'
     scopes:
       add_button: 添加权限
+      edit_scope: 编辑权限
       is_default: 默认
       method: 请求方法
       resource_path: 资源路径
@@ -33,6 +35,8 @@ foskym-oauth-center:
     settings:
       access_lifetime: 访问令牌有效期（秒）
       allow_implicit: 允许隐式授权（response_type=token）
+      authorization_method_fetch: '授权使用 Fetch 方式请求（非直接转向页面）'
+      display_mode: 显示模式
       enforce_state: '强制状态验证（state 参数）'
       require_exact_redirect_uri: '需要精确的重定向 URI'
   forum:
@@ -40,6 +44,10 @@ foskym-oauth-center:
       access: 授权访问
       agree: 授权
       deny: 拒绝
+      require_these_scopes: 该应用需要以下权限
+    authorized:
+      load_more: 加载更多
+      no_more_records: 没有更多记录了
     page:
       label:
         authorized: 授权记录

@@ -6,6 +6,7 @@ blomstra-horizon:
   admin:
     settings:
       trim_help: "你可以在这里配置你期望保存近期任务和失败任务\n的时间（分钟）。默认情况下，最近任务将保存一小时，\n全部的失败任务将保存一周。\n"
+      trim_recent: Trim最近任务
       trim_title: Trim设置
     stats:
       auto_refresh: 自动刷新

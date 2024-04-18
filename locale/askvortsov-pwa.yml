@@ -22,6 +22,12 @@ askvortsov-pwa:
         heading: 颜色
         theme_color_label: 主题颜色
         theme_color_text: 此颜色会被设备用于展示你的程序，例如在安卓的后台卡片上，作为边框颜色。
+      firebase_config:
+        heading: Firebase
+        help_text: '为了使您的应用在发布到 Apple App Store 时支持 Push 消息推送，您需要使用 Firebase 添加 Push 消息推送到您的应用。请生成您的 Firebase Service Config 并上传到此处。'
+        see_documentation_here: 在此查看文档
+        upload_file: 上传文件
+        upload_successful: '您的 Firebase Config 已成功上传'
       heading: '渐进式 Web 应用（PWA）配置'
       logo_heading: 标志（Logo）和图标（Icon）
       logo_size_text: '上传标志，标志将缩放为 {size} × {size} 像素。'

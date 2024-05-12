@@ -124,6 +124,7 @@ CHANGELOG
 * [`akr/chevereto`](https://github.com/AKR-Developers/flarum-chevereto)
 * [`antoinefr/flarum-ext-money`](https://github.com/AntoineFr/flarum-ext-money)
 * [`askvortsov/flarum-article-series`](https://github.com/askvortsov1/flarum-article-series)
+* [`askvortsov/flarum-moderator-warnings`](https://github.com/askvortsov1/flarum-moderator-warnings)
 * [`askvortsov/flarum-pwa`](https://github.com/askvortsov1/flarum-pwa)
 * [`blomstra/conversations`](https://github.com/blomstra/flarum-ext-conversations)
 * [`blomstra/payments`](https://extiverse.com/extension/blomstra/payments)

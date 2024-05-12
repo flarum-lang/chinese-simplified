@@ -14,7 +14,7 @@ blomstra-gdpr:
         title: 数据类型
         type: 类型
       description: 多个GDPR操作和集成的状态
-      heading: GDPR数据概述
+      heading: 'GDPR 数据概览'
       settings:
         extension_settings_button: 'GDPR 设置'
         heading: 'GDPR 设置'

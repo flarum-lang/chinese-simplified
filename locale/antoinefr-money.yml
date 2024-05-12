@@ -5,28 +5,28 @@
 antoinefr-money:
   admin:
     automoderator:
-      action_name: 奖励资产
-      metric_name: 资产
+      action_name: 奖励财富
+      metric_name: 财富
     autoremove:
-      - 永不移除资产
-      - '隐藏或恢复 主题/帖子 时（默认）'
-      - '当 主题/帖子 被删除时'
+      - 财富只增不减
+      - 隐藏或恢复主题/帖子时（默认）
+      - 删除主题/帖子时
     permissions:
-      edit_money_label: 修改资产
+      edit_money_label: 调整财富
     settings:
-      autoremove: 自动更新资产
+      autoremove: 重算计算财富
       helpextensionlikes: '需要 <code>flarum/likes</code> 扩展程序'
-      moneyfordiscussion: 发布一次主题贴可获得
-      moneyforlike: 获得点赞时奖励资产
+      moneyfordiscussion: 发贴一次可获得
+      moneyforlike: 获得点赞时可获得
       moneyforpost: 回帖一次可获得
-      moneyname: '定义资产货币（格式：[money] 元）'
+      moneyname: '定义财富（例如：[money] 元）'
       noshowzero: '若值为 0 则不显示'
       postminimumlength: '可获得奖励的最少回帖字数（0 表示不限制）'
       title: 设置
   forum:
     modal:
-      current: 目前：
+      current: 当前：
       submit_button: '=> core.ref.save_changes'
-      title: '{username} 的资产'
+      title: '{username} 的财富'
     user_controls:
-      money_button: 修改资产
+      money_button: 修改财富

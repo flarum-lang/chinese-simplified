@@ -128,6 +128,7 @@ CHANGELOG
 * [`askvortsov/flarum-pwa`](https://github.com/askvortsov1/flarum-pwa)
 * [`askvortsov/flarum-rich-text`](https://github.com/askvortsov1/flarum-rich-text)
 * [`blomstra/conversations`](https://github.com/blomstra/flarum-ext-conversations)
+* [`blomstra/fontawesome`](https://github.com/blomstra/flarum-ext-fontawesome)
 * [`blomstra/payments`](https://extiverse.com/extension/blomstra/payments)
 * [`blomstra/trello`](https://github.com/blomstra/flarum-ext-trello)
 * [`blomstra/turnstile`](https://github.com/blomstra/flarum-ext-turnstile)

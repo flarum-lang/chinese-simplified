@@ -21,7 +21,7 @@ askvortsov-moderator-warnings:
       warning_text: '收到来自 {mod_username} 的警告并记 {strikes, plural, one {#} other {#}} 分'
     post:
       warning: '内容违规，由 {mod_username} 记 {strikes, plural, one {#} other {#}} 分'
-      warning_no_strikes: '由{mod_username}予以警告'
+      warning_no_strikes: '收到管理员 {mod_username} 的警告'
     post_controls:
       warning_button: 警告
     settings:

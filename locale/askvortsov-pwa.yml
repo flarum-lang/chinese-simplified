@@ -24,10 +24,10 @@ askvortsov-pwa:
         theme_color_text: 此颜色会被设备用于展示你的程序，例如在安卓的后台卡片上，作为边框颜色。
       firebase_config:
         heading: Firebase
-        help_text: '为了使您的应用在发布到 Apple App Store 时支持 Push 消息推送，您需要使用 Firebase 添加 Push 消息推送到您的应用。请生成您的 Firebase Service Config 并上传到此处。'
-        see_documentation_here: 在此查看文档
+        help_text: '为了使您的应用在发布到 Apple App Store 时支持推送通知，您需要使用 Firebase 服务。请生成您的 Firebase Service Config 并上传到此处。'
+        see_documentation_here: 点击查看文档
         upload_file: 上传文件
-        upload_successful: '您的 Firebase Config 已成功上传'
+        upload_successful: 'Firebase 配置文件上传成功'
       heading: '渐进式 Web 应用（PWA）配置'
       logo_heading: 标志（Logo）和图标（Icon）
       logo_size_text: '上传标志，标志将缩放为 {size} × {size} 像素。'
@@ -42,10 +42,10 @@ askvortsov-pwa:
       other:
         force_portrait_text: '强制重定向?'
         heading: 其他
-        push_notif_preference_default_to_email_label: 默认推送至电子邮箱吗？
-        push_notif_preference_default_to_email_text: 开启后，将根据用户的邮件推送设置进行通知推送。若关闭，用户将默认禁用通知。
-        user_max_subscriptions_label: 每个用户的最大推送订阅数
-        user_max_subscriptions_text: '每个用户一次将会收到多少条消息订阅？当用户收到推送通知时，每条订阅都会调用一次 API。每个订阅取决于用户所使用过的浏览器。'
+        push_notif_preference_default_to_email_label: 默认推送通知到电子邮箱？
+        push_notif_preference_default_to_email_text: 启用此项，默认通过邮件发送所有类型的推送通知，否则默认禁用推送通知。
+        user_max_subscriptions_label: 推送订阅数上限（每用户）
+        user_max_subscriptions_text: '每个用户最多能同时存在多少条订阅。通常情况下，订阅的多少取决于用户使用的浏览器数量，通知会发送给用户的所有客户端订阅，每个订阅均会消耗一次 API 调用。'
       refreshed_message: 'PWA 配置刷新成功。'
       status_check_heading: 状态检查
       submit_button: 保存设置
@@ -53,7 +53,7 @@ askvortsov-pwa:
     status:
       config_no_https: '您 config.php 文件中的 URL 未使用 HTTPS。渐进式 Web 应用必须使用 HTTPS 方可正常工作。'
       key_gen_failed: '推送通知所需的密钥生成失败。错误信息：{error}'
-      no_logo: '请至少上传一张 144x144px 尺寸的标志才能使您的 PWA 应用正常安装。'
+      no_logo: '要正常安装 PWA，请至少上传一张 144x144 像素的徽标图片。'
       no_name: 您必须设置应用全名才能使您的应用程序正常工作。
       no_vapid_keys: 'VAPID 密钥缺失，发送推送通知需要此秘钥。请在下方重置 VAPID 密钥。'
       possible_https_disabled: '你的网站可能没有在 HTTPS 上运行。清除缓存（仪表盘 → 工具按钮）可能有所帮助。如果已是 HTTPS，请忽略此提示。如果确实是 HTTP，请记住渐进式网络应用程序只能工作在 HTTPS 环境中。'

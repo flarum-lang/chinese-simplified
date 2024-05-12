@@ -5,25 +5,25 @@
 blomstra-database-queue:
   admin:
     settings:
-      backoff_help: "在重试遇到未捕获异常的作业之前等待的秒数。\n"
-      backoff_label: 退缩
+      backoff_help: "重试产生未捕获异常的任务前，等待多少秒。\n"
+      backoff_label: 退避
       memory_help: "以兆字节为单位的内存限制。\n"
       memory_label: 内存
-      rest_help: "作业之间的休息秒数。\n"
-      rest_label: 休息
-      retries_help: "在记录作业失败之前尝试该作业的次数。\n"
-      retries_label: 再试
-      timeout_help: "子进程可以运行的秒数。\n"
+      rest_help: "完成一个任务后，停歇多少秒，再继续下一个任务。\n"
+      rest_label: 停顿
+      retries_help: "任务执行失败时的重试次数。\n"
+      retries_label: 重试
+      timeout_help: "一个子进程最多运行多少秒。\n"
       timeout_label: 超时
     stats:
       auto_refresh: 自动刷新
       data:
-        failed-jobs: 失败的作业
-        pending-jobs: 挂起的作业
+        failed-jobs: 任务失败
+        pending-jobs: 任务挂起
         queue-name: 队列
         status:
-          inactive: 不活跃的
+          inactive: 空闲
           label: 状态
-          running: 跑
-      heading: 队列概述
-      refresh: 恢复精力
+          running: 正在执行
+      heading: 队列概览
+      refresh: 刷新

@@ -8,7 +8,7 @@ blomstra-fontawesome:
       kit_url: 'Font Awesome Kit URL'
       kit_url_help: '确保您的 Kit 类型为「Web Font」，然后将 URL 粘贴到下方。'
       test:
-        desc: '以下图标用于测试字体是否可以正常使用，如过看到矩形图标，表示 FontAwesome 图标无法正常展示。变更设置后，如无效果请刷新页面。'
+        desc: '以下图标用于测试字体是否可以正常使用，如果看到矩形图标，表示 FontAwesome 图标无法正常展示。变更设置后，如无效果请刷新页面。'
         fa5_compat: 'FontAwesome 5 兼容版'
         fa6_free: 'FontAwesome 6 免费版'
         fa6_pro: 'FontAwesome 6 专业版'

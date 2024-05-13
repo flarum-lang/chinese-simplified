@@ -5,44 +5,74 @@
 fof-anti-spam:
   admin:
     blocked_registrations:
-      button: 被阻止的注册
+      attempted-at: 尝试在
+      button: 拦截记录
       delete_entry: 删除条目
+      email: 邮箱
+      help: "本页显示所有被 StopForumSpam 服务拦截的注册信息，您可以查看详情或删除记录。\n"
+      ip: 'IP 地址'
+      login-provider: 登录提供程序
+      login-provider-data: 登录提供程序数据
+      no-records: 暂无拦截记录。
+      sfs-data: 'StopForumSpam 数据'
+      title: 拦截记录
+      username: 用户名
     permissions:
-      spamblock_users_label: 将用户标记为垃圾邮件发送者
+      spamblock_users_label: 标记垃圾账号
     settings:
       button: 设置
       default-actions:
-        delete_discussions_help: 这将永久删除此用户发起的所有讨论。禁用后，讨论将被软删除。
-        delete_discussions_label: 删除讨论
-        delete_posts_help: 这将永久删除该用户发布的所有帖子。禁用后，帖子将被软删除。
+        delete_discussions_help: 启用此项，永久删除主题帖，否则隐藏主题帖。
+        delete_discussions_label: 删除主题帖
+        delete_posts_help: 启用此项，永久删除帖子，否则隐藏帖子。
         delete_posts_label: 删除帖子
-        delete_user_help: 永久删除该账号，删除后，此帐号将停用。
-        delete_user_label: 删除用户
-        heading: 默认审核操作
-        introduction: "当一个用户被标记为滥发者时，版主可以从多个操作中选择一个来处理特定的案例。这些设置允许你预先设定你一般会采取的操作，来加快进程，但也允许按需采取变动。\n"
-        move_discussions_to_tags_help: 这会移动所有又该用户发起的帖子到你指定的标签中。清除所选择的标签来让帖子保留在原来的标签中。如果“删除帖子”已启用则该项无效。
-        move_discussions_to_tags_label: 移动帖子到标签中
+        delete_user_help: 启用此项，永久删除账号，否则停用帐号。
+        delete_user_label: 删除账号
+        heading: 默认操作
+        introduction: "选择一个常用操作，以便在标记垃圾账号时快速处置。你也可以在标记时选择其他处置方式。\n"
+        move_discussions_to_tags_help: 移除帖子的所有标签，并统一移动到指定标签旗下，「删除主题贴」禁用时生效。如需保留原始标签，请清空下方标签配置。
+        move_discussions_to_tags_label: 归档标签
       stopforumspam:
-        api_key_instructions_text: '<register>注册 StopForumSpam</register>。然后你将需要<key>获取一个 API 密钥</key>。'
+        api_key_instructions_text: '<register>注册 StopForumSpam</register>，并<key>获取 API 密钥</key>。'
         api_key_label: 'API 密钥'
-        api_key_text: '你可以选择向 StopForumSpam 来报告滥发者来确保更多的论坛不会遭受滥发侵害。'
-        confidence_help: '置信度是一个合理的指标，表明所测试的字段会导致不必要的活动。将置信度设为百分比。如果字段等于或高于这个数字，则无论上述 "频率 "测试结果如何，注册都将被阻止。'
-        confidence_label: 信用
-        email_hash_help: '如果不希望提供电子邮件地址本身，可提供电子邮件地址的 MD5 哈希值。此方法可绕过所有黑名单、规范化和混淆绕过检查。'
-        email_hash_label: 使用哈希后的邮箱地址
+        api_key_text: '向 StopForumSpam 共享垃圾账号信息，改善检测服务。'
+        confidence_help: 百分比等级，根据检测数据生成。等于或高于这个数字时，禁止客户端注册账号。
+        confidence_label: 置信度
+        email_hash_help: '传递邮件地址的 MD5 值。'
+        email_hash_label: 使用散列后的邮箱地址
         email_label: 邮箱地址滥用检查
-        frequency_help: "将触发垃圾邮件过滤器的所有已启用检查之间的垃圾邮件报告数。\n例如：如果电子邮件有 1 次命中，而 ip 有 2 次命中，则总共会有 3 次命中。如果阈值设置为 3 或更低，我们将阻止注册。\n"
-        frequency_label: 限额
+        frequency_help: "所以已启用检查的触发次数。\n例如：如果电子邮件有 1 次命中，而 IP 有 2 次命中，共记 3 次命中。如果阈值设置为 3 或更低，则阻止注册。\n"
+        frequency_label: 阈值
         heading: StopForumSpam
-        introduction: "在 <a>StopForumSpam</a> 数据库中检查新注册用户。如果<code>信用</code>或<code>频率</code>已到达限制，该用户将无法在你的论坛完成注册。\n\n也支持通过<code>fof/oauth</code>和<code>fof/passport</code>的 SSO 注册。其它 SSO 提供者应该也支持，但未经测试。\n"
-        ip_label: IP地址滥用检查
-        region_closest_label: 最近的
+        introduction: "使用 <a>StopForumSpam</a> 检查服务，禁止<code>置信度</code>或<code>频率</code>不符合要求的客户端注册账号。\n\n此检查涵盖 <code>fof/oauth</code> 和 <code>fof/passport</code> 的 SSO 注册渠道。其它 SSO 提供程序应该也受支持，但未经测试。\n"
+        ip_label: 'IP 地址滥用检查'
+        region_closest_label: 最近
         region_europe_label: 欧洲
         region_us_label: 美国
-        regional_endpoint_help: 默认情况下我们会支持查找地理位置最近的服务器来确保最快的反应速度。如果你想要限制流量到指定地区，如为了满足公司或国家隐私规范，你可以强制其连接到指定的地区。
-        regional_endpoint_label: 访问的地理位置
-        report_blocked_registrations_help: '当一个注册被「寻找注册」功能组织的时候，我们会向 StopForumSpam 报告这次尝试，以便于更好地确认垃圾邮件发送者的活动。需要 StopForumSpam API 密钥的设置（见下文）。'
-        report_blocked_registrations_label: 报告被组织的注册
-        sfs_lookup_help: '如果启用，当有新用户在您的论坛上注册时，我们将检查 StopForumSpam 数据库。如果找到该用户（用户名、IP 地址、电子邮件），且该数据点已启用，同时 SFS 置信度达到您定义的水平，则将阻止该用户完成注册。'
-        sfs_lookup_label: 寻找注册
+        regional_endpoint_help: 默认情况下，我们会使用最近的服务器，以最快的速度检测数据。根据不同国家或地区的法律法规，你可能需要指定数据处理服务器。
+        regional_endpoint_label: 地域
+        report_blocked_registrations_help: '「注册时检查」功能成功拦截注册时，向 StopForumSpam 报告检测数据，用于进一步校验。此功能需要配置 StopForumSpam API 密钥。'
+        report_blocked_registrations_label: 报告拦截信息
+        sfs_lookup_help: '用户注册时，使用 StopForumSpam 服务检查。如果存在注册信息（用户名、IP 地址、电子邮件），且 SFS 置信度不符上面配置的等级，则阻止完成注册。'
+        sfs_lookup_label: 注册时检查
         username_label: 用户名滥用检查
+  forum:
+    message:
+      stopforumspam:
+        blocked: 不安全的注册信息，无法完成注册。
+    spammer_modal:
+      hard_delete_discussions_help: 启用此项，永久删除主题帖，否则隐藏主题帖。
+      hard_delete_discussions_label: 删除主题帖
+      hard_delete_posts_help: 启用此项，永久删除帖子（评论和回复等），否则隐藏帖子。
+      hard_delete_posts_label: 删除帖子
+      hard_delete_user_help: 启用此项，永久删除账号，否则停用帐号。
+      hard_delete_user_label: 删除用户
+      intro: 标记垃圾账号时，会根据已启用的扩展采取多个处置方式。
+      move_discussions_tag_help: 移除主题帖的所有标签，并统一移动到指定标签旗下。如需保留原始标签，请清空标签配置。
+      move_discussions_tag_label: 隔离主题帖
+      process_button: 执行
+      report_to_sfs_help: '向 StopForumSpam 共享垃圾账号基本信息（用户名、电子邮件、IP 地址），扩充垃圾账号数据库。'
+      report_to_sfs_label: '报告到 StopForumSpam'
+      title: '标记垃圾账号 {username}'
+    user_controls:
+      spammer_button: 垃圾账号

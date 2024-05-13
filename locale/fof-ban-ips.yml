@@ -2,6 +2,12 @@
 # Use https://weblate.rob006.net/projects/flarum/fof-ban-ips/zh_Hans/ for translation.
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
+blomstra-gdpr:
+  lib:
+    data:
+      bannedipdata:
+        anonymize_description: '解除账号与 IP 地址的关联关系，保留 IP 地址的封禁状态和封禁原因。请确保填写封禁原因时不要暴露个人敏感信息。'
+        export_description: '如果 IP 封禁记录与用户关联（即该用户被 IP 封禁），则导出数据中将包含用户的 IP 地址、封禁原因和创建日期。'
 fof-ban-ips:
   admin:
     empty_text: '暂无 IP 被拉黑。'

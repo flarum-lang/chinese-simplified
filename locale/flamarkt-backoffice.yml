@@ -11,7 +11,7 @@ flamarkt-backoffice:
       searchPlaceholder: '=> core.admin.nav.search_placeholder'
       users: 用户
     permissions:
-      backoffice: 使用后台
+      backoffice: '使用 Backoffice'
     settingsNotAvailableForNonAdmin: 此扩展包含设置项，但仅限管理员账号访问。
     users:
       field:
@@ -19,11 +19,11 @@ flamarkt-backoffice:
         password: 密码
         username: 用户名
       head:
-        email: 电子邮箱
+        email: 邮箱
       new: 创建用户
       searchPlaceholder: 搜索用户……
       title: 用户
   lib:
     header:
       admin_button: '=> core.forum.header.admin_button'
-      backoffice_button: 后台
+      backoffice_button: Backoffice

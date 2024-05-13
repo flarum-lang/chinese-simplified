@@ -6,9 +6,9 @@ fof-profile-image-crop:
   forum:
     modal:
       error:
-        failed_to_load_cropper: 无法加载图像裁剪器。
+        failed_to_load_cropper: 无法加载图像裁剪程序。
         generic_resize: 裁剪缩放图像时出错。
-        get_image_data: '裁剪失败。 确保您的浏览器的指纹识别保护已禁用。'
-      help_text: "如果你的浏览器的隐私设置非常严格，图片上传可能会失败。如果你有问题，尝试禁用指纹保护。否则，你可以<disableResize>禁用压缩裁剪图像</disableResize>或<disableCrop>禁用裁剪</disableCrop>。\n"
+        get_image_data: 裁剪失败，请确保已关闭浏览器的数字指纹跟踪保护功能。
+      help_text: "过于严格的浏览器隐私保护设置可能会导致图片上传失败。如果遇到相关问题，请关闭数字指纹跟踪保护后重试，或<disableResize>禁用图像压缩</disableResize>、<disableCrop>禁用裁剪</disableCrop>。\n"
       submit_button: 上传
       submit_crop_button: 裁剪并上传

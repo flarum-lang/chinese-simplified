@@ -20,7 +20,7 @@ fof-byobu:
       enable-make-public-option: 启用「私密转公开」功能
       enable-make-public-option-help: 转公开时，所有参与者自动退出私密主题，私密主题转为普通公开主题。
       hide_from_all_discussions_page: 在「全部主题」页面隐藏私密主题
-      hide_from_all_discussions_page_help: 私人讨论只能从“私人讨论”页面或用户个人资料访问。
+      hide_from_all_discussions_page_help: 只保留「私密主题」页面和个人主页两个访问入口
       post-event-icon: 'Byobu 发帖事件'
   email:
     body:

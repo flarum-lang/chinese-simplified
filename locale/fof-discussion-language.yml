@@ -5,34 +5,34 @@
 fof-discussion-language:
   admin:
     permissions:
-      allow_change_language_label: 允许编辑主题语言
+      allow_change_language_label: 允许设置主题帖语言
     settings:
       composer_default_label: 在文本编辑器中预选当前语言
       config:
-        country_label: 国家（用于展示国旗）
+        country_label: 国家或地区（用于展示旗帜）
         language_label: 语言
       errors:
         loading_data: 检取国家和地区数据时发生错误，请尝试重启本扩展。
-        missing_assets: '无法载入此扩展的资源。请运行 <code>php flarum assets:publish</code> 尝试修复此问题。'
-      locale_sort_label: 将用户语言环境设为默认筛选
-      native_label: 使用母语
+        missing_assets: '无法载入此扩展的资源文件。请运行 <code>php flarum assets:publish</code> 尝试修复此问题。'
+      locale_sort_label: 检测用户本地语言并设为默认筛选项
+      native_label: 使用原始语言名称
       show_any_lang_opt_label: 显示筛选按钮「所有语言」
       show_flag_label: 在国旗后显示语言名称
-      tags_page_discussion_locale_label: 标签页只显示用户语言的主题帖
+      tags_page_discussion_locale_label: 标签页只显示用户本地语言的主题帖
   api:
     discussion:
-      validation_error: 您必须选择主题帖使用的语言。
+      validation_error: 请选择主题帖使用的语言。
   forum:
     change_language:
-      edit_title: '设定主题「{title}」的语言'
+      edit_title: '设置主题「{title}」的语言'
       submit_button: '=> core.ref.save_changes'
-      title: 设定语言
+      title: 设置语言
     composer_discussion:
       choose_language_link: 语言
     discussion_controls:
-      change_language_button: 设定语言
+      change_language_button: 设置语言
     index_language:
       any: 所有语言
     sub_controls:
-      subscription_language_help: 如果您选择一门语言，您将只收到与该语言相关的新活动通知。
-      subscription_language_label: 讨论语言
+      subscription_language_help: 选择想要关注的语言，您只会收到与该语言相关的新活动通知。
+      subscription_language_label: 主题帖语言

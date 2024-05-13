@@ -5,9 +5,39 @@
 blomstra-horizon:
   admin:
     settings:
-      trim_help: "你可以在这里配置你期望保存近期任务和失败任务\n的时间（分钟）。默认情况下，最近任务将保存一小时，\n全部的失败任务将保存一周。\n"
-      trim_recent: Trim最近任务
-      trim_title: Trim设置
+      trim_completed: 已完成任务
+      trim_completed_help: "在 Horizon 面板中展示已完成任务。\n"
+      trim_failed: 失败任务
+      trim_failed_help: "在 Horizon 面板中展示失败的任务。\n"
+      trim_help: "您可以配置 Horizon 保留最近和失败任务的时间（以分钟为单位）。\n通常，最近的任务保留一个小时，失败的任务保留一周。\n"
+      trim_monitored: 监控任务
+      trim_monitored_help: "在 Horizon 面板中展示监控的任务。\n"
+      trim_pending: 待办任务
+      trim_pending_help: "在 Horizon 面板中展示待办任务。\n"
+      trim_recent: 最近任务
+      trim_recent_failed: 最近失败任务
+      trim_recent_failed_help: "在 Horizon 面板中展示最近失败的任务。\n"
+      trim_recent_help: "在 Horizon 面板中展示最近任务。\n"
+      trim_title: 保留设置
     stats:
       auto_refresh: 自动刷新
+      data:
+        failed-last-seconds: 最近失败任务
+        jobs-past-hour: 每小时任务数
+        jobs-per-minute: 每分钟任务数
+        max-runtime: 最长执行时间
+        max-throughput: 最大吞吐量
+        max-wait-time: 最长等待时间
+        redis-cpu-sys: 'Redis CPU 主进程消耗'
+        redis-cpu-user: 'Redis CPU 用户态消耗'
+        redis-max-memory: 'Redis 最大内存'
+        redis-peak-memory: 'Redis 峰值内存'
+        redis-used-memory: 'Redis 已用内存'
+        status:
+          inactive: 未激活
+          label: 状态
+          running: 正在执行
+        total-processes: 执行总数
+      full_dashboard: 'Horizon 面板'
       heading: 队列概览
+      refresh: 刷新

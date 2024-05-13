@@ -4,7 +4,7 @@
 
 flamarkt-backoffice:
   admin:
-    settingsInBackoffice: 后台设置
+    settingsInBackoffice: 'Backoffice 设置'
   backoffice:
     nav:
       dashboard: 仪表板
@@ -12,17 +12,17 @@ flamarkt-backoffice:
       users: 用户
     permissions:
       backoffice: 使用后台
-    settingsNotAvailableForNonAdmin: 此扩展有可以设置的选项，但只有管理员可以查看和编辑这些设置。
+    settingsNotAvailableForNonAdmin: 此扩展包含设置项，但仅限管理员账号访问。
     users:
       field:
         email: 邮箱
         password: 密码
-        username: 账户名
+        username: 用户名
       head:
-        email: 邮箱
-      new: 创建账户
+        email: 电子邮箱
+      new: 创建用户
       searchPlaceholder: 搜索用户……
-      title: 账户
+      title: 用户
   lib:
     header:
       admin_button: '=> core.forum.header.admin_button'

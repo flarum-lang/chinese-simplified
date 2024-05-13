@@ -4,10 +4,20 @@
 
 datlechin-chatgpt:
   admin:
+    permissions:
+      use_chatgpt_assistant_label: '使用 ChatGPT 助手'
     settings:
-      api_key_help: '从<a>openai.com</a>获取OpenAI API key。'
+      api_key_help: '前往 <a>openai.com</a> 获取 OpenAI API 秘钥。'
       api_key_label: 'API 密钥'
-      max_tokens_help: '<a>什么是token以及如何计算？</a>'
-      max_tokens_label: 最大令牌数
-      model_help: '了解更多关于 <a>models</a> (默认: <code>text-davinci-003</code>).'
+      enable_on_discussion_started_help: 主题帖发布后，将根据首贴内容生成回复。
+      enable_on_discussion_started_label: 在主题创建时自动回复
+      enabled_tags_help: 选择用于生成回复的标签。
+      enabled_tags_label: 自动回复标签
+      max_tokens_help: 了解<a>有关回复数</a>。
+      max_tokens_label: 最大回复数
+      model_help: '默认模型 <code>text-davinci-003</code>，<a>了解更多</a>。'
       model_label: 模型
+      user_prompt_badge_help: 在指令用户旁边展示文本标记。
+      user_prompt_badge_label: 指令用户标记
+      user_prompt_help: '输入用于生成回复的用户 ID。默认为主题的作者。'
+      user_prompt_label: 指令用户

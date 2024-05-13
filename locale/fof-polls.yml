@@ -15,7 +15,7 @@ fof-polls:
       vote: 参与投票
     settings:
       allow_option_image: 允许图片选项
-      enable_global_polls: 开启全局投票
+      enable_global_polls: 启用全民投票
       enable_global_polls_help: 全局投票没有与任何帖子绑定，可以从专门的投票页面进行访问。
       max_options: 每次投票的最大选项数
       options_color_blend: 在投票选项中使用颜色混合文字

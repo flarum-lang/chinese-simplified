@@ -10,14 +10,14 @@ fof-oauth:
     settings:
       advanced:
         heading: 高级
-        log-oauth-errors-help: '如果启用了，OAuth 错误将会被记录到 Flarum 日志中。这对调试 OAuth 问题可能会有帮助，但也会包含敏感信息。'
+        log-oauth-errors-help: '启用此项，在 Flarum 日志中记录 OAuth 错误，以便于调试 OAuth 问题。请注意可能会记录敏感信息到日志中。'
         log-oauth-errors-label: '记录 OAuth 错误'
-      fullscreen_popup_help: '启用后，OAuth 登录会打开一个全屏弹窗。如果这个启用了，宽高设置将会被忽略。'
-      fullscreen_popup_label: '对 OAuth 使用全屏弹窗'
+      fullscreen_popup_help: '启用此项，忽略宽高设置，打开一个新的全屏弹出窗口进行 OAuth。'
+      fullscreen_popup_label: '使用全屏弹出窗口进行 OAuth 认证'
       only_icons_label: 登录界面只显示第三方账号图标
-      popup_height_help: '设置 OAuth 弹窗的高度。如果“对 OAuth 使用全屏弹窗”启用了，这个设置将会被忽略。'
+      popup_height_help: '设置 OAuth 弹窗的高度，此设置对「全屏弹出窗口」无效。'
       popup_height_label: 'OAuth 弹窗高度'
-      popup_width_help: '设置 OAuth 弹窗的宽度。如果“对 OAuth 使用全屏弹窗”启用了，这个设置将会被忽略。'
+      popup_width_help: '设置 OAuth 弹窗的宽度，此设置对「全屏弹出窗口」无效。'
       popup_width_label: 'OAuth 弹窗宽度'
       providers:
         callback_url_text: '根据需要可将回调 URL 设为 {url}。'
@@ -42,7 +42,7 @@ fof-oauth:
           client_id_label: '=> fof-oauth.ref.settings.client_id'
           client_secret_label: '=> fof-oauth.ref.settings.client_secret'
           description: '前往此处创建应用：{link}'
-          hosted_domain_label: 托管域名（G套件/Google企业应用，可选）
+          hosted_domain_label: '托管域名（G 套件/Google 企业应用，可选）'
         linkedin:
           client_id_label: '=> fof-oauth.ref.settings.client_id'
           client_secret_label: 'Client Secret'
@@ -51,8 +51,8 @@ fof-oauth:
           api_key_label: 'API Key'
           api_secret_label: 'API Secret'
           description: '在 {link} 创建一个应用。您需要提供服务协议和隐私政策 URL，然后确保添加请求邮件权限。'
-      update_email_from_provider_help: '如果启用，用户的邮箱地址将被更新，以符合 OAuth 提供方在每次登录论坛时提供的地址。不是所有的提供方都提供更新的邮箱地址，在这种情况下，这个设置对这些提供者没有任何影响。'
-      update_email_from_provider_label: '从 OAuth 提供方处更新邮箱地址'
+      update_email_from_provider_help: '启用此项，在用户每次登录论坛时，尝试从 OAuth 提供方获取并更新用户的电子邮箱地址。'
+      update_email_from_provider_label: 从提供方获取邮箱地址
     settings_accessibility_label: '{name} 设置'
   forum:
     error:

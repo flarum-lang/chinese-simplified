@@ -6,21 +6,21 @@ fof-forum-statistics-widget:
   admin:
     permissions:
       view_discussions_count_label: 查看论坛小部件主题数
-      view_lastest_member_label: 查看论坛小部件最新会员
+      view_lastest_member_label: 查看论坛小部件新用户
       view_posts_count_label: 查看论坛小部件回复数
       view_users_count_label: 查看论坛小部件用户数
     settings:
-      cache_duration_help: 指定挂件的数据应该缓存多久（以秒为单位）。设置为<code>0</code>来禁用缓存（不推荐）。
+      cache_duration_help: '指定小部件数据的缓存时间（以秒为单位），值为 <code>0</code> 表示禁用缓存（不推荐）。'
       cache_duration_label: 缓存时长
-      flush_cache_on_new_registration_help: 如果启用了，在论坛有新用户注册时数据缓存将会被刷新。
-      flush_cache_on_new_registration_label: 在有新用户时刷新数据缓存
-      widget_helper_text: '更改此设置来调整统计控件在论坛侧边栏上的位置。 值越大位置位置越高（此值可为负数）。'
+      flush_cache_on_new_registration_help: 启用此项，在论坛有新用户注册时刷新小部件缓存。
+      flush_cache_on_new_registration_label: 新用户注册时刷新小部件缓存
+      widget_helper_text: '更改此设置来调整统计小部件在论坛侧边栏上的位置。 值越大位置位置越高（此值可为负数）。'
       widget_ignore_private_discussions_label: 不统计私密主题
-      widget_order_label: 控件顺序
+      widget_order_label: 小部件顺序
   forum:
     navbar:
       discussions_count: '主题数：{discussionsCount}'
       latest_member: '最近注册： '
       posts_count: '回复数：{postsCount}'
-      users_count: '会员数：{usersCount}'
+      users_count: '用户数：{usersCount}'
       widget_title: 论坛统计

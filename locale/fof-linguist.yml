@@ -89,7 +89,7 @@ fof-linguist:
     locales:
       all: 全部
     permissions:
-      view_string_keys: 查看翻译字符
+      view_string_keys: 查看翻译键
     placeholder:
       all-locales: 所有语言的最高优先级翻译
       hint: 原文内容：

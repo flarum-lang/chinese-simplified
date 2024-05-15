@@ -2,6 +2,12 @@
 # Use https://weblate.rob006.net/projects/flarum/fof-terms/zh_Hans/ for translation.
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
+blomstra-gdpr:
+  lib:
+    data:
+      userpolicydata:
+        delete_description: 移除用户接受条款状态
+        export_description: 用户接受条款详情
 fof-terms:
   admin:
     buttons:

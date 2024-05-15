@@ -6,9 +6,9 @@ blomstra-gdpr:
   lib:
     data:
       uploads:
-        anonymize_description: 从上载的文件中删除用户引用。文件本身仍然可供用户访问，用户可以在匿名前查看这些文件。
+        anonymize_description: 解除文件与用户的关联，保留文件本身的可访问。
         delete_description: 删除由用户上传的所有文件。
-        export_description: 所有文件均由用户上传。
+        export_description: 所有由用户上传的文件。
 fof-upload:
   admin:
     buttons:
@@ -90,23 +90,23 @@ fof-upload:
         title: 图片水印
         toggle: 开启
     nav:
-      shared-uploads-button: 共享的已上传文件
+      shared-uploads-button: 共享文件
     pane:
       description: 设置上传服务和首选项。
       title: 上传
     permissions:
-      access_shared_label: 在媒体管理器中访问共享的文件
+      access_shared_label: 通过媒体管理器访问共享文件
       delete_uploads_of_others_label: 删除用户上传的文件
       download_label: 允许下载文件
       upload_label: 允许上传文件
-      upload_shared_label: 上传共享的文件
+      upload_shared_label: 上传共享文件
       view_user_uploads_label: 查看用户上传的文件
     shared-uploads:
-      description: 上传可以被你所有论坛用户使用的文件。
-      introduction: "共享的上传文件是可以被你所有论坛用户使用的文件。它们并不依附于任何一个帖子，但是可以使用媒体管理器插入到帖子当中。\n\n<strong>警告：</strong>共享的上传文件不会被任何权限保护。任何有 URL 的人都可以查看它们。\n"
-      no-files: 还没有上传任何共享的文件。
-      title: 共享的已上传文件
-      upload-new-button: 上传新文件
+      description: 上传全体用户可共享使用的文件。
+      introduction: "共享文件可被论坛所有用户使用。文件不与任何一个帖子关联，发帖时可以通过媒体管理器引用。\n\n<strong>警告：</strong>共享文件可以通过 URL 被任何人访问，无任何权限保护。\n"
+      no-files: 暂未上传共享文件。
+      title: 共享文件
+      upload-new-button: 上传文件
     templates:
       bbcode-image: 'BBCode 图片预览模板'
       bbcode-image_description: "使用 BBCode 在行内完整显示图片。<strong>此模板依赖于 flarum/bbcode 扩展程序。</strong>无下载、统计和热链保护功能。\n"
@@ -133,22 +133,22 @@ fof-upload:
       cannot_write_to_disk: 无法写入磁盘。
       could_not_detect_mime: '无法检测到该文件的 MIME 类型，请重试。'
       forbidden_type: 不支持此类型文件。
-      max_upload_file_size_form: 达到了表单指定的最大上传文件大小。
-      max_upload_file_size_ini: '达到了 php.ini 指定的最大上传文件大小。'
-      no_file_uploaded: 未上传任何文件。
+      max_upload_file_size_form: 超过表单允许的最大上传文件大小。
+      max_upload_file_size_ini: '超过 php.ini 允许的最大上传文件大小。'
+      no_file_uploaded: 文件上传失败。
       no_files_made_it_to_upload: '请上传小于 {max} kb 的文件。'
-      no_upload_tmp_folder: 没有可供上传文件的临时文件夹。
-      partial_upload: 仅上传了文件的一部分。
+      no_upload_tmp_folder: 没有可用的临时文件夹，无法上传。
+      partial_upload: 文件内容未上传完整。
       unsupported_type: '您提供的 MIME 类型 {mime} 不受上传适配器支持。'
-      upload_blocked_by_php_extension: '一个 PHP 扩展阻止了上传。'
+      upload_blocked_by_php_extension: '上传被一个 PHP 扩展程序阻止。'
   forum:
     buttons:
       attach: 添加附件
       cancel: 取消
       media: 我的文件
-      shared_media: 共享的媒体文件
+      shared_media: 共享媒体
       upload: 上传
-      upload_shared: 共享的
+      upload_shared: 共享
       user_uploads: 用户上传
     file_list:
       confirm_selection_btn: '{fileCount, plural, =0 {未选择} one {嵌入} other {嵌入所选文件}}'
@@ -181,37 +181,37 @@ fof-upload:
   lib:
     file_list:
       confirm_selection_btn: '{fileCount, plural, =0 {未选择任何文件} other {选择的文件}}'
-      delete_confirmation: '你确定要删除 "{fileName}" 吗？'
-      delete_file_a11y_label: '删除文件 "{fileName}"'
-      empty: 没有文件可供展示。
+      delete_confirmation: '确定要删除「{fileName}」吗？'
+      delete_file_a11y_label: '删除文件「{fileName}」'
+      empty: 暂无文件。
       hide_file:
-        btn_a11y_label_hide: '将 "{fileName}" 从媒体管理器中隐藏'
-        btn_a11y_label_show: '在媒体管理器中显示 "{fileName}"'
-        hide_confirmation: '你确定要隐藏 "{fileName}" 吗？隐藏一个文件只会将其从你的媒体管理器中移除且不会影响现存的帖子。'
-        hide_fail: '无法隐藏文件 "{fileName}"'
-        hide_success: 已隐藏文件
-        loading: 正在隐藏文件...
-        show_confirmation: '你确定要显示 "{fileName}" 吗？显示一个文件会让它出现在你的媒体管理器。'
-        show_fail: '无法显示文件 "{fileName}"'
-        show_success: 文件已显示
+        btn_a11y_label_hide: '在媒体管理器中隐藏「{fileName}」'
+        btn_a11y_label_show: '在媒体管理器中展示「{fileName}」'
+        hide_confirmation: '确定要隐藏「{fileName}」吗？已引用的帖子不受影响。'
+        hide_fail: '无法隐藏文件「{fileName}」'
+        hide_success: 隐藏文件
+        loading: 正在隐藏文件……
+        show_confirmation: '确定要展示「{fileName}」吗？此文件会展示在你的媒体管理器中。'
+        show_fail: '无法展示文件「{fileName}」'
+        show_success: 文件已展示
       hide_shared_file:
-        btn_a11y_label_hide: '使 "{fileName}" 成为私有文件（无公开 URL）'
-        btn_a11y_label_show: '使 "{fileName}" 成为公开文件（有公开 URL）'
-        hide_confirmation: '你确定要让 "{fileName}" 成为私有文件吗？使它成为私有文件会移除它的公开 URL，但不会影响现存帖子。它也会在媒体管理器中对未授权的用户隐藏。'
-        hide_fail: '无法使 "{fileName}" 成为私有文件'
-        hide_success: 已使文件成为私有文件
-        loading: 正在使文件成为私有文件...
-        show_confirmation: '你确定要让 "{fileName}" 成为公开文件吗？使一个文件公开会让它能够让拥有公开 URL 的任何人访问且任何人都可以使用媒体管理器分享它。'
-        show_fail: '无法使 "{fileName}" 成为公开文件'
-        show_success: 已公开文件
+        btn_a11y_label_hide: '转为私密文件（无公共 URL）'
+        btn_a11y_label_show: '转为公共文件（有公共 URL）'
+        hide_confirmation: '确定要将「{fileName}」转为私密文件、移除公共 URL，并在媒体管理器中隐藏未授权用户的访问吗？此操作不会影响现存帖子。'
+        hide_fail: 转换私密文件失败
+        hide_success: 文件已转为私密文件
+        loading: 正在转换私密文件……
+        show_confirmation: '确定要将「{fileName}」转为公共文件，并在媒体管理器中允许任何用户引用吗？公共文件可以通过 URL 被任何人访问。'
+        show_fail: 转为公共文件失败
+        show_success: 公共文件
       load_more_files_btn: 加载更多文件
-      loading: 正在加载文件...
-      modal_empty_desktop: 你的文件列表为空。点击按钮或将一个文件拖到此处来上传。
-      modal_empty_phone: 你的文件列表为空。点击上面的按钮来上传一个文件。
+      loading: 正在加载文件……
+      modal_empty_desktop: 你的文件列表空空如也，点击或拖放文件到此处来上传。
+      modal_empty_phone: 你的文件列表空空如也，点击上方按钮上传文件。
       release_to_upload: 释放以上传
-      select_file_a11y_label: '选择文件 "{fileName}"'
+      select_file_a11y_label: '选择文件「{fileName}」'
     upload-shared-file-modal:
       dropzone: 将文件拖放到此处或点击来浏览
-      hide-from-media-gallery: 从用户的媒体库中隐藏
-      title: 新建共享的文件
+      hide-from-media-gallery: 在用户媒体库中隐藏
+      title: 新建共享文件
       upload: 上传

@@ -6,7 +6,7 @@ fof-sitemap:
   admin:
     settings:
       advanced_options_label: 高级选项
-      exclude_users: 'Sitemap 去除所有用户页面'
+      exclude_users: 不收录用户个人主页
       exclude_users_help: 默认情况下，任何游客可见的用户都将被索引
       frequency:
         daily: 每天一次
@@ -36,10 +36,10 @@ fof-sitemap:
         help: '当一个页面没有、或少有实质性内容时，Google 和其他爬虫可能会将其标记为「软 404」页面。请在此为每个页面设置有效内容的最低数量。'
         tags:
           discussion:
-            minimum_item_threshold_help: '标签在 Sitemap 中包含的最少主题次数。'
-            minimum_item_threshold_label: '标签: 最少主题数量'
+            minimum_item_threshold_help: 一个标签旗下至少要有多少个主题帖，才能在站点地图中被索引。
+            minimum_item_threshold_label: 标签：最少主题数量
         user:
           comments:
-            minimum_item_threshold_help: '在 Sitemap 中包含用户个人资料所需的最少评论/帖子数量。'
+            minimum_item_threshold_help: 一个用户至少要发表多少条评论/帖子，才能在站点地图中索引其个人主页。
             minimum_item_threshold_label: 用户：最低评论/帖子数量
       title: 'FoF 站点地图'

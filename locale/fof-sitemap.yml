@@ -32,8 +32,8 @@ fof-sitemap:
       risky_performance_improvements: 改进性能（有一定风险）
       risky_performance_improvements_help: 改进定时任务在数据量达到百万行时的运行速度，可能导致不兼容某些扩展程序。
       soft_404:
-        heading: '软性 404 预防'
-        help: '当一个模型没有相关内容或相关内容很少时，Google和其他爬虫可能会将其标记为 "软404 "页面。为了消除这种情况，请在此处为每个合格项目设置所需的最低项目数。'
+        heading: '软 404 预防'
+        help: '当一个页面没有、或少有实质性内容时，Google 和其他爬虫可能会将其标记为「软 404」页面。请在此为每个页面设置有效内容的最低数量。'
         tags:
           discussion:
             minimum_item_threshold_help: '标签在 Sitemap 中包含的最少主题次数。'

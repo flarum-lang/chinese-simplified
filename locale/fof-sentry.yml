@@ -5,21 +5,21 @@
 fof-sentry:
   admin:
     settings:
-      dsn_backend_help: '专门用于处理后端错误的 DSN（数据来源名称）。您可以创建一个单独的项目用于处理后端错误，或使用 Relay （中转服务）发送后端错误到 Sentry 以提升性能。'
+      dsn_backend_help: '专门用于处理后端错误的 DSN（数据源名称）。您可以创建一个单独的项目用于处理后端错误，或使用 Relay （中转服务）发送后端错误到 Sentry 以提升性能。'
       dsn_backend_label: 'Sentry DSN (仅后端)'
-      dsn_help: '使用 Relay DSN（中转数据来源名称） 作为主 DSN 时，「用户反馈」项无法生效，请勿选择。'
+      dsn_help: '使用 Relay DSN（中转数据源名称） 作为主 DSN 时，「用户反馈」项无法生效，请勿选择。'
       dsn_label: 'Sentry DSN'
-      environment_label: 'Sentry 监控环境'
+      environment_label: 'Sentry 环境'
       javascript_console_label: '捕获 JavaScript 控制台'
-      javascript_label: '提交 JavaScript 错误'
-      javascript_replays_error_sample_rate: '前端错误重播率 (0 - 100)'
-      javascript_replays_error_sample_rate_help: '发生错误时记录重放的采样率。错误发生前1分钟内的重放将被记录，并持续到会话结束。{br}✱ 启用任何重放选项都会增加约 150 KB 的数据包大小。'
-      javascript_replays_session_sample_rate: '前端会话重放率 (0 - 100)'
-      javascript_replays_session_sample_rate_help: '立即开始录制并持续整个用户会话的重播的采样率。{br}✱ 启用任何重放选项都会增加约150 KB的数据包大小。'
-      javascript_trace_sample_rate: '前端性能监测率 (0 - 100)'
-      javascript_trace_sample_rate_help: '所有交易的采样率。{br}✱ 启用此功能后，数据包大小将增加约30 KB。'
-      monitor_performance_label: '后端性能监测率 (0 - 100)'
-      profile_rate_help: "这与性能监控速率有关。必须启用性能监控功能才能正常工作。\n\n{br}✱ 启用此功能会影响响应时间，原因是剖析和请求发送到 Sentry 的开销。了解如何抵消@ <a>https://docs.sentry.io/platforms/php/profiling/#improve-response-time></a>。\n{br}{icon} <bold>此功能需要使用维基百科的采样剖析器Excimer，该工具仅适用于Linux。</bold>\n"
-      profile_rate_label: '后端分析率 (0 - 100)'
+      javascript_label: '报告 JavaScript 错误'
+      javascript_replays_error_sample_rate: '前端错误重放率 (0 - 100)'
+      javascript_replays_error_sample_rate_help: '对部分错误发生前 1 分钟的会话操作进行录制。{br}✱ 此功能会增加 150 KB 左右的数据包大小。'
+      javascript_replays_session_sample_rate: '前端用户会话重放率（0 - 100）'
+      javascript_replays_session_sample_rate_help: '使用 rrweb 提供的能力，对一定量的用户会话操作进行录制。{br}✱ 此功能会增加 150 KB 左右的数据包大小。'
+      javascript_trace_sample_rate: '前端性能监测率（0 - 100）'
+      javascript_trace_sample_rate_help: '所有事件的采样率。{br}✱ 此功能会增加 30 KB 左右的数据包大小。'
+      monitor_performance_label: '后端性能监测率（0 - 100）'
+      profile_rate_help: "性能监测率相对指标，必须启用性能监测功能方可生效。\n\n{br}✱ 由于会增加分析和发送请求到 Sentry 的开销，因此启用此功能会增加响应时间。请查询 @ <a>https://docs.sentry.io/platforms/php/profiling/#improve-response-time></a> 了解如何降低影响。\n{br}{icon} <bold>这个功能需要用到仅支持 Linux 系统的维基百科的采样分析器 Excimer。</bold>\n"
+      profile_rate_label: '后端分析率（0 - 100）'
       send_user_emails_label: '发送 Sentry 报告时包含用户邮箱'
       user_feedback_label: 用户反馈

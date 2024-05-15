@@ -13,18 +13,18 @@ fof-recaptcha:
       signin: '=> core.forum.log_in.title'
       signup: '=> core.forum.sign_up.title'
       site_key_label: 网站密钥
-      type_help: '这个扩展只支持 reCAPTCHA v2。所选的类型必须符合你的 reCAPTCHA 凭据。'
+      type_help: '此扩展只支持 reCAPTCHA v2。请输入与所选验证类型匹配凭据 reCAPTCHA 凭据。'
       type_label: 'reCAPTCHA 类型'
     test:
-      help_text: "这个测试会使用上面填写的数据。确保在修改设置后重新加载测试，不要忘了在测试通过后保存！\n以下测试并不能反映已保存的设置。\n"
+      help_text: "使用上方配置测试验证码。修改设置后请重新加载测试，测试通过后请注意保存设置。\n以下测试可能无法代表已保存设置的情况。\n"
       load_test_button: 加载
       reload_button: 重新加载
       submit_button: 保存
-      success_message: '成功！reCAPTCHA 已正确配置。'
+      success_message: '成功！reCAPTCHA 已正确设置。'
       title: '测试 reCAPTCHA'
   forum:
     error: '提交 reCAPTCHA 时出错，请重试。'
-    unknown_error: 发生了一个未知的错误。检查设置并再试一次。
+    unknown_error: 发生了未知错误，检查设置并重试。
 validation:
   recaptcha: 'reCAPTCHA 验证失败。'
-  recaptcha-unknown: '在校验 reCAPTCHA 时发生了一个未知错误（{errors}）。'
+  recaptcha-unknown: '校验验证码时发生了未知错误（{errors}）。'

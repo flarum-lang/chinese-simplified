@@ -4,18 +4,18 @@
 
 acpl-lscache:
   admin:
-    cache_enabled_help: 请查看<a>信息页面</a>，了解如何测试缓存。注意：禁用缓存时，该网站的所有缓存条目将被清除。
+    cache_enabled_help: 请查看<a>信息页面</a>，了解如何测试缓存。注意：站点的所有缓存内容均会在禁用缓存时清除。
     cache_enabled_label: '开启 LSCache'
-    cache_exclude_help: '一行一个关键词，匹配的路径将不会被缓存。如不想缓存 <code>/mypath/mypage?aa=bb</code>，可以使用 <code>mypage?aa=</code> 匹配。要匹配字符串开头，请以 <code>^</code> 作为前缀。要进行完全匹配，请以 <code>$</code> 作为 URL 后缀。'
-    cache_exclude_label: 禁用路径缓存
+    cache_exclude_help: '指定禁止缓存的页面路由，一行一个。例如 <code>mypage?aa=</code> 可以禁止缓存 <code>/mypath/mypage?aa=bb</code> 页面。要匹配字符串开头，请以 <code>^</code> 作为前缀。要进行完全匹配，请以 <code>$</code> 作为后缀。'
+    cache_exclude_label: 禁用缓存路由名单
     clearing_cache_listener_label: '清除 Flarum 缓存时同步清除 LSCache'
-    drop_qs_help: "使用该特性以丢弃缓存参数, 例如 <code>fbclid</code> 或者 <code>utm*</code>。 这可以防止对页面中的 \"垃圾 \"查询字符串（如UTM代码）进行冗余缓存，这些字符串用于跟踪但不影响页面内容。这需要LSWS v5.2.3或更新版本。列出要删除的查询字符串，每行一个。<a>了解有关丢弃查询字符串的更多信息</a>.<br></br>\n⚠️ 启用该项将会修改 .htaccess 文件。\n"
-    drop_qs_label: 删除查询字符串
-    public_cache_ttl_help: 设置公共网页应该被缓存多长时间，以秒为单位。默认值是604800秒（一个星期）。
-    public_cache_ttl_label: 默认的公共缓存TTL
+    drop_qs_help: "指定进行缓存匹配时要去除的查询参数字符串，一行一个。可防止对带有 UTM 代码等无用查询参数的页面进行冗余缓存，例如 <code>fbclid</code> 或者 <code>utm*</code>，这些查询参数仅用于跟踪，与页面内容无关。此功能需要 LSWS v5.2.3 或更高版本。<a>关于删除查询参数</a>。<br></br>\n⚠️ 此设置会修改 .htaccess 文件。\n"
+    drop_qs_label: 删除查询参数
+    public_cache_ttl_help: '设置公共网页缓存的有效时间，以秒为单位。默认值是 604800 秒（一个星期）。'
+    public_cache_ttl_label: 公共缓存默认生存时间
     purge_all: '清除全部 LSCache'
-    purge_all_success: '已通知 LiteSpeed Web 服务器清除所有 LSCache 条目'
-    purge_on_discussion_update_help: '每行指定一个 URL 或标签。URL 应以 <code>/</code> 开头，例如 <code>/rankings</code>，缓存标签应以 <code>tag=</code> 开头，例如 <code>tag=rankings</code>。此扩展将给每个路由打上标签。如果您需要清除多个路由，请在 .htaccess 中添加规则，使用正则表达式标记路由。<a>了解更多</a>。默认情况下，主页和有更新的讨论的缓存都会被清除。'
-    purge_on_discussion_update_label: '主题或帖子更新时清除 URL 或标签缓存'
-    serve_stale_help: '启用后，在新缓存副本可用前，系统将使用旧缓存页面响应给用户，以减小后续访问产生的服务器负载。如果关闭此项，页面将在访客等待期间动态生成。根据 Serve Stale 的设计，此功能可能会响应陈旧的内容给用户，你可以选择关闭它。'
-    serve_stale_label: 'Serve Stale 服务'
+    purge_all_success: '已通知 LiteSpeed Web 服务器清除所有 LSCache 内容'
+    purge_on_discussion_update_help: '指定要在主题或帖子发生变化时更新缓存的页面路由或标签，一行一个。路由以 <code>/</code> 开头，例如 <code>/rankings</code>。标签应以 <code>tag=</code> 开头，例如 <code>tag=rankings</code>。要清除多个路由，请在 .htaccess 中添加正则表达式规则，并在此处填写表达式，<a>了解更多</a>。默认情况下，主页和有更新的讨论的缓存都会被清除。'
+    purge_on_discussion_update_label: '主题或帖子更新时清除 URL 和标签缓存'
+    serve_stale_help: 启用此项，在新缓存生成前，临时向客户端提供旧缓存内容，以减少服务器负载。否则，需要等待缓存更新完成后发送给客户端，这可能会增加客户端的等待时间。注意，该选项可能会提供过时的缓存内容，如果无法接受，请不要启用本设置。
+    serve_stale_label: 提供过期内容

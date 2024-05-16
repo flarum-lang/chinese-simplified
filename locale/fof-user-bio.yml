@@ -5,14 +5,14 @@
 fof-user-bio:
   admin:
     permission:
-      editAny: 编辑所有人的个性签名
-      editOwn: 编辑自己的个性签名
-      view: 查看个性签名
+      editAny: 编辑所有人的个人简介
+      editOwn: 编辑自己的个人简介
+      view: 查看个人简介
     setting:
       allowFormatting: 允许使用格式文本
-      allowFormatting_help: '个性签名的格式与帖子的格式在设计上是不同的，个性签名中不允许添加任何图像或嵌入页面。您可以使用 BBCode 和/或 Markdown 扩展程序的功能在个性签名使用带格式文本。其他格式化扩展程序必须 **明确** 针对个签添加格式文本支持，否则无法在个性签名中使用。'
-      bioLimit: 个性签名字符数上限
+      allowFormatting_help: '个人简介的格式与帖子的格式在设计上是不同的，个人简介中不允许添加任何图像或嵌入页面。您可以使用 BBCode 和/或 Markdown 扩展程序的功能在个人简介使用带格式文本。其他格式化扩展程序必须 **明确** 针对个人简介添加格式文本支持，否则无法在个人简介中使用。'
+      bioLimit: 个人简介字符数上限
       maxLines: 一次显示的最大行数
   forum:
     userbioPlaceholder: 这个人很懒，什么都没有写……
-    userbioPlaceholderOtherUser: '为 {username} 设置个性签名'
+    userbioPlaceholderOtherUser: '为 {username} 设置个人简介'

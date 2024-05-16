@@ -36,12 +36,20 @@ Xengine-signature:
         title: 保存中
 signature:
   admin:
+    permissions:
+      allow_signature: 自定义签名
+      edit_signature_others: 编辑其他用户签名
     settings:
+      allow_inline_editing:
+        description: 快速编辑
+        help: 支持在浏览帖子时直接编辑签名。
       maximum_char_limit:
-        description: 最大签名字符数量
+        description: 最大字符数量
+        help: 禁止用户填写超过此数量的签名。
         placeholder: '1000 (默认)'
       maximum_image_count:
         description: 最大图片数量
+        help: 禁止用户添加超过此数量的图片。
         placeholder: '5 (默认)'
       maximum_image_height:
         description: 多张图片高度之和的最大值
@@ -53,11 +61,11 @@ signature:
   forum:
     buttons:
       edit: 编辑签名
-      save: 保存
-      signature: 小尾巴
+      save: 保存签名
+      signature: 签名
     errors:
-      max_char_limit_exceed: 字符数量超过上限
-      max_image_count_exceed: 图片宽度超过上限
+      max_char_limit_exceed: 字符数量超过上限。
+      max_image_count_exceed: 图片宽度超过上限。
       max_image_height_exceed: 图片高度超过上限
       max_image_width_exceed: 图片数量超过上限
     modal:
@@ -67,3 +75,5 @@ signature:
       loading:
         content: 请稍后……
         title: 保存中
+    profile:
+      click: 点击此处填写签名

@@ -583,7 +583,7 @@ core:
     loading: 正在加载…
     log_in: 登录
     log_out: 退出
-    mark_all_as_read: 将所有帖子标记为已读
+    mark_all_as_read: 全部已读
     never: 无
     new_token: 创建令牌
     next_page: 下一页

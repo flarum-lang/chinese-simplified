@@ -5,22 +5,34 @@
 flamarkt-taxonomies:
   admin:
     edit-taxonomy:
+      delete: '=> flamarkt-taxonomies.ref.delete'
+      deleteConfirmation: "确定要删除分类 {name} 吗？此操作将删除该分类下的所有术语，但保留使用该分类的主题帖。\n"
       field:
-        allowCustomValues: 允许随机变量名
+        allowCustomValues: 允许自定义值
         color: '=> flamarkt-taxonomies.ref.field.color'
-        countRequired: 条目数量限制
-        countRequiredDescription: "设置每个主题帖允许添加的条目数量\n"
-        customValueValidation: 随机变量名校验
+        countRequired: 所需术语数量
+        countRequiredDescription: "*歧义* 输入此分类可添加到资源的最小和最大术语数量。\n"
+        customValueSlugger: 自定义值标识生成器
+        customValueSluggerDescription: "*歧义* 选择标识生成方式。重复的标识会按顺序添加数字后缀。对于转译方式，需要事先安装和配置其他扩展程序。\n"
+        customValueValidation: 自定义值校验
         description: '=> flamarkt-taxonomies.ref.field.description'
         enableFilter: '启用查询参数/API 筛选人'
         enableFilterDescription: "允许拥有「查看所有」分类类型权限的用户将分类筛选深度链接到主题、用户和产品，同时允许其通过 REST API 使用搜索过滤器。如果没有「显示筛选」设置，用户就无法明确获取相应链接。对于主题帖，即使禁用了「显示筛选」，也可以在欢迎横幅中找到深层链接。\n"
+        enableFulltextSearch: 为全文搜索索引术语
+        enableFulltextSearchDescription: "仅在启用 Scout 扩展程序集成时有效，术语名称将参与生成全文索引。主题、用户和分类的索引数据分别对拥有「查看论坛」「搜索用户」权限和所有访客可用。修改或删除分类后，必须手动重建 Scout 索引。\n"
+        enableFulltextSearchWarning: "*歧义* 搜索资源权限（「查看论坛」「搜索用户」）与分类的「查看全部」权限不同。启用此项前，请确保您可以让这些用户搜索数据，即使他们通常无法查看分类！\n"
         icon: '=> flamarkt-taxonomies.ref.field.icon'
         iconDescription: '=> flamarkt-taxonomies.ref.field.iconDescription'
         name: '=> flamarkt-taxonomies.ref.field.name'
+        rangeSeparatorText: 到
         showFilter: 在列表/目录页显示筛选按钮
+        showFilterDescription: "在主题列表、用户目录和商店索引中向普通访客展示过滤器，仅在「启用过滤器」启用时生效。商城管理员始终可以在后台按任何分类过滤。\n"
         showLabel: 分类标签和术语显示在一起
         showLabelDescription: "讨论列表和欢迎横幅的显示样式。目前不用于其他资源类型。\n"
         slug: '=> flamarkt-taxonomies.ref.field.slug'
+        tagScope: 仅在指定标签中
+        tagScopeDescription: "仅在指定标签应用分类。如果选择单个标签，主页筛选器将仅在该标签上可见。\n"
+        tagScopePlaceholder: 输入以搜索标签……
         type: 类型
         typeDescription: "分类可用于多个 Flarum 资源。你可以为不同类型的分类使用相同的名称和固定连接。需要注意的是，类型创建后无法更改。\n"
       section:
@@ -28,13 +40,41 @@ flamarkt-taxonomies:
         filling: 填写
         info: 信息
         scope: 范围
+      slugger-options:
+        alpha_dash: 'ASCII 字母数字标识符'
+        random: 随机标识符
+        transliterator: '使用 FoF Transliterator 扩展程序'
+      submit:
+        edit: '=> flamarkt-taxonomies.ref.submit.edit'
+        new: '=> flamarkt-taxonomies.ref.submit.new'
       title:
         edit: 编辑分类
         new: 创建分类
+      type-options:
+        discussions: 主题帖
+        products: 产品
+        users: 用户
+      validation-options:
+        alpha_dash: 字母数字值、短划线、下划线
+        alpha_num: 字母数字值
+        default: 任何文本值
+        regex: 正则表达式
     edit-term:
+      delete: '=> flamarkt-taxonomies.ref.delete'
+      deleteConfirmation: "确定要删除术语 {name} 吗？使用该术语的讨论不会被删除。\n"
+      field:
+        color: '=> flamarkt-taxonomies.ref.field.color'
+        description: '=> flamarkt-taxonomies.ref.field.description'
+        icon: '=> flamarkt-taxonomies.ref.field.icon'
+        iconDescription: '=> flamarkt-taxonomies.ref.field.iconDescription'
+        name: '=> flamarkt-taxonomies.ref.field.name'
+        slug: '=> flamarkt-taxonomies.ref.field.slug'
+      submit:
+        edit: '=> flamarkt-taxonomies.ref.submit.edit'
+        new: '=> flamarkt-taxonomies.ref.submit.new'
       title:
         edit: 编辑条目
-        new: 创建分类条目
+        new: 创建条目
     menu:
       discussions: 主题分类
       products: 产品分类
@@ -46,13 +86,57 @@ flamarkt-taxonomies:
         term: 创建术语
       reset-term-order: 按字母顺序重排术语列表
       title: 分类
+    permissions:
+      bypassTermCounts: 跳过术语数量要求
+      editAnyDiscussion: 编辑所有主题的分类
+      editAnyUser: 编辑所有的用户分类
+      editOwnDiscussion: 编辑自己主题的分类
+      editOwnUser: 编辑自己的用户分类
+      heading: 分类
+      moderate: 配置可用分类
+      ownDisabledEveryone: 未激活或封禁用户
+      ownDisabledMembers: 已激活用户
+      seeAnyDiscussion: 查看所有主题的分类
+      seeAnyUser: 查看所有的用户分类
+      seeOwnDiscussion: 查看自己主题的分类
+      seeOwnUser: 查看自己的用户分类
+    settings:
+      goToPage: 前往配置页面
+  api:
+    error:
+      cannot_use_taxonomies_on_model: 你无权在此上下文中使用分类
+      discussion_taxonomy_not_in_scope: '分类「{slug}」在当前标签组合中不可用'
+      invalid_filter_taxonomy: '无效的「{type}」分类筛选项「{slug}」'
+  forum:
+    blog:
+      widget:
+        title: 分类
+    composer:
+      choose: '选择 {taxonomy}'
+    discussion:
+      edit: '编辑 {taxonomy}'
+    user:
+      edit: '编辑 {taxonomy}'
+      nav: 分类
   lib:
     modal:
-      custom: '选择 {value}'
+      bypassTermCounts: 跳过术语计数
+      custom: '使用 {value}'
+      placeholder: '选择 {count} 个术语'
       placeholderOptional: 选择……
+      submit: 确定
       title:
-        edit: '为 {title}编辑 {taxonomy}'
-        new: '为你的帖子选择 {taxonomy}'
+        edit: '为「{title}」编辑 {taxonomy}'
+        new: '为你的主题选择 {taxonomy}'
   ref:
+    delete: 删除
+    field:
+      color: 颜色
+      description: 描述
+      icon: 图标
+      iconDescription: '输入任何 <a>FontAwesome</a> 图标类名，<em>包括</em> <code>fas fa-</code> 前缀。'
+      name: 名称
+      slug: 标识符
     submit:
+      edit: 保存
       new: 创建

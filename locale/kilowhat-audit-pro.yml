@@ -111,7 +111,7 @@ kilowhat-audit:
         activated_with_email: '通过验证链接激活 {username} 的账户'
         avatar_changed: '更换 {username} 的头像'
         avatar_removed: '移除 {username} 的头像'
-        bio_changed: '修改 {username} 的个性签名'
+        bio_changed: '修改 {username} 的个人简介'
         created: '创建 {username} 的账户'
         deleted: '删除用户 {username}'
         email_change_requested: '请求变更 {username} 的邮箱为 {new_email}'

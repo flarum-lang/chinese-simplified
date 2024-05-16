@@ -18,7 +18,7 @@ fof-masquerade:
       icon-help: "在字段名称前显示一个图标。可用的图标详情，请前往 <a>FontAwesome 官网</a>。图标名称包含前缀 \"fa-\"，例如 \"fas fa-info\"。\n"
       name: 字段名
       name-help: "公开可见（不可翻译）的字段名。\n"
-      on_bio: '在 UserBio（个性签名插件）中显示此字段的答案'
+      on_bio: 在用户个人简介中显示此字段的答案
       option-comma-warning: '选项名不能包含任何半角逗号 (",")。'
       option-new: 添加选项
       options: 选项

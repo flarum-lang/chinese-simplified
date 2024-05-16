@@ -8,7 +8,9 @@ imeepo-more-bbcode:
       bypass_like_label: 忽略显示的点赞
       bypass_reply_label: 忽略显示的答案
   forum:
+    button_tooltip_acronym: 插入术语
     button_tooltip_audio: 插入音频
+    button_tooltip_background: '插入背景色（green, blue, purple, yellow, orange, red, silver, pink, brown, white, black）'
     button_tooltip_bar: 插入进度条
     button_tooltip_bar_black: 插入黑色进度条
     button_tooltip_bar_blue: 插入蓝色进度条
@@ -18,9 +20,13 @@ imeepo-more-bbcode:
     button_tooltip_cloud: 下载地址
     button_tooltip_color: 文字颜色
     button_tooltip_del: 插入删除线文字
+    button_tooltip_demo: 插入文本或删除
     button_tooltip_details: 插入详情
     button_tooltip_down: 插入下载
     button_tooltip_dropcap: 文字首字下沉
+    button_tooltip_float_left: 插入左浮动
+    button_tooltip_float_right: 插入右浮动
+    button_tooltip_hr: 插入水平分隔线
     button_tooltip_iframe: 插入网页框
     button_tooltip_img: 插入图片
     button_tooltip_img_center: 插入居中图片
@@ -31,6 +37,11 @@ imeepo-more-bbcode:
     button_tooltip_left: 文字左对齐
     button_tooltip_like: 点赞可见
     button_tooltip_login: 登录可见
+    button_tooltip_notification_abasic: 插上默认提示
+    button_tooltip_notification_acustom: 插上自定义提示
+    button_tooltip_notification_ainfo: 插上信息提示
+    button_tooltip_notification_asuccess: 插入成功提示
+    button_tooltip_notification_bcustom: 插入自定义带标题提示
     button_tooltip_notification_warning: 插入警告
     button_tooltip_p_left: 左间距
     button_tooltip_p_right: 右间距
@@ -41,9 +52,12 @@ imeepo-more-bbcode:
     button_tooltip_sup: 插入上标文本
     button_tooltip_tab: '插入 Tab'
     button_tooltip_table: 插入表格
+    button_tooltip_var: '插入文字 VAR'
     button_tooltip_video: 插入视频
     button_tooltip_word: 插入单词
+    cloud_password: 密码（不能为空）
     cloud_title: 标题
+    cloud_url: 链接
     color_black: 黑色
     color_blue: 蓝色
     color_brown: 棕色

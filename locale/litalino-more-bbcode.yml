@@ -6,7 +6,7 @@ imeepo-more-bbcode:
   admin:
     permissions:
       bypass_like_label: 忽略显示的点赞
-      bypass_reply_label: 忽略显示的答案
+      bypass_reply_label: 忽略显示的最佳回复
   forum:
     button_tooltip_acronym: 插入术语
     button_tooltip_audio: 插入音频
@@ -92,9 +92,9 @@ imeepo-more-bbcode:
     hidden_content_login: 登录以显示内容
     hidden_content_reply: 回复以显示内容
     lib:
-      bold_tooltip: 添加粗体文字
+      bold_tooltip: 添加粗体
       code_tooltip: 插入代码
-      header_tooltip: 添加标题文字
+      header_tooltip: 添加标题
       image_tooltip: 添加图片
       italic_tooltip: 添加斜体文字
       link_tooltip: 添加一个链接

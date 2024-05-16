@@ -16,8 +16,8 @@ clarkwinkelmann-money-rewards:
       preselection: '预设金额（英文逗号分隔, 可填项）'
   api:
     error:
-      decimals: '金额限制为 {decimals} 小数。'
-      notEnoughFunds: 没有足够的资金。
+      decimals: '金额精确到 {decimals} 位小数。'
+      notEnoughFunds: 没有足够的金额。
   forum:
     modal:
       balance: '余额：{amount}'
@@ -27,12 +27,12 @@ clarkwinkelmann-money-rewards:
         custom: 自定义金额
       optionCustom: 自定义
       submit: 提交
-      success: 已打赏给发帖作者！
+      success: 已打赏作者！
       target: '「{username}」已打赏 #{number}'
       title: 打赏
     post:
       action: 打赏
-      disallowedOther: 你不能打赏这个帖子。可能作者是匿名的或已被注销。
+      disallowedOther: 你不能打赏这个帖子。该作者可能已匿名或注销。
       disallowedOwn: 您不能打赏自己的帖子。
       section: 打赏
     profile:
@@ -41,5 +41,5 @@ clarkwinkelmann-money-rewards:
     record:
       comment: 评论：
       from: 来自
-      post: '于“{title}”中讨论的<a>#{number} 帖</a>'
-      to: 于
+      post: '给「{title}」主题的 <a>#{number} 帖</a>'
+      to: 给

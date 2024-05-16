@@ -5,8 +5,9 @@
 datlechin-bbcode-hide-content:
   admin:
     permissions:
-      bypass_like_label: 无视点赞请求
-      bypass_reply_label: 绕过答复要求
+      bypass_like_label: 无需点赞查看隐藏内容
+      bypass_reply_label: 无需回复查看隐藏内容
   forum:
-    must_be_logged_in: 您必须登录后才能查看此内容
-    must_liked: 点赞此内容后才能查看
+    must_be_logged_in: 此内容登录后可见
+    must_liked: 此内容点赞后可见
+    must_replied: 此内容回复后可见

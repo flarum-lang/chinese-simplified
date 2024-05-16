@@ -9,7 +9,7 @@ datlechin-more-discussions:
       block_name_label: 列表标题
       discussion_limit_help: '列表主题帖数量（默认 <code>5</code>）'
       discussion_limit_label: 主题数量上限
-      discussion_related_help: '通过讨论标题搜索相关结果。<b>警告：</b>这个可能对你的站点性能产生巨大影响，尤其是大型站点。要解决这个可以将此选项与 <b>clarkwinkelmann/flarum-ext-scout</b> 扩展结合使用。'
+      discussion_related_help: '通过标题搜索相关结果。<b>警告：</b>此功能严重影响网站的性能，尤其是大型网站。请结合 <b>clarkwinkelmann/flarum-ext-scout</b> 扩展程序使用以改善性能。'
       discussion_related_label: 相关结果
       filter_by_help: '列表排序方式（默认 <code>最新回复</code>）'
       filter_by_label: 排序方式

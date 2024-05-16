@@ -9,19 +9,19 @@ datlechin-simple-tour-guide:
     edit_modal:
       create_step: 创建新步骤
       delete_step: 删除步骤
-      delete_step_confirmation: 是否确定要删除此步骤？
+      delete_step_confirmation: 确定要删除此步骤？
       edit_step: '编辑 {title}'
     settings:
-      allow_close_help: 允许用户通过单击背景关闭弹出窗口。
+      allow_close_help: 允许用户通过点击背景遮罩关闭引导。
       allow_close_label: 允许关闭
       show_progress_help: 在弹出框顶部展示当前步数和步骤总数。
       show_progress_label: 显示进度
     target: 目标
-    target_placeholder: '步骤的目标元素 (e.g. #element-id).'
+    target_placeholder: '步骤的目标元素（例如 #element-id）。'
     title: 标题
     title_placeholder: 步骤的标题。
   forum:
     done_btn_text: 完成
     next_btn_text: 下一项
     prev_btn_text: 上一项
-    progress_text: '{current} of {total}'
+    progress_text: '{current} / {total}'

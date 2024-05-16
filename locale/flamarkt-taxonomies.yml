@@ -7,13 +7,27 @@ flamarkt-taxonomies:
     edit-taxonomy:
       field:
         allowCustomValues: 允许随机变量名
+        color: '=> flamarkt-taxonomies.ref.field.color'
         countRequired: 条目数量限制
         countRequiredDescription: "设置每个主题帖允许添加的条目数量\n"
         customValueValidation: 随机变量名校验
-        showFilter: 在首页显示分类筛选按钮
-        showLabel: 分类标签与条目一起显示
-        type: 类别
-        typeDescription: "分类信息可以被用在论坛的多个方面。创建分类信息后，类别无法改变。你可以创建同名分类名和英文短语应用到不同的类别。\n"
+        description: '=> flamarkt-taxonomies.ref.field.description'
+        enableFilter: '启用查询参数/API 筛选人'
+        enableFilterDescription: "允许拥有「查看所有」分类类型权限的用户将分类筛选深度链接到主题、用户和产品，同时允许其通过 REST API 使用搜索过滤器。如果没有「显示筛选」设置，用户就无法明确获取相应链接。对于主题帖，即使禁用了「显示筛选」，也可以在欢迎横幅中找到深层链接。\n"
+        icon: '=> flamarkt-taxonomies.ref.field.icon'
+        iconDescription: '=> flamarkt-taxonomies.ref.field.iconDescription'
+        name: '=> flamarkt-taxonomies.ref.field.name'
+        showFilter: 在列表/目录页显示筛选按钮
+        showLabel: 分类标签和术语显示在一起
+        showLabelDescription: "讨论列表和欢迎横幅的显示样式。目前不用于其他资源类型。\n"
+        slug: '=> flamarkt-taxonomies.ref.field.slug'
+        type: 类型
+        typeDescription: "分类可用于多个 Flarum 资源。你可以为不同类型的分类使用相同的名称和固定连接。需要注意的是，类型创建后无法更改。\n"
+      section:
+        browsing: 浏览
+        filling: 填写
+        info: 信息
+        scope: 范围
       title:
         edit: 编辑分类
         new: 创建分类
@@ -22,12 +36,16 @@ flamarkt-taxonomies:
         edit: 编辑条目
         new: 创建分类条目
     menu:
-      discussions: 讨论分类法
+      discussions: 主题分类
+      products: 产品分类
       title: 分类
-      users: 用户分类法
+      users: 用户分类
     page:
       create:
-        term: 创建协议
+        taxonomy: 创建分类
+        term: 创建术语
+      reset-term-order: 按字母顺序重排术语列表
+      title: 分类
   lib:
     modal:
       custom: '选择 {value}'

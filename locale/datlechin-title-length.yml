@@ -5,9 +5,9 @@
 datlechin-title-length:
   admin:
     settings:
-      limit_help: '启用自定义标题长度限制。 如果禁用，将使用 Flarum 的默认标题长度限制。'
+      limit_help: '启用此项，自定义标题最大长度限制，否则使用 Flarum 默认长度限制。'
       limit_label: 启用标题长度限制
-      max_help: 标题的最大长度，最大值为1000。
+      max_help: '标题的最大长度，最大可设为 1000。'
       max_label: 最大长度
-      min_help: 标题的最小长度，最小值为1。
+      min_help: '标题的最小长度，最小可设为 1。'
       min_label: 最小长度

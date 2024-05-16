@@ -7,6 +7,26 @@ datlechin-keyboard-shortcuts:
     modal:
       title: 键盘快捷键
   lib:
-    discussion_list: 讨论列表
-    discussion_page: 讨论页
-    global_heading: 全球
+    discussion_list: 主题列表
+    discussion_list_heading: 主题列表
+    discussion_page: 主题页
+    discussion_page_heading: 主题页
+    global_heading: 全局
+    shortcuts:
+      back: 后退
+      close: 关闭
+      first_post: 最早内容
+      flags: 举报
+      follow: 关注/取消关注
+      help: 帮助
+      last_post: 最新回复
+      login: 登录
+      mark_all_as_read: 全部已读
+      new_discussion: 创建主题
+      notifications: 通知中心
+      pin_nav: 固定导航
+      refresh: 刷新
+      reply: 回复
+      search: 查找
+      session: 用户下拉菜单
+      signup: 注册

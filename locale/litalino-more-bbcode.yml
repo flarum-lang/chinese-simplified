@@ -42,6 +42,18 @@ imeepo-more-bbcode:
     button_tooltip_notification_ainfo: 插上信息提示
     button_tooltip_notification_asuccess: 插入成功提示
     button_tooltip_notification_bcustom: 插入自定义带标题提示
+    button_tooltip_notification_berror: 插入带标题错误提示
+    button_tooltip_notification_bnotice: 插入带标题提示
+    button_tooltip_notification_bsuccess: 插入带标题成功提示
+    button_tooltip_notification_bwarning: 插入带标题警示
+    button_tooltip_notification_cerror: 插入描边错误提示
+    button_tooltip_notification_cnotice: 插入描边提示
+    button_tooltip_notification_csuccess: 插入描边成功提示
+    button_tooltip_notification_cwarning: 插入描边警示
+    button_tooltip_notification_derror: 插入描边带标题错误提示
+    button_tooltip_notification_dnotice: 插入描边带标题提示
+    button_tooltip_notification_dsuccess: 插入描边带标题成功提示
+    button_tooltip_notification_dwarning: 插入描边带标题警示
     button_tooltip_notification_warning: 插入警告
     button_tooltip_p_left: 左间距
     button_tooltip_p_right: 右间距

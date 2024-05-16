@@ -6,7 +6,17 @@ nearata-maintenance-mode:
   admin:
     dashboard:
       maintenance_widget:
-        detail: 在维护期间，只有授权的用户才能查看论坛。
-        title: 维护模式激活
+        detail: 维护期间，只有授权用户才能访问论坛。
+        title: 维护模式已激活
     permissions:
-      bypass: 可以绕过维护模式
+      bypass: 无视维护模式
+    settings:
+      maintenance_mode_enabled:
+        label: 维护模式
+  api:
+    title: 正在停机维护，请稍后再试。
+  views:
+    default:
+      body: "<p>正在停机维护，请稍后访问。</p>\n"
+      header: 正在维护
+      title: 正在维护

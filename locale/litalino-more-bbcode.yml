@@ -15,26 +15,26 @@ imeepo-more-bbcode:
     button_tooltip_bar_black: 插入黑色进度条
     button_tooltip_bar_blue: 插入蓝色进度条
     button_tooltip_bar_red: 插入红色进度条
-    button_tooltip_center: 文字居中
+    button_tooltip_center: 文本居中
     button_tooltip_clip: 插入视频
     button_tooltip_cloud: 下载地址
-    button_tooltip_color: 文字颜色
-    button_tooltip_del: 插入删除线文字
+    button_tooltip_color: 文本色
+    button_tooltip_del: 插入删除线
     button_tooltip_demo: 插入文本或删除
     button_tooltip_details: 插入详情
     button_tooltip_down: 插入下载
-    button_tooltip_dropcap: 文字首字下沉
+    button_tooltip_dropcap: 首字下沉
     button_tooltip_float_left: 插入左浮动
     button_tooltip_float_right: 插入右浮动
     button_tooltip_hr: 插入水平分隔线
-    button_tooltip_iframe: 插入网页框
+    button_tooltip_iframe: 嵌套页面
     button_tooltip_img: 插入图片
     button_tooltip_img_center: 插入居中图片
     button_tooltip_img_left: 插入左侧浮动图片
     button_tooltip_img_right: 插入右侧浮动图片
-    button_tooltip_ins: 插入下划线文字
-    button_tooltip_justify: 文字对齐
-    button_tooltip_left: 文字左对齐
+    button_tooltip_ins: 插入下划线
+    button_tooltip_justify: 文本对齐
+    button_tooltip_left: 文本左对齐
     button_tooltip_like: 点赞可见
     button_tooltip_login: 登录可见
     button_tooltip_notification_abasic: 插上默认提示
@@ -58,15 +58,15 @@ imeepo-more-bbcode:
     button_tooltip_p_left: 左间距
     button_tooltip_p_right: 右间距
     button_tooltip_reply: 回复可见
-    button_tooltip_right: 文字右对齐
-    button_tooltip_size: 文字大小
-    button_tooltip_sub: 插入下标文本
-    button_tooltip_sup: 插入上标文本
-    button_tooltip_tab: '插入 Tab'
+    button_tooltip_right: 文本右对齐
+    button_tooltip_size: 字号
+    button_tooltip_sub: 插入下标
+    button_tooltip_sup: 插入上标
+    button_tooltip_tab: 插入标签页
     button_tooltip_table: 插入表格
     button_tooltip_var: '插入文字 VAR'
     button_tooltip_video: 插入视频
-    button_tooltip_word: 插入单词
+    button_tooltip_word: 插入文档
     cloud_password: 密码（不能为空）
     cloud_title: 标题
     cloud_url: 链接
@@ -88,35 +88,35 @@ imeepo-more-bbcode:
     h5: 五号标题
     h6: 六号标题
     hidden_content: 隐藏内容
-    hidden_content_like: 点赞以显示内容
-    hidden_content_login: 登录以显示内容
-    hidden_content_reply: 回复以显示内容
+    hidden_content_like: 点赞可见
+    hidden_content_login: 登录可见
+    hidden_content_reply: 回复可见
     lib:
       bold_tooltip: 添加粗体
       code_tooltip: 插入代码
       header_tooltip: 添加标题
       image_tooltip: 添加图片
-      italic_tooltip: 添加斜体文字
-      link_tooltip: 添加一个链接
-      ordered_list_tooltip: 添加一个带序号的列表
+      italic_tooltip: 添加斜体
+      link_tooltip: 添加链接
+      ordered_list_tooltip: 添加有序列表
       quote_tooltip: 插入引用
-      spoiler_tooltip: 插入剧透内容
-      strikethrough_tooltip: 插入带删除线的文字
-      unordered_list_tooltip: 插入无序号列表
-    like_to_see: '这个内容需要 {like} 并会在刷新后显示'
-    login_to_see: '这个内容需要 {login} 并会在刷新后显示'
+      spoiler_tooltip: 插入黑幕
+      strikethrough_tooltip: 添加删除线
+      unordered_list_tooltip: 添加无序列表
+    like_to_see: '此内容 {like} 并刷新后可见'
+    login_to_see: '此内容 {login} 并刷新后可见'
     quote:
       wrote: 写道
-    reply_to_see: '这个内容需要 {reply} 并会在刷新后显示'
-    size_18: 字号18
-    size_20: 字号20
-    size_22: 字号22
-    size_24: 字号24
-    size_26: 字号26
-    size_28: 字号28
-    size_30: 字号30
-    size_32: 字号32
-    size_34: 字号34
-    size_36: 字号36
-    size_38: 字号38
-    size_40: 字号40
+    reply_to_see: '此内容 {reply} 并刷新后可见'
+    size_18: '字号 18'
+    size_20: '字号 20'
+    size_22: '字号 22'
+    size_24: '字号 24'
+    size_26: '字号 26'
+    size_28: '字号 28'
+    size_30: '字号 30'
+    size_32: '字号 32'
+    size_34: '字号 34'
+    size_36: '字号 36'
+    size_38: '字号 38'
+    size_40: '字号 40'

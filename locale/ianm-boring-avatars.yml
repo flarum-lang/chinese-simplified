@@ -2,10 +2,25 @@
 # Use https://weblate.rob006.net/projects/flarum/ianm-boring-avatars/zh_Hans/ for translation.
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
+blomstra-gdpr:
+  lib:
+    data:
+      boringavatar:
+        anonymize_description: '生成新的随机头像替换并删除原始 Boring 头像。'
+        delete_description: '删除 Boring 头像。'
+        export_description: '在导出文件中包含生成的 Boring 头像。'
 ianm-boring-avatars:
   admin:
     settings:
-      color1: '颜色 1'
-      color2: '颜色 2'
-      color3: 颜色3
+      color1: '基本色 1'
+      color2: '基本色 2'
+      color3: '基本色 3'
+      color4: '基本色 4'
+      color5: '基本色 5'
+      identifier: 种子
+      identifier_display_name: 外显昵称
+      identifier_email: 电子邮箱
+      identifier_help: "基于指定类型的值生成头像。\n"
+      identifier_id: '用户 ID'
       theme: 风格
+      theme_help: "选择要生成的头像风格。\n"

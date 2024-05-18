@@ -27,9 +27,13 @@ ianm-syndication:
       forum_new_discussions: 论坛新帖
       tag_activity: '{tag} 标签活动'
       tag_new_discussions: '{tag} 标签新帖'
+      user_last_posts: 此用户发帖
     discussion:
       feed_link: 'Feed 订阅链接'
     feeds:
+      entries:
+        user_posts:
+          title_reply: '回复「{discussion}」'
       titles:
         discussion_subtitle: 这篇帖子的最新回复
         discussion_title: '{discussion_name}'
@@ -41,3 +45,5 @@ ianm-syndication:
         tag_d_title: '{tag} 标签新帖'
         tag_subtitle: '{tag} 标签新回帖'
         tag_title: '{tag} 标签活动'
+        user_subtitle: 此用户最新发帖。
+        user_title: '{username}'

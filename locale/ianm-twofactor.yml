@@ -5,20 +5,20 @@
 ianm-twofactor:
   admin:
     edit_group:
-      2fa_help: 要求此组的成员为其帐户启用双因素身份验证（2FA）。
-      2fa_label: 需要双重验证
-      admin_2fa_help: '{adminName} 成员必须始终保持启用 2FA。'
+      2fa_help: 要求此用户组成员启用双重认证。
+      2fa_label: 需要双重认证
+      admin_2fa_help: '{adminName} 成员必须始终启用双重认证。'
     permissions:
-      manage_others_label: '为其他用户管理 2FA'
-      see_two_factor_status_label: '查看其他用户的 2FA 状态'
+      manage_others_label: 管理其他用户的双重认证
+      see_two_factor_status_label: 查看其他用户的双重认证状态
     settings:
-      forum_logo_qr: 在二维码中嵌入论坛的徽标（Logo）
-      forum_logo_qr_help: '向启用 2FA 时会显示的二维码上嵌入论坛的徽标（Logo）。这可能有助于用户识别正确的二维码以进行扫描。'
+      forum_logo_qr: 展示论坛标志
+      forum_logo_qr_help: 在双重验证配置二维码中间显示论坛标志。
       forum_logo_qr_width: 论坛徽标（Logo）二维码宽度
       forum_logo_qr_width_help: '开启 2FA 时所显示的二维码上的论坛徽标（Logo）的宽度。最大值为 200。'
       groups:
-        help: '要求这些用户组中的用户为他们的账户开启两步验证（2FA）。用户在指定的用户组中时无法关闭 2FA。'
-        title: '需要 2FA 的用户组'
+        help: 要求此用户组成员启用双重认证，且不可关闭双重认证。
+        title: 双重认证用户组
       logo_qr: 二维码上的徽标（Logo）
       logo_qr_help: 如果已上传徽标（Logo），其将嵌入到二维码中。留空以使用论坛徽标（Logo）。
   forum:

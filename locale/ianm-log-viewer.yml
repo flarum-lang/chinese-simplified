@@ -5,13 +5,13 @@
 ianm-log-viewer:
   admin:
     permissions:
-      access_logfile_api: 通过API访问日志数据
+      access_logfile_api: '通过 API 访问日志数据'
     settings:
-      purge-days: 每天清除日志文件
-      purge-days-help: 依赖于Flarum调度器处于激活状态。0表示禁用。
+      purge-days: 定时清除日志文件
+      purge-days-help: '每隔一定天数清除日志文件，0 表示不清除。此功能需要使用 Flarum 调度器。'
     viewer:
-      available_logs_heading: 可用的文件
+      available_logs_heading: 可用文件
       file_contents_heading: 文件内容
-      file_size: '大小（字节）: {size}'
-      last_updated: '上次更新时间: {updated}'
-      no_file_selected: 选择日志文件以查看其内容。
+      file_size: '大小：{size} 字节'
+      last_updated: '上次更新：{updated}'
+      no_file_selected: 请选择日志文件。

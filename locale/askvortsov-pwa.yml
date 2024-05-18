@@ -53,7 +53,7 @@ askvortsov-pwa:
     status:
       config_no_https: '您 config.php 文件中的 URL 未使用 HTTPS。渐进式 Web 应用必须使用 HTTPS 方可正常工作。'
       key_gen_failed: '推送通知所需的密钥生成失败。错误信息：{error}'
-      no_logo: '要正常安装 PWA，请至少上传一张 144x144 像素的徽标图片。'
+      no_logo: '要正常安装 PWA，请至少上传一张 144x144 像素的标志图片。'
       no_name: 您必须设置应用全名才能使您的应用程序正常工作。
       no_vapid_keys: 'VAPID 密钥缺失，发送推送通知需要此秘钥。请在下方重置 VAPID 密钥。'
       possible_https_disabled: '你的网站可能没有在 HTTPS 上运行。清除缓存（仪表盘 → 工具按钮）可能有所帮助。如果已是 HTTPS，请忽略此提示。如果确实是 HTTP，请记住渐进式网络应用程序只能工作在 HTTPS 环境中。'

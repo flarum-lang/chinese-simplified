@@ -25,7 +25,7 @@ core:
       enter_hex_message: 请输入十六进制颜色代码。
       favicon_heading: 站点图标
       favicon_text: 上传图片做为论坛的站点图标，该图标会显示在浏览器标签页、搜索引擎结果条目及书签等多个地方。
-      logo_heading: Logo
+      logo_heading: 标志
       logo_text: 上传图片代替论坛名称，并展示在导航栏左侧。
       title: 外观
     basics:

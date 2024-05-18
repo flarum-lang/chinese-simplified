@@ -13,13 +13,13 @@ ianm-twofactor:
       see_two_factor_status_label: 查看其他用户的双重认证状态
     settings:
       forum_logo_qr: 展示论坛标志
-      forum_logo_qr_help: 在双重验证配置二维码中间显示论坛标志。
-      forum_logo_qr_width: 论坛徽标（Logo）二维码宽度
-      forum_logo_qr_width_help: '开启 2FA 时所显示的二维码上的论坛徽标（Logo）的宽度。最大值为 200。'
+      forum_logo_qr_help: 在双重验证配置二维码中间展示论坛标志。
+      forum_logo_qr_width: 论坛标志宽度
+      forum_logo_qr_width_help: '在双重验证配置二维码展示的论坛标志宽度，最大值为 200。'
       groups:
         help: 要求此用户组成员启用双重认证，且不可关闭双重认证。
         title: 双重认证用户组
-      logo_qr: 二维码上的徽标（Logo）
+      logo_qr: 二维码标志
       logo_qr_help: 如果已上传徽标（Logo），其将嵌入到二维码中。留空以使用论坛徽标（Logo）。
   forum:
     security:

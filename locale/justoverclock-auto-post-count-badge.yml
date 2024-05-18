@@ -4,7 +4,7 @@
 
 justoverclock-auto-post-count-badge:
   admin:
-    levelFive: '自定义等级头衔 LV5「唠叨」'
+    levelFive: '自定义等级头衔 LV5「话唠」'
     levelFive-help: '在此粘贴 LV5 的 FontAwesome 图标代码（如 fas fa-square）'
     levelFour: '自定义等级头衔 LV4「活跃」'
     levelFour-help: '在此粘贴 LV4 的 FontAwesome 图标代码（如 fas fa-square）'
@@ -12,6 +12,8 @@ justoverclock-auto-post-count-badge:
     levelOne-help: '在此粘贴 LV1 的 FontAwesome 图标代码（如 fas fa-square）'
     levelSix: '自定义等级头衔 LV6「传说」'
     levelSix-help: '在此粘贴 LV6 的 FontAwesome 图标代码（如 fas fa-square）'
+    levelThree: '自定义等级头衔 LV3「吐槽」'
+    levelThree-help: '在此粘贴 LV3 的 FontAwesome 图标代码（如 fas fa-square）'
     levelTree: '自定义等级头衔 LV3「吐槽」'
     levelTree-help: '在此粘贴 LV3 的 FontAwesome 图标代码（如 fas fa-square）'
     levelTwo: '自定义等级头衔 LV2「冒泡」'
@@ -19,16 +21,16 @@ justoverclock-auto-post-count-badge:
     settings:
       icon-manager:
         help_text: '=> core.ref.icon_text'
-        title: 图标管理
+        title: 等级头衔图标
       label-manager:
-        help: 自定义头衔
-        title: 文本管理
-      tier: '{tier}：达成 {from} 至 {to} 次回帖'
+        help: 自定义等级头衔
+        title: 等级头衔名称
+      tier: '等级 {tier}：回帖 {from} 至 {to} 次'
   forum:
-    hasWritten: '{count, plural, one {# 次回帖} other {# 次回帖}}'
+    hasWritten: '{count} 次回帖'
     less1000post: 传说
     less100post: 吐槽
     less10post: 潜水
     less300post: 活跃
     less50post: 冒泡
-    less600post: 唠叨
+    less600post: 话唠

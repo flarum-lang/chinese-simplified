@@ -46,7 +46,7 @@ migratetoflarum-fake-data:
       discussion-tags-random: 随机
       post-count: 回帖生成数量
       refresh: 完成并刷新页面
-      reset: 生成成功！点击重置
+      reset: 生成成功！点击重置表单
       send: 生成数据
       user-count: 用户生成数量
   ref:

@@ -4,16 +4,19 @@
 
 justoverclock-country-flags:
   admin:
-    countryColumn: 国
-    required_help: 你需要启用“允许在注册时设置国家”来让这个选项有效
-    required_label: 要求填写国家
-    set_on_registration_label: 允许在注册时设置国家
-    showFlagsOnPosts: 在帖子上显示国旗
-    showFlagsOnPosts_text: 在帖子上显示国旗（文字）
+    bind_help: 强制没有绑定地区的用户在登录后选择国家或地区
+    bind_label: 补缺国家或地区选择
+    countryColumn: 国家或地区
+    required_help: 此设置需要启用「注册时允许选择国家或地区」方可生效
+    required_label: 必须选择国家或地区
+    set_on_registration_label: 注册时允许选择国家或地区
+    showFlagsOnPosts: 在帖子上显示旗帜
+    showFlagsOnPosts_text: 在帖子上显示旗帜（文字）
   forum:
-    binding_country: 我们发现你还没有绑定你的所在地。请先关联你的国家。你只有关联了你的国家后才能发帖和评论。
-    clickToSelectCountry: 选择你的国家
-    countrySaved: 成功保存国家！
-    field_placeholder: 确认国家旗帜
-    inputCountryCode: 国家编号
+    binding_country: 为了更好的参与互动，请绑定您的国家或地区。
+    binding_country_click: 现在绑定
+    clickToSelectCountry: 选择国家或地区
+    countrySaved: 保存成功！
+    field_placeholder: 确认旗帜
+    inputCountryCode: 国家或地区代码
     saveButton: 保存

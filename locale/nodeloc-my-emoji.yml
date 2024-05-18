@@ -5,6 +5,23 @@
 nodeloc-emoji:
   admin:
     settings:
+      auto_hide_label: 自动隐藏
+      auto_hide_text: 选择表情符号后隐藏面板。
       category_settings_heading: 分类设置
-      emoji_settings_heading: 表情设置
-      general_ui_settings_heading: 全局UI设置
+      emoji_settings_heading: 表情符号设置
+      emoji_style_label: 表情符号样式
+      emoji_version_label: 表情符号版本
+      emoji_version_text: 要使用的表情符号版本。
+      general_ui_settings_heading: 全局界面设置
+      initial_category_label: 初始分类
+      initial_category_text: 表情符号面板打开时，默认展示「表情符号与人物」分类。
+      recents_count_label: 最常使用数量
+      recents_count_text: 要显示的最常使用表情符号数量。
+      show_category_buttons_label: 显示分类
+      show_preview_label: 显示预览区域
+      show_recents_label: 显示最常使用
+      show_search_label: 显示搜索框
+      show_variants_label: 显示变体
+      show_variants_text: 允许长按表情符号选择肤色变体。
+      specify_categories_label: 自定义分类
+      specify_categories_text: 使用一组自定义的分类替换原始分类。

@@ -4,6 +4,6 @@
 
 justoverclock-staff-members-widget:
   admin:
-    selectedGroupsId: 选择你的小组ID（用逗号分隔）
+    selectedGroupsId: '请输入管理团队用户组 ID（用英文逗号分隔）'
   forum:
-    widgetTitle: 我们的员工
+    widgetTitle: 社区管理员

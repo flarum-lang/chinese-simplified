@@ -5,4 +5,4 @@
 matteociaroni-public-suspensions:
   admin:
     permissions:
-      read_suspensions: 查看用户是否被封禁
+      read_suspensions: 查看用户封禁状态

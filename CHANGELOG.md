@@ -196,6 +196,7 @@ CHANGELOG
 * [`fof/webhooks`](https://github.com/FriendsOfFlarum/webhooks)
 * [`hehongyuanlove/flarum-auth-qq`](https://github.com/Hehongyuanlove/flarum-auth-qq)
 * [`ianm/follow-users`](https://github.com/imorland/follow-users)
+* [`ianm/syndication`](https://github.com/imorland/syndication)
 * [`ianm/synopsis`](https://github.com/imorland/synopsis)
 * [`ianm/translate`](https://extiverse.com/extension/ianm/translate)
 * [`justoverclock/discussion-info`](https://github.com/justoverclockl/discussions-info)

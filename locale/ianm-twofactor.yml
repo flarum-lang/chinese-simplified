@@ -2,6 +2,12 @@
 # Use https://weblate.rob006.net/projects/flarum/ianm-twofactor/zh_Hans/ for translation.
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
+blomstra-gdpr:
+  lib:
+    data:
+      twofactordata:
+        delete_description: 销毁双重认证相关的所有数据。
+        export_description: 导出双重认证状态，以及加密的救援代码。
 ianm-twofactor:
   admin:
     edit_group:
@@ -13,32 +19,61 @@ ianm-twofactor:
       see_two_factor_status_label: 查看其他用户的双重认证状态
     settings:
       forum_logo_qr: 展示论坛标志
-      forum_logo_qr_help: 在双重验证配置二维码中间展示论坛标志。
+      forum_logo_qr_help: 在双重认证配置二维码中间展示论坛标志。
       forum_logo_qr_width: 论坛标志宽度
-      forum_logo_qr_width_help: '在双重验证配置二维码展示的论坛标志宽度，最大值为 200。'
+      forum_logo_qr_width_help: '在双重认证配置二维码展示的论坛标志宽度，最大值为 200。'
       groups:
-        help: 要求此用户组成员启用双重认证，且不可关闭双重认证。
+        help: 要求此用户组成员启用双重认证，且不可关闭。
         title: 双重认证用户组
       logo_qr: 二维码标志
-      logo_qr_help: 如果已上传徽标（Logo），其将嵌入到二维码中。留空以使用论坛徽标（Logo）。
+      logo_qr_help: 留空使用论坛标志，或上传图片。
+  email:
+    body:
+      status_changed: "{recipient_display_name}，您好！\n\n您在 {forum_url} 的账号双重认证 {type}。\n\n此操作如非您本人所为，请立即联系论坛管理员。\n"
+    status_type:
+      disabled: 已关闭
+      enabled: 已启用
+    subject:
+      status_changed: '双重认证 {type}'
   forum:
+    log_in:
+      two_factor_placeholder: 验证码
+      two_factor_required_message: 请输入正确的验证码。
     security:
-      backup_codes: 你的备份密钥
-      backup_codes_instruction: 请将这组密钥保存在安全的位置。当你无法通过正常的的验证方式访问账户时，它们可以为你所用。它们将不会再次显示。
-      disable_2fa_button: 禁用两步验证
-      enable_2fa_button: 启用两步验证
-      enable_2fa_modal_text: 使用你的身份验证器软件扫描下方的二维码，然后输入提供的验证码以启用两步验证。
+      backup_codes: 救援代码
+      backup_codes_instruction: '一次性救援代码只显示一次，请妥善保存。在验证器 APP 无法使用时，可以使用救援代码登录账号。'
+      backup_codes_remaining: 救援代码：
+      cancel_button: 取消
+      cannot_disable: 根据管理员要求，您无法关闭双重认证。
+      cannot_disable_tooltip: 无法关闭双重认证
+      confirm_disable_2fa_text: 确定要关闭双重认证吗？
+      confirm_disable_2fa_text_other_user: '确定要为 {username} 关闭双重认证，并销毁救援代码吗？'
+      confirm_disable_2fa_title: 确认关闭双重认证
+      disable_2fa_button: 关闭双重认证
+      enable_2fa_button: 启用双重认证
+      enable_2fa_modal_text: '请使用验证器 APP 扫描下方二维码，并输入动态验证码以启用双重认证。'
       enter_token: 输入验证码
       loading_qr: 正在加载二维码……
-      qr_code_alt: 两步验证二维码
-      saved_backup_codes_button: 我已经保存了这组密钥
-      two_factor_apps: '如 {google}、{authy}、{microsoft} 和其它的软件是免费可用的。'
-      two_factor_disabled: '此账户上的 2FA 已禁用。'
-      two_factor_enabled: '此账户上的 2FA 已启用。'
-      two_factor_enabled_confirmation: 两步验证已在你的账户上成功启用。
-      two_factor_heading: 2FA
-      two_factor_help: '两步验证（2FA）为你的账户提供了一个额外的安全层。启用后，作为对你的密码采取的的额外措施，当你尝试登录或进行某些其它操作时，你将被要求通过你的身份验证器软件输入验证码。这可以确保你的账户即使密码遭遇泄露风险而仍能保持安全，因为攻击者也不得不通过输入验证码（每 30 秒改变一次）以访问你的账户。'
+      manual_entry_instruction: 请将秘钥导入验证器，并输入动态验证码以启用双重认证。
+      manual_tab: 手动导入
+      ok_button: 好的
+      qr_code_alt: 双重认证二维码
+      qr_tab: 扫描二维码
+      saved_backup_codes_button: 已保存救援代码
+      scan_qr_instruction: '请使用验证器 APP 扫描下方二维码，并输入动态验证码以启用双重认证。'
+      two_factor_apps: '请使用 {google}、{authy}、{microsoft}、Bitwarden 等免费应用程序。'
+      two_factor_disabled: 双重认证已关闭。
+      two_factor_enabled: 双重认证已启用。
+      two_factor_enabled_confirmation: 双重认证已启用。
+      two_factor_heading: 双重认证
+      two_factor_help: '双重认证 (2FA) 为您提供额外的账户安全保护，在登录时，您需要输入密码，以及验证器 APP 生成的动态验证码。双重认证可以在密码泄露的情况下，有效保护您的账号。'
       two_factor_title: 状态：
       verify_button: 验证
     user_2fa:
-      alert_message: '你必须启用 2FA 以继续访问你的账户。'
+      alert_message: 请启用双重认证以继续使用账号。
+  views:
+    reset_password:
+      two_factor_token_label: 验证码
+    two_factor_token:
+      submit_button: 确定
+      title: 双重认证

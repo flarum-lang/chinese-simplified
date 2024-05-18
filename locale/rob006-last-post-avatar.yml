@@ -6,13 +6,13 @@ rob006-last-post-avatar:
   admin:
     settings:
       ignorePrivateDiscussions:
-        help: 如果您不想在私密主题中改变头像行为，请勾选此选项。
-        label: '忽略私密主题（FoF Byōbu）'
+        help: 启用此项，不影响私密主题中的头像。
+        label: 忽略私密主题
       mode:
-        help: '选择帖子列表中显示回帖用户头像的显示位置。查看 README ，可以看到选项列表以及对应的图例。'
-        label: 最后回复用户头像的显示模式
+        help: '选择主题列表中显示回帖用户头像的位置。请前往 README 查看可选项对应图例。'
+        label: 最新回帖用户头像显示模式
         options:
           all-replies: 仅回复
-          always: 显示所有图像
-          non-op-replies: 仅显示回帖
+          always: 总是
+          non-op-replies: 不看楼主
           replace-main: 替换楼主头像

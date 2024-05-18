@@ -4,17 +4,48 @@
 
 nodeloc-emoji:
   admin:
+    my_emoji_section:
+      edit_emoji:
+        delete_emoji_button: 删除表情
+        delete_emoji_confirmation: 确定要删除此表情符号吗？
+        emoji_category_label: 分类代码
+        emoji_title_label: 表情标题
+        modal_title: 添加符号
+        path_or_url_label: '路径或 URL'
+        saved_message: '=> core.admin.settings.saved_message'
+        submit_button: '=> core.ref.save_changes'
+        text_to_category_name_label: 分类名称
+        text_to_replace_label: 文本
+      emoji_list:
+        load_more_button: '=> core.forum.post_stream.load_more_button'
+      export_json_button: '导出 JSON'
+      heading_title: 自定义表情符号
+      import_json_button: '导入 JSON'
+      import_myemoji_message: 仅导入表情符号配置，表情符号图片仍需手动上传。
     settings:
       auto_hide_label: 自动隐藏
       auto_hide_text: 选择表情符号后隐藏面板。
       category_settings_heading: 分类设置
+      emoji_categories:
+        activities: '=> nodeloc-emoji.ref.emoji_categories.activities'
+        animals: '=> nodeloc-emoji.ref.emoji_categories.animals'
+        flags: '=> nodeloc-emoji.ref.emoji_categories.flags'
+        food: '=> nodeloc-emoji.ref.emoji_categories.food'
+        objects: '=> nodeloc-emoji.ref.emoji_categories.objects'
+        people: '=> nodeloc-emoji.ref.emoji_categories.people'
+        smileys: '=> nodeloc-emoji.ref.emoji_categories.smileys'
+        symbols: '=> nodeloc-emoji.ref.emoji_categories.symbols'
+        travel: '=> nodeloc-emoji.ref.emoji_categories.travel'
+      emoji_data_label: 表情符号数据
+      emoji_data_text: 通常用于提供表情符号的翻译名称。
       emoji_settings_heading: 表情符号设置
       emoji_style_label: 表情符号样式
+      emoji_style_native_option: 原始
       emoji_version_label: 表情符号版本
       emoji_version_text: 要使用的表情符号版本。
       general_ui_settings_heading: 全局界面设置
       initial_category_label: 初始分类
-      initial_category_text: 表情符号面板打开时，默认展示「表情符号与人物」分类。
+      initial_category_text: 表情符号面板打开时，默认展示「笑脸与表情」分类。
       recents_count_label: 最常使用数量
       recents_count_text: 要显示的最常使用表情符号数量。
       show_category_buttons_label: 显示分类
@@ -24,4 +55,35 @@ nodeloc-emoji:
       show_variants_label: 显示变体
       show_variants_text: 允许长按表情符号选择肤色变体。
       specify_categories_label: 自定义分类
-      specify_categories_text: 使用一组自定义的分类替换原始分类。
+      specify_categories_text: 自定义表情符号分类。
+  forum:
+    composer:
+      emoji_tooltip: 插入表情符号
+    emoji-button:
+      categories:
+        activities: '=> nodeloc-emoji.ref.emoji_categories.activities'
+        animals: '=> nodeloc-emoji.ref.emoji_categories.animals'
+        custom: '=> nodeloc-emoji.ref.emoji_categories.custom'
+        flags: '=> nodeloc-emoji.ref.emoji_categories.flags'
+        food: '=> nodeloc-emoji.ref.emoji_categories.food'
+        objects: '=> nodeloc-emoji.ref.emoji_categories.objects'
+        people: '=> nodeloc-emoji.ref.emoji_categories.people'
+        recents: '=> nodeloc-emoji.ref.emoji_categories.recents'
+        smileys: '=> nodeloc-emoji.ref.emoji_categories.smileys'
+        symbols: '=> nodeloc-emoji.ref.emoji_categories.symbols'
+        travel: '=> nodeloc-emoji.ref.emoji_categories.travel'
+      no_myemoji_found_message: 未找到表情符号
+      search_placeholder: 搜索表情符号
+  ref:
+    emoji_categories:
+      activities: 活动
+      animals: 动物与自然
+      custom: 自定义
+      flags: 旗帜
+      food: 食物与饮料
+      objects: 物体
+      people: 人物与身体
+      recents: 常用
+      smileys: 笑脸与表情
+      symbols: 符号
+      travel: 旅行与地点

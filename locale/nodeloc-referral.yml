@@ -4,7 +4,22 @@
 
 nodeloc-referral:
   admin:
+    permissions:
+      referral_key: 'Who can invite'
     settings:
-      max_number: 最大数量
-      price: 价格
+      expires: 过期
+      max_number: 单次限额
+      price: 单价
       reward: 奖励
+  forum:
+    actives: 受邀用户
+    cost: 成本
+    count: 剩余可用
+    create_time: 创建时间
+    invite_code: 邀请码
+    is_expire: 已过期？
+    purchase_expire_tip: '邀请码将会在 {invite_code_expires} 天后失效'
+    purchase_help_tip: '邀请码 {invite_code_price} 能量/个. 每个受邀用户激活后您都将获取 {invite_code_reward} 能量。'
+    purchase_invite_code: 购买邀请码
+    purchase_max_tip: '邀请码将会在 {invite_code_max_number} 天后失效'
+    referral: 邀请好友

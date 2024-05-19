@@ -63,26 +63,26 @@ blomstra-payments:
     pay-to-view:
       description: "此贴需要您通过第三方支付平台 Stripe 完成付款来解锁内容。\n"
       purchase-completed: 已解锁
-      purchase-control: 付费浏览
+      purchase-control: 付费查看
       purchase-log-in: 登录并付费浏览
     payment-options-modal:
       description: "选择一个选项开始解锁用户组。您将被跳转到第三方支付平台 Stripe 完成付款。\n"
       title: '用户组 {group} 付款方式'
     post_stream:
-      bounty_added_text: '{username} 添加了 {amount} 的赏金。'
+      bounty_added_text: '{username} 添加了 {amount} 赏金。'
     stripe:
-      interval_once: 一次
+      interval_once: 仅一次
     subscription-card:
       bounty: 赏金
       cancel-control: 取消
-      none: 无付款或有效订阅
+      none: 无付款方式或有效订阅
       pta: 付费访问
       ptb: 快捷支付
       ptp: 付费发布
-      ptv: 付费观看
+      ptv: 付费查看
     tag:
       require-payment-label: 费用
 core:
   forum:
     index_sort:
-      mostBacked_button: 最推荐的方式
+      mostBacked_button: 推荐使用

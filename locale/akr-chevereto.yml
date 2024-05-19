@@ -5,8 +5,9 @@
 akr-chevereto:
   admin:
     setting:
-      insert_type: 嵌入代码以自动插入目标可编辑内容中
+      insert_type: 在可编辑内容中自动插入内嵌代码
       url: '远端 Chevereto 网站地址'
   forum:
     composer:
       upload_button: 上传图片
+      upload_button_details: 上传并插入图片

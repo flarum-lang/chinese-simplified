@@ -5,9 +5,9 @@
 swaggymacro:
   admin:
     setting_only_starter: 只看楼主
-    setting_show_topic_starter: 展示头衔
+    setting_show_topic_starter: 展示楼主头衔
   forum:
-    blog_article_author: 层主
+    blog_article_author: 作者
     not_only_starter: 全部
     only_starter: 只看楼主
     topic_starter: 楼主

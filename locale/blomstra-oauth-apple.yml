@@ -8,17 +8,17 @@ fof-oauth:
       providers:
         apple:
           client_id_label: '服务 ID 标识'
-          description: '在苹果注册您的论坛 {link}'
+          description: '前往 Apple 注册您的论坛：{link}'
           key_file_id_label: 密钥文件标识
           keyfile_upload:
             remove_button: 删除密钥文件
             upload_button: 上传密钥文件
           keyfile_upload_help: 创建<a>密钥文件</a>并在此处上传
           keyfile_upload_label: 密钥文件
-          team_id_label: 团队ID
+          team_id_label: '团队 ID'
   forum:
     log_in:
-      with_apple_button: '使用 {provider} 登录'
+      with_apple_button: '{provider} 账号登录'
     providers:
       apple: '=> fof-oauth.lib.providers.apple'
   lib:

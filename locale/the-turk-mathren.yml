@@ -8,13 +8,20 @@ the-turk-mathren:
       aliasBlockDelimiters: 块表达式定界符的别名
       aliasDelimitersHelp: '它们是 <em>BBCode 主定界符</em> 的 <strong>别名</strong>。 如果您在定界符别名列表中定义了特殊（符号）定界符 （比如 <code>$$</code>），则在保存帖子时，MathRen 会扫描整个帖子，并用 BBCode 的主定界符替换特殊（符号）定界符。 此举可能会增加帖子的保存时间，建议您使用自定义的 BBCode 定界符，而不是特殊（符号）定界符。 因为自定义 BBCode 分隔符可以与主定界符共存，不会被主定界符替换。'
       aliasInlineDelimiters: 内联表达式定界符的别名
+      alias_block_asciimath_delimiters_text: 'AsciiMath 段落表达式 <strong>别名</strong> 分隔符'
       alias_block_delimiters_text: 段落表达式定界符<strong>别名</strong>
+      alias_inline_asciimath_delimiters_text: 'AsciiMath 行内表达式 <strong>别名</strong> 分隔符'
       alias_inline_delimiters_text: 行内表达式定界符<strong>别名</strong>
       aliases_as_primary_label: 将别名定界符转换为主定界符
+      allow_asciimath_label: '允许 AsciiMath 语法'
       bbcode_delimiters_rule_text: 'BBCode 定界符只能由大小写字母和破折号组成。'
       blockDelimiters: '用于段落表达式的 <strong>BBCode</strong> 定界符'
       blockMathClass: '块表达式的 <code>span</code> 标签'
+      block_asciimath_delimiters_text: 'AsciiMath 段落表达式 <strong>BBCode</strong> 分隔符'
       block_delimiters_text: '<strong>BBCode</strong> 段落表达式定界符'
+      cdn_asciimath2tex_text: '<strong>asciimath2tex</strong> CDN 地址'
+      cdn_katex_text: '<strong>KaTeX</strong> CDN 地址'
+      cdn_options_heading: 'CDN 选项'
       color_is_text_color_label: '允许 <code>\color</code> 命令接收双参数 (colorIsTextColor)'
       decisiveKeywords: 忽略渲染功能的关键词列表
       decisiveKeywordsHelp: '要让表达式不被渲染成可视化的数学公式，请将关键词以如下形式填写到代码中 <code>[math=<strong>关键词</strong>]%e%[/math]</code>。'
@@ -46,6 +53,7 @@ the-turk-mathren:
       ignoringExpressionsHelp: 半角逗号分隔。
       inlineDelimiters: '用于行内表达式的 <strong>BBCode</strong> 定界符'
       inlineMathClass: '内联（行内）表达式 <code>span</code> 标签'
+      inline_asciimath_delimiters_text: 'AsciiMath 行内表达式 <strong>BBCode</strong> 分隔符'
       inline_delimiters_text: '<strong>BBCode</strong> 行内表达式定界符'
       java_syntax_text: '请使用 JavaScript 语法编写宏。'
       katexOptionsHeading: 'KaTeX 引擎设置'
@@ -80,6 +88,8 @@ the-turk-mathren:
       sizeSettings: 尺寸调整
       sizeSettingsHelp: 使用<strong>英文句点</strong>作为小点数分隔符。
       sizing_options_heading: 尺寸调整
+      sri_asciimath2tex_text: '<strong>asciimath2tex</strong> SRI 哈希（子资源完整性检查）'
+      sri_katex_text: '<strong>KaTeX</strong> SRI 哈希（子资源完整性检查）'
       syntaxInfo: '你必须使用 JavaScript 语法编写宏代码。'
       throw_on_error_label: '命令不支持或 LaTex 格式错误时抛出错误'
       title: 'MathRen 数学渲染'
@@ -88,8 +98,11 @@ the-turk-mathren:
       wrapperStyle: '风格化 <code>span</code> 标签样式'
   forum:
     composer:
+      asciimath_only: '仅限 AsciiMath'
       block_expression: 段落公式
+      block_expression_asciimath: 段落表达式（AsciiMath）
       inline_expression: 行内公式
+      inline_expression_asciimath: 行内表达式（AsciiMath）
     textEditor:
       blockExpression: 段落公式
       inlineExpression: 行内公式

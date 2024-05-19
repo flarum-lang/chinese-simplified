@@ -6,7 +6,10 @@ blomstra-conversations:
   admin:
     permissions:
       view-conversation-source: 查看对话来源
-      view-raw-source: 查看收到的帖子的原始HTML或HTML来源
+      view-raw-source: '查看收到的帖子的原始 HTML 或 HTML 源代码'
   forum:
     post:
-      source-raw-heading: 查看HTML
+      controls:
+        view: '查看 HTML 版本'
+        view-code: 检查页面元素
+      source-raw-heading: '查看 HTML'

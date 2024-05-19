@@ -5,18 +5,33 @@
 clarkwinkelmann-post-stream-search:
   admin:
     settings:
-      authorQuickFilter: 速筛发帖用户
-      authorQuickFilterHelp: 每个帖子的下拉菜单中都会添加一个快捷键，以便按该用户过滤。
+      authorQuickFilter: 快速筛选作者
+      authorQuickFilterHelp: 在每个帖子的下拉菜单中添加「只看作者」按钮。
       dropdownAccess: 操作入口位于主题帖下拉菜单
       dropdownAccessHelp: 若关闭此项，筛选功能仅能通过默认及下方配置的快捷键打开。
-      originalPosterBadge: '显示交互式 OP 徽章'
-      originalPosterBadgeHelp: '在 OP 发表的帖子旁边会添加一个徽章。点击徽章将自动过滤该用户。'
-      sideNavAccess: 通过主题侧导航栏进入
-      sideNavAccessHelp: 与原设置相同，但该按钮将作为一个单独的条目添加到侧边栏，而不是在下拉列表中。
+      originalPosterBadge: 显示楼主徽章
+      originalPosterBadgeHelp: 在帖子中添加添加楼主徽章，点击徽章只看楼主。
+      sideNavAccess: 通过主题侧边栏进入
+      sideNavAccessHelp: 将按钮添加到侧边栏，而不是下拉菜单中。
   forum:
+    cannotGoToPost:
+      action: 尝试清除筛选
+      message: 无法打开帖子
+    discussionControls:
+      searchInDiscussion: 查找主题帖
+    post:
+      opBadge: 楼主
+      opBadgeTooltip: 只看他的回帖
+    postControls:
+      authorFilter: 只看他的回帖
     stream:
-      noResults: 本讨论中没有符合搜索条件的帖子
-      unmatchedGap: '{count, plural, one {已隐藏一个不相关的帖子} other {已隐藏 {count} 个不相关的帖子}}'
+      noResults: 未找到符合条件的帖子
+      otherAuthorsGap: '已隐藏 {count} 个不相关帖子'
+      unmatchedGap: '已隐藏 {count} 个不相关帖子'
     toolbar:
-      authorPlaceholder: 筛选作者...
-      searchPlaceholder: 在讨论中查找...
+      authorPlaceholder: 筛选作者……
+      clear: 清除筛选
+      close: 清除筛选并关闭工具栏
+      pin: 始终打开主题帖筛选工具栏
+      searchPlaceholder: 在主题帖中查找……
+      summary: '匹配 {matching} / 共 {total}'

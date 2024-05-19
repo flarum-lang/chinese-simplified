@@ -3,9 +3,22 @@
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
 clarkwinkelmann-money-to-all:
+  admin:
+    settings:
+      send: 向全体用户发放财富
+  forum:
+    notification:
+      moneyReceived: '收到财富 {amount}'
   lib:
     modal:
-      amount: 数量
-      message: 信息
+      amount: 金额
+      lastActivity: 仅限于以下日期之后激活的用户
+      message: 消息
+      messageHelp: 可选。使用自定义消息替换默认通知。请在消息中包含金额，否则用户无法在其他地方查询金额。
+      messagePlaceholder: 启用包含消息的通知
       notify: 向用户发送网络通知
-      title: 向所有用户发放论坛货币
+      preview: '{count} 位符合条件的用户。'
+      submit: 发放
+      success: '已向 {count} 位用户发放财富！'
+      suspended: 包含封禁用户
+      title: 向所有用户发放财富

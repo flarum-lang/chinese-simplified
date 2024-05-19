@@ -5,6 +5,15 @@
 clarkwinkelmann-readonly-profile:
   admin:
     settings:
-      disableAccessTokens: 禁用访问令牌创建
-      disableEmailChange: 禁用电子邮件变更
+      disableAccessTokens: 禁止创建访问令牌
+      disableAvatarEdit: 禁止更改头像
+      disableEmailChange: 禁止更改邮箱
       disableLogin: 禁止登录
+      disablePasswordChange: 禁止更改密码
+  api:
+    blocked_actions:
+      accessToken: 访问令牌已禁止创建
+      avatar: 头像已禁止更改
+      email: 邮箱已禁止更改
+      login: 登录已禁止
+      password: 密码已禁止更改

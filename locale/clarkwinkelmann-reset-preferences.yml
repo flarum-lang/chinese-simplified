@@ -5,8 +5,9 @@
 clarkwinkelmann-reset-preferences:
   admin:
     permissions:
-      reset: 重置用户首选项
+      reset: 重置个人偏好设置
   forum:
     preferences:
-      confirm: 你的所有通知和偏好将被恢复为默认值。继续吗？
-      reset: 重置所有偏好
+      confirm: 确定要重置所有通知和偏好设置为默认值吗？
+      done: 偏好设置已重置！
+      reset: 重置所有用户偏好设置

@@ -5,4 +5,4 @@
 datitisev-post-galleries:
   admin:
     settings:
-      swiper_zoom: 启用Swiper缩放模组
+      swiper_zoom: '启用 Swiper 缩放模块'

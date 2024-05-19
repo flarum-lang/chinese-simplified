@@ -5,8 +5,8 @@
 datlechin-birthdays-widget:
   admin:
     settings:
-      max_users: 可展示最多的使用者
+      max_users: 最大用户展示数量
   forum:
     widget:
-      more_label: 展示所有寿星
-      title: 今日寿星
+      more_label: 展示所有
+      title: 生日快乐

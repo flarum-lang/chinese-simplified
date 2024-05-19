@@ -161,7 +161,6 @@ CHANGELOG
 * [`datlechin/flarum-link-preview`](https://github.com/datlechin/flarum-link-preview)
 * [`datlechin/flarum-more-discussions`](https://github.com/datlechin/flarum-more-discussions)
 * [`datlechin/flarum-offline-indicator`](https://github.com/datlechin/flarum-offline-indicator)
-* [`datlechin/flarum-silent-edit`](https://github.com/datlechin/flarum-silent-edit)
 * [`datlechin/flarum-tag-passwords`](https://github.com/datlechin/flarum-tag-passwords)
 * [`flamarkt/taxonomies`](https://github.com/flamarkt/taxonomies)
 * [`flarum/likes`](https://github.com/flarum/likes)

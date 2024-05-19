@@ -6,6 +6,12 @@ hikarilan-passkey-login:
   admin:
     settings:
       relying_party:
+        id:
+          help: '请使用不含协议的域名作为当前网站的唯一标识符。例如，您的网站是 https://example.com，依赖方 ID 则是 example.com。留空以使用当前域名。'
+          label: '依赖方 ID'
         name:
-          help: 依赖方名称是您的网站的一个可读名称。如果保持为空，将使用论坛标题。
+          help: 依赖方名称是您网站的一个可读名称。留空以使用论坛标题。
           label: 依赖方名称
+      timeout:
+        help: '密码验证的超时时间（秒），默认 60 秒。'
+        label: 超时时间

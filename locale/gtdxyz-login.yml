@@ -5,8 +5,15 @@
 core:
   forum:
     log_in:
-      username_or_email_placeholder: 邮件
+      username_or_email_placeholder: 邮箱
 gtdxyz-login:
   admin:
-    login_email: 邮件
+    login_default: 默认
+    login_email: 邮箱
     login_identification: 登录
+    login_username: 用户名
+  forum:
+    error:
+      email_failed: 邮箱验证失败
+      failed: 验证失败
+      useranem_failed: 用户名验证失败

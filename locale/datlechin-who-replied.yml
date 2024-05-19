@@ -4,9 +4,9 @@
 
 datlechin-who-replied:
   admin:
-    limit_help: 显示按钮以查看回复者的帖子数（默认值为5）。
+    limit_help: '显示按钮以查看回复的帖子数量（默认为 5）。'
     limit_label: 限制帖子数量
   forum:
-    button_label: 查看谁回复了
+    button_label: 有谁回复
     post_replies:
-      title: 答复此的用户
+      title: 查看对话

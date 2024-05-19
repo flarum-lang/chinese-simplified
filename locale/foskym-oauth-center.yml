@@ -20,6 +20,7 @@ foskym-oauth-center:
       clients: 应用管理
       index: 首页
       scopes: 权限管理
+      tokens: 令牌管理
     permission:
       use_oauth: '使用 OAuth'
     scopes:
@@ -32,13 +33,17 @@ foskym-oauth-center:
       scope_desc: 描述
       scope_icon: 图标
       scope_name: 名称
+      visible_fields: 可见字段
     settings:
       access_lifetime: 访问令牌有效期（秒）
       allow_implicit: 允许隐式授权（response_type=token）
-      authorization_method_fetch: '授权使用 Fetch 方式请求（非直接转向页面）'
+      authorization_method_fetch: '授权使用 Fetch 方式请求（非直接重定向）'
       display_mode: 显示模式
       enforce_state: '强制状态验证（state 参数）'
-      require_exact_redirect_uri: '需要精确的重定向 URI'
+      require_exact_redirect_uri: 需要确切的回调地址
+    tokens:
+      add_token: 添加令牌
+      delete_token: 删除令牌
   forum:
     authorize:
       access: 授权访问

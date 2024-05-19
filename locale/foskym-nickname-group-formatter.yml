@@ -4,9 +4,9 @@
 
 foskym-nickname-group-formatter:
   admin:
-    display: '如何展示此用户组的昵称?'
-    optional: 配置
+    display: 用户组用户昵称展示方式
+    optional: 可选
     setting:
-      showInUserCard: 在用户卡片中显示（用户主页等）
+      showInUserCard: 在用户卡片中显示（个人主页）
       showInUserCardPopover: 在用户卡片中显示（弹出框）
-      showInUserPost: 在用户回复贴中显示
+      showInUserPost: 在回贴中显示

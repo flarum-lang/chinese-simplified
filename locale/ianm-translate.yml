@@ -5,62 +5,97 @@
 ianm-translate:
   admin:
     permission:
-      refresh-translation: 强制重新翻译缓存翻译
+      edit-translation: 自定义译文
+      refresh-translation: 强制重新翻译缓存的译文
       translate: 查看翻译
-      translate-to-all-locales: 在任何论坛区域查看翻译
-      translate-to-locale: 查看当前地区的翻译
+      translate-to-all-locales: 查看所有语言译文
+      translate-to-locale: 查看当前语言的译文
     settings:
       any-language: 任何语言
       any-language-help: 启用后，当前提供支持的所有语言的翻译都可以使用。若要将翻译文本限制为仅在论坛上启用的语言，请禁用此选项。
       bind-browser-language: 添加浏览器语言
-      bind-browser-language-help: 当启用后，用户的浏览器语言会被添加到可用语言列表中。
+      bind-browser-language-help: 启用此项，将用户的浏览器语言添加到可用语言列表。
       deepl:
         api_key:
-          help: '在 {link}注册。驱动将自动检测免费/Pro类型。'
+          help: '前往 {link} 注册。扩展程序将自动检测免费或付费订阅类型。'
+          label: '=> ianm-translate.lib.settings.api-key'
         en_choice:
-          help: 当翻译为英语时，选择应使用的变体。
-          label: 英语变种
+          help: 翻译成英文时，请选择使用哪个变体。
+          label: 英语变体
           options:
             en-GB: '英语（英国） en-GB'
             en-US: '英语（美国） en-US'
         formality:
-          help: 当可用时，翻译可以使用不同的形式。在这里选择你的喜好。
+          help: 在适用的情况下，可以使用不同正式程度的译文。请在此处选择您的偏好。
           label: 正式
           options:
             default: 默认
-            prefer_less: 不那么正式
+            prefer_less: 较不正式
             prefer_more: 更加正式
       google-cloud:
         api_key:
-          help: '在 {link} 注册一个 API 密钥。这个驱动器使用 V2 API - Basic。'
-      provider: 翻译提供程序
-      readme-info: '查看 README 文档来获取更多信息。'
-      readme-none: 这个驱动器不需要额外设置。
+          help: '前往 {link} 注册 API 密钥。此驱动程序使用 V2 API - 基本版。'
+          label: '=> ianm-translate.lib.settings.api-key'
+      libre:
+        api_key:
+          help: '（可选）如果您的 LibreTranslate 服务器需要 API 密钥，请在此处输入。'
+          label: '=> ianm-translate.lib.settings.api-key'
+        port:
+          help: 'LibreTranslate 服务器的端口。如果您正在运行自己的实例，请在此处输入端口。'
+          label: 服务器端口
+        url:
+          help: 'LibreTranslate 服务器 URL。如果您正在运行自己的实例，请在此处输入 URL，含 `http`或`https`。'
+          label: 服务器地址
+      provider: 翻译服务提供商
+      readme-info: '查看 README 文档获取更多信息。'
+      readme-none: 此驱动程序无额外设置。
+      seemless: 无缝翻译
+      seemless-help: 测试功能。启用后，所有用户内容都将自动翻译成所有其他可用的论坛语言。当用户查看多语言内容时，译文将自动显示。
       translate-all-enabled: 启用所有翻译语言
-      translate-all-help: 当启用后，管理员和其它有权限的人可以翻译内容为任何一个论坛的已安装语言。
-      use-native-locale-names: 使用原生语言名称
-      use-native-locale-names-help: 当启用后，显示的语言名称会使用其原生语言名称而不是当前语言下的名称。
+      translate-all-help: 启用此项，管理员和其它有权限的人可以将内容翻译成任一已安装语言。
+      translate-polls: 翻译投票
+      translate-polls-help: 启用此项，自动翻译投票的标题、副标题、图像替代文本和选项。
+      use-native-locale-names: 使用语言原始名称
+      use-native-locale-names-help: 启用此项，使用原始名称替代当前语言名称。
   forum:
-    detected-language: '本帖使用了{postLang}'
+    composer:
+      multi-languages: 提示：您可以输入您选择的语言，论坛会为您翻译。
+    detected-language: '本帖使用 {postLang}'
     discussion:
       post:
         close-translation: 关闭翻译
-        translated-header: '机器将{from}翻译为{to}翻译'
-        translated-updated: '翻译文本最后于 {time} 使用 {provider} 更新'
+        translated-header: 'AI {from} 译 {to}'
+        translated-updated: '译文最后于 {time} 使用 {provider} 更新'
       title:
         detected-language: '{postLang}'
+    manage-translations:
+      button-label: 管理译文
+      poll:
+        image-alt: 投票图片替代文本（如有）
+        option: '投票选项 {number}'
+        original-title: 原始语言
+        question: 投票主题
+        subtitle: 投票副标题
+        title: 管理投票译文
+      save-changes: '=> core.ref.save_changes'
+      translations-label: 译文
+    original-content:
+      title: 原始内容
+      view: 查看原始内容
+    refresh-translation: 刷新翻译
     translate-button-label: 翻译
     unknown-language: （未检测到）
     user:
       settings:
         heading: 翻译
         source-language:
-          help: 当禁用后，只有使用了非当前论坛语言的可翻译内容才会被标记。要用所检测到的语言标记所有内容，启用这个设置。
+          help: 启用此项，检测并标记所有内容语言。否则仅标记非当前语言内容。
           label: 总是显示语言
   lib:
     providers:
       deepl: DeepL
       google-cloud: 'Google Cloud 翻译'
       google-free: 'Google 翻译'
+      libre: 'Libre 翻译'
     settings:
       api-key: 'API 密钥'

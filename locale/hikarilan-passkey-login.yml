@@ -15,3 +15,19 @@ hikarilan-passkey-login:
       timeout:
         help: '密码验证的超时时间（秒），默认 60 秒。'
         label: 超时时间
+  forum:
+    login:
+      with-passkey: 通过通行秘钥登录
+    user:
+      settings:
+        alias-modal:
+          label: 现在，请给通行密钥起个别名。
+          title: 通行秘钥已注册！
+        item:
+          revoke: '=> core.forum.security.revoke_access_token'
+          revoke_success: 通行秘钥已撤销。
+        passkeys:
+          add-new-passkey: 添加通行秘钥
+          error: 发生了内部错误，请稍后再试。
+          label: '密码是一种替代密码的验证方式，可以使用指纹、面部识别、设备密码或 PIN 码来确认您的身份。'
+          title: 通行秘钥

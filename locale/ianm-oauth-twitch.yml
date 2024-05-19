@@ -7,9 +7,14 @@ fof-oauth:
     settings:
       providers:
         twitch:
-          client_id_label: '客户端 ID'
-          client_secret_label: 客户秘密
-          description: '用Twitch注册你的论坛{link}'
+          client_id_label: '应用 ID'
+          client_secret_label: 应用秘钥
+          description: '使用 Twitch 账号注册论坛 {link}'
   forum:
     log_in:
       with_twitch_button: '=> fof-oauth.forum.log_in.with_button'
+    providers:
+      twitch: '=> fof-oauth.lib.providers.twitch'
+  lib:
+    providers:
+      twitch: Twitch

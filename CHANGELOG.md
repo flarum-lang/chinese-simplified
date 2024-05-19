@@ -132,6 +132,7 @@ CHANGELOG
 * [`blomstra/fontawesome`](https://github.com/blomstra/flarum-ext-fontawesome)
 * [`blomstra/oauth-apple`](https://github.com/blomstra/flarum-ext-oauth-apple)
 * [`blomstra/payments`](https://extiverse.com/extension/blomstra/payments)
+* [`blomstra/s3-assets`](https://extiverse.com/extension/blomstra/s3-assets)
 * [`blomstra/trello`](https://github.com/blomstra/flarum-ext-trello)
 * [`blomstra/turnstile`](https://github.com/blomstra/flarum-ext-turnstile)
 * [`blomstra/web3`](https://github.com/blomstra/flarum-ext-web3)

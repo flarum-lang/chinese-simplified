@@ -46,6 +46,8 @@ askvortsov-pwa:
         push_notif_preference_default_to_email_text: 启用此项，默认通过邮件发送所有类型的推送通知，否则默认禁用推送通知。
         user_max_subscriptions_label: 推送订阅数上限（每用户）
         user_max_subscriptions_text: '每个用户最多能同时存在多少条订阅。通常情况下，订阅的多少取决于用户使用的浏览器数量，通知会发送给用户的所有客户端订阅，每个订阅均会消耗一次 API 调用。'
+        window_controls_overlay_label: 启用窗口控件覆盖？
+        window_controls_overlay_text: "如果开启，用户将能够通过隐藏系统提供的原生标题栏获得更沉浸的原生应用体验。窗口控件覆盖是否开启取决于用户的选择和浏览器的兼容性。您必须在启用此功能后添加一些 CSS 或 JS 代码来进行适配，否则窗口控件会覆盖论坛导航顶栏上的一些元素，同时整个窗口将几乎无法拖动，最终导致用户体验不良。\n\n另请参阅：<compatibilitylink>窗口控件覆盖的兼容性</compatibilitylink>和 <learnlink>Microsoft Learn 上对窗口控件覆盖的介绍</learnlink>\n"
       refreshed_message: 'PWA 配置刷新成功。'
       status_check_heading: 状态检查
       submit_button: 保存设置

@@ -4,6 +4,7 @@
 
 datlechin-simple-tour-guide:
   admin:
+    add_step: 添加新步骤
     description: 描述
     description_placeholder: 步骤的描述。
     edit_modal:
@@ -11,6 +12,9 @@ datlechin-simple-tour-guide:
       delete_step: 删除步骤
       delete_step_confirmation: 确定要删除此步骤？
       edit_step: '编辑 {title}'
+    'no': 否
+    permissions:
+      reset_tour_guide: 重置教程
     settings:
       allow_close_help: 允许用户通过点击背景遮罩关闭引导。
       allow_close_label: 允许关闭
@@ -20,8 +24,13 @@ datlechin-simple-tour-guide:
     target_placeholder: '步骤的目标元素（例如 #element-id）。'
     title: 标题
     title_placeholder: 步骤的标题。
+    trigger_click: 触发单击
+    'yes': 是
   forum:
     done_btn_text: 完成
     next_btn_text: 下一项
     prev_btn_text: 上一项
     progress_text: '{current} / {total}'
+    user_controls:
+      reset_tour_guide: 重新开始教程
+      reset_tour_guide_confirmation: 您确定要强制此用户再次开始教程吗？

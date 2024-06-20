@@ -148,6 +148,7 @@ CHANGELOG
 * [`clarkwinkelmann/flarum-ext-readonly-profile`](https://github.com/clarkwinkelmann/flarum-ext-readonly-profile)
 * [`clarkwinkelmann/flarum-ext-reset-preferences`](https://github.com/clarkwinkelmann/flarum-ext-reset-preferences)
 * [`clarkwinkelmann/flarum-ext-scout`](https://github.com/clarkwinkelmann/flarum-ext-scout)
+* [`clarkwinkelmann/flarum-ext-sudo-mode`](https://github.com/clarkwinkelmann/flarum-ext-sudo-mode)
 * [`clarkwinkelmann/flarum-ext-typewriter`](https://github.com/clarkwinkelmann/flarum-ext-typewriter)
 * [`clarkwinkelmann/flarum-ext-vote-with-money`](https://github.com/clarkwinkelmann/flarum-ext-vote-with-money)
 * [`club-1/flarum-ext-cross-references`](https://github.com/club-1/flarum-ext-cross-references)

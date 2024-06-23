@@ -91,7 +91,7 @@ CHANGELOG
 * [`nearata/flarum-ext-related-discussions`](https://github.com/Nearata/flarum-ext-related-discussions)
 * `nodeloc-dislikes`
 * `nodeloc-ignore-hidden-tags`
-* `nodeloc-lottery`
+* [`nodeloc/lottery`](https://github.com/nodeloc/lottery)
 * `nodeloc-my-emoji`
 * `nodeloc-referral`
 * `nodeloc-telegram`

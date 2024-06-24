@@ -27,6 +27,8 @@ ianm-twofactor:
         title: 双重认证用户组
       logo_qr: 二维码标志
       logo_qr_help: 留空使用论坛标志，或上传图片。
+      tokens:
+        heading: 访问令牌
   email:
     body:
       status_changed: "{recipient_display_name}，您好！\n\n您在 {forum_url} 的账号双重认证 {type}。\n\n此操作如非您本人所为，请立即联系论坛管理员。\n"

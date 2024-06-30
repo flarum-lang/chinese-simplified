@@ -37,6 +37,7 @@ CHANGELOG
 * [`fof/clockwork`](https://github.com/FriendsOfFlarum/clockwork)
 * [`fof/discussion-thumbnail`](https://github.com/FriendsOfFlarum/discussion-thumbnail)
 * [`fof/profile-image-crop`](https://github.com/FriendsOfFlarum/profile-image-crop)
+* [`foskym/flarum-custom-levels`](https://github.com/FoskyM/flarum-custom-levels)
 * [`foskym/nickname-group-formatter`](https://github.com/FoskyM/flarum-nickname-group-formatter)
 * [`foskym/flarum-oauth-center`](https://github.com/FoskyM/flarum-oauth-center)
 * [`glowingblue/localizd`](https://flarum.org/extension/glowingblue/localizd)

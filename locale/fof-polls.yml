@@ -23,7 +23,7 @@ fof-polls:
       options_color_blend: 在投票选项中使用混合文本色
       options_color_blend_help: 启用此项，使此投票选项更易读。如果此功能影响论坛样式，请禁用。
   forum:
-    answers: 结论
+    answers: 选项
     compose:
       add_title: 添加投票
       continue_editing: 继续编辑

@@ -104,7 +104,7 @@ CHANGELOG
 * [`rehiy/flarum-reply-to-see`](https://github.com/rehiy/flarum-reply-to-see)
 * [`rob006/flarum-ext-last-post-avatar`](https://github.com/rob006-software/flarum-ext-last-post-avatar)
 * [`sas_sam/flarum-regrole`](https://github.com/SasSam/flarum-regrole)
-* [`serakoi/flarumstaffbadge`](https://github.com/Serakoi/flarumstaffbadge)
+* [`serakoi/flarumstaffbadge`](https://github.com/ThatKoffe/flarumstaffbadge)
 * [`sycho/flarum-force-password-reset`](https://github.com/SychO9/flarum-force-password-reset)
 * [`tohsakarat/save-and-load-draft-automatically`](https://github.com/tohsakrat/save-and-load-draft-automatically)
 * [`tohsakarat/table-of-content`](https://github.com/tohsakrat/flarum-table-of-content)

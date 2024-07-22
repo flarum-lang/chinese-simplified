@@ -14,6 +14,8 @@ fof-polls:
       view_results_without_voting: 无需参与投票即可查看结果
       vote: 参与投票
     settings:
+      allow_image_uploads: 允许上传投票的图片及其选项
+      allow_image_uploads_help: '如果启用，用户将能够上传图片，同时提供图片 URL（如果为选项启用，则始终为投票本身启用）。'
       allow_option_image: 允许图片选项
       enable_global_polls: 启用全站投票
       enable_global_polls_help: 全站投票不与任何帖子绑定，可以从专门的投票页面访问。

@@ -101,7 +101,7 @@ CHANGELOG
 * [`nodeloc/lottery`](https://github.com/nodeloc/lottery)
 * `nodeloc-my-emoji`
 * `nodeloc-referral`
-* `nodeloc-telegram`
+* [`nodeloc/telegram`](https://github.com/nodeloc/telegram)
 * `nodeloc-whisper`
 * [`ordinaryjellyfish/automod`](https://flarum.org/extension/ordinaryjellyfish/automod)
 * [`peruguitar/flarum-ext-user-portrait`](https://github.com/Anexsoft/peruguitar-flarum-ext-user-portrait)

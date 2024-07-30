@@ -13,6 +13,8 @@ fof-best-answer:
     settings:
       allow_select_own_post: 允许自选
       allow_select_own_post_help: 允许用户将自己的帖子设为最佳回复
+      discussion_sidebar_jump_button: 在讨论的侧边栏中显示跳转到最佳答案的按钮
+      discussion_sidebar_jump_button_help: 在讨论的侧边栏添加一个可以跳转到帖子流中的最佳答案的按钮。
       documentation: 文档
       enable_all_tags_button: 为所有标签启用最佳回复
       enable_all_tags_reminder_button: 为所有标签启用提醒功能
@@ -62,6 +64,8 @@ fof-best-answer:
     best_answer_label: '由 <a>{username}</a> 于 {time_set} 选择'
     composer:
       titlePlaceholder: 标题
+    discussion:
+      jump_to_best_answer_button: 查看最佳答案
     errors:
       mismatch: 您选择的帖子在当前主题中不存在
     filter:

@@ -3,10 +3,130 @@
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
 kilowhat-cimaise:
+  admin:
+    permissions:
+      createCommunityAlbums: 创建社区相册
+      createPersonalAlbums: 创建个人相册
+      editOwnAlbum: 修改自己相册的标题和描述
+      editOwnImage: 在自己的图片上使用图片编辑器（裁剪、蒙版和贴画）
+      editOwnPublishedImage: 在发布后使用图像编辑器编辑自己的图片
+      hideOwnAlbum: 隐藏自己的相册
+      hideOwnPicture: 隐藏自己的图片
+      licenseOwnPublishedPicture: 在发布后更改自己的图片许可
+      publishSilently: 悄悄发布图片（不包括活动帖子）
+      renameOwnPublishedPicture: 在发布后可更改自己的图片的标题和描述
+      uploadCommunityPicturesWithoutApproval: 在社区相册中上传无需审核的图片
+      uploadPersonalPicturesWithoutApproval: 在私人相册中上传无需审核的图片
+      uploadPictures: 上传图片
+      view: 查看
+      viewExif: '查看 EXIF 数据（包括地理位置）'
   forum:
     album-list:
+      empty: 无相册
+      load-more: '=> kilowhat-cimaise.ref.load-more'
+      loading: '=> kilowhat-cimaise.ref.loading'
+      new: 创建新的相册
       title: '=> kilowhat-cimaise.ref.albums'
+    album-search:
+      title: '=> kilowhat-cimaise.ref.albums'
+    album-show:
+      community: 社区相册
+      discussion: 前往讨论
+      empty: 无图片
+      loading: '=> kilowhat-cimaise.ref.loading'
+      personal: '由 <a>{username}</a> 创建的个人相册'
+      upload: 上传图片
+    album-thumbnail:
+      by-user: '=> kilowhat-cimaise.ref.by-user'
+      controls: '=> kilowhat-cimaise.ref.controls'
+      delete: '=> kilowhat-cimaise.ref.delete'
+      delete-confirmation: '确定要删除相册“{title}”吗？'
+      edit: 编辑
+      hide: '=> kilowhat-cimaise.ref.hide'
+      restore: '=> kilowhat-cimaise.ref.restore'
+    attach-album-modal:
+      no-results: 无结果
+      none-selected: 无
+      search: 搜索
+      select: 选择
+      selected: 已选择：
+      submit: 提交
+      title: '将相册附加到“{title}”'
+      unselect: 取消选择
+    badge:
+      awaiting-approval: 等待通过中
+      favorite: 收藏
+      hidden: 隐藏
+    discussion-controls:
+      attach-album: 附加或分离相册
+    edit-album-modal:
+      title: '编辑相册“{title}”'
+    edit-album:
+      create: 创建相册
+      description: 描述
+      isCommunity: 社区相册（每个人都可以上传）
+      save: 保存相册
+      title: 标题
+    edit-picture:
+      description: 描述
+      title: 标题
+    editable-attribute:
+      author: 点击添加作者
+      description: 点击添加描述
+      title: 点击添加标题
+    license-label:
+      not-specified: 未指定
+      not-specified-help: 检查网站使用条款以了解默认版权
     nav:
       albums: '=> kilowhat-cimaise.ref.albums'
       pictures: '=> kilowhat-cimaise.ref.pictures'
       user-pictures: '=> kilowhat-cimaise.ref.pictures'
+    new-album-modal:
+      title: 新相册
+    picture-controls:
+      approve: 通过
+      controls: '=> kilowhat-cimaise.ref.controls'
+      delete: '=> kilowhat-cimaise.ref.delete'
+      delete-confirmation: '删除图片“{title}”？'
+      editor: 编辑、裁剪和蒙版
+      hide: '=> kilowhat-cimaise.ref.hide'
+      remove-favorite: 移除收藏
+      restore: '=> kilowhat-cimaise.ref.restore'
+      set-favorite: 添加到收藏
+    picture-list:
+      empty: 无图片
+      load-more: '=> kilowhat-cimaise.ref.load-more'
+      loading: '=> kilowhat-cimaise.ref.loading'
+      title: 全部图片
+    picture-show:
+      back-album: 回到相册
+      download: 下载
+      download-cropped: '已裁剪 {size}'
+      download-original: 下载原始图像
+      loading: '=> kilowhat-cimaise.ref.loading'
+      next: 下一张图片
+      previous: 上一张图片
+      published-at: '已发布 {ago}'
+      show-exif: '全部 EXIF 数据'
+      taken-at: '已上传 {ago}'
+    picture-sort:
+      latest: 最新上传
+      latestTake: 最新拍摄
+      oldest: 最早上传
+      oldestTake: 最早拍摄
+    picture-thumbnail:
+      by-user: '=> kilowhat-cimaise.ref.by-user'
+      in-album: 在
+    post-stream:
+      uploaded: '{username} 已上传 {count} 张图片'
+    upload-modal:
+      drop-file: 或者拖放到此处
+      processing: 处理中
+      publishSilently: 静默发布
+      reload: 重新加载草稿列表
+      select-file: 选择文件
+      submit: 提交
+      submitInComposer: 继续
+      title: '在相册“{title}”中上传图片'
+      titleInComposer: 编辑图片
+      uploading: 上传中

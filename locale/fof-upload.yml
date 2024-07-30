@@ -16,6 +16,7 @@ fof-upload:
     help_texts:
       client_extension: "默认情况下，上传器将根据 MIME 类型选择一个安全的文件扩展名。\n对于某些基于 ZIP 或二进制数据的文件类型，这可能导致使用不正确的通用扩展名。\n在这里，您可以输入一个逗号分隔的文件扩展名列表，该列表将被逐字保留。\n"
       composer_buttons: "默认情况下，媒体管理按钮和上传按钮皆可见。您可以选择只显示其中一个按钮。\n"
+      custom_s3_url: "如果您使用的是需要特定 URL 格式的 S3 兼容服务（例如 Backblaze B2），或者您遇到默认 URL 格式的问题，请使用此设置。对于大多数服务，此设置通常不是必需的。确保 URL 包含协议（https://）并且格式正确。示例：https://your-bucket.s3.your-region.backblazeb2.com\n"
       disable-download-logging: "（默认启用）保持开启，以便在将来查看下载记录及其他数据。打开下方的开关，即可停止记录下载日志。\n"
       disable-hotlink-protection: "（默认启用）防盗链将通过验证 CSRF TOKEN 和 POST ID 来保护你的文件不会被其他站点调用下载。\n"
       download_templates: "启用模板后，您上传的文件将按模板样式显示于帖子中，并增加了“预览”、“下载”等按钮。 当前可用：\n"
@@ -42,6 +43,7 @@ fof-upload:
         acl: 访问控制列表（ACL）
         advanced_title: '高级 S3 存储设置'
         bucket: 存储空间（Bucket）
+        custom_url: '自定义 S3 URL'
         endpoint: 访问域名（Endpoint）
         key: Key
         region: 地域（Region）

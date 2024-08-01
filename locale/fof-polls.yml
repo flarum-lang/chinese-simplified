@@ -11,6 +11,7 @@ fof-polls:
       self_post_edit: '编辑自己帖子上的 *所有* 投票（需要帖子编辑权限）'
       start: 发起投票
       start_global: 发起全站投票
+      upload_images: 允许用户上传图片来投票
       view_results_without_voting: 无需参与投票即可查看结果
       vote: 参与投票
     settings:
@@ -63,6 +64,7 @@ fof-polls:
         alt_label: 图片替代文本
         help: 在投票时展示图片（可选）。
         label: 投票图片
+        later_help: 你将能在创建投票之后上传图片。
       poll_option_image:
         help: 在投票结论旁展示图片（可选）。
         label: 投票结论图片
@@ -115,7 +117,7 @@ fof-polls:
       badge: 投票
       votes: '{count, plural, one {#} other {#}} 人投票'
     upload_image:
-      remove_button: 移除图片
-      upload_button: 选择图片
+      remove_button: 删除图片
+      upload_button: 上传图片
     votes_modal:
       title: 投票详情

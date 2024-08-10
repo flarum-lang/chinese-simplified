@@ -99,7 +99,7 @@ CHANGELOG
 * `nodeloc-dislikes`
 * `nodeloc-ignore-hidden-tags`
 * [`nodeloc/lottery`](https://github.com/nodeloc/lottery)
-* `nodeloc-my-emoji`
+* [`nodeloc/flarum-ext-my-emoji`](https://github.com/nodeloc/flarum-ext-my-emoji)
 * `nodeloc-referral`
 * [`nodeloc/telegram`](https://github.com/nodeloc/telegram)
 * `nodeloc-whisper`

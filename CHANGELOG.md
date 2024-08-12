@@ -96,7 +96,7 @@ CHANGELOG
 * [`nearata/flarum-ext-maintenance-mode`](https://github.com/Nearata/flarum-ext-maintenance-mode)
 * [`nearata/flarum-ext-password-strength-enforcer`](https://github.com/Nearata/flarum-ext-password-strength-enforcer)
 * [`nearata/flarum-ext-related-discussions`](https://github.com/Nearata/flarum-ext-related-discussions)
-* `nodeloc-dislikes`
+* [`nodeloc/dislikes`](https://github.com/nodeloc/Dislikes)
 * `nodeloc-ignore-hidden-tags`
 * [`nodeloc/lottery`](https://github.com/nodeloc/lottery)
 * [`nodeloc/flarum-ext-my-emoji`](https://github.com/nodeloc/flarum-ext-my-emoji)

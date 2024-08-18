@@ -10,7 +10,13 @@ clarkwinkelmann-jwt-cookie-login:
       audience: 'JWT 受众/Firebase 项目 ID'
       audienceHelp: '验证令牌的 <code>aud</code> 属性。 不使用 Firebase 时可选'
       cookieName: Cookie名称
+      emailTemplate: 邮件模板
+      emailTemplateHelp: '使用 <code>{sub}</code> 语法以使用 JWT 中的属性'
+      hiddenIframe: '隐藏 iframe URL'
+      hiddenIframeHelp: "此 iframe 将在 Flarum 单页应用的所有页面上以不出现在屏幕中的形式加载。它可以用于定期刷新 cookie，也可以使用浏览器消息（这里说的是事件吗？）来触发页面刷新以便自动登录或登出。请参阅 README 以获得详细信息。\n"
       publicKey: 公钥
       publicKeyAlgorithm: 公钥算法
       publicKeyAlgorithmHelp: '只有公钥才需要。 示例：RS256'
       publicKeyHelp: '留空则使用 Google Firebase 密钥'
+      usernameTemplate: 用户名模板
+      usernameTemplateHelp: '使用 <code>{sub}</code> 语法以使用 JWT 中的属性'

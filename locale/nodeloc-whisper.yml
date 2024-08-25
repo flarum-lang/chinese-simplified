@@ -9,3 +9,6 @@ nodeloc-whisper:
     settings:
       return_key: 回车发送消息
       title: Whisper设置
+  forum:
+    dropdown:
+      tooltip: 对话

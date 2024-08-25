@@ -8,4 +8,5 @@ nodeloc-telegram:
       field:
         botToken: 机器人Token令牌
         botUsername: 机器人用户名
+        enableNotifications: 启用通知
       title: 'Telegram 设置'

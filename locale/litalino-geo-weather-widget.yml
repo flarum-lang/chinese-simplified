@@ -4,6 +4,7 @@
 
 geo-weather:
   forum:
+    not-supported: 此浏览器不支持定位。
     temp: 0°
     unknown: 未知
     widget:

@@ -27,6 +27,7 @@ kilowhat-wordpress:
     settings:
       api_key: 'Flarum API Key'
       api_key_reset: '生成新的 API 密钥'
+      api_key_reset_confirm: "您真的想生成新的共享 API 密钥吗？ 旧的将停止工作，并且必须在 WordPress 插件设置中手动更新。\n"
       comment_tag: 新评论主题贴的标签
       comment_tag_custom: 自定义值
       comment_tag_custom_help: '标签 ID（半角逗号分隔）'

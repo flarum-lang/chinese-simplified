@@ -7,4 +7,6 @@ justoverclock-auto-post-count-badge:
     settings:
       icon-manager:
         title: 图标管理器
+      label-manager:
+        title: 文本标签管理器
       tier: '层 {tier} ：从 {from} 到 {to} 帖子'

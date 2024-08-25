@@ -4,6 +4,9 @@
 
 danirod-plausible:
   admin:
+    settings:
+      enable:
+        label: 启用
     validation:
       domain:
         regex: 给定的域无效

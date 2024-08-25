@@ -7,3 +7,5 @@ justoverclock-users-map-location:
     adminLocationField: 位置
     mapBox-api-key: 'MapBox 公共令牌'
     mapBox-api-key-help: '在<a>https://account.mapbox.com/</a>上取回你的免费公共令牌'
+  forum:
+    locationDescription: 在这里，您可以设置您的位置。请务必仅指定您的城市名称。

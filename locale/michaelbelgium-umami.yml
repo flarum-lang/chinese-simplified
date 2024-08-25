@@ -7,4 +7,5 @@ michaelbelgium-umami:
     widget:
       live: 实时
       views: 页面浏览量
+      visitors: 游客
       visits: 访问

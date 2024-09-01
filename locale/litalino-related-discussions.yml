@@ -4,5 +4,6 @@
 
 litalino-related-discussions:
   admin:
+    DiscussionPageLayout: 在主题帖页面底部展示相关主题
     relatedLimit: '要显示的相关讨论（默认 4）'
     relatedLimit-help: 在这里写下你想看到的讨论数量（例如“4”）

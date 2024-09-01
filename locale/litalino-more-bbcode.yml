@@ -5,8 +5,8 @@
 imeepo-more-bbcode:
   admin:
     permissions:
-      bypass_like_label: 忽略点赞查看标签
-      bypass_reply_label: 忽略回复查看标签
+      bypass_like_label: 免点赞查看
+      bypass_reply_label: 免回复查看
   forum:
     button_tooltip_acronym: 插入术语
     button_tooltip_audio: 插入音频
@@ -106,7 +106,7 @@ imeepo-more-bbcode:
     like_to_see: '此内容 {like} 并刷新后可见'
     login_to_see: '此内容 {login} 并刷新后可见'
     quote:
-      wrote: 写道
+      wrote: ：
     reply_to_see: '此内容 {reply} 并刷新后可见'
     size_18: '字号 18'
     size_20: '字号 20'

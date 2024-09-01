@@ -25,7 +25,7 @@ kilowhat-cimaise:
       empty: 无相册
       load-more: '=> kilowhat-cimaise.ref.load-more'
       loading: '=> kilowhat-cimaise.ref.loading'
-      new: 创建新的相册
+      new: 创建新相册
       title: '=> kilowhat-cimaise.ref.albums'
     album-search:
       title: '=> kilowhat-cimaise.ref.albums'

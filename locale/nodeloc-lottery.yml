@@ -13,7 +13,7 @@ nodeloc-lottery:
       start: 开始抽奖
       view_results_without_Enter: 不投票便能查看结果
     settings:
-      allow_option_image: '允许为每个彩票选项设置一个图片 URL'
+      allow_option_image: 允许为选项提供图像地址
       max_options: 每个彩券的最大选项数
       options_color_blend: 彩票选项中的颜色混合文字
       options_color_blend_help: 使用这个来启用颜色混合以让彩票选项更具可读性。如果这个功能使你的论坛外观出现问题降低了可读性，请禁用。

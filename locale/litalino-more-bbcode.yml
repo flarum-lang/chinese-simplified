@@ -5,8 +5,8 @@
 imeepo-more-bbcode:
   admin:
     permissions:
-      bypass_like_label: 忽略显示的点赞
-      bypass_reply_label: 忽略显示的最佳回复
+      bypass_like_label: 忽略点赞查看标签
+      bypass_reply_label: 忽略回复查看标签
   forum:
     button_tooltip_acronym: 插入术语
     button_tooltip_audio: 插入音频

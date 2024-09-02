@@ -32,7 +32,7 @@ blomstra-horizon:
         redis-cpu-user: 'Redis CPU 用户态消耗'
         redis-max-memory: 'Redis 最大内存'
         redis-memory-policy: 'Redis 内存策略'
-        redis-memory-policy-tooltip: "内存策略是指 Redis 在达到最大内存限制时应当选择哪些数据来移除。\n默认为 `noeviction`：新的数据在达到内存限制时不会被保存。\n点击查看文档。\n"
+        redis-memory-policy-tooltip: "内存策略是指 Redis 在达到最大内存限制时应当选择哪些数据来移除。\n默认为 `noeviction`：内存使用达到上限时不再保存新的数据。\n点击查看文档。\n"
         redis-peak-memory: 'Redis 峰值内存'
         redis-used-memory: 'Redis 已用内存'
         status:

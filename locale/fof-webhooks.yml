@@ -75,7 +75,7 @@ fof-webhooks:
       help:
         disabled: '此 Webhook 已被禁用，因为它没有启用事件。'
         general: '您可以在这里添加、编辑、删除论坛中的 webhooks。'
-        tags: '选择 WebHook 生效的标签。'
+        tags: '选择 Webhook 生效的标签。'
         url: '要运行的 Webhook 终端'
       item:
         tag_any_label: 任一标签

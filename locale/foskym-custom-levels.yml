@@ -4,11 +4,74 @@
 
 foskym-custom-levels:
   admin:
+    auto_remove:
+      - 始终保留经验
+      - 首帖/回帖被隐藏或删除时（默认）
+      - 首帖/回帖被永久删除时（默认）
+    go_to_forum_quests: 更多计划任务设置
+    levels:
+      add_button: 添加等级
+      delete_confirmation: 确定要删除这个等级吗？
+      edit_level: 编辑等级
+      min_exp_required: 所需经验
+      name: 等级名称
+    pages:
+      index: 首页
+      levels: 等级
+    permissions:
+      edit_exp: 调整用户经验
+    preview: 预览
     settings:
-      expDesc: '可用的变量：[expTotal]'
+      autoRemove: 自动清除经验
+      cascadeRemove: 删除主题时自动撤销相关回帖的经验值
+      discussionMaxTimes: '日发布主题数量，0 表示无限制'
+      expDesc: '可用变量：[expTotal] [expPercent] [nextLevel] [expToNextLevel]'
+      expForDiscussion: 主题经验值
+      expForDiscussionDesc: '请输入整数或范围数。例如：「[1, 10]」表示 1 至 10 的随机数'
+      expForLike: 点赞经验值
+      expForLikeDesc: '需要启用 flarum/likes 扩展程序。请输入整数或范围数。例如：「[1, 10]」表示 1 至 10 的随机数'
+      expForPost: 回帖经验值
+      expForPostDesc: '请输入整数或范围数。例如：「[1, 10]」表示 1 至 10 的随机数'
       expFormula: '输入经验值的计算公式（例如：「[discussionCount] * 40 + [commentCount] / 20」)'
       expFormulaDesc1: 您可以使用以下变量：
       expFormulaDesc2: "您可以使用以下核心变量来计算经验值：\n\n- [discussionCount]：讨论次数\n- [commentCount]：评论次数\n\n请根据这些变量输入您的经验值计算公式。"
-      expText: '输入要显示的经验值文本（例如：「[expTotal] 经验」）'
-      levelDesc: '可用的变量：[level]'
-      levelText: '输入要显示的等级文本（例如：等级, 级别)'
+      expText: '输入经验值文本（例如「[expTotal] 经验」）'
+      levelDesc: '可用变量：[level]'
+      levelText: 输入等级称呼（例如：等级、级别)
+      postMaxTimes: '日回帖数量，0 表示无限制'
+      postMinLength: '回帖最小字数，0 表示无限制'
+  forum:
+    label:
+      exp_logs: 经验志
+    log:
+      exp: 变更
+      load_more: 加载更多
+      no_more: 已经到底啦
+      no_records: 暂无记录
+      reason: 原因
+      time: 时间
+      type:
+        automoderator: 'Auto moderator'
+        comment_deleted_in_deleted_discussion: 回帖随主题帖一并删除
+        discussion_deleted: '主题删除「{title}」'
+        discussion_hidden: '主题隐藏「{title}」'
+        discussion_restored: '主题还原「{title}」'
+        discussion_started: '主题发布「{title}」'
+        post_deleted: 删帖
+        post_hidden: 隐藏贴
+        post_liked: 获赞
+        post_posted: 发帖
+        post_restored: 还原贴
+        system_clear: 系统清除
+        system_refresh: 系统刷新
+      view: 查看
+    modal:
+      current: 当前
+      submit_button: 保存
+      title: 调整经验
+    notifications:
+      level_updated: '恭喜，您已晋升 {level}！'
+    settings:
+      notify_level_updated: 通知等级变化
+    user_controls:
+      edit_exp_button: 调整经验

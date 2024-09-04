@@ -4,12 +4,16 @@
 
 flarum-ext-keywords:
   admin:
+    addRow: 添加定义
     definition: 定义
-    parseonce: 只解析帖子中首次出现的术语
+    parseonce: 只高亮文本中首次出现的术语
     removedef: 删除
-    word: 词条
+    word: 词汇
   forum:
+    definition: 定义
+    loadMore: 加载更多
     pagetitle: 术语表
     searchtext: 搜索术语…
     tagline: 想了解更多本站使用的术语吗？请查阅术语表
+    term: 术语
     title: 术语表

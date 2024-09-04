@@ -34,4 +34,4 @@ fof-filter:
   forum:
     flag_message: 敏感词匹配
     flaged_text: 包含敏感词
-    flagger_name: 包含敏感词
+    flagger_name: 'Auto Moderator'

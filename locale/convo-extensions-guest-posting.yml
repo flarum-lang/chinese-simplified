@@ -9,8 +9,9 @@ core:
 guest-posting:
   admin:
     settings:
-      enableImport: 在注册时启用现有帖子的导入
-      title: 访客发布设置
+      enableImport: 注册账户时关联已发布帖子
+      sessionLifetime: 访客身份会话有效时间
+      title: 访客发帖设置
       usernames: 为访客生成随机用户名
   forum:
     alert:
@@ -22,4 +23,4 @@ guest-posting:
       guest: 访客
     modal:
       import: '导入我的 {count} 个访客帖子'
-      import-votes: '导入我的 {postCount} 访客帖子和 {voteCount} 个投票'
+      import-votes: '导入我的 {postCount} 个访客帖子和 {voteCount} 个投票'

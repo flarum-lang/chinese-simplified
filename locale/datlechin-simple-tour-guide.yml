@@ -20,11 +20,13 @@ datlechin-simple-tour-guide:
       allow_close_label: 允许关闭
       show_progress_help: 在弹出框顶部展示当前步数和步骤总数。
       show_progress_label: 显示进度
+      skip_null_elements_help: '当无法找到步骤对应的 HTML 元素时，跳过该步骤，同时使「上一步」按钮无法返回到该步骤。启用此项后，请关闭「显示进度」选项，以免进度和步骤展示不对应。此功能可用于针对特定语言环境才展示某些步骤的场景，例如设置一个步骤的目标元素为「html[lang="es"] 你的选择器」。'
+      skip_null_elements_label: 跳过无效步骤
     target: 目标
     target_placeholder: '步骤的目标元素（例如 #element-id）。'
     title: 标题
     title_placeholder: 步骤的标题。
-    trigger_click: 触发单击
+    trigger_click: 触发一次点击事件
     'yes': 是
   forum:
     done_btn_text: 完成
@@ -33,4 +35,4 @@ datlechin-simple-tour-guide:
     progress_text: '{current} / {total}'
     user_controls:
       reset_tour_guide: 重新开始教程
-      reset_tour_guide_confirmation: 您确定要强制此用户再次开始教程吗？
+      reset_tour_guide_confirmation: 确定要强制此用户重新开始引导教程吗？

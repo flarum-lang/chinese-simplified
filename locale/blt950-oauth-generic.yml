@@ -7,6 +7,24 @@ fof-oauth:
     settings:
       providers:
         generic:
-          client_id_label: ID
-          client_secret_label: 密匙
-          description: '根据自定义 OAuth2 提供程序设置登录名。'
+          authorization_endpoint_label: 验证服务接口端点
+          client_id_label: '客户端 ID'
+          client_secret_label: 客户端私钥
+          description: '根据自定义 OAuth2 提供程序完成登录设置。'
+          display_name_parameter_label: 外显名称参数
+          email_address_parameter_label: 邮箱地址参数
+          force_email_label: '<歧义> 强制邮箱地址（0 是，1 否）'
+          force_name_label: '<歧义> 外显名称（0 是，1 否）'
+          force_userid_label: '<歧义> 强制用户ID（0 是，1 否）'
+          id_parameter_label: '用户 ID 参数'
+          scopes_label: Scope
+          token_endpoint_label: 令牌服务接口端点
+          user_information_endpoint_label: 用户信息服务接口端点
+  forum:
+    log_in:
+      with_generic_button: '=> fof-oauth.forum.log_in.with_button'
+    providers:
+      generic: '=> fof-oauth.lib.providers.generic'
+  lib:
+    providers:
+      generic: 自定义

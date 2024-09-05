@@ -4,6 +4,10 @@
 
 foskym-oauth-center:
   admin:
+    action:
+      delete_all_records_button: 删除所有记录
+      delete_all_records_confirm: 确认删除所有记录
+      delete_all_records_success: 成功删除所有记录
     clients:
       add_button: 添加应用
       client_desc: 描述
@@ -36,6 +40,7 @@ foskym-oauth-center:
       visible_fields: 可见字段
     settings:
       access_lifetime: 访问令牌有效期（秒）
+      allow_delete_records: 允许删除授权记录
       allow_implicit: 允许隐式授权（response_type=token）
       authorization_method_fetch: '授权使用 Fetch 方式请求（非直接重定向）'
       display_mode: 显示模式
@@ -51,6 +56,9 @@ foskym-oauth-center:
       deny: 拒绝
       require_these_scopes: 该应用需要以下权限
     authorized:
+      delete_all_button: 删除所有日志
+      delete_all_confirm: 确认删除所有日志
+      delete_button: 删除日志
       load_more: 加载更多
       no_more_records: 没有更多记录了
       no_records: 暂无记录

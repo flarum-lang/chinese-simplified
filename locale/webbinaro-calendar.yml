@@ -5,27 +5,31 @@
 flarum-calendar:
   admin:
     basics:
-      homepage: 当前月份
+      homepage: 本月
     permissions:
-      add: 创建新活动日程
-      moderate: 移除或编辑日程活动（所有用户都可以编辑他们自己的活动）
+      add: 创建活动日程
+      moderate: 移除或编辑活动日程（所有用户均可编辑各自的活动）
       view: 浏览活动
+    settings:
+      hide_host: 不展示主办方
   forum:
     button:
       create: 新活动
       landing: 活动日程
       login: '添加你的活动 '
     event:
-      details: 添加活动细节
-      ends: '结束于:'
-      hosted_by: '主办方:'
-      starts: '开始于:'
+      confirm_delete: 确定要删除这个活动吗？
+      deleted: 已删除活动
+      details: 更多活动细节
+      ends: 结束：
+      hosted_by: 主办：
+      starts: 开始：
     modal:
-      dates_label: 何时
-      description_label: 内容
-      description_placeholder: 活动详情
-      requirement_message: 活动事件需要名称和描述
+      dates_label: 活动时间
+      description_label: 活动内容
+      description_placeholder: 详情内容
+      requirement_message: 请填写活动名称和内容
       submit: 提交
-      title_create: 创建新的日历事件
+      title_create: 添加新活动
       title_edit: 编辑活动详情
-      title_label: 什么
+      title_label: 活动主题

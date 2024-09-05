@@ -6,33 +6,33 @@ cccyun-clogin-oauth:
   admin:
     appid_label: 应用程序标识符（APPID）
     appkey_label: 应用程序密钥（APPKEY）
-    appurl_help: '必须要以 http://或https://开头，必须要以 /结尾'
-    appurl_label: API链接
-    openqq_label: 开启QQ登录
+    appurl_help: '必须以 http:// 或 https:// 开头，且以 / 结尾'
+    appurl_label: 聚合登录接口地址
+    openqq_label: '开启 QQ 登录'
     opensina_label: 开启微博登录
     openwx_label: 开启微信登录
   forum:
     alerts:
-      already_linked: 第三个帐户已链接！
-      already_used: 第三方帐户已链接到其他用户！
+      already_linked: 第三方账号已绑定！
+      already_used: 此第三方账号已被其他用户绑定！
       error: 糟糕，出错啦！请刷新页面重试。
-      link_success: 第三方帐户链接成功。
-      unlink_success: 第三方帐户取消链接成功。
-      unlinked: 此第三方账号未绑定任何用户，请先注册并绑定。
+      link_success: 第三方账号绑定成功。
+      unlink_success: 第三方账号解绑成功。
+      unlinked: 此第三方账号未绑定任何用户，请先注册再绑定。
     modals:
       buttons:
-        cancel: 不！
-        confirm: 是，取消链接帐户
-      confirm_qq: 你确定要取消你的QQ帐户链接吗？
-      confirm_sina: 您确定要取消链接您的微博帐户吗？
-      confirm_wx: 你确定要取消微信帐户的链接吗？
-      link_qq: 链接QQ帐户
-      link_sina: 链接微博帐户
-      link_wx: 链接微信账号
-      no_providers: 您没有绑定任何其他登录提供商！您可能需要重置密码。
-      unlink_qq: 取消链接QQ帐户
-      unlink_sina: 取消链接微博帐户
-      unlink_wx: 取消链接微信帐户
-    with_qq_button: 登录QQ
-    with_sina_button: 微博登录
-    with_wx_button: 微信登录
+        cancel: 取消
+        confirm: 确定解绑
+      confirm_qq: '确定要解绑 QQ 帐号吗？'
+      confirm_sina: 确定要解绑微博账号吗？
+      confirm_wx: 确定要解绑微信账号吗？
+      link_qq: '绑定 QQ 帐号'
+      link_sina: 绑定微博账号
+      link_wx: 绑定微信账号
+      no_providers: 您没有其他登录手段，请先重置账户密码。
+      unlink_qq: '解绑 QQ 帐号'
+      unlink_sina: 解绑微博账号
+      unlink_wx: 解绑微信账号
+    with_qq_button: 'QQ 账号登录'
+    with_sina_button: 微博账号登录
+    with_wx_button: 微信账号登录

@@ -4,19 +4,24 @@
 
 serakoi-flarumstaffbadge:
   admin:
+    permissions:
+      canEditStaffBadge:
+        label: 编辑工作人员头衔
+      canEditTagList:
+        label: 编辑标签列表
     staffBadge:
-      help: '工作人员徽章文本（默认为 "STAFF"）'
-      label: 员工头衔文字
+      help: 工作人员头衔文本（默认为「STAFF」）
+      label: 头衔文本
     staffBadgeTextBg:
-      help: '徽章颜色（默认为"rgb(70, 209, 96)"）'
-      label: 工作人员徽章背景颜色
+      help: '工作人员头衔背景颜色（默认为「rgb(70, 209, 96)」）'
+      label: 头衔背景色
     staffBadgeTextColor:
-      help: '徽章颜色（默认为 "#fff"）'
-      label: 职员徽章颜色
+      help: '工作人员头衔文本颜色（默认为「#fff」）'
+      label: 头衔文本色
   forum:
     edit_user:
-      heading: 工作人员徽章已启用
-      placeholder: 输入内容为“true”来启用徽章
+      heading: 已启用工作人员头衔
+      placeholder: 输入文本「true」启用头衔
       tagList:
         heading: 用户标签列表
-        placeholder: '以“,”分隔'
+        placeholder: '以英文逗号分隔（,）'

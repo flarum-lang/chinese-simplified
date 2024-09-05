@@ -24,7 +24,7 @@ blomstra-payments:
       enable-bounties: 启用捐赠
     settings:
       assign-bounty-tag-id: 获得首次捐赠后分配给主题帖的标签
-      link-access-portal: '*歧义* 在用户会话下拉菜单中链接访问门户'
+      link-access-portal: '*歧义* 在用户会话下拉菜单中添加门户链接'
       link-to-terms: '支付条款 URL'
       pk: 公钥（api）
       recount-total-discussion-bounties: 重新计算主题帖捐赠金额
@@ -41,7 +41,7 @@ blomstra-payments:
       subscribed: 已订阅
     backers-widget:
       backers: 参与支持
-      label: '{currency} {sum} 总金额'
+      label: '总金额 {currency} {sum}'
       none: 暂无人参与支持。
       pledged: 总金额
     bounties:

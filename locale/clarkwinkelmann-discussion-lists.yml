@@ -5,51 +5,51 @@
 clarkwinkelmann-discussion-lists:
   admin:
     permissions:
-      createPrivate: 创建私密主题合集
-      createPublic: 创建公开主题合集
+      createPrivate: 创建私密主题列表
+      createPublic: 创建公开主题列表
       createSeriesFromAny: 使用其他用户的内容创建主题合集
       createSeriesFromOwn: 使用自己的内容创建主题合集
-      moderate: 修改和删除主题合集
-      viewPrivate: 查看所有私密主题合集
-      viewPublic: 查看公开主题合集
+      moderate: 修改和删除主题列表
+      viewPrivate: 查看所有私密主题列表
+      viewPublic: 查看公开主题列表
     settings:
-      collapseSeries: 默认收起合集
+      collapseSeries: 默认收起精选合集
   api:
-    manualLimit: '手动排序的列表不能包含超过 50 个主题'
-    seriesAnyAddNotAllowed: 您只能将自己的主题添加到系列列表中
-    seriesAnyConversionNotAllowed: 无法将列表转换为系列，因为它包含不属于您自己的主题
+    manualLimit: '手动排序的列表最多能添加 50 个主题'
+    seriesAnyAddNotAllowed: 只能添加自己发布的主题
+    seriesAnyConversionNotAllowed: 列表中包含其他作者发布的主题，因此无法转换为合集
   forum:
     badge:
-      private: 私人列表
-      series: 公开系列
+      private: 私密列表
+      series: 精选合集
     discussion:
       add: 添加到列表
-      new: 新列表
+      new: 创建列表
     edit:
       delete: 删除
-      deleteConfirmation: 是否确实要永久删除此列表？
+      deleteConfirmation: 确定永久删除此列表？
       name: 名称
       ordering: 排序
       orderingOptions:
-        addedAsc: 添加到列表中（从最少到最新）
-        addedDesc: 添加到列表中（从最近到最少）
-        createdAsc: 讨论创建（从最早到最新）
-        createdDesc: 讨论创建（从最新到最旧）
+        addedAsc: 添加时间（从最早到最新）
+        addedDesc: 添加时间（从最新到最早）
+        createdAsc: 主题创建时间（从最早到最新）
+        createdDesc: 主题创建时间（从最新到最早）
         manual: 手动
       save: 保存
-      title: 编辑合集
+      title: 编辑列表
       visibility: 可见性
       visibilityOptions:
         private: 私密
-        public: 公开列表
-        series: 公开系列
+        public: 公开
+        series: 精选合集
     profile:
       link: 列表
     series:
-      expand: 扩大
-      kind: 系列
-      visit: 显示所有内容
+      expand: 展开
+      kind: 合集
+      visit: 显示所有
 core:
   forum:
     index_sort:
-      discussionListDefault_button: 在列表中排序
+      discussionListDefault_button: 排序

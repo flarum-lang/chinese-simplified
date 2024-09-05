@@ -28,7 +28,7 @@ clarkwinkelmann-scout:
       queue: 处理队列中的索引更新
       queueHelp: '只有在 Flarum 中配置了异步队列驱动程序后，该选项才会生效。'
       tntsearchFuzziness: 'TNT Search 模糊查询（拼写错误/变体匹配）'
-      tntsearchFuzzyDistance: 'TNT Search 模糊搜索莱文斯坦距离算法（可选）'
+      tntsearchFuzzyDistance: 'TNT Search 模糊搜索莱文斯坦距离（可选）'
       tntsearchFuzzyMaxExpansions: 'TNT Search 模糊搜索最大匹配词数（可选）'
       tntsearchFuzzyPrefixLength: 'TNT Search 模糊搜索前缀长度（可选）'
       tntsearchMaxDocs: 'TNT Search 最大文档数（可选，最大结果数）'

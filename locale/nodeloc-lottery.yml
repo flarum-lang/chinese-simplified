@@ -44,7 +44,7 @@ nodeloc-lottery:
       allow_cancel_enter_label: 允许用户退出投票
       allow_multiple_votes_label: 允许人们参加多个选项
       amount: 数目
-      best_answers: 最佳答案
+      best_answers: 最佳回复
       date_placeholder: 开奖时间
       discussions_started: 讨论已开始
       edit_title: 编辑抽奖

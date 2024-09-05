@@ -50,7 +50,7 @@ askvortsov-auto-moderator:
     in_group_settings:
       regex: 用于匹配的正则表达式（无首尾斜杠）
     metric_drivers:
-      best_answers: 最佳答案得成量
+      best_answers: 最佳回复得成量
       discussions_entered: 主题帖浏览量
       discussions_participated: 主题参与数
       discussions_started: 主题发布量

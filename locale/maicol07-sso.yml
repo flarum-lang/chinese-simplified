@@ -6,15 +6,15 @@ maicol07-sso:
   admin:
     settings:
       client_api_key: 'API 密钥'
-      client_api_key_help: '本 Flarum 应用的 API 密钥。'
-      client_name: 名称
-      client_name_help: 'Flarum 应用的名称'
+      client_api_key_help: 'Flarum 应用程序的 API 密钥。'
+      client_name: 客户端名称
+      client_name_help: 'Flarum 应用程序的名称'
       client_password_token: 密码令牌
-      client_password_token_help: '一个随机的密码令牌，用于 Flarum 应用的注册。'
+      client_password_token_help: '一个随机的密码令牌，用于 Flarum 应用程序的注册。'
       client_url: URL
-      client_url_help: 'Flarum 应用的 URL'
+      client_url_help: 'Flarum 应用程序的 URL'
       client_verify_ssl: '验证 SSL'
-      client_verify_ssl_help: '在向 Flarum 应用发送请求时验证 SSL（推荐）。'
+      client_verify_ssl_help: '在向 Flarum 应用程序发送请求时验证 SSL（推荐）。'
       cookies_prefix: 'Cookie 前缀'
       jwt_iss: 'Issuer Domain'
       jwt_section_subtitle: 'JWT Addon 设置'
@@ -24,10 +24,10 @@ maicol07-sso:
       logout_url: 退出登录链接
       manage_account_btn_open_in_new_tab: 在新标签页中打开账户管理
       manage_account_url: 管理账户连接
-      provider_mode: 启用该选项以使用提供商模式（Flarum网站间的SSO），允许其他Flarum网站登录该Flarum网站账户，这将禁用其它网站的SSO功能。
+      provider_mode: '要使其他 Flarum 站点能够登录本站账号，请启用此项以切换到服务提供商模式（Flarum 站点间的单点登录）。此功能会禁用本站其他第三方账号的单点登录。'
       remove_login_btn: 移除登录按钮
       remove_signup_btn: 移除注册按钮
       signup_url: 注册链接
       title: 单点登录（SSO）设置
   forum:
-    manage_account_btn: 管理账户
+    manage_account_btn: 管理账号

@@ -4,8 +4,22 @@
 
 muhammedsaidckr-gemini:
   admin:
+    permissions:
+      use_gemini_assistant_label: '使用 Gemini 助手'
     settings:
-      api_key_help: '从 <a>google.gemini.com</a> 获取Gemini API密钥。'
-      api_key_label: API密钥
+      api_key_help: '前往 <a>google.gemini.com</a> 获取 Gemini API 密钥。'
+      api_key_label: 'API 密钥'
+      enable_on_discussion_started_help: 发布主题时，基于首贴内容生成一个回复。
+      enable_on_discussion_started_label: 发布主题时启用
+      enabled_tags_help: '<歧义>选择用于生成回复的标签。'
+      enabled_tags_label: 生效标签
       model_help: 选择要使用的模型。
-      model_label: 模范例子
+      model_label: 模型
+      prompt_help: '提示词用于生成回答，[title] 变量应保持不变。'
+      prompt_label: 提示词
+      role_help: 选择对话角色。
+      role_label: 角色
+      user_prompt_badge_help: 显示在用户提示词旁边的文本标记。
+      user_prompt_badge_label: 用户提示词标记
+      user_prompt_help: '参与生成回答的用户 ID，默认为主题作者。'
+      user_prompt_label: 用户提示词

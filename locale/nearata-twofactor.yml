@@ -5,9 +5,9 @@
 nearata-twofactor:
   admin:
     permissions:
-      can_enable_twofactor: 启用两步验证
+      can_enable_twofactor: 使用双重验证
     settings:
-      generate_app_backups: 生成应用的备份码
+      generate_app_backups: 生成备份验证码
       generate_backups: 生成恢复代码
   forum:
     invalid_twofa_code: 两步验证码错误
@@ -18,40 +18,40 @@ nearata-twofactor:
       title: 两步验证
     login:
       app:
-        invalid_passcode: 通行证无效。
-        passcode_placeholder: 6位通行证
+        invalid_passcode: 验证码无效。
+        passcode_placeholder: '6 位验证码'
       auth_buttons:
-        app: '2FA 身份验证器'
-      placeholder_label: 请选择一种验证方式…
+        app: '2FA 验证器'
+      placeholder_label: 请选择一种验证方式……
       submit_button_label: 登录
-      title: 双因素身份验证（2FA）
+      title: 双重身份验证（2FA）
     settings:
       app:
-        button_help: '你将在验证器内收到 2FA 验证代码。'
-        button_label: '2FA 验证器'
+        button_help: 您可以在验证器内查看验证码。
+        button_label: 身份验证器
         setup:
           close_button_label: 关闭
           disable:
             button_label: 禁用
-            enter_code_disable: '输入验证码以继续禁用 2FA 验证器。'
+            enter_code_disable: '输入验证码以禁用 2FA 验证器。'
             success: 验证器已禁用。
           enable:
             backups:
               copy_button_label: 复制
               download_button_label: 下载
-              download_file_format: "{website_title} | {website_url}\n\n请将这些备份代码保存在安全但可访问的地方。\n\n代码列表\n\n{codes}\n\n* 每个备份代码你只能使用一次。\n* 这些代码必须按照列出的顺序使用。\n* 这些代码生成于： {date}。\n"
-              message: "请将这些恢复代码保存在一个安全的地方。如果你丢失了启用双因素的设备，这些临时代码可以按照列出的顺序用来登录你的账户。\n"
+              download_file_format: "{website_title} | {website_url}\n\n请将这些备份代码保存在可安全访问的地方。\n\n恢复代码列表\n\n{codes}\n\n* 每个恢复代码只能使用一次。\n* 必须按照列出的顺序使用恢复代码。\n* 以上恢复代码生成于 {date}。\n"
+              message: "请将这些恢复代码保存在一个安全的地方。如果您丢失了 2FA 验证设备，可以按列出的顺序使用这些临时代码来登录账号。\n"
             button_label: 启用
             enter_code_manually: 改为手动输入
-            scan_qr: '使用你的 2FA 设备扫描这个二维码以设置你的账户。'
-            success: 启用验证器成功。
-          invalid_passcode: '密码或 2FA 通行证错误。'
-          passcode_placeholder: 6位通行证
+            scan_qr: '使用 2FA 设备扫描这个二维码以设置您的账户。'
+            success: 验证器已启用。
+          invalid_passcode: 密码或验证码错误。
+          passcode_placeholder: '6 位验证码'
           password_placeholder: 密码
-          title: '设置你的 2FA 验证器'
+          title: 设置您的身份验证应用
       configured: 已配置
       not_configured: 未配置
-      section_title: 双因素身份验证（2FA）
+      section_title: 双重验证（2FA）
     setup_button: 两步验证
     setup_modal:
       backups:
@@ -75,6 +75,6 @@ nearata-twofactor:
     edit_user:
       app:
         label: '2FA 身份验证器'
-      disable_confirmation: 你确定吗？你将禁用该用户的本验证方式。
+      disable_confirmation: 确定要禁用此用户的当前验证方式吗？
       placeholder_text: 均未开启，无法禁用
-      section_title: 双因素身份验证（2FA）
+      section_title: 双重身份验证

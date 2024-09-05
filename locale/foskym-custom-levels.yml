@@ -62,6 +62,7 @@ foskym-custom-levels:
         post_liked: 获赞
         post_posted: 发帖
         post_restored: 还原贴
+        post_unliked: 帖子未获赞
         system_clear: 系统清除
         system_refresh: 系统刷新
       view: 查看

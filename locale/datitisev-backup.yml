@@ -25,6 +25,12 @@ datitisev-backup:
         bucket:
           description: '要上传到的 S3 存储桶。'
           label: 桶
+        credentials-key:
+          description: 'AWS 凭据密钥'
+          label: Key
+        credentials-secret:
+          description: 'AWS 凭据私钥'
+          label: 私钥
         credentials:
           key:
             description: 'AWS credentials key'
@@ -52,6 +58,19 @@ datitisev-backup:
         access-token:
           description: '生成一个 oAuth 2 访问令牌 @ https://www.dropbox.com/developers/apps.'
           label: 'Access Token'
+        help:
+          obtain-access-code-button: '打开 Dropbox'
+          obtain-access-code-label: '获取访问代码（需要 App Key）'
+          obtain-refresh-token-button: 使用代码
+          obtain-refresh-token-label: '使用访问代码获取刷新令牌（需要 App Key 和 Secret）'
+          obtain-refresh-token-success: 刷新令牌获取成功，请保存。
+        key:
+          label: 'App Key'
+        refresh-token:
+          description: '在下方获取刷新令牌，或根据指引手动生成：https://www.codemzy.com/blog/dropbox-long-lived-access-refresh-token#how-can-i-get-a-refresh-token-manually'
+          label: 刷新令牌
+        secret:
+          label: 'App Secret'
       ftp:
         host:
           description: '要连接到的 FTP 主机名，例如 <em>ftp.yourdomain.local</em>。'
@@ -81,6 +100,12 @@ datitisev-backup:
           description: '要在 FTP 服务器上进行身份验证的用户名。'
           label: 用户名
       gdrive:
+        client-id:
+          description: "根据指引创建 Google Project 并获取 Client ID 和 Client Secret：https://github.com/ivanvermeyen/laravel-google-drive-demo/blob/master/README/1-getting-your-dlient-id-and-secret.md\n"
+          label: 'Client ID'
+        client-secret:
+          description: ' '
+          label: 'Client Secret'
         client:
           id:
             description: "按照 @ https://github.com/ivanvermeyen/laravel-google-drive-demo/blob/master/README/1-getting-your-dlient-id-and-secret.md 的指示，创建一个 Google 项目，并取回您的 Client ID 和 Client Secret。\n"
@@ -91,6 +116,9 @@ datitisev-backup:
         folder:
           description: 'https://drive.google.com/drive/u/0/folders/ID'
           label: 'Folder ID'
+        help:
+          test_button: 测试连接
+          test_success_alert: '成功连接 Google Drive，请保存设置。'
         refresh-token:
           description: "按照 @ https://github.com/ivanvermeyen/laravel-google-drive-demo/blob/master/README/2-getting-your-refresh-token.md 的指引，取回您的 Google oAuth 应用程序刷新令牌。\n"
           label: 刷新令牌
@@ -98,6 +126,7 @@ datitisev-backup:
         target:
           description: 指定用于存储备份的本地目录。
           label: 目标路径
+      name_label: 'Location Name'
       title: '配置 {adapter}'
     adapters:
       aliyun: 阿里云
@@ -113,6 +142,9 @@ datitisev-backup:
       sftp: SFTP
       webdav: Webdav
       zip: 'Zip Archive'
+    create_button: 新建适配器
+    delete_button: 删除
+    delete_confirmation: '确定要删除「{name}」（{adapter}）'
     nav:
       description: 存储您的论坛副本。
       label: 备份

@@ -4,9 +4,9 @@
 
 club-1-server-side-highlight:
   admin:
-    dark_theme_bg_color: 暗色系背景色
-    dark_theme_highlight_theme: 暗色系高亮主题
-    dark_theme_text_color: 暗色系字体颜色
-    light_theme_bg_color: 浅色系背景色
-    light_theme_highlight_theme: 浅色系高亮主题
-    light_theme_text_color: 浅色系字体颜色
+    dark_theme_bg_color: 夜间模式背景色
+    dark_theme_highlight_theme: 夜间模式高亮主题
+    dark_theme_text_color: 夜间模式文本色
+    light_theme_bg_color: 日间模式背景色
+    light_theme_highlight_theme: 日间模式高亮主题
+    light_theme_text_color: 日间模式文本色

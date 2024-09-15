@@ -13,7 +13,7 @@ CHANGELOG
 **新增翻译**:
 
 * [`blomstra/database-queue`](https://github.com/blomstra/flarum-ext-database-queue)
-* [`blomstra/gdpr`](https://github.com/blomstra/flarum-ext-gdpr)
+* [`blomstra/gdpr`](https://github.com/flarum/gdpr)
 * [`blomstra/horizon`](https://github.com/blomstra/flarum-ext-horizon)
 * [`blt950/oauth-generic`](https://github.com/blt950/flarum-ext-oauth-generic)
 * [`clarkwinkelmann/flarum-ext-meilisearch-dashboard`](https://github.com/clarkwinkelmann/flarum-ext-meilisearch-dashboard)

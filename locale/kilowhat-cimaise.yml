@@ -5,33 +5,80 @@
 kilowhat-cimaise:
   admin:
     permissions:
+      attachCimaiseAlbum: 人工关联相册与主题帖
       createCommunityAlbums: 创建社区相册
       createPersonalAlbums: 创建个人相册
       editOwnAlbum: 修改自己相册的标题和描述
-      editOwnImage: 在自己的图片上使用图片编辑器（裁剪、蒙版和贴画）
+      editOwnImage: 使用图片编辑器（裁剪、蒙版和贴画）编辑自己的图片
       editOwnPublishedImage: 在发布后使用图像编辑器编辑自己的图片
       hideOwnAlbum: 隐藏自己的相册
       hideOwnPicture: 隐藏自己的图片
-      licenseOwnPublishedPicture: 在发布后更改自己的图片许可
-      publishSilently: 悄悄发布图片（不包括活动帖子）
-      renameOwnPublishedPicture: 在发布后可更改自己的图片的标题和描述
-      uploadCommunityPicturesWithoutApproval: 在社区相册中上传无需审核的图片
-      uploadPersonalPicturesWithoutApproval: 在私人相册中上传无需审核的图片
+      licenseOwnPublishedPicture: 在发布后更改自己的图片许可证
+      moderate: 管理
+      publishSilently: 悄悄发布图片（不生成事件帖）
+      renameOwnPublishedPicture: 在发布后更改自己图片的标题和描述
+      uploadCommunityPicturesWithoutApproval: 在社区相册中上传图片无需审核
+      uploadPersonalPicturesWithoutApproval: 在个人相册中上传图片无需审核
       uploadPictures: 上传图片
       view: 查看
       viewExif: '查看 EXIF 数据（包括地理位置）'
+    settings:
+      autoCreateDiscussionAlbum: 自动为新主题帖创建相册
+      autoCreateDiscussionAlbumHelp: "自动创建与主题帖关联的相册，标题、作者同主题帖。此功能适用于所有标签，且不受相册创建权限限制。\n"
+      columnTheme: 分栏样式
+      columnThemeHelp: 使用侧边面板展示图片。
+      license-add: 添加许可证
+      license-description: 许可描述
+      license-key: 键名
+      license-label: 许可名称
+      licenses: 许可
+      mapboxToken: 'Mapbox 令牌'
+      mapboxTokenHelp: 填写有效的令牌，以在图片元数据下显示地理位置地图。
+      neverSyncDiscussionAlbumTitles: 永不同步主题帖和相册标题
+      neverSyncDiscussionAlbumTitlesHelp: "默认情况下，重命名主题帖时，同步更新相关联的相册标题。手动重命名相册标题后，则不再同步更新。\n"
+      requireLicense: 要求选择许可证
+      requireLicenseHelp: "默认情况下，无需选择许可证。 请确保在您的网站使用条款中阐述无许可证情况下的照片使用限制。\n"
+      sticker-add: 添加贴纸
+      sticker-key: 键名
+      sticker-label: 文本
+      sticker-url: URL
+      stickers: 贴纸
+      watermarkFile: 水印图片
+      watermarkFileHelp: '在上传时按 1:1 比例应用水印图片。'
+      watermarkPlacement: 水印位置
+      watermarkPlacementOptions:
+        bottomLeft: 左下
+        bottomRight: 右下
+        topLeft: 左上
+        topRight: 右上
+    status:
+      loading: 正在加载……
+      pictures:
+        drafts: '（{count} 草稿）'
+        section: 图片
+      refresh: 刷新
+      storage:
+        conversions: '转换：{size}'
+        originals: '原图：{size}'
+        section: 存储（预估）
+  api:
+    post-edit:
+      cannotAttachAlreadySubmitted: '不能重复关联图片 {id}'
+      cannotAttachHasNoAlbum: 当前主题未关联相册
+      cannotAttachToNonComment: 不能将图片关联到零回复的主题
+      cannotFindPicturesFromRelation: 未能从数据库中找到请求的图片
   forum:
     album-list:
-      empty: 无相册
+      empty: 暂无相册
       load-more: '=> kilowhat-cimaise.ref.load-more'
       loading: '=> kilowhat-cimaise.ref.loading'
-      new: 创建新相册
+      new: 创建相册
       title: '=> kilowhat-cimaise.ref.albums'
     album-search:
       title: '=> kilowhat-cimaise.ref.albums'
     album-show:
       community: 社区相册
-      discussion: 前往讨论
+      discussion: 查看主题帖
       empty: 无图片
       loading: '=> kilowhat-cimaise.ref.loading'
       personal: '由 <a>{username}</a> 创建的个人相册'
@@ -40,7 +87,7 @@ kilowhat-cimaise:
       by-user: '=> kilowhat-cimaise.ref.by-user'
       controls: '=> kilowhat-cimaise.ref.controls'
       delete: '=> kilowhat-cimaise.ref.delete'
-      delete-confirmation: '确定要删除相册“{title}”吗？'
+      delete-confirmation: '确定要删除相册「{title}」吗？'
       edit: 编辑
       hide: '=> kilowhat-cimaise.ref.hide'
       restore: '=> kilowhat-cimaise.ref.restore'
@@ -51,16 +98,16 @@ kilowhat-cimaise:
       select: 选择
       selected: 已选择：
       submit: 提交
-      title: '将相册附加到“{title}”'
+      title: '将相册关联到「{title}」'
       unselect: 取消选择
     badge:
       awaiting-approval: 等待通过中
       favorite: 收藏
-      hidden: 隐藏
+      hidden: 已隐藏
     discussion-controls:
-      attach-album: 附加或分离相册
+      attach-album: 关联或取消关联相册
     edit-album-modal:
-      title: '编辑相册“{title}”'
+      title: '编辑相册「{title}」'
     edit-album:
       create: 创建相册
       description: 描述
@@ -87,10 +134,10 @@ kilowhat-cimaise:
       approve: 通过
       controls: '=> kilowhat-cimaise.ref.controls'
       delete: '=> kilowhat-cimaise.ref.delete'
-      delete-confirmation: '删除图片“{title}”？'
+      delete-confirmation: '删除图片「{title}」？'
       editor: 编辑、裁剪和蒙版
       hide: '=> kilowhat-cimaise.ref.hide'
-      remove-favorite: 移除收藏
+      remove-favorite: 取消收藏
       restore: '=> kilowhat-cimaise.ref.restore'
       set-favorite: 添加到收藏
     picture-list:
@@ -99,16 +146,16 @@ kilowhat-cimaise:
       loading: '=> kilowhat-cimaise.ref.loading'
       title: 全部图片
     picture-show:
-      back-album: 回到相册
+      back-album: 返回相册
       download: 下载
-      download-cropped: '已裁剪 {size}'
-      download-original: 下载原始图像
+      download-cropped: '裁切尺寸 {size}'
+      download-original: 下载原图
       loading: '=> kilowhat-cimaise.ref.loading'
       next: 下一张图片
       previous: 上一张图片
-      published-at: '已发布 {ago}'
+      published-at: '发布于 {ago}'
       show-exif: '全部 EXIF 数据'
-      taken-at: '已上传 {ago}'
+      taken-at: '拍摄于 {ago}'
     picture-sort:
       latest: 最新上传
       latestTake: 最新拍摄
@@ -122,11 +169,11 @@ kilowhat-cimaise:
     upload-modal:
       drop-file: 或者拖放到此处
       processing: 处理中
-      publishSilently: 静默发布
+      publishSilently: 悄悄发布
       reload: 重新加载草稿列表
       select-file: 选择文件
       submit: 提交
       submitInComposer: 继续
-      title: '在相册“{title}”中上传图片'
+      title: '上传图片到「{title}」'
       titleInComposer: 编辑图片
       uploading: 上传中

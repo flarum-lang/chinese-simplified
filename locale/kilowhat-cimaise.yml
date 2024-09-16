@@ -62,10 +62,28 @@ kilowhat-cimaise:
         originals: '原图：{size}'
         section: 存储（预估）
   api:
+    picture-edit:
+      unauthorized:
+        author: 无效作者，未授权编辑
+        crop: 无效裁剪，未授权编辑
+        description: 无效描述，未授权编辑
+        isApprovedApprove: 无效审核状态，无法批准
+        isApprovedUnApprove: 无效审核状态，无法撤销
+        isDraftSubmit: 无效草稿状态，无法提交
+        isDraftUnSubmit: 无效草稿状态，无法丢弃
+        isFavorite: 无效收藏状态，未授权编辑
+        isHiddenHide: 无效隐藏状态，无法隐藏
+        isHiddenRestore: 无效隐藏状态，无法恢复
+        license: 无效许可，未授权编辑
+        stickers: 无效贴纸，未授权编辑
+        takenAt: 无效拍摄日期，未授权编辑
+        title: 无效标题，未授权编辑
     post-edit:
       cannotAttachAlreadySubmitted: '不能重复关联图片 {id}'
+      cannotAttachFromExternalAlbum: '不能将图片 {id} 关联到外部相册'
       cannotAttachHasNoAlbum: 当前主题未关联相册
       cannotAttachToNonComment: 不能将图片关联到零回复的主题
+      cannotAttachUnauthorized: '无法关联他人的图片 {id}'
       cannotFindPicturesFromRelation: 未能从数据库中找到请求的图片
   forum:
     album-list:
@@ -177,3 +195,13 @@ kilowhat-cimaise:
       title: '上传图片到「{title}」'
       titleInComposer: 编辑图片
       uploading: 上传中
+  ref:
+    albums: 相册
+    by-user: "\_"
+    controls: 控制
+    delete: 删除
+    hide: 隐藏
+    load-more: 加载更多
+    loading: 正在加载……
+    pictures: 图片
+    restore: 还原

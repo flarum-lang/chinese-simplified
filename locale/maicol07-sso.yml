@@ -24,7 +24,7 @@ maicol07-sso:
       logout_url: 退出登录链接
       manage_account_btn_open_in_new_tab: 在新标签页中打开账户管理
       manage_account_url: 管理账户连接
-      provider_mode: '要使其他 Flarum 站点能够登录本站账号，请启用此项以切换到服务提供商模式（Flarum 站点间的单点登录）。此功能会禁用本站其他第三方账号的单点登录。'
+      provider_mode: '其他 Flarum 站点如需使用本站账号登录，请启用此项以切换到服务提供商模式（Flarum 站点间的单点登录）。此功能会禁用当前站点的其他第三方账号登录。'
       remove_login_btn: 移除登录按钮
       remove_signup_btn: 移除注册按钮
       signup_url: 注册链接

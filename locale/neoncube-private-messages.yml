@@ -5,6 +5,7 @@
 neoncube-private-messages:
   admin:
     permissions:
+      allow_users_to_receive_email_notifications: 允许用户通过邮件接收私信通知
       start_label: 发送私信
     settings:
       return_key: 回车发送消息
@@ -15,7 +16,7 @@ neoncube-private-messages:
       chat_with: '私信 {username}'
       messages_multiple: '{count} 条消息'
       messages_single: 新建会话
-      read: 阅读
+      read: 已读
       send: 发送
       start: 发起会话
       start_of_conversation: 会话开始
@@ -32,5 +33,15 @@ neoncube-private-messages:
       submit: 发送消息
       title: 创建会话
     notifications:
+      email:
+        new_private_message:
+          manageEmailSettings: 邮件通知
+          subject: '消息来自 {user}'
+          viewMessage: 查看消息
+          youHaveReceivedNewMessage: '{user} 给您发送了一条消息。'
       message_received: 测试
+      new_private_message: 有人私信我
       notify_message_received: 有人私信我
+      web:
+        new_private_message:
+          body: '消息来自 {fromUser}'

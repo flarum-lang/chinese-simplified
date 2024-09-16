@@ -10,8 +10,12 @@ justoverclock-related-discussions:
     relatedTitle: 「相关主题」标题
     relatedTitle-help: 自定义「相关主题」的标题
     showExcerpt: 显示摘要
+    showTooltip: 显示摘要提示框
   forum:
+    avatarTooltip: 发布于
+    deleted: 已删除
     hasBestAnswer: 已解决
+    hasBestAnswer-title: 此主题已被标记为已解决
     participants: 参与者
     postedOn: 于
     postnumber: 回复数

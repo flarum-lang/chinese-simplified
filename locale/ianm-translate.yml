@@ -41,7 +41,7 @@ ianm-translate:
           help: '（可选）如果您的 LibreTranslate 服务器需要 API 密钥，请在此处输入。'
           label: '=> ianm-translate.lib.settings.api-key'
         port:
-          help: 'LibreTranslate 服务器的端口。如果您正在运行自己的实例，请在此处输入端口。'
+          help: 'LibreTranslate 服务器的端口。如果您使用自己的服务，请在此处输入端口。'
           label: 服务器端口
         url:
           help: 'LibreTranslate 服务器 URL。如果您正在运行自己的实例，请在此处输入 URL，含 `http`或`https`。'
@@ -49,8 +49,8 @@ ianm-translate:
       provider: 翻译服务提供商
       readme-info: '查看 README 文档获取更多信息。'
       readme-none: 此驱动程序无额外设置。
-      seemless: 无缝翻译
-      seemless-help: 测试功能。启用后，所有用户内容都将自动翻译成所有其他可用的论坛语言。当用户查看多语言内容时，译文将自动显示。
+      seemless: 自动翻译
+      seemless-help: 测试功能。启用此项，自动翻译所有用户内容为论坛可选语言。用户查看多语言内容时，自动显示译文。
       translate-all-enabled: 启用所有翻译语言
       translate-all-help: 启用此项，管理员和其它有权限的人可以将内容翻译成任一已安装语言。
       translate-polls: 翻译投票
@@ -60,7 +60,7 @@ ianm-translate:
   forum:
     composer:
       multi-languages: 提示：您可以输入您选择的语言，论坛会为您翻译。
-    detected-language: '本帖使用 {postLang}'
+    detected-language: '原始语言 {postLang}'
     discussion:
       post:
         close-translation: 关闭翻译
@@ -74,7 +74,7 @@ ianm-translate:
         image-alt: 投票图片替代文本（如有）
         option: '投票选项 {number}'
         original-title: 原始语言
-        question: 投票主题
+        question: 投票问题
         subtitle: 投票副标题
         title: 管理投票译文
       save-changes: '=> core.ref.save_changes'

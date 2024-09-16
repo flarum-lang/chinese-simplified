@@ -4,7 +4,26 @@
 
 justoverclock-frontend-blog:
   admin:
+    charLim: 字符限制
+    charLim-help: 输入最多可展示的文字数量
+    defaultImage: 默认头图
+    defaultImage-help: 如果首贴不含图片，则使用此图片
     numberOfPost: 文章数量
-    numberOfPost-help: 在这里输入你想显示的帖子的数量
-    setBlogIndexPage: 将前端博客拓展设为主页
-    sorting: 最新或热门讨论？(默认为最新的)
+    numberOfPost-help: 输入要展示的帖子数量
+    setBlogIndexPage: 将前端博客拓展程序设为主页
+    showHeaderHero: 展示欢迎横幅
+    showPinnedDiscussions: 展示最近的三个置顶主题
+    sorting: 排序方式（默认为最新）
+    sorting-help: 按新鲜出炉排序，请填写「-createdAt」；按热门主题排序，请填写「-commentCount」
+  forum:
+    allDiscussions: 论坛
+    linkToDiscussion: ' 查看主题'
+    loginButton: 登录
+    menuButton: 菜单
+    post: '{count} 帖子'
+    postedOn: ' 发布于： '
+    readMore: 阅读更多
+    recentDiscussions: 最近主题：
+    signupButton: 注册
+    stickyTitle: 置顶主题
+    titlePage: 论坛主题

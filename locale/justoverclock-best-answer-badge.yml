@@ -4,7 +4,7 @@
 
 justoverclock-best-answer-badge:
   admin:
-    minimumBa: 显示徽章的最佳答案
-    minimumBa-help: 在此输入用户获得徽章所需的最低最佳最好答案
+    minimumBa: 最佳回复徽章显示条件
+    minimumBa-help: 用户需获得多少个最佳回复才能获得此徽章
   forum:
-    bestAnswer: 收到的最佳答案
+    bestAnswer: 最佳回复

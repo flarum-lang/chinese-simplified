@@ -4,5 +4,5 @@
 
 justoverclock-composer-autocomplete:
   admin:
-    settingsSubTitle: 在这个页面中，你可以为作曲家自动完成配置你的预定义句子。
-    settingsTitle: 自动完成键和值：
+    settingsSubTitle: 为文本编辑器配置预定义文本，按下快捷键完成自动补全。
+    settingsTitle: 自动补全

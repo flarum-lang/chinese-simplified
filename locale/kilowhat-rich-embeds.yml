@@ -4,17 +4,53 @@
 
 kilowhat-rich-embeds:
   admin:
+    permissions:
+      disableOnAnyPost: 禁用任意帖子的嵌入内容
+      disableOnOwnPost: 禁用自己帖子的嵌入内容
+      refreshOnAnyPost: 刷新任意帖子的嵌入内容
+      refreshOnOwnPost: 刷新自己帖子的嵌入内容
+      useOnOwnPost: 在自己的帖子中使用嵌入内容
+      viewGoogleDriveThumbnails: '调用 API 以查看 Google Drive 缩略图'
+    preview:
+      loading: 正在加载……
+      refresh: 刷新
+      title: 预览
+    section:
+      flarum: Flarum
+      github: GitHub
+      google: Google
+      googledrive: 'Google Drive'
+      siteSpecificHelp: "以下为可选的特定配置，用以改善无法通过 OpenGraph 和 HTMl 获取数据时的情况。部分配置需要调用第三方 API，请自行关注相关接口的限流方案。\n"
+      youtube: YouTube
     settings:
       blacklist: 'URL 黑名单'
+      blacklistHelp: '请查看文档了解填写格式。属于黑名单 URL 的内容不会采用富文本展示和图片代理'
       cacheProxy: 缓存代理图片
       cacheProxyHelp: 客户端将缓存图片到本地
-      imageProxy: 图片代理
-      imageProxyHelp: 拦截所有图片请求至代理服务器
+      flarumApiPreviews: '启用高级 Flarum 预览'
+      flarumApiPreviewsHelp: "解析所有 Flarum 论坛的公开 JSON 数据。仅支持解析 Flarum 1.4 及以上版本，且包含 <code>X-Powered-By</code> 响应头的 Flarum 论坛。\n"
+      githubApiKey: 'GitHub API 密钥'
+      githubApiKeyHelp: '填写密钥以启用 GitHub 存储库、议题、拉去请求和私有存储库等内容的嵌入。'
+      githubOrgWhitelist: 组织白名单
+      githubOrgWhitelistHelp: "启用预览的 GitHub 组织列表，以英文逗号分隔。配置白名单不仅可以降低 API 的调用量，也可以防止非预期的私有存储库暴露，还能够用来自定义组织的嵌入样式。 留空表示嵌入所有 API 可访问的存储库。\n"
+      googleApiAuthConfig: 'Google SDK Auth 配置路径或 JSON'
+      googleApiAuthConfigHelp: "此设置用于下方 YouTube 和 Google Drive 服务。 请填写 JSON 内容，或存放 JSON 内容的验证文件路径。留空则表示 Google API SDK 自动通过环境变量读取 API 密钥或服务账户。\n"
+      googleApiKey: 'Google SDK API 密钥'
+      googleApiKeyHelp: "此设置用于下方 YouTube 和 Google Drive 服务。 留空则表示 Google API SDK 自动通过环境变量读取 API 密钥或服务账户。\n"
+      googledriveApiPreviews: '启用高级 Google Drive 内容预览'
+      googledriveApiPreviewsHelp: "需配置 Google API SDK。启用此项以显示云盘文件标题和预览。要嵌入私密文件，请配置具有相应权限的服务账号。\n"
+      imageEmbeds: 图片富文本展示
+      imageEmbedsHelp: "经黑/白名单过滤过，使用 BBCode 或 Markdown 展示外部图片的附加信息。更改此设置后，请清除 Flarum 缓存以生效。\n"
+      imageProxy: 'OpenGraph 图片代理'
+      imageProxyHelp: '使用代理服务器加载所有 OpenGraph 和站点图片'
       layout: 布局
       layoutOptions:
         block: 段落
         inline: 行内
         separated: 分离
+      maxImageCount: 图片预览数量
+      maxImageCountHelp: "最多显示多少张 Opengraph 或备用解析的图片。所有图片 URL 均会保存，以便后期更改此设置。\n"
+      maxImageCountPlaceholder: 留空表示无上限
       position: 位置
       positionOptions:
         above: 超链接上方
@@ -24,4 +60,92 @@ kilowhat-rich-embeds:
       styleOptions:
         horizontal: 水平
         vertical: 垂直
+      whitelist: 'URL 白名单'
+      whitelistHelp: 请查看文档了解填写格式。填写白名单后，非白名单内容均视为黑名单处置
       withoutOpengraph: '为无 OpenGraph 数据的页面生成富文本容器'
+      withoutOpengraphHelp: '标题、描述和图片将从页面 HTML 中提取'
+      youtubeApiPreviews: '启用高级 YouTube 内容预览'
+      youtubeApiPreviewsHelp: "需配置 Google API SDK。启用此项以显示更多视频统计信息，以及 SDK 有权限播放的部分私密视频。\n"
+      youtubeNoCookie: '使用无 Cookie iframe 方案'
+      youtubeNoCookieHelp: "使用 YouTube 的无 Cookie 域名播放视频，部分视频可能不支持在此环境下播放。此功能不调用任何 API。\n"
+      youtubePlayer: '允许直接播放 YouTube 嵌入视频'
+      youtubePlayerHelp: "用户点击嵌入视频的播放按钮时，加载 iframe 播放器播放视频，需配置本站内容安全策略（CSP）以允许播放 YouTube 视频。此功能不调用任何 API。\n"
+  api:
+    embed:
+      flarum:
+        discussion:
+          stats:
+            commentCount: 回复
+            createdAt: 发布日期
+            participantCount: 参与者
+          type: 主题帖
+        user:
+          avatarAlt: 头像
+          stats:
+            commentCount: 回复
+            discussionCount: 主题
+            joinTime: 加入日期
+          type: 资料
+      github:
+        issue:
+          stats:
+            commentCount: 评论
+            createdAt: 创建于
+          type: 议题
+        privateRepoSuffix: '[私密]'
+        pull:
+          stats:
+            commentCount: 评论
+            commitCount: 提交
+            createdAt: 创建于
+            reviewCount: 预览
+          type: 拉取请求
+        repo:
+          stats:
+            forkCount: Forks
+            openIssueCount: 开启的议题
+            stargazerCount: Stars
+            subscriberCount: 关注者
+          type:
+            private: 私有存储库
+            public: 公共存储库
+        siteName: GitHub
+      googledrive:
+        file:
+          stats:
+            createdTime: 创建于
+            modifiedTime: 编辑于
+            size: 文件大小
+          thumbnailAlt: 'Google Drive 文件预览'
+          type: 文件
+        siteName: 'Google Drive'
+      youtube:
+        siteName: YouTube
+        video:
+          stats:
+            commentCount: 评论
+            likeCount: 点赞
+            publishedAt: 发布于
+            viewCount: 播放
+          thumbnailAlt: 视频缩略图
+          type: 视频
+    error:
+      blacklistedUrl: 'URL {url} 不在嵌入白名单中。'
+      invalidUrl: 'URL {url} 无效。'
+  lib:
+    controls:
+      disable: 禁用此帖的嵌入内容
+      disableConfirmation: 确定要移除此帖所有的嵌入内容吗？
+      expandDescription: 展开描述
+      imgCopied: 已复制！
+      imgCopy: 复制图片链接
+      imgOpen: 在新标签页中打开图片
+      play: 点击播放嵌入媒体
+      refresh: 刷新数据
+    embed:
+      altAvatar: 作者头像
+      altFavicon: '{website} 图标'
+      altImageFallback: '{website} Opengraph 图像'
+      missing:
+        other: 无法生成此链接的预览
+        retrieving: 获取中……

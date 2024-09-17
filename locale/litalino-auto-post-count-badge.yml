@@ -5,8 +5,13 @@
 justoverclock-auto-post-count-badge:
   admin:
     settings:
+      color:
+        bg1: '背景色 1'
+        bg2: '背景色 2'
       icon-manager:
+        help_text: '=> core.ref.icon_text'
         title: 图标管理器
       label-manager:
+        help: 自定义等级名称
         title: 文本标签管理器
-      tier: '层 {tier} ：从 {from} 到 {to} 帖子'
+      tier: '等级 {tier} ：{from} 到 {to} 帖'

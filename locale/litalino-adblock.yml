@@ -4,9 +4,34 @@
 
 adblock:
   admin:
-    adblock-div: 在出现html代码的位置添加横幅标记
-    adblock-div-placeholder: '例如"#content, .App-content, .IndexPage, container"'
+    adblock-action: 选择提示
+    adblock-action-backup: 附加消息
+    adblock-action-help: 你可以调整默认提示「消息，附加消息」
+    adblock-action-message: 消息
+    adblock-action-notice: 提示
+    adblock-alt: 替代文本
+    adblock-alt-placeholder: 图片替代文本
+    adblock-div: '在 HTML 中添加横幅标签'
+    adblock-div-placeholder: '例如「#content, .App-content, .IndexPage, container"」'
     adblock-img: 图片
     adblock-img-placeholder: 'https://domain/picture.png'
+    adblock-notice-content: 消息内容
+    adblock-notice-content-help: 你可以调整通知内容
+    adblock-notice-content-placeholder: '很抱歉广告打扰到您！为了本站的可持续发展，还请您关闭 AdBlock，或将我们加入白名单，感谢您的理解与配合。'
+    adblock-notice-content-sup: 上标小字
+    adblock-notice-content-sup-placeholder: '点击 × 可关闭本提示。'
+    adblock-notice-element: 在通知中添加标签
+    adblock-notice-element-placeholder: '如「#content, .App-content, .IndexPage, container」'
+    adblock-notice-method: 提示样式
+    adblock-notice-method-help: 你可以调整通知样式
+    adblock-supportRedirectUrl: 「支持我们」链接
+    adblock-supportRedirectUrl-placeholder: '留空或填写一个有效的 URL'
+    adblock-supportUsMessage: 「支持我们」消息
+    adblock-supportUsMessage-placeholder: '请关闭 AdBlocker 以支持我们。'
+    adblock-supportUsTitle: 「支持我们」标题
+    adblock-supportUsTitle-placeholder: 请支持我们
     adblock-url: 链接
     adblock-url-placeholder: 'https://domain'
+  forum:
+    adblock-notice-content: '很抱歉广告打扰到您！为了本站的可持续发展，还请您关闭 AdBlock，或将我们加入白名单，感谢您的理解与配合。'
+    adblock-notice-content-sup: '点击 × 可关闭本提示。'

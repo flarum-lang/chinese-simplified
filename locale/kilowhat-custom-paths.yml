@@ -8,7 +8,11 @@ kilowhat-custom-paths:
       disabled: 未启用该扩展
       extensions:
         askvortsov-categories: 'Askvortsov 传统板块'
+        clarkwinkelmann-composer-page: '文本编辑器页面（ClarkWinkelmann''s Composer Page）'
+        clarkwinkelmann-discussion-bookmarks: '主题书签（ClarkWinkelmann''s Discussion Bookmarks）'
+        clarkwinkelmann-discussion-lists: '主题列表（ClarkWinkelmann''s Discussion Lists）'
         clarkwinkelmann-group-list: 'ClarkWinkelmann 组群一览'
+        clarkwinkelmann-post-bookmarks: '帖子书签（ClarkWinkelmann''s Post Bookmarks）'
         flamarkt-balance: 'Flamarkt 余额'
         flamarkt-categories: 'Flamarkt 分类目录'
         flamarkt-core: 'Flamarkt Core'
@@ -19,16 +23,25 @@ kilowhat-custom-paths:
         flarum-tags: 'Flarum 标签'
         fof-byobu: 'FoF 私密主题'
         fof-gamification: 'FriendsOfFlarum 游戏化'
+        fof-masquerade: '个人资料页签（FriendsOfFlarum''s Masquerade）'
+        fof-moderator-notes: 个人资料页签注释
         fof-pages: 'FoF 静态页面'
         fof-user-directory: 'FoF 会员名录'
         kilowhat-formulaire: 'KILOWHAT Formulaire'
         v17development-blog: 'v17development Flarum 博客'
+        v17development-user-badges: '用户徽章（v17development''s User Badges）'
       head:
         name: 页面名称
         path: 路径
       paths:
         askvortsov-categories: 传统板块
+        clarkwinkelmann-composer-page: 文本编辑器页面
+        clarkwinkelmann-composer-page-tag: 标签文本编辑器页面
+        clarkwinkelmann-discussion-bookmarks: 主题书签
+        clarkwinkelmann-discussion-list: 列表
+        clarkwinkelmann-discussion-lists-profile: 用户列表
         clarkwinkelmann-group-list: 组群一览
+        clarkwinkelmann-post-bookmarks: 帖子书签
         discussion: 主题
         flags: 举报（移动端）
         flamarkt-account: 账户
@@ -45,10 +58,14 @@ kilowhat-custom-paths:
         fof-byobu: 私密主题
         fof-byobu-profile: 个人主题页
         fof-gamification: 排名
+        fof-gamification-user-votes: 我的投票
+        fof-masquerade: 个人资料页面
+        fof-moderator-notes-user-notes: 个人资料注释
         fof-pages: 静态页面
         fof-user-directory: 会员名录
         following: 我的关注
         formulaire-form: 表格
+        formulaire-profile: 资料字段
         formulaire-submission: 我的关注
         index: 全部主题列表（非首页时）
         notifications: 通知（移动端）
@@ -57,10 +74,15 @@ kilowhat-custom-paths:
         tags: 全部标签
         user: 个人主页
         user-discussions: 用户主题帖
+        user-likes: 我的赞
         user-mentions: 用户提及
+        user-security: 我的安全
         v17development-blog-category: 分类目录
         v17development-blog-compose: 写文章
         v17development-blog-overview: 博客首页
         v17development-blog-post: 帖子
+        v17development-user-badges-item: 徽章详情
+        v17development-user-badges-overview: 徽章预览
+        v17development-user-badges-user-badges: 个人徽章
       redirect: '将默认 Flarum 路径重定向到新路径'
       reset: 重置路径

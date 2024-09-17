@@ -5,8 +5,17 @@
 askvortsov-article-series:
   admin:
     edit_tags:
-      is_article_series: 是文章系列吗？
+      is_article_series: 文章合集？
   forum:
     article_item:
       next_article: 下一篇文章
-      prev_article: 上一篇
+      prev_article: 上一篇文章
+    article_list:
+      title: '{series} <sup>其他文章</sup>'
+    article_series_modal:
+      order_label: 排序索引（升序）
+      submit_button: 提交
+      tag_id_label: 文章合集标签
+      title: 文章合集设置
+    discussion_controls:
+      article_series_button: 文章合集设置

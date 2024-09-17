@@ -5,12 +5,29 @@
 nearata-cloudflare:
   admin:
     development_mode_widget:
-      title: Cloudflare开发模式激活
+      title: 'Cloudflare 开发模式激活'
     settings:
-      api_key: API密钥
-      api_key_help: 按照<strong><url>创建API令牌</url></strong>的指南来创建API令牌。
+      api_key: 'API 密钥'
+      api_key_help: '点击前往 <strong><url>创建 API 令牌</url></strong>。'
+      confirm_text: 确定吗？
+      minify_setting:
+        css: '压缩 CSS'
+        css_help: '自动精简本站所有 CSS 文件。'
+        html: '压缩 HTML'
+        html_help: '自动精简本站所有 HTML 文件。'
+        js: '压缩 JS'
+        js_help: '自动精简本站所有 JS 文件。'
+        section_title: 压缩设置
+      r2:
+        access_key_id: '访问密钥 ID'
+        access_key_secret: 访问密钥
+        bucket_name: 存储桶名称
+        public_domain: 公共域名
+        s3_api: 'S3 API'
+        section_title: 'Cloudflare R2'
+      refer_to: '<strong><url>点击此处</url></strong>了解更多内容。'
       refresh_zone_button_label: '刷新区域 ID'
-      refresh_zone_help: '如果域名已更改，点击 <strong>only</strong> 按钮。'
+      refresh_zone_help: '<strong>仅限</strong>域名发生变更后使用。'
       security_level_label: 安全等级
       security_level_options:
         essentially_off: 无感

@@ -3,9 +3,18 @@
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
 geo-weather:
+  admin:
+    apiKey: 'API 秘钥'
+    apiKey-help: '在此粘贴秘钥，点击前往申请 https://openweathermap.org/api'
+    lang: 输出语言
+    lang-help: '填写你的语言代码前缀，如 it、fr、en，详情请看 <strong>https://openweathermap.org/api/one-call-api#multi</strong>'
   forum:
+    clouds: 云层
+    humidity: 湿度
     not-supported: 此浏览器不支持定位。
+    rain: 雨量
     temp: 0°
     unknown: 未知
     widget:
-      title: 地理天气
+      title: 地理位置天气
+    wind: 风速

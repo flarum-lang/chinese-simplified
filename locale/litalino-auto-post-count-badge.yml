@@ -4,6 +4,18 @@
 
 justoverclock-auto-post-count-badge:
   admin:
+    levelFive: '调整等级 5「话痨」图标'
+    levelFive-help: '粘贴 FontAwesome 图标，如「fas fa-square」'
+    levelFour: '调整等级 4「活跃」图标'
+    levelFour-help: '粘贴 FontAwesome 图标，如「fas fa-square」'
+    levelOne: '调整等级 1「潜水」图标'
+    levelOne-help: '粘贴 FontAwesome 图标，如「fas fa-square」'
+    levelSix: '调整等级 6「传说」图标'
+    levelSix-help: '粘贴 FontAwesome 图标，如「fas fa-square」'
+    levelThree: '调整等级 3「吐槽」图标'
+    levelThree-help: '粘贴 FontAwesome 图标，如「fas fa-square」'
+    levelTwo: '调整等级 2「冒泡」图标'
+    levelTwo-help: '粘贴 FontAwesome 图标，如「fas fa-square」'
     settings:
       color:
         bg1: '背景色 1'
@@ -15,3 +27,13 @@ justoverclock-auto-post-count-badge:
         help: 自定义等级名称
         title: 文本标签管理器
       tier: '等级 {tier} ：{from} 到 {to} 帖'
+  forum:
+    hasWritten: '{count} 回帖'
+    less1000post: 传说
+    less100post: 吐槽
+    less10post: 潜水
+    less300post: 活跃
+    less50post: 冒泡
+    less600post: 话痨
+    nextBadge: 徽章位置
+    posts: 帖子

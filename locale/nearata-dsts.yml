@@ -5,16 +5,37 @@
 nearata-dsts:
   admin:
     permissions:
-      can_bypass_like: 无需点赞即可查看首贴
-      can_bypass_login: 可以绕过登录
-      can_bypass_reply: 无需回复即可查看首贴
-      can_use_bbcode: 可以使用BBCode
+      can_bypass_like: 无需点赞即可查看
+      can_bypass_login: 无需登录即可查看
+      can_bypass_reply: 无需回复即可查看
+      can_use_bbcode: '允许使用 BBCode'
     settings:
-      enabled: 开启
+      enabled: 启用
+      fof_upload:
+        enabled: 启用
+        require_like: 需要点赞
+        require_reply: 需要回复
+        section_title: 'FoF Upload'
+      hide_only_first_post: 仅隐藏首帖
       require_like: 需要点赞
       require_like_help: '注意：需要 Flarum Likes 扩展程序。'
       require_reply: 需要回复
   forum:
+    composer:
+      dsts_tooltip: 互动可见
     like: 点赞以解锁内容
     login: 登录以查看内容
+    post:
+      bbcode:
+        hidden_content: 隐藏内容
+        like_text: 点赞以查看内容
+        login_text: 登录以查看内容
+        reply_text: 回复以查看内容
+      fof_upload:
+        like_text: 点赞以查看文件
+        login_text: 登录以查看文件
+        reply_text: 回复以查看文件
+      like_tooltip: 点赞以查看内容
+      login_tooltip: 登录以查看内容
+      reply_tooltip: 回复以查看内容
     reply: 回复以解锁内容

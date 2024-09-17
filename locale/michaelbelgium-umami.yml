@@ -4,6 +4,21 @@
 
 michaelbelgium-umami:
   admin:
+    settings:
+      domain:
+        help: 'Umami 服务使用的域名。'
+        label: 域名
+      errors:
+        no_connection: '获取信息失败，请检查 API 状态。'
+      password:
+        help: '可选。Umami 服务账号的密码，用于仪表板小部件展示'
+        label: 账号密码
+      site_id:
+        help: '前往 Umami 获取本站网站 ID。'
+        label: '网站 ID'
+      username:
+        help: '可选。Umami 服务账号的用户名，用于仪表板小部件展示'
+        label: 账号用户名
     widget:
       live: 实时
       views: 页面浏览量

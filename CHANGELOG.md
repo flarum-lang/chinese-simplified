@@ -196,6 +196,7 @@ CHANGELOG
 * [`fof/ignore-users`](https://github.com/FriendsOfFlarum/ignore-users)
 * [`fof/linguist`](https://github.com/FriendsOfFlarum/linguist)
 * [`fof/links`](https://github.com/FriendsOfFlarum/links)
+* [`fof/mason`](https://github.com/FriendsOfFlarum/mason)
 * [`fof/masquerade`](https://github.com/FriendsOfFlarum/masquerade)
 * [`fof/oauth`](https://github.com/FriendsOfFlarum/oauth)
 * [`fof/polls`](https://github.com/FriendsOfFlarum/polls)

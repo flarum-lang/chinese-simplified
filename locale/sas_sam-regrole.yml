@@ -10,7 +10,7 @@ sas_sam-regrole:
       allowed_roles_text: 这里的角色用户可以自行选择分配。
       forceUsers: 强制用户至少挑选一个角色
       force_users_label: 强制一个用户必须有一个角色
-      force_users_text: 启用后，没有任何角色的用户将被封禁，在他们选择一个角色后才可继续使用论坛（不含有用户组编辑权限的用户）。
+      force_users_text: 启用后，没有任何角色的用户将被封禁，在他们选择一个角色后才可继续使用论坛（具有用户组编辑权限的用户除外）。
       multipleRoles: 允许用户挑选多个角色
       otherOptions: 其它选项
       other_options_heading: 其他选项

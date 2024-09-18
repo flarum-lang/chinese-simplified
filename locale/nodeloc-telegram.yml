@@ -6,7 +6,13 @@ nodeloc-telegram:
   admin:
     settings:
       field:
-        botToken: 机器人Token令牌
+        botToken: '机器人 Token 令牌'
         botUsername: 机器人用户名
         enableNotifications: 启用通知
       title: 'Telegram 设置'
+  forum:
+    link_telegram_button: '绑定 Telegram 账号'
+    log_in_with_telegram_button: 'Telegram 账号登录'
+    settings:
+      notify_by_telegram_heading: Telegram
+      unblock_telegram_bot: 'Telegram 服务机器人可能失效，要重新启用通知，请在 TelegramProvide 上发送消息到 <a>{username}</a>'

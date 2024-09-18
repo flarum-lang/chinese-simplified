@@ -10,37 +10,37 @@ fof-mason:
       delete-answer: 删除答案
       delete-field: 删除字段
       edit-answer: 编辑答案
-      edit-answer-prompt: 编辑所有使用的内容
-      edit-field: 点击以编辑字段
+      edit-answer-prompt: 同步编辑所有使用该内容的地方
+      edit-field: 点击编辑字段
       new-field: 添加字段
       save-answer: 保存答案
       save-field: 保存字段
-      show-user-answers: '显示非建议答案 ({count})'
+      show-user-answers: '显示其他 {count} 个答案'
     fields:
-      add: '添加字段 {field}'
+      add: '添加字段「{field}」'
       description: 字段描述
-      description-help: "可选的描述，以解释这个字段的用途/要求。\n"
-      edit: '编辑字段 {field}'
-      enable-user-values-for-validation: 启用「用户自定义值」以配置表单验证规则
+      description-help: "可选，用于解释字段\n"
+      edit: '编辑字段「{field}」'
+      enable-user-values-for-validation: 要配置校验规则，请启用「用户输入内容」
       icon: 图标
-      icon-help: "显示在这个字段前的图标。可用的图标请查看 <a>FontAwesome 网站</a>，请使用完整图标名，包括前缀，例如「fas fa-bolt」。\n"
+      icon-help: "添加图标到用户输入的内容前。可用图标请参阅 <a>FontAwesome 官网</a>，需要输入完整的图标名，例如「fas fa-bolt」。\n"
       icon-preview: '预览： {preview}'
-      is_suggested: 推荐答案
-      name: 字段名称
-      name-help: "公开可见（不可翻译）的字段名。\n"
+      is_suggested: 建议/预设答案
+      name: 字段名
+      name-help: "外显的字段名称（不可被翻译）。\n"
       new-answer: 新建答案
-      new-answer-placeholder: 在此键入文本
+      new-answer-placeholder: 请输入
       required: 必填
-      save-field-for-answers: 保存此字段以添加选项答案
+      save-field-for-answers: 保存字段以添加答案
       show_when_empty: 显示空字段
       show_when_empty-help: 不论字段是否为空均在主题中显示
-      user_values_allowed: 允许用户输入自定义值
-      user_values_allowed-help: "如果启用此项，用户可以添加自己的值，可以不选择管理员指定的值。 这些值将根据「校验」设置进行检查。 如果禁用此项，他们只能使用「建议」的答案。\n"
-      validation: 校验用户输入的值
-      validation-help: "查看支持的 <a>Laravel 验证规则</a>，例：\"string|min:5\" 或 \"url\"。\n"
+      user_values_allowed: 允许用户输入内容
+      user_values_allowed-help: "启用此项，允许用户添加自定义值，自定义值会经过「校验」检查。否则只能选择管理员定义的「建议」值。\n"
+      validation: 用户输入内容校验
+      validation-help: "有关校验规则，请查阅 <a>Laravel 校验规则文档</a>。示例「string|min:5」或「url」。\n"
     messages:
-      delete-answer-confirmation: "确定要删除答案「{content}」？ 这将从所有使用它的主题中移除该答案，如果您想要保留现有答案请停用答案建议。 删除答案？\n"
-      delete-field-confirmation: "你确定要删除字段「{name}」？ 这将从所有使用它们的主题中移除该字段及其答案。删除字段？\n"
+      delete-answer-confirmation: "确定要删除答案「{content}」吗？此答案将从所有使用的主题中删除，如果需要保留已使用答案的主题效果，无需删除，停用「答案建议」即可。\n"
+      delete-field-confirmation: "确定要删除字段「{name}」吗？该字段将从所有使用的主题中删除。\n"
     permissions:
       fill-fields: 填写新主题的表单
       see-other-fields: 查看所有现有主题的表单
@@ -49,16 +49,16 @@ fof-mason:
       update-other-fields: 更新任意主题的表单
       update-own-fields: 更新自己主题的表单
     settings:
-      column-count: 表单栏数
-      fields-in-hero: 在主题顶部横幅中显示表单（而非首贴中）
-      fields-section-title: 自定义表单标题
-      fields-section-title-help: "用户将在文本编辑器和主题中看到这个文本。\n"
-      fields-section-title-placeholder: 默认为空标题且不显示
+      column-count: 字段列数
+      fields-in-hero: 在主题帖顶部横幅中显示表单（而非首贴中）
+      fields-section-title: 自定义字段区块标题
+      fields-section-title-help: "此标题显示于文本编辑器和主题帖的自定义字段上方。\n"
+      fields-section-title-placeholder: 默认不显示标题
       hide-empty-fields-section: 当所有字段为空且隐藏时，隐藏标题和控件。
       hide-empty-fields-section-help: "默认情况下，如果用户可以编辑字段或设置标题，则即使所有字段都被隐藏，也会始终显示该部分。启用此选项后，该部分将被隐藏，并且当所有字段均为空白时，「编辑字段」按钮仅在「回复」下拉菜单中可用。\n"
-      labels-as-placeholders: 在表单的占位符中显示字段名
-      labels-as-placeholders-help: "表单将占用更少的纵向空间，字段图标将不再显示。请注意，这可能会影响可用性，尤其是在编辑现有字段时。\n"
-      n-columns: '{count} 栏'
+      labels-as-placeholders: 使用字段名作为表单占位文本
+      labels-as-placeholders-help: "紧凑型表单布局。不展示图标，并将字段名展示到输入框内。在编辑现有表单时可能会造成阅读困难。\n"
+      n-columns: '{count} 列'
       tags-as-field: 将标签选择器作为一个字段显示
       tags-as-field-help: "这将隐藏默认的标签选择器，并显示一个自定义的下拉框。只有当您在标签设置中最多允许单个主体选择一个主标签和一个次标签时，此功能才会生效！\n"
       tags-field-name: 标签字段名
@@ -70,15 +70,15 @@ fof-mason:
       settings: 设置
   forum:
     answers-modal:
-      edit-title: '编辑 {title} 的字段'
+      edit-title: '编辑「{title}」的字段'
       save: 保存字段
     answers:
       choose-option: 请选择
-      no-option-selected: 未选择
+      no-option-selected: 请选择选项
     discussion-controls:
       edit-answers: 编辑字段
     post-answers:
       no-answer: 无答案
     tags:
-      inadequate-settings: "标签设置配置不正确。最多允许一个主标签和次标签，或者停用「标签字段」特性。\n"
+      inadequate-settings: "标签设置错误。请禁用「标签即字段」功能，或最多选择 1 个主标签和 1 个次标签。\n"
       tags-label: 标签

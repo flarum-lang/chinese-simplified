@@ -3,11 +3,65 @@
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
 xsoft-mason-tag:
+  admin:
+    buttons:
+      add-answer: 添加答案
+      add-field: 添加字段
+      delete-answer: 删除答案
+      delete-field: 删除字段
+      edit-answer: 编辑答案
+      edit-answer-prompt: 同步编辑所有使用该内容的地方
+      edit-field: 点击编辑字段
+      new-field: 添加字段
+      save-answer: 保存答案
+      save-field: 保存字段
+      show-user-answers: '显示其他 {count} 个答案'
+    fields:
+      add: '添加字段「{field}」'
+      description: 字段描述
+      description-help: "可选，用于解释字段\n"
+      edit: '编辑字段「{field}」'
+      enable-user-values-for-validation: 要配置校验规则，请启用「用户输入内容」
+      icon: 图标
+      icon-help: "添加图标到用户输入的内容前。可用图标请参阅 <a>FontAwesome 官网</a>，需要输入完整的图标名，例如「fas fa-bolt」。\n"
+      icon-preview: '预览：{preview}'
+      is_suggested: 建议/预设答案
+      name: 字段名
+      name-help: "外显的字段名称（不可被翻译）。\n"
+      new-answer: 新建答案
+      new-answer-placeholder: 请输入
+      required: 必须
+      save-field-for-answers: 保存字段以添加答案
+      show_when_empty: 显示空字段
+      show_when_empty-help: 不论字段是否为空均在主题中显示
+      user_values_allowed: 允许用户输入内容
+      user_values_allowed-help: "启用此项，允许用户添加自定义值，自定义值会经过「校验」检查。否则只能选择管理员定义的「建议」值。\n"
+      validation: 用户输入内容校验
+      validation-help: "有关校验规则，请查阅 <a>Laravel 校验规则文档</a>。示例「string|min:5」或「url」。\n"
+    messages:
+      delete-answer-confirmation: "确定要删除答案「{content}」吗？此答案将从所有使用的主题中删除，如果需要保留已使用答案的主题效果，无需删除，停用「答案建议」即可。\n"
+      delete-field-confirmation: "确定要删除字段「{name}」吗？该字段将从所有使用的主题中删除。\n"
+    settings:
+      column-count: 字段列数
+      fields-in-hero: 在主题帖顶部横幅中显示表单（而非首贴中）
+      fields-section-title: 自定义字段区块标题
+      fields-section-title-help: "此标题显示于文本编辑器和主题帖的自定义字段上方。\n"
+      fields-section-title-placeholder: 默认不显示标题
+      hide-empty-fields-section: 当所有字段为空且隐藏时，隐藏标题和控件。
+      labels-as-placeholders: 使用字段名作为表单占位文本
+      labels-as-placeholders-help: "紧凑型表单布局。不展示图标，并将字段名展示到输入框内。在编辑现有表单时可能会造成阅读困难。\n"
+      n-columns: '{count} 列'
   forum:
     answers-modal:
-      edit-title: '编辑字段为{title}'
+      edit-title: '编辑「{title}」的字段'
       save: 保存字段
+    answers:
+      choose-option: 请选择
+      no-option-selected: 请选择选项
     discussion-controls:
       edit-answers: 编辑字段
     post-answers:
-      no-answer: 暂无解答
+      no-answer: 无答案
+    tags:
+      inadequate-settings: "标签设置错误。请禁用「标签即字段」功能，或最多选择 1 个主标签和 1 个次标签。\n"
+      tags-label: 标签

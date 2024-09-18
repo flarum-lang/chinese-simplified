@@ -5,5 +5,19 @@
 litalino-related-discussions:
   admin:
     DiscussionPageLayout: 在主题帖页面底部展示相关主题
-    relatedLimit: '要显示的相关讨论（默认 4）'
-    relatedLimit-help: 在这里写下你想看到的讨论数量（例如“4”）
+    relatedLimit: '相关讨论数量（默认 4）'
+    relatedLimit-help: '需要展示的相关主题量（例如 4）'
+    relatedTitle: 「相关主题」标题
+    relatedTitle-help: 按需调整默认的标题
+    showExcerpt: 展示摘要
+    showTooltip: 展示摘要提示框
+  forum:
+    avatarTooltip: 创建于
+    deleted: 已删除
+    hasBestAnswer: 已解决
+    hasBestAnswer-title: 当前主题已标记为已解决
+    participants: 参与者
+    postedOn: 于
+    postnumber: 回帖
+    reldiscussion: 推荐主题
+    repliedOn: 已回复

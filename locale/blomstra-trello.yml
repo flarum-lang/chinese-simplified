@@ -6,31 +6,31 @@ blomstra-trello:
   admin:
     modals:
       fields:
-        board: 选择一个Trello板块
+        board: '选择一个 Trello 板块'
         forum_tags: 选择一个论坛标签来映射
-        trello_label: 选择一个Trello标签
+        trello_label: '选择一个 Trello 标签'
       no_available_labels_label: 没有可用标签
       no_available_tags_label: 没有可用的论坛标签
     permissions:
-      add_to_trello: 可将讨论链接到Trello上
+      add_to_trello: '允许链接主题帖到 Trello'
     settings:
-      api_key_help: '输入{link}的API密钥，以便该扩展与Trello连接。'
-      api_key_label: 接口密钥
-      api_token_help: '输入API令牌，以便该扩展与Trello连接,访问{link}并点击<code>生成一个令牌</code>'
-      api_token_label: API令牌
-      available_boards_label: 可用的板块
+      api_key_help: '输入 API 密钥，以便本扩展程序与 Trello 连接。点击前往申请：{link}'
+      api_key_label: 'API 密钥'
+      api_token_help: '输入 API 令牌，以便本扩展与 Trello 连接。打开网址并点击<code>Generate a Token</code>：{link}'
+      api_token_label: 'API 令牌'
+      available_boards_label: 可用板块
       button:
         add: 添加
         remove: 移除
-      default_board_help: 选定的默认板块将是论坛中发送至Trello模式中预选的板块。
+      default_board_help: '选定的默认板块将是论坛模态框「发送到 Trello」的预选板块。'
       default_board_label: 默认板块
       guest_workspace: 访客工作区
-      in_trello: 在Trello中
-      include_secondary_tags_help: 当禁用时，只有主要讨论标签将被发送到Trello。当启用时，所有标签将被发送到Trello。
-      include_secondary_tags_label: 包括次要标签
+      in_trello: '在 Trello 中'
+      include_secondary_tags_help: '禁用此项，仅发送主标签主题到 Trello。启用此项，发送所有标签到 Trello。'
+      include_secondary_tags_label: 包括次标签
       label:
         boards: 看板设置
-        general: 一般
+        general: 常规
         labels: 标题设置
       mapping:
         add_new: 添加映射
@@ -60,7 +60,7 @@ blomstra-trello:
         board: 选择一个看板
         lane: '选择 Trello lane'
         member: 选择一个成员
-        member_selected: '已选择 {count, plural, one {# 位成员} other {# 位成员}}'
+        member_selected: '已选择 {count} 位成员'
       no_available_board_lanes: '无可用看板 lanes'
       no_available_board_members: 无看板成员
       no_available_boards_label: 无看板

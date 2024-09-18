@@ -5,16 +5,53 @@
 blomstra-web3:
   admin:
     settings:
-      allow-sign-up: 支持通过Web3注册
-      ffi-disabled: "PHP FFI扩展没有被启用.Dotsama钱包将无法工作.\n"
-      infura-project-id: Infura项目编号
+      allow-sign-up: '允许使用 Web3 注册'
+      ffi-disabled: "PHP FFI 扩展没有启用，Dotsama 钱包无法工作。\n"
+      infura-project-id: 'Infura 项目 ID'
       infura-project-id-help: "您的 Infura 项目 ID，用于 Coinbase 和 WalletConnect 钱包。请前往 https://infura.io 获取。\n"
       no-email-signup-message: "向非邮箱注册用户发送消息（留空以禁用）。\n"
-      no-email-signup-message-help: '使用以下开闭标签插入跳转到邮箱编辑页的超链接：[link]自定义文本[/link]。'
-      prioritize-web3-auth-modals: '默认打开 Web3 登录/注册'
+      no-email-signup-message-help: '使用以下开闭标签插入跳转到「更改邮箱」页面的超链接：[link]自定义文本[/link]。'
+      prioritize-web3-auth-modals: '默认启用 Web3 登录/注册'
       signup-with-email: 通过电子邮件注册
   forum:
     connect-wallet-modal:
       could-not-sign: 无法对所选账户的用户名进行加密签名。
+      evm-wallets: 'EVM 钱包'
       goback: 返回
+      polkadot-wallets: '=> blomstra-web3.ref.polkadot-wallets'
+      signature-invalid: 签名无效。
       title: 连接钱包
+    evm-connect-wallet-modal:
+      bind: '=> blomstra-web3.ref.bind'
+      disconnect: '=> blomstra-web3.ref.disconnect'
+      disconnect-and-unbind: 取消连接和绑定
+      select: '=> blomstra-web3.ref.select'
+      title: 'EVM 钱包'
+    log-in:
+      basic-login-link: 切换到账号密码登录
+      select-wallet-account: '=> blomstra-web3.ref.select-wallet-account'
+      with-wallet: 'web3 账号登录'
+    polkadot-connect-wallet-modal:
+      attach_address: '=> blomstra-web3.ref.bind'
+      connection-request-rejected: 连接请求被拒
+      disconnect: '=> blomstra-web3.ref.disconnect'
+      goback: 返回钱包
+      select: '=> blomstra-web3.ref.select'
+      title: '=> blomstra-web3.ref.polkadot-wallets'
+      unattach_address: '=> blomstra-web3.ref.unbind'
+    settings:
+      unbind: '=> blomstra-web3.ref.unbind'
+      unbind_confirm: 确定要取消绑定钱包吗？
+      wallet-connect-button: 连接钱包
+      wallets_heading: 钱包
+    sign-up:
+      basic-signup-link: 切换到账号密码注册
+      select-wallet-account: '=> blomstra-web3.ref.select-wallet-account'
+      with-wallet: 'Web3 账号注册'
+  ref:
+    bind: 绑定地址
+    disconnect: 解绑
+    polkadot-wallets: 'Polkadot 钱包'
+    select: 选择地址
+    select-wallet-account: '选择钱包账号 {rightArrow}'
+    unbind: 取消绑定地址

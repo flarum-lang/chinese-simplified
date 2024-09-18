@@ -42,12 +42,12 @@ fof-mason:
       delete-answer-confirmation: "确定要删除答案「{content}」吗？此答案将从所有使用的主题中删除，如果需要保留已使用答案的主题效果，无需删除，停用「答案建议」即可。\n"
       delete-field-confirmation: "确定要删除字段「{name}」吗？该字段将从所有使用的主题中删除。\n"
     permissions:
-      fill-fields: 填写新主题的表单
-      see-other-fields: 查看所有现有主题的表单
-      see-own-fields: 查看自己现有主题的表单
+      fill-fields: 创建主题时填写字段
+      see-other-fields: 查看所有主题中使用的字段
+      see-own-fields: 查看自己主题中使用的字段
       skip-required-fields: 允许跳过必填字段
-      update-other-fields: 更新任意主题的表单
-      update-own-fields: 更新自己主题的表单
+      update-other-fields: 修改所有主题的字段
+      update-own-fields: 修改自己主题的字段
     settings:
       column-count: 字段列数
       fields-in-hero: 在主题帖顶部横幅中显示表单（而非首贴中）
@@ -55,18 +55,18 @@ fof-mason:
       fields-section-title-help: "此标题显示于文本编辑器和主题帖的自定义字段上方。\n"
       fields-section-title-placeholder: 默认不显示标题
       hide-empty-fields-section: 当所有字段为空且隐藏时，隐藏标题和控件。
-      hide-empty-fields-section-help: "默认情况下，如果用户可以编辑字段或设置标题，则即使所有字段都被隐藏，也会始终显示该部分。启用此选项后，该部分将被隐藏，并且当所有字段均为空白时，「编辑字段」按钮仅在「回复」下拉菜单中可用。\n"
+      hide-empty-fields-section-help: "默认情况下，即便所有字段都被隐藏，只要用户有编辑权限，就能看到操作控件。这种情况下启用此项，编辑按钮将会隐藏到「回帖」下拉菜单中。\n"
       labels-as-placeholders: 使用字段名作为表单占位文本
       labels-as-placeholders-help: "紧凑型表单布局。不展示图标，并将字段名展示到输入框内。在编辑现有表单时可能会造成阅读困难。\n"
       n-columns: '{count} 列'
-      tags-as-field: 将标签选择器作为一个字段显示
-      tags-as-field-help: "这将隐藏默认的标签选择器，并显示一个自定义的下拉框。只有当您在标签设置中最多允许单个主体选择一个主标签和一个次标签时，此功能才会生效！\n"
+      tags-as-field: 标签即字段
+      tags-as-field-help: "隐藏原生标签选择器，使用特制字段进行标签选择。仅支持在只有 1 个主标签和 1 个次标签时使用此功能。\n"
       tags-field-name: 标签字段名
       tags-field-name-placeholder: '=> fof-mason.forum.tags.tags-label'
     titles:
       field-answers: 字段答案
       field-settings: 字段设置
-      fields: 表单字段
+      fields: 字段
       settings: 设置
   forum:
     answers-modal:

@@ -11,7 +11,7 @@ clarkwinkelmann-jwt-cookie-login:
       audienceHelp: '验证令牌的 <code>aud</code> 属性。不使用 Firebase 时可选'
       authorizationHeader: '自定义 Authorization 请求头值'
       authorizationHeaderHelp: '留空则默认为 <code>Token <JWT token></code>。'
-      autoLoginDelay: '<歧义> 隐式 iframe 延迟自动登录（毫秒）'
+      autoLoginDelay: '<歧义> 隐式 iframe 自动登录延迟（毫秒）'
       autoLoginDelayHelp: "<歧义> 如果隐式 iframe 返回登录状态，多少秒内允许页面自动刷新。否则询问用户是否要刷新页面。\n"
       cookieName: 'Cookie 名称'
       emailTemplate: 邮件模板

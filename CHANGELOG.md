@@ -20,6 +20,7 @@ CHANGELOG
 * [`club-1/flarum-ext-server-side-highlight`](https://github.com/club-1/flarum-ext-server-side-highlight)
 * [`danirod/flarum-plausible`](https://github.com/danirod/flarum-plausible)
 * [`datitisev/flarum-post-galleries`](https://github.com/dsevillamartin/flarum-post-galleries)
+* [`datlechin/flarum-cbox`](https://github.com/datlechin/flarum-cbox)
 * [`datlechin/flarum-chatgpt`](https://github.com/datlechin/flarum-chatgpt)
 * [`datlechin/flarum-oauth-envato`](https://github.com/datlechin/flarum-oauth-envato)
 * [`datlechin/flarum-oauth-spotify`](https://github.com/datlechin/flarum-oauth-spotify)

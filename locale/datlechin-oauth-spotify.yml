@@ -7,6 +7,14 @@ fof-oauth:
     settings:
       providers:
         spotify:
-          client_id_label: 客户端ID
-          client_secret_label: 密钥
-          description: '使用 Spotify {link} 注册您的论坛。'
+          client_id_label: 'Client ID'
+          client_secret_label: 'Client Secret'
+          description: '使用 Spotify 注册您的论坛（{link}）。'
+  forum:
+    log_in:
+      with_spotify_button: '=> fof-oauth.forum.log_in.with_button'
+    providers:
+      spotify: '=> fof-oauth.lib.providers.spotify'
+  lib:
+    providers:
+      spotify: Spotify

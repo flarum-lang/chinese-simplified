@@ -5,9 +5,72 @@
 davwheat-virtual-authors:
   admin:
     permissions:
-      set_virtual_authors: 在讨论中设置虚拟作者
-      view_virtual_authors_page: 查看详细介绍所有虚拟作者的页面
+      set_virtual_authors: 设置主题帖虚拟作者
+      view_virtual_authors_page: 查看主题帖虚拟作者
     settings:
-      create_new: 创建新虚拟作者
-      errored: 无法从服务器加载虚拟作者。
+      authors_in_sidebar: 在侧边栏展示虚拟作者（而非首贴上方）
+      authors_in_sidebar_help: '与 Blog 扩展程序不冲突。'
+      auto_save_message: 创建和编辑操作均会自动保存。
+      create_new: 创建虚拟作者
+      discussion_badge: 展示虚拟作者头衔
+      errored: 加载虚拟作者失败。
+      link_to_va_from_discussion: 允许通过超链接跳转到各虚拟作者的主题列表
+      next: 下一页
+      prev: 上一页
       search_placeholder: 通过名字搜索
+      virtual_authors_page_disabled: 隐藏虚拟作者列表
+      virtual_authors_page_disabled_help: 与权限无关。
+    virtual_author_item:
+      delete_a11y_tooltip: 删除
+      delete_confirmation: 确定要删除虚拟作者？
+      description: 描述
+      edit: 编辑虚拟作者
+      id: ID
+      name: 外显名称
+      no_description: '=> davwheat-virtual-authors.ref.no_description'
+  forum:
+    discussion_controls:
+      set_virtual_authors: 设置虚拟作者
+    set_modal:
+      add_button: 添加
+      add_new: 选择虚拟作者
+      added_button: 已添加
+      credit_placeholder: 致谢（可选）
+      delete_button: 移除
+      delete_confirmation: 确定要移除当前主题的所有虚拟作者吗？
+      existing: 当前虚拟作者
+      no_description: '=> davwheat-virtual-authors.ref.no_description'
+      none_existing: 未选择虚拟作者。
+      save: 保存修改
+      search: 搜索虚拟作者
+      title: 设置虚拟作者
+      virtual_author_exists: 已选择！
+    virtual_author_page:
+      credited_discussions: '致谢 {displayName}'
+      discussion_count: '=> davwheat-virtual-authors.ref.discussion_count'
+      meta_title: '{displayName} - 作者'
+    virtual_authors_list:
+      discussion_count: '=> davwheat-virtual-authors.ref.discussion_count'
+      empty_text: 暂无作者。
+      filter_name_placeholder: 过滤名称
+      meta_title: 所有作者
+      no_description: 这位作者有些神秘。
+      sidebar_link: 作者
+      title: 所有作者
+    virtual_authors_panel:
+      error: 加载作者失败。
+      heading: 作者
+      item_link_tooltip: '查看「{displayName}」的全部主题'
+  lib:
+    discussion-badge: '{count, plural, one {一位虚拟作者}, other {多位虚拟作者}}'
+    edit_modal:
+      fields:
+        description: 描述（关于作者）
+        name: 外显名称
+      submit_edit: 保存修改
+      submit_new: 创建虚拟作者
+      title_edit: 编辑虚拟作者
+      title_new: 新建虚拟作者
+  ref:
+    discussion_count: '{count} 个主题帖'
+    no_description: （暂无描述）

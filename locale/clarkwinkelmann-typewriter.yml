@@ -5,7 +5,15 @@
 clarkwinkelmann-typewriter:
   admin:
     settings:
-      defaultFile: 默认的声音文件
+      add: 添加声音
+      defaultFile: 默认声音文件
+      head:
+        file: 文件
+        keys: 按键
       muteByDefault: 默认静音
-      showIntroductionPopup: 第一次显示介绍弹出窗口
-      sounds: 附加声音
+      showIntroductionPopup: 首次使用时打开介绍弹窗
+      sounds: 额外声音
+  forum:
+    enable: 打开按键音
+    introductionMessage: 点击开关按键音
+    mute: 关闭按键音

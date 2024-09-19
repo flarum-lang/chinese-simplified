@@ -5,11 +5,21 @@
 danirod-plausible:
   admin:
     settings:
+      domain:
+        help: 发送分析数据时使用的域名。
+        label: 域名
       enable:
+        help: 启用此项以使用跟踪代码。
         label: 启用
+      exclude_admin:
+        help: 登录管理员账号时，关闭跟踪。
+        label: 排除管理员
+      proxy_domain:
+        help: '防止广告拦截器删除跟踪代码，具体用法请参阅 Plausible 文档。留空表示使用 plausible.io'
+        label: 代理域名
     validation:
       domain:
-        regex: 给定的域无效
+        regex: 指定的域名无效
         required: 必须指定一个域名
       proxy_domain:
-        regex: 此代理服务器地址无效
+        regex: 指定的代理域名无效

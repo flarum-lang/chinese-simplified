@@ -7,6 +7,14 @@ fof-oauth:
     settings:
       providers:
         envato:
-          client_id_label: 用户名
-          client_secret_label: 密钥
-          description: '使用 Envato {link} 注册您的论坛。'
+          client_id_label: 'Client ID'
+          client_secret_label: 'Client Secret'
+          description: '使用 Envato 账号注册论坛（{link}）。'
+  forum:
+    log_in:
+      with_envato_button: '=> fof-oauth.forum.log_in.with_button'
+    providers:
+      envato: '=> fof-oauth.lib.providers.envato'
+  lib:
+    providers:
+      envato: Envato

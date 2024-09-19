@@ -7,7 +7,24 @@ clarkwinkelmann-vote-with-money:
     settings:
       max: 最大值
       min: 最低值
-      preselection: 预选金额（逗号分隔，可选）
+      preselection: 预设金额（逗号分隔，可选）
+  api:
+    error:
+      cannotCancel: 无法取消投票。
+      cannotChange: 无法修改投票。
+      cannotChangePollType: 产生有效票数后不能修改投票类型。
+      notEnoughFunds: 资金不足。
   forum:
+    poll:
+      max: 最大金额（可选）
+      min: 最小金额（可选）
+      voteWithMoney: 带财富投票
     vote:
+      balance: '余额 {amount}'
+      label:
+        custom: 自定义金额
+      optionCustom: 自定义
+      submit: 提交
+      success: 投票已提交！
+      target: "确定要投票给「{answer}」吗？投票后无法修改。\n"
       title: 确认投票

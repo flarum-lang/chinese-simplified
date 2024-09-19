@@ -7,9 +7,14 @@ fof-oauth:
     settings:
       providers:
         line:
-          client_id_label: 频道ID
-          client_secret_label: 秘密渠道
-          description: '用 LINE 开发者控制台注册你的论坛 {link}'
+          client_id_label: '频道 ID'
+          client_secret_label: 频道密钥
+          description: '前往 LINE 开发者控制台注册你的论坛：{link}'
   forum:
     log_in:
       with_line_button: '=> fof-oauth.forum.log_in.with_button'
+    providers:
+      line: '=> fof-oauth.lib.providers.line'
+  lib:
+    providers:
+      line: LINE

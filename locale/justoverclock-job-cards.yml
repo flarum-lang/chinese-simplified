@@ -4,7 +4,20 @@
 
 justoverclock-job-cards:
   forum:
+    actualOccupationField: 实际职业/岗位
+    actualSalaryField: 实际薪资
+    available: 求职中
+    availableForHireField: 求职中
+    avatarField: 头像（图片链接）
+    companyNameField: 公司名称
+    fieldNotFilled: 名片未保存！
     formSaved: 保存成功
-    jobFormTitle: 工作卡
-    jobProfile: 工作简介
+    fullNameField: 全名
+    jobFormTitle: 名片
+    jobProfile: 工作简历
+    'no': 否
+    notAvailable: 忙碌
     saveBtn: 保存
+    showInsidePostsField: 回帖时展示工作名片
+    yearOfExperienceField: 工作经验
+    'yes': 是

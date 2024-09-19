@@ -5,8 +5,8 @@
 justoverclock-discussion-tags:
   admin:
     permissions:
-      canEditDiscussionTags: 可编辑讨论标签
+      canEditDiscussionTags: 允许编辑主题帖标签
   forum:
-    dTags: 讨论标签
-    tagHere: 标签在这里
+    dTags: 主题帖标签
+    tagHere: 添加标签
     tagSaved: 标签保存成功！

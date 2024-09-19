@@ -4,5 +4,5 @@
 
 justoverclock-export-post-to-pdf:
   forum:
-    codeScreenshot: 保存代码截屏
-    exportToPdf: 导出到PDF
+    codeScreenshot: 保存代码截图
+    exportToPdf: '导出为 PDF'

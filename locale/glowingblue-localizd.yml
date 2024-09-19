@@ -5,6 +5,17 @@
 glowingblue-localizd:
   admin:
     settings:
-      redirect_en: 重定向英语为论坛默认语言
-      redirect_en_help: 有效地允许你在论坛内不提供英语体验，但允许继续安装英语语言包（用于<code>fof/linguist</code>识别键等）
-      title: 局部设置
+      redirect_en: 将英语重显为论坛默认语言
+      redirect_en_help: '在不卸载英语语言包的情况下，有效去除论坛中的英文。（<code>fof/linguist</code> 翻译键需要等）'
+      title: 'Localizd 设置'
+    translation_key:
+      help: '此选项通过 <b>Localizd</b> 和 <a>Linguist</a> 多语言化。'
+      modal_title: '使用 Linguist 添加翻译'
+      translate: 翻译
+  forum:
+    errors:
+      causes: 可能出于以下原因
+      deleted: 此页面可能已被删除
+      does_not_exist: 此页面可能不存在
+      logged_in_only: 此页面尚未向游客开放
+      no_permission: 此页面可能无权访问

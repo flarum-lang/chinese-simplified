@@ -5,23 +5,32 @@
 jeromegillard-map:
   admin:
     settings:
+      mapbox:
+        help: '前往 <a>mapbox.com</a> 免费注册并获取密钥。令请遵守他们的<b>版权声明</b>。'
+        label: 'Mapbox 密钥'
       maptiler:
-        help: 在<a>maptiler.com</a>免费注册以获取令牌。请尊重他们的<b>版权</b>。
+        help: '前往 <a>maptiler.com</a> 免费注册并获取令牌。另请遵守他们的<b>版权声明</b>。'
+        label: 'MapTiler 令牌'
+      osm:
+        help: 'OpenStreetMap 图层切片可用于地图开发，但如果要在生产环境使用这些切片，请务必阅读 OpenStreetMap 的<a>切片使用政策</a>。'
       style:
-        help: '选择地图样式<a> 看看他们的风格</a>。'
-        label: '{provider}的默认样式'
+        help: 选择一个地图样式。<a>你可以自行搜索并查看他们的样式</a>。
+        label: '{provider} 的默认样式'
       thunderforest:
-        help: 在<a>thunderforest.com</a>免费注册以获取API密钥。请遵守其<b>使用条款</b>。
-        label: 'Thunderforest API密钥'
+        help: '前往 <a>thunderforest.com</a> 免费注册并获取 API 密钥。另请遵守他们的<b>使用条款</b>。'
+        label: 'Thunderforest API 密钥'
       tiles_provider:
-        label: 默认窗口层服务商
+        help: 选择背景中出现的地图切片图层提供商
+        label: 默认切片图层提供商
       zoom:
-        help: 0到18之间的任意整数。
+        help: '0 至 18 之间的任意整数。'
         label: 默认缩放级别
     templates:
-      file_description: '在 Flarum 显示一个地图。原始文件可被下载。磁贴提供者和样式将作为插件设置的一种定义。<b>您需要已经安装好Flarum/bbcode并弃用它以运行</b>。'
+      file_description: '在 Flarum 显示一个地图，原始文件可被下载。地图切片和样式均在扩展程序设置中配置。<b>请安装并启用 Flarum/bbcode 扩展程序，否则此功能无法生效</b>。'
       map: 地图
   forum:
     text_editor:
       bbcode_tooltip: 插入地图
-      location_placeholder: 哪里
+      location_placeholder: 地点
+      marker_description_placeholder: 标记点信息窗体内容。要隐藏标记点，请留空标记点和信息窗体内容。
+      marker_title_placeholder: 标记点标题

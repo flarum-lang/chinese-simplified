@@ -1,0 +1,5 @@
+@import "noto-sans-sc.css";
+
+html, body {
+  font-family: 'Noto Sans SC', sans-serif;
+}

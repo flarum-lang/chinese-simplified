@@ -4,12 +4,12 @@
 
 justoverclock-theaudiodb-api:
   admin:
-    apiKey: '在这里获得你的apiKey https://www.theaudiodb.com/api_apply.php'
-    apiKeyHelp: 为了执行请求和检索数据，需要API密钥。
+    apiKey: '点击前往获取 API 秘钥：https://www.theaudiodb.com/api_apply.php'
+    apiKeyHelp: '为了执行请求和检索数据，请填写 API 密钥。'
     langcode: 语言代码
     langcode-help: '输入语言代码（支持的语言：EN, DE, FR, CN, IT, JP, RU, ES, PT, SE, NL, HU, NO, IL, PL）'
   forum:
     countryart: 国家或地区
     genres: 流派
     intFormedYear: 成立于
-    notAv: '哎呀！当前语言没有任何描述……你可以通过前往 TheAudioDB.com 添加这个艺术家的信息来作贡献……'
+    notAv: '很抱歉，我们没有找到适配您语言的描述，您可以前往 TheAudioDB.com 贡献当前艺术家的信息……'

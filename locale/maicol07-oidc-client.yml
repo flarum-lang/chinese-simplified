@@ -5,11 +5,24 @@
 maicol07-oidc-client:
   admin:
     settings:
+      callback_logout_note: 仅在启用通过提供商登出选项时需要（请参见页面底部）
+      callback_subtitle: '相关功能启用后，需要通过这些 URL 获取客户端认证码。请前往服务提供商获取 URL。'
+      callback_title: '回调 URLs'
       client:
-        enable_pkce: '启用 PCKE (推荐)'
+        allow_implicit_flow: 使用隐式授权流程（不推荐）
+        cert_path: 证书路径（如果是自签证书）
+        enable_nonce: 启用随机数校验（推荐）
+        enable_pkce: '启用 PCKE（推荐）'
+        http_proxy: 'HTTP 代理'
         id: '客户端 ID'
         secret: 客户端密钥
-        subtitle: "在这里添加你的OpenID Connect提供商提供的客户资料。如需进一步帮助，请查看文档.\n"
+        skip_email_verified_check: '跳过对电子邮件地址真实性声明的检查（例如 Casdoor 等不完全遵循标准规范的身份验证提供商，没有提供真实性验证）'
+        subtitle: "在此填写 OpenID Connect 服务提供商提供的客户端信息。如需进一步帮助，请查看文档。\n"
+        timeout: 请求超时
         title: 客户端设置
+        verify_ssl: 'SSL 证书验证'
       client_settings_title: 客户设置
+      provider:
+        subtitle: "在此添加你的服务商详情信息。\n"
+        title: 服务提供商设置
       provider_name: 'OpenID Connect 认证服务提供方'

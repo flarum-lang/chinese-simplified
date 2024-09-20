@@ -4,7 +4,7 @@
 
 justoverclock-random-post:
   admin:
-    limit: 随机文章的限制条件
-    limit-help: 在这里输入随机帖子的最大字符数（默认为280）
+    limit: 随机回帖字数限制
+    limit-help: '输入随机回帖的最大字符数（默认 280）'
   forum:
-    inThe: ' 在讨论中： '
+    inThe: ' 在主题中： '

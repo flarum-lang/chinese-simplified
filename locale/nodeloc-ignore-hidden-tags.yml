@@ -5,4 +5,4 @@
 ignore-hidden-tags:
   admin:
     permissions:
-      select-group-ignore: 选择一个组来忽略隐藏
+      select-group-ignore: 选择无视隐藏的用户组

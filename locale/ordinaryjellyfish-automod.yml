@@ -5,8 +5,55 @@
 ordinaryjellyfish-automod:
   admin:
     permissions:
-      bypass: 无视管理过滤规则
+      bypass: '无视 AI 监管'
     settings:
-      moderate_categories_label: 合适的分类
+      filter_enable: 启用预置过滤器
+      filter_help: 用于提升论坛内容安全性。启用后，匹配过滤器的内容将被自动标记到监管分类目录。
+      filter_label: 预置过滤器
+      filters:
+        doxxing: 人肉搜索
+        doxxing_help: 公开披露个人或组织隐私的行为，通常带有不良意图。
+        flag_unsafe_images: 不安全的图片
+        flag_unsafe_images_help: '使用 Google 安全搜索检测图片是否安全，可能导致发布内容时响应缓慢。'
+      moderate_categories_enable: 启用监管类别
+      moderate_categories_label: 监管类别
+      moderate_categories_label_help: 根据信任阈值规则，自动标记内容以进行审查。
+      service_account: 服务账号
       threshold: 信任阈值
-      threshold_help: '信任阈值介于 0.00 和 1.00 之间，反映了输入或响应属于给定类别的可能性。阈值越低，误报率越低，但误报率也越高。阈值越高，误报率越高，但误报率也越低。'
+      threshold_help: '信任阈值介于 0.00 和 1.00 之间，反映了输入内容与监管类别之间的关联度。阈值越低，识别率越高，误判越多；阈值越高，识别率越低，漏判越多。'
+  forum:
+    flag_reason: '因涉及 {reason} 被自动标记'
+  lib:
+    moderate_categories:
+      death: 死亡，伤害和悲剧
+      death_help: 人类死亡、悲剧、事故、灾难和自残。
+      derogatory: 诋毁
+      derogatory_help: 针对身份或受保护属性的攻击。
+      drugs: 非法药物
+      drugs_help: 非法药物（如大麻）的种植、买卖及用具相关内容。
+      finance: 金融
+      finance_help: 个人和企业金融服务，如银行业务、贷款、信用、投资和保险。
+      health: 健康
+      health_help: 身体健康状况、疾病、医疗方法、药物、疫苗、康复资源、医治团体。
+      insult: 谩骂
+      insult_help: 对人或事的侮辱、煽动或负面评论。
+      legal: 法律
+      legal_help: 与法律相关的内容，包括律师事务所、法律信息、主要法律资料、律师助理服务、法律出版物和技术、专家证人、诉讼顾问和其他法律服务提供商。
+      politics: 政治
+      politics_help: 涉政新闻或媒体，对政策的讨论。
+      profanity: 亵渎
+      profanity_help: 粗俗或下流的语言，如咒骂。
+      public_safety: 公共安全
+      public_safety_help: 提供救济和确保公共安全的服务和组织。
+      religion: 宗教与信仰
+      religion_help: 个人信仰与宗教及场所。
+      sexual: 色情
+      sexual_help: 对性或其他下流内容的使用。
+      toxic: 有害内容
+      toxic_help: 粗鲁、不尊重或不合理的内容。
+      violent: 暴力
+      violent_help: 对个人、团体或其他事物的暴力/血腥言论。
+      war: 战争与冲突
+      war_help: 战争、军事冲突和群体冲突以及涉军讨论。
+      weapons: 枪支和武器
+      weapons_help: 涉及刀具、枪支、武器、弹药等及其配件。

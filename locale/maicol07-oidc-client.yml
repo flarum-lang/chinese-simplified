@@ -22,7 +22,37 @@ maicol07-oidc-client:
         title: 客户端设置
         verify_ssl: 'SSL 证书验证'
       client_settings_title: 客户设置
+      other:
+        linker_claim: 'Linker claim'
+        logout_from_provider: '从提供商处登出（开启 SSO 模式时）'
+        manage_account_btn_open_in_new_tab: 在新标签页中打开账号管理页面
+        manage_account_url: '账号管理 URL'
+        provider_name: 'OIDC 相关按钮上要展示的提供商名称'
+        remove_signup_btn: 移除注册按钮
+        sso_mode: 'SSO 模式'
+        sync_avatars: 同步用户头像
+        time_drift: 'JWT 时间漂移'
+        title: 其他设置
       provider:
-        subtitle: "在此添加你的服务商详情信息。\n"
+        authorization_response_iss_parameter_supported: '授权响应支持 ISS 参数'
+        code_challenge_method: 'Code Challenge 生成方法'
+        endpoints:
+          authorize: '身份验证端点 URL'
+          jwks: 'JWKS 端点 URL'
+          logout: '退出登录端点 URL'
+          token: '令牌端点 URL'
+          userinfo: '用户信息端点 URL'
+        id_token_signing_alg: 'ID 令牌签名算法'
+        issuer: 'Issuer URL'
+        response_type: 授权响应类型
+        subtitle: "在此添加你的服务提供商详情信息。如果你的服务商使用了自动识别网络，端点和其他表单可以不填。详情信息请查阅文档。\n"
         title: 服务提供商设置
+        token_endpoint_auth_method: 令牌端点身份验证方法
+        url: '提供商 URL'
       provider_name: 'OpenID Connect 认证服务提供方'
+  forum:
+    buttons:
+      connect_account: '绑定 {name}'
+      disconnect_account: '解绑 {name}'
+      login: '登录 {name}'
+      manage_account: 管理账号

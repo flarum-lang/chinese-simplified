@@ -27,6 +27,7 @@ datitisev-backup:
           label: 桶
         credentials-key:
           description: 'AWS 凭据密钥'
+          label: Key
         credentials-secret:
           description: 'AWS 凭据私钥'
           label: 私钥
@@ -125,6 +126,7 @@ datitisev-backup:
         target:
           description: 指定用于存储备份的本地目录。
           label: 目标路径
+      name_label: 'Location 名称'
       title: '配置 {adapter}'
     adapters:
       aliyun: 阿里云

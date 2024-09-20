@@ -4,7 +4,7 @@
 
 peruguitar-user-portrait:
   admin:
-    exclude_from_mobile_help: 排除移动设备的用户肖像
-    exclude_from_mobile_label: 排除在手机之外？
+    exclude_from_mobile_help: 移动设备不展示用户画像
+    exclude_from_mobile_label: 移动端不展示
   forum:
     welcome_back_label: 欢迎回来

@@ -3,7 +3,71 @@
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
 yippy-auth-ldap:
+  admin:
+    settings:
+      display_detailed_error: 'LDAP 登录时抛出详细错误'
+      domains:
+        add: 添加域名
+        banner: '域名 {index}'
+        data:
+          admin_dn: 辨识名称（DNs）
+          admin_dn_help: 留空以允许匿名绑定
+          admin_password: 密码
+          admin_password_help: 留空以匿名绑定
+          base_dn: 基本辨识名称（DNs）
+          base_dn_help: 英文分号分隔
+          filter: 要应用的过滤器
+          filter_help: '可选，不可填写「搜索字段」，搜索字段必须由用户端提供，不可定义在过滤器中。过滤器为 (objectclass=user) 时，选择 UID 后，最终使用时自动添加为 (&(objectclass=user)(uid=[User''s Input]))'
+          follow_referrals: '跟随指引绑定到 LDAP 服务器'
+          host: '域名或服务器 IP 地址'
+          host_help: 英文逗号分隔
+          port: 端口
+          port_help: '非 SSL 使用 369 端口，SSL 使用 636 端口。'
+          search_user_fields: 搜索字段
+          search_user_fields_help: 选择多个搜索字段，例如选择「电子邮件」将仅允许电子邮件，而选择「UID、电子邮件」将允许使用电子邮件地址或用户名。
+          use_ssl: '使用 SSL'
+          use_tls: '使用 TLS'
+          user_mail: 关联电子邮件地址字段
+          user_mail_help: 留空以允许用户在注册时自定义电子邮件地址
+          user_nickname_fields: 关联昵称字段
+          user_nickname_fields_help: '此功能需启用昵称扩展程序。组合多个 LDAP 字段以生成昵称，例如，选择「givenname,sn」将生成「[名] [姓]」作为用户昵称'
+          user_username: 关联用户名字段
+          version: 'LDAP 版本'
+          version_help: '无法设置为 2 或 3（默认 3）。'
+        description: 'Flarum 登录可用的 LDAP 域名'
+        header:
+          admin: 'LDAP 管理员'
+          flarum: 'Flarum 用户资料'
+          flarum_description: '同步 LDAP 账号资料到 Flarum 用户资料。'
+          search_fields: 'LDAP 账号搜索'
+          search_fields_description: '创建一个 LDAP 字段列表，用于用户名校对。'
+          server: 'LDAP 服务设置'
+        title: 'LDAP 域名'
+      method_name: 'LDAP 服务名称（用于显示「xxx 账号登录」）'
+      onlyUse: '隐藏 Flarum 原生登录方法'
+      title: 'LDAP 设置'
   forum:
-    account_found: '在 {server} 中找到帐户'
-    log_in_with: '使用 {server} 登录'
-    log_out: 日志输出
+    account_found: '在 {server} 中找到帐号'
+    errors:
+      account:
+        disabled: '账号未启用，请联系 {server} 管理员。'
+        expired: '账号已过期，请联系 {server} 管理员。'
+        incorrect_details: 密码错误。
+        invalid_inputs: 输入字段不可为空
+        locked: '账号已被锁定，请联系 {server} 管理员。'
+        not_found: '无法找到 {server} 账号。'
+        password_expired: 密码已过期。
+      core_csrf_token_mismatch: '=> core.views.error.csrf_token_mismatch'
+      csrf_token_mismatch: 您已经长时间未活动，请刷新页面并重试。
+      domains:
+        empty_base_dn: '域名 {domain_index} 未设置基本辨识名称（DNs），请修改扩展程序设置。'
+        empty_host: '域名 {domain_index} 未设置任何域名或服务器 IP 地址，请修改扩展程序设置。'
+        empty_search_field: '域名 {domain_index} 未设置 LDAP 账号搜索的搜索字段，请修改扩展程序设置。'
+        empty_user_username: '域名 {domain_index} 未设置 Flarum 用户资料的用户名字段，请修改扩展程序设置。'
+        mail_field_does_not_exist: '无法在域名 {domain_index} 中找到 Flarum 用户资料的电子邮件地址字段 `{data}`，请修改扩展程序设置。'
+        no_domains: 未设置域名，请修改扩展程序设置。
+        username_field_does_not_exist: '无法在域名 {domain_index} 中找到 Flarum 用户资料的用户名字段 `{data}`，请修改扩展程序设置。'
+      not_authenticated: '无效的凭据，无法绑定 {server}，请修改扩展程序设置。'
+      search_filter_is_invalid: '输入的 LDAP 搜索字段无效，无法搜索 {server}，请修改扩展程序设置。'
+    log_in_with: '{server} 账号登录'
+    log_out: '=> core.ref.log_out'

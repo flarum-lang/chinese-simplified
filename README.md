@@ -16,7 +16,7 @@ Based on [flarum/lang-english](https://github.com/flarum/lang-english), [jsthon 
 ### 安装 / Install
 **_Flarum 最新版本_**
 ```
-composer require flarum-lang/chinese-simplified:dev-master
+composer require flarum-lang/chinese-simplified
 php flarum cache:clear
 ```
 

@@ -14,7 +14,7 @@ app.initializers.add('flarum-lang/chinese-simplified', () => {
 
     original(...args);
 
-    if(isZhHans && reformatTime) {
+    if(isZhHans && reformatTime && this.stream.description) {
       this.stream.description = dayjs(this.stream.description).format('YYYY年MMM');
     }
   });

@@ -535,7 +535,7 @@ core:
       generic_message: 糟糕，出错啦！请刷新页面重试。
       missing_dependencies_message: '无法启用「{extension}」，请先启用依赖扩展「{extensions}」'
       not_found_message: 您请求的资源不存在。
-      payload_too_large_message: 请求负载过大。
+      payload_too_large_message: 上传内容过大。
       permission_denied_message: 您没有权限进行此操作。
       rate_limit_exceeded_message: 您的操作太频繁，请稍后再试。
       render_failed_message: 抱歉，加载此内容时出错，请刷新页面重试。如果您是管理员，请查看论坛日志文件查看详情。

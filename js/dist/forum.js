@@ -32,7 +32,7 @@ flarum_forum_app__WEBPACK_IMPORTED_MODULE_0___default().initializers.add('flarum
       args[_key - 1] = arguments[_key];
     }
     original.apply(void 0, args);
-    if (isZhHans && reformatTime && this.stream.description) {
+    if (isZhHans && reformatTime && this.stream.description && dayjs(this.stream.description).isValid()) {
       this.stream.description = dayjs(this.stream.description).format('YYYY年MMM');
     }
   });

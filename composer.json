@@ -30,6 +30,11 @@
     "littlegolden/flarum-lang-simplified-chinese": "*",
     "ffans/lang-simplified-chinese": "*"
   },
+  "autoload": {
+    "psr-4": {
+      "FlarumLang\\ChineseSimplified\\": "src/"
+    }
+  },
   "extra": {
     "flarum-extension": {
       "title": "简体中文",

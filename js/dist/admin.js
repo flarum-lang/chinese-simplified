@@ -39,6 +39,8 @@ var NoticePage = /*#__PURE__*/function (_ExtensionPage) {
   _proto.oninit = function oninit(vnode) {
     _ExtensionPage.prototype.oninit.call(this, vnode);
     this.settings[this.getKey('use_google_fonts')] = flarum_common_utils_Stream__WEBPACK_IMPORTED_MODULE_3___default()(app.data.settings[this.getKey('use_google_fonts')] === '1');
+    this.settings[this.getKey('reformat_time')] = flarum_common_utils_Stream__WEBPACK_IMPORTED_MODULE_3___default()(app.data.settings[this.getKey('reformat_time')] === '1');
+    this.settings[this.getKey('reformat_time_force')] = flarum_common_utils_Stream__WEBPACK_IMPORTED_MODULE_3___default()(app.data.settings[this.getKey('reformat_time_force')] === '1');
   };
   _proto.content = function content() {
     return m("div", {
@@ -66,12 +68,29 @@ var NoticePage = /*#__PURE__*/function (_ExtensionPage) {
       className: "section"
     }, m("h3", null, "\u9AD8\u7EA7\u8BBE\u7F6E"), m("div", {
       className: "Form-group"
-    }, m("div", {
-      className: "helpText"
-    }, "\u4F7F\u7528\u8C37\u6B4C Noto Sans SC \u5B57\u4F53\u5207\u7247\uFF0C\u5728\u517C\u987E\u52A0\u8F7D\u901F\u5EA6\u7684\u540C\u65F6\uFF0C\u4F18\u5316", m("b", null, "\u975E\u79FB\u52A8\u8BBE\u5907"), "\u4E0A\u7684\u6587\u5B57\u5C55\u793A\u6548\u679C\u3002"), m((flarum_common_components_Switch__WEBPACK_IMPORTED_MODULE_4___default()), {
+    }, m((flarum_common_components_Switch__WEBPACK_IMPORTED_MODULE_4___default()), {
       state: this.settings[this.getKey('use_google_fonts')](),
       onchange: this.settings[this.getKey('use_google_fonts')]
-    }, "\u4F18\u5316\u5B57\u4F53")), m("div", {
+    }, "\u4F18\u5316\u5B57\u4F53"), m("div", {
+      className: "helpText"
+    }, "\u4F7F\u7528\u8C37\u6B4C Noto Sans SC \u5B57\u4F53\u5207\u7247\uFF0C\u5728\u517C\u987E\u52A0\u8F7D\u901F\u5EA6\u7684\u540C\u65F6\uFF0C\u4F18\u5316", m("b", null, "\u975E\u79FB\u52A8\u8BBE\u5907"), "\u4E0A\u7684\u6587\u5B57\u5C55\u793A\u6548\u679C\u3002")), m("div", {
+      className: "Form-group"
+    }, m((flarum_common_components_Switch__WEBPACK_IMPORTED_MODULE_4___default()), {
+      state: this.settings[this.getKey('reformat_time')](),
+      onchange: this.settings[this.getKey('reformat_time')]
+    }, "\u4F18\u5316\u65E5\u671F\u683C\u5F0F"), m("div", {
+      className: "helpText"
+    }, "\u5C06\u90E8\u5206\u683C\u5F0F\u98A0\u5012\u7684\u4E2D\u6587\u65E5\u671F\u91CD\u65B0\u683C\u5F0F\u5316\u6210\u6B63\u786E\u7684\u987A\u5E8F\u3002")), m("div", {
+      className: "Form-group"
+    }, m((flarum_common_components_Switch__WEBPACK_IMPORTED_MODULE_4___default()), {
+      state: this.settings[this.getKey('reformat_time_force')](),
+      onchange: this.settings[this.getKey('reformat_time_force')]
+    }, "\u589E\u5F3A\u65E5\u671F\u683C\u5F0F\u4F18\u5316"), m("div", {
+      className: "helpText"
+    }, "\u6781\u5177\u4FB5\u5165\u6027\u7684\u65E5\u671F\u683C\u5F0F\u8C03\u6574\u65B9\u6848\uFF0C\u53EF\u80FD\u4F1A\u8BEF\u4F24\u67D0\u4E9B\u65E5\u671F\u5C55\u793A\u6548\u679C\uFF08\u7075\u611F\u6765\u81EA", m("a", {
+      href: "https://discuss.flarum.org.cn/u/zxypp",
+      target: "_blank"
+    }, "@\u5C0F\u9C7C\u98D8\u98D8"), "\uFF09\u3002")), m("div", {
       className: "Form-group"
     }, this.submitButton()))));
   };

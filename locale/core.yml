@@ -239,6 +239,8 @@ core:
             title: 用户组
           join_time:
             title: 注册时间
+          user_actions:
+            title: 操作
           user_id:
             title: ID
           username:
@@ -511,6 +513,10 @@ core:
       hidden_tooltip: 隐藏
     data_segment:
       label: '{label}：'
+    datetime_formats:
+      humanTimeLong: ll
+      humanTimeShort: MMMD日
+      scrubber: 'YYYY MMMM'
     debug_button: 调试
     dropdown:
       toggle_dropdown_accessible_label: 下拉菜单开关

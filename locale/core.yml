@@ -516,7 +516,7 @@ core:
     datetime_formats:
       humanTimeLong: ll
       humanTimeShort: MMMD日
-      scrubber: 'YYYY MMMM'
+      scrubber: YYYY年M月
     debug_button: 调试
     dropdown:
       toggle_dropdown_accessible_label: 下拉菜单开关

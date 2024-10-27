@@ -2,6 +2,20 @@ CHANGELOG
 =========
 
 
+1.4.2 (2024-09-21)
+------------------
+
+修复日期无效的情况
+
+**Full Changelog**: https://github.com/flarum-lang/chinese-simplified/compare/v1.4.1...v1.4.2
+
+
+1.4.1 (2024-09-21)
+------------------
+
+**Full Changelog**: https://github.com/flarum-lang/chinese-simplified/compare/v1.4.0...v1.4.1
+
+
 1.4.0 (2024-09-21)
 ------------------
 

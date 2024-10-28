@@ -2,7 +2,7 @@ CHANGELOG
 =========
 
 
-1.4.3 (XXXX-XX-XX)
+1.5.0 (XXXX-XX-XX)
 ------------------
 
 **例行更新**:
@@ -10,7 +10,19 @@ CHANGELOG
 * 更新核心翻译.
 
 
-全部变化：[v1.4.2...v1.4.3](https://github.com/flarum-lang/chinese-simplified/compare/v1.4.2...v1.4.3)
+**新增翻译**:
+
+* [`krombox/flarum-ext-oauth-wordpress`](https://github.com/krombox/flarum-ext-oauth-wordpress)
+* [`walsgit/recycle-bin`](https://github.com/WalsGit/recycle-bin)
+
+
+**更新翻译**:
+
+* [`fof/polls`](https://github.com/FriendsOfFlarum/polls)
+* [`ianm/translate`](https://flarum.org/extension/ianm/translate)
+
+
+全部变化：[v1.4.2...v1.5.0](https://github.com/flarum-lang/chinese-simplified/compare/v1.4.2...v1.5.0)
 
 
 1.4.2 (2024-09-21)

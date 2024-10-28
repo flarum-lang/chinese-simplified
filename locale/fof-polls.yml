@@ -20,6 +20,8 @@ fof-polls:
       allow_option_image: 允许设置选项图片链接
       enable_global_polls: 启用全站投票
       enable_global_polls_help: 全站投票不与任何帖子绑定，可以从专门的投票页面访问。
+      general:
+        help: 这些设置控制投票扩展的基本功能。
       image_height: 调整图片高度
       image_width: 调整图片宽度
       max_options: 每个投票可设置的最大选项数量

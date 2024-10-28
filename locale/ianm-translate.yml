@@ -4,6 +4,8 @@
 
 ianm-translate:
   admin:
+    glossary:
+      button: 词汇表
     permission:
       edit-translation: 自定义译文
       refresh-translation: 强制重新翻译缓存的译文

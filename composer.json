@@ -24,7 +24,7 @@
     "forum": "https://discuss.flarum.org/d/22690"
   },
   "require": {
-    "flarum/core": ">=1.0.0,<1.8.6"
+    "flarum/core": "^1.0.0"
   },
   "replace": {
     "littlegolden/flarum-lang-simplified-chinese": "*",

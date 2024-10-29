@@ -18,8 +18,10 @@ CHANGELOG
 
 **更新翻译**:
 
+* [`fof/open-collective`](https://github.com/FriendsOfFlarum/open-collective)
 * [`fof/polls`](https://github.com/FriendsOfFlarum/polls)
 * [`ianm/translate`](https://flarum.org/extension/ianm/translate)
+* [`v17development/flarum-seo`](https://github.com/v17development/flarum-seo)
 
 
 全部变化：[v1.4.2...v1.5.0](https://github.com/flarum-lang/chinese-simplified/compare/v1.4.2...v1.5.0)

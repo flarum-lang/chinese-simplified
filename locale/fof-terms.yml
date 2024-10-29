@@ -28,6 +28,8 @@ fof-terms:
       export-url-help: "具有「导出全部条款数据」权限的用户可以点击上方的按钮并下载接受条款的用户列表。 您可以在 <a>插件 wiki</a> 上了解有关此选项的详情信息。\n"
       name: 名称
       name-help: 这个名称将显示在勾选框右侧，并作为更新提示弹窗的标题。
+      optional: 非强制性条款
+      optional-help: 启用此项，用户可以在不同意条款的情况下使用论坛。
       terms-updated-at: 更新于
       terms-updated-at-help: "条款更新时间（点击「现在」按钮可生成当前的协调世界时）。设置此值将要求用户重新接受更新后的条款。此时间必须为过去的时间（否则用户将无法接受来自「未来」的条款并关闭对话框）。\n"
       terms-updated-at-placeholder: 'YYYY-MM-DD (hh:mm:ss)'

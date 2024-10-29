@@ -82,6 +82,7 @@ fof-oauth:
       settings:
         linked-account:
           help: 绑定第三方帐户，开辟登录捷径。
+          identification-label: '{provider} ID'
           identifier-label: '{provider} ID'
           label: 第三方登录
           last-used-label: 上次使用

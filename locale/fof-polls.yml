@@ -21,7 +21,14 @@ fof-polls:
       enable_global_polls: 启用全站投票
       enable_global_polls_help: 全站投票不与任何帖子绑定，可以从专门的投票页面访问。
       general:
+        heading: 常规设置
         help: 这些设置控制投票扩展的基本功能。
+      global_polls:
+        heading: 全站投票
+        help: 这些设置控制全局投票功能。
+      image:
+        heading: 图片设置
+        help: 这些设置控制投票的图片。
       image_height: 调整图片高度
       image_width: 调整图片宽度
       max_options: 每个投票可设置的最大选项数量

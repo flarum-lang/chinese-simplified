@@ -11,8 +11,6 @@ export default class NoticePage extends ExtensionPage {
     super.oninit(vnode);
 
     this.settings[this.getKey('use_google_fonts')] = Stream(app.data.settings[this.getKey('use_google_fonts')] === '1');
-    this.settings[this.getKey('reformat_time')] = Stream(app.data.settings[this.getKey('reformat_time')] === '1');
-    this.settings[this.getKey('reformat_time_force')] = Stream(app.data.settings[this.getKey('reformat_time_force')] === '1');
   }
   content(){
     return (
@@ -40,20 +38,6 @@ export default class NoticePage extends ExtensionPage {
                 优化字体
               </Switch>
               <div className="helpText">使用谷歌 Noto Sans SC 字体切片，在兼顾加载速度的同时，优化<b>非移动设备</b>上的文字展示效果。</div>
-            </div>
-            <div className="Form-group">
-              <Switch state={this.settings[this.getKey('reformat_time')]()}
-                      onchange={this.settings[this.getKey('reformat_time')]}>
-                优化日期格式
-              </Switch>
-              <div className="helpText">将部分格式颠倒的中文日期重新格式化成正确的顺序。</div>
-            </div>
-            <div className="Form-group">
-              <Switch state={this.settings[this.getKey('reformat_time_force')]()}
-                      onchange={this.settings[this.getKey('reformat_time_force')]}>
-                增强日期格式优化
-              </Switch>
-              <div className="helpText">极具侵入性的日期格式调整方案，可能会误伤某些日期展示效果（灵感来自<a href="https://discuss.flarum.org.cn/u/zxypp" target="_blank">@小鱼飘飘</a>）。</div>
             </div>
             <div className="Form-group">{this.submitButton()}</div>
           </div>

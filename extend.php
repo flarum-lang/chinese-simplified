@@ -8,13 +8,10 @@
  * file that was distributed with this source code.
  */
 
-namespace FlarumLang\ChineseSimplified;
-
 use Flarum\Extend;
 use Flarum\Extend\LanguagePack;
 use Flarum\Frontend\Document;
 use Flarum\Settings\SettingsRepositoryInterface;
-use Flarum\Api\Serializer\ForumSerializer;
 
 $extKey = 'flarum-lang-chinese-simplified';
 $settings = resolve(SettingsRepositoryInterface::class);
@@ -42,11 +39,6 @@ $extends = [
     (new Extend\Frontend('admin'))
         ->js(__DIR__.'/js/dist/admin.js')
         ->css(__DIR__.'/less/admin.less'),
-    (new Extend\Frontend('forum'))
-        ->js(__DIR__.'/js/dist/forum.js'),
-
-    (new Extend\ApiSerializer(ForumSerializer::class))
-        ->attributes(ForumAttributes::class),
 
     new LanguagePack,
 ];

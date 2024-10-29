@@ -18,9 +18,17 @@ CHANGELOG
 
 **更新翻译**:
 
+* [`fof/best-answer`](https://github.com/FriendsOfFlarum/best-answer)
+* [`fof/byobu`](https://github.com/FriendsOfFlarum/byobu)
+* [`fof/geoip`](https://github.com/FriendsOfFlarum/geoip)
+* [`fof/impersonate`](https://github.com/FriendsOfFlarum/impersonate)
+* [`fof/links`](https://github.com/FriendsOfFlarum/links)
+* [`fof/moderator-notes`](https://github.com/FriendsOfFlarum/moderator-notes)
+* [`fof/nightmode`](https://github.com/FriendsOfFlarum/nightmode)
 * [`fof/open-collective`](https://github.com/FriendsOfFlarum/open-collective)
 * [`fof/polls`](https://github.com/FriendsOfFlarum/polls)
 * [`ianm/translate`](https://flarum.org/extension/ianm/translate)
+* [`justoverclock/flarum-ext-purify`](https://github.com/justoverclockl/flarum-ext-purify)
 * [`v17development/flarum-seo`](https://github.com/v17development/flarum-seo)
 
 

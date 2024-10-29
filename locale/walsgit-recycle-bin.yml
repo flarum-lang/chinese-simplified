@@ -4,4 +4,53 @@
 
 walsgit-recycle-bin:
   admin:
+    actions: 操作
+    bulk_actions: '批量操作： '
+    bulk_delete_label: 删除选择的主题帖
+    bulk_restore_label: 还原选择的主题帖
+    created_at: 创建于
+    delete_discussion:
+      confirmation: 确定要<u>永久删除</u>这个主题吗？此操作不可撤销：
+      delete_button: 永久删除
+      success: 已永久删除主题帖
+      title: 永久删除
+    delete_tooltip: 删除主题
+    discussion_author: 作者
+    discussion_id: ID
+    discussion_link_tooltip: 查看
+    discussion_title: 标题
+    empty_list: 暂无主题帖。
+    hidden_at: 隐藏于
+    hidden_discussions: 已隐藏主题
+    mass_delete_modal:
+      submit_button: 永久删除主题帖
+      success: 已永久删除选择的主题帖
+      text_end: ' 已选择的主题帖?'
+      text_start: '确定要<u>永久删除</u> '
+      title: 永久删除主题帖
+    mass_help_text: 请在批量操作后耐心等待页面刷新
+    mass_restore_modal:
+      submit_button: 还原主题帖
+      success: 已成功还原选择的主题帖
+      text_end: ' 已选择的主题帖？'
+      text_start: '确定要还原 '
+      title: 还原选择的主题帖
+    pagination:
+      back_button: 上一页
+      first_page_button: 第一页
+      go_to_page_textbox_a11y_label: 跳转到
+      last_page_button: 最后一页
+      next_button: 下一页
+      page_counter: '第 {current} 页/共 {total} 页'
+    restore_discussion:
+      confirmation: 确定要还原这个主题帖：
+      restore_button: 还原
+      success: 已成功还原主题帖
+      title: 还原主题
+    restore_tooltip: 还原主题
+    search_help_text: 支持搜索主题标题和回帖内容关键词
+    search_placeholder: 搜索主题帖
     title: 回收站
+    total_hidden_discussions: 隐藏帖总数
+    unknown_date: 未知日期
+    unknownn_user: 未知用户

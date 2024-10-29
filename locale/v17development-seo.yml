@@ -3,6 +3,13 @@
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
 v17development-flarum-seo:
+  admin:
+    permissions:
+      configure_seo: '允许配置 SEO'
   forum:
+    controls:
+      configure_seo: '配置 SEO'
+      reset_seo: '重置 SEO'
+      update_seo: '更新 SEO'
     profile_description: '{username} 的个人资料 | {discussion_count} 篇主题 | {comment_count} 条回复'
     profile_title: '{username} 的个人资料'

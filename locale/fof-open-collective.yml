@@ -6,7 +6,7 @@ fof-open-collective:
   admin:
     settings:
       api_key_label: 'API Key'
-      desc: '从 <a>https://opencollective.com/applications</a> 获取 API Key。'
+      desc: "请前往 <a>https://opencollective.com/dashboard</a> 设置 -> For Developers 获取个人令牌。请保持默认配置，不要添加额外限制。\n"
       group_label: 指定用户组
       slug_label: 'Collective Slug'
       title: 'FoF Open Collective 赞助服务'

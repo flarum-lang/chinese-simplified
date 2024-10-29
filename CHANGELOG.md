@@ -2,6 +2,17 @@ CHANGELOG
 =========
 
 
+1.5.1 (XXXX-XX-XX)
+------------------
+
+**例行更新**:
+
+* 更新核心翻译.
+
+
+全部变化：[v1.5.0...v1.5.1](https://github.com/flarum-lang/chinese-simplified/compare/v1.5.0...v1.5.1)
+
+
 1.5.0 (2024-10-29)
 ------------------
 

@@ -14,8 +14,15 @@ app.initializers.add('flarum-lang/chinese-simplified', () => {
 
     original(...args);
 
-    if(isZhHans && reformatTime && this.stream.description && dayjs(this.stream.description).isValid()) {
-      this.stream.description = dayjs(this.stream.description).format('YYYY年MMM');
+    if(isZhHans && reformatTime && this.stream.discussion.payload) {
+      this.stream.loadPromise.then(() => {
+        const index = this.stream.index.toFixed(0) - 1;
+        // const index = this.stream.targetPost.index || 0;
+        const id = this.stream.discussion.payload.data.relationships.posts.data[index]['id'];
+        const post = this.stream.discussion.store.data.posts[id];
+        const time = post.data.attributes.createdAt;
+        this.stream.description = dayjs(time).format('YYYY年MMM');
+      })
     }
   });
 

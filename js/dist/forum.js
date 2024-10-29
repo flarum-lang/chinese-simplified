@@ -27,13 +27,21 @@ flarum_forum_app__WEBPACK_IMPORTED_MODULE_0___default().initializers.add('flarum
 
   // 调整侧边栏日期
   (0,flarum_common_extend__WEBPACK_IMPORTED_MODULE_1__.override)((flarum_forum_components_PostStream__WEBPACK_IMPORTED_MODULE_2___default().prototype), 'updateScrubber', function (original) {
+    var _this = this;
     var reformatTime = (flarum_forum_app__WEBPACK_IMPORTED_MODULE_0___default().forum).data.attributes[getKey('reformat_time')];
     for (var _len = arguments.length, args = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
       args[_key - 1] = arguments[_key];
     }
     original.apply(void 0, args);
-    if (isZhHans && reformatTime && this.stream.description && dayjs(this.stream.description).isValid()) {
-      this.stream.description = dayjs(this.stream.description).format('YYYY年MMM');
+    if (isZhHans && reformatTime && this.stream.discussion.payload) {
+      this.stream.loadPromise.then(function () {
+        var index = _this.stream.index.toFixed(0) - 1;
+        // const index = this.stream.targetPost.index || 0;
+        var id = _this.stream.discussion.payload.data.relationships.posts.data[index]['id'];
+        var post = _this.stream.discussion.store.data.posts[id];
+        var time = post.data.attributes.createdAt;
+        _this.stream.description = dayjs(time).format('YYYY年MMM');
+      });
     }
   });
   (0,flarum_common_extend__WEBPACK_IMPORTED_MODULE_1__.override)(dayjs.prototype, 'format', function (original, format) {

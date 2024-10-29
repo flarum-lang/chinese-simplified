@@ -5,7 +5,11 @@
 ianm-translate:
   admin:
     glossary:
-      button: 词汇表
+      button: 术语表
+      create_button: 创建术语
+      section:
+        heading: 术语配置
+        help: 定义不应该翻译的词汇，如专有名词、技术术语等。
     permission:
       edit-translation: 自定义译文
       refresh-translation: 强制重新翻译缓存的译文
@@ -17,6 +21,7 @@ ianm-translate:
       any-language-help: 启用后，当前提供支持的所有语言的翻译都可以使用。若要将翻译文本限制为仅在论坛上启用的语言，请禁用此选项。
       bind-browser-language: 添加浏览器语言
       bind-browser-language-help: 启用此项，将用户的浏览器语言添加到可用语言列表。
+      button: 设置
       deepl:
         api_key:
           help: '前往 {link} 注册。扩展程序将自动检测免费或付费订阅类型。'
@@ -34,6 +39,9 @@ ianm-translate:
             default: 默认
             prefer_less: 较不正式
             prefer_more: 更加正式
+      general:
+        heading: 常规设置
+        help: 这些设置控制翻译系统的一些基本能力。
       google-cloud:
         api_key:
           help: '前往 {link} 注册 API 密钥。此驱动程序使用 V2 API - 基本版。'
@@ -49,6 +57,9 @@ ianm-translate:
           help: 'LibreTranslate 服务器 URL。如果您正在运行自己的实例，请在此处输入 URL，含 `http`或`https`。'
           label: 服务器地址
       provider: 翻译服务提供商
+      providers:
+        heading: 翻译服务设置
+        help: 选择并配置一个合适的翻译服务。
       readme-info: '查看 README 文档获取更多信息。'
       readme-none: 此驱动程序无额外设置。
       seemless: 自动翻译

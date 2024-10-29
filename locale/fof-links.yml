@@ -24,6 +24,11 @@ fof-links:
       url_placeholder: '=> fof-links.ref.url'
       use_rel_me: '添加 <code>rel="me"</code> 属性来向其它站点表明身份'
       visibility: 链接可见范围
+      visibility.guest-only.help: '此链接仅{guest}可见。请调整上方权限为「所有人」。'
+      visibility.guest-only.label: '仅{guest}可见？'
+      visibility.help: '默认情况下，链接仅 <code>{admin}</code> 用户可见，请根据情况调整权限。'
+      visibility.help-disabled: 修改可见性设置前保存链接。
+      visibility.label: 链接可见性
     links:
       create_button: '=> fof-links.ref.create_link'
       links: '=> fof-links.ref.links'

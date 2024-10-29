@@ -5,8 +5,11 @@
 fof-open-collective:
   admin:
     settings:
-      api_key_label: 'API Key'
-      desc: "请前往 <a>https://opencollective.com/dashboard</a> 设置 -> For Developers 获取个人令牌。请保持默认配置，不要添加额外限制。\n"
+      api_key_label: '应用 API 密钥（已弃用）'
+      desc: "请前往 <a>https://opencollective.com/dashboard</a>「设置 -> 开发者」菜单获取个人令牌。请保持默认配置，不要添加权限范围。\n"
       group_label: 指定用户组
-      slug_label: 'Collective Slug'
+      personal_token_label: 个人令牌
+      slug_label: 'Collective 固定链接'
       title: 'FoF Open Collective 赞助服务'
+      use_legacy_api_key_help: "您可以在此继续使用旧版 API 密钥，但建议您切换到新版个人令牌。目前个人令牌似乎在 API Key 模式下应用（即「API-Key」头），但无文档说明。\n"
+      use_legacy_api_key_label: '使用旧版应用 API 密钥'

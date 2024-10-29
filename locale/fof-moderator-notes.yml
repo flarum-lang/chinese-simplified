@@ -20,6 +20,7 @@ fof-moderator-notes:
       created_text: '{username} 留言于 {date}'
       delete: 删除
       dismiss_button: 好的
+      filter_by_me: 只看我创建的
       input_heading: '您正在向 <strong>{username}</strong> 留言（支持 Markdown）'
       noNotes: 还没有人发表留言，何不坐第一个沙发？
       submit_button: 发表

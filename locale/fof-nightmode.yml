@@ -12,10 +12,14 @@ fof-default-user-preferences:
 fof-nightmode:
   admin:
     settings:
+      general:
+        heading: 常规设置
+        help: 这些设置控制本扩展的一些基本能力。
       modal:
         always_show_theme_toggle_on_header: 始终在导航栏显示日夜切换按钮
         default_theme: 默认模式
         default_theme_helper: 自动为新用户、访客和未自定义的用户应用的颜色模式。
+        show_theme_toggle_in_solid: 显示实心主题图标
         theme_auto: '=> fof-nightmode.ref.auto'
         theme_dark: '=> fof-nightmode.ref.dark'
         theme_light: '=> fof-nightmode.ref.light'

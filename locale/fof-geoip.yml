@@ -9,8 +9,16 @@ fof-default-user-preferences:
       showIPCountry-help: '基于用户 IP 公开展示发帖时的国家或地区旗帜。具备管理权限的用户可在提示框中查看具体的 IP 地址。'
 fof-geoip:
   admin:
+    permissions:
+      see_country: '始终显示 IP 地址所属国家或地区'
     settings:
       access_key_label: 'Access Key'
+      general:
+        heading: 常规设置
+        help: 这些设置控制本扩展的一些基本能力。
+      providers:
+        heading: 'IP 查询服务'
+        help: '选择一个 IP 查询服务。部分服务有调用速率限制，详情请查看相关服务文档。'
       quota_label: 查询额度
       security_label: '安全模块（需要 professional plus）'
       service_freegeoip_description: '<b>https://freegeoip.app/</b>，每小时可免费查询 15,000 个 IP 国家代码。'
@@ -28,12 +36,13 @@ fof-geoip:
       service_ipstack_description: '<b>https://ipstack.com</b>，每月可免费查询 10,000 次。付费方案包含连接信息（ISP、组织）以及威胁等级。'
       service_ipstack_label: IPStack
       service_label: 服务
-      show_flag_help: '基于作者的 IP 地址展示国家或地区旗帜，不泄露 IP 地址。'
+      show_flag_help: '用户发帖勾选后，基于作者的 IP 地址展示国家或地区旗帜，不泄露 IP 地址。'
       show_flag_label: 展示发帖地区旗帜
       title: 'FriendsOfFlarum GeoIP'
   forum:
     alerts:
       ip_copied: '已复制 IP 地址'
+    copy_ip_label: '复制 IP 地址'
     map_button_label: 'IP 信息'
     map_modal:
       as: 'AS 号'

@@ -15,6 +15,8 @@ fof-best-answer:
       allow_select_own_post_help: 允许用户将自己的帖子设为最佳回复
       discussion_sidebar_jump_button: 展示最佳回复跳转按钮
       discussion_sidebar_jump_button_help: 在主题帖侧边栏添加一个可以跳转到最佳回复的按钮。
+      display_tags: 在搜索结果中展示标签
+      display_tags_help: 在搜索结果中展示最佳回复主题帖标签
       documentation: 文档
       enable_all_tags_button: 为所有标签启用最佳回复
       enable_all_tags_reminder_button: 为所有标签启用提醒功能
@@ -31,6 +33,8 @@ fof-best-answer:
       remind_tag_ids: '若要将提醒功能仅用于特定标签，请在此输入标签 ID （英文逗号分隔）'
       remind_tags_help: 如有需要，请选择要发送提醒的标签（如果有）。
       remind_tags_label: 提醒标签
+      remove_solutions_from_main_search: 在主搜索中隐藏
+      remove_solutions_from_main_search_help: 在「全部主题」搜索结果中不展示最佳回复主题帖
       schedule_log_output: 将调度程序的输出添加到日志存储中
       schedule_on_one_server: '使用 onOneServer() 方法建立计划任务'
       schedule_on_one_server_help: '需要 Redis/Memcache'

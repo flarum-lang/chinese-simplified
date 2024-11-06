@@ -2,17 +2,6 @@ CHANGELOG
 =========
 
 
-1.5.1 (XXXX-XX-XX)
-------------------
-
-**例行更新**:
-
-* 更新核心翻译.
-
-
-全部变化：[v1.5.0...v1.5.1](https://github.com/flarum-lang/chinese-simplified/compare/v1.5.0...v1.5.1)
-
-
 1.5.0 (2024-10-29)
 ------------------
 
@@ -501,6 +490,59 @@ CHANGELOG
 * [`zerosonesfun/flarum-bbcode-button`](https://github.com/zerosonesfun/flarum-bbcode-button)
 * [`zerosonesfun/expired-posts`](https://github.com/zerosonesfun/expired-posts)
 
+
+全部变化：[v1.1.1.1220...v1.2.0](https://github.com/flarum-lang/chinese-simplified/compare/v1.1.1.1220...v1.2.0)
+
+
+v1.7.0 (XXXX-XX-XX)
+------------------
+
+**新增翻译**:
+
+* [`flarum/gdpr`](https://github.com/flarum/gdpr)
+
+
+全部变化：[v1.6.0...v1.7.0](https://github.com/flarum-lang/chinese-simplified/compare/v1.6.0...v1.7.0)
+
+
+1.6.0 (XXXX-XX-XX)
+-------------------
+
+全部变化：[v1.5.0...v1.6.0](https://github.com/flarum-lang/chinese-simplified/compare/v1.5.0...v1.6.0)
+
+
+v1.5.0 (XXXX-XX-XX)
+-------------------
+
+全部变化：[v1.4.2...v1.5.0](https://github.com/flarum-lang/chinese-simplified/compare/v1.4.2...v1.5.0)
+
+
+v1.4.2 (XXXX-XX-XX)
+-------------------
+
+全部变化：[v1.4.1...v1.4.2](https://github.com/flarum-lang/chinese-simplified/compare/v1.4.1...v1.4.2)
+
+
+v1.4.1 (XXXX-XX-XX)
+-------------------
+
+全部变化：[v1.4.0...v1.4.1](https://github.com/flarum-lang/chinese-simplified/compare/v1.4.0...v1.4.1)
+
+
+v1.4.0 (XXXX-XX-XX)
+-------------------
+
+全部变化：[v1.3.0...v1.4.0](https://github.com/flarum-lang/chinese-simplified/compare/v1.3.0...v1.4.0)
+
+
+v1.3.0 (XXXX-XX-XX)
+-------------------
+
+全部变化：[v1.2.0...v1.3.0](https://github.com/flarum-lang/chinese-simplified/compare/v1.2.0...v1.3.0)
+
+
+v1.2.0 (XXXX-XX-XX)
+-------------------
 
 全部变化：[v1.1.1.1220...v1.2.0](https://github.com/flarum-lang/chinese-simplified/compare/v1.1.1.1220...v1.2.0)
 

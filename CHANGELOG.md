@@ -2,6 +2,23 @@ CHANGELOG
 =========
 
 
+1.7.0 (XXXX-XX-XX)
+------------------
+
+**新增翻译**:
+
+* [`flarum/gdpr`](https://github.com/flarum/gdpr)
+
+
+全部变化：[v1.6.0...v1.7.0](https://github.com/flarum-lang/chinese-simplified/compare/v1.6.0...v1.7.0)
+
+
+1.6.0 (XXXX-XX-XX)
+------------------
+
+全部变化：[v1.5.0...v1.6.0](https://github.com/flarum-lang/chinese-simplified/compare/v1.5.0...v1.6.0)
+
+
 1.5.0 (2024-10-29)
 ------------------
 

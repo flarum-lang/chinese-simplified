@@ -10,6 +10,11 @@ CHANGELOG
 * [`flarum/gdpr`](https://github.com/flarum/gdpr)
 
 
+**更新翻译**:
+
+* [`flarum/extension-manager`](https://github.com/flarum/extension-manager)
+
+
 全部变化：[v1.6.0...v1.7.0](https://github.com/flarum-lang/chinese-simplified/compare/v1.6.0...v1.7.0)
 
 

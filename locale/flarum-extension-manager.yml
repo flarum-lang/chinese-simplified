@@ -141,3 +141,22 @@ flarum-extension-manager:
       updater_title: 更新
     why_not_modal:
       title: 为什么无法更新
+  validation:
+    attributes:
+      bearer: 'HTTP 令牌认证'
+      'bearer.*': 'HTTP 令牌认证'
+      extension_id: '扩展程序 ID'
+      github_oauth: 'GitHub 认证'
+      'github_oauth.*': 'GitHub 认证'
+      gitlab_oauth: 'GitLab 认证'
+      'gitlab_oauth.*': 'GitLab 认证'
+      gitlab_token: 'GitLab 令牌'
+      'gitlab_token.*': 'GitLab 令牌'
+      minimum_stability: 稳定性约束
+      package: 包
+      repositories: 仓库
+      'repositories.*': 仓库
+      'repositories.*.type': 仓库类型
+      'repositories.*.url': '仓库 URL'
+      update_mode: 更新模式
+      version: 版本

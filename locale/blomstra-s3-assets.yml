@@ -19,7 +19,7 @@ blomstra-s3-assets:
         help: 'S3 Endpoint'
         label: Endpoint
       s3key:
-        help: 'S3 访问秘钥'
+        help: 帮助
         label: Key
       s3path-style-endpoint:
         help: 切换到路径访问类型

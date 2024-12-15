@@ -39,3 +39,6 @@ flarum-suspend:
       suspended_tooltip: 封禁中
     user_controls:
       suspend_button: 封禁
+  validation:
+    attributes:
+      suspendedUntil: 封禁直到

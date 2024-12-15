@@ -59,6 +59,7 @@ fof-polls:
       edit_title: 编辑投票
       error: '=> core.lib.error.generic_message'
       hide_votes_label: 隐藏投票直到投票结束
+      hide_votes_label_help: 发起投票者将始终能够看到投票结果。
       image_option_placeholder: 图片链接（可选）
       include_question: 至少要有一个议题
       max: '最多 {max} 个选项'

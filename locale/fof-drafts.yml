@@ -2,6 +2,12 @@
 # Use https://weblate.rob006.net/projects/flarum/fof-drafts/zh_Hans/ for translation.
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
+flarum-gdpr:
+  lib:
+    data:
+      drafts:
+        delete_description: 删除用户创建的所有草稿。
+        export_description: 用户创建的所有草稿。
 fof-drafts:
   admin:
     permissions:

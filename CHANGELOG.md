@@ -8,6 +8,7 @@ CHANGELOG
 **新增翻译**:
 
 * [`flarum/gdpr`](https://github.com/flarum/gdpr)
+* [`huseyinfiliz/modern-footer`](https://github.com/huseyinfiliz/modern-footer)
 
 
 **更新翻译**:

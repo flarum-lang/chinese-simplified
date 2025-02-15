@@ -9,6 +9,7 @@ CHANGELOG
 
 * [`flarum/gdpr`](https://github.com/flarum/gdpr)
 * [`huseyinfiliz/modern-footer`](https://github.com/huseyinfiliz/modern-footer)
+* [`huseyinfiliz/notificationhub`](https://github.com/huseyinfiliz/notificationhub)
 
 
 **更新翻译**:

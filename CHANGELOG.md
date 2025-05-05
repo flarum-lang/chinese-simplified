@@ -7,6 +7,7 @@ CHANGELOG
 
 **新增翻译**:
 
+* [`blazite/flarum-turnstile`](https://github.com/blazite/flarum-ext-turnstile)
 * [`flarum/gdpr`](https://github.com/flarum/gdpr)
 * [`fof/discussion-views`](https://github.com/FriendsOfFlarum/discussion-views)
 * [`fof/horizon`](https://github.com/FriendsOfFlarum/horizon)

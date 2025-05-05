@@ -2,6 +2,39 @@ CHANGELOG
 =========
 
 
+1.7.0 (XXXX-XX-XX)
+------------------
+
+**新增翻译**:
+
+* [`blazite/flarum-turnstile`](https://github.com/blazite/flarum-ext-turnstile)
+* [`flarum/gdpr`](https://github.com/flarum/gdpr)
+* [`fof/discussion-views`](https://github.com/FriendsOfFlarum/discussion-views)
+* [`fof/horizon`](https://github.com/FriendsOfFlarum/horizon)
+* [`fof/synopsis`](https://github.com/FriendsOfFlarum/synopsis)
+* [`huseyinfiliz/modern-footer`](https://github.com/huseyinfiliz/modern-footer)
+* [`huseyinfiliz/notificationhub`](https://github.com/huseyinfiliz/notificationhub)
+
+
+**更新翻译**:
+
+* [`blomstra/s3-assets`](https://github.com/blomstra/flarum-ext-s3-assets)
+* [`flarum/extension-manager`](https://github.com/flarum/extension-manager)
+* [`flarum/suspend`](https://github.com/flarum/suspend)
+* [`flarum/tags`](https://github.com/flarum/tags)
+* [`fof/drafts`](https://github.com/FriendsOfFlarum/drafts)
+* [`fof/polls`](https://github.com/FriendsOfFlarum/polls)
+
+
+全部变化：[v1.6.0...v1.7.0](https://github.com/flarum-lang/chinese-simplified/compare/v1.6.0...v1.7.0)
+
+
+1.6.0 (XXXX-XX-XX)
+------------------
+
+全部变化：[v1.5.0...v1.6.0](https://github.com/flarum-lang/chinese-simplified/compare/v1.5.0...v1.6.0)
+
+
 1.5.0 (2024-10-29)
 ------------------
 

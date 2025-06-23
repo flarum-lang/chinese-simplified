@@ -13,6 +13,7 @@ antoinefr-money:
       - 删除主题/帖子时
     permissions:
       edit_money_label: 调整财富
+      disable_money_label: 禁用财富
     settings:
       autoremove: 重算计算财富
       helpextensionlikes: '需要 <code>flarum/likes</code> 扩展程序'
@@ -23,6 +24,8 @@ antoinefr-money:
       noshowzero: '若值为 0 则不显示'
       postminimumlength: '可获得奖励的最少回帖字数（0 表示不限制）'
       title: 设置
+      cascaderemove: 删除讨论时删除帖子的资金
+      ignore_notifying_users: 检测回帖字数时仅关注内容部分
   forum:
     modal:
       current: 当前：

@@ -25,6 +25,7 @@ CHANGELOG
 * [`flarum/tags`](https://github.com/flarum/tags)
 * [`fof/drafts`](https://github.com/FriendsOfFlarum/drafts)
 * [`fof/polls`](https://github.com/FriendsOfFlarum/polls)
+* [`fof/upload`](https://github.com/FriendsOfFlarum/upload)
 
 
 全部变化：[v1.6.0...v1.7.0](https://github.com/flarum-lang/chinese-simplified/compare/v1.6.0...v1.7.0)

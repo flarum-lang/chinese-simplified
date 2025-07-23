@@ -9,6 +9,13 @@ blomstra-gdpr:
         anonymize_description: 解除文件与用户的关联，保留文件本身的可访问。
         delete_description: 删除由用户上传的所有文件。
         export_description: 所有由用户上传的文件。
+flarum-gdpr:
+  lib:
+    data:
+      uploads:
+        anonymize_description: 去除所有已上传文件的用户关联。之前可访问这些文件的用户仍可访问。
+        delete_description: 删除该用户上传的所有文件。
+        export_description: 用户上传的所有文件。
 fof-upload:
   admin:
     buttons:

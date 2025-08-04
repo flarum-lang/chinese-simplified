@@ -4,7 +4,11 @@
 
 afrux-online-users-widget:
   admin:
+    permissions:
+      view_online_users_widget: 显示在线用户列表组件
     settings:
+      cache_ttl: 用户列表缓存时间（秒）
+      last_seen_interval: 用户在线状态缓存时间（分钟）
       max_users: 最多展示人数
   forum:
     widget:

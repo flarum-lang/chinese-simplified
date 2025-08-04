@@ -5,19 +5,21 @@
 datlechin-link-preview:
   admin:
     settings:
-      blacklist_help: 输入禁止预览的域名或链接，以逗号分隔。
-      blacklist_label: 排除列表
-      blacklist_placeholder: '如「baidu.com,https://pornhub.com/categories」'
-      cache_time_help: '在一定分钟内，缓存抓取的图标。设置为 0 则禁用链接缓存。如果未设置，默认为 60 分钟。'
-      cache_time_label: 缓存时间
-      convert_media_urls_help: 启用以转换所有媒体链接为预览帖。
-      convert_media_urls_label: 预览媒体链接
-      open_links_in_new_tab_help: 如果启用，链接将在新标签页中打开。
-      open_links_in_new_tab_label: 在新标签页中打开链接
-      use_google_favicons_help: 如果启用，将在前端使用谷歌服务请求相应网站的站点图标。
-      use_google_favicons_label: '使用谷歌图标 API'
-      whitelist_help: 输入允许预览的域名列表，以半角逗号分隔。
-      whitelist_label: 白名单
-      whitelist_placeholder: '例如：facebook.com,https://domain.com/path'
+      blacklist_help: 指定不生成链接预览的域名或URL，如果是多个条目请用英文逗号分隔。
+      blacklist_label: 排除列表（黑名单）
+      blacklist_placeholder: '如：flarum.org,flarum.org.cn'
+      cache_time_help: 设置链接预览的缓存存储时长，设为0则禁用缓存，默认值为60分钟。
+      cache_time_label: 缓存时长（分钟）
+      convert_media_urls_help: 为媒体文件（如图片、视频等）的URL生成预览。
+      convert_media_urls_label: 启用媒体链接预览
+      enable_batch_requests_help: 同时生成多个链接预览，提升加载效率。
+      enable_batch_requests_label: 启用批量处理
+      open_links_in_new_tab_help: 让链接在新标签页中打开。
+      open_links_in_new_tab_label: 在新标签页打开链接
+      use_google_favicons_help: 使用谷歌图标API显示网站图标，增强视觉辨识度。
+      use_google_favicons_label: '显示网站图标（使用谷歌图标 API）'
+      whitelist_help: 指定生成链接预览的域名或URL，如果是多个条目请用英文逗号分隔。
+      whitelist_label: 允许列表（白名单）
+      whitelist_placeholder: '如：flarum.org,flarum.org.cn'
   forum:
-    site_cannot_be_reached: 无法访问此站点。
+    site_cannot_be_reached: 无法加载预览，请检查链接后重试。

@@ -5,9 +5,9 @@
 acpl-mobile-tab:
   forum:
     all_discussions: 主题
-    categories: '=> askvortsov-categories.forum.index.categories_link'
+    categories: 分类
     home: 首页
-    log_in: '=> core.forum.header.log_in_link'
-    notifications: '=> core.forum.notifications.title'
-    profile: '=> core.forum.header.profile_button'
-    tags: '=> flarum-tags.forum.index.tags_link'
+    log_in: 登录
+    notifications: 通知
+    profile: 个人资料
+    tags: 标签

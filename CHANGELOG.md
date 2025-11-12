@@ -10,6 +10,7 @@ CHANGELOG
 * [`blazite/flarum-turnstile`](https://github.com/flectar/flarum-ext-turnstile)
 * [`dalez/flarum-identityagent`](https://github.com/zDaleZ/flarum-identityagent)
 * [`flarum/gdpr`](https://github.com/flarum/gdpr)
+* [`flectar/flarum-turnstile`](https://github.com/flectar/flarum-ext-turnstile)
 * [`fof/discussion-views`](https://github.com/FriendsOfFlarum/discussion-views)
 * [`fof/horizon`](https://github.com/FriendsOfFlarum/horizon)
 * [`fof/synopsis`](https://github.com/FriendsOfFlarum/synopsis)

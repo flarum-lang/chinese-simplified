@@ -16,6 +16,7 @@ CHANGELOG
 * [`fof/synopsis`](https://github.com/FriendsOfFlarum/synopsis)
 * [`huseyinfiliz/modern-footer`](https://github.com/huseyinfiliz/modern-footer)
 * [`huseyinfiliz/notificationhub`](https://github.com/huseyinfiliz/notificationhub)
+* [`walsgit/flarum-discussion-cards`](https://github.com/WalsGit/flarum-discussion-cards)
 
 
 **更新翻译**:

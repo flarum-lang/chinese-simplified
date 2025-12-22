@@ -13,6 +13,7 @@ CHANGELOG
 * [`flectar/flarum-turnstile`](https://github.com/flectar/flarum-ext-turnstile)
 * [`fof/discussion-views`](https://github.com/FriendsOfFlarum/discussion-views)
 * [`fof/horizon`](https://github.com/FriendsOfFlarum/horizon)
+* [`fof/moderator-warnings`](https://github.com/FriendsOfFlarum/moderator-warnings)
 * [`fof/synopsis`](https://github.com/FriendsOfFlarum/synopsis)
 * [`huseyinfiliz/modern-footer`](https://github.com/huseyinfiliz/modern-footer)
 * [`huseyinfiliz/notificationhub`](https://github.com/huseyinfiliz/notificationhub)

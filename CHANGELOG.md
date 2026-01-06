@@ -2,6 +2,49 @@ CHANGELOG
 =========
 
 
+1.6.1 (XXXX-XX-XX)
+------------------
+
+**新增翻译**:
+
+* [`blazite/flarum-turnstile`](https://github.com/flectar/flarum-ext-turnstile)
+* [`dalez/flarum-identityagent`](https://github.com/zDaleZ/flarum-identityagent)
+* [`flarum/gdpr`](https://github.com/flarum/gdpr)
+* [`flectar/flarum-turnstile`](https://github.com/flectar/flarum-ext-turnstile)
+* [`fof/discussion-templates`](https://github.com/FriendsOfFlarum/discussion-templates)
+* [`fof/discussion-views`](https://github.com/FriendsOfFlarum/discussion-views)
+* [`fof/horizon`](https://github.com/FriendsOfFlarum/horizon)
+* [`fof/moderator-warnings`](https://github.com/FriendsOfFlarum/moderator-warnings)
+* [`fof/synopsis`](https://github.com/FriendsOfFlarum/synopsis)
+* [`huseyinfiliz/custom-profile-page`](https://github.com/huseyinfiliz/custom-profile-page)
+* [`huseyinfiliz/modern-footer`](https://github.com/huseyinfiliz/modern-footer)
+* [`huseyinfiliz/notificationhub`](https://github.com/huseyinfiliz/notificationhub)
+* [`walsgit/flarum-discussion-cards`](https://github.com/WalsGit/flarum-discussion-cards)
+
+
+**更新翻译**:
+
+* [`acpl/mobile-tab`](https://github.com/android-com-pl/mobile-tab)
+* [`afrux/online-users-widget`](https://github.com/afrux/online-users-widget)
+* [`blomstra/s3-assets`](https://github.com/blomstra/flarum-ext-s3-assets)
+* [`datlechin/flarum-link-preview`](https://github.com/datlechin/flarum-link-preview)
+* [`flarum/extension-manager`](https://github.com/flarum/extension-manager)
+* [`flarum/suspend`](https://github.com/flarum/suspend)
+* [`flarum/tags`](https://github.com/flarum/tags)
+* [`fof/drafts`](https://github.com/FriendsOfFlarum/drafts)
+* [`fof/polls`](https://github.com/FriendsOfFlarum/polls)
+* [`fof/upload`](https://github.com/FriendsOfFlarum/upload)
+
+
+全部变化：[v1.6.0...v1.6.1](https://github.com/flarum-lang/chinese-simplified/compare/v1.6.0...v1.6.1)
+
+
+1.6.0 (XXXX-XX-XX)
+------------------
+
+全部变化：[v1.5.0...v1.6.0](https://github.com/flarum-lang/chinese-simplified/compare/v1.5.0...v1.6.0)
+
+
 1.5.0 (2024-10-29)
 ------------------
 

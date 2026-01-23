@@ -57,6 +57,12 @@ core:
     dashboard:
       clear_cache_button: 清除缓存
       description: 论坛各项数据一览
+      info_button: 系统信息
+      info_modal:
+        copy_button: 复制到剪贴板
+        copy_error: 无法复制到剪贴板
+        copy_success: 系统信息已复制到剪贴板
+        title: 系统信息
       io_error_message: 无法写入文件。请检查操作权限，重试或者直接从命令行运行命令。
       status:
         headers:
@@ -119,9 +125,12 @@ core:
       smtp_heading: 'SMTP 设置'
       title: '=> core.ref.email'
     extension:
+      abandoned_no_replacement: 此扩展不再由其作者维护，并且可能不会再收到更新。
+      abandoned_with_replacement: '此扩展程序已被{replacement}替换。考虑迁移到替换包。'
       configure_scopes: 设置范围
       confirm_purge: '重置操作会清除数据库中所有该扩展相关的记录和资源。如要卸载扩展，请通过 Composer 操作。确定要重置扩展吗？'
       confirm_uninstall: 此扩展的的数据库条目和文件资源都将被永久性删除，确定要继续吗？
+      deprecated: 已弃用
       disabled: 关闭
       enable_to_see: 开启扩展程序以查看或修改设置。
       enabled: 开启
@@ -141,6 +150,7 @@ core:
         button_label: 自述文件
         no_readme: 此扩展未提供自述文件
         title: '{extName} 文档'
+      replaced: 替换
       uninstall_button: 卸载
     header:
       get_help: 帮助
@@ -193,6 +203,7 @@ core:
       participate_heading: 操作相关
       post_without_throttle_label: 发帖频率无限制
       read_heading: 访问相关
+      remove_scope_label: '移除{scope}的作用域'
       rename_discussions_label: 更改主题标题
       reply_to_discussions_label: 回复
       search_users_label: '=> core.ref.search_users'

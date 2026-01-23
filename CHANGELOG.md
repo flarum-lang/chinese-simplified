@@ -5,10 +5,17 @@ CHANGELOG
 1.6.1 (XXXX-XX-XX)
 ------------------
 
+**例行更新**:
+
+* 更新核心翻译.
+
+
 **新增翻译**:
 
 * [`blazite/flarum-turnstile`](https://github.com/flectar/flarum-ext-turnstile)
+* [`club-1/flarum-ext-content-permissions`](https://github.com/club-1/flarum-ext-content-permissions)
 * [`dalez/flarum-identityagent`](https://github.com/zDaleZ/flarum-identityagent)
+* [`datlechin/flarum-ai`](https://github.com/datlechin/flarum-ai)
 * [`flarum/gdpr`](https://github.com/flarum/gdpr)
 * [`flectar/flarum-turnstile`](https://github.com/flectar/flarum-ext-turnstile)
 * [`fof/discussion-templates`](https://github.com/FriendsOfFlarum/discussion-templates)

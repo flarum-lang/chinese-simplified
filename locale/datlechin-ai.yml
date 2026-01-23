@@ -5,6 +5,8 @@
 datlechin-ai:
   admin:
     settings:
+      api_key_label: 'API密钥（{provider}）'
+      api_key_placeholder: '输入你的{provider}API密钥'
       provider_anthropic: Anthropic
       provider_gemini: 'Google Gemini'
       provider_label: 'AI 提供商'

@@ -48,6 +48,7 @@ CHANGELOG
 * [`fof/byobu`](https://github.com/FriendsOfFlarum/byobu)
 * [`fof/default-user-preferences`](https://github.com/FriendsOfFlarum/default-user-preferences)
 * [`fof/drafts`](https://github.com/FriendsOfFlarum/drafts)
+* [`fof/follow-tags`](https://github.com/FriendsOfFlarum/follow-tags)
 * [`fof/polls`](https://github.com/FriendsOfFlarum/polls)
 * [`fof/upload`](https://github.com/FriendsOfFlarum/upload)
 

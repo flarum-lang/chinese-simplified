@@ -8,6 +8,12 @@ blomstra-gdpr:
       tagsubscription:
         anonymize_description: 移除用户对所有标签的订阅。
         export_description: 导出标签的订阅级别（如果存在）。
+flarum-gdpr:
+  lib:
+    data:
+      tagsubscription:
+        anonymize_description: 取消用户订阅的标签。
+        export_description: 如果标签存在，导出订阅级别的详细信息。
 fof-follow-tags:
   admin:
     settings:
@@ -27,6 +33,8 @@ fof-follow-tags:
     badge:
       following_tag_tooltip: 关注中
       lurking_tag_tooltip: 吃瓜中
+    hero:
+      title: '=> flarum-subscriptions.forum.index.following_link'
     index:
       follow_tag_button: 关注
       following:

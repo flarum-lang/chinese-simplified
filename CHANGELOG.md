@@ -8,6 +8,7 @@ CHANGELOG
 **例行更新**:
 
 * 更新核心翻译.
+* 更新验证器翻译.
 
 
 **新增翻译**:
@@ -15,6 +16,7 @@ CHANGELOG
 * [`blazite/flarum-turnstile`](https://github.com/flectar/flarum-ext-turnstile)
 * [`club-1/flarum-ext-content-permissions`](https://github.com/club-1/flarum-ext-content-permissions)
 * [`dalez/flarum-identityagent`](https://github.com/zDaleZ/flarum-identityagent)
+* [`datlechin/flarum-ai-summarize`](https://github.com/datlechin/flarum-ai-summarize)
 * [`datlechin/flarum-ai`](https://github.com/datlechin/flarum-ai)
 * [`flarum/gdpr`](https://github.com/flarum/gdpr)
 * [`flectar/flarum-turnstile`](https://github.com/flectar/flarum-ext-turnstile)
@@ -33,11 +35,18 @@ CHANGELOG
 
 * [`acpl/mobile-tab`](https://github.com/android-com-pl/mobile-tab)
 * [`afrux/online-users-widget`](https://github.com/afrux/online-users-widget)
+* [`afrux/top-posters-widget`](https://github.com/afrux/top-posters-widget)
+* [`antoinefr/flarum-ext-money`](https://github.com/AntoineFr/flarum-ext-money)
 * [`blomstra/s3-assets`](https://github.com/blomstra/flarum-ext-s3-assets)
+* [`clarkwinkelmann/flarum-ext-emojionearea`](https://github.com/clarkwinkelmann/flarum-ext-emojionearea)
 * [`datlechin/flarum-link-preview`](https://github.com/datlechin/flarum-link-preview)
 * [`flarum/extension-manager`](https://github.com/flarum/extension-manager)
 * [`flarum/suspend`](https://github.com/flarum/suspend)
 * [`flarum/tags`](https://github.com/flarum/tags)
+* [`fof/anti-spam`](https://github.com/FriendsOfFlarum/anti-spam)
+* [`fof/ban-ips`](https://github.com/FriendsOfFlarum/ban-ips)
+* [`fof/byobu`](https://github.com/FriendsOfFlarum/byobu)
+* [`fof/default-user-preferences`](https://github.com/FriendsOfFlarum/default-user-preferences)
 * [`fof/drafts`](https://github.com/FriendsOfFlarum/drafts)
 * [`fof/polls`](https://github.com/FriendsOfFlarum/polls)
 * [`fof/upload`](https://github.com/FriendsOfFlarum/upload)

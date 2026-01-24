@@ -5,6 +5,7 @@
 clarkwinkelmann-emojionearea:
   admin:
     settings:
+      closeOnPick: 选择表情符号时关闭选取器
       enableRecent: 显示最近使用
       enableSearch: 显示搜索框
       enableTones: 启用肤色选择
@@ -12,5 +13,16 @@ clarkwinkelmann-emojionearea:
       hideFlarumButton: '隐藏 Flarum 原生表情按钮'
       searchPosition: 在底部显示搜索和肤色
   forum:
+    filters:
+      activity: 启用
+      animals_nature: '动物 & 自然'
+      flags: 旗帜
+      food_drink: '食物 & 饮料'
+      objects: 物品
+      recent: 最近
+      smileys_people: '笑脸 & 人物'
+      symbols: 符号
+      tones: 多样性
+      travel_places: '旅游 & 地点'
     picker_button: 'Emoji 表情'
     search_placeholder: '搜索 emoji'

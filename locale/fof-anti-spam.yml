@@ -29,7 +29,7 @@ fof-anti-spam:
         delete_user_help: 启用此项，永久删除账号，否则停用帐号。
         delete_user_label: 删除账号
         heading: 默认操作
-        introduction: "选择一个常用操作，以便在标记垃圾账号时快速处置。你也可以在标记时选择其他处置方式。\n"
+        introduction: 当用户被标记为垃圾邮件发送者时，版主可以从各种操作中选择如何处理特定用例。这些设置允许您预设通常会采取的操作，以加快过程，但也允许根据需要进行更改。
         move_discussions_to_tags_help: 移除帖子的所有标签，并统一移动到指定标签旗下，「删除主题贴」禁用时生效。如需保留原始标签，请清空下方标签配置。
         move_discussions_to_tags_label: 归档标签
       stopforumspam:

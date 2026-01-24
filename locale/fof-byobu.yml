@@ -56,6 +56,8 @@ fof-byobu:
       title_placeholder: 私密主题标题
     confirm:
       make_public: 确定移除所有参与者，并公开此主题吗？
+    hero:
+      title: '=> fof-byobu.forum.nav.nav_item'
     input:
       search_recipients: 输入用户名前三位……
     labels:

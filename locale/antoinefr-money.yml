@@ -12,10 +12,13 @@ antoinefr-money:
       - 隐藏或恢复主题/帖子时（默认）
       - 删除主题/帖子时
     permissions:
+      disable_money_label: 禁用奖励
       edit_money_label: 调整财富
     settings:
       autoremove: 重算计算财富
+      cascaderemove: 当讨论被删除时移除帖子的奖励
       helpextensionlikes: '需要 <code>flarum/likes</code> 扩展程序'
+      ignore_notifying_users: 当检查回复的字数时，只关注内容部分
       moneyfordiscussion: 发贴一次可获得
       moneyforlike: 获得点赞时可获得
       moneyforpost: 回帖一次可获得

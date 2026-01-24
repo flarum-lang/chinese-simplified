@@ -5,6 +5,7 @@
 fof-default-user-preferences:
   admin:
     settings:
+      discloseOnline-help: 启用后，新用户将允许其他人看到他们何时在线。无论此设置如何，管理员和其他有权限的用户仍然可以看到在线状态。
       followAfterReply: 回复并关注
       followAfterReply-help: 启用后，新用户将自动关注回复或评论的主题帖。
       groupMentioned: 用户组提及邮件通知

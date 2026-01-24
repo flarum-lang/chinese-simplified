@@ -10,3 +10,4 @@ dalez-identityagent:
     confirmation: 是否要返回到原始帐户？
     login:
       note: 如果在切换用户的时候遇到问题，请改为使用原始方式。
+      title: '=> dalez-identityagent.forum.button_text'

@@ -7,7 +7,26 @@ datlechin-ai:
     settings:
       api_key_label: 'API密钥（{provider}）'
       api_key_placeholder: '输入你的{provider}API密钥'
+      base_url_label: 基础URL（可选）
+      base_url_placeholder: 默认时留空
+      custom_base_url_label: 自定义基础URL
+      custom_model_label: 自定义模型名称
+      custom_model_placeholder: 输入自定义模型名称
+      embeddings_model_label: 嵌入模型
+      moderation_model_label: 调节模型
       provider_anthropic: Anthropic
       provider_gemini: 'Google Gemini'
       provider_label: 'AI 提供商'
       provider_openai: OpenAI
+      test_embeddings_button: 测试嵌入
+      test_failed: '测试失败：{error}'
+      test_moderation_button: 测试调节
+      test_success: 测试成功！
+      test_text_button: 测试文本模型
+      text_model_label: 文本/聊天模型
+  forum:
+    ai_search_placeholder: 用AI搜索…
+  permissions:
+    embed: 生成嵌入
+    generate: 用AI生成文本
+    moderate: 用AI审核

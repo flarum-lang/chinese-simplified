@@ -3,6 +3,9 @@
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
 afrux-top-posters-widget:
+  admin:
+    settings:
+      info: 所选组的用户将被排除在小部件结果之外。
   forum:
     widget:
       title: 月活榜单

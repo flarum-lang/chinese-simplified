@@ -12,6 +12,9 @@ flectar-turnstile:
       signup: '=> core.forum.sign_up.title'
       site_key: 站点公钥
   forum:
+    error: 人机验证错误，请重试。
     not_loaded_error: '无法加载 Cloudflare Turnstile 验证服务，请关闭广告拦截器并刷新重试。'
+    validation_error: 请完成Turnstile验证。
 validation:
+  required: 请完成Turnstile验证。
   turnstile: 我们无法确认您是否为机器人，请刷新页面并重试。

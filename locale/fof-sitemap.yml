@@ -6,6 +6,12 @@ fof-sitemap:
   admin:
     settings:
       advanced_options_label: 高级选项
+      build_button: 立即重新生成站点地图
+      build_button_help: 触发所有站点地图文件的立即重建。如果已配置队列，则任务将被发送到队列；否则将立即运行。
+      build_error: 未能将站点地图重建任务添加到队列。请检查您的日志和队列配置。
+      build_success: 网站地图重建任务已成功添加到队列。请查看日志以监控进度。
+      exclude_tags: 将所有标签页从站点地图中排除
+      exclude_tags_help: 默认情况下，任何对访客可见的标签都会被索引
       exclude_users: 不收录用户个人主页
       exclude_users_help: 默认情况下，任何游客可见的用户都将被索引
       frequency:
@@ -13,6 +19,11 @@ fof-sitemap:
         hourly: 每小时一次
         twice_daily: 每天两次
       frequency_label: 重建站点地图频率
+      include_changefreq: 在站点地图中包含修改频率值
+      include_changefreq_help: Google会忽略修改频率值，但其他搜索引擎可能会使用这些值来安排抓取时间
+      include_priority: 在站点地图中包含优先级
+      include_priority_help: 'Google会忽略优先级值，但其他搜索引擎（例如 Bing 和 Yandex）可能会使用这些值'
+      last_build_time: 上次构建时间
       mode_help: 根据您的论坛规模选择正确的模式极为重要。
       mode_help_cache_disk: '适用于中小型论坛，比如允许 cronjobs（计划任务） 和启用了 Flarum 调度器的主机环境下（见下文），主题数、用户数、标签数和页面数总和少于 5 万（最终生成的对应链接数小于 5 万）。'
       mode_help_cache_disk_label: 缓存模式/磁盘模式

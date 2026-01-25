@@ -4,6 +4,13 @@
 
 forumaker-magicbb:
   admin:
+    permissions:
+      use_iframe: 允许iframe嵌入式
+    sections:
+      content: 内容按钮
+      features: 特征
+      images: 图片按钮
+      text: 文本按钮
     settings:
       bb_center: 中心
       bb_color: 色彩
@@ -16,3 +23,14 @@ forumaker-magicbb:
       bb_spoiler: 剧透
       bb_table: 桌子
       toolbar_group: 'MagicBB 按钮组'
+      toolbar_group_help: '如果启用此功能，所有 MagicBB 按钮将在编辑器中合并为一个按钮'
+  forum:
+    composer:
+      center_button: 居中对齐
+      color_button: 添加颜色
+      image_button: 添加图片
+      info_button: 添加警报
+      justify_button: 对齐并两端对齐
+      more_button: 更多
+      spoiler_button: 添加黑幕
+      table_button: 添加标题

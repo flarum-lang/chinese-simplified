@@ -6,6 +6,19 @@ fof-doorman:
   admin:
     doorkey_required: 您必须输入邀请码
     invalid_doorkey: 邀请码无效。
+    list:
+      columns:
+        created_by: 被创建由
+        id: ID
+        manage: 管理
+        uses: 使用次数
+      content:
+        delete: '你确定要删除这个邀请码"{key}"吗？'
+        no_created_by: 未知用户
+        uses:
+          total_uses: '{totalUses, plural, one {使用过 {totalUses} 次} other {使用过 {totalUses} 次}}'
+          used_times: '{remaining, plural, =0 {无限次使用} one {剩余 {remainingUses} 次使用} other {剩余 {remainingUses} 次使用}}'
+        warning: 此邀请码已达到最大使用次数。
     modal:
       group: '发送 {group} 用户组邀请'
       help: 列表内容可用半角逗号、空格或逗号+空格分隔。输入单个电子邮件地址或粘贴列表，然后按空格键完成添加。
@@ -15,6 +28,23 @@ fof-doorman:
       send: 发送邮件
       success: 邮件发送成功
       title: 发送邀请码
+    modals:
+      create_doorkey:
+        submit_and_create_another_button: 创建或添加另一个
+        submit_button: 创建新的邀请码
+        title: 创建新的邀请码
+      edit_doorkey:
+        submit_button: 保存更改
+        title: 编辑邀请码
+      send_invites:
+        group: '正在向 {group} 群组发送邀请。'
+        help: 允许以逗号、空格或逗号加空格分隔的列表。输入单个电子邮件地址或粘贴列表，然后按空格键即可添加。
+        invalid_emails: '这个(些)邮件地址看起来无效:{emails}'
+        max_use_conflict: 发送的电子邮件数量已超过此代码的最大使用次数。
+        placeholder: 在这里填写电子邮件地址
+        send: 发送邮件
+        success: 电子邮件已成功发送
+        title: 分享邀请码
     nav:
       desc: 创建注册邀请码并自动分配用户组
     page:
@@ -41,9 +71,26 @@ fof-doorman:
       title: 看门人
     ref:
       fields:
+        activates_user:
+          help: 用户注册后自动激活账号。
+          label: 激活用户
+        group:
+          help: 用户使用邀请码注册时将被添加到的群组。
+          label: 群组
         key:
           help: 用户注册时需要输入的验证码。
           label: 密钥
+        max_uses:
+          help: '该代码可使用的最大次数。设置为 0 表示可无限次使用'
+          label: 最大可用次数
+    settings:
+      create_doorkey_button: 创建邀请码
+      optional_usage: 注册时可选择是否输入邀请码
+      search: 搜索门禁密钥
+      total_doorkeys: '门禁密钥总数：{count}'
+  email:
+    body: "您好，\n\n您已被邀请注册 {forum} 论坛。\n\n准备好创建帐户时，请点击以下链接并在注册时输入邀请码：\n\n链接：{url}\n邀请码：{code}\n\n如果您误收到此邮件，请忽略此邮件。\n"
+    subject: 使用邀请码加入
   forum:
     email:
       body: "您好，\n\n您被邀请注册 {forum}。\n\n当您准备好创建帐户时，只需点击下方链接并在注册时输入邀请码即可。\n\n网址：{url}\n邀请码：{code}\n\n如果您错误地收到了这封邮件，请忽略邮件内容。\n"

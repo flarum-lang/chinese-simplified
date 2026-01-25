@@ -17,8 +17,16 @@ fof-sentry:
       user_context_help: '配置上传至 Sentry 错误日志中的用户上下文隐私数据。'
     sentry_settings: 'Sentry 设置'
     settings:
+      db_n_plus_one_detection_help: '通过跟踪重复的查询模式，自动检测 N+1 查询问题。当代码在循环中多次执行相同的查询，而不是使用适当的连接或预加载时，就会出现 N+1 查询问题。这有助于识别重要性能瓶颈。'
+      db_n_plus_one_detection_label: '启用 N+1 查询检测'
+      db_n_plus_one_threshold_help: '查询模式需要重复出现的次数才能被标记为潜在的 N+1 问题。灵敏度级别：5-10（激进，可能出现误报），10-20（平衡，推荐），20+（保守，仅标记严重问题）。默认值：10。'
+      db_n_plus_one_threshold_label: N+1检测阈值
+      db_query_sample_rate_help: '性能监控中需要跟踪的数据库查询百分比（0-100%）。影响级别：100%（跟踪所有查询，最大程度提高可见性，但开销较高），50%（跟踪一半查询，平衡性能和可见性），10-25%（跟踪部分查询，开销较低，但仍能发现问题），0%（仅跟踪慢查询，开销最低）。注意：无论此设置如何，慢查询（超过阈值的查询）始终会被跟踪。建议：在高流量网站上使用 10-25% 的设置，以降低性能影响和 Sentry 数据成本。'
+      db_query_sample_rate_label: 查询采样率
       db_slow_query_threshold_help: '查询时间超过此阈值（以毫秒为单位）的查询将被标记为慢查询，并自动进行跟踪，不受采样率限制。严重程度级别：中等（1-2 倍阈值）、高（2-5 倍阈值）、严重（5 倍以上阈值）。默认值：1000 毫秒（1 秒）。可降低至 500 毫秒以实现更积极的检测。'
       db_slow_query_threshold_label: 慢查询阈值（毫秒）
+      db_track_bindings_help: '在查询跟踪中包含实际参数值（例如，“SELECT * FROM users WHERE id = 123”，而不是“SELECT * FROM users WHERE id = ?”）。优点：可以查看导致查询缓慢的具体值，并识别有问题的数据库模式。安全和隐私警告：此功能可能会在 Sentry 中暴露敏感用户数据。密码和哈希值（32 个或更多十六进制字符）会自动屏蔽。长字符串（100 个或更多字符）会被截断。启用此功能前，请仔细检查您的隐私政策。建议：仅在测试/开发环境中启用，在生产环境中禁用。'
+      db_track_bindings_label: 跟踪查询参数值
       dsn_backend_help: '可选的独立 DSN，专用于后端 (PHP) 错误。这有助于为后端错误使用不同的 Sentry 项目，通过 Relay 进行路由以提高性能，或将前端和后端错误跟踪分开。如果未设置，则将使用上面的主要 DSN。'
       dsn_backend_label: 'Sentry DSN (仅后端)'
       dsn_help: '您的 Sentry 数据源名称——用于前端和后端错误报告的主要连接 URL。您可以从 Sentry 项目设置中获取此信息。重要提示：如果您使用的是 Relay DSN，请禁用“用户反馈”功能，因为它需要直接访问 Sentry。'

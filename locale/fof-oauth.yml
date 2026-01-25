@@ -12,6 +12,8 @@ fof-oauth:
         heading: 高级
         log-oauth-errors-help: '启用此项，在 Flarum 日志中记录 OAuth 错误，以便于调试 OAuth 问题。请注意可能会记录敏感信息到日志中。'
         log-oauth-errors-label: '记录 OAuth 错误'
+      disable_avatars_help: "如果启用此选项，用户注册时，其头像将不会自动更新为与提供商的头像一致。请注意，此设置仅影响未来的注册用户，不会更改现有用户的头像。\n"
+      disable_avatars_label: 禁用来自提供商的头像
       fullscreen_popup_help: '启用此项，忽略宽高设置，打开一个新的全屏弹出窗口进行 OAuth。'
       fullscreen_popup_label: '使用全屏弹出窗口进行 OAuth 认证'
       only_icons_label: 登录界面只显示第三方账号图标
@@ -43,10 +45,13 @@ fof-oauth:
           client_secret_label: '=> fof-oauth.ref.settings.client_secret'
           description: '前往此处创建应用：{link}'
           hosted_domain_label: '托管域名（G 套件/Google 企业应用，可选）'
+        group_help: 选择一个群组，以便自动分配给使用此提供商注册的用户。
+        group_label: 分配组
         linkedin:
           client_id_label: '=> fof-oauth.ref.settings.client_id'
           client_secret_label: 'Client Secret'
           description: '前往 {link} 创建应用。'
+        no_group_label: 没有群组任务
         twitter:
           api_key_label: 'API Key'
           api_secret_label: 'API Secret'

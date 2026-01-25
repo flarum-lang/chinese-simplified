@@ -29,6 +29,7 @@ CHANGELOG
 * [`forumaker/magicread`](https://github.com/forumaker/magicread)
 * [`forumaker/magicslider`](https://github.com/forumaker/magicslider)
 * [`huseyinfiliz/awards`](https://github.com/huseyinfiliz/awards)
+* [`huseyinfiliz/bump`](https://github.com/huseyinfiliz/bump)
 * [`huseyinfiliz/custom-profile-page`](https://github.com/huseyinfiliz/custom-profile-page)
 * [`huseyinfiliz/modern-footer`](https://github.com/huseyinfiliz/modern-footer)
 * [`huseyinfiliz/notificationhub`](https://github.com/huseyinfiliz/notificationhub)

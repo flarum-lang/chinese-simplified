@@ -101,8 +101,29 @@ huseyinfiliz-awards:
       suggestions: 建议
     title: 奖励管理
   forum:
+    category:
+      nominees_count: '{count} 位被提名的人'
+      votes_unlimited: '{count} 票'
+      votes_used: '{used}/{limit} 票'
+    empty:
+      no_awards: 没有有效的奖励
+      no_awards_description: 目前没有可领取的奖励。请稍后再来看看！
+      no_categories: 此奖励目前还没有任何板块。
+      no_nominees: 该类别目前还没有提名人选。
+    error:
+      cannot_delete_processed_suggestion: 只有待处理的建议才能被取消。
+      not_available: 该奖励目前尚未开放申请。
+      other_not_allowed: 此板块不接受建议。
+      rate_limit: 投票人数过多，请稍后。
+      vote_limit_reached: '您在此板块中只能投票给 {limit} 位候选人。'
+      vote_quota_exhausted: 您已耗尽此板块下的所有投票/建议次数。
+      voting_closed: 投票已结束。
     hero:
       countdown: '投票结束时间：{days}天 {hours}小时 {minutes}分钟 {seconds}秒'
+      draft_preview: 草稿预览
+      results_preview: 结果预览
+      results_published: 结果已发布
+      voting_ended: 投票已结束
     my_votes:
       add_vote: 添加投票
       categories_remaining: 没有投票的类别
@@ -120,6 +141,26 @@ huseyinfiliz-awards:
       all_categories: 所有板块
       categories: 板块
       title: 奖励
+    notification:
+      results_published: '{awardName}的评选结果已经公布！'
+    other:
+      already_submitted: 您已经为此板块提交过建议。
+      cancel: 取消
+      cancel_confirm: 取消这个建议？
+      click_to_suggest: 点击此处推荐候选人
+      my_suggestions: 我的建议
+      no_remaining: 没有剩余的建议次数了
+      no_suggestions: 您还没有提交任何建议。
+      pending_count: '{count} 条待处理建议'
+      placeholder: 输入要推荐的候选人的名字...
+      remaining: '还剩 {count} 条建议'
+      status_approved: 已被认可
+      status_merged: 被合并
+      status_pending: 待办
+      status_rejected: 被拒绝
+      submit: 提交建议
+      success: 建议已提交！将由版主进行审核。
+      suggest: 其他建议选项
     page:
       previous_awards: 往年奖励
       results_published: 结果已公布
@@ -127,11 +168,25 @@ huseyinfiliz-awards:
       voting_ended: '投票已经在{time}前结束'
       voting_ends: '投票将在{time}后结束'
       voting_starts: '投票在{time}后开始'
+    prediction:
+      correct: 正确的：
+      score: '{correct}/{total} 个预测正确！'
+      title: 您的预测分数
+      wrong: 错误的：
+    preview:
+      admin_only: '预览模式 - 仅授权用户可见'
     progress:
       complete: 完成！
       next: 下一个
       prev: 上一页
       voted: '已投票类别数：{count}/{total}'
+    results:
+      full_results: 完整结果
+      percentage: '{percent}%'
+      runner_up: 亚军
+      view_all: 查看所有结果
+      votes: '{count} 票'
+      winner: 获胜者
     tabs:
       categories: 板块
       my_votes: 我的投票
@@ -147,3 +202,16 @@ huseyinfiliz-awards:
       vote_saved: 你的投票已被保存!
       voted: 投票
       voting_closed: 投票被关闭
+  lib:
+    actions: 行动
+    description: 描述
+    move_down: 向下移动
+    move_up: 向上移动
+    save: 保存变更
+    slug: 固定链接
+    sort_order: 命令
+    success_message: 变更已成功保存！
+    upload_error: 上传图片失败
+    upload_image: 上传图片
+    upload_success: 图片上传成功
+    votes: 投票

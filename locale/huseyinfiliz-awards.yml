@@ -101,14 +101,19 @@ huseyinfiliz-awards:
       suggestions: 建议
     title: 奖励管理
   forum:
+    hero:
+      countdown: '投票结束时间：{days}天 {hours}小时 {minutes}分钟 {seconds}秒'
     my_votes:
       add_vote: 添加投票
+      categories_remaining: 没有投票的类别
       change: 修改
       last_vote: '上次投票时间：{time}'
+      no_votes: 你还没有投票
       remove: 移除
       summary: '您已在 {voted}/{total} 个板块中进行了投票'
       title: 你的投票
       total_votes: '总票数：{count}'
+      vote_now: 现在投票
       votes_unlimited: '{count} 票数'
       votes_used: '已使用票数：{used}/{limit}'
     nav:
@@ -122,6 +127,11 @@ huseyinfiliz-awards:
       voting_ended: '投票已经在{time}前结束'
       voting_ends: '投票将在{time}后结束'
       voting_starts: '投票在{time}后开始'
+    progress:
+      complete: 完成！
+      next: 下一个
+      prev: 上一页
+      voted: '已投票类别数：{count}/{total}'
     tabs:
       categories: 板块
       my_votes: 我的投票

@@ -4,22 +4,42 @@
 
 fof-sentry:
   admin:
+    sections:
+      backend_performance: 后端性能监控
+      backend_performance_help: '追踪 PHP 后端性能并进行性能剖析。通过设置采样率来控制运行开销。'
+      database_monitoring: 数据库查询监控
+      database_monitoring_help: 监控数据库查询性能，检测慢查询和N+1问题。仅在启用后端性能监控时生效。
+      frontend_monitoring: 前端（JavaScript）监控
+      frontend_monitoring_help: '跟踪 JavaScript 错误和前端性能。请注意，启用某些功能会增加代码包大小。'
+      general: 一般设置
+      general_help: '配置您的 Sentry DSN 和 环境设置。'
+      user_context: 用户场景
+      user_context_help: '配置上传至 Sentry 错误日志中的用户上下文隐私数据。'
+    sentry_settings: 'Sentry 设置'
     settings:
-      dsn_backend_help: '专门用于处理后端错误的 DSN（数据源名称）。您可以创建一个单独的项目用于处理后端错误，或使用 Relay （中转服务）发送后端错误到 Sentry 以提升性能。'
+      db_slow_query_threshold_help: '查询时间超过此阈值（以毫秒为单位）的查询将被标记为慢查询，并自动进行跟踪，不受采样率限制。严重程度级别：中等（1-2 倍阈值）、高（2-5 倍阈值）、严重（5 倍以上阈值）。默认值：1000 毫秒（1 秒）。可降低至 500 毫秒以实现更积极的检测。'
+      db_slow_query_threshold_label: 慢查询阈值（毫秒）
+      dsn_backend_help: '可选的独立 DSN，专用于后端 (PHP) 错误。这有助于为后端错误使用不同的 Sentry 项目，通过 Relay 进行路由以提高性能，或将前端和后端错误跟踪分开。如果未设置，则将使用上面的主要 DSN。'
       dsn_backend_label: 'Sentry DSN (仅后端)'
-      dsn_help: '使用 Relay DSN（中转数据源名称） 作为主 DSN 时，「用户反馈」项无法生效，请勿选择。'
+      dsn_help: '您的 Sentry 数据源名称——用于前端和后端错误报告的主要连接 URL。您可以从 Sentry 项目设置中获取此信息。重要提示：如果您使用的是 Relay DSN，请禁用“用户反馈”功能，因为它需要直接访问 Sentry。'
       dsn_label: 'Sentry DSN'
+      environment_help: 为所有事件添加环境名称标签（例如，“生产环境”、“预发布环境”、“开发环境”）。这有助于您按环境筛选错误，并为每个环境设置不同的告警规则。
       environment_label: 'Sentry 环境'
-      javascript_console_label: '捕获 JavaScript 控制台'
-      javascript_label: '报告 JavaScript 错误'
-      javascript_replays_error_sample_rate: '前端错误重放率 (0 - 100)'
-      javascript_replays_error_sample_rate_help: '对部分错误发生前 1 分钟的会话操作进行录制。{br}✱ 此功能会增加 150 KB 左右的数据包大小。'
-      javascript_replays_session_sample_rate: '前端用户会话重放率（0 - 100）'
-      javascript_replays_session_sample_rate_help: '使用 rrweb 提供的能力，对一定量的用户会话操作进行录制。{br}✱ 此功能会增加 150 KB 左右的数据包大小。'
-      javascript_trace_sample_rate: '前端性能监测率（0 - 100）'
-      javascript_trace_sample_rate_help: '所有事件的采样率。{br}✱ 此功能会增加 30 KB 左右的数据包大小。'
-      monitor_performance_label: '后端性能监测率（0 - 100）'
-      profile_rate_help: "性能监测率相对指标，必须启用性能监测功能方可生效。\n\n{br}✱ 由于会增加分析和发送请求到 Sentry 的开销，因此启用此功能会增加响应时间。请查询 @ <a>https://docs.sentry.io/platforms/php/profiling/#improve-response-time></a> 了解如何降低影响。\n{br}{icon} <bold>这个功能需要用到仅支持 Linux 系统的维基百科的采样分析器 Excimer。</bold>\n"
-      profile_rate_label: '后端分析率（0 - 100）'
-      send_user_emails_label: '发送 Sentry 报告时包含用户邮箱'
-      user_feedback_label: 用户反馈
+      javascript_console_help: '将 console.log、console.info、console.warn 和 console.error 调用记录为事件轨迹。查看导致错误的事件序列，并调试复杂的用户交互。注意：此功能会增加数据量。请在生产环境中谨慎使用。'
+      javascript_console_label: 将控制台消息捕获为跟踪记录
+      javascript_help: '将论坛前端的 JavaScript 错误捕获并报告到 Sentry。它会跟踪未捕获的异常、Promise 拒绝、控制台错误和网络故障。如果您只需要跟踪后端错误，请禁用此功能。'
+      javascript_label: '启用 JavaScript 错误反馈'
+      javascript_replays_error_sample_rate: 前端错误重放采样率
+      javascript_replays_error_sample_rate_help: '仅在发生错误时才记录会话的百分比。比完整会话回放更高效——它会记录错误发生前最多 1 分钟的内容，并持续记录直到会话结束。非常适合调试生产环境中的问题。包大小：增加约 150 KB。建议：在生产环境中设置为 10-25%。'
+      javascript_replays_session_sample_rate: 用户会话重放采样率
+      javascript_replays_session_sample_rate_help: '从会话开始记录用户操作的百分比。可捕获鼠标移动、点击、滚动、页面导航和表单交互（并对个人身份信息进行屏蔽）。您可以查看用户的所有操作，以便重现错误。程序包大小：增加约 150 KB。建议：考虑到存储成本，在生产环境中建议使用 1-5%。'
+      javascript_trace_sample_rate: 前端性能监测采样率
+      javascript_trace_sample_rate_help: '页面加载跟踪百分比（0 表示禁用，100 表示跟踪所有页面加载）。此功能可跟踪页面加载时间、资源加载、API 请求和导航计时。包大小：增加约 30 KB。建议：在生产环境中设置为 10-25%。'
+      monitor_performance_help: '后端请求的追踪百分比（0 表示禁用，100 表示追踪所有请求）。性能追踪包括请求/响应时间、数据库查询和扩展加载时间。建议：生产环境中设置为 10-25%，预生产环境中设置为 100%。较低的值可以减少数据量和 Sentry 成本。'
+      monitor_performance_label: 后端性能监控采样率
+      profile_rate_help: '要进行性能分析的跟踪事务百分比（相对于上述监控率）。例如：如果监控率为 10%，性能分析率为 50%，则所有请求中有 5% 会进行性能分析。性能分析提供详细的函数级性能数据。性能影响：性能分析会增加开销并延长响应时间。请参阅<a>Sentry 的优化指南</a>。{icon} <bold>需要 Excimer 扩展程序（仅限 Linux）。目前状态：{icon}。</bold>'
+      profile_rate_label: 后端性能分析采样率
+      send_user_emails_help: '启用此功能后，用户的电子邮件地址将包含在所有 Sentry 事件中，以便联系用户和筛选错误。隐私注意事项：启用此功能前，请检查您的隐私政策。无论此设置如何，用户 ID、用户名和用户组信息始终包含在内。'
+      send_user_emails_label: 在错误报告中包含用户电子邮件地址
+      user_feedback_help: '启用此功能后，用户在遇到错误后会看到一个反馈表单，以便他们描述遇到的问题。该表单会自动填写用户的用户名、电子邮件地址（如果已启用）和所属用户组信息。这有助于建立与遇到问题的用户之间的直接沟通渠道。此功能需要使用直接的 Sentry DSN（而非 Relay DSN）。'
+      user_feedback_label: 启用用户反馈对话框

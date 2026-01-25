@@ -28,9 +28,11 @@ CHANGELOG
 * [`forumaker/magicbb`](https://github.com/forumaker/magicbb)
 * [`forumaker/magicread`](https://github.com/forumaker/magicread)
 * [`forumaker/magicslider`](https://github.com/forumaker/magicslider)
+* [`huseyinfiliz/awards`](https://github.com/huseyinfiliz/awards)
 * [`huseyinfiliz/custom-profile-page`](https://github.com/huseyinfiliz/custom-profile-page)
 * [`huseyinfiliz/modern-footer`](https://github.com/huseyinfiliz/modern-footer)
 * [`huseyinfiliz/notificationhub`](https://github.com/huseyinfiliz/notificationhub)
+* [`huseyinfiliz/sticky-title`](https://github.com/huseyinfiliz/sticky-title)
 * [`walsgit/flarum-discussion-cards`](https://github.com/WalsGit/flarum-discussion-cards)
 
 
@@ -56,6 +58,7 @@ CHANGELOG
 * [`fof/oauth`](https://github.com/FriendsOfFlarum/oauth)
 * [`fof/polls`](https://github.com/FriendsOfFlarum/polls)
 * [`fof/sentry`](https://github.com/FriendsOfFlarum/sentry)
+* [`fof/sitemap`](https://github.com/FriendsOfFlarum/sitemap)
 * [`fof/upload`](https://github.com/FriendsOfFlarum/upload)
 
 

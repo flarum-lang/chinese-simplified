@@ -50,6 +50,7 @@ CHANGELOG
 * [`fof/drafts`](https://github.com/FriendsOfFlarum/drafts)
 * [`fof/follow-tags`](https://github.com/FriendsOfFlarum/follow-tags)
 * [`fof/polls`](https://github.com/FriendsOfFlarum/polls)
+* [`fof/sentry`](https://github.com/FriendsOfFlarum/sentry)
 * [`fof/upload`](https://github.com/FriendsOfFlarum/upload)
 
 

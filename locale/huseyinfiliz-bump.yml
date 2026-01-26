@@ -4,32 +4,41 @@
 
 huseyinfiliz-bump:
   admin:
-    absorber_tags_help: 选择应启用过滤器的特定标签。留空则表示应用于论坛中的所有主题。
+    absorber_bypass_groups_help: 属于这些用户组的用户将完全绕过限流器，其帖子将始终立即顶起讨论。如果不想让任何用户组绕过，请保持为空。
+    absorber_bypass_groups_label: 可以绕过限流器的群体
+    absorber_tags_help: 选择应启用限流器的特定标签。留空则表示应用于论坛中的所有主题。
     absorber_tags_label: 在标签中应用
     enable_absorber_help: 当回复速度过快时，系统会自动阻止主题被顶起。这有助于减少垃圾信息，并保持论坛的整洁有序。
-    enable_absorber_label: 启用吸收器
+    enable_absorber_label: 启用限流器
     enable_manual_help: 允许讨论帖子的创建者手动将他们的主题帖子置顶。这对于保持重要主题的可见性非常有用。
-    enable_manual_label: 启用手动碰撞
+    enable_manual_label: 开启手动顶贴
     manual_bump_tags_help: 选择哪些标签允许手动置顶。留空表示所有主题都允许手动置顶。
     manual_bump_tags_label: 可在标签中找到
+    manual_cooldown_help: '用户在同一讨论串中两次顶帖之间必须等待的时间间隔。设置为 -1 可禁用顶帖功能，设置为 0 表示没有冷却时间，设置为正数则表示以小时为单位的等待时间。例如，24 表示用户每天可以顶帖一次。'
     manual_cooldown_label: 冷却时间（小时）
+    moderator_groups_help: 这些群组的用户可以顶起任何讨论（不仅是他们自己的帖子），并且不受冷却时间/配额限制。留空即可完全禁用审核功能。
+    moderator_groups_label: 可以管理“顶贴”的用户组
+    owner_daily_quota_help: '讨论帖所有者每天允许的置顶次数上限。设置为 -1 表示禁用置顶功能，设置为 0 表示不限制次数，设置为正数则表示每日置顶次数上限。'
+    owner_daily_quota_label: 每日顶帖限制
+    owner_weekly_quota_help: '讨论帖所有者每天允许的顶帖次数上限。设置为 -1 表示禁用顶帖功能，设置为 0 表示不限制次数，设置为正数则表示每周顶帖次数上限。'
+    owner_weekly_quota_label: 每周顶帖限制
     settings:
-      section_absorber: 吸收器设置
+      section_absorber: 限流器设置
       section_bypass: 绕过和审核设置
-      section_manual: 手动碰撞设置
+      section_manual: 手动顶帖设置
       section_quota: 配额设置
     stats:
-      absorber_status: 吸收器状态
+      absorber_status: 限流器状态
       active: 活性
       inactive: 不活跃
-      last_bump: 最后一次颠簸
-      no_bumps_yet: 目前还没有遇到颠簸
-      today_bumps: 今天的颠簸
-      total_bumps: 总颠簸次数
+      last_bump: 最后一次顶帖
+      no_bumps_yet: 目前还没有遇到顶帖
+      today_bumps: 今天的顶帖
+      total_bumps: 总顶帖次数
       week_bumps: 本周
     tabs:
-      absorber: 吸收器
-      bump: 手动碰撞
+      absorber: 限流器
+      bump: 手动顶帖
       group_overrides: 组覆盖
       recent_bumps: 近期活动
     threshold_hours_help: '两次回复之间所需的最短间隔时间，达到此间隔后讨论帖才会被顶起。例如，设置为 2 表示两小时内的回复不会顶起讨论帖。设置为 0 则禁用此功能。'

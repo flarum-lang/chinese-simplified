@@ -12,6 +12,11 @@ huseyinfiliz-bump:
     enable_absorber_label: 启用限流器
     enable_manual_help: 允许讨论帖子的创建者手动将他们的主题帖子置顶。这对于保持重要主题的可见性非常有用。
     enable_manual_label: 开启手动顶贴
+    group_overrides:
+      add_override: 添加组覆盖
+      description: 为指定用户组设定顶帖和限流器。
+      help: '留空字段即可使用“顶帖”和“限流器”选项卡中的全局设置。将值设置为 0 表示无限制或跳过。'
+      no_overrides: 未配置任何组覆盖设置。
     manual_bump_tags_help: 选择哪些标签允许手动置顶。留空表示所有主题都允许手动置顶。
     manual_bump_tags_label: 可在标签中找到
     manual_cooldown_help: '用户在同一讨论串中两次顶帖之间必须等待的时间间隔。设置为 -1 可禁用顶帖功能，设置为 0 表示没有冷却时间，设置为正数则表示以小时为单位的等待时间。例如，24 表示用户每天可以顶帖一次。'

@@ -40,6 +40,7 @@ CHANGELOG
 * [`huseyinfiliz/sticky-title`](https://github.com/huseyinfiliz/sticky-title)
 * [`ianm/online-guests`](https://github.com/imorland/flarum-ext-online-guests-widget)
 * [`irmmr/flarum-ext-rtl`](https://github.com/irmmr/flarum-ext-rtl)
+* [`muhammedsaidckr/flarum-chatgpt`](https://github.com/muhammedsaidckr/flarum-chatgpt)
 * [`ordinaryjellyfish/flarum-dicebear`](https://github.com/OrdinaryJellyfish/flarum-dicebear)
 * [`ramon/colored`](https://github.com/ram0ng1/colored)
 * [`walsgit/flarum-discussion-cards`](https://github.com/WalsGit/flarum-discussion-cards)

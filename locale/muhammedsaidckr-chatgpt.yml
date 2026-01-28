@@ -8,3 +8,4 @@ muhammedsaidckr-chatgpt:
       api_key_help: '从<a>openai.com</a>取得OpenAI API密钥。'
       api_key_label: 'API 密钥'
       base_uri_label: '基本 URL'
+      max_tokens_label: '最大 Tokens'

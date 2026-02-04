@@ -67,12 +67,14 @@ CHANGELOG
 * [`fof/default-user-preferences`](https://github.com/FriendsOfFlarum/default-user-preferences)
 * [`fof/doorman`](https://github.com/FriendsOfFlarum/doorman)
 * [`fof/drafts`](https://github.com/FriendsOfFlarum/drafts)
+* [`fof/filter`](https://github.com/FriendsOfFlarum/filter)
 * [`fof/follow-tags`](https://github.com/FriendsOfFlarum/follow-tags)
 * [`fof/oauth`](https://github.com/FriendsOfFlarum/oauth)
 * [`fof/polls`](https://github.com/FriendsOfFlarum/polls)
 * [`fof/sentry`](https://github.com/FriendsOfFlarum/sentry)
 * [`fof/sitemap`](https://github.com/FriendsOfFlarum/sitemap)
 * [`fof/upload`](https://github.com/FriendsOfFlarum/upload)
+* [`yippy/flarum-ext-auth-ldap`](https://github.com/Yippy/flarum-ext-auth-ldap)
 
 
 全部变化：[v1.6.0...v1.6.1](https://github.com/flarum-lang/chinese-simplified/compare/v1.6.0...v1.6.1)

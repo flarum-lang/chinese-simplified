@@ -8,7 +8,7 @@ yippy-auth-ldap:
       display_detailed_error: 'LDAP 登录时抛出详细错误'
       domains:
         add: 添加域名
-        banner: '域名 {index}'
+        banner: '域名 {index} - [{isEnabled}]'
         data:
           admin_dn: 辨识名称（DNs）
           admin_dn_help: 留空以允许匿名绑定
@@ -21,6 +21,9 @@ yippy-auth-ldap:
           follow_referrals: '跟随指引绑定到 LDAP 服务器'
           host: '域名或服务器 IP 地址'
           host_help: 英文逗号分隔
+          is_enabled: '启用 LDAP 服务'
+          permission_groups: 分配特定的权限
+          permission_groups_help: 这在注册时生效
           port: 端口
           port_help: '非 SSL 使用 369 端口，SSL 使用 636 端口。'
           search_user_fields: 搜索字段
@@ -42,6 +45,9 @@ yippy-auth-ldap:
           search_fields: 'LDAP 账号搜索'
           search_fields_description: '创建一个 LDAP 字段列表，用于用户名校对。'
           server: 'LDAP 服务设置'
+        is_enabled:
+          disabled: 禁用
+          enabled: 启用
         title: 'LDAP 域名'
       method_name: 'LDAP 服务名称（用于显示「xxx 账号登录」）'
       onlyUse: '隐藏 Flarum 原生登录方法'

@@ -5,11 +5,13 @@
 fof-default-user-preferences:
   admin:
     settings:
+      discloseOnline: 在线披露
       discloseOnline-help: 启用后，新用户将允许其他人看到他们何时在线。无论此设置如何，管理员和其他有权限的用户仍然可以看到在线状态。
       followAfterReply: 回复并关注
       followAfterReply-help: 启用后，新用户将自动关注回复或评论的主题帖。
       groupMentioned: 用户组提及邮件通知
       groupMentioned-help: 启用此项，默认为新用户开启用户组被提及时的邮件通知。
+      indexProfile: 索引配置文件
       indexProfile-help: 启用后，新用户将允许搜索引擎索引其个人资料页，除非被其他网站或扩展程序设置屏蔽。
       postMentioned: 回复邮件通知
       postMentioned-help: 启用后，新用户将默认开启「有人回复了我」邮件通知。

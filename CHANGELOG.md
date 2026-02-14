@@ -20,6 +20,7 @@ CHANGELOG
 * [`datlechin/flarum-ai`](https://github.com/datlechin/flarum-ai)
 * [`flarum/gdpr`](https://github.com/flarum/gdpr)
 * [`flectar/flarum-turnstile`](https://github.com/flectar/flarum-ext-turnstile)
+* [`fof/badges`](https://github.com/FriendsOfFlarum/badges)
 * [`fof/discussion-templates`](https://github.com/FriendsOfFlarum/discussion-templates)
 * [`fof/discussion-views`](https://github.com/FriendsOfFlarum/discussion-views)
 * [`fof/horizon`](https://github.com/FriendsOfFlarum/horizon)

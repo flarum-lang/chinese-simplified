@@ -8,7 +8,11 @@ colored:
       custom_css_help: '您可以在此处添加任何想要应用的自定义 CSS 样式。'
       custom_css_label: 自定义
       elements:
+        header_description: 为论坛标题栏顶部添加彩色边框
+        header_help: 启用标题颜色。
         header_label: 页眉边框
+        hero_help: 启用首页区域的颜色显示。
+        hero_label: 主横幅
       tag_mode_custom: 自定义
       tag_mode_first: 第一标签
       tag_mode_label: 标签颜色模式

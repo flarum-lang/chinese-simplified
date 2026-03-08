@@ -47,6 +47,9 @@
     "flarum-locale": {
       "code": "zh-Hans",
       "title": "简体中文"
+    },
+    "branch-alias": {
+      "dev-master": "1.x-dev"
     }
   }
 }

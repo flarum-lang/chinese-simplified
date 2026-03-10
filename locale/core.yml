@@ -4,6 +4,15 @@
 
 core:
   admin:
+    advanced:
+      description: 处理任务之间的等待时间。默认0秒。
+      maintenance:
+        bisect_modal:
+          description: "此操作会将论坛置于维护模式（低），直至问题解决。每一步操作中，部分扩展程序将被禁用，直到找到导致问题的扩展程序为止。因此，如果出现功能缺失或主题设计改变的情况，请不要感到惊讶。请保持此页面打开，并在完成每一步操作后，尝试在单独的页面中重现问题。如果您不小心关闭了此页面，可以随时返回。\n"
+          end_button: 关闭并转到扩展程序页面
+          issue_question: 问题仍然存在吗？
+          issue_question_help: 请尝试在单独页面上复现该问题，并根据结果进行解答。
+          no_button: 不
     appearance:
       colored_header_label: 彩色导航栏
       colors_heading: 颜色

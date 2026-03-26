@@ -5,14 +5,29 @@
 core:
   admin:
     advanced:
-      description: 处理任务之间的等待时间。默认0秒。
+      description: 为您的论坛配置高级设置。
       maintenance:
+        bisect:
+          begin_button_text: 二分排查
+          continue_button_text: 继续二分排查
+          help: 帮助定位导致您所遇故障的扩展程序。此操作会自动将论坛置于（低级别）维护模式，直到排查过程结束。
+          label: 扩展程序二分排查
         bisect_modal:
-          description: "此操作会将论坛置于维护模式（低），直至问题解决。每一步操作中，部分扩展程序将被禁用，直到找到导致问题的扩展程序为止。因此，如果出现功能缺失或主题设计改变的情况，请不要感到惊讶。请保持此页面打开，并在完成每一步操作后，尝试在单独的页面中重现问题。如果您不小心关闭了此页面，可以随时返回。\n"
+          description: "此操作会将论坛置于（低级别）维护模式，直到排查过程结束。在每一步中，系统都会禁用一部分扩展程序，直到找到导致问题的扩展。因此，如果看到功能缺失或主题设计发生变化，请不要感到惊讶。请保持此页面开启，并在每一步操作后，在另一个独立页面尝试复现该问题。如果您不小心关闭了此页面，可以随时返回。\n"
           end_button: 关闭并转到扩展程序页面
           issue_question: 问题仍然存在吗？
           issue_question_help: 请尝试在单独页面上复现该问题，并根据结果进行解答。
           no_button: 不
+          result_description: "论坛已退出维护模式。扩展程序二分排查已结束。根据您在各步骤中的反馈，导致问题的原因为以下扩展程序：\n"
+        options:
+          high: '高维护模式。任何人都无法访问论坛（只能通过 config.php 启用）'
+          low: 低维护模式。管理员仍可访问论坛。
+          none: 无维护。
+          safe: 安全模式。不加载任何扩展且只有管理员可以访问论坛。
+        safe_mode_extensions: 安全模式下允许加载的扩展
+      queue:
+        rest_help: '处理任务之间的等待时间。默认为 0 秒。'
+      title: 高级
     appearance:
       colored_header_label: 彩色导航栏
       colors_heading: 颜色
@@ -26,7 +41,7 @@ core:
       custom_styles_cannot_use_less_features: '自定义 LESS 不支持使用 @import 与 data-uri 特性。'
       custom_styles_heading: 自定义样式
       custom_styles_text: '添加 Less/CSS 代码以自定义论坛外观，此设置将覆盖 Flarum 默认样式。'
-      description: 自定义论坛配色、图标以及其他元素
+      description: '自定义您的论坛颜色、Logo 以及其他变量。'
       edit_css_button: '编辑自定义 CSS'
       edit_footer_button: '=> core.ref.custom_footer_title'
       edit_header_button: '=> core.ref.custom_header_title'
@@ -39,7 +54,7 @@ core:
     basics:
       all_discussions_label: '=> core.ref.all_discussions'
       default_language_heading: 默认语言
-      description: 设置论坛名称、语言以及其他基础设置
+      description: 设置您的论坛名称、语言及其他基础设置。
       display_name_heading: 用户外显名称
       display_name_text: 选择外显名称的类型，默认为用户名。
       forum_description_heading: 论坛描述
@@ -64,7 +79,7 @@ core:
       username_placeholder: '=> core.ref.username'
     dashboard:
       clear_cache_button: 清除缓存
-      description: 论坛各项数据一览
+      description: 快速了解您的论坛概况。
       info_button: 系统信息
       info_modal:
         copy_button: 复制到剪贴板
@@ -84,7 +99,7 @@ core:
       title: 仪表盘
       tools_button: 工具
     debug-warning:
-      detail: "启用 <code>调试</code> 模式时，所有 Flarum 请求均不会缓存，<code>JavaScript</code> 和 <code>CSS</code> 文件将每次请求时返回全新的编译版本。调试模式中，所有日志、警告和错误均会以弹窗形式展示在网页中，数据库密码、环境变量等敏感信息均有可能在此期间泄露。\n\n因此我们强烈建议您在生产环境中将 <code>config.php</code> 文件中的 <code>debug</code> 设置为 <code>false</code> 以禁用调试模式。请查看 <link>Flarum 文档</link>了解更多信息。\n"
+      detail: "当 <code>debug</code> 模式处于启用状态时，Flarum 会在每次请求时重新构建其 <code>JavaScript</code> 和 <code>CSS</code> 资源，并且可能导致其他敏感信息的泄露，例如数据库密钥、环境变量等。\n\n强烈建议在生产环境中修改您的 <code>config.php</code> 文件以禁用 <code>debug</code> 模式。欲了解更多信息，请参阅 <link>Flarum 文档</link>。\n"
       label: 调试模式已激活
     edit_css:
       customize_text: '添加 Less/CSS 代码以自定义论坛外观，此设置将覆盖 Flarum <a>默认样式</a>。'
@@ -112,7 +127,7 @@ core:
       title: '=> core.ref.custom_header_title'
     email:
       addresses_heading: 地址
-      description: 配置论坛邮件服务
+      description: 配置您的论坛发送邮件所使用的驱动程序、设置及地址。
       driver_heading: 驱动
       driver_label: 邮件驱动
       from_label: 发件地址
@@ -120,7 +135,7 @@ core:
       mail_host_label: 主机
       mail_mailgun_domain_label: 域名
       mail_mailgun_region_label: 区域
-      mail_mailgun_secret_label: 'Secret key'
+      mail_mailgun_secret_label: 密钥
       mail_password_label: '=> core.ref.password'
       mail_port_label: 端口
       mail_username_label: 用户名（部分邮件服务商要求用户名必须与发件地址一致）
@@ -129,7 +144,7 @@ core:
       send_test_mail_button: 发送
       send_test_mail_heading: 发送测试邮件
       send_test_mail_success: 测试邮件发送成功！
-      send_test_mail_text: '使用上述设置发送测试邮件到您的邮箱：{email}'
+      send_test_mail_text: '这将使用上述配置向您的邮箱 {email} 发送一封邮件。'
       smtp_heading: 'SMTP 设置'
       title: '=> core.ref.email'
     extension:
@@ -199,7 +214,7 @@ core:
       delete_discussions_label: 删除主题
       delete_posts_forever_label: 永久删除回复
       delete_posts_label: 删除回复
-      description: 设置各用户组访问及操作权限
+      description: 配置用户的查看与操作权限。
       edit_posts_label: 编辑回复
       edit_users_credentials_label: 编辑用户核心数据（用户名、邮箱和密码）
       edit_users_groups_label: 编辑用户组
@@ -240,7 +255,7 @@ core:
       upload_button: 选择图片...
     users:
       create_user_button: 添加用户
-      description: 论坛用户分页列表
+      description: 您的论坛中所有用户的分页列表。
       grid:
         columns:
           display_name:
@@ -286,7 +301,7 @@ core:
       confirm_password_placeholder: '=> core.ref.confirm_password'
       confirmation_message: '=> core.ref.confirmation_email_sent'
       dismiss_button: '=> core.ref.okay'
-      incorrect_password_message: 您输入的密码有误！
+      incorrect_password_message: 您输入的密码不正确。
       submit_button: '=> core.ref.save_changes'
       title: '=> core.ref.change_email'
     change_password:
@@ -307,7 +322,7 @@ core:
       title_placeholder: 标题
     composer_edit:
       discard_confirmation: 更改尚未保存，确定要丢弃吗？
-      edited_message: 编辑成功
+      edited_message: 您的编辑已生效。
       post_link: '发布 #{number} 于 {discussion}'
       submit_button: '=> core.ref.save_changes'
       view_button: '=> core.ref.view'
@@ -339,7 +354,7 @@ core:
       dismiss_button: '=> core.ref.okay'
       email_placeholder: '=> core.ref.email'
       email_sent_message: 如果您输入的电子邮件已在本站注册过，我们将向其发送一封含有重置密码链接的邮件。若未收到请检查垃圾箱。
-      not_found_message: 此邮箱的注册用户不存在
+      not_found_message: 未找到使用该邮箱注册的用户。
       submit_button: 重置密码
       text: 请输入账户的注册邮箱地址，我们将发送重设密码链接至该邮箱。
       title: 忘记密码
@@ -401,7 +416,7 @@ core:
       viewing_text: '{count, plural, one {{index} / {formattedCount} 条} other {{index} / {formattedCount} 条}}'
     post_stream:
       discussion_renamed_old_tooltip: '原标题：「{old}」'
-      discussion_renamed_text: '{username} 于 {time} 更改标题为「{new}」'
+      discussion_renamed_text: '{username} 于 {time} 将标题修改为 {new}。'
       load_more_button: '=> core.ref.load_more'
       reply_placeholder: '=> core.ref.write_a_reply'
       time_lapsed_text: '{period} 后'
@@ -469,7 +484,7 @@ core:
       in_discussion_text: '于 {discussion}'
       joined_date_text: '注册于 {ago}'
       online_text: 在线
-      posts_empty_text: 暂无内容
+      posts_empty_text: 这里似乎没有任何帖子。
       posts_link: '=> core.ref.posts'
       posts_load_more_button: '=> core.ref.load_more'
       security_link: '=> core.ref.security'
@@ -586,10 +601,10 @@ core:
     edit_user: 编辑用户
     email: 邮箱
     extensions: 扩展程序
-    generic_confirmation_message: 此操作无法撤销，确定要继续吗？
+    generic_confirmation_message: 确定要继续吗？此操作无法撤销。
     icon: 图标
-    icon_text: '输入任意一个 <a>Font Awesome</a> 图标名称。<em>包括</em>前缀，例如 <code>fas fa-</code>'
-    invalid_login_message: 登录信息有误
+    icon_text: '请输入任何 <a>FontAwesome</a> 图标类名，<em>包括</em>前缀（例如 <code>fas fa-flag</code> 或 <code>fa-solid fa-flag</code>）。'
+    invalid_login_message: 您的登录信息不正确。
     load_more: 加载更多
     loading: 正在加载…
     log_in: 登录

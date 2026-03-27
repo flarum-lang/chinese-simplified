@@ -5,6 +5,10 @@
 flarum-subscriptions:
   email:
     new_post:
+      html:
+        body: "{poster_display_name} 刚刚在您关注的主题中发表了新内容：{title}。\n\n在您阅读此内容之前，您不会再收到关于此主题的更多通知。\n"
+      plain:
+        body: "{poster_display_name} 刚刚在您关注的主题中发表了新内容：{title}。\n\n点击下方链接查看最新动态：\n{url}\n\n---\n\n{content}\n\n---\n\n在您阅读此内容之前，您不会再收到关于此主题的更多通知。\n"
       subject: '【新帖】{title}'
   forum:
     badge:
@@ -21,6 +25,7 @@ flarum-subscriptions:
     notifications:
       new_post_text: '{username} 回复了你关注的主题'
     settings:
+      follow_after_create_label: 自动关注我发布的主题
       follow_after_reply_label: 自动关注我回复的主题
       notify_for_all_posts_label: 通知每一个新帖，而非仅最后一个
       notify_new_post_label: 我关注的主题有新回复
@@ -34,6 +39,12 @@ flarum-subscriptions:
       not_following_text: 仅当有人提及我时通知我。
       notify_alert_tooltip: 有新回复时通知提醒
       notify_email_tooltip: 有新回复时发送邮件
+  lib:
+    gambits:
+      discussions:
+        subscription:
+          following_key: following
+          ignoring_key: ignoring
   ref:
     follow: 关注
     following: 关注中

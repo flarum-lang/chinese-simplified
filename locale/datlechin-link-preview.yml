@@ -4,6 +4,15 @@
 
 datlechin-link-preview:
   admin:
+    sections:
+      external_api_description: 当直接获取失败时（例如受机器人保护的站点），使用外部服务。
+      external_api_label: '外部 API 回退'
+      general_description: 链接预览的基本显示偏好。
+      general_label: 常规
+      performance_description: 优化链接预览的获取和缓存方式。
+      performance_label: 性能
+      url_filtering_description: '控制哪些 URL 会生成链接预览。'
+      url_filtering_label: 'URL 过滤'
     settings:
       blacklist_help: 指定不生成链接预览的域名或URL，如果是多个条目请用英文逗号分隔。
       blacklist_label: 排除列表（黑名单）
@@ -14,6 +23,10 @@ datlechin-link-preview:
       convert_media_urls_label: 启用媒体链接预览
       enable_batch_requests_help: 同时生成多个链接预览，提升加载效率。
       enable_batch_requests_label: 启用批量处理
+      external_api_fallback_help: '当直接获取失败时（例如像Reuters这样受机器人保护的站点），使用外部 oEmbed API 来检索链接元数据。'
+      external_api_fallback_label: '外部 API 回退'
+      external_api_url_help: '自定义 oEmbed API 端点。留空则使用默认值（Iframely 开放 API）。URL 将作为查询参数附加。'
+      external_api_url_label: '外部 API URL'
       open_links_in_new_tab_help: 让链接在新标签页中打开。
       open_links_in_new_tab_label: 在新标签页打开链接
       use_google_favicons_help: 使用谷歌图标API显示网站图标，增强视觉辨识度。

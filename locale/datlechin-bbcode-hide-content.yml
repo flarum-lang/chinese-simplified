@@ -8,6 +8,10 @@ datlechin-bbcode-hide-content:
       bypass_like_label: 无需点赞查看隐藏内容
       bypass_reply_label: 无需回复查看隐藏内容
   forum:
+    composer:
+      hide_like_tooltip: 点赞后可见
+      hide_login_tooltip: 对游客隐藏
+      hide_reply_tooltip: 回复后可见
     must_be_logged_in: 此内容登录后可见
     must_liked: 此内容点赞后可见
     must_replied: 此内容回复后可见

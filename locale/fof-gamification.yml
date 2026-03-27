@@ -13,9 +13,10 @@ fof-gamification:
       alt_votes:
         icon_name: 'Reddit 布局图标名称'
       convert:
-        button: 同步原生点赞数据
-        converted: '成功同步 {number} 个赞'
-        converting: '原生 LIkes 插件的点赞数据正在同步中，请等待几分钟后刷新页面查看同步结果。（同步可能需要一段时间，具体取决于您服务器性能）'
+        button: 将“点赞”转换为“赞同”
+        converted: '成功转换所有 {number} 个点赞'
+        converting: 点赞数据正在转换中，请几分钟后刷新站点查看结果。（转换耗时取决于论坛总点赞数量）
+        help: '将 flarum/likes 官方点赞插件的历史点赞数据转换为赞同，并为所有现有主题重新计算热度。'
       groups:
         add: 添加规则
         column:
@@ -23,7 +24,7 @@ fof-gamification:
           maxPoints: 最高点数（含）
           minPoints: 最低点数（含）
         delete: 删除规则
-        help: "当用户的点数发生变化时，将自动添加或删除组。修改设置后，请运行 <code>php flarum fof:gamification:assign-groups</code> 命令更新现有用户。如果您希望删除规则并从组中删除所有用户，请将最低最高点数均设为空，保存设置并执行命令后，在设置中删除规则。\n"
+        help: "当用户的积分发生变化时，系统将根据需要自动添加或移除所选的用户组。如果您修改了配置，应当运行 <code>php flarum fof:gamification:assign-groups</code> 命令以更新现有用户。如果您希望删除某条规则并从该组中移除所有用户，请将最小值和最大值均设为空（留空），保存设置并运行上述命令行命令。最后，您可以从设置中彻底删除该规则。\n"
         title: 自动分配用户组
       rankings:
         blocked:
@@ -52,15 +53,17 @@ fof-gamification:
         auto_upvote: 当帖子发布时自动赞同
         color_holder: '#ffffff'
         discussion_page: 在帖子列表中显示赞同数
-        first_post_only: 仅首贴开放赞踩功能
+        first_post_only: 仅允许在首帖中进行赞同/反对投票
         icon_help: '输入任何 Font Awesome 图标，后缀为 -up 和 -down。 示例：arrow（箭头），thumbs（拇指），chevron（指向箭头）'
         icon_name: 赞同/踩图标
+        icon_preview_downvote: 反对
+        icon_preview_upvote: 赞同
         points_placeholder: '👍: '
         points_title: 占位符
         rate_limit: '赞同频率限制（10 秒）'
         title: 投票
-        upvotes_only: 禁用踩
-        vote_color: 点赞颜色
+        upvotes_only: 禁用反对
+        vote_color: 投票颜色
     permissions:
       downvote_notifications: 接收反对票通知
       see_ranking_page: 查看排名
@@ -104,3 +107,7 @@ fof-gamification:
       label_none: 暂无投票
       none: 暂无投票
     votes: 投票
+lib:
+  gambits:
+    hot:
+      key: hot

@@ -13,6 +13,8 @@ sycho-github-milestone:
   forum:
     all: '=> sycho-github-milestone.ref.all'
     closed: '=> sycho-github-milestone.ref.closed'
+    complete: '<strong>{progress}%</strong> 已完成'
+    empty_list: '没有可显示的问题 (Issue) 或合并请求 (PR)。'
     last_updated: '最新进展 {time}'
     load_more: '=> core.forum.discussion_list.load_more_button'
     open: '=> sycho-github-milestone.ref.open'

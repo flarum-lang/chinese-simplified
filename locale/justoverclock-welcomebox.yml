@@ -13,6 +13,7 @@ flarum-ext-welcomebox:
     discussion: '=> core.ref.discussions'
     goToProfile: 个人主页
     lastSeen: 上次在线
+    neverSeen: 从未在线
     notregistered: 您好像还不是注册用户。
     npost: '=> core.ref.posts'
     tooltipDisclist: 我的主题

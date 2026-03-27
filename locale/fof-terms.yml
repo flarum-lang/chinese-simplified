@@ -2,6 +2,12 @@
 # Use https://weblate.rob006.net/projects/flarum2/fof-terms/zh_Hans/ for translation.
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
+flarum-gdpr:
+  lib:
+    data:
+      userpolicydata:
+        delete_description: 移除用户对服务条款的接受记录
+        export_description: 关于用户接受服务条款的详细信息
 fof-terms:
   admin:
     buttons:
@@ -57,7 +63,11 @@ fof-terms:
       title: '用户 {username} 服务条款接受状态'
     update-alert:
       can-accept-message: 我们最近更新了服务条款，您必须阅读并同意才能继续使用本网站。
+      can-accept-optional-message: 我们最近更新了服务条款。您可以在方便时查阅。
+      close: 关闭
       must-accept-message: 在您查看并同意新服务条款前，我们临时限制了您帐户的操作权限。
       review: 点击此处查看并同意新服务条款
     user_controls:
       state_button: 服务条款接受状态
+    user_settings:
+      optional_policies_label: 各项政策

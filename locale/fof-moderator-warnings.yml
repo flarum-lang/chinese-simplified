@@ -23,9 +23,11 @@ fof-moderator-warnings:
       warning: '内容违规，由 {mod_username} 记 {strikes, plural, one {#} other {#}} 分'
       warning_no_strikes: '收到管理员 {mod_username} 的警告'
     post_controls:
-      warning_button: 警告
+      warning_button: 警告用户
     settings:
       warning_notification_label: 收到站务警告
+    user:
+      warnings: 警告
     validation:
       invalid_strike_count: '记分范围只能是 0 到 5 分。'
       public_comment_required: 您必须填写一个公开评论。
@@ -40,6 +42,8 @@ fof-moderator-warnings:
       warnings_no_strikes: 站务警告
     warning_list_item:
       linked_post: 关联帖子
+      list_item_heading: '{strikes, plural, one {# 次警告，{time}} other {# 次警告，{time}}}'
+      list_item_heading_hidden: '{strikes, plural, one {# 次警告，{time}（已撤销）} other {# 次警告，{time}（已撤销）}}'
       private_comment: 管理员备注
       public_comment: 警告
     warning_modal:

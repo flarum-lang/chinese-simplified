@@ -15,6 +15,7 @@ yippy-auth-ldap:
           admin_password: 密码
           admin_password_help: 留空以匿名绑定
           base_dn: 基本辨识名称（DNs）
+          base_dn_help: '若有多个 Base DN，请使用分号 (;) 分隔。'
           filter: 要应用的过滤器
           filter_help: '可选，不可填写「搜索字段」，搜索字段必须由用户端提供，不可定义在过滤器中。过滤器为 (objectclass=user) 时，选择 UID 后，最终使用时自动添加为 (&(objectclass=user)(uid=[User''s Input]))'
           follow_referrals: '跟随指引绑定到 LDAP 服务器'
@@ -63,8 +64,9 @@ yippy-auth-ldap:
         not_found: '无法找到 {server} 账号。'
         password_expired: 密码已过期。
       core_csrf_token_mismatch: '=> core.views.error.csrf_token_mismatch'
-      csrf_token_mismatch: 您已经长时间未活动，请刷新页面并重试。
+      csrf_token_mismatch: 您已经长时间未活动，请刷新页面并重试
       domains:
+        connection_failed: '域名 {domain_index} 连接失败，错误代码 {data}'
         empty_base_dn: '域名 {domain_index} 未设置基本辨识名称（DNs），请修改扩展程序设置。'
         empty_host: '域名 {domain_index} 未设置任何域名或服务器 IP 地址，请修改扩展程序设置。'
         empty_search_field: '域名 {domain_index} 未设置 LDAP 账号搜索的搜索字段，请修改扩展程序设置。'

@@ -4,9 +4,17 @@
 
 core:
   forum:
+    badge:
+      frontpage_tooltip: 已标记为精华
     index_sort:
       front_button: 精华
+    post_controls:
+      pull_from_front_button: 取消精华
+      push_to_front_button: 设为精华
 fof-frontpage:
+  admin:
+    permissions:
+      can_push_to_frontpage_label: 可设置精华帖
   lib:
     gambits:
       frontpage:

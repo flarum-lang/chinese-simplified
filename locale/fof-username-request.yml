@@ -10,7 +10,9 @@ fof-username-request:
       request_username: 申请更改用户名
   email:
     body:
-      noReasonProvided: 未说明原因
+      approved: "您将用户名修改为“{new_username}”的申请已由 {actor_display_name} 批准。\n\n现在您可以使用新用户名登录：{login_url}\n"
+      noReasonProvided: 未说明原因。
+      rejected: "您将用户名由“{old_username}”修改为“{requested_username}”的申请已由 {actor_display_name} 拒绝。\n\n原因：{reason}\n"
     subject:
       approved: 用户名更改申请已通过
       rejected: 用户名更改申请已驳回
@@ -44,6 +46,7 @@ fof-username-request:
         title: 昵称更改申请
     pending_requests:
       empty_text: 暂无用户名更改申请。
+      group_label: 请求
       nickname_exerpt: '新昵称：{requestedName}'
       nickname_item_text: '{name} 请求更改昵称'
       title: '=> fof-username-request.ref.name_change_requests'

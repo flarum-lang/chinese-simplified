@@ -14,96 +14,125 @@ datitisev-backup:
           label: 'Access Key'
         bucket:
           description: 要使用的存储桶。
-          label: 桶
+          label: '存储桶 (Bucket)'
         endpoint:
           description: '存储终端的 URL。'
-          label: 终端
+          label: '终端 (Endpoint)'
         path-prefix:
-          description: 可选的默认文件路径前缀。
+          description: 可选的文件默认路径前缀。
           label: 路径前缀
       aws:
         bucket:
           description: '要上传到的 S3 存储桶。'
-          label: 桶
+          label: '存储桶 (Bucket)'
         credentials-key:
-          description: 'AWS 凭据密钥'
+          description: 'AWS 凭据 Key'
           label: Key
         credentials-secret:
           description: 'AWS 凭据私钥'
-          label: 私钥
+          label: '私钥 (Secret)'
         path-prefix:
-          description: 可选的默认文件路径前缀。
+          description: 可选的文件默认路径前缀。
           label: 路径前缀
         region:
-          description: 存储桶的区域。
+          description: 存储桶所属区域。
           label: 区域
         version:
-          description: 指定一个版本或留空表示最新版本。
+          description: 指定版本或留空以使用最新版本。
           label: 版本
       azure:
         container:
           description: 'Azure 容器'
           label: 容器
+        endpoint:
+          description: '您的 Azure 存储连接字符串。'
+          label: 连接字符串
+        path-prefix:
+          description: 可选的文件默认路径前缀。
+          label: 路径前缀
       dropbox:
         help:
           obtain-access-code-button: '打开 Dropbox'
           obtain-access-code-label: '获取访问代码（需要 App Key）'
           obtain-refresh-token-button: 使用代码
           obtain-refresh-token-label: '使用访问代码获取刷新令牌（需要 App Key 和 Secret）'
-          obtain-refresh-token-success: 刷新令牌获取成功，请保存。
+          obtain-refresh-token-success: 刷新令牌获取成功并已更新至上方！请保存更改以存储它。
         key:
           label: 'App Key'
         refresh-token:
-          description: '在下方获取刷新令牌，或根据指引手动生成：https://www.codemzy.com/blog/dropbox-long-lived-access-refresh-token#how-can-i-get-a-refresh-token-manually'
-          label: 刷新令牌
+          description: '使用下方的字段获取刷新令牌，或手动参考指引：https://www.codemzy.com/blog/dropbox-long-lived-access-refresh-token#how-can-i-get-a-refresh-token-manually。'
+          label: '刷新令牌 (Refresh Token)'
         secret:
           label: 'App Secret'
       ftp:
         host:
-          description: '要连接到的 FTP 主机名，例如 <em>ftp.yourdomain.local</em>。'
+          description: '要连接的 FTP 主机名，例如：<em>ftp.yourdomain.local</em>。'
           label: 远程主机名
+        passive:
+          description: '是否为 FTP 连接使用被动模式。'
+          toggle: 被动模式
         password:
-          description: '要在 FTP 服务器上进行身份验证的密码。'
+          description: '用于 FTP 服务器身份验证的密码。'
           label: 密码
         port:
-          description: 'FTP 端口（默认 21）。'
+          description: 'FTP 端口（默认为 21）。'
           label: 端口
         root:
           description: 存储备份的远程根路径（子目录）。
           label: 根路径
         ssl:
-          description: '是否使用加密 SSL 连接到服务器。'
+          description: '是否使用加密的 SSL 连接到服务器。'
           toggle: SSL
         timeout:
-          description: '等待与 FTP 服务器连接的秒数。'
+          description: '等待 FTP 服务器连接的秒数。'
           label: 超时时间
         username:
-          description: '要在 FTP 服务器上进行身份验证的用户名。'
+          description: '用于 FTP 服务器身份验证的用户名。'
           label: 用户名
       gdrive:
         client-id:
-          description: "根据指引创建 Google Project 并获取 Client ID 和 Client Secret：https://github.com/ivanvermeyen/laravel-google-drive-demo/blob/master/README/1-getting-your-dlient-id-and-secret.md\n"
+          description: "按照 https://github.com/ivanvermeyen/laravel-google-drive-demo/blob/master/README/1-getting-your-dlient-id-and-secret.md 的说明创建 Google 项目并获取 Client ID 和 Client Secret。\n"
           label: 'Client ID'
         client-secret:
           description: ' '
           label: 'Client Secret'
         folder:
           description: 'https://drive.google.com/drive/u/0/folders/ID'
-          label: 'Folder ID'
+          label: '文件夹 ID'
         help:
           test_button: 测试连接
-          test_success_alert: '成功连接 Google Drive，请保存设置。'
+          test_success_alert: '成功连接到 Google Drive！请保存更改以存储设置。'
         refresh-token:
-          description: "按照 @ https://github.com/ivanvermeyen/laravel-google-drive-demo/blob/master/README/2-getting-your-refresh-token.md 的指引，取回您的 Google oAuth 应用程序刷新令牌。\n"
-          label: 刷新令牌
+          description: "按照 https://github.com/ivanvermeyen/laravel-google-drive-demo/blob/master/README/2-getting-your-refresh-token.md 的说明取回您的 Google oAuth 应用程序刷新令牌。\n"
+          label: '刷新令牌 (Refresh Token)'
       local:
         target:
           description: 指定用于存储备份的本地目录。
           label: 目标路径
       name_label: 'Location 名称'
+      sftp:
+        host: '=> datitisev-backup.admin.adapter-settings-modal.ftp.host'
+        passphrase:
+          description: 私钥的密码短语（如果有）。
+          label: '密码短语 (Passphrase)'
+        password: '=> datitisev-backup.admin.adapter-settings-modal.ftp.password'
+        port:
+          description: 'SFTP 端口（默认为 22）。'
+          label: 端口
+        private-key:
+          description: '验证 SFTP 连接时使用的私钥路径（建议使用绝对路径）。'
+          label: '私钥 (Private Key)'
+        root: '=> datitisev-backup.admin.adapter-settings-modal.ftp.root'
+        timeout: '=> datitisev-backup.admin.adapter-settings-modal.ftp.timeout'
+        use-agent:
+          description: '是否使用 SSH 代理来验证连接（默认为否）。'
+          toggle: '使用代理 (Agent)'
+        username: '=> datitisev-backup.admin.adapter-settings-modal.ftp.username'
+      timestamp_help: "指定备份文件名中时间戳的格式。默认为 <code>U</code>（Unix 时间戳）。使用 <a>PHP 日期格式化</a>。不安全的文件名字符将被清理。文件名格式将为 <code>{forum}-[格式化后的时间戳].zip</code>。\n"
+      timestamp_label: 文件名时间戳格式
       title: '配置 {adapter}'
     adapters:
-      aliyun: 阿里云
+      aliyun: '阿里云 (Aliyun)'
       aws: '亚马逊 AWS S3'
       azure: '微软 Azure'
       dropbox: Dropbox
@@ -111,14 +140,17 @@ datitisev-backup:
       gdrive: 'Google Drive'
       local: 本地存储
       sftp: SFTP
-    create_button: 新建适配器
+    create_button: 添加新适配器
     delete_button: 删除
-    delete_confirmation: '确定要删除「{name}」（{adapter}）'
+    delete_confirmation: '确定要删除“{name}”（{adapter}）吗？'
     nav:
-      description: 存储您的论坛副本。
+      description: 存储论坛的副本。
       label: 备份
     required-package-modal:
-      content: "为了使用这个驱动程序，您需要安装一个特定的软件包。您可以通过 Flarum 安装目录下运行 <code>composer require {package}</code> 命令来安装。\n"
+      content: "为了使用此驱动程序，您需要安装一个特定的软件包。您可以通过在 Flarum 安装目录下运行以下 composer 命令来安装：<code>composer require {package}</code>。\n"
       title: '{adapter} 所需的软件包'
     required_package_button: 安装
+    settings:
+      database_bin_path_help: "如果您的数据库二进制文件（如 mysqldump, pg_dump）不在系统的 PATH 中，可以在此处指定它们所在的目录。请确保包含末尾的斜杠（例如 <code>/usr/local/mysql/bin/</code>）。\n"
+      database_bin_path_label: （可选）数据库二进制文件路径
     settings_button: 配置

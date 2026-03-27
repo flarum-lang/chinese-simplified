@@ -5,10 +5,10 @@
 datlechin-more-discussions:
   admin:
     settings:
-      block_name_help: '主题列表的标题（默认 <code>最新主题</code>)）'
+      block_name_help: '讨论列表的标题（默认 <code>最新讨论</code>)）'
       block_name_label: 列表标题
-      discussion_limit_help: '列表主题帖数量（默认 <code>5</code>）'
-      discussion_limit_label: 主题数量上限
+      discussion_limit_help: '列表讨论帖数量（默认 <code>5</code>）'
+      discussion_limit_label: 讨论数量上限
       discussion_related_help: '通过标题搜索相关结果。<b>警告：</b>此功能严重影响网站的性能，尤其是大型网站。请结合 <b>clarkwinkelmann/flarum-ext-scout</b> 扩展程序使用以改善性能。'
       discussion_related_label: 相关结果
       filter_by_help: '列表排序方式（默认 <code>最新回复</code>）'
@@ -18,7 +18,7 @@ datlechin-more-discussions:
         latest: 最新回复
         newest: 新鲜出炉
         oldest: 陈年旧帖
-        top: 热门主题
+        top: 热门讨论
         votes: '高票欢迎（需要 fof/gamification）'
   forum:
-    block_default_name: 最新主题
+    block_default_name: 最新讨论

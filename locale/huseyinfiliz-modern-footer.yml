@@ -30,7 +30,11 @@ huseyinfiliz-modern-footer:
       manage_footer_sections: 管理页脚
       mobile_tab_height: 'Mobile Tab 高度'
       mobile_tab_height_help: '如果安装了Mobile Tab拓展，则可使用以下值： var(--mobile-tab-height)'
+      show_to_everyone: 所有人可见
+      show_to_guests_only: 仅游客可见
+      show_to_members_only: 仅登录用户可见
       social_link: 社交媒体链接
       social_media_button: 社交媒体按钮
       text: 文本
       title: 标题
+      visibility_control: 页脚显示控制

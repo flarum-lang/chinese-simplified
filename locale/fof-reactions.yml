@@ -7,7 +7,7 @@ fof-reactions:
     page:
       cdn:
         default-url: '默认：{url}'
-        help: "默认情况下，我们从 Cloudflare 的 CDN 获取反应的图片资源。如有需要，您也可以指定其它的 CDN 地址。\n<code>[codepoint]</code>为表情代码的占位符。\n\n例如，要使用 jsDelivr 上的 Noto Emoji，请输入<code>https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.040/svg/emoji_u[codepoint].svg</code>。此设置不得为空。\n"
+        help: "默认情况下，我们从 Cloudflare 的 CDN 加载表态表情资源。您也可以根据需要指定其他 CDN 地址\n进行替换。<code>[codepoint]</code> 将会被替换为表情符号的码点（Codepoint）。\n\n例如，若要通过 jsdelivr 切换到 Noto Emoji，请输入 <code>https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.040/svg/emoji_u[codepoint].svg</code>。\n\n您的 CDN 必须支持 Emoji/Unicode {emojibase} 或更高版本。使用 [twemoji] 可以替换为当前的 Twemoji 版本号。\n"
         label: URL
         title: CDN
       convert:
@@ -17,7 +17,17 @@ fof-reactions:
         help: 如果您刚刚更新本扩展，此操作将转换所有帖子的戳一戳表情。如果您刚刚安装本插件，请忽略本条消息。
       reactions:
         Helptext: '在标识名文本框中，输入 emoji 的英文名称，您可以打开文本编辑器的 Emoji 表情弹窗，鼠标停留到表情上方查看表情名称。或者输入 font-awesome 的名称并切换到 icon 类型（传送门：http://t.cn/RBcdSZ5）。'
+        add_reaction_button: 添加反应
+        add_reaction_label: 添加新反应
         delete_confirmation: 确定要删除此反应吗？此操作无法撤销。
+        delete_reaction_button: 删除反应
+        header:
+          action: 操作
+          display: 显示文本
+          enabled: 已启用
+          identifier: 图标/表情符号标识符
+          preview: 预览
+          type: 类型
         help:
           display: 描述
           identifier: 标识名
@@ -47,15 +57,22 @@ fof-reactions:
       react_posts_label: 戳表情
       see_reactions_label: 查看戳表情的人
   forum:
-    disabled-reaction: 您暂时不能戳表情，请刷新后重试。
+    disabled-reaction: 您暂时不能戳表情，请刷新后重试
     mod_item: 查看表情
     modal:
       anonymous_count: '{count} 位匿名用户'
+      load_more: 加载更多
       no_reactions: 暂无反应
+      others_count: '+ {count} 个其他'
+      remove_all_reaction_type: '移除所有 {reaction} 反应'
+      remove_user_reaction: 移除反应
       title: 表情
     notification: '{username} 戳了一个 {reaction}'
     react_button_label: 戳表情
+    reacted_with_label: '{reaction} ({count} 个反应)'
     reacting-own-post: 您不能对自己的帖子戳表情
+    reaction_button_label: '使用 {reaction} 反应'
     settings:
       notify_post_reacted_label: 有人对我的帖子戳表情
+    unreact_button_label: 移除反应
     warning: 您的表情已转换为「赞」

@@ -18,7 +18,7 @@ fof-sitemap:
         daily: 每天一次
         hourly: 每小时一次
         twice_daily: 每天两次
-      frequency_label: 重建站点地图频率
+      frequency_label: 计划任务重新构建缓存站点地图的频率？
       include_changefreq: 在站点地图中包含修改频率值
       include_changefreq_help: Google会忽略修改频率值，但其他搜索引擎可能会使用这些值来安排抓取时间
       include_priority: 在站点地图中包含优先级

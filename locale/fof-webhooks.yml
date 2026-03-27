@@ -5,17 +5,17 @@
 fof-webhooks:
   actions:
     discussion:
-      deleted: '删除主题 `{1}`'
-      hidden: '隐藏主题 `{1}`'
+      deleted: '删除讨论 `{1}`'
+      hidden: '隐藏讨论 `{1}`'
       renamed:
         description: '新标题：{1}'
-        title: '重命名主题 `{1}`'
-      restored: '恢复主题 `{1}`'
-      started: '发布主题 `{1}`'
+        title: '重命名讨论 `{1}`'
+      restored: '恢复讨论 `{1}`'
+      started: '发布讨论 `{1}`'
     group:
-      created: '创建用户组 `{1}`'
-      deleted: '删除用户组`{1}`'
-      renamed: '重命名用户组为 `{1}`'
+      created: '创建群组 `{1}`'
+      deleted: '删除群组`{1}`'
+      renamed: '重命名群组为 `{1}`'
     post:
       approved: '在 `{1}` 中审核通过的帖子'
       deleted: '删除回复于 `{1}`'
@@ -52,12 +52,12 @@ fof-webhooks:
             renamed: '=> fof-webhooks.ref.renamed'
             restored: '=> fof-webhooks.ref.restored'
             started: 已发布
-            title: 'Flarum 主题'
+            title: 'Flarum 讨论'
           group:
             created: 创建
             deleted: '=> fof-webhooks.ref.deleted'
             renamed: '=> fof-webhooks.ref.renamed'
-            title: 'Flarum 用户组'
+            title: 'Flarum 群组'
           post:
             deleted: '=> fof-webhooks.ref.deleted'
             hidden: '=> fof-webhooks.ref.hidden'
@@ -78,16 +78,24 @@ fof-webhooks:
         tags: '选择 Webhook 生效的标签。'
         url: '要运行的 Webhook 终端'
       item:
+        create_button: 创建
+        delete_confirm_alert: '您确定要删除此 {service} webhook 吗？'
+        delete_tooltip: '删除 webhook'
+        edit_tags_button: 编辑标签
+        edit_tooltip: '编辑 webhook 设置'
         tag_any_label: 任一标签
       modal:
         description: '您可以在这里修改出发 webhook 的事件。'
         events_label: 事件
-        extra_text_help: '附加文本到发送的 Webhook 中'
+        extra_text_help: '附加文本到发送的 Webhook 中。'
         extra_text_label: 附加文本
         group_help: 发送该组群可见的资源
         group_label: 组群
+        include_matching_tags_label: '包含匹配标签 -- 对于限制为特定标签的 webhook，显示事件匹配了哪些标签'
         max_post_content_length_help: '设置所有与帖子相关事件的最大帖子内容长度。0 或不填表示无限制。'
         max_post_content_length_label: 最大贴子内容长度
+        name_help: 'webhook 的名称。这将用于 Discord 用户名、Slack 机器人名称等。'
+        name_label: 名称
         title: 'Webhook 设置'
         use_plain_text_label: 减少帖子内容的格式化数量
       services:

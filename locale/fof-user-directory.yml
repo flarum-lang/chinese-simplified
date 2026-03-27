@@ -10,7 +10,7 @@ fof-user-directory:
       default-sort: 默认排序
       disable-global-search-source: 不要将会员名录添加到论坛搜索建议中
       link: 在论坛首页侧边栏添加「会员名录」选项卡
-      link-group-mentions: 将帖子中的组提及链接到用户名录
+      link-group-mentions: 将帖子中的群组提及链接到用户名录
       use-small-cards: 使用小尺寸卡片
   forum:
     header:
@@ -19,26 +19,26 @@ fof-user-directory:
       title: '=> fof-user-directory.forum.page.nav'
     page:
       empty_text: 抱歉，没有找到匹配的用户。
-      filter_button: 筛选用户组
+      filter_button: 筛选群组
       load_more_button: '=> core.ref.load_more'
       nav: 会员名录
       refresh_tooltip: '=> core.forum.index.refresh_tooltip'
       usercard:
-        discussion-count: '{count, plural, one {主题 {count}} other {主题 {count}}}'
+        discussion-count: '{count, plural, one {讨论 {count}} other {讨论 {count}}}'
         post-count: '{count, plural, one {回复 {count}} other {回复 {count}}}'
     search:
       field:
         placeholder: 搜索用户
       kinds:
-        group: 用户组
+        group: 群组
         text: 关键词
       users_heading: '搜索用户「{query}」'
   lib:
     sort:
       default: 默认
-      least_discussions: 主题最少
+      least_discussions: 讨论最少
       least_posts: 发帖最少
-      most_discussions: 主题最多
+      most_discussions: 讨论最多
       most_posts: 发帖最多
       newest: 新用户
       not_specified: '使用 Flarum 默认排序'

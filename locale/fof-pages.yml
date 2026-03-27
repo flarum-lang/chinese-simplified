@@ -36,6 +36,6 @@ fof-pages:
     content: 内容
     create_page: 新建页面
     pages: 自定义页面
-    slug: 固定链接地址（Slug）
+    slug: 别名（Slug）
     title: 页面标题
     url: 链接

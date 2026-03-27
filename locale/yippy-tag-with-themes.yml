@@ -5,52 +5,69 @@
 yippy-tag-with-themes:
   admin:
     designs:
-      add: 添加样式
-      banner: '主题 {index}'
+      add: 添加标签设计
+      banner: '设计主题 {index} - [{isEnabled}]'
       data:
-        child_background_color: 编辑子背景色
-        child_font_class: 编辑子字体
-        is_enabled: 启用主题设计
-        outline_background_color: 编辑轮廓色
-        primary_background_color: 编辑主背景色
-        primary_font_class: 编辑主字体
-        secondary_font_class: 编辑次字体
-        tags: 选择主标签
-        tags_help: 选择要应用此自定义样式的标签
+        child_background_color: 编辑次要背景颜色
+        child_font_class: 编辑次要字体
+        is_enabled: 启用此设计主题
+        opacity_background: 背景透明度
+        opacity_footer: 页脚透明度
+        opacity_outline: 轮廓透明度
+        outline_background_color: 编辑轮廓颜色
+        primary_background_color: 编辑主要背景颜色
+        primary_font_class: 编辑主要字体
+        secondary_font_class: 编辑辅助字体样式
+        tags: 已选主标签
+        tags_help: 为此自定义设计主题选择一个或多个标签
         themeName: 选择主题
-        unread_color: 编辑未读背景色
-      description: 为不同的标签应用不同的样式
+        unread_color: 编辑未读状态背景颜色
+      description: 为特定标签配置不同的显示主题规则
       header:
         color_theme: 自定义默认配色方案
         theme: 自定义主题
-      title: 自定义标签主题
+      is_enabled:
+        disabled: 禁用
+        enabled: 启用
+      title: 标签自定义设计主题
     helps:
-      design_default: 选择一个默认布局
+      design_default: 选择一个默认的设计布局
+      display_themes: 仅允许特定用户组使用主题样式
     labels:
-      design_default: 主题帖布局
+      design_default: 讨论页设计布局
+      display_themes: 启用标签主题权限
     options:
       design_options:
-        basic: 基础
-        basic_banner: 基础（突出页脚）
+        basic: 基础样式
+        basic_banner: 基础（主横幅样式）
         basic_outline: 基础轮廓
-        basic_outline_banner: 基础轮廓（突出页脚）
-        basic_outline_tab: 基础轮廓（突出页签）
-        basic_outline_tag: 基础轮廓（突出标签）
-        basic_tab: 基础（突出页签）
-        basic_tag: 基础（突出标签）
-        flat: 扁平
-        flat_banner: 扁平（突出页脚）
-        flat_border: 扁平描边
-        flat_border_banner: 扁平描边（突出页脚）
-        flat_border_tab: 扁平描边（突出页签）
-        flat_border_tag: 扁平描边（突出标签）
-        flat_tab: 扁平（突出页签）
-        flat_tag: 扁平（突出标签）
-        sticky_note: 便笺
-        sticky_note_banner: 便笺（突出页脚）
-        sticky_note_outline: 便笺轮廓
-        sticky_note_outline_banner: 便笺轮廓（突出页脚）
-        sticky_note_outline_tab: 便笺轮廓（突出页签）
-        sticky_note_outline_tag: 便笺轮廓（突出标签）
-        sticky_note_tab: 便笺（突出页签）
-        sticky_note_tag: 便笺（突出标签）
+        basic_outline_banner: 基础轮廓（主横幅样式）
+        basic_outline_tab: 基础轮廓（主选项卡样式）
+        basic_outline_tag: 基础轮廓（主标签样式）
+        basic_tab: 基础（主选项卡样式）
+        basic_tag: 基础（主标签样式）
+        flat: 扁平化
+        flat_banner: 扁平化（主横幅样式）
+        flat_border: 扁平化边框
+        flat_border_banner: 扁平化边框（主横幅样式）
+        flat_border_tab: 扁平化边框（主选项卡样式）
+        flat_border_tag: 扁平化边框（主标签样式）
+        flat_tab: 扁平化（主选项卡样式）
+        flat_tag: 扁平化（主标签样式）
+        none: 无
+        rounded_flat: 圆角扁平化
+        rounded_flat_banner: 圆角扁平化（主横幅样式）
+        rounded_flat_border: 圆角扁平化边框
+        rounded_flat_border_banner: 圆角扁平化边框（主横幅样式）
+        rounded_flat_border_tab: 圆角扁平化边框（主选项卡样式）
+        rounded_flat_border_tag: 圆角扁平化边框（主标签样式）
+        rounded_flat_tab: 圆角扁平化（主选项卡样式）
+        rounded_flat_tag: 圆角扁平化（主标签样式）
+        sticky_note: 便签模式
+        sticky_note_banner: 便签（主横幅样式）
+        sticky_note_outline: 便签轮廓
+        sticky_note_outline_banner: 便签轮廓（主横幅样式）
+        sticky_note_outline_tab: 便签轮廓（主选项卡样式）
+        sticky_note_outline_tag: 便签轮廓（主标签样式）
+        sticky_note_tab: 便签（主选项卡样式）
+        sticky_note_tag: 便签（主标签样式）

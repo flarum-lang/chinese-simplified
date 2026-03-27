@@ -2,6 +2,12 @@
 # Use https://weblate.rob006.net/projects/flarum2/ianm-twofactor/zh_Hans/ for translation.
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
+flarum-gdpr:
+  lib:
+    data:
+      twofactordata:
+        delete_description: 删除所有与双重认证相关的数据。
+        export_description: 导出双重认证状态和加密的备用代码。
 ianm-twofactor:
   admin:
     edit_group:
@@ -34,6 +40,7 @@ ianm-twofactor:
     body:
       status_changed: "{recipient_display_name}，您好！\n\n您在 {forum_url} 的账号双重认证 {type}。\n\n此操作如非您本人所为，请立即联系论坛管理员。\n"
     status_type:
+      device_changed: 验证设备已更换
       disabled: 已关闭
       enabled: 已启用
     subject:
@@ -49,20 +56,30 @@ ianm-twofactor:
       cancel_button: 取消
       cannot_disable: 根据管理员要求，您无法关闭双重认证。
       cannot_disable_tooltip: 无法关闭双重认证
+      change_device_button: 更换设备
+      change_device_description: 将双重认证迁移到新设备
+      change_device_heading: 更换验证设备
+      change_device_title: 更换设备
       confirm_disable_2fa_text: 确定要关闭双重认证吗？
-      confirm_disable_2fa_text_other_user: '确定要为 {username} 关闭双重认证，并销毁救援代码吗？'
+      confirm_disable_2fa_text_other_user: '确定要为 {username} 关闭双重认证，并销毁救援代码吗。'
       confirm_disable_2fa_title: 确认关闭双重认证
+      continue_button: 继续
+      device_changed_confirmation: 验证设备已成功更换。
       disable_2fa_button: 关闭双重认证
       enable_2fa_button: 启用双重认证
       enable_2fa_modal_text: '请使用验证器 APP 扫描下方二维码，并输入动态验证码以启用双重认证。'
+      enter_current_token: 输入当前设备验证码
+      enter_new_token: 输入新设备验证码
       enter_token: 输入验证码
       loading_qr: 正在加载二维码……
       manual_entry_instruction: 请将秘钥导入验证器，并输入动态验证码以启用双重认证。
       manual_tab: 手动导入
+      new_backup_codes: 新的救援代码
       ok_button: 好的
       qr_code_alt: 双重认证二维码
       qr_tab: 扫描二维码
       saved_backup_codes_button: 已保存救援代码
+      scan_new_device_qr: 请使用新的验证设备扫描此二维码。
       scan_qr_instruction: '请使用验证器 APP 扫描下方二维码，并输入动态验证码以启用双重认证。'
       two_factor_apps: '请使用 {google}、{authy}、{microsoft}、Bitwarden 等免费应用程序。'
       two_factor_disabled: 双重认证已关闭。
@@ -72,11 +89,14 @@ ianm-twofactor:
       two_factor_help: '双重认证 (2FA) 为您提供额外的账户安全保护，在登录时，您需要输入密码，以及验证器 APP 生成的动态验证码。双重认证可以在密码泄露的情况下，有效保护您的账号。'
       two_factor_title: 状态：
       verify_button: 验证
+      verify_current_device_message: 请输入当前验证设备中的验证码以验证身份。
+      verify_new_device_message: 请输入新设备中的验证码以完成更换。
     user_2fa:
       alert_message: 请启用双重认证以继续使用账号。
   views:
     reset_password:
       two_factor_token_label: 验证码
     two_factor_token:
+      oauth_session_expired: 'OAuth 会话已过期，请重新登录。'
       submit_button: 确定
       title: 双重认证

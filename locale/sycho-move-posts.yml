@@ -7,7 +7,7 @@ sycho-move-posts:
     permissions:
       move_posts: '=> sycho-move-posts.ref.move_posts'
     settings:
-      group_sequential_posts: 将多个连续的移动事件帖合并为一个
+      group_sequential_posts: 将多个连续的移动事件帖合并为一个。
       moved_first_post_content: 首贴替补内容
       moved_first_post_content_help: "移动主题中仅有的一个帖子后，会在原帖位置显示下方的文本提示用户访问新的位置，你可以在下方编辑该提示内容。\n"
   forum:
@@ -31,7 +31,7 @@ sycho-move-posts:
       submit: 移动
       title: '=> sycho-move-posts.ref.move_posts'
     notifications:
-      post_moved_text: '你的帖子已被移动到「{targetDiscussionTitle}」'
+      post_moved_text: '你的帖子已被移动到「{targetDiscussionTitle}」。'
     post:
       move: 移动
       moving: 等待移动

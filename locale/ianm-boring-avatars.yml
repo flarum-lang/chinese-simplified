@@ -2,6 +2,13 @@
 # Use https://weblate.rob006.net/projects/flarum2/ianm-boring-avatars/zh_Hans/ for translation.
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
+flarum-gdpr:
+  lib:
+    data:
+      boringavatar:
+        anonymize_description: '删除现有的 Boring Avatar，并重新随机生成一个新的。'
+        delete_description: '删除 Boring Avatar。'
+        export_description: '将 Boring Avatar 头像添加至导出的压缩包中。'
 ianm-boring-avatars:
   admin:
     settings:

@@ -4,15 +4,40 @@
 
 colored:
   admin:
+    donate: 支持此扩展
     settings:
       custom_css_help: '您可以在此处添加任何想要应用的自定义 CSS 样式。'
       custom_css_label: 自定义
       elements:
+        alerts_description: 为系统通知添加彩色边框
+        alerts_help: 启用通知颜色。
+        alerts_label: 通知
+        button_description: 为按钮、链接和菜单项等主要元素应用颜色
+        button_help: 启用主要元素颜色
+        button_label: 主要元素
+        composer_description: 为文本编辑器背景应用颜色
+        composer_help: 启用发帖编辑器颜色。
+        composer_label: 文本编辑器
+        custom_help: '启用自定义 CSS。'
+        custom_label: '自定义 CSS'
+        dropdown_description: 为下拉菜单背景应用颜色
+        dropdown_help: 启用下拉菜单颜色。
+        dropdown_label: 下拉菜单
         header_description: 为论坛标题栏顶部添加彩色边框
         header_help: 启用标题颜色。
         header_label: 页眉边框
+        hero_description: 为首页主横幅背景添加颜色
         hero_help: 启用首页区域的颜色显示。
         hero_label: 主横幅
+        navigation_description: 为导航栏添加彩色边框
+        navigation_help: 启用导航栏颜色。
+        navigation_label: 导航栏
+        post_description: 在帖子侧边添加彩色边框
+        post_help: 启用帖子颜色。
+        post_label: 帖子
+        usercard_description: 为用户卡片添加彩色边框
+        usercard_help: 启用用户卡片颜色。
+        usercard_label: 用户卡片
       tag_mode_custom: 自定义
       tag_mode_first: 第一标签
       tag_mode_label: 标签颜色模式

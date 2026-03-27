@@ -4,7 +4,7 @@
 
 migratetoflarum-fake-data:
   api:
-    no-discussions-matched: 主题不存在
+    no-discussions-matched: 讨论不存在
     no-users-matched: 用户不存在
   forum:
     generator:
@@ -18,8 +18,8 @@ migratetoflarum-fake-data:
       date: 种子日期
       date-interval-placeholder: '间隔（默认 1 秒）'
       date-start-placeholder: 起始日期（默认当天）
-      discussion-count: 主题生成数量
-      discussion-tags: 主题标签
+      discussion-count: 讨论生成数量
+      discussion-tags: 讨论标签
       discussion-tags-none: 无
       discussion-tags-random: 随机
       post-count: 回帖生成数量

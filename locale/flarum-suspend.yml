@@ -16,7 +16,7 @@ flarum-suspend:
       subject: 你的账号已被封禁
     unsuspended:
       html:
-        body: '您的账号已解除封禁，随时欢迎回到 [{forumTitle}]({forum_url})。'
+        body: '您的账号已解除封禁，欢迎随时回到 [{forumTitle}]({forum_url})。'
       plain:
         body: "您的账号已解除封禁，点击以下链接即可返回论坛：\n\n{forum_url}\n"
       subject: 你的账号已解封
@@ -26,25 +26,25 @@ flarum-suspend:
       user_suspended_text: '你已被封禁 {timeReadable}'
       user_unsuspended_text: 你已解封
     suspend_user:
-      display_message: 展示给用户的封禁原因
-      indefinitely_label: 永久封禁
+      display_message: 向用户显示说明
+      indefinitely_label: 无期限封禁
       limited_time_days_text: ' 天'
       limited_time_label: 临时封禁……
-      not_suspended_label: 不封禁
+      not_suspended_label: 解除封禁
       placeholder_optional: 可选
       reason: 封禁原因
       status_heading: 封禁状态
       submit_button: '=> core.ref.save_changes'
       title: '封禁 {username}'
     suspension_info:
-      dismiss_button: 我知道了
-      indefinite: 封禁期限：永久
-      limited: '封禁期至 {date}'
+      dismiss_button: 关闭
+      indefinite: 此账号已被无期限封禁
+      limited: '此次封禁将持续至 {date}'
       title: 此账号已被封禁
     user_badge:
       suspended_tooltip: 封禁中
     user_controls:
-      suspend_button: 封禁
+      suspend_button: 封禁用户
   lib:
     gambits:
       users:

@@ -129,14 +129,14 @@ flarum-gdpr:
         export_description: 从文件系统获取用户头像，并导出。
       default_user_action: 无操作，由默认用户表数据处理。
       discussions:
-        export_description: 导出用户发起的所有主题帖，数据仅限于标题和创建日期。
+        export_description: 导出用户发起的所有讨论帖，数据仅限于标题和创建日期。
       forum:
         export_description: 导出论坛名称、URL、用户名、邮箱和当前日期。
       no_action: 不采取操作。
       posts:
         anonymize_description: '删除用户发布的所有帖子中的 IP 地址信息。'
         delete_description: 删除用户发布的所有帖子。
-        export_description: '导出用户发表的所有帖子，数据仅限于文本内容、创建日期、IP 地址和主题帖 ID。'
+        export_description: '导出用户发表的所有帖子，数据仅限于文本内容、创建日期、IP 地址和讨论帖 ID。'
       tokens:
         delete_description: 删除用户创建的所有令牌。
         export_description: 导出用户创建的所有令牌，数据仅限于创建日期和令牌类型。

@@ -43,7 +43,7 @@ flarum-messages:
     index_sort:
       latest_button: 最新
       newest_button: 最新
-      oldest_button: 最旧
+      oldest_button: 最早
     message_controls:
       delete_button: 删除
       delete_confirmation: 确定要删除这条消息吗？此操作无法撤销。

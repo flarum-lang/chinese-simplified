@@ -21,21 +21,62 @@ fof-anti-spam:
       spamblock_users_label: 标记垃圾账号
     settings:
       button: 设置
+      content-filter:
+        actions_heading: 操作标题
+        advanced_block_patterns_help: 高级屏蔽模式说明
+        advanced_block_patterns_label: 高级屏蔽模式标签
+        advanced_patterns_heading: 高级模式标题
+        allowed_domains_help: 允许的域名说明
+        allowed_domains_label: 允许的域名标签
+        allowlist_heading: 允许列表标题
+        auto_flag_help: 自动标记说明
+        auto_flag_label: 自动标记标签
+        auto_unapprove_help: 自动取消批准说明
+        auto_unapprove_label: 自动取消批准标签
+        blocked_words_heading: 屏蔽词标题
+        blocked_words_help: 屏蔽词说明
+        blocked_words_label: 屏蔽词标签
+        detect_emails_help: 检测电子邮件说明
+        detect_emails_label: 检测电子邮件标签
+        detect_phones_help: 检测电话号码说明
+        detect_phones_label: 检测电话号码标签
+        detect_urls_help: '检测 URL 说明'
+        detect_urls_label: '检测 URL 标签'
+        detectors_heading: 检测器标题
+        enabled_help: 启用说明
+        enabled_label: 启用标签
+        flag_threshold_help: 标记阈值说明
+        flag_threshold_label: 标记阈值标签
+        heading: 标题
+        introduction: 介绍
+        monitor_hours_old_help: 监测时长（小时）说明
+        monitor_hours_old_label: 监测时长（小时）标签
+        monitor_post_count_help: 监测发帖数说明
+        monitor_post_count_label: 监测发帖数标签
+        no_action_extensions: 无操作扩展
+        spam_threshold_help: 垃圾信息阈值说明
+        spam_threshold_label: 垃圾信息阈值标签
+        system_user_id_help: '系统用户 ID 说明'
+        system_user_id_label: '系统用户 ID 标签'
+        thresholds_heading: 阈值标题
+        user_targeting_heading: 用户定位标题
       default-actions:
-        delete_discussions_help: 启用此项，永久删除主题帖，否则隐藏主题帖。
-        delete_discussions_label: 删除主题帖
+        delete_discussions_help: 启用此项，永久删除讨论帖，否则隐藏讨论帖。
+        delete_discussions_label: 删除讨论帖
         delete_posts_help: 启用此项，永久删除帖子，否则隐藏帖子。
         delete_posts_label: 删除帖子
         delete_user_help: 启用此项，永久删除账号，否则停用帐号。
         delete_user_label: 删除账号
         heading: 默认操作
         introduction: 当用户被标记为垃圾邮件发送者时，版主可以从各种操作中选择如何处理特定用例。这些设置允许您预设通常会采取的操作，以加快过程，但也允许根据需要进行更改。
-        move_discussions_to_tags_help: 移除帖子的所有标签，并统一移动到指定标签旗下，「删除主题贴」禁用时生效。如需保留原始标签，请清空下方标签配置。
+        move_discussions_to_tags_help: 移除帖子的所有标签，并统一移动到指定标签旗下，「删除讨论贴」禁用时生效。如需保留原始标签，请清空下方标签配置。
         move_discussions_to_tags_label: 归档标签
       stopforumspam:
         api_key_instructions_text: '<register>注册 StopForumSpam</register>，并<key>获取 API 密钥</key>。'
         api_key_label: 'API 密钥'
         api_key_text: '向 StopForumSpam 共享垃圾账号信息，改善检测服务。'
+        block_tor_exit_nodes_help: '屏蔽 Tor 出口节点说明'
+        block_tor_exit_nodes_label: '屏蔽 Tor 出口节点标签'
         confidence_help: 百分比等级，根据检测数据生成。等于或高于这个数字时，禁止客户端注册账号。
         confidence_label: 置信度
         email_hash_help: '传递邮件地址的 MD5 值。'
@@ -59,16 +100,18 @@ fof-anti-spam:
     message:
       stopforumspam:
         blocked: 不安全的注册信息，无法完成注册。
+    post:
+      flagged_as_spam_text: 标记为垃圾信息的文本
     spammer_modal:
-      hard_delete_discussions_help: 启用此项，永久删除主题帖，否则隐藏主题帖。
-      hard_delete_discussions_label: 删除主题帖
+      hard_delete_discussions_help: 启用此项，永久删除讨论帖，否则隐藏讨论帖。
+      hard_delete_discussions_label: 删除讨论帖
       hard_delete_posts_help: 启用此项，永久删除帖子（评论和回复等），否则隐藏帖子。
       hard_delete_posts_label: 删除帖子
       hard_delete_user_help: 启用此项，永久删除账号，否则停用帐号。
       hard_delete_user_label: 删除用户
       intro: 标记垃圾账号时，会根据已启用的扩展采取多个处置方式。
-      move_discussions_tag_help: 移除主题帖的所有标签，并统一移动到指定标签旗下。如需保留原始标签，请清空标签配置。
-      move_discussions_tag_label: 隔离主题帖
+      move_discussions_tag_help: 移除讨论帖的所有标签，并统一移动到指定标签旗下。如需保留原始标签，请清空标签配置。
+      move_discussions_tag_label: 隔离讨论帖
       process_button: 执行
       report_to_sfs_help: '向 StopForumSpam 共享垃圾账号基本信息（用户名、电子邮件、IP 地址），扩充垃圾账号数据库。'
       report_to_sfs_label: '报告到 StopForumSpam'

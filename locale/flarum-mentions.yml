@@ -5,17 +5,17 @@
 flarum-mentions:
   admin:
     permissions:
-      mention_groups_label: 提及组群
+      mention_groups_label: 提及群组
     settings:
       allow_username_format_label: 允许@用户名
       allow_username_format_text: "Flarum 默认提及格式是「@外显昵称#ID」，默认外显昵称为用户名。\n启用 Nicknames 扩展程序后，你可能会将外显昵称更改为 nickname。开启此设置可允许用户同时使用旧格式「@用户名」，不过在保存时系统会自动转换成新格式。\n"
   email:
     group_mentioned:
       html:
-        body: '{mentioner_display_name} 在 [{title}]({url}) 中提及了您所属的用户组。'
+        body: '{mentioner_display_name} 在 [{title}]({url}) 中提及了您所属的群组。'
       plain:
-        body: "{mentioner_display_name} 在 {title} 中提及了您所属的用户组。\n\n{url}\n\n---\n\n{content}\n"
-      subject: '{mentioner_display_name} 在 {title} 中提到了您所属的组群'
+        body: "{mentioner_display_name} 在 {title} 中提及了您所属的群组。\n\n{url}\n\n---\n\n{content}\n"
+      subject: '{mentioner_display_name} 在 {title} 中提到了您所属的群组'
     post_mentioned:
       html:
         body: '{replier_display_name} 在 [{title}]({url}) 中回复了您的帖子 (#{post_number})。'
@@ -30,17 +30,17 @@ flarum-mentions:
       subject: '{mentioner_display_name} 提及了您【{title}】'
   forum:
     composer:
-      mention_tooltip: 提及用户、组或楼层
+      mention_tooltip: 提及用户、群组或帖子
       reply_to_post_text: '回复 #{number}'
     group_mention:
-      deleted_text: '[未知组群]'
+      deleted_text: '[未知群组]'
     mentioned_by:
       load_more_button: '=> core.ref.load_more'
-      title: 所有回复
+      title: 对此帖的回复
     notifications:
-      group_mentioned_text: '{username} 提到了您所属的组群'
+      group_mentioned_text: '{username} 提到了您所属的群组'
       others_text: '=> core.ref.some_others'
-      post_mentioned_text: '{username} 回复了您'
+      post_mentioned_text: '{username} 回复了您的帖子'
       user_mentioned_text: '{username} 提及了您'
     post:
       mentioned_by_more_text: '等 {count} 个回帖。'
@@ -53,9 +53,9 @@ flarum-mentions:
     post_mention:
       deleted_text: '[未知用户]'
     settings:
-      notify_group_mentioned_label: 有人在帖子中提到了我在的组群
-      notify_post_mentioned_label: 有人回复了我
-      notify_user_mentioned_label: 有人提到了我
+      notify_group_mentioned_label: 有人在帖子中提到了我在的群组
+      notify_post_mentioned_label: 有人回复了我的帖子
+      notify_user_mentioned_label: 有人提到了我的帖子
     user:
       mentions_link: 被提及
   lib:

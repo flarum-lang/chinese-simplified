@@ -5,9 +5,9 @@
 flarum-approval:
   admin:
     permissions:
-      approve_posts_label: 审核主题
+      approve_posts_label: 审核讨论
       reply_without_approval_label: 回复无需审核
-      start_discussions_without_approval_label: 发布主题无需审核
+      start_discussions_without_approval_label: 发布讨论无需审核
   forum:
     badge:
       awaiting_approval_tooltip: '=> flarum-approval.ref.awaiting_approval'

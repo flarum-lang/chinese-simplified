@@ -25,8 +25,8 @@ flarum-statistics:
       mini_heading: 统计数据
       no_data: 当前时间段没有可用于分析的数据。
       posts_heading: '=> core.ref.posts'
-      previous_28_days_label: 更早二十八天
-      previous_7_days_label: 更早一周
+      previous_28_days_label: 过去二十八天
+      previous_7_days_label: 过去一周
       previous_period: 上一周期
       today_label: 今日
       total_label: 累计

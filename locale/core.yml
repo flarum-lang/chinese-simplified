@@ -34,7 +34,7 @@ core:
           help: 帮助定位导致您所遇故障的扩展程序。此操作会自动将论坛置于（低级别）维护模式，直到排查过程结束。
           label: 扩展程序二分排查
         bisect_modal:
-          description: "此操作会将论坛置于（低级别）维护模式，直到排查过程结束。在每一步中，系统都会禁用一部分扩展程序，直到找到导致问题的扩展。因此，如果看到功能缺失或主题设计发生变化，请不要感到惊讶。请保持此页面开启，并在每一步操作后，在另一个独立页面尝试复现该问题。如果您不小心关闭了此页面，可以随时返回。\n"
+          description: "此操作会将论坛置于（低级别）维护模式，直到排查过程结束。在每一步中，系统都会禁用一部分扩展程序，直到找到导致问题的扩展。因此，如果看到功能缺失或讨论设计发生变化，请不要感到惊讶。请保持此页面开启，并在每一步操作后，在另一个独立页面尝试复现该问题。如果您不小心关闭了此页面，可以随时返回。\n"
           end_button: 关闭并转到扩展程序页面
           issue_question: 问题仍然存在吗？
           issue_question_help: 请尝试在单独页面上复现该问题，并根据结果进行解答。
@@ -159,7 +159,7 @@ core:
       slug_driver_text: '选择此模块的 URL 驱动。'
       title: 常规
       welcome_banner_heading: 欢迎横幅
-      welcome_banner_text: 横幅文本将显示于「全部主题」页面顶部，可以用于欢迎论坛访客。
+      welcome_banner_text: 横幅文本将显示于「全部讨论」页面顶部，可以用于欢迎论坛访客。
     create_user:
       email_confirmed_label: 需要用户验证邮箱
       email_placeholder: '=> core.ref.email'
@@ -321,7 +321,7 @@ core:
         analytics: 分析
         authentication: 认证
         core: 核心配置
-        discussion: 主题
+        discussion: 讨论
         feature: 功能
         formatting: 格式化
         infrastructure: 基础
@@ -341,11 +341,11 @@ core:
     permissions:
       allow_hide_own_posts_label: 允许删除自己的帖子
       allow_post_editing_label: 编辑帖子内容
-      allow_renaming_label: 更改自己的主题标题
+      allow_renaming_label: 更改自己的讨论标题
       create_access_token_label: 创建访问令牌
       create_heading: 帖子相关
-      delete_discussions_forever_label: 永久删除主题
-      delete_discussions_label: 删除主题
+      delete_discussions_forever_label: 永久删除讨论
+      delete_discussions_label: 删除讨论
       delete_posts_forever_label: 永久删除回复
       delete_posts_label: 删除回复
       description: 配置用户的查看与操作权限。
@@ -362,11 +362,11 @@ core:
       read_heading: 访问相关
       remove_scope_confirmation: '您确定要移除 {scope} 范围吗？'
       remove_scope_label: '移除{scope}的作用域'
-      rename_discussions_label: 更改主题标题
+      rename_discussions_label: 更改讨论标题
       reply_to_discussions_label: 回复
       search_users_label: '=> core.ref.search_users'
       sign_up_label: 注册
-      start_discussions_label: 发布主题
+      start_discussions_label: 发布讨论
       title: 权限
       view_forum_label: 浏览论坛（讨论和用户）
       view_hidden_groups_label: 查看隐藏的用户组徽章
@@ -476,7 +476,7 @@ core:
       preview_tooltip: 预览
     composer_discussion:
       body_placeholder: 说点什么吧...
-      discard_confirmation: 主题尚未发布，确定要丢弃吗？
+      discard_confirmation: 讨论尚未发布，确定要丢弃吗？
       submit_button: 发布
       title: '=> core.ref.start_a_discussion'
       title_placeholder: 标题
@@ -502,12 +502,12 @@ core:
       rename_button: '=> core.ref.rename'
       reply_button: '=> core.ref.reply'
       restore_button: '=> core.ref.restore'
-      toggle_dropdown_accessible_label: 主题下拉菜单开关
+      toggle_dropdown_accessible_label: 讨论下拉菜单开关
     discussion_list:
       empty_text: 这里空空如也...
       load_more_button: '=> core.ref.load_more'
       replied_text: '{username} 回复于 {ago}'
-      skip_discussion_list_pane: 跳过主题列表面板
+      skip_discussion_list_pane: 跳过讨论列表面板
       started_text: '{username} 发布于 {ago}'
       total_replies_a11y_label: '{count, plural, one {# 条回复} other {# 条回复}}'
       unread_replies_a11y_label: '{count, plural, one {# 条未读} other {# 条未读}}，全部标记为已读。'
@@ -521,7 +521,7 @@ core:
       title: 忘记密码
     header:
       admin_button: 后台管理
-      back_to_index_tooltip: 返回主题列表
+      back_to_index_tooltip: 返回讨论列表
       locale_dropdown_accessible_label: 更改论坛语言
       log_in_link: '=> core.ref.log_in'
       log_out_button: '=> core.ref.log_out'
@@ -546,8 +546,8 @@ core:
       newest_button: '=> core.ref.newest'
       oldest_button: '=> core.ref.oldest'
       relevance_button: '=> core.ref.relevance'
-      toggle_dropdown_accessible_label: 更改「全部主题」排序
-      top_button: 热门主题
+      toggle_dropdown_accessible_label: 更改「全部讨论」排序
+      top_button: 热门讨论
     log_in:
       forgot_password_link: 忘记密码？
       invalid_login_message: '=> core.ref.invalid_login_message'
@@ -603,7 +603,7 @@ core:
       relevance_button: '=> core.ref.relevance'
     rename_discussion:
       submit_button: '=> core.ref.rename'
-      title: 更改主题标题
+      title: 更改讨论标题
     security:
       browser_on_operating_system: '{browser}（{os} 平台）'
       cannot_terminate_current_session: 无法终止当前活动会话，请登出。
@@ -654,7 +654,7 @@ core:
       notifications_heading: '=> core.ref.notifications'
       notify_by_email_heading: '=> core.ref.email'
       notify_by_web_heading: 通知
-      notify_discussion_renamed_label: 我的主题标题被更改
+      notify_discussion_renamed_label: 我的讨论标题被更改
       privacy_disclose_online_label: 公开我的在线状态
       privacy_heading: 隐私设置
       title: '=> core.ref.settings'
@@ -764,8 +764,8 @@ core:
         is: 是
       posts:
         discussion:
-          hint: '主题 ID'
-          key: 主题
+          hint: '讨论 ID'
+          key: 讨论
       users:
         email:
           hint: example@machine.local
@@ -833,7 +833,7 @@ core:
     username:
       deleted_text: '[已注销]'
   ref:
-    all_discussions: 全部主题
+    all_discussions: 全部讨论
     change_email: 更改邮箱
     change_password: 更改密码
     color: 颜色
@@ -848,7 +848,7 @@ core:
     dark_mode_label: 深色模式
     delete: 删除
     delete_forever: 永久删除
-    discussions: 主题
+    discussions: 讨论
     edit: 编辑
     edit_user: 编辑用户
     email: 邮箱
@@ -888,7 +888,7 @@ core:
     settings: 设置
     sign_up: 注册
     some_others: '{count, plural, one {# 人} other {# 人}}'
-    start_a_discussion: 发布主题
+    start_a_discussion: 发布讨论
     username: 用户名
     username_or_email_placeholder: 用户名或邮箱
     users: 用户

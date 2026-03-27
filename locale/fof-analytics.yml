@@ -12,19 +12,19 @@ fof-analytics:
         googleTrackingCode: '跟踪代码 ID'
         optTrackingCode: 自定义跟踪代码（可选）
         piwikAliasUrl: '别名 URL'
-        piwikAuthToken: '验证 Token'
-        piwikHideAliasUrl: '在「导出链」报表中隐藏已知别名链接的点击（什么是导出链：http://t.cn/A6PlyGj6）'
+        piwikAuthToken: '验证 Toekn'
+        piwikHideAliasUrl: '在“出站链接”报告中，隐藏指向已知别名 URL 的点击'
         piwikPrependDomain: 追踪时将网站域名放置在网页标题开头
         piwikSiteId: 'Site ID'
         piwikTrackAccounts: 追踪独立访客账户
         piwikTrackSubdomain: '追踪所有 Flarum 子域访客'
         piwikUrl: 'Matomo 域名或 URL'
-        statusGoogle: '启用 Google 分析 (UA/GA4)'
+        statusGoogle: '启用 Google Analytics (UA/GA4)'
         statusPiwik: '启用 Matomo'
       placeholder:
         piwikAuthToken: "填入 token 以在后台管理菜单启用 Matomo 统计部件。\n你可以在 设置 > 个人 > API 验证 Token 中找到。\n"
       section:
-        googleAnalytics: 'Google 分析'
+        googleAnalytics: 'Google Analytics'
         piwik: 'Matomo（前 Piwik）'
       trackAccounts:
         email: 按邮箱追踪

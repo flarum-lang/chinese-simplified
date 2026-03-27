@@ -9,35 +9,35 @@ flarum-tags:
     edit_tag:
       color_label: '=> core.ref.color'
       delete_tag_button: 删除标签
-      delete_tag_confirmation: 确定要删除此标签？此操作不会删除标签下的主题帖。
+      delete_tag_confirmation: 确定要删除此标签？此操作不会删除标签下的讨论帖。
       description_label: 描述
-      hide_label: 从“全部主题”中隐藏
+      hide_label: 从“全部讨论”中隐藏
       icon_label: '=> core.ref.icon'
       icon_text: '=> core.ref.icon_text'
       name_label: '=> flarum-tags.ref.name'
       name_placeholder: '=> flarum-tags.ref.name'
-      slug_label: 英文名称（Slug）
+      slug_label: 链接别名
       submit_button: '=> core.ref.save_changes'
       title: 新建标签
     nav:
-      tags_button: 节点标签
+      tags_button: '=> flarum-tags.ref.tags'
       tags_text: 管理论坛标签列表。
     permissions:
       allow_edit_tags_label: 允许编辑标签
       bypass_tag_counts_label: 不受标签数量限制
-      restrict_by_tag_heading: 按标签分类
-      tag_discussions_label: 更改标签
+      restrict_by_tag_heading: 按标签限制权限
+      tag_discussions_label: 修改讨论标签
     settings:
       button_text: '=> flarum-tags.ref.choose_tags'
     tag_settings:
-      range_separator_text: ' 至 '
+      range_separator_text: ' 到 '
       required_primary_heading: 主标签数量限制
-      required_primary_text: 设置每个主题帖需添加的主标签数量。
+      required_primary_text: 设置每个讨论帖需添加的主标签数量。
       required_secondary_heading: 次标签数量限制
-      required_secondary_text: 设置每个主题帖需添加的次标签数量。
+      required_secondary_text: 设置每个讨论帖需添加的次标签数量。
       title: 标签设置
     tags:
-      about_tags_text: 使用标签对主题帖分类。主标签类似于传统论坛的板块，可以分成两级。次标签无层级无顺序，可作为次板块。鼠标拖动标签即可排序或调整层级位置。
+      about_tags_text: 使用标签对讨论帖分类。主标签类似于传统论坛的板块，可以分成两级。次标签无层级无顺序，可作为次板块。鼠标拖动标签即可排序或调整层级位置。
       create_primary_tag_button: 新建主标签
       create_secondary_tag_button: 新建次标签
       edit_tag_label: '编辑标签 {tag}'
@@ -50,7 +50,7 @@ flarum-tags:
       meta_title_text: '=> flarum-tags.ref.tags'
     choose_tags:
       edit_title: '更改「{title}」的节点标签'
-      title: 添加标签
+      title: 为你的讨论选择标签
     composer_discussion:
       choose_tags_link: '=> flarum-tags.ref.choose_tags'
     discussion_controls:

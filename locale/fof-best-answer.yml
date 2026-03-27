@@ -9,11 +9,11 @@ fof-best-answer:
       reminders: 提醒选择最佳回复
     permissions:
       allow_select_own_post: 允许将自己的回复设为最佳回答
-      best_answer: 为自己的主题选择最佳回复
-      best_answer_not_own_discussion: 为他人的主题选择最佳回复
+      best_answer: 为自己的讨论选择最佳回复
+      best_answer_not_own_discussion: 为他人的讨论选择最佳回复
     settings:
       discussion_sidebar_jump_button: 展示最佳回复跳转按钮
-      discussion_sidebar_jump_button_help: 在主题帖侧边栏添加一个可以跳转到最佳回复的按钮。
+      discussion_sidebar_jump_button_help: 在讨论帖侧边栏添加一个可以跳转到最佳回复的按钮。
       documentation: 文档
       enabled_tags_help: '如有需要，请选择要启用最佳回复的标签。这些标签将成为「Q&A」格式的标签。'
       enabled_tags_label: 启用标签
@@ -32,8 +32,8 @@ fof-best-answer:
       schedule_stop_overnight_help: '服务器时间 20:00 至 9:00'
       select_best_answer_reminder_days: 提醒计时
       select_best_answer_reminder_days_help: '于 n 天后提问者选择最佳回复。'
-      select_best_answer_tags_help: 选择一个次标签，绑定到拥有最佳回复的主题帖上。取消最佳回复时，同时移除该标签。
-      select_best_answer_tags_label: 「已解决」主题帖标签
+      select_best_answer_tags_help: 选择一个次标签，绑定到拥有最佳回复的讨论帖上。取消最佳回复时，同时移除该标签。
+      select_best_answer_tags_label: 「已解决」讨论帖标签
       show_filter_help: 在启用最佳回复的标签页面显示「已解决/未解决」过滤项
       show_filter_label: 显示已解决过滤项
       show_max_lines_help: '预览帖超过一定行数时，使用淡出效果截断展示。设为 0 禁用此效果。'
@@ -44,8 +44,8 @@ fof-best-answer:
   email:
     body:
       awarded: "{recipient_display_name}，你好！\n\n干得漂亮，您在【{discussion_title}】发表的回复刚刚被 {actor_display_name} 选为最佳回复。感谢你的耐心帮助。\n\n点击此处查看回复：{discussion_url}\n"
-      ba-set: "{recipient_display_name}，你好！\n\n{actor_display_name} 刚刚为你参与讨论的主题【{discussion_title}】选择了最佳回复。\n\n去看看吧：{discussion_url}\n"
-      select: "{recipient_display_name}，你好！\n\n你的主题「{discussion_title}」已经有了很多回复。\n\n如果其中有可以帮助你解决问题的，你可以把他选为最佳回复，这样不仅能让后来者快速找到解决问题的办法，也可以激励帮助你的人。\n\n点击此处查看主题：{discussion_url}，并选择最佳回复。\n\n此致\n"
+      ba-set: "{recipient_display_name}，你好！\n\n{actor_display_name} 刚刚为你参与讨论的讨论【{discussion_title}】选择了最佳回复。\n\n去看看吧：{discussion_url}\n"
+      select: "{recipient_display_name}，你好！\n\n你的讨论「{discussion_title}」已经有了很多回复。\n\n如果其中有可以帮助你解决问题的，你可以把他选为最佳回复，这样不仅能让后来者快速找到解决问题的办法，也可以激励帮助你的人。\n\n点击此处查看讨论：{discussion_url}，并选择最佳回复。\n\n此致\n"
     subject:
       awarded: '您的帖子被 {display_name} 设为最佳回复'
       ba-set: '{display_name} 选择了一个最佳回复'
@@ -59,7 +59,7 @@ fof-best-answer:
     discussion:
       jump_to_best_answer_button: 查看最佳回复
     errors:
-      mismatch: 所选回复不在当前主题中。
+      mismatch: 所选回复不在当前讨论中。
     filter:
       accessible_label: 已解决/未解决
       all_label: 全部问题
@@ -76,8 +76,8 @@ fof-best-answer:
       content: 如果您的问题已解决，请选择一个最佳回复
       preferences:
         awarded_best_answer: 有人将我的帖子设为最佳回复
-        best_answer_in_discussion: 我互动的主题有了最佳回复
-        select_best_answer: 提醒我选择自己主题的最佳回复
+        best_answer_in_discussion: 我互动的讨论有了最佳回复
+        select_best_answer: 提醒我选择自己讨论的最佳回复
     remove_best_answer: 移除最佳回复
     this_best_answer: 设为最佳回复
     user:

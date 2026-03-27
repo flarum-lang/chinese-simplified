@@ -77,7 +77,7 @@ fof-badges:
     manual: 手动
     metrics:
       best_answers_received: 获得最佳答案数
-      discussion_count: 发起主题数
+      discussion_count: 发起讨论数
       downvotes_given: 投出反对
       downvotes_received: 收到反对
       edit_count: 编辑帖子次数

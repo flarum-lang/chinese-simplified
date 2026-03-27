@@ -10,7 +10,7 @@ fof-links:
       icon_additional_text: '如果你想要使用一个品牌图标，请使用前缀 <code>fab fa-</code>。'
       icon_label: '=> core.ref.icon'
       icon_text: '=> core.ref.icon_text'
-      internal_link: 这是内部链接吗？勾选后，当用户访问此链接时，此链接会在导航栏高亮。
+      internal_link: 是否为内部链接？
       open_newtab: 在新标签页中打开
       submit_button: '=> core.ref.save_changes'
       title: '=> fof-links.ref.create_link'
@@ -30,6 +30,7 @@ fof-links:
     links:
       create_button: '=> fof-links.ref.create_link'
       links: '=> fof-links.ref.links'
+      preconfigured: 本论坛的链接已预先配置，无法在此处编辑。
     settings:
       show_icons_only_on_tablet: 仅在平板设备上显示图标
   ref:

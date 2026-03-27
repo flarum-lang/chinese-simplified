@@ -6,6 +6,10 @@ flarum-sticky:
   admin:
     permissions:
       sticky_discussions_label: 置顶主题
+    settings:
+      enable_display_excerpt: 置顶主题未读时显示首帖摘要
+      only_sticky_unread_discussions_help: 在“全部主题”页面，未读置顶主题将固定在顶部，已读置顶主题则按常规顺序排序。
+      only_sticky_unread_discussions_label: 仅置顶未读主题
   forum:
     badge:
       sticky_tooltip: '=> flarum-sticky.ref.sticky'
@@ -15,5 +19,10 @@ flarum-sticky:
     post_stream:
       discussion_stickied_text: '{username} 于 {time} 置顶此帖'
       discussion_unstickied_text: '{username} 于 {time} 取消置顶'
+  lib:
+    gambits:
+      discussions:
+        sticky:
+          key: sticky
   ref:
     sticky: 置顶

@@ -70,6 +70,11 @@ flarum-tags:
       meta_description_text: '{tag} 标签下的所有主题'
   lib:
     deleted_tag_text: 已删除
+    gambits:
+      discussions:
+        tag:
+          hint: 标签名称，或以逗号分隔的标签列表，或“untagged”（未分类）
+          key: tag
     tag_selection_modal:
       bypass_requirements: 忽略标签选择
       choose_primary_placeholder: '{count, plural, one {请选择一个主标签} other {请选择 # 个主标签}}'

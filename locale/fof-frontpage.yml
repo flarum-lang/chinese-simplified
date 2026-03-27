@@ -6,3 +6,8 @@ core:
   forum:
     index_sort:
       front_button: 精华
+fof-frontpage:
+  lib:
+    gambits:
+      frontpage:
+        key: frontpage

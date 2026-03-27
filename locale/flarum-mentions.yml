@@ -11,10 +11,22 @@ flarum-mentions:
       allow_username_format_text: "Flarum 默认提及格式是「@外显昵称#ID」，默认外显昵称为用户名。\n启用 Nicknames 扩展程序后，你可能会将外显昵称更改为 nickname。开启此设置可允许用户同时使用旧格式「@用户名」，不过在保存时系统会自动转换成新格式。\n"
   email:
     group_mentioned:
+      html:
+        body: '{mentioner_display_name} 在 [{title}]({url}) 中提及了您所属的用户组。'
+      plain:
+        body: "{mentioner_display_name} 在 {title} 中提及了您所属的用户组。\n\n{url}\n\n---\n\n{content}\n"
       subject: '{mentioner_display_name} 在 {title} 中提到了您所属的组群'
     post_mentioned:
+      html:
+        body: '{replier_display_name} 在 [{title}]({url}) 中回复了您的帖子 (#{post_number})。'
+      plain:
+        body: "{replier_display_name} 在 {title} 中回复了您的帖子 (#{post_number})。\n\n{url}\n\n---\n\n{content}\n"
       subject: '{replier_display_name} 回复了您【{title}】'
     user_mentioned:
+      html:
+        body: '{mentioner_display_name} 在 [{title}]({url}) 的回复中提及了您。'
+      plain:
+        body: "{mentioner_display_name} 在 {title} 的回复中提及了您。\n\n{url}\n\n---\n\n{content}\n"
       subject: '{mentioner_display_name} 提及了您【{title}】'
   forum:
     composer:
@@ -32,7 +44,7 @@ flarum-mentions:
       user_mentioned_text: '{username} 提及了您'
     post:
       mentioned_by_more_text: '等 {count} 个回帖。'
-      mentioned_by_self_text: '{users} 回复了此帖'
+      mentioned_by_self_text: '{users} 回复了您的帖子'
       mentioned_by_text: '{users} 回复了此帖'
       others_text: '=> core.ref.some_others'
       quote_button: 引用
@@ -46,3 +58,9 @@ flarum-mentions:
       notify_user_mentioned_label: 有人提到了我
     user:
       mentions_link: 被提及
+  lib:
+    gambits:
+      posts:
+        mentioned:
+          hint: '被提及用户的 ID 或用户名'
+          key: mentioned

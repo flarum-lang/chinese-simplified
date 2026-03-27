@@ -8,6 +8,7 @@ fof-best-answer:
       qna_label: 启用最佳回复
       reminders: 提醒选择最佳回复
     permissions:
+      allow_select_own_post: 允许将自己的回复设为最佳回答
       best_answer: 为自己的主题选择最佳回复
       best_answer_not_own_discussion: 为他人的主题选择最佳回复
     settings:
@@ -58,7 +59,7 @@ fof-best-answer:
     discussion:
       jump_to_best_answer_button: 查看最佳回复
     errors:
-      mismatch: 您选择的帖子在当前主题中不存在
+      mismatch: 所选回复不在当前主题中。
     filter:
       accessible_label: 已解决/未解决
       all_label: 全部问题
@@ -81,6 +82,10 @@ fof-best-answer:
     this_best_answer: 设为最佳回复
     user:
       best-answer-count: '{count} 次助人'
+  lib:
+    gambits:
+      solved-discussions:
+        key: solved
 fof-user-directory:
   lib:
     sort:

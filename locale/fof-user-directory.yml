@@ -15,6 +15,8 @@ fof-user-directory:
   forum:
     header:
       back_to_user_directory_tooltip: 返回会员名录
+    hero:
+      title: '=> fof-user-directory.forum.page.nav'
     page:
       empty_text: 抱歉，没有找到匹配的用户。
       filter_button: 筛选用户组

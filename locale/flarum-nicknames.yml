@@ -4,6 +4,9 @@
 
 flarum-nicknames:
   admin:
+    basics:
+      display_name_driver_options:
+        nickname: 昵称
     permissions:
       edit_own_nickname_label: 更改个人昵称
     settings:

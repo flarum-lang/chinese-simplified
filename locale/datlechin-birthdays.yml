@@ -17,6 +17,7 @@ datlechin-birthdays:
       required_label: 强制注册时设置生日
       set_on_registration_label: 允许注册时设置生日
   api:
+    birthday_required_message: 出生日期为必填项。
     invalid_age_message: '很抱歉，您的年龄必须大于 {minAge} 岁。'
     invalid_dob_message: 无效的出生日期
   forum:
@@ -27,7 +28,7 @@ datlechin-birthdays:
     edit_user:
       dob_heading: '=> datlechin-birthdays.ref.date_of_birth'
     nav:
-      nav_item: 新的一岁！
+      nav_item: 今天生日
     page:
       discussion_count: '{count, plural, one {主题：#} other {主题：#}}'
       post_count: '{count, plural, one {回帖：#} other {回帖：#}}'

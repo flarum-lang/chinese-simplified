@@ -845,7 +845,7 @@ core:
     custom_header_text: '添加显示于页面顶部、位于 Flarum 默认页眉上方的 HTML 代码。'
     custom_header_title: 编辑自定义页眉
     dark_hc_mode_label: 深色高对比度模式
-    dark_mode_label: 夜间模式
+    dark_mode_label: 深色模式
     delete: 删除
     delete_forever: 永久删除
     discussions: 主题

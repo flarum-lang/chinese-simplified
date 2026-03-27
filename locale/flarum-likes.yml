@@ -16,7 +16,7 @@ flarum-likes:
     post:
       like_link: 赞
       liked_by_self_text: '{users} 觉得很赞'
-      liked_by_text: '{users} 觉得很赞'
+      liked_by_text: '{count, plural, other {{users} 点赞了}}'
       others_link: '=> core.ref.some_others'
       unlike_link: 取消赞
       you_text: '=> core.ref.you'
@@ -27,3 +27,9 @@ flarum-likes:
       notify_post_liked_label: 有人赞我
     user:
       likes_link: 赞
+  lib:
+    gambits:
+      posts:
+        likedBy:
+          hint: '用户的 ID 或用户名'
+          key: 点赞者

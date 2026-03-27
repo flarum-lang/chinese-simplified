@@ -8,6 +8,7 @@ flarum-extension-manager:
       add_label: 添加认证
       add_modal:
         host_label: 主机
+        host_placeholder: 示例：bearer.flarum.org
         submit_button: 提交
         token_label: 令牌
         type_label: 类型
@@ -28,7 +29,7 @@ flarum-extension-manager:
         gitlab-token: 'GitLab 令牌'
     composer:
       add_repository_label: 添加仓库
-      delete_repository_confirmation: 确定要删除此仓库，以及从此来源安装的扩展程序吗？
+      delete_repository_confirmation: 确定要删除此仓库？以及从此来源安装的扩展程序吗。
       delete_repository_label: 删除仓库
       edit_repository_label: 编辑仓库
       minimum_stability:
@@ -50,7 +51,7 @@ flarum-extension-manager:
         label: 仓库
         types:
           composer: composer
-          path: path
+          path: 路径
           vcs: vcs
       title: Composer
     exceptions:
@@ -63,9 +64,9 @@ flarum-extension-manager:
         extension_not_found: 不存在的扩展程序。
         extensions_incompatible_with_new_major: "部分已安装的扩展程序不兼容最新大版本，请等候相应作者发布兼容性更新，或暂时卸载以继续操作。\n"
     extensions:
-      check_why_it_failed_updating: 为什么无法更新到最新版本？
+      check_why_it_failed_updating: 查看为什么无法更新到最新版本。
       install: 安装扩展程序
-      install_help: "填写扩展程序包名，或 <code>提供者/包名:版本</code> 的 <semantic_link>语义化格式</semantic_link> 以安装。欲发现更多扩展程序请前往 {extiverse}。\n"
+      install_help: "填写扩展程序包名以继续。您可以使用 <code>vendor/package-name:version</code> 格式来指定 <semantic_link>语义化版本</semantic_link>。访问 {link} 浏览可用程序包。\n"
       proceed: 安装
       remove: 卸载
       successful_install: '{extension} 已成功安装，正在跳转……'
@@ -74,7 +75,7 @@ flarum-extension-manager:
       update: 更新
       update_hard_label: 硬更新
       update_soft_label: 软更新
-    file_permissions: "扩展程序管理器需要以下文件和目录的读写权限：composer.json、composer.lock、vendor、storage、storage/.composer\n"
+    file_permissions: "扩展程序管理器需要以下文件和目录的读写权限：composer.json，composer.lock，vendor，storage，storage/.composer\n"
     major_updater:
       description: "Flarum 大版本更新并不向后兼容，因此您当前安装的部分扩展，以及手动修改的内容可能并兼容 Flarum 新版本。继续操作前，请确保备份数据库和文件。\n"
       dry_run: 测试运行
@@ -84,7 +85,29 @@ flarum-extension-manager:
         why: 查看更多
       title: '可用的大版本更新：Flarum {version}'
       update: 更新
+    minor_update_confirmation:
+      content: 这也会更新任何其他有可用更新的扩展/包。
+    required_php_functions: "扩展管理器需要启用以下 PHP 函数：<code>{functions}</code>。如果您无法访问 PHP 配置，请联系您的主机提供商。\n"
     sections:
+      discover:
+        description: '通过扩展为您的 Flarum 论坛添加新功能和集成。'
+        empty_results: 似乎没有可用的扩展。
+        extension:
+          badges:
+            abandoned: 已废弃
+            flarum: Flarum
+            fof: 'Friends Of Flarum'
+          downloads: '{count, plural, one {{formattedCount} 次下载} other {{formattedCount} 次下载}}'
+        search: 搜索...
+        server_error: 服务当前不可用，请稍后再试。
+        sort:
+          top: 最多下载
+        tabs:
+          discover: 发现
+          extensions: 扩展
+          languages: 语言
+          themes: 主题
+        title: 扩展
       queue:
         columns:
           details: 详情
@@ -116,10 +139,14 @@ flarum-extension-manager:
           success: 成功
         task_just_started: 任务已刚刚
         title: 队列
+      settings:
+        description: 配置扩展管理器并检查队列中的操作。
+        title: 选项和队列
     settings:
       access_warning: 谨慎分配管理员账号，随意安装扩展程序可能带来安全漏洞。
       debug_mode_warning: 正在使用调试模式。扩展管理器无法正确安装和更新本地开发包，请使用命令行操作。
       queue_jobs: 在后台队列中执行操作
+      queue_jobs_help: "您可以了解 <basic_impl_link>基础队列</basic_impl_link> 实现或 <adv_impl_link>更高级</adv_impl_link> 的实现。请确保队列使用的 PHP 版本为 {php_version}。请确保正确配置了 <folder_perms_link>文件夹权限</folder_perms_link>。\n"
       task_retention_days: 任务保留天数
       task_retention_days_help: "暂存已完成的任务到数据库。超期一段时间后自动删除，设置为 0 表示永不删除。\n"
       title: '=> core.ref.settings'
@@ -130,6 +157,7 @@ flarum-extension-manager:
       global_update_successful: 成功更新所有包。
       last_update_checked_at: '上次更新检查： '
       run_global_update: 运行全局更新
+      up_to_date: 没有待处理的更新。
       updater_help: '检查 Flarum 和扩展程序更新。'
       updater_title: 更新
     why_not_modal:

@@ -20,10 +20,21 @@ flarum-gdpr:
         heading: 'GDPR 设置'
         help_text: '想要设置 GDPR？请前往扩展程序页面。'
       user_table_data:
+        column: 列
+        extension: 扩展
         help_text: "多数情况下，我们会自动处理导出和抹除时的 <code>用户</code>表数据。\n然而，会存在一些特殊情况，如下。\n"
+        'no': 否
+        nullable: 可为空
+        pii: '个人可识别信息 (PII)'
+        pii_tooltip: 此列被视为个人可识别信息，并将在匿名上下文（例如匿名的事件负载）中进行脱敏处理。
+        redacted_on_export: 导出时脱敏
+        redacted_on_export_tooltip: '生成用户数据导出时，此列的值将被置空（设置为 null）。该列仍会以 null 值的形式出现在导出文件中。'
         title: 用户表数据
+        type: 类型
+        'yes': 是
     nav:
       gdpr_button: 'GDP 集成'
+      gdpr_title: '=> flarum-gdpr.admin.gdpr_page.description'
     permissions:
       process_erasure: 处理账号抹除请求
       process_export_for_others: 处理其他用户的数据导出请求
@@ -43,17 +54,28 @@ flarum-gdpr:
       gdpr_page:
         help_text: '重要！请先前往 GDPR 概览页面了解数据类型和数据处理规范等内容，然后再配置数据管控方式。'
         title: 数据管控
+    userlist:
+      columns:
+        user_actions:
+          data_export:
+            button: 导出
+            tooltip: '导出 {username} 的数据'
   email:
     confirm_erasure:
+      body: "有人（希望是您本人）刚刚请求注销账号 `{display_name}`。\n\n如需确认此操作，请点击以下链接，之后我们的团队将处理您的请求。\n\n{erasure_confirm_url}\n"
       subject: 确认抹除你的账号
     erasure_cancelled:
+      body: "这是关于您取消账号删除请求已处理的自动通知。\n\n您的账号将不再被删除。\n"
       subject: 帐号抹除请求已取消
     erasure_completed:
       anonymization:
+        body: "这是关于您的账号已匿名化的自动最终通知。\n"
         subject: 帐号匿名化已完成
       deletion:
+        body: "这是关于您的账号已删除的自动最终通知。\n"
         subject: 帐号已删除
     export_available:
+      body: "您请求导出 {username} 的账号数据。该导出文件已成功生成，现在可以下载：\n\n{url}\n\n此导出文件将保留至 {destroys_at}。\n"
       subject: 数据导出已就绪
   forum:
     badges:
@@ -76,7 +98,10 @@ flarum-gdpr:
       anonymization_button: 匿名化用户
       comments_label: 回复（可选）
       confirm: '确定要使用 {mode} 模式擦除 {name} 的帐号？'
+      confirmed_at: '确认时间：{date}'
       deletion_button: 删除用户
+      eligible_at: '符合自动处理条件：{date}'
+      requested_at: '请求时间：{date}'
       text: '{name} 申请抹除帐号。'
       title: 处理账号抹除请求
     request_erasure:
@@ -102,6 +127,7 @@ flarum-gdpr:
       avatar:
         delete_description: 从文件系统删除用户头像。
         export_description: 从文件系统获取用户头像，并导出。
+      default_user_action: 无操作，由默认用户表数据处理。
       discussions:
         export_description: 导出用户发起的所有主题帖，数据仅限于标题和创建日期。
       forum:

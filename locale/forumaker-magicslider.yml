@@ -5,25 +5,29 @@
 capy-magic-slider:
   admin:
     settings:
-      add_slide: 添加滑块
+      add_slide: 添加幻灯片
       autoplay: 自动播放间隔
-      autoplay_help: 0表示禁用幻灯片放映
+      autoplay_help: '0 表示禁用自动播放（单位：秒）'
       delete: 删除
-      fit_to_layout: 将滑块与主布局宽度对齐
-      fit_to_layout_help: 启用后，滑块将完全占据标签或讨论列表页面上主内容容器的宽度
+      disable_desktop: 在桌面端禁用滑块
+      disable_desktop_help: '在大于 768px 的屏幕上隐藏'
+      disable_mobile: 在移动端禁用滑块
+      disable_mobile_help: '在小于等于 768px 的屏幕上隐藏'
+      fit_to_layout: 滑块与主布局宽度对齐
+      fit_to_layout_help: 启用后，滑块宽度将与标签页或讨论列表页面的主内容容器宽度一致
       height: 高度
-      height_help: 此类型显示器的高度已固定
-      hide_on_tag_pages: 在标签页面隐藏滑块
-      hide_on_tag_pages_help: '在标签页面显示 Flarum 的默认标签横幅，而不是幻灯片'
+      height_help: 此屏幕类型的高度为固定值
+      hide_on_tag_pages: 在标签页隐藏滑块
+      hide_on_tag_pages_help: '在标签页面显示 Flarum 默认标签横幅，而不是滑块'
       image_placeholder: '图片 URL'
       link_placeholder: '跳转链接 URL'
-      new_tab: 在新标签页中打开
-      padding: 外部填充
+      new_tab: 在新标签页打开
+      padding: 外边距
       padding_help: 滑块周围的空间
-      radius: 边框圆角半径
-      radius_help: 圆角处理
-      section_behavior: 特征
+      radius: 边框圆角
+      radius_help: 圆角大小
+      section_behavior: 行为
       section_desktop: 桌面
-      section_display: 显示器
-      section_mobile: 移动
-      section_slides: 滚动条
+      section_display: 显示
+      section_mobile: 移动端
+      section_slides: 幻灯片

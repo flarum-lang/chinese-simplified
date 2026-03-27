@@ -7,10 +7,10 @@ fof-open-collective:
     settings:
       api_key_help: 此身份验证方法已弃用。请考虑切换到“个人令牌”方式。
       api_key_label: '应用 API 密钥（已弃用）'
-      group_help: '选择“定期支持者”应加入的 Flarum 用户组。当用户成为定期支持者时将自动加入该组；当订阅结束时，他们将被移至“一次性支持者”组（如果已配置）。'
-      group_label: 指定用户组
-      onetime_group_help: '选择“一次性支持者”应加入的 Flarum 用户组。若未设置，则不会对一次性支持者进行管理。当定期支持者取消订阅时，会被移至此组。'
-      onetime_group_label: 一次性支持者用户组（可选）
+      group_help: '选择“定期支持者”应加入的 Flarum 群组。当用户成为定期支持者时将自动加入该组；当订阅结束时，他们将被移至“一次性支持者”组（如果已配置）。'
+      group_label: 指定群组
+      onetime_group_help: '选择“一次性支持者”应加入的 Flarum 群组。若未设置，则不会对一次性支持者进行管理。当定期支持者取消订阅时，会被移至此组。'
+      onetime_group_label: 一次性支持者群组（可选）
       personal_token_help: '在 <a>https://opencollective.com/applications</a> 创建个人令牌。此令牌用于从 Open Collective 获取您的支持者信息。'
       personal_token_label: 个人令牌
       slug_help: '输入您的 Open Collective 标识符（即 URL 中 opencollective.com/ 之后的部分）。'

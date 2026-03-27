@@ -9,7 +9,7 @@ sycho-move-posts:
     settings:
       group_sequential_posts: 将多个连续的移动事件帖合并为一个。
       moved_first_post_content: 首贴替补内容
-      moved_first_post_content_help: "移动主题中仅有的一个帖子后，会在原帖位置显示下方的文本提示用户访问新的位置，你可以在下方编辑该提示内容。\n"
+      moved_first_post_content_help: "移动讨论中仅有的一个帖子后，会在原帖位置显示下方的文本提示用户访问新的位置，你可以在下方编辑该提示内容。\n"
   forum:
     badge:
       first_moved_tooltip: 已移动
@@ -19,15 +19,15 @@ sycho-move-posts:
       move_old_post_to_newer_discussion: '=> sycho-move-posts.ref.status.old_to_new_move'
     modal:
       check: 检查操作类型
-      destination: 目标主题
-      discussion_help: 新主题将直接使用源主题的标签，你可以在移动后进行修改。
+      destination: 目标讨论
+      discussion_help: 新讨论将直接使用源讨论的标签，你可以在移动后进行修改。
       discussion_name: '=> core.forum.composer_discussion.title_placeholder'
-      new_discussion: 新建主题
+      new_discussion: 新建讨论
       selected_posts: '{count, plural, one {已选中 1 个帖子} other {已选中 {count} 个帖子}}'
       status:
-        complex_move: '复杂移动类型，帖子将移动到目标主题的中间，目标主题帖子的 URL 也会因受到影响而发生变更。'
+        complex_move: '复杂移动类型，帖子将移动到目标讨论的中间，目标讨论帖子的 URL 也会因受到影响而发生变更。'
         old_to_new_move: '=> sycho-move-posts.ref.status.old_to_new_move'
-        simple_move: 简单移动类型，帖子将追加到目标主题的末尾。
+        simple_move: 简单移动类型，帖子将追加到目标讨论的末尾。
       submit: 移动
       title: '=> sycho-move-posts.ref.move_posts'
     notifications:
@@ -45,4 +45,4 @@ sycho-move-posts:
   ref:
     move_posts: 移动帖子
     status:
-      old_to_new_move: 不能移动旧帖子至较新的主题。
+      old_to_new_move: 不能移动旧帖子至较新的讨论。

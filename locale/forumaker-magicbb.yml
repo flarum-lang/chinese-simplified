@@ -5,32 +5,34 @@
 forumaker-magicbb:
   admin:
     permissions:
-      use_iframe: 允许iframe嵌入式
+      use_iframe: '允许 iframe 嵌入'
     sections:
       content: 内容按钮
-      features: 特征
+      features: 功能
       images: 图片按钮
       text: 文本按钮
     settings:
-      bb_center: 中心
-      bb_color: 色彩
-      bb_iframe: iframe嵌入式
-      bb_iframe_help: '允许嵌入来自任何来源的 iframe。请谨慎使用——嵌入的内容可能包含外部脚本。🧹 更改此设置后，请清除 Flarum 缓存'
+      bb_audio: 音频
+      bb_center: 居中
+      bb_color: 颜色
+      bb_iframe: 'iframe 嵌入'
+      bb_iframe_help: '允许嵌入来自任何来源的 iframe。请谨慎使用——嵌入内容可能包含外部脚本。🧹 修改此设置后请清除 Flarum 缓存'
       bb_image: 'FoF 上传'
-      bb_image_help: 居中显示的大图片会自动调整大小，使其宽度为帖子宽度的60%，而侧边对齐的图片宽度最大可达帖子宽度的40%
-      bb_info: 告警
-      bb_justify: 合法化
+      bb_image_help: '居中显示的大图片会自动调整为帖子宽度的 60%，侧边对齐的图片最大为帖子宽度的 40%'
+      bb_info: 提示框
+      bb_justify: 两端对齐
       bb_spoiler: 剧透
-      bb_table: 桌子
-      toolbar_group: 'MagicBB 按钮组'
-      toolbar_group_help: '如果启用此功能，所有 MagicBB 按钮将在编辑器中合并为一个按钮'
+      bb_table: 表格
+      toolbar_group: '合并 MagicBB 按钮'
+      toolbar_group_help: '启用后，所有 MagicBB 按钮将在编辑器中合并为一个按钮'
   forum:
     composer:
+      audio_button: 添加音频
       center_button: 居中对齐
       color_button: 添加颜色
-      image_button: 添加图片
-      info_button: 添加警报
-      justify_button: 对齐并两端对齐
+      image_button: 添加智能图片
+      info_button: 添加提示框
+      justify_button: 两端对齐
       more_button: 更多
-      spoiler_button: 添加黑幕
-      table_button: 添加标题
+      spoiler_button: 添加剧透
+      table_button: 插入表格

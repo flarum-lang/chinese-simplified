@@ -55,7 +55,7 @@ fof-gamification:
         discussion_page: 在帖子列表中显示赞同数
         first_post_only: 仅允许在首帖中进行赞同/反对投票
         icon_help: '输入任何 Font Awesome 图标，后缀为 -up 和 -down。 示例：arrow（箭头），thumbs（拇指），chevron（指向箭头）'
-        icon_name: 赞同/踩图标
+        icon_name: 赞同/反对图标
         icon_preview_downvote: 反对
         icon_preview_upvote: 赞同
         points_placeholder: '👍: '
@@ -68,9 +68,9 @@ fof-gamification:
       downvote_notifications: 接收反对票通知
       see_ranking_page: 查看排名
       see_voters_label: 查看投票详情
-      see_votes_label: 查看赞同/踩数量
+      see_votes_label: 查看赞同/反对数量
       upvote_notifications: 接收赞同票通知
-      vote_label: 赞同/踩
+      vote_label: 赞同/反对
   email:
     body:
       postVoted: "{recipient_display_name} 你好！\n\n{actor_display_name} 刚刚投票了你的主题「{discussion_title}」。\n\n查看详情：{discussion_url}\n"
@@ -85,12 +85,12 @@ fof-gamification:
     nav:
       name: 排名
     notification:
-      downvote: '{username} 踩了您的帖子'
+      downvote: '{username} 反对了您的帖子'
       prefrences:
-        vote: 有人赞同或踩我
+        vote: 有人赞同或反对我
       upvote: '{username} 赞同了您的帖子'
     post:
-      downvote_button: 踩
+      downvote_button: 反对
       upvote_button: 赞同
     ranking:
       amount: 👍

@@ -14,6 +14,25 @@ fof-follow-tags:
       following_none_label: '=> fof-follow-tags.ref.filtering_options.none'
       following_page_default_label: 「我的关注」默认内容
       following_tags_label: '=> fof-follow-tags.ref.filtering_options.tags'
+  email:
+    newDiscussionInTag:
+      html:
+        body: "{actor_display_name} 在您关注的标签中发起了一个讨论：[{discussion_title}]({discussion_url})\n"
+      plain:
+        body: "{actor_display_name} 在您关注的标签中发起了一个讨论：{discussion_title}\n\n若要查看该讨论，请点击以下链接：\n{discussion_url}\n\n---\n\n{content}\n"
+      subject: '[标签 | 新讨论] {title}'
+    newDiscussionTag:
+      html:
+        body: "{actor_display_name} 刚刚将 {author_display_name} 发起的讨论标签更改为您关注的标签：[{discussion_title}]({discussion_url})\n"
+      plain:
+        body: "{actor_display_name} 刚刚将 {author_display_name} 发起的讨论标签更改为您关注的标签：{discussion_title}\n\n若要查看该讨论，请点击以下链接：\n{discussion_url}\n\n---\n\n{content}\n"
+      subject: '[标签 | 标签已更改] {title}'
+    newPostInTag:
+      html:
+        body: "{actor_display_name} 在您关注的标签讨论中发表了回复：[{discussion_title}]({post_url})\n"
+      plain:
+        body: "{actor_display_name} 在您关注的标签讨论中发表了回复：{discussion_title}\n\n若要查看最新动态，请点击以下链接：\n{post_url}\n\n---\n\n{content}\n"
+      subject: '[标签 | 新回复] {title}'
   forum:
     badge:
       following_tag_tooltip: 关注中
@@ -28,27 +47,27 @@ fof-follow-tags:
       unfollow_tag_button: 取消关注
     notifications:
       new_discussion_tag_text: '{username} 修改了标签'
-      new_discussion_text: '{username} 发布了新主题'
+      new_discussion_text: '{username} 发布了新讨论'
       new_post_text: '{username} 发布了新回复'
     settings:
-      notify_new_discussion_label: 我关注的标签有新建主题
-      notify_new_discussion_tag_label: 有人将主题添加到我关注的标签
+      notify_new_discussion_label: 我关注的标签有新建讨论
+      notify_new_discussion_tag_label: 有人将讨论添加到我关注的标签
       notify_new_post_label: 我关注的标签有新回复
     sub_controls:
       follow_button: '=> fof-follow-tags.ref.follow'
       following_button: '=> fof-follow-tags.ref.following'
-      following_text: 有新主题时提醒。
+      following_text: 有新讨论时提醒。
       header: '订阅 {tagName}'
       hiding_button: '=> fof-follow-tags.ref.hiding'
-      hiding_text: 在全部主题页面中隐藏旗下主题。
+      hiding_text: 在全部讨论页面中隐藏旗下讨论。
       ignoring_button: '=> fof-follow-tags.ref.ignoring'
       ignoring_text: 从不提醒。
       lurking_button: '=> fof-follow-tags.ref.lurking'
-      lurking_text: 有新主题或新回复时提醒。
+      lurking_text: 有新讨论或新回复时提醒。
       not_following_button: 不关注
       not_following_text: 仅当有人提及我时提醒。
-      notify_alert_tooltip: 有新主题或新回复时推送论坛提醒
-      notify_email_tooltip: 有新主题或新回复时发送邮件提醒
+      notify_alert_tooltip: 有新讨论或新回复时推送论坛提醒
+      notify_email_tooltip: 有新讨论或新回复时发送邮件提醒
       submit_button: 确认订阅
       subscription_label: '选择订阅 {tagName} 级别'
     user:
@@ -57,7 +76,7 @@ fof-follow-tags:
         heading: 关注标签
   ref:
     filtering_options:
-      none: 关注的主题
+      none: 关注的讨论
       tags: 关注的标签
     follow: 关注
     following: 关注中

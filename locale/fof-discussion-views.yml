@@ -2,6 +2,11 @@
 # Use https://weblate.rob006.net/projects/flarum2/fof-discussion-views/zh_Hans/ for translation.
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
+core:
+  forum:
+    index_sort:
+      least_viewed_button: 最少浏览
+      most_viewed_button: 最多浏览
 fof-discussion-views:
   admin:
     permissions:
@@ -12,6 +17,11 @@ fof-discussion-views:
     discussion_controls:
       resetviews_button: 设置浏览量
     modal_resetviews:
+      invalid: '请输入大于或等于 0 的有效数字'
       label: 设为浏览量
       submit: 提交
       title: 重置主题浏览量
+  lib:
+    gambits:
+      popular:
+        key: popular

@@ -13,6 +13,8 @@ fof-geoip:
       see_country: '始终显示 IP 地址所属国家或地区'
     settings:
       access_key_label: 'Access Key'
+      error_code_prefix: 代码：
+      error_prefix: 错误：
       general:
         heading: 常规设置
         help: 这些设置控制本扩展的一些基本能力。
@@ -20,12 +22,18 @@ fof-geoip:
         heading: 'IP 查询服务'
         help: '选择一个 IP 查询服务。部分服务有调用速率限制，详情请查看相关服务文档。'
       quota_label: 查询额度
+      raw_http_response_label: '原始 HTTP 响应体'
+      request_options_label: 请求选项
+      request_url_label: '请求 URL'
+      response_headers_label: 响应头
       service_ipapi-pro_description: '<b>https://members.ip-api.com/#pricing</b> 服务。购买专业版本可无限制使用。'
       service_ipapi-pro_label: 'IP Api Pro'
       service_ipapi_description: '<b>http://ip-api.com</b> 每分钟可免费查询 45 次。请求数超额时，您的请求将会放入队列，等待查询次数重置后再处理。'
       service_ipapi_label: 'IP Api'
       service_ipdata_description: '<b>https://ipdata.co</b> 每日可免费查询 1500 次，付费计划可提升使用上限。'
       service_ipdata_label: IPData
+      service_ipinfo-lite_description: '使用 <b>https://ipinfo.io</b> 获取 IP 信息，没有任何速率限制或约束。需要注册以获取免费 API 密钥。'
+      service_ipinfo-lite_label: 'IPInfo Lite'
       service_iplocation_description: '<b>https://www.iplocation.net/</b> 可以获取国家/地区和运营商数据，查询限制未知。'
       service_iplocation_label: 'IP Location'
       service_ipsevenex_description: '<b>https://7x.ax</b> 每分钟可免费查询 20 次，付费计划可提升使用上限。'
@@ -33,6 +41,26 @@ fof-geoip:
       service_label: 服务
       show_flag_help: '用户发帖勾选后，基于作者的 IP 地址展示国家或地区旗帜，不泄露 IP 地址。'
       show_flag_label: 展示发帖地区旗帜
+      status_error: '✗ 错误'
+      status_success: '✓ 成功'
+      status_unknown: 未知
+      test:
+        heading: 测试服务配置
+        help: '使用示例 IP 地址测试您的 IP 查询服务配置。请确保在测试前先保存设置。'
+      test_button: 测试服务
+      test_error: 测试服务时发生错误。
+      test_error_details_label: 错误详情：
+      test_http_status_code_label: 'HTTP 状态码：'
+      test_ip_required: '请输入要测试的 IP 地址。'
+      test_processed_service_response_label: 已处理的服务响应：
+      test_response_time_label: 响应时间：
+      test_result_title: 测试结果
+      test_service_help: '输入 IPv4 或 IPv6 地址以测试您当前的服务配置。'
+      test_service_label: '测试 IP 查询服务'
+      test_service_label_result: 服务：
+      test_status_label: 状态：
+      test_timestamp_label: 时间戳：
+      testing: 正在测试...
   forum:
     alerts:
       ip_copied: '已复制 IP 地址'

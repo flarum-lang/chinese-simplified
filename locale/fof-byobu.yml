@@ -5,52 +5,58 @@
 fof-byobu:
   admin:
     permission:
-      add_more_than_two_user_recipients: '邀请 2 个以上用户参与私密主题讨论'
-      create_private_discussions_with_blocking_users: 强制将私密主题屏蔽的用户加入私密主题
-      create_private_discussions_with_groups: 与用户组创建私密主题
-      create_private_discussions_with_users: 与他人创建私密主题
-      edit_group_recipients: 设置私密主题用户组可见范围
-      edit_user_recipients: 设置私密主题用户可见范围
-      make_private_into_public: 将私密主题转为公开
-      view_private_discussions-when-flagged: 查看他人被举报的私密主题
+      add_more_than_two_user_recipients: '邀请 2 个以上用户参与私密讨论'
+      create_private_discussions_with_blocking_users: 强制将私密讨论屏蔽的用户加入私密讨论
+      create_private_discussions_with_groups: 与用户组创建私密讨论
+      create_private_discussions_with_users: 与他人创建私密讨论
+      edit_group_recipients: 设置私密讨论用户组可见范围
+      edit_user_recipients: 设置私密讨论用户可见范围
+      make_private_into_public: 将私密讨论转为公开
+      view_private_discussions-when-flagged: 查看他人被举报的私密讨论
     settings:
-      badge-icon: 'Byobu 主题帖徽章'
-      delete_on_last_recipient_left: 所有参与者均离开后，自动删除该私密主题
-      delete_on_last_recipient_left_help: 启用此项，在所有用户均退出私密主题时，永久删除主题内容。否则，隐藏私密主题。
+      badge-icon: 'Byobu 讨论帖徽章'
+      delete_on_last_recipient_left: 所有参与者均离开后，自动删除该私密讨论
+      delete_on_last_recipient_left_help: 启用此项，在所有用户均退出私密讨论时，永久删除讨论内容。否则，隐藏私密讨论。
       enable-make-public-option: 启用「私密转公开」功能
-      enable-make-public-option-help: 转公开时，所有参与者自动退出私密主题，私密主题转为普通公开主题。
+      enable-make-public-option-help: 转公开时，所有参与者自动退出私密讨论，私密讨论转为普通公开讨论。
       general:
         heading: 常规设置
         help: 这些设置控制本扩展的一些基本能力。
-      hide_from_all_discussions_page: 在「全部主题」页面隐藏私密主题
-      hide_from_all_discussions_page_help: 只保留「私密主题」页面和个人主页两个访问入口
+      hide_from_all_discussions_page: 在「全部讨论」页面隐藏私密讨论
+      hide_from_all_discussions_page_help: 只保留「私密讨论」页面和个人主页两个访问入口
       icon:
         heading: 图标设置
         help: 这些设置控制展示到论坛上的图标。
       post-event-icon: 'Byobu 发帖事件'
   email:
+    body:
+      made_public: "{actor_display_name} 移除了所有收件人并将讨论公开：{discussion_title}。\n\n在此查看：\n{discussion_url}\n\n在访问此链接前，您可能需要先登录。\n"
+      private_discussion_added: "{actor_display_name} 将您添加到了现有的私密讨论中：{discussion_title}。\n\n在此查看：\n{discussion_url}\n\n在访问此链接前，您可能需要先登录。\n"
+      private_discussion_created: "{actor_display_name} 发起了一个以您为收件人的新私密讨论：{discussion_title}。\n\n在此查看：\n{discussion_url}\n\n在访问此链接前，您可能需要先登录。\n"
+      private_discussion_replied: "{actor_display_name} 在以您为收件人的私密讨论中发布了内容：{discussion_title}。\n\n在此查看：\n{post_url}\n\n在访问此链接前，您可能需要先登录。\n"
+      recipient_removed: "{actor_display_name} 离开了私密讨论：{discussion_title}。他们将无法再查看其中的任何内容。\n\n在此查看：\n{discussion_url}\n\n在访问此链接前，您可能需要先登录。\n"
     subject:
-      private_discussion_added: '【私密主题】{display_name} 将您加入私密主题'
-      private_discussion_created: '【私密主题】{display_name} 与您创建私密主题'
-      private_discussion_replied: '【私密主题】{display_name} 发表新帖'
-      recipient_removed: '【私密主题】{display_name} 退出'
+      private_discussion_added: '【私密讨论】{display_name} 将您加入私密讨论'
+      private_discussion_created: '【私密讨论】{display_name} 与您创建私密讨论'
+      private_discussion_replied: '【私密讨论】{display_name} 发表新帖'
+      recipient_removed: '【私密讨论】{display_name} 退出'
   forum:
     badges:
       is_private:
-        tooltip: 私密主题
+        tooltip: 私密讨论
     buttons:
       add_recipients: 公开
       cancel: 取消
       edit_recipients: 可见范围
-      make_public: 公开主题
-      remove_from_discussion: 退出私密主题
+      make_public: 公开讨论
+      remove_from_discussion: 退出私密讨论
       send_pd: '发送消息至 {username}'
       submit: 确定
     composer_private_discussion:
-      submit_button: 新建私密主题
-      title_placeholder: 私密主题标题
+      submit_button: 新建私密讨论
+      title_placeholder: 私密讨论标题
     confirm:
-      make_public: 确定移除所有参与者，并公开此主题吗？
+      make_public: 确定移除所有参与者，并公开此讨论吗？
     hero:
       title: '=> fof-byobu.forum.nav.nav_item'
     input:
@@ -59,40 +65,48 @@ fof-byobu:
       recipients: '{count, plural, one {{count}} other {{count}}} 人可见'
     modal:
       help:
-        add_recipients: 此主题仅选中的用户可见。至少添加一个用户（您除外）才能创建私密主题。
+        add_recipients: 此讨论仅选中的用户可见。至少添加一个用户（您除外）才能创建私密讨论。
         click_user_to_remove_tooltip: 单击移除
         selected_users: 单击以移除用户。
-        update_recipients: 此主题仅选中的用户可见。
+        update_recipients: 此讨论仅选中的用户可见。
       labels:
         search_field: 搜索用户
         selected_users: 已选用户
       titles:
-        add_recipients: 邀请用户加入私密主题
+        add_recipients: 邀请用户加入私密讨论
         update_recipients: '更新「{title}」的可见范围'
     nav:
-      nav_item: 私密主题
-      start_button: 私密主题
+      nav_item: 私密讨论
+      start_button: 私密讨论
     notifications:
-      pd_added_label: 有人邀请我加入私密主题
-      pd_added_text: '{username} 邀请您加入私密主题'
-      pd_label: 有人和我创建私密主题
-      pd_reply_label: 参与的私密主题有新贴
-      pd_reply_text: '{username} 在私密主题中发表新帖'
-      pd_text: '{username} 和我创建私密主题'
-      pd_user_left_label: 有人退出我参与的私密主题
-      pd_user_left_text: '{username} 退出私密主题'
+      pd_added_label: 有人邀请我加入私密讨论
+      pd_added_text: '{username} 邀请您加入私密讨论'
+      pd_label: 有人和我创建私密讨论
+      pd_reply_label: 参与的私密讨论有新贴
+      pd_reply_text: '{username} 在私密讨论中发表新帖'
+      pd_text: '{username} 和我创建私密讨论'
+      pd_user_left_label: 有人退出我参与的私密讨论
+      pd_user_left_text: '{username} 退出私密讨论'
     post:
       recipients_modified:
         added: '{username} 邀请 {added} 加入。'
         added_and_removed: '{username} 邀请 {added} 加入，并移出 {removed}。'
-        made_public: '{username} 将主题公开'
+        made_public: '{username} 将讨论公开'
         removed: '{username} 将 {removed} 移出。'
-        removed_self: '{username} 退出私密主题。'
+        removed_self: '{username} 退出私密讨论。'
     search:
       headings:
         groups: 用户组
     user:
-      byobu_link: 私密主题
-      dropdown_label: 私密主题
+      byobu_link: 私密讨论
+      dropdown_label: 私密讨论
       settings:
-        block_pd: 屏蔽私密主题
+        block_pd: 屏蔽私密讨论
+  lib:
+    gambits:
+      allows-pd:
+        key: 允许私密讨论
+      byobu:
+        key: byobu
+      private:
+        key: 私密

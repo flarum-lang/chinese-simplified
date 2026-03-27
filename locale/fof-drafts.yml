@@ -8,6 +8,11 @@ flarum-gdpr:
       drafts:
         delete_description: 删除用户创建的所有草稿。
         export_description: 用户创建的所有草稿。
+fof-default-user-preferences:
+  admin:
+    settings:
+      draftAutosaveEnable: 默认开启草稿自动保存
+      draftAutosaveInterval: 默认自动保存间隔（秒）
 fof-drafts:
   admin:
     permissions:
@@ -19,6 +24,7 @@ fof-drafts:
       schedule_on_one_server: '将使用 onOneServer() 方法用于计划任务（需要 Redis/Memcache）'
       title: 'FoF 草稿箱'
   console:
+    no_title_error: 已跳过草稿：缺少讨论标题。
     scheduled_drafts_disabled: 定时发布功能已被禁用。
   forum:
     composer:
@@ -39,6 +45,7 @@ fof-drafts:
       title: 草稿
       tooltip: '=> fof-drafts.forum.dropdown.title'
     schedule_draft_modal:
+      no_title_error: 设定定时发布前，必须填写讨论标题。
       reschedule_button: 重新定时
       schedule_button: 定时
       schedule_time_preview: '此草稿将于 <b>{datetime}</b> 自动发布。'
@@ -52,7 +59,7 @@ fof-drafts:
       unschedule_warning: 确定要取消定时发布这个草稿？
     user:
       settings:
-        draft_autosave_enable: 自动保存草稿
+        draft_autosave_enable: 开启草稿自动保存？
         draft_autosave_interval_button: 更新频率
         draft_autosave_interval_invalid: 请输入大于4的整数。
         draft_autosave_interval_label: 自动保存频率（秒）

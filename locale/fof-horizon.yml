@@ -9,7 +9,7 @@ fof-horizon:
       trim_completed_help: "在 Horizon 面板中展示已完成任务。\n"
       trim_failed: 失败任务
       trim_failed_help: "在 Horizon 面板中展示失败的任务。\n"
-      trim_help: "您可以配置 Horizon 保留最近和失败任务的时间（以分钟为单位）。\n通常，最近的任务保留一个小时，失败的任务保留一周。\n"
+      trim_help: "您可以在此处配置 Horizon 的运行时间（以分钟为单位）。\n保留最近失败的作业。通常情况下，会保留最近的作业。\n失败的作业将保存一小时，所有失败的作业将保存整整一周。\n"
       trim_monitored: 监控任务
       trim_monitored_help: "在 Horizon 面板中展示监控的任务。\n"
       trim_pending: 待办任务
@@ -23,21 +23,39 @@ fof-horizon:
       auto_refresh: 自动刷新
       data:
         failed-last-seconds: 最近失败任务
+        failure-rate: 失败率
         jobs-past-hour: 每小时任务数
         jobs-per-minute: 每分钟任务数
         max-runtime: 最长执行时间
         max-throughput: 最大吞吐量
+        max-wait-queue: '队列: {queue}'
         max-wait-time: 最长等待时间
+        redis-blocked-clients: 阻塞客户端
+        redis-connected-clients: 已连接客户端
         redis-max-memory: 'Redis 最大内存'
         redis-memory-policy: 'Redis 内存策略'
         redis-memory-policy-tooltip: "内存策略是指 Redis 在达到最大内存限制时应当选择哪些数据来移除。\n默认为 `noeviction`：内存使用达到上限时不再保存新的数据。\n点击查看文档。\n"
+        redis-memory-usage: 缓存存储内存使用量
+        redis-ops-per-sec: 每秒操作数
         redis-peak-memory: 'Redis 峰值内存'
         redis-used-memory: 'Redis 已用内存'
         status:
           inactive: 未激活
           label: 状态
           running: 正在执行
+        success-rate: 成功率
         total-processes: 执行总数
+      error:
+        fetch_failed: '无法获取 Horizon 统计数据。请检查您的 Redis 配置。'
+        setup_docs: '查看 Redis 设置文档'
+        title: 连接错误
       full_dashboard: 'Horizon 面板'
       heading: 队列概览
+      health:
+        critical: 危急
+        excellent: 优秀
+        good: 良好
+        poor: 差
+        tooltip: '系统健康评分: {score}/100'
+      last_refresh: '上次刷新: {time}'
       refresh: 刷新

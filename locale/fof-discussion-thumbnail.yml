@@ -5,4 +5,4 @@
 fof-discussion-thumbnail:
   admin:
     settings:
-      link_to_discussion_label: 关联主题帖缩略图到主题帖，而非用户
+      link_to_discussion_label: 关联讨论帖缩略图到讨论帖，而非用户

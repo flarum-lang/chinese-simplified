@@ -5,7 +5,7 @@
 flarum-akismet:
   admin:
     akismet_settings:
-      api_key_label: 'API Key'
+      api_key_label: 'API 密钥'
       delete_blatant_spam_help: 直接删除检测到问题的内容
       delete_blatant_spam_label: 自动删除问题内容
       title: 'Akismet 设置'

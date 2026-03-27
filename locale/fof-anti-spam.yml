@@ -5,116 +5,116 @@
 fof-anti-spam:
   admin:
     blocked_registrations:
-      attempted-at: 尝试在
-      button: 拦截记录
+      attempted-at: 尝试时间
+      button: 已拦截的注册
       delete_entry: 删除条目
-      email: 邮箱
-      help: "本页显示所有被 StopForumSpam 服务拦截的注册信息，您可以查看详情或删除记录。\n"
+      email: 电子邮箱地址
+      help: "此页面显示了所有被 StopForumSpam 服务拦截的注册。您可以查看每项注册的详情，如果需要，您也可以从数据库中删除该记录。\n"
       ip: 'IP 地址'
-      login-provider: 登录提供程序
-      login-provider-data: 登录提供程序数据
-      no-records: 暂无拦截记录。
+      login-provider: 登录提供商
+      login-provider-data: 登录提供商数据
+      no-records: 未发现已拦截的注册。
       sfs-data: 'StopForumSpam 数据'
-      title: 拦截记录
+      title: 已拦截的注册
       username: 用户名
     permissions:
-      spamblock_users_label: 标记垃圾账号
+      spamblock_users_label: 将用户标记为垃圾信息发送者
     settings:
       button: 设置
       content-filter:
-        actions_heading: 操作标题
-        advanced_block_patterns_help: 高级屏蔽模式说明
-        advanced_block_patterns_label: 高级屏蔽模式标签
-        advanced_patterns_heading: 高级模式标题
-        allowed_domains_help: 允许的域名说明
-        allowed_domains_label: 允许的域名标签
-        allowlist_heading: 允许列表标题
-        auto_flag_help: 自动标记说明
-        auto_flag_label: 自动标记标签
-        auto_unapprove_help: 自动取消批准说明
-        auto_unapprove_label: 自动取消批准标签
-        blocked_words_heading: 屏蔽词标题
-        blocked_words_help: 屏蔽词说明
-        blocked_words_label: 屏蔽词标签
-        detect_emails_help: 检测电子邮件说明
-        detect_emails_label: 检测电子邮件标签
-        detect_phones_help: 检测电话号码说明
-        detect_phones_label: 检测电话号码标签
-        detect_urls_help: '检测 URL 说明'
-        detect_urls_label: '检测 URL 标签'
-        detectors_heading: 检测器标题
-        enabled_help: 启用说明
-        enabled_label: 启用标签
-        flag_threshold_help: 标记阈值说明
-        flag_threshold_label: 标记阈值标签
-        heading: 标题
-        introduction: 介绍
-        monitor_hours_old_help: 监测时长（小时）说明
-        monitor_hours_old_label: 监测时长（小时）标签
-        monitor_post_count_help: 监测发帖数说明
-        monitor_post_count_label: 监测发帖数标签
-        no_action_extensions: 无操作扩展
-        spam_threshold_help: 垃圾信息阈值说明
-        spam_threshold_label: 垃圾信息阈值标签
-        system_user_id_help: '系统用户 ID 说明'
-        system_user_id_label: '系统用户 ID 标签'
-        thresholds_heading: 阈值标题
-        user_targeting_heading: 用户定位标题
+        actions_heading: 自动操作
+        advanced_block_patterns_help: '供高级用户使用的自定义正则模式。请谨慎使用 - 无效模式将被跳过。格式应为包含“pattern”和可选“description”键的对象组成的 JSON 数组。'
+        advanced_block_patterns_label: '高级模式 (正则表达式)'
+        advanced_patterns_heading: 高级拦截模式
+        allowed_domains_help: '来自这些域名的 URL 不会被标记。每行输入一个域名。您论坛的域名会自动加入白名单。'
+        allowed_domains_label: 允许的域名
+        allowlist_heading: 域名白名单
+        auto_flag_help: '启用后，达到标记阈值的内容将自动被标记供版主审核（需要 flarum/flags）。标记原因将包含检测为垃圾信息的详细说明。'
+        auto_flag_label: 自动标记垃圾内容
+        auto_unapprove_help: '启用后，达到垃圾信息阈值的内容将被发送到审核队列（需要 flarum/approval）。版主需要批准后内容才可见。'
+        auto_unapprove_label: 自动取消批准垃圾内容
+        blocked_words_heading: 违禁词与短语
+        blocked_words_help: 应作为垃圾信息拦截的词语或短语。每行输入一个。不区分大小写，且仅匹配完整词语。例如，“viagra”会匹配“viagra”，但不会匹配“niagara”。
+        blocked_words_label: 违禁词或短语
+        detect_emails_help: 标记包含电子邮件地址的内容。
+        detect_emails_label: 检测电子邮件地址
+        detect_phones_help: 标记包含国际格式电话号码的内容。
+        detect_phones_label: 检测电话号码
+        detect_urls_help: '标记包含不在白名单中的 URL 的内容。'
+        detect_urls_label: '检测 URL'
+        detectors_heading: 检测方法
+        enabled_help: 启用后，将分析新用户的帖子和讨论中的垃圾信息指标。
+        enabled_label: 启用内容过滤
+        flag_threshold_help: '垃圾信息评分等于或高于此值的内容将被标记以待审核（需要 flarum/flags 扩展）。'
+        flag_threshold_label: '标记阈值 (0-100)'
+        heading: 内容过滤器
+        introduction: '自动检测并标记新用户的垃圾内容。该系统会监控近期注册用户的帖子和讨论，识别常见的垃圾信息指标，如电话号码、电子邮件地址和可疑 URL。'
+        monitor_hours_old_help: '仅分析账号注册时间少于此小时数的用户内容。设置为 0 以禁用账号时长检查。'
+        monitor_hours_old_label: 监控注册时间不超过此小时数的用户
+        monitor_post_count_help: '仅分析发帖数量少于此数值的用户内容。设置为 0 以禁用发帖数检查。'
+        monitor_post_count_label: 监控发帖数不超过此数量的用户
+        no_action_extensions: '安装 flarum/approval 和/或 flarum/flags 扩展以启用自动审核操作。检测到的垃圾信息将通过 Flarum 内置的审批队列和标记系统进行管理。'
+        spam_threshold_help: '垃圾信息评分等于或高于此值的内容将自动设为未批准（需要 flarum/approval 扩展）。'
+        spam_threshold_label: '垃圾信息阈值 (0-100)'
+        system_user_id_help: '被指定为自动垃圾标记创建者的用户 ID。通常应为管理员或系统账号。如果未配置，默认为用户 ID 1。'
+        system_user_id_label: '用于标记的系统用户 ID'
+        thresholds_heading: 垃圾信息评分阈值
+        user_targeting_heading: 目标用户
       default-actions:
-        delete_discussions_help: 启用此项，永久删除讨论帖，否则隐藏讨论帖。
-        delete_discussions_label: 删除讨论帖
-        delete_posts_help: 启用此项，永久删除帖子，否则隐藏帖子。
+        delete_discussions_help: 这将永久删除该用户发起的所有讨论。禁用后，讨论将改为软删除。
+        delete_discussions_label: 删除讨论
+        delete_posts_help: 这将永久删除该用户发表的所有帖子。禁用后，帖子将改为软删除。
         delete_posts_label: 删除帖子
-        delete_user_help: 启用此项，永久删除账号，否则停用帐号。
-        delete_user_label: 删除账号
-        heading: 默认操作
-        introduction: 当用户被标记为垃圾邮件发送者时，版主可以从各种操作中选择如何处理特定用例。这些设置允许您预设通常会采取的操作，以加快过程，但也允许根据需要进行更改。
-        move_discussions_to_tags_help: 移除帖子的所有标签，并统一移动到指定标签旗下，「删除讨论贴」禁用时生效。如需保留原始标签，请清空下方标签配置。
-        move_discussions_to_tags_label: 归档标签
+        delete_user_help: 这将永久删除该用户。禁用后，该用户将改为被封禁。
+        delete_user_label: 删除用户
+        heading: 默认审核操作
+        introduction: 当用户被标记为垃圾信息发送者时，版主可以从多种操作中选择处理方式。这些设置允许您预设常用操作以加快处理过程，同时也允许根据需要进行调整。
+        move_discussions_to_tags_help: 这将把该用户发起的所有讨论移动到您指定的标签。清除标签选择可使讨论保留在原始标签中。如果启用了“删除讨论”选项，则此项无效。
+        move_discussions_to_tags_label: 将讨论移动到标签
       stopforumspam:
-        api_key_instructions_text: '<register>注册 StopForumSpam</register>，并<key>获取 API 密钥</key>。'
+        api_key_instructions_text: '<register>注册 StopForumSpam 账号</register>。然后您需要<key>获取 API 密钥</key>。'
         api_key_label: 'API 密钥'
-        api_key_text: '向 StopForumSpam 共享垃圾账号信息，改善检测服务。'
-        block_tor_exit_nodes_help: '屏蔽 Tor 出口节点说明'
-        block_tor_exit_nodes_label: '屏蔽 Tor 出口节点标签'
-        confidence_help: 百分比等级，根据检测数据生成。等于或高于这个数字时，禁止客户端注册账号。
+        api_key_text: '您可以选择将垃圾信息发送者报告给 StopForumSpam，以保持整个论坛社区免受垃圾信息干扰。'
+        block_tor_exit_nodes_help: '启用后，来自已知 Tor 出口节点的注册将被自动拦截。这有助于防止匿名垃圾注册，但也可能阻止出于隐私原因使用 Tor 的合法用户。'
+        block_tor_exit_nodes_label: '拦截 Tor 出口节点'
+        confidence_help: 置信度评分是判断被测字段是否会导致违规行为的一个相当好的指标。请以百分比形式设置您的置信度等级。如果该字段等于或高于此数值，注册将被阻止，无论上述“频率”测试结果如何。
         confidence_label: 置信度
-        email_hash_help: '传递邮件地址的 MD5 值。'
-        email_hash_label: 使用散列后的邮箱地址
-        email_label: 邮箱地址滥用检查
-        frequency_help: "所以已启用检查的触发次数。\n例如：如果电子邮件有 1 次命中，而 IP 有 2 次命中，共记 3 次命中。如果阈值设置为 3 或更低，则阻止注册。\n"
+        email_hash_help: '如果您不希望传递电子邮件地址本身，请传递其 MD5 哈希值。此方法会绕过所有黑名单、规范化和混淆绕过检查。'
+        email_hash_label: 使用哈希电子邮件地址
+        email_label: 电子邮件垃圾检查
+        frequency_help: "所有已启用检查项中的垃圾报告总数，达到此数量将触发垃圾过滤器。\n例如：如果电子邮件有 1 次命中，IP 有 2 次命中，总计 3 次命中。如果阈值设置为 3 或更小，我们将阻止该注册。\n"
         frequency_label: 阈值
-        introduction: "使用 <a>StopForumSpam</a> 检查服务，禁止<code>置信度</code>或<code>频率</code>不符合要求的客户端注册账号。\n\n此检查涵盖 <code>fof/oauth</code> 和 <code>fof/passport</code> 的 SSO 注册渠道。其它 SSO 提供程序应该也受支持，但未经测试。\n"
-        ip_label: 'IP 地址滥用检查'
+        introduction: "根据 <a>StopForumSpam</a> 数据库检查新用户注册。如果达到 <code>confidence</code>（置信度）或 <code>frequency</code>（频率）阈值，该用户将无法在您的论坛上完成注册。\n\n也支持通过 <code>fof/oauth</code> 和 <code>fof/passport</code> 进行的 SSO 注册。其他 SSO 提供商应该也可以工作，但尚未经过测试。\n"
+        ip_label: 'IP 地址垃圾检查'
         region_closest_label: 最近
         region_europe_label: 欧洲
         region_us_label: 美国
-        regional_endpoint_help: 默认情况下，我们会使用最近的服务器，以最快的速度检测数据。根据不同国家或地区的法律法规，你可能需要指定数据处理服务器。
-        regional_endpoint_label: 地域
-        report_blocked_registrations_help: '「注册时检查」功能成功拦截注册时，向 StopForumSpam 报告检测数据，用于进一步校验。此功能需要配置 StopForumSpam API 密钥。'
-        report_blocked_registrations_label: 报告拦截信息
-        sfs_lookup_help: '用户注册时，使用 StopForumSpam 服务检查。如果存在注册信息（用户名、IP 地址、电子邮件），且 SFS 置信度不符上面配置的等级，则阻止完成注册。'
-        sfs_lookup_label: 注册时检查
-        username_label: 用户名滥用检查
+        regional_endpoint_help: 默认情况下，我们将查询定向到最近的区域服务器以提供最快响应。如果您希望将流量限制在特定区域（例如为了符合公司或国家的隐私法规），您可以强制连接到特定区域。
+        regional_endpoint_label: 地理访问
+        report_blocked_registrations_help: '当注册被“查询注册信息”功能拦截时，我们将向 StopForumSpam 报告此次尝试，以便更好地确认垃圾行为。需要设置 StopForumSpam API 密钥（见下文）。'
+        report_blocked_registrations_label: 报告被拦截的注册
+        sfs_lookup_help: '如果启用，当新用户在您的论坛注册时，我们将检查 StopForumSpam 数据库。如果找到了该用户（用户名、IP 地址、电子邮件）且该数据点已启用，且 SFS 置信度达到您定义的水平，他们将无法完成注册。'
+        sfs_lookup_label: 查询注册信息
+        username_label: 用户名垃圾检查
   forum:
     message:
       stopforumspam:
-        blocked: 不安全的注册信息，无法完成注册。
+        blocked: 您的注册信息已在垃圾信息防控数据库中被发现，因此您的注册已被拦截。
     post:
-      flagged_as_spam_text: 标记为垃圾信息的文本
+      flagged_as_spam_text: '自动垃圾信息检测 - 分数 {score}'
     spammer_modal:
-      hard_delete_discussions_help: 启用此项，永久删除讨论帖，否则隐藏讨论帖。
-      hard_delete_discussions_label: 删除讨论帖
-      hard_delete_posts_help: 启用此项，永久删除帖子（评论和回复等），否则隐藏帖子。
+      hard_delete_discussions_help: 这将永久删除该用户发起的所有讨论。禁用后，讨论将被隐藏。
+      hard_delete_discussions_label: 删除讨论
+      hard_delete_posts_help: 这将永久删除该用户发表的所有内容（评论、回复等）。禁用后，内容将被隐藏。
       hard_delete_posts_label: 删除帖子
-      hard_delete_user_help: 启用此项，永久删除账号，否则停用帐号。
+      hard_delete_user_help: 这将永久删除该用户。禁用后，用户将被封禁。
       hard_delete_user_label: 删除用户
-      intro: 标记垃圾账号时，会根据已启用的扩展采取多个处置方式。
-      move_discussions_tag_help: 移除讨论帖的所有标签，并统一移动到指定标签旗下。如需保留原始标签，请清空标签配置。
-      move_discussions_tag_label: 隔离讨论帖
-      process_button: 执行
-      report_to_sfs_help: '向 StopForumSpam 共享垃圾账号基本信息（用户名、电子邮件、IP 地址），扩充垃圾账号数据库。'
-      report_to_sfs_label: '报告到 StopForumSpam'
-      title: '标记垃圾账号 {username}'
+      intro: 将用户标记为垃圾广告发布者时，将根据您论坛中可用的扩展程序采取多项操作。
+      move_discussions_tag_help: 这将把该用户发起的所有讨论移动到您在论坛设置中指定的标签。禁用后，讨论将保留在当前标签中。
+      move_discussions_tag_label: 将讨论移动到隔离标签
+      process_button: 处理
+      report_to_sfs_help: '这将向 StopForumSpam 举报该用户的基本信息（用户名、邮箱、IP 地址）。这将有助于防止该用户在其他使用 StopForumSpam 服务的论坛上注册。'
+      report_to_sfs_label: '举报至 StopForumSpam'
+      title: '将 {username} 标记为垃圾广告发布者'
     user_controls:
-      spammer_button: 垃圾账号
+      spammer_button: 垃圾广告发布者

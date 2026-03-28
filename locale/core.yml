@@ -654,6 +654,7 @@ core:
       csrf_token_mismatch: 您已经发呆很长时间了。
       csrf_token_mismatch_return_link: 请返回再试一次
       invalid_confirmation_token: 验证链接已使用或无效。
+      method_not_allowed: 该页面不支持该请求方法。
       not_authenticated: 您没有权限访问此页面，请登录后再试。
       not_found: 您访问的页面不存在。
       not_found_return_link: '返回 {forum}'

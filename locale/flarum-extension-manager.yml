@@ -8,7 +8,7 @@ flarum-extension-manager:
       add_label: 添加认证
       add_modal:
         host_label: 主机
-        host_placeholder: 示例：extiverse.com
+        host_placeholder: 示例：packages.example.com
         submit_button: 提交
         token_label: 令牌
         type_label: 类型
@@ -66,7 +66,7 @@ flarum-extension-manager:
     extensions:
       check_why_it_failed_updating: 为什么无法更新到最新版本？
       install: 安装扩展程序
-      install_help: "填写扩展程序包名，或 <code>提供者/包名:版本</code> 的 <semantic_link>语义化格式</semantic_link> 以安装。欲发现更多扩展程序请前往 {extiverse}。\n"
+      install_help: "请填写扩展包名称以继续。你可以使用格式 <code>vendor/package-name:version</code> 来指定<semantic_link>语义版本</semantic_link>。访问 {link} 浏览扩展。\n"
       proceed: 安装
       remove: 卸载
       successful_install: '{extension} 已成功安装，正在跳转……'

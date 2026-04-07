@@ -30,8 +30,14 @@ ramon-avocado:
       featured_tags_label: 精选分类
       fixed_avatar_effect_help: 在桌面端阅读长评论时，保持帖子头像悬停在侧边。
       fixed_avatar_effect_label: 启用头像固定效果
+      hero_decoration_icon_help: 在讨论页头部的右侧，将副标签图标显示为一个大尺寸的装饰性元素。
+      hero_decoration_icon_label: 在讨论页主区域显示副标签图标
+      hero_decoration_icon_opacity_help: '将装饰性图标的不透明度设置为百分比值。100 = 完全不透明，0 = 完全不可见。'
+      hero_decoration_icon_opacity_label: 图标不透明度（0-100）
       hero_image_position_help: 'CSS background-position 属性值，例如 ''center top'' 或 ''50% 20%''。'
       hero_image_position_label: 横幅图片位置
+      hide_links_for_guests_help: 防止访客点击帖子中的链接。点击链接时，将显示登录/注册提示，而非直接跳转。
+      hide_links_for_guests_label: 对访客隐藏链接
       logo_enabled_help: '在页眉中显示自定义 Logo。'
       logo_enabled_label: '启用自定义 Logo'
       logo_svg_help: '为您的论坛上传自定义 SVG 格式 Logo。'
@@ -52,6 +58,8 @@ ramon-avocado:
       show_guest_cta_label: '显示游客引导信息 (CTA)'
       show_online_users_help: 在界面上显示当前在线用户的数量。
       show_online_users_label: 显示在线用户数
+      show_post_cta_help: 在讨论的第一条帖子后面显示一个登录/注册卡片，仅对访客可见。
+      show_post_cta_label: 在首条帖子之后向访客显示“加入/参与”的引导提示（CTA）
       show_share_help: 为每条帖子添加分享操作按钮。
       show_share_label: 在帖子中显示分享按钮
   forum:
@@ -60,6 +68,8 @@ ramon-avocado:
     discussions:
       home: 返回首页
       title: 所有讨论
+    header:
+      back_home: 返回首页
     home:
       all_categories: 所有分类
       all_title: 所有讨论
@@ -96,6 +106,10 @@ ramon-avocado:
       today_time: '今天 {time}'
       untitled: 无标题
       yesterday_time: '昨天 {time}'
+    link_cta:
+      placeholder: 登录以查看链接
+    post_cta:
+      text: 喜欢你所看到的吗？加入讨论吧！
     tags:
       discussion_plural: 讨论
       discussion_singular: 讨论

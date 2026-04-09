@@ -6,9 +6,9 @@ flarum-gdpr:
   lib:
     data:
       masqueradeanswers:
-        anonymize_description: 将用户的自定义资料字段回答匿名化处理。
-        delete_description: 删除用户的自定义资料字段回答。
-        export_description: 用户填写的自定义资料字段回答。
+        anonymize_description: 删除用户账户中的所有自定义资料字段答案
+        delete_description: 删除用户账户中的所有个人资料字段答案
+        export_description: 导出用户个人的资料字段答案
 fof-masquerade:
   admin:
     buttons:

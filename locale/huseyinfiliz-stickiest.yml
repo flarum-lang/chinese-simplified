@@ -11,7 +11,7 @@ huseyinfiliz-stickiest:
       tag_sticky_label: 标签置顶讨论
     settings:
       badge_icon_label: 超级置顶徽章图标
-      badge_icon_text: '=> core.ref.icon_text'
+      badge_icon_text: 图标文本
       display_tag_sticky_label: 在“全部讨论”列表中显示标签置顶
       display_tag_sticky_text: 它们将作为普通讨论显示，不会固定在顶部。
       show_sticky_highlight_help: 启用后，置顶讨论将在列表中显示彩色左边框和背景高亮。
@@ -23,28 +23,28 @@ huseyinfiliz-stickiest:
   forum:
     badge:
       stickiest_tooltip: 超级置顶
-      sticky_tooltip: '=> huseyinfiliz-stickiest.ref.sticky'
-      super_sticky_tooltip: '=> huseyinfiliz-stickiest.ref.super_sticky'
-      super_tag_sticky_tooltip: '=> huseyinfiliz-stickiest.ref.super_tag_sticky'
-      tag_sticky_tooltip: '=> huseyinfiliz-stickiest.ref.tag_sticky'
+      sticky_tooltip: 已设为置顶
+      super_sticky_tooltip: 已设为超级置顶
+      super_tag_sticky_tooltip: 已设为超级标签置顶
+      tag_sticky_tooltip: 已设为标签置顶
     discussion_controls:
-      sticky_button: '=> flarum-sticky.forum.discussion_controls.sticky_button'
+      sticky_button: 置顶
     post_stream:
       discussion_common_stickied_text: '{username} 取消了该讨论的超级置顶。'
-      discussion_stickied_text: '=> flarum-sticky.forum.post_stream.discussion_stickied_text'
+      discussion_stickied_text: 此讨论已被置顶
       discussion_stickiest_text: '{username} 将该讨论设为超级置顶。'
       discussion_super_stickied_text: '{username} 将该讨论设为超级置顶。'
-      discussion_unstickied_text: '=> flarum-sticky.forum.post_stream.discussion_unstickied_text'
+      discussion_unstickied_text: 此讨论已被取消置顶
       discussion_unstickiest_text: '{username} 取消了该讨论的超级置顶。'
     stickiest_modal:
-      sticky_label: '=> flarum-sticky.ref.sticky'
+      sticky_label: 引用置顶
       sticky_text: 置顶讨论在“全部讨论”列表中未读时会显示在顶部，在查看所属标签时始终置顶。
-      submit_button: '=> core.ref.save_changes'
-      super_sticky_label: '=> huseyinfiliz-stickiest.ref.super_sticky'
+      submit_button: 保存更改
+      super_sticky_label: 已设为超级置顶
       super_sticky_text: 超级置顶的讨论将在任何情况下始终位于最顶部。
-      tag_sticky_label: '=> huseyinfiliz-stickiest.ref.tag_sticky'
+      tag_sticky_label: 已设为标签置顶
       tag_sticky_text: 标签置顶默认不会在“全部讨论”中显示。只有在查看指定标签时才会显示并置顶。此选项可与“超级置顶”同时使用。
-      tags_label: '=> flarum-tags.ref.tags'
+      tags_label: 标签
       title: '设置置顶：{title}'
     sticky_modal:
       select_tags: 选择标签
@@ -57,7 +57,7 @@ huseyinfiliz-stickiest:
       tag_sticky_label: 标签置顶
       title: '置顶设置：{title}'
   ref:
-    sticky: '=> flarum-sticky.ref.sticky'
+    sticky: 已设为置顶
     super_sticky: 超级置顶
     super_tag_sticky: 超级标签置顶
     tag_sticky: 标签置顶

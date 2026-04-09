@@ -11,6 +11,13 @@ ekumanov-forum-widgets:
       view_posts_count: 查看帖子总数
       view_users_count: 查看用户总数
     settings:
+      bar_position_above: 上方
+      bar_position_below: 下方
+      bar_position_desktop: 桌面端侧边栏位置
+      bar_position_desktop_help: 在桌面端上，侧边栏显示在主要内容区域的哪个位置。
+      bar_position_inside: 内部
+      bar_position_mobile: 移动端侧边栏位置
+      bar_position_mobile_help: 在移动设备上，侧边栏显示在哪个位置。
       ignore_private_discussions: 统计总数时忽略私密讨论
       last_seen_interval: 在线判定间隔（分钟）
       last_seen_interval_help: 用户最后一次活动在此分钟数内将被视为在线。
@@ -25,11 +32,19 @@ ekumanov-forum-widgets:
       section_online_users_help: 配置在展开的小部件面板中显示的在线用户设置。
       section_statistics: 论坛统计
       section_statistics_help: 配置讨论总数、帖子总数、用户总数以及最新注册统计的缓存设置。
+      show_discussions_count: 显示讨论总数
+      show_latest_registration: 显示最新注册用户
       show_online_users: 显示在线用户
       show_online_users_help: 开启或完全禁用在线用户功能。禁用后，系统将不再收集或显示在线用户数据。
+      show_posts_count: 显示帖子总数
+      show_users_count: 显示用户总数
       stats_cache_duration: 统计数据缓存时长（秒）
       stats_cache_duration_help: '各项统计数据的缓存时间。当有新的讨论、帖子或用户创建/删除时，缓存会自动失效。设为 0 则禁用缓存（不建议大型论坛使用）。'
-      widget_position: 侧边栏显示位置（优先级）
+      widget_layout: 小部件布局
+      widget_layout_classic: 经典布局
+      widget_layout_full_width: 全宽布局
+      widget_layout_help: 选择侧边栏小部件的布局方式。
+      widget_position: 侧边栏显示顺序（优先级）
       widget_position_help: 控制小部件在侧边栏中的显示顺序。数值越低（负值越大）位置越靠下。默认值：-10。
   forum:
     aria:
@@ -43,13 +58,17 @@ ekumanov-forum-widgets:
       overflow_more: 更多
       title: 在线用户
     stats:
-      discussions_count: '讨论: {count}'
-      latest_registration: '最新注册:'
-      posts_count: '帖子: {count}'
+      discussions_count: '讨论：{count}'
+      label_discussions: 讨论
+      label_online: 在线
+      label_posts: 帖子
+      label_users: 用户
+      latest_registration: 最新注册：
+      posts_count: '帖子：{count}'
       title: 论坛统计
       tooltip_discussions: 讨论
-      tooltip_latest_registration: '最新注册: {name}'
+      tooltip_latest_registration: '最新注册：{name}'
       tooltip_online: 在线用户
       tooltip_posts: 帖子
       tooltip_users: 用户
-      users_count: '用户: {count}'
+      users_count: '用户：{count}'

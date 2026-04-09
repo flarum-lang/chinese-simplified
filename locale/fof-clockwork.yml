@@ -6,3 +6,9 @@ fof-clockwork:
   admin:
     dashboard:
       button_label: '打开 Clockwork'
+      section_label: Clockwork
+    settings:
+      disable_auth_help: '允许未登录访问 Clockwork。'
+      disable_auth_label: 禁用身份验证
+      disable_auth_warning: 警告：禁用后调试数据可被公开访问。
+      section_label: Clockwork

@@ -135,8 +135,8 @@ ramon-avocado:
       enter_search_term: 请输入搜索关键词
       hero_sub: 搜索您感兴趣的内容
       hero_title: 你在找什么？
-      no_posts_found: 未找到相关帖子
-      no_posts_match: 没有与搜索条件匹配的帖子
+      no_posts_found: '未找到与“{q}”匹配的帖子。'
+      no_posts_match: 没有符合筛选条件的帖子。
       no_users_found: 未找到相关用户
       placeholder: 搜索讨论、帖子或用户…
       placeholder_hero: 搜索…

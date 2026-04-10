@@ -132,12 +132,12 @@ ramon-avocado:
       text: 喜欢正在看的内容？加入讨论吧！
     search:
       clear: 清空
-      enter_search_term: 请输入搜索关键词
+      enter_search_term: 输入关键词以查找用户。
       hero_sub: 搜索您感兴趣的内容
       hero_title: 你在找什么？
       no_posts_found: '未找到与“{q}”匹配的帖子。'
       no_posts_match: 没有符合筛选条件的帖子。
-      no_users_found: 未找到相关用户
+      no_users_found: '没有找到与“{q}”相关的用户。'
       placeholder: 搜索讨论、帖子或用户…
       placeholder_hero: 搜索…
       search_button: 搜索

@@ -7,37 +7,38 @@ ramon-avocado:
     footer_settings:
       footer_company: 公司信息
       footer_company_description: 公司描述
-      footer_company_description_placeholder: 简要描述您的公司或论坛...
-      footer_company_logo_url: '公司 Logo URL'
+      footer_company_description_placeholder: 简要描述您的公司或论坛…
+      footer_company_logo_url: '公司 Logo 地址'
       footer_company_name: 公司名称
       footer_copyright_text: 版权文本
       footer_enabled: 启用自定义页脚
       footer_footer_bottom: 页脚底部
       footer_links_config: 页脚链接配置
-      footer_links_help_json: '以 JSON 格式配置页脚链接列。每列应包含一个标题（title）以及包含标签（label）和链接（url）的对象列表。'
+      footer_links_help_json: '以 JSON 格式配置页脚链接列。每列应包含标题（title）以及包含标签（label）和链接（url）的对象列表。'
       footer_show_social: 显示社交媒体链接
       footer_social: 社交媒体链接
-      footer_social_help_json: '以 JSON 格式配置社交媒体链接。可使用的键包括：facebook, twitter, linkedin, instagram, youtube。'
+      footer_social_help_json: '以 JSON 格式配置社交媒体链接。可使用的键包括：facebook、twitter、linkedin、instagram、youtube。'
+    loading: 加载中…
     settings:
       auth_image_help: 显示在登录、注册和找回密码弹窗右侧面板的背景图片。
-      auth_image_label: 身份验证弹窗图片
+      auth_image_label: 认证弹窗图片
       banner_image_help: 上传显示在论坛顶部的横幅（Hero）图片。
       banner_image_label: 横幅图片
       custom_default_avatar_help: 为没有上传头像的用户上传自定义默认头像图片。
       custom_default_avatar_label: 自定义默认头像
       featured_tags_empty: 未找到标签。
-      featured_tags_help: 所选分类将在首页和分类页面中以星标徽章突出显示。
-      featured_tags_label: 精选分类
-      fixed_avatar_effect_help: 在桌面端阅读长评论时，保持帖子头像悬停在侧边。
+      featured_tags_help: 所选标签将在首页和标签页中以星标徽章突出显示。
+      featured_tags_label: 精选标签
+      fixed_avatar_effect_help: 在桌面端阅读长帖时，保持帖子头像悬停在侧边。
       fixed_avatar_effect_label: 启用头像固定效果
-      hero_decoration_icon_help: 在讨论页头部的右侧，将副标签图标显示为一个大尺寸的装饰性元素。
+      hero_decoration_icon_help: 在讨论页头部的右侧，将副标签图标显示为大尺寸装饰性元素。
       hero_decoration_icon_label: 在讨论页主区域显示副标签图标
-      hero_decoration_icon_opacity_help: '将装饰性图标的不透明度设置为百分比值。100 = 完全不透明，0 = 完全不可见。'
+      hero_decoration_icon_opacity_help: '设置装饰性图标的不透明度百分比。100 = 完全不透明，0 = 完全不可见。'
       hero_decoration_icon_opacity_label: 图标不透明度（0-100）
       hero_image_position_help: 'CSS background-position 属性值，例如 ''center top'' 或 ''50% 20%''。'
       hero_image_position_label: 横幅图片位置
-      hide_links_for_guests_help: 防止访客点击帖子中的链接。点击链接时，将显示登录/注册提示，而非直接跳转。
-      hide_links_for_guests_label: 对访客隐藏链接
+      hide_links_for_guests_help: 阻止游客点击帖子中的链接。点击时显示登录/注册提示，而非直接跳转。
+      hide_links_for_guests_label: 对游客隐藏链接
       logo_enabled_help: '在页眉中显示自定义 Logo。'
       logo_enabled_label: '启用自定义 Logo'
       logo_svg_help: '为您的论坛上传自定义 SVG 格式 Logo。'
@@ -55,23 +56,30 @@ ramon-avocado:
       show_auth_buttons_help: 在页眉次级导航中为游客显示药丸样式的登录和注册按钮。
       show_auth_buttons_label: 为游客在页眉显示登录/注册按钮
       show_guest_cta_help: 为游客显示引导注册/登录的鼓励信息。
-      show_guest_cta_label: '显示游客引导信息 (CTA)'
+      show_guest_cta_label: 显示游客引导信息
       show_online_users_help: 在界面上显示当前在线用户的数量。
       show_online_users_label: 显示在线用户数
-      show_post_cta_help: 在讨论的第一条帖子后面显示一个登录/注册卡片，仅对访客可见。
-      show_post_cta_label: 在首条帖子之后向访客显示“加入/参与”的引导提示（CTA）
+      show_post_cta_help: 在讨论的第一条帖子后面显示登录/注册卡片，仅对游客可见。
+      show_post_cta_label: 在首条帖子后向游客显示“参与讨论”引导
       show_share_help: 为每条帖子添加分享操作按钮。
       show_share_label: 在帖子中显示分享按钮
   forum:
     actions:
       share: 分享
+    discussion:
+      participant_plural: 人参与
+      participant_singular: 人参与
+      post_plural: 条回复
+      post_singular: 条回复
     discussions:
       home: 返回首页
+      load_more: 加载更多
       title: 所有讨论
     header:
       back_home: 返回首页
+      search: 搜索
     home:
-      all_categories: 所有分类
+      all_categories: 全部分类
       all_title: 所有讨论
       back_home: 首页
       badge_following: 已关注
@@ -83,6 +91,9 @@ ramon-avocado:
       composer_post: 发布讨论
       composer_submitting: 发布中…
       composer_title_placeholder: 讨论标题…
+      discussion_plural_card: '{count} 个讨论'
+      discussion_singular: 个讨论
+      discussion_singular_card: 个讨论
       discussions: 讨论
       filter_tags: 筛选标签
       following_heading: 我的关注
@@ -94,27 +105,55 @@ ramon-avocado:
       new_discussion: 发起讨论
       no_tags_found: 未找到标签
       popular_heading: 热门讨论
+      post_plural: '{count} 个帖子'
+      post_singular: 个帖子
       replies: 回复
       reply_count_plural: '{count} 条回复'
       reply_count_singular: '1 条回复'
       reply_label: 回复
+      reply_plural: 条回复
+      reply_singular: 条回复
       see_all: 查看全部
       see_other_replies: '查看另外 {count} 条回复'
       see_other_reply_singular: '查看另外 {count} 条回复'
       sign_up: 注册
-      start_discussion: 分享一下你正在做的事情...
-      today_time: '今天 {time}'
+      sort_trending: 趋势
+      start_discussion: 分享一下你正在做的事情…
+      today_time: '今天 ，{time}'
       untitled: 无标题
-      yesterday_time: '昨天 {time}'
+      view: 查看
+      view_post: 查看帖子
+      yesterday_time: '昨天 ，{time}'
     link_cta:
       placeholder: 登录以查看链接
     post:
       op_badge: 楼主
     post_cta:
-      text: 喜欢你所看到的吗？加入讨论吧！
+      text: 喜欢正在看的内容？加入讨论吧！
+    search:
+      clear: 清空
+      enter_search_term: 请输入搜索关键词
+      hero_sub: 搜索您感兴趣的内容
+      hero_title: 你在找什么？
+      no_posts_found: 未找到相关帖子
+      no_posts_match: 没有与搜索条件匹配的帖子
+      no_users_found: 未找到相关用户
+      placeholder: 搜索讨论、帖子或用户…
+      placeholder_hero: 搜索…
+      search_button: 搜索
+      sort_latest: 最新
+      sort_newest: 最新发布
+      sort_oldest: 最早发布
+      sort_relevance: 相关度
+      sort_top: 热门
+      tab_discussions: 讨论
+      tab_posts: 帖子
+      tab_users: 用户
+      title: 搜索
     tags:
-      discussion_plural: 讨论
-      discussion_singular: 讨论
+      all_discussions: 所有讨论
+      discussion_plural: 个讨论
+      discussion_singular: 个讨论
       featured: 精选
       other_tags_label: 其他标签
       title: 分类

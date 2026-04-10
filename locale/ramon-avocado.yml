@@ -108,6 +108,8 @@ ramon-avocado:
       yesterday_time: '昨天 {time}'
     link_cta:
       placeholder: 登录以查看链接
+    post:
+      op_badge: 楼主
     post_cta:
       text: 喜欢你所看到的吗？加入讨论吧！
     tags:

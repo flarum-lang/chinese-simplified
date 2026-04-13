@@ -92,3 +92,5 @@ resofire-digest-mail:
       frequency_weekly: 每周摘要
       save_error: 保存设置时出错，请重试。
       saved: 设置已保存
+  unsubscribe:
+    daily_desc: 每天发送一封包含最新动态的邮件。

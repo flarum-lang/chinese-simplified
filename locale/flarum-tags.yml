@@ -73,8 +73,8 @@ flarum-tags:
     gambits:
       discussions:
         tag:
-          hint: 标签名称，或以逗号分隔的标签列表，或“untagged”（未分类）
-          key: tag
+          hint: 单个标签名称、多个名称（用逗号分隔），或输入“untagged”表示未打标签的内容
+          key: 标签
     tag_selection_modal:
       bypass_requirements: 忽略标签选择
       choose_primary_placeholder: '{count, plural, one {请选择一个主标签} other {请选择 # 个主标签}}'

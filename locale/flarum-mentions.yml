@@ -63,4 +63,4 @@ flarum-mentions:
       posts:
         mentioned:
           hint: '被提及用户的 ID 或用户名'
-          key: mentioned
+          key: 提及

@@ -335,7 +335,7 @@ core:
       email_title: '=> core.admin.email.description'
       permissions_button: '=> core.admin.permissions.title'
       permissions_title: '=> core.admin.permissions.description'
-      search_placeholder: 搜索
+      search_placeholder: 搜索扩展
       userlist_button: '=> core.admin.users.title'
       userlist_title: '=> core.admin.users.description'
     permissions:
@@ -526,8 +526,8 @@ core:
       log_in_link: '=> core.ref.log_in'
       log_out_button: '=> core.ref.log_out'
       profile_button: 个人主页
-      search_placeholder: 搜索
-      search_role_label: 搜索论坛
+      search_placeholder: 搜索社区
+      search_role_label: 搜索社区
       session_dropdown_accessible_label: 会话下拉菜单开关
       settings_button: 设置
       sign_up_link: '=> core.ref.sign_up'

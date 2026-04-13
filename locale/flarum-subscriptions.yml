@@ -12,14 +12,14 @@ flarum-subscriptions:
       subject: '【新帖】{title}'
   forum:
     badge:
-      following_tooltip: '=> flarum-subscriptions.ref.following'
-      ignoring_tooltip: '=> flarum-subscriptions.ref.ignoring'
+      following_tooltip: 正在关注
+      ignoring_tooltip: 已忽略
     discussion_controls:
-      follow_button: '=> flarum-subscriptions.ref.follow'
+      follow_button: 关注
       unfollow_button: 取消关注
       unignore_button: 取消忽略
     following:
-      meta_title_text: '=> flarum-subscriptions.ref.following'
+      meta_title_text: 正在关注
     index:
       following_link: 我的关注
     notifications:
@@ -30,10 +30,10 @@ flarum-subscriptions:
       notify_for_all_posts_label: 通知每一个新帖，而非仅最后一个
       notify_new_post_label: 我关注的讨论有新回复
     sub_controls:
-      follow_button: '=> flarum-subscriptions.ref.follow'
-      following_button: '=> flarum-subscriptions.ref.following'
+      follow_button: 关注
+      following_button: 正在关注
       following_text: 当有人回复此讨论时通知我。
-      ignoring_button: '=> flarum-subscriptions.ref.ignoring'
+      ignoring_button: 已忽略
       ignoring_text: 不接收任何通知并从讨论列表中隐藏此讨论。
       not_following_button: 不关注
       not_following_text: 仅当有人提及我时通知我。
@@ -43,8 +43,8 @@ flarum-subscriptions:
     gambits:
       discussions:
         subscription:
-          following_key: following
-          ignoring_key: ignoring
+          following_key: 正在关注
+          ignoring_key: 已忽略
   ref:
     follow: 关注
     following: 关注中

@@ -33,7 +33,7 @@ flarum-subscriptions:
       follow_button: 关注
       following_button: 正在关注
       following_text: 当有人回复此讨论时通知我。
-      ignoring_button: 已忽略
+      ignoring_button: 忽略
       ignoring_text: 不接收任何通知并从讨论列表中隐藏此讨论。
       not_following_button: 不关注
       not_following_text: 仅当有人提及我时通知我。
@@ -43,8 +43,8 @@ flarum-subscriptions:
     gambits:
       discussions:
         subscription:
-          following_key: 正在关注
-          ignoring_key: 已忽略
+          following_key: following
+          ignoring_key: ignoring
   ref:
     follow: 关注
     following: 关注中

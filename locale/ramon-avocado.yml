@@ -77,6 +77,7 @@ ramon-avocado:
       title: 所有讨论
     header:
       back_home: 返回首页
+      or: 或
       search: 搜索
     home:
       all_categories: 全部分类
@@ -104,7 +105,9 @@ ramon-avocado:
       more: 更多
       new_discussion: 发起讨论
       no_tags_found: 未找到标签
+      or: 或
       popular_heading: 热门讨论
+      popular_no_discussions: 暂无讨论。
       post_plural: '{count} 个帖子'
       post_singular: 个帖子
       replies: 回复
@@ -116,6 +119,7 @@ ramon-avocado:
       see_all: 查看全部
       see_other_replies: '查看另外 {count} 条回复'
       see_other_reply_singular: '查看另外 {count} 条回复'
+      showcase_heading: 展示
       sign_up: 注册
       sort_trending: 趋势
       start_discussion: 分享一下你正在做的事情…
@@ -129,6 +133,7 @@ ramon-avocado:
     post:
       op_badge: 楼主
     post_cta:
+      or: 或
       text: 喜欢正在看的内容？加入讨论吧！
     search:
       clear: 清空
@@ -151,9 +156,10 @@ ramon-avocado:
       tab_users: 用户
       title: 搜索
     tags:
-      all_discussions: 所有讨论
+      all_discussions: '所以话题    链接：'
       discussion_plural: 个讨论
       discussion_singular: 个讨论
       featured: 精选
+      login_to_view: 登录以查看链接
       other_tags_label: 其他标签
       title: 分类

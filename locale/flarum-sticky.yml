@@ -12,7 +12,7 @@ flarum-sticky:
       only_sticky_unread_discussions_label: 仅置顶未读讨论
   forum:
     badge:
-      sticky_tooltip: '=> flarum-sticky.ref.sticky'
+      sticky_tooltip: 置顶
     discussion_controls:
       sticky_button: 置顶讨论
       unsticky_button: 取消置顶

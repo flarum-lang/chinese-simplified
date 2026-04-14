@@ -5,17 +5,84 @@
 ianm-html-head:
   admin:
     create_button: 新建
+    help:
+      cache: '渲染后的 HTML 在保存时即被缓存。任何更改都会立即生效，无需清除整站缓存。'
+      intro: '添加自定义标签并将其注入到论坛的 HTML 中。会被缓存并高效地提供服务——每次页面加载都不会产生数据库查询。'
+      location: '每个条目均可选择注入到 <head> 标签内，或 <body> 结束标签之前。'
+      pages: 每个条目均可选择作用于论坛前台、管理后台，或两者皆可。
+      preconnect: '指向外部域名的链接标签和脚本标签会自动生成预连接（preconnect）和 DNS 预获取（dns-prefetch）提示，从而在浏览器实际请求资源之前提前建立连接。'
     modal:
       create_title: 新建元素
+      description_help: 用于内部识别的简短说明。
       description_label: 描述
       edit_title: 编辑元素
       header_label: 自定义头部元素
+      link:
+        as_help: '仅当 rel="preload" 或 rel="modulepreload" 时使用。'
+        as_label: 资源类型（as）
+        crossorigin_help: '设置是否使用 CORS 请求。'
+        crossorigin_label: 跨域设置（crossorigin）
+        extras_add: 添加
+        extras_label: 额外属性
+        extras_remove: 移除
+        fetchpriority_default: 默认
+        fetchpriority_help: 指示浏览器相对优先级。
+        fetchpriority_label: 获取优先级（fetchpriority）
+        href_label: 链接地址（href）
+        rel_label: 关系（rel）
+      location:
+        foot: '底部（</body> 前）'
+        head: 头部（<head>）
+      location_help: '选择插入到 <head> 标签内，或 <body> 结束标签前。'
+      location_label: 插入位置
+      meta:
+        content_label: 内容（content）
+        name_label: 名称（name）
+        property_label: 属性（property）
+        variant_label: 类型
+      pages:
+        admin: 管理后台
+        forum: 论坛前台
+      pages_label: 生效页面
+      preview_empty: （无内容）
+      preview_label: 预览
+      raw:
+        content_label: '原始 HTML 内容'
+        help_text: '直接输入任意 HTML 代码，会原样输出。'
       save_button: 保存
+      script:
+        async_help: 下载后立即执行，不阻塞解析。
+        async_label: 异步执行（async）
+        crossorigin_help: '设置模块或脚本的 CORS 行为。'
+        crossorigin_label: 跨域设置（crossorigin）
+        defer_help: '解析完 HTML 后再执行。'
+        defer_label: 延迟执行（defer）
+        external_label: 外部脚本
+        inline_content_label: 脚本内容
+        inline_label: 内联脚本
+        module_help: '作为 ES 模块加载。'
+        module_label: '模块（type="module"）'
+        src_label: 脚本地址（src）
+      style:
+        inline_help: '直接写入 CSS 规则。'
+        inline_label: 内联样式
       text: 请确保语法正确，因为在<head>标签中提供不正确的数据可能会使论坛出错。保存后，请使用开关按钮启用头部元素。
+      type:
+        link: 链接资源（Link）
+        meta: 元标签（Meta）
+        raw: 原始内容（Raw）
+        script: 脚本（Script）
+        style: 样式（Style）
+      type_label: 元素类型
     table:
       active_label: 启用
       delete_button: 删除
+      delete_confirm: 确定要删除此头部元素吗？
       description_label: 描述
+      drag_handle: 拖拽排序
       edit_button: 编辑
       empty_text: 尚无条目
       header_label: 头部
+      location_label: 位置
+      pages_label: 页面范围
+      type_label: 类型

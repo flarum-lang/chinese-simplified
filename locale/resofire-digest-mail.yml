@@ -5,92 +5,187 @@
 resofire-digest-mail:
   admin:
     onboarding:
-      frequency_help: 新用户的默认摘要频率。
-      frequency_label: 默认频率
-      mode_auto_enroll: 自动订阅所有用户
-      mode_help: 如何让用户订阅摘要邮件。
+      frequency_help: 新用户自动订阅的摘要频率。仅可选上方“用户频率选项”中已启用的频率。
+      frequency_label: 自动订阅频率
+      mode_auto_enroll: 自动订阅新用户
+      mode_help: 控制新用户账号激活时如何订阅摘要邮件。
       mode_label: 引导模式
-      mode_none: 不启用引导
-      mode_opt_in_modal: 弹窗让用户选择订阅
-      section_heading: 摘要邮件引导设置
+      mode_none: '无默认 —— 用户自行选择偏好'
+      mode_opt_in_modal: 显示选择订阅弹窗
+      section_heading: 新用户引导
     settings:
-      enable_awards_help: 在摘要中显示用户的奖励/荣誉。
-      enable_awards_label: 启用奖励展示
-      featured_discussion_help: '在摘要中置顶显示的讨论 ID（多个用逗号分隔）。'
-      featured_discussion_label: 精选讨论
-      hot_recency_weight_help: 计算热门讨论时发布时间的重要性。
-      hot_recency_weight_label: 热门讨论时效权重
-      hot_reply_weight_help: 计算热门讨论时回复数的重要性。
-      hot_reply_weight_label: 热门讨论回复权重
-      limit_badges_help: 在摘要中显示的勋章数量。
-      limit_badges_label: 勋章数量限制
-      limit_favorites_help: 在摘要中显示的收藏内容数量。
-      limit_favorites_label: 收藏数量限制
-      limit_gamepedia_help: 在摘要中包含的游戏百科条目数量。
-      limit_gamepedia_label: 游戏百科数量限制
-      limit_hot_help: 在摘要中包含的热门讨论数量。
-      limit_hot_label: 热门讨论数量限制
-      limit_leaderboard_help: 在摘要中显示的用户排行数量。
-      limit_leaderboard_label: 排行榜数量限制
-      limit_members_help: 在摘要中显示的新成员数量。
-      limit_members_label: 成员数量限制
-      limit_new_help: 在摘要中包含的新讨论数量。
-      limit_new_label: 新讨论数量限制
-      limit_pickem_help: 在摘要中包含的竞猜内容数量。
-      limit_pickem_label: 竞猜数量限制
-      limit_resofire_gamepedia_help: '在摘要中包含的 Resofire 游戏百科条目数量。'
-      limit_resofire_gamepedia_label: 'Resofire 游戏百科数量限制'
-      limit_unread_help: 在摘要中包含的未读讨论数量。
-      limit_unread_label: 未读讨论数量限制
-      monthly_day_help: 每月几号发送摘要（1-28）。
-      monthly_day_label: 每月发送日
-      queue_chunk_size_help: 每次处理邮件的数量。
+      enable_awards_help: '在摘要邮件中展示进行中和即将开始的奖项评选。需要安装 huseyinfiliz/awards。'
+      enable_awards_label: 奖项评选
+      featured_discussion_help: '输入讨论 ID 以将其置顶为每份摘要顶部的精选讨论。留空则不显示精选讨论。'
+      featured_discussion_label: '精选讨论 ID'
+      hot_recency_weight_help: '时效性对热门程度的影响程度。值越高，新帖子的分数越高。设为 0 则仅按回复数排序。'
+      hot_recency_weight_label: '热门分数 —— 时效权重'
+      hot_reply_weight_help: 每条回复对讨论热门分数的贡献程度。值越高，越偏向回复驱动。
+      hot_reply_weight_label: '热门分数 —— 回复权重'
+      limit_badges_help: '摘要邮件中列出的最近获得勋章的用户数量上限（默认为 5，最小为 3）。需要安装 fof/badges。'
+      limit_badges_label: '勋章 —— 最近获得者数量上限'
+      limit_favorites_help: '显示的收藏讨论数量上限，根据期间收到的点赞/反应数排序（默认为 6，最小为 3）。设为 0 表示禁用。如果启用了 fof/reactions 则使用反应数，否则使用 Flarum 原生点赞数。'
+      limit_favorites_label: '收藏讨论 —— 最大条目数'
+      limit_gamepedia_help: '在“讨论最多的游戏”和“最近新增的游戏”版块中显示的游戏数量上限（默认为 5，最小为 3）。需要安装 huseyinfiliz/gamepedia。'
+      limit_gamepedia_label: 'Gamepedia —— 每个版块的最大游戏数量'
+      limit_hot_help: 每份摘要中包含的活跃（热门）讨论数量上限。
+      limit_hot_label: '活跃讨论 —— 最大条目数'
+      limit_leaderboard_help: '摘要邮件中显示的排行榜条目数量（默认为 10，最小为 3）。需要安装 huseyinfiliz-leaderboard。'
+      limit_leaderboard_label: 排行榜条目数
+      limit_members_help: 每份摘要中显示的新成员数量上限。
+      limit_members_label: '新成员 —— 最大条目数'
+      limit_new_help: 每份摘要中包含的新讨论数量上限。
+      limit_new_label: '新讨论 —— 最大条目数'
+      limit_pickem_help: '摘要邮件中显示的即将开始的比赛、最新结果和排行榜条目的最大数量（默认为 5，最小为 3）。需要安装 huseyinfiliz/pickem。'
+      limit_pickem_label: 'Pick''em —— 每个版块的最大条目数'
+      limit_resofire_gamepedia_help: '在“讨论最多的游戏”、“最近新增的游戏”和“热门游戏类型”版块中显示的游戏数量上限（默认为 5，最小为 3）。需要安装 resofire/gamepedia。'
+      limit_resofire_gamepedia_label: 'Resofire Gamepedia —— 每个版块的最大游戏数量'
+      limit_unread_help: 为每位收件人展示的未读讨论数量上限。
+      limit_unread_label: '未读讨论 —— 最大条目数'
+      monthly_day_help: '每月摘要的发送日期（几号）。上限为 28，以确保二月也能正常工作。'
+      monthly_day_label: '每月摘要 —— 发送日'
+      queue_chunk_size_help: '每个调度分钟分发的用户数量（默认为 200，最小 50，最大 10000）。小型论坛：200–500。使用专用服务器的大型论坛：1000–10000。较高的值完成更快，但每个周期使用更多内存。'
       queue_chunk_size_label: 队列块大小
-      queue_delay_help: 每批次邮件发送的间隔秒数。
-      queue_delay_label: 队列延迟时间（秒）
-      queue_name_help: 用于邮件任务的队列名称。
+      queue_delay_help: '队列任务变为可处理前的延迟秒数（默认为 0）。在窗口模式下通常不需要此设置——窗口本身会分散负载。仅在大型论坛上使用两阶段 digest:enqueue 命令时才有用。'
+      queue_delay_label: 任务延迟（秒）
+      queue_name_help: '摘要任务被推送到的指定队列名称。必须与 queue:work 定时任务中的 --queue 参数匹配。默认值：digest。'
       queue_name_label: 队列名称
-      queue_tries_help: 邮件发送失败时的最大重试次数。
-      queue_tries_label: 队列重试次数
-      send_hour_help: 每天/周/月发送摘要的小时（0-23）。
-      send_hour_label: 发送时间（小时）
-      send_window_end_help: 允许发送的时间窗口结束时间（小时）。
-      send_window_end_label: 发送窗口结束时间
-      send_window_start_help: 允许发送的时间窗口开始时间（小时）。
-      send_window_start_label: 发送窗口开始时间
-      timezone_help: 发送摘要使用的服务器时区。
-      timezone_label: 时区
-      weekly_day_help: 每周几发送摘要（0=周日，6=周六）。
-      weekly_day_label: 每周发送日
+      queue_tries_help: '失败的摘要任务在被移到失败任务表之前将重试的次数（默认为 3）。重试使用指数退避策略：30 秒、60 秒、120 秒。注意：如果您安装了 blomstra/database-queue，它有自己的重试次数设置——实际生效的是两者中较小的值。建议将两个扩展的设置设为相同值。'
+      queue_tries_label: 最大重试次数
+      send_hour_help: 摘要邮件开始发送的时间点（小时）。
+      send_hour_label: 发送小时
+      send_window_end_help: '保持与开始时间相同可一次性发送所有邮件。设置为更晚的时间可将发送分散到数小时内——推荐大型论坛使用。例如，凌晨 2 点开始、4 点结束，意味着邮件将在凌晨 2 点到 4 点之间逐渐发送。'
+      send_window_end_label: 发送结束时间（可选）
+      send_window_start_help: 摘要邮件开始发送的时间点。请选择论坛活动较少的安静时段——通常是深夜或清晨。
+      send_window_start_label: 发送时间
+      timezone_help: '选择您自己的时区——而不是服务器的时区。您下方设置的发送时间将根据您在此选择的时区中的那个小时触发。例如，如果您在芝加哥且希望邮件在您当地时间的上午 8 点发送，请选择中部时间并将发送时间设为上午 8 点。'
+      timezone_label: 您的时区
+      weekly_day_help: 每周摘要的发送日期（星期几）。
+      weekly_day_label: '每周摘要 —— 发送日'
     test_send:
-      email_placeholder: your@email.com
+      email_placeholder: recipient@example.com
       error_empty_email: 请输入邮箱地址。
-      error_generic: 发送失败，请检查日志。
-      frequency_label: 摘要频率
-      heading: 测试摘要邮件
-      help: 向指定邮箱发送测试邮件。
+      error_generic: 发送失败。请检查您的邮件设置后重试。
+      frequency_label: 频率
+      heading: 发送测试邮件
+      help: 立即向任意地址发送一封真实的摘要邮件。使用您账号的权限来构建内容。不会影响计划发送或取消订阅令牌。
       send_button: 发送测试邮件
       sending_button: 发送中…
-      success: 测试邮件已发送。
+      success: '已发送！请检查 {email} 收件箱中的 {frequency} 摘要。'
       theme_dark: 深色
-      theme_hint_dark: 预览深色样式
-      theme_hint_light: 预览浅色样式
-      theme_label: 邮件主题
+      theme_hint_dark: 以深色模式样式发送
+      theme_hint_light: 以浅色模式样式发送
+      theme_label: 预览主题
       theme_light: 浅色
-      theme_light_only: 仅浅色
+      theme_light_only: '仅浅色模式 —— 安装并启用 fof/nightmode 可解锁深色模式邮件'
+  email:
+    awards:
+      categories: 评选类别
+      coming_soon: 即将开始
+      cta_nominees: 查看提名
+      cta_results: 查看完整结果
+      cta_view: 查看奖项
+      cta_vote: 投票
+      front_runners: 当前领先
+      tallying: 正在统计结果，敬请期待公告！
+      voting_closed: 投票已结束
+    badges:
+      earned_count_plural: '本{周期}获得 {count} 次'
+      earned_count_singular: '本{周期}获得 {count} 次'
+      intro: '本{周期}内获得勋章的成员。'
+      most_earned: '本{周期}获得最多'
+      rarest: 颁发的稀有勋章
+      rarest_count_plural: '仅有 {count} 位成员拥有此勋章'
+      rarest_count_singular: '仅有 {count} 位成员拥有此勋章'
+    featured:
+      author_label: 讨论作者
+      badge: 精选
+      cta: 参与讨论
+    footer:
+      unsubscribe: 更改频率或取消订阅
+    gamepedia:
+      cta: '浏览 Gamepedia'
+      most_discussed: '本{周期}讨论最多的游戏'
+      newly_added: 最近新增
+    heading: '过去{周期}内发生了什么'
+    leaderboard:
+      biggest_mover: '本{周期}上升最快'
+      col_member: 成员
+      col_move: 变化
+      col_rank: '#'
+      col_score: 积分
+      new_badge: 新
+      rankings_note: 排名基于通过帖子、讨论、点赞、勋章和每日登录获得的积分总和。
+      spot_plural: 名
+      spot_singular: 名
+    members:
+      joined: '加入于 {time_ago}'
+    pickem:
+      col_accuracy: 准确率
+      col_player: 玩家
+      col_pts: 积分
+      col_rank: '#'
+      cta: 提交竞猜
+      draw: 平局
+      leaderboard_heading: 'Pick''em 排行榜'
+      results_heading: 最新结果
+      upcoming_heading: 即将开始的比赛
+      upcoming_note: 不要错过竞猜机会——截止时间见下方。
+    resofire_gamepedia:
+      cta: '浏览 Gamepedia'
+      most_discussed: '本{周期}讨论最多的游戏'
+      newly_added: 最近新增
+      top_genres: '本{周期}热门游戏类型'
+    sections:
+      active_discussions: 活跃讨论
+      badges: 勋章
+      favorites: 收藏讨论
+      gamepedia: Gamepedia
+      leaderboard: 排行榜
+      new_discussions: 新讨论
+      new_members: 新成员
+      pickem: 'Pick''em'
+      unread: 您尚未阅读
+    stats:
+      active_users: 活跃用户
+      discussions: 讨论
+      new_members: 新成员
+      posts: 帖子
+    subject: '{forum} —— 您的{频率}摘要'
   forum:
     onboarding:
-      modal_body: 定期将论坛中的精选讨论、新成员和热门动态整理成摘要，直接发送到您的邮箱。
-      modal_dismiss: 以后再说
-      modal_title: 开启摘要邮件
+      modal_body: 定期将论坛中的精选讨论、新成员和热门动态整理成摘要，直接发送到您的收件箱。
+      modal_dismiss: 不用了，谢谢
+      modal_title: 保持关注
     settings:
-      digest_help: 接收定期邮件摘要，了解论坛热门内容。
+      digest_help: 定期接收包含新讨论、活跃话题和新成员的摘要邮件。
       digest_label: 摘要邮件
-      frequency_daily: 每日摘要
-      frequency_monthly: 每月摘要
-      frequency_off: 不发送
-      frequency_weekly: 每周摘要
-      save_error: 保存设置时出错，请重试。
-      saved: 设置已保存
+      frequency_daily: 每日
+      frequency_monthly: 每月
+      frequency_off: '关闭 —— 不发送摘要邮件'
+      frequency_weekly: 每周
+      save_error: 无法保存您的偏好，请重试。
+      saved: 已保存
   unsubscribe:
+    click_hint: 点击选项即可立即保存您的偏好。
     daily_desc: 每天发送一封包含最新动态的邮件。
+    daily_title: 每日
+    greeting: '您好，{name}。请选择您希望收到 {forum} 摘要邮件的频率。'
+    heading: 摘要邮件偏好
+    monthly_desc: '每月{day}号发送一封月度汇总邮件。'
+    monthly_title: 每月
+    off_desc: 不向我发送任何摘要邮件。
+    off_title: 关闭
+    page_title: 摘要邮件偏好
+    weekly_desc: '每周{day}发送一封周度汇总邮件。'
+    weekly_title: 每周
+  unsubscribe_invalid:
+    body_expired: '此取消订阅链接已过期（链接有效期为 90 天）或已被使用。我们发送的每封摘要邮件中都包含全新的链接。'
+    body_signin: '要管理您的摘要偏好，请登录 {forum} 并访问您的通知设置。'
+    heading: 此链接已失效
+    page_title: 无效或已过期的链接
+  unsubscribe_saved:
+    body: 您的摘要邮件偏好已成功更新。
+    heading: 偏好已保存
+    page_title: 偏好已保存
+    return_link: '返回 {forum}'

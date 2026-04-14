@@ -5,85 +5,85 @@
 flarum-tags:
   admin:
     basics:
-      tags_label: 标签
+      tags_label: '=> flarum-tags.ref.tags'
     edit_tag:
-      color_label: 颜色
+      color_label: '=> core.ref.color'
       delete_tag_button: 删除标签
-      delete_tag_confirmation: 确定要删除此标签？此操作不会删除标签下的讨论帖。
+      delete_tag_confirmation: 确定要删除此标签吗？标签下的讨论将不会被删除。
       description_label: 描述
-      hide_label: 从“全部讨论”中隐藏
-      icon_label: 图标
-      icon_text: 图标与文字
-      name_label: 名称
-      name_placeholder: 名称
-      slug_label: 链接别名
-      submit_button: 保存更改
-      title: 新建标签
+      hide_label: 在“所有讨论”中隐藏
+      icon_label: '=> core.ref.icon'
+      icon_text: '=> core.ref.icon_text'
+      name_label: '=> flarum-tags.ref.name'
+      name_placeholder: '=> flarum-tags.ref.name'
+      slug_label: 别名
+      submit_button: '=> core.ref.save_changes'
+      title: 创建标签
     nav:
-      tags_button: 标签
-      tags_text: 管理论坛标签列表。
+      tags_button: '=> flarum-tags.ref.tags'
+      tags_text: 管理用于组织讨论的标签列表。
     permissions:
       allow_edit_tags_label: 允许编辑标签
-      bypass_tag_counts_label: 不受标签数量限制
-      restrict_by_tag_heading: 按标签限制权限
-      tag_discussions_label: 修改讨论标签
+      bypass_tag_counts_label: 绕过标签数量限制
+      restrict_by_tag_heading: 按标签限制
+      tag_discussions_label: 标记讨论
     settings:
-      button_text: 选择标签
+      button_text: '=> flarum-tags.ref.choose_tags'
     tag_settings:
-      range_separator_text: ' 到 '
-      required_primary_heading: 主标签数量限制
-      required_primary_text: 设置每个讨论帖需添加的主标签数量。
-      required_secondary_heading: 次标签数量限制
-      required_secondary_text: 设置每个讨论帖需添加的次标签数量。
+      range_separator_text: ' 至 '
+      required_primary_heading: 主标签数量要求
+      required_primary_text: 设置一个讨论可以添加的主标签数量下限和上限。
+      required_secondary_heading: 副标签数量要求
+      required_secondary_text: 设置一个讨论可以添加的副标签数量下限和上限。
       title: 标签设置
     tags:
-      about_tags_text: 使用标签对讨论帖分类。主标签类似于传统论坛的板块，可以分成两级。次标签无层级无顺序，可作为次板块。鼠标拖动标签即可排序或调整层级位置。
-      create_primary_tag_button: 新建主标签
-      create_secondary_tag_button: 新建次标签
+      about_tags_text: 标签用于对讨论进行分类。主标签类似于传统的论坛版块：它们可以排列成两级层级结构。副标签没有层级或顺序，适用于微观分类。
+      create_primary_tag_button: 创建主标签
+      create_secondary_tag_button: 创建副标签
       edit_tag_label: '编辑标签 {tag}'
       primary_heading: 主标签
-      secondary_heading: 次标签
+      secondary_heading: 副标签
       settings_heading: 设置
   forum:
     all_tags:
-      meta_description_text: 全部标签
-      meta_title_text: 标签
+      meta_description_text: 所有标签
+      meta_title_text: '=> flarum-tags.ref.tags'
     choose_tags:
-      edit_title: '更改「{title}」的节点标签'
-      title: 为你的讨论选择标签
+      edit_title: '编辑 {title} 的标签'
+      title: 为您的讨论选择标签
     composer_discussion:
-      choose_tags_link: 选择标签
+      choose_tags_link: '=> flarum-tags.ref.choose_tags'
     discussion_controls:
       edit_tags_button: 编辑标签
     header:
       back_to_tags_tooltip: 返回标签列表
     index:
-      more_link: 更多标签...
-      tags_link: 标签
+      more_link: 更多…
+      tags_link: '=> flarum-tags.ref.tags'
       untagged_link: 未分类
     post_stream:
-      added_and_removed_tags_text: '{username} 于 {time} 添加 {tagsAdded}，并移除 {tagsRemoved}。'
-      added_tags_text: '{username} 于 {time} 添加 {tagsAdded}'
-      removed_tags_text: '{username} 于 {time} 移除 {tagsRemoved}'
-      tags_text: '{tags} 标签'
+      added_and_removed_tags_text: '{username} 添加了 {tagsAdded} 并移除了 {tagsRemoved} {time}。'
+      added_tags_text: '{username} 添加了 {tagsAdded} {time}。'
+      removed_tags_text: '{username} 移除了 {tagsRemoved} {time}。'
+      tags_text: '{count, plural, one {{tags}} other {{tags}}} 个标签'
     tag:
-      meta_description_text: '{tag} 标签下的所有主题'
+      meta_description_text: '所有带有 {tag} 标签的讨论'
   lib:
     deleted_tag_text: 已删除
     gambits:
       discussions:
         tag:
-          hint: 单个标签名称、多个名称（用逗号分隔），或输入“untagged”表示未打标签的内容
+          hint: 单个标签名称、多个标签名称（用逗号分隔），或输入“untagged”表示未打标签
           key: tag
     tag_selection_modal:
-      bypass_requirements: 忽略标签选择
-      choose_primary_placeholder: '{count, plural, one {请选择一个主标签} other {请选择 # 个主标签}}'
-      choose_secondary_placeholder: 选择副标签
-      choose_tags_placeholder: 选择标签
-      submit_button: 提交
-      title: 选择标签
+      bypass_requirements: 绕过标签数量限制
+      choose_primary_placeholder: '{count, plural, one {选择 1 个主标签} other {选择 # 个主标签}}'
+      choose_secondary_placeholder: '=> flarum-tags.ref.choose_tags_placeholder'
+      choose_tags_placeholder: '=> flarum-tags.ref.choose_tags_placeholder'
+      submit_button: '=> core.ref.okay'
+      title: '=> flarum-tags.ref.choose_tags'
   ref:
     choose_tags: 选择标签
     choose_tags_placeholder: '{count, plural, one {再选择 1 个标签} other {再选择 # 个标签}}'
-    name: 标签名称
+    name: 名称
     tags: 标签

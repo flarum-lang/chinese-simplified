@@ -145,6 +145,9 @@ ramon-avocado:
       no_users_found: '没有找到与“{q}”相关的用户。'
       placeholder: 搜索讨论、帖子或用户…
       placeholder_hero: 搜索…
+      posts_filtered_by: 筛选结果
+      posts_for: 的帖子
+      posts_title: 帖子搜索
       search_button: 搜索
       sort_latest: 最新
       sort_newest: 最新发布

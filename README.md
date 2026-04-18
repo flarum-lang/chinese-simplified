@@ -11,7 +11,7 @@ Based on [flarum/lang-english](https://github.com/flarum/lang-english), [jsthon 
 繁体中文语言包请查阅此处：[繁体中文语言包](https://discuss.flarum.org/d/17954)。
 
 ### 要求 / Require
-  - Flarum v0.1.0-beta.8 及以上版本
+  - Flarum 1.0.0 及以上版本
 
 ### 安装 / Install
 **_Flarum 最新版本_**

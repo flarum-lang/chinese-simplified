@@ -11,7 +11,7 @@ Based on [flarum/lang-english](https://github.com/flarum/lang-english), [jsthon 
 繁体中文语言包请查阅此处：[繁体中文语言包](https://discuss.flarum.org/d/17954)。
 
 ### 要求 / Require
-  - Flarum v0.1.0-beta.8 及以上版本
+  - Flarum 2.0.0 及以上版本
 
 ### 安装 / Install
 **_Flarum 最新版本_**
@@ -22,7 +22,7 @@ php flarum cache:clear
 
 _**Flarum 旧版本**_
 
-- 在末尾写上版本号即可安装指定的语言包版本：`composer require flarum-lang/chinese-simplified:^v1.0.0`，语言包版本号与 Flarum 版本号相同。
+- 在末尾写上版本号即可安装指定的语言包版本：`composer require flarum-lang/chinese-simplified:^2.0.0`，语言包版本号与 Flarum 版本号相同。
 
 **_Flarum Beta 16 及以下请翻阅语言包历史版本号_**
 

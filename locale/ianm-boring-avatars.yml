@@ -17,6 +17,8 @@ ianm-boring-avatars:
       color3: '基本色 3'
       color4: '基本色 4'
       color5: '基本色 5'
+      driver_not_active_warning: 'Boring Avatars不是当前激活的头像驱动。'
+      driver_not_active_warning_link: 前往常规设置去激活。
       identifier: 种子
       identifier_display_name: 外显昵称
       identifier_email: 电子邮箱

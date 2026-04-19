@@ -26,6 +26,8 @@ ramon-avocado:
       banner_image_label: 横幅图片
       custom_default_avatar_help: 为没有上传头像的用户上传自定义默认头像图片。
       custom_default_avatar_label: 自定义默认头像
+      custom_loading_spinner_help: 使用SVG加载动画替换默认的文字加载指示。
+      custom_loading_spinner_label: 个性化加载动画
       featured_tags_empty: 未找到标签。
       featured_tags_help: 所选标签将在首页和标签页中以星标徽章突出显示。
       featured_tags_label: 精选标签
@@ -39,6 +41,7 @@ ramon-avocado:
       hero_image_position_label: 横幅图片位置
       hide_links_for_guests_help: 阻止游客点击帖子中的链接。点击时显示登录/注册提示，而非直接跳转。
       hide_links_for_guests_label: 对游客隐藏链接
+      loading_spinner_style_label: 动画样式
       logo_enabled_help: '在页眉中显示自定义 Logo。'
       logo_enabled_label: '启用自定义 Logo'
       logo_svg_help: '为您的论坛上传自定义 SVG 格式 Logo。'
@@ -63,6 +66,8 @@ ramon-avocado:
       show_post_cta_label: 在首条帖子后向游客显示“参与讨论”引导
       show_share_help: 为每条帖子添加分享操作按钮。
       show_share_label: 在帖子中显示分享按钮
+      spinner_custom_code_help: 使用SVG或HTML作为加载动画。
+      spinner_custom_code_label: 自定义动画代码
   forum:
     actions:
       share: 分享

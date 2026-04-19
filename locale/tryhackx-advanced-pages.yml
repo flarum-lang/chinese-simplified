@@ -57,6 +57,9 @@ tryhackx-advanced-pages:
       bbcode_spoiler: '[spoiler] — 剧透 / 可折叠详情'
       bbcode_table: '[table] [tr] [th] [td] — 用于创建表格的 BBCode 标签'
       bbcode_url: '[url] — 增强链接解析（支持 Flarum 默认不支持的部分网址格式）'
+      forum_help: '覆盖常规论坛帖子中剧透的显示方式。需要清除格式化程序缓存（php-flarum-cache:clear）。'
+      forum_title: 论坛整合
+      replace_forum_spoiler: 将Flarum的默认扰流板替换为高级页面扰流板样式（详细信息/摘要）
       title: 高级页面设置
     support:
       button: 获取支持

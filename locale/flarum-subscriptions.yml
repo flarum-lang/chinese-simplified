@@ -43,8 +43,8 @@ flarum-subscriptions:
     gambits:
       discussions:
         subscription:
-          following_key: following
-          ignoring_key: ignoring
+          following_key: 关注
+          ignoring_key: 忽略
   ref:
     follow: 关注
     following: 关注中

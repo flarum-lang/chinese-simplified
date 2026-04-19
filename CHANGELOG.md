@@ -57,6 +57,7 @@ CHANGELOG
 * [`ralkage/flarum-ext-word-counter`](https://github.com/Ralkage/flarum-ext-word-counter)
 * [`ramon/avocado`](https://github.com/ram0ng1/avocado)
 * [`ramon/colored`](https://github.com/ram0ng1/colored)
+* [`ramon/stickers`](https://github.com/ram0ng1/stickers)
 * [`resofire/blog-cards`](https://github.com/ResofireV2/blog-cards)
 * [`resofire/digest-mail`](https://github.com/ResofireV2/digest-mail)
 * [`resofire/discussion-participants`](https://github.com/ResofireV2/discussion-participants)

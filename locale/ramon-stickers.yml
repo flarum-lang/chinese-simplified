@@ -10,7 +10,41 @@ ramon-stickers:
       show_tooltip_help: 开启后，在帖子或贴纸选择器中鼠标悬浮时，贴纸名称将通过提示弹窗呈现。
       show_tooltip_label: 鼠标悬浮时显示贴纸名称
     sticker_section:
+      bulk_upload_button: 批量上传
+      bulk_upload_category_prompt: 指定批量上传贴纸包的分类名称：
+      bulk_upload_done: '上传完成：上传{uploaded}个, 失败{errors}个。'
+      bulk_upload_progress: '正在上传{current}/{total}...'
+      cancel_select_button: 取消
+      delete_selected_button: '删除（{count}个）'
+      delete_selected_confirm: '删除{count}个贴纸？该操作无法撤销。'
+      edit_sticker:
+        category_name_label: 分类名称
+        delete_sticker_button: 删除贴纸
+        delete_sticker_confirmation: 确定删除这个贴纸？
+        modal_title: 添加贴纸
+        path_or_url_label: 路径或URL
+        saved_message: '=> core.admin.settings.saved_message'
+        sticker_category_label: 分类编码
+        sticker_title_label: 贴纸名称
+        submit_button: '=> core.ref.save_changes'
+        text_to_replace_label: '替换问题 （例如:sticker:）'
+        upload_button: 选择文件
+        upload_help: 支持Lottie动画JSON（.json），Telegram贴纸（.tgs），PNG，GIF，WebP，JPEG。
+        upload_label: 上传文件
       export_button: 导出ZIP
       export_error: 导出失败，请重试。
       heading_title: 贴纸
       import_button: 导入
+      import_error_message: '导入失败：{error}'
+      import_result: '完成：导入{imported}个，已存在{skipped}个。'
+      import_stickers_message: 从JSON文件导入贴纸元数据。贴纸文件不包含在此操作中，你需要提前上传贴纸文件。继续？
+      import_zip_message: 从ZIP文件（本插件导出的）导入贴纸包。贴纸文件会将被复制到/assets/stickers/，且不会覆盖现有贴纸。继续？
+      importing_message: 正在导入，请稍等。
+      select_button: 选择
+      sticker_list:
+        load_more_button: '=> core.forum.post_stream.load_more_button'
+  forum:
+    composer:
+      sticker_tooltip: 插入贴纸
+    picker:
+      no_stickers: 暂无贴纸

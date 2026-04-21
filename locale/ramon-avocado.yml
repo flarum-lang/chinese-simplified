@@ -18,6 +18,15 @@ ramon-avocado:
       footer_show_social: 显示社交媒体链接
       footer_social: 社交媒体链接
       footer_social_help_json: '以 JSON 格式配置社交媒体链接。可使用的键包括：facebook、twitter、linkedin、instagram、youtube。'
+      section_team: 团队页面
+      team_desc_label: 页面描述
+      team_desc_placeholder: 认识为论坛作出贡献的伙伴们。
+      team_enabled_help: 显示/team页面并展示所选群组的成员。
+      team_enabled_label: 启用团队页面
+      team_groups_empty: 没有群组。
+      team_groups_help: 所选群组的成员将展示在团队页面中。
+      team_groups_label: 要显示的群组
+      team_title_label: 页面标题
     loading: 加载中…
     settings:
       auth_image_help: 显示在登录、注册和找回密码弹窗右侧面板的背景图片。
@@ -133,6 +142,8 @@ ramon-avocado:
       view: 查看
       view_post: 查看帖子
       yesterday_time: '昨天 ，{time}'
+    link:
+      login_to_view: 登陆查看链接
     link_cta:
       placeholder: 登录以查看链接
     post:
@@ -164,10 +175,20 @@ ramon-avocado:
       tab_users: 用户
       title: 搜索
     tags:
-      all_discussions: '所以话题    链接：'
+      all_discussions: 所有话题
       discussion_plural: 个讨论
       discussion_singular: 个讨论
       featured: 精选
       login_to_view: 登录以查看链接
       other_tags_label: 其他标签
       title: 分类
+    team:
+      disabled: 当前页面不可用。
+      discussions: 个话题
+      empty: 没有成员。
+      member_plural: 成员
+      member_since: 加入于
+      member_singular: 成员
+      no_bio: 论坛成员。
+      posts: 个帖子
+      title: 论坛团队

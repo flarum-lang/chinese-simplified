@@ -130,6 +130,12 @@ core:
       logo_text: 上传图片代替论坛名称，并展示在导航栏左侧。
       title: 外观
     basics:
+      abandoned_extensions_heading: 已弃用插件
+      abandoned_extensions_notify_admins_label: 邮件通知管理员每周例行检查时新发现的已弃用插件
+      abandoned_extensions_sync_button: 立即检查
+      abandoned_extensions_sync_error: 已弃用插件清单更新失败。请稍后重试。
+      abandoned_extensions_sync_success: '已弃用插件清单更新完成。已安装插件中，发现{count}个已弃用的。'
+      abandoned_extensions_text: Flarum维护了一个<a>已弃用扩展的清单</a>。当安装了列表中的插件时，管理员面板中将标记该插件。
       all_discussions_label: '=> core.ref.all_discussions'
       avatar_driver_heading: 用户头像
       avatar_driver_options:
@@ -283,6 +289,13 @@ core:
         no_readme: 此扩展未提供自述文件
         title: '{extName} 文档'
       replaced: 替换
+      reset_settings:
+        button: 重置设置
+        cancel_button: 取消
+        confirm_button: 重置
+        title: 重置设置
+        title_extension: '重置{extensionTitle}设置'
+        warning: 该操作无法撤销。下列设置信息将从数据库中永久删除，并重置为默认设置。该插件的数据不会受影响。
       safe_mode_warning: 当前已启用安全模式。扩展未启动，因此无法访问其设置。
     extensions-health-widget:
       abandoned_no_replacement: 无可用替代方案
@@ -324,6 +337,7 @@ core:
         discussion: 讨论
         feature: 功能
         formatting: 格式化
+        forum-widget: 论坛小组件
         infrastructure: 基础
         language: 语言包
         moderation: 内容审核
@@ -429,6 +443,12 @@ core:
       must_not_be_multidimensional_array_message: '{filter} 查询条件不能是多维数组。'
     invalid_username_message: 用户名只能包含字母、数字和连字符，且至少包含一个字母。
   email:
+    abandoned_extensions:
+      body_intro: 下列插件为已弃用插件：
+      body_outro: 请检查这些插件，并计划迁移到可用的替代插件。
+      line_no_replacement: '{package}（暂无可用替代插件）'
+      line_with_replacement: '{package} （建议的替代插件：{replacement}）'
+      subject: 注意：发现已弃用插件
     activate_account:
       body: "有人（希望是您！）已使用此邮箱地址注册了 {forum}。\n\n如果是您本人，只需点击以下链接，您的账户即可激活：\n{url}\n\n如果您没有注册，请忽略此邮件。\n"
       subject: 账号激活

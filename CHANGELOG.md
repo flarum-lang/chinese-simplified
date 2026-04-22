@@ -600,7 +600,7 @@ CHANGELOG
 * [`tpokorra/flarum-ext-post-notification`](https://github.com/tpokorra/flarum-ext-post-notification)
 * [`umhelper/oauth-clerk`](https://github.com/UMHelper/flarum-ext-oauth-clerk)
 * [`v17development/flarum-blog`](https://github.com/v17development/flarum-blog)
-* [`v17development/flarum-seo`](https://github.com/FriendsOfFlarum/flarum-seo)
+* [`v17development/flarum-seo`](https://github.com/FriendsOfFlarum/seo)
 * `v17development-support`
 * [`v17development/flarum-user-badges`](https://github.com/v17development/flarum-user-badges)
 * [`veriael/markdown`](https://github.com/Veriael/markdown)

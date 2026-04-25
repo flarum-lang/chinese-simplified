@@ -13,7 +13,14 @@ fof-recaptcha:
       signin: '=> core.forum.log_in.title'
       signup: '=> core.forum.sign_up.title'
       site_key_label: 网站密钥
+      type_help: '所选类型必须与与reCAPTCHA密钥一致。选框和不可见，都是reCAPTCHA v2；v3是基于评分机制静默运行的。'
       type_label: 'reCAPTCHA 类型'
+      type_options:
+        checkbox: v2选框
+        invisible: v2不可见
+        v3: v3（评分机制）
+      v3_threshold_help: 评分低于该值（0.0=趋近于机器人，1.0=趋近于人类）的校验将无法通过。谷歌建议设置0.5作为初始值。该设置只在类型为v3时有效。
+      v3_threshold_label: 'reCAPTCHA v3评分阈值'
     test:
       help_text: "使用上方配置测试验证码。修改设置后请重新加载测试，测试通过后请注意保存设置。\n以下测试可能无法代表已保存设置的情况。\n"
       load_test_button: 加载
@@ -21,6 +28,11 @@ fof-recaptcha:
       submit_button: 保存
       success_message: '成功！reCAPTCHA 已正确设置。'
       title: '测试 reCAPTCHA'
+  lib:
+    error: 提交reCAPTCHA验证时发生错误。请重试。
+    not_completed: 请完成reCAPTCHA验证后继续。
+    rejected: reCAPTCHA验证失败。请重试。
+    unknown_error: 发生未知错误。请重试。
 validation:
   recaptcha: 'reCAPTCHA 验证失败。'
   recaptcha-unknown: '校验验证码时发生了未知错误（{errors}）。'

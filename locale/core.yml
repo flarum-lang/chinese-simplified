@@ -13,7 +13,7 @@ core:
           help: 'FontAwesome 设置目前已在 config.php 文件中设置，无法在此处更改。'
           label: 配置覆盖
         kit_url_help: '您的 FontAwesome Kit 脚本 URL（来自 kit.fontawesome.com）'
-        kit_url_label: 'Kit URL'
+        kit_url_label: 组件包网址
         preview:
           button: 预览图标
           fa5_fa6_label: 'FA5/FA6 别名'
@@ -24,7 +24,7 @@ core:
         section_label: 'FontAwesome 图标'
         source_cdn: CDN
         source_help: '选择 FontAwesome 图标的加载方式。“本地”使用捆绑字体，“CDN”从 CDN 加载，“Kit”使用带有自定义图标的 FontAwesome Kit。'
-        source_kit: 'FontAwesome Kit'
+        source_kit: FontAwesome组件包
         source_label: 图标来源
         source_local: 本地（捆绑）
       maintenance:
@@ -148,7 +148,7 @@ core:
       display_name_heading: 用户外显名称
       display_name_text: 选择外显名称的类型，默认为用户名。
       forum_description_heading: 论坛描述
-      forum_description_text: '输入一两句简短的社区描述，该内容将被添加至页面的 meta 标签，并会出现在搜索引擎的结果里。'
+      forum_description_text: '输入一两句简短的论坛描述，该内容将被添加至页面的 meta 标签，并会出现在搜索引擎的结果里。'
       forum_title_heading: 论坛名称
       home_page_heading: 论坛首页
       home_page_text: 选择一种页面作为论坛首页。

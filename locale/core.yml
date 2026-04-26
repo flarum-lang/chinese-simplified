@@ -4,6 +4,19 @@
 
 core:
   admin:
+    announcements:
+      about: '从官方 Flarum 社区（discuss.flarum.org）获取的最新新闻和公告。'
+      comments_label: '{count, plural, one {# 条评论} other {# 条评论}}'
+      description: '来自 Flarum 团队的最新新闻和公告。'
+      empty: 未找到公告。
+      hide: 隐藏公告
+      load_error: 无法加载公告，请稍后重试。
+      read_more: 阅读更多
+      refresh: 刷新公告
+      retry: 重试
+      show: 显示公告
+      title: 公告
+      view_all: '在 discuss.flarum.org 上查看全部'
     appearance:
       colored_header_label: 彩色导航栏
       colors_heading: 颜色
@@ -29,6 +42,12 @@ core:
       logo_text: 上传图片代替论坛名称，并展示在导航栏左侧。
       title: 外观
     basics:
+      abandoned_extensions_heading: 弃用扩展
+      abandoned_extensions_notify_admins_label: 每周检查发现新弃用扩展时，通过电子邮件通知管理员
+      abandoned_extensions_sync_button: 立即检查
+      abandoned_extensions_sync_error: 获取弃用扩展列表失败。请稍后重试。
+      abandoned_extensions_sync_success: '弃用扩展列表已更新。发现 {count} 个匹配的已安装扩展。'
+      abandoned_extensions_text: 'Flarum 维护了一个<a>社区弃用扩展列表</a>。当已安装的扩展出现在该列表中时，将在管理面板中标记。'
       all_discussions_label: '=> core.ref.all_discussions'
       default_language_heading: 默认语言
       description: 设置论坛名称、语言以及其他基础设置
@@ -168,6 +187,7 @@ core:
         discussion: 主题
         feature: 功能
         formatting: 格式化
+        forum-widget: 论坛小组件
         language: 语言包
         moderation: 内容审核
         other: 其他
@@ -275,6 +295,11 @@ core:
       must_not_be_multidimensional_array_message: '{filter} 查询条件不能是多维数组。'
     invalid_username_message: '用户名只能由字母、数字及连字符 (-) 组成'
   email:
+    abandoned_extensions:
+      body: "您好 {username}，\n\n以下已安装的扩展已被标记为弃用：\n\n{extensions}\n\n请检查这些扩展，并在有条件时考虑迁移到替代扩展。\n"
+      line_no_replacement: '- {package}（无可用替代）'
+      line_with_replacement: '- {package}（建议替代：{replacement}）'
+      subject: 操作提醒：检测到弃用扩展
     activate_account:
       body: "{username}，您好！\n\n您刚刚注册了 {forum}。\n\n若是您本人所为，请点击下方链接激活账号：\n{url}\n\n若非您本人注册，请忽略此邮件。\n"
       subject: 账号激活

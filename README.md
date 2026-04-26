@@ -29,7 +29,7 @@ _**Flarum 旧版本**_
 ### 升级、卸载 / Update & Remove
 将安装命令中的 require 替换为 update 或 remove
 
-### [支持的扩展 / Supported Extensions](https://rob006-software.github.io/flarum-translations/status/zh_Hans.html)
+### [支持的扩展 / Supported Extensions](https://rob006-software.github.io/flarum-translations/flarum2/status/zh_Hans.html)
 
 ### 报告问题 / Report Issue
   - [Github](https://github.com/flarum-lang/chinese-simplified/issues)

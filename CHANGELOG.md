@@ -28,6 +28,7 @@ CHANGELOG
 * [`fof/discussion-templates`](https://github.com/FriendsOfFlarum/discussion-templates)
 * [`fof/discussion-views`](https://github.com/FriendsOfFlarum/discussion-views)
 * [`fof/forum-stats-widget`](https://github.com/FriendsOfFlarum/forum-stats-widget)
+* [`fof/forum-widgets-core`](https://github.com/FriendsOfFlarum/forum-widgets-core)
 * [`fof/horizon`](https://github.com/FriendsOfFlarum/horizon)
 * [`fof/mailing`](https://github.com/FriendsOfFlarum/mailing)
 * [`fof/moderator-warnings`](https://github.com/FriendsOfFlarum/moderator-warnings)

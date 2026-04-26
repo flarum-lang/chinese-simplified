@@ -60,6 +60,7 @@ CHANGELOG
 * [`clarkwinkelmann/flarum-ext-emojionearea`](https://github.com/clarkwinkelmann/flarum-ext-emojionearea)
 * [`datlechin/flarum-link-preview`](https://github.com/datlechin/flarum-link-preview)
 * [`flarum/extension-manager`](https://github.com/flarum/extension-manager)
+* [`flarum/nicknames`](https://github.com/flarum/nicknames)
 * [`flarum/suspend`](https://github.com/flarum/suspend)
 * [`flarum/tags`](https://github.com/flarum/tags)
 * [`fof/anti-spam`](https://github.com/FriendsOfFlarum/anti-spam)

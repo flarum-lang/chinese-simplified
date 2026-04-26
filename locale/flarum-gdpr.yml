@@ -33,7 +33,7 @@ flarum-gdpr:
         type: 类型
         'yes': 是
     nav:
-      gdpr_button: 'GDP 集成'
+      gdpr_button: 'GDPR 集成'
       gdpr_title: '=> flarum-gdpr.admin.gdpr_page.description'
     permissions:
       process_erasure: 处理账号抹除请求

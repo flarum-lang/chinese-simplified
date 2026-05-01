@@ -8,6 +8,10 @@
  * file that was distributed with this source code.
  */
 
+return new Flarum\Extend\LanguagePack();
+
+// TODO: cleanup this (or restore and adjust scripts for Flarum 2.x)
+/*
 use Flarum\Extend;
 use Flarum\Extend\LanguagePack;
 use Flarum\Frontend\Document;
@@ -56,3 +60,4 @@ if ($useGoogleFonts) {
 }
 
 return $extends;
+*/

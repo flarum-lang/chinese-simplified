@@ -4,13 +4,37 @@
 
 pianotell-flamoji:
   admin:
+    custom_emojis_section:
+      edit_emoji:
+        delete_emoji_button: 删除表情
+        delete_emoji_confirmation: 确认删除此表情吗？
+        emoji_title_label: 表情名称
+        modal_title: 添加表情
+        path_or_url_label: 路径或网址
+        saved_message: '=> core.admin.settings.saved_message'
+        submit_button: '=> core.ref.save_changes'
+        text_to_replace_label: 替换文本
+      emoji_list:
+        add_button: 添加表情
+        edit_button: 编辑表情
+        load_more_button: '=> core.forum.post_stream.load_more_button'
+      export_json_button: 导出JSON
+      heading_title: 自定义表情
+      import_emojis_message: 此操作只导入表情配置。表情包图片需要手动上传。
+      import_json_button: 导入JSON
     settings:
       auto_hide_label: 自动隐藏
       auto_hide_text: 选择表情后自动隐藏选择器。
       category_settings_heading: 分类设置
       emoji_categories:
+        activity: '=> pianotell-flamoji.ref.emoji_categories.activity'
+        flags: '=> pianotell-flamoji.ref.emoji_categories.flags'
         foods: '=> pianotell-flamoji.ref.emoji_categories.foods'
         nature: '=> pianotell-flamoji.ref.emoji_categories.nature'
+        objects: '=> pianotell-flamoji.ref.emoji_categories.objects'
+        people: '=> pianotell-flamoji.ref.emoji_categories.people'
+        places: '=> pianotell-flamoji.ref.emoji_categories.places'
+        symbols: '=> pianotell-flamoji.ref.emoji_categories.symbols'
       emoji_settings_heading: 表情包设置
       frequent_rows_label: 常用表情栏
       frequent_rows_text: 设置显示在选择顶部的最近常用表情行数（1-10）。
@@ -18,8 +42,8 @@ pianotell-flamoji:
       picker_set_auto: 自动
       picker_set_label: 表情风格
       picker_set_native: 系统
-      picker_set_text: 选择器中表情的呈现风格。选择「自动」时，为Flarum表情插件的Twemoji风格（当启用时）；否则显示为系统字体风格。选择器与帖子中的呈现风格一致。
-      picker_set_twemoji: Twemoji
+      picker_set_text: 选择器中表情的呈现风格。选择「自动」时，为Flarum表情插件的推特表情风格（当启用时）；否则显示为系统字体风格。选择器与帖子中的呈现风格一致。
+      picker_set_twemoji: 推特表情
       show_category_buttons_label: 显示分类按钮
       show_category_buttons_text: 在选项器顶部，单独显示一行分类图标。当只有一两个分类时，可禁用此项。
       show_preview_label: 显示预览栏
@@ -32,3 +56,47 @@ pianotell-flamoji:
       show_variants_text: 部分表情具有肤色变体。当所选表情有肤色变体时，将会显示肤色弹窗供用户选择。
       specify_categories_label: 选择分类
       specify_categories_text: 选择器只显示勾选的分类。
+  forum:
+    composer:
+      emoji_picker_label: 表情选择器
+      emoji_tooltip: 插入表情
+      picker_load_error: 无法加载表情选择器。请重试。
+      picker_load_retry: 重试
+      picker_loading: 表情加载中…
+    emoji-mart:
+      add_custom: 添加自定义表情
+      categories:
+        activity: '=> pianotell-flamoji.ref.emoji_categories.activity'
+        custom: '=> pianotell-flamoji.ref.emoji_categories.custom'
+        flags: '=> pianotell-flamoji.ref.emoji_categories.flags'
+        foods: '=> pianotell-flamoji.ref.emoji_categories.foods'
+        frequent: '=> pianotell-flamoji.ref.emoji_categories.frequent'
+        nature: '=> pianotell-flamoji.ref.emoji_categories.nature'
+        objects: '=> pianotell-flamoji.ref.emoji_categories.objects'
+        people: '=> pianotell-flamoji.ref.emoji_categories.people'
+        places: '=> pianotell-flamoji.ref.emoji_categories.places'
+        symbols: '=> pianotell-flamoji.ref.emoji_categories.symbols'
+      category_search: 搜索结果
+      no_emojis_found_message: 没有表情
+      no_emojis_found_title: 不好了！
+      pick: 选择一个表情
+      search_placeholder: 搜索
+      skin_tone_choose: 选择默认肤色
+      skin_tone_dark: 深色
+      skin_tone_default: 默认
+      skin_tone_light: 浅色
+      skin_tone_medium: 普通
+      skin_tone_medium_dark: 便深色
+      skin_tone_medium_light: 偏浅色
+  ref:
+    emoji_categories:
+      activity: 活动
+      custom: 自定义
+      flags: 旗帜
+      foods: 食物和饮品
+      frequent: 最近使用
+      nature: 动物和自然
+      objects: 物体
+      people: 笑脸和人物
+      places: 旅行和地点
+      symbols: 符号

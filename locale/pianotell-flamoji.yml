@@ -8,7 +8,27 @@ pianotell-flamoji:
       auto_hide_label: 自动隐藏
       auto_hide_text: 选择表情后自动隐藏选择器。
       category_settings_heading: 分类设置
+      emoji_categories:
+        foods: '=> pianotell-flamoji.ref.emoji_categories.foods'
+        nature: '=> pianotell-flamoji.ref.emoji_categories.nature'
       emoji_settings_heading: 表情包设置
+      frequent_rows_label: 常用表情栏
+      frequent_rows_text: 设置显示在选择顶部的最近常用表情行数（1-10）。
       general_ui_settings_heading: 一般UI设置
+      picker_set_auto: 自动
+      picker_set_label: 表情风格
+      picker_set_native: 系统
+      picker_set_text: 选择器中表情的呈现风格。选择「自动」时，为Flarum表情插件的Twemoji风格（当启用时）；否则显示为系统字体风格。选择器与帖子中的呈现风格一致。
+      picker_set_twemoji: Twemoji
+      show_category_buttons_label: 显示分类按钮
+      show_category_buttons_text: 在选项器顶部，单独显示一行分类图标。当只有一两个分类时，可禁用此项。
+      show_preview_label: 显示预览栏
+      show_preview_text: 在选择器下方显示表情的名称、短代码和肤色设置器。
+      show_recents_label: 保存并展示最近使用表情
+      show_recents_text: 在选择器顶部，显示常用表情选项卡。用户的常用表情，仅存储在浏览器本地。
+      show_search_label: 显示搜索框
+      show_search_text: 在选择器顶部显示搜索框。
       show_variants_label: 显示肤色变体
       show_variants_text: 部分表情具有肤色变体。当所选表情有肤色变体时，将会显示肤色弹窗供用户选择。
+      specify_categories_label: 选择分类
+      specify_categories_text: 选择器只显示勾选的分类。

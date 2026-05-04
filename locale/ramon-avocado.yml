@@ -28,14 +28,23 @@ ramon-avocado:
       team_groups_label: 要显示的群组
       team_title_label: 页面标题
     loading: 加载中…
+    search_tags: 搜索标签…
     settings:
       auth_image_help: 显示在登录、注册和找回密码弹窗右侧面板的背景图片。
       auth_image_label: 认证弹窗图片
       banner_image_help: 上传显示在论坛顶部的横幅（Hero）图片。
       banner_image_label: 横幅图片
       categories_heading_label: 分类栏目标题
+      colored_border_style_full: 全边框
+      colored_border_style_help: 为话题卡片添加与主标签颜色相同的颜色边框。
+      colored_border_style_label: 话题卡片边框样式
+      colored_border_style_left: 左边框
+      colored_border_style_none: 无
+      colored_enabled_help: 将当前标签或话题的配色，自动应用为全站的按钮、链接和其它元素强调色。
+      colored_enabled_label: 启用自动强调色
       custom_default_avatar_help: 为没有上传头像的用户上传自定义默认头像图片。
       custom_default_avatar_label: 自定义默认头像
+      custom_hero_enabled_help: 使用自定义HTML内容，替换默认横幅内容，包含：图标、标题、描述、登录/注册按钮。横幅容器、背景图片和遮罩层不变。与默认横幅一样，自定义横幅仅对访客可见。
       custom_hero_enabled_label: 使用自定义横幅（Hero）内容（HTML）
       custom_hero_html_help: HTML内容将嵌入横幅遮罩层，替换.AvocadoHome-heroBannerContent内容。支持使用内链<style>标签。
       custom_hero_html_label: 自定义横幅HTML
@@ -47,6 +56,14 @@ ramon-avocado:
       fixed_avatar_effect_help: 在桌面端阅读长帖时，保持帖子头像悬停在侧边。
       fixed_avatar_effect_label: 启用头像固定效果
       following_heading_label: 关注话题标题
+      hero_deco_divider_help: 在两个装饰图标之间，显示一个分隔图标（类似竞技网站中「vs」符号）。
+      hero_deco_divider_icon_help: '分隔符图标的Font Awesome类名称，如：「fas fa-times」或「fas fa-circle」。'
+      hero_deco_divider_icon_label: 分隔符的类名称
+      hero_deco_divider_label: 在装饰标签之间显示分隔符
+      hero_decoration_icon_count_help: 当设置为1个图标时，显示第一个子标签。当设置为2个图标时，第二个子标签图标将显示在第一个图标右边。
+      hero_decoration_icon_count_label: 装饰图标数量
+      hero_decoration_icon_count_one: 1个图标（第一个子标签）
+      hero_decoration_icon_count_two: 2个图标（第一个和第二个子标签）
       hero_decoration_icon_help: 在讨论页头部的右侧，将副标签图标显示为大尺寸装饰性元素。
       hero_decoration_icon_label: 在讨论页主区域显示副标签图标
       hero_decoration_icon_opacity_help: '设置装饰性图标的不透明度百分比。100 = 完全不透明，0 = 完全不可见。'
@@ -61,10 +78,17 @@ ramon-avocado:
       logo_svg_help: '为您的论坛上传自定义 SVG 格式 Logo。'
       logo_svg_label: 'SVG 格式 Logo'
       popular_heading_label: 热点话题标题
+      post_cta_position_1: 第一条帖子之后
+      post_cta_position_2: 第二条帖子之后
+      post_cta_position_3: 第三条帖子之后
+      post_cta_position_4: 第四条帖子之后
+      post_cta_position_5: 第五条帖子之后
+      post_cta_position_help: 在对应帖子和后贴之间放置CTA横幅。
+      post_cta_position_label: CTA横幅位置（在第几条帖子后面）
       search_v1_help: '显示内联搜索下拉框而非 V2 弹窗样式。'
       search_v1_label: '启用 V1 搜索栏样式'
       section_auth: 登录与注册
-      section_colored: 自动配色
+      section_colored: 自动强调色
       section_footer: 页脚
       section_homepage: 首页
       section_logo: Logo
@@ -80,6 +104,7 @@ ramon-avocado:
       show_guest_cta_help: 为游客显示引导注册/登录的鼓励信息。
       show_guest_cta_label: 显示游客引导信息
       show_online_count_help: 在在线用户头像旁边，显示「X人在线」文本。
+      show_online_count_label: 显示在线用户数文本
       show_online_users_help: 在界面上显示当前在线用户的数量。
       show_online_users_label: 显示在线用户数
       show_post_cta_help: 在讨论的第一条帖子后面显示登录/注册卡片，仅对游客可见。
@@ -87,9 +112,13 @@ ramon-avocado:
       show_share_help: 为每条帖子添加分享操作按钮。
       show_share_label: 在帖子中显示分享按钮
       showcase_count_help: 在热点栏显示1到5个话题卡片。
+      showcase_count_label: 热点卡片数量
       showcase_enabled_help: 在首页以卡片滑块的方式，呈现所选标签的话题。
+      showcase_enabled_label: 启用热点/作品栏目
+      showcase_heading_help: 自定义热点栏目标题。留空则使用默认标题。
       showcase_heading_label: 热点栏标题
       showcase_image_style_default: 紧凑（默认）
+      showcase_image_style_full: 全幅
       showcase_image_style_help: 选择图片展示样式：紧凑或全部高度。
       showcase_image_style_label: 卡片图片样式
       showcase_tag_help: 这些标签的话题将以卡片滑块的方式展示在首页。
@@ -97,6 +126,16 @@ ramon-avocado:
       spinner_custom_code_help: 使用SVG或HTML作为加载动画。
       spinner_custom_code_label: 自定义动画代码
       tag_picker_placeholder: 选择标签…
+      team_desc_label: 页面描述
+      team_desc_placeholder: 认识为论坛运营管理所付出的伙伴们。
+      team_enabled_help: '在 /team 团队页面展示所选群组的成员。'
+      team_enabled_label: 启用团队页面
+      team_groups_empty: 没有群组。
+      team_groups_help: 所选群组的成员将会展示在团队页面中。
+      team_groups_label: 要显示的群组
+      team_title_label: 页面标题
+      threads_style_help: '采用类似Threads App的风格，将话题显示为一个卡片，回帖锁进并带有左边框线条。'
+      threads_style_label: 启用会话式话题布局
   forum:
     actions:
       share: 分享
@@ -106,10 +145,12 @@ ramon-avocado:
       post_plural: 条回复
       post_singular: 条回复
     discussions:
+      empty: 没有话题。
       home: 返回首页
       load_more: 加载更多
       title: 所有讨论
     header:
+      back: 返回
       back_home: 返回首页
       or: 或
       search: 搜索
@@ -119,11 +160,15 @@ ramon-avocado:
       back_home: 首页
       badge_following: 已关注
       badge_sticky: 置顶
+      badge_unread_tooltip: '{count}条未读帖子'
       categories_heading: 分类
       choose_tags: 选择标签
       composer_body_placeholder: 分享你的想法…
       composer_close: 关闭
+      composer_edit: 编辑
       composer_post: 发布讨论
+      composer_preview: 预览
+      composer_preview_empty: 无内容可预览。
       composer_submitting: 发布中…
       composer_title_placeholder: 讨论标题…
       discussion_plural_card: '{count} 个讨论'
@@ -174,8 +219,11 @@ ramon-avocado:
     search:
       clear: 清空
       enter_search_term: 输入关键词以查找用户。
+      filtered_by: 筛选条件
       hero_sub: 搜索您感兴趣的内容
       hero_title: 你在找什么？
+      no_discussions_filter: 没有满足筛选条件的话题。
+      no_discussions_query: '没有「{q}」相关的话题。'
       no_posts_found: '未找到与“{q}”匹配的帖子。'
       no_posts_match: 没有符合筛选条件的帖子。
       no_users_found: '没有找到与“{q}”相关的用户。'
@@ -184,6 +232,8 @@ ramon-avocado:
       posts_filtered_by: 筛选结果
       posts_for: 的帖子
       posts_title: 帖子搜索
+      results: 搜索结果
+      results_for: 结果
       search_button: 搜索
       sort_latest: 最新
       sort_newest: 最新发布
@@ -199,6 +249,7 @@ ramon-avocado:
       discussion_plural: 个讨论
       discussion_singular: 个讨论
       featured: 精选
+      home: 首页
       login_to_view: 登录以查看链接
       other_tags_label: 其他标签
       title: 分类

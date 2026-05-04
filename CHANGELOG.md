@@ -13,6 +13,7 @@ CHANGELOG
 
 **新增翻译**:
 
+* [`dashzeveg/flarum-ads-manager`](https://github.com/dashzeveg/flarum-ads-manager)
 * [`dashzeveg/flarum-custom-head`](https://github.com/dashzeveg/flarum-custom-head)
 * [`ekumanov/flarum-ext-forum-widgets`](https://github.com/ekumanov/flarum-ext-forum-stats-widget)
 * [`ekumanov/flarum-ext-inline-audio`](https://github.com/ekumanov/flarum-ext-inline-audio)

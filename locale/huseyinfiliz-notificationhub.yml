@@ -13,6 +13,8 @@ huseyinfiliz-notificationhub:
       delete_confirm: 确定要删除此通知类型及其所有相关通知吗？
       edit_notification_type: 编辑消息类型
       fields:
+        actions: 操作
+        active: 启用
         color: 通知类型颜色
         default_message_key: 默认消息
         default_recipients: 默认收件人
@@ -27,10 +29,28 @@ huseyinfiliz-notificationhub:
       save: 保存
     title:
       page_title: 通知类型
+  api:
+    message_required: 消息为必填项。
+    no_valid_recipients: 未找到有效的接收者。
+    subject_id_required: 通知类型为必填项。
+    user_ids_required: 用户ID为必填项。
   forum:
     links:
       notification_all: '=> huseyinfiliz-notificationhub.forum.links.notification_individual'
       notification_individual: 发送通知
     modal_notification:
+      message_label: 消息
+      no_notification_types: 未找到启用的通知类型。
+      notification_sent_message: '通知已发送给 {recipientsCount} 位用户！'
+      notification_type_label: 通知类型
+      preview_message_placeholder: 通知消息..
+      preview_title: 通知预览
       recipients_label: 收件人
+      recipients_placeholder: 输入用户名或群组名称...
+      submit_button: 发送通知
       title_text: '=> huseyinfiliz-notificationhub.forum.links.notification_individual'
+      url_label: 目标链接
+      url_placeholder: 'https://www.example.com'
+    recipient_kinds:
+      group: 群组
+      user: 用户

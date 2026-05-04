@@ -4,18 +4,106 @@
 
 dashzeveg-ads-manager:
   admin:
+    ad_discussion_list_desktop_help1: 输入你的广告代码
+    ad_discussion_list_desktop_help2: 输入你的广告代码
+    ad_discussion_list_desktop_help3: 输入你的广告代码
+    ad_discussion_list_desktop_help4: 输入你的广告代码
+    ad_discussion_list_desktop_help5: 输入你的广告代码
+    ad_discussion_list_desktop_label1: 桌面端1
+    ad_discussion_list_desktop_label2: 桌面端2
+    ad_discussion_list_desktop_label3: 桌面端3
+    ad_discussion_list_desktop_label4: 桌面端4
+    ad_discussion_list_desktop_label5: 桌面端5
+    ad_discussion_list_enabled_label: 启用
+    ad_discussion_list_mobile_help1: 输入你的广告代码
+    ad_discussion_list_mobile_help2: 输入你的广告代码
+    ad_discussion_list_mobile_help3: 输入你的广告代码
+    ad_discussion_list_mobile_help4: 输入你的广告代码
+    ad_discussion_list_mobile_help5: 输入你的广告代码
+    ad_discussion_list_mobile_label1: 移动端1
+    ad_discussion_list_mobile_label2: 移动端2
+    ad_discussion_list_mobile_label3: 移动端3
+    ad_discussion_list_mobile_label4: 移动端4
+    ad_discussion_list_mobile_label5: 移动端5
+    ad_discussion_list_random_help: 启用后，每次页面加载时，都将随机展示下列广告
+    ad_discussion_list_random_label: 随机
+    ad_discussion_list_show_ad_every_x_discussions_help: 例如，如果设置为3，则每隔3个话题展示一个广告。如果不设置或设置为0，则只在第5个话题后展示广告。
+    ad_discussion_list_show_ad_every_x_discussions_label: 每隔X个话题展示广告
+    ad_discussion_list_show_mobile_ad_label: 在移动设备上显示移动端广告
+    ad_first_discussion_end_desktop_help1: 输入你的广告代码
+    ad_first_discussion_end_desktop_help2: 输入你的广告代码
+    ad_first_discussion_end_desktop_help3: 输入你的广告代码
+    ad_first_discussion_end_desktop_help4: 输入你的广告代码
+    ad_first_discussion_end_desktop_help5: 输入你的广告代码
+    ad_first_discussion_end_desktop_label1: 桌面端1
+    ad_first_discussion_end_desktop_label2: 桌面端2
+    ad_first_discussion_end_desktop_label3: 桌面端3
+    ad_first_discussion_end_desktop_label4: 桌面端4
+    ad_first_discussion_end_desktop_label5: 桌面端5
+    ad_first_discussion_end_enabled_label: 启用
+    ad_first_discussion_end_mobile_help1: 输入你的广告代码
+    ad_first_discussion_end_mobile_help2: 输入你的广告代码
+    ad_first_discussion_end_mobile_help3: 输入你的广告代码
+    ad_first_discussion_end_mobile_help4: 输入你的广告代码
+    ad_first_discussion_end_mobile_help5: 输入你的广告代码
+    ad_first_discussion_end_mobile_label1: 移动端1
+    ad_first_discussion_end_mobile_label2: 移动端2
+    ad_first_discussion_end_mobile_label3: 移动端3
+    ad_first_discussion_end_mobile_label4: 移动端4
+    ad_first_discussion_end_mobile_label5: 移动端5
+    ad_first_discussion_end_random_help: 启用后，每次页面加载时，都将随机展示下列广告
+    ad_first_discussion_end_random_label: 随机
+    ad_first_discussion_end_show_mobile_ad_label: 在移动设备上显示移动端广告
+    ad_header_bottom_desktop_help1: 输入你的广告代码
+    ad_header_bottom_desktop_help2: 输入你的广告代码
+    ad_header_bottom_desktop_help3: 输入你的广告代码
+    ad_header_bottom_desktop_help4: 输入你的广告代码
+    ad_header_bottom_desktop_help5: 输入你的广告代码
+    ad_header_bottom_desktop_label1: 桌面1
+    ad_header_bottom_desktop_label2: 桌面2
+    ad_header_bottom_desktop_label3: 桌面3
+    ad_header_bottom_desktop_label4: 桌面4
+    ad_header_bottom_desktop_label5: 桌面5
+    ad_header_bottom_enabled_label: 启用
+    ad_header_bottom_mobile_help1: 输入你的广告代码
+    ad_header_bottom_mobile_help2: 输入你的广告代码
+    ad_header_bottom_mobile_help3: 输入你的广告代码
+    ad_header_bottom_mobile_help4: 输入你的广告代码
+    ad_header_bottom_mobile_help5: 输入你的广告代码
+    ad_header_bottom_mobile_label1: 移动端1
+    ad_header_bottom_mobile_label2: 移动端2
+    ad_header_bottom_mobile_label3: 移动端3
+    ad_header_bottom_mobile_label4: 移动端4
+    ad_header_bottom_mobile_label5: 移动端5
+    ad_header_bottom_random_help: 启用后，每次页面加载时，都将随机展示下列广告
+    ad_header_bottom_random_label: 随机
+    ad_header_bottom_show_mobile_ad_label: 在移动设备上显示移动端广告
+    ad_header_bottom_show_on_discussion_page_label: 在话题页面展示
+    ad_header_bottom_show_on_index_page_label: 在首页显示
+    ad_header_bottom_show_on_tags_page_label: 在标签页面展示
+    ad_header_bottom_show_on_user_page_label: 在用户页面展示
     ad_header_top_desktop_help1: 输入你的广告代码
     ad_header_top_desktop_help2: 输入你的广告代码
     ad_header_top_desktop_help3: 输入你的广告代码
     ad_header_top_desktop_help4: 输入你的广告代码
     ad_header_top_desktop_help5: 输入你的广告代码
     ad_header_top_desktop_label1: 桌面1
+    ad_header_top_desktop_label2: 桌面端2
+    ad_header_top_desktop_label3: 桌面端3
+    ad_header_top_desktop_label4: 桌面端4
+    ad_header_top_desktop_label5: 桌面端5
     ad_header_top_enabled_label: 启用
     ad_header_top_mobile_help1: 输入你的广告代码
     ad_header_top_mobile_help2: 输入你的广告代码
     ad_header_top_mobile_help3: 输入你的广告代码
     ad_header_top_mobile_help4: 输入你的广告代码
     ad_header_top_mobile_help5: 输入你的广告代码
+    ad_header_top_mobile_label1: 移动端1
+    ad_header_top_mobile_label2: 移动端2
+    ad_header_top_mobile_label3: 移动端3
+    ad_header_top_mobile_label4: 移动端4
+    ad_header_top_mobile_label5: 移动端5
+    ad_header_top_random_help: 启用后，每次页面加载时，都将随机展示下列广告
     ad_header_top_random_label: 随机
     ad_header_top_show_mobile_ad_label: 在移动设备上显示移动端广告
     ad_header_top_show_on_discussion_page_label: 在话题页面显示
@@ -27,8 +115,70 @@ dashzeveg-ads-manager:
     ad_left_side_nav_desktop_help3: 输入你的广告代码
     ad_left_side_nav_desktop_help4: 输入你的广告代码
     ad_left_side_nav_desktop_help5: 输入你的广告代码
+    ad_left_side_nav_desktop_label1: 桌面端1
+    ad_left_side_nav_desktop_label2: 桌面端2
+    ad_left_side_nav_desktop_label3: 桌面端3
+    ad_left_side_nav_desktop_label4: 桌面端4
+    ad_left_side_nav_desktop_label5: 桌面端5
+    ad_left_side_nav_enabled_label: 启用
     ad_left_side_nav_mobile_help1: 输入你的广告代码
     ad_left_side_nav_mobile_help2: 输入你的广告代码
     ad_left_side_nav_mobile_help3: 输入你的广告代码
     ad_left_side_nav_mobile_help4: 输入你的广告代码
     ad_left_side_nav_mobile_help5: 输入你的广告代码
+    ad_left_side_nav_mobile_label1: 移动端1
+    ad_left_side_nav_mobile_label2: 移动端2
+    ad_left_side_nav_mobile_label3: 移动端3
+    ad_left_side_nav_mobile_label4: 移动端4
+    ad_left_side_nav_mobile_label5: 移动端5
+    ad_left_side_nav_random_help: 启用后，每次页面加载时，都将随机展示下列广告
+    ad_left_side_nav_random_label: 随机
+    ad_left_side_nav_show_mobile_ad_label: 在移动设备上显示移动端广告
+    ad_right_side_nav_desktop_help1: 输入你的广告代码
+    ad_right_side_nav_desktop_help2: 输入你的广告代码
+    ad_right_side_nav_desktop_help3: 输入你的广告代码
+    ad_right_side_nav_desktop_help4: 输入你的广告代码
+    ad_right_side_nav_desktop_help5: 输入你的广告代码
+    ad_right_side_nav_desktop_label1: 桌面端1
+    ad_right_side_nav_desktop_label2: 桌面端2
+    ad_right_side_nav_desktop_label3: 桌面端3
+    ad_right_side_nav_desktop_label4: 桌面端4
+    ad_right_side_nav_desktop_label5: 桌面端5
+    ad_right_side_nav_enabled_label: 启用
+    ad_right_side_nav_mobile_help1: 输入你的广告代码
+    ad_right_side_nav_mobile_help2: 输入你的广告代码
+    ad_right_side_nav_mobile_help3: 输入你的广告代码
+    ad_right_side_nav_mobile_help4: 输入你的广告代码
+    ad_right_side_nav_mobile_help5: 输入你的广告代码
+    ad_right_side_nav_mobile_label1: 移动端1
+    ad_right_side_nav_mobile_label2: 移动端2
+    ad_right_side_nav_mobile_label3: 移动端3
+    ad_right_side_nav_mobile_label4: 移动端4
+    ad_right_side_nav_mobile_label5: 移动端5
+    ad_right_side_nav_random_help: 启用后，每次页面加载时，都将随机展示下列广告
+    ad_right_side_nav_random_label: 随机
+    ad_right_side_nav_show_mobile_ad_label: 在移动设备上显示移动端广告
+    ad_tags_page_desktop_help1: 输入你的广告代码
+    ad_tags_page_desktop_help2: 输入你的广告代码
+    ad_tags_page_desktop_help3: 输入你的广告代码
+    ad_tags_page_desktop_help4: 输入你的广告代码
+    ad_tags_page_desktop_help5: 输入你的广告代码
+    ad_tags_page_desktop_label1: 桌面端1
+    ad_tags_page_desktop_label2: 桌面端2
+    ad_tags_page_desktop_label3: 桌面端3
+    ad_tags_page_desktop_label4: 桌面端4
+    ad_tags_page_desktop_label5: 桌面端5
+    ad_tags_page_enabled_label: 启用
+    ad_tags_page_mobile_help1: 输入你的广告代码
+    ad_tags_page_mobile_help2: 输入你的广告代码
+    ad_tags_page_mobile_help3: 输入你的广告代码
+    ad_tags_page_mobile_help4: 输入你的广告代码
+    ad_tags_page_mobile_help5: 输入你的广告代码
+    ad_tags_page_mobile_label1: 移动端1
+    ad_tags_page_mobile_label2: 移动端2
+    ad_tags_page_mobile_label3: 移动端3
+    ad_tags_page_mobile_label4: 移动端4
+    ad_tags_page_mobile_label5: 移动端5
+    ad_tags_page_random_help: 启用后，每次页面加载时，都将随机展示下列广告
+    ad_tags_page_random_label: 随机
+    ad_tags_page_show_mobile_ad_label: 在移动设备上显示移动端广告

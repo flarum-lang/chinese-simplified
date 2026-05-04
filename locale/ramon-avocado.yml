@@ -33,8 +33,12 @@ ramon-avocado:
       auth_image_label: 认证弹窗图片
       banner_image_help: 上传显示在论坛顶部的横幅（Hero）图片。
       banner_image_label: 横幅图片
+      categories_heading_label: 分类栏目标题
       custom_default_avatar_help: 为没有上传头像的用户上传自定义默认头像图片。
       custom_default_avatar_label: 自定义默认头像
+      custom_hero_enabled_label: 使用自定义横幅（Hero）内容（HTML）
+      custom_hero_html_help: HTML内容将嵌入横幅遮罩层，替换.AvocadoHome-heroBannerContent内容。支持使用内链<style>标签。
+      custom_hero_html_label: 自定义横幅HTML
       custom_loading_spinner_help: 使用SVG加载动画替换默认的文字加载指示。
       custom_loading_spinner_label: 个性化加载动画
       featured_tags_empty: 未找到标签。
@@ -42,6 +46,7 @@ ramon-avocado:
       featured_tags_label: 精选标签
       fixed_avatar_effect_help: 在桌面端阅读长帖时，保持帖子头像悬停在侧边。
       fixed_avatar_effect_label: 启用头像固定效果
+      following_heading_label: 关注话题标题
       hero_decoration_icon_help: 在讨论页头部的右侧，将副标签图标显示为大尺寸装饰性元素。
       hero_decoration_icon_label: 在讨论页主区域显示副标签图标
       hero_decoration_icon_opacity_help: '设置装饰性图标的不透明度百分比。100 = 完全不透明，0 = 完全不可见。'
@@ -55,28 +60,43 @@ ramon-avocado:
       logo_enabled_label: '启用自定义 Logo'
       logo_svg_help: '为您的论坛上传自定义 SVG 格式 Logo。'
       logo_svg_label: 'SVG 格式 Logo'
+      popular_heading_label: 热点话题标题
       search_v1_help: '显示内联搜索下拉框而非 V2 弹窗样式。'
       search_v1_label: '启用 V1 搜索栏样式'
       section_auth: 登录与注册
+      section_colored: 自动配色
       section_footer: 页脚
       section_homepage: 首页
       section_logo: Logo
       section_posts: 帖子
       section_search: 搜索
+      section_team: 团队页面
+      section_titles_heading: 栏目标题
+      section_titles_help: 自定义首页栏目标题。留空则使用语言包中的默认标题。
       show_action_icons_help: '在点赞和回复按钮上显示 Font Awesome 图标。'
       show_action_icons_label: 在点赞和回复按钮上显示图标
       show_auth_buttons_help: 在页眉次级导航中为游客显示药丸样式的登录和注册按钮。
       show_auth_buttons_label: 为游客在页眉显示登录/注册按钮
       show_guest_cta_help: 为游客显示引导注册/登录的鼓励信息。
       show_guest_cta_label: 显示游客引导信息
+      show_online_count_help: 在在线用户头像旁边，显示「X人在线」文本。
       show_online_users_help: 在界面上显示当前在线用户的数量。
       show_online_users_label: 显示在线用户数
       show_post_cta_help: 在讨论的第一条帖子后面显示登录/注册卡片，仅对游客可见。
       show_post_cta_label: 在首条帖子后向游客显示“参与讨论”引导
       show_share_help: 为每条帖子添加分享操作按钮。
       show_share_label: 在帖子中显示分享按钮
+      showcase_count_help: 在热点栏显示1到5个话题卡片。
+      showcase_enabled_help: 在首页以卡片滑块的方式，呈现所选标签的话题。
+      showcase_heading_label: 热点栏标题
+      showcase_image_style_default: 紧凑（默认）
+      showcase_image_style_help: 选择图片展示样式：紧凑或全部高度。
+      showcase_image_style_label: 卡片图片样式
+      showcase_tag_help: 这些标签的话题将以卡片滑块的方式展示在首页。
+      showcase_tag_label: 热点/作品标签
       spinner_custom_code_help: 使用SVG或HTML作为加载动画。
       spinner_custom_code_label: 自定义动画代码
+      tag_picker_placeholder: 选择标签…
   forum:
     actions:
       share: 分享

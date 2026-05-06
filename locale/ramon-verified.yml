@@ -76,11 +76,13 @@ ramon-verified:
       section_behaviour: 操作
       section_behaviour_help: 设置用户通过认证后，必须提供或可修改的内容。
       section_document_types: 资料类型
+      section_document_types_help: 管理用户在提交认证申请时，可以选择的资料类型。默认列表包含（身份证、税号、驾驶证和其它）。你可以修改名称或替换它们。
       show_tooltip_help: 开启后，鼠标悬浮在勋章上时，将显示认证信息卡片。关闭时，则不会显示该卡片。
       show_tooltip_label: 显示已认证信息弹窗
   api:
     already_pending: 改用户已有等待中的认证申请。
     already_verified: 改用户已经通过认证。
+    avatar_locked: 你的账号是已认证账号，头像已被锁定。重新提交认证申请可更新头像。
     bad_extension: 不支持的文件扩展名。
     bad_mime: 不支持的文件类型。
     document_required: 提交认证申请必须添加认证资料。
@@ -157,7 +159,9 @@ ramon-verified:
       verify_prompt: 可选的审核备注日志：
       verify_success: 用户认证已完成。
   gdpr:
+    anonymize_description: 提交的认证资料已经删除。理由说明和管理员备注已从认证申请中移除，但审核记录（状态和日期）将留存，避免其它数据关联查询时的一致性。
     delete_description: 已永久删除你的所有认证申请和上传的认证资料。你的认证状态已重置。
+    export_description: 认证申请，你提交的认证资料（身份证、税号、护照等），以及你当前的认证状态。包含所有你作为管理员进行处理的认证申请。
   lib:
     popover:
       headline: '该账号具有 <strong>已认证标识</strong>.'

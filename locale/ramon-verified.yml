@@ -4,6 +4,48 @@
 
 ramon-verified:
   admin:
+    encryption:
+      actions:
+        generate: 生成密钥对
+      public_key:
+        copied: 已复制
+        copy_title: 复制公钥
+        help_broken: 移除此公钥将重新生成一对新的密钥，并永久删除磁盘上所有已加密的文件。
+        help_healthy: 已启用加密。新上传的文件将使用此密钥进行加密封存。移除此密钥将重新生成一对新的密钥，并永久删除磁盘上所有已加密的文件。
+        label: 当前公钥
+        remove_button: 移除并生成新的密钥对
+      regenerate_modal:
+        acknowledge: 我已理解：当前所有已加密的文档将被永久删除。
+        submit: 是的，重新生成
+        title: 是否生成新的密钥对？
+        warning: 此操作将永久删除当前磁盘上的所有加密文档。在没有原始私钥的情况下，明文内容无法恢复。受影响请求的验证记录会被保留，但对应的文档文件将被删除。
+      reveal_modal:
+        close: 关闭
+        confirm_hint: 请在关闭之前确认你已成功保存上述密钥。
+        confirm_saved: 我已将其保存到config.php，并确认该文件可被PHP正常读取。
+        copied: 已复制！
+        copy_button: 复制代码片段
+        intro: 这是私钥唯一的一次显示。请立即将其粘贴到您论坛的config.php配置文件中，器不会保存该密钥的副本。
+        orphaned: '{count}份之前已加密的资料，文件无法读取，已被删除。'
+        snippet_label: 将这一行添加到config.php配置文件中：
+        title: 保存你的私钥
+        warning_body: 如果在将其写入config.php配置文件之前丢失了该私钥，那么所有使用对应公钥加密的文档都将无法恢复。
+        warning_title: 千万别丢失此密钥。
+      section_help: 将上传的身份文件在静态存储状态下进行加密。私钥在此处生成，但必须手动将其粘贴到config.php中，服务器不会存储该私钥。如果未正确配置私钥，加密的文件将无法被解密。
+      section_title: 文件加密
+      status:
+        absent: 缺失
+        healthy: 已启用加密。新上传的文件将使用已配置的公钥进行加密封存，下载时将自动无感解密。
+        libsodium_missing: libsodium模块在当前PHP环境中不可用。需要安装该模块才能启用文件加密。
+        mismatch_body: 'config.php中的私钥与当前保存在设置中的公钥不匹配。加密看似已配置完成，但所有解密操作都会失败，现有的加密文档无法读取。请将 config.php 中的私钥替换为与当前公钥匹配的正确密钥，或删除下方的公钥以重新生成一对新密钥（注意：此操作将永久删除磁盘上的所有加密文档）。'
+        mismatch_title: 公钥和私钥不匹配
+        not_setup: 未启用加密。新上传的文件将通过无加密方式存储。
+        present: 已配置
+        private_key_label: 私钥（config.php）
+        private_missing_body: '已配置公钥，但在 config.php 中未找到匹配的私钥。在恢复私钥之前，现有的加密文档将无法读取。请将下方内容添加到config.php中，或删除下面的公钥以重新生成密钥对（注意：此操作将永久删除磁盘上的所有加密文档）。'
+        private_missing_title: config.php中缺失私钥key
+        public_key_label: 公钥
+        unknown: 无法加载加密状态。
     permissions:
       auto_verified_label: 自动接收认证勋章
       request_label: 提交认证申请
@@ -71,6 +113,13 @@ ramon-verified:
       requests_open_label: 接受新的认证申请
       require_document_help: 用户提交认证申请时，必须上传认证资料（身份证、税号、护照等）。
       require_document_label: 必须提交认证资料
+      retention_days_help: 设置认证申请处理完成后，资料暂存的天数。每日定时任务自动清除超过此天数的文件。最小1天，最大3650天。
+      retention_days_label: 保留天数
+      retention_delete_after_days: 保留一定天数后删除文件
+      retention_delete_immediate: 处理完毕后立即删除文件
+      retention_help: 选择认证申请通过或拒绝后的已上传资料处理方式。部分论坛必须留存资料以备法务或审计之用；也有论坛因隐私法规要求，必须及时删除。
+      retention_keep: 永久保留文文件
+      retention_label: 资料留存
       section_appearance: 样式
       section_appearance_help: 自定义勋章在论坛的显示样式。
       section_behaviour: 操作
@@ -86,6 +135,10 @@ ramon-verified:
     bad_extension: 不支持的文件扩展名。
     bad_mime: 不支持的文件类型。
     document_required: 提交认证申请必须添加认证资料。
+    encryption:
+      acknowledge_loss_required: 我已确认：在生成新的密钥对之前，所有现有的加密文档将被删除。
+      libsodium_missing: libsodium模块在当前PHP环境中不可用。
+      private_key_missing: 该文档已加密，但本服务器的config.php配置文件中未配置对应的私钥。请将其添加到「verified-private-key」项下，或重新生成密钥对（该操作将删除所有已加密的文档）。
     file_too_large: 资料过大（最大8MB）。
     no_file: 没有上传的资料。
     not_found: 没有认证申请。

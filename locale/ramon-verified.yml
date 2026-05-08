@@ -89,6 +89,8 @@ ramon-verified:
       tab_approved: 已通过
       tab_pending: 等待中
       tab_rejected: 已拒绝
+      tier_filter_all: 所有级别
+      tier_filter_aria: 通过级别过滤
       title: 认证申请
       view_document: 查看资料
     settings:
@@ -128,6 +130,47 @@ ramon-verified:
       section_document_types_help: 管理用户在提交认证申请时，可以选择的资料类型。默认列表包含（身份证、税号、驾驶证和其它）。你可以修改名称或替换它们。
       show_tooltip_help: 开启后，鼠标悬浮在勋章上时，将显示认证信息卡片。关闭时，则不会显示该卡片。
       show_tooltip_label: 显示已认证信息弹窗
+      tiers:
+        add: 添加级别
+        add_first: 创建第一个级别
+        auto_groups_empty: 没有可用用户组。
+        auto_groups_help: 属于这些用户组的成员将自动获得此认证级别，无需人工审核。当用户同时属于多个不同等级的用户组时，以列表中靠前的等级为优先。
+        auto_groups_label: 自动被授予该认证级别的用户组
+        collapse: 折叠
+        color_label: 颜色
+        description_bold_title: 粗体高亮（级别颜色）
+        description_help: '鼠标悬浮在徽章上时显示的说明内容（弹窗）。最多 320 个字符。使用编辑器上方的按钮，可将部分文字高亮为该级别的颜色。'
+        description_italic_title: 斜体高亮
+        description_label: 描述（弹窗）
+        description_placeholder: 例如：该账号已由管理员授予认证。
+        description_toolbar_hint: 选择文本并点击按钮
+        done: 完成
+        empty: 你还没有配置任何认证级别。创建一个认证级别，并开始认证用户。
+        empty_title: 暂未配置级别
+        id_help: '用于URL的标识符（slug）。只能使用小写字母、数字、下划线（_）和连字符（-），最长 32 个字符。创建后无法修改，否则需要重新分配用户等级。'
+        id_label: ID
+        label_label: 显示名称
+        label_placeholder: 例如：一般认证、高级认证、黄金认证
+        learn_more_help: '使用https://网址指向你的认证政策。留空将不会在弹窗中显示链接。'
+        learn_more_label: 「了解更多」链接
+        learn_more_open: 在新选项卡中打开链接
+        no_id: （暂无ID）
+        preview_hint: 鼠标悬浮于勋章上查看实际弹窗效果
+        preview_label: 预览
+        remove: 删除级别
+        remove_confirm: 删除这个等级吗？当前拥有该等级的用户将恢复为默认等级，直到被重新分配为止。
+        section_appearance: 样式
+        section_assignment: 自动授予
+        section_help: 创建并配置论坛中可用的认证徽章（blue、gold、partner等）。每个等级都拥有独立的颜色、悬浮说明以及“了解更多”链接。当多个自动授予用户组同时生效时，等级顺序将决定优先显示的认证等级。
+        section_identity: 身份
+        section_popover: 弹窗内容
+        section_title: 认证级别
+        unnamed: （暂无名称）
+    tabs:
+      aria_label: 面板区域
+      general: 设置
+      requests: 申请
+      tiers: 级别
   api:
     already_pending: 改用户已有等待中的认证申请。
     already_verified: 改用户已经通过认证。
@@ -189,7 +232,7 @@ ramon-verified:
       reason_placeholder: '可选 - 请提供有助于认证的背景信息（如职位、公开资料、所属机构等）'
       remove_file: 删除资料
       submit_button: 提交申请
-      success: 认证申请已提交。
+      success: 认证申请已提交！
       title: 申请认证
       upload_failed: 上传失败。请重试。
       uploaded: '已添加：{name}'
@@ -217,9 +260,15 @@ ramon-verified:
     export_description: 认证申请，你提交的认证资料（身份证、税号、护照等），以及你当前的认证状态。包含所有你作为管理员进行处理的认证申请。
   lib:
     popover:
-      headline: '该账号具有 <strong>已认证标识</strong>.'
+      headline: '该账号具有 <strong>已认证标识</strong>。'
+      learn_more: 了解更多
       pill: 已认证
       verified_no_date: 已自动认证账号
       verified_on: '已认证{date}'
+    tier_prompt:
+      hint: 输入认证级别的ID（例如1或blue）。
+      intro: 选择认证级别：
+      invalid: 认证级别无效。认证已被取消。
+      no_tiers: 暂未配置级别。从管理后台》Verified插件中添加认证级别后，再进行认证。
     tooltip: 已认证账号
     tooltip_with_date: '已认证账号 · 于{date}'

@@ -31,16 +31,19 @@ ramon-backup:
         title: 保存你的私钥
         warning_body: 如果你丢失此密钥，所有使用该公钥加密的备份将无法解密。
         warning_title: 千万别丢失此密钥
+      section_help: 使用非对称密钥对加密新备份。公钥存储在数据库中，私钥必须粘贴到config.php配置文件中，Web进程不会持有任何未被明确提供的密钥。
       section_title: 加密
       status:
         absent: 缺失
         healthy: 加密已配置完成。在备份弹窗中勾选「加密」后，新生成的备份将自动加密。
         libsodium_missing: 服务器上的libsodium模块不可用。无法启用加密。
         load_failed: 无法从服务器加载加密状态。
+        mismatch_body: config.php配置文件中的私钥与数据库中存储的公钥不匹配。现有加密备份无法在此服务器上解密。请恢复原始私钥，或更换为新的密钥对（这不会改变现有加密文件，但在当前环境中将无法读取）。
         mismatch_title: 密钥不匹配
         not_setup: 暂未生成加密密钥对。除非每次手动设置，否则所有备份将无加密存储。
         present: 当前
         private_key_label: 私钥（conifg.php）
+        private_missing_body: 已生成公钥，但对应的私钥未在config.php配置文件中。在恢复私钥之前，现有加密备份无法在此处解密。
         private_missing_title: 私钥缺失
         public_key_label: 公钥
         retry: 重试
@@ -94,7 +97,16 @@ ramon-backup:
       start_failed: 无法启动备份。
       title: 创建备份
     import_modal:
+      cancel_button: 取消
+      cancel_failed_warn: 弹窗已关闭，但服务器可能仍在应用更改。请在重试前先确认服务器状态。
       choose_file: 点击选择一个.flarum文件
+      close_button: 关闭
+      completed: 还原成功。
+      confirm_body: 归档中的数据表将覆盖当前数据表。文件将被写入其原始路径。
+      confirm_check: 我已确认。使用备份内容覆盖当前数据。
+      confirm_title: 覆盖现有数据
+      done_body: 所有选定文件已恢复。数据库未被修改，因此你当前的会话保持不变。
+      done_title: 还原成功
       extensions_composer_note: '打包中包含composer.json和composer.lock文件，将在恢复时覆盖目标项目根目录。恢复完成后请运行「composer install」来生成vendor扩展。'
       extensions_tag_unknown: 未知
       extensions_tag_vendor: Vendor
@@ -102,12 +114,28 @@ ramon-backup:
       inspect_title: 打包详情
       inspecting_archive: 正在检查打包内容…
       key_help: 该归档已加密。请粘贴匹配的base64私钥。它将仅保存在当前浏览器会话中，并且只发送一次到服务器用于恢复。
+      key_hint_local: 留空则使用此服务器config.php配置文件中私钥。
       key_title: 私钥
+      logout_body: 数据库恢复已替换本服务器的「users」和「sessions」表，因此你当前登录的账号在此环境中已不存在。请使用导入论坛的账号重新登录以继续。
+      logout_button: 刷新并登录
+      logout_step_login: 使用原站管理员凭据登录
+      logout_step_reload: '请刷新下面的页面以清除过期的会话 Cookie'
+      logout_title: 你以退出登录
       meta_contents: 包含内容
       meta_flarum: Flarum版本
       meta_size: 文件体积
       meta_source_url: 原站地址
       meta_when: 创建时间
+      phase_done: 完成
+      phase_error: 错误
+      phase_error_network: 恢复过程中与服务器连接中断。服务器可能仍在写入数据。请稍等片刻，并在重试前先检查数据库状态。
+      phase_extract: 正在解压…
+      phase_finalize: 收尾中…
+      phase_inspect: 正在校验打包内容…
+      phase_restore: 正在还原数据库…
+      phase_rewrite: 正在重定向URL…
+      reload_button: 刷新页面
+      reload_required: 论坛数据已被覆盖。请刷新页面以继续使用新的会话。你之前的登录状态可能也已被覆盖。
       section_assets: 资产
       section_count: '文件总数{count}'
       section_db: 数据库
@@ -115,11 +143,14 @@ ramon-backup:
       section_storage: 存储
       selection_help: 选择要应用的备份部分。任何未勾选的内容在恢复时都会被跳过，相应的文件/数据库变更不会被应用。
       selection_title: 选择恢复内容
+      start_button: 还原
+      start_failed: 无法启动还原。
       title: 导入备份
       upload_button: 上传并开始校验
       upload_failed: 上传失败。
       upload_idle_timeout: 上传停滞（超过一分钟未传输数据）。请检查网络后重试。
       uploading_pct: '正在上传…{pct}%'
+      url_rewrite_note: 数据库中指向原服务器的URL将会自动重写为当前服务器的URL。
       warning_body: 导入备份将覆盖数据库并替换文件。请先确保你已经为当前安装环境做好了最新备份。
       warning_title: 该操作将覆盖数据
     list:

@@ -211,6 +211,8 @@ ramon-avocado:
       login_to_view: 登陆查看链接
     link_cta:
       placeholder: 登录以查看链接
+    messages:
+      deleted_message: 消息已删除
     post:
       op_badge: 楼主
     post_cta:
@@ -243,6 +245,7 @@ ramon-avocado:
       tab_discussions: 讨论
       tab_posts: 帖子
       tab_users: 用户
+      tip: 'Tip: prefix '
       title: 搜索
     tags:
       all_discussions: 所有话题

@@ -63,6 +63,7 @@ CHANGELOG
 * [`ralkage/flarum-ext-word-censor`](https://github.com/Ralkage/flarum-ext-word-censor)
 * [`ralkage/flarum-ext-word-counter`](https://github.com/Ralkage/flarum-ext-word-counter)
 * [`ramon/avocado`](https://github.com/ram0ng1/avocado)
+* [`ramon/backup`](https://github.com/ram0ng1/backup)
 * [`ramon/colored`](https://github.com/ram0ng1/colored)
 * [`ramon/stickers`](https://github.com/ram0ng1/stickers)
 * [`ramon/verified`](https://github.com/ram0ng1/verified)

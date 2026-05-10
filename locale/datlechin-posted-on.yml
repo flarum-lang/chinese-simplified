@@ -3,8 +3,35 @@
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
 datlechin-posted-on:
+  admin:
+    settings:
+      display_mode_help: 帖子中的显示内容。弹窗提示中始终显示所有信息。
+      display_mode_label: 设置显示内容
+      display_mode_os_browser: '操作系统和浏览器（例如Windows 11 · Chrome 121）'
+      display_mode_os_only: '仅操作系统（例如Windows 11）'
+      skip_guests_help: 开启后，游客账号的帖子将不会抓取平台元数据。
+      skip_guests_label: 不抓取游客信息
   forum:
+    device_types:
+      camera: 摄像头
+      'car browser': 汽车
+      console: 终端
+      desktop: 桌面电脑
+      'feature phone': 手机
+      peripheral: 外接设备
+      phablet: 通话平板
+      'portable media player': 媒体播放器
+      'smart display': 智能显示器
+      'smart speaker': 智能音响
+      smartphone: 手机
+      tablet: 平板
+      tv: 电视
+      wearable: 可穿戴设备
     post:
       posted_on_text: '使用 {posted_on} 发表'
+      tooltip:
+        client: 浏览器
+        device: 设备
+        os: 操作系统
     settings:
-      privacy_disclose_posted_on_label: 允许其他人查看我的发帖设备
+      privacy_disclose_posted_on_label: 向他人展示我发帖所用的设备

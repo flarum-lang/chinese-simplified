@@ -245,7 +245,8 @@ ramon-avocado:
       tab_discussions: 讨论
       tab_posts: 帖子
       tab_users: 用户
-      tip: 'Tip: prefix '
+      tip: '提示：输入前缀 '
+      tip_suffix: ' 可以根据标签进行筛选'
       title: 搜索
     tags:
       all_discussions: 所有话题

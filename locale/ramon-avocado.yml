@@ -46,7 +46,7 @@ ramon-avocado:
       custom_default_avatar_label: 自定义默认头像
       custom_hero_enabled_help: 使用自定义HTML内容，替换默认横幅内容，包含：图标、标题、描述、登录/注册按钮。横幅容器、背景图片和遮罩层不变。与默认横幅一样，自定义横幅仅对访客可见。
       custom_hero_enabled_label: 使用自定义横幅（Hero）内容（HTML）
-      custom_hero_html_help: HTML内容将嵌入横幅遮罩层，替换.AvocadoHome-heroBannerContent内容。支持使用内链<style>标签。
+      custom_hero_html_help: HTML内容将嵌入横幅遮罩层，替换.AvocadoHome-heroBannerContent内容。支持使用内链「<style>」标签。
       custom_hero_html_label: 自定义横幅HTML
       custom_loading_spinner_help: 使用SVG加载动画替换默认的文字加载指示。
       custom_loading_spinner_label: 个性化加载动画
@@ -70,6 +70,8 @@ ramon-avocado:
       hero_decoration_icon_opacity_label: 图标不透明度（0-100）
       hero_image_position_help: 'CSS background-position 属性值，例如 ''center top'' 或 ''50% 20%''。'
       hero_image_position_label: 横幅图片位置
+      hero_image_tags_help: 当用户在新讨论中添加这些标签之一时，编辑器将显示一个可选的图片上传字段。上传的图片将作为话题横幅背景图，并显示为首页展示区的首张图片。
+      hero_image_tags_label: 需要横幅图片的标签
       hide_links_for_guests_help: 阻止游客点击帖子中的链接。点击时显示登录/注册提示，而非直接跳转。
       hide_links_for_guests_label: 对游客隐藏链接
       loading_spinner_style_label: 动画样式
@@ -90,6 +92,7 @@ ramon-avocado:
       section_auth: 登录与注册
       section_colored: 自动强调色
       section_footer: 页脚
+      section_hero_image_tags: 话题横幅图片
       section_homepage: 首页
       section_logo: Logo
       section_posts: 帖子
@@ -140,6 +143,10 @@ ramon-avocado:
     actions:
       share: 分享
     discussion:
+      hero_image_add: 添加图片
+      hero_image_remove: 移除图片
+      hero_image_remove_confirm: 确定移除该话题的横幅图片？
+      hero_image_replace: 替换图片
       participant_plural: 人参与
       participant_singular: 人参与
       post_plural: 条回复
@@ -166,6 +173,10 @@ ramon-avocado:
       composer_body_placeholder: 分享你的想法…
       composer_close: 关闭
       composer_edit: 编辑
+      composer_hero_image_label: 横幅图片（可选）
+      composer_hero_image_picked: 已选图片
+      composer_hero_image_remove: 移除图片
+      composer_hero_image_upload_failed: 无法上传横幅图片。你可以在话题页面中重新上传。
       composer_post: 发布讨论
       composer_preview: 预览
       composer_preview_empty: 无内容可预览。

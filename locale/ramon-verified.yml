@@ -61,6 +61,7 @@ ramon-verified:
       auto_actions_hint: 在权限中进行管理
       auto_via_group_unknown: 通过群组权限自动完成认证。
       auto_via_groups: '通过群组认证的：{groups}'
+      decide_failed: 无法保存认证操作。请重试。
       description: 审核并操作用户提交的认证申请。
       document_label: 资料
       document_preview_title: 资料预览
@@ -68,7 +69,10 @@ ramon-verified:
       empty_pending: 没有等待审核的申请。
       empty_rejected: 没有已被拒绝的申请。
       empty_search: '没有用户符合筛选条件“{query}”。'
+      generate_keypair_failed: 无法生成密钥对。请重试。
       handled_by: '已由{handlerName}处理 · {date}'
+      load_approved_failed: 无法加载已认证用户。请重试。
+      load_failed: 无法加载认证申请。请重试。
       pagination_info: '第{page}页/共{lastPage}页 · 总{total}条'
       pagination_next: 下一个
       pagination_prev: 上一个
@@ -80,10 +84,12 @@ ramon-verified:
       revoke_button: 撤销
       revoke_prompt: 撤销理由（将展示在审核日志中）：
       revoke_success: 认证已被撤销。
+      revoke_user_failed: 无法撤销认证。请重试。
       search_clear: 清除搜索
       search_placeholder: 搜索已认证用户…
       status_approved: 已通过
       status_auto: 自动认证的
+      status_load_failed: 无法加载加密状态。
       status_pending: 等待中
       status_rejected: 已拒绝
       tab_approved: 已通过
@@ -249,9 +255,11 @@ ramon-verified:
       verified_sublabel: 管理员已确认你的标识。
     user_controls:
       revoke_button: 撤销认证
+      revoke_failed: 无法撤销认证。请重试。
       revoke_prompt: 撤销理由（审核日志中可见）：
       revoke_success: 撤销认证成功。
       verify_button: 认证用户
+      verify_failed: 无法认证用户。请重试。
       verify_prompt: 可选的审核备注日志：
       verify_success: 用户认证已完成。
   gdpr:
@@ -259,6 +267,10 @@ ramon-verified:
     delete_description: 已永久删除你的所有认证申请和上传的认证资料。你的认证状态已重置。
     export_description: 认证申请，你提交的认证资料（身份证、税号、护照等），以及你当前的认证状态。包含所有你作为管理员进行处理的认证申请。
   lib:
+    errors:
+      clipboard: 无法复制到粘贴板。
+      generic: 发生错误。请重试。
+      network: 网络错误。检查网络连接并重试。
     popover:
       headline: '该账号具有 <strong>已认证标识</strong>。'
       learn_more: 了解更多

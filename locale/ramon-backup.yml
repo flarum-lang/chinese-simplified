@@ -95,7 +95,16 @@ ramon-backup:
       phase_scan: 扫描中…
       start_button: 开始备份
       start_failed: 无法启动备份。
+      target_help: '此备份将恢复到哪里？如果目标数据库引擎与当前引擎不同，请选择目标引擎。系统将按该引擎生成 SQL，以便你可以从MySQL迁移到PostgreSQL（或其它），无需手动转换。'
+      target_mariadb: 'MariaDB 10.3+'
+      target_mysql: 'MySQL 5.7+ / 8.0.30+'
+      target_postgres: 'PostgreSQL 10+'
+      target_same: 与当前安装环境相同（无需转换）
+      target_sqlite: 'SQLite 3.35+'
+      target_title: 目标数据库
       title: 创建备份
+      warnings_help: 部分字段使用的数据类型，在所选目标数据库引擎中不存在直接对应类型。备份本身仍可正常完成，但目标字段的校验规则或行为可能无法完全一致。在将此备份用于迁移前，请务必检查下方各项说明。
+      warnings_title: '{count}条转换警告|{count}条转换警告'
     import_modal:
       cancel_button: 取消
       cancel_failed_warn: 弹窗已关闭，但服务器可能仍在应用更改。请在重试前先确认服务器状态。
@@ -173,6 +182,8 @@ ramon-backup:
       load_failed: 无法加载备份列表。
       plain: 未加密
       retry: 重试
+      target_for: '面向{engine}'
+      target_tooltip: '该备份的SQL是面向{engine}生成的，只能还原到{engine}安装环境。'
     panel:
       actions_help: 将论坛打包为可移动副本，进行还原或迁移到其它安装环境。
       actions_title: '备份&迁移'

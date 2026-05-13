@@ -66,6 +66,7 @@ CHANGELOG
 * [`ramon/avocado`](https://github.com/ram0ng1/avocado)
 * [`ramon/backup`](https://github.com/ram0ng1/backup)
 * [`ramon/colored`](https://github.com/ram0ng1/colored)
+* [`ramon/point-system`](https://github.com/ram0ng1/point-system)
 * [`ramon/stickers`](https://github.com/ram0ng1/stickers)
 * [`ramon/verified`](https://github.com/ram0ng1/verified)
 * [`resofire/blog-cards`](https://github.com/ResofireV2/blog-cards)

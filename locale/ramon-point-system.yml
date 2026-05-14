@@ -20,18 +20,49 @@ ramon-point-system:
       uploaded: 边框上传成功。
     cancel: 取消
     confirm_delete: 确定删除吗？该操作无法撤回。
+    cover:
+      existing: 已有封面
+      field_description: 描述
+      field_image: 图片
+      field_image_help: 最大6MB。动画格式：GIF、APNG，WebP。
+      field_name: 名称
+      field_price: 价格（积分）
+      none: 暂无封面。
+      replace_image: 替换图片
+      title: 个人资料封面
+      upload: 上传
+      upload_title: 添加新封面
+      uploaded: 封面上传成功
     disable: 禁用
     edit: 编辑
     enable: 启用
+    name:
+      create: 创建装饰
+      create_title: 创建新装饰
+      created: 装饰创建成功。
+      existing: 已有装饰
+      field_css: 自定义CSS（可选）
+      field_description: 描述
+      field_name: 名称
+      field_preset: 预设
+      field_price: 价格
+      none: 暂无已创建的装饰。
+      preset: 预设
+      preview: 实时预览
+      title: 用户名装饰
     permissions:
       manage: 管理积分体系
       view_others: 查看其它用户的积分
       view_shop: 查看荣誉
+    post_hl:
+      title: 帖子高亮
     rules:
       auto_group_enabled: 启用自动用户组分级
       auto_group_enabled_help: 当用户总计积分达到预定值时，将自动升级到指定的用户组。
       avatar_deco_enabled: 启用头像边框
       avatar_deco_enabled_help: 总开关。在所有显示头像的位置，展示用户已佩戴的头像边框。
+      cover_deco_enabled: 启用个人资料封面
+      cover_deco_enabled_help: 主开关。在用户个人资料页面和用户卡片中，展示已佩戴的封面横幅图片。
       currency_icon: 积分图标Class
       currency_icon_help: 'FontAwesome的Class，例如fas fa-coins。'
       currency_name: 积分名称
@@ -63,20 +94,40 @@ ramon-point-system:
       points_per_post_help: 每发表一个回帖（非自己所发）所赚取的积分。
       points_per_registration: 注册有礼
       points_per_registration_help: 用户注册自动获得。
+      post_hl_deco_enabled: 启用帖子高亮
       save: 保存变更
       show_in_post_header: 在帖子头部展示积分
       show_in_post_header_help: 在帖子的用户名旁边展示积分小勋章。
       show_in_user_profile: 在用户个人资料展示积分
       show_in_user_profile_help: 在用户个人资料或用户卡中展示积分勋章。
       title: 积分和规则
+      title_deco_enabled: 启用自定义标题
+      title_deco_enabled_help: 主开关。在帖子的用户名旁边，展示已佩戴的标题勋章。
     save: 保存
     tabs:
       avatar: 头像边框
+      cover: 个人资料封面
       groups: 自动用户组
       manual: 赠送或扣除
       name: 名称样式
+      post_hl: 帖子高亮
       rules: 积分和规则
+      title: 自定义标题
       users: 用户
+    title:
+      create: 创建标题
+      create_title: 创建标题
+      created: 标题创建成功。
+      existing: 已有标题
+      field_color: 主色
+      field_css: 自定义CSS（可选）
+      field_description: 描述
+      field_name: 名称（管理员文本）
+      field_price: 价格
+      field_title_text: 可见勋章文本
+      field_title_text_help: 用户可见内容（最长60字符）。此内容将展示在用户名旁边，需要剪短。
+      none: 暂无已创建的标题。
+      title: 自定义标题
     users:
       apply: 应用
       col_balance: 余额
@@ -108,13 +159,26 @@ ramon-point-system:
       remove: 移除
       removed: '移除{name}的{amount}个积分。'
       title: '管理{name}的积分'
+    confirm:
+      after_purchase: 购买后余额
+      cancel: 取消
+      confirm: 确认
+      current_balance: 当前余额
+      price: 价格
+      title: 确认购买
+      title_cover: 确认购买
+      title_tier: 加入该用户组？
     my_decorations:
       avatar: 头像边框
+      cover: 个人资料封面
+      custom_title: 自定义标题
       name: 名称样式
       none: 你暂未获得此类装饰。
+      post_hl: 帖子高亮
       preview: 实时预览
       title: 我的装饰
     nav:
+      my_decorations: 我的装饰
       shop: 荣誉
     notifications:
       admin_fallback: 一位管理员
@@ -124,18 +188,25 @@ ramon-point-system:
       tier_excerpt: '阈值：永久{points}个积分'
     shop:
       empty: 暂无可用的内容。
+      lifetime: 总计
       login_to_claim: 登录
       my_decorations: 我的装饰
       not_enough: 积分不足
       not_found: 没有找到页面。
+      subtitle: 消费积分购买装饰和道具。
       tab_avatar: 头像边框
+      tab_cover: 个人资料封面
       tab_name: 名称样式
+      tab_post_hl: 帖子高亮
       tab_tiers: 用户组分级
+      tab_title: 自定义标题
       tier_claim: 加入用户组
       tier_claimed: 已加入
       tier_claimed_alert: '已加入{name}！'
+      tier_cost: 加入所需的积分
       tier_locked: 已锁定
       tier_not_enough: 积分不足
+      tier_points: 总计积分
       tiers_empty: 暂无已配置的用户组。
       tiers_help: 消费积分加入这些用户组。
       tiers_title: 用户组分级

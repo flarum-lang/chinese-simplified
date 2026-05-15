@@ -27,6 +27,7 @@ ramon-point-system:
       field_image_help: 最大6MB。动画格式：GIF、APNG，WebP。
       field_name: 名称
       field_price: 价格（积分）
+      help: 购买用户个人资料横幅装饰。支持静态或动画格式的PNG、JPG、GIF、WebP或APNG。
       none: 暂无封面。
       replace_image: 替换图片
       title: 个人资料封面
@@ -45,6 +46,7 @@ ramon-point-system:
       create: 添加级别
       existing: 已配置的分级
       field_group: 用户组
+      field_points: 所需积分（兑换时从余额扣除）
       help: 根据总计积分赋予用户组，随积分增长自动赋予。
       none: 暂无已配置的级别。
       title: 自动用户组分级
@@ -67,10 +69,12 @@ ramon-point-system:
       created: 装饰创建成功。
       existing: 已有装饰
       field_css: 自定义CSS（可选）
+      field_css_help: '支持两种模式。模式1：直接将CSS属性应用于用户名（例如「color: gold; font-weight: 700;」）。模式2：将&符号作为选择器占位符的完整CSS，支持 @keyframes、伪元素以及多规则。'
       field_description: 描述
       field_name: 名称
       field_preset: 预设
       field_price: 价格
+      help: 选择烈焰、冰晶、彩虹等预设装饰，或设置自定义CSS。
       none: 暂无已创建的装饰。
       preset: 预设
       preset_blur: 🌫模糊
@@ -105,17 +109,19 @@ ramon-point-system:
       claim: 兑换道具
       manage: 管理积分体系
       view_others: 查看其它用户的积分
-      view_shop: 查看荣誉
+      view_shop: 查看道具
     post_hl:
       create: 创建高亮
       create_title: 创建高亮
       created: 高亮创建成功。
       existing: 已有高亮
       field_css: 自定义CSS（可选）
+      field_css_help: '使用「&」选择器占位符（匹配帖子容器）。'
       field_description: 描述
       field_name: 名称
       field_preset: 预设
       field_price: 价格
+      help: 在帖子用户旁边，显示边框、光晕或彩带。选择预设或设置自定义CSS。
       none: 暂无已创建的高亮。
       preset: 预设
       preset_custom: 🛠自定义（CSS）
@@ -140,7 +146,7 @@ ramon-point-system:
       currency_icon: 积分图标Class
       currency_icon_help: 'FontAwesome的Class，例如fas fa-coins。'
       currency_name: 积分名称
-      currency_name_help: 积分的复数文本（中文不适用）
+      currency_name_help: 积分的复数文本（中文不适用）。
       daily_login_bonus: 登录有礼
       daily_login_bonus_help: 用户每天第一次登录自动获得。
       deco_in_lists: 话题列表中展示装饰
@@ -169,6 +175,7 @@ ramon-point-system:
       points_per_registration: 注册有礼
       points_per_registration_help: 用户注册自动获得。
       post_hl_deco_enabled: 启用帖子高亮
+      post_hl_deco_enabled_help: 主开关。在用户帖子上显示已佩戴的高亮装饰（边框/光晕/彩条）。
       save: 保存变更
       show_in_post_header: 在帖子头部展示积分
       show_in_post_header_help: 在帖子的用户名旁边展示积分小勋章。
@@ -186,22 +193,25 @@ ramon-point-system:
       name: 名称样式
       post_hl: 帖子高亮
       rules: 积分和规则
-      title: 自定义标题
+      title: 自定义头衔
       users: 用户
     title:
-      create: 创建标题
-      create_title: 创建标题
+      create: 创建头衔
+      create_title: 创建新头衔
       created: 标题创建成功。
-      existing: 已有标题
+      existing: 已有头衔
       field_color: 主色
+      field_color_help: '用于渲染头衔勋章背景色的CSS颜色值（#hex，rgb()或颜色名称）。'
       field_css: 自定义CSS（可选）
+      field_css_help: '与名称装饰相同，支持属性列表和带有「&」占位符的完整CSS。'
       field_description: 描述
       field_name: 名称（管理员文本）
       field_price: 价格
       field_title_text: 可见勋章文本
       field_title_text_help: 用户可见内容（最长60字符）。此内容将展示在用户名旁边，需要剪短。
+      help: 在用户名旁边显示勋章短文本（例如「种子用户」或「水贴能手」）。可为每种头衔设置不同的颜色和可选择的自定义CSS。
       none: 暂无已创建的标题。
-      title: 自定义标题
+      title: 自定义头衔
     users:
       apply: 应用
       col_balance: 余额
@@ -225,6 +235,7 @@ ramon-point-system:
     award_modal:
       add: 添加
       added: '向{name}发放{amount}个积分。'
+      amount_help: 增加余额和总计积分；扣除余额（总计积分不变）。
       amount_label: 数量
       current_balance: 当前余额
       current_lifetime: 历史总额
@@ -233,6 +244,8 @@ ramon-point-system:
       remove: 移除
       removed: '移除{name}的{amount}个积分。'
       title: '管理{name}的积分'
+    badge:
+      tooltip: '{balance} {currency} （总计：{lifetime}）'
     confirm:
       after_purchase: 购买后余额
       cancel: 取消
@@ -245,17 +258,18 @@ ramon-point-system:
     my_decorations:
       avatar: 头像边框
       cover: 个人资料封面
-      custom_title: 自定义标题
+      custom_title: 自定义头衔
       equip: 佩戴
       name: 名称样式
       none: 你暂未获得此类装饰。
       post_hl: 帖子高亮
       preview: 实时预览
       title: 我的装饰
+      toggle_nav_label: 开启或关闭装饰中心菜单
       unequip: 取消佩戴
     nav:
       my_decorations: 我的装饰
-      shop: 荣誉
+      shop: 道具中心
     notifications:
       admin_fallback: 一位管理员
       points_added: '{admin}向你发放了{amount}个积分'
@@ -284,7 +298,7 @@ ramon-point-system:
       tab_name: 名称样式
       tab_post_hl: 帖子高亮
       tab_tiers: 用户组分级
-      tab_title: 自定义标题
+      tab_title: 自定义头衔
       tier_claim: 加入用户组
       tier_claim_failed: 无法兑换此级别。
       tier_claimed: 已加入
@@ -296,7 +310,8 @@ ramon-point-system:
       tiers_empty: 暂无已配置的用户组。
       tiers_help: 消费积分加入这些用户组。
       tiers_title: 用户组分级
-      title: 荣誉
+      title: 道具中心
+      toggle_nav_label: 开启或关闭道具中心菜单
       your_balance: 你的余额
     user_controls:
       award_points: 管理积分

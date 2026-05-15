@@ -36,6 +36,31 @@ ramon-point-system:
     disable: 禁用
     edit: 编辑
     enable: 启用
+    groups:
+      add: 添加
+      choose_group: –选择一个用户组–
+      col_group: 用户组
+      col_points: 总计积分
+      col_status: 状态
+      create: 添加级别
+      existing: 已配置的分级
+      field_group: 用户组
+      help: 根据总计积分赋予用户组，随积分增长自动赋予。
+      none: 暂无已配置的级别。
+      title: 自动用户组分级
+    manual:
+      balance: 余额
+      field_amount: 数量
+      field_amount_help: 正数为发放，负数为从余额扣除（不影响总计）。
+      field_reason: 理由（可选）
+      field_username: 用户名
+      help: 手动为用户发放或扣除积分。数值为负表示从余额中扣除。
+      lifetime: 总计
+      result: 调整后余额
+      submit: 应用
+      success: 调整成功。
+      title: 发放或扣除积分
+      user_not_found: 没有找到用户。
     name:
       create: 创建装饰
       create_title: 创建新装饰
@@ -48,13 +73,62 @@ ramon-point-system:
       field_price: 价格
       none: 暂无已创建的装饰。
       preset: 预设
+      preset_blur: 🌫模糊
+      preset_breath: 🌸花朵
+      preset_custom: 🛠自定义（CSS）
+      preset_fire: 🔥烈焰
+      preset_galaxy: 🌌银河
+      preset_glass: 🪟玻璃
+      preset_glitch: 👾诡异
+      preset_gold: 🥇金牌
+      preset_gold-pulse: ✨闪亮
+      preset_hearts: 💖爱心
+      preset_huecycle: 🎨色盘
+      preset_ice: ❄️冰晶
+      preset_lightning: ⚡雷电
+      preset_matrix: 🟢元素
+      preset_mercury: 🪞睡醒
+      preset_neon: 💡灯泡
+      preset_rainbow: 🌈彩虹
+      preset_royal: 👑皇冠
+      preset_shine: 💫明星
+      preset_sparkle: ✦灵感
+      preset_stamp: 🔖印章
+      preset_toxic: ☣剧毒
+      preset_typer: ⌨️键盘
+      preset_underline: '〰 波浪'
+      preset_vhs: 📼磁带
+      preset_wave: 🌊波浪
       preview: 实时预览
       title: 用户名装饰
     permissions:
+      claim: 兑换道具
       manage: 管理积分体系
       view_others: 查看其它用户的积分
       view_shop: 查看荣誉
     post_hl:
+      create: 创建高亮
+      create_title: 创建高亮
+      created: 高亮创建成功。
+      existing: 已有高亮
+      field_css: 自定义CSS（可选）
+      field_description: 描述
+      field_name: 名称
+      field_preset: 预设
+      field_price: 价格
+      none: 暂无已创建的高亮。
+      preset: 预设
+      preset_custom: 🛠自定义（CSS）
+      preset_dashed-accent: ✂强调色虚线
+      preset_glow-blue: 💎宝石蓝
+      preset_glow-green: 🌿自然绿
+      preset_glow-purple: 🔮尊贵紫
+      preset_gold-border: 🥇金牌边框
+      preset_gradient-edge: 🌈幻彩边缘
+      preset_ribbon-gold: 🎗金丝带
+      preset_ribbon-red: 🎀红蝴蝶
+      preset_shadow-soft: 🌫柔光阴影
+      preset_silver-border: 🥈银牌边框
       title: 帖子高亮
     rules:
       auto_group_enabled: 启用自动用户组分级
@@ -172,11 +246,13 @@ ramon-point-system:
       avatar: 头像边框
       cover: 个人资料封面
       custom_title: 自定义标题
+      equip: 佩戴
       name: 名称样式
       none: 你暂未获得此类装饰。
       post_hl: 帖子高亮
       preview: 实时预览
       title: 我的装饰
+      unequip: 取消佩戴
     nav:
       my_decorations: 我的装饰
       shop: 荣誉
@@ -187,9 +263,18 @@ ramon-point-system:
       tier_claimed: '你已加入{name}用户组！'
       tier_excerpt: '阈值：永久{points}个积分'
     shop:
+      claim: 兑换
+      claim_failed: 无法兑换此道具。
+      claimed: '{name}兑换成功！'
       empty: 暂无可用的内容。
+      equip: 佩戴
+      equip_failed: 无法佩戴此道具。
+      equipped: 已佩戴
+      equipped_alert: '{name}佩戴成功'
+      equipped_label: 已佩戴
       lifetime: 总计
       login_to_claim: 登录
+      must_login: 登陆兑换道具
       my_decorations: 我的装饰
       not_enough: 积分不足
       not_found: 没有找到页面。
@@ -201,6 +286,7 @@ ramon-point-system:
       tab_tiers: 用户组分级
       tab_title: 自定义标题
       tier_claim: 加入用户组
+      tier_claim_failed: 无法兑换此级别。
       tier_claimed: 已加入
       tier_claimed_alert: '已加入{name}！'
       tier_cost: 加入所需的积分

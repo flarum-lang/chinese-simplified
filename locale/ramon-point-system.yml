@@ -41,15 +41,23 @@ ramon-point-system:
       add: 添加
       choose_group: –选择一个用户组–
       col_group: 用户组
-      col_points: 总计积分
+      col_mode: 解锁方式
+      col_points: 总计扩分阈值
+      col_price: 价格
       col_status: 状态
-      create: 添加级别
-      existing: 已配置的分级
+      create: 添加用户组
+      existing: 已配置的用户组
       field_group: 用户组
+      field_is_auto: 总计积分达到阈值后自动加入
+      field_is_auto_help: 用户总计积分达到下列阈值后，自动加入该用户组，无须购买。
+      field_is_purchasable: 可直接购买
+      field_is_purchasable_help: 用户使用积分余额购买并加入该用户组，忽略总计积分。
       field_points: 所需积分（兑换时从余额扣除）
-      help: 根据总计积分赋予用户组，随积分增长自动赋予。
-      none: 暂无已配置的级别。
-      title: 自动用户组分级
+      field_points_required: 所需总计积分（自动加入阈值）
+      field_price: 价格（购买时从余额中扣除）
+      help: 用户满足条件（总计积分达到阈值）即可自动加入用户组。用户也可以直接使用余额购买用户组。每个用户组，都支持这两种解锁方式。
+      none: 暂无已配置的用户组。
+      title: 用户组道具
     manual:
       balance: 余额
       field_amount: 数量
@@ -189,7 +197,7 @@ ramon-point-system:
       avatar: 头像边框
       cover: 个人资料封面
       groups: 自动用户组
-      manual: 赠送或扣除
+      manual: 发放或扣除
       name: 名称样式
       post_hl: 帖子高亮
       rules: 积分和规则
@@ -254,6 +262,7 @@ ramon-point-system:
       price: 价格
       title: 确认购买
       title_cover: 确认购买
+      title_purchase: 购买此用户组？
       title_tier: 加入该用户组？
     my_decorations:
       avatar: 头像边框
@@ -297,19 +306,22 @@ ramon-point-system:
       tab_cover: 个人资料封面
       tab_name: 名称样式
       tab_post_hl: 帖子高亮
-      tab_tiers: 用户组分级
+      tab_tiers: 用户组
       tab_title: 自定义头衔
+      tier_buy: 购买用户组
+      tier_buy_cost: 余额积分
       tier_claim: 加入用户组
-      tier_claim_failed: 无法兑换此级别。
+      tier_claim_failed: 无法兑换此用户组。
       tier_claimed: 已加入
       tier_claimed_alert: '已加入{name}！'
       tier_cost: 加入所需的积分
       tier_locked: 已锁定
       tier_not_enough: 积分不足
       tier_points: 总计积分
-      tiers_empty: 暂无已配置的用户组。
-      tiers_help: 消费积分加入这些用户组。
-      tiers_title: 用户组分级
+      tier_threshold: 总计积分
+      tiers_empty: 暂无可用的用户组。
+      tiers_help: 当你的总计积分达到阈值时，将自动加入该用户组。你也可以直接使用余额购买此用户组。
+      tiers_title: 用户组
       title: 道具中心
       toggle_nav_label: 开启或关闭道具中心菜单
       your_balance: 你的余额

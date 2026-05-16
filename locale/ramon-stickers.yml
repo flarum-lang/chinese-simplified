@@ -23,6 +23,7 @@ ramon-stickers:
         delete_sticker_confirmation: 确定删除这个贴纸？
         modal_title: 添加贴纸
         path_or_url_label: 路径或URL
+        save_error: 保存表情失败。请检查输入内容后重试。
         saved_message: '=> core.admin.settings.saved_message'
         sticker_category_label: 分类编码
         sticker_title_label: 贴纸名称

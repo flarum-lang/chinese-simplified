@@ -46,7 +46,7 @@ _**Flarum 旧版本**_
   - [Donate](https://pay.csur.fun)
 
 ### 贡献 / Contribute
-为尽量保证文案的统一性，请阅读相关规范后再前往[翻译平台](https://weblate.rob006.net/languages/zh_Hans/flarum/?limit=500)参与贡献。
+为尽量保证文案的统一性，请阅读相关规范后再前往[翻译平台](https://weblate.rob006.net/languages/zh_Hans/flarum2/?limit=500)参与贡献。
 - [UI 文案原则](https://www.uisdc.com/ui-copy-design-method#)
 - [中英文混排规范 W3](https://www.w3.org/TR/clreq/#chinese_and_western_mixed_text_composition)
 - [混排指北](https://github.com/sparanoid/chinese-copywriting-guidelines/blob/master/README.zh-CN.md)

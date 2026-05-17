@@ -228,7 +228,7 @@ ramon-point-system:
       hide_badges_with_avatar_deco: 佩戴头像边框时隐藏用户勋章
       hide_badges_with_avatar_deco_help: 开启后，如果用户佩戴了头像装饰，为了保持界面清爽，原本显示在头像旁边的管理员/版主/自定义勋章将被隐藏。
       lifetime_enabled: 追踪和展示总计积分
-      lifetime_enabled_help: 总计积分是用户获得积分的累计数量。总计积分不回像余额那样，因为使用或扣除而减少。它代表用户的贡献总和。关闭后，总计积分仅在后台运行，以保障自动用户组分级功能可用），但是不会在赠送页面、个人资料和头部展示。
+      lifetime_enabled_help: 总计积分是用户获得积分的累计数量。总计积分不会像余额那样，因为使用或扣除而减少。它代表用户的贡献总和。关闭后，总计积分仅在后台运行，以保障积分体系中的自动用户组功能可用），但是不会在道具商店、个人资料和头部展示。
       name_deco_enabled: 启用用户名装饰
       name_deco_enabled_help: 主开关。在用户名文本上，展示用户已佩戴的样式。
       points_per_discussion: 发帖积分
@@ -394,7 +394,7 @@ ramon-point-system:
       unequip: 取消佩戴
     nav:
       my_decorations: 我的装饰
-      shop: 道具中心
+      shop: 道具商店
     notifications:
       admin_fallback: 一位管理员
       item_family_avatar: 头像边框
@@ -452,11 +452,11 @@ ramon-point-system:
       tier_locked: 已锁定
       tier_not_enough: 积分不足
       tier_points: 总计积分
-      tier_threshold: 总计积分
+      tier_threshold: 解锁所需总计积分
       tiers_empty: 暂无可用的用户组。
       tiers_help: 当你的总计积分达到阈值时，将自动加入该用户组。你也可以直接使用余额购买此用户组。
       tiers_title: 用户组
-      title: 道具中心
+      title: 道具商店
       toggle_nav_label: 开启或关闭道具中心菜单
       your_balance: 你的余额
     submit:

@@ -5,7 +5,21 @@
 ramon-point-system:
   admin:
     all_trades:
-      list_heading: 道具赠送
+      col_id: '#'
+      col_initiator: 发起人
+      col_offer: 交易内容
+      col_recipient: 接收人
+      col_status: 状态
+      col_updated: 更新
+      empty: 暂无符合条件的交易。
+      filter_all: 所有状态
+      filter_cancelled: 已取消
+      filter_completed: 已完成
+      filter_pending: 进行中
+      initiator_offer: 来自发起人：
+      list_heading: 交易中心
+      list_help: 按交易时间倒序排列，可以通过筛选功能，只浏进行中或未达成的交易。
+      refresh: 刷新
     availability:
       allowed_groups: 用户组限制
       allowed_groups_help: 当选择一个或多个用户组后，只有这些用户组的用户可以兑换此道具。留空表示无用户组限制。
@@ -232,6 +246,7 @@ ramon-point-system:
       user_submissions_enabled_help: 启用后，注册用户可以自主提交装饰设计。用户提交内容位于待审核队列，必须审核通过后，才会进入道具中心。网址只适用于头像边框和个人资料封面装饰类型，文件上传仍需管理员操作。
     save: 保存
     tabs:
+      all_trades: 所有交易
       avatar: 头像边框
       cover: 个人资料封面
       groups: 自动用户组
@@ -239,6 +254,7 @@ ramon-point-system:
       name: 名称样式
       post_hl: 帖子高亮
       rules: 积分和规则
+      submissions: 待确认装饰
       title: 自定义头衔
       users: 用户
     title:
@@ -311,6 +327,8 @@ ramon-point-system:
       none: 你暂未获得此类装饰。
       post_hl: 帖子高亮
       preview: 实时预览
+      submit_cta: 提交我的装饰
+      tab_all: 所有
       title: 我的装饰
       toggle_nav_label: 开启或关闭装饰中心菜单
       unequip: 取消佩戴
@@ -367,20 +385,40 @@ ramon-point-system:
       your_balance: 你的余额
     trade:
       accept: 确认
+      accepted_waiting_alert: 你已确认你的交易内容。在对方确认之前，交易将处于进行中状态。你现在可以关闭此窗口并随时返回查看。
       add_item: 添加道具
       balance: 你的余额
       cancel: 取消交易
       close_final: 关闭
       close_keep: 关闭窗口（保留交易）
-      error_not_both_accepted: 对方拒绝了赠送。
-      error_recipient_owns_item: 赠送已被拒绝：对方已有你赠送的某一种道具。删除该道具后重试。
-      finalizing_in: 正在处理赠送中…
+      completed_alert: 交易已完成。
+      confirm_cancel: 确认取消此交易吗？
+      error_accept_failed: 无法确认此交易。
+      error_cancel_failed: 无法取消此交易。
+      error_cannot_trade_with_self: 无法与自己进行交易。
+      error_duplicate_with_other_side: 对方已经添加此道具。
+      error_initiator_insufficient_points: 你没有足够的积分支付此交易。
+      error_insufficient_points: 交易已被拒绝：其中一方所持有的积分，不足以支付交易。
+      error_item_unavailable: 交易已被拒绝：交易内容中的一个道具，已不在所声明的所有者名下。刷新或重新发起交易。
+      error_load: 无法加载此交易。
+      error_no_target: 尚未选择用户。
+      error_not_both_accepted: 对方拒绝了交易。重新检查交易内容后，可再次发起交易。
+      error_not_owned: 你尚未拥有此道具。
+      error_open_failed: 无法打开此交易。
+      error_patch_failed: 无法更新此交易。
+      error_recipient_insufficient_points: 对方没有足够的积分。
+      error_recipient_owns_item: 交易已被拒绝：对方已有你赠送的某一种道具。删除该道具后重试。
+      error_refresh_failed: 无法刷新此交易。
+      error_too_many: 交易中所包含的道具过多。
+      finalizing_in: 正在处理交易中…
       no_items_yet: 可选。如果你想要给对方赠送积分或者白嫖对方道具，留空即可。
       persist_hint: 交易已自动保存。可随时关闭窗口后，通过交易列表重新继续操作交易。
       picker_empty: 无其它可添加的道具。
       remove_item: 删除
       status_both_accepted: 双方均已确认，正在处理中…
-      status_pending: 添加道具或积分。双方点击确认后完成赠送。
+      status_cancelled: 交易已被取消。
+      status_completed: 交易已完成！
+      status_pending: 添加道具或积分。双方点击确认后完成交易。
       their_offer: '{name}的交易内容'
       their_points: 对方提供的积分
       your_offer: 你的交易内容

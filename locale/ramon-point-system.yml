@@ -16,10 +16,20 @@ ramon-point-system:
       filter_cancelled: 已取消
       filter_completed: 已完成
       filter_pending: 进行中
-      initiator_offer: 来自发起人：
+      help: 已只读方式，查看系统所有用户的所有交易，以及交易人员和内容详情。
+      initiator_offer: 来自发起人
+      items_short: 个道具
       list_heading: 交易中心
       list_help: 按交易时间倒序排列，可以通过筛选功能，只浏进行中或未达成的交易。
+      next: 下一页
+      page_x_of_y: '第{x}页/共{y}页'
+      prev: 上一页
+      recipient_offer: 来自接收人
       refresh: 刷新
+      status_cancelled: 已取消
+      status_completed: 已完成
+      status_pending: 进行中
+      title: 所有交易
     availability:
       allowed_groups: 用户组限制
       allowed_groups_help: 当选择一个或多个用户组后，只有这些用户组的用户可以兑换此道具。留空表示无用户组限制。
@@ -73,6 +83,18 @@ ramon-point-system:
     disable: 禁用
     edit: 编辑
     enable: 启用
+    grant:
+      action_button: 授予
+      help: 将此道具直接授予用户。用户将免费获得该道具，不会扣除积分。
+      ignore_limit: 忽略最大可兑换数量限制
+      ignore_limit_help: 如该道具有最大可兑换数量限制，普通授予操作也会消耗此数量。选择此项后，本次授予将跳过该限制。
+      submit: 授予
+      success: '{item}已成功授予{name}。'
+      title: '向用户授予{name}'
+      user_not_found: 没有与此名称匹配的用户。
+      username_help: 输入用户名或显示名称。
+      username_label: 用户名
+      username_placeholder: 例如「zizaime」
     groups:
       add: 添加
       choose_group: –选择一个用户组–
@@ -245,6 +267,20 @@ ramon-point-system:
       user_submissions_enabled: 允许用户上传装饰
       user_submissions_enabled_help: 启用后，注册用户可以自主提交装饰设计。用户提交内容位于待审核队列，必须审核通过后，才会进入道具中心。网址只适用于头像边框和个人资料封面装饰类型，文件上传仍需管理员操作。
     save: 保存
+    submissions:
+      approve: 通过
+      approved_alert: '由「{name}」审核通过。'
+      by: 提交人
+      empty: 暂无待审核申请。
+      help: 用户提交的装饰设计需要审核。审核通过的，设置价格并发布到道具商城；审核不通过的，道具商城不会显示（只显示在提交者的待处理列表中）。
+      image_url: 打开图片网址
+      price_label: 价格（积分）
+      queue_heading: 列表
+      refresh: 刷新
+      reject: 拒绝
+      rejected_alert: '由「{name}」审核拒绝。'
+      show_custom_css: 显示原始CSS
+      title: 待确认装饰
     tabs:
       all_trades: 所有交易
       avatar: 头像边框
@@ -274,6 +310,30 @@ ramon-point-system:
       help: 在用户名旁边显示勋章短文本（例如「种子用户」或「水贴能手」）。可为每种头衔设置不同的颜色和可选择的自定义CSS。
       none: 暂无已创建的标题。
       title: 自定义头衔
+    trade_detail:
+      cancelled_at: 已取消
+      close: 关闭
+      completed_at: 已完成
+      confirm_revert: 确认回滚此交易？原交易中的道具和积分，将分别退还到原所有者。此操作无法撤销。
+      error_item_re_traded: 原交易完成后，其中一个道具发生了变化（再交易、赠送或管理员操作），无法强制回滚。使用发放/扣除功能，人工操作关联道具。
+      error_revert: 此交易无法回滚。
+      family_avatar: 头像边框
+      family_cover: 个人资料封面
+      family_name: 名称样式
+      family_post_hl: 帖子高亮
+      family_title: 自定义头衔
+      initiator: 发起人
+      no_items: 交易内容不包含道具
+      recipient: 接收人
+      revert: 回滚交易
+      revert_not_completed: 只有已完成的交易才能回滚。进行中和已取消的交易，其状态都不是已完成。
+      reverted_alert: 交易回滚成功。道具和积分均已退还到原所有者。
+      status_cancelled: 已取消
+      status_completed: 已完成
+      status_pending: 进行中
+      title: 交易详情
+      title_with: 交易序号
+      updated_at: 更新
     users:
       apply: 应用
       col_balance: 余额
@@ -337,16 +397,32 @@ ramon-point-system:
       shop: 道具中心
     notifications:
       admin_fallback: 一位管理员
+      item_family_avatar: 头像边框
+      item_family_cover: 个人资料封面
+      item_family_name: 名称样式
+      item_family_post_highlight: 帖子高亮
+      item_family_title: 自定义头衔
+      item_granted: '{admin}向你授予了{family}「{item}」'
       points_added: '{admin}向你发放了{amount}个积分'
       points_removed: '{admin}移除了你的{amount}个积分'
       tier_claimed: '你已加入{name}用户组！'
       tier_excerpt: '阈值：永久{points}个积分'
+      trade_accepted: '{name}确认了交易，等待你确认后，交易将完成'
+      trade_completed: '与{name}的交易已完成'
+      trade_requested: '{name}希望与你进行交易'
     session_dropdown:
+      my_decorations: 我的装饰
       trades: 交易中心
     shop:
+      badge_ends_in_days: '{count, plural, one {#天后结束} other {#天后结束}}'
+      badge_ends_in_hours: '{count, plural, one {#小时后结束} other {#小时后结束}}'
+      badge_remaining: '{count, plural, one {剩余#个} other {剩余#个}}'
+      badge_starts_on: '开始于{date}'
+      by_creator: '由{name}创作'
       claim: 兑换
       claim_failed: 无法兑换此道具。
       claimed: '{name}兑换成功！'
+      creator_tooltip: '该道具由{name}设计'
       empty: 暂无可用的内容。
       equip: 佩戴
       equip_failed: 无法佩戴此道具。
@@ -383,6 +459,33 @@ ramon-point-system:
       title: 道具中心
       toggle_nav_label: 开启或关闭道具中心菜单
       your_balance: 你的余额
+    submit:
+      color_label: 强调色（可选）
+      custom_css_help: '可选。使用「&」符号作为选择器占位符。CSS将在保存时自动优化。'
+      custom_css_label: 自定义CSS（可选）
+      description_label: 描述（可选）
+      family_avatar: 头像边框
+      family_cover: 个人资料封面
+      family_name: 名称样式
+      family_post_hl: 帖子高亮
+      family_title: 自定义头衔
+      image_file_help: 支持最大4MB的PNG/GIF/WebP/APNG。后续管理员上传时，会执行相同的校验。
+      image_file_label: 图片文件
+      image_url_help: '直接链接到PNG/GIF/WebP/APNG图片的https://网址。'
+      image_url_label: 图片网址
+      intro: 创作你的装饰。提交后，管理员将进行审核。审核通过的装饰，将展示在道具商店中。
+      moderation_notice: 你的申请将提交至管理员，审核通过后方可显示在道具商店。
+      name_label: 名称
+      name_placeholder: 例如「自由の我」
+      preset_label: 预设（可选参照）
+      source_file: 上传文件
+      source_label: 图片来源
+      source_url: 使用图片网址
+      submit: 提交
+      submitted_alert: 申请提交成功。管理员将进行审核。
+      title_text_label: 勋章显示文本
+      title_text_placeholder: 例如「自由の偶」
+      title_with: '提交新{family}'
     trade:
       accept: 确认
       accepted_waiting_alert: 你已确认你的交易内容。在对方确认之前，交易将处于进行中状态。你现在可以关闭此窗口并随时返回查看。
@@ -421,12 +524,16 @@ ramon-point-system:
       status_pending: 添加道具或积分。双方点击确认后完成交易。
       their_offer: '{name}的交易内容'
       their_points: 对方提供的积分
+      title_loading: 打开交易…
+      title_with: '与{name}的交易'
+      unaccept: 拒绝
       your_offer: 你的交易内容
       your_points: 你提供的积分
     trades_page:
       history_empty: 暂无已完成或已取消的交易。
       history_heading: 已关闭的交易
       items_short: 道具
+      no_permission: 你所在的用户组没有交易权限。联系管理员咨询确认。
       open: 打开
       pending_empty: 暂无进行中的交易。
       pending_heading: 进行中的交易
@@ -441,8 +548,12 @@ ramon-point-system:
       status_cancelled: 已取消
       status_completed: 已完成
       status_pending: 进行中
+      subtitle: 与其它用户交易装饰道具和积分。双方均确认交易后，方可完成。
       their_side: 对方的交易内容
       title: 交易中心
       your_side: 你的交易内容
     user_controls:
       award_points: 管理积分
+      trade: 交易中心
+    user_profile:
+      trades_link: 交易历史

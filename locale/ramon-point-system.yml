@@ -18,7 +18,7 @@ ramon-point-system:
       filter_pending: 进行中
       help: 已只读方式，查看系统所有用户的所有交易，以及交易人员和内容详情。
       initiator_offer: 来自发起人
-      items_short: 个道具
+      items_short: '{count, plural, one {#个道具} other {#个道具}}'
       list_heading: 交易中心
       list_help: 按交易时间倒序排列，可以通过筛选功能，只浏进行中或未达成的交易。
       next: 下一页
@@ -46,6 +46,7 @@ ramon-point-system:
       max_claims_placeholder: 无限制
       unlisted_tag: 已隐藏
     avatar:
+      edit_title: '编辑头像边框–{name}'
       existing: 已有边框
       field_description: 描述
       field_image: 边框图片
@@ -67,6 +68,7 @@ ramon-point-system:
     cancel: 取消
     confirm_delete: 确定删除吗？该操作无法撤回。
     cover:
+      edit_title: '编辑个人资料封面–{name}'
       existing: 已有封面
       field_description: 描述
       field_image: 图片
@@ -80,6 +82,7 @@ ramon-point-system:
       upload: 上传
       upload_title: 添加新封面
       uploaded: 封面上传成功
+    delete: 删除
     disable: 禁用
     edit: 编辑
     enable: 启用
@@ -133,6 +136,7 @@ ramon-point-system:
       create: 创建装饰
       create_title: 创建新装饰
       created: 装饰创建成功。
+      edit_title: '编辑用户名装饰–{name}'
       existing: 已有装饰
       field_css: 自定义CSS（可选）
       field_css_help: '支持两种模式。模式1：直接将CSS属性应用于用户名（例如「color: gold; font-weight: 700;」）。模式2：将&符号作为选择器占位符的完整CSS，支持 @keyframes、伪元素以及多规则。'
@@ -181,6 +185,7 @@ ramon-point-system:
       create: 创建高亮
       create_title: 创建高亮
       created: 高亮创建成功。
+      edit_title: '编辑帖子高亮–{name}'
       existing: 已有高亮
       field_css: 自定义CSS（可选）
       field_css_help: '使用「&」选择器占位符（匹配帖子容器）。'
@@ -241,6 +246,8 @@ ramon-point-system:
       points_per_post_help: 每发表一个回帖（非自己所发）所赚取的积分。
       points_per_registration: 注册有礼
       points_per_registration_help: 用户注册自动获得。
+      points_short: 积分单位名称
+      points_short_help: 显示在积分数字后面。如pts，点，코인等，默认为pts。
       post_hl_deco_enabled: 启用帖子高亮
       post_hl_deco_enabled_help: 主开关。在用户帖子上显示已佩戴的高亮装饰（边框/光晕/彩条）。
       save: 保存变更
@@ -532,7 +539,7 @@ ramon-point-system:
     trades_page:
       history_empty: 暂无已完成或已取消的交易。
       history_heading: 已关闭的交易
-      items_short: 道具
+      items_short: '{count, plural, one {#个道具} other {#个道具}}'
       no_permission: 你所在的用户组没有交易权限。联系管理员咨询确认。
       open: 打开
       pending_empty: 暂无进行中的交易。
@@ -541,6 +548,7 @@ ramon-point-system:
       start_help: 输入用户名（或显示名称）查找目标交易用户。
       start_new: 发起交易
       start_not_found: 没有找到此用户。
+      start_search_failed: 无法搜索用户。检查网络连接后重试。
       start_submit: 进入交易页面
       start_title: 发起新交易
       start_username_label: 用户名

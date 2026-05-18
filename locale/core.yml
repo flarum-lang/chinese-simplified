@@ -544,12 +544,12 @@ core:
       back_to_index_tooltip: 返回讨论列表
       locale_dropdown_accessible_label: 更改论坛语言
       log_in_link: '=> core.ref.log_in'
-      log_out_button: '=> core.ref.log_out'
+      log_out_button: 退出登录
       profile_button: 个人主页
       search_placeholder: 搜索社区
       search_role_label: 搜索社区
       session_dropdown_accessible_label: 会话下拉菜单开关
-      settings_button: 设置
+      settings_button: 论坛设置
       sign_up_link: '=> core.ref.sign_up'
     index:
       all_discussions_link: '=> core.ref.all_discussions'

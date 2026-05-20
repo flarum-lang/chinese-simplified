@@ -49,6 +49,7 @@ ramon-verified:
     permissions:
       auto_verified_label: 自动接收认证勋章
       request_label: 提交认证申请
+      self_revoke_label: 撤销他们已有的认证勋章
       verify_users_label: 直接认证用户
     preview:
       helper: '实时预览 - 勋章将出现在用户名旁边。'
@@ -98,6 +99,7 @@ ramon-verified:
       tier_filter_all: 所有级别
       tier_filter_aria: 通过级别过滤
       title: 认证申请
+      truncated: '还有{hidden}条申请未展示，重新设置筛选条件或前往已认证选项卡查看。'
       view_document: 查看资料
     settings:
       badge_color_help: '选择颜色，或粘贴十六进制（如#1d9bf0），rgb()，rgba()，hsl()，hsla()值。'
@@ -142,6 +144,17 @@ ramon-verified:
         auto_groups_empty: 没有可用用户组。
         auto_groups_help: 属于这些用户组的成员将自动获得此认证级别，无需人工审核。当用户同时属于多个不同等级的用户组时，以列表中靠前的等级为优先。
         auto_groups_label: 自动被授予该认证级别的用户组
+        badge_dropzone_subtitle: 点击选择文件（最大8KB）
+        badge_dropzone_title: 上传SVG
+        badge_loaded: 勋章就绪
+        badge_remove: 移除
+        badge_replace: 替换
+        badge_size_max: 最大8KB
+        badge_svg_too_large: SVG体积过大（最大8KB）。
+        badge_switch_off: 已禁用
+        badge_switch_on: 已启用
+        badge_toggle_help: 使用自定义的SVG图片替换全局已认证勋章，颜色也会自动匹配。
+        badge_toggle_label: 使用自定义勋章
         collapse: 折叠
         color_label: 颜色
         description_bold_title: 粗体高亮（级别颜色）
@@ -167,6 +180,7 @@ ramon-verified:
         remove_confirm: 删除这个等级吗？当前拥有该等级的用户将恢复为默认等级，直到被重新分配为止。
         section_appearance: 样式
         section_assignment: 自动授予
+        section_badge: 自定义勋章
         section_help: 创建并配置论坛中可用的认证徽章（blue、gold、partner等）。每个等级都拥有独立的颜色、悬浮说明以及“了解更多”链接。当多个自动授予用户组同时生效时，等级顺序将决定优先显示的认证等级。
         section_identity: 身份
         section_popover: 弹窗内容
@@ -178,6 +192,7 @@ ramon-verified:
       requests: 申请
       tiers: 级别
   api:
+    already_handled: 该认证申请已处理。
     already_pending: 改用户已有等待中的认证申请。
     already_verified: 改用户已经通过认证。
     avatar_locked: 你的账号是已认证账号，头像已被锁定。重新提交认证申请可更新头像。

@@ -26,7 +26,7 @@ ramon-verified:
         copied: 已复制！
         copy_button: 复制代码片段
         intro: 这是私钥唯一的一次显示。请立即将其粘贴到您论坛的config.php配置文件中，器不会保存该密钥的副本。
-        orphaned: '{count}份之前已加密的资料，文件无法读取，已被删除。'
+        orphaned: '{count}份之前已加密的资料，将在后台执行删除操作。'
         snippet_label: 将这一行添加到config.php配置文件中：
         title: 保存你的私钥
         warning_body: 如果在将其写入config.php配置文件之前丢失了该私钥，那么所有使用对应公钥加密的文档都将无法恢复。
@@ -198,6 +198,12 @@ ramon-verified:
     avatar_locked: 你的账号是已认证账号，头像已被锁定。重新提交认证申请可更新头像。
     bad_extension: 不支持的文件扩展名。
     bad_mime: 不支持的文件类型。
+    badge_svg:
+      bad_extension: 上传的文件必须为SVG扩展名。
+      bad_mime: 此MIME类型不是SVG上传所支持的。
+      missing: 已认证勋章信息中，没有已上传的SVG文件。
+      too_large: SVG文件体积过大（最大256KB）。
+      upload_failed: SVG文件上传失败。请重试。
     document_required: 提交认证申请必须添加认证资料。
     encryption:
       acknowledge_loss_required: 我已确认：在生成新的密钥对之前，所有现有的加密文档将被删除。
@@ -299,3 +305,6 @@ ramon-verified:
       no_tiers: 暂未配置级别。从管理后台》Verified插件中添加认证级别后，再进行认证。
     tooltip: 已认证账号
     tooltip_with_date: '已认证账号 · 于{date}'
+    verification_prompt:
+      note_placeholder: 可选（记载于审核日志中）
+      tier_label: 认证级别

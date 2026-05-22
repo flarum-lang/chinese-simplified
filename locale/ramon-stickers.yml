@@ -17,10 +17,14 @@ ramon-stickers:
       cancel_select_button: 取消
       delete_selected_button: '删除（{count}个）'
       delete_selected_confirm: '删除{count}个贴纸？该操作无法撤销。'
+      delete_selected_error: 某些贴图无法成功删除。请重试。
       edit_sticker:
+        category_help: 仅支持小写字母、数字和下划线。特殊符号将被自动清除。
         category_name_label: 分类名称
         delete_sticker_button: 删除贴纸
         delete_sticker_confirmation: 确定删除这个贴纸？
+        external_anim_notice_body: JSON或TGS格式的动画贴图，必须部署在此论坛服务器域名上，才可以正常渲染。外部网址加载的贴图，用户无法看到动画效果，除非将贴图文件上传到同源路径。
+        external_anim_notice_title: 外部网址的动画贴图
         modal_title: 添加贴纸
         path_or_url_label: 路径或URL
         save_error: 保存表情失败。请检查输入内容后重试。
@@ -29,6 +33,8 @@ ramon-stickers:
         sticker_title_label: 贴纸名称
         submit_button: '=> core.ref.save_changes'
         text_to_replace_label: '替换问题 （例如:sticker:）'
+        tgs_notice_body: TGS文件是Telegram动画贴图，可能被原作者声明了版权或分发限制。保存该贴图，即代表你拥有使用和分发此内容的完全权利，并承担全部法律责任。
+        tgs_notice_title: 授权提示（TGS文件）
         upload_button: 选择文件
         upload_help: 支持Lottie动画JSON（.json），Telegram贴纸（.tgs），PNG，GIF，WebP，JPEG。
         upload_label: 上传文件
@@ -44,6 +50,7 @@ ramon-stickers:
       select_button: 选择
       sticker_list:
         load_more_button: '=> core.forum.post_stream.load_more_button'
+        move_category_error: 无法保存分类顺序。请重试。
   forum:
     composer:
       sticker_tooltip: 插入贴纸

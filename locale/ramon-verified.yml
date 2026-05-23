@@ -207,6 +207,7 @@ ramon-verified:
     document_required: 提交认证申请必须添加认证资料。
     encryption:
       acknowledge_loss_required: 我已确认：在生成新的密钥对之前，所有现有的加密文档将被删除。
+      decryption_failed: 此加密文件无法解密。config.php文件中配置的私钥与保存的公钥不匹配，或者文件已损坏。
       libsodium_missing: libsodium模块在当前PHP环境中不可用。
       private_key_missing: 该文档已加密，但本服务器的config.php配置文件中未配置对应的私钥。请将其添加到「verified-private-key」项下，或重新生成密钥对（该操作将删除所有已加密的文档）。
     file_too_large: 资料过大（最大8MB）。

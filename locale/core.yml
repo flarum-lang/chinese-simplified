@@ -549,7 +549,7 @@ core:
       search_placeholder: 搜索社区
       search_role_label: 搜索社区
       session_dropdown_accessible_label: 会话下拉菜单开关
-      settings_button: 论坛设置
+      settings_button: 账号设置
       sign_up_link: '=> core.ref.sign_up'
     index:
       all_discussions_link: '=> core.ref.all_discussions'

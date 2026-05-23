@@ -64,8 +64,8 @@ ramon-avocado:
       hero_decoration_icon_count_label: 装饰图标数量
       hero_decoration_icon_count_one: 1个图标（第一个子标签）
       hero_decoration_icon_count_two: 2个图标（第一个和第二个子标签）
-      hero_decoration_icon_help: 在讨论页头部的右侧，将副标签图标显示为大尺寸装饰性元素。
-      hero_decoration_icon_label: 在讨论页主区域显示副标签图标
+      hero_decoration_icon_help: 在话题横幅头部右侧，将副标签图标显示为大尺寸装饰性元素。
+      hero_decoration_icon_label: 在话题横幅中显示副标签图标
       hero_decoration_icon_opacity_help: '设置装饰性图标的不透明度百分比。100 = 完全不透明，0 = 完全不可见。'
       hero_decoration_icon_opacity_label: 图标不透明度（0-100）
       hero_image_position_help: 'CSS background-position 属性值，例如 ''center top'' 或 ''50% 20%''。'
@@ -155,7 +155,7 @@ ramon-avocado:
       empty: 没有话题。
       home: 返回首页
       load_more: 加载更多
-      title: 所有讨论
+      title: 所有话题
     header:
       back: 返回
       back_home: 返回首页
@@ -163,7 +163,7 @@ ramon-avocado:
       search: 搜索
     home:
       all_categories: 全部分类
-      all_title: 所有讨论
+      all_title: 所有话题
       back_home: 首页
       badge_following: 已关注
       badge_sticky: 置顶
@@ -181,11 +181,11 @@ ramon-avocado:
       composer_preview: 预览
       composer_preview_empty: 无内容可预览。
       composer_submitting: 发布中…
-      composer_title_placeholder: 讨论标题…
-      discussion_plural_card: '{count} 个讨论'
-      discussion_singular: 个讨论
-      discussion_singular_card: 个讨论
-      discussions: 讨论
+      composer_title_placeholder: 话题标题…
+      discussion_plural_card: '{count} 个话题'
+      discussion_singular: 个话题
+      discussion_singular_card: 个话题
+      discussions: 个话题
       filter_tags: 筛选标签
       following_heading: 我的关注
       like: 点赞
@@ -193,11 +193,11 @@ ramon-avocado:
       like_count_singular: '1 次赞'
       log_in: 登录
       more: 更多
-      new_discussion: 发起讨论
+      new_discussion: 发布话题
       no_tags_found: 未找到标签
       or: 或
-      popular_heading: 热门讨论
-      popular_no_discussions: 暂无讨论。
+      popular_heading: 热门话题
+      popular_no_discussions: 暂无话题。
       post_plural: '{count} 个帖子'
       post_singular: 个帖子
       replies: 回复
@@ -233,7 +233,7 @@ ramon-avocado:
       clear: 清空
       enter_search_term: 输入关键词以查找用户。
       filtered_by: 筛选条件
-      hero_sub: 搜索您感兴趣的内容
+      hero_sub: 搜索话题、回帖和用户
       hero_title: 你在找什么？
       no_discussions_filter: 没有满足筛选条件的话题。
       no_discussions_query: '没有「{q}」相关的话题。'
@@ -253,16 +253,16 @@ ramon-avocado:
       sort_oldest: 最早发布
       sort_relevance: 相关度
       sort_top: 热门
-      tab_discussions: 讨论
-      tab_posts: 帖子
+      tab_discussions: 话题
+      tab_posts: 回帖
       tab_users: 用户
       tip: '提示：输入前缀 '
       tip_suffix: ' 可以根据标签进行筛选'
       title: 搜索
     tags:
       all_discussions: 所有话题
-      discussion_plural: 个讨论
-      discussion_singular: 个讨论
+      discussion_plural: 个话题
+      discussion_singular: 个话题
       featured: 精选
       home: 首页
       login_to_view: 登录以查看链接

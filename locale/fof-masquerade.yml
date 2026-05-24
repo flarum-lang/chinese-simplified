@@ -17,11 +17,13 @@ fof-masquerade:
       edit-field: 保存更改
     fields:
       add: '添加字段 {field}'
+      create: 创建字段
       delete-confirmation: 确定要删除此字段吗？所有关联数据将被永久删除。
       description: 字段描述
       description-help: "可选描述，用来解释这个字段的用途或填写要求。\n"
       edit: '编辑字段 {field}'
       force-user-to-completion: 强制用户填写资料
+      hide-empty-fields: 隐藏空值字段
       icon: 图标
       icon-help: "在字段名称前显示一个图标。可用的图标请查阅 <a>FontAwesome 官网</a>。图标名称需包含前缀 \"fa-\"，例如 \"fas fa-info\"。\n"
       name: 字段名

@@ -12,6 +12,8 @@ fof-forum-statistics-widget:
     settings:
       cache_duration_help: '指定小部件数据的缓存时间（以秒为单位），值为 <code>0</code> 表示禁用缓存（不推荐）。'
       cache_duration_label: 缓存时长
+      classic_look_help: 恢复使用集成为fof/forum-widgets-core之前的小组件外观。
+      classic_look_label: 经典样式
       flush_cache_on_new_registration_help: 启用此项，在论坛有新用户注册时刷新小部件缓存。
       flush_cache_on_new_registration_label: 新用户注册时刷新小部件缓存
       widget_ignore_private_discussions_label: 不统计私密主题

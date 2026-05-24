@@ -7,16 +7,26 @@ fof-polls:
     permissions:
       change_vote: 修改投票
       moderate: 编辑或删除投票
+      moderate_group: 编辑或删除投票分组
       self_edit: 编辑已创建的投票（需要帖子编辑权限）
       self_post_edit: '编辑自己帖子上的 *所有* 投票（需要帖子编辑权限）'
       start: 发起投票
       start_global: 发起全站投票
+      start_group: 创建投票分组
       upload_images: 允许上传投票头图和选项图
+      view_group: 查看所有投票分组
       view_results_without_voting: 无需参与投票即可查看结果
       vote: 参与投票
     settings:
+      discussion_polls:
+        heading: 话题投票
+        help: 配置话题投票的相关设置。
+      enable_discussion_polls: 启用话题投票
+      enable_discussion_polls_help: 开启后，用户可以在话题帖子中创建投票。如果你只想用全局投票，关闭此设置。
       enable_global_polls: 启用全站投票
       enable_global_polls_help: 全站投票不与任何帖子绑定，可以从专门的投票页面访问。
+      enabled_poll_groups: 启用投票分组
+      enabled_poll_groups_help: 投票分组可以将所有全局投票分为一个组，并在一个固定页面中显示。
       general:
         heading: 常规设置
         help: 这些设置控制投票扩展的基本功能。
@@ -25,6 +35,12 @@ fof-polls:
         help: 这些设置控制全局投票功能。
       image:
         heading: 图片设置
+        help: 配置上传图片的体积和尺寸。图片会自动转换成WebP格式，并自动生成多个变体。
+      image_dimensions_help: 存储图片的基础尺寸。如果原图够大，将自动生成高分辨率变体（@2x，@3x）。
+      image_height: 缩放图片高度（px）
+      image_width: 缩放图片宽度（px）
+      max_image_upload_size: 上传图片最大体积（KB）
+      max_image_upload_size_help: 上传图片的最大体积，以KB为单位。图片上传后，会自动转换成WebP格式并缩放，因此最终保存的文件体积一般会小于上传文件。默认10240KB（10MB）。
       max_options: 每个投票可设置的最大选项数量
       options_color_blend: 混合文本色
       options_color_blend_help: 启用此项，改善选项文本样式的可读性。如果此功能影响论坛样式，请禁用。
@@ -33,10 +49,20 @@ fof-polls:
     compose:
       add_title: 发起投票
       continue_editing: 继续编辑
+      draft_saved: 草稿保存成功
       edit_title: 编辑投票
       polls_manager: 投票管理器
       polls_preview: 查看投票
+      publish: 发布
+      save_as_draft: 保存草稿
+      schedule: 计划
+      schedule_datetime_label: 发布于
+      schedule_publication: 定时发布
+      schedule_publication_edit: 编辑定时发布
+      schedule_submit: 计划
+      submit: 提交
       success: 投票保存成功。
+      update_draft: 更新草稿
     composer_discussion:
       add_poll: '=> fof-polls.forum.moderation.add'
       edit_poll: '=> fof-polls.forum.moderation.edit'
@@ -48,9 +74,11 @@ fof-polls:
       add_title: 发起投票
       allow_change_vote_label: 允许用户更改其投票
       allow_multiple_votes_label: 允许用户为多个选项投票
+      date_clear: 清除结束日期
       date_placeholder: 投票结束时间（可选）
       delete: '=> core.ref.delete'
       edit_title: 编辑投票
+      empty_answers: '{count, plural, one {#个答案为空，填写内容或删除该答案。} other {#个答案为空，填写内容或删除这些答案。}}'
       error: '=> core.lib.error.generic_message'
       hide_votes_label: 隐藏投票直到投票结束
       hide_votes_label_help: 发起投票者将始终能够看到投票结果。
@@ -68,6 +96,7 @@ fof-polls:
         alt_label: 图片替代文本
         help: 为投票添加介绍图（可选）。
         label: 头图
+        url_deprecated: 该投票使用了外部图片网址。外部网址功能已弃用，未来新版本中将被移除。使用上传图片按钮，重新上传图片。
       poll_option_image:
         help: 为选项添加配图（可选）。
         label: 选项图片
@@ -78,6 +107,7 @@ fof-polls:
       tooltip:
         options:
           add-button: 添加选项
+          remove-button: 移除答案
     moderation:
       add: 添加投票
       delete: 删除投票
@@ -87,27 +117,79 @@ fof-polls:
     page:
       nav: 投票
       nav-all: 全站投票
+      nav-groups: 投票分组
     poll:
       cannot_change_vote: 投票后不能更改。
       cannot_start_poll_button: 无法发起投票
+      draft_label: 草稿
+      scheduled_error_tooltip: 定时发布失败。打开投票查看原因。
+      scheduled_label: '计划于{date}发布'
       start_poll_button: 发起全站投票
       submit_button: 投票
+      total_votes: '{count, plural, one {获得#票} other {获得#票}}'
     poll_controls:
+      cancel_schedule_label: 取消定时发布
+      cancel_schedule_success: 定时发布已取消。
       delete_confirmation: 确定要删除这个投票吗？
       delete_error_message: 删除投票时出错。
       delete_label: '=> core.ref.delete'
       delete_success_message: 投票已删除。
       edit_label: '=> core.ref.edit'
+      edit_schedule_publish_label: 编辑定时发布
+      publish_label: 立即发布
+      publish_success: 投票发布成功。
+      schedule_publish_label: 定时发布
+      toggle_dropdown_accessible_label: 开启或关闭投票控制菜单
+      unpublish_confirmation: 确认将此投票移回草稿？它将不再公开展示。
+      unpublish_error_has_votes: 无法取消发布。该投票已有投票记录。可以删除。
+      unpublish_label: 移回草稿
+      unpublish_success: 投票已移回草稿。
       view_label: '=> core.ref.view'
     poll_ended: 投票已结束。
     poll_form:
       delete: 删除投票
       error: 保存投票时出错，请联系管理员。
+    poll_groups:
+      composer:
+        add_title: 添加投票分组
+        delete: 删除投票分组
+        edit_title: 编辑投票分组
+        groups_manager: 投票分组管理
+        save_changes: '=> core.ref.save_changes'
+        success: 投票分组保存成功。
+        view_group: 查看投票分组
+      controls:
+        add_poll_label: 添加投票
+        delete_confirmation: 确认删除此投票分组？
+        delete_error_message: 删除投票分组时发生错误。
+        delete_label: '=> core.ref.delete'
+        delete_success_message: 投票分组删除成功。
+        edit_label: '=> core.ref.edit'
+        view_label: 查看投票分组
+      list_page:
+        add_poll_button: 添加投票到分组
+        cannot_start_poll_group_button: 无法创建投票分组
+        empty_text: 暂无投票分组。
+        load_more_button: '=> core.ref.load_more'
+        no_polls: 此分组中暂无投票。
+        start_poll_group_button: 创建投票分组
+        title: 投票分组
     poll_never_ends: 无时限
     polls_count: '{count} 票'
     polls_list:
       empty_text: 暂无全站投票。
       load_more_button: '=> core.ref.load_more'
+      sort_dropdown:
+        least_voted: 投票最少
+        most_voted: 投票最多
+        newest: 最新
+        oldest: 最早
+        sort_dropdown:
+          default: '=> fof-polls.forum.polls_list.sort_dropdown.newest'
+      status_filter:
+        all: 所有
+        draft: 草稿
+        published: 已发布
     polls_page:
       title: 投票
     public_poll: 查看投票详情

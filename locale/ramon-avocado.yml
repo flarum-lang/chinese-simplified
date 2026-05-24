@@ -263,9 +263,12 @@ ramon-avocado:
       all_discussions: 所有话题
       discussion_plural: 个话题
       discussion_singular: 个话题
+      empty: 该分类暂无话题。
       featured: 精选
       home: 首页
+      load_more: 加载更多
       login_to_view: 登录以查看链接
+      not_found: 没有找到此标签。
       other_tags_label: 其他标签
       title: 分类
     team:
@@ -278,3 +281,10 @@ ramon-avocado:
       no_bio: 论坛成员。
       posts: 个帖子
       title: 论坛团队
+    user:
+      discussions_empty: 暂无话题。
+      likes_empty: 暂无赞贴。
+      load_more: 加载更多
+      mentions_empty: 暂无提及。
+      online: 在线
+      posts_empty: 暂无回复。

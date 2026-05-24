@@ -213,6 +213,8 @@ ramon-point-system:
       auto_group_enabled_help: 当用户总计积分达到预定值时，将自动升级到指定的用户组。
       avatar_deco_enabled: 启用头像边框
       avatar_deco_enabled_help: 总开关。在所有显示头像的位置，展示用户已佩戴的头像边框。
+      avatar_deco_in_lists: 话题列表中的头像边框
+      avatar_deco_in_lists_help: 在话题列表内部的头像上，显示头像边框。如需简洁的列表样式，可关闭此设置。
       cover_deco_enabled: 启用个人资料封面
       cover_deco_enabled_help: 主开关。在用户个人资料页面和用户卡片中，展示已佩戴的封面横幅图片。
       currency_icon: 积分图标Class
@@ -509,6 +511,7 @@ ramon-point-system:
       error_duplicate_with_other_side: 对方已经添加此道具。
       error_initiator_insufficient_points: 你没有足够的积分支付此交易。
       error_insufficient_points: 交易已被拒绝：其中一方所持有的积分，不足以支付交易。
+      error_item_equipped: 佩戴中的道具，无法进行交易。在我的装饰页面中，取消佩戴后，重试操作。
       error_item_unavailable: 交易已被拒绝：交易内容中的一个道具，已不在所声明的所有者名下。刷新或重新发起交易。
       error_load: 无法加载此交易。
       error_no_target: 尚未选择用户。

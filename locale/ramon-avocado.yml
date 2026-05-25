@@ -168,7 +168,12 @@ ramon-avocado:
       badge_following: 已关注
       badge_sticky: 置顶
       badge_unread_tooltip: '{count}条未读帖子'
+      bypass_tag_requirements: 跳过标签数量限制
       categories_heading: 分类
+      choose_primary_tag_plural: '选择{count}个主标签'
+      choose_primary_tag_singular: 选择1个主标签
+      choose_secondary_tag_plural: '选择{count}个副标签'
+      choose_secondary_tag_singular: 选择1个副标签
       choose_tags: 选择标签
       composer_body_placeholder: 分享你的想法…
       composer_close: 关闭

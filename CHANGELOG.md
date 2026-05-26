@@ -168,6 +168,7 @@ CHANGELOG
 * [`ianm/twofactor`](https://github.com/imorland/flarum-ext-twofactor)
 * [`justoverclock/related-discussions`](https://flarum.org/extension/justoverclock/related-discussions)
 * [`justoverclock/flarum-ext-welcomebox`](https://github.com/justoverclockl/flarum-ext-welcomebox)
+* [`maicol07/flarum-ext-sso`](https://github.com/maicol07/flarum-ext-sso)
 * [`michaelbelgium/flarum-discussion-views`](https://github.com/MichaelBelgium/flarum-discussion-views)
 * [`michaelbelgium/mybb-to-flarum`](https://github.com/MichaelBelgium/mybb_to_flarum)
 * [`michaelbelgium/flarum-profile-views`](https://github.com/MichaelBelgium/flarum-profile-views)
@@ -511,7 +512,6 @@ CHANGELOG
 * [`madeyedeer/avatar-tools`](https://github.com/MadEyeDeer/avatar-tools)
 * [`madeyedeer/flarum-pallet-theme`](https://github.com/MadEyeDeer/flarum-pallet-theme)
 * `maicol07-oidc-client`
-* [`maicol07/flarum-ext-sso`](https://github.com/maicol07/flarum-ext-sso)
 * [`malago/flarum-achievements`](https://github.com/malago86/flarum-achievements)
 * [`malago/flarum-ads`](https://github.com/malago86/flarum-ads)
 * [`malago/flarum-ext-fancybox`](https://github.com/malago86/flarum-ext-fancybox)

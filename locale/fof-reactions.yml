@@ -61,6 +61,8 @@ fof-reactions:
     mod_item: 查看表情
     modal:
       anonymous_count: '{count} 位匿名用户'
+      confirm_remove_all_reaction_type: '确定删除此贴的所有互动{reaction}吗？此操作无法撤回。'
+      confirm_remove_user_reaction: '确定移除用户{username}的{reaction}互动吗？此操作无法撤回。'
       load_more: 加载更多
       no_reactions: 暂无反应
       others_count: '+ {count} 个其他'

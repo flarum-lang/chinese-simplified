@@ -7,5 +7,9 @@ muhammedsaidckr-chatgpt:
     settings:
       api_key_help: '从<a>openai.com</a>取得OpenAI API密钥。'
       api_key_label: 'API 密钥'
+      base_uri_help: '基本 OpenAI API 地址。默认为 <code>https://api.openai.com/v1</code>。'
       base_uri_label: '基本 URL'
+      max_tokens_help: '<a>什么是词元(Tokens)，如何计算他们？</a>'
       max_tokens_label: '最大 Tokens'
+      model_help: '了解更多关于<a>模型</a>(默认: <code>text-davinci-003</code>).'
+      model_label: 模型

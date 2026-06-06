@@ -52,6 +52,7 @@ CHANGELOG
 * [`huseyinfiliz/rewind`](https://github.com/huseyinfiliz/rewind)
 * [`huseyinfiliz/stickiest`](https://github.com/huseyinfiliz/stickiest)
 * [`huseyinfiliz/sticky-title`](https://github.com/huseyinfiliz/sticky-title)
+* [`linkrobins/referral`](https://github.com/linkrobins/referral)
 * [`michaelbelgium/flarum-ai-autoreply`](https://github.com/MichaelBelgium/flarum-ai-autoreply)
 * [`pianotell/flarum-ext-flamoji`](https://github.com/PrimateCoder/flarum-flamoji)
 * [`quasimo/flarum-ext-llms-txt`](https://github.com/Quasimo/flarum-ext-llms-txt)

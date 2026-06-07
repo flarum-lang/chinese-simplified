@@ -567,4 +567,4 @@ ramon-point-system:
       award_points: 管理积分
       trade: 交易中心
     user_profile:
-      trades_link: 交易历史
+      trades_link: 交易

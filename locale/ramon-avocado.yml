@@ -137,11 +137,13 @@ ramon-avocado:
       team_groups_help: 所选群组的成员将会展示在团队页面中。
       team_groups_label: 要显示的群组
       team_title_label: 页面标题
+      team_title_placeholder: 运营团队
       threads_style_help: '采用类似Threads App的风格，将话题显示为一个卡片，回帖锁进并带有左边框线条。'
       threads_style_label: 启用会话式话题布局
   forum:
     actions:
       share: 分享
+    back: 返回
     discussion:
       hero_image_add: 添加图片
       hero_image_remove: 移除图片
@@ -198,6 +200,7 @@ ramon-avocado:
       like_count_singular: '1 次赞'
       log_in: 登录
       more: 更多
+      nav_label: 导航
       new_discussion: 发布话题
       no_tags_found: 未找到标签
       or: 或
@@ -229,14 +232,21 @@ ramon-avocado:
       placeholder: 登录以查看链接
     messages:
       deleted_message: 消息已删除
+    online_users:
+      online: 在线
     post:
       op_badge: 楼主
     post_cta:
       or: 或
       text: 喜欢正在看的内容？加入讨论吧！
+    profile:
+      joined: '加入于{date}'
+      scroll_left: 向左滑动
+      scroll_right: 向右滑动
     search:
       clear: 清空
       enter_search_term: 输入关键词以查找用户。
+      esc_key: ESC键
       filtered_by: 筛选条件
       hero_sub: 搜索话题、回帖和用户
       hero_title: 你在找什么？
@@ -264,6 +274,8 @@ ramon-avocado:
       tip: '提示：输入前缀 '
       tip_suffix: ' 可以根据标签进行筛选'
       title: 搜索
+    tag_picker:
+      remove: 移除标签
     tags:
       all_discussions: 所有话题
       discussion_plural: 个话题

@@ -334,7 +334,7 @@ core:
         analytics: 分析
         authentication: 认证
         core: 核心配置
-        discussion: 讨论
+        discussion: 话题
         feature: 功能
         formatting: 格式化
         forum-widget: 论坛小组件
@@ -785,7 +785,7 @@ core:
       posts:
         discussion:
           hint: '讨论 ID'
-          key: 讨论
+          key: 话题
       users:
         email:
           hint: example@machine.local
@@ -868,7 +868,7 @@ core:
     dark_mode_label: 深色模式
     delete: 删除
     delete_forever: 永久删除
-    discussions: 讨论
+    discussions: 话题
     edit: 编辑
     edit_user: 编辑用户
     email: 邮箱

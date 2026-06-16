@@ -21,6 +21,7 @@ CHANGELOG
 * [`flarum/gdpr`](https://github.com/flarum/gdpr)
 * [`flectar/flarum-turnstile`](https://github.com/flectar/flarum-ext-turnstile)
 * [`fof/badges`](https://github.com/FriendsOfFlarum/badges)
+* [`fof/blog`](https://github.com/FriendsOfFlarum/blog)
 * [`fof/discussion-templates`](https://github.com/FriendsOfFlarum/discussion-templates)
 * [`fof/discussion-views`](https://github.com/FriendsOfFlarum/discussion-views)
 * [`fof/horizon`](https://github.com/FriendsOfFlarum/horizon)

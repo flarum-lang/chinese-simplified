@@ -2,9 +2,21 @@
 # Use https://weblate.rob006.net/projects/flarum2/flarum-tags/zh_Hans/ for translation.
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
+flarum-audit:
+  lib:
+    browser:
+      discussion:
+        tagged: '将{discussion}标签从{old_tags}更新为{new_tags}'
+      tag:
+        created: '已创建标签{tag}'
+        deleted: '已删除标签{tag}'
+        updated: '已更新标签{tag}'
 flarum-tags:
   admin:
     basics:
+      slug_driver_options:
+        default: 默认
+        id_with_slug: 带slug的ID
       tags_label: '=> flarum-tags.ref.tags'
     edit_tag:
       color_label: '=> core.ref.color'

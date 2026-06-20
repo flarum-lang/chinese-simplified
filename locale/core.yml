@@ -197,6 +197,9 @@ core:
       title: 仪表盘
       toggle_advanced_page_button: 切换高级页面
       tools_button: 工具
+    database-driver-mismatch-warning:
+      detail: "你的环境配置文件<code>config.php</code>配置的数据库驱动是<code>{configured}</code>，但Flaurm检测到实际使用的数据库是<code>{actual}</code>。\n\n使用错误的数据库驱动，可能导致严重且难以诊断的故障。将环境配置文件<code>config.php</code>中<code>database</code>部分的数据库驱动设置，改为<code>'driver' => ''{actual}''</code>。详情参阅<link>Flarum官方文档</link>。\n"
+      label: 数据库驱动不匹配
     debug-warning:
       detail: "当 <code>debug</code> 模式处于启用状态时，Flarum 会在每次请求时重新构建其 <code>JavaScript</code> 和 <code>CSS</code> 资源，并且可能导致其他敏感信息的泄露，例如数据库密钥、环境变量等。\n\n强烈建议在生产环境中修改您的 <code>config.php</code> 文件以禁用 <code>debug</code> 模式。欲了解更多信息，请参阅 <link>Flarum 文档</link>。\n"
       label: 调试模式已激活
@@ -726,6 +729,9 @@ core:
   lib:
     alert:
       dismiss_a11y_label: 忽略警告
+    assets_updated:
+      message: 此页面有新版本。
+      reload_button: 刷新
     badge:
       hidden_tooltip: 隐藏
     data_segment:

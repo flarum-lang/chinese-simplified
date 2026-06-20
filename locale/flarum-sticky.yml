@@ -2,6 +2,12 @@
 # Use https://weblate.rob006.net/projects/flarum2/flarum-sticky/zh_Hans/ for translation.
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
+flarum-audit:
+  lib:
+    browser:
+      discussion:
+        stickied: '固定话题{discussion}'
+        unstickied: '取消固定话题{discussion}'
 flarum-sticky:
   admin:
     permissions:

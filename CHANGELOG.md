@@ -36,6 +36,7 @@ CHANGELOG
 * [`fof/move-posts`](https://github.com/FriendsOfFlarum/move-posts)
 * [`fof/photoswipe`](https://github.com/FriendsOfFlarum/photoswipe)
 * [`fof/rich-text`](https://github.com/FriendsOfFlarum/rich-text)
+* [`fof/seo`](https://github.com/FriendsOfFlarum/seo)
 * [`fof/synopsis`](https://github.com/FriendsOfFlarum/synopsis)
 * [`fof/top-posters-widget`](https://github.com/FriendsOfFlarum/top-posters-widget)
 * [`fof/usercard-stats`](https://github.com/FriendsOfFlarum/usercard-stats)

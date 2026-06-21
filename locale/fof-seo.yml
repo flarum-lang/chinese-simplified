@@ -37,6 +37,35 @@ fof-seo:
         intro: '请输入您想要添加到 do-follow 列表的<b>域名</b>的主机名。'
         learn_more_line: '<a>了解更多</a>关于 do-follow 列表的信息。'
         title: Do-Follow列表
+    pages:
+      search_engines:
+        bing_heading: 将你的网站添加到必应搜索结果中
+        bing_sitemap: 不要忘记配置站点地图URL。验证网站后即完成准备工作，Bing将可以的中你网站进行收录。
+        bing_visit: '如果您想将您的网站添加到必应搜索结果中，请访问{link}并完成给定的步骤。并非所有字段都是必填字段。'
+        confirm_button: 我已阅读此内容
+        google_heading: 将你的网站添加到谷歌搜索结果中
+        google_sitemap: 在谷歌搜索控制台中完成注册后，请访问<b>网站地图</b>页面。将你的<b>sitemap.xml</b>地址传给谷歌，确保谷歌可以抓取网站地图内容，并持续抓取。
+        google_visit: '如果你想将你的网站添加到谷歌搜索结果中，请访问{link}。您需要添加您的网站，并验证您是关联域名的所有者。'
+        google_www: 当输入域名时，你需要回答以下问题：您想在搜索结果中使用“www”子域名吗？您以后将<strong>无法</strong>更改此设置。在谷歌搜索控制台中多次注册你的域名不会带来更佳排名。
+        heading: 向搜索引擎提交你的网站
+        intro: 让搜索引擎知道你的网站是一个很好的做法。本页面将指导你成功完成此工作。
+        sitemap_tip: 建议在完成本指南之前准备好网站地图。如果你还没有网站地图，<a>单击此处阅读有关它们的更多信息</a>。
+        yahoo_body: 如果您想将您的网站添加到雅虎搜索结果中，请完成您的必应搜索结果注册。雅虎将使用该数据。
+        yahoo_heading: 将你的网站添加到雅虎搜索结果中
+        yandex_heading: 将你的网站添加到Yandex搜索结果中
+        yandex_sitemap: 不要忘记在Yandex.Webmaster中配置站点地图。
+        yandex_visit: '如果您想将您的网站添加到Yandex搜索结果中，请访问{link}并按照给定的步骤操作。'
+      sitemap:
+        generated_note: 站点地图文件是自动生成的，不需要任何维护。
+        just_installed_body: 在这种情况下，通过单击左侧边栏中的扩展来激活它。然后这个警告就会消失。
+        just_installed_heading: 我已安装了扩展程序
+        robots_body: 相同的扩展还为你的论坛生成<b>robots.txt</b>。此文件告诉搜索引擎他们可能会抓取哪些区域，并将它们指向站点地图，因此安装它可以同时处理两个文件——没有额外的配置。
+        robots_heading: 怎么处理robots.txt？
+        which_extension_body: '{link}是Flarum安装的建议扩展。我们强烈建议你安装并激活此扩展程序。'
+        which_extension_details: 此扩展将确保爬虫找到你的论坛<b>话题</b>、<b>标签</b>（启用扩展时）和<b>页面</b>扩展（安装并启用扩展时）。它将自动提供sitemap.xml。
+        which_extension_heading: 我应该安装什么扩展？
+        why_body: 网站地图是一个XML文件，其中包含网站上所有可用页面的列表。它将被爬虫和搜索引擎用来查找网站上的页面。
+        why_heading: 网站地图的作用是什么？
     permissions:
       category_label: SEO
       configure_seo: 允许配置SEO
@@ -50,6 +79,7 @@ fof-seo:
         profiles_help: 启用后，用户个人资料页面回添加“noindex”元标签，因此它们会被展示在搜索结果之中。页面上的链接仍然会被索引，以此保障爬虫可以触达它们所指向的内容。
         profiles_label: 不索引个人资料页面
         tags_button: 选择标签
+        tags_help: '选定标签中的讨论（以及这些标签自身的列表页面）将通过添加 `noindex` 元标签而不被搜索引擎收录，但其中的链接仍会被跟踪。选择父标签时，其子标签也会一并生效。'
         tags_none_selected: 暂无索引排除的标签。
       info:
         maintain: 首次设置此扩展时，请检查所有设置。定期维护这些设置以获得最佳搜索结果。
@@ -60,6 +90,14 @@ fof-seo:
         heading: 论坛关键词
         help: 输入一个或多个论坛关键词。
         placeholder: 添加一些关键词
+      new_tab:
+        heading: 在新标签页中打开外部链接
+        help: 此扩展还将确保外部链接（指向其他域）在新选项卡中打开。目前无法禁用此设置。
+      nofollow:
+        button: 打开域名Do-Follow列表
+        heading: No-Follow链接
+        help: 默认情况下，所有指向外部域的链接都会收到“<i>nofollow</i>”属性。这将确保人们不会用指向其它域名的链接在你的论坛上发送垃圾邮件，以获得更多推荐。
+        help_dofollow: 通过此设置，您可以将域添加到“Do-Follow”列表中。例如，您可以添加<i>flarum.org</i>，以确保指向本网站的链接不会收到“nofollow”属性。
       social_media_image:
         heading: 社交媒体图片
         help_size: '推荐使用正方形图片。推荐尺寸为 1200x1200 像素。否则请使用横版图片，推荐尺寸为 1200x630。'
@@ -69,3 +107,7 @@ fof-seo:
         help: '当你的论坛在 X（原Twitter）上被分享时，如果已设置社交媒体图片，它将会显示一张图片。这可以是大图的大卡片，也可以是带较小图片的小卡片（摘要）。'
         option_large: 大幅卡片（大图）
         option_summary: 摘要卡片（小图）
+      updated:
+        button: 返回概述并重新检查
+        heading: 更新了这个设置吗？
+        help: 当你准备好时，单击下面的按钮以重新检查此设置的状态。

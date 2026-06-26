@@ -2,6 +2,16 @@
 # Use https://weblate.rob006.net/projects/flarum2/flarum-gdpr/zh_Hans/ for translation.
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
+flarum-audit:
+  lib:
+    browser:
+      user:
+        gdpr_anonymized: '已匿名{username} 的数据'
+        gdpr_deleted: '已删除用户 {username}的数据'
+        gdpr_erasure_cancelled: '已取消对 {username} 抹除请求'
+        gdpr_erasure_confirmed: '已确认抹除 {username} 的数据'
+        gdpr_erasure_requested: '已请求抹除{username} 的用户数据'
+        gdpr_exported: '浏览{username}的数据'
 flarum-gdpr:
   admin:
     gdpr_page:

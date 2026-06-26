@@ -2,6 +2,11 @@
 # Use https://weblate.rob006.net/projects/flarum2/flarum-nicknames/zh_Hans/ for translation.
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
+flarum-audit:
+  lib:
+    browser:
+      user:
+        nickname_changed: '已将 {username} 的昵称从 {old_nickname} 更改为 {new_nickname}'
 flarum-nicknames:
   admin:
     basics:

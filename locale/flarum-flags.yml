@@ -2,6 +2,12 @@
 # Use https://weblate.rob006.net/projects/flarum2/flarum-flags/zh_Hans/ for translation.
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
+flarum-audit:
+  lib:
+    browser:
+      post:
+        dismissed_flags: '已驳回 {postuser} 在 {discussion} 中的 {post} 的举报'
+        flagged: '已举报 {postuser} 的 {post} 在 {discussion} 举报理由{reason}'
 flarum-flags:
   admin:
     permissions:
@@ -18,6 +24,7 @@ flarum-flags:
       reason_details_placeholder: 详细描述（可选）
       reason_inappropriate_label: 不雅
       reason_inappropriate_text: 此帖包含攻击性、侮辱性语言或违反了<a>社区规范</a>。
+      reason_inappropriate_text_no_guidelines: 这条帖子内容具有冒犯性或辱骂性。
       reason_missing_message: 请向我们提供一些详细信息。
       reason_off_topic_label: 跑题
       reason_off_topic_text: 此帖与当前的讨论无关，应当移动到其他地方。

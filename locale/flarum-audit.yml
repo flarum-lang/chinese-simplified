@@ -4,5 +4,144 @@
 
 flarum-audit:
   admin:
+    header:
+      title: 操作
+    limitedSettings:
+      configure: 配置
+      introduction: 配置受限权限的用户可以查看的内容
+      requiresExtension: '需要的拓展程序{extension}'
+      title: 访问限制设置
     permissions:
       view: 查看操作记录
+      viewLimited: 查看受限操作记录
+    settings:
+      limitedIpAddress: 查看IP地址
+  forum:
+    link:
+      actor-audit: 查看操作日志（由该用户发起）
+      all-audit: 操作日志
+      discussion-audit: 操作日志
+      user-audit: 操作日志(账户编辑)
+    modal:
+      actor-title: 操作者操作记录
+      all-title: 操作日志
+      discussion-title: 讨论操作日志
+      user-title: 用户操作日志
+  lib:
+    browser:
+      audit_log_cleared: '清除 {deleted_count}操作日志中的条目'
+      cache_cleared: 手动清除缓存
+      client:
+        access_token: 访问令牌
+        api_key: 'API 密钥'
+        cli: 命令行
+        session: 网络会话
+        unknown: 未知客户端
+      controls:
+        filterAction: 显示来自相同操作者的日志
+        filterActor: 显示来自该操作者的日志
+        filterClient: 显示来自该客户端类型的日志
+        filterDiscussion: 显示影响同一讨论的日志
+        filterIp: 显示来自该IP地址的日志
+        filterUser: 显示影响同一用户的日志
+        hideRaw: 隐藏原始日志
+        showRaw: 显示原始日志
+        title: 操作
+      core: 核心
+      deletedResource:
+        discussion: '讨论#{id}'
+        group: '群组#{id}'
+        post: '请求#{id}'
+        tag: '标签#{id}'
+        user: '用户#{id}'
+      developer_token_created: '为 {username} 创建了开发者访问令牌 "{title}"'
+      discussion:
+        create_date_changed: '将{discussion}开始日期从 {old_date} 更改为 {new_date}'
+        created: '开始的讨论{discussion}'
+        deleted: '删除讨论{discussion}'
+        hidden: '隐藏讨论{discussion}'
+        merged_away: '将 {discussion} 合并到 {new_discussion}'
+        merged_into: '将来自 {original_discussion_ids_count} 的讨论中的 {post_count} 帖子合并到 {discussion} 中'
+        renamed: '讨论标题已从 {old_title} 更改为 {new_title}'
+        restored: '恢复讨论 {discussion}'
+        split_away: '将 {discussion} 中的 {post_count} 帖子拆分为 {new_discussion}'
+        split_into: '将 {post_count} 篇帖子拆分成新的讨论 {discussion}'
+        user_changed: '将 {discussion} 的所有者从 {old_user} 更改为 {new_user}'
+      empty: 无符合条件的结果
+      extension:
+        disabled: '禁用扩展{package}'
+        enabled: '启用扩展{package}'
+        uninstalled: '卸载扩展{package}'
+      filterApply: 应用
+      filterClear: 清除筛选
+      filterPlaceholder: 筛选日志
+      filters:
+        action: '操作类型，例如 action:post.created。'
+        actor: '谁执行了此操作。对于系统操作或未经身份验证的操作，请使用 actor:guest。'
+        client: 这个请求是如何制造的。
+        discussion: '按 ID 影响特定讨论的操作。'
+        ip: '发起此操作的 IP 地址。'
+        user: 用户及其操作受影响的部分，按用户名确定。
+      filtersHint: 筛选条件：
+      fof_ban_ips:
+        banned: '封禁IP{ip}'
+        unbanned: '解封IP{ip}'
+      genericResource:
+        comment: 评论
+        post: 帖子
+      group:
+        created: '新建群组{name}'
+        deleted: '删除群组{name}'
+        renamed: '重命名群组名称从{old_name}变更为{new_name}'
+      help:
+        multiple: '用逗号来分隔即可匹配其中任何一个，例如：action:post.created,post.deleted'
+        negate: '在筛选条件前加上减号（-）可以排除匹配项，例如：-client:cli'
+        toggle: 搜索帮助
+      loadMore: 加载更多
+      noReason: （无原因）
+      noValue: （没有相关值）
+      permissionGroup:
+        everyone: '=> core.admin.permissions_controls.everyone_button'
+        members: '=> core.admin.permissions_controls.members_button'
+      permission_changed: '已将权限 {permission} 从 {old_groups} 修改为 {new_groups}'
+      post:
+        create_date_changed: '已将 {postuser} 的 {post} 的开始日期从 {old_date} 更改为 {new_date}'
+        created: '已在 {discussion} 中创建了 {post}'
+        deleted: '已删除 {postuser} 在 {discussion} 中的 {post}'
+        edit_date_changed: '已将 {postuser} 的 {post} 编辑日期从 {old_date} 更改为 {new_date}'
+        hidden: '隐藏了 {postuser} 在 {discussion} 中的 {post}'
+        restored: '已恢复 {postuser} 在 {discussion} 中的 {post}'
+        revised: '修改了{postuser}在{discussion}中的{post}'
+        user_changed: '已将{post}的所有者从{old_user}更改为了 {new_user}'
+      refresh: 刷新
+      setting_changed: '已更改设置{key}'
+      setting_changed_with_values: '已将设置{key}的值从{old_value}更改为{new_value}'
+      settings_reset: '重置 {extension} 的设置 {keys}'
+      user:
+        activated: '已手动激活 {username} 的帐户'
+        activated_with_email: '已通过确认链接激活 {username} 的帐户'
+        avatar_changed: '更改了{username}的头像'
+        avatar_removed: '移除了{username}的头像'
+        bio_changed: '已编辑{username}的个人简介'
+        created: '已创建{username}的账户'
+        deleted: '删除了用户{username}'
+        email_change_requested: '已请求将 {username} 的电子邮件地址更改为 {new_email}'
+        email_changed: '已将 {username} 的电子邮件地址从 {old_email} 更改为 {new_email}'
+        groups_changed: '已将 {username} 所在群组从 {old_groups} 更改为 {new_groups}'
+        impersonated: '作为 {username} 登录'
+        logged_in: '已登录 {username} 帐户'
+        logged_in_with_provider: '已使用 {provider} 登录帐户 {username}'
+        logged_out: '已登出帐户 {username}'
+        nickname_request_approved: '已通过 {username} 将昵称从 {old_nickname} 更改为 {new_nickname}'
+        nickname_request_rejected: '已驳回{username}的昵称更改请求'
+        nickname_requested: '已为用户 {username} 请求为新昵称 {new_nickname}'
+        password_change_requested: '请求更改 {username} 的密码'
+        password_changed: '已更改{username}的密码'
+        password_reset_attempted: '用户 {username} 已请求重置密码'
+        password_reset_attempted_unmatched: '请求重置 {email} 的密码（没有匹配的帐户）'
+        provider_connected: '已将认证方式 {provider} 连接到 {username} 帐户'
+        username_changed: '已将 {username} 的用户名从 {old_username} 更改为 {new_username}'
+        username_request_approved: '已批准 {username} 的用户名从 {old_username} 更改为 {new_username}'
+        username_request_rejected: '已驳回{username}的用户名更改请求'
+        username_requested: '已为用户 {username} 请求新的用户名 {new_username}'
+      withoutActor: '=> core.group.guest'

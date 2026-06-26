@@ -17,3 +17,10 @@ flarum-approval:
       approve_button: 通过审核
   ref:
     awaiting_approval: 审核中
+flarum-audit:
+  lib:
+    browser:
+      discussion:
+        approved: '已通过 {discussion}'
+      post:
+        approved: '已批准 {postuser} 在 {discussion} 中的 {post}'

@@ -18,6 +18,7 @@ CHANGELOG
 * [`ekumanov/flarum-ext-forum-widgets`](https://github.com/ekumanov/flarum-ext-forum-stats-widget)
 * [`ekumanov/flarum-ext-inline-audio`](https://github.com/ekumanov/flarum-ext-inline-audio)
 * [`ekumanov/flarum-ext-new-posts-notice`](https://github.com/ekumanov/flarum-ext-new-posts-notice)
+* [`ernestdefoe/seo`](https://github.com/ernestdefoe/seo)
 * [`flarum/audit`](https://github.com/flarum/audit)
 * `flarum-com-database-queue`
 * [`flarum/gdpr`](https://github.com/flarum/gdpr)

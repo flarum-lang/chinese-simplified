@@ -9,11 +9,23 @@ ernestdefoe-seo:
         help: 如果启用，这些元标签将在对象发生变化时自动更新。
         switch_label: '更改时更新对象 SEO'
         title: 自动更新元标签
+      keywords:
+        example: Flarum、网站开发、论坛、苹果、安全
+        example_prefix: 例如：
+        help: 请输入一个或多个描述此站点的关键词。
+        note: 注意：关键词之间用逗号分隔。
+        placeholder: 添加一些关键词
+        title: 关键词
       managed_label: 管理
       meta_description:
         help: 描述信息，并在搜索引擎中显示。
         placeholder: 添加描述
         title: 元描述
+      meta_image:
+        help: 显示图像。
+        managed_by: '图片来源由 {source} 管理'
+        placeholder: 输入图片URL地址
+        title: 元图片
       meta_title:
         help: 在搜索引擎中的标题。
         placeholder: 输入页面标题
@@ -22,6 +34,14 @@ ernestdefoe-seo:
         alert_body: '请使用 objectType 和 objectId 属性打开此对话框，或者改为注册对象关系。'
         alert_title: '此对象不是受支持的 SEO 元数据对象'
         documentation_link: 文档
+      robots:
+        help: 此站点在搜索引擎的抓取机器人（Robots）爬取设置。
+        tag_follow_allowed: 允许关注的链接
+        tag_follow_disallowed: 不被允许关注的链接
+        tag_index_allowed: 允许索引的页面
+        tag_index_disallowed: 不被允许索引的页面
+        tag_noarchive: 不被允许存档的页面
+        title: 抓取机器人(Robots)
       title: 'SEO 设置 - 元'
       upload_button: 上传文件
     permissions:

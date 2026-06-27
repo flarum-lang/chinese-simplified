@@ -2,6 +2,11 @@
 # Use https://weblate.rob006.net/projects/flarum2/fof-anti-spam/zh_Hans/ for translation.
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
+flarum-audit:
+  lib:
+    browser:
+      user:
+        marked_as_spammer: '已将 {username} 标记为垃圾邮件发送者'
 fof-anti-spam:
   admin:
     blocked_registrations:

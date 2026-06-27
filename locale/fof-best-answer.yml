@@ -2,6 +2,12 @@
 # Use https://weblate.rob006.net/projects/flarum2/fof-best-answer/zh_Hans/ for translation.
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
+flarum-audit:
+  lib:
+    browser:
+      discussion:
+        best_answer_set: '将 {post} 设置为 {discussion} 中的最佳答案'
+        best_answer_unset: '取消设置{post}为 {discussion} 中 的最佳答案'
 fof-best-answer:
   admin:
     edit_tag:

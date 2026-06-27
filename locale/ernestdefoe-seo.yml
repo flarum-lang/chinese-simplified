@@ -36,11 +36,18 @@ ernestdefoe-seo:
         documentation_link: 文档
       robots:
         help: 此站点在搜索引擎的抓取机器人（Robots）爬取设置。
+        switch_noarchive: 禁用存档页面（noarchive）
+        switch_nofollow: 允许跟随链接跳转到不同页面
+        switch_noimageindex: 禁用此页面上的图片索引（noimageindex）
+        switch_noindex: 允许索引的页面
+        switch_nosnippet: 禁用页面上的文本片段（nosnippet）
         tag_follow_allowed: 允许关注的链接
         tag_follow_disallowed: 不被允许关注的链接
         tag_index_allowed: 允许索引的页面
         tag_index_disallowed: 不被允许索引的页面
         tag_noarchive: 不被允许存档的页面
+        tag_noimageindex: 不被允许索引的图片
+        tag_nosnippet: 禁止截取的文本片段
         title: 抓取机器人(Robots)
       title: 'SEO 设置 - 元'
       upload_button: 上传文件

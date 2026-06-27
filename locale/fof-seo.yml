@@ -54,7 +54,22 @@ fof-seo:
             button: 更新关键词
             label: 检查您的论坛是否已设置关键词
             reason: 您尚未设置论坛关键词！
+          meta_tags:
+            label: 检查您的论坛是否具有可用的元标签（由该插件生成）
+          review:
+            button: 好了！我已经检查过了！
+            label: '每两个月检查一次您的SEO设置。下次检查时间为{date}'
+            reason: 是时候重新检查一下您的SEO设置了。
+          robots:
+            button: '阅读更多关于添加 robots.txt 文件的信息'
+            label: '检查您的论坛是否包含 robots.txt 文件'
+            reason: '您的 robots.txt 文件由 FriendsOfFlarum Sitemap 扩展程序提供。请安装并启用该扩展程序，以便搜索引擎可以访问您的 robots.txt 文件。'
+          search_engines:
+            button: 更多信息
+            label: 将您的论坛注册到搜索引擎
+            reason: 你需要检查一下才能通过。
           sitemap:
+            button: 阅读更多关于添加站点地图的信息
             label: 检查您的论坛是否有可用的站点地图
             reason: '强烈建议安装 FriendsOfFlarum Sitemap 扩展程序！'
           social_media:
@@ -160,3 +175,84 @@ fof-seo:
         button: 返回概述并重新检查
         heading: 更新了这个设置吗？
         help: 当你准备好时，单击下面的按钮以重新检查此设置的状态。
+  forum:
+    controls:
+      configure_seo: 配置SEO
+      reset_seo: 重置SEO
+      update_seo: 更新SEO
+    meta_seo:
+      auto_update:
+        help: 如果启用，当对象发生更改时，此项目的元标签将自动更新。
+        label: 自动更新元标签
+        switch: '更改时更新对象 SEO'
+      close:
+        autofill_info: 此更改将撤销自定义更改，并使用项目数据填充元标签。
+        close: 关闭
+        save: 保存
+        save_autofill: '保存 & 自动填充'
+      image:
+        help: 显示图像。
+        label: 元图像
+        managed_by: '图片来源由 {source} 管理'
+        placeholder: 输入图片URL
+        upload: 上传文件
+      keywords:
+        comma_note: 注意：关键词之间用逗号分隔。
+        example: 例如：flarum、网站开发、论坛、苹果、安全
+        help: 请输入一个或多个描述此站点的关键词。
+        label: 关键词
+        placeholder: 添加一些关键词
+      managed: 管理
+      meta_description:
+        help: 站点描述信息，并在搜索引擎中显示。
+        label: 元描述
+      meta_title:
+        help: 在搜索引擎中的标题。
+        label: 元标题
+        placeholder: 输入页面标题
+      note_prefix: 注释：
+      og:
+        auto_switch: '自动生成Open Graph 标签'
+        description:
+          label: 'Open Graph 简介'
+          placeholder: '自定义Open Graph 简介'
+        label: 'Open Graph 标签'
+        title: 'Open Graph 标题'
+      reading_time:
+        help: 预计阅读时间（以秒为单位）。
+        label: 预计阅读时间
+        placeholder: 阅读时间（秒）
+      robots:
+        help: 来自搜索引擎的爬取机器人爬取设置。
+        label: 来自搜索引擎的爬取机器人
+        switch:
+          follow: 允许跟随链接跳转到不同页面
+          indexing: 允许索引页面
+          noarchive: 禁用存档页面（noarchive）
+          noimageindex: 禁用此页面上的图片索引（noimageindex）
+          nosnippet: 禁用页面上的文本片段（nosnippet）
+        tags:
+          archive_not_allowed: 存档页面不被允许
+          follow_allowed: 允许被关注的链接
+          follow_not_allowed: 链接不被允许关注
+          imageindex_not_allowed: 图片索引不被允许
+          indexing_allowed: 允许索引的页面
+          indexing_not_allowed: 该页面不允许被索引
+          snippet_not_allowed: 禁止截取文本片段
+      saved: 已保存！
+      title: 'SEO设置 - 元'
+      twitter:
+        auto_switch: '自动生成 X（原 Twitter）卡片'
+        description: 'X（原 Twitter）简介'
+        image:
+          help: '在X（原 Twitter）中显示图片。'
+          label: 'X（原 Twitter）图片'
+          reset: 重置图片
+        label: 'X（原 Twitter）卡片'
+        title: 'X（原 Twitter）标题'
+      unsupported_object:
+        body: '请使用 objectType 和 objectId 属性打开此对话框，或者改为注册对象关系。'
+        docs_link: 文档
+        title: '此对象不是受支持的 SEO 元数据对象'
+    profile_description: '用户 {username} 的个人资料 | 讨论数 {discussion_count} 场 | 评论数 {comment_count} 篇'
+    profile_title: '{username}的个人资料'

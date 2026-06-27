@@ -12,21 +12,30 @@ ekumanov-forum-widgets:
       view_users_count: 查看用户总数
     settings:
       bar_position_above: 上方
+      bar_position_above_footer: 页脚上方
       bar_position_below: 下方
       bar_position_desktop: 桌面端侧边栏位置
       bar_position_desktop_help: 在桌面端上，侧边栏显示在主要内容区域的哪个位置。
       bar_position_inside: 内部
       bar_position_mobile: 移动端侧边栏位置
       bar_position_mobile_help: 在移动设备上，侧边栏显示在哪个位置。
+      enable_heartbeat: 启用心跳
+      enable_heartbeat_help: '如果启用，前台论坛标签页会定期发送一个很小的后台请求（ping）。登录用户在阅读/撰写时保持在线状态（如用 Realtime 扩展写长回复）；游客则用于计数（若开启了游客计数）。服务器负载几乎可以忽略不计。如无需后台流量，可禁用此功能。'
+      expanded_panel_width: 扩展面板宽度（桌面）
+      expanded_panel_width_full_bar: 全宽模式
+      expanded_panel_width_help: 全宽模式：面板横跨整个条形宽度，点击条形上的任意位置即可展开。在线用户小组件：面板仅显示在在线用户数下方，点击在线用户小组件即可展开。
+      expanded_panel_width_online_cell: 仅在线用户
       ignore_private_discussions: 统计总数时忽略私密讨论
+      include_guests_in_total: 将游客人数计入主要在线计数
+      include_guests_in_total_help: 如果启用，顶部栏及展开面板的区块标题中显示的数字为登录用户与游客的总和。展开面板中的详细行仍会分别列出各项数据。如果禁用，顶部栏数字将仅统计登录用户。
       last_seen_interval: 在线判定间隔（分钟）
-      last_seen_interval_help: 用户最后一次活动在此分钟数内将被视为在线。
+      last_seen_interval_help: '用户多久无活动后被视为离线。默认 5 分钟（与默认启用心跳配合）；若禁用心跳，请设为 10 分钟以上，避免活跃用户被误判离线。'
       max_online_users: 最大在线用户显示数
       max_online_users_help: '普通用户可见的最大头像数量。超过此数量的用户将显示为“+N 更多”。数值越高，缓存大小和 API 负载越大。建议：10–20。'
       max_online_users_privileged: 最大在线用户显示数（特权用户）
       max_online_users_privileged_help: 拥有“始终查看用户最后在线时间”权限的用户（通常为管理员和版主）可见的最大头像数量。由于此缓存仅服务于少数用户，可以安全地设置较大数值。建议：30–50。
       online_users_cache_ttl: 在线用户缓存时长（秒）
-      online_users_cache_ttl_help: 在线用户列表的缓存时间。系统会维护两个独立的缓存：一个用于特权用户（可见隐藏用户），一个用于普通用户。每个缓存均遵循其各自的最大显示限制。
+      online_users_cache_ttl_help: 在线用户列表的缓存时长。系统会分别缓存特权用户和普通用户的在线列表：特权用户即拥有“始终查看用户最后在线时间”权限的用户，他们也能看到隐藏用户。
       section_display: 小部件显示
       section_online_users: 在线用户
       section_online_users_help: 配置在展开的小部件面板中显示的在线用户设置。
@@ -34,9 +43,13 @@ ekumanov-forum-widgets:
       section_statistics_help: 配置讨论总数、帖子总数、用户总数以及最新注册统计的缓存设置。
       show_discussions_count: 显示讨论总数
       show_latest_registration: 显示最新注册用户
+      show_online_guests: 显示在线游客
+      show_online_guests_help: '启用后，展开面板中隐藏用户下方会以虚线圆环形式显示大致的访客数量。每个游客标签页会向一个小型接口发送请求，该接口记录访客 IP 与 User-Agent 的哈希值，并存入一个短期存在的在线状态映射表中；统计数量为“最后在线时间间隔”内看到的唯一指纹数。此统计为近似值——位于同一共享 NAT 后的访客会被合并为一人，而使用动态 IP 的移动设备用户可能会被重复统计。访客浏览器中不会存储任何持久化标识符。'
       show_online_users: 显示在线用户
       show_online_users_help: 开启或完全禁用在线用户功能。禁用后，系统将不再收集或显示在线用户数据。
       show_posts_count: 显示帖子总数
+      show_toggle: 显示展开/折叠切换按钮
+      show_toggle_help: 是否显示用于展开/折叠详细信息面板的箭头按钮。禁用后，仍可通过工具栏（全宽布局）或在线用户单元格（在线用户小组将）打开面板。
       show_users_count: 显示用户总数
       stats_cache_duration: 统计数据缓存时长（秒）
       stats_cache_duration_help: '各项统计数据的缓存时间。当有新的讨论、帖子或用户创建/删除时，缓存会自动失效。设为 0 则禁用缓存（不建议大型论坛使用）。'
@@ -54,6 +67,7 @@ ekumanov-forum-widgets:
       overflow_users: '还有 {count} 名在线用户'
     online_users:
       empty: 当前没有在线用户。
+      guests: '{count, plural, one {guest} other {guests}}'
       hidden_users: 隐藏
       overflow_more: 更多
       title: 在线用户
@@ -61,6 +75,7 @@ ekumanov-forum-widgets:
       discussions_count: '讨论：{count}'
       label_discussions: 讨论
       label_online: 在线
+      label_online_over_total: '用户总数{total}中在线用户占{online}个'
       label_posts: 帖子
       label_users: 用户
       latest_registration: 最新注册：

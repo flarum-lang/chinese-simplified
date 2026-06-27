@@ -2,6 +2,12 @@
 # Use https://weblate.rob006.net/projects/flarum2/flarum-suspend/zh_Hans/ for translation.
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
+flarum-audit:
+  lib:
+    browser:
+      user:
+        suspended: '用户 {username} 已被封禁，直到 {until}'
+        unsuspended: '被封禁的用户{username}'
 flarum-suspend:
   admin:
     permissions:

@@ -13,8 +13,12 @@ CHANGELOG
 
 **新增翻译**:
 
+* [`anto0102/mailguard`](https://github.com/anto0102/MailGuard)
+* [`captchala/flarum`](https://github.com/Captcha-La/captchala-flarum)
 * [`dashzeveg/flarum-ads-manager`](https://github.com/dashzeveg/flarum-ads-manager)
 * [`dashzeveg/flarum-custom-head`](https://github.com/dashzeveg/flarum-custom-head)
+* [`datlechin/flarum-mermaid`](https://github.com/datlechin/flarum-mermaid)
+* [`datlechin/flarum-passkey`](https://github.com/datlechin/flarum-passkey)
 * [`ekumanov/flarum-ext-forum-widgets`](https://github.com/ekumanov/flarum-ext-forum-stats-widget)
 * [`ekumanov/flarum-ext-inline-audio`](https://github.com/ekumanov/flarum-ext-inline-audio)
 * [`ekumanov/flarum-ext-new-posts-notice`](https://github.com/ekumanov/flarum-ext-new-posts-notice)
@@ -37,6 +41,8 @@ CHANGELOG
 * [`fof/mailing`](https://github.com/FriendsOfFlarum/mailing)
 * [`fof/moderator-warnings`](https://github.com/FriendsOfFlarum/moderator-warnings)
 * [`fof/move-posts`](https://github.com/FriendsOfFlarum/move-posts)
+* [`fof/news-widget`](https://github.com/FriendsOfFlarum/news-widget)
+* [`fof/online-users-widget`](https://github.com/FriendsOfFlarum/online-users-widget)
 * [`fof/photoswipe`](https://github.com/FriendsOfFlarum/photoswipe)
 * [`fof/rich-text`](https://github.com/FriendsOfFlarum/rich-text)
 * [`fof/seo`](https://github.com/FriendsOfFlarum/seo)

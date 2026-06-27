@@ -5,28 +5,70 @@
 fof-doorman:
   admin:
     list:
+      actions:
+        delete: 删除邀请码
+        edit: 编辑邀请码
+        notify: 通过电子邮件发送此邀请码
       columns:
+        activates_user: '=> fof-doorman.admin.ref.fields.activates_user.label'
         created_by: 被创建由
+        group: '=> fof-doorman.admin.ref.fields.group.label'
         id: ID
+        key: '=> fof-doorman.admin.ref.fields.key.label'
         manage: 管理
+        max_uses: '=> fof-doorman.admin.ref.fields.max_uses.label'
         uses: 使用次数
       content:
         delete: '你确定要删除这个邀请码"{key}"吗？'
+        invalid_column: '=> core.admin.users.grid.invalid_column_content'
         no_created_by: 未知用户
+        no_group: '=> core.admin.users.grid.columns.group_badges.no_badges'
         uses:
           total_uses: '{totalUses, plural, one {使用过 {totalUses} 次} other {使用过 {totalUses} 次}}'
           used_times: '{remaining, plural, =0 {无限次使用} one {剩余 {remainingUses} 次使用} other {剩余 {remainingUses} 次使用}}'
         warning: 此邀请码已达到最大使用次数。
+      heading: 邀请码
+      pagination:
+        back_button: '=> core.lib.pagination.back_button'
+        first_page_button: '=> core.lib.pagination.first_button'
+        go_to_page_textbox_a11y_label: '=> core.lib.pagination.go_to_page_textbox_a11y_label'
+        last_page_button: '=> core.lib.pagination.last_button'
+        next_button: '=> core.lib.pagination.next_button'
+        page_counter: '=> core.lib.pagination.page_counter'
     modals:
       create_doorkey:
+        activates_user:
+          help: '=> fof-doorman.admin.ref.fields.activates_user.help'
+          label: '=> fof-doorman.admin.ref.fields.activates_user.label'
+        group:
+          help: fof-doorman.admin.modals.create_doorkey.group.help
+          label: '=> fof-doorman.admin.ref.fields.group.label'
+        key:
+          help: '=> fof-doorman.admin.ref.fields.key.help'
+          label: '=> fof-doorman.admin.ref.fields.key.label'
+        max_uses:
+          help: '=> fof-doorman.admin.ref.fields.max_uses.help'
+          label: '=> fof-doorman.admin.ref.fields.max_uses.label'
         submit_and_create_another_button: 创建或添加另一个
         submit_button: 创建新的邀请码
         title: 创建新的邀请码
       edit_doorkey:
+        activates_user:
+          help: '=> fof-doorman.admin.ref.fields.activates_user.help'
+          label: '=> fof-doorman.admin.ref.fields.activates_user.label'
+        group:
+          help: '=> fof-doorman.admin.ref.fields.group.help'
+          label: '=> fof-doorman.admin.ref.fields.group.label'
+        key:
+          help: '=> fof-doorman.admin.ref.fields.key.help'
+          label: '=> fof-doorman.admin.ref.fields.key.label'
+        max_uses:
+          help: '=> fof-doorman.admin.ref.fields.max_uses.help'
+          label: '=> fof-doorman.admin.ref.fields.max_uses.label'
         submit_button: 保存更改
         title: 编辑邀请码
       send_invites:
-        group: '正在向 {group} 群组发送邀请。'
+        group: '正在向 {group} 群组发送邀请'
         help: 允许以逗号、空格或逗号加空格分隔的列表。输入单个电子邮件地址或粘贴列表，然后按空格键即可添加。
         invalid_emails: '这个(些)邮件地址看起来无效:{emails}'
         max_use_conflict: 发送的电子邮件数量已超过此代码的最大使用次数。
@@ -50,10 +92,13 @@ fof-doorman:
           label: 最大可用次数
     settings:
       create_doorkey_button: 创建邀请码
+      heading: 设置
       optional_usage: 注册时可选择是否输入邀请码
+      optional_usage_help: 如果启用，访客无需输入邀请码即可注册。
       search: 搜索门禁密钥
       total_doorkeys: '门禁密钥总数：{count}'
   email:
+    body: "您已受邀注册 {forum}。\n\n当你准备好创建帐户后，只需点击以下链接并在注册时输入邀请码：\n\n网址：{url}\n\n邀请码：{code}\n\n如果您误收此邮件，请忽略。\n"
     subject: 使用邀请码加入
   forum:
     sign_up:

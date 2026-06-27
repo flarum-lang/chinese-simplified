@@ -4,6 +4,7 @@
 
 fof-recaptcha:
   admin:
+    maintenance_mode_warning: '当论坛处于维护模式时，登录页面中的 reCAPTCHA 功能将被禁用。'
     permissions:
       post_without_captcha: 发帖不需要验证码
     settings:
@@ -34,5 +35,7 @@ fof-recaptcha:
     rejected: reCAPTCHA验证失败。请重试。
     unknown_error: 发生未知错误。请重试。
 validation:
+  attributes:
+    g-recaptcha-response: reCAPTCHA
   recaptcha: 'reCAPTCHA 验证失败。'
   recaptcha-unknown: '校验验证码时发生了未知错误（{errors}）。'

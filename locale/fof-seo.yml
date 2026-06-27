@@ -38,6 +38,41 @@ fof-seo:
         learn_more_line: '<a>了解更多</a>关于 do-follow 列表的信息。'
         title: Do-Follow列表
     pages:
+      health:
+        checks:
+          crawl:
+            button: 查看帖子设置
+            label: 查看讨论爬取设置
+            reason: 您需要检查此设置才能通过。
+          description:
+            button: 更新描述
+            label: 检查您的论坛是否有描述
+            reason_default: 在安装后您还没有更改默认论坛描述！
+            reason_missing: 您还没有设置论坛简介！
+            reason_too_short: '您的论坛描述少于 20 个字符。请补充描述，以便获得更好的搜索索引。'
+          keywords:
+            button: 更新关键词
+            label: 检查您的论坛是否已设置关键词
+            reason: 您尚未设置论坛关键词！
+          sitemap:
+            label: 检查您的论坛是否有可用的站点地图
+            reason: '强烈建议安装 FriendsOfFlarum Sitemap 扩展程序！'
+          social_media:
+            button: 更新图片
+            label: 建立社交媒体形象
+            reason: 您尚未为论坛设置社交媒体图片。建议您设置一个。您的网站图标（favicon）现在将用作社交媒体上的预览图。
+          ssl:
+            button: 如何设置SSL
+            label: 检查您的网站是否具有安全连接（SSL/TLS）
+            reason: '您的论坛没有强制使用 SSL/TLS 连接（即与您的网站建立安全连接）。如果没有安全连接，大多数搜索引擎将不会收录您的网站，或者降低您的排名。'
+        default_button: 更新设置
+        legend: 为了获得最佳搜索引擎结果，请确保所有检查项都显示为绿色。
+        status:
+          passed: 准备就绪！
+          warning: 警告！
+        table:
+          status: 状态
+          technique: 技术
       search_engines:
         bing_heading: 将你的网站添加到必应搜索结果中
         bing_sitemap: 不要忘记配置站点地图URL。验证网站后即完成准备工作，Bing将可以的中你网站进行收录。
@@ -66,6 +101,20 @@ fof-seo:
         which_extension_heading: 我应该安装什么扩展？
         why_body: 网站地图是一个XML文件，其中包含网站上所有可用页面的列表。它将被爬虫和搜索引擎用来查找网站上的页面。
         why_heading: 网站地图的作用是什么？
+      ssl:
+        added_body: '非常好！现在，修改你的<b>config.php</b>文件，并将<b>''''url''''</b>改为<b>https</b>！'
+        added_heading: 好的，我已经添加了SSL！
+        how_body: '对于使用虚拟主机的用户来说，最常见的方法是登录虚拟主机控制面板，进入网站的主机设置，然后点击 SSL。您可以按照步骤将 SSL 证书添加到您的网站。目前大多数虚拟主机公司都支持主流的证书颁发机构 {link}。'
+        how_heading: '如何为您的网站添加 SSL 证书？'
+        intro_body: 网络安全和隐私意识正在不断提高。<b>几乎所有开发者/网站所有者</b>都希望他们的网站对访客来说是安全的，这样他们就不必担心数据会被黑客或网站冒充者窃取。
+        intro_heading: 为什么我需要安全连接？
+        no_ssl_body: 在这种情况下，您可以卸载此扩展程序，因为搜索引擎<b>可能不会索引您的论坛</b>，或者出于安全原因将其排名远低于其他网站。
+        no_ssl_heading: '如果我不想添加 SSL 呢？'
+        rankings_body: 当您与网站没有安全连接时，搜索引擎会将您的网站排名远低于其他网站，甚至根本不会收录您的网站。
+        rankings_body_ssl: '当您的网站启用 SSL 证书后，其排名将会更高，并会更有可能搜索引擎收录。'
+        rankings_heading: '搜索引擎{icon} 安全连接'
+        what_body: '大多数人都知道，用于安全连接的 <b>HTTPS 协议</b>是 SSL：<i>安全套接层</i>。它的正式名称是 TLS：<i>传输层安全协议</i>。这种方法用于创建与您的 Web 服务器的安全连接，防止攻击者或其他 Web 服务器冒充您的网站，从而保护访问者的安全。如果发生这种情况，SSL 连接将会断开，访问者的浏览器会警告用户该连接不受信任。'
+        what_heading: 什么是SSL或TLS？
     permissions:
       category_label: SEO
       configure_seo: 允许配置SEO

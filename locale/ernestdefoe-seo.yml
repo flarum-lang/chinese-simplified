@@ -5,10 +5,20 @@
 ernestdefoe-seo:
   admin:
     meta_seo_modal:
+      alerts:
+        save_error: 无法保存SEO设置。请稍后重试或检查服务器日志。
+        saved: 已保存！
       auto_update:
         help: 如果启用，这些元标签将在对象发生变化时自动更新。
         switch_label: '更改时更新对象 SEO'
         title: 自动更新元标签
+      buttons:
+        close: 关闭
+        save: 保存
+        save_and_autofill: 保存并自动填充
+      footer:
+        note_prefix: 笔记：
+        revert_warning: 此更改将撤销自定义更改，并使用项目数据填充元标签。
       keywords:
         example: Flarum、网站开发、论坛、苹果、安全
         example_prefix: 例如：
@@ -34,6 +44,16 @@ ernestdefoe-seo:
         alert_body: '请使用 objectType 和 objectId 属性打开此对话框，或者改为注册对象关系。'
         alert_title: '此对象不是受支持的 SEO 元数据对象'
         documentation_link: 文档
+      open_graph:
+        description: 'Open Graph简介'
+        description_placeholder: '自定义 Open Graph 简介'
+        switch_auto: '自动生成Open Graph标签'
+        tags_title: 'Open Graph 标签'
+        title: 'Open Graph 标题'
+      reading_time:
+        help: 预计阅读时间（秒）。
+        placeholder: 阅读时间（秒）
+        title: 预计阅读时间
       robots:
         help: 此站点在搜索引擎的抓取机器人（Robots）爬取设置。
         switch_noarchive: 禁用存档页面（noarchive）
@@ -50,6 +70,16 @@ ernestdefoe-seo:
         tag_nosnippet: 禁止截取的文本片段
         title: 抓取机器人(Robots)
       title: 'SEO 设置 - 元'
+      twitter:
+        card_title: 'Twitter 卡片'
+        description: Twitter简介
+        image_help: 在Twitter上显示一张图片。
+        image_managed_by: '图片来源由 {source} 管理'
+        image_placeholder: 输入图片URL
+        image_title: Twitter图片
+        reset_image: 重置图片
+        switch_auto: '自动生成 Twitter 卡片'
+        title: Twitter标题
       upload_button: 上传文件
     permissions:
       configure_seo: 允许配置SEO
@@ -60,3 +90,10 @@ ernestdefoe-seo:
         seo_settings: SEO设置
         set_up_ssl: '设置 SSL'
         sitemap_information: 站点地图信息
+  forum:
+    controls:
+      configure_seo: 配置SEO
+      reset_seo: 重置SEO
+      update_seo: 更新SEO
+    profile_description: '用户 {username} 的个人资料 | 讨论数 {discussion_count} 场 | 评论数 {comment_count} 篇'
+    profile_title: '{username} 的个人资料'

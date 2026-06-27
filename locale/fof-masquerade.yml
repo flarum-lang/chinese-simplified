@@ -2,6 +2,14 @@
 # Use https://weblate.rob006.net/projects/flarum2/fof-masquerade/zh_Hans/ for translation.
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
+flarum-audit:
+  lib:
+    browser:
+      masquerade:
+        field_created: '创建个人资料字段“{name}”'
+        field_deleted: '已删除的个人资料字段“{name}”'
+        field_updated: '已更新个人资料字段“{name}”'
+        profile_updated: '已更新 {username} 的个人资料字段'
 flarum-gdpr:
   lib:
     data:

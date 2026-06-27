@@ -2,6 +2,12 @@
 # Use https://weblate.rob006.net/projects/flarum2/fof-move-posts/zh_Hans/ for translation.
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
+flarum-audit:
+  lib:
+    browser:
+      posts:
+        moved: '将 {post_count, plural, one {one post} other {{post_count} posts}} 从 {discussion} 移动到 {new_discussion}'
+        moved_to_new_discussion: '将 {post_count, plural, one {one post} other {{post_count} posts}} 从 {discussion} 移动到新讨论 {new_discussion}'
 fof-move-posts:
   admin:
     permissions:

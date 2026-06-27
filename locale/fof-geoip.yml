@@ -13,6 +13,8 @@ fof-geoip:
       see_country: '始终显示 IP 地址所属国家或地区'
     settings:
       access_key_label: 'Access Key'
+      allow_custom_flag_help: '启用此功能后，用户可以通过个人资料设置选择要在帖子中显示的国家/地区国旗。用户选择的国旗将对所有人显示，并且优先于基于 IP 地址的国旗。此功能需要启用“在每篇帖子中显示国家/地区国旗”选项。'
+      allow_custom_flag_label: 允许用户选择自定义国旗
       error_code_prefix: 代码：
       error_prefix: 错误：
       general:
@@ -35,7 +37,7 @@ fof-geoip:
       service_ipinfo-lite_description: '使用 <b>https://ipinfo.io</b> 获取 IP 信息，没有任何速率限制或约束。需要注册以获取免费 API 密钥。'
       service_ipinfo-lite_label: 'IPInfo Lite'
       service_iplocation_description: '<b>https://www.iplocation.net/</b> 可以获取国家/地区和运营商数据，查询限制未知。'
-      service_iplocation_label: 'IP Location'
+      service_iplocation_label: 'IP 位置'
       service_ipsevenex_description: '<b>https://7x.ax</b> 每分钟可免费查询 20 次，付费计划可提升使用上限。'
       service_ipsevenex_label: '7x API'
       service_label: 服务
@@ -81,4 +83,27 @@ fof-geoip:
       zip_code: 邮政编码
     user:
       settings:
+        custom_flag_help: '选择一个国家/地区的国旗显示在您的帖子中。此国旗对所有人可见，并将替换根据您的 IP 地址显示的国旗。'
+        custom_flag_label: 自定义国旗
         ip_country: '发帖时基于我的 IP 地址展示国家或地区旗帜'
+  lib:
+    alerts:
+      ip_copied: 已复制的IP地址
+    copy_ip_label: 复制IP地址到剪切板
+    custom_flag:
+      none: 没有自定义旗帜
+      placeholder: 搜索国家/地区…
+    map_button_label: IP信息
+    map_modal:
+      as: ASN
+      country_code: 国家代码
+      error: 错误
+      ip_address: IP地址
+      isp: 运营商
+      mobile: 蜂窝网络
+      not_enough_data: 没有足够的数据绘制地图
+      organization: 组织
+      threat_level: 威胁等级
+      threat_types: 威胁类型
+      title: IP信息
+      zip_code: 邮政编码

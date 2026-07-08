@@ -61,6 +61,7 @@ CHANGELOG
 * [`huseyinfiliz/flarum-diff`](https://github.com/huseyinfiliz/flarum-diff)
 * [`huseyinfiliz/leaderboard`](https://github.com/huseyinfiliz/leaderboard)
 * [`huseyinfiliz/modern-footer`](https://github.com/huseyinfiliz/modern-footer)
+* [`huseyinfiliz/notificationhub`](https://github.com/huseyinfiliz/notificationhub)
 * [`huseyinfiliz/rewind`](https://github.com/huseyinfiliz/rewind)
 * [`huseyinfiliz/stickiest`](https://github.com/huseyinfiliz/stickiest)
 * [`huseyinfiliz/sticky-title`](https://github.com/huseyinfiliz/sticky-title)

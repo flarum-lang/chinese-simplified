@@ -406,7 +406,7 @@ CHANGELOG
 * [`funkeye/custom-welcome-hero`](https://github.com/funkeye/custom-welcome-hero)
 * [`ganuonglachanh/sonic`](https://github.com/ganuonglachanh/flarum-sonic)
 * `giga300-auth-discord`
-* `glowingblue-localizd`
+* [`glowingblue/localizd`](https://github.com/glowingblue/flarum-ext-localizd)
 * [`glowingblue/redis-setup`](https://github.com/glowingblue/flarum-ext-redis-setup)
 * [`gtdxyz/flarum-ext-login`](https://github.com/daocatt/flarum-ext-login)
 * [`hehongyuanlove/flarum-auth-qq`](https://github.com/Hehongyuanlove/flarum-auth-qq)

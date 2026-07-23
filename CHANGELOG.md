@@ -32,6 +32,7 @@ CHANGELOG
 * [`flarum/realtime`](https://github.com/flarum/realtime)
 * [`flectar/flarum-turnstile`](https://github.com/flectar/flarum-ext-turnstile)
 * [`fof/badges`](https://github.com/FriendsOfFlarum/badges)
+* [`fof/blog`](https://github.com/FriendsOfFlarum/blog)
 * [`fof/categories`](https://github.com/FriendsOfFlarum/categories)
 * [`fof/checklist`](https://github.com/FriendsOfFlarum/checklist)
 * [`fof/discussion-templates`](https://github.com/FriendsOfFlarum/discussion-templates)

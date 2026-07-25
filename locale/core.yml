@@ -198,7 +198,7 @@ core:
       toggle_advanced_page_button: 切换高级页面
       tools_button: 工具
     database-driver-mismatch-warning:
-      detail: "你的环境配置文件<code>config.php</code>配置的数据库驱动是<code>{configured}</code>，但Flaurm检测到实际使用的数据库是<code>{actual}</code>。\n\n使用错误的数据库驱动，可能导致严重且难以诊断的故障。将环境配置文件<code>config.php</code>中<code>database</code>部分的数据库驱动设置，改为<code>'driver' => ''{actual}''</code>。详情参阅<link>Flarum官方文档</link>。\n"
+      detail: "你的环境配置文件「<code>config.php</code>」中配置的数据库驱动为 <code>{configured}</code>，但 Flaurm 检测到实际使用的数据库是 <code>{actual}</code>。\n\n使用错误的数据库驱动，可能导致严重且难以诊断的故障。请将环境配置文件「<code>config.php</code>」中 <code>database</code> 字段的数据库驱动设置改为 <code>'driver' => ''{actual}''</code>。详情请参阅 <link>Flarum 官方文档</link>。\n"
       label: 数据库驱动不匹配
     debug-warning:
       detail: "当 <code>debug</code> 模式处于启用状态时，Flarum 会在每次请求时重新构建其 <code>JavaScript</code> 和 <code>CSS</code> 资源，并且可能导致其他敏感信息的泄露，例如数据库密钥、环境变量等。\n\n强烈建议在生产环境中修改您的 <code>config.php</code> 文件以禁用 <code>debug</code> 模式。欲了解更多信息，请参阅 <link>Flarum 文档</link>。\n"
@@ -337,7 +337,7 @@ core:
         analytics: 分析
         authentication: 认证
         core: 核心配置
-        discussion: 话题
+        discussion: 讨论
         feature: 功能
         formatting: 格式化
         forum-widget: 论坛小组件
@@ -506,7 +506,7 @@ core:
     composer_edit:
       discard_confirmation: 更改尚未保存，确定要丢弃吗？
       edited_message: 您的编辑已生效。
-      post_link: '发布 #{number} 于 {discussion}'
+      post_link: '发布于 {discussion} 的 #{number}'
       submit_button: '=> core.ref.save_changes'
       view_button: '=> core.ref.view'
     composer_reply:
@@ -517,9 +517,9 @@ core:
       view_button: '=> core.ref.view'
     discussion_controls:
       cannot_reply_button: 回复已关闭
-      cannot_reply_text: 您没有权限回复这个帖子。
+      cannot_reply_text: 您没有权限回复这篇讨论。
       delete_button: '=> core.ref.delete'
-      delete_confirmation: 确定要永久删除这个帖子？
+      delete_confirmation: 确定要永久删除这个讨论？
       delete_forever_button: '=> core.ref.delete_forever'
       log_in_to_reply_button: 登录以回复
       rename_button: '=> core.ref.rename'
@@ -677,7 +677,7 @@ core:
       notifications_heading: '=> core.ref.notifications'
       notify_by_email_heading: '=> core.ref.email'
       notify_by_web_heading: 通知
-      notify_discussion_renamed_label: 我的讨论标题被更改
+      notify_discussion_renamed_label: 有人更改了我的讨论标题
       privacy_disclose_online_label: 公开我的在线状态
       privacy_heading: 隐私设置
       title: '=> core.ref.settings'
@@ -791,7 +791,7 @@ core:
       posts:
         discussion:
           hint: '讨论 ID'
-          key: 话题
+          key: 讨论
       users:
         email:
           hint: example@machine.local
@@ -914,7 +914,7 @@ core:
     settings: 设置
     sign_up: 注册
     some_others: '{count, plural, one {# 人} other {# 人}}'
-    start_a_discussion: 发布讨论
+    start_a_discussion: 开始讨论
     username: 用户名
     username_or_email_placeholder: 用户名或邮箱
     users: 用户

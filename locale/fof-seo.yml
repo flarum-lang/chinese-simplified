@@ -7,16 +7,16 @@ fof-seo:
     common:
       close: 关闭
       learn_more: 了解更多
-      save_changes: 保存变更
+      save_changes: 保存更改
     dashboard:
       widget:
         cta: 立即执行健康检查！
-        review_prompt: 你的SEO设置已到检查周期！
+        review_prompt: '是时候重新检查你的 SEO 设置了！'
     header:
       health_check: 健康检查
       search_engines_info: 搜索引擎信息
-      seo_settings: SEO设置
-      setup_ssl: 设置SSL
+      seo_settings: 'SEO 设置'
+      setup_ssl: '设置 SSL'
       sitemap_info: 网站地图信息
       title: 搜索引擎优化
       tools: 工具
@@ -25,18 +25,18 @@ fof-seo:
         intro: '<b>请仔细阅读此描述。</b> 该功能仅会在讨论页面刷新时执行。您随时可以稍后更改此选项。'
         mode_all_help: 搜索引擎将能理解整个讨论，甚至能够在搜索结果下方展示一些相关回复。当您的论坛安装并启用了“<a>最佳答案</a>”扩展时，它会在搜索结果中将该讨论标记为“已回答”，并将用户重定向到该特定帖子。每条回复还会暴露其点赞和支持数，以便搜索引擎即使没有“最佳答案”扩展也能识别出最有帮助的回答。<b>但是，根据您的服务器设置，这可能会更耗资源。</b>它可能会消耗一定的性能，因此是否启用此功能取决于您服务器的速度。
         mode_all_title: 索引讨论中的所有帖子（已启用该设置）
-        mode_main_help: 搜索引擎仅会在搜索结果中显示主帖。通过论坛链接访问讨论时，不会影响加载速度。
-        mode_main_title: 仅索引主帖（默认）
+        mode_main_help: 搜索引擎仅会在搜索结果中显示首帖。通过论坛链接访问讨论时，不会影响加载速度。
+        mode_main_title: 仅索引首帖（默认）
         question: 您想要启用此功能吗？
         switch_label: 爬取所有帖子（页面刷新时会稍慢，但搜索结果会更好）
         title: 帖子爬虫设置
       dofollow:
-        add_placeholder: 添加域名
+        add_placeholder: 允许域名
         default_note: '您的 Flarum 实例所使用的域名已默认添加到该列表中。'
-        duplicate_error: 该域名已在Do-Follow列表中。
-        intro: '请输入您想要添加到 do-follow 列表的<b>域名</b>的主机名。'
-        learn_more_line: '<a>了解更多</a>关于 do-follow 列表的信息。'
-        title: Do-Follow列表
+        duplicate_error: 该域名已在允许索引列表中。
+        intro: 请输入您想要添加到允许索引列表的<b>域名</b>的主机名。
+        learn_more_line: '<a>了解更多</a>关于允许索引列表的信息。'
+        title: 允许索引列表
     pages:
       health:
         checks:
@@ -48,38 +48,38 @@ fof-seo:
             button: 更新描述
             label: 检查您的论坛是否有描述
             reason_default: 在安装后您还没有更改默认论坛描述！
-            reason_missing: 您还没有设置论坛简介！
+            reason_missing: 您还没有设置论坛描述！
             reason_too_short: '您的论坛描述少于 20 个字符。请补充描述，以便获得更好的搜索索引。'
           keywords:
             button: 更新关键词
             label: 检查您的论坛是否已设置关键词
             reason: 您尚未设置论坛关键词！
           meta_tags:
-            label: 检查您的论坛是否具有可用的元标签（由该插件生成）
+            label: '检查您的论坛是否具有可用的 meta 标签（由该插件生成）'
           review:
             button: 好了！我已经检查过了！
-            label: '每两个月检查一次您的SEO设置。下次检查时间为{date}'
-            reason: 是时候重新检查一下您的SEO设置了。
+            label: '请您每两个月检查一次您的 SEO 设置。下次检查时间为 {date}'
+            reason: '是时候重新检查一下您的 SEO 设置了。'
           robots:
             button: '阅读更多关于添加 robots.txt 文件的信息'
             label: '检查您的论坛是否包含 robots.txt 文件'
-            reason: '您的 robots.txt 文件由 FriendsOfFlarum Sitemap 扩展程序提供。请安装并启用该扩展程序，以便搜索引擎可以访问您的 robots.txt 文件。'
+            reason: '您的 robots.txt 文件由 FoF Sitemap 扩展程序提供。请安装并启用该扩展程序，以便搜索引擎可以访问您的 robots.txt 文件。'
           search_engines:
             button: 更多信息
             label: 将您的论坛注册到搜索引擎
             reason: 你需要检查一下才能通过。
           sitemap:
             button: 阅读更多关于添加站点地图的信息
-            label: 检查您的论坛是否有可用的站点地图
-            reason: '强烈建议安装 FriendsOfFlarum Sitemap 扩展程序！'
+            label: 检查您的论坛是否有可用的网站地图
+            reason: '强烈建议安装 FoF Sitemap 扩展程序！'
           social_media:
             button: 更新图片
-            label: 建立社交媒体形象
-            reason: 您尚未为论坛设置社交媒体图片。建议您设置一个。您的网站图标（favicon）现在将用作社交媒体上的预览图。
+            label: 设置社交媒体形象图
+            reason: 您尚未为论坛设置社交媒体图片。建议您设置它。您的网站图标现在将用作社交媒体上的预览图。
           ssl:
-            button: 如何设置SSL
-            label: 检查您的网站是否具有安全连接（SSL/TLS）
-            reason: '您的论坛没有强制使用 SSL/TLS 连接（即与您的网站建立安全连接）。如果没有安全连接，大多数搜索引擎将不会收录您的网站，或者降低您的排名。'
+            button: '如何设置 SSL'
+            label: '检查您的网站是否具有安全连接（SSL / TLS）'
+            reason: '您的论坛没有强制使用 SSL / TLS 连接（即与您的网站建立安全连接）。如果没有安全连接，大多数搜索引擎将不会收录您的网站，或者降低您的排名。'
         default_button: 更新设置
         legend: 为了获得最佳搜索引擎结果，请确保所有检查项都显示为绿色。
         status:
@@ -89,133 +89,133 @@ fof-seo:
           status: 状态
           technique: 技术
       search_engines:
-        bing_heading: 将你的网站添加到必应搜索结果中
-        bing_sitemap: 不要忘记配置站点地图URL。验证网站后即完成准备工作，Bing将可以的中你网站进行收录。
-        bing_visit: '如果您想将您的网站添加到必应搜索结果中，请访问{link}并完成给定的步骤。并非所有字段都是必填字段。'
+        bing_heading: '将您的网站添加到 Bing 搜索结果中'
+        bing_sitemap: '不要忘记配置站点地图 URL。验证好您的网站之后，一切就绪，Bing 就会开始对你的网站进行收录。'
+        bing_visit: '如果您想将您的网站添加到 Bing 搜索结果中，请访问 {link} 并完成指定的步骤。并非所有字段都是必填的。'
         confirm_button: 我已阅读此内容
-        google_heading: 将你的网站添加到谷歌搜索结果中
-        google_sitemap: 在谷歌搜索控制台中完成注册后，请访问<b>网站地图</b>页面。将你的<b>sitemap.xml</b>地址传给谷歌，确保谷歌可以抓取网站地图内容，并持续抓取。
-        google_visit: '如果你想将你的网站添加到谷歌搜索结果中，请访问{link}。您需要添加您的网站，并验证您是关联域名的所有者。'
-        google_www: 当输入域名时，你需要回答以下问题：您想在搜索结果中使用“www”子域名吗？您以后将<strong>无法</strong>更改此设置。在谷歌搜索控制台中多次注册你的域名不会带来更佳排名。
+        google_heading: '将您的网站添加到 Google 搜索结果中'
+        google_sitemap: '在 Google 搜索控制台中完成注册后，请访问<b>网站地图</b>页面。将您的 <b>sitemap.xml</b> 文件地址提交给 Google，确保 Google 可以抓取网站地图内容，并持续这么做。'
+        google_visit: '如果您想将您的网站添加到 Google 搜索结果中，请访问 {link}。您需要添加您的网站，并验证您是关联域名的所有者。'
+        google_www: '当输入域名时，你需要回答以下问题：您想在搜索结果中使用 “www” 子域名吗？您以后将<strong>无法</strong>更改此设置。在 Google 搜索控制台中多次注册你的域名不会带来更佳排名。'
         heading: 向搜索引擎提交你的网站
         intro: 让搜索引擎知道你的网站是一个很好的做法。本页面将指导你成功完成此工作。
         sitemap_tip: 建议在完成本指南之前准备好网站地图。如果你还没有网站地图，<a>单击此处阅读有关它们的更多信息</a>。
-        yahoo_body: 如果您想将您的网站添加到雅虎搜索结果中，请完成您的必应搜索结果注册。雅虎将使用该数据。
-        yahoo_heading: 将你的网站添加到雅虎搜索结果中
-        yandex_heading: 将你的网站添加到Yandex搜索结果中
-        yandex_sitemap: 不要忘记在Yandex.Webmaster中配置站点地图。
-        yandex_visit: '如果您想将您的网站添加到Yandex搜索结果中，请访问{link}并按照给定的步骤操作。'
+        yahoo_body: '如果您想将您的网站添加到 Yahoo 搜索结果中，请先完成您的 Bing 搜索结果注册。Yahoo 将使用该数据。'
+        yahoo_heading: '将您的网站添加到 Yahoo 搜索结果中'
+        yandex_heading: '将你的网站添加到 Yandex 搜索结果中'
+        yandex_sitemap: '不要忘记在 Yandex Webmaster 中配置站点地图。'
+        yandex_visit: '如果您想将您的网站添加到 Yandex 搜索结果中，请访问 {link} 并按照指定的步骤操作。'
       sitemap:
-        generated_note: 站点地图文件是自动生成的，不需要任何维护。
+        generated_note: 网站地图文件是自动生成的，不需要任何维护。
         just_installed_body: 在这种情况下，通过单击左侧边栏中的扩展来激活它。然后这个警告就会消失。
         just_installed_heading: 我已安装了扩展程序
-        robots_body: 相同的扩展还为你的论坛生成<b>robots.txt</b>。此文件告诉搜索引擎他们可能会抓取哪些区域，并将它们指向站点地图，因此安装它可以同时处理两个文件——没有额外的配置。
-        robots_heading: 怎么处理robots.txt？
-        which_extension_body: '{link}是Flarum安装的建议扩展。我们强烈建议你安装并激活此扩展程序。'
-        which_extension_details: 此扩展将确保爬虫找到你的论坛<b>话题</b>、<b>标签</b>（启用扩展时）和<b>页面</b>扩展（安装并启用扩展时）。它将自动提供sitemap.xml。
+        robots_body: '相同的扩展还会为你的论坛生成 <b>robots.txt</b>。此文件告诉搜索引擎他们可能会抓取哪些区域，并将它们指向网站地图，因此安装它可以同时处理两个文件——不用额外的配置。'
+        robots_heading: 'robots.txt 呢？'
+        which_extension_body: '{link} 是 Flarum 建议安装的扩展。我们强烈建议你安装并激活此扩展程序。'
+        which_extension_details: '此扩展将确保爬虫能找到你的论坛的<b>讨论</b>、<b>标签</b>（启用扩展时）和<b>页面</b>扩展（安装并启用扩展时）。它会自动生成一个 sitemap.xml。'
         which_extension_heading: 我应该安装什么扩展？
-        why_body: 网站地图是一个XML文件，其中包含网站上所有可用页面的列表。它将被爬虫和搜索引擎用来查找网站上的页面。
+        why_body: '网站地图是一个 XML 文件，其中包含网站上所有可用页面的列表。它将被爬虫和搜索引擎用来查找网站上的页面。'
         why_heading: 网站地图的作用是什么？
       ssl:
-        added_body: '非常好！现在，修改你的<b>config.php</b>文件，并将<b>''''url''''</b>改为<b>https</b>！'
-        added_heading: 好的，我已经添加了SSL！
+        added_body: '非常好！现在，修改你的 <b>config.php</b> 文件，并将 <b>url</b> 字段改为 <b>https</b>！'
+        added_heading: '好的，我已经添加了 SSL！'
         how_body: '对于使用虚拟主机的用户来说，最常见的方法是登录虚拟主机控制面板，进入网站的主机设置，然后点击 SSL。您可以按照步骤将 SSL 证书添加到您的网站。目前大多数虚拟主机公司都支持主流的证书颁发机构 {link}。'
         how_heading: '如何为您的网站添加 SSL 证书？'
-        intro_body: 网络安全和隐私意识正在不断提高。<b>几乎所有开发者/网站所有者</b>都希望他们的网站对访客来说是安全的，这样他们就不必担心数据会被黑客或网站冒充者窃取。
+        intro_body: 网络安全和隐私意识正在不断提高。<b>几乎所有开发者和网站所有者</b>都希望他们的网站对访客来说是安全的，这样他们就不必担心数据会被黑客或网站冒充者窃取。
         intro_heading: 为什么我需要安全连接？
-        no_ssl_body: 在这种情况下，您可以卸载此扩展程序，因为搜索引擎<b>可能不会索引您的论坛</b>，或者出于安全原因将其排名远低于其他网站。
-        no_ssl_heading: '如果我不想添加 SSL 呢？'
-        rankings_body: 当您与网站没有安全连接时，搜索引擎会将您的网站排名远低于其他网站，甚至根本不会收录您的网站。
+        no_ssl_body: 在这种情况下，您可以卸载此扩展，因为搜索引擎<b>可能不会收录您的论坛</b>，或者出于安全原因将其排名远低于其他网站。
+        no_ssl_heading: '如果我不想添加 SSL 会怎么样？'
+        rankings_body: 当您的网站没有安全连接时，搜索引擎会给你的网站排名比其他网站低得多，甚至根本不会收录它。
         rankings_body_ssl: '当您的网站启用 SSL 证书后，其排名将会更高，并会更有可能搜索引擎收录。'
-        rankings_heading: '搜索引擎{icon} 安全连接'
-        what_body: '大多数人都知道，用于安全连接的 <b>HTTPS 协议</b>是 SSL：<i>安全套接层</i>。它的正式名称是 TLS：<i>传输层安全协议</i>。这种方法用于创建与您的 Web 服务器的安全连接，防止攻击者或其他 Web 服务器冒充您的网站，从而保护访问者的安全。如果发生这种情况，SSL 连接将会断开，访问者的浏览器会警告用户该连接不受信任。'
-        what_heading: 什么是SSL或TLS？
+        rankings_heading: '搜索引擎 {icon} 安全连接'
+        what_body: '大多数人都知道，用于安全连接的 <b>HTTPS 协议</b> 是 SSL：<i>安全套接层</i>。它的正式名称是 TLS：<i>传输层安全协议</i>。这种方法用于创建与您的 Web 服务器的安全连接，防止攻击者或其他 Web 服务器冒充您的网站，从而保护访问者的安全。如果发生这种情况，SSL 连接将会断开，访问者的浏览器会警告用户该连接不受信任。'
+        what_heading: '什么是 SSL / TLS？'
     permissions:
       category_label: SEO
-      configure_seo: 允许配置SEO
+      configure_seo: '允许配置 SEO'
     settings:
       crawl:
         button: 帖子爬虫设置
-        heading: 话题帖子爬虫设置
-        help: 这是一个关于在搜索结果中爬取话题帖子的重要设置。
+        heading: 讨论帖子爬虫设置
+        help: 这是一个关于在搜索结果中爬取讨论帖子的重要设置。
       indexing:
         heading: 索引控制
-        profiles_help: 启用后，用户个人资料页面回添加“noindex”元标签，因此它们会被展示在搜索结果之中。页面上的链接仍然会被索引，以此保障爬虫可以触达它们所指向的内容。
+        profiles_help: '启用后，用户个人资料页面将会添加 “noindex” meta 标签，因此它们不会展示在搜索结果中。页面上的链接仍然会被索引，以此保障爬虫可以访问它们所指向的内容。'
         profiles_label: 不索引个人资料页面
         tags_button: 选择标签
-        tags_help: '选定标签中的讨论（以及这些标签自身的列表页面）将通过添加 `noindex` 元标签而不被搜索引擎收录，但其中的链接仍会被跟踪。选择父标签时，其子标签也会一并生效。'
+        tags_help: '选定标签中的讨论（以及这些标签自身的列表页面）将通过添加 `noindex` meta 标签而不被搜索引擎收录，但其中的链接仍会被跟踪。选择父标签时，其子标签也会一并生效。'
         tags_none_selected: 暂无索引排除的标签。
       info:
         maintain: 首次设置此扩展时，请检查所有设置。定期维护这些设置以获得最佳搜索结果。
-        overview: 此页面汇总了管理后台各处的其他一些设置。不过，能在这里对这些设置有一个良好的概览还是很有帮助的。不要忘记进行SEO检查。
+        overview: '此页面汇总了管理后台各处的其他一些设置。不过，能在这里对这些设置有一个良好的概览还是很有帮助的。别忘记进行 SEO 检查。'
       keywords:
-        comma_note: 注意：使用逗号（英文）分隔关键词。
-        example: '例如：论坛, 地铁在线, 苹果, 谷歌, 遥遥领先'
+        comma_note: 注意：请使用英文逗号分隔关键词，逗号后不空格。
+        example: '例如：论坛,Flarum,苹果,网络技术,安全'
         heading: 论坛关键词
         help: 输入一个或多个论坛关键词。
         placeholder: 添加一些关键词
       new_tab:
         heading: 在新标签页中打开外部链接
-        help: 此扩展还将确保外部链接（指向其他域）在新选项卡中打开。目前无法禁用此设置。
+        help: 此扩展还将确保外部链接（指向其他域名）在新标签页中打开。目前无法禁用此设置。
       nofollow:
-        button: 打开域名Do-Follow列表
-        heading: No-Follow链接
+        button: 打开域名允许索引列表
+        heading: 禁止索引链接
         help: 默认情况下，所有指向外部域的链接都会收到“<i>nofollow</i>”属性。这将确保人们不会用指向其它域名的链接在你的论坛上发送垃圾邮件，以获得更多推荐。
-        help_dofollow: 通过此设置，您可以将域添加到“Do-Follow”列表中。例如，您可以添加<i>flarum.org</i>，以确保指向本网站的链接不会收到“nofollow”属性。
+        help_dofollow: '通过此设置，您可以将域添加到允许索引列表中。例如，您可以添加 <i>flarum.org</i>，以确保指向本网站的链接不会收到禁止索引属性。'
       social_media_image:
         heading: 社交媒体图片
         help_size: '推荐使用正方形图片。推荐尺寸为 1200x1200 像素。否则请使用横版图片，推荐尺寸为 1200x630。'
-        help_usage: 当用户在Facebook、X（原Twitter）、Reddit等网站上分享你的论坛页面时，社交媒体将使用此图像。
+        help_usage: '当用户在 Facebook、X（原 Twitter）、Reddit 等网站上分享你的论坛页面时，社交媒体将使用此图像。'
       twitter_card:
-        heading: X（原推特）卡片尺寸
-        help: '当你的论坛在 X（原Twitter）上被分享时，如果已设置社交媒体图片，它将会显示一张图片。这可以是大图的大卡片，也可以是带较小图片的小卡片（摘要）。'
-        option_large: 大幅卡片（大图）
+        heading: 'X（原 Twitter）卡片尺寸'
+        help: '当你的论坛在 X（原 Twitter）上被分享时，如果已设置社交媒体图片，它将会显示一张图片。这可以是大图的大卡片，也可以是带较小图片的小卡片（摘要）。'
+        option_large: 大卡片（大图）
         option_summary: 摘要卡片（小图）
       updated:
         button: 返回概述并重新检查
         heading: 更新了这个设置吗？
-        help: 当你准备好时，单击下面的按钮以重新检查此设置的状态。
+        help: 当您认为您准备好时，请单击下面的按钮重新检查此设置的状态。
   forum:
     controls:
-      configure_seo: 配置SEO
-      reset_seo: 重置SEO
-      update_seo: 更新SEO
+      configure_seo: '配置 SEO'
+      reset_seo: '重置 SEO'
+      update_seo: '更新 SEO'
     meta_seo:
       auto_update:
-        help: 如果启用，当对象发生更改时，此项目的元标签将自动更新。
-        label: 自动更新元标签
+        help: '如果启用，当对象发生更改时，此项目的 meta 标签将自动更新。'
+        label: '自动更新 meta 标签'
         switch: '更改时更新对象 SEO'
       close:
-        autofill_info: 此更改将撤销自定义更改，并使用项目数据填充元标签。
+        autofill_info: '此更改将撤销自定义更改，并使用项目数据填充 meta 标签。'
         close: 关闭
         save: 保存
         save_autofill: '保存 & 自动填充'
       image:
         help: 显示图像。
-        label: 元图像
+        label: 'meta 图像'
         managed_by: '图片来源由 {source} 管理'
-        placeholder: 输入图片URL
+        placeholder: '输入图片 URL'
         upload: 上传文件
       keywords:
-        comma_note: 注意：关键词之间用逗号分隔。
-        example: 例如：flarum、网站开发、论坛、苹果、安全
+        comma_note: 注意：关键词之间用英文逗号分隔，逗号后不空格。
+        example: '例如：flarum,网站开发,论坛,苹果,安全'
         help: 请输入一个或多个描述此站点的关键词。
         label: 关键词
         placeholder: 添加一些关键词
       managed: 管理
       meta_description:
         help: 站点描述信息，并在搜索引擎中显示。
-        label: 元描述
+        label: 'meta 描述'
       meta_title:
         help: 在搜索引擎中的标题。
-        label: 元标题
+        label: 'meta 标题'
         placeholder: 输入页面标题
       note_prefix: 注释：
       og:
-        auto_switch: '自动生成Open Graph 标签'
+        auto_switch: '自动生成 Open Graph 标签'
         description:
           label: 'Open Graph 简介'
-          placeholder: '自定义Open Graph 简介'
+          placeholder: '自定义 Open Graph 简介'
         label: 'Open Graph 标签'
         title: 'Open Graph 标题'
       reading_time:
@@ -228,11 +228,11 @@ fof-seo:
         switch:
           follow: 允许跟随链接跳转到不同页面
           indexing: 允许索引页面
-          noarchive: 禁用存档页面（noarchive）
+          noarchive: 禁用归档页面（noarchive）
           noimageindex: 禁用此页面上的图片索引（noimageindex）
           nosnippet: 禁用页面上的文本片段（nosnippet）
         tags:
-          archive_not_allowed: 存档页面不被允许
+          archive_not_allowed: 归档页面不被允许
           follow_allowed: 允许被关注的链接
           follow_not_allowed: 链接不被允许关注
           imageindex_not_allowed: 图片索引不被允许
@@ -240,7 +240,7 @@ fof-seo:
           indexing_not_allowed: 该页面不允许被索引
           snippet_not_allowed: 禁止截取文本片段
       saved: 已保存！
-      title: 'SEO设置 - 元'
+      title: 'SEO 设置 - Meta'
       twitter:
         auto_switch: '自动生成 X（原 Twitter）卡片'
         description: 'X（原 Twitter）简介'
@@ -253,6 +253,6 @@ fof-seo:
       unsupported_object:
         body: '请使用 objectType 和 objectId 属性打开此对话框，或者改为注册对象关系。'
         docs_link: 文档
-        title: '此对象不是受支持的 SEO 元数据对象'
-    profile_description: '用户 {username} 的个人资料 | 讨论数 {discussion_count} 场 | 评论数 {comment_count} 篇'
-    profile_title: '{username}的个人资料'
+        title: '此对象不是受支持的 SEO meta 数据对象'
+    profile_description: '用户 {username} 的个人资料 | 讨论数 {discussion_count} 篇 | 帖子数 {comment_count} 篇'
+    profile_title: '{username} 的个人资料'

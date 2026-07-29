@@ -9,24 +9,24 @@ flarum-audit:
     limitedSettings:
       configure: 配置
       introduction: 配置受限权限的用户可以查看的内容
-      requiresExtension: '需要的拓展程序{extension}'
+      requiresExtension: '需要的扩展程序 {extension}'
       title: 访问限制设置
     permissions:
       view: 查看操作记录
       viewLimited: 查看受限操作记录
     settings:
-      limitedIpAddress: 查看IP地址
+      limitedIpAddress: '查看 IP 地址'
   forum:
     link:
-      actor-audit: 查看操作日志（由该用户发起）
+      actor-audit: 查看操作日志（以用户为主体）
       all-audit: 操作日志
       discussion-audit: 操作日志
-      user-audit: 操作日志(账户编辑)
+      user-audit: 操作日志（账户编辑）
     modal:
-      actor-title: 操作者操作记录
+      actor-title: 操作者审计
       all-title: 操作日志
-      discussion-title: 讨论操作日志
-      user-title: 用户操作日志
+      discussion-title: 讨论审计
+      user-title: 用户审计
   lib:
     browser:
       audit_log_cleared: '清除 {deleted_count}操作日志中的条目'

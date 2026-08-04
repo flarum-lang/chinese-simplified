@@ -57,6 +57,7 @@ CHANGELOG
 * [`afrux/online-users-widget`](https://github.com/afrux/online-users-widget)
 * [`afrux/top-posters-widget`](https://github.com/afrux/top-posters-widget)
 * [`antoinefr/flarum-ext-money`](https://github.com/AntoineFr/flarum-ext-money)
+* [`askvortsov/flarum-pwa`](https://github.com/askvortsov1/flarum-pwa)
 * [`blomstra/s3-assets`](https://github.com/blomstra/flarum-ext-s3-assets)
 * [`clarkwinkelmann/flarum-ext-emojionearea`](https://github.com/clarkwinkelmann/flarum-ext-emojionearea)
 * [`datlechin/flarum-link-preview`](https://github.com/datlechin/flarum-link-preview)

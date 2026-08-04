@@ -47,7 +47,7 @@ askvortsov-pwa:
         user_max_subscriptions_label: 推送订阅数上限（每用户）
         user_max_subscriptions_text: '每个用户最多能同时存在多少条订阅。通常情况下，订阅的多少取决于用户使用的浏览器数量，通知会发送给用户的所有客户端订阅，每个订阅均会消耗一次 API 调用。'
         window_controls_overlay_label: 启用窗口控件覆盖？
-        window_controls_overlay_text: "启用此项可隐藏系统标题栏，为用户带来类似原生应用的沉浸式体验。此功能可用性还受用户端系统设置和浏览器兼容性影响。此功能开启后，请添加自定义样式或脚本代码以绘制自定义标题栏取而代之，否则可能影响用户体验，比如看到论坛部分导航栏元素被遮挡在窗口控件的下方，或者在窗口上几乎无法再找到可供拖动的地方。\n\n另请参阅：<compatibilitylink>窗口控件覆盖的兼容性</compatibilitylink> 和 <learnlink>Microsoft Learn 上对窗口控件覆盖的介绍</learnlink>\n"
+        window_controls_overlay_text: "启用此项可隐藏系统标题栏，为用户带来类似原生应用的沉浸式体验。此功能可用性还受用户端系统设置和浏览器兼容性影响。启用此项后，请通过 CSS 或 JavaScript 自定义标题栏。否则论坛导航栏可能会与最大最小化等窗口控制按钮重叠显示，并且由于原生标题栏处于隐藏状态，窗口几乎无法拖动，从而带来较差的用户体验。\n\n另请参阅：<compatibilitylink>窗口控件覆盖的兼容性</compatibilitylink> 和 <learnlink>Microsoft Learn 上对窗口控件覆盖的介绍</learnlink>\n"
       refreshed_message: 'PWA 配置刷新成功。'
       status_check_heading: 状态检查
       submit_button: 保存设置

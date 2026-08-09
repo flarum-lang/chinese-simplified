@@ -6,11 +6,11 @@ flarum-audit:
   lib:
     browser:
       discussion:
-        tagged: '将{discussion}标签从{old_tags}更新为{new_tags}'
+        tagged: '将 {discussion} 的标签从 {old_tags} 更改为 {new_tags}'
       tag:
-        created: '已创建标签{tag}'
-        deleted: '已删除标签{tag}'
-        updated: '已更新标签{tag}'
+        created: '已创建标签 {tag}'
+        deleted: '已删除标签 {tag}'
+        updated: '已更新标签 {tag}'
 flarum-tags:
   admin:
     basics:
@@ -77,16 +77,16 @@ flarum-tags:
       added_and_removed_tags_text: '{username} 于 {time} 添加了 {tagsAdded}，并移除了 {tagsRemoved}。'
       added_tags_text: '{username} 于 {time} 添加了 {tagsAdded}。'
       removed_tags_text: '{username} 于 {time} 移除了 {tagsRemoved}。'
-      tags_text: '{count, plural, one {{tags}} other {{tags}}} 个标签'
+      tags_text: '{count, plural, one {{tags} 个标签} other {{tags} 个标签}}'
     tag:
-      meta_description_text: '所有带有{tag}标签的话题'
+      meta_description_text: '所有带有 {tag} 的讨论'
   lib:
     deleted_tag_text: 已删除
     gambits:
       discussions:
         tag:
-          hint: 单个标签名称、多个标签名称（用逗号分隔），或输入“untagged”表示未打标签
-          key: tag
+          hint: 输入单个标签名称，或多个标签名称（英文逗号分隔），或输入“untagged”表示未分类
+          key: 标签
     tag_selection_modal:
       bypass_requirements: 绕过标签数量限制
       choose_primary_placeholder: '{count, plural, one {选择 1 个主标签} other {选择 # 个主标签}}'

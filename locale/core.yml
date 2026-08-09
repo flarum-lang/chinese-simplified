@@ -383,7 +383,7 @@ core:
       reply_to_discussions_label: 回复
       search_users_label: '=> core.ref.search_users'
       sign_up_label: 注册
-      start_discussions_label: 发布讨论
+      start_discussions_label: 开始讨论
       title: 权限
       view_forum_label: 浏览论坛（讨论和用户）
       view_hidden_groups_label: 查看隐藏的用户组徽章
@@ -557,7 +557,7 @@ core:
     index:
       all_discussions_link: '=> core.ref.all_discussions'
       cannot_start_discussion_button: 发帖功能已关闭
-      mark_all_as_read_confirmation: 确定要标记所有帖子为已读吗？
+      mark_all_as_read_confirmation: 确定要标记所有讨论为已读吗？
       mark_all_as_read_tooltip: '=> core.ref.mark_all_as_read'
       meta_title_text: '=> core.ref.all_discussions'
       refresh_tooltip: '=> core.ref.refresh'
@@ -839,7 +839,7 @@ core:
       title: 搜索
     search_source:
       discussions:
-        all_button: '搜索“{query}”'
+        all_button: '在全部讨论中搜索 “{query}”'
         heading: '=> core.ref.discussions'
       posts:
         all_button: '在所有帖子中搜索“{query}”'
@@ -874,7 +874,7 @@ core:
     dark_mode_label: 深色模式
     delete: 删除
     delete_forever: 永久删除
-    discussions: 话题
+    discussions: 讨论
     edit: 编辑
     edit_user: 编辑用户
     email: 邮箱

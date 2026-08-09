@@ -7,13 +7,13 @@ flarum-audit:
     browser:
       user:
         suspended: '用户 {username} 已被封禁，直到 {until}'
-        unsuspended: '被封禁的用户{username}'
+        unsuspended: '已解除 {username} 的封禁'
 flarum-suspend:
   admin:
     permissions:
       suspend_users_label: 封禁用户
   email:
-    no_reason_given: 管理员并未给出封禁原因。
+    no_reason_given: 未说明封禁原因。
     suspended:
       html:
         body: '您已被 {forumTitle} 封禁，原因如下：'
@@ -25,15 +25,15 @@ flarum-suspend:
         body: '您的账号已解除封禁，欢迎随时回到 [{forumTitle}]({forum_url})。'
       plain:
         body: "您的账号已解除封禁，点击以下链接即可返回论坛：\n\n{forum_url}\n"
-      subject: 你的账号已解封
+      subject: 您的账号已解除封禁
   forum:
     notifications:
-      user_suspended_indefinite_text: 你已被永久封禁
+      user_suspended_indefinite_text: 你已被无限期封禁
       user_suspended_text: '你已被封禁 {timeReadable}'
-      user_unsuspended_text: 你已解封
+      user_unsuspended_text: 你已被解除封禁
     suspend_user:
       display_message: 向用户显示说明
-      indefinitely_label: 无期限封禁
+      indefinitely_label: 无限期封禁
       limited_time_days_text: ' 天'
       limited_time_label: 临时封禁……
       not_suspended_label: 解除封禁
@@ -44,7 +44,7 @@ flarum-suspend:
       title: '封禁 {username}'
     suspension_info:
       dismiss_button: 关闭
-      indefinite: 此账号已被无期限封禁
+      indefinite: 此账号已被无限期封禁
       limited: '此次封禁将持续至 {date}'
       title: 此账号已被封禁
     user_badge:

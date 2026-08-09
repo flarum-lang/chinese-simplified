@@ -27,24 +27,24 @@ flarum-subscriptions:
     settings:
       follow_after_create_label: 自动关注我发布的讨论
       follow_after_reply_label: 自动关注我回复的讨论
-      notify_for_all_posts_label: 通知每一个新帖，而非仅最后一个
-      notify_new_post_label: 我关注的讨论有新回复
+      notify_for_all_posts_label: 通知所有新帖，而非仅通知讨论的最后一条
+      notify_new_post_label: 有人在我关注的讨论中回复
     sub_controls:
       follow_button: 关注
-      following_button: 正在关注
+      following_button: 关注中
       following_text: 当有人回复此讨论时通知我。
       ignoring_button: 忽略
       ignoring_text: 不接收任何通知并从讨论列表中隐藏此讨论。
       not_following_button: 不关注
       not_following_text: 仅当有人提及我时通知我。
       notify_alert_tooltip: 有新回复时通知提醒
-      notify_email_tooltip: 有新回复时发送邮件
+      notify_email_tooltip: 有新回复时邮件提醒
   lib:
     gambits:
       discussions:
         subscription:
-          following_key: 关注
-          ignoring_key: 忽略
+          following_key: 关注中
+          ignoring_key: 忽略中
   ref:
     follow: 关注
     following: 关注中

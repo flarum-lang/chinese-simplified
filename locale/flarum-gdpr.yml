@@ -16,7 +16,7 @@ flarum-gdpr:
   admin:
     gdpr_page:
       data_types:
-        anonymize_description: 匿名化操作
+        anonymize_description: 匿名操作
         delete_description: 删除操作
         export_description: 导出操作
         extension: 扩展程序
@@ -32,12 +32,12 @@ flarum-gdpr:
       user_table_data:
         column: 列
         extension: 扩展
-        help_text: "多数情况下，我们会自动处理导出和抹除时的 <code>用户</code>表数据。\n然而，会存在一些特殊情况，如下。\n"
+        help_text: "多数情况下，我们会自动处理导出和抹除时的 <code>user</code> 表数据。\n然而，会存在一些特殊情况，如下。\n"
         'no': 否
         nullable: 可为空
         pii: '个人可识别信息 (PII)'
         pii_tooltip: 此列被视为个人可识别信息，并将在匿名上下文（例如匿名的事件负载）中进行脱敏处理。
-        redacted_on_export: 导出时脱敏
+        redacted_on_export: 导出时屏蔽
         redacted_on_export_tooltip: '生成用户数据导出时，此列的值将被置空（设置为 null）。该列仍会以 null 值的形式出现在导出文件中。'
         title: 用户表数据
         type: 类型

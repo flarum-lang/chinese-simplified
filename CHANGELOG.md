@@ -144,6 +144,7 @@ CHANGELOG
 * [`fof/disposable-emails`](https://github.com/FriendsOfFlarum/disposable-emails)
 * [`fof/doorman`](https://github.com/FriendsOfFlarum/doorman)
 * [`fof/drafts`](https://github.com/FriendsOfFlarum/drafts)
+* [`fof/filter`](https://github.com/FriendsOfFlarum/filter)
 * [`fof/follow-tags`](https://github.com/FriendsOfFlarum/follow-tags)
 * [`fof/formatting`](https://github.com/FriendsOfFlarum/formatting)
 * [`fof/forum-statistics-widget`](https://github.com/FriendsOfFlarum/forum-statistics-widget)
@@ -395,7 +396,6 @@ CHANGELOG
 * [`fof/custom-footer`](https://github.com/FriendsOfFlarum/custom-footer)
 * [`fof/discussion-language`](https://github.com/FriendsOfFlarum/discussion-language)
 * `fof-email-checker`
-* [`fof/filter`](https://github.com/FriendsOfFlarum/filter)
 * [`fof/mason`](https://github.com/FriendsOfFlarum/mason)
 * [`fof/nightmode`](https://github.com/FriendsOfFlarum/nightmode)
 * [`fof/passport`](https://github.com/FriendsOfFlarum/passport)

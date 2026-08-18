@@ -5,58 +5,58 @@
 core:
   admin:
     advanced:
-      description: 为您的论坛配置高级设置。
+      description: 配置论坛高级设置
       fontawesome:
-        cdn_url_help: 'CDN 上 Font Awesome CSS 文件的完整 URL'
+        cdn_url_help: 'Font Awesome CSS 文件的 CDN 链接'
         cdn_url_label: 'CDN URL'
         config_override:
-          help: 'Font Awesome 设置目前已在 config.php 文件中设置，无法在此处更改。'
+          help: 'FontAwesome 设置目前已在 config.php 文件中存在，无法在此处更改。'
           label: 配置覆盖
         kit_url_help: '您的 Font Awesome Kit 脚本的 URL（来自于 kit.fontawesome.com）'
-        kit_url_label: 'Kit 网址'
+        kit_url_label: 'Kit 链接'
         preview:
           button: 预览图标
           fa5_fa6_label: 'FA5 / FA6 别名'
           fa7_label: 'FA7 类名'
-          help: '验证您的 Font Awesome 设置。显示的图标表示该级别可用；损坏的方框表示未加载。'
+          help: '验证您的 FontAwesome 配置。图标是否正常显示，表示对应版本是否可用。'
           label: 图标预览
-          pro_label: 仅限专业版
+          pro_label: '仅限 Pro 版本'
         section_label: 'FontAwesome 图标'
         source_cdn: CDN
-        source_help: '选择 FontAwesome 图标的加载方式。“本地”使用捆绑字体，“CDN”从 CDN 加载，“Kit”使用带有自定义图标的 FontAwesome Kit。'
-        source_kit: 'Font Awesome Kit'
-        source_label: 图标来源
-        source_local: 本地（捆绑）
+        source_help: '选择 FontAwesome 图标的来源。论坛默认使用 Flarum 内置字体，您可以通过 CDN 或 FontAwesome Kit 自定义图标。'
+        source_kit: 'FontAwesome Kit'
+        source_label: 图标源
+        source_local: 本地（自带）
       maintenance:
         bisect:
-          begin_button_text: 二分排查
-          continue_button_text: 继续二分排查
-          help: 帮助定位导致您所遇故障的扩展程序。此操作会自动将论坛置于（低级别）维护模式，直到排查过程结束。
-          label: 扩展程序二分排查
+          begin_button_text: 开始排查
+          continue_button_text: 继续排查
+          help: 通过二分查找法，帮助您定位导致错误的扩展程序。使用此功能时，论坛会自动开启「普通维护模式」，直至排查结束。
+          label: 扩展程序排查
         bisect_modal:
-          description: "此操作会将论坛置于（低级别）维护模式，直到排查过程结束。在每一步中，系统都会禁用一部分扩展程序，直到找到导致问题的扩展。因此，如果看到功能缺失或讨论设计发生变化，请不要感到惊讶。请保持此页面开启，并在每一步操作后，在另一个独立页面尝试复现该问题。如果您不小心关闭了此页面，可以随时返回。\n"
-          end_button: 关闭并转到扩展程序页面
+          description: "继续操作会自动开启「普通维护模式」，直至排查结束。在每一步中，系统都会禁用部分扩展程序，直到找到导致问题的扩展程序。因此，如果您发现论坛功能缺失，亦或是样式变化，这是正常现象，请勿担心。请不要关闭当前页面，每操作一步，请在新标签页尝试复现问题。如果不慎关闭当前页面，您可以随时返回这里。\n"
+          end_button: 关闭并跳转到扩展程序页面
           issue_question: 问题仍然存在吗？
-          issue_question_help: 请尝试在单独页面上复现该问题，并根据结果进行解答。
-          no_button: 不
-          result_description: "论坛已退出维护模式。扩展程序二分排查已结束。根据您在各步骤中的反馈，导致问题的原因为以下扩展程序：\n"
-          start_button: 开始二分排查
-          steps_left: '剩余步数：{steps}'
-          stop_button: 停止二分排查
-          title: 扩展二分排查
-          total_steps: '这大约需要 {steps} 步。'
-          yes_button: 是
+          issue_question_help: 请在尝试新标签页中复现问题，并根据实际情况选择回答。
+          no_button: 不存在
+          result_description: "扩展程序排查完毕，论坛已退出维护模式。根据您在各步骤中的反馈，导致问题的扩展程序是：\n"
+          start_button: 开始排查
+          steps_left: '剩余步骤：{steps}'
+          stop_button: 停止排查
+          title: 扩展程序排查
+          total_steps: '排查大约需要 {steps} 步。'
+          yes_button: 存在
         config_override:
-          help: '您仍可以在此处更改这些设置，但在 <code>config.php</code> 文件中将 <code>offline</code> 设置为 <code>0</code> 之前，它们不会生效。'
+          help: '您仍可以在此处更改这些设置，但在将 <code>config.php</code> 文件中的 <code>offline</code> 设置为 <code>0</code> 之前，这些更改不会生效。'
           label: '您的 <code>config.php</code> 文件正在覆盖这些设置。'
-        help: 将您的论坛置于维护模式以防止用户访问。
+        help: 开启维护模式，防止用户访问论坛。
         options:
-          high: '高维护模式。任何人都无法访问论坛（只能通过 config.php 启用）'
-          low: 低维护模式。管理员仍可访问论坛。
-          none: 无维护。
-          safe: 安全模式。不加载任何扩展且只有管理员可以访问论坛。
-        safe_mode_extensions: 安全模式下允许加载的扩展
-        safe_mode_extensions_override_help: '此设置被 <code>config.php</code> 文件中的 <code>safe_mode_extensions</code> 键覆盖。(<b>{extensions}</b>)'
+          high: '深度维护。任何人都无法访问论坛（只能通过 config.php 开启）'
+          low: 普通维护。仅限管理员访问论坛。
+          none: 不启用维护模式
+          safe: 安全模式。不加载任何扩展程序，且仅限管理员访问论坛。
+        safe_mode_extensions: 启用扩展程序
+        safe_mode_extensions_override_help: '此设置已被 <code>config.php</code> 文件中的 <code>safe_mode_extensions</code> 键值覆盖。(<b>{extensions}</b>)'
         section_label: 维护
       pgsql:
         search_configuration: 要使用的搜索配置

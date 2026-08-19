@@ -136,17 +136,17 @@ core:
       mail_port_label: 端口
       mail_username_label: 用户名（部分邮件服务商要求用户名必须与发件地址一致）
       mailgun_heading: 'Mailgun 服务'
-      not_sending_message: 'Flarum 当前无法发送电子邮件，请检查邮件驱动及其配置。'
+      not_sending_message: 'Flarum 当前无法发送电子邮件，请检查发件方式及其配置。'
       send_test_mail_button: 发送
       send_test_mail_heading: 发送测试邮件
       send_test_mail_success: 测试邮件发送成功！
-      send_test_mail_text: '使用上述设置发送测试邮件到您的邮箱：{email}'
+      send_test_mail_text: '使用上述配置向 {email} 发送测试邮件。'
       smtp_heading: 'SMTP 设置'
       title: '=> core.ref.email'
     extension:
       abandoned_no_replacement: 此扩展程序已停止维护，今后可能不再更新。
       abandoned_with_replacement: '此扩展程序已被 {replacement} 替代，请考虑迁移。'
-      configure_scopes: 设置范围
+      configure_scopes: 配置范围
       confirm_purge: '重置操作会清除数据库中所有该扩展相关的记录和资源。如要卸载扩展，请通过 Composer 操作。确定要重置扩展吗？'
       confirm_uninstall: 此扩展的的数据库条目和文件资源都将被永久性删除，确定要继续吗？
       deprecated: 已弃用

@@ -255,7 +255,7 @@ core:
       mail_smtp_verify_peer_label: '验证 SSL 证书'
       mail_username_label: 用户名（部分邮件服务商要求用户名必须与发件地址一致）
       mailgun_heading: 'Mailgun 服务'
-      not_sending_message: 'Flarum 当前无法发送电子邮件，请检查邮件驱动及其配置。'
+      not_sending_message: 'Flarum 当前无法发送电子邮件，请检查发件方式及其配置。'
       postmark_description: '通过 Postmark 的 HTTP API 发送电子邮件。可选指定消息流以使用非默认流。'
       postmark_heading: 'Postmark 服务'
       send_test_mail_button: 发送
@@ -268,7 +268,7 @@ core:
     extension:
       abandoned_no_replacement: 此扩展程序已停止维护，今后可能不再更新。
       abandoned_with_replacement: '此扩展程序已被 {replacement} 替代，请考虑迁移。'
-      configure_scopes: 设置范围
+      configure_scopes: 配置范围
       confirm_purge: '重置操作会清除数据库中所有该扩展相关的记录和资源。如要卸载扩展，请通过 Composer 操作。确定要重置扩展吗？'
       database_driver_mismatch: 此扩展不支持您配置的数据库驱动程序。
       deprecated: 已弃用

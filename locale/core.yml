@@ -84,18 +84,18 @@ core:
         section_label: 搜索驱动
       title: 高级设置
     announcements:
-      about: '从官方 Flarum 社区 discuss.flarum.org 获取的最新消息和公告。'
+      about: '最新动态与公告均来自 Flarum 官方社区 discuss.flarum.org。'
       comments_label: '{count, plural, one {# 条回复} other {# 条回复}}'
-      description: 'Flarum 团队的最新消息和公告。'
-      empty: 未发现公告。
-      hide: 隐藏公告
-      load_error: 无法加载公告。请稍后再试。
+      description: 'Flarum 团队的最新动态与公告。'
+      empty: 暂无公告
+      hide: 隐藏
+      load_error: 公告加载失败，请稍后重试。
       read_more: 阅读更多
-      refresh: 刷新公告
+      refresh: 刷新
       retry: 重试
-      show: 显示公告
+      show: 显示
       title: 公告
-      view_all: '在 discuss.flarum.org 查看全部'
+      view_all: '前往 discuss.flarum.org 查看全部'
     appearance:
       allow_user_color_scheme_label: 允许用户自行选择配色模式
       color_scheme_label: 默认配色模式
@@ -130,19 +130,19 @@ core:
       logo_text: 上传图片，替代论坛名称展示在导航栏左侧。
       title: 外观
     basics:
-      abandoned_extensions_heading: 已弃用的扩展
-      abandoned_extensions_notify_admins_label: 当在每周检查中发现新的已弃用扩展时，给管理员发送电子邮件
+      abandoned_extensions_heading: 停止维护的扩展程序
+      abandoned_extensions_notify_admins_label: 每周检查发现有扩展程序停止维护时，邮件通知管理员
       abandoned_extensions_sync_button: 立即检查
-      abandoned_extensions_sync_error: 「已弃用的扩展清单」更新失败。请稍后再重试。
-      abandoned_extensions_sync_success: '「已弃用的扩展清单」更新完成。在已安装扩展中，发现 {count} 个为已弃用。'
-      abandoned_extensions_text: 'Flarum 维护了一个<a>已弃用扩展的清单</a>。当安装了清单里的扩展时，管理员面板中将会标记该扩展。'
+      abandoned_extensions_sync_error: 获取停止维护的扩展程序清单失败，请稍后重试。
+      abandoned_extensions_sync_success: '停止维护的扩展程序清单已更新，发现 {count} 个已安装的扩展程序停止维护。'
+      abandoned_extensions_text: 'Flarum 维护着一份<a>停止维护的扩展程序清单</a>。如果您安装的某些扩展程序已停止维护，管理页面会显示相应提示。'
       all_discussions_label: '=> core.ref.all_discussions'
       avatar_driver_heading: 用户头像
       avatar_driver_options:
         default: 默认
       avatar_driver_text: 设置用户未上传头像时的头像显示方式，默认不显示头像。
       default_language_heading: 默认语言
-      description: 设置论坛名称、语言及其他基础设置
+      description: 设置论坛名称、语言及其他基本设置
       display_name_driver_options:
         username: 用户名
       display_name_heading: 用户外显名称
@@ -151,58 +151,58 @@ core:
       forum_description_text: '简要介绍您的论坛，该内容将用于 Meta 标签，并可能显示在搜索引擎的结果中。'
       forum_title_heading: 论坛名称
       home_page_heading: 论坛首页
-      home_page_text: 选择一种页面作为论坛首页。
-      show_language_selector_label: 显示语言选择器
-      slug_driver_heading: 'Slug 驱动：{model}'
+      home_page_text: 选择用户访问论坛时默认进入的页面。
+      show_language_selector_label: 允许用户切换语言
+      slug_driver_heading: '固定链接格式：{model}'
       slug_driver_options:
         discussions:
-          default: '带 slug 的 ID'
-          utf8: '带 UTF-8 的 ID'
+          default: 'ID + Slug'
+          utf8: 'ID + UTF-8 Slug'
         users:
           default: 用户名
           id: ID
-          id_with_display_name: 'ID 与外显名称'
-      slug_driver_text: '选择此模块的 URL 驱动。'
-      title: 常规
+          id_with_display_name: 'ID + 外显名称'
+      slug_driver_text: 选择此内容的链接生成方式。
+      title: 基本设置
       welcome_banner_heading: 欢迎横幅
-      welcome_banner_text: 横幅文本将显示于「全部讨论」页面顶部，可用于欢迎论坛的访客。
+      welcome_banner_text: 设置「全部主题」页面顶部的欢迎横幅文本。
     create_user:
       email_confirmed_label: 需要用户验证邮箱
       email_placeholder: '=> core.ref.email'
       password_placeholder: '=> core.ref.password'
-      submit_and_create_another_button: 添加下一个
-      submit_button: 添加用户
-      title: 添加新用户
+      submit_and_create_another_button: 创建并添加下一个
+      submit_button: 创建
+      title: 新建用户
       use_random_password: 生成随机密码
       username_placeholder: '=> core.ref.username'
     dashboard:
       clear_cache_button: 清除缓存
-      description: 快速了解您的论坛概况。
+      description: 论坛概况一览
       info_button: 系统信息
       info_modal:
         copy_button: 复制到剪贴板
-        copy_error: 无法复制到剪贴板
-        copy_success: 系统信息已复制到剪贴板
+        copy_error: 复制失败
+        copy_success: 复制成功
         title: 系统信息
-      io_error_message: 无法写入文件。请检查操作权限，重试或者直接从命令行运行命令。
+      io_error_message: 文件系统写入失败，请检查文件权限后重试，或改用命令行执行。
       status:
         headers:
           queue-driver: 队列驱动程序
           scheduler-status: 任务调度程序
           session-driver: 会话驱动程序
         scheduler:
-          active: 激活
-          inactive: 未激活
+          active: 运行中
+          inactive: 未运行
           never-run: 从未运行
       title: 仪表盘
-      toggle_advanced_page_button: 切换高级页面
+      toggle_advanced_page_button: 显示/隐藏高级设置
       tools_button: 工具
     database-driver-mismatch-warning:
-      detail: "你的环境配置文件「<code>config.php</code>」中配置的数据库驱动为 <code>{configured}</code>，但 Flaurm 检测到实际使用的数据库是 <code>{actual}</code>。\n\n使用错误的数据库驱动，可能导致严重且难以诊断的故障。请将环境配置文件「<code>config.php</code>」中 <code>database</code> 字段的数据库驱动设置改为 <code>'driver' => ''{actual}''</code>。详情请参阅 <link>Flarum 官方文档</link>。\n"
-      label: 数据库驱动不匹配
+      detail: "Flarum 检测到当前实际使用 <code>{actual}</code> 数据库，这与 <code>config.php</code> 中配置的数据库驱动 <code>{configured}</code> 不一致。\n\n使用错误的数据库驱动可能引发难以察觉且难以排查的故障，请将 <code>config.php</code> 中 <code>database</code> 下的配置更正为 <code>'driver' => ''{actual}''</code>。详情请参阅 <link>Flarum 官方文档</link>。\n"
+      label: 数据库驱动配置不一致
     debug-warning:
-      detail: "当 <code>debug</code> 模式处于启用状态时，Flarum 会在每次请求时重新构建其 <code>JavaScript</code> 和 <code>CSS</code> 资源，并且可能导致其他敏感信息的泄露，例如数据库密钥、环境变量等。\n\n强烈建议在生产环境中修改您的 <code>config.php</code> 文件以禁用 <code>debug</code> 模式。欲了解更多信息，请参阅 <link>Flarum 文档</link>。\n"
-      label: 调试模式已激活
+      detail: "启用 <code>debug</code> 模式时，Flarum 会在每次请求时重新构建 <code>JavaScript</code> 和 <code>CSS</code> 资源。页面警告和错误也会以弹窗形式展示详细信息，数据库凭据、环境变量等敏感信息可能会在此期间泄露。\n\n强烈建议在生产环境中禁用 <code>config.php</code> 中的 <code>debug</code> 模式。详情请参阅 <link>Flarum 官方文档</link>。\n"
+      label: 调试模式已启用
     edit_css:
       customize_text: '添加 Less/CSS 代码以自定义论坛外观，此设置将覆盖 Flarum <a>默认样式</a>。'
       submit_button: '=> core.ref.save_changes'
@@ -214,50 +214,50 @@ core:
     edit_group:
       color_label: '=> core.ref.color'
       delete_button: 删除用户组
-      delete_confirmation: 确定删除此用户组？该用户组中的用户<strong>不会</strong>被删除。
+      delete_confirmation: 确定要删除此用户组吗？此操作不会删除组内成员的账号。
       hide_label: 在论坛中隐藏
       icon_label: '=> core.ref.icon'
       icon_text: '=> core.ref.icon_text'
       name_label: 名称
       plural_placeholder: 用户组（例如：管理组）
-      singular_placeholder: 用户组成员（例如：管理员）
+      singular_placeholder: 成员（例如：管理员）
       submit_button: '=> core.ref.save_changes'
-      title: 添加用户组
+      title: 创建用户组
     edit_header:
       customize_text: '=> core.ref.custom_header_text'
       submit_button: '=> core.ref.save_changes'
       title: '=> core.ref.custom_header_title'
     email:
-      addresses_heading: 地址
-      description: 配置您的论坛发送邮件所使用的驱动程序、设置及地址。
-      driver_heading: 驱动
-      driver_label: 邮件驱动
+      addresses_heading: 发件地址
+      description: 配置论坛邮件服务
+      driver_heading: 选择发件方式
+      driver_label: 发件方式
       format:
         html_option: HTML
-        multipart_option: '多部分 (推荐)'
+        multipart_option: 混合格式（推荐）
         plain_option: 纯文本
-      format_heading: 发件格式
-      format_help: '选择发件格式。推荐选项是 <code>multipart</code>，因为这将允许用户的邮件客户端显示最合适的格式。'
+      format_heading: 内容格式
+      format_help: 选择邮件的内容格式。推荐使用混合格式（<code>multipart</code>），以便收件人的邮件客户端选择最合适的格式展示。
       from_label: 发件地址
-      mail_encryption_label: '加密协议（小写 ssl 或 tls）'
-      mail_encryption_none_help: 不加密。不建议在生产环境中使用。
-      mail_encryption_ssl_help: '连接从一开始就加密 (Implicit TLS)。通常使用端口 465。'
-      mail_encryption_tls_help: '连接开始时不加密，随后升级到 TLS (STARTTLS)。通常使用端口 587 或 25。'
-      mail_host_label: 主机
+      mail_encryption_label: 加密协议
+      mail_encryption_none_help: 不加密，不建议用于生产环境。
+      mail_encryption_ssl_help: '建立连接时即启用 TLS 加密（隐式 TLS），通常使用 465 端口。'
+      mail_encryption_tls_help: '先建立未加密连接，再升级为 TLS（STARTTLS），通常使用 587 或 25 端口。'
+      mail_host_label: 服务器地址
       mail_mailgun_domain_label: 域名
       mail_mailgun_region_label: 区域
       mail_mailgun_secret_label: 密钥
       mail_password_label: '=> core.ref.password'
       mail_port_label: 端口
-      mail_postmark_message_stream_label: 消息流
-      mail_postmark_token_label: 服务器令牌
-      mail_smtp_verify_peer_help: '在使用 TLS 或 SSL 加密时验证服务器的 SSL 证书。仅当您的邮件服务器使用自签名证书时才禁用。'
+      mail_postmark_message_stream_label: '消息流（Message stream）'
+      mail_postmark_token_label: '服务器令牌（Server token）'
+      mail_smtp_verify_peer_help: '使用 TLS 或 SSL 加密时验证邮件服务器的 SSL 证书。服务器使用自签名证书时请关闭此项。'
       mail_smtp_verify_peer_label: '验证 SSL 证书'
       mail_username_label: 用户名（部分邮件服务商要求用户名必须与发件地址一致）
-      mailgun_heading: 'Mailgun 设置'
+      mailgun_heading: 'Mailgun 服务'
       not_sending_message: 'Flarum 当前无法发送电子邮件，请检查邮件驱动及其配置。'
       postmark_description: '通过 Postmark 的 HTTP API 发送电子邮件。可选指定消息流以使用非默认流。'
-      postmark_heading: 'Postmark 设置'
+      postmark_heading: 'Postmark 服务'
       send_test_mail_button: 发送
       send_test_mail_heading: 发送测试邮件
       send_test_mail_success: 测试邮件发送成功！
@@ -266,8 +266,8 @@ core:
       smtp_heading: 'SMTP 设置'
       title: '=> core.ref.email'
     extension:
-      abandoned_no_replacement: 此扩展不再由其作者维护，并且可能不会再收到更新。
-      abandoned_with_replacement: '此扩展程序已被{replacement}替换。考虑迁移到替换包。'
+      abandoned_no_replacement: 此扩展程序已停止维护，今后可能不再更新。
+      abandoned_with_replacement: '此扩展程序已被 {replacement} 替代，请考虑迁移。'
       configure_scopes: 设置范围
       confirm_purge: '重置操作会清除数据库中所有该扩展相关的记录和资源。如要卸载扩展，请通过 Composer 操作。确定要重置扩展吗？'
       database_driver_mismatch: 此扩展不支持您配置的数据库驱动程序。
@@ -291,7 +291,7 @@ core:
         button_label: 自述文件
         no_readme: 此扩展未提供自述文件
         title: '{extName} 文档'
-      replaced: 替换
+      replaced: 替代
       reset_settings:
         button: 重置设置
         cancel_button: 取消
@@ -301,20 +301,20 @@ core:
         warning: 该操作无法撤销。下列设置信息将从数据库中永久删除，并重置为默认设置。该插件的数据不会受影响。
       safe_mode_warning: 当前已启用安全模式。扩展未启动，因此无法访问其设置。
     extensions-health-widget:
-      abandoned_no_replacement: 无可用替代方案
-      abandoned_with_replacement: '由 {replacement} 替代'
-      all_healthy: 所有扩展均正常。
-      section_abandoned_empty: 未发现问题。
-      section_abandoned_heading: 需要注意
-      section_abandoned_help: 这些扩展不再维护，或者可能存在兼容性问题。请考虑更新、更换或移除。
-      section_disabled_empty: 所有扩展均已启用。
+      abandoned_no_replacement: 暂无替代扩展程序
+      abandoned_with_replacement: '推荐替代：{replacement}'
+      all_healthy: 扩展程序状态正常。
+      section_abandoned_empty: 未发现问题
+      section_abandoned_heading: 需要关注
+      section_abandoned_help: 这些扩展程序已停止维护或可能存在兼容性问题，请考虑更新、替换或卸载。
+      section_disabled_empty: 所有扩展程序均已启用
       section_disabled_heading: 已禁用
-      section_disabled_help: 这些扩展已安装但当前未启用。请从其设置页面启用它们，或者如果不再需要则将其移除。
-      section_suggested_empty: 无建议。
+      section_disabled_help: 这些扩展已安装但尚未启用。请前往相应设置页面启用，如不再使用可考虑卸载。
+      section_suggested_empty: 暂无建议
       section_suggested_heading: 建议
-      section_suggested_help: 'Flarum 扩展可以通过指定其他扩展或包来添加可选的额外功能。这些扩展可能会增加更多功能或集成。'
-      suggested_by: '由 {extension} 建议'
-      title: 扩展运行状况
+      section_suggested_help: 部分扩展程序会推荐其他扩展程序或软件包，安装后可获得额外功能或集成。
+      suggested_by: '{extension} 推荐安装'
+      title: 扩展程序状态
     header:
       get_help: 帮助
       log_out_button: '=> core.ref.log_out'
@@ -410,7 +410,7 @@ core:
       remove_button: '=> core.ref.remove'
       upload_button: 选择图片...
     users:
-      create_user_button: 添加用户
+      create_user_button: 新建用户
       description: 您的论坛中所有用户的分页列表。
       grid:
         columns:

@@ -61,28 +61,28 @@ core:
       pgsql:
         search_configuration: 要使用的搜索配置
       queue:
-        backoff_help: '重试失败任务之前的等待时间。默认为 0 秒。'
-        backoff_label: 重试延迟（秒）
-        custom_driver: '您的论坛正在使用 {driver} 队列驱动程序，该驱动程序由扩展提供。'
-        memory_help: '队列工作进程在重启前可以使用的最大内存。默认为 128 MB。'
-        memory_label: '内存限制 (MB)'
-        rest_help: '处理任务之间的等待时间。默认为 0 秒。'
-        rest_label: 休息时间（秒）
-        retries_help: '在将任务标记为失败之前尝试的最大次数。默认为 1。'
+        backoff_help: '任务失败时的重试间隔时间，默认为 0 秒。'
+        backoff_label: 重试间隔（秒）
+        custom_driver: '当前使用由扩展程序提供的 {driver} 队列驱动。'
+        memory_help: '队列进程的内存使用上限，达到上限后将自动重启。默认为 128 MB。'
+        memory_label: 内存限制（MB）
+        rest_help: '执行下一个任务前的间隔时间，默认为 0 秒。'
+        rest_label: 任务间隔（秒）
+        retries_help: '任务失败时的重试次数，默认为 1。'
         retries_label: 任务重试
         section_label: 队列
-        sync_help: 为了获得更好的性能和用户体验，请考虑使用数据库队列驱动程序。在文档中了解更多信息。
-        sync_info: 您的论坛正在使用同步队列驱动程序。任务在主进程线程中会立即处理。
-        timeout_help: '单个任务在超时前可以运行的最长时间。默认为 60 秒。'
+        sync_help: 为了更佳的性能和用户体验，建议使用数据库队列驱动。相关信息请查阅文档。
+        sync_info: 当前使用同步队列驱动，所有任务均由主线程直接处理。
+        timeout_help: '单个任务的执行时间上限，默认为 60 秒。'
         timeout_label: 任务超时（秒）
       search:
         driver_heading: '搜索驱动：{model}'
         driver_options:
           default: 默认数据库搜索
-        driver_text: 选择用于搜索此模型的驱动程序。
-        no_other_drivers: 尚无搜索驱动程序可用。请安装搜索驱动程序扩展以进行配置。
+        driver_text: 选择此内容的搜索驱动。
+        no_other_drivers: 暂无可用驱动，请先安装相关扩展程序。
         section_label: 搜索驱动
-      title: 高级
+      title: 高级设置
     announcements:
       about: '从官方 Flarum 社区 discuss.flarum.org 获取的最新消息和公告。'
       comments_label: '{count, plural, one {# 条回复} other {# 条回复}}'
@@ -97,37 +97,37 @@ core:
       title: 公告
       view_all: '在 discuss.flarum.org 查看全部'
     appearance:
-      allow_user_color_scheme_label: 允许用户选择自己的配色方案
-      color_scheme_label: 配色方案（默认）
+      allow_user_color_scheme_label: 允许用户自行选择配色模式
+      color_scheme_label: 默认配色模式
       color_schemes:
-        auto_mode_label: 用户系统或配置的首选项
+        auto_mode_label: 跟随系统或用户设置
         dark_hc_mode_label: '=> core.ref.dark_hc_mode_label'
         dark_mode_label: '=> core.ref.dark_mode_label'
         light_hc_mode_label: '=> core.ref.light_hc_mode_label'
         light_mode_label: '=> core.ref.light_mode_label'
       colored_header_label: 彩色导航栏
-      colors_heading: 颜色
-      colors_primary_label: 主色调
-      colors_secondary_label: 次色调
-      colors_text: 选择两种颜色作为论坛配色。第一种作为突出显示内容的颜色，第二种作为背景等元素的颜色。
+      colors_heading: 配色
+      colors_primary_label: 主题色
+      colors_secondary_label: 辅助色
+      colors_text: 选择论坛的主题色和辅助色，分别用于内容高亮和背景元素。
       custom_footer_heading: 自定义页脚
       custom_footer_text: '=> core.ref.custom_footer_text'
       custom_header_heading: 自定义页眉
       custom_header_text: '=> core.ref.custom_header_text'
-      custom_styles_cannot_use_less_features: '自定义 LESS 不支持使用 @import 与 data-uri 特性。'
+      custom_styles_cannot_use_less_features: '自定义 LESS 不支持使用 @import 和 data-uri 特性。'
       custom_styles_heading: 自定义样式
       custom_styles_text: '添加 Less/CSS 代码以自定义论坛外观，此设置将覆盖 Flarum 默认样式。'
-      description: '自定义您的论坛颜色、Logo 以及其他变量。'
+      description: 自定义论坛配色、图标以及其他元素
       edit_css_button: '编辑自定义 CSS'
       edit_footer_button: '=> core.ref.custom_footer_title'
       edit_header_button: '=> core.ref.custom_header_title'
       enter_hex_message: 请输入十六进制颜色代码。
       favicon_heading: 站点图标
-      favicon_text: 上传图片做为论坛的站点图标，该图标会显示在浏览器标签页、搜索引擎结果条目及书签等多个地方。
+      favicon_text: 上传图片，用于浏览器标签页、书签、搜索引擎结果等位置。
       logo_dark_mode_heading: '深色模式 Logo'
-      logo_dark_mode_text: '上传在启用深色模式时显示的备用 Logo。'
+      logo_dark_mode_text: '上传更适合在深色模式下展示的 Logo 图片。'
       logo_heading: Logo
-      logo_text: 上传图片将会代替论坛名称，展示在导航栏左侧。
+      logo_text: 上传图片，替代论坛名称展示在导航栏左侧。
       title: 外观
     basics:
       abandoned_extensions_heading: 已弃用的扩展
@@ -140,15 +140,15 @@ core:
       avatar_driver_heading: 用户头像
       avatar_driver_options:
         default: 默认
-      avatar_driver_text: 选择在没有用户上传头像时应使用的用户头像驱动程序。默认情况下，如果用户未上传头像，则不显示任何头像。
+      avatar_driver_text: 设置用户未上传头像时的头像显示方式，默认不显示头像。
       default_language_heading: 默认语言
-      description: 设置您的论坛名称、语言及其他基础设置。
+      description: 设置论坛名称、语言及其他基础设置
       display_name_driver_options:
         username: 用户名
       display_name_heading: 用户外显名称
       display_name_text: 选择外显名称的类型，默认为用户名。
       forum_description_heading: 论坛描述
-      forum_description_text: '输入一两句简短的论坛描述，该内容将被添加至页面的 meta 标签，并会出现在搜索引擎的结果里。'
+      forum_description_text: '简要介绍您的论坛，该内容将用于 Meta 标签，并可能显示在搜索引擎的结果中。'
       forum_title_heading: 论坛名称
       home_page_heading: 论坛首页
       home_page_text: 选择一种页面作为论坛首页。

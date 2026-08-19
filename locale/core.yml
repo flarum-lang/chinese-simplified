@@ -19,27 +19,27 @@ core:
       view_all: '在 discuss.flarum.org 上查看全部'
     appearance:
       colored_header_label: 彩色导航栏
-      colors_heading: 颜色
-      colors_primary_label: 主色调
-      colors_secondary_label: 次色调
-      colors_text: 选择两种颜色作为论坛配色。第一种作为突出显示内容的颜色，第二种作为背景等元素的颜色。
+      colors_heading: 配色
+      colors_primary_label: 主题色
+      colors_secondary_label: 辅助色
+      colors_text: 选择论坛的主题色和辅助色，分别用于内容高亮和背景元素。
       custom_footer_heading: 自定义页脚
       custom_footer_text: '=> core.ref.custom_footer_text'
       custom_header_heading: 自定义页眉
       custom_header_text: '=> core.ref.custom_header_text'
-      custom_styles_cannot_use_less_features: '自定义 LESS 不支持使用 @import 与 data-uri 特性。'
+      custom_styles_cannot_use_less_features: '自定义 LESS 不支持使用 @import 和 data-uri 特性。'
       custom_styles_heading: 自定义样式
       custom_styles_text: '添加 Less/CSS 代码以自定义论坛外观，此设置将覆盖 Flarum 默认样式。'
       dark_mode_label: 夜间模式
-      description: 自定义论坛配色、图标以及其他元素
+      description: 自定义论坛配色、图标及其他元素
       edit_css_button: '编辑自定义 CSS'
       edit_footer_button: '=> core.ref.custom_footer_title'
       edit_header_button: '=> core.ref.custom_header_title'
       enter_hex_message: 请输入十六进制颜色代码。
       favicon_heading: 站点图标
-      favicon_text: 上传图片做为论坛的站点图标，该图标会显示在浏览器标签页、搜索引擎结果条目及书签等多个地方。
-      logo_heading: 标志
-      logo_text: 上传图片代替论坛名称，并展示在导航栏左侧。
+      favicon_text: 上传图片，用于浏览器标签页、书签、搜索引擎结果等位置。
+      logo_heading: Logo
+      logo_text: 上传图片，替代论坛名称展示在导航栏左侧。
       title: 外观
     basics:
       abandoned_extensions_heading: 弃用扩展

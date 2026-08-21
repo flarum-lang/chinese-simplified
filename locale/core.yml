@@ -256,14 +256,14 @@ core:
       mail_username_label: 用户名（部分邮件服务商要求用户名必须与发件地址一致）
       mailgun_heading: 'Mailgun 服务'
       not_sending_message: 'Flarum 当前无法发送电子邮件，请检查发件方式及其配置。'
-      postmark_description: '通过 Postmark 的 HTTP API 发送电子邮件。可选指定消息流以使用非默认流。'
+      postmark_description: '通过 Postmark HTTP API 发送邮件，也可指定其他消息流。'
       postmark_heading: 'Postmark 服务'
       send_test_mail_button: 发送
       send_test_mail_heading: 发送测试邮件
       send_test_mail_success: 测试邮件发送成功！
-      send_test_mail_text: '这将使用上述配置向您的邮箱 {email} 发送一封邮件。'
-      smtp_description: '配置 SMTP 连接设置。常见配置：端口 587 (TLS)，或端口 465 (SSL)。'
-      smtp_heading: 'SMTP 设置'
+      send_test_mail_text: '使用上述配置向 {email} 发送测试邮件。'
+      smtp_description: '配置 SMTP 服务器连接。通常使用 587 端口（TLS）或 465 端口（SSL）。'
+      smtp_heading: 'SMTP 服务'
       title: '=> core.ref.email'
     extension:
       abandoned_no_replacement: 此扩展程序已停止维护，今后可能不再更新。

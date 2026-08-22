@@ -166,13 +166,13 @@ core:
       permissions_title: 权限
       purge_button: 重置
       readme:
-        button_label: 自述文件
-        no_readme: 此扩展未提供自述文件
+        button_label: 说明
+        no_readme: '此扩展程序似乎没有 README 文件'
         title: '{extName} 文档'
       replaced: 替代
       uninstall_button: 卸载
     header:
-      get_help: 帮助
+      get_help: 获取帮助
       log_out_button: '=> core.ref.log_out'
     loading:
       title: 请稍后……
@@ -182,9 +182,9 @@ core:
       basics_button: '=> core.admin.basics.title'
       basics_title: '=> core.admin.basics.description'
       categories:
-        authentication: 认证
-        core: 核心配置
-        discussion: 主题
+        authentication: 身份验证
+        core: 核心设置
+        discussion: 主题与内容
         feature: 功能
         formatting: 格式化
         forum-widget: 论坛小组件
@@ -198,15 +198,15 @@ core:
       email_title: '=> core.admin.email.description'
       permissions_button: '=> core.admin.permissions.title'
       permissions_title: '=> core.admin.permissions.description'
-      search_placeholder: 搜索
+      search_placeholder: 搜索扩展程序
       userlist_button: '=> core.admin.users.title'
       userlist_title: '=> core.admin.users.description'
     permissions:
       allow_hide_own_posts_label: 允许删除自己的帖子
-      allow_post_editing_label: 编辑帖子内容
-      allow_renaming_label: 更改自己的主题标题
+      allow_post_editing_label: 允许编辑帖子
+      allow_renaming_label: 允许修改自己的主题标题
       create_access_token_label: 创建访问令牌
-      create_heading: 帖子相关
+      create_heading: 发布
       delete_discussions_forever_label: 永久删除主题
       delete_discussions_label: 删除主题
       delete_posts_forever_label: 永久删除回复

@@ -270,20 +270,20 @@ core:
       abandoned_with_replacement: '此扩展程序已被 {replacement} 替代，请考虑迁移。'
       configure_scopes: 配置范围
       confirm_purge: '此操作将清除该扩展程序的所有数据库记录及相关资源，但不会卸载扩展；如需卸载，请通过 Composer 操作。确定要继续吗？'
-      database_driver_mismatch: 此扩展不支持您配置的数据库驱动程序。
+      database_driver_mismatch: 此扩展程序不支持您配置的数据库驱动。
       deprecated: 已弃用
       disabled: 关闭
-      enable_to_see: 开启扩展程序以查看或修改设置。
+      enable_to_see: 启用扩展程序即可查看和修改设置。
       enabled: 开启
       info_links:
-        discuss: 讨论帖
+        discuss: 主题帖
         documentation: 文档
         donate: 捐助
-        source: 源码
+        source: 源代码
         support: 支持
-        website: 主页
-      no_permissions: 此扩展无新增权限。
-      no_settings: 此扩展无设置项。
+        website: 网站
+      no_permissions: 此扩展程序无可配置权限。
+      no_settings: 此扩展程序无设置项。
       open_modal: 打开设置
       permissions_title: 权限
       purge_button: 重置

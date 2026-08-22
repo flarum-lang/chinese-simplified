@@ -146,7 +146,7 @@ core:
     extension:
       abandoned_no_replacement: 此扩展程序已停止维护，今后可能不再更新。
       abandoned_with_replacement: '此扩展程序已被 {replacement} 替代，请考虑迁移。'
-      configure_scopes: 配置范围
+      configure_scopes: 按标签配置
       confirm_purge: '此操作将清除该扩展程序的所有数据库记录及相关资源，但不会卸载扩展；如需卸载，请通过 Composer 操作。确定要继续吗？'
       confirm_uninstall: 此扩展的的数据库条目和文件资源都将被永久性删除，确定要继续吗？
       deprecated: 已弃用

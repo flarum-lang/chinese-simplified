@@ -24,15 +24,26 @@ ffans-creator-declarations:
     controls:
       edit: 编辑自主声明
     display:
+      declaration_format: '<strong>作者声明：</strong>{declarations}。'
       declaration_separator: '； '
       open_details: 查看关于创作者声明
+      original_notice: 原创内容，未经许可禁止转载。
+      original_summary: 原创内容，未经许可禁止转载
+      personal_opinion_summary: 个人观点，仅供参考
+      reference_notice: '以下内容参考自 {source}。'
+      reference_summary: 内容经过参考或引用
+      repost_notice: '以下内容来源于 {source}。'
     info_modal:
+      author_note: '作者备注： '
       disclaimer: 声明内容未经论坛核实或验证，请结合正文信息自行判断。
       explanation: '此提示语由作者自主添加，作者声明本帖“{declarations}”。'
       heading: 我为什么会看到此提示语
+      reference: '参考： '
+      source: '来源： '
       title: 关于创作者声明
     modal:
       help: 请选择与本篇帖子内容相符的声明。声明只用于帮助读者理解内容，不代表论坛观点或经论坛验证。
+      link_title_placeholder: 链接名称（可选）
       save_button: 保存声明
       selection_count: '已选择 {selected} / {max} 项'
       title: 自主声明
@@ -60,6 +71,10 @@ ffans-creator-declarations:
         details_placeholder: 可填写安全注意事项
         help: 普通用户模仿相关行为可能带来安全风险。
         label: 危险行为，请勿模仿
+      reference:
+        details_placeholder: 请输入原始来源链接（必填）
+        help: 内容参考或引用了其他作者或来源的材料。
+        label: 参考或引用内容
       repost:
         details_placeholder: 请输入原始来源链接（必填）
         help: 内容主要转载自其他作者或来源。
@@ -82,4 +97,6 @@ ffans-creator-declarations:
       repost_url_required: '链接名称不能超过 100 个字符。'
       required: 请至少选择一项声明。
       source_conflict: 原创、转载与参考/引用内容声明不能同时选择。
+      source_url_required: 转载或参考/引用内容必须填写有效的来源链接。
+      title_too_long: '链接名称不能超过 100 个字符。'
       too_many: 选择的声明数量过多。

@@ -34,7 +34,14 @@ ramon-avocado:
       auth_image_label: 认证弹窗图片
       banner_image_help: 上传显示在论坛顶部的横幅（Hero）图片。
       banner_image_label: 横幅图片
+      bookmarks_enabled_help: 在卡片，书签页面，备忘，提醒和提醒通知等功能处展示保存书签按钮。关闭此设置将隐藏所有保存书签按钮，并禁用相关API；已保存的书签数据仍然保留。
+      bookmarks_enabled_label: 启用书签系统
+      cakeday_enabled_label: 显示账号纪念日徽章
       categories_heading_label: 分类栏目标题
+      clock_format_12: '12小时制（下午2:30）'
+      clock_format_24: '24小时制（14:30）'
+      clock_format_auto: 自动（基于用户浏览器）
+      clock_format_label: 时间格式
       colored_border_style_full: 全边框
       colored_border_style_help: 为话题卡片添加与主标签颜色相同的颜色边框。
       colored_border_style_label: 话题卡片边框样式
@@ -42,6 +49,8 @@ ramon-avocado:
       colored_border_style_none: 无
       colored_enabled_help: 将当前标签或话题的配色，自动应用为全站的按钮、链接和其它元素强调色。
       colored_enabled_label: 启用自动强调色
+      custom_auth_modal_help: 展示自定义的登陆、注册和重置密码弹窗面板。关闭此设置则使用Flarum默认弹窗。
+      custom_auth_modal_label: 使用自定义登陆和注册弹窗
       custom_default_avatar_help: 为没有上传头像的用户上传自定义默认头像图片。
       custom_default_avatar_label: 自定义默认头像
       custom_hero_enabled_help: 使用自定义HTML内容，替换默认横幅内容，包含：图标、标题、描述、登录/注册按钮。横幅容器、背景图片和遮罩层不变。与默认横幅一样，自定义横幅仅对访客可见。
@@ -50,6 +59,8 @@ ramon-avocado:
       custom_hero_html_label: 自定义横幅HTML
       custom_loading_spinner_help: 使用SVG加载动画替换默认的文字加载指示。
       custom_loading_spinner_label: 个性化加载动画
+      disc_style_default: 默认
+      disc_style_label: 话题页面样式
       featured_tags_empty: 未找到标签。
       featured_tags_help: 所选标签将在首页和标签页中以星标徽章突出显示。
       featured_tags_label: 精选标签
@@ -80,6 +91,11 @@ ramon-avocado:
       logo_svg_help: '为您的论坛上传自定义 SVG 格式 Logo。'
       logo_svg_label: 'SVG 格式 Logo'
       popular_heading_label: 热点话题标题
+      post_badge_position_below: 在用户名下方（独占一行）
+      post_badge_position_inline: 在用户名旁边
+      post_badge_position_label: 帖子中群组徽章的展示位置
+      post_badge_position_side: 在头像下方（左侧边栏）
+      post_badge_position_side_icons: 在头像下方（仅图标堆叠）
       post_cta_position_1: 第一条帖子之后
       post_cta_position_2: 第二条帖子之后
       post_cta_position_3: 第三条帖子之后
@@ -87,19 +103,25 @@ ramon-avocado:
       post_cta_position_5: 第五条帖子之后
       post_cta_position_help: 在对应帖子和后贴之间放置CTA横幅。
       post_cta_position_label: CTA横幅位置（在第几条帖子后面）
+      presence_enabled_label: 显示正在阅览话题的用户
       search_v1_help: '显示内联搜索下拉框而非 V2 弹窗样式。'
       search_v1_label: '启用 V1 搜索栏样式'
       section_auth: 登录与注册
+      section_bookmarks: 书签
+      section_cakeday: 纪念日
       section_colored: 自动强调色
+      section_discussion: 话题页面
       section_footer: 页脚
       section_hero_image_tags: 话题横幅图片
       section_homepage: 首页
       section_logo: Logo
       section_posts: 帖子
+      section_presence: 即时阅览
       section_search: 搜索
       section_team: 团队页面
       section_titles_heading: 栏目标题
       section_titles_help: 自定义首页栏目标题。留空则使用语言包中的默认标题。
+      section_user_card: 用户卡片
       show_action_icons_help: '在点赞和回复按钮上显示 Font Awesome 图标。'
       show_action_icons_label: 在点赞和回复按钮上显示图标
       show_auth_buttons_help: 在页眉次级导航中为游客显示药丸样式的登录和注册按钮。
@@ -128,6 +150,13 @@ ramon-avocado:
       showcase_tag_label: 热点/作品标签
       spinner_custom_code_help: 使用SVG或HTML作为加载动画。
       spinner_custom_code_label: 自定义动画代码
+      spinner_option_avocado: 牛油果
+      spinner_option_css_orbital: 方块碎片（CSS）
+      spinner_option_custom: 自定义
+      spinner_option_ditie: 地铁在线
+      spinner_option_flarum: Flarum图标
+      spinner_option_orbital: 方块碎片
+      spinner_option_pl3: 脉冲
       tag_picker_placeholder: 选择标签…
       team_desc_label: 页面描述
       team_desc_placeholder: 认识为论坛运营管理所付出的伙伴们。
@@ -140,10 +169,38 @@ ramon-avocado:
       team_title_placeholder: 运营团队
       threads_style_help: '采用类似Threads App的风格，将话题显示为一个卡片，回帖锁进并带有左边框线条。'
       threads_style_label: 启用会话式话题布局
+      user_card_enabled_help: 当鼠标悬停在用户名或头像上时，显示Discourse风格的迷你用户卡片，包括个性签名、徽章、状态等内容。
+      user_card_enabled_label: 启用用户悬停卡片
   forum:
     actions:
       share: 分享
     back: 返回
+    bookmarks:
+      edit: 编辑书签
+      empty: 尚未保存任何话题为书签。
+      modal_cancel: 取消
+      modal_save: 保存
+      modal_title: 书签收藏
+      note_label: 备注
+      note_placeholder: 收藏这个书签的目的什么？（可选）
+      reminder_am: 上午
+      reminder_custom: 选择日期时间
+      reminder_date_label: 日期
+      reminder_hour_label: 时
+      reminder_invalid: 所选时间为过去时间。只能选择将来的时间。
+      reminder_invalid_date: 选择提醒日期。
+      reminder_label: 提醒
+      reminder_later: 今天稍晚一点（4小时内）
+      reminder_meridiem_label: 上午或下午
+      reminder_minute_label: 分
+      reminder_none: 不创建提醒
+      reminder_pm: 下午
+      reminder_tomorrow: 明天早上
+      reminder_week: 下周
+      save: 存为书签
+      title: 已存书签
+      unsave: 从已存书签中移除
+      update_error: 无法更新书签收藏。请重试。
     discussion:
       hero_image_add: 添加图片
       hero_image_remove: 移除图片
@@ -201,6 +258,8 @@ ramon-avocado:
       log_in: 登录
       more: 更多
       nav_label: 导航
+      nav_more: 更多
+      nav_more_label: 显示更多导航链接
       new_discussion: 发布话题
       no_tags_found: 未找到标签
       or: 或
@@ -225,13 +284,18 @@ ramon-avocado:
       untitled: 无标题
       view: 查看
       view_post: 查看帖子
+      ws_update_plural: '{count}条新话题'
+      ws_update_singular: 1条新话题
       yesterday_time: '昨天 ，{time}'
     link:
       login_to_view: 登陆查看链接
     link_cta:
       placeholder: 登录以查看链接
+    loading: 正在加载…
     messages:
       deleted_message: 消息已删除
+    notifications:
+      bookmark_reminder_text: 已存话题的提醒
     online_users:
       online: 在线
     post:
@@ -241,6 +305,7 @@ ramon-avocado:
       text: 喜欢正在看的内容？加入讨论吧！
     profile:
       joined: '加入于{date}'
+      member_since: '于{date}加入'
       scroll_left: 向左滑动
       scroll_right: 向右滑动
     search:

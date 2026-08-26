@@ -12,6 +12,8 @@ core:
         config_override:
           help: 'FontAwesome 设置目前已在 config.php 文件中存在，无法在此处更改。'
           label: 配置覆盖
+        forced_style_help: '可统一指定所有图标使用的 FontAwesome 样式，例如 `fa-duotone fa-light` 或 `fa-regular`。该设置会覆盖核心和扩展程序原本指定的样式，但 brand 图标不会受到影响。请确保当前图标来源支持所选样式：内置的 FontAwesome Free 除实心样式外，仅包含少量其他样式的图标，强制切换后可能出现大量空白图标。使用 FontAwesome Pro CDN 或 Kit 可获得完整样式支持。留空即可关闭此设置。'
+        forced_style_label: 强制图标样式
         kit_url_help: '您的 Font Awesome Kit 脚本的 URL（来自于 kit.fontawesome.com）'
         kit_url_label: 'Kit 链接'
         preview:
@@ -47,7 +49,7 @@ core:
           total_steps: '排查大约需要 {steps} 步。'
           yes_button: 存在
         config_override:
-          help: '您仍可以在此处更改这些设置，但在将 <code>config.php</code> 文件中的 <code>offline</code> 设置为 <code>0</code> 之前，这些更改不会生效。'
+          help: '此处的设置可以被修改保存。如需生效，请将 <code>config.php</code> 文件中的 <code>offline</code> 设置为 <code>0</code>。'
           label: '您的 <code>config.php</code> 文件正在覆盖这些设置。'
         help: 开启维护模式，防止用户访问论坛。
         options:

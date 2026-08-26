@@ -296,10 +296,10 @@ core:
     invalid_username_message: '用户名只能由字母、数字及连字符 (-) 组成'
   email:
     abandoned_extensions:
-      body: "您好 {username}，\n\n以下已安装的扩展已被标记为弃用：\n\n{extensions}\n\n请检查这些扩展，并在有条件时考虑迁移到替代扩展。\n"
+      body: "{username}，你好！\n\n以下已安装的扩展已标记弃用：\n\n{extensions}\n\n请检查，并考虑在条件允许时迁移到替代扩展。\n"
       line_no_replacement: '- {package}（无可用替代）'
-      line_with_replacement: '- {package}（建议替代：{replacement}）'
-      subject: 操作提醒：检测到弃用扩展
+      line_with_replacement: '- {package}（建议迁移到 {replacement}）'
+      subject: 发现已停止维护的扩展，请处理
     activate_account:
       body: "{username}，您好！\n\n您刚刚注册了 {forum}。\n\n若是您本人所为，请点击下方链接激活账号：\n{url}\n\n若非您本人注册，请忽略此邮件。\n"
       subject: 账号激活
@@ -679,7 +679,7 @@ core:
       csrf_token_mismatch: 您已经发呆很长时间了。
       csrf_token_mismatch_return_link: 请返回再试一次
       invalid_confirmation_token: 验证链接已使用或无效。
-      method_not_allowed: 该页面不支持该请求方法。
+      method_not_allowed: 此页面不支持该请求方法。
       not_authenticated: 您没有权限访问此页面，请登录后再试。
       not_found: 您访问的页面不存在。
       not_found_return_link: '返回 {forum}'
@@ -691,7 +691,7 @@ core:
       previous_page_button: '=> core.ref.previous_page'
     log_out:
       log_out_button: '=> core.ref.log_out'
-      log_out_confirmation: '确定要退出登录 {forum}?'
+      log_out_confirmation: '确定要从 {forum} 退出登录？'
       title: '=> core.ref.log_out'
     meta_titles:
       with_page_title: '{pageNumber, plural, =1 {{pageTitle} - {forumName}} other {{pageTitle} - 第 # 页 - {forumName}}}'

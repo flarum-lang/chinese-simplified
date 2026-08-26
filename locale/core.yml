@@ -10,9 +10,9 @@ core:
         cdn_url_help: 'Font Awesome CSS 文件的 CDN 链接'
         cdn_url_label: 'CDN URL'
         config_override:
-          help: 'FontAwesome 设置目前已在 config.php 文件中存在，无法在此处更改。'
+          help: 'FontAwesome 设置目前已在 config.php 文件中存在，无法在此处修改。'
           label: 配置覆盖
-        forced_style_help: '可统一指定所有图标使用的 FontAwesome 样式，例如 `fa-duotone fa-light` 或 `fa-regular`。该设置会覆盖核心和扩展程序原本指定的样式，但 brand 图标不会受到影响。请确保当前图标来源支持所选样式：内置的 FontAwesome Free 除实心样式外，仅包含少量其他样式的图标，强制切换后可能出现大量空白图标。使用 FontAwesome Pro CDN 或 Kit 可获得完整样式支持。留空即可关闭此设置。'
+        forced_style_help: '强制所有图标使用指定的 Font Awesome 样式，例如 `fa-duotone fa-light` 或 `fa-regular`。此设置会覆盖核心和扩展程序指定的图标样式，但不会影响品牌图标。请确保当前图标来源支持所选样式：内置的 Font Awesome Free 对 `fas` 实心样式以外的样式支持有限，强制使用其他样式可能导致大量图标无法显示。Font Awesome Pro CDN 或 Kit 支持全部样式。留空则禁用此设置。'
         forced_style_label: 强制图标样式
         kit_url_help: '您的 Font Awesome Kit 脚本的 URL（来自于 kit.fontawesome.com）'
         kit_url_label: 'Kit 链接'
@@ -68,6 +68,10 @@ core:
         custom_driver: '当前使用由扩展程序提供的 {driver} 队列驱动。'
         memory_help: '队列进程的内存使用上限，达到上限后将自动重启。默认为 128 MB。'
         memory_label: 内存限制（MB）
+        pause_all_label: 暂停所有队列
+        pause_help: 暂停处理受影响队列中的任务，已经开始运行的任务不会受到影响。
+        pause_label: 暂停队列
+        pause_queue_label: '暂停 {queue} 队列'
         rest_help: '执行下一个任务前的间隔时间，默认为 0 秒。'
         rest_label: 任务间隔（秒）
         retries_help: '任务失败时的重试次数，默认为 1。'

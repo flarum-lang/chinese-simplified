@@ -16,6 +16,8 @@ flarum-sticky:
       enable_display_excerpt: 当置顶讨论未读时显示第一条帖子的摘录
       only_sticky_unread_discussions_help: 在「全部讨论」页面，未读的置顶讨论将固定在顶部，已读的置顶讨论则按常规顺序进行排序。
       only_sticky_unread_discussions_label: 仅置顶未读讨论
+      pin_sticky_on_all_discussions_help: 默认启用。启用时，置顶的话题固定展示在所有话题页面的顶部。禁用时，置顶的话题将根据最新操作，展示在其应有的位置。标签页面将忽略此设置，始终将置顶话题展示在页面顶部。
+      pin_sticky_on_all_discussions_label: 将置顶的话题固定在所有话题页面顶部
   forum:
     badge:
       sticky_tooltip: 置顶

@@ -20,6 +20,10 @@ flarum-tags:
       tags_label: '=> flarum-tags.ref.tags'
     edit_tag:
       color_label: '=> core.ref.color'
+      default_sort_label: 默认排序
+      default_sort_none: 使用论坛默认排序方式
+      default_sort_text: 用户没有指定排序方式时，该标签下话题列表默认使用的排序方式。
+      default_sort_unavailable: '{sort} （已不可用）'
       delete_tag_button: 删除标签
       delete_tag_confirmation: 确定要删除此标签吗？此标签下的讨论将不会被删除。
       description_label: 描述

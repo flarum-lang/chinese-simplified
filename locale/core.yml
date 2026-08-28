@@ -82,6 +82,8 @@ core:
         timeout_help: '单个任务的执行时间上限，默认为 60 秒。'
         timeout_label: 任务超时（秒）
       search:
+        cjk_mode_help: 如果论坛语言是汉语、日语或韩语，开启此项可优化搜索体验。一般数据库默认的以单词为搜索基本单元的方式，无法实现中日韩文本搜索。开启此设置，将会把搜索方式变更为字符截取，以实现中日韩文本搜索功能。但在超大型论坛中，这可能会降低性能。另一种性能更好的替代实现方式是，在数据库中配置中日韩文本解析器（例如，MySQL/MariaDB的N-Gram解析器）。
+        cjk_mode_label: 为中日韩语言优化搜索
         driver_heading: '搜索驱动：{model}'
         driver_options:
           default: 默认数据库搜索
@@ -134,6 +136,8 @@ core:
       logo_dark_mode_text: '上传更适合在深色模式下展示的 Logo 图片。'
       logo_heading: Logo
       logo_text: 上传图片，替代论坛名称展示在导航栏左侧。
+      show_theme_selector_help: 允许用户在页头的主题控件中切换可用的颜色主题。
+      show_theme_selector_label: 显示主题选择控件
       title: 外观
     basics:
       abandoned_extensions_heading: 停止维护的扩展程序
@@ -191,6 +195,9 @@ core:
         copy_success: 复制成功
         title: 系统信息
       io_error_message: 文件系统写入失败，请检查文件权限后重试，或改用命令行执行。
+      queue_paused_all_warning: 所有队列处理均被暂停。任务在恢复之前，会一直持续生成。
+      queue_paused_manage: 管理
+      queue_paused_warning: '队列处理已被暂停（队列：{queues}）。任务在恢复之前，会一直持续生成。'
       status:
         headers:
           queue-driver: 队列驱动程序
@@ -206,6 +213,9 @@ core:
     database-driver-mismatch-warning:
       detail: "Flarum 检测到当前实际使用 <code>{actual}</code> 数据库，这与 <code>config.php</code> 中配置的数据库驱动 <code>{configured}</code> 不一致。\n\n使用错误的数据库驱动可能引发难以察觉且难以排查的故障，请将 <code>config.php</code> 中 <code>database</code> 下的配置更正为 <code>'driver' => ''{actual}''</code>。详情请参阅 <link>Flarum 官方文档</link>。\n"
       label: 数据库驱动配置不一致
+    database-version-warning:
+      below-recommended-detail: "你的{server}服务器运行版本为<code>{version}</code>。该版本在支持范围之中，但Flarum推荐使用{server} <code>{recommended}</code>或更高版本，以获得最佳性能和维护支持。详见<link>Flarum文档</link> 。\n"
+      below-recommended-label: 数据库版本过时
     debug-warning:
       detail: "启用 <code>debug</code> 模式时，Flarum 会在每次请求时重新构建 <code>JavaScript</code> 和 <code>CSS</code> 资源。页面警告和错误也会以弹窗形式展示详细信息，数据库凭据、环境变量等敏感信息可能会在此期间泄露。\n\n强烈建议在生产环境中禁用 <code>config.php</code> 中的 <code>debug</code> 模式。详情请参阅 <link>Flarum 官方文档</link>。\n"
       label: 调试模式已启用
@@ -321,6 +331,14 @@ core:
       section_suggested_help: 部分扩展程序会推荐其他扩展程序或软件包，安装后可获得额外功能或集成。
       suggested_by: '{extension} 推荐安装'
       title: 扩展程序状态
+    failed_jobs:
+      delete: 删除
+      details: 详情
+      meta: '队列{queue} · 失败{time}次'
+      none: 无失败任务。
+      retry: 重试
+      retry_all: 全部重试
+      title: 失败任务
     header:
       get_help: 获取帮助
       log_out_button: '=> core.ref.log_out'
@@ -405,6 +423,12 @@ core:
       members_button: '=> core.group.members'
       signup_closed_button: 关闭注册
       signup_open_button: 开放注册
+    queue_widget:
+      failed: 失败
+      pending: 等待中
+      refresh: 刷新
+      reserved: 运行中
+      title: 队列
     search_source:
       general:
         heading: 常规
@@ -560,6 +584,7 @@ core:
       session_dropdown_accessible_label: 会话下拉菜单开关
       settings_button: 账号设置
       sign_up_link: '=> core.ref.sign_up'
+      theme_switcher_accessible_label: 更换主题
     index:
       all_discussions_link: '=> core.ref.all_discussions'
       cannot_start_discussion_button: 发帖功能已关闭
@@ -571,12 +596,14 @@ core:
       start_discussion_button: '=> core.ref.start_a_discussion'
       toggle_sidenav_dropdown_accessible_label: 导航栏下拉菜单开关
     index_sort:
-      latest_button: 最新回复
+      az_button: '=> core.ref.title_az'
+      latest_button: '=> core.ref.latest'
       newest_button: '=> core.ref.newest'
       oldest_button: '=> core.ref.oldest'
       relevance_button: '=> core.ref.relevance'
       toggle_dropdown_accessible_label: 更改「全部讨论」排序
-      top_button: 热门讨论
+      top_button: '=> core.ref.top'
+      za_button: '=> core.ref.title_za'
     log_in:
       forgot_password_link: 忘记密码？
       invalid_login_message: '=> core.ref.invalid_login_message'
@@ -808,6 +835,14 @@ core:
         group:
           hint: 单数或复数用户组名称
           key: 用户组
+    index_sort:
+      az_button: '=> core.ref.title_az'
+      latest_button: '=> core.ref.latest'
+      newest_button: '=> core.ref.newest'
+      oldest_button: '=> core.ref.oldest'
+      relevance_button: '=> core.ref.relevance'
+      top_button: '=> core.ref.top'
+      za_button: '=> core.ref.title_za'
     input:
       clear_button: 清除输入
     loading_indicator:
@@ -821,6 +856,7 @@ core:
       placeholder: 选择多个选项
     nav:
       drawer_button: 打开导航抽屉
+      pin_pane_button: 置顶话题列表
     notices:
       bisecting: 正在运行扩展程序二分法排查，以确定哪个扩展导致了问题。
       bisecting_continue: 继续排查
@@ -829,6 +865,8 @@ core:
     number_suffix:
       kilo_text: 千
       mega_text: 百万
+    overflowing_list:
+      toggle_accessible_label: 更多内容
     pagination:
       back_button: 上一页
       first_button: 返回首页
@@ -844,6 +882,7 @@ core:
       options_heading: 搜索选项
       placeholder: 搜索...
       preview_heading: 搜索预览
+      search_active_button_accessible_label: '修改搜索：{query}'
       search_clear_button_accessible_label: 清空搜索
       title: 搜索
     search_source:
@@ -892,6 +931,7 @@ core:
     icon: 图标
     icon_text: '请输入任何 <a>Font Awesome</a> 图标类名，<em>包括</em>前缀（例如 <code>fas fa-flag</code> 或 <code>fa-solid fa-flag</code>）。'
     invalid_login_message: 您的登录信息不正确。
+    latest: 最新
     light_hc_mode_label: 浅色高对比度模式
     light_mode_label: 浅色模式
     load_more: 加载更多
@@ -924,6 +964,9 @@ core:
     sign_up: 注册
     some_others: '{count, plural, one {# 人} other {# 人}}'
     start_a_discussion: 开始讨论
+    title_az: 标题（顺序）
+    title_za: 标题（倒序）
+    top: 人气
     username: 用户名
     username_or_email_placeholder: 用户名或邮箱
     users: 用户

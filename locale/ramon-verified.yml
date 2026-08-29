@@ -2,6 +2,14 @@
 # Use https://weblate.rob006.net/projects/flarum2/ramon-verified/zh_Hans/ for translation.
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
+ramon-audit:
+  admin:
+    activity:
+      types:
+        verified:
+          user:
+            unverified: 认证已撤销
+            verified: 已认证用户
 ramon-verified:
   admin:
     encryption:

@@ -36,6 +36,7 @@ ramon-avocado:
       banner_image_label: 横幅图片
       bookmarks_enabled_help: 在卡片，书签页面，备忘，提醒和提醒通知等功能处展示保存书签按钮。关闭此设置将隐藏所有保存书签按钮，并禁用相关API；已保存的书签数据仍然保留。
       bookmarks_enabled_label: 启用书签系统
+      bookmarks_fof_notice: '检测到已启用FoF Bookmarks，因此Avocado会将自身的书签功能交由FoF Bookmarks管理：主题中仅显示一个“已保存”菜单项和一个保存按钮，保存内容将写入FoF Bookmarks。启用FoF Bookmarks后，备注和提醒功能将不可用；Avocado中原有的保存数据会被保留，停用FoF Bookmarks后将恢复显示。'
       cakeday_enabled_label: 显示账号纪念日徽章
       categories_heading_label: 分类栏目标题
       clock_format_12: '12小时制（下午2:30）'
@@ -60,6 +61,8 @@ ramon-avocado:
       custom_loading_spinner_help: 使用SVG加载动画替换默认的文字加载指示。
       custom_loading_spinner_label: 个性化加载动画
       disc_style_default: 默认
+      disc_style_editorial: 编辑式（讨论轴线）
+      disc_style_help: "默认使用当前页面的标准布局。选择「编辑式」后，阅读区域会加宽，并在头像所在列贯穿一条细线，将整个讨论串联起来。每个头像都会作为节点排列在线上，而不同时间段之间则以带标签的时间节点加以区分。两种布局使用相同的页头。编辑式布局仅适用于桌面设备。在手机和平板电脑上，无论选择哪种布局，均保持当前页面样式。\n"
       disc_style_label: 话题页面样式
       featured_tags_empty: 未找到标签。
       featured_tags_help: 所选标签将在首页和标签页中以星标徽章突出显示。
@@ -92,6 +95,8 @@ ramon-avocado:
       logo_svg_label: 'SVG 格式 Logo'
       popular_heading_label: 热点话题标题
       post_badge_position_below: 在用户名下方（独占一行）
+      post_badge_position_default: Flarum默认（关闭：徽章叠加在头像上）
+      post_badge_position_help: "成员组徽章在帖子中的显示位置。第一项会关闭自定义徽章，恢复为 Flarum 默认的圆形徽章，并与头像重叠显示。其他选项会将每个徽章显示为胶囊形标签，并在图标旁显示用户组名称。无论是否启用固定头像效果，此设置均可正常使用。手机端始终采用紧凑的叠加显示方式。\n"
       post_badge_position_inline: 在用户名旁边
       post_badge_position_label: 帖子中群组徽章的展示位置
       post_badge_position_side: 在头像下方（左侧边栏）
@@ -151,6 +156,7 @@ ramon-avocado:
       spinner_custom_code_help: 使用SVG或HTML作为加载动画。
       spinner_custom_code_label: 自定义动画代码
       spinner_option_avocado: 牛油果
+      spinner_option_b2: 旋转
       spinner_option_css_orbital: 方块碎片（CSS）
       spinner_option_custom: 自定义
       spinner_option_ditie: 地铁在线

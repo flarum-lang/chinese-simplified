@@ -25,7 +25,6 @@ CHANGELOG
 * [`ernestdefoe/calendar`](https://github.com/ernestdefoe/calendar)
 * [`ernestdefoe/seo`](https://github.com/ernestdefoe/seo)
 * [`ernestdefoe/theme-toggle`](https://github.com/ernestdefoe/theme-toggle)
-* [`ffans/creator-declarations`](https://github.com/FFans/creator-declarations)
 * [`flarum/audit`](https://github.com/flarum/audit)
 * `flarum-com-database-queue`
 * [`flarum/gdpr`](https://github.com/flarum/gdpr)

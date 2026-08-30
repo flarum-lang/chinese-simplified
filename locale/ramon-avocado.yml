@@ -58,6 +58,7 @@ ramon-avocado:
       custom_hero_enabled_label: 使用自定义横幅（Hero）内容（HTML）
       custom_hero_html_help: HTML内容将嵌入横幅遮罩层，替换.AvocadoHome-heroBannerContent内容。支持使用内链「<style>」标签。
       custom_hero_html_label: 自定义横幅HTML
+      custom_hero_html_placeholder: "<div class=\"AvocadoHome-heroBannerContent\">\n  <h1 class=\"AvocadoHome-heroBannerTitle\">欢迎访问</h1>\n  <p class=\"AvocadoHome-heroBannerDesc\">这里可以时任何你需要展示的内容：链接、图片、按钮等</p>\n</div>"
       custom_loading_spinner_help: 使用SVG加载动画替换默认的文字加载指示。
       custom_loading_spinner_label: 个性化加载动画
       disc_style_default: 默认

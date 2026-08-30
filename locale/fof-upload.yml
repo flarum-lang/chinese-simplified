@@ -18,12 +18,17 @@ fof-upload:
       disable-download-logging: "（默认启用）保持开启，以便在将来查看下载记录及其他数据。打开下方的开关，即可停止记录下载日志。\n"
       disable-hotlink-protection: "（默认启用）防盗链将通过验证 CSRF TOKEN 和 POST ID 来保护你的文件不会被其他站点调用下载。\n"
       download_templates: "启用模板后，您上传的文件将按模板样式显示于帖子中，并增加了“预览”、“下载”等按钮。 当前可用：\n"
+      local_cdn: "可选。如果使用CDN伺服<code>assets/files</code>，输入根网址后，上传文件链接将自动应用。留空则使用论坛根网址。\n"
       mime_order: "匹配规则自上而下运行，以第一次匹配成功的结果为准。因此，应将更佳具体的规则放在一般通用规则的上面。\n"
       mime_types: "配置用户可以上传的文件类型、存储方式、在帖子中的展示方式。\n"
       resize: "配置图片缩放功能，以像素为单位，超过最大宽度及高度后会被缩放，图片横纵比不变。\n"
       s3_acl: "应用于上传对象的读写权限 ACL（默认私有读写）。 有关可用的值，请参阅 https://iflarum.cn/aws-s3acl\n"
       s3_compatible_storage: "填写下方设置以配置 S3 兼容存储模式。如果您使用 AWS，请保持留空。有关 S3 兼容配置详情，请查阅各大云服务商的文档（七牛云：https://iflarum.cn/qiniu-s3）\n"
       s3_instance_profile: "公钥和秘钥留空时，可为实例单独配置。\n"
+      storage_configure_another: "有其它已安装的存储服务，但尚未启用。配置存储服务并绑定文件类型之前，文件上传的路径不会发生改变。\n"
+      storage_intro: "已配置的服务或正在使用的文件类型，将展示在此页面。服务配置操作可以早于文件绑定操作。文件类型配置操作，可以随时在文件选项卡中进行。\n"
+      storage_not_installed: '希望使用Amazon S3，Cloudflare R2或Qiniu？需要安装额外插件，详见<a>安装存储适配器</a>。'
+      thumbnail_quality: "编码质量数值从1到100，仅适用于WebP和JPEG格式缩略图。数值越大，图片越清晰，图片文件也越大。GIF和PNG缩略图为无损形式，将忽略此设置。既有的缩略图在使用backfill命令重新生成之前，仍然维持现有的质量。\n"
       thumbnails: "在上传时为图片生成缩小尺寸的缩略图。缩略图会内联显示；\n点击它会在新标签页中打开原始全分辨率文件。\n对于包含许多大图片的论坛，缩略图可以显著减少带宽和页面权重。\n"
       watermark: "选择上传图片时是否添加水印。水印会根据下面的偏好设置来添加到非 GIF 图片上。\n"
     inspect-mime:
@@ -45,12 +50,14 @@ fof-upload:
         bucket: 存储空间（Bucket）
         custom_url: '自定义 S3 URL'
         endpoint: 访问域名（Endpoint）
-        key: Key
+        key: 访问密钥ID
+        provider: 提供器
         region: 地域（Region）
-        secret: Secret
+        secret: 秘密访问密钥
         title: 'AWS S3 存储设置（配置请参阅 http://t.cn/A6zX0V3N）'
         use_path_style_endpoint: '使用 path-style 访问域名'
       client_extension:
+        placeholder: 例如：docx，xlsx，epub
         title: 用户自定义文件扩展名
       composer_buttons:
         options:
@@ -73,12 +80,42 @@ fof-upload:
       local:
         cdn_url: '文件链接前缀 / 对象存储 CDN 或访问域名（含 http/https）'
         title: 存储设置
+      mime_presets:
+        archives: 压缩包（zip、tar、7z）
+        audio: 音频
+        documents: Word文件
+        images: 图片
+        pdf: PDF文件
+        php_ini_values: '你服务器中的<code>php.ini</code>配置为<code>post_max_size={post}</code> and <code>upload_max_filesize={upload}</code>。需确保此处设置的值，低于这些阈值，或调整对应阈值。如使用<code>Nginx</code>，还需确保<code>client_max_body_size</code> 大于设置的最大值。'
+        spreadsheets: 表格文件
+        title: 一般设置
+        video: 视频
       preferences:
-        max_file_size: 最大文件大小（单位：KB）
-        mime_type_permission_placeholder: '权限标签（可选，例如 图片）'
+        max_file_size: 最大文件大小
+        max_file_size_equivalent: '存储占用<code>{kb}</code>KB（{value}）。'
+        mime_add_custom: 自定义配置…
+        mime_add_prompt: 添加文件类型…
+        mime_add_subtype: 添加一个文件格式
+        mime_add_subtype_placeholder: 例如：WebP
+        mime_advanced_pattern: 高级配置
+        mime_column_display: 展示为
+        mime_column_display_help: 文件在帖子中的显示方式：内链预览、下载按钮等。
+        mime_column_pattern: 文件类型
+        mime_column_permission: 权限标签
+        mime_column_permission_help: 可选。在此输入一个权限名称，你将可以控制哪些用户可以上传此类文件。
+        mime_column_storage: 存储在
+        mime_column_storage_help: 此类型文件上传到的存储服务。
+        mime_edit_pattern: 编辑配置
+        mime_move_down: 下移（更晚匹配到）
+        mime_move_up: 上移（更早匹配到）
+        mime_remove_subtype: '删除{subtype}'
+        mime_type_add: 添加此文件类型
+        mime_type_permission_placeholder: 可选，例如：图片
         mime_type_regex_invalid: '无效的正则表达式（例如：|| 等空替代）'
         mime_type_regex_placeholder: 例如：^image/(jpeg|png|gif)$
-        mime_types: 设置可上传的文件类型及上传方式
+        mime_type_remove: 删除此文件类型
+        mime_types: 文件类型
+        mime_use_simple: 使用简单编辑器
         php_ini_values: '当前服务器 <code>php.ini</code> 配置上限为 <code>post_max_size={post}</code>，<code>upload_max_filesize={upload}</code>。请确保上方设置的值小于上限，否则请提高上限。若您使用 <code>Nginx</code> 服务器，请确保 <code>client_max_body_size</code> 高于当前设置的值。'
         title: 偏好设置
       qiniu:
@@ -90,6 +127,9 @@ fof-upload:
         max_width: 最大图片宽高
         title: 图片缩放功能
         toggle: 开启缩放
+      storage:
+        configure_another: '配置其它存储服务（{count}个可用）'
+        hide_unused: 隐藏未使用的服务
       svg-sanitizer:
         allow_animate: '允许 SVG 动画'
         allow_animate_help: '启用 SVG 动画可能会引入安全漏洞，因为动画 SVG 可能包含恶意代码。请自行承担风险启用此设置，并且仅在您信任用户的情况下启用。'
@@ -97,6 +137,7 @@ fof-upload:
         title: 'SVG 清理器'
       thumbnails:
         max_width: 缩略图最大宽度（像素）
+        quality: 缩略图质量
         title: 图片缩略图
         toggle: 上传时生成缩略图
         webp_toggle: '将缩略图编码为 WebP（推荐，约小 30%）'
@@ -127,6 +168,13 @@ fof-upload:
       no-files: 暂未上传共享文件。
       title: 共享文件
       upload-new-button: 上传文件
+    tabs:
+      advanced: 高级
+      files: 文件
+      images: 图片
+      storage: 存储
+      unsaved_changes: 当前选项卡有未保存变更
+      unsaved_hint: 你有尚未保存的变更。
     templates:
       bbcode-image: 'BBCode 图片预览模板'
       bbcode-image_description: "使用 BBCode 在行内完整显示图片。<strong>此模板依赖于 flarum/bbcode 扩展程序。</strong>无下载、统计和热链保护功能。\n"
@@ -173,11 +221,18 @@ fof-upload:
       upload: 上传
       upload_shared: 共享
       user_uploads: 用户上传
+    display_name:
+      help: 替代文件名称，展示在下载按钮中。不设置则使用文件名称。
+      insert: 插入
+      title: 命名此文件
+      title_plural: 命名这些文件
+      use_file_name: 使用文件名称
     media_manager: 媒体管理器
     states:
       error: 错误
       loading: 加载中
-      unauthorized: 您没有下载权限
+      permission_required: 所需权限
+      unauthorized: 你没有下载此文件的权限
     text_preview:
       collapse: 收起全文
       download: 下载文件

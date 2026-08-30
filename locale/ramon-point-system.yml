@@ -121,6 +121,17 @@ ramon-point-system:
       title: 用户组道具
     manual:
       balance: 余额
+      bulk_awarded: 已更新用户
+      bulk_confirm: 确定吗？该操作将向所有论坛用户发放积分。
+      bulk_confirm_no: 取消
+      bulk_confirm_yes: 确定并执行
+      bulk_errors: 错误
+      bulk_help: 批量执行全体用户积分发放或扣除。负数将扣除用户积分余额。
+      bulk_queued: '已为{total}用户生成队列任务。积分调整将在后台进行，队列任务很快即可处理完毕。'
+      bulk_result: 批量操作结果
+      bulk_submit: 向所有用户发放
+      bulk_success: 批量调整执行完成。
+      bulk_title: 全体用户批量发扣
       field_amount: 数量
       field_amount_help: 正数为发放，负数为从余额扣除（不影响总计）。
       field_reason: 理由（可选）
@@ -229,6 +240,8 @@ ramon-point-system:
       deco_in_posts_help: 在帖子和回帖中展示头像和用户名装饰。
       deco_in_user_card: 用户卡/个人资料中展示装饰
       deco_in_user_card_help: 鼠标悬浮在用户个人资料卡上时展示装饰。
+      earn_help_extra: 关于「如何获取积分」的补充说明
+      earn_help_extra_help: 可选。展示在道具商店页面的规则列表下方，介绍论坛活动和其它手动发放积分相关内容。仅支持纯文本，HTML代码将被过滤。
       enabled: 启用积分体系
       enabled_help: 核心开关。关闭后，用户将无法赚取积分。
       help: 设置积分体系和属性，启用或停用不同类型的装饰，以及不同论坛互动的积分规则。
@@ -238,6 +251,9 @@ ramon-point-system:
       lifetime_enabled_help: 总计积分是用户获得积分的累计数量。总计积分不会像余额那样，因为使用或扣除而减少。它代表用户的贡献总和。关闭后，总计积分仅在后台运行，以保障积分体系中的自动用户组功能可用），但是不会在道具商店、个人资料和头部展示。
       name_deco_enabled: 启用用户名装饰
       name_deco_enabled_help: 主开关。在用户名文本上，展示用户已佩戴的样式。
+      notify_bonus_only: 仅奖励（每日登陆和注册）
+      notify_bonus_only_help: 仅提示低频积分奖励。用户主动操作的话题、回帖和点赞积分通知，不进行提示。关闭此设置，将提示所有自动获取积分的记录。
+      notify_on_award: 自动获取积分通知
       points_per_discussion: 发帖积分
       points_per_discussion_help: 每发表一个话题所赚取的积分。
       points_per_like_given: 点赞积分
@@ -253,6 +269,7 @@ ramon-point-system:
       post_hl_deco_enabled: 启用帖子高亮
       post_hl_deco_enabled_help: 主开关。在用户帖子上显示已佩戴的高亮装饰（边框/光晕/彩条）。
       save: 保存变更
+      section_award_notifications_title: 每个操作都触发通知
       section_awards_help: 定义用户进行不同论坛互动时，所赚取的积分数量。
       section_awards_title: 积分赚取规则设置
       section_currency_help: 设置积分的显示名称和图标。
@@ -387,8 +404,23 @@ ramon-point-system:
       title_cover: 确认购买
       title_purchase: 购买此用户组？
       title_tier: 加入该用户组？
+    how_to_earn:
+      close: 已知晓
+      footer: 积分将在操作后立即生成。管理员也可以手动发放。
+      intro: 下列所有操作将自动获得积分。
+      no_rules: 自动赚积分功能已关闭，只能手动发放。
+      open: 如何获取积分？
+      rule_daily_login: 每天首次登陆
+      rule_discussion: 发起话题
+      rule_like_given: 为别人点赞
+      rule_like_received: 获得别人点赞
+      rule_post: 回帖
+      rule_registration: 注册
+      system_off: 该论坛当前暂无法赚取积分。你的现有积分，仍然可以在商店中使用。
+      title: 如何获取积分
     my_decorations:
       avatar: 头像边框
+      back_to_shop: 返回商店
       cover: 个人资料封面
       custom_title: 自定义头衔
       equip: 佩戴
@@ -406,6 +438,14 @@ ramon-point-system:
       shop: 道具商店
     notifications:
       admin_fallback: 一位管理员
+      earned_daily_login: '你今日登陆获取了{amount}积分'
+      earned_discussion: '你发布话题获取了{amount}积分'
+      earned_like_given: '你点赞获取了{amount}积分'
+      earned_like_received: '别人点赞你的帖子，你获取了{amount}积分'
+      earned_other: '你获取了{amount}积分'
+      earned_post: '你发布回帖获取了{amount}积分'
+      earned_preference_label: 别人转赠了积分给你
+      earned_registered: '你加入论坛获取了{amount}积分'
       item_family_avatar: 头像边框
       item_family_cover: 个人资料封面
       item_family_name: 名称样式
@@ -543,11 +583,14 @@ ramon-point-system:
       history_empty: 暂无已完成或已取消的交易。
       history_heading: 已关闭的交易
       items_short: '{count, plural, one {#个道具} other {#个道具}}'
+      load_failed: 无法加载你的交易。确认网络连接后重试。
       no_permission: 你所在的用户组没有交易权限。联系管理员咨询确认。
       open: 打开
       pending_empty: 暂无进行中的交易。
       pending_heading: 进行中的交易
+      retry: 重试
       start_cancel: 取消
+      start_clear: 清空搜索
       start_help: 输入用户名（或显示名称）查找目标交易用户。
       start_new: 发起交易
       start_not_found: 没有找到此用户。

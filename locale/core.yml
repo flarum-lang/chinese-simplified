@@ -137,7 +137,7 @@ core:
       logo_heading: Logo
       logo_text: 上传图片，替代论坛名称展示在导航栏左侧。
       show_theme_selector_help: 允许用户在页头的主题控件中切换可用的颜色主题。
-      show_theme_selector_label: 显示配色方案
+      show_theme_selector_label: 允许快捷
       title: 外观
     basics:
       abandoned_extensions_heading: 停止维护的扩展程序

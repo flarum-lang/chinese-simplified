@@ -19,6 +19,7 @@ linkrobins-referral:
       label_placeholder: 例如：推特推广
       no_expiry: 永久
       none: 暂无全局邀请码。
+      qr: 显示二维码
       title: 全局邀请码
     eligibility:
       groups_help: 选中任意用户组后，只有这些用户组的用户才能生成个人邀请码。不选代表允许所有用户组。
@@ -37,7 +38,17 @@ linkrobins-referral:
       title: 通用
   api:
     invalid_expiry: 有效期日期无效。
+    label_too_long: 文本标签太长。
+  email:
+    registered_body: '好消息！{name}已使用你的邀请码成功注册。'
+    registered_subject: '{name}使用你的邀请码加入了论坛'
+    someone: 某人
+    view_profile: 查看他们的用户资料
   forum:
+    notifications:
+      group_label: 邀请
+      registered_text: '{name}使用你的邀请码加入了论坛'
+      someone: 某人
     profile:
       copy: 复制
       copy_link: 复制邀请链接
@@ -45,15 +56,22 @@ linkrobins-referral:
       invite_code_title: 你的邀请码
       no_referrals: 暂无邀请记录。快快分享你的邀请码吧！
       not_eligible: 你尚未获得个人邀请码权限。多在论坛保持活跃，过段时间再来看看吧。
+      qr_button: 二维码
       tab: 邀请
       total_referrals: 邀请总人数
+    settings:
+      notify_registered_label: 某人使用你的邀请码加入了论坛
     sign_up:
       invite_code_label: 邀请码
       invite_code_label_required: '邀请码*'
-      invite_code_placeholder: 例如：K7XM2QNP
+      invite_code_placeholder: 邀请码
     user_card:
       referrals_plural: '成功邀请{count}人'
       referrals_singular: '成功邀请{count}人'
+  lib:
+    qr:
+      download: 下载PNG图片
+      title: '邀请二维码：{code}'
   validation:
     invalid: 邀请码无效。
     required: 注册必须使用邀请码。

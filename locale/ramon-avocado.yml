@@ -37,11 +37,13 @@ ramon-avocado:
       bookmarks_enabled_help: 在卡片，书签页面，备忘，提醒和提醒通知等功能处展示保存书签按钮。关闭此设置将隐藏所有保存书签按钮，并禁用相关API；已保存的书签数据仍然保留。
       bookmarks_enabled_label: 启用书签系统
       bookmarks_fof_notice: '检测到已启用FoF Bookmarks，因此Avocado会将自身的书签功能交由FoF Bookmarks管理：主题中仅显示一个“已保存”菜单项和一个保存按钮，保存内容将写入FoF Bookmarks。启用FoF Bookmarks后，备注和提醒功能将不可用；Avocado中原有的保存数据会被保留，停用FoF Bookmarks后将恢复显示。'
+      cakeday_enabled_help: 在用户注册的周年纪念日期间，用户名旁边（话题卡片，回帖和用户卡片）将显示一个🎂图标。
       cakeday_enabled_label: 显示账号纪念日徽章
       categories_heading_label: 分类栏目标题
       clock_format_12: '12小时制（下午2:30）'
       clock_format_24: '24小时制（14:30）'
       clock_format_auto: 自动（基于用户浏览器）
+      clock_format_help: 用于提醒功能中：「提醒我」功能中的时间选择控件和已存书签卡片中展示的时间。自动则使用访问者的浏览器设置。
       clock_format_label: 时间格式
       colored_border_style_full: 全边框
       colored_border_style_help: 为话题卡片添加与主标签颜色相同的颜色边框。
@@ -109,6 +111,7 @@ ramon-avocado:
       post_cta_position_5: 第五条帖子之后
       post_cta_position_help: 在对应帖子和后贴之间放置CTA横幅。
       post_cta_position_label: CTA横幅位置（在第几条帖子后面）
+      presence_enabled_help: 在话题横幅中显示带有用户头像的「N人正在浏览」指示器，依赖Realtime插件。不会展示已设置「不展示在线状态」的用户。
       presence_enabled_label: 显示正在阅览话题的用户
       search_v1_help: '显示内联搜索下拉框而非 V2 弹窗样式。'
       search_v1_label: '启用 V1 搜索栏样式'
@@ -178,6 +181,21 @@ ramon-avocado:
       threads_style_label: 启用会话式话题布局
       user_card_enabled_help: 当鼠标悬停在用户名或头像上时，显示Discourse风格的迷你用户卡片，包括个性签名、徽章、状态等内容。
       user_card_enabled_label: 启用用户悬停卡片
+  api:
+    discussion_not_found: 没有搜索到话题。
+    file_not_readable: 已上传文件不可读。
+    file_too_large: '文件太大（最大{max}）。'
+    invalid_discussion_id: 话题ID无效。
+    invalid_note: 备注无效。
+    invalid_reminder_date: 提醒日期无效。
+    no_file_uploaded: 尚无已上传文件。
+    note_too_long: 备注太长。
+    reminder_must_be_future: 提醒必需在未来时间。
+    reminder_too_far: 提醒时间距离当前太长。
+    svg_forbidden_declaration: SVG中包含有禁止的DOCTYPE和ENTITY声明内容。
+    svg_invalid: 上传文件必须是SVG。
+    svg_parse_failed: SVG无效：无法转换XML。
+    unsupported_image_type: 不支持的图片类型。
   forum:
     actions:
       share: 分享
@@ -185,6 +203,8 @@ ramon-avocado:
     bookmarks:
       edit: 编辑书签
       empty: 尚未保存任何话题为书签。
+      empty_posts: 尚未将任何帖子存为书签。
+      guest_prompt: 登陆后可讲话题存为书签并随时找到它们。
       modal_cancel: 取消
       modal_save: 保存
       modal_title: 书签收藏
@@ -206,8 +226,13 @@ ramon-avocado:
       reminder_week: 下周
       save: 存为书签
       title: 已存书签
+      toggle_error: 无法更新已存书签列表。请重试。
       unsave: 从已存书签中移除
       update_error: 无法更新书签收藏。请重试。
+    cakeday:
+      aria: 帐号周年纪念日
+      tooltip_plural: '帐号周年纪念起：{years}周年！'
+      tooltip_singular: 帐号周年纪念起：1周年！
     discussion:
       hero_image_add: 添加图片
       hero_image_remove: 移除图片
@@ -306,10 +331,13 @@ ramon-avocado:
     online_users:
       online: 在线
     post:
+      copy_code: 复制代码
       op_badge: 楼主
     post_cta:
       or: 或
       text: 喜欢正在看的内容？加入讨论吧！
+    presence:
+      reading_now: '{count}人正在阅读'
     profile:
       joined: '加入于{date}'
       member_since: '于{date}加入'
@@ -317,6 +345,7 @@ ramon-avocado:
       scroll_right: 向右滑动
     search:
       clear: 清空
+      close: 关闭（Esc）
       enter_search_term: 输入关键词以查找用户。
       esc_key: ESC键
       filtered_by: 筛选条件
@@ -346,6 +375,8 @@ ramon-avocado:
       tip: '提示：输入前缀 '
       tip_suffix: ' 可以根据标签进行筛选'
       title: 搜索
+    settings:
+      notify_bookmark_reminder_label: 书签提醒
     tag_picker:
       remove: 移除标签
     tags:
@@ -377,3 +408,11 @@ ramon-avocado:
       mentions_empty: 暂无提及。
       online: 在线
       posts_empty: 暂无回复。
+    user_card:
+      discussions: 话题
+      joined_label: 加入于
+      last_seen: '查阅{time}次'
+      message: 消息
+      online: 在线
+      posts: 回帖
+      view_profile: 查看用户资料

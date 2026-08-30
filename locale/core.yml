@@ -54,8 +54,8 @@ core:
         help: 开启维护模式，防止用户访问论坛。
         options:
           high: '深度维护。任何人都无法访问论坛（只能通过 config.php 开启）'
-          low: 普通维护。仅限管理员访问论坛。
-          none: 不启用维护模式
+          low: 常规维护。仅限管理员访问论坛。
+          none: 停止维护。
           safe: 安全模式。不加载任何扩展程序，且仅限管理员访问论坛。
         safe_mode_extensions: 启用扩展程序
         safe_mode_extensions_override_help: '此设置已被 <code>config.php</code> 文件中的 <code>safe_mode_extensions</code> 键值覆盖。(<b>{extensions}</b>)'
@@ -82,8 +82,8 @@ core:
         timeout_help: '单个任务的执行时间上限，默认为 60 秒。'
         timeout_label: 任务超时（秒）
       search:
-        cjk_mode_help: 如果论坛语言是汉语、日语或韩语，开启此项可优化搜索体验。一般数据库默认的以单词为搜索基本单元的方式，无法实现中日韩文本搜索。开启此设置，将会把搜索方式变更为字符截取，以实现中日韩文本搜索功能。但在超大型论坛中，这可能会降低性能。另一种性能更好的替代实现方式是，在数据库中配置中日韩文本解析器（例如，MySQL/MariaDB的N-Gram解析器）。
-        cjk_mode_label: 为中日韩语言优化搜索
+        cjk_mode_help: '如果论坛主要使用中文、日文或韩文，请开启此项。数据库默认搜索无法匹配中日韩文本中的部分内容，开启后将改用子串匹配。此模式在超大型论坛中速度较慢，可在数据库层配置支持中日韩文本的全文解析器（如 MySQL/MariaDB 的 ngram 解析器）来提升搜索性能。'
+        cjk_mode_label: 优化中日韩搜索
         driver_heading: '搜索驱动：{model}'
         driver_options:
           default: 默认数据库搜索
@@ -298,8 +298,8 @@ core:
         source: 源代码
         support: 支持
         website: 网站
-      no_permissions: 此扩展程序无可配置权限。
-      no_settings: 此扩展程序无设置项。
+      no_permissions: 无新增权限
+      no_settings: 无设置项
       open_modal: 打开设置
       permissions_title: 权限
       purge_button: 重置

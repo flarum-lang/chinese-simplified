@@ -477,11 +477,11 @@ core:
     invalid_username_message: 用户名只能包含字母、数字和连字符，且至少包含一个字母。
   email:
     abandoned_extensions:
-      body_intro: 下列为已弃用扩展：
+      body_intro: 以下您安装的扩展已停止维护：
       body_outro: 请检查这些扩展，并计划迁移到可用的替代扩展。
       line_no_replacement: '{package}（暂无可用的替代扩展）'
       line_with_replacement: '{package} （建议的替代扩展：{replacement}）'
-      subject: 注意：发现了已弃用扩展
+      subject: 扩展已停止维护
     activate_account:
       body: "有人（希望是您！）已使用此邮箱地址注册了 {forum}。\n\n如果是您本人，只需点击以下链接，您的账户即可激活：\n{url}\n\n如果您没有注册，请忽略此邮件。\n"
       subject: 账号激活

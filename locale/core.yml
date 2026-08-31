@@ -743,13 +743,13 @@ core:
       delete_error_message: '删除用户 <i>{username} ({email})</i> 失败'
       delete_success_message: '已删除用户 <i>{username} ({email})</i>'
       edit_button: '=> core.ref.edit'
-      toggle_dropdown_accessible_label: 用户下拉菜单开关
+      toggle_dropdown_accessible_label: 展开或收起用户操作菜单
     user_email_confirmation:
       alert_message: '=> core.ref.confirmation_email_sent'
       resend_button: 重新发送验证邮件
       sent_message: 发送
     welcome_hero:
-      hide: 隐藏欢迎横幅内容
+      hide: 隐藏欢迎横幅
   group:
     admin: 管理员
     admins: 管理组
@@ -763,7 +763,7 @@ core:
     alert:
       dismiss_a11y_label: 忽略警告
     assets_updated:
-      message: 此页面有新版本。
+      message: 检测到社区版本有更新，请刷新页面以保证功能的正常使用。
       reload_button: 刷新
     badge:
       hidden_tooltip: 隐藏
@@ -778,13 +778,13 @@ core:
       userListJoinDate: LLL
     debug_button: 调试
     dropdown:
-      toggle_dropdown_accessible_label: 下拉菜单开关
+      toggle_dropdown_accessible_label: 展开或收起更多菜单
     edit_user:
       activate_button: 激活用户
       email_heading: '=> core.ref.email'
       email_label: '=> core.ref.email'
       groups_heading: 用户组
-      nothing_available: 您无权编辑此用户。
+      nothing_available: 你没有权限编辑此用户。
       password_heading: '=> core.ref.password'
       password_label: '=> core.ref.password'
       set_password_label: 修改密码
@@ -793,19 +793,19 @@ core:
       username_heading: '=> core.ref.username'
       username_label: '=> core.ref.username'
     error:
-      circular_dependencies_message: '检测到循环依赖关系：{extensions}。正在中止操作。请禁用其中一个扩展，然后重试。'
+      circular_dependencies_message: '检测到循环依赖关系：{extensions}，已中止操作。请禁用其中一个扩展后重试。'
       db_error_message: 数据库查询失败。某个扩展程序可能与当前使用的数据库驱动不兼容。
       dependent_extensions_message: '无法禁用「{extension」。请先禁用以下依赖它的扩展：{extensions}'
       extension_initialiation_failed_message: '初始化「{extension}」失败，详情请查看浏览器控制台。'
-      extension_runtime_failed_message: '「{extension}」在运行时发生错误。详情请查看浏览器控制台。'
-      generic_cross_origin_message: 跨域请求时出现问题，请刷新页面后重试。
+      extension_runtime_failed_message: '「{extension}」在运行时发生错误，详情请查看浏览器控制台。'
+      generic_cross_origin_message: 跨域请求时出现问题，请刷新页面重试。
       generic_message: 糟糕，出错啦！请刷新页面重试。
       missing_dependencies_message: '无法启用「{extension}」，请先启用前置扩展「{extensions}」'
       network_message: 网络连接异常，请检查网络后重试。
-      not_found_message: 您请求的资源不存在。
+      not_found_message: 你请求的资源不存在。
       offline_message: 当前似乎处于离线状态，请检查网络连接后重试。
-      payload_too_large_message: 上传内容过大。
-      permission_denied_message: 您没有权限进行此操作。
+      payload_too_large_message: 请求负载过大。
+      permission_denied_message: 你没有权限执行此操作。
       rate_limit_exceeded_message: 您的操作太频繁，请稍后再试。
       render_failed_message: '抱歉，加载此内容时出错，请刷新页面重试。如果您是管理员，请查看 Flarum 的日志文件以获取更多信息。'
     gambits:

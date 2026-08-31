@@ -33,19 +33,19 @@ core:
         bisect:
           begin_button_text: 开始排查
           continue_button_text: 继续排查
-          help: 通过二分查找法，帮助您定位导致错误的扩展程序。使用此功能时，论坛会自动开启「普通维护模式」，直至排查结束。
-          label: 扩展程序排查
+          help: 通过二分查找法，帮助您定位导致错误的扩展。使用此功能时，论坛会自动开启「普通维护模式」，直至排查结束。
+          label: 排查扩展
         bisect_modal:
           description: "继续操作会自动开启「普通维护模式」，直至排查结束。在每一步中，系统都会禁用部分扩展程序，直到找到导致问题的扩展程序。因此，如果您发现论坛功能缺失，亦或是样式变化，这是正常现象，请勿担心。请不要关闭当前页面，每操作一步，请在新标签页尝试复现问题。如果不慎关闭当前页面，您可以随时返回这里。\n"
-          end_button: 关闭并跳转到扩展程序页面
+          end_button: 关闭并跳转到扩展页面
           issue_question: 问题仍然存在吗？
           issue_question_help: 请在尝试新标签页中复现问题，并根据实际情况选择回答。
           no_button: 不存在
-          result_description: "扩展程序排查完毕，论坛已退出维护模式。根据您在各步骤中的反馈，导致问题的扩展程序是：\n"
+          result_description: "扩展排查完毕，论坛已退出维护模式。根据您在各步骤中的反馈，导致问题的扩展是：\n"
           start_button: 开始排查
           steps_left: '剩余步骤：{steps}'
           stop_button: 停止排查
-          title: 扩展程序排查
+          title: 扩展排查
           total_steps: '排查大约需要 {steps} 步。'
           yes_button: 存在
         config_override:
@@ -65,7 +65,7 @@ core:
       queue:
         backoff_help: '任务失败时的重试间隔时间，默认为 0 秒。'
         backoff_label: 重试间隔（秒）
-        custom_driver: '当前使用由扩展程序提供的 {driver} 队列驱动。'
+        custom_driver: '当前使用由扩展提供的 {driver} 队列驱动。'
         memory_help: '队列进程的内存使用上限，达到上限后将自动重启。默认为 128 MB。'
         memory_label: 内存限制（MB）
         pause_all_label: 暂停所有队列
@@ -88,7 +88,7 @@ core:
         driver_options:
           default: 默认数据库搜索
         driver_text: 选择此内容的搜索驱动。
-        no_other_drivers: 暂无可用驱动，请先安装相关扩展程序。
+        no_other_drivers: 暂无可用驱动，请先安装相关扩展。
         section_label: 搜索驱动
       title: 高级设置
     announcements:
@@ -105,8 +105,8 @@ core:
       title: 公告
       view_all: '前往 discuss.flarum.org 查看全部'
     appearance:
-      allow_user_color_scheme_label: 允许用户自行选择配色模式
-      color_scheme_label: 默认配色模式
+      allow_user_color_scheme_label: 允许用户切换显示模式
+      color_scheme_label: 默认显示模式
       color_schemes:
         auto_mode_label: 跟随系统或用户设置
         dark_hc_mode_label: '=> core.ref.dark_hc_mode_label'
@@ -137,15 +137,15 @@ core:
       logo_heading: Logo
       logo_text: 上传图片，替代论坛名称展示在导航栏左侧。
       show_theme_selector_help: 允许用户在页头的主题控件中切换可用的颜色主题。
-      show_theme_selector_label: 允许快捷
+      show_theme_selector_label: 导航栏支持切换显示模式
       title: 外观
     basics:
       abandoned_extensions_heading: 停止维护的扩展程序
-      abandoned_extensions_notify_admins_label: 每周检查发现有扩展程序停止维护时，邮件通知管理员
+      abandoned_extensions_notify_admins_label: 每周检查停止维护清单，匹配时邮件通知管理员
       abandoned_extensions_sync_button: 立即检查
       abandoned_extensions_sync_error: 获取停止维护的扩展程序清单失败，请稍后重试。
-      abandoned_extensions_sync_success: '停止维护的扩展程序清单已更新，发现 {count} 个已安装的扩展程序停止维护。'
-      abandoned_extensions_text: 'Flarum 维护着一份<a>停止维护的扩展程序清单</a>。如果您安装的某些扩展程序已停止维护，管理页面会显示相应提示。'
+      abandoned_extensions_sync_success: '停止维护的扩展清单已更新，发现 {count} 个已安装。'
+      abandoned_extensions_text: '若安装了 <a>停止维护清单</a> 中的扩展，仪表盘中会有提示。'
       all_discussions_label: '=> core.ref.all_discussions'
       avatar_driver_heading: 用户头像
       avatar_driver_options:
@@ -282,14 +282,14 @@ core:
       smtp_heading: 'SMTP 服务'
       title: '=> core.ref.email'
     extension:
-      abandoned_no_replacement: 此扩展程序已停止维护，今后可能不再更新。
-      abandoned_with_replacement: '此扩展程序已被 {replacement} 替代，请考虑迁移。'
+      abandoned_no_replacement: 此扩展已停止维护，今后可能不再更新。
+      abandoned_with_replacement: '此扩展已被 {replacement} 替代，请考虑迁移。'
       configure_scopes: 添加标签配置
-      confirm_purge: '此操作将清除该扩展程序的所有数据库记录及相关资源，但不会卸载扩展；如需卸载，请通过 Composer 操作。确定要继续吗？'
-      database_driver_mismatch: 此扩展程序不支持您配置的数据库驱动。
+      confirm_purge: '此操作将清除该扩展的所有数据库记录及相关资源，但不会卸载扩展；如需卸载，请通过 Composer 操作。确定要继续吗？'
+      database_driver_mismatch: 此扩展不支持您配置的数据库驱动。
       deprecated: 已弃用
       disabled: 关闭
-      enable_to_see: 启用扩展程序即可查看和修改设置。
+      enable_to_see: 启用扩展以查看和修改设置。
       enabled: 开启
       info_links:
         discuss: 主题帖
@@ -305,7 +305,7 @@ core:
       purge_button: 重置
       readme:
         button_label: 说明
-        no_readme: '此扩展程序似乎没有 README 文件'
+        no_readme: '此扩展似乎没有 README 文件'
         title: '{extName} 文档'
       replaced: 替代
       reset_settings:
@@ -314,8 +314,8 @@ core:
         confirm_button: 重置
         title: 重置设置
         title_extension: '重置 {extensionTitle} 设置'
-        warning: 此操作无法撤销。扩展程序设置将恢复为默认值，数据库已保存的内容数据不受影响。
-      safe_mode_warning: 当前处于安全模式，无法加载扩展程序及其设置。
+        warning: 此操作无法撤销。扩展设置将恢复为默认值，数据库已保存的内容数据不受影响。
+      safe_mode_warning: 当前处于安全模式，无法加载扩展及其设置。
     extensions-health-widget:
       abandoned_no_replacement: 暂无替代扩展程序
       abandoned_with_replacement: '推荐替代：{replacement}'
@@ -330,11 +330,11 @@ core:
       section_suggested_heading: 建议
       section_suggested_help: 部分扩展程序会推荐其他扩展程序或软件包，安装后可获得额外功能或集成。
       suggested_by: '{extension} 推荐安装'
-      title: 扩展程序状态
+      title: 扩展状态
     failed_jobs:
       delete: 删除
       details: 详情
-      meta: '队列{queue} · 失败{time}次'
+      meta: '队列 {queue} · {time} 失败'
       none: 无失败任务。
       retry: 重试
       retry_all: 全部重试
@@ -369,7 +369,7 @@ core:
         language: 语言包
         moderation: 内容审核
         other: 其他
-        theme: 样式
+        theme: 主题样式
       dashboard_button: '=> core.admin.dashboard.title'
       dashboard_title: '=> core.admin.dashboard.description'
       email_button: '=> core.ref.email'
@@ -427,7 +427,7 @@ core:
       failed: 失败
       pending: 等待中
       refresh: 刷新
-      reserved: 运行中
+      reserved: 正在执行
       title: 队列
     search_source:
       general:
@@ -477,7 +477,7 @@ core:
     invalid_username_message: 用户名只能包含字母、数字和连字符，且至少包含一个字母。
   email:
     abandoned_extensions:
-      body_intro: 以下您安装的扩展已停止维护：
+      body_intro: 以下安装的扩展已停止维护：
       body_outro: 请检查这些扩展，并计划迁移到可用的替代扩展。
       line_no_replacement: '{package}（暂无可用的替代扩展）'
       line_with_replacement: '{package} （建议的替代扩展：{replacement}）'
@@ -584,7 +584,7 @@ core:
       session_dropdown_accessible_label: 会话下拉菜单开关
       settings_button: 账号设置
       sign_up_link: '=> core.ref.sign_up'
-      theme_switcher_accessible_label: 更换主题
+      theme_switcher_accessible_label: 更换显示模式
     index:
       all_discussions_link: '=> core.ref.all_discussions'
       cannot_start_discussion_button: 发帖功能已关闭
@@ -794,13 +794,13 @@ core:
       username_label: '=> core.ref.username'
     error:
       circular_dependencies_message: '检测到循环依赖关系：{extensions}。正在中止操作。请禁用其中一个扩展，然后重试。'
-      db_error_message: 数据库查询失败。这可能是由于扩展程序与数据库驱动程序不兼容导致的。
-      dependent_extensions_message: '无法停用「{extension}」，请先停用依赖扩展「{extensions}」'
-      extension_initialiation_failed_message: '初始化「{extension}」失败，详情信息请查看控制台。'
-      extension_runtime_failed_message: '{extension} 运行时遇到错误。请检查浏览器控制台以获取更多信息。'
+      db_error_message: 数据库查询失败。某个扩展程序可能与当前使用的数据库驱动不兼容。
+      dependent_extensions_message: '无法禁用「{extension」。请先禁用以下依赖它的扩展：{extensions}'
+      extension_initialiation_failed_message: '初始化「{extension}」失败，详情请查看浏览器控制台。'
+      extension_runtime_failed_message: '「{extension}」在运行时发生错误。详情请查看浏览器控制台。'
       generic_cross_origin_message: 跨域请求时出现问题，请刷新页面后重试。
       generic_message: 糟糕，出错啦！请刷新页面重试。
-      missing_dependencies_message: '无法启用「{extension}」，请先启用依赖扩展「{extensions}」'
+      missing_dependencies_message: '无法启用「{extension}」，请先启用前置扩展「{extensions}」'
       network_message: 网络连接异常，请检查网络后重试。
       not_found_message: 您请求的资源不存在。
       offline_message: 当前似乎处于离线状态，请检查网络连接后重试。
@@ -858,7 +858,7 @@ core:
       drawer_button: 打开导航抽屉
       pin_pane_button: 置顶话题列表
     notices:
-      bisecting: 正在运行扩展程序二分法排查，以确定哪个扩展导致了问题。
+      bisecting: 正在排查导致问题的扩展程序。
       bisecting_continue: 继续排查
       maintenance_mode_low: 正在维护。仅管理员可访问论坛。
       maintenance_mode_safe: 正在进行安全模式维护。仅管理员可访问论坛，且未加载任何扩展。

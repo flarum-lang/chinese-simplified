@@ -195,14 +195,14 @@ core:
         copy_success: 复制成功
         title: 系统信息
       io_error_message: 文件系统写入失败，请检查文件权限后重试，或改用命令行执行。
-      queue_paused_all_warning: 所有队列处理均被暂停。任务在恢复之前，会一直持续生成。
+      queue_paused_all_warning: 所有队列均已暂停处理，请留意任务积压风险。
       queue_paused_manage: 管理
-      queue_paused_warning: '队列处理已被暂停（队列：{queues}）。任务在恢复之前，会一直持续生成。'
+      queue_paused_warning: '以下队列已暂停处理：{queues}，请留意任务积压风险。'
       status:
         headers:
-          queue-driver: 队列驱动程序
-          scheduler-status: 任务调度程序
-          session-driver: 会话驱动程序
+          queue-driver: 队列驱动
+          scheduler-status: 任务调度
+          session-driver: 会话驱动
         scheduler:
           active: 运行中
           inactive: 未运行
@@ -211,11 +211,11 @@ core:
       toggle_advanced_page_button: 显示/隐藏高级设置
       tools_button: 工具
     database-driver-mismatch-warning:
-      detail: "Flarum 检测到当前实际使用 <code>{actual}</code> 数据库，这与 <code>config.php</code> 中配置的数据库驱动 <code>{configured}</code> 不一致。\n\n使用错误的数据库驱动可能引发难以察觉且难以排查的故障，请将 <code>config.php</code> 中 <code>database</code> 下的配置更正为 <code>'driver' => ''{actual}''</code>。详情请参阅 <link>Flarum 官方文档</link>。\n"
+      detail: "Flarum 检测到当前实际使用 <code>{actual}</code> 数据库，这与 <code>config.php</code> 中配置的数据库驱动 <code>{configured}</code> 不一致。\n\n使用错误的数据库驱动可能引发难以察觉、难以排查的故障，请将 <code>config.php</code> 中 <code>database</code> 下的配置更正为 <code>'driver' => ''{actual}''</code>。详情请参阅 <link>Flarum 官方文档</link>。\n"
       label: 数据库驱动配置不一致
     database-version-warning:
-      below-recommended-detail: "你的{server}服务器运行版本为<code>{version}</code>。该版本在支持范围之中，但Flarum推荐使用{server} <code>{recommended}</code>或更高版本，以获得最佳性能和维护支持。详见<link>Flarum文档</link> 。\n"
-      below-recommended-label: 数据库版本过时
+      below-recommended-detail: "当前 {server} 运行版本为 <code>{version}</code>。该版本可正常使用，但 Flarum 建议升级至 <code>{recommended}</code> 或更高版本，以获得最佳性能并接收长期维护。更多信息请参阅 <link>Flarum 文档</link>。\n"
+      below-recommended-label: 建议更新数据库
     debug-warning:
       detail: "启用 <code>debug</code> 模式时，Flarum 会在每次请求时重新构建 <code>JavaScript</code> 和 <code>CSS</code> 资源。页面警告和错误也会以弹窗形式展示详细信息，数据库凭据、环境变量等敏感信息可能会在此期间泄露。\n\n强烈建议在生产环境中禁用 <code>config.php</code> 中的 <code>debug</code> 模式。详情请参阅 <link>Flarum 官方文档</link>。\n"
       label: 调试模式已启用
@@ -307,7 +307,7 @@ core:
         button_label: 说明
         no_readme: '此扩展似乎没有 README 文件'
         title: '{extName} 文档'
-      replaced: 替代
+      replaced: 已被替代
       reset_settings:
         button: 重置设置
         cancel_button: 取消
@@ -317,18 +317,18 @@ core:
         warning: 此操作无法撤销。扩展设置将恢复为默认值，数据库已保存的内容数据不受影响。
       safe_mode_warning: 当前处于安全模式，无法加载扩展及其设置。
     extensions-health-widget:
-      abandoned_no_replacement: 暂无替代扩展程序
+      abandoned_no_replacement: 暂无替代扩展
       abandoned_with_replacement: '推荐替代：{replacement}'
       all_healthy: 扩展程序状态正常。
       section_abandoned_empty: 未发现问题
       section_abandoned_heading: 需要关注
       section_abandoned_help: 这些扩展程序已停止维护或可能存在兼容性问题，请考虑更新、替换或卸载。
-      section_disabled_empty: 所有扩展程序均已启用
+      section_disabled_empty: 所有扩展均已启用
       section_disabled_heading: 已禁用
-      section_disabled_help: 这些扩展已安装但尚未启用。请前往相应设置页面启用，如不再使用可考虑卸载。
+      section_disabled_help: 这些扩展已安装但未启用。如不再使用请考虑卸载。
       section_suggested_empty: 暂无建议
       section_suggested_heading: 建议
-      section_suggested_help: 部分扩展程序会推荐其他扩展程序或软件包，安装后可获得额外功能或集成。
+      section_suggested_help: 部分扩展程序会推荐其他扩展或软件包，安装后可获得额外功能或集成。
       suggested_by: '{extension} 推荐安装'
       title: 扩展状态
     failed_jobs:
@@ -345,7 +345,7 @@ core:
       search_placeholder: 搜索…
       search_role_label: 搜索
     loading:
-      title: 请稍后……
+      title: 请稍后…
     models:
       discussions: '=> core.ref.discussions'
       posts: '=> core.ref.posts'
@@ -361,10 +361,10 @@ core:
         analytics: 分析
         authentication: 身份验证
         core: 核心设置
-        discussion: 主题与内容
+        discussion: 讨论与内容
         feature: 功能
         formatting: 格式化
-        forum-widget: 论坛小组件
+        forum-widget: 小组件
         infrastructure: 基础设施
         language: 语言包
         moderation: 内容审核
@@ -376,17 +376,17 @@ core:
       email_title: '=> core.admin.email.description'
       permissions_button: '=> core.admin.permissions.title'
       permissions_title: '=> core.admin.permissions.description'
-      search_placeholder: 搜索扩展程序
+      search_placeholder: 搜索扩展
       userlist_button: '=> core.admin.users.title'
       userlist_title: '=> core.admin.users.description'
     permissions:
       allow_hide_own_posts_label: 允许删除自己的帖子
       allow_post_editing_label: 允许编辑帖子
-      allow_renaming_label: 允许修改自己的主题标题
+      allow_renaming_label: 允许更改自己的讨论标题
       create_access_token_label: 创建访问令牌
       create_heading: 发布
-      delete_discussions_forever_label: 永久删除主题
-      delete_discussions_label: 删除主题
+      delete_discussions_forever_label: 永久删除讨论
+      delete_discussions_label: 删除讨论
       delete_posts_forever_label: 永久删除帖子
       delete_posts_label: 删除帖子
       description: 全局或分标签设置用户的查看和操作权限
@@ -401,13 +401,13 @@ core:
       participate_heading: 参与
       post_without_throttle_label: 允许连续发帖
       read_heading: 访问
-      remove_scope_confirmation: '确定要移除 {scope} 的权限设置吗？'
+      remove_scope_confirmation: '确定要移除 {scope} 的权限设置？'
       remove_scope_label: '移除 {scope} 的权限设置'
-      rename_discussions_label: 修改主题标题
-      reply_to_discussions_label: 回复主题
+      rename_discussions_label: 更改讨论标题
+      reply_to_discussions_label: 回帖
       search_users_label: '=> core.ref.search_users'
       sign_up_label: 注册
-      start_discussions_label: 开始讨论
+      start_discussions_label: 发起讨论
       title: 权限
       view_forum_label: 浏览论坛（讨论和用户）
       view_hidden_groups_label: 查看隐藏的用户组徽章
@@ -427,7 +427,7 @@ core:
       failed: 失败
       pending: 等待中
       refresh: 刷新
-      reserved: 正在执行
+      reserved: 处理中
       title: 队列
     search_source:
       general:
@@ -441,11 +441,11 @@ core:
       upload_button: 选择图片...
     users:
       create_user_button: 新建用户
-      description: 您的论坛中所有用户的分页列表。
+      description: 论坛用户一览。
       grid:
         columns:
           display_name:
-            title: 外显昵称
+            title: 外显名称
           email:
             title: '=> core.ref.email'
             visibility_hide: 隐藏邮箱地址
@@ -465,7 +465,7 @@ core:
           username:
             profile_link_tooltip: '访问 {username} 的主页'
             title: '=> core.ref.username'
-        invalid_column_content: 非法
+        invalid_column_content: 数据异常
       search_placeholder: '=> core.ref.search_users'
       title: '=> core.ref.users'
       total_users: '用户数：{count}'
@@ -535,8 +535,8 @@ core:
       title_placeholder: 标题
     composer_edit:
       discard_confirmation: 更改尚未保存，确定要丢弃吗？
-      edited_message: 您的编辑已生效。
-      post_link: '发布于 {discussion} 的 #{number}'
+      edited_message: 您的修改已保存。
+      post_link: '编辑 {discussion} 的 #{number}'
       submit_button: '=> core.ref.save_changes'
       view_button: '=> core.ref.view'
     composer_reply:
@@ -547,61 +547,61 @@ core:
       view_button: '=> core.ref.view'
     discussion_controls:
       cannot_reply_button: 回复已关闭
-      cannot_reply_text: 您没有权限回复这篇讨论。
+      cannot_reply_text: 您没有权限回帖。
       delete_button: '=> core.ref.delete'
-      delete_confirmation: 确定要永久删除这个讨论？
+      delete_confirmation: 确定要永久删除这个讨论吗？
       delete_forever_button: '=> core.ref.delete_forever'
       log_in_to_reply_button: 登录以回复
       rename_button: '=> core.ref.rename'
       reply_button: '=> core.ref.reply'
       restore_button: '=> core.ref.restore'
-      toggle_dropdown_accessible_label: 讨论下拉菜单开关
+      toggle_dropdown_accessible_label: 展开或收起更多菜单
     discussion_list:
       empty_text: 这里空空如也...
       load_more_button: '=> core.ref.load_more'
       replied_text: '{username} 回复于 {ago}'
-      skip_discussion_list_pane: 跳过讨论列表面板
+      skip_discussion_list_pane: 跳过讨论列表
       started_text: '{username} 发布于 {ago}'
       total_replies_a11y_label: '{count, plural, one {# 条回复} other {# 条回复}}'
       unread_replies_a11y_label: '{count, plural, one {# 条未读} other {# 条未读}}，全部标记为已读。'
     forgot_password:
       dismiss_button: '=> core.ref.okay'
       email_placeholder: '=> core.ref.email'
-      email_sent_message: 如果您输入的电子邮件已在本站注册过，我们将向其发送一封含有重置密码链接的邮件。若未收到请检查垃圾箱。
-      not_found_message: 未找到使用该邮箱注册的用户。
+      email_sent_message: 如果你输入的邮箱已在本站注册，我们会向该邮箱发送一封包含密码重置链接的邮件。若一两分钟后仍未收到，请检查垃圾箱。
+      not_found_message: 此邮箱未注册。
       submit_button: 重置密码
-      text: 请输入账户的注册邮箱地址，我们将发送重设密码链接至该邮箱。
+      text: 请输入邮箱地址，我们会向你发送密码重置链接。
       title: 忘记密码
     header:
-      admin_button: 后台管理
+      admin_button: 管理后台
       back_to_index_tooltip: 返回讨论列表
-      locale_dropdown_accessible_label: 更改论坛语言
+      locale_dropdown_accessible_label: 切换界面语言
       log_in_link: '=> core.ref.log_in'
-      log_out_button: 退出登录
+      log_out_button: '=> core.ref.log_out'
       profile_button: 个人主页
       search_placeholder: 搜索社区
       search_role_label: 搜索社区
-      session_dropdown_accessible_label: 会话下拉菜单开关
-      settings_button: 账号设置
+      session_dropdown_accessible_label: 展开或收起我的选项菜单
+      settings_button: '=> core.ref.settings'
       sign_up_link: '=> core.ref.sign_up'
-      theme_switcher_accessible_label: 更换显示模式
+      theme_switcher_accessible_label: 切换显示模式
     index:
       all_discussions_link: '=> core.ref.all_discussions'
       cannot_start_discussion_button: 发帖功能已关闭
-      mark_all_as_read_confirmation: 确定要标记所有讨论为已读吗？
+      mark_all_as_read_confirmation: 确定要将所有讨论标记为已读吗？
       mark_all_as_read_tooltip: '=> core.ref.mark_all_as_read'
       meta_title_text: '=> core.ref.all_discussions'
       refresh_tooltip: '=> core.ref.refresh'
       skip_to_main_content: 跳至主体内容
       start_discussion_button: '=> core.ref.start_a_discussion'
-      toggle_sidenav_dropdown_accessible_label: 导航栏下拉菜单开关
+      toggle_sidenav_dropdown_accessible_label: 展开或收起导航栏菜单
     index_sort:
       az_button: '=> core.ref.title_az'
       latest_button: '=> core.ref.latest'
       newest_button: '=> core.ref.newest'
       oldest_button: '=> core.ref.oldest'
       relevance_button: '=> core.ref.relevance'
-      toggle_dropdown_accessible_label: 更改「全部讨论」排序
+      toggle_dropdown_accessible_label: 更改讨论列表排序方式
       top_button: '=> core.ref.top'
       za_button: '=> core.ref.title_za'
     log_in:
@@ -609,15 +609,15 @@ core:
       invalid_login_message: '=> core.ref.invalid_login_message'
       password_placeholder: '=> core.ref.password'
       remember_me_label: '=> core.ref.remember_me_label'
-      sign_up_text: '还没有帐户？ <a>立即注册</a>'
+      sign_up_text: 还没有账号？<a>立即注册</a>
       submit_button: '=> core.ref.log_in'
       title: '=> core.ref.log_in'
       username_or_email_placeholder: '=> core.ref.username_or_email_placeholder'
     notifications:
-      delete_all_confirm: 您确定要删除所有通知吗？此操作不可撤销
+      delete_all_confirm: 确定要删除所有通知吗？此操作不可撤销
       delete_all_tooltip: 删除所有通知
       discussion_renamed_text: '{username} 更改了标题'
-      empty_text: 没有新通知
+      empty_text: 暂无通知
       mark_all_as_read_tooltip: '=> core.ref.mark_all_as_read'
       mark_as_read_tooltip: 标记为已读
       title: '=> core.ref.notifications'
@@ -634,10 +634,10 @@ core:
       edit_button: '=> core.ref.edit'
       hide_confirmation: 确定要删除这个帖子吗？
       restore_button: '=> core.ref.restore'
-      toggle_dropdown_accessible_label: 帖子下拉菜单开关
+      toggle_dropdown_accessible_label: 展开或收起帖子更多菜单
     post_list:
-      empty_text: 这里似乎没有任何回复。
-      in_discussion_text: '在 {discussion} 中'
+      empty_text: 这里似乎是无主之地…
+      in_discussion_text: '于 {discussion}'
       load_more_button: '=> core.ref.load_more'
     post_scrubber:
       now_link: 最新回复
@@ -645,8 +645,8 @@ core:
       unread_text: '{count} 条未读'
       viewing_text: '{count, plural, one {{index} / {formattedCount} 条} other {{index} / {formattedCount} 条}}'
     post_stream:
-      discussion_renamed_old_tooltip: '原标题：「{old}」'
-      discussion_renamed_text: '{username} 于 {time} 将标题修改为 {new}。'
+      discussion_renamed_old_tooltip: '原标题「{old}」'
+      discussion_renamed_text: '{username} 于 {time} 更改标题为「{new}」'
       load_more_button: '=> core.ref.load_more'
       reply_placeholder: '=> core.ref.write_a_reply'
       time_lapsed_text: '{period} 后'
@@ -662,17 +662,17 @@ core:
       title: 更改讨论标题
     security:
       browser_on_operating_system: '{browser}（{os} 平台）'
-      cannot_terminate_current_session: 无法终止当前活动会话，请登出。
+      cannot_terminate_current_session: 无法终止当前会话，请直接退出登录。
       created: 创建时间
-      current_active_session: 当前活动会话
+      current_active_session: 当前会话
       developer_tokens_heading: 开发者令牌
-      empty_text: 无可用令牌。
+      empty_text: 尚未创建令牌。
       global_logout:
         heading: 全局登出
-        help_text: '清除当前 Cookie 会话、终止所有会话、撤销所有开发者令牌，并使一切验证邮箱或重置密码的链接失效。'
+        help_text: 退出当前登录并终止所有其他会话，同时撤销开发者令牌，已发出的邮箱验证和密码重置链接也将失效。
         log_out_button: '=> core.ref.log_out'
       hide_access_token: 隐藏令牌
-      last_activity: 最近活动
+      last_activity: 上次活动
       never: '=> core.ref.never'
       new_access_token_button: '=> core.ref.new_token'
       new_access_token_modal:
@@ -693,12 +693,12 @@ core:
       token_revoked: 令牌已撤销。
       token_title_placeholder: /
     settings:
-      account_heading: 帐户设置
+      account_heading: 账号设置
       change_email_button: '=> core.ref.change_email'
       change_password_button: '=> core.ref.change_password'
-      color_scheme_heading: 配色方案
+      color_scheme_heading: 显示模式
       color_schemes:
-        auto_mode_label: 系统偏好设置
+        auto_mode_label: 跟随系统
         dark_hc_mode_label: '=> core.ref.dark_hc_mode_label'
         dark_mode_label: '=> core.ref.dark_mode_label'
         light_hc_mode_label: '=> core.ref.light_hc_mode_label'
@@ -709,8 +709,8 @@ core:
       notification_checkbox_a11y_label_template: '通过 {method} 接收「{description}」通知'
       notifications_heading: '=> core.ref.notifications'
       notify_by_email_heading: '=> core.ref.email'
-      notify_by_web_heading: 通知
-      notify_discussion_renamed_label: 有人更改了我的讨论标题
+      notify_by_web_heading: 站内通知
+      notify_discussion_renamed_label: 有人更改我的讨论标题
       privacy_disclose_online_label: 公开我的在线状态
       privacy_heading: 隐私设置
       title: '=> core.ref.settings'
@@ -856,7 +856,7 @@ core:
       placeholder: 选择多个选项
     nav:
       drawer_button: 打开导航抽屉
-      pin_pane_button: 置顶话题列表
+      pin_pane_button: 固定讨论列表
     notices:
       bisecting: 正在排查导致问题的扩展程序。
       bisecting_continue: 继续排查
@@ -937,7 +937,7 @@ core:
     load_more: 加载更多
     loading: 正在加载…
     log_in: 登录
-    log_out: 退出
+    log_out: 退出登录
     mark_all_as_read: 全部已读
     never: 无
     new_token: 创建令牌
@@ -963,7 +963,7 @@ core:
     settings: 设置
     sign_up: 注册
     some_others: '{count, plural, one {# 人} other {# 人}}'
-    start_a_discussion: 开始讨论
+    start_a_discussion: 发起讨论
     title_az: 标题（顺序）
     title_za: 标题（倒序）
     top: 人气
@@ -1025,7 +1025,7 @@ core:
       username_or_email_placeholder: '=> core.ref.username_or_email_placeholder'
     log_out:
       log_out_button: '=> core.ref.log_out'
-      log_out_confirmation: '您确定要在 {forum} 上退出登录?'
+      log_out_confirmation: '确定要退出登录 {forum} 吗？'
       title: '=> core.ref.log_out'
     reset_password:
       confirm_password_label: '=> core.ref.confirm_password'

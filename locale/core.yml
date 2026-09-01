@@ -471,44 +471,44 @@ core:
       total_users: '用户数：{count}'
   api:
     invalid_filter_type:
-      must_be_numeric_message: '{filter} 查询条件必须是数值。'
-      must_not_be_array_message: '{filter} 查询条件不能是数组。'
-      must_not_be_multidimensional_array_message: '{filter} 查询条件不能是多维数组。'
-    invalid_username_message: 用户名只能包含字母、数字和连字符，且至少包含一个字母。
+      must_be_numeric_message: '查询条件 {filter} 必须是数值。'
+      must_not_be_array_message: '查询条件 {filter} 不能是数组。'
+      must_not_be_multidimensional_array_message: '查询条件 {filter} 不能是多维数组。'
+    invalid_username_message: 用户名只能使用字母、数字和连字符（-），并且至少要有一个字母。
   email:
     abandoned_extensions:
       body_intro: 以下安装的扩展已停止维护：
-      body_outro: 请检查这些扩展，并计划迁移到可用的替代扩展。
-      line_no_replacement: '{package}（暂无可用的替代扩展）'
-      line_with_replacement: '{package} （建议的替代扩展：{replacement}）'
-      subject: 扩展已停止维护
+      body_outro: 请检查这些扩展，并在有可替代方案时考虑迁移。
+      line_no_replacement: '{package}（暂无可用替代）'
+      line_with_replacement: '{package}（推荐替代：{replacement}）'
+      subject: 部分扩展已停止维护
     activate_account:
-      body: "有人（希望是您！）已使用此邮箱地址注册了 {forum}。\n\n如果是您本人，只需点击以下链接，您的账户即可激活：\n{url}\n\n如果您没有注册，请忽略此邮件。\n"
-      subject: 账号激活
+      body: "你正在使用此邮箱地址注册 {forum} 账号。\n\n请点击以下链接完成账号激活：\n{url}\n\n如果这不是你的操作，请忽略此邮件。\n"
+      subject: 激活你的新账号
     confirm_email:
-      body: "有人（希望是您！）已将在 {forum} 上的邮箱地址更改为此邮箱。\n\n如果是您本人，只需点击以下链接，您的邮箱即可确认：\n{url}\n\n如果这不是您本人，请忽略此邮件。\n"
-      subject: 确认邮箱地址
-    greeting: '嘿 {displayName}，'
+      body: "你正在将 {forum} 账号的邮箱地址更改为此邮箱。\n\n请点击以下链接完成新邮箱地址更换：\n{url}\n\n如果这不是你的操作，请忽略此邮件。\n"
+      subject: 确认新邮箱地址
+    greeting: '{displayName}，你好！'
     informational:
-      default_title: 信息
-      footer: '发送此邮件至 {userEmail} 是作为与您在 [{forumTitle}]({forumUrl}) 上的账户相关的通知服务。'
-      footer_plain: '发送此邮件至 {userEmail} 是作为与您在 {forumTitle} 上的账户相关的通知服务。'
+      default_title: 通知
+      footer: '你收到此邮件，是因为内容与你的 [{forumTitle}]({forumUrl}) 账号相关。'
+      footer_plain: '你收到此邮件，是因为内容与你的 {forumTitle} 账号相关。'
     notification:
       default_title: 通知
       footer:
-        main_text: '发送此邮件至 {email} 是因为您订阅了 [{forumTitle}]({forumUrl}) 上的 “{type}” 通知。'
-        main_text_plain: '发送此邮件至 {email} 是因为您订阅了 {forumTitle} 上的 “{type}” 通知。'
-        settings_text: '[在此]({settingsLink})管理您的通知设置。'
-        settings_text_plain: '在此管理您的通知设置：{settingsLink}'
-        unsubscribe_text: '如果您想停止接收此类通知，请 [在此取消订阅]({unsubscribeLink})。'
-        unsubscribe_text_plain: '如果您想停止接收此类通知，请在此取消订阅：{unsubscribeLink}'
+        main_text: '你收到此邮件，是因为你已订阅 [{forumTitle}]({forumUrl}) 的“{type}”通知。'
+        main_text_plain: '你收到此邮件，是因为你已订阅 {forumTitle} 的“{type}”通知。'
+        settings_text: '你可以 [在此]({settingsLink}) 管理通知设置。'
+        settings_text_plain: '你可以在此管理通知设置：{settingsLink}'
+        unsubscribe_text: '如不想再接收此类通知，可 [在此退订]({unsubscribeLink})。'
+        unsubscribe_text_plain: '如不想再接收此类通知，可在此退订：{unsubscribeLink}'
     reset_password:
-      body: "有人（希望是您！）提交了重置您在 {forum} 上账户密码的请求。\n\n如果是您本人，请点击以下链接重置密码：\n{url}\n\n如果您不想更改密码，只需忽略此邮件即可。\n"
+      body: "你正在重置 {forum} 账号的密码。\n\n请点击以下链接完成密码重置：\n{url}\n\n如果这不是你的操作，请忽略此邮件。\n"
       subject: '=> core.ref.reset_your_password'
     send_test:
-      body: "这是一封测试邮件，用于确认您的 Flarum 邮件配置是否工作正常。\n\n如果是您发送的，此邮件表示您的配置工作正常！\n\n如果这不是您本人，请忽略此邮件。\n"
+      body: "这是一封测试邮件，用于确认 Flarum 的邮件配置是否正常工作。\n\n当你看到这句话，就说明配置已成功生效。\n\n如果不是你的操作，请忽略此邮件。\n"
       subject: 'Flarum 邮件测试'
-    signoff: '{forumTitle} 团队'
+    signoff: '{forumTitle}'
   forum:
     change_email:
       confirm_password_placeholder: '=> core.ref.confirm_password'
@@ -913,9 +913,9 @@ core:
     color: 颜色
     confirm_email: 确认邮箱
     confirm_password: 确认密码
-    confirmation_email_sent: '账号激活邮件已发送至 {email}，请激活账号，若未收到请检查垃圾箱。'
+    confirmation_email_sent: '激活邮件已发送至 {email}，若未收到请检查垃圾箱。'
     custom_footer_text: '添加显示于页面底部的 HTML 代码。'
-    custom_footer_title: 编辑自定义页脚
+    custom_footer_title: 自定义页脚
     custom_header_text: '添加显示于页面顶部、位于 Flarum 默认页眉上方的 HTML 代码。'
     custom_header_title: 编辑自定义页眉
     dark_hc_mode_label: 深色高对比度模式
@@ -1002,20 +1002,20 @@ core:
       csrf_token_mismatch_return_link: 请返回再试一次
       invalid_confirmation_token: 验证链接已使用或无效。
       maintenance_mode_link: 管理员登录
-      maintenance_mode_message: 论坛目前正在维护。请稍后再试。
-      maintenance_mode_title: 维护
-      method_not_allowed: 此页面不支持该请求方法。
-      not_authenticated: 您没有权限访问此页面，请登录后再试。
-      not_found: 您访问的页面不存在。
-      not_found_return_link: '返回至 {forum}'
-      permission_denied: 您没有权限访问此页面。
-      unknown: 加载页面时出错，请检查日志。
+      maintenance_mode_message: 论坛正在维护中，晚点再来看看吧。
+      maintenance_mode_title: 维护中
+      method_not_allowed: 此页面不支持该请求方式。
+      not_authenticated: 你没有权限访问此页面，请登录后再试。
+      not_found: 你访问的页面不存在。
+      not_found_return_link: '返回 {forum}'
+      permission_denied: 你没有权限访问此页面。
+      unknown: 出了点岔子，页面暂时无法加载。
     index:
       all_discussions_heading: '=> core.ref.all_discussions'
       next_page_button: '=> core.ref.next_page'
       previous_page_button: '=> core.ref.previous_page'
     layout:
-      skip_to_content: 跳至内容
+      skip_to_content: 跳至主要内容
     log_in:
       invalid_login_message: '=> core.ref.invalid_login_message'
       password_placeholder: '=> core.ref.password'
@@ -1025,7 +1025,7 @@ core:
       username_or_email_placeholder: '=> core.ref.username_or_email_placeholder'
     log_out:
       log_out_button: '=> core.ref.log_out'
-      log_out_confirmation: '确定要退出登录 {forum} 吗？'
+      log_out_confirmation: '确定要登出 {forum} 吗？'
       title: '=> core.ref.log_out'
     reset_password:
       confirm_password_label: '=> core.ref.confirm_password'
@@ -1034,9 +1034,9 @@ core:
       title: '=> core.ref.reset_your_password'
     unsubscribe_email:
       confirm_button: 确认
-      confirm_message: '您已请求取消订阅来自 {forumTitle} 的 “{type}” 邮件通知。'
-      immediate_helptext: 确认后，您将立即取消订阅。
-      invalid_message: '此取消订阅链接无效或已被使用。如需更改来自 {forumTitle} 的邮件通知，请 [检查您的设置]({settingsLink})。'
-      return_to_forum: '返回到 {forumTitle}'
-      success_message: '您已成功取消订阅来自 {forumTitle} 的 “{type}” 通知。如果您希望再次接收，请 [更新您的设置]({settingsLink})。'
-      title: 退订确认
+      confirm_message: '你即将取消接收来自 {forumTitle} 的“{type}”邮件通知。'
+      immediate_helptext: 确认后立即退订。
+      invalid_message: '此退订链接无效或已被使用。如需调整来自 {forumTitle} 的邮件通知，请 [查看你的设置]({settingsLink})。'
+      return_to_forum: '返回 {forumTitle}'
+      success_message: '你已成功退订来自 {forumTitle} 的“{type}”邮件通知。如需再次接收，请 [更新你的设置]({settingsLink})。'
+      title: 确认退订

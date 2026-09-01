@@ -988,17 +988,17 @@ core:
       title: 管理后台
     confirm_email:
       submit_button: '=> core.ref.confirm_email'
-      text: 点击下方按钮确认您的邮箱。
+      text: 点击下方按钮确认你的邮箱。
       title: '=> core.ref.confirm_email'
     content:
-      javascript_disabled_message: '请使用更现代的浏览器并启用 JavaScript 以获得最佳浏览体验。'
+      javascript_disabled_message: '为获得最佳浏览体验，请使用现代浏览器并启用 JavaScript。'
       load_error_message: 加载论坛时出错，请强制刷新页面重试。
       loading_text: '=> core.ref.loading'
     discussion:
       next_page_button: '=> core.ref.next_page'
       previous_page_button: '=> core.ref.previous_page'
     error:
-      csrf_token_mismatch: 您已经发呆很长时间了。
+      csrf_token_mismatch: 你离开得有点久，当前会话已经失效。
       csrf_token_mismatch_return_link: 请返回再试一次
       invalid_confirmation_token: 验证链接已使用或无效。
       maintenance_mode_link: 管理员登录

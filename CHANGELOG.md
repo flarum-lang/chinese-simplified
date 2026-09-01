@@ -13,13 +13,20 @@ CHANGELOG
 
 **新增翻译**:
 
+* [`asyntai/flarum-chatbot`](https://github.com/asyntai/flarum-chatbot)
 * [`blazite/flarum-turnstile`](https://github.com/flectar/flarum-ext-turnstile)
 * [`club-1/flarum-ext-content-permissions`](https://github.com/club-1/flarum-ext-content-permissions)
 * [`dalez/flarum-identityagent`](https://github.com/zDaleZ/flarum-identityagent)
 * [`datlechin/flarum-ai-summarize`](https://github.com/datlechin/flarum-ai-summarize)
 * [`datlechin/flarum-ai`](https://github.com/datlechin/flarum-ai)
+* [`datlechin/flarum-passkey`](https://github.com/datlechin/flarum-passkey)
+* [`ekumanov/flarum-ext-inline-audio`](https://github.com/ekumanov/flarum-ext-inline-audio)
+* [`ekumanov/flarum-ext-new-posts-notice`](https://github.com/ekumanov/flarum-ext-new-posts-notice)
+* [`ernestdefoe/aurora`](https://github.com/ernestdefoe/aurora)
+* [`flarum/audit`](https://github.com/flarum/audit)
 * [`flarum/gdpr`](https://github.com/flarum/gdpr)
 * [`flectar/flarum-turnstile`](https://github.com/flectar/flarum-ext-turnstile)
+* [`fof/author-change`](https://github.com/FriendsOfFlarum/author-change)
 * [`fof/badges`](https://github.com/FriendsOfFlarum/badges)
 * [`fof/blog`](https://github.com/FriendsOfFlarum/blog)
 * [`fof/discussion-templates`](https://github.com/FriendsOfFlarum/discussion-templates)

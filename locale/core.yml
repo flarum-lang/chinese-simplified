@@ -136,7 +136,7 @@ core:
       logo_dark_mode_text: '上传更适合在深色模式下展示的 Logo 图片。'
       logo_heading: Logo
       logo_text: 上传图片，替代论坛名称展示在导航栏左侧。
-      show_theme_selector_help: 允许用户在页头的主题控件中切换可用的颜色主题。
+      show_theme_selector_help: 允许用户在导航栏切换显示模式。
       show_theme_selector_label: 导航栏支持切换显示模式
       title: 外观
     basics:
@@ -943,14 +943,14 @@ core:
     new_token: 创建令牌
     newest: 新鲜出炉
     next_page: 下一页
-    notifications: 通知中心
+    notifications: 通知
     okay: 确定
-    oldest: 陈年旧贴
+    oldest: 陈年讨论
     password: 密码
     posts: 回复
     previous_page: 上一页
     refresh: 刷新
-    relevance: 相关推荐
+    relevance: 最相关
     remember_me_label: 记住我的登录状态
     remove: 移除
     rename: 重命名
@@ -964,9 +964,9 @@ core:
     sign_up: 注册
     some_others: '{count, plural, one {# 人} other {# 人}}'
     start_a_discussion: 发起讨论
-    title_az: 标题（顺序）
+    title_az: 标题（正序）
     title_za: 标题（倒序）
-    top: 人气
+    top: 最多回复
     username: 用户名
     username_or_email_placeholder: 用户名或邮箱
     users: 用户

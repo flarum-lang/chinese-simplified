@@ -6,8 +6,8 @@ flarum-approval:
   admin:
     permissions:
       approve_posts_label: 审核帖子
-      reply_without_approval_label: 无需审核回复
-      start_discussions_without_approval_label: 无需审核讨论
+      reply_without_approval_label: 回复无需审核
+      start_discussions_without_approval_label: 发起讨论无需审核
   forum:
     badge:
       awaiting_approval_tooltip: '=> flarum-approval.ref.awaiting_approval'
@@ -21,6 +21,6 @@ flarum-audit:
   lib:
     browser:
       discussion:
-        approved: '已通过 {discussion}'
+        approved: '通过审核：{discussion}'
       post:
-        approved: '已批准 {postuser} 在 {discussion} 中的 {post}'
+        approved: '通过审核：{postuser} 在 {discussion} 中的 {post}'

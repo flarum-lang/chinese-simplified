@@ -6,12 +6,12 @@ flarum-akismet:
   admin:
     akismet_settings:
       api_key_label: 'API 密钥'
-      delete_blatant_spam_help: 直接删除检测到问题的内容
+      delete_blatant_spam_help: 'Akismet 判定为明显垃圾的帖子将直接删除，而非仅标记'
       delete_blatant_spam_label: 自动删除问题内容
-      invalid_api_key_message: 'Akismet 拒绝了这个 API 密钥。请检查你的 Akismet 账户之后再试。'
+      invalid_api_key_message: 'Akismet 无法验证此 API 密钥，请检查账号中的密钥是否正确。'
       title: 'Akismet 设置'
     permissions:
-      bypass_akismet: '跳过 Akismet 内容审查'
+      bypass_akismet: '跳过 Akismet 内容检查'
   forum:
     post:
       akismet_flagged_text: 'Akismet 标记为垃圾内容'

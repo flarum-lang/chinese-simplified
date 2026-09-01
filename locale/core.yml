@@ -929,11 +929,11 @@ core:
     extensions: 扩展程序
     generic_confirmation_message: 确定要继续吗？此操作无法撤销。
     icon: 图标
-    icon_text: '请输入任何 <a>Font Awesome</a> 图标类名，<em>包括</em>前缀（例如 <code>fas fa-flag</code> 或 <code>fa-solid fa-flag</code>）。'
-    invalid_login_message: 您的登录信息不正确。
+    icon_text: '请输入完整的 <a>FontAwesome</a> 图标类名，<em>不要省略</em>样式前缀，例如 <code>fas fa-flag</code> 或 <code>fa-solid fa-flag</code>。'
+    invalid_login_message: 登录信息有误。
     latest: 最新
-    light_hc_mode_label: 浅色高对比度模式
-    light_mode_label: 浅色模式
+    light_hc_mode_label: 浅色高对比度
+    light_mode_label: 浅色
     load_more: 加载更多
     loading: 正在加载…
     log_in: 登录

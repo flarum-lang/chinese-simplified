@@ -14,6 +14,7 @@ CHANGELOG
 **新增翻译**:
 
 * [`anto0102/mailguard`](https://github.com/anto0102/MailGuard)
+* [`asyntai/flarum-chatbot`](https://github.com/asyntai/flarum-chatbot)
 * [`captchala/flarum`](https://github.com/Captcha-La/captchala-flarum)
 * [`dashzeveg/flarum-ads-manager`](https://github.com/dashzeveg/flarum-ads-manager)
 * [`dashzeveg/flarum-custom-head`](https://github.com/dashzeveg/flarum-custom-head)
@@ -22,6 +23,7 @@ CHANGELOG
 * [`ekumanov/flarum-ext-forum-widgets`](https://github.com/ekumanov/flarum-ext-forum-stats-widget)
 * [`ekumanov/flarum-ext-inline-audio`](https://github.com/ekumanov/flarum-ext-inline-audio)
 * [`ekumanov/flarum-ext-new-posts-notice`](https://github.com/ekumanov/flarum-ext-new-posts-notice)
+* [`ernestdefoe/aurora`](https://github.com/ernestdefoe/aurora)
 * [`ernestdefoe/calendar`](https://github.com/ernestdefoe/calendar)
 * [`ernestdefoe/seo`](https://github.com/ernestdefoe/seo)
 * [`ernestdefoe/theme-toggle`](https://github.com/ernestdefoe/theme-toggle)
@@ -31,6 +33,7 @@ CHANGELOG
 * [`flarum/messages`](https://github.com/flarum/messages)
 * [`flarum/realtime`](https://github.com/flarum/realtime)
 * [`flectar/flarum-turnstile`](https://github.com/flectar/flarum-ext-turnstile)
+* [`fof/author-change`](https://github.com/FriendsOfFlarum/author-change)
 * [`fof/badges`](https://github.com/FriendsOfFlarum/badges)
 * [`fof/blog`](https://github.com/FriendsOfFlarum/blog)
 * [`fof/categories`](https://github.com/FriendsOfFlarum/categories)

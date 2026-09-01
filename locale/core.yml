@@ -916,8 +916,8 @@ core:
     confirmation_email_sent: '激活邮件已发送至 {email}，若未收到请检查垃圾箱。'
     custom_footer_text: '添加显示于页面底部的 HTML 代码。'
     custom_footer_title: 自定义页脚
-    custom_header_text: '添加显示于页面顶部、位于 Flarum 默认页眉上方的 HTML 代码。'
-    custom_header_title: 编辑自定义页眉
+    custom_header_text: '添加显示于页面顶部、位于 Flarum 导航栏上方的 HTML 代码。'
+    custom_header_title: 自定义页眉
     dark_hc_mode_label: 深色高对比度模式
     dark_mode_label: 深色模式
     delete: 删除

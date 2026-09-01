@@ -113,6 +113,9 @@ flarum-audit:
         restored: '已恢复 {postuser} 在 {discussion} 中的 {post}'
         revised: '修改了{postuser}在{discussion}中的{post}'
         user_changed: '已将{post}的所有者从{old_user}更改为了 {new_user}'
+      queue:
+        paused: '{queue} 的队列处理已暂停（{connection}）'
+        resumed: '{queue} 的队列处理已恢复（{connection}）'
       refresh: 刷新
       setting_changed: '已更改设置{key}'
       setting_changed_with_values: '已将设置{key}的值从{old_value}更改为{new_value}'

@@ -5,9 +5,9 @@
 flarum-emoji:
   admin:
     settings:
-      cdn_help: '示例：https://cdn.jsdelivr.net/gh/jdecked/twemoji@[version]/assets/，当前版本为：{version}'
+      cdn_help: '示例：https://cdn.jsdelivr.net/gh/jdecked/twemoji@[version]/assets/。当前版本：{version}'
       cdn_label: 'CDN 镜像地址'
   forum:
     composer:
       emoji_tooltip: 表情
-      type_to_search_text: '搜索 Emoji 表情'
+      type_to_search_text: 继续输入以搜索表情

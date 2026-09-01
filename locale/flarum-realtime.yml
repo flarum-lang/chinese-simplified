@@ -27,7 +27,8 @@ flarum-realtime:
       discussion-list-new-activity: '{count, plural, one {显示 # 个更新的讨论} other {显示 # 个更新的讨论}}'
       discussion-list-new-activity-with-auto-release: '{count, plural, one {# 个讨论} other {# 个讨论}}已有更新，将在 {releaseTimeout} 秒内发布。点击立即显示。'
     typing-indicator:
-      anonymous-user: '[匿名]'
+      anonymous-user: '[隐藏]'
+      hidden-user: '{username}（已隐藏）'
       no-activity: 没有人正在输入
       people-are-typing: '{number, plural, one {# 人正在输入} other {# 人正在输入}}'
       users-are-typing: '{count, plural, one {{users} 正在输入} other {{users}{others, plural, =1 { 和另外 # 人} =0 {} other { 和另外 # 人}} 正在输入}}'

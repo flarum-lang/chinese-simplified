@@ -12,10 +12,10 @@ flarum-mentions:
   email:
     group_mentioned:
       html:
-        body: '{mentioner_display_name} 在 [{title}]({url}) 中提及了您所属的群组。'
+        body: '{mentioner_display_name} 在「[{title}]({url})」中提及了你所在的用户组。'
       plain:
-        body: "{mentioner_display_name} 在讨论 {title} 中提及了您所属的群组。\n\n{url}\n\n---\n\n{content}\n"
-      subject: '{mentioner_display_name} 在 {title} 中提到了您所属的群组'
+        body: "{mentioner_display_name} 在「{title}」中提及了你所在的用户组。\n\n{url}\n\n---\n\n{content}\n"
+      subject: '{mentioner_display_name} 提及了你所在的用户组 · {title}'
     post_mentioned:
       html:
         body: '{replier_display_name} 回复了你在「[{title}]({url})」中的帖子（#{post_number}）。'
@@ -24,10 +24,10 @@ flarum-mentions:
       subject: '{replier_display_name} 回复了你的帖子 · {title}'
     user_mentioned:
       html:
-        body: '{mentioner_display_name} 在 [{title}]({url}) 的回复中提及了您。'
+        body: '{mentioner_display_name} 在「[{title}]({url})」的帖子中提及了你。'
       plain:
-        body: "{mentioner_display_name} 在讨论 {title} 的帖子中提及了您。\n\n{url}\n\n---\n\n{content}\n"
-      subject: '{mentioner_display_name} 在「{title}」中提及了你'
+        body: "{mentioner_display_name} 在「{title}」的帖子中提及了你。\n\n{url}\n\n---\n\n{content}\n"
+      subject: '{mentioner_display_name} 提及了你 · {title}'
   forum:
     composer:
       mention_tooltip: 提及用户、用户组或帖子
@@ -62,5 +62,5 @@ flarum-mentions:
     gambits:
       posts:
         mentioned:
-          hint: '被提及用户的 ID 或用户名'
+          hint: '被提及用户 ID 或用户名'
           key: 提及

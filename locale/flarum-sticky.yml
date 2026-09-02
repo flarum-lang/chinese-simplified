@@ -6,31 +6,31 @@ flarum-audit:
   lib:
     browser:
       discussion:
-        stickied: '置顶讨论 {discussion}'
-        unstickied: '取消置顶讨论 {discussion}'
+        stickied: '置顶了讨论 {discussion}'
+        unstickied: '取消置顶了讨论 {discussion}'
 flarum-sticky:
   admin:
     permissions:
       sticky_discussions_label: 置顶讨论
     settings:
-      enable_display_excerpt: 当置顶讨论未读时显示第一条帖子的摘录
-      only_sticky_unread_discussions_help: 在「全部讨论」页面，未读的置顶讨论将固定在顶部，已读的置顶讨论则按常规顺序进行排序。
+      enable_display_excerpt: 置顶讨论未读时显示首帖摘要
+      only_sticky_unread_discussions_help: 在「全部讨论」页面中，未读的置顶讨论会显示在顶部，已读的置顶讨论则按正常顺序排列。
       only_sticky_unread_discussions_label: 仅置顶未读讨论
-      pin_sticky_on_all_discussions_help: 默认启用。启用时，置顶的话题固定展示在所有话题页面的顶部。禁用时，置顶的话题将根据最新操作，展示在其应有的位置。标签页面将忽略此设置，始终将置顶话题展示在页面顶部。
-      pin_sticky_on_all_discussions_label: 将置顶的话题固定在所有话题页面顶部
+      pin_sticky_on_all_discussions_help: 默认启用。始终在「全部讨论」页面的顶部显示置顶讨论。关闭此项，则按最新回帖时间正常排列。标签页置顶讨论始终显示在页面顶部，不受此设置影响。
+      pin_sticky_on_all_discussions_label: 置顶讨论
   forum:
     badge:
-      sticky_tooltip: 置顶
+      sticky_tooltip: '=> flarum-sticky.ref.sticky'
     discussion_controls:
       sticky_button: '=> flarum-sticky.ref.sticky'
       unsticky_button: 取消置顶
     post_stream:
-      discussion_stickied_text: '{username} 于 {time} 置顶此帖。'
-      discussion_unstickied_text: '{username} 于 {time} 取消置顶本帖。'
+      discussion_stickied_text: '{username} 于 {time} 置顶了讨论'
+      discussion_unstickied_text: '{username} 于 {time} 取消置顶讨论'
   lib:
     gambits:
       discussions:
         sticky:
-          key: sticky
+          key: 置顶
   ref:
     sticky: 置顶

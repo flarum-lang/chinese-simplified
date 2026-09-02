@@ -13,46 +13,46 @@ flarum-extension-manager:
         token_label: 令牌
         type_label: 认证类型
         unchanged_token_placeholder: （未修改）
-      delete_confirmation: 确定要删除此认证吗？
-      delete_label: 删除认证
-      edit_label: 编辑认证
+      delete_confirmation: 确定要删除此认证方式吗？
+      delete_label: 删除认证方式
+      edit_label: 编辑认证方式
       fields:
-        host: 主机
+        host: 主机地址
         token: 令牌
-      no_auth_methods_configured: 暂无认证配置。可选，您可以在此配置认证方式以从私有仓库安装扩展程序。
-      remove_button_label: 移除认证
-      title: 认证
+      no_auth_methods_configured: 尚未配置认证方式。如需从私有仓库安装软件包，请在此配置。
+      remove_button_label: 移除认证方式
+      title: 认证方式
       types:
-        bearer: 'HTTP 承载令牌'
+        bearer: 'HTTP Bearer'
         github-oauth: 'GitHub OAuth'
         gitlab-oauth: 'GitLab OAuth'
         gitlab-token: 'GitLab 令牌'
     composer:
       add_repository_label: 添加仓库
-      delete_repository_confirmation: 你确定要删除这个仓库吗？所有从这个仓库安装的扩展都会被移除。
+      delete_repository_confirmation: 确定要删除此仓库吗？从此仓库安装的所有扩展程序都将被移除。
       delete_repository_label: 删除仓库
       edit_repository_label: 编辑仓库
       minimum_stability:
-        help: 允许安装的包类型。如非必要，请不要修改此设置。
+        help: 设置允许安装的软件包版本类型。如非必要，请勿修改此设置。
         label: 稳定性约束
         options:
-          alpha: 'Alpha 测试'
-          beta: 'Beta 测试'
-          dev: 开发版本
-          rc: 候选版本
-          stable: 稳定（推荐）
+          alpha: 'Alpha 测试版'
+          beta: 'Beta 测试版'
+          dev: 开发版
+          rc: 候选发布版
+          stable: 稳定版（推荐）
       repositories:
         add_modal:
           name_label: 名称
           submit_button: 提交
           type_label: 类型
           url: URL
-        help: "添加第三方公共或私有仓库。请不要添加不受信任的仓库，以免你的服务器遭受恶意代码执行。\n"
+        help: "添加第三方公共或私有仓库。此为高级功能，请添加可信任的仓库，以免服务器被执行恶意代码。\n"
         label: 仓库
         types:
-          composer: composer
-          path: 路径
-          vcs: vcs
+          composer: 'Composer 仓库或软件源'
+          path: 本地路径
+          vcs: 版本控制仓库（VCS）
       title: Composer
     exceptions:
       composer_command_failure: '执行失败。请前往 storage/logs/composer 查看 Composer 日志。'

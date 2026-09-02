@@ -55,15 +55,15 @@ flarum-gdpr:
       allow_deletion: 允许删除处理
       allow_deletion_help: 更加严格的处理方式。采用此方式时，所有帖子和回复都会被删除，用户也将从数据库中移除。请谨慎使用。
       default_anonymous_username: 匿名化用户的默认用户名
-      default_anonymous_username_help: '使用自定义模板替换匿名化用户的用户名，末尾会自动拼接匿名化请求的 ID，效果：<code>匿名用户123</code>。'
-      default_erasure: 默认抹除请求
-      default_erasure_help: 申请抹除账号的默认类型是？
+      default_anonymous_username_help: '用户被匿名化后，其用户名将替换为此值，并添加匿名化请求 ID 后缀，例如 <code>已注销123</code>。'
+      default_erasure: 默认处理方式
+      default_erasure_help: 处理数据擦除请求时的默认方案。
       default_erasure_options:
         anonymization: 匿名化
         deletion: 删除
       gdpr_page:
-        help_text: '重要！请先前往 GDPR 概览页面了解数据类型和数据处理规范等内容，然后再配置数据管控方式。'
-        title: 数据管控
+        help_text: '重要：请先了解目前集成了哪些数据，以及这些数据在匿名化和删除时会如何处理。前往 GDPR 数据概览，可以查看各类数据的处理方式，以及哪些扩展程序已注册相应的数据处理方式。'
+        title: 数据集成与处理方式
     userlist:
       columns:
         user_actions:
@@ -136,20 +136,20 @@ flarum-gdpr:
     data:
       avatar:
         delete_description: 从文件系统删除用户头像。
-        export_description: 从文件系统获取用户头像，并导出。
-      default_user_action: 无操作，由默认用户表数据处理。
+        export_description: 导出文件系统中的用户头像。
+      default_user_action: 无额外操作，由默认的用户表处理机制处理。
       discussions:
-        export_description: 导出用户发起的所有讨论帖，数据仅限于标题和创建日期。
+        export_description: 导出用户发起的所有讨论，仅包含标题和创建日期。
       forum:
         export_description: 导出论坛名称、URL、用户名、邮箱和当前日期。
-      no_action: 不采取操作。
+      no_action: 不执行任何操作。
       posts:
-        anonymize_description: '删除用户发布的所有帖子中的 IP 地址信息。'
+        anonymize_description: '移除用户所有帖子中的 IP 地址。'
         delete_description: 删除用户发布的所有帖子。
-        export_description: '导出用户发表的所有帖子，数据仅限于文本内容、创建日期、IP 地址和讨论帖 ID。'
+        export_description: '导出用户发布的所有帖子，仅包含内容、创建日期、IP 地址和讨论 ID。'
       tokens:
         delete_description: 删除用户创建的所有令牌。
-        export_description: 导出用户创建的所有令牌，数据仅限于创建日期和令牌类型。
+        export_description: 导出用户创建的所有令牌，仅包含创建日期和令牌类型。
       user:
         anonymize_description: 将用户表中的所有列设置为空，不可为空的列将设置为默认值或特殊值；更改密码；将个人设置恢复默认值；移除所有用户组。
         delete_description: 从数据库中删除用户。

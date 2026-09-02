@@ -44,7 +44,7 @@ flarum-extension-manager:
       repositories:
         add_modal:
           name_label: 名称
-          submit_button: 提交
+          submit_button: 添加
           type_label: 类型
           url: URL
         help: "添加第三方公共或私有仓库。此为高级功能，请添加可信任的仓库，以免服务器被执行恶意代码。\n"
@@ -56,29 +56,29 @@ flarum-extension-manager:
       title: Composer
     exceptions:
       composer_command_failure: '执行失败。请前往 storage/logs/composer 查看 Composer 日志。'
-      extension_already_installed: 此扩展程序已被安装。
-      extension_not_directly_dependency: 有其他扩展程序依赖于此扩展程序，无法直接移除。
+      extension_already_installed: 扩展程序已安装。
+      extension_not_directly_dependency: 有其他扩展程序依赖此扩展，无法直接移除。
       extension_not_installed: 未找到扩展程序。
       guessed_cause:
         extension_incompatible_with_instance: '此扩展程序可能不兼容当前 Flarum 版本。'
-        extension_not_found: 找不到该扩展，或该扩展不存在。
-        extensions_incompatible_with_new_major: "部分已安装的扩展程序不兼容最新大版本，请等候相应作者发布兼容性更新，或暂时卸载以继续操作。\n"
+        extension_not_found: 未找到此扩展程序，此扩展可能不存在。
+        extensions_incompatible_with_new_major: "部分已安装的扩展程序与最新主版本不兼容。请等待作者发布兼容性更新，或暂时卸载以继续操作。\n"
     extensions:
-      already_installed: 此扩展程序已被安装
-      check_why_it_failed_updating: 查看为什么无法更新到最新版本。
-      install: 安装一个新的扩展程序
-      install_help: "填写扩展程序包名以继续。您可以使用 <code>供应商/包名:版本</code> 格式来指定 <semantic_link>语义化版本</semantic_link>。访问 {link} 来浏览可用程序包。\n"
+      already_installed: 此扩展程序已安装
+      check_why_it_failed_updating: 为什么无法更新到最新版本？
+      install: 安装新扩展
+      install_help: "填写扩展程序包名，或使用 <code>提供商/包名:版本号</code> 格式指定 <semantic_link>语义化版本</semantic_link>。前往 {link} 查看可用的软件包。\n"
       proceed: 安装
       remove: 卸载
-      successful_install: '{extension} 已成功安装，正在跳转……'
-      successful_remove: 扩展程序已成功卸载。
-      successful_update: '{extension} 已成功更新，正在跳转……'
+      successful_install: '{extension} 安装成功，正在跳转…'
+      successful_remove: 扩展程序卸载成功。
+      successful_update: '{extension} 更新成功，正在跳转…'
       update: 更新
-      update_hard_label: 硬更新
-      update_soft_label: 软更新
-    file_permissions: "扩展程序管理器需要以下文件和目录的读写权限：composer.json、composer.lock、vendor、storage 和 storage/.composer\n"
+      update_hard_label: 强制更新
+      update_soft_label: 常规更新
+    file_permissions: "扩展程序管理器需要以下文件和目录的读写权限：composer.json、composer.lock、vendor、storage、storage/.composer\n"
     major_updater:
-      description: "Flarum 大版本更新并不向后兼容，因此您当前安装的部分扩展，以及手动修改的内容可能并兼容 Flarum 新版本。继续操作前，请确保备份数据库和文件。\n"
+      description: "Flarum 主版本更新不保证向后兼容，因此部分已安装的扩展程序和手动修改的内容可能无法在新版本中正常工作。继续操作前请务必备份数据库和文件。\n"
       dry_run: 试运行
       dry_run_help: 测试运行可以模拟更新来确认当前配置是否可以安全更新，但并不意味着您手动修改的内容兼容新版本。
       failure:

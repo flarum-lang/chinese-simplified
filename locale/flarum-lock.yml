@@ -6,8 +6,8 @@ flarum-audit:
   lib:
     browser:
       discussion:
-        locked: '已锁定讨论 {discussion}'
-        unlocked: '已解锁讨论 {discussion}'
+        locked: '锁定了讨论 {discussion}'
+        unlocked: '解锁了讨论 {discussion}'
 flarum-lock:
   admin:
     permissions:
@@ -19,14 +19,14 @@ flarum-lock:
       lock_button: 锁定
       unlock_button: 解锁
     notifications:
-      discussion_locked_text: '{username} 锁定此帖'
+      discussion_locked_text: '{username} 锁定了讨论'
     post_stream:
-      discussion_locked_text: '{username} 于 {time} 锁定此帖。'
-      discussion_unlocked_text: '{username} 于 {time} 解锁此帖。'
+      discussion_locked_text: '{username} 于 {time} 锁定了讨论'
+      discussion_unlocked_text: '{username} 于 {time} 解锁了讨论'
     settings:
-      notify_discussion_locked_label: 有人锁定了我发起的讨论
+      notify_discussion_locked_label: 有人锁定了我的讨论
   lib:
     gambits:
       discussions:
         locked:
-          key: 已锁定
+          key: 锁定

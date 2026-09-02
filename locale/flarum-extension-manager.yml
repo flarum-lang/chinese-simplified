@@ -7,11 +7,11 @@ flarum-extension-manager:
     auth_config:
       add_label: 添加认证
       add_modal:
-        host_label: 主机
-        host_placeholder: 示例：bearer.flarum.org
-        submit_button: 提交
+        host_label: 主机地址
+        host_placeholder: 例如：bearer.flarum.org
+        submit_button: 添加
         token_label: 令牌
-        type_label: 类型
+        type_label: 认证类型
         unchanged_token_placeholder: （未修改）
       delete_confirmation: 确定要删除此认证吗？
       delete_label: 删除认证

@@ -5,117 +5,117 @@
 flarum-audit:
   admin:
     header:
-      title: 操作
+      title: 审计
     limitedSettings:
       configure: 配置
-      introduction: 配置受限权限的用户可以查看的内容
-      requiresExtension: '需要的扩展程序 {extension}'
-      title: 访问限制设置
+      introduction: 选择「查看部分审计日志」权限用户可见的日志类型
+      requiresExtension: '需要先启用扩展「{extension}」'
+      title: 配置可见类型
     permissions:
-      view: 查看操作记录
-      viewLimited: 查看受限操作记录
+      view: 查看审计日志
+      viewLimited: 查看部分审计日志
     settings:
       limitedIpAddress: '查看 IP 地址'
   forum:
     link:
-      actor-audit: 查看操作日志（以用户为主体）
-      all-audit: 操作日志
-      discussion-audit: 操作日志
-      user-audit: 操作日志（账户编辑）
+      actor-audit: 用户操作记录
+      all-audit: 审计日志
+      discussion-audit: 审计日志
+      user-audit: 账号变更记录
     modal:
-      actor-title: 操作者审计
-      all-title: 操作日志
-      discussion-title: 讨论审计
-      user-title: 用户审计
+      actor-title: 用户操作记录
+      all-title: 审计日志
+      discussion-title: 讨论审计日志
+      user-title: 账号变更记录
   lib:
     browser:
-      audit_log_cleared: '清除 {deleted_count}操作日志中的条目'
-      cache_cleared: 手动清除缓存
+      audit_log_cleared: '清除了审计日志中的 {deleted_count} 条记录'
+      cache_cleared: 手动清除了缓存
       client:
         access_token: 访问令牌
         api_key: 'API 密钥'
         cli: 命令行
-        session: 网络会话
+        session: 网页会话
         unknown: 未知客户端
       controls:
-        filterAction: 显示来自相同操作者的日志
-        filterActor: 显示来自该操作者的日志
-        filterClient: 显示来自该客户端类型的日志
-        filterDiscussion: 显示影响同一讨论的日志
-        filterIp: 显示来自该IP地址的日志
-        filterUser: 显示影响同一用户的日志
+        filterAction: 筛选同一操作类型
+        filterActor: 筛选同一操作者
+        filterClient: 筛选同一客户端类型
+        filterDiscussion: 筛选同一讨论
+        filterIp: '筛选同一 IP'
+        filterUser: 筛选同一受影响用户
         hideRaw: 隐藏原始日志
         showRaw: 显示原始日志
         title: 操作
       core: 核心
       deletedResource:
-        discussion: '讨论#{id}'
-        group: '群组#{id}'
-        post: '请求#{id}'
-        tag: '标签#{id}'
-        user: '用户#{id}'
-      developer_token_created: '为 {username} 创建了开发者访问令牌 "{title}"'
+        discussion: '讨论 #{id}'
+        group: '用户组 #{id}'
+        post: '帖子 #{id}'
+        tag: '标签 #{id}'
+        user: '用户 #{id}'
+      developer_token_created: '为 {username} 创建了开发者访问令牌“{title}”'
       discussion:
         create_date_changed: '将{discussion}开始日期从 {old_date} 更改为 {new_date}'
-        created: '开始的讨论{discussion}'
-        deleted: '删除讨论{discussion}'
-        hidden: '隐藏讨论{discussion}'
+        created: '发起了讨论 {discussion}'
+        deleted: '删除了讨论 {discussion}'
+        hidden: '隐藏了讨论 {discussion}'
         merged_away: '将 {discussion} 合并到 {new_discussion}'
         merged_into: '将来自 {original_discussion_ids_count} 的讨论中的 {post_count} 帖子合并到 {discussion} 中'
-        renamed: '讨论标题已从 {old_title} 更改为 {new_title}'
-        restored: '恢复讨论 {discussion}'
+        renamed: '将讨论标题从“{old_title}”修改为“{new_title}”'
+        restored: '恢复了讨论 {discussion}'
         split_away: '将 {discussion} 中的 {post_count} 帖子拆分为 {new_discussion}'
         split_into: '将 {post_count} 篇帖子拆分成新的讨论 {discussion}'
         user_changed: '将 {discussion} 的所有者从 {old_user} 更改为 {new_user}'
-      empty: 无符合条件的结果
+      empty: 暂无审计记录
       extension:
-        disabled: '禁用扩展{package}'
-        enabled: '启用扩展{package}'
-        uninstalled: '卸载扩展{package}'
+        disabled: '禁用了扩展 {package}'
+        enabled: '启用了扩展 {package}'
+        uninstalled: '卸载了扩展 {package}'
       filterApply: 应用
       filterClear: 清除筛选
       filterPlaceholder: 筛选日志
       filters:
         action: '操作类型，例如 action:post.created。'
-        actor: '谁执行了此操作。对于系统操作或未经身份验证的操作，请使用 actor:guest。'
-        client: 这个请求是如何制造的。
-        discussion: '按 ID 影响特定讨论的操作。'
-        ip: '发起此操作的 IP 地址。'
-        user: 用户及其操作受影响的部分，按用户名确定。
+        actor: '执行操作的用户。对于系统或未登录操作，可使用 actor:guest。'
+        client: 请求的发起方式。
+        discussion: '查询影响指定讨论的操作，使用讨论 ID 筛选。'
+        ip: '发起操作的 IP 地址。'
+        user: 操作所影响的用户，使用用户名筛选。
       filtersHint: 筛选条件：
       fof_ban_ips:
         banned: '封禁IP{ip}'
         unbanned: '解封IP{ip}'
       genericResource:
-        comment: 评论
+        comment: 回复
         post: 帖子
       group:
-        created: '新建群组{name}'
-        deleted: '删除群组{name}'
-        renamed: '重命名群组名称从{old_name}变更为{new_name}'
+        created: '创建了用户组 {name}'
+        deleted: '删除了群组 {name}'
+        renamed: '将用户组名称从“{old_name}”修改为“{new_name}”'
       help:
-        multiple: '用逗号来分隔即可匹配其中任何一个，例如：action:post.created,post.deleted'
-        negate: '在筛选条件前加上减号（-）可以排除匹配项，例如：-client:cli'
+        multiple: '使用英文逗号分隔多个筛选条件，可匹配其中任意一个，例如 action:post.created,post.deleted'
+        negate: '在筛选条件前加减号可排除匹配项，例如 -client:cli'
         toggle: 搜索帮助
       loadMore: 加载更多
       noReason: （无原因）
-      noValue: （没有相关值）
+      noValue: （无值）
       permissionGroup:
         everyone: '=> core.admin.permissions_controls.everyone_button'
         members: '=> core.admin.permissions_controls.members_button'
-      permission_changed: '已将权限 {permission} 从 {old_groups} 修改为 {new_groups}'
+      permission_changed: '将 {permission} 权限的用户组从 {old_groups} 调整为 {new_groups}'
       post:
         create_date_changed: '已将 {postuser} 的 {post} 的开始日期从 {old_date} 更改为 {new_date}'
-        created: '已在 {discussion} 中创建了 {post}'
-        deleted: '已删除 {postuser} 在 {discussion} 中的 {post}'
+        created: '在 {discussion} 中发布了 {post}'
+        deleted: '删除了 {postuser} 在 {discussion} 中发布的 {post}'
         edit_date_changed: '已将 {postuser} 的 {post} 编辑日期从 {old_date} 更改为 {new_date}'
-        hidden: '隐藏了 {postuser} 在 {discussion} 中的 {post}'
-        restored: '已恢复 {postuser} 在 {discussion} 中的 {post}'
-        revised: '修改了{postuser}在{discussion}中的{post}'
+        hidden: '隐藏了 {postuser} 在 {discussion} 中发布的 {post}'
+        restored: '恢复了 {postuser} 在 {discussion} 中发布的 {post}'
+        revised: '修改了 {postuser} 在 {discussion} 中发布的 {post}'
         user_changed: '已将{post}的所有者从{old_user}更改为了 {new_user}'
       queue:
-        paused: '{queue} 的队列处理已暂停（{connection}）'
-        resumed: '{queue} 的队列处理已恢复（{connection}）'
+        paused: '暂停了 {queue} 队列的处理（{connection}）'
+        resumed: '恢复了 {queue} 队列的处理（{connection}）'
       refresh: 刷新
       setting_changed: '已更改设置{key}'
       setting_changed_with_values: '已将设置{key}的值从{old_value}更改为{new_value}'

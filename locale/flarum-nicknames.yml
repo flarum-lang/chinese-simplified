@@ -6,7 +6,7 @@ flarum-audit:
   lib:
     browser:
       user:
-        nickname_changed: '已将 {username} 的昵称从 {old_nickname} 更改为 {new_nickname}'
+        nickname_changed: '修改了 {username} 的昵称：{old_nickname} → {new_nickname}'
 flarum-nicknames:
   admin:
     basics:
@@ -19,12 +19,12 @@ flarum-nicknames:
       min_label: 最小昵称长度
       random_username_help: 注册时显示必填「昵称」输入框，隐藏「用户名」输入框。由系统自动生成随机数字组成的用户名。此设置仅在开启「注册时允许设置昵称」时有效。
       random_username_label: 随机用户名
-      regex_label: 验证使用的正则表达式
+      regex_label: 昵称正则表达式
       set_on_registration_label: 注册时允许设置昵称
       unique_label: 昵称唯一
-    wrong_driver: '您必须在 <a><strong>常规设置</strong></a> 中将「昵称」设置为外显名称，此扩展才会起作用。'
+    wrong_driver: '你必须在 <a><strong>常规页面</strong></a> 中将「昵称」设置为外显名称，此扩展才会起作用。'
   api:
-    invalid_nickname_message: 昵称非法。请联系论坛管理员获取昵称规则。
+    invalid_nickname_message: 当前昵称不可用，详情请咨询管理员。
   forum:
     change_nickname:
       submit_button: '=> core.ref.save_changes'

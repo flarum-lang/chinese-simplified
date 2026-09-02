@@ -5,16 +5,16 @@
 flarum-pusher:
   admin:
     pusher_settings:
-      app_cluster_help: '你的 Pusher 应用所在的集群（例如 <code>eu</code> 或 <code>us2</code>），该信息可在应用的 “App Keys” 页面中找到。如果你在下方设置了自定义服务器地址，则此项可留空。'
-      app_cluster_label: Cluster
-      app_id_help: 'Pusher 应用“App Keys”页面中的应用 ID(App ID)。'
+      app_cluster_help: 'Pusher 应用所在的集群（例如 <code>eu</code> 或 <code>us2</code>），可在应用的“App Keys”页面查看。如果下方设置了自定义服务器主机地址，请留空。'
+      app_cluster_label: 集群（Cluster）
+      app_id_help: 'Pusher 应用“App Keys”页面中的数字 App ID。'
       app_id_label: 'App ID'
-      app_key_help: '这是您 Pusher 应用“App Keys”页面中的公钥。它会被发送给浏览器，因此并非秘密信息。'
+      app_key_help: 'Pusher 应用“App Keys”页面中的公钥。此 Key 会发送至浏览器，因此并非私密信息。'
       app_key_label: 'App Key'
-      app_secret_help: '这是您 Pusher 应用“App Keys”页面中的私钥。请务必保密，它仅供服务器端使用。'
+      app_secret_help: 'Pusher 应用“App Keys”页面中的私密密钥。请妥善保管，此密钥仅供服务器端使用。'
       app_secret_label: 'App Secret'
-      server_hostname_help: '可选。如需连接自托管的 Pusher 兼容服务器（如 Soketi），可在此填写服务器地址。留空则使用上方集群的 Pusher 托管服务。'
-      server_hostname_label: 服务器主机名
+      server_hostname_help: '可选。如需使用自托管 Pusher 兼容服务器（例如 soketi），可在此指定客户端连接的主机地址。留空则使用上方集群对应的 Pusher 官方服务。'
+      server_hostname_label: 服务器主机地址
       title: 'Pusher 设置'
   forum:
     discussion_list:

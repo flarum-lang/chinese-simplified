@@ -21,20 +21,20 @@ flarum-realtime:
       typing-indicator-help: '启用后（取决于权限），用户可以查看当前正在讨论中输入的其他用户人数。禁用后，输入活动将从界面和 websocket 载荷中移除。'
   forum:
     index-typing:
-      someone-typing: 有人正在此讨论中输入
-      someone-typing-tag: 有人正在此标签中输入
+      someone-typing: 有人正在准备发言…
+      someone-typing-tag: 有人正在准备发言…
     push:
-      discussion-list-new-activity: '{count, plural, one {显示 # 个更新的讨论} other {显示 # 个更新的讨论}}'
-      discussion-list-new-activity-with-auto-release: '{count, plural, one {# 个讨论} other {# 个讨论}}已有更新，将在 {releaseTimeout} 秒内发布。点击立即显示。'
+      discussion-list-new-activity: '{count, plural, one {有 # 条新内容} other {有 # 条新内容}}，点击查看'
+      discussion-list-new-activity-with-auto-release: '{count, plural, one {有 # 条新内容} other {有 # 条新内容}}，{releaseTimeout} 后自动刷新。点击立即查看'
     typing-indicator:
       anonymous-user: '[隐藏]'
       hidden-user: '{username}（已隐藏）'
-      no-activity: 没有人正在输入
+      no-activity: 讨论暂时告一段落……
       people-are-typing: '{number, plural, one {# 人正在输入} other {# 人正在输入}}'
       users-are-typing: '{count, plural, one {{users} 正在输入} other {{users}{others, plural, =1 { 和另外 # 人} =0 {} other { 和另外 # 人}} 正在输入}}'
     user:
       settings:
-        heading: 实时活动
+        heading: 实时
         typing-indicator-type:
           help: 启用后，正在输入指示器将显示当前正在输入的用户。禁用此项则仅显示当前正在输入的用户数量。
           label: 显示谁正在输入

@@ -152,7 +152,7 @@ core:
         default: 默认
       avatar_driver_text: 设置用户未上传头像时的头像显示方式，默认不显示头像。
       default_language_heading: 默认语言
-      description: 设置论坛名称、语言及其他基本设置
+      description: 设置论坛名称、语言及其他常规设置
       display_name_driver_options:
         username: 用户名
       display_name_heading: 用户外显名称
@@ -173,7 +173,7 @@ core:
           id: ID
           id_with_display_name: 'ID + 外显名称'
       slug_driver_text: 选择此内容的链接生成方式。
-      title: 基本设置
+      title: 常规
       welcome_banner_heading: 欢迎横幅
       welcome_banner_text: 设置「全部主题」页面顶部的欢迎横幅文本。
     create_user:
@@ -693,7 +693,7 @@ core:
       token_revoked: 令牌已撤销。
       token_title_placeholder: /
     settings:
-      account_heading: 账号设置
+      account_heading: 账号
       change_email_button: '=> core.ref.change_email'
       change_password_button: '=> core.ref.change_password'
       color_scheme_heading: 显示模式

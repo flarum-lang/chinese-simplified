@@ -6,8 +6,8 @@ flarum-audit:
   lib:
     browser:
       post:
-        dismissed_flags: '已驳回 {postuser} 在 {discussion} 中的 {post} 的举报'
-        flagged: '已举报 {postuser} 的 {post} 在 {discussion} 举报理由{reason}'
+        dismissed_flags: '驳回了针对 {postuser} 在 {discussion} 中发布的 {post} 的举报'
+        flagged: '举报了 {postuser} 在 {discussion} 中发布的 {post}，理由为“{reason}”'
 flarum-flags:
   admin:
     permissions:
@@ -39,7 +39,7 @@ flarum-flags:
       title: '=> flarum-flags.ref.flagged_posts'
       tooltip: '=> flarum-flags.ref.flagged_posts'
     post:
-      dismiss_flag_button: 撤销举报
+      dismiss_flag_button: 驳回举报
       flagged_by_text: '由 {username} 举报'
       flagged_by_with_reason_text: '由 {username} 举报：{reason}'
     post_controls:

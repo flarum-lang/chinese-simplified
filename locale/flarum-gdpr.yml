@@ -16,29 +16,29 @@ flarum-gdpr:
   admin:
     gdpr_page:
       data_types:
-        anonymize_description: 匿名操作
+        anonymize_description: 匿名化操作
         delete_description: 删除操作
         export_description: 导出操作
         extension: 扩展程序
-        help_text: "下表所列为当前所有注册的数据类型，以及关联的导出、匿名化和删除操作规范。扩展程序应当向 <code>blomstra/gdpr</code> 主动注册其处理并且符合 GDPR 法规的数据类型。\n<code>user</code> 表中存储的数据另行处理，详见下一章节。\n"
+        help_text: "以下是当前已注册的数据类型，以及各类型对应的导出、匿名化和删除操作。如果扩展程序处理了受 GDPR 约束的数据，应通过 <code>flarum/gdpr</code> 注册相应的数据类型。\n存储在 <code>user</code> 表中的数据会单独处理，详见下方的用户表数据。\n"
         title: 数据类型
         type: 类型
-      description: 'GDPR 数据统一管控'
+      description: '查看 GDPR 操作及集成状态'
       heading: 'GDPR 数据概览'
       settings:
         extension_settings_button: 'GDPR 设置'
         heading: 'GDPR 设置'
-        help_text: '想要设置 GDPR？请前往扩展程序页面。'
+        help_text: 请前往扩展程序设置页面。
       user_table_data:
         column: 列
-        extension: 扩展
-        help_text: "多数情况下，我们会自动处理导出和抹除时的 <code>user</code> 表数据。\n然而，会存在一些特殊情况，如下。\n"
+        extension: 扩展程序
+        help_text: "通常情况下，我们会在数据导出和擦除时，自动处理添加到 <code>user</code> 表中的列。\n但也存在一些特殊情况，具体如下。\n"
         'no': 否
         nullable: 可为空
-        pii: '个人可识别信息 (PII)'
-        pii_tooltip: 此列被视为个人可识别信息，并将在匿名上下文（例如匿名的事件负载）中进行脱敏处理。
-        redacted_on_export: 导出时屏蔽
-        redacted_on_export_tooltip: '生成用户数据导出时，此列的值将被置空（设置为 null）。该列仍会以 null 值的形式出现在导出文件中。'
+        pii: 个人身份信息
+        pii_tooltip: 此列数据属于个人身份信息，会在匿名化场景中进行脱敏处理。
+        redacted_on_export: 导出时抹除
+        redacted_on_export_tooltip: '导出用户数据时，会保留此列，但此列的值会被清空设为 null。'
         title: 用户表数据
         type: 类型
         'yes': 是
@@ -46,15 +46,15 @@ flarum-gdpr:
       gdpr_button: 'GDPR 集成'
       gdpr_title: '=> flarum-gdpr.admin.gdpr_page.description'
     permissions:
-      process_erasure: 处理账号抹除请求
-      process_export_for_others: 处理其他用户的数据导出请求
-      see_anonymized_user_badges: 查看匿名用户徽章
+      process_erasure: 处理数据擦除请求
+      process_export_for_others: 为其他用户请求并接收导出数据
+      see_anonymized_user_badges: 查看匿名化用户徽章
     settings:
-      allow_anonymization: 允许请求账号匿名化
-      allow_anonymization_help: '默认选项，适用于绝大多数社区。此模式下，帖子或评论将在 GDPR 允许的范围内尽可能保留，但会删除一切可用于标识用户的信息。'
-      allow_deletion: 允许请求删除账号
-      allow_deletion_help: 更严格的选项，请谨慎使用。此模式下，所有帖子或评论都将被删除，用户也将从数据库中删除。
-      default_anonymous_username: 用户名匿名化
+      allow_anonymization: 允许匿名化处理
+      allow_anonymization_help: '默认选项，推荐大多数社区使用。采用此方式时，会在 GDPR 允许的范围内尽可能保留帖子和回复，同时移除所有可识别用户身份的信息。'
+      allow_deletion: 允许删除处理
+      allow_deletion_help: 更加严格的处理方式。采用此方式时，所有帖子和回复都会被删除，用户也将从数据库中移除。请谨慎使用。
+      default_anonymous_username: 匿名化用户的默认用户名
       default_anonymous_username_help: '使用自定义模板替换匿名化用户的用户名，末尾会自动拼接匿名化请求的 ID，效果：<code>匿名用户123</code>。'
       default_erasure: 默认抹除请求
       default_erasure_help: 申请抹除账号的默认类型是？

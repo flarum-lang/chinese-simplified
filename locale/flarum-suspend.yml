@@ -6,53 +6,53 @@ flarum-audit:
   lib:
     browser:
       user:
-        suspended: '用户 {username} 已被封禁，直到 {until}'
-        unsuspended: '已解除 {username} 的封禁'
+        suspended: '封禁了 {username}，直至 {until}'
+        unsuspended: '解除了 {username} 的封禁'
 flarum-suspend:
   admin:
     permissions:
       suspend_users_label: 封禁用户
   email:
-    no_reason_given: 未说明封禁原因。
+    no_reason_given: 此次封禁暂无原因。
     suspended:
       html:
-        body: '您已被 {forumTitle} 封禁，原因如下：'
+        body: '你在 {forumTitle} 的账号因以下原因被封禁：'
       plain:
-        body: "您的账号已被封禁，原因如下：\n\n---\n{suspension_message}\n---\n"
+        body: "你的账号因以下原因被封禁：\n\n---\n{suspension_message}\n---\n"
       subject: 你的账号已被封禁
     unsuspended:
       html:
-        body: '您的账号已解除封禁，欢迎随时回到 [{forumTitle}]({forum_url})。'
+        body: '你的账号已解除封禁，你可以随时返回 [{forumTitle}]({forum_url})。'
       plain:
-        body: "您的账号已解除封禁，点击以下链接即可返回论坛：\n\n{forum_url}\n"
-      subject: 您的账号已解除封禁
+        body: "你的账号已解除封禁，点击以下链接返回论坛：\n\n{forum_url}\n"
+      subject: 你的账号已解除封禁
   forum:
     notifications:
-      user_suspended_indefinite_text: 你已被无限期封禁
+      user_suspended_indefinite_text: 你已被永久封禁
       user_suspended_text: '你已被封禁 {timeReadable}'
-      user_unsuspended_text: 你已被解除封禁
+      user_unsuspended_text: 你的封禁已解除
     suspend_user:
-      display_message: 向用户显示说明
-      indefinitely_label: 无限期封禁
+      display_message: 留言
+      indefinitely_label: 永久封禁
       limited_time_days_text: ' 天'
-      limited_time_label: 临时封禁……
-      not_suspended_label: 解除封禁
+      limited_time_label: 限时封禁
+      not_suspended_label: 未封禁
       placeholder_optional: 可选
       reason: 封禁原因
       status_heading: 封禁状态
       submit_button: '=> core.ref.save_changes'
       title: '封禁 {username}'
     suspension_info:
-      dismiss_button: 关闭
-      indefinite: 此账号已被无限期封禁
-      limited: '此次封禁将持续至 {date}'
+      dismiss_button: 我已知晓
+      indefinite: 此账号已被永久封禁
+      limited: '此账号将被封禁至 {date}'
       title: 此账号已被封禁
     user_badge:
       suspended_tooltip: 封禁中
     user_controls:
-      suspend_button: 封禁用户
+      suspend_button: 封禁
   lib:
     gambits:
       users:
         suspended:
-          key: suspended
+          key: 封禁

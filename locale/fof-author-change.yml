@@ -3,6 +3,25 @@
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
 fof-author-change:
+  admin:
+    permissions:
+      edit-date: 修改讨论和帖子作者
+      edit-user: 修改讨论和帖子作者
   forum:
     controls:
       edit: 编辑作者和日期
+    modal:
+      cancel: 取消
+      created_at: 发布时间
+      edited_at: 编辑时间
+      submit: 保存
+      sync-impossible: 未找到首帖，请滚动到讨论开头后再试。
+      sync-with-discussion: 同步修改讨论
+      sync-with-post: 同步修改首贴
+      title-discussion: 编辑讨论作者和日期
+      title-post: 编辑帖子作者和日期
+      user: 作者
+    search:
+      no-results: 未找到用户
+      placeholder: 搜索用户
+      type-more: '输入至少 3 个字符开始搜索'

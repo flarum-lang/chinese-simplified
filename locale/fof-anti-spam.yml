@@ -6,23 +6,71 @@ flarum-audit:
   lib:
     browser:
       registration:
-        blocked: '已拦截用户 {username} ({email}) 从 {ip} 注册'
+        blocked: '拦截了 {username}（{email}）从 {ip} 发起的注册'
       user:
-        marked_as_spammer: '已将 {username} 标记为垃圾邮件发送者'
+        marked_as_spammer: '将 {username} 标记为垃圾用户'
 fof-anti-spam:
   admin:
     blocked_registrations:
       attempted-at: 尝试时间
-      button: 已拦截的注册
-      delete_entry: 删除条目
-      email: 电子邮箱地址
-      help: "此页面显示了所有被 StopForumSpam 服务拦截的注册。您可以查看每项注册的详情，如果需要，您也可以从数据库中删除该记录。\n"
+      button: 已拦截注册
+      delete_entry: 删除记录
+      email: 邮箱地址
+      evidence:
+        badge:
+          asn: 'AS{asn}'
+          blacklisted: 已列入黑名单
+          confidence: '置信度 {value}%'
+          frequency: '{count, plural, one {命中 # 次} other {命中 # 次}}'
+          last_seen: '最后记录于 {when}'
+          normalized: '规范化为 {value}'
+          not_listed: 未收录
+          tor_exit: 'Tor 出口节点'
+        blocked_by: 拦截依据
+        field:
+          email: 邮箱
+          ip: IP
+          username: 用户名
+        label: 为何被拦截
+        lookup_failed: '此次注册查询 StopForumSpam 失败，未生成相关数据。'
+        none: '此次注册没有记录 StopForumSpam 数据。'
+        rule:
+          blacklisted: 黑名单
+          confidence: 置信度阈值
+          deniedAsn: 封禁网络
+          frequency: 命中数
+          torExit: 'Tor 出口节点'
+      filters:
+        apply: 应用
+        clear: 清除搜索
+        help:
+          attemptedAt: '日期或日期范围，例如 2026-01-01..2026-02-01。起止日期均可留空。'
+          email: 精确匹配注册时使用的邮箱地址。
+          ip: '精确匹配发起注册的 IP 地址。'
+          multiple: 使用空格分隔多个筛选条件，可组合使用。
+          negate: '在筛选条件前加减号可排除匹配项，例如 -provider:github'
+          provider: 此次注册所使用的登录服务商。
+          reason: 导致注册被拦截的规则，只有近期记录包含此数据。
+          toggle: 搜索帮助
+          username: 精确匹配注册时使用的用户名。
+        hint: 筛选条件：
+        no-matches: 没有符合当前搜索条件的注册记录。
+        placeholder: '搜索，或使用 key:value 筛选'
+      help: "此页面列出了所有被 StopForumSpam 服务拦截的注册。你可以查看每次注册的详细信息，也可以根据需要从数据库中删除记录。\n"
       ip: 'IP 地址'
       login-provider: 登录提供商
-      login-provider-data: 登录提供商数据
-      no-records: 未发现已拦截的注册。
+      login-provider-data: 登录服务商
+      no-records: 暂无拦截记录。
+      raw_data:
+        button: 查看原始数据
+        copied: 已复制到剪贴板。
+        copy: 复制
+        copy_failed: 复制到剪贴板失败。
+        title: 已记录的原始数据
+      reasons: 已记录的拦截原因
       sfs-data: 'StopForumSpam 数据'
-      title: 已拦截的注册
+      title: 已拦截注册
+      total: '{count, plural, one {# 条被拦截注册} other {# 条被拦截注册}}'
       username: 用户名
     permissions:
       spamblock_users_label: 标记垃圾用户
@@ -30,9 +78,9 @@ fof-anti-spam:
       button: 设置
       content-filter:
         actions_heading: 自动处理
-        advanced_block_patterns_help: '供高级用户使用的自定义正则模式。请谨慎使用 - 无效模式将被跳过。格式应为包含“pattern”和可选“description”键的对象组成的 JSON 数组。'
-        advanced_block_patterns_label: '高级模式 (正则表达式)'
-        advanced_patterns_heading: 高级拦截模式
+        advanced_block_patterns_help: '供高级用户使用的自定义正则表达式，请谨慎配置。无效规则会被跳过。格式应为 JSON 对象数组，每个对象均为“pattern”+“description”的键值对。'
+        advanced_block_patterns_label: 正则表达式
+        advanced_patterns_heading: 高级拦截
         allowed_domains_help: 填写不希望被识别的域名，每行一个。论坛当前域名会自动加入白名单。
         allowed_domains_label: 允许的域名
         allowlist_heading: 域名白名单
@@ -41,7 +89,7 @@ fof-anti-spam:
         auto_unapprove_help: '开启后，触发垃圾内容阈值的帖子会自动移入小黑屋等待审核（需要 flarum/approval）。社区管理人员审核通过后，才会重新显示。'
         auto_unapprove_label: 自动移入小黑屋
         blocked_words_heading: 违禁词与短语
-        blocked_words_help: 填写禁止出现的词语或短语，每行填写一项。不区分大小写，且仅匹配完整单词。例如，“viagra”会匹配“viagra”，但不会匹配“niagara”。
+        blocked_words_help: 每行填写一个禁止出现的词语或短语。不区分大小写，仅匹配独立出现的词语。与其他字符连续出现时不会命中。例如「菠菜」不会匹配「在线菠菜平台」。
         blocked_words_label: 违禁词或短语
         detect_emails_help: 标记包含邮箱地址的内容。
         detect_emails_label: 识别邮箱地址
@@ -55,8 +103,8 @@ fof-anti-spam:
         flag_threshold_help: '垃圾内容评分达到此值时，将自动举报并交由社区管理人员处理（需要 flarum/flags 扩展）。'
         flag_threshold_label: 举报阈值（0-100）
         heading: 内容过滤
-        introduction: '自动检测并标记新用户发布的垃圾内容。系统会检查近期注册用户发布的帖子和讨论，识别电话号码、邮箱地址和可疑 URL 等常见垃圾内容特征。'
-        monitor_all_users_help: "开启后，系统会检查所有用户发布的内容，而不仅限于新账号。关闭后，仅检查符合下方条件的账号。账号一旦超过这些限制，之后发布的内容便不再检查。因此，后期账号被盗，或有人刻意蛰伏后发布垃圾内容的情况可能无法规避。\n\n管理员以及拥有隐藏讨论权限的用户始终不会被检查。开启此项可能增加老用户内容的误判，建议先确认下方阈值设置是否合适。\n"
+        introduction: '自动检测并标记新用户发布的垃圾内容。系统会检查近期新用户发布的帖子和讨论，识别电话号码、邮箱地址和可疑 URL 等常见垃圾内容特征。'
+        monitor_all_users_help: "开启后，系统会检查所有用户发布的内容，而不仅限于新账号。关闭后，仅检查符合下方条件的账号。\n账号一旦超过这些限制，之后发布的内容便不再检查。因此，后期账号被盗，或有人刻意蛰伏后发布垃圾内容的情况可能无法规避。\n管理员以及拥有隐藏讨论权限的用户始终不会被检查。开启此项可能增加老用户内容的误判，建议先确认下方阈值设置是否合适。\n"
         monitor_all_users_label: 检查所有用户
         monitor_hours_old_help: '检查注册不满一定时间的用户，0 表示不检查。'
         monitor_hours_old_label: 检查注册时间
@@ -70,60 +118,81 @@ fof-anti-spam:
         thresholds_heading: 评分阈值
         user_targeting_heading: 检查范围
       default-actions:
-        delete_discussions_help: 这将永久删除该用户发起的所有讨论。禁用后，讨论将改为软删除。
+        delete_discussions_help: 永久删除此用户发起的所有讨论。关闭此项，改为软删除。
         delete_discussions_label: 删除讨论
-        delete_posts_help: 这将永久删除该用户发表的所有帖子。禁用后，帖子将改为软删除。
+        delete_posts_help: 永久删除此用户发布的所有帖子。关闭此项，改为软删除。
         delete_posts_label: 删除帖子
-        delete_user_help: 这将永久删除该用户。禁用后，该用户将改为被封禁。
+        delete_user_help: 永久删除此用户。关闭此项，改为封禁用户。
         delete_user_label: 删除用户
-        heading: 默认审核操作
-        introduction: 当用户被标记为垃圾信息发送者时，版主可以从多种操作中选择处理方式。这些设置允许您预设常用操作以加快处理过程，同时也允许根据需要进行调整。
-        move_discussions_to_tags_help: 这将把该用户发起的所有讨论移动到您指定的标签。清除标签选择可使讨论保留在原始标签中。如果启用了“删除讨论”选项，则此项无效。
-        move_discussions_to_tags_label: 将讨论移动到标签
+        heading: 默认处理操作
+        introduction: 标记垃圾用户时，管理人员可以根据实际情况选择不同的处理方式。提前配置好下方设置可以加快处理流程。
+        move_discussions_to_tags_help: 将此用户发起的所有讨论移动至指定标签。清空标签选择则保留讨论原有标签。启用「删除讨论」后，此设置不生效。
+        move_discussions_to_tags_label: 移动讨论至标签
       stopforumspam:
-        api_key_instructions_text: '<register>注册 StopForumSpam 账号</register>。然后您需要<key>获取 API 密钥</key>。'
+        api_key_instructions_text: '<register>注册 StopForumSpam</register>，并<key>获取 API 密钥</key>。'
         api_key_label: 'API 密钥'
-        api_key_text: '您可以选择将垃圾信息发送者报告给 StopForumSpam，以保持整个论坛社区免受垃圾信息干扰。'
-        block_tor_exit_nodes_help: '启用后，来自已知 Tor 出口节点的注册将被自动拦截。这有助于防止匿名垃圾注册，但也可能阻止出于隐私原因使用 Tor 的合法用户。'
+        api_key_text: '向 StopForumSpam 共享垃圾用户信息，帮助其他论坛共同防范。'
+        block_tor_exit_nodes_help: '开启后，会拦截来自一直 Tor 出口节点的注册。此功能可以减少匿名垃圾注册，但同时也会影响为了保护隐私而使用 Tor 的正常用户。'
         block_tor_exit_nodes_label: '拦截 Tor 出口节点'
-        confidence_help: 置信度评分是判断被测字段是否会导致违规行为的一个相当好的指标。请以百分比形式设置您的置信度等级。如果该字段等于或高于此数值，注册将被阻止，无论上述“频率”测试结果如何。
+        blocked_asns_help: '填写需要直接拦截的 ASN，每行一个，也可以用英文逗号分隔。来自这些网络的注册会直接被拒绝，无论该 IP 是否已被 StopForumSpam 收录。支持填写 `31272` 或 `AS31272`。留空则仅记录查询到的 ASN，不进行拦截。'
+        blocked_asns_label: 封禁网络编号（ASN）
+        confidence_help: 'Percentage indicator, derived from detection data. When this value is reached or exceeded, it will be directly banned regardless of whether the number of hits is satisfied.'
         confidence_label: 置信度
-        email_hash_help: '如果您不希望传递电子邮件地址本身，请传递其 MD5 哈希值。此方法会绕过所有黑名单、规范化和混淆绕过检查。'
-        email_hash_label: 使用哈希电子邮件地址
-        email_label: 电子邮件垃圾检查
-        frequency_help: "所有已启用检查项中的垃圾报告总数，达到此数量将触发垃圾过滤器。\n例如：如果电子邮件有 1 次命中，IP 有 2 次命中，总计 3 次命中。如果阈值设置为 3 或更小，我们将阻止该注册。\n"
-        frequency_label: 阈值
-        introduction: "根据 <a>StopForumSpam</a> 数据库检查新用户注册。如果达到 <code>confidence</code>（置信度）或 <code>frequency</code>（频率）阈值，该用户将无法在您的论坛上完成注册。\n\n也支持通过 <code>fof/oauth</code> 和 <code>fof/passport</code> 进行的 SSO 注册。其他 SSO 提供商应该也可以工作，但尚未经过测试。\n"
-        ip_label: 'IP 地址垃圾检查'
-        region_closest_label: 最近
+        email_hash_help: '开启后，查询 StopForumSpam 时只会发送邮箱地址的 MD5 哈希值，不会发送原始邮箱地址。但是会导致无法使用黑名单、地址规范化和混淆识别等检查，可能降低垃圾注册的识别效果。'
+        email_hash_label: 哈希邮箱地址
+        email_label: 检查邮箱
+        frequency_help: "将已启用检查项的命中次数累加，达到此值时，将拦截注册。\n例如邮箱命中 1 次、IP 命中 2 次，合计 3 次。命中数设为 3 或更低时，此次注册将被拦截。\n"
+        frequency_label: 命中数
+        introduction: "新用户注册时，通过 <a>StopForumSpam</a> 数据库检查填写的信息。当 <code>confidence</code> 或 <code>frequency</code> 达到设定阈值时，会阻止用户完成注册。\n\n同时支持检查 <code>fof/oauth</code> 和 <code>fof/passport</code> 进行的 SSO 注册。其他 SSO 服务理论上也支持，但未经测试。\n"
+        ip_label: '检查 IP 地址'
+        lookup_failed: '无法连接 StopForumSpam（上次失败于 {when}）。恢复连接前，注册检查会临时关闭。'
+        max_listing_age_help: '过于久远的记录对当前注册的参考价值有限。设为 0 则不限时间，所有历史记录均参与判断。已列入黑名单的域名和网络不受此设置影响。'
+        max_listing_age_label: 忽略早于指定天数的记录
+        region_closest_label: 最近区域
         region_europe_label: 欧洲
         region_us_label: 美国
-        regional_endpoint_help: 默认情况下，我们将查询定向到最近的区域服务器以提供最快响应。如果您希望将流量限制在特定区域（例如为了符合公司或国家的隐私法规），您可以强制连接到特定区域。
-        regional_endpoint_label: 地理访问
-        report_blocked_registrations_help: '当注册被“查询注册信息”功能拦截时，我们将向 StopForumSpam 报告此次尝试，以便更好地确认垃圾行为。需要设置 StopForumSpam API 密钥（见下文）。'
-        report_blocked_registrations_label: 报告被拦截的注册
-        sfs_lookup_help: '如果启用，当新用户在您的论坛注册时，我们将检查 StopForumSpam 数据库。如果找到了该用户（用户名、IP 地址、电子邮件）且该数据点已启用，且 SFS 置信度达到您定义的水平，他们将无法完成注册。'
-        sfs_lookup_label: 查询注册信息
-        username_label: 用户名垃圾检查
+        regional_endpoint_help: 默认使用最近的服务器，以获得最佳检查速度。根据不同国家或地区的法律法规，你可能需要指定数据处理服务器。
+        regional_endpoint_label: 访问区域
+        registration_throttle_help: 'Flarum 默认会限制发帖频率，但不会限制同一 IP 的注册频率。此项用于设置同一 IP 两次注册之间的最短间隔，设为 0 则关闭限制。办公网、校园网和移动网络可能多人共用同一 IP，建议不要将间隔设置过长。'
+        registration_throttle_label: 限制同一地址连续注册
+        report_blocked_registrations_help: '开启后，被「检查新用户注册」拦截的注册会自动上报至 StopForumSpam，帮助完善恶意行为识别。使用此功能前，请先配置 StopForumSpam API 密钥（见下方）。'
+        report_blocked_registrations_label: 共享拦截信息
+        sfs_lookup_help: '用户注册时，使用 StopForumSpam 服务检查注册信息和置信度，若命中数和置信度满足设置的条件，则禁止注册。'
+        sfs_lookup_label: 检查新用户注册
+        username_label: 检查用户名
+    statistics:
+      awaiting_review: 待审核
+      failed: 恶意行为统计数据加载失败。
+      heading: 恶意行为防护
+      posts_flagged: 已举报垃圾帖子
+      registrations_blocked: 已拦截注册
+      this_week: '{count, plural, one {本周 # 次} other {本周 # 次}}'
+      top_reason: '最常见：{reason}（{count, plural, one {拦截 # 次} other {拦截 # 次}}）'
+      total_label: 总计
+      users_marked: 已标记垃圾用户
+      view_all: 查看所有被拦截注册
+      vs_last_week: 与前七天相比
   forum:
     message:
+      profile:
+        blocked: 检测到疑似垃圾内容，无法保存。请移除可疑链接或联系方式后重试。
       stopforumspam:
-        blocked: 您的注册信息已在垃圾信息防控数据库中被发现，因此您的注册已被拦截。
+        blocked: 网络环境异常。
     post:
-      flagged_as_spam_text: '自动垃圾信息检测 - 分数 {score}'
+      flagged_as_spam_text: '识别到垃圾内容 · 评分 {score}'
     spammer_modal:
-      hard_delete_discussions_help: 这将永久删除该用户发起的所有讨论。禁用后，讨论将被隐藏。
+      hard_delete_discussions_help: 永久删除此用户发起的所有讨论。关闭此项，改为隐藏。
       hard_delete_discussions_label: 删除讨论
-      hard_delete_posts_help: 这将永久删除该用户发表的所有内容（评论、回复等）。禁用后，内容将被隐藏。
+      hard_delete_posts_help: 永久删除此用户发布的所有帖子（包括回复等）。关闭此项，改为隐藏。
       hard_delete_posts_label: 删除帖子
-      hard_delete_user_help: 这将永久删除该用户。禁用后，用户将被封禁。
+      hard_delete_user_help: 永久删除此用户。关闭此项，改为封禁。
       hard_delete_user_label: 删除用户
-      intro: 将用户标记为垃圾广告发布者时，将根据您论坛中可用的扩展程序采取多项操作。
-      move_discussions_tag_help: 这将把该用户发起的所有讨论移动到您在论坛设置中指定的标签。禁用后，讨论将保留在当前标签中。
-      move_discussions_tag_label: 将讨论移动到隔离标签
+      intro: 将用户标记为垃圾用户时，系统会根据论坛已安装的扩展执行以下操作。
+      move_discussions_tag_help: 将此用户发起的所有讨论移动至指定的标签，并清除原标签。关闭此项，保留原标签。
+      move_discussions_tag_label: 移动讨论至隔离标签
       process_button: 处理
-      report_to_sfs_help: '这将向 StopForumSpam 举报该用户的基本信息（用户名、邮箱、IP 地址）。这将有助于防止该用户在其他使用 StopForumSpam 服务的论坛上注册。'
-      report_to_sfs_label: '举报至 StopForumSpam'
-      title: '将 {username} 标记为垃圾广告发布者'
+      report_to_sfs_help: '将此用户的用户名、邮箱和 IP 地址上报至 StopForumSpam，帮助其他使用 StopForumSpam 的论坛识别并拦截该用户。'
+      report_to_sfs_label: '上报至 StopForumSpam'
+      title: '将 {username} 标记为垃圾用户'
     user_controls:
-      spammer_button: 垃圾广告发布者
+      spammer_button: 垃圾用户

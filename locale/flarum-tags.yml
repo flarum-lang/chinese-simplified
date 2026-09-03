@@ -6,67 +6,67 @@ flarum-audit:
   lib:
     browser:
       discussion:
-        tagged: '将 {discussion} 的标签从 {old_tags} 更改为 {new_tags}'
+        tagged: '修改了 {discussion} 的标签：{old_tags} → {new_tags}'
       tag:
-        created: '已创建标签 {tag}'
-        deleted: '已删除标签 {tag}'
-        updated: '已更新标签 {tag}'
+        created: '创建了标签 {tag}'
+        deleted: '删除了标签 {tag}'
+        updated: '修改了标签 {tag}'
 flarum-tags:
   admin:
     basics:
       slug_driver_options:
         default: 默认
-        id_with_slug: '带 Slug 的 ID'
+        id_with_slug: 'ID + Slug'
       tags_label: '=> flarum-tags.ref.tags'
     edit_tag:
       color_label: '=> core.ref.color'
       default_sort_label: 默认排序
-      default_sort_none: 使用论坛默认排序方式
-      default_sort_text: 用户没有指定排序方式时，该标签下话题列表默认使用的排序方式。
-      default_sort_unavailable: '{sort} （已不可用）'
+      default_sort_none: 默认
+      default_sort_text: 用户未自行选择排序方式时，此标签下的讨论将按此方式排列。
+      default_sort_unavailable: '{sort}（已不可用）'
       delete_tag_button: 删除标签
-      delete_tag_confirmation: 确定要删除此标签吗？此标签下的讨论将不会被删除。
+      delete_tag_confirmation: 确定要删除此标签吗？标签下的讨论不会被删除。
       description_label: 描述
-      hide_label: 在「全部讨论」中隐藏该标签下的讨论
+      hide_label: 从「全部讨论」中隐藏
       icon_label: '=> core.ref.icon'
       icon_text: '=> core.ref.icon_text'
       name_label: '=> flarum-tags.ref.name'
       name_placeholder: '=> flarum-tags.ref.name'
-      slug_label: Slug
+      slug_label: 固定链接名
       submit_button: '=> core.ref.save_changes'
       title: 创建标签
     nav:
       tags_button: '=> flarum-tags.ref.tags'
-      tags_text: 管理用于组织讨论的标签列表。
+      tags_text: 管理用于整理讨论的标签。
     permissions:
       allow_edit_tags_label: 允许编辑标签
-      bypass_tag_counts_label: 绕过标签数量限制
+      bypass_tag_counts_label: 不受标签数量限制
       restrict_by_tag_heading: 按标签配置
-      tag_discussions_label: 为讨论添加标签
+      tag_discussions_label: 编辑讨论标签
     settings:
       button_text: '=> flarum-tags.ref.choose_tags'
     tag_settings:
       range_separator_text: ' 至 '
-      required_primary_heading: 主标签数量要求
-      required_primary_text: 设置讨论可添加的主标签数量范围。
-      required_secondary_heading: 副标签数量要求
-      required_secondary_text: 设置讨论可添加的副标签数量范围。
+      required_primary_heading: 主标签数量限制
+      required_primary_text: 设置每个讨论可添加的主标签数量上限和下限。
+      required_secondary_heading: 次标签数量限制
+      required_secondary_text: 设置每个讨论可添加的次标签数量上限和下限。
       title: 标签设置
     tags:
-      about_tags_text: 标签用于对讨论进行分类。主标签类似于传统论坛的板块：它们可以按两级层级排列。副标签没有层级或顺序，适用于更细粒度的分类。
+      about_tags_text: 标签用于对讨论进行分类。主标签类似传统论坛的板块，可分为两级；次标签无层级、无顺序，适合更细致的分类。拖动标签即可调整排序或层级。
       create_primary_tag_button: 创建主标签
-      create_secondary_tag_button: 创建副标签
+      create_secondary_tag_button: 创建次标签
       edit_tag_label: '编辑标签 {tag}'
       primary_heading: 主标签
-      secondary_heading: 副标签
+      secondary_heading: 次标签
       settings_heading: 设置
   forum:
     all_tags:
       meta_description_text: 所有标签
       meta_title_text: '=> flarum-tags.ref.tags'
     choose_tags:
-      edit_title: '编辑 {title} 的标签'
-      title: 为您的讨论选择标签
+      edit_title: '编辑「{title}」的标签'
+      title: 为你的讨论选择标签
     composer_discussion:
       choose_tags_link: '=> flarum-tags.ref.choose_tags'
     discussion_controls:
@@ -76,23 +76,23 @@ flarum-tags:
     index:
       more_link: 更多…
       tags_link: '=> flarum-tags.ref.tags'
-      untagged_link: 未分类
+      untagged_link: 无标签
     post_stream:
-      added_and_removed_tags_text: '{username} 于 {time} 添加了 {tagsAdded}，并移除了 {tagsRemoved}。'
-      added_tags_text: '{username} 于 {time} 添加了 {tagsAdded}。'
-      removed_tags_text: '{username} 于 {time} 移除了 {tagsRemoved}。'
-      tags_text: '{count, plural, one {{tags} 个标签} other {{tags} 个标签}}'
+      added_and_removed_tags_text: '{username} 于 {time} 添加了 {tagsAdded}，并移除了 {tagsRemoved}'
+      added_tags_text: '{username} 于 {time} 添加了 {tagsAdded}'
+      removed_tags_text: '{username} 于 {time} 移除了 {tagsRemoved}'
+      tags_text: '{count, plural, one {{tags} 标签} other {{tags} 标签}}'
     tag:
-      meta_description_text: '所有带有 {tag} 的讨论'
+      meta_description_text: '带有「{tag}」标签的所有讨论'
   lib:
     deleted_tag_text: 已删除
     gambits:
       discussions:
         tag:
-          hint: 输入单个标签名称，或多个标签名称（英文逗号分隔），或输入“untagged”表示未分类
+          hint: 标签名称，或用英文逗号分隔的多个标签名称，或“无标签”
           key: 标签
     tag_selection_modal:
-      bypass_requirements: 绕过标签数量限制
+      bypass_requirements: 忽略标签要求
       choose_primary_placeholder: '{count, plural, one {选择 1 个主标签} other {选择 # 个主标签}}'
       choose_secondary_placeholder: '=> flarum-tags.ref.choose_tags_placeholder'
       choose_tags_placeholder: '=> flarum-tags.ref.choose_tags_placeholder'
@@ -100,6 +100,6 @@ flarum-tags:
       title: '=> flarum-tags.ref.choose_tags'
   ref:
     choose_tags: 选择标签
-    choose_tags_placeholder: '{count, plural, one {再选择 1 个标签} other {再选择 # 个标签}}'
+    choose_tags_placeholder: '{count, plural, one {还需选择 1 个标签} other {还需选择 # 个标签}}'
     name: 名称
     tags: 标签

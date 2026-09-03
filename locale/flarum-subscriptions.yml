@@ -6,46 +6,46 @@ flarum-subscriptions:
   email:
     new_post:
       html:
-        body: "{poster_display_name} 刚刚在您关注的讨论中发表了新内容：{title}。\n\n在您阅读此内容之前，您不会再收到关于此讨论的更多通知。\n"
+        body: "{poster_display_name} 在你关注的讨论中发布了新内容。\n\n点击查看新内容：「[{title}]({url})」\n\n在你查看最新内容之前，你不会再收到此讨论的新内容通知。\n"
       plain:
-        body: "{poster_display_name} 刚刚在您关注的讨论中发表了新内容：{title}。\n\n点击下方链接查看最新动态：\n{url}\n\n---\n\n{content}\n\n---\n\n在您阅读此内容之前，您不会再收到关于此讨论的更多通知。\n"
-      subject: '【新帖】{title}'
+        body: "{poster_display_name} 在你关注的讨论中发布了新内容。\n\n查看最新内容：\n{url}\n\n「{title}」\n\n---\n\n{content}\n\n---\n\n在你查看最新内容之前，你不会再收到此讨论的新内容通知。\n"
+      subject: '【新内容】{title}'
   forum:
     badge:
-      following_tooltip: '=> flarum-subscriptions.ref.following'
-      ignoring_tooltip: '=> flarum-subscriptions.ref.ignoring'
+      following_tooltip: 正在关注
+      ignoring_tooltip: 忽略
     discussion_controls:
-      follow_button: 关注
+      follow_button: '=> flarum-subscriptions.ref.follow'
       unfollow_button: 取消关注
       unignore_button: 取消忽略
     following:
-      meta_title_text: 正在关注
+      meta_title_text: 我的关注
     index:
       following_link: 我的关注
     notifications:
-      new_post_text: '{username} 发布了新帖'
+      new_post_text: '{username} 发布了新内容'
     settings:
-      follow_after_create_label: 自动关注我发布的讨论
-      follow_after_reply_label: 自动关注我回复的讨论
-      notify_for_all_posts_label: 通知所有新帖，而非仅通知讨论的最后一条
-      notify_new_post_label: 有人在我关注的讨论中回复
+      follow_after_create_label: 自动关注我发起的讨论
+      follow_after_reply_label: 自动关注我参与的讨论
+      notify_for_all_posts_label: 通知所有新帖。关闭后每个讨论未读期间仅通知一次
+      notify_new_post_label: 我关注的讨论有新内容
     sub_controls:
-      follow_button: 关注
-      following_button: 关注中
-      following_text: 当有人回复此讨论时通知我。
-      ignoring_button: 忽略
-      ignoring_text: 不接收任何通知并从讨论列表中隐藏此讨论。
+      follow_button: '=> flarum-subscriptions.ref.follow'
+      following_button: '=> flarum-subscriptions.ref.following'
+      following_text: 接收所有回复通知。
+      ignoring_button: '=> flarum-subscriptions.ref.ignoring'
+      ignoring_text: 不接收任何通知，并从讨论列表中隐藏。
       not_following_button: 不关注
-      not_following_text: 仅当有人提及我时通知我。
-      notify_alert_tooltip: 有新回复时通知提醒
-      notify_email_tooltip: 有新回复时邮件提醒
+      not_following_text: 仅当有人提及我时通知。
+      notify_alert_tooltip: 有新回复时接收站内通知
+      notify_email_tooltip: 有新回复时接收邮件通知
   lib:
     gambits:
       discussions:
         subscription:
-          following_key: 关注中
-          ignoring_key: 忽略中
+          following_key: 关注
+          ignoring_key: 忽略
   ref:
     follow: 关注
     following: 关注中
-    ignoring: 忽略中
+    ignoring: 忽略

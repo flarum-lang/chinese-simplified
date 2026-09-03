@@ -213,10 +213,10 @@ fof-badges:
     tab_assign: 授予操作
     tab_holders: '持有者 ({count})'
     tabs:
-      badges: 勋章管理
-      categories: 分类管理
-      recalculation: 重算任务管理
-      settings: 扩展设置
+      badges: 徽章
+      categories: 分类
+      recalculation: 重新计算
+      settings: 设置
     trigger_builder:
       add_condition: 添加条件
       and: '满足所有条件 (AND)'

@@ -12,21 +12,34 @@ fof-analytics:
         googleTrackingCode: '跟踪代码 ID'
         optTrackingCode: 自定义跟踪代码（可选）
         piwikAliasUrl: '别名 URL'
-        piwikAuthToken: '验证 Toekn'
-        piwikHideAliasUrl: '在“出站链接”报告中，隐藏指向已知别名 URL 的点击'
-        piwikPrependDomain: 追踪时将网站域名放置在网页标题开头
-        piwikSiteId: 'Site ID'
-        piwikTrackAccounts: 追踪独立访客账户
-        piwikTrackSubdomain: '追踪所有 Flarum 子域访客'
+        piwikAuthToken: 认证令牌
+        piwikHideAliasUrl: '从「出站链接」报告中排除本站别名 URL'
+        piwikPrependDomain: 跟踪时在页面标题前添加站点域名
+        piwikSiteId: '站点 ID'
+        piwikTrackAccounts: 按用户账号跟踪访客
+        piwikTrackSubdomain: 跟踪论坛所有子域名访客
         piwikUrl: 'Matomo 域名或 URL'
-        statusGoogle: '启用 Google Analytics (UA/GA4)'
+        statusGoogle: '启用 Google Analytics（UA/GA4）'
         statusPiwik: '启用 Matomo'
       placeholder:
-        piwikAuthToken: "填入 token 以在后台管理菜单启用 Matomo 统计部件。\n你可以在 设置 > 个人 > API 验证 Token 中找到。\n"
+        piwikAuthToken: "填写令牌以在管理后台启用 Matomo 统计小组件。\n你可以在「设置 > 个人 > API Authentication Token」中找到此令牌。。\n"
       section:
         googleAnalytics: 'Google Analytics'
         piwik: 'Matomo（前 Piwik）'
       trackAccounts:
-        email: 按邮箱追踪
-        none: 不要追踪
-        username: 按用户名追踪
+        email: 按邮箱跟踪
+        none: 不跟踪
+        username: 按用户名跟踪
+  forum:
+    consent:
+      cookies:
+        ga: 用于区分访客，避免重复访问被记录为新访客。
+        gat: '限制向 Google 发送数据的频率。'
+        gid: '用于区分访客，保留 24 小时。'
+        matomo_sessid: '在 Matomo 会话记录期间维持当前会话。'
+        pk_cvar: 保存当前访问的自定义信息。
+        pk_hsr: 用于热力图和会话记录，标识当前访问。
+        pk_id: 用于区分访客，避免重复访问被记录为新访客。
+        pk_ref: 记录你如何访问本站。
+        pk_ses: '用于跟踪当前访问，保留 30 分钟。'
+        utm: '旧版 Google Analytics Cookie，用于记录你如何访问本站。'

@@ -25,48 +25,50 @@ fof-anti-spam:
       title: 已拦截的注册
       username: 用户名
     permissions:
-      spamblock_users_label: 将用户标记为垃圾信息发送者
+      spamblock_users_label: 标记垃圾用户
     settings:
       button: 设置
       content-filter:
-        actions_heading: 自动操作
+        actions_heading: 自动处理
         advanced_block_patterns_help: '供高级用户使用的自定义正则模式。请谨慎使用 - 无效模式将被跳过。格式应为包含“pattern”和可选“description”键的对象组成的 JSON 数组。'
         advanced_block_patterns_label: '高级模式 (正则表达式)'
         advanced_patterns_heading: 高级拦截模式
-        allowed_domains_help: '来自这些域名的 URL 不会被标记。每行输入一个域名。您论坛的域名会自动加入白名单。'
+        allowed_domains_help: 填写不希望被识别的域名，每行一个。论坛当前域名会自动加入白名单。
         allowed_domains_label: 允许的域名
         allowlist_heading: 域名白名单
-        auto_flag_help: '启用后，达到标记阈值的内容将自动被标记供版主审核（需要 flarum/flags）。标记原因将包含检测为垃圾信息的详细说明。'
-        auto_flag_label: 自动标记垃圾内容
-        auto_unapprove_help: '启用后，达到垃圾信息阈值的内容将被发送到审核队列（需要 flarum/approval）。版主需要批准后内容才可见。'
-        auto_unapprove_label: 自动取消批准垃圾内容
+        auto_flag_help: '开启后，触发举报阈值的帖子会被自动举报，等待管理人员处理（需要 flarum/flags）。举报原因会写明系统判定依据。'
+        auto_flag_label: 自动举报
+        auto_unapprove_help: '开启后，触发垃圾内容阈值的帖子会自动移入小黑屋等待审核（需要 flarum/approval）。社区管理人员审核通过后，才会重新显示。'
+        auto_unapprove_label: 自动移入小黑屋
         blocked_words_heading: 违禁词与短语
-        blocked_words_help: 应作为垃圾信息拦截的词语或短语。每行输入一个。不区分大小写，且仅匹配完整词语。例如，“viagra”会匹配“viagra”，但不会匹配“niagara”。
+        blocked_words_help: 填写禁止出现的词语或短语，每行填写一项。不区分大小写，且仅匹配完整单词。例如，“viagra”会匹配“viagra”，但不会匹配“niagara”。
         blocked_words_label: 违禁词或短语
-        detect_emails_help: 标记包含电子邮件地址的内容。
-        detect_emails_label: 检测电子邮件地址
+        detect_emails_help: 标记包含邮箱地址的内容。
+        detect_emails_label: 识别邮箱地址
         detect_phones_help: 标记包含国际格式电话号码的内容。
-        detect_phones_label: 检测电话号码
-        detect_urls_help: '标记包含不在白名单中的 URL 的内容。'
-        detect_urls_label: '检测 URL'
-        detectors_heading: 检测方法
-        enabled_help: 启用后，将分析新用户的帖子和讨论中的垃圾信息指标。
+        detect_phones_label: 识别电话号码
+        detect_urls_help: '标记包含非白名单 URL 的内容。'
+        detect_urls_label: '识别 URL'
+        detectors_heading: 识别内容
+        enabled_help: 开启后，系统会检查新用户发布的帖子和讨论是否包含垃圾内容特征。
         enabled_label: 启用内容过滤
-        flag_threshold_help: '垃圾信息评分等于或高于此值的内容将被标记以待审核（需要 flarum/flags 扩展）。'
-        flag_threshold_label: '标记阈值 (0-100)'
-        heading: 内容过滤器
-        introduction: '自动检测并标记新用户的垃圾内容。该系统会监控近期注册用户的帖子和讨论，识别常见的垃圾信息指标，如电话号码、电子邮件地址和可疑 URL。'
-        monitor_hours_old_help: '仅分析账号注册时间少于此小时数的用户内容。设置为 0 以禁用账号时长检查。'
-        monitor_hours_old_label: 监控注册时间不超过此小时数的用户
-        monitor_post_count_help: '仅分析发帖数量少于此数值的用户内容。设置为 0 以禁用发帖数检查。'
-        monitor_post_count_label: 监控发帖数不超过此数量的用户
-        no_action_extensions: '安装 flarum/approval 和/或 flarum/flags 扩展以启用自动审核操作。检测到的垃圾信息将通过 Flarum 内置的审批队列和标记系统进行管理。'
-        spam_threshold_help: '垃圾信息评分等于或高于此值的内容将自动设为未批准（需要 flarum/approval 扩展）。'
-        spam_threshold_label: '垃圾信息阈值 (0-100)'
-        system_user_id_help: '被指定为自动垃圾标记创建者的用户 ID。通常应为管理员或系统账号。如果未配置，默认为用户 ID 1。'
-        system_user_id_label: '用于标记的系统用户 ID'
-        thresholds_heading: 垃圾信息评分阈值
-        user_targeting_heading: 目标用户
+        flag_threshold_help: '垃圾内容评分达到此值时，将自动举报并交由社区管理人员处理（需要 flarum/flags 扩展）。'
+        flag_threshold_label: 举报阈值（0-100）
+        heading: 内容过滤
+        introduction: '自动检测并标记新用户发布的垃圾内容。系统会检查近期注册用户发布的帖子和讨论，识别电话号码、邮箱地址和可疑 URL 等常见垃圾内容特征。'
+        monitor_all_users_help: "开启后，系统会检查所有用户发布的内容，而不仅限于新账号。关闭后，仅检查符合下方条件的账号。账号一旦超过这些限制，之后发布的内容便不再检查。因此，后期账号被盗，或有人刻意蛰伏后发布垃圾内容的情况可能无法规避。\n\n管理员以及拥有隐藏讨论权限的用户始终不会被检查。开启此项可能增加老用户内容的误判，建议先确认下方阈值设置是否合适。\n"
+        monitor_all_users_label: 检查所有用户
+        monitor_hours_old_help: '检查注册不满一定时间的用户，0 表示不检查。'
+        monitor_hours_old_label: 检查注册时间
+        monitor_post_count_help: '检查发帖数量低于此值的用户，0 表示不检查。'
+        monitor_post_count_label: 检查发帖数量
+        no_action_extensions: '安装 flarum/approval、flarum/flags 扩展以启用自动举报、自动提起审核功能。'
+        spam_threshold_help: '垃圾内容评分达到此值时，将自动转为待审核状态（需要 flarum/approval 扩展）。'
+        spam_threshold_label: 垃圾内容阈值（0-100）
+        system_user_id_help: '用于执行自动操作的用户 ID，通常为管理员或系统账号。默认为用户 ID 1。'
+        system_user_id_label: 机器账号
+        thresholds_heading: 评分阈值
+        user_targeting_heading: 检查范围
       default-actions:
         delete_discussions_help: 这将永久删除该用户发起的所有讨论。禁用后，讨论将改为软删除。
         delete_discussions_label: 删除讨论

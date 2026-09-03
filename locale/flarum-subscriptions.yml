@@ -12,8 +12,8 @@ flarum-subscriptions:
       subject: '【新帖】{title}'
   forum:
     badge:
-      following_tooltip: 正在关注
-      ignoring_tooltip: 已忽略
+      following_tooltip: '=> flarum-subscriptions.ref.following'
+      ignoring_tooltip: '=> flarum-subscriptions.ref.ignoring'
     discussion_controls:
       follow_button: 关注
       unfollow_button: 取消关注

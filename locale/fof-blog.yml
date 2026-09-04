@@ -2,90 +2,111 @@
 # Use https://weblate.rob006.net/projects/flarum2/fof-blog/zh_Hans/ for translation.
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
+flarum-audit:
+  lib:
+    browser:
+      article:
+        approved: '通过了博客文章 {discussion} 的审核'
+        created: '创建了博客文章 {discussion}'
+        featured: '将博客文章 {discussion} 设为精选'
+        unfeatured: '取消了博客文章 {discussion} 的精选'
+        updated: '修改了博客文章 {discussion} 的信息'
 fof-blog:
   admin:
     blog: 博客
     permissions:
-      approve_posts: 审核博客文章
+      approve_posts: 审核文章
       auto_approve_posts: 发布文章无需审核
-      write_articles: 撰写和编辑博客文章
+      write_articles: 撰写和编辑文章
     settings:
-      add_hero_label: 展示欢迎横幅
-      add_hero_text: 允许在博客页面展示首页的欢迎横幅。
-      add_sidebar_nav_label: 添加到侧边栏
+      add_hero_label: 显示欢迎横幅
+      add_hero_text: 在博客页面显示欢迎横幅，用户关闭后不再显示。
+      add_sidebar_nav_label: 添加至侧边栏
       add_sidebar_nav_text: 在侧边栏添加博客入口。
       allow_comments_label: 允许评论
-      allow_comments_text: 允许他人在新文章中发表评论。此项关闭时，只能为每篇文章单独开启。<b>注意：</b>此项设置的变更不会影响已存在的文章。
+      allow_comments_text: 允许他人评论文章。关闭后，仍可为单篇文章单独开启。<b>注意：</b>此设置变更不会影响已发布的文章。
       blog_heading: 博客
       categories_heading: 分类目录
-      default_article_image_label: 默认封面图
-      default_article_image_text: 设置默认使用的文章封面图。
-      featured_count_label: 精选评论上限
-      featured_count_text: 博客页面顶部最多可显示多少评论？
-      hide_on_discussion_list_label: 不在主题列表中显示
-      hide_on_discussion_list_text: 在「全部主题」列表中隐藏博客文章。
-      hide_tags_in_taglist_label: 对标签列表不可见
-      hide_tags_in_taglist_text: 开启后，将在首页中隐藏博客标签。
-      no_categories_selected: 请选择分类目录
+      categories_modal:
+        close: 关闭
+        description: 选择一个或多个标签作为博客分类目录。
+        no_tags: 暂无可用标签。
+        tag_name_column: 标签名称
+        visit_blog: 访问博客。
+      default_article_image_label: 默认文章头图
+      default_article_image_text: 文章未设置头图时，使用此图片作为默认头图。
+      featured_count_label: 精选文章上限
+      featured_count_text: 设置博客页面顶部大图区域最多显示的精选文章数量。
+      hide_on_discussion_list_label: 从讨论列表中隐藏
+      hide_on_discussion_list_text: 不在讨论列表中显示博客文章。
+      hide_tags_in_taglist_label: 从标签列表中隐藏博客标签
+      hide_tags_in_taglist_text: 开启后，博客标签不会显示在首页标签列表中。
+      no_categories_selected: 尚未选择分类目录
       redirects_heading: 重定向
-      require_review_label: 文章必须经人工审核
-      require_review_text: 发布文章时，经管理员人工审核后才会公开可见。
+      redirects_options:
+        both: 重定向文章和标签
+        discussions_only: 仅重定向文章
+        none: 不重定向
+        tags_only: 仅重定向标签
+      redirects_text: 将原讨论和标签链接重定向至对应的博客页面。
+      require_review_label: 文章需要审核
+      require_review_text: 开启后，新文章提交后需要管理人员审核，通过后才能公开可见。
       select_categories_button: 选择博客分类目录
-      selected_category_count: '已指定 {count, plural, one {#} other {#}} 个分类目录'
-      show_tag_hierarchy_label: 显示标签层次
-      show_tag_hierarchy_text: 在子分类目录之间添加空格，并为分类目录列表提供层次结构视图。
+      selected_category_count: '{count, plural, one {已选择 # 个分类目录} other {已选择 # 个分类目录}}'
+      show_tag_hierarchy_label: 显示分类层级
+      show_tag_hierarchy_text: 为子分类增加缩进，在分类目录中展示层级关系。
   forum:
     article:
-      slug: 别名
+      slug: 固定链接名
       summary: 摘要
       title: 标题
     article_settings:
       fields:
         highlight:
-          helper_text: 使用大尺寸图片展示本文章。
-          title: 大图
+          helper_text: 在博客首页以大图形式突出显示此文章
+          title: 精选文章
         image:
-          helper_text: '最佳分辨率 1200x630'
+          helper_text: '推荐尺寸：1200 × 630，适合社交媒体分享'
           title: 头图
         summary:
-          helper_text: '摘要用于 SEO，以及博客主页的预览。'
-          placeholder: 请输入摘要
+          helper_text: '摘要用于 SEO，以及博客首页预览'
+          placeholder: 填写文章摘要
           title: 摘要
-      title: 博客文章设置
+      title: 文章设置
     blog: 博客
     categories: 分类目录
-    category_empty: 此分类目录中没有文章
+    category_empty: 此分类目录暂无文章
     comment_section:
       comments: 评论
-      locked: 评论已关闭
+      locked: 此文章已关闭评论
     compose:
-      write_article: 写文章
+      write_article: 撰写文章
     composer:
-      comment_section: 撰写文章时，评论区无法使用。
+      comment_section: 撰写文章时暂不提供评论区。
       edit_categories: 编辑分类目录
-      enter_message_here: 在此输入正文内容
-      no_blog_tags_selected: 您选择的标签中没有一个是博客标签，请至少选择一个博客标签。
-      no_title: 标题
-      nothing_to_preview: 什么都还没写呢
+      enter_message_here: 写点什么吧…
+      no_blog_tags_selected: 所选标签中没有博客分类，请至少选择一个博客分类。
+      no_title: 无标题
+      nothing_to_preview: 暂无可预览内容
       post_article: 发布文章
-      post_without_blog_info: 确定要发布这篇文章吗？您还没有输入博客摘要或上传封面图。
+      post_without_blog_info: 文章尚未填写摘要或设置头图，确定要直接发布吗？
       select_category: 选择分类目录
-      update_settings: 文章设置
+      update_settings: 更新文章设置
       view: 预览
-      write: 写作
+      write: 编辑
     forum_nav: 论坛导航
     hidden: 隐藏
     no_more_posts: 没有更多文章了
-    read_more: 阅读更多
-    recent_posts: 近期文章
+    read_more: 阅读全文
+    recent_posts: 最近文章
     return_to_overview: '返回博客首页 '
     review_article:
-      approve_article: 批准文章
-      approve_article_approved: 已批准发布此文章
-      pending_review: 此文章需要审核后才会发布
-      pending_review_title: 待审核
+      approve_article: 通过审核
+      approve_article_approved: 文章已通过审核并发布
+      pending_review: 此文章正在等待审核，尚未发布
+      pending_review_title: 等待审核
     tools:
-      approve_article: 批准文章
+      approve_article: 通过审核
       article_settings: 文章设置
       delete_forever: 永久删除
       disable_comments: 关闭评论
@@ -93,11 +114,15 @@ fof-blog:
       enable_comments: 开启评论
       hide_article: 隐藏文章
       recover_article: 恢复文章
-      rename_article: 重命名文章
-      update_category: 更新分类目录
+      rename_article: 修改标题
+      update_category: 修改分类目录
     utils:
       redirect:
-        link: 如果没有任何响应，请<a>点击此处</a>
-        title: 正在将您重定向至博客文章……
+        link: 如果没有自动跳转，请<a>点击这里</a>
+        title: 正在跳转至博客文章…
     validation:
-      missing_id: 'ID 缺失'
+      missing_id: '缺少 ID'
+  lib:
+    gambits:
+      blog:
+        key: 博客

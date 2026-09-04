@@ -6,94 +6,94 @@ flarum-audit:
   lib:
     browser:
       discussion:
-        best_answer_set: '将 {post} 设置为 {discussion} 中的最佳答案'
-        best_answer_unset: '取消设置{post}为 {discussion} 中 的最佳答案'
+        best_answer_set: '将 {post} 设为 {discussion} 的最佳回复'
+        best_answer_unset: '取消了 {discussion} 中的最佳回复 {post}'
 fof-best-answer:
   admin:
     edit_tag:
-      qna_label: 启用最佳回复
-      reminders: 提醒选择最佳回复
+      qna_label: 在此标签启用最佳回复
+      reminders: 提醒此标签下的讨论选择最佳回复
     permissions:
-      allow_select_own_post: 允许将自己的回复设为最佳回答
+      allow_select_own_post: 将自己的帖子设为最佳回复
       best_answer: 为自己的讨论选择最佳回复
       best_answer_not_own_discussion: 为他人的讨论选择最佳回复
     settings:
-      discussion_sidebar_jump_button: 展示最佳回复跳转按钮
-      discussion_sidebar_jump_button_help: 在讨论帖侧边栏添加一个可以跳转到最佳回复的按钮。
+      discussion_sidebar_jump_button: 最佳回复定位按钮
+      discussion_sidebar_jump_button_help: 在讨论页侧边栏添加按钮，点击可直接跳转至最佳回复。
       documentation: 文档
-      enabled_tags_help: '如有需要，请选择要启用最佳回复的标签。这些标签将成为「Q&A」格式的标签。'
+      enabled_tags_help: 选择启用最佳回复功能的标签。启用后，这些标签下的讨论将采用问答模式，并可设置最佳回复。
       enabled_tags_label: 启用标签
       label:
         advanced: 高级
         general: 常规
-        reminders: 提醒事项
-        reminders_notice: '要运行提醒功能，你必须正确配置 Flarum 调度器。'
+        reminders: 提醒
+        reminders_notice: '要使用提醒功能，请先正确配置 Flarum 任务调度。'
         tags: 最佳回复标签
-      remind_tags_help: 如有需要，请选择要发送提醒的标签（如果有）。
+      remind_tags_help: 仅提醒这些标签下尚未设置最佳回复的讨论。
       remind_tags_label: 提醒标签
-      schedule_log_output: 将调度程序的输出添加到日志存储中
-      schedule_on_one_server: '使用 onOneServer() 方法建立计划任务'
-      schedule_on_one_server_help: '需要 Redis/Memcache'
-      schedule_stop_overnight: 非工作时间禁用提醒
-      schedule_stop_overnight_help: '服务器时间 20:00 至 9:00'
-      select_best_answer_reminder_days: 提醒计时
-      select_best_answer_reminder_days_help: '于 n 天后提问者选择最佳回复。'
-      select_best_answer_tags_help: 选择一个次标签，绑定到拥有最佳回复的讨论帖上。取消最佳回复时，同时移除该标签。
-      select_best_answer_tags_label: 「已解决」讨论帖标签
-      show_filter_help: 在启用最佳回复的标签页面显示「已解决/未解决」过滤项
-      show_filter_label: 显示已解决过滤项
-      show_max_lines_help: '预览帖超过一定行数时，使用淡出效果截断展示。设为 0 禁用此效果。'
-      show_max_lines_label: 最大预览帖行数
-      tags_info: "为标签启用最佳回复功能后，请按需配置「设置最佳回复」的全局或标签权限。\n"
-      use_alt_ui: 按钮布局
-      use_alt_ui_help: 在帖子底部显示最佳回复选择按钮
+      schedule_log_output: 将任务调度输出写入日志
+      schedule_on_one_server: '任务调度使用 onOneServer()'
+      schedule_on_one_server_help: '需要 Redis 或 Memcache'
+      schedule_stop_overnight: 夜间暂停提醒
+      schedule_stop_overnight_help: '服务器时间 21:00 至次日 08:00 不发送提醒。'
+      select_best_answer_reminder_days: 提醒间隔
+      select_best_answer_reminder_days_help: '讨论发起一定天数后，提醒发起人选择最佳回复。设为 0 则关闭提醒。'
+      select_best_answer_tags_help: 设置最佳回复后，自动为讨论添加指定的次标签。取消最佳回复时自动移除。例如「已解决」。
+      select_best_answer_tags_label: 「已解决」讨论标签
+      show_filter_help: '在启用最佳回复的标签中，为讨论列表显示「已解决 / 未解决」筛选项。'
+      show_filter_label: 显示解决状态筛选
+      show_max_lines_help: '超过此行数的内容会在预览中渐隐截断，设为 0 则不限制。'
+      show_max_lines_label: 帖子预览最大行数
+      tags_info: "启用最佳回复后，请按需配置「设置最佳回复」的全局或标签权限。\n"
+      use_alt_ui: 底部布局
+      use_alt_ui_help: 将最佳回复操作放在帖子底部。
   email:
     body:
-      awarded: "{recipient_display_name}，你好！\n\n干得漂亮，您在【{discussion_title}】发表的回复刚刚被 {actor_display_name} 选为最佳回复。感谢你的耐心帮助。\n\n点击此处查看回复：{discussion_url}\n"
-      ba-set: "{recipient_display_name}，你好！\n\n{actor_display_name} 刚刚为你参与讨论的讨论【{discussion_title}】选择了最佳回复。\n\n去看看吧：{discussion_url}\n"
-      select: "{recipient_display_name}，你好！\n\n你的讨论「{discussion_title}」已经有了很多回复。\n\n如果其中有可以帮助你解决问题的，你可以把他选为最佳回复，这样不仅能让后来者快速找到解决问题的办法，也可以激励帮助你的人。\n\n点击此处查看讨论：{discussion_url}，并选择最佳回复。\n\n此致\n"
+      awarded: "{recipient_display_name}，你好！\n\n{actor_display_name} 刚刚将你在「{discussion_title}」中的帖子设为最佳回复。感谢你的热心帮助！\n\n点击查看：{discussion_url}\n"
+      ba-set: "{recipient_display_name}，你好！\n\n{actor_display_name} 刚刚为你参与的讨论「{discussion_title}」设置了最佳回复。\n\n点击查看：{discussion_url}\n"
+      select: "{recipient_display_name}，你好！\n\n你发起的讨论「{discussion_title}」已经收到了一些回复，不知道问题是否已经解决？\n\n如果问题已经解决，欢迎从回复中选出最有帮助的一条，设为最佳回复。此举不仅能帮到未来遇到相同问题人，也是对热心回复者的一份认可。\n\n前往讨论：{discussion_url}\n\n感谢你的参与！\n"
     subject:
-      awarded: '您的帖子被 {display_name} 设为最佳回复'
-      ba-set: '{display_name} 选择了一个最佳回复'
-      select: 您的问题是否已解决？
+      awarded: '{display_name} 将你的帖子设为最佳回复'
+      ba-set: '{display_name} 设置了最佳回复'
+      select: 你的问题解决了吗？
   forum:
     answered_badge: 已解决
     best_answer_button: 最佳回复
-    best_answer_label: '由 <a>{username}</a> 于 {time_set} 选择'
+    best_answer_label: '由 <a>{username}</a> 于 {time_set} 设置'
     composer:
       titlePlaceholder: 标题
     discussion:
       jump_to_best_answer_button: 查看最佳回复
     errors:
-      mismatch: 所选回复不在当前讨论中。
+      mismatch: 所选帖子不属于此讨论。
     filter:
-      accessible_label: 已解决/未解决
+      accessible_label: 筛选解决状态
       all_label: 全部问题
       solved_label: 已解决
-      unsolved_label: 等待解决
+      unsolved_label: 未解决
     index:
-      ask_question: 提问
+      ask_question: 开始提问
       cannot_ask_question: 提问已关闭
       solved_link: 已解决
-      unsolved_link: 等待解决
+      unsolved_link: 未解决
     notification:
-      awarded: '您的帖子被 {username} 设为最佳回复'
+      awarded: '{username} 将你的帖子设为最佳回复'
       best_answer_in_discussion: '{username} 选择了最佳回复'
-      content: 如果您的问题已解决，请选择一个最佳回复
+      content: 如果你的问题已经解决，别忘了选择最佳回复
       preferences:
         awarded_best_answer: 有人将我的帖子设为最佳回复
-        best_answer_in_discussion: 我互动的讨论有了最佳回复
-        select_best_answer: 提醒我选择自己讨论的最佳回复
-    remove_best_answer: 移除最佳回复
+        best_answer_in_discussion: 我参与的讨论设置了最佳回复
+        select_best_answer: 提醒我为自己发起的讨论选择最佳回复
+    remove_best_answer: 取消最佳回复
     this_best_answer: 设为最佳回复
     user:
-      best-answer-count: '{count} 次助人'
+      best-answer-count: '{count, plural, one {{count} 个最佳回复} other {{count} 个最佳回复}}'
   lib:
     gambits:
       solved-discussions:
-        key: solved
+        key: 已解决
 fof-user-directory:
   lib:
     sort:
-      least_best_answers: 最少最佳回复
-      most_best_answers: 最多最佳回复
+      least_best_answers: 解题潜力股
+      most_best_answers: 问题终结者

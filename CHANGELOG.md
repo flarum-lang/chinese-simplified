@@ -36,6 +36,7 @@ CHANGELOG
 * [`fof/author-change`](https://github.com/FriendsOfFlarum/author-change)
 * [`fof/badges`](https://github.com/FriendsOfFlarum/badges)
 * [`fof/blog`](https://github.com/FriendsOfFlarum/blog)
+* [`fof/bookmarks`](https://github.com/FriendsOfFlarum/bookmarks)
 * [`fof/categories`](https://github.com/FriendsOfFlarum/categories)
 * [`fof/checklist`](https://github.com/FriendsOfFlarum/checklist)
 * [`fof/discussion-templates`](https://github.com/FriendsOfFlarum/discussion-templates)

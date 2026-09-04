@@ -4,57 +4,57 @@
 
 fof-badges:
   admin:
-    actions: 获得后执行动作
+    actions: 获得徽章后执行
     active: 启用
-    add_to_group: 添加至用户组
-    add_to_group_help: 当用户获得此勋章时，自动将其添加到指定用户组。
-    appearance: 外观设计
+    add_to_group: 加入用户组
+    add_to_group_help: 用户获得此徽章时，自动将其加入指定用户组。
+    appearance: 外观
     assign: 授予
-    assign_badge: '授予：{badge}'
-    assign_reason: 授予理由（可选）
-    assign_reason_help: 此理由将显示在该用户的勋章详情中。
-    assign_reason_placeholder: 为什么要授予此勋章？
+    assign_badge: '授予徽章：{badge}'
+    assign_reason: 授予原因（可选）
+    assign_reason_help: 授予原因会显示在用户的徽章信息中。
+    assign_reason_placeholder: 为什么授予这个徽章？
     automatic: 自动
     background_color: 背景颜色
-    badge_assigned: '成功将勋章“{badge}”授予 {username}！'
+    badge_assigned: '已向 {username} 授予「{badge}」！'
     badge_category: 分类
-    badge_count: '{count, plural, one {# 个勋章} other {# 个勋章}}'
+    badge_count: '{count, plural, one {# 枚徽章} other {# 枚徽章}}'
     badge_description: 描述
-    badge_description_placeholder: 简述如何获得此勋章...
+    badge_description_placeholder: 介绍如何获得这个徽章…
     badge_name: 名称
-    badge_name_placeholder: 例如：“水贴达人”
-    badge_revoked: '已撤销 {username} 的“{badge}”勋章。'
-    badge_slug: 'URL 别名'
-    badge_slug_help: 'URL 友好的唯一标识符。留空则根据名称自动生成。'
-    badge_slug_placeholder: 例如：posting-master
-    cancel: 放弃
+    badge_name_placeholder: 例如：发帖狂魔
+    badge_revoked: '已收回 {username} 的「{badge}」徽章。'
+    badge_slug: 固定链接名
+    badge_slug_help: '用于 URL 的标识，留空时会根据名称自动生成。'
+    badge_slug_placeholder: 例如：100-posts-master
+    cancel: 取消
     category_description: 描述
-    category_description_placeholder: 描述此分类下的勋章...
+    category_description_placeholder: 介绍这一类徽章…
     category_enabled: 启用
-    category_enabled_help: 未启用的分类及其勋章将不会显示在勋章列表中。
+    category_enabled_help: 禁用后，此分类及其徽章都不会出现在徽章列表中。
     category_name: 名称
-    category_name_placeholder: 例如：“成就勋章”
-    category_slug: 'URL 别名'
-    category_slug_help: 'URL 友好的分类标识符。'
+    category_name_placeholder: 例如：成就徽章
+    category_slug: 固定链接名
+    category_slug_help: '用于分类 URL 的标识。'
     category_slug_placeholder: 例如：achievements
-    clear_selection: 清除
-    create_badge: 新建勋章
-    create_category: 新建分类
+    clear_selection: 清除选择
+    create_badge: 创建徽章
+    create_category: 创建分类
     delete: 删除
-    delete_badge_confirm: '确定要删除勋章“{name}”吗？所有已获得该勋章的用户也将失去它。'
-    delete_category_confirm: '确定要删除分类“{name}”吗？'
-    delete_category_confirm_with_badges: '确定要删除分类“{name}”吗？该分类下的 {count, plural, one {# 个勋章} other {# 个勋章}} 将变为未分类状态。'
-    disabled: 已禁用
-    earned_count: '{count} 人持有'
+    delete_badge_confirm: '确定要删除徽章「{name}」吗？所有已经获得此徽章的用户也会失去该徽章。'
+    delete_category_confirm: '确定要删除分类「{name}」吗？'
+    delete_category_confirm_with_badges: '确定要删除分类「{name}」吗？其中 {count, plural, one {# 枚徽章} other {# 枚徽章}} 将归入未分类。'
+    disabled: 禁用
+    earned_count: '{count} 人已获得'
     edit: 编辑
-    edit_badge: 编辑勋章
+    edit_badge: 编辑徽章
     edit_category: 编辑分类
-    enabled: 已启用
-    granted_by_system: 系统自动
+    enabled: 启用
+    granted_by_system: 系统
     headers:
-      badges: 勋章列表
+      badges: 徽章
       description: 描述
-      earned: 持有数
+      earned: 获得人数
       icon: 图标
       name: 名称
       order: 排序
@@ -65,249 +65,249 @@ fof-badges:
     icon_picker:
       collapse: 收起图标选择器
       expand: 展开图标选择器
-      hint: '点击图标进行选择，或直接输入 Font Awesome 类名。'
+      hint: '点击图标选择，也可以直接在上方输入 FontAwesome 图标类名。'
     inactive: 停用
-    install_defaults: 导入预设勋章
-    install_defaults_error: 导入失败。
-    install_defaults_success: 预设勋章导入成功！
-    is_active: 启用此勋章
-    is_active_help: 未启用的勋章不会自动授予用户，也无法被手动授予。
-    is_visible: 在列表中显示
-    is_visible_help: 如果关闭，该勋章将不会显示在“所有勋章”列表中，但用户获得后仍可见。
+    install_defaults: 安装默认徽章
+    install_defaults_error: 默认徽章安装失败。
+    install_defaults_success: 默认徽章安装成功！
+    is_active: 启用
+    is_active_help: 停用后，此徽章不会再自动授予。
+    is_visible: 在徽章列表中显示
+    is_visible_help: 隐藏后不会出现在公开徽章列表中，但不影响用户通过其他渠道获得。
     manual: 手动
     metrics:
-      best_answers_received: 获得最佳答案数
+      best_answers_received: 最佳答案数
       discussion_count: 发起讨论数
-      downvotes_given: 投出反对
-      downvotes_received: 收到反对
-      edit_count: 编辑帖子次数
+      downvotes_given: 投出反对票数
+      downvotes_received: 收到反对票数
+      edit_count: 编辑帖子数
       files_uploaded: 上传文件数
-      has_avatar: 已上传头像
+      has_avatar: 已设置头像
       has_bio: 已填写个人简介
       has_nickname: 已设置昵称
       likes_given: 点赞数
       likes_received: 获赞数
-      member_days: 加入天数
+      member_days: 注册天数
       polls_created: 发起投票数
       polls_voted: 参与投票数
-      post_count: 总发帖数
+      post_count: 发帖数
       private_discussions_created: 发起私密讨论数
-      reactions_given: 做出回应数
-      reactions_received: 收到回应数
-      tag_posts: 特定标签发帖数
-      upvotes_given: 投出点赞
-      upvotes_received: 收到点赞
+      reactions_given: 参与互动数
+      reactions_received: 收到互动数
+      tag_posts: 指定标签内发帖数
+      upvotes_given: 投出赞成票数
+      upvotes_received: 收到赞成票数
     move_down: 下移
     move_up: 上移
     next: 下一页
-    no_badges: 暂无勋章。快去创建你的第一个勋章吧！
-    no_categories: 暂无分类。快去创建你的第一个分类吧！
+    no_badges: 还没有徽章，先创建一个吧！
+    no_categories: 还没有分类，先创建一个吧！
     no_category: 无分类
-    no_group: 无用户组变更
-    no_holders: 暂无人获得此勋章。
-    no_holders_found: 未找到符合条件的用户。
+    no_group: 不加入用户组
+    no_holders: 还没有人获得这个徽章。
+    no_holders_found: 没有找到符合条件的获得者。
     no_users_found: 未找到用户
     permissions:
-      give_manually: 手动授予勋章
-      moderate: 管理勋章
-      view_list: 查看勋章列表
-      view_user_badges: 查看用户勋章
+      give_manually: 手动授予徽章
+      moderate: 管理徽章
+      view_list: 查看徽章列表
+      view_user_badges: 查看用户徽章
     preview: 预览
     previous: 上一页
     rarity: '稀有度 {percent}%'
-    recalculate: 立即重算
-    recalculate_confirm: 此操作将重新计算所有用户的自动分配勋章，过程将在后台运行。是否继续？
-    recalculate_error: 重算失败，请重试。
-    recalculate_success: '重算完成！授予：{awarded}，撤销：{revoked}，已处理用户：{users}'
+    recalculate: 重新评定
+    recalculate_confirm: 将根据当前规则重新评定所有自动徽章，并相应授予或收回徽章。任务会在后台执行。确定要继续吗？
+    recalculate_error: 徽章重新评定失败，请重试。
+    recalculate_success: '重新评定完成！共处理 {users} 名用户，授予 {awarded} 枚徽章，收回 {revoked} 枚徽章。'
     recalculate_tab:
-      all_badges: 所有自动勋章
-      badge_help: 选择特定勋章进行重算，或选择全部自动勋章。
-      badge_label: 需要重算的勋章
-      badges_to_check: 待检勋章
-      chunk_size_help: 每个任务处理的用户数量。较小的批次更稳定，但总耗时更长。
-      chunk_size_label: 批次大小
+      all_badges: 全部自动徽章
+      badge_help: 选择指定徽章，或重新评定全部自动徽章。
+      badge_label: 重新评定徽章
+      badges_to_check: 待检查徽章
+      chunk_size_help: 分批处理时，每个后台任务处理的用户数量。数量越小越稳定，但整体耗时也越长。
+      chunk_size_label: 每批用户数
       default: 默认
-      estimated_chunks: 预计批次
-      info: 重算过程将分批处理以防止超时。每一批次将作为一个独立的后台任务运行。
-      jobs_empty: 暂无历史任务。
-      jobs_title: 任务历史
-      no_automatic_badges: 暂无自动勋章。请先创建一个带有触发条件的勋章。
-      no_revoke_help: 启用后，即使用户不再满足条件，也不会撤销已获得的勋章。
-      no_revoke_label: 保留现有勋章（不撤销）
-      reapply_actions_help: 启用后，即使是已拥有该勋章的用户，也会再次触发“获得后动作”（如添加到用户组）。适用于为现有勋章追加新动作的场景。
-      reapply_actions_label: 重新执行授予动作
-      show_more: '加载更多 ({count})'
-      start: 开始重算
-      sync_counts: 开始同步
-      sync_counts_error: 同步失败。
-      sync_counts_info: 根据数据库实际记录，重新统计所有勋章的“持有数”。如果发现显示的获得人数不正确，请使用此功能。
-      sync_counts_success: '同步完成！在 {total} 个勋章中修正了 {corrected} 个计数错误。'
-      sync_counts_title: 同步勋章数量
-      title: 发起重算任务
+      estimated_chunks: 预计批处理次数
+      info: 系统会分批处理用户，每批单独进入后台队列，避免任务超时。
+      jobs_empty: 暂无重新评定任务。
+      jobs_title: 任务记录
+      no_automatic_badges: 尚未配置自动徽章，请先创建徽章并设置自动授予条件。
+      no_revoke_help: 开启后，即使用户不再满足条件，也不会收回已经获得的徽章。
+      no_revoke_label: 保留现有徽章
+      reapply_actions_help: 开启后，会为已经拥有徽章的用户重新执行相关操作，例如加入用户组。适合为已有徽章新增操作后使用。
+      reapply_actions_label: 重新执行徽章操作
+      show_more: '再显示 {count} 条'
+      start: 开始重新评定
+      sync_counts: 重新统计获得人数
+      sync_counts_error: 重新统计获得人数失败。
+      sync_counts_info: 根据徽章记录重新统计每枚徽章的获得人数。重新评定后数量异常时可以使用此功能校正。
+      sync_counts_success: '获得人数已重新统计，共修正 {corrected} / {total} 枚徽章。'
+      sync_counts_title: 重新统计获得人数
+      title: 开始重新评定
       total_users: 用户总数
     recalculation:
-      already_running: 已有重算任务正在进行中。
-      auto_refresh_off: 自动刷新：关
-      auto_refresh_on: 自动刷新：开
-      cancel: 取消任务
-      cancel_confirm: 确定要取消重算吗？当前进度将丢失。
-      cancel_error: 取消任务失败。
-      cancelled: 已取消
+      already_running: 已有重新评定任务正在运行。
+      auto_refresh_off: 开启自动刷新
+      auto_refresh_on: 自动刷新已开启
+      cancel: 取消
+      cancel_confirm: 确定要取消重新评定吗？当前进度将会丢失。
+      cancel_error: 取消重新评定失败。
+      cancelled: 重新评定已取消
       chunks: '批次：{processed} / {total}'
-      completed: 计算完成！
+      completed: 重新评定完成！
       dismiss: 关闭
-      failed: 计算失败
-      pending: 准备中...
-      progress: '已处理 {processed} / {total} ({percentage}%)'
-      running: 正在计算...
-      started: 勋章重算任务已启动，正在后台运行。
-      stats: '授予：{awarded} | 撤销：{revoked}'
+      failed: 重新评定失败
+      pending: 准备中…
+      progress: '进度：{processed} / {total}（{percentage}%）'
+      running: 正在重新评定徽章…
+      started: 已开始重新评定徽章，任务将在后台执行。
+      stats: '授予 {awarded}｜收回 {revoked}'
     recalculation_jobs:
-      button: 任务队列
+      button: 任务
       cancel: 取消
       cancel_error: 取消任务失败。
       cancelled: 任务已取消。
-      empty: 队列中无任务。
-      force_cancel: 强制终止
-      mark_failed: 标记为失败
-      mark_failed_error: 标记失败时出错。
+      empty: 暂无重新评定任务。
+      force_cancel: 强制取消
+      mark_failed: 标记失败
+      mark_failed_error: 标记任务失败。
       marked_failed: 任务已标记为失败。
-      results: '授予：{awarded} | 撤销：{revoked}'
+      results: '授予 {awarded}｜收回 {revoked}'
       status:
         cancelled: 已取消
         completed: 已完成
         failed: 失败
         pending: 等待中
-        running: 进行中
-      stuck: 未响应
-      title: 重算任务
-      users: '处理进度：{processed} / {total}'
-    revoke: 撤销
-    revoke_confirm: '确定要撤销 {username} 的“{badge}”勋章吗？'
-    revoke_error: 撤销失败。
-    save: 保存更改
-    search_holders_placeholder: 搜索持有者...
-    search_user_placeholder: 搜索用户名或昵称...
+        running: 运行中
+      stuck: 卡住
+      title: 重新评定任务
+      users: '检查进度：{processed} / {total}'
+    revoke: 收回
+    revoke_confirm: '确定要收回 {username} 的「{badge}」徽章吗？'
+    revoke_error: 收回徽章失败。
+    save: 保存
+    search_holders_placeholder: 搜索获得者…
+    search_user_placeholder: 搜索用户名或外显名称…
     select_user: 选择用户
-    send_notification: 发送系统通知
+    send_notification: 通知用户
     settings:
       display_title: 显示设置
-      integrations_help: 勋章指标依赖其他扩展。请安装相应扩展以解锁对应指标。
-      integrations_title: 第三方扩展集成
-      new_badge_highlight: 高亮显示新获得的勋章
-      new_badge_highlight_help: '在过去 7 天内获得的勋章上显示“新”标签。'
-      post_badge_display_limit: 帖子下方显示的勋章数量上限
-      post_badge_display_limit_help: '帖子下方显示的勋章最大数量。设为 0 则禁用限制。'
-      primary_badge_display: 主勋章显示方式
-      primary_badge_display_help: 用户主勋章在用户名旁的显示样式。
-      primary_badge_hidden: 隐藏
-      primary_badge_icon: 仅显示图标
-      primary_badge_icon_name: 显示图标和名称
+      integrations_help: 部分徽章指标依赖其他扩展，安装对应扩展后即可使用。
+      integrations_title: 扩展联动
+      new_badge_highlight: 新徽章标记
+      new_badge_highlight_help: '获得不满 7 天的徽章会显示「新」标记。'
+      post_badge_display_limit: 帖子徽章显示数量
+      post_badge_display_limit_help: '每篇帖子下方最多显示的徽章数量，0 表示不显示。'
+      primary_badge_display: 主徽章显示
+      primary_badge_display_help: 设置主徽章在用户名旁的显示方式。
+      primary_badge_hidden: 不显示
+      primary_badge_icon: 仅图标
+      primary_badge_icon_name: 图标和名称
       save: 保存设置
-      save_error: 保存设置失败。
-      saved: 设置已保存。
-      show_badges_on_user_card: 在用户卡片上展示勋章
-      show_badges_on_user_card_help: 在用户卡片上展示已收藏或最稀有的勋章。
-    showing_holders: '显示 {total} 位持有者中的第 {from}-{to} 位'
+      save_error: 设置保存失败
+      saved: 设置已保存
+      show_badges_on_user_card: 用户卡片显示徽章
+      show_badges_on_user_card_help: 在用户卡片和个人主页显示用户的最爱徽章或稀有徽章。
+    showing_holders: '显示第 {from}–{to} 位，共 {total} 人'
     status: 状态
-    tab_assign: 授予操作
-    tab_holders: '持有者 ({count})'
+    tab_assign: 授予
+    tab_holders: '获得者（{count}）'
     tabs:
       badges: 徽章
       categories: 分类
-      recalculation: 重新计算
+      recalculation: 重新评定
       settings: 设置
     trigger_builder:
       add_condition: 添加条件
-      and: '满足所有条件 (AND)'
-      and_help: 用户必须同时满足上述所有条件才能获得此勋章。
+      and: 全部满足（AND）
+      and_help: 用户必须同时满足所有条件才能获得此徽章。
       date_end: 结束日期
-      date_range_help: 仅统计在此日期范围内的数据。适用于限时活动勋章。
+      date_range_help: 仅统计此日期范围内的活动，适用于限时活动徽章。
       date_start: 开始日期
-      loading_tags: 加载标签中...
-      logic: 多条件逻辑
-      no_conditions_info: 未设置自动化条件。此勋章目前仅能由管理员/版主手动授予。
-      or: '满足任一条件 (OR)'
-      or_help: 用户只需满足上述任意一个条件即可获得此勋章。
+      loading_tags: 正在加载标签…
+      logic: 多条件关系
+      no_conditions_info: 尚未设置自动条件，此徽章只能由管理人员手动授予。
+      or: 任一满足（OR）
+      or_help: 用户满足任意一个条件即可获得此徽章。
       remove_condition: 移除条件
-      select_tag: 选择标签...
-      tag_filter: 限定标签
-      tag_filter_help: 当使用“特定标签发帖数”指标时为必选项。
-      use_date_range: 限制日期范围
-    trigger_config: 自动获取条件
-    trigger_config_help: 配置自动授予勋章的触发条件。若为手动授予的勋章，请留空。
+      select_tag: 选择标签…
+      tag_filter: 标签筛选
+      tag_filter_help: 使用「指定标签内发帖数」指标时必须选择标签。
+      use_date_range: 限定日期范围
+    trigger_config: 自动授予
+    trigger_config_help: 设置自动授予徽章的条件。留空则只能手动授予。
     uncategorized: 未分类
     validation:
-      tag_required: 使用“特定标签发帖数”指标时，必须选择一个标签。
+      tag_required: 使用「指定标签内发帖数」指标时必须选择标签。
   forum:
-    all_badges: 勋章总览
-    badges_subtitle: 积极参与社区互动，解锁勋章！
-    badges_title: 勋章中心
-    earned_by: '{count, plural, one {# 人} other {# 人}}已获得'
-    earned_users: 最近获得者
-    loading: 加载中...
-    more_users_earned: 以及更多...
-    my_badges: 我的勋章
+    all_badges: 全部徽章
+    badges_subtitle: 参与讨论，解锁更多徽章！
+    badges_title: 徽章
+    earned_by: '{count, plural, one {# 人已获得} other {# 人已获得}}'
+    earned_users: 获得者
+    loading: 正在加载…
+    more_users_earned: 还有更多获得者…
+    my_badges: 我的徽章
     nav:
-      badges: 勋章中心
+      badges: 徽章
     new_tag: 新
-    no_badges: 暂无勋章。
-    no_users_earned: 虚位以待，快来成为第一个获得者吧！
+    no_badges: 暂无可用徽章。
+    no_users_earned: 还没有人获得这个徽章，来做第一个吧！
     notification:
-      a_badge: 一枚勋章
-      badge_earned: '恭喜！您获得了“{badge}”勋章'
-    other_badges: 其他
-    owned_badge: 您已拥有此勋章
-    toggle_category_dropdown: 切换分类
+      a_badge: 一枚徽章
+      badge_earned: '你获得了 {badge}'
+    other_badges: 其他徽章
+    owned_badge: 你已获得此徽章
+    toggle_category_dropdown: 展开或收起徽章分类
     user:
-      assign_badge: 授予勋章
-      assign_badge_title: '授予勋章给 {username}'
-      assign_button: 确认授予
-      assign_reason: 授予理由（可选）
-      assign_reason_help: 理由将公开显示。
-      assign_reason_placeholder: 为什么要授予此勋章？
-      badge_actions: 操作
-      badge_assigned: '勋章“{badge}”已成功授予 {username}！'
-      badge_revoked: '勋章“{badge}”已撤销。'
-      badges_count: '{count, plural, one {# 枚勋章} other {# 枚勋章}}'
-      badges_tab: 勋章
-      badges_title: '{username} 的勋章墙'
+      assign_badge: 授予徽章
+      assign_badge_title: '向 {username} 授予徽章'
+      assign_button: 授予徽章
+      assign_reason: 授予原因（可选）
+      assign_reason_help: 授予原因会显示在用户的徽章信息中。
+      assign_reason_placeholder: 为什么授予这个徽章？
+      badge_actions: 徽章操作
+      badge_assigned: '已向 {username} 授予「{badge}」！'
+      badge_revoked: '徽章「{badge}」已收回。'
+      badges_count: '{count, plural, one {# 枚徽章} other {# 枚徽章}}'
+      badges_tab: 徽章
+      badges_title: '{username} 的徽章'
       cancel: 取消
-      earned_on: '获得于 {date}'
-      favorite_badge: 已收藏勋章
-      hidden_badge: 已隐藏
-      hide_badge: 从资料页隐藏
+      earned_on: '于 {date} 获得'
+      favorite_badge: 最爱徽章
+      hidden_badge: 已从个人主页隐藏
+      hide_badge: 从个人主页隐藏
       load_more: 加载更多
       manually_awarded: 手动授予
-      no_badges: 该用户暂未获得任何勋章。
-      no_badges_available: 没有可授予的勋章。
-      recalculate: 重算勋章
-      recalculate_error: 重算失败，请重试。
+      no_badges: 该用户还没有获得任何徽章。
+      no_badges_available: 暂无可授予的徽章。
+      recalculate: 重新评定徽章
+      recalculate_error: 徽章重新评定失败，请重试。
       recalculate_modal:
-        all_badges: 所有自动勋章
-        badge_label: 需要重算的勋章
+        all_badges: 全部自动徽章
+        badge_label: 重新评定徽章
         manual: 手动
-        no_revoke_help: 启用后，即使用户不再满足条件，也不会撤销勋章。
-        no_revoke_label: 保留现有勋章
-        reapply_actions_help: 若用户已拥有勋章，重新触发关联动作（如添加用户组）。
-        reapply_actions_label: 重新执行动作
-        submit: 开始重算
-        title: 重算用户勋章
-      recalculate_reapplied: '已为 {reapplied} 个勋章重新执行了动作'
-      recalculate_success: '重算完成！授予：{awarded}，撤销：{revoked}，重应用：{reapplied}'
-      remove_favorite: 取消收藏
-      revoke_badge: 撤销勋章
-      revoke_confirm: '确定要从该用户撤销“{badge}”勋章吗？'
-      revoke_error: 撤销失败。
-      select_badge: 选择勋章...
-      select_badge_label: 选择勋章
-      set_favorite: 设为收藏
-      show_badge: 在资料页显示
-      view_all_badges: 查看所有
+        no_revoke_help: 开启后，即使用户不再满足条件，也不会收回已经获得的徽章。
+        no_revoke_label: 保留现有徽章
+        reapply_actions_help: 如果用户已经拥有该徽章，则重新执行相关操作，例如加入用户组。
+        reapply_actions_label: 重新执行徽章操作
+        submit: 重新评定
+        title: 重新评定徽章
+      recalculate_reapplied: '已重新执行 {reapplied} 枚徽章的操作'
+      recalculate_success: '重新评定完成！授予 {awarded}，收回 {revoked}，重新执行 {reapplied}。'
+      remove_favorite: 取消最爱
+      revoke_badge: 收回徽章
+      revoke_confirm: '确定要收回该用户的「{badge}」徽章吗？'
+      revoke_error: 收回徽章失败。
+      select_badge: 选择徽章…
+      select_badge_label: 选择徽章
+      set_favorite: 设为最爱
+      show_badge: 在个人主页显示
+      view_all_badges: 查看全部徽章
   lib:
     rarity_common: 普通
     rarity_epic: 史诗
-    rarity_explain: '全站仅 {percent}% 的用户拥有此勋章'
-    rarity_legendary: 传说
+    rarity_explain: '{percent}% 的用户已获得此徽章'
+    rarity_legendary: 传奇
     rarity_rare: 稀有
-    rarity_uncommon: 罕见
+    rarity_uncommon: 少见

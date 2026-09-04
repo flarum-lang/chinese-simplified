@@ -22,7 +22,7 @@ fof-analytics:
         statusGoogle: '启用 Google Analytics（UA/GA4）'
         statusPiwik: '启用 Matomo'
       placeholder:
-        piwikAuthToken: "填写令牌以在管理后台启用 Matomo 统计小组件。\n你可以在「设置 > 个人 > API Authentication Token」中找到此令牌。。\n"
+        piwikAuthToken: "填写令牌以在管理后台启用 Matomo 统计小组件。\n你可以在「设置 > 个人 > API Authentication Token」中找到此令牌。\n"
       section:
         googleAnalytics: 'Google Analytics'
         piwik: 'Matomo（前 Piwik）'

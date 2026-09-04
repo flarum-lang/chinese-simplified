@@ -5,40 +5,40 @@
 fof-categories:
   admin:
     basics:
-      categories_label: 分类
+      categories_label: 板块
     headings:
-      child_display: 子分类显示
+      child_display: 子板块显示
       layout: 布局
       nav: 导航
-      parent_display: 父分类显示
+      parent_display: 主板块显示
       performance: 性能
     help:
-      child_bare_icon: 子分类上的图标是否应在没有圆形背景的情况下显示？
-      full_page_desktop: '侧边栏导航菜单是否应折叠为一行（如传统的标签页面）？这还会在分类页面导航栏中隐藏组件（如 Friends of Flarum 论坛统计）。'
-      small_forum_optimized: 这将提供更准确的讨论/帖子计数，但会大幅降低中大型论坛的速度。
+      child_bare_icon: 开启后，子板块图标不再显示圆形背景。
+      full_page_desktop: '开启后，桌面端侧边栏导航会移动到顶部横排展示，与传统标签页类似。同时会隐藏侧边栏中的小组件，例如 FoF 论坛统计。'
+      small_forum_optimized: 提供更准确的讨论和帖子统计，但会大幅降低中大型论坛的性能。
     labels:
-      child_bare_icon: 使用无背景的子图标？
+      child_bare_icon: 子板块图标轻量展示
       compact_mobile_mode: 移动端紧凑模式
-      full_page_desktop: 桌面端全屏显示？
-      keep_tags_nav: 在侧边导航栏保留标签页面链接？
-      parent_remove_description: 隐藏顶级标签描述？
-      parent_remove_icon: 隐藏顶级标签图标？
-      parent_remove_last_discussion: 隐藏顶级标签的最新讨论？
-      parent_remove_stats: 隐藏顶级标签统计数据？
-      small_forum_optimized: 为小型论坛优化？
-    title: 分类设置
+      full_page_desktop: 桌面端全页布局
+      keep_tags_nav: 在侧边导航栏保留标签页入口
+      parent_remove_description: 隐藏主板块描述
+      parent_remove_icon: 隐藏主板块图标
+      parent_remove_last_discussion: 隐藏主板块最新讨论
+      parent_remove_stats: 隐藏主板块统计
+      small_forum_optimized: 小型论坛优化
+    title: 板块设置
   forum:
     all_categories:
-      meta_description_text: 所有分类
+      meta_description_text: 全部板块
       meta_title_text: '=> fof-categories.ref.categories'
     header:
-      back_to_categories_tooltip: 返回分类
+      back_to_categories_tooltip: 返回板块列表
     index:
       categories_link: '=> fof-categories.ref.categories'
     last_discussion_widget:
-      no_discussions: 暂无讨论（抢个沙发吧！）
+      no_discussions: 暂无讨论
     stat-widgets:
       discussion_label: 讨论
       post_label: 帖子
   ref:
-    categories: 分类
+    categories: 板块

@@ -96,6 +96,7 @@ CHANGELOG
 * [`resofire/discussion-participants`](https://github.com/ResofireV2/discussion-participants)
 * [`resofire/menu-control`](https://github.com/ResofireV2/menu-control)
 * [`resofire/mobile-search`](https://github.com/ResofireV2/mobile-search)
+* [`stezkoy/flarum-time-of-magic`](https://github.com/Stezkoy/flarum-time-of-magic)
 * [`tryhackx/flarum-advanced-pages`](https://github.com/TryHackX/flarum-advanced-pages)
 * [`walsgit/flarum-discussion-cards`](https://github.com/WalsGit/flarum-discussion-cards)
 

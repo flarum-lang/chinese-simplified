@@ -21,9 +21,36 @@ stezkoy-time-of-magic:
     click_spark_color_label: 点击光效颜色
     click_spark_description: 在点击的位置展示魔幻粒子效果。
     click_spark_label: 点击光效
+    clovers_density_description: 屏幕上的四叶草数量。
+    clovers_density_label: 四叶草密度
+    clovers_description: 旋转的四叶草幸运草，带来幸福美好。
+    clovers_label: 幸运四叶
     color_description: '留空则使用论坛颜色。例如：#E7672E, #00a185, red, rgb(255,0,0)。'
     color_placeholder: '例如：#00a185'
+    confetti_density_description: 屏幕上的彩纸密度。
+    confetti_density_label: 彩纸密度
+    confetti_description: 缤纷彩纸飘落，烘托节日气氛。
+    confetti_label: 缤纷彩纸
+    density_heavy: 强烈
+    density_light: 轻微
+    density_medium: 适中
     description: 为Flarum站点增加魔法般的交互体验。
+    eggs_density_description: 屏幕上的蛋蛋数量。
+    eggs_density_label: 蛋蛋密度
+    eggs_description: 为全站增加可爱的蛋蛋。
+    eggs_label: 可爱扭蛋
+    fireflies_density_description: 屏幕上的萤火虫数量。
+    fireflies_density_label: 萤火虫密度
+    fireflies_description: 夏日夜空中缓缓飞跃的萤火虫。
+    fireflies_label: 萤火闪亮
+    hearts_density_description: 屏幕上的爱心数量。
+    hearts_density_label: 爱心密度
+    hearts_description: 向上飞腾的爱心，让情人节充满爱意。
+    hearts_label: 爱心飞天
+    lanterns_density_description: 屏幕上的灯笼数量。
+    lanterns_density_label: 灯笼密度
+    lanterns_description: 从天而降的灯笼，飞龙和红包等中国春节祝福。
+    lanterns_label: 中国年
     leaves_density_description: 屏幕上的落叶数量。
     leaves_density_heavy: 大量
     leaves_density_label: 落叶密度
@@ -31,6 +58,10 @@ stezkoy-time-of-magic:
     leaves_density_medium: 适中
     leaves_description: 为全站添加秋叶散落效果。
     leaves_label: 满天落叶
+    petals_density_description: 屏幕上的花瓣数量。
+    petals_density_label: 花瓣密度
+    petals_description: 为全站增加春日花瓣飘落效果。
+    petals_label: 春日花瓣
     progress_bar_color_label: 进度条颜色
     progress_bar_description: 页面滚动时，在页头下方显示窄进度条。
     progress_bar_label: 进度条
@@ -41,9 +72,32 @@ stezkoy-time-of-magic:
     rain_density_medium: 中雨
     rain_description: 为全站添加雨滴掉落效果。
     rain_label: 雨滴掉落
+    scheduler_add_button: 添加计划任务
+    scheduler_cancel_button: 取消
+    scheduler_delete_button: 删除计划任务
+    scheduler_delete_confirm: 确认删除该计划任务？
+    scheduler_description: 在指定的时间区间内，自动开启特效。具有计划任务的特效，即便主开关为关闭，也将会自动开启。
+    scheduler_edit_button: 编辑计划任务
+    scheduler_effects_label: 效果
+    scheduler_empty: 暂无计划任务。点击「添加计划任务」新建。
+    scheduler_enabled_label: 已启用
+    scheduler_end_label: 结束
+    scheduler_modal_add_title: 添加计划任务
+    scheduler_modal_edit_title: 编辑计划任务
+    scheduler_modal_save: 保存
+    scheduler_no_effects: 尚未选择效果
+    scheduler_start_label: 开启
+    scheduler_status_active: 立即激活
+    scheduler_status_inactive: 未激活
+    scheduler_title_label: 标题
+    scheduler_title_placeholder: 例如：春节
+    scheduler_untitled: 未命名的计划任务
     scrollbar_color_label: 滚动条颜色
     scrollbar_description: 使用预设的窄滚动条替代默认样式。
     scrollbar_label: 自定义滚动条
+    section_effects: 效果
+    section_interface: 界面
+    section_scheduler: 任务计划
     snow_density_description: 屏幕上的雪花数量。
     snow_density_heavy: 大雪
     snow_density_label: 雪花密度

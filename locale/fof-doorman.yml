@@ -8,25 +8,25 @@ fof-doorman:
       actions:
         delete: 删除邀请码
         edit: 编辑邀请码
-        notify: 通过电子邮件发送此邀请码
+        notify: 通过邮件发送此邀请码
       columns:
         activates_user: '=> fof-doorman.admin.ref.fields.activates_user.label'
-        created_by: 被创建由
+        created_by: 创建者
         group: '=> fof-doorman.admin.ref.fields.group.label'
         id: ID
         key: '=> fof-doorman.admin.ref.fields.key.label'
         manage: 管理
         max_uses: '=> fof-doorman.admin.ref.fields.max_uses.label'
-        uses: 使用次数
+        uses: 使用情况
       content:
-        delete: '你确定要删除这个邀请码"{key}"吗？'
+        delete: '确定要删除邀请码「{key}」吗？'
         invalid_column: '=> core.admin.users.grid.invalid_column_content'
         no_created_by: 未知用户
         no_group: '=> core.admin.users.grid.columns.group_badges.no_badges'
         uses:
-          total_uses: '{totalUses, plural, one {使用过 {totalUses} 次} other {使用过 {totalUses} 次}}'
-          used_times: '{remaining, plural, =0 {无限次使用} one {剩余 {remainingUses} 次使用} other {剩余 {remainingUses} 次使用}}'
-        warning: 此邀请码已达到最大使用次数。
+          total_uses: '{totalUses, plural, other {已使用 {totalUses} 次}}'
+          used_times: '{remaining, plural, =0 {不限次数} other {剩余 {remainingUses} 次}}'
+        warning: 此邀请码已达到使用次数上限。
       heading: 邀请码
       pagination:
         back_button: '=> core.lib.pagination.back_button'
@@ -41,7 +41,7 @@ fof-doorman:
           help: '=> fof-doorman.admin.ref.fields.activates_user.help'
           label: '=> fof-doorman.admin.ref.fields.activates_user.label'
         group:
-          help: fof-doorman.admin.modals.create_doorkey.group.help
+          help: '=> fof-doorman.admin.ref.fields.group.help'
           label: '=> fof-doorman.admin.ref.fields.group.label'
         key:
           help: '=> fof-doorman.admin.ref.fields.key.help'
@@ -49,9 +49,9 @@ fof-doorman:
         max_uses:
           help: '=> fof-doorman.admin.ref.fields.max_uses.help'
           label: '=> fof-doorman.admin.ref.fields.max_uses.label'
-        submit_and_create_another_button: 创建或添加另一个
-        submit_button: 创建新的邀请码
-        title: 创建新的邀请码
+        submit_and_create_another_button: 创建并继续添加
+        submit_button: 创建邀请码
+        title: 创建邀请码
       edit_doorkey:
         activates_user:
           help: '=> fof-doorman.admin.ref.fields.activates_user.help'
@@ -68,38 +68,38 @@ fof-doorman:
         submit_button: 保存更改
         title: 编辑邀请码
       send_invites:
-        group: '正在向 {group} 群组发送邀请'
-        help: 允许以逗号、空格或逗号加空格分隔的列表。输入单个电子邮件地址或粘贴列表，然后按空格键即可添加。
-        invalid_emails: '这个(些)邮件地址看起来无效:{emails}'
-        max_use_conflict: 发送的电子邮件数量已超过此代码的最大使用次数。
-        placeholder: 在这里填写电子邮件地址
+        group: '分享 {group} 用户组的邀请码'
+        help: '支持使用逗号、空格或「逗号 + 空格」分隔多个邮箱地址。输入单个邮箱地址，或粘贴邮箱列表后按空格键添加。'
+        invalid_emails: '以下邮箱地址无效：{emails}'
+        max_use_conflict: 邮箱数量超过此邀请码的剩余可用次数。
+        placeholder: 输入邮箱地址
         send: 发送邮件
-        success: 电子邮件已成功发送
+        success: 邮件发送成功
         title: 分享邀请码
     ref:
       fields:
         activates_user:
-          help: 用户注册后自动激活账号。
-          label: 激活用户
+          help: 使用此邀请码注册后自动激活用户账号。
+          label: 自动激活用户
         group:
-          help: 用户使用邀请码注册时将被添加到的群组。
-          label: 群组
+          help: 使用此邀请码注册的用户将自动加入该用户组。
+          label: 用户组
         key:
-          help: 用户注册时需要输入的验证码。
-          label: 密钥
+          help: 用户注册时需要填写的邀请码。
+          label: 邀请码
         max_uses:
-          help: '该代码可使用的最大次数。设置为 0 表示可无限次使用'
-          label: 最大可用次数
+          help: '邀请码最多可以使用的次数，设为 0 则不限次数'
+          label: 使用次数上限
     settings:
       create_doorkey_button: 创建邀请码
       heading: 设置
-      optional_usage: 注册时可选择是否输入邀请码
-      optional_usage_help: 如果启用，访客无需输入邀请码即可注册。
-      search: 搜索门禁密钥
-      total_doorkeys: '门禁密钥总数：{count}'
+      optional_usage: 允许无邀请码注册
+      optional_usage_help: 开启后，访客无需填写邀请码也可以注册。
+      search: 搜索邀请码
+      total_doorkeys: '邀请码总数：{count}'
   email:
-    body: "您已受邀注册 {forum}。\n\n当你准备好创建帐户后，只需点击以下链接并在注册时输入邀请码：\n\n网址：{url}\n\n邀请码：{code}\n\n如果您误收此邮件，请忽略。\n"
-    subject: 使用邀请码加入
+    body: "欢迎注册 {forum}。\n\n请点击下方链接，并在注册时输入邀请码：\n\n注册链接：{url}\n邀请码：{code}\n\n如果你误收了此邀请，请忽略。\n"
+    subject: 邀请加入
   forum:
     sign_up:
       doorkey_required: 请输入邀请码。

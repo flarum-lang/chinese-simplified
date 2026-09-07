@@ -5,15 +5,15 @@
 fof-default-user-preferences:
   admin:
     settings:
-      discloseOnline: 公开在线状态
-      discloseOnline-help: 启用后，新用户将允许其他人看到他们何时在线。无论此设置如何，管理员和其他有权限的用户仍然可以看到在线状态。
-      followAfterReply: 回复并关注
-      followAfterReply-help: 启用后，新用户将自动关注回复或评论的讨论帖。
-      groupMentioned: 群组提及邮件通知
-      groupMentioned-help: 启用后，新用户将默认开启「有人提到了我」邮件通知。
-      indexProfile: 索引配置文件
-      indexProfile-help: 启用后，新用户将允许搜索引擎索引其个人资料页，除非被其他网站或扩展程序设置屏蔽。
-      postMentioned: 回复邮件通知
-      postMentioned-help: 启用后，新用户将默认开启「有人回复了我」邮件通知。
-      userMentioned: 提及邮件通知
-      userMentioned-help: 启用后，新用户将默认开启「有人提到了我」邮件通知。
+      discloseOnline: 默认公开在线状态
+      discloseOnline-help: 开启后，新用户默认允许他人查看自己的在线状态。管理员及其他拥有相应权限的用户始终可看，不受此设置影响。
+      followAfterReply: 默认自动关注参与的讨论
+      followAfterReply-help: 开启后，新用户回复讨论后会自动关注该讨论。
+      groupMentioned: 默认接收用户组提及邮件
+      groupMentioned-help: 开启后，新用户所在的用户组被提及时，默认接收邮件通知。
+      indexProfile: 默认允许索引个人主页
+      indexProfile-help: 开启后，新用户默认允许搜索引擎索引个人主页，但仍会受论坛或其他扩展的相关设置限制。
+      postMentioned: 默认接收帖子回复邮件
+      postMentioned-help: 开启后，新用户的帖子被回复时，默认接收邮件通知。
+      userMentioned: 默认接收提及邮件
+      userMentioned-help: 开启后，新用户在帖子中被提及时，默认接收邮件通知。

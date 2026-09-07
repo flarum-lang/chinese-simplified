@@ -5,13 +5,22 @@
 core:
   forum:
     index_sort:
-      least_viewed_button: 最少浏览
-      most_viewed_button: 最多浏览
+      least_viewed_button: '=> core.ref.least_viewed'
+      most_viewed_button: '=> core.ref.most_viewed'
+  lib:
+    index_sort:
+      least_viewed_button: '=> core.ref.least_viewed'
+      most_viewed_button: '=> core.ref.most_viewed'
+  ref:
+    least_viewed: 浏览最少
+    most_viewed: 浏览最多
 fof-discussion-views:
   admin:
     permissions:
-      reset_views_label: 设置主题浏览量
+      reset_views_label: 设置讨论浏览量
     settings:
+      dedupe_ttl: 重复浏览计数间隔（秒）
+      dedupe_ttl_help: '访客浏览讨论后，在此时间内刷新或再次访问不会重复计数。设为 0 则每次浏览都计入浏览量。'
       ignore_crawlers: 忽略爬虫访问
   forum:
     discussion_controls:
@@ -19,9 +28,9 @@ fof-discussion-views:
     modal_resetviews:
       invalid: '请输入大于或等于 0 的有效数字'
       label: 设为浏览量
-      submit: 提交
-      title: 重置主题浏览量
+      submit: 保存
+      title: 重置讨论浏览量
   lib:
     gambits:
       popular:
-        key: popular
+        key: 热门

@@ -5,4 +5,4 @@
 fof-discussion-thumbnail:
   admin:
     settings:
-      link_to_discussion_label: 关联讨论帖缩略图到讨论帖，而非用户
+      link_to_discussion_label: 开启后，点击讨论列表的头像将直接进入讨论页面

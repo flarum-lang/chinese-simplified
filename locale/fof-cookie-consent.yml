@@ -5,10 +5,73 @@
 fof-cookie-consent:
   admin:
     settings:
-      backgroundColor: 背景颜色
-      buttonBackgroundColor: 按钮背景颜色
-      buttonTextColor: 按钮文本颜色
-      configuration_title: 配置选项
-      learnMoreLinkUrl: 链接
-      textColor: 文本颜色
-      theme_popup_title: 弹窗颜色
+      allowedCookies: '始终保留的 Cookie'
+      allowedCookies_help: "每行填写一个 Cookie 名称。使用斜杠可填写匹配规则，例如 /^app_/。\nFlarum 自身设置的 Cookie 无需设置，始终会被保留。\n"
+      appearance_title: 外观
+      backgroundColor: 背景
+      buttonBackgroundColor: 背景
+      buttonTextColor: 文本
+      catchall_title: '未声明 Cookie'
+      colors_help: "提示框默认跟随论坛主题外观，包括深色模式。请仅在需要自定义时设置颜色，留空则自动继承。\n"
+      configuration_button_title: 了解更多
+      configuration_title: 常规设置
+      equalWeightButtons: 接受和拒绝按钮同等醒目
+      equalWeightButtons_help: '推荐开启。接受和拒绝按钮使用相同视觉权重，避免诱导访客点击接受 Cookie。'
+      layout: 布局
+      layout_help: '设置 Cookie 提示框的样式。'
+      layouts:
+        bar: 横幅
+        bar_inline: 行内横幅
+        box: 方框
+        box_inline: 行内方框
+        box_wide: 宽方框
+        cloud: 炫富
+        cloud_inline: 行内悬浮
+      learnMoreLinkUrl: 链接地址
+      learnMoreLinkUrl_help: 留空则不显示「了解更多」链接。
+      position: 位置
+      positions:
+        bottom_center: 底部居中
+        bottom_left: 左下
+        bottom_right: 右下
+        middle_center: 页面居中
+        middle_left: 左侧居中
+        middle_right: 右侧居中
+        top_center: 顶部居中
+        top_left: 左上
+        top_right: 右上
+      sweepUndeclared: '清理未声明 Cookie'
+      sweepUndeclared_help: "访客拒绝 Cookie 时，同时清除未通过本扩展声明的 Cookie。此功能可以清理尚未适配本扩展的跟踪 Cookie，但也可能误删其他扩展正常运行所需的 Cookie，导致功能异常。可使用下方白名单排除需要保留的 Cookie。\n"
+      textColor: 文本
+      text_help: "提示语句支持多语言。如需自定义，可通过 FoF Linguist 或语言包覆盖。\n"
+      theme_dismiss_title: 按钮颜色
+      theme_popup_title: 提示框颜色
+  forum:
+    banner:
+      accept: 全部接受
+      decline: 全部拒绝
+      description: '本站使用 Cookie 以提供更好的浏览体验。你可以管理偏好或接受全部 Cookie。'
+      learn_more: 了解更多
+      preferences: 管理偏好
+    categories:
+      analytics:
+        description: '帮助我们了解论坛的使用情况并持续改进。关闭此类 Cookie 不会影响论坛正常使用。'
+        title: 数据分析
+      marketing:
+        description: 用于衡量广告效果，并帮助广告平台在其他网站向你展示个性化广告。
+        title: 广告营销
+      necessary:
+        description: '用于保障网站正常运行，包括登录、维持登录状态和记住 Cookie 选择等，因此无法关闭。'
+        title: '必要 Cookie'
+    cookies:
+      cc_cookie: '记住你的 Cookie 选择，避免重复询问。'
+      flarum_remember: 记住登录状态，下次访问时自动登录。
+      flarum_session: 在浏览论坛期间维持你的登录状态。
+      locale: 记住你选择的界面语言。
+    preferences:
+      cookie_table:
+        description: 用途
+        name: Cookie
+      description: 'Cookie 是网站保存在浏览器中的小型数据文件。你可以在下方查看本站使用的 Cookie 及其用途，并随时修改选择。'
+      save: 保存偏好
+      title: 'Cookie 偏好'

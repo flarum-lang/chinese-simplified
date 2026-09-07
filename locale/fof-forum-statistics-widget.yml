@@ -5,22 +5,22 @@
 fof-forum-statistics-widget:
   admin:
     permissions:
-      view_discussions_count_label: 查看论坛小部件主题数
-      view_lastest_member_label: 查看论坛小部件新用户
-      view_posts_count_label: 查看论坛小部件回复数
-      view_users_count_label: 查看论坛小部件用户数
+      view_discussions_count_label: 查看论坛统计小组件讨论数
+      view_lastest_member_label: 查看论坛统计小组件最新成员
+      view_posts_count_label: 查看论坛统计小组件帖子数
+      view_users_count_label: 查看论坛统计小组件用户数
     settings:
-      cache_duration_help: '指定小部件数据的缓存时间（以秒为单位），值为 <code>0</code> 表示禁用缓存（不推荐）。'
-      cache_duration_label: 缓存时长
-      classic_look_help: 恢复使用集成为fof/forum-widgets-core之前的小组件外观。
+      cache_duration_help: '设置统计数据的缓存时间，单位为秒。设为 <code>0</code> 则禁用缓存（不推荐）。'
+      cache_duration_label: 缓存时间
+      classic_look_help: '使用集成 fof/forum-widgets-core 之前的小组件样式。'
       classic_look_label: 经典样式
-      flush_cache_on_new_registration_help: 启用此项，在论坛有新用户注册时刷新小部件缓存。
-      flush_cache_on_new_registration_label: 新用户注册时刷新小部件缓存
-      widget_ignore_private_discussions_label: 不统计私密主题
+      flush_cache_on_new_registration_help: 开启后，每当有新用户注册时，都会清除论坛统计缓存。
+      flush_cache_on_new_registration_label: 新用户注册时清除缓存
+      widget_ignore_private_discussions_label: 不统计私密讨论
   forum:
     navbar:
-      discussions_count: '主题数：{discussionsCount}'
-      latest_member: '最近注册： '
-      posts_count: '回复数：{postsCount}'
-      users_count: '用户数：{usersCount}'
+      discussions_count: '讨论：{discussionsCount}'
+      latest_member: '最新成员： '
+      posts_count: '帖子：{postsCount}'
+      users_count: '用户：{usersCount}'
       widget_title: 论坛统计

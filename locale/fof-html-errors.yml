@@ -6,9 +6,9 @@ fof-html-errors:
   admin:
     settings:
       error:
-        403: '403 拒绝访问'
-        404: '404 网页不存在'
+        403: '403 禁止访问'
+        404: '404 网页未找到'
         500: '500 服务器内部错误'
-        503: '503 服务不可用（或下线维护中）'
+        503: '503 服务不可用（维护中）'
       placeholder:
-        empty_for_default: '留空则使用默认 Flarum 论坛错误页面'
+        empty_for_default: '留空则使用默认 Flarum 默认错误页面'

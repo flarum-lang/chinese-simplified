@@ -6,35 +6,38 @@ fof-links:
   admin:
     edit_link:
       delete_link_button: 删除链接
-      delete_link_confirmation: 确定要删除这个链接吗？
-      icon_additional_text: '如果你想要使用一个品牌图标，请使用前缀 <code>fab fa-</code>。'
+      delete_link_confirmation: 确定要删除此链接吗？
+      icon_additional_text: '如需使用品牌图标，请改用 <code>fab fa-</code> 前缀。'
       icon_label: '=> core.ref.icon'
       icon_text: '=> core.ref.icon_text'
-      internal_link: 是否为内部链接？
+      internal_link: 站内高亮链接
       open_newtab: 在新标签页中打开
       submit_button: '=> core.ref.save_changes'
       title: '=> fof-links.ref.create_link'
       title_label: '=> fof-links.ref.title'
       title_placeholder: '=> fof-links.ref.title'
-      url_description: 留空作为菜单标题。
+      url_description: 留空则仅作为文字标签显示。
       url_label: '=> fof-links.ref.url'
       url_placeholder: '=> fof-links.ref.url'
-      use_rel_me: '添加 <code>rel="me"</code> 属性来向其它站点表明身份'
+      use_rel_me: '添加 <code>rel="me"</code> 属性，用于在其他网站验证身份'
       visibility:
         guest-only:
-          help: '此链接仅{guest}可见。请调整上方权限为「所有人」。'
-          label: '仅{guest}可见？'
-        help: '默认情况下，链接仅 <code>{admin}</code> 用户可见，请根据情况调整权限。'
-        help-disabled: 修改可见性设置前保存链接。
-        label: 链接可见性
+          help: '仅 {guest} 可以看到此链接。请调整上方权限为「{everyone}」。'
+          label: '仅限 {guest}'
+        help: '链接默认仅对 <code>{admin}</code> 用户可见。你可以调整权限，设置哪些用户可以看到此链接。'
+        help-disabled: 保存链接后才能修改可见范围。
+        label: 可见范围
     links:
       create_button: '=> fof-links.ref.create_link'
       links: '=> fof-links.ref.links'
-      preconfigured: 本论坛的链接已预先配置，无法在此处编辑。
+      preconfigured: 论坛链接已预先配置，无法在此编辑。
     settings:
-      show_icons_only_on_tablet: 仅在平板设备上显示图标
+      show_icons_only_on_tablet: 平板设备仅显示图标
+  forum:
+    header:
+      toggle_dropdown_accessible_label: 展开或收起链接菜单
   ref:
-    create_link: 新建链接
+    create_link: 创建链接
     links: 导航栏链接
     title: 标题
-    url: 链接
+    url: URL

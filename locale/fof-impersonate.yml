@@ -2,20 +2,32 @@
 # Use https://weblate.rob006.net/projects/flarum2/fof-impersonate/zh_Hans/ for translation.
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
+flarum-audit:
+  lib:
+    browser:
+      user:
+        impersonated: '切换为 {username}'
+        impersonation_ended: '切换会 {username}'
 fof-impersonate:
   admin:
     permissions:
-      login: 以其他用户身份登录
+      login: 切换为其他用户
     settings:
-      no_settings_available: '当前没有更多选项可用。请尝试安装插件 fof/moderator-notes'
-      require_reason: 登陆他人账户前必须填写理由。
-      title: 'FoF 身份模拟'
+      no_settings_available: '当前没有可用设置。请尝试安装 fof/moderator-notes 或 flarum/audit'
+      require_reason: 切换为其他用户前必须填写理由
+      require_reason_help: 切换理由会记录在审计日志（flarum/audit）和/或双方账号的站务备注（fof/moderator-notes）中，具体取决于已启用的扩展。
+      title: 'FoF 身份切换'
+  forum:
+    notice:
+      message: '当前正以 {username} 的身份操作。'
+    return:
+      button: '切换回 {username}'
   lib:
     modal:
-      impersonate_username: '以「{username}」身份登录'
-      label: '能力越大，责任越大。直到下次登出前，你将以用户「{username}」的身份登录。'
-      placeholder_optional: （可选）切换到此用户的理由
-      placeholder_required: 继续操作前，请提供理由
-      title: 以其他用户身份登录
+      impersonate_username: '切换为 {username}'
+      label: '能力越大，责任越大。在切换回来前，你将以 {username} 的身份操作。'
+      placeholder_optional: （可选）填写切换为此用户的理由
+      placeholder_required: 继续前必须填写切换为此用户的理由
+      title: 切换用户身份
     user_controls:
-      impersonate_button: 以用户身份登录
+      impersonate_button: 切换为此用户

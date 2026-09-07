@@ -5,16 +5,16 @@
 fof-ignore-users:
   admin:
     permissions:
-      can_not_be_ignored_label: 不可屏蔽
+      can_not_be_ignored_label: 不可被屏蔽
   forum:
     badge:
-      discussion_label: 由被屏蔽用户发布
+      discussion_label: 由已屏蔽用户发起
       user_label: 已屏蔽
     profile_link: 已屏蔽用户
     profile_page:
-      no_ignored: 看来你还没有屏蔽任何人。
+      no_ignored: 你还没有屏蔽任何人。
     user_controls:
       ignore_button: 屏蔽
-      ignore_confirmation: 确定要屏蔽此人？
+      ignore_confirmation: 确定要屏蔽此人吗？
       unignore_button: 取消屏蔽
-      unignore_confirmation: 确定要取消屏蔽此人？
+      unignore_confirmation: 确定要取消屏蔽此人吗？

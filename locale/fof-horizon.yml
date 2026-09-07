@@ -5,31 +5,54 @@
 fof-horizon:
   admin:
     settings:
-      trim_completed: 已完成任务
-      trim_completed_help: "在 Horizon 面板中展示已完成任务。\n"
-      trim_failed: 失败任务
-      trim_failed_help: "在 Horizon 面板中展示失败的任务。\n"
-      trim_help: "您可以在此处配置 Horizon 的运行时间（以分钟为单位）。\n保留最近失败的作业。通常情况下，会保留最近的作业。\n失败的作业将保存一小时，所有失败的作业将保存整整一周。\n"
-      trim_monitored: 监控任务
-      trim_monitored_help: "在 Horizon 面板中展示监控的任务。\n"
-      trim_pending: 待办任务
-      trim_pending_help: "在 Horizon 面板中展示待办任务。\n"
-      trim_recent: 最近任务
-      trim_recent_failed: 最近失败任务
-      trim_recent_failed_help: "在 Horizon 面板中展示最近失败的任务。\n"
-      trim_recent_help: "在 Horizon 面板中展示最近任务。\n"
-      trim_title: 保留设置
+      email_concurrency: 邮件发送并发数
+      email_concurrency_help: "同时发送邮件的最大数量。\n如已设置环境变量 REDIS_HORIZON_EMAIL_CONCURRENCY 或 config.php 中的对应值，则以其为准。\n"
+      locked_by_code: '已在代码（config.php 或 extend.php）中设置为 {value}，请在对应文件中修改。'
+      locked_by_env: '已由环境变量设置为 {value}，请在环境变量中修改。'
+      mail_help: "设置同时发送的邮件数量。每个工作进程一次只发送一封邮件，因此该值等同于并发外发邮件数。\n请根据邮件服务商允许的并发连接数设置，避免超限。留空则使用默认值 1。\n"
+      mail_title: 邮件发送
+      memory_limit: 主进程内存上限（MB）
+      memory_limit_help: "Horizon 主进程的内存上限。\nHorizon 会根据工作进程的最大内存额度自动提高此值，因此通常无需手动设置。\n"
+      supervisor_help: "Horizon 会使用 standard、fast、long、emails 四套配置运行队列工作进程。\n工作进程数量、内存限制和处理队列可通过 REDIS_HORIZON_* 环境变量、config.php 中的 horizon 配置，或 extend.php 中的 Horizon 扩展器进行设置.\n详见扩展 README。修改工作进程配置后，请重启 Horizon 使其生效。\n"
+      supervisor_title: 工作进程设置
+      trim_completed: 已完成任务保留时间
+      trim_completed_help: "用于在 Horizon 控制面板中显示已完成任务。\n"
+      trim_failed: 失败任务保留时间
+      trim_failed_help: "用于在 Horizon 控制面板中显示失败任务。\n"
+      trim_help: "设置 Horizon 保留近期和失败任务记录的时间，单位为分钟。\n通常近期任务保留 1 小时，失败任务保留 1 周。\n"
+      trim_monitored: 监控任务保留时间
+      trim_monitored_help: "用于在 Horizon 控制面板中显示监控任务。\n"
+      trim_pending: 待处理任务保留时间
+      trim_pending_help: "用于在 Horizon 控制面板中显示待处理任务。\n"
+      trim_recent: 近期任务保留时间
+      trim_recent_failed: 近期失败任务保留时间
+      trim_recent_failed_help: "用于在 Horizon 控制面板中显示近期失败任务。\n"
+      trim_recent_help: "用于在 Horizon 控制面板中显示近期任务。\n"
+      trim_title: 任务保留时间
     stats:
       auto_refresh: 自动刷新
       data:
+        blocked-clients: 阻塞客户端
+        connected-clients: 已连接客户端
+        eviction-policy: 淘汰策略
+        failed-jobs: 失败任务
         failed-last-seconds: 最近失败任务
         failure-rate: 失败率
+        highest-throughput-queue: 最繁忙队列
         jobs-past-hour: 每小时任务数
         jobs-per-minute: 每分钟任务数
         max-runtime: 最长执行时间
         max-throughput: 最大吞吐量
+        max-wait: 最长等待
         max-wait-queue: '队列: {queue}'
         max-wait-time: 最长等待时间
+        memory-max: 最大内存
+        memory-peak: 峰值内存
+        memory-used: 已用内存
+        ops-per-sec: 每秒操作数
+        pending-jobs: 待处理任务
+        processes: 工作进程
+        recent-jobs: 任务
         redis-blocked-clients: 阻塞客户端
         redis-connected-clients: 已连接客户端
         redis-max-memory: 'Redis 最大内存'
@@ -39,6 +62,7 @@ fof-horizon:
         redis-ops-per-sec: 每秒操作数
         redis-peak-memory: 'Redis 峰值内存'
         redis-used-memory: 'Redis 已用内存'
+        slowest-queue: 最慢队列
         status:
           inactive: 未激活
           label: 状态
@@ -46,16 +70,44 @@ fof-horizon:
         success-rate: 成功率
         total-processes: 执行总数
       error:
-        fetch_failed: '无法获取 Horizon 统计数据。请检查您的 Redis 配置。'
-        setup_docs: '查看 Redis 设置文档'
+        fetch_failed: '无法获取 Horizon 统计数据，请检查 Redis 配置。'
+        setup_docs: '查看 Redis 配置文档'
         title: 连接错误
-      full_dashboard: 'Horizon 面板'
+      eviction_policy_tooltip: '淘汰策略决定 Redis 达到 maxmemory 上限时优先移除哪些数据。默认策略为 `noeviction`：达到内存上限后不再写入新数据。点击查看文档。'
+      eviction_pressure: 内存压力
+      eviction_warning: '内存使用量已达到 maxmemory 的 {usage}%，当前淘汰策略为「{policy}」，部分键（包括队列数据）可能很快被清除。请提高 maxmemory，或将队列迁移到有更多可用空间的独立数据库。'
+      full_dashboard: 'Horizon 控制面板'
       heading: 队列概览
       health:
         critical: 危急
         excellent: 优秀
+        factor:
+          memory: 'Redis 内存压力：{value}'
+          status: 'Horizon 状态：{value}'
+          wait: '队列等待时间过长：{value}'
         good: 良好
-        poor: 差
+        poor: 较差
         tooltip: '系统健康评分: {score}/100'
+        tooltip_heading: '健康评分：{score}/100'
+      horizon_max_wait_none: 无
+      horizon_max_wait_value: '{seconds} 秒（{queue}）'
+      kv_heading: 键值存储
       last_refresh: '上次刷新: {time}'
+      period:
+        day: '过去 1 天'
+        days: '过去 {count} 天'
+        hour: '过去 1 小时'
+        hours: '过去 {count} 小时'
+        minutes: '过去 {count} 分钟'
+      queue_heading: 队列
       refresh: 刷新
+      status:
+        inactive: 未运行
+        paused: 已暂停
+        paused_pending: '已暂停 · {count} 个待处理'
+        running: 运行中
+      tile:
+        jobs_per_minute: 任务/分钟
+        max_wait: 最长等待
+        processes: 工作进程
+        status: 状态

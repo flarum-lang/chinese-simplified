@@ -7,24 +7,24 @@ fof-linguist:
     buttons:
       apply: 应用
       copy-original: 复制原文
-      delete-all: 删除所有翻译
-      delete-all-confirm: "这将会删除所有 {count} 条自定义翻译。为了防止你后悔，请在导出或备份所有翻译后再执行此操作。\n"
-      delete-redundant: 删除冗余的翻译
-      delete-redundant-confirm: "这将会删除 {count} 条原始值与自定义值相同的翻译。这对语言包更新后产生的冗余内容具有不错的清理效果。\n"
+      delete-all: 删除全部翻译
+      delete-all-confirm: "这将删除全部 {count} 条自定义翻译。请先导出或备份需要保留的内容。\n"
+      delete-redundant: 删除冗余翻译
+      delete-redundant-confirm: "这将删除 {count} 条原文与自定义内容完全相同的翻译，可用于清理语言包更新后留下的冗余翻译。\n"
       load-more: 加载更多
-      reset: 重置
+      reset: 恢复原文
     clear-cache:
-      button: 立刻清理缓存
-      text: "新增翻译尚未部署。注意：清理缓存后的论坛首次加载速度会变慢。\n"
+      button: 立即清除缓存
+      text: "新翻译尚未生效。注意：清除缓存可能会使论坛短暂变慢。\n"
     coverage:
       all-namespaces: 全部
       apply-missing-filter: 显示匹配的缺失翻译
       column-options:
-        locale: 语言包
-        namespace: 前端
+        locale: 按语言
+        namespace: 按前端
       columns:
-        all-except-admin: 论坛和其他前端项
-        all-frontends: 展开所有前端项
+        all-except-admin: 论坛及其他前端
+        all-frontends: 显示所有前端
         namespace: 命名空间
         total: 总计
       count:
@@ -32,67 +32,67 @@ fof-linguist:
         percent: '{percent} %'
         total: '{translated} / {total}'
       total-options:
-        count: 计数
+        count: 数量
         percent: 百分比
     export:
       download: 下载
-      include-all: 包含定义为「全部」语言的翻译
+      include-all: 包含「全部」语言中的翻译
       include-originals: 包含原始翻译
       locale: 语言
       locale-all: 伪语言「全部」
       namespace: 命名空间
       namespace-all: 全部
       output: 输出
-      output-empty: 空输出
-      output-loading: 正在加载输出……
+      output-empty: 无可导出内容
+      output-loading: 正在加载输出…
       title: 导出
-      warning: "导出的翻译格式是 Flarum 使用的 Yaml 文件，此功能旨在论坛之间或与语言包维护者共享翻译。该格式不是为了将所有翻译移到新的论坛上而设计的。根据您的使用情况，直接复制数据库可能是一个更好的办法。\n"
+      warning: "导出 Flarum 的 YAML 翻译文件格式，主要用于在论坛之间共享翻译，或与语言包维护者共享。该格式并不适合将论坛中的全部翻译完整迁移到另一论坛，直接复制数据库可能更适合此场景。\n"
     filters:
-      for-extension: 筛选插件
+      for-extension: 扩展筛选
       frontend: 前端筛选
-      frontend-all-except-admin: 全部
-      mass-edit: 更多
+      frontend-all-except-admin: 除管理后台外
+      mass-edit: 批量编辑
       missing: 查找缺失翻译
-      missing-middle-label: 翻译
+      missing-middle-label: 翻译，存在于
       negation-options:
         with: 有
         without: 无
       operation-options:
-        and: 同时存在于
-        or: 任意存在于
+        and: 所有语言
+        or: 任一语言
       results: '已显示 {shown} 条匹配翻译，共 {total} 条'
-      search: 搜索翻译文本、翻译键...
+      search: 搜索翻译…
       type-options:
         any: 原始或自定义
         original: 原始
         own: 自定义
       with-own-translations: 自定义翻译
     import:
-      input: 在此输入
-      input-placeholder: '拖拽或粘贴 Yaml 文件到此处'
+      input: 输入
+      input-placeholder: '将 YAML 文件拖到此处，或直接粘贴内容'
       locale: 语言
       locale-all: 伪语言「全部」
-      override-existing: 覆盖已存在的自定义翻译
-      results: "导入完成。已导入 {imported} 字符串，已跳过 {identical} 重复的字符串。当前页面即将刷新以加载新翻译。\n"
-      results-with-ignore: "导入完成。已导入 {imported} 字符串，已跳过 {ignored} 已存在的字符串、{identical} 重复的字符串。当前页面即将刷新以加载新翻译。\n"
+      override-existing: 覆盖已有的自定义翻译
+      results: "导入完成。已导入 {imported} 条翻译，跳过 {identical} 条相同翻译。页面将刷新以显示新翻译。\n"
+      results-with-ignore: "导入完成。已导入 {imported} 条翻译，忽略 {ignored} 条已有翻译，跳过 {identical} 条相同翻译。页面将刷新以显示新翻译。\n"
       submit: 导入
       title: 导入
     known-frontend:
-      admin: 管理面板
-      api: 接口
+      admin: 管理后台
+      api: API
       forum: 论坛
-      lib: Lib（论坛和管理面板共用）
-      ref: 'Ref (被其他键复用)'
+      lib: Lib（论坛与管理后台共用）
+      ref: Ref（供其他翻译键复用）
     known-namespace:
       core: 'Flarum 核心'
-      validation: 数据校验错误
+      validation: 验证错误
     locales:
       all: 全部
     permissions:
       view_string_keys: 查看翻译键
     placeholder:
-      all-locales: 所有语言的最高优先级翻译
-      hint: 原文内容：
+      all-locales: 在此填写的文本将应用于所有语言
+      hint: 原文：
       not-translated: 未翻译
     tabs:
       coverage: 覆盖率

@@ -6,36 +6,51 @@ flarum-gdpr:
   lib:
     data:
       tagsubscription:
-        anonymize_description: 取消用户订阅的标签。
-        export_description: 如果标签存在，导出订阅级别的详细信息。
+        anonymize_description: 移除用户对标签的关注。
+        export_description: 导出用户对标签的关注设置。
 fof-follow-tags:
   admin:
+    basics:
+      following_label: '=> flarum-subscriptions.forum.index.following_link'
     settings:
+      all_discussions_on_following_page_for_guests_label: 访客打开「我的关注」页面时显示全部讨论
       following_none_label: '=> fof-follow-tags.ref.filtering_options.none'
-      following_page_default_label: 「我的关注」默认内容
+      following_page_default_label: 「我的关注」页面默认筛选方式
       following_tags_label: '=> fof-follow-tags.ref.filtering_options.tags'
+      prompt_button_on_following_page_label: 在「我的关注」页面显示「选择要关注的标签」按钮
+      prompt_new_users_help: "尚未确认选择的用户会看到关注标签提示。每次访问社区时都会再次显示，直到用户点击「进入社区」。\n"
+      prompt_new_users_label: 引导新用户选择关注标签
+      prompt_tag_ids_label: 可选择的标签
+      prompt_tag_strategy_label: 引导选择的标签
+      prompt_tag_strategy_options:
+        all: 所有标签
+        list: 下方所选标签
+        primary: 一级主标签
+        primaryAndChildren: 所有层级主标签
+        primaryAndSecondary: 一级主标签和次标签
+        secondary: 仅次标签
   email:
     newDiscussionInTag:
       html:
-        body: "{actor_display_name} 在您关注的标签中发起了一个讨论：[{discussion_title}]({discussion_url})\n"
+        body: "{actor_display_name} 在你关注的标签下发起了讨论：[{discussion_title}]({discussion_url})\n"
       plain:
-        body: "{actor_display_name} 在您关注的标签中发起了一个讨论：{discussion_title}\n\n若要查看该讨论，请点击以下链接：\n{discussion_url}\n\n---\n\n{content}\n"
-      subject: '[标签 | 新讨论] {title}'
+        body: "{actor_display_name} 在你关注的标签下发起了讨论：{discussion_title}\n\n点击下方链接查看新讨论：\n{discussion_url}\n\n---\n\n{content}\n"
+      subject: '[标签有新讨论] {title}'
     newDiscussionTag:
       html:
-        body: "{actor_display_name} 刚刚将 {author_display_name} 发起的讨论标签更改为您关注的标签：[{discussion_title}]({discussion_url})\n"
+        body: "{actor_display_name} 将 {author_display_name} 发起的讨论移至了你关注的标签：[{discussion_title}]({discussion_url})\n"
       plain:
-        body: "{actor_display_name} 刚刚将 {author_display_name} 发起的讨论标签更改为您关注的标签：{discussion_title}\n\n若要查看该讨论，请点击以下链接：\n{discussion_url}\n\n---\n\n{content}\n"
-      subject: '[标签 | 标签已更改] {title}'
+        body: "{actor_display_name} 将 {author_display_name} 发起的讨论移至了你关注的标签：{discussion_title}\n\n点击下方链接查看讨论：\n{discussion_url}\n\n---\n\n{content}\n"
+      subject: '[标签有讨论移入] {title}'
     newPostInTag:
       html:
-        body: "{actor_display_name} 在您关注的标签讨论中发表了回复：[{discussion_title}]({post_url})\n"
+        body: "{actor_display_name} 在你关注的标签下回复了讨论：[{discussion_title}]({post_url})\n"
       plain:
-        body: "{actor_display_name} 在您关注的标签讨论中发表了回复：{discussion_title}\n\n若要查看最新动态，请点击以下链接：\n{post_url}\n\n---\n\n{content}\n"
-      subject: '[标签 | 新回复] {title}'
+        body: "{actor_display_name} 在你关注的标签下回复了讨论：{discussion_title}\n\n点击下方链接查看新回复：\n{post_url}\n\n---\n\n{content}\n"
+      subject: '[标签有新回复] {title}'
   forum:
     badge:
-      following_tag_tooltip: 关注中
+      following_tag_tooltip: 关注
       lurking_tag_tooltip: 吃瓜中
     hero:
       title: '=> flarum-subscriptions.forum.index.following_link'
@@ -46,40 +61,45 @@ fof-follow-tags:
         following_tags_label: '=> fof-follow-tags.ref.filtering_options.tags'
       unfollow_tag_button: 取消关注
     notifications:
-      new_discussion_tag_text: '{username} 修改了标签'
-      new_discussion_text: '{username} 发布了新讨论'
-      new_post_text: '{username} 发布了新回复'
+      new_discussion_tag_text: '{username} 更改了标签'
+      new_discussion_text: '{username} 发起了讨论'
+      new_post_text: '{username} 回复了讨论'
+    prompt:
+      choose_button: 选择要关注的标签
+      continue_button: 进入社区
+      later_button: 稍后提醒
+      modal_title: 选择要关注的标签
     settings:
-      notify_new_discussion_label: 我关注的标签有新建讨论
-      notify_new_discussion_tag_label: 有人将讨论添加到我关注的标签
-      notify_new_post_label: 我关注的标签有新回复
+      notify_new_discussion_label: 有人在我关注的标签下发起讨论
+      notify_new_discussion_tag_label: 有人将讨论移至我关注的标签
+      notify_new_post_label: 有人在我关注的标签下回复
     sub_controls:
       follow_button: '=> fof-follow-tags.ref.follow'
       following_button: '=> fof-follow-tags.ref.following'
-      following_text: 有新讨论时提醒。
-      header: '订阅 {tagName}'
+      following_text: 有新讨论时通知我。
+      header: '{tagName} 的关注设置'
       hiding_button: '=> fof-follow-tags.ref.hiding'
-      hiding_text: 在全部讨论页面中隐藏旗下讨论。
+      hiding_text: 在「全部讨论」中隐藏此标签下的讨论。
       ignoring_button: '=> fof-follow-tags.ref.ignoring'
-      ignoring_text: 从不提醒。
+      ignoring_text: 永不通知。
       lurking_button: '=> fof-follow-tags.ref.lurking'
-      lurking_text: 有新讨论或新回复时提醒。
+      lurking_text: 有新讨论或新回复时都通知我。
       not_following_button: 不关注
-      not_following_text: 仅当有人提及我时提醒。
-      notify_alert_tooltip: 有新讨论或新回复时推送论坛提醒
-      notify_email_tooltip: 有新讨论或新回复时发送邮件提醒
-      submit_button: 确认订阅
-      subscription_label: '选择订阅 {tagName} 级别'
+      not_following_text: 仅在被提及时通知我。
+      notify_alert_tooltip: 有新讨论或新回复时接收论坛通知
+      notify_email_tooltip: 有新讨论或新回复时接收邮件通知
+      submit_button: 确认关注设置
+      subscription_label: '选择你对 {tagName} 的关注方式'
     user:
       settings:
-        filter_label: 在「我的关注」中默认显示的内容
+        filter_label: 「我的关注」页面默认显示
         heading: 关注标签
   ref:
     filtering_options:
       none: 关注的讨论
       tags: 关注的标签
     follow: 关注
-    following: 关注中
-    hiding: 隐藏中
-    ignoring: 忽视中
-    lurking: 吃瓜中
+    following: 关注
+    hiding: 隐藏
+    ignoring: 忽略
+    lurking: 密切关注

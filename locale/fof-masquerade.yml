@@ -6,17 +6,17 @@ flarum-audit:
   lib:
     browser:
       masquerade:
-        field_created: '创建个人资料字段“{name}”'
-        field_deleted: '已删除的个人资料字段“{name}”'
-        field_updated: '已更新个人资料字段“{name}”'
-        profile_updated: '已更新 {username} 的个人资料字段'
+        field_created: '创建了资料字段「{name}」'
+        field_deleted: '删除了资料字段「{name}」'
+        field_updated: '更新了资料字段「{name}」'
+        profile_updated: '更新了 {username} 的扩展资料'
 flarum-gdpr:
   lib:
     data:
       masqueradeanswers:
-        anonymize_description: 删除用户账户中的所有自定义资料字段答案
-        delete_description: 删除用户账户中的所有个人资料字段答案
-        export_description: 导出用户个人的资料字段答案
+        anonymize_description: '=> flarum-gdpr.lib.data.masqueradeanswers.delete_description'
+        delete_description: 删除用户账号中的所有扩展资料。
+        export_description: 导出用户填写的扩展资料。
 fof-masquerade:
   admin:
     buttons:
@@ -26,52 +26,58 @@ fof-masquerade:
     fields:
       add: '添加字段 {field}'
       create: 创建字段
-      delete-confirmation: 确定要删除此字段吗？所有关联数据将被永久删除。
-      description: 字段描述
-      description-help: "可选描述，用来解释这个字段的用途或填写要求。\n"
-      edit: '编辑字段 {field}'
-      force-user-to-completion: 强制用户填写资料
-      hide-empty-fields: 隐藏空值字段
+      delete-confirmation: '确定要删除字段「{field}」吗？此操作无法撤销。'
+      description: 字段说明
+      description-help: "可选。用于说明此字段的用途或填写要求。\n"
+      edit: '编辑字段「{field}」'
+      force-user-to-completion: 强制用户完善资料
+      hide-empty-fields: 隐藏未填写字段
       icon: 图标
-      icon-help: "在字段名称前显示一个图标。可用的图标请查阅 <a>FontAwesome 官网</a>。图标名称需包含前缀 \"fa-\"，例如 \"fas fa-info\"。\n"
-      name: 字段名
-      name-help: "公开可见（不可翻译）的字段名。\n"
-      on_bio: 在用户个人简介中显示此字段的答案
-      option-comma-warning: '选项名称不能包含半角逗号（,）。'
-      option-new: 添加选项
+      icon-help: "在用户填写的内容前显示图标。可用图标请参阅 <a>FontAwesome 网站</a>。请填写带「fa-」前缀的图标名称，例如「fas fa-info」。\n"
+      is_restricted: 限制字段可见范围
+      name: 字段名称
+      name-help: "公开显示的字段名称，不支持翻译。\n"
+      on_bio: 在用户简介中显示此字段内容
+      option-comma-warning: '选项名称不能包含英文逗号（,）。'
+      option-new: 新增选项
       options: 选项
-      required: 标记字段为必填项
-      title: 字段
+      permissions: 字段可见范围
+      permissions-alert: 创建字段后，可在编辑时设置可见权限。
+      required: 设为必填
+      title: 资料字段
       type: 类型
       validation: 验证规则
-      validation-help: "请参考支持的 <a>Laravel 验证规则</a>。例如：\"string|min:5\" 或 \"url\"。\n"
+      validation-help: "请参阅支持的 <a>Laravel 验证规则</a>，例如「string|min:5」或「url」。\n"
     general-options: 常规选项
     permissions:
-      edit-others-profile: 编辑他人资料页签
-      have-profile: 使用个人资料页签
-      view-profile: 查看个人资料页签
+      edit-others-profile: 编辑其他用户的扩展资料
+      have-profile: 填写扩展资料
+      view-profile: 查看扩展资料
     types:
       advanced: 高级
-      boolean: 是/否单选按钮
-      email: 电子邮件
-      select: 下拉列表
-      url: 网址
+      boolean: 复选框
+      email: 邮箱
+      select: 下拉菜单
+      url: URL
   forum:
     alerts:
-      profile-completed: 填写完成！<a>转到首页</a>
-      profile-completion-required: "请完善下方必填的个人资料。\n"
+      profile-completed: 资料已完善！<a>前往首页</a>
+      profile-completion-required: "请完善下方必填资料。\n"
     buttons:
-      edit-profile: 编辑个人资料
+      edit-profile: 编辑资料
       save-profile: 保存
-      view-profile: 个人资料
+      view-profile: 查看资料
     fields:
       boolean:
         'no': 否
         'yes': 是
       select:
-        none-optional: 未选择选项（可选）
-        none-required: 请选择一个选项（必选）
+        none-optional: 未选择（可选）
+        none-required: 请选择一项（必填）
+    profile:
+      empty-text: 该用户尚未填写扩展资料。
   lib:
     gambits:
       answer:
-        key: 回答
+        hint: 用户资料字段的值
+        key: 资料

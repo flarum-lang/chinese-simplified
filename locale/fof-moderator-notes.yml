@@ -5,25 +5,25 @@
 fof-moderator-notes:
   admin:
     permissions:
-      createnotes: 发表留言
-      deletenotes: 删除留言
-      viewnotes: 查看留言
+      createnotes: 添加站务备注
+      deletenotes: 删除站务备注
+      viewnotes: 查看站务备注
   api:
-    auto_note: '_切换到此账号：_ {reason}'
-    auto_note_actor: '_切换到_ @{username}：{reason}'
-    no_reason_provided: 无理由
+    auto_note: '_我切换为了此用户：_ {reason}'
+    auto_note_actor: '_切换为_ @{username}：{reason}'
+    no_reason_provided: 未填写理由
   forum:
     moderatorNotes:
-      add_button: 我要留言
-      confirm: 确定要删除这条留言吗？
-      create-heading: 发表您的留言
-      created_text: '{username} 留言于 {date}'
+      add_button: 添加备注
+      confirm: 确定要删除此备注吗？
+      create-heading: 添加站务备注
+      created_text: '{username} 于 {date} 添加了此备注'
       delete: 删除
-      dismiss_button: 好的
-      filter_by_me: 只看我创建的
-      input_heading: '您正在向 <strong>{username}</strong> 留言（支持 Markdown）'
-      noNotes: 看来这里还没有任何留言。
-      submit_button: 发表
-    no_content_given: 禁止空留言。
+      dismiss_button: 完成
+      filter_by_me: 仅显示我添加的备注
+      input_heading: '为 <strong>{username}</strong> 添加备注（支持 Markdown）'
+      noNotes: 暂无站务备注。
+      submit_button: 保存备注
+    no_content_given: 备注内容不能为空。
     user:
-      notes: 留言板
+      notes: 站务备注

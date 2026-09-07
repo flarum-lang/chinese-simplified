@@ -50,6 +50,7 @@ CHANGELOG
 * [`fof/news-widget`](https://github.com/FriendsOfFlarum/news-widget)
 * [`fof/online-users-widget`](https://github.com/FriendsOfFlarum/online-users-widget)
 * [`fof/photoswipe`](https://github.com/FriendsOfFlarum/photoswipe)
+* [`fof/pwa`](https://github.com/FriendsOfFlarum/pwa)
 * [`fof/rich-text`](https://github.com/FriendsOfFlarum/rich-text)
 * [`fof/seo`](https://github.com/FriendsOfFlarum/seo)
 * [`fof/signature`](https://github.com/FriendsOfFlarum/signature)

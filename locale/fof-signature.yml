@@ -5,37 +5,37 @@
 fof-signature:
   admin:
     permissions:
-      allow_signature: 可以拥有签名
+      allow_signature: 使用签名
       edit_signature_others: 编辑其他用户的签名
     settings:
       allow_inline_editing:
-        description: 在线编辑签名。
-        help: 如果启用，用户可以在查看帖子时编辑签名。
+        description: 允许就地编辑签名
+        help: 开启后，用户可以在查看帖子时直接编辑自己的签名。
       allow_remote_images:
-        description: 允许远程图片。
-        help: '禁用此功能后，用户将无法在签名中使用托管在其他网站上的图片。这样可以防止外部图片追踪所有查看签名者的 IP 地址。'
+        description: 允许外链图片
+        help: '关闭后，用户无法在签名中使用托管于其他网站的图片，可防止外站获取访客的 IP 地址。'
       allowed_image_hosts:
-        description: 允许的图片主机地址。
-        help: '即使禁用远程图片，仍然允许使用来自这些主机的图片（以及您自己的论坛图片）。每行输入一个主机，例如您的 CDN，如 cdn.example.com。'
+        description: 允许的图片域名
+        help: '关闭外链图片后，仍允许使用来自这些域名以及论坛自身域名的图片。每行填写一个域名，例如你的 CDN：cdn.example.com。'
       maximum_char_limit:
-        description: 签名的最大字符数限制。
-        help: 当用户签名超过最大字符数限制时，系统将阻止其保存，直到字符数达到相应要求为止。
+        description: 签名字符数上限
+        help: 用户签名的字符数超过上限时，将无法保存，直到将字符数减少至限制范围内。
       maximum_image_count:
-        description: 最大插入图片数量。
-        help: 当用户签名中的图片数量超过最大限制时，系统将阻止用户保存，直到图片数量达到限制值为止。
+        description: 签名图片数量上限
+        help: 用户签名中的图片数量超过上限时，将无法保存，直到将图片数量减少至限制范围内。
   forum:
     buttons:
       edit: 编辑签名
       save: 保存签名
       signature: 签名
     editor:
-      placeholder: 在此编辑您的签名
+      placeholder: 在此编辑你的签名
     errors:
       max_char_limit_exceed: 超出字符限制。
       max_image_count_exceed: 图片数量已达上限。
-      remote_images_not_allowed: 签名中不允许使用远程图像。
-      save_failed: 保存签名时出错。
+      remote_images_not_allowed: 签名中不允许使用外链图片。
+      save_failed: 保存签名时发生错误。
     profile:
-      click: 点击这里以签名
+      click: 点击填写签名
     settings:
       heading: 签名

@@ -7,74 +7,74 @@ fof-reactions:
     page:
       cdn:
         default-url: '默认：{url}'
-        help: "默认情况下，我们从 Cloudflare 的 CDN 加载表态表情资源。您也可以根据需要指定其他 CDN 地址\n进行替换。<code>[codepoint]</code> 将会被替换为表情符号的码点（Codepoint）。\n\n例如，若要通过 jsdelivr 切换到 Noto Emoji，请输入 <code>https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.040/svg/emoji_u[codepoint].svg</code>。\n\n您的 CDN 必须支持 Emoji/Unicode {emojibase} 或更高版本。使用 [twemoji] 可以替换为当前的 Twemoji 版本号。\n"
+        help: "默认情况下，表情从 Cloudflare CDN 加载。你也可以根据需要指定其他 CDN 地址。\n<code>[codepoint]</code> 会被替换为 Emoji 的 Unicode 码位。\n\n例如，要通过 jsDelivr 使用 Noto Emoji，可填写 <code>https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.040/svg/emoji_u[codepoint].svg</code>。\n\n你的 CDN 必须支持 Emoji/Unicode {emojibase} 或更高版本。可使用 [twemoji] 代入 Twemoji 版本号。\n"
         label: URL
         title: CDN
       convert:
-        button: 转换旧表情
-        converted: '成功转换了全部 {number} 个赞'
-        converting: 正在转换表情中，请于几分钟后刷新页面以查看进度（转换时间取决于数据量大小）
-        help: 如果您刚刚更新本扩展，此操作将转换所有帖子的戳一戳表情。如果您刚刚安装本插件，请忽略本条消息。
+        button: 转换旧版表情
+        converted: '已成功转换 {number} 个赞'
+        converting: 正在转换旧版表情数据。请稍后刷新页面查看转换结果。转换所需时间取决于表情总数
+        help: 如果你刚刚更新了此扩展，需要转换旧版表情数据。如果是首次安装此扩展，可以忽略此提示。
       reactions:
-        Helptext: '在标识名文本框中，输入 emoji 的英文名称，您可以打开文本编辑器的 Emoji 表情弹窗，鼠标停留到表情上方查看表情名称。或者输入 font-awesome 的名称并切换到 icon 类型（传送门：http://t.cn/RBcdSZ5）。'
-        add_reaction_button: 添加反应
-        add_reaction_label: 添加新反应
-        delete_confirmation: 确定要删除此反应吗？此操作无法撤销。
-        delete_reaction_button: 删除反应
+        Helptext: '输入 Emoji 或 Font Awesome 图标的名称或标识符，并选择对应类型。传送门：http://t.cn/RBcdSZ5'
+        add_reaction_button: 添加表情
+        add_reaction_label: 添加新表情
+        delete_confirmation: 确定要删除此表情吗？此操作无法撤销。
+        delete_reaction_button: 删除表情
         header:
           action: 操作
           display: 显示文本
-          enabled: 已启用
-          identifier: 图标/表情符号标识符
+          enabled: 启用
+          identifier: '图标/Emoji 标识符'
           preview: 预览
           type: 类型
         help:
-          display: 描述
-          identifier: 标识名
-        reactions: 已有表情
-        title: 自定义表情
+          display: 显示内容
+          identifier: 标识符
+        reactions: 当前表情
+        title: 表情
       settings:
-        allow-anonymous: 允许匿名（游客）反应
-        allow-anonymous-help: 启用此项，允许游客和匿名用户对帖子作出反应。请注意匿名反应不与任何用户关联，仅出现在反应清单中。
+        allow-anonymous: 允许游客戳表情
+        allow-anonymous-help: 开启后，游客和匿名用户也可以给帖子戳表情。匿名表情不会关联到用户资料，但会在表情列表中合并统计。
         integrations:
           gamification:
-            downvoteHelptext: 输入要自动转换为「踩」的表情标识
-            downvoteLabel: 转换表情为「踩」
-            legend: 游戏化
-            upvoteHelptext: 输入要自动转换为「顶」的表情标识
-            upvoteLabel: 转换表情为「顶」
-          legend: 整合
+            downvoteHelptext: 输入要自动转换为反对票的表情标识符
+            downvoteLabel: 将表情转换为反对票
+            legend: Gamification
+            upvoteHelptext: 输入要自动转换为赞同票的表情标识符
+            upvoteLabel: 将表情转换为赞同票
+          legend: 扩展联动
           likes:
-            Helptext: 要将某个表情自动转换为「赞」？请在下方输入该表情的标识名
-            Label: 转换表情为「赞」
+            Helptext: 输入要自动转换为点赞的表情标识符
+            Label: 将表情转换为点赞
             legend: 点赞
-          warning: 同一个戳一戳表情<strong>不会</strong>转换为「赞」<strong>或</strong>「顶」
-        react_own_posts_help: 启用此项，添加一个权限，允许用户戳自己的帖子。如需禁止，请禁用此项。
-        react_own_posts_label: 允许用户对自己的帖子作出反应，
+          warning: 同一种表情<strong>不能</strong>同时转换为点赞<strong>和</strong>赞同票
+        react_own_posts_help: 开启后，拥有相应权限的用户可以给自己的帖子戳表情。若不希望用户给自己的帖子戳表情，请关闭此项。
+        react_own_posts_label: 允许用户给自己的帖子戳表情
         save_settings: 保存设置
     permissions:
-      delete_post_reactions_label: 删除帖子的反应
-      react_posts_label: 戳表情
-      see_reactions_label: 查看戳表情的人
+      delete_post_reactions_label: 删除帖子表情
+      react_posts_label: 给帖子戳表情
+      see_reactions_label: 查看谁给帖子戳了表情
   forum:
-    disabled-reaction: 您暂时不能戳表情，请刷新后重试
+    disabled-reaction: 当前无法戳这个表情，请刷新页面
     mod_item: 查看表情
     modal:
-      anonymous_count: '{count} 位匿名用户'
-      confirm_remove_all_reaction_type: '确定删除此贴的所有互动{reaction}吗？此操作无法撤回。'
-      confirm_remove_user_reaction: '确定移除用户{username}的{reaction}互动吗？此操作无法撤回。'
+      anonymous_count: '{count, plural, other {# 位匿名用户}}'
+      confirm_remove_all_reaction_type: '确定要移除此帖中的所有 {reaction} 吗？此操作无法撤销。'
+      confirm_remove_user_reaction: '确定要移除 {username} 戳的 {reaction} 吗？此操作无法撤销。'
       load_more: 加载更多
-      no_reactions: 暂无反应
-      others_count: '+ {count} 个其他'
-      remove_all_reaction_type: '移除所有 {reaction} 反应'
-      remove_user_reaction: 移除反应
+      no_reactions: 还没人戳表情
+      others_count: '+ {count, plural, other {# 人}}'
+      remove_all_reaction_type: '移除所有 {reaction}'
+      remove_user_reaction: 移除表情
       title: 表情
-    notification: '{username} 戳了一个 {reaction}'
+    notification: '{username} 给你的帖子戳了 {reaction}'
     react_button_label: 戳表情
-    reacted_with_label: '{reaction} ({count} 个反应)'
-    reacting-own-post: 您不能对自己的帖子戳表情
-    reaction_button_label: '使用 {reaction} 反应'
+    reacted_with_label: '{count, plural, other {{reaction}（#）}}'
+    reacting-own-post: 不能给自己的帖子戳表情
+    reaction_button_label: '戳 {reaction}'
     settings:
-      notify_post_reacted_label: 有人对我的帖子戳表情
-    unreact_button_label: 移除反应
-    warning: 您的表情已转换为「赞」
+      notify_post_reacted_label: 有人给我的帖子戳表情
+    unreact_button_label: 取消表情
+    warning: 你的表情已被转换

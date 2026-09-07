@@ -4,38 +4,38 @@
 
 fof-recaptcha:
   admin:
-    maintenance_mode_warning: '当论坛处于维护模式时，登录页面中的 reCAPTCHA 功能将被禁用。'
+    maintenance_mode_warning: '论坛处于维护模式时，登录页面不会启用 reCAPTCHA。'
     permissions:
-      post_without_captcha: 发帖不需要验证码
+      post_without_captcha: '无需通过 reCAPTCHA 即可发布帖子和讨论'
     settings:
       forgot: '=> core.forum.forgot_password.title'
-      help_text: '点击<a>此处</a>获取 Google reCAPTCHA 证书。'
+      help_text: '点击<a>此处</a>获取 Google reCAPTCHA 凭据。'
       secret_key_label: 密钥
       signin: '=> core.forum.log_in.title'
       signup: '=> core.forum.sign_up.title'
-      site_key_label: 网站密钥
-      type_help: '所选类型必须与与reCAPTCHA密钥一致。选框和不可见，都是reCAPTCHA v2；v3是基于评分机制静默运行的。'
+      site_key_label: 站点密钥
+      type_help: '所选类型必须与你的 reCAPTCHA 凭据类型一致。复选框和隐形验证均属于 reCAPTCHA v2；v3 基于评分机制，会在后台静默运行。'
       type_label: 'reCAPTCHA 类型'
       type_options:
-        checkbox: v2选框
-        invisible: v2不可见
-        v3: v3（评分机制）
-      v3_threshold_help: 评分低于该值（0.0=趋近于机器人，1.0=趋近于人类）的校验将无法通过。谷歌建议设置0.5作为初始值。该设置只在类型为v3时有效。
-      v3_threshold_label: 'reCAPTCHA v3评分阈值'
+        checkbox: 'v2 复选框'
+        invisible: 'v2 隐形验证'
+        v3: v3（基于评分）
+      v3_threshold_help: '评分低于此值的提交将被拒绝（0.0 表示更可能是机器人，1.0 表示更可能是真人）。Google 建议以 0.5 作为初始值。仅在 reCAPTCHA 类型设为 v3 时生效。'
+      v3_threshold_label: 'reCAPTCHA v3 分数阈值'
     test:
-      help_text: "使用上方配置测试验证码。修改设置后请重新加载测试，测试通过后请注意保存设置。\n以下测试可能无法代表已保存设置的情况。\n"
+      help_text: "此测试会使用上方当前填写的值。修改设置后，请重新加载测试；测试通过后别忘了保存设置！\n下方测试结果可能与已保存的设置不一致。\n"
       load_test_button: 加载
       reload_button: 重新加载
-      submit_button: 保存
-      success_message: '成功！reCAPTCHA 已正确设置。'
+      submit_button: 提交
+      success_message: '测试成功！reCAPTCHA 配置正确。'
       title: '测试 reCAPTCHA'
   lib:
-    error: 提交reCAPTCHA验证时发生错误。请重试。
-    not_completed: 请完成reCAPTCHA验证后继续。
-    rejected: reCAPTCHA验证失败。请重试。
-    unknown_error: 发生未知错误。请重试。
+    error: '提交 reCAPTCHA 时发生错误，请重试。'
+    not_completed: '请先完成 reCAPTCHA 验证。'
+    rejected: 'reCAPTCHA 验证未通过，请重试。'
+    unknown_error: 发生未知错误，请重试。
 validation:
   attributes:
     g-recaptcha-response: reCAPTCHA
   recaptcha: 'reCAPTCHA 验证失败。'
-  recaptcha-unknown: '校验验证码时发生了未知错误（{errors}）。'
+  recaptcha-unknown: '验证 reCAPTCHA 时发生未知错误（{errors}）。'

@@ -5,77 +5,77 @@
 core:
   forum:
     index_sort:
-      hot_button: 最多赞同
-      votes_button: 赞同数
+      hot_button: 趋势
+      votes_button: 赞同最多
 fof-gamification:
   admin:
     page:
       alt_votes:
-        icon_name: 'Reddit 布局图标名称'
+        icon_name: 'Reddit 布局图标'
       convert:
-        button: 将“点赞”转换为“赞同”
-        converted: '成功转换所有 {number} 个点赞'
-        converting: 点赞数据正在转换中，请几分钟后刷新站点查看结果。（转换耗时取决于论坛总点赞数量）
-        help: '将 flarum/likes 官方点赞插件的历史点赞数据转换为赞同，并为所有现有主题重新计算热度。'
+        button: 将点赞转换为赞同票
+        converted: '已成功转换 {number} 个点赞'
+        converting: 正在转换点赞。请稍后刷新页面查看结果。转换时间取决于论坛现有点赞数量，可能需要一段时间。
+        help: '将 flarum/likes 中已有的点赞转换为赞同票，并重新计算现有讨论热度。'
       groups:
         add: 添加规则
         column:
           group: 用户组
-          maxPoints: 最高点数（含）
-          minPoints: 最低点数（含）
+          maxPoints: 最高积分（含）
+          minPoints: 最低积分（含）
         delete: 删除规则
-        help: "当用户的积分发生变化时，系统将根据需要自动添加或移除所选的用户组。如果您修改了配置，应当运行 <code>php flarum fof:gamification:assign-groups</code> 命令以更新现有用户。如果您希望删除某条规则并从该组中移除所有用户，请将最小值和最大值均设为空（留空），保存设置并运行上述命令行命令。最后，您可以从设置中彻底删除该规则。\n"
+        help: "用户积分发生变化时，系统会根据下方规则自动加入或移出相应用户组。修改规则后，请运行 <code>php flarum fof:gamification:assign-groups</code> 命令更新现有用户。如需删除一条规则并将所有用户移出对应用户组，请先将最低和最高积分都留空，保存设置并运行上述命令，之后再删除该规则。\n"
         title: 自动分配用户组
       rankings:
         blocked:
-          help: 以下用户不会出现在排行榜。请用半角逗号+空格分隔用户名。
-          placeholder: '管理员, 用户1, 用户2'
-          title: 屏蔽用户
-        custom_image_1: 冠军标志
-        custom_image_2: 亚军标志
-        custom_image_3: 季军标志
-        enable: 启用自定义图片
+          help: 这些用户不会出现在排行榜中。多个用户名请使用英文逗号加空格分隔。
+          placeholder: 'admin, user1, user2'
+          title: 不参与排行的用户
+        custom_image_1: 第一名图片
+        custom_image_2: 第二名图片
+        custom_image_3: 第三名图片
+        enable: 启用自定义排名图片
         title: 排行榜
       ranks:
         help:
           color: '#ffffff'
-          help: 输入所需数量的赞同，头衔名称，以及头衔颜色
+          help: 设置达到各头衔所需的赞同票数量、头衔名称和十六进制颜色。
           name: 名称
-          points: 👍
-        number_title: 要显示多少个头衔？
+          points: 积分
+        number_title: 显示多少个头衔徽章？
         ranks: 自定义头衔
         title: 头衔
       save_settings: 保存设置
       votes:
-        allow_self_votes: 允许用户投票自己的帖子
-        alternate_layout: '使用仿 Reddit 投票布局（全部主题列表）'
-        alternate_post_layout: '使用仿 Reddit 投票布局（帖子页面）'
-        auto_upvote: 当帖子发布时自动赞同
+        allow_self_votes: 允许用户为自己的帖子投票
+        alternate_layout: '在讨论列表使用 Reddit 投票布局'
+        alternate_post_layout: '在帖子中使用 Reddit 投票布局'
+        auto_upvote: 发布帖子时自动添加赞同票
         color_holder: '#ffffff'
-        discussion_page: 在帖子列表中显示赞同数
-        first_post_only: 仅允许在首帖中进行赞同/反对投票
-        icon_help: '输入任何 Font Awesome 图标，后缀为 -up 和 -down。 示例：arrow（箭头），thumbs（拇指），chevron（指向箭头）'
-        icon_name: 赞同/反对图标
+        discussion_page: 在讨论列表显示首帖总票数
+        first_post_only: 仅允许对讨论首帖投票
+        icon_help: '填写任意带有 -up 和 -down 后缀的 FontAwesome 图标名称，例如 arrow、thumbs、chevron。'
+        icon_name: 赞同票/反对票图标
         icon_preview_downvote: 反对
         icon_preview_upvote: 赞同
-        points_placeholder: '👍: '
-        points_title: 占位符
-        rate_limit: '赞同频率限制（10 秒）'
+        points_placeholder: '积分： '
+        points_title: 积分显示前缀
+        rate_limit: '限制投票频率（10 秒）'
         title: 投票
-        upvotes_only: 禁用反对
-        vote_color: 投票颜色
+        upvotes_only: 仅允许投赞同票
+        vote_color: 已投票颜色
     permissions:
       downvote_notifications: 接收反对票通知
-      see_ranking_page: 查看排名
+      see_ranking_page: 查看排行榜
       see_voters_label: 查看投票详情
-      see_votes_label: 查看赞同/反对数量
+      see_votes_label: 查看赞同票和反对票数量
       upvote_notifications: 接收赞同票通知
-      vote_label: 赞同/反对
+      vote_label: 为帖子投赞同票或反对票
   email:
     body:
-      postVoted: "{recipient_display_name} 你好！\n\n{actor_display_name} 刚刚投票了你的主题「{discussion_title}」。\n\n查看详情：{discussion_url}\n"
+      postVoted: "{recipient_display_name}，你好！\n\n{actor_display_name} 刚刚为你在「{discussion_title}」中的帖子投了票。\n\n点击链接查看详情：{discussion_url}\n"
     subject:
-      postVoted: '{display_name} 投票了你的帖子'
+      postVoted: '{display_name} 为你的帖子投了票'
   forum:
     mod_item: 投票详情
     modal:
@@ -83,31 +83,31 @@ fof-gamification:
       title: 投票详情
       upvotes_label: 'TA 们赞同：'
     nav:
-      name: 排名
+      name: 排行榜
     notification:
-      downvote: '{username} 反对了您的帖子'
+      downvote: '{username} 给你的帖子投了反对票'
       prefrences:
-        vote: 有人赞同或反对我
-      upvote: '{username} 赞同了您的帖子'
+        vote: 我的帖子收到赞同票或反对票
+      upvote: '{username} 给你的帖子投了赞同票'
     post:
       downvote_button: 反对
       upvote_button: 赞同
     ranking:
-      amount: 👍
+      amount: 积分
       name: 用户
-      rank: 排名
+      rank: 名次
     user:
       card:
-        points: '{count, plural, one {{count} 👍} other {{count} 👍}}'
+        points: '{count, plural, other {{count} 积分}}'
       rank: '{rank}'
       votes_link: 投票
     vote_title: 投票详情
     voters:
       label: 投票详情
       label_none: 暂无投票
-      none: 暂无投票
+      none: 暂无用户投票
     votes: 投票
 lib:
   gambits:
     hot:
-      key: hot
+      key: 趋势

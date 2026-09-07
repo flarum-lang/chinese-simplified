@@ -5,7 +5,7 @@
 core:
   forum:
     badge:
-      frontpage_tooltip: 已标记为精华
+      frontpage_tooltip: 精华
     index_sort:
       front_button: 精华
     post_controls:
@@ -14,8 +14,8 @@ core:
 fof-frontpage:
   admin:
     permissions:
-      can_push_to_frontpage_label: 可设置精华帖
+      can_push_to_frontpage_label: 将讨论设为精华
   lib:
     gambits:
       frontpage:
-        key: frontpage
+        key: 精华

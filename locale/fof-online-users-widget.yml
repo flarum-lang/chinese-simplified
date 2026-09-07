@@ -5,12 +5,12 @@
 fof-online-users-widget:
   admin:
     permissions:
-      view_online_users_widget: 查看在线用户小部件
+      view_online_users_widget: 查看在线用户小组件
     settings:
-      cache_ttl: 用户列表缓存保持时间（秒）
-      last_seen_interval: 判断用户是否在线的最后在线时间间隔（以分钟为单位）
-      max_users: 最大显示用户数
+      cache_ttl: 用户列表缓存时间（秒）
+      last_seen_interval: 在线状态判定时间（分钟）
+      max_users: 最多显示用户数
   forum:
     widget:
-      empty: 目前没有用户在线。
+      empty: 当前没有用户在线
       title: 在线用户

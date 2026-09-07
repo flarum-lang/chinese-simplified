@@ -6,27 +6,27 @@ fof-oauth:
   admin:
     configure_button_label: '配置 FoF OAuth'
     permissions:
-      moderate_user_providers: 管理用户绑定的账号
+      moderate_user_providers: 管理用户的第三方登录账号
     settings:
       advanced:
-        heading: 高级
-        log-oauth-errors-help: '启用此项，在 Flarum 日志中记录 OAuth 错误，以便于调试 OAuth 问题。请注意可能会记录敏感信息到日志中。'
+        heading: 高级设置
+        log-oauth-errors-help: '开启后，OAuth 错误会写入 Flarum 日志，可用于排查 OAuth 问题，请注意敏感信息可能会一并写入日志。'
         log-oauth-errors-label: '记录 OAuth 错误'
-      disable_avatars_help: "如果启用此选项，用户注册时，其头像将不会自动更新为与提供商的头像一致。请注意，此设置仅影响未来的注册用户，不会更改现有用户的头像。\n"
-      disable_avatars_label: 禁用来自提供商的头像
+      disable_avatars_help: "开启后，新用户注册时不会使用登录服务提供的头像。仅影响之后注册的用户，不会更改现有用户的头像。\n"
+      disable_avatars_label: 不使用登录服务头像
       fullscreen_popup_help: '启用此项，忽略宽高设置，打开一个新的全屏弹出窗口进行 OAuth。'
       fullscreen_popup_label: '使用全屏弹出窗口进行 OAuth 认证'
-      only_icons_label: 登录界面只显示第三方账号图标
+      only_icons_label: 登录按钮仅显示图标
       popup_height_help: '设置 OAuth 弹窗的高度，此设置对「全屏弹出窗口」无效。'
       popup_height_label: 'OAuth 弹窗高度'
       popup_width_help: '设置 OAuth 弹窗的宽度，此设置对「全屏弹出窗口」无效。'
       popup_width_label: 'OAuth 弹窗宽度'
       providers:
-        callback_url_text: '根据需要可将回调 URL 设为 {url}。'
+        callback_url_text: '如有需要，可将回调 URL 设置为 {url}。'
         discord:
           client_id_label: '=> fof-oauth.ref.settings.client_id'
           client_secret_label: '=> fof-oauth.ref.settings.client_secret'
-          description: '前往 {link} 创建应用，并在 OAuth2 选项卡中添加重定向 URL。'
+          description: '前往 {link} 创建应用，并在 OAuth2 页面添加重定向 URL。'
         facebook:
           app_id_label: '=> fof-oauth.ref.settings.app_id'
           app_secret_label: '=> fof-oauth.ref.settings.app_secret'
@@ -38,38 +38,38 @@ fof-oauth:
         gitlab:
           client_id_label: '=> fof-oauth.ref.settings.app_id'
           client_secret_label: '=> fof-oauth.ref.settings.app_secret'
-          description: '在 {link} 创建应用程序，并给予该应用 <code>read_user</code> 权限。'
+          description: '前往 {link} 创建应用，并授予该应用 <code>read_user</code> 权限。'
           domain_label: 'GitLab 域名'
         google:
           client_id_label: '=> fof-oauth.ref.settings.client_id'
           client_secret_label: '=> fof-oauth.ref.settings.client_secret'
-          description: '前往此处创建应用：{link}。'
-          hosted_domain_label: '托管域名（G 套件/Google 企业应用，可选）'
-        group_help: 选择一个群组，以便自动分配给使用此提供商注册的用户。
-        group_label: 分配组
+          description: '前往 {link} 创建应用。'
+          hosted_domain_label: '托管域名（G Suite/Google Apps 企业版，可选）'
+        group_help: 使用此登录服务注册的用户将自动加入所选用户组。
+        group_label: 分配用户组
         linkedin:
           client_id_label: '=> fof-oauth.ref.settings.client_id'
-          client_secret_label: 'Client Secret'
+          client_secret_label: '=> fof-oauth.ref.settings.client_secret'
           description: '前往 {link} 创建应用。'
-        no_group_label: 没有群组任务
+        no_group_label: 不分配用户组
         twitter:
           api_key_label: 'API Key'
           api_secret_label: 'API Secret'
           description: '在 {link} 创建一个应用。您需要提供服务协议和隐私政策 URL，然后确保添加请求邮件权限。'
-      update_email_from_provider_help: '启用此项，在用户每次登录论坛时，尝试从 OAuth 提供方获取并更新用户的电子邮箱地址。'
-      update_email_from_provider_label: 从提供方获取邮箱地址
+      update_email_from_provider_help: '开启后，每次登录论坛时，用户的邮箱地址都会更新为 OAuth 服务提供的邮箱。部分服务不会返回最新邮箱地址，此时该设置不会生效。'
+      update_email_from_provider_label: 从登录服务同步邮箱地址
     settings_accessibility_label: '{name} 设置'
   forum:
     account_linked:
-      body: '你的 {forum} 账号 <strong>{username}</strong> 现已与 {provider} 关联。今后，你可以使用论坛密码或 {provider} 账号登录。'
+      body: '你的 {forum} 账号 <strong>{username}</strong> 现已与 {provider} 绑定。之后可以使用论坛密码或 {provider} 账号登录。'
       dismiss_button: 知道了
-      title: 账号关联成功
+      title: 账号已绑定
     error:
-      already_linked: 该账号已与其他用户关联。
-      bad_verification_code: 无效或过期的验证令牌，请重试。
-      invalid_state: 无效状态，请重试。
+      already_linked: 此账号已绑定到其他用户。
+      bad_verification_code: 验证令牌无效或已过期，请重试。
+      invalid_state: 验证状态无效，请重试。
     log_in:
-      with_button: '{provider} 账号登录'
+      with_button: '使用 {provider} 账号登录'
       with_discord_button: '=> fof-oauth.forum.log_in.with_button'
       with_facebook_button: '=> fof-oauth.forum.log_in.with_button'
       with_github_button: '=> fof-oauth.forum.log_in.with_button'
@@ -86,35 +86,35 @@ fof-oauth:
       linkedin: '=> fof-oauth.lib.providers.linkedin'
       twitter: '=> fof-oauth.lib.providers.twitter'
     signup:
-      username_help: 请选择用户名
-    unlink: 解除绑定
+      username_help: 请选择你在社区中使用的用户名
+    unlink: 取消绑定
     user:
       settings:
         linked-account:
-          help: 绑定第三方帐户，开辟登录捷径。
+          help: 绑定账号后，你可以使用第三方账号登录论坛。
           identification-label: '{provider} ID'
           identifier-label: '{provider} ID'
           label: 第三方登录
           last-used-label: 上次使用
-          link-created-label: 已绑定
-          orphaned-account: 您以前已通过此账号登录，但是目前论坛已关闭此登录方式。
-          unlink-confirm: '确定要解除绑定 {provider} 账号吗？您将无法使用此账号登录论坛。'
+          link-created-label: 绑定时间
+          orphaned-account: 你曾使用此第三方账号登录，但论坛现已停用该登录方式。
+          unlink-confirm: '确定要取消绑定 {provider} 账号吗？取消后将无法再使用 {provider} 登录论坛，除非之后重新验证并绑定。'
   lib:
     gambits:
       sso:
-        hint: 登录方式
-        key: sso
+        hint: 登录服务
+        key: 第三方登录
     providers:
       discord: Discord
       facebook: Facebook
       github: GitHub
       gitlab: GitLab
       google: Google
-      linkedin: 领英
+      linkedin: LinkedIn
       twitter: Twitter
   ref:
     settings:
-      app_id: 'App ID'
-      app_secret: 'App Secret'
-      client_id: 'Client ID'
-      client_secret: 'Client Secret'
+      app_id: '应用 ID'
+      app_secret: 应用密钥
+      client_id: '客户端 ID'
+      client_secret: 客户端密钥

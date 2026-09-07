@@ -7,5 +7,5 @@ fof-photoswipe:
     arrow_next_title: 下一张
     arrow_prev_title: 上一张
     close_title: 关闭
-    error_msg: 图片无法加载
+    error_msg: 图片加载失败
     zoom_title: 缩放

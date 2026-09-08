@@ -11,93 +11,93 @@ fof-webhooks:
         description: '新标题：{1}'
         title: '重命名讨论 `{1}`'
       restored: '恢复讨论 `{1}`'
-      started: '发布讨论 `{1}`'
+      started: '发起讨论 `{1}`'
     group:
-      created: '创建群组 `{1}`'
-      deleted: '删除群组`{1}`'
-      renamed: '重命名群组为 `{1}`'
+      created: '创建用户组 `{1}`'
+      deleted: '删除用户组 `{1}`'
+      renamed: '将用户组重命名为 `{1}`'
     post:
-      approved: '在 `{1}` 中审核通过的帖子'
-      deleted: '删除回复于 `{1}`'
-      hidden: '隐藏回复于 `{1}`'
-      posted: '新回复于 `{1}`'
-      restored: '恢复回复于 `{1}`'
-      revised: '编辑回复于 `{1}`'
+      approved: '审核通过了 `{1}` 中的帖子'
+      deleted: '删除了 `{1}` 中的帖子'
+      hidden: '隐藏了 `{1}` 中的帖子'
+      posted: '在 `{1}` 中发布了新帖'
+      restored: '恢复了 `{1}` 中的帖子'
+      revised: '编辑了 `{1}` 中的帖子'
     user:
       deleted: '删除用户 `{1}`'
-      registered: 新注册会员
+      registered: 有新用户注册
       renamed:
         description: '新用户名：{1}'
-        title: '`{1}` 变更用户名'
+        title: '更改了 `{1}` 的用户名'
   adapters:
     errors:
-      404: 'Webhook 服务未找到或不存在'
+      404: '未找到 Webhook'
   admin:
     errors:
-      service_not_found: '不存在的服务「{service}」。'
-      tag_disabled: '请注意，标签扩展程序已被禁用，此 WebHook 配置的标签限制功能无法使用。'
-      tag_invalid: '此 Webhook 被限制于无效的标签上。该限制将不可用。请确保这是您有意所为。'
-      url_invalid: '所选服务的 URL 无效。'
+      service_not_found: '找不到服务「{service}」。'
+      tag_disabled: '此 Webhook 设置了标签限制，但标签扩展当前已禁用，该限制无法生效。请确认这是你的预期结果。'
+      tag_invalid: '此 Webhook 设置了无效的标签限制，该限制不会生效。请确认这是你的预期结果。'
+      url_invalid: '此 URL 不适用于所选服务。'
     nav:
-      desc: '为您的论坛设置自定义 Outgoing Webhooks。'
+      desc: '为论坛配置自定义出站 Webhook。'
     settings:
       actions:
         flarum:
           approval:
-            postwasapproved: 审核通过的帖子
+            postwasapproved: 帖子通过审核
             title: 'Flarum 审核'
           discussion:
             deleted: '=> fof-webhooks.ref.deleted'
             hidden: '=> fof-webhooks.ref.hidden'
             renamed: '=> fof-webhooks.ref.renamed'
             restored: '=> fof-webhooks.ref.restored'
-            started: 已发布
+            started: 发起
             title: 'Flarum 讨论'
           group:
             created: 创建
             deleted: '=> fof-webhooks.ref.deleted'
             renamed: '=> fof-webhooks.ref.renamed'
-            title: 'Flarum 群组'
+            title: 'Flarum 用户组'
           post:
             deleted: '=> fof-webhooks.ref.deleted'
             hidden: '=> fof-webhooks.ref.hidden'
-            posted: 回复
+            posted: 发布
             restored: '=> fof-webhooks.ref.restored'
             revised: 编辑
-            title: 'Flarum 回复'
+            title: 'Flarum 帖子'
           user:
             deleted: '=> fof-webhooks.ref.deleted'
             registered: 注册
             renamed: '=> fof-webhooks.ref.renamed'
             title: 'Flarum 用户'
-      debug_help: '当 Webhook 或事件工作不正常时，你可以启用此项。更多日志信息会输出到 Flarum 日志文件，以帮助你调试问题。'
+      debug_help: '向 Flarum 日志写入更多信息，用于排查 Webhook 或事件未正常触发的问题。'
       debug_label: 调试
       help:
-        disabled: '此 Webhook 已被禁用，因为它没有启用事件。'
-        general: '您可以在这里添加、编辑、删除论坛中的 webhooks。'
-        tags: '选择 Webhook 生效的标签。'
-        url: '要运行的 Webhook 终端'
+        disabled: '此 Webhook 未启用任何事件，已被禁用。'
+        general: '你可以在此添加、编辑和删除论坛的 Webhook。'
+        tags: '你可以将 Webhook 限制到指定标签。选择标签后，只有事件涉及的内容带有任意一个所选标签时，才会触发此 Webhook。'
+        url: 'Webhook 触发时请求的地址'
       item:
         create_button: 创建
-        delete_confirm_alert: '您确定要删除此 {service} webhook 吗？'
-        delete_tooltip: '删除 webhook'
+        delete_confirm_alert: '确定要删除此 {service} Webhook 吗？'
+        delete_tooltip: '删除 Webhook'
         edit_tags_button: 编辑标签
-        edit_tooltip: '编辑 webhook 设置'
-        tag_any_label: 任一标签
+        edit_tooltip: '编辑 Webhook 设置'
+        tag_any_label: 任意标签
       modal:
-        description: '您可以在这里修改出发 webhook 的事件。'
+        description: '设置会触发此 Webhook 的事件。'
         events_label: 事件
-        extra_text_help: '附加文本到发送的 Webhook 中。'
+        extra_text_help: '随 Webhook 一同发送的附加文本。'
         extra_text_label: 附加文本
-        group_help: 发送该组群可见的资源
-        group_label: 组群
-        include_matching_tags_label: '包含匹配标签 -- 对于限制为特定标签的 webhook，显示事件匹配了哪些标签'
-        max_post_content_length_help: '设置所有与帖子相关事件的最大帖子内容长度。0 或不填表示无限制。'
-        max_post_content_length_label: 最大贴子内容长度
-        name_help: 'webhook 的名称。这将用于 Discord 用户名、Slack 机器人名称等。'
+        group_help: 仅发送此用户组可见的内容
+        group_label: 用户组
+        include_matching_tags_label: '包含匹配的标签（对于限制到特定标签的 Webhook，显示匹配到的标签）'
+        max_post_content_length_help: '设置所有帖子相关事件中最多包含多少内容。设为 0 或留空则不限制。'
+        max_post_content_length_label: 帖子内容长度上限
+        name_help: 'Webhook 的名称，将用作 Discord 用户名、Slack 机器人名称等。'
         name_label: 名称
         title: 'Webhook 设置'
-        use_plain_text_label: 减少帖子内容的格式化数量
+        use_plain_text_label: 减少帖子内容中的格式
       services:
         discord: Discord
         microsoft-teams: 'Microsoft Teams'

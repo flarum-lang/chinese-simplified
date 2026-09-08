@@ -8,7 +8,7 @@ fof-clockwork:
       button_label: '打开 Clockwork'
       section_label: Clockwork
     settings:
-      disable_auth_help: '允许未登录访问 Clockwork。'
+      disable_auth_help: '开启后，所有请求都会进行性能分析，并且无需登录即可访问 Clockwork 查看器。仅建议在调试时临时启用。'
       disable_auth_label: 禁用身份验证
-      disable_auth_warning: 警告：禁用后调试数据可被公开访问。
+      disable_auth_warning: '警告：身份验证已禁用。任何人都可以访问 Clockwork 查看器及所有性能分析数据。调试完成后请立即关闭此设置。'
       section_label: 设置

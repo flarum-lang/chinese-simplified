@@ -6,113 +6,118 @@ flarum-gdpr:
   lib:
     data:
       uploads:
-        anonymize_description: 去除所有已上传文件的用户关联。之前可访问这些文件的用户仍可访问。
-        delete_description: 删除该用户上传的所有文件。
-        export_description: 用户上传的所有文件。
+        anonymize_description: 移除上传文件与用户的关联。文件本身仍然保留，匿名化前有权查看这些文件的用户仍可访问。
+        delete_description: 删除用户上传的所有文件。
+        export_description: 导出用户上传的所有文件。
 fof-upload:
   admin:
     help_texts:
-      client_extension: "默认情况下，上传器将根据 MIME 类型选择一个安全的文件扩展名。\n对于某些基于 ZIP 或二进制数据的文件类型，这可能导致使用不正确的通用扩展名。\n在这里，您可以输入一个逗号分隔的文件扩展名列表，该列表将被逐字保留。\n"
-      composer_buttons: "默认情况下，媒体管理按钮和上传按钮皆可见。您可以选择只显示其中一个按钮。\n"
-      custom_s3_url: "如您使用需要特定 URL 格式的 S3 兼容服务（例如 Backblaze B2），或者默认 URL 格式有问题，请使用此设置。大多数情况下无需使用本设置。使用时请按正确格式填写，并确保包含 URL 协议（如 https://）。示例：https://your-bucket.s3.your-region.backblazeb2.com\n"
-      disable-download-logging: "（默认启用）保持开启，以便在将来查看下载记录及其他数据。打开下方的开关，即可停止记录下载日志。\n"
-      disable-hotlink-protection: "（默认启用）防盗链将通过验证 CSRF TOKEN 和 POST ID 来保护你的文件不会被其他站点调用下载。\n"
-      download_templates: "启用模板后，您上传的文件将按模板样式显示于帖子中，并增加了“预览”、“下载”等按钮。 当前可用：\n"
-      local_cdn: "可选。如果使用CDN伺服<code>assets/files</code>，输入根网址后，上传文件链接将自动应用。留空则使用论坛根网址。\n"
-      mime_order: "匹配规则自上而下运行，以第一次匹配成功的结果为准。因此，应将更佳具体的规则放在一般通用规则的上面。\n"
-      mime_types: "配置用户可以上传的文件类型、存储方式、在帖子中的展示方式。\n"
-      resize: "配置图片缩放功能，以像素为单位，超过最大宽度及高度后会被缩放，图片横纵比不变。\n"
-      s3_acl: "应用于上传对象的读写权限 ACL（默认私有读写）。 有关可用的值，请参阅 https://iflarum.cn/aws-s3acl\n"
+      client_extension: "默认情况下，Upload 会根据 MIME 类型选择安全的文件扩展名。\n对于某些基于 ZIP 或二进制数据的文件类型，可能会替换为较通用的扩展名，而不是预期的原始扩展名。\n你可以在此填写以逗号分隔的文件扩展名列表，这些文件的扩展名将原样保留。\n"
+      composer_buttons: "默认同时显示媒体管理器和上传按钮。你也可以选择只显示其中一个。\n"
+      custom_s3_url: "文件对外提供访问时使用的基础 URL，例如存储桶的 CDN 地址或自定义域名。\n留空则使用服务提供商的默认 URL。必须包含 <code>https://</code>。\n"
+      disable-download-logging: "禁用后将不再记录论坛用户的每次下载。保持启用可以统计下载次数，并用于其他下载数据分析。\n"
+      disable-hotlink-protection: "防盗链可阻止从其他网站直接打开下载链接。当前实现依赖 CSRF 令牌和帖子 ID。\n"
+      download_templates: "下载模板决定上传文件在论坛中的显示方式，例如显示为预览或下载按钮。当前可用模板：\n"
+      local_cdn: "文件的公开访问地址。本地存储留空时使用论坛自身地址。\n使用七牛云时需填写空间访问域名或自定义 CDN 域名。S3 可单独配置公开 URL。\n"
+      mime_order: "规则从上到下依次匹配，并采用第一个匹配结果，因此请将更具体的规则放在通用规则之前。\n"
+      mime_types: "设置用户可以上传的文件类型、文件存储位置，以及在帖子中的展示方式。\n"
+      resize: "设置是否在图片上传前调整尺寸。以像素为单位，超过最大宽度或高度后自动缩放图片，调整时会保持图片原始宽高比。\n"
+      s3_acl: "应用于每个上传对象。留空则使用服务提供商的默认值，通常为私有。\n如果文件需要直接从存储桶公开访问，请使用 <code>public-read</code>。\n"
+      s3_acl_unsupported: "{provider} 不支持 ACL。请前往服务提供商自己的控制台配置公开访问权限。\n"
       s3_compatible_storage: "填写下方设置以配置 S3 兼容存储模式。如果您使用 AWS，请保持留空。有关 S3 兼容配置详情，请查阅各大云服务商的文档（七牛云：https://iflarum.cn/qiniu-s3）\n"
-      s3_instance_profile: "公钥和秘钥留空时，可为实例单独配置。\n"
-      storage_configure_another: "有其它已安装的存储服务，但尚未启用。配置存储服务并绑定文件类型之前，文件上传的路径不会发生改变。\n"
-      storage_intro: "已配置的服务或正在使用的文件类型，将展示在此页面。服务配置操作可以早于文件绑定操作。文件类型配置操作，可以随时在文件选项卡中进行。\n"
-      storage_not_installed: '希望使用Amazon S3，Cloudflare R2或Qiniu？需要安装额外插件，详见<a>安装存储适配器</a>。'
-      thumbnail_quality: "编码质量数值从1到100，仅适用于WebP和JPEG格式缩略图。数值越大，图片越清晰，图片文件也越大。GIF和PNG缩略图为无损形式，将忽略此设置。既有的缩略图在使用backfill命令重新生成之前，仍然维持现有的质量。\n"
-      thumbnails: "在上传时为图片生成缩小尺寸的缩略图。缩略图会内联显示；\n点击它会在新标签页中打开原始全分辨率文件。\n对于包含许多大图片的论坛，缩略图可以显著减少带宽和页面权重。\n"
-      watermark: "选择上传图片时是否添加水印。水印会根据下面的偏好设置来添加到非 GIF 图片上。\n"
+      s3_endpoint: "服务提供商的 S3 API 地址，不是存储桶的公开 URL。Amazon S3 无需填写。\n"
+      s3_instance_profile: "两个字段均留空时会改用 IAM 角色，仅适用于 EC2、ECS 或 EKS。\n"
+      s3_path_style: "将存储桶名称放在 URL 路径中，而不是主机名中。MinIO 和 Cloudflare R2 需要使用此模式。\n选择相应服务提供商后会自动设置。\n"
+      s3_provider: "选择服务提供商后，会自动设置下方的 Endpoint 格式、寻址方式和 ACL 支持情况。\n如果你的服务不在列表中，请选择「其他 S3 兼容服务」。\n"
+      storage_configure_another: "还有其他已安装但尚未配置的存储服务。\n配置完成后，请前往「文件」标签页，将相应的文件类型指定到该存储服务。\n"
+      storage_intro: "此处会显示已配置或正在使用的存储服务。\n你可以先配置存储服务，之后再前往「文件」标签页，为相应的文件类型指定存储位置。\n"
+      storage_not_installed: '需要 Amazon S3、Cloudflare R2 或七牛云？这些服务需要安装额外的软件包，请参阅<a>安装存储适配器</a>。'
+      thumbnail_quality: "设置 WebP 和 JPEG 缩略图的编码质量，范围为 1 至 100。\n数值越高，画质越清晰，文件也越大。GIF 和 PNG 缩略图为无损格式，不受此设置影响。\n现有缩略图会继续使用原来的质量，除非通过 backfill 命令重新生成。\n"
+      thumbnails: "上传图片时生成小尺寸缩略图，并在帖子中显示。点击缩略图会在新标签页打开原始高清图片。\n对于包含大量大尺寸图片的论坛，缩略图可以显著减少流量和页面体积。\n"
+      watermark: "设置是否在图片上传时添加水印。非 GIF 图片会根据下方设置添加水印。\n"
     inspect-mime:
-      description: "由于 PHP Fileinfo 扩展在不同服务器上返回的文件类型会有所不同，因此 FoF Upload 仅将其作为备用选项。\n一般情况下，均使用 <a>PHP Mime Detector</a> 库检测 MIME 类型。\n"
-      guessed-extension: 默认文件扩展名
-      laravel-validation: 'Laravel 文件验证消息'
-      mime-detector: 'Mime 检测器（主）'
-      mime-fileinfo: 'PHP Fileinfo（备）'
-      no-file-selected: 请选择文件
-      not-available: 暂无结果
-      select: 选择一个文件，并检测类型。您选择的文件不会被保存。
-      title: '检查 MIME'
+      description: "FoF Upload 优先使用 <a>PHP Mime Detector</a> 库识别常见 MIME 类型，并以 PHP Fileinfo 作为备用方案。\n不同服务器上的 Fileinfo 可能返回不同的 MIME 类型！\n"
+      guessed-extension: 默认文件扩展名（原始扩展名不在保留列表时）
+      laravel-validation: 'Laravel 文件验证'
+      mime-detector: 'Mime Detector（主要）'
+      mime-fileinfo: 'PHP Fileinfo（备用）'
+      no-file-selected: 未选择文件
+      not-available: 无结果
+      select: 选择一个文件，查看上传时将使用的检测结果。文件不会被保存。
+      title: '检测 MIME 类型'
       validation-failed: '失败：{error}'
       validation-passed: 通过
     labels:
       aws-s3:
         acl: 访问控制列表（ACL）
-        advanced_title: '高级 S3 存储设置'
-        bucket: 存储空间（Bucket）
-        custom_url: '自定义 S3 URL'
-        endpoint: 访问域名（Endpoint）
-        key: 访问密钥ID
-        provider: 提供器
-        region: 地域（Region）
-        secret: 秘密访问密钥
-        title: 'AWS S3 存储设置（配置请参阅 http://t.cn/A6zX0V3N）'
-        use_path_style_endpoint: '使用 path-style 访问域名'
+        advanced_title: 高级选项
+        bucket: 存储桶（Bucket）
+        custom_url: '公开 URL'
+        endpoint: Endpoint
+        key: '访问密钥 ID'
+        provider: 服务提供商
+        region: 地域
+        secret: 私有访问密钥
+        title: 'S3 存储'
+        use_path_style_endpoint: 使用路径式寻址
       client_extension:
-        placeholder: 例如：docx，xlsx，epub
-        title: 用户自定义文件扩展名
+        placeholder: '例如 docx, xlsx, epub'
+        title: 保留指定文件扩展名
       composer_buttons:
         options:
           both: 全部显示
-          media-btn: 仅媒体管理按钮
-          upload-btn: 仅上传按钮
+          media-btn: 仅显示媒体管理器按钮
+          upload-btn: 仅显示上传按钮
         title: 编辑器按钮
-      configured_by_environment: 您的存储设置已通过环境变量预先配置。
+      configured_by_environment: 存储设置已通过环境变量预配置。
       disable-download-logging:
-        title: 下载历史统计
-        toggle: 停用
+        title: 禁用下载记录
+        toggle: 禁用
       disable-hotlink-protection:
-        title: 防盗链保护
-        toggle: 停用
+        title: 禁用防盗链
+        toggle: 禁用
       imgur:
-        client_id: 'Imgur 客户ID'
+        client_id: 'Imgur 客户端 ID'
         title: 'Imgur 图片存储设置'
-        tos: '你有义务确保你的用户遵守 Imgur 的 <a>服务条款</a>'
+        tos: '你有责任确保论坛用户遵守 Imgur 的<a>服务条款</a>'
       inspect-mime: '测试文件 MIME 类型'
       local:
-        cdn_url: '文件链接前缀 / 对象存储 CDN 或访问域名（含 http/https）'
-        title: 存储设置
+        cdn_url: '文件访问 URL/CDN 地址'
+        title: 本地存储设置
       mime_presets:
-        archives: 压缩包（zip、tar、7z）
+        archives: 压缩文件（zip、tar、7z）
         audio: 音频
-        documents: Word文件
+        documents: 'Word 文档'
         images: 图片
-        pdf: PDF文件
-        php_ini_values: '你服务器中的<code>php.ini</code>配置为<code>post_max_size={post}</code> and <code>upload_max_filesize={upload}</code>。需确保此处设置的值，低于这些阈值，或调整对应阈值。如使用<code>Nginx</code>，还需确保<code>client_max_body_size</code> 大于设置的最大值。'
-        spreadsheets: 表格文件
-        title: 一般设置
+        pdf: 'PDF 文档'
+        php_ini_values: '当前 <code>php.ini</code> 配置为 <code>post_max_size={post}</code>、<code>upload_max_filesize={upload}</code>。请确保此处设置的值低于这些限制，或相应调整 PHP 配置。如果使用 <code>Nginx</code>，还请确保 <code>client_max_body_size</code> 足以满足所选的文件大小上限。'
+        spreadsheets: 电子表格
+        title: 常规设置
         video: 视频
       preferences:
-        max_file_size: 最大文件大小
-        max_file_size_equivalent: '存储占用<code>{kb}</code>KB（{value}）。'
-        mime_add_custom: 自定义配置…
+        max_file_size: 文件大小上限
+        max_file_size_equivalent: '实际保存值：<code>{kb}</code> KB（{value}）。'
+        mime_add_custom: 自定义规则…
         mime_add_prompt: 添加文件类型…
-        mime_add_subtype: 添加一个文件格式
-        mime_add_subtype_placeholder: 例如：WebP
-        mime_advanced_pattern: 高级配置
-        mime_column_display: 展示为
-        mime_column_display_help: 文件在帖子中的显示方式：内链预览、下载按钮等。
+        mime_add_subtype: 添加文件格式
+        mime_add_subtype_placeholder: '例如 webp'
+        mime_advanced_pattern: 高级匹配规则
+        mime_column_display: 显示方式
+        mime_column_display_help: 文件在帖子中的显示方式，例如直接预览、下载按钮等。
         mime_column_pattern: 文件类型
-        mime_column_permission: 权限标签
-        mime_column_permission_help: 可选。在此输入一个权限名称，你将可以控制哪些用户可以上传此类文件。
-        mime_column_storage: 存储在
-        mime_column_storage_help: 此类型文件上传到的存储服务。
-        mime_edit_pattern: 编辑配置
-        mime_move_down: 下移（更晚匹配到）
-        mime_move_up: 上移（更早匹配到）
-        mime_remove_subtype: '删除{subtype}'
-        mime_type_add: 添加此文件类型
-        mime_type_permission_placeholder: 可选，例如：图片
-        mime_type_regex_invalid: '无效的正则表达式（例如：|| 等空替代）'
-        mime_type_regex_placeholder: 例如：^image/(jpeg|png|gif)$
+        mime_column_pattern_help: '此规则适用的文件类型，根据文件的 MIME 类型进行匹配。'
+        mime_column_permission: 权限名称
+        mime_column_permission_help: 可选。在此填写名称后会创建一项权限，用于控制哪些用户可以上传此类文件。
+        mime_column_storage: 存储位置
+        mime_column_storage_help: 此类文件上传后使用哪个存储服务。
+        mime_edit_pattern: 编辑匹配规则
+        mime_move_down: 下移（降低匹配优先级）
+        mime_move_up: 上移（提高匹配优先级）
+        mime_remove_subtype: '删除 {subtype}'
+        mime_type_add: 添加文件类型
+        mime_type_permission_placeholder: 可选，例如「图片」
+        mime_type_regex_invalid: '正则表达式无效（例如包含 || 这样的空选项）'
+        mime_type_regex_placeholder: '例如 ^image/(jpeg|png|gif)$'
         mime_type_remove: 删除此文件类型
         mime_types: 文件类型
         mime_use_simple: 使用简单编辑器
@@ -122,160 +127,161 @@ fof-upload:
         bucket: 空间名称
         key: Key
         secret: Secret
-        title: '七牛存储设置（需要先安装 composer require overtrue/flysystem-qiniu）'
+        title: 七牛云存储设置
       resize:
-        max_width: 最大图片宽高
-        title: 图片缩放功能
-        toggle: 开启缩放
+        max_width: 图片最大宽度/高度
+        title: 调整图片尺寸
+        toggle: 调整图片尺寸
       storage:
-        configure_another: '配置其它存储服务（{count}个可用）'
-        hide_unused: 隐藏未使用的服务
+        configure_another: '配置其他存储服务（{count} 个可用）'
+        hide_unused: 隐藏未使用的存储服务
       svg-sanitizer:
         allow_animate: '允许 SVG 动画'
-        allow_animate_help: '启用 SVG 动画可能会引入安全漏洞，因为动画 SVG 可能包含恶意代码。请自行承担风险启用此设置，并且仅在您信任用户的情况下启用。'
-        help: '配置上传时 SVG 文件的处理和清理方式。SVG 文件可能包含潜在有害脚本，应谨慎处理。上传的 SVG 文件在上传时会进行清理，有害脚本和标签会被移除。'
-        title: 'SVG 清理器'
+        allow_animate_help: '启用 SVG 动画可能带来安全风险，因为动态 SVG 可能包含恶意代码。请谨慎启用，并仅在信任论坛用户的情况下开启。'
+        help: '设置 SVG 文件上传时的处理和安全清理方式。SVG 文件可能包含有害脚本，需要谨慎处理。上传的 SVG 会自动进行安全清理，并移除有害脚本和标签。'
+        title: 'SVG 安全清理'
       thumbnails:
-        max_width: 缩略图最大宽度（像素）
+        max_width: 缩略图最大宽度（px）
         quality: 缩略图质量
         title: 图片缩略图
         toggle: 上传时生成缩略图
         webp_toggle: '将缩略图编码为 WebP（推荐，约小 30%）'
       watermark:
         file: 上传水印图片
-        opacity: 水印不透明度（0-100）
-        padding: 边距填充（像素）
+        opacity: 水印透明度（0–100）
+        padding: 距离边缘（px）
         position: 水印位置
-        size_percent: 水印大小（占图片宽度的百分比）
+        size_percent: 水印大小（占图片宽度百分比）
         title: 图片水印
-        toggle: 开启
+        toggle: 为图片添加水印
     nav:
       shared-uploads-button: 共享文件
     pane:
-      description: 设置上传服务和首选项。
+      description: 配置文件上传服务和相关设置。
       title: 上传
     permissions:
-      access_shared_label: 通过媒体管理器访问共享文件
-      delete_uploads_of_others_label: 删除用户上传的文件
-      download_label: 允许下载文件
-      upload_label: 上传文件（基本权限，所有上传都需要）
+      access_shared_label: 在媒体管理器中访问共享文件
+      delete_uploads_of_others_label: 删除其他用户上传的文件
+      download_label: 下载文件
+      upload_label: 上传文件（基础权限，所有上传均需要）
       upload_mime_label: '上传 {label}'
       upload_shared_label: 上传共享文件
       view_user_uploads_label: 查看用户上传的文件
     shared-uploads:
-      description: 上传全体用户可共享使用的文件。
-      introduction: "共享文件可被论坛所有用户使用。文件不与任何一个帖子关联，发帖时可以通过媒体管理器引用。\n\n<strong>警告：</strong>共享文件可以通过 URL 被任何人访问，无任何权限保护。\n"
+      description: 上传可供所有用户使用的文件。
+      introduction: "共享文件可供论坛所有用户使用。它们不会与任何帖子关联，发帖时可通过媒体管理器插入。\n\n<strong>警告：</strong>共享文件可通过 URL 被任何人访问，不受任何权限保护。\n"
       no-files: 暂未上传共享文件。
       title: 共享文件
-      upload-new-button: 上传文件
+      upload-new-button: 上传新文件
     tabs:
       advanced: 高级
       files: 文件
       images: 图片
       storage: 存储
-      unsaved_changes: 当前选项卡有未保存变更
-      unsaved_hint: 你有尚未保存的变更。
+      unsaved_changes: 此标签页有未保存的更改
+      unsaved_hint: 你有未保存的更改。
     templates:
-      bbcode-image: 'BBCode 图片预览模板'
-      bbcode-image_description: "使用 BBCode 在行内完整显示图片。<strong>此模板依赖于 flarum/bbcode 扩展程序。</strong>无下载、统计和热链保护功能。\n"
+      bbcode-image: 'BBCode 图片模板'
+      bbcode-image_description: "使用 BBCode 在帖子中直接显示完整图片。<strong>必须安装并启用 flarum/bbcode 才能使用。</strong>不提供下载功能、不记录统计数据，也不启用防盗链。\n"
       file: 默认文件下载模板
-      file_description: "显示文件名以及一些基本信息，经 php 代理下载，允许统计以及热链保护。\n"
+      file_description: "显示文件名及部分基本信息，并通过 PHP 代理下载，支持下载统计和防盗链。\n"
       image: 默认图片下载模板
       image-preview: 完整图片预览模板
-      image-preview_description: "在行内显示完整图片。不支持下载、统计和热链保护。\n"
-      image_description: "显示图片缩略图，并由 php 代理下载，支持统计和热链保护。\n"
-      just-url: 仅链接
-      just-url_description: "仅插入 URL。 渲染可以由具有自动链接功能的其他插件处理。无下载、统计和热链保护功能。\n"
-      markdown-image: 'Markdown 图片预览模板'
-      markdown-image_description: "使用 Markdown 格式在行内完整显示图片。<strong>此模板依赖于 flarum/markdown 扩展程序。</strong>无下载、统计和热链保护功能。\n"
-      text-preview: 文本文档预览
-      text-preview_description: "显示文本文件的前 5 行预览，附带展开全文按钮。\n"
+      image-preview_description: "在帖子中直接显示完整图片。不提供下载功能、不记录统计数据，也不启用防盗链。\n"
+      image_description: "显示图片缩略图，并通过 PHP 代理下载，支持下载统计和防盗链。\n"
+      just-url: '仅 URL'
+      just-url_description: "仅插入文件 URL，可由具有自动识别链接功能的其他扩展进行渲染。不提供下载功能、不记录统计数据，也不启用防盗链。\n"
+      markdown-image: 'Markdown 图片模板'
+      markdown-image_description: "使用 Markdown 在帖子中直接显示完整图片。<strong>必须安装并启用 flarum/markdown 才能使用。</strong>不提供下载功能、不记录统计数据，也不启用防盗链。\n"
+      text-preview: 文本预览
+      text-preview_description: "插入文本文件前 5 行的预览，并提供展开完整文件内容的选项。\n"
     upload_methods:
-      aws-s3: 'AWS S3 或 S3 兼容'
+      aws-s3: 'S3 或 S3 兼容服务'
       imgur: Imgur
       local: 本地
       ovh-svfs: 'OVH SVFS'
-      qiniu: 七牛
+      qiniu: 七牛云
     warnings:
-      fileinfo_missing: "此服务器未加载 PHP <strong>fileinfo</strong> 扩展。FoF Upload 仍可工作，但 MIME 类型交叉验证已禁用，这会降低对伪造文件类型的防护。请在 PHP 配置中启用此扩展以获得最佳安全性。\n"
+      fileinfo_missing: "服务器未加载 PHP <strong>fileinfo</strong> 扩展。FoF Upload 仍可正常使用，但 MIME 类型交叉验证将被禁用，从而降低对伪造文件类型的防护能力。为了获得更好的安全性，请在 PHP 配置中启用此扩展。\n"
+      max_file_size_exceeds_php: '此值超过服务器当前上传限制 <strong>{limit}</strong>（<code>post_max_size={post}</code>、<code>upload_max_filesize={upload}</code>），超过该限制的上传都会被 PHP 拒绝。请降低此值，或提高 <code>php.ini</code> 中的限制。如果使用 Nginx，还需要调整 <code>client_max_body_size</code>。'
   api:
     upload_errors:
-      cannot_write_to_disk: 无法写入磁盘。
-      could_not_detect_mime: '无法检测到该文件的 MIME 类型，请重试。'
-      forbidden_type: 不支持此类型文件。
-      max_upload_file_size_form: 超过表单允许的最大上传文件大小。
-      max_upload_file_size_ini: '超过 php.ini 允许的最大上传文件大小。'
-      mime_permission_denied: 您没有上传此文件类型的权限。
-      no_file_uploaded: 文件上传失败。
-      no_files_made_it_to_upload: '请上传小于 {max} kb 的文件。'
-      no_upload_tmp_folder: 没有可用的临时文件夹，无法上传。
-      partial_upload: 文件内容未上传完整。
-      unsupported_type: '您提供的 MIME 类型 {mime} 不受上传适配器支持。'
-      upload_blocked_by_php_extension: '上传被一个 PHP 扩展程序阻止。'
+      cannot_write_to_disk: 无法将文件写入磁盘。
+      could_not_detect_mime: '无法识别此文件的 MIME 类型，请重试。'
+      forbidden_type: 不允许上传此类型的文件。
+      max_upload_file_size_form: 文件大小超过表单允许的上传上限。
+      max_upload_file_size_ini: '文件大小超过 php.ini 设置的上传上限。'
+      mime_permission_denied: 你没有上传此类文件的权限。
+      no_file_uploaded: 没有上传文件。
+      no_files_made_it_to_upload: '请上传不超过 {max} KB 的文件。'
+      no_upload_tmp_folder: 缺少文件上传所需的临时目录。
+      partial_upload: 文件仅上传了一部分。
+      unsupported_type: '当前上传适配器不支持此 MIME 类型：{mime}。'
+      upload_blocked_by_php_extension: '某个 PHP 扩展阻止了文件上传。'
   forum:
     buttons:
-      attach: 添加附件
+      attach: 附加
       cancel: 取消
-      media: 文件
+      media: 我的媒体
       shared_media: 共享媒体
       upload: 上传
       upload_shared: 共享
       user_uploads: 用户上传
     display_name:
-      help: 替代文件名称，展示在下载按钮中。不设置则使用文件名称。
+      help: 此名称会代替文件名显示在下载项中。保持不变则使用原文件名。
       insert: 插入
-      title: 命名此文件
-      title_plural: 命名这些文件
-      use_file_name: 使用文件名称
+      title: 设置下载名称
+      title_plural: 设置下载名称
+      use_file_name: 使用文件名
     media_manager: 媒体管理器
     states:
       error: 错误
-      loading: 加载中
-      permission_required: 所需权限
+      loading: 正在上传
+      permission_required: 需要权限
       unauthorized: 你没有下载此文件的权限
     text_preview:
-      collapse: 收起全文
+      collapse: 收起预览
       download: 下载文件
-      error: "文件预览无法加载。此文件或已被删除，文件 ID 或已失效。\n"
-      expand: 展开全文
-      no_snippet: '<暂无可用的预览代码片段>'
-      no_snippet_preview: '<文本文档的预览将会在此处展示>'
+      error: "预览文件时发生错误。文件可能已被删除，或文件 ID 无效。\n"
+      expand: 展开预览
+      no_snippet: '<没有可用的预览内容>'
+      no_snippet_preview: '<发布后将在此显示预览>'
     validation:
-      max_size: '文件需小于 {max} KB。'
+      max_size: '文件大小不能超过 {max} KB。'
   lib:
     file_list:
-      confirm_selection_btn: '{fileCount, plural, =0 {未选择任何文件} other {选择的文件}}'
+      confirm_selection_btn: '{fileCount, plural, =0 {未选择文件} other {选择文件}}'
       delete_confirmation: '确定要删除「{fileName}」吗？'
       delete_file_a11y_label: '删除文件「{fileName}」'
       empty: 暂无文件。
       hide_file:
         btn_a11y_label_hide: '在媒体管理器中隐藏「{fileName}」'
-        btn_a11y_label_show: '在媒体管理器中展示「{fileName}」'
-        hide_confirmation: '确定要隐藏「{fileName}」吗？已引用的帖子不受影响。'
+        btn_a11y_label_show: '在媒体管理器中显示「{fileName}」'
+        hide_confirmation: '确定要隐藏「{fileName}」吗？隐藏文件只会将其从你的媒体管理器中移除，不会影响已经引用该文件的帖子。'
         hide_fail: '无法隐藏文件「{fileName}」'
-        hide_success: 隐藏文件
-        loading: 正在隐藏文件……
-        show_confirmation: '确定要展示「{fileName}」吗？此文件会展示在你的媒体管理器中。'
-        show_fail: '无法展示文件「{fileName}」'
-        show_success: 文件已展示
+        hide_success: 文件已隐藏
+        loading: 正在隐藏文件…
+        show_confirmation: '确定要显示「{fileName}」吗？显示后，该文件会重新出现在你的媒体管理器中。'
+        show_fail: '无法显示文件「{fileName}」'
+        show_success: 文件已显示
       hide_shared_file:
-        btn_a11y_label_hide: '转为私密文件（无公共 URL）'
-        btn_a11y_label_show: '转为公共文件（有公共 URL）'
-        hide_confirmation: '确定要将「{fileName}」转为私密文件、移除公共 URL，并在媒体管理器中隐藏未授权用户的访问吗？此操作不会影响现存帖子。'
-        hide_fail: 转换私密文件失败
-        hide_success: 文件已转为私密文件
-        loading: 正在转换私密文件……
-        show_confirmation: '确定要将「{fileName}」转为公共文件，并在媒体管理器中允许任何用户引用吗？公共文件可以通过 URL 被任何人访问。'
-        show_fail: 转为公共文件失败
-        show_success: 公共文件
+        btn_a11y_label_hide: '将「{fileName}」设为私有（无公开 URL）'
+        btn_a11y_label_show: '将「{fileName}」设为公开（提供公开 URL）'
+        hide_confirmation: '确定要将「{fileName}」设为私有吗？设为私有后，其公开 URL 将被移除，但不会影响现有帖子；同时，无权访问的用户也将无法在媒体管理器中看到此文件。'
+        hide_fail: '无法将文件「{fileName}」设为私有'
+        hide_success: 文件已设为私有
+        loading: 正在将文件设为私有…
+        show_confirmation: '确定要将「{fileName}」设为公开吗？设为公开后，文件可以通过 URL 被任何人访问，所有用户也可以通过媒体管理器分享它。'
+        show_fail: '无法将文件「{fileName}」设为公开'
+        show_success: 文件已设为公开
       load_more_files_btn: 加载更多文件
-      loading: 正在加载文件……
-      modal_empty_desktop: 你的文件列表空空如也，点击或拖放文件到此处来上传。
-      modal_empty_phone: 你的文件列表空空如也，点击上方按钮上传文件。
-      release_to_upload: 释放以上传
+      loading: 正在加载文件…
+      modal_empty_desktop: 暂无文件。点击按钮或将文件拖到此处上传。
+      modal_empty_phone: 暂无文件。点击上方按钮上传文件。
+      release_to_upload: 松开以上传
       select_file_a11y_label: '选择文件「{fileName}」'
     upload-shared-file-modal:
-      dropzone: 将文件拖放到此处或点击来浏览
-      hide-from-media-gallery: 在用户媒体库中隐藏
+      dropzone: 将文件拖到此处，或点击选择文件
+      hide-from-media-gallery: 从用户媒体库中隐藏
       title: 新建共享文件
       upload: 上传

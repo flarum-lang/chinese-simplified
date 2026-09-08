@@ -5,11 +5,11 @@
 fof-top-posters-widget:
   admin:
     settings:
-      info: 所选群组的用户，将被排除在小组件结果之外。
+      info: 所选用户组中的用户不会显示在小组件排行中。
   forum:
     widget:
       title: 本月发帖之星
   lib:
     gambits:
       top_poster:
-        key: top_poster
+        key: 高产用户

@@ -6,68 +6,68 @@ flarum-gdpr:
   lib:
     data:
       userpolicydata:
-        delete_description: 移除用户对服务条款的接受记录
-        export_description: 关于用户接受服务条款的详细信息
+        delete_description: 删除用户接受条款的相关记录
+        export_description: 导出用户接受条款的相关记录
 fof-terms:
   admin:
     buttons:
-      add-policy: 添加
+      add-policy: 添加条款
       delete-policy: 删除条款
       edit-policy: 编辑条款
       new-policy: 新建条款
       save-policy: 保存条款
-      set-to-now: 现在
+      set-to-now: 设为当前时间
     messages:
-      delete-policy-confirmation: "这将从数据库中永久移除条款 {name} 及相关接受日期。 若有法律需求，请自行备份这些信息。 您确定要删除这项条款吗？\n"
+      delete-policy-confirmation: "此操作将从数据库中永久删除条款「{name}」以及相关的用户接受记录。如果出于法律原因需要保留这些记录，请务必提前备份。确定要删除此条款吗？\n"
     permissions:
-      export-policies: 导出全部用户及服务条款信息
-      postpone-policies-accept: 允许推迟接受新服务条款
-      see-user-policies-state: 查看用户服务条款状态
+      export-policies: 导出所有服务条款数据
+      postpone-policies-accept: 暂缓接受新条款
+      see-user-policies-state: 查看用户的条款接受状态
     policies:
       export-url: 导出数据
-      export-url-help: "具有「导出全部条款数据」权限的用户可以点击上方的按钮并下载接受条款的用户列表。 您可以在 <a>插件 wiki</a> 上了解有关此选项的详情信息。\n"
+      export-url-help: "拥有「导出所有服务条款数据」权限的用户，可以通过这些 URL 下载接受过此条款的用户列表。有关可用选项的详细说明，请参阅<a>扩展 Wiki</a>。\n"
       name: 名称
-      name-help: 这个名称将显示在勾选框右侧，并作为更新提示弹窗的标题。
-      optional: 非强制性条款
-      optional-help: 启用此项，用户可以在不同意条款的情况下使用论坛。
-      terms-updated-at: 更新于
-      terms-updated-at-help: "条款更新时间（点击「现在」按钮可生成当前的协调世界时）。设置此值将要求用户重新接受更新后的条款。此时间必须为过去的时间（否则用户将无法接受来自「未来」的条款并关闭对话框）。\n"
+      name-help: 此名称会显示在勾选框旁，并作为条款更新弹窗的标题。
+      optional: 可选条款
+      optional-help: 开启后，用户无需接受此条款也可以正常使用论坛。
+      terms-updated-at: 更新时间
+      terms-updated-at-help: "条款上次更新的时间。设置后，所有在此时间之前接受过条款的用户都需要重新接受。此时间必须早于当前时间，否则用户将无法完成接受并关闭提示窗口。\n"
       terms-updated-at-placeholder: 'YYYY-MM-DD (hh:mm:ss)'
-      update-message: 推送消息
-      update-message-help: 向条款更新后，尚未接受最新条款的现有用户显示的消息。
-      url: 链接
-      url-help: 可以查看服务条款详情的页面链接，此链接将在新标签页中打开。
+      update-message: 更新提示
+      update-message-help: 向尚未接受最新版条款的用户显示的提示信息。
+      url: URL
+      url-help: '填写条款正文所在页面的 URL。点击后将在新标签页中打开。'
     settings:
       field:
         date-format: 日期格式
-        date-format-help: '您可以使用任何有效的 <a>Day.js</a> 格式，留空为默认格式。'
-        hide-updated-at: 条款更新时不显示服务条款的更新日期
-        signup-legal-text: 在注册窗口中附加提示文本（可选）
+        date-format-help: '可以使用任意有效的 <a>Day.js</a> 日期格式。留空则使用默认格式。'
+        hide-updated-at: 条款更新时不显示更新日期
+        signup-legal-text: 注册窗口附加提示文本（可选）
       title: 服务条款设置
     titles:
-      policies: 已生效条款
+      policies: 条款
   forum:
     accept-modal:
       accept: 确认
-      close: 谢谢，您现在可以返回论坛
-      i-accept: '我已阅读并同意新<a>{policy}</a>'
+      close: 感谢接受新条款，现在可以继续使用论坛
+      i-accept: '我已阅读并接受新版<a>{policy}</a>'
       title: 服务条款更新
-      updated-at: '服务条款已于 {date} 更新'
-      updated-recently: 自您上次访问后服务条款已更新
+      updated-at: '条款已于 {date} 更新'
+      updated-recently: 自你上次访问后，条款已有更新
     signup:
-      i-accept: '我已阅读并同意<a>{policy}</a>'
-      must-accept: '您必须同意{policy}。'
+      i-accept: '我已阅读并接受<a>{policy}</a>'
+      must-accept: '必须接受「{policy}」。'
     state-modal:
-      accepted-at: '接受于 {date}'
-      not-accepted: 不接受
-      title: '用户 {username} 服务条款接受状态'
+      accepted-at: '已于 {date} 接受'
+      not-accepted: 未接受
+      title: '用户 {username} 的条款接受状态'
     update-alert:
-      can-accept-message: 我们最近更新了服务条款，您必须阅读并同意才能继续使用本网站。
-      can-accept-optional-message: 我们最近更新了服务条款。您可以在方便时查阅。
+      can-accept-message: 条款最近已有更新。你需要接受新条款后才能继续使用本站。
+      can-accept-optional-message: 条款最近已有更新，你可以方便时查看。
       close: 关闭
-      must-accept-message: 在您查看并同意新服务条款前，我们临时限制了您帐户的操作权限。
-      review: 点击此处查看并同意新服务条款
+      must-accept-message: 在你查看并接受新条款前，我们暂时限制了你的账号访问。
+      review: 点击查看并接受新条款
     user_controls:
-      state_button: 服务条款接受状态
+      state_button: 条款接受状态
     user_settings:
-      optional_policies_label: 各项政策
+      optional_policies_label: 服务条款

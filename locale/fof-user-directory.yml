@@ -5,34 +5,34 @@
 fof-user-directory:
   admin:
     permissions:
-      view_user_directory: 查看会员名录
+      view_user_directory: 查看用户目录
     settings:
       default-sort: 默认排序
-      disable-global-search-source: 不要将会员名录添加到论坛搜索建议中
-      link: 在论坛首页侧边栏添加「会员名录」选项卡
-      link-group-mentions: 将帖子中的群组提及链接到用户名录
-      use-small-cards: 使用小尺寸卡片
+      disable-global-search-source: '不将用户目录加入 Flarum 全局搜索'
+      link: 在首页侧边栏显示「用户目录」入口
+      link-group-mentions: 将帖子中的用户组提及链接到用户目录
+      use-small-cards: 使用紧凑卡片布局
   forum:
     header:
-      back_to_user_directory_tooltip: 返回会员名录
+      back_to_user_directory_tooltip: 返回用户目录
     hero:
       title: '=> fof-user-directory.forum.page.nav'
     page:
-      empty_text: 抱歉，没有找到匹配的用户。
-      filter_button: 筛选群组
+      empty_text: 没有找到符合搜索条件的用户。
+      filter_button: 筛选用户组
       load_more_button: '=> core.ref.load_more'
-      nav: 会员名录
+      nav: 用户目录
       refresh_tooltip: '=> core.forum.index.refresh_tooltip'
       usercard:
-        discussion-count: '{count, plural, one {讨论 {count}} other {讨论 {count}}}'
-        post-count: '{count, plural, one {回复 {count}} other {回复 {count}}}'
+        discussion-count: '{count, plural, other {讨论 {count}}}'
+        post-count: '{count, plural, other {帖子 {count}}}'
     search:
       field:
         placeholder: 搜索用户
       kinds:
-        group: 群组
+        group: 用户组
         text: 关键词
-      users_heading: '搜索用户「{query}」'
+      users_heading: '在所有用户中搜索「{query}」'
   lib:
     sort:
       default: 默认
@@ -40,8 +40,10 @@ fof-user-directory:
       least_posts: 发帖最少
       most_discussions: 讨论最多
       most_posts: 发帖最多
-      newest: 新用户
-      not_specified: '使用 Flarum 默认排序'
-      oldest: 老用户
-      username_az: 用户名（a-z）
-      username_za: 用户名（z-a）
+      newest: 最新注册
+      not_specified: '使用 Flarum 默认设置'
+      oldest: 最早注册
+      seen_oldest: 离线最久
+      seen_recent: 最近在线
+      username_az: 用户名（A–Z）
+      username_za: 用户名（Z–A）

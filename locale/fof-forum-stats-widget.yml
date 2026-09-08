@@ -6,8 +6,8 @@ fof-forum-stats-widget:
   admin:
     settings:
       decimal_places:
-        help: 对于大数字（0-2）显示的小数点位数。
-        label: 小数位数
+        help: '设置大数字缩写为 K、M、B 时保留的小数位数（0–2 位）。'
+        label: 大数缩写精度
   forum:
     widget:
       stats:

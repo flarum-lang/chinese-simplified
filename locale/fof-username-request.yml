@@ -2,6 +2,16 @@
 # Use https://weblate.rob006.net/projects/flarum2/fof-username-request/zh_Hans/ for translation.
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
+flarum-audit:
+  lib:
+    browser:
+      user:
+        nickname_request_approved: '批准将 {username} 的昵称从 {old_nickname} 更改为 {new_nickname}'
+        nickname_request_rejected: '驳回了 {username} 的昵称更改申请'
+        nickname_requested: '为用户 {username} 申请新昵称 {new_nickname}'
+        username_request_approved: '批准将 {username} 的用户名从 {old_username} 更改为 {new_username}'
+        username_request_rejected: '驳回了 {username} 的用户名更改申请'
+        username_requested: '为用户 {username} 申请新用户名 {new_username}'
 fof-username-request:
   admin:
     permissions:
@@ -10,84 +20,84 @@ fof-username-request:
       request_username: 申请更改用户名
   email:
     body:
-      approved: "您将用户名修改为“{new_username}”的申请已由 {actor_display_name} 批准。\n\n现在您可以使用新用户名登录：{login_url}\n"
-      noReasonProvided: 未说明原因。
-      rejected: "您将用户名由“{old_username}”修改为“{requested_username}”的申请已由 {actor_display_name} 拒绝。\n\n原因：{reason}\n"
+      approved: "你将用户名更改为「{new_username}」的申请已由 {actor_display_name} 批准。\n\n现在可以使用新用户名登录：{login_url}\n"
+      noReasonProvided: 未填写理由。
+      rejected: "你将用户名从「{old_username}」更改为「{requested_username}」的申请已被 {actor_display_name} 驳回。\n\n理由：{reason}\n"
     subject:
-      approved: 用户名更改申请已通过
-      rejected: 用户名更改申请已驳回
+      approved: '{display_name} 已批准你将用户名更改为 {requested_username}'
+      rejected: '{display_name} 已驳回你将用户名更改为 {requested_username} 的申请'
   forum:
     nickname_modals:
       action:
-        approval_label: 通过
-        decision_title: 受理
-        help_text: 请确保昵称符合社区规范。
+        approval_label: 批准
+        decision_title: 审核决定
+        help_text: 请确认新昵称符合社区规范。
         name: '{name} 申请将昵称更改为「{requestedName}」'
-        reason_title: 驳回原因
+        reason_title: 驳回理由
         rejected_label: 驳回
         submit_button: 提交
-        success: 办结成功。
+        success: 审核结果已提交。
         title: '=> fof-username-request.ref.nickname_change_request'
       request:
-        confirmation_message: 您的昵称更改请求已经提交，请等候受理。
-        current_request: '您已申请将昵称更改为「{name}」。您可以修改或删除请求。'
-        delete_button: 删除请求
-        deleted: 已删除昵称请求。
+        confirmation_message: 昵称更改申请已提交，正在等待审核。
+        current_request: '你已申请将昵称更改为「{name}」。你可以修改或删除当前申请。'
+        delete_button: 删除申请
+        deleted: 昵称更改申请已删除。
         dismiss_button: '=> core.ref.okay'
-        submit_button: 提交请求
+        submit_button: 提交申请
         title: 申请更改昵称
       results:
-        approved: 您的昵称更改申请已通过
+        approved: 你的昵称更改申请已通过
         dismiss_button: '=> core.ref.okay'
-        new_name: '您的昵称已成功更改为「{name}」'
-        reason: '驳回原因：<i>「{reason}」</i>.'
-        rejected: 您的昵称更改申请已被驳回
-        resubmit: 您可以在账户设置中重新申请。
+        new_name: '你的昵称已成功更改为：{name}'
+        reason: '驳回理由：<i>「{reason}」</i>。'
+        rejected: 你的昵称更改申请已被驳回
+        resubmit: 你可以前往账号设置重新提交申请。
         title: 昵称更改申请
     pending_requests:
-      empty_text: 暂无用户名更改申请。
-      group_label: 请求
+      empty_text: 暂无更名申请。
+      group_label: 更名申请
       nickname_exerpt: '新昵称：{requestedName}'
-      nickname_item_text: '{name} 请求更改昵称'
+      nickname_item_text: '{name} 申请更改昵称'
       title: '=> fof-username-request.ref.name_change_requests'
       tooltip: '=> fof-username-request.ref.name_change_requests'
       username_exerpt: '新用户名：{requestedName}'
-      username_item_text: '{name} 请求更改用户名'
+      username_item_text: '{name} 申请更改用户名'
     settings:
       nickname_request_button: 更改昵称
       username_request_button: 更改用户名
     user:
-      name_history_link: 名称更改记录
+      name_history_link: 更名记录
     username_modals:
       action:
-        approval_label: 通过
-        decision_title: 受理
-        help_text: 请确保用户名符合社区规范。
+        approval_label: 批准
+        decision_title: 审核决定
+        help_text: 请确认申请的新用户名符合社区规范。
         name: '{name} 申请将用户名更改为「{requestedName}」'
-        reason_title: 驳回原因
+        reason_title: 驳回理由
         rejected_label: 驳回
         submit_button: 提交
-        success: 决定已送出。
+        success: 已办结。
         title: '=> fof-username-request.ref.username_change_request'
       request:
-        confirmation_message: 您的昵称更改请求已经提交，请等候受理。
-        current_request: '您已申请将您的昵称改为「{name}」。您可以更新或删除请求。'
-        delete_button: 删除请求
-        deleted: 已删除用户名请求。
+        confirmation_message: 用户名更改申请已提交，正在等待审核。
+        current_request: '你已申请将用户名更改为「{name}」。你可以修改或删除当前申请。'
+        delete_button: 删除申请
+        deleted: 用户名更改申请已删除。
         dismiss_button: '=> core.ref.okay'
-        submit_button: 提交请求
+        submit_button: 提交申请
         title: 申请更改用户名
       results:
-        approved: 您的用户名更改已通过
+        approved: 你的用户名更改申请已通过
         dismiss_button: '=> core.ref.okay'
-        new_name: '您的用户名已成功更改为：{name}'
-        reason: '驳回原因：<i>「{reason}」</i>.'
-        rejected: 您的用户名更改已被驳回
-        resubmit: 您可以在账户设置中重新提交请求。
-        title: 用户名更改请求
+        new_name: '你的用户名已成功更改为：{name}'
+        reason: '驳回理由：<i>「{reason}」</i>。'
+        rejected: 你的用户名更改申请已被驳回
+        resubmit: 你可以前往账号设置重新提交申请。
+        title: 用户名更改申请
   ref:
-    name_change_request: 名称更改申请
-    name_change_requests: 用户名更改申请
+    name_change_request: 更名申请
+    name_change_requests: 更名申请
     nickname_change_request: 昵称更改申请
     nickname_change_requests: 昵称更改申请
     username_change_request: 用户名更改申请

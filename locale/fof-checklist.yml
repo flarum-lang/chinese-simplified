@@ -5,7 +5,7 @@
 fof-checklist:
   admin:
     settings:
-      cross_out_completed_items: '划掉已完成项?'
+      cross_out_completed_items: 为已完成的清单项添加删除线
   lib:
     composer:
-      checklist_tooltip: 添加任务清单
+      checklist_tooltip: 切换任务清单

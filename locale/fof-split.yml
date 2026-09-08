@@ -2,19 +2,25 @@
 # Use https://weblate.rob006.net/projects/flarum2/fof-split/zh_Hans/ for translation.
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
+flarum-audit:
+  lib:
+    browser:
+      discussion:
+        split_away: '将 {discussion} 中的 {post_count} 个帖子拆分为 {new_discussion}'
+        split_into: '将 {post_count} 个帖子拆分为新讨论 {discussion}'
 fof-split:
   admin:
     permissions:
-      split_discussion_label: 拆分讨论
+      split_discussion_label: 从讨论中拆分帖子
   forum:
     modal:
-      new_discussion_label: 输入新讨论标题
-      submit_button: 确认
+      new_discussion_label: 填写新讨论的标题
+      submit_button: 拆分
       title: 拆分讨论
     post:
-      was_split_from: '{count, plural, one {从「{target}」拆分来 {count} 条回复。} other {从「{target}」拆分来 {count} 条回复。}}'
-      was_split_to: '{count, plural, one {{count} 条回复被拆分至「{target}」。} other {{count} 条回复被拆分至「{target}」。}}'
+      was_split_from: '{count, plural, other {已从 {target} 拆分 {count} 个帖子。}}'
+      was_split_to: '{count, plural, other {{count} 个帖子已拆分至 {target}。}}'
     split:
       cancel: 取消拆分
-      from: 开始拆分主题
-      to: 结束拆分
+      from: 从这里拆分
+      to: 拆分到这里

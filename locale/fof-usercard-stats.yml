@@ -5,5 +5,5 @@
 fof-usercard-stats:
   forum:
     user:
-      discussion-count: 讨论数
-      post-count: 帖子数
+      discussion-count: '{count, plural, other {讨论 {count}}}'
+      post-count: '{count, plural, other {帖子 {count}}}'

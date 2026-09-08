@@ -6,12 +6,16 @@ fof-amazon-affiliation:
   admin:
     settings:
       field:
-        keep-existing-tag: 保留原始链接中的联盟标签
-        keep-existing-tag-help: 默认使用下方定义的标签替换原始链接中的标签。
-        remove-tag-if-unhandled: 删除未覆盖的亚马逊联盟标签
-        remove-tag-if-unhandled-help: 默认保留链接中未覆盖的亚马逊联盟标签。
-        tag: '{name} (amazon.{domain})'
-        tag-placeholder: 留空则表示不覆盖这些链接
+        help-mediaembed: 商品卡片始终使用你配置的联盟标签，因此「保留原链接中的联盟标签」仅对普通链接生效。
+        keep-existing-tag: '保留原链接中的 Amazon 联盟标签，不进行替换'
+        keep-existing-tag-help: 默认情况下，原链接中已有的联盟标签会被替换为你在下方设置的标签。
+        remove-tag-if-unhandled: '移除未配置站点链接中的 Amazon 联盟标签'
+        remove-tag-if-unhandled-help: 默认情况下，未配置站点的链接会保持原样，包括其中已有的联盟标签。
+        rich-card: '将 Amazon 商品链接显示为商品卡片'
+        rich-card-help: '开启后，Amazon 商品 URL（/dp/ 和 /gp/product/）会显示为简洁的商品卡片，并链接到已添加联盟标签的商品页面。关闭后，链接将保持普通链接样式，并像其他 Amazon 链接一样添加联盟标签。'
+        tag: '{name}（amazon.{domain}）'
+        tag-placeholder: 留空则不处理此站点的链接
       title:
-        modal: 亚马逊联盟设置
+        modal: 'Amazon 联盟设置'
         tags: 联盟标签
+        tags-mediaembed: '为各 Amazon 站点分别设置联盟标签。指向已配置站点的商品链接会自动添加相应标签；留空则不处理该站点的链接。'

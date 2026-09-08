@@ -6,72 +6,72 @@ linkrobins-referral:
   admin:
     campaign:
       col_code: 邀请码
-      col_expiry: 有效期
+      col_expiry: 过期时间
       col_label: 名称
       col_uses: 使用次数
-      confirm_delete: 确认删除该全局邀请码？用户将无法继续使用此邀请码注册。
+      confirm_delete: 确定要删除此活动邀请码吗？删除后，其他人将无法再使用它注册。
       create: 创建邀请码
       delete: 删除
       expired: 已过期
-      expiry_label: 有效期（可选）
-      help: 独立的邀请码，不绑定用户，适合社交媒体和营销推广使用。不会为推荐人计入奖励，但会统计使用次数。
+      expiry_label: 过期时间（可选）
+      help: 创建不与任何用户绑定的独立邀请码，适合用于社交媒体或营销活动。使用这些邀请码注册不会计入任何用户的邀请人数，但会统计使用次数。
       label_label: 名称
-      label_placeholder: 例如：推特推广
-      no_expiry: 永久
-      none: 暂无全局邀请码。
+      label_placeholder: 例如公众号活动
+      no_expiry: 永不过期
+      none: 暂无活动邀请码。
       qr: 显示二维码
-      title: 全局邀请码
+      title: 活动邀请码
     eligibility:
-      groups_help: 选中任意用户组后，只有这些用户组的用户才能生成个人邀请码。不选代表允许所有用户组。
+      groups_help: 如果选择了用户组，则只有这些用户组的成员可以获得个人邀请码。全部不选则不限制用户组。
       groups_label: 允许的用户组
-      help: 设置用户生成个人邀请码的权限。管理员和白名单用户始终具有权限。规则留空或填写0视为跳过；具有多条规则时，用户需满足所有规则。
-      min_age_label: 最少注册时间（天）
-      min_posts_label: 最低发帖数
-      title: 个人邀请码权限
-      whitelist_help: 不受上述规则限制，始终可以生成个人邀请码的用户。用英文逗号，空格或新行分隔。
+      help: '设置哪些用户可以获得自己的个人邀请码。管理员和白名单用户始终符合条件。规则留空或设为 0 即表示忽略此项。设置多项规则时，用户必须同时满足所有条件。'
+      min_age_label: 最低注册天数
+      min_posts_label: 最低帖子数
+      title: 个人邀请码资格
+      whitelist_help: 填写始终可以获得邀请码的用户名，不受上述规则限制。多个用户名可使用逗号、空格或换行分隔。
       whitelist_label: 白名单
     settings:
       disabled: 已禁用
       enabled: 已启用
-      require_help: 开启后，用户注册时必须输入有效邀请码。
-      require_label: 注册时必须填入邀请码
-      title: 通用
+      require_help: 开启后，用户必须填写有效的邀请码才能完成注册。
+      require_label: 注册时必须填写邀请码
+      title: 常规
   api:
-    invalid_expiry: 有效期日期无效。
-    label_too_long: 文本标签太长。
+    invalid_expiry: 过期时间无效。
+    label_too_long: 名称过长。
   email:
-    registered_body: '好消息！{name}已使用你的邀请码成功注册。'
-    registered_subject: '{name}使用你的邀请码加入了论坛'
-    someone: 某人
-    view_profile: 查看他们的用户资料
+    registered_body: '好消息！{name} 刚刚使用你的邀请码注册论坛。'
+    registered_subject: '{name} 使用你的邀请码加入了社区'
+    someone: 有人
+    view_profile: 查看个人资料
   forum:
     notifications:
       group_label: 邀请
-      registered_text: '{name}使用你的邀请码加入了论坛'
-      someone: 某人
+      registered_text: '{name} 使用你的邀请码加入了社区'
+      someone: 有人
     profile:
       copy: 复制
       copy_link: 复制邀请链接
-      invite_code_help: 分享你的邀请码或链接。用户通过你的邀请链接访问本站并注册时，邀请码将自动填入。
+      invite_code_help: 分享你的邀请码或邀请链接。通过邀请链接访问的用户，在注册时会自动填写邀请码。
       invite_code_title: 你的邀请码
-      no_referrals: 暂无邀请记录。快快分享你的邀请码吧！
-      not_eligible: 你尚未获得个人邀请码权限。多在论坛保持活跃，过段时间再来看看吧。
+      no_referrals: 暂无邀请记录。分享你的邀请码，邀请其他人加入吧！
+      not_eligible: 你暂时还没有获得个人邀请码的资格。多多参与社区讨论，之后再来看看吧。
       qr_button: 二维码
       tab: 邀请
-      total_referrals: 邀请总人数
+      total_referrals: 成功邀请人数
     settings:
-      notify_registered_label: 某人使用你的邀请码加入了论坛
+      notify_registered_label: 有人使用我的邀请码注册
     sign_up:
       invite_code_label: 邀请码
-      invite_code_label_required: '邀请码*'
+      invite_code_label_required: '邀请码 *'
       invite_code_placeholder: 邀请码
     user_card:
-      referrals_plural: '成功邀请{count}人'
-      referrals_singular: '成功邀请{count}人'
+      referrals_plural: '邀请 {count} 人'
+      referrals_singular: '邀请 {count} 人'
   lib:
     qr:
-      download: 下载PNG图片
-      title: '邀请二维码：{code}'
+      download: 下载图片
+      title: '邀请码二维码：{code}'
   validation:
     invalid: 邀请码无效。
-    required: 注册必须使用邀请码。
+    required: 注册时必须填写邀请码。

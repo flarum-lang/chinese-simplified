@@ -763,7 +763,7 @@ core:
     alert:
       dismiss_a11y_label: 忽略警告
     assets_updated:
-      message: 检测到社区版本有更新，请刷新页面以保证功能的正常使用。
+      message: 此页面有新版本，请刷新页面以确保功能的正常使用。
       reload_button: 刷新
     badge:
       hidden_tooltip: 隐藏

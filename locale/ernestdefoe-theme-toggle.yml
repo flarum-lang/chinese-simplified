@@ -6,8 +6,8 @@ ernestdefoe-theme-toggle:
   forum:
     toggle:
       label: 主题
-      option_dark: 暗色主题
-      option_dark_hc: 暗色主题（高对比度）
-      option_light: 浅色主题
-      option_light_hc: 浅色主题（高对比度）
+      option_dark: 深色
+      option_dark_hc: 深色（高对比度）
+      option_light: 浅色
+      option_light_hc: 浅色（高对比度）
       option_system: 跟随系统

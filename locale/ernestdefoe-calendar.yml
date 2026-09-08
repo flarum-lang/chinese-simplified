@@ -2,13 +2,141 @@
 # Use https://weblate.rob006.net/projects/flarum2/ernestdefoe-calendar/zh_Hans/ for translation.
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
-ernestdefoe-calendar:
+ernestdefoe-bespoke:
   forum:
-    all_day: 每一天
-    nav: 日期
-    page_title: 日期
+    widget_celebrations: 今日庆祝
+    widget_events: 即将开始的活动
+    widget_memories: 往年今日
+    widget_pulse: 论坛活跃度
+ernestdefoe-calendar:
+  admin:
+    categories: 活动分类
+    categories_help: 使用不同颜色的分类，方便成员筛选日历中的活动，并为活动显示对应的强调色。每行修改后会单独保存。
+    category_add: 添加分类
+    category_color: 颜色
+    category_delete_confirm: 确定要删除此分类吗？活动数据会保留，但不再显示此分类的颜色标识。
+    category_name: 名称
+    category_saved: 分类已保存。
+    default_view: 默认日历视图
+    hide_nav_link: 在侧边栏导航中隐藏「日历」入口
+    hide_nav_link_help: '隐藏后仍可通过「近期活动」小组件和 /calendar 地址访问日历，适合侧边栏入口较多时使用。'
+    index_widget_count: 首页小组件显示的活动数量
+    permission_create: 创建日历活动
+    permission_manage: 管理所有日历活动
+    settings_title: 日历
+    show_celebrations_widget: 在论坛首页显示「今日庆祝」小组件
+    show_index_widget: 在论坛首页显示「近期活动」小组件
+    show_memories_widget: 在论坛首页显示「往年今日」小组件
+    show_pulse_widget: 在论坛首页显示「论坛活跃度」小组件
+    show_pulse_widget_help: 显示社区活跃热力图和活跃用户排行，让社区活跃情况一目了然。每位成员的个人资料页也会显示个人活跃热力图。
+    view_list_opt: 近期活动列表
+    view_month_opt: 月视图
+    week_monday: 星期一
+    week_starts_on: 每周起始日
+    week_sunday: 星期日
+  api:
+    category_name_required: 必须填写分类名称。
+    end_before_start: 结束时间必须晚于开始时间。
+    start_required: 必须填写有效的开始日期和时间。
+    title_required: 必须填写标题。
+  forum:
+    add_event: 添加活动
+    add_to_google: '添加到 Google 日历'
+    all_day: 全天
+    attendees_going: 谁会参加
+    attendees_interested: 也感兴趣
+    badge_100: 百日坚持
+    badge_100posts: 妙笔生花
+    badge_1kposts: 论坛传奇
+    badge_500posts: 高产作者
+    badge_month: 势不可挡
+    badge_roll: 势头正盛
+    badge_week: 活跃一周
+    badge_year: 全年活跃
+    birthday_day: 日期
+    birthday_help: 填写你的生日（月和日即可，无需年份），社区会在生日当天为你庆祝。留空即表示不参与。
+    birthday_month: 月份
+    birthday_save: 保存
+    birthday_saved: 生日已保存。
+    birthday_section: 生日
+    cancel: 取消
+    cd_days: 天
+    cd_here: 开始啦！
+    cd_hours: 小时
+    cd_live: '正在进行 🎉'
+    cd_mins: 分钟
+    cd_secs: 秒
+    celebrations_anniversary: '加入论坛 {years} 周年'
+    celebrations_birthday: '生日 🎂'
+    celebrations_title: 今日庆祝
+    cover_error: '无法上传此图片，请重试或粘贴图片 URL。'
+    cover_or_url: '…或粘贴图片 URL'
+    cover_remove: 移除封面
+    cover_upload: 上传图片
+    cover_uploading: 正在上传…
+    delete_confirm: 确定要删除此活动吗？此操作无法撤销。
+    delete_event: 删除活动
+    download_ics: '下载 .ics'
+    edit_event: 编辑活动
+    ends: 结束时间
+    export: 导出
+    field_all_day: 全天活动
+    field_category: 分类
+    field_cover: 封面图片（可选）
+    field_description: 描述
+    field_end: 结束时间
+    field_location: 地点
+    field_repeat: 重复
+    field_start: 开始时间
+    field_timezone: 时区
+    field_title: 标题
+    field_url: 链接（可选）
+    heat_active_days: 活跃天数
+    heat_cell: '{date}：{count} 次活跃'
+    heat_contributions: 活跃记录
+    heat_current_streak: 连续活跃天数
+    heat_less: 少
+    heat_longest_streak: 最长连续活跃天数
+    heat_more: 多
+    link: 链接
+    location: 地点
+    memories_empty: 往年的今天还没有留下回忆，来创造一些吧！
+    memories_replies: '{count} 条回复'
+    memories_title: 往年今日
+    memories_years_ago: '{years} 年前'
+    nav: 日历
+    no_events: 暂无近期活动。
+    organizer: 组织者
+    page_title: 日历
+    pulse_empty: 暂无活跃记录
+    pulse_title: 论坛活跃度
+    pulse_total: '过去 120 天共 {count} 篇帖子'
+    repeat_daily: 每天
+    repeat_monthly: 每月
+    repeat_none: 不重复
+    repeat_weekly: 每周
+    repeat_yearly: 每年
+    rsvp_going: 参加
+    rsvp_going_count: '{count} 人参加'
+    rsvp_interested: 感兴趣
+    rsvp_interested_count: '{count} 人感兴趣'
+    save: 保存活动
+    save_error: 无法保存活动，请检查表单后重试。
+    saved: 活动已保存。
+    section_details: 详情
+    section_when: 时间
+    starts: 开始时间
+    starts_in: 距离开始还有
+    subscribe: 订阅日历（iCal）
     today: 今天
-    view_day: 天
+    upcoming: 近期活动
+    view_day: 日
+    view_discussion: 打开讨论
+    view_event: 查看活动
     view_list: 列表
-    view_month: 月份
+    view_month: 月
     view_week: 周
+    widget_celebrations: 今日庆祝
+    widget_memories: 往年今日
+    widget_pulse: 论坛活跃度
+    widget_title: 近期活动

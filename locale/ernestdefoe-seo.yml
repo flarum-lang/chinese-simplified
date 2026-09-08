@@ -6,94 +6,94 @@ ernestdefoe-seo:
   admin:
     meta_seo_modal:
       alerts:
-        save_error: 无法保存SEO设置。请稍后重试或检查服务器日志。
+        save_error: '无法保存 SEO 设置，请重试或查看服务器日志。'
         saved: 已保存！
       auto_update:
-        help: 如果启用，这些元标签将在对象发生变化时自动更新。
-        switch_label: '更改时更新对象 SEO'
-        title: 自动更新元标签
+        help: '开启后，当此对象发生变化时，其 Meta 标签会自动更新。'
+        switch_label: '对象变更时自动更新 SEO'
+        title: '自动更新 Meta 标签'
       buttons:
         close: 关闭
         save: 保存
         save_and_autofill: 保存并自动填充
       footer:
-        note_prefix: 笔记：
-        revert_warning: 此更改将撤销自定义更改，并使用项目数据填充元标签。
+        note_prefix: 注意：
+        revert_warning: '此操作会撤销自定义更改，并使用当前内容数据重新填充 Meta 标签。'
       keywords:
-        example: Flarum、网站开发、论坛、苹果、安全
+        example: 'flarum,Web开发,论坛,苹果,安全'
         example_prefix: 例如：
-        help: 请输入一个或多个描述此站点的关键词。
-        note: 注意：关键词之间用逗号分隔。
-        placeholder: 添加一些关键词
+        help: 填写一个或多个用于描述此内容的关键词。
+        note: 注意：请使用半角逗号分隔关键词。
+        placeholder: 添加几个关键词
         title: 关键词
-      managed_label: 管理
+      managed_label: 已托管
       meta_description:
-        help: 描述信息，并在搜索引擎中显示。
+        help: 用于描述此内容，并显示在搜索引擎中。
         placeholder: 添加描述
-        title: 元描述
+        title: 'Meta 描述'
       meta_image:
-        help: 显示图像。
+        help: 设置用于展示的图片。
         managed_by: '图片来源由 {source} 管理'
-        placeholder: 输入图片URL地址
-        title: 元图片
+        placeholder: '输入图片 URL'
+        title: 'Meta 图片'
       meta_title:
-        help: 在搜索引擎中的标题。
+        help: 显示在搜索引擎中的标题。
         placeholder: 输入页面标题
-        title: 元标题
+        title: 'Meta 标题'
       not_supported:
-        alert_body: '请使用 objectType 和 objectId 属性打开此对话框，或者改为注册对象关系。'
-        alert_title: '此对象不是受支持的 SEO 元数据对象'
+        alert_body: '请使用 objectType 和 objectId 属性打开此对话框，或先注册对象关系。'
+        alert_title: '此对象不是受支持的 SeoMeta 对象'
         documentation_link: 文档
       open_graph:
-        description: 'Open Graph简介'
-        description_placeholder: '自定义 Open Graph 简介'
-        switch_auto: '自动生成Open Graph标签'
+        description: 'Open Graph 描述'
+        description_placeholder: '自定义 Open Graph 描述'
+        switch_auto: '自动生成 Open Graph 标签'
         tags_title: 'Open Graph 标签'
         title: 'Open Graph 标题'
       reading_time:
-        help: 预计阅读时间（秒）。
+        help: 预计阅读时间，单位为秒。
         placeholder: 阅读时间（秒）
         title: 预计阅读时间
       robots:
-        help: 此站点在搜索引擎的抓取机器人（Robots）爬取设置。
-        switch_noarchive: 禁用存档页面（noarchive）
-        switch_nofollow: 允许跟随链接跳转到不同页面
-        switch_noimageindex: 禁用此页面上的图片索引（noimageindex）
-        switch_noindex: 允许索引的页面
-        switch_nosnippet: 禁用页面上的文本片段（nosnippet）
-        tag_follow_allowed: 允许关注的链接
-        tag_follow_disallowed: 不被允许关注的链接
-        tag_index_allowed: 允许索引的页面
-        tag_index_disallowed: 不被允许索引的页面
-        tag_noarchive: 不被允许存档的页面
-        tag_noimageindex: 不被允许索引的图片
-        tag_nosnippet: 禁止截取的文本片段
-        title: 抓取机器人(Robots)
-      title: 'SEO 设置 - 元'
+        help: 设置此内容的搜索引擎抓取规则。
+        switch_noarchive: 禁止显示页面快照（noarchive）
+        switch_nofollow: 允许跟踪指向其他页面的链接
+        switch_noimageindex: 禁止索引此页面中的图片（noimageindex）
+        switch_noindex: 允许索引页面
+        switch_nosnippet: 禁止显示此页面的文本摘要（nosnippet）
+        tag_follow_allowed: 允许跟踪链接
+        tag_follow_disallowed: 禁止跟踪链接
+        tag_index_allowed: 允许索引页面
+        tag_index_disallowed: 禁止索引页面
+        tag_noarchive: 禁止显示页面快照
+        tag_noimageindex: 禁止索引图片
+        tag_nosnippet: 禁止显示文本摘要
+        title: Robots
+      title: 'SEO 设置 - Meta'
       twitter:
-        card_title: 'Twitter 卡片'
-        description: Twitter简介
-        image_help: 在Twitter上显示一张图片。
+        card_title: 'X（原 Twitter）卡片'
+        description: 'X（原 Twitter）描述'
+        image_help: '设置在 X（原 Twitter）中显示的图片。'
         image_managed_by: '图片来源由 {source} 管理'
-        image_placeholder: 输入图片URL
-        image_title: Twitter图片
+        image_placeholder: '输入图片 URL'
+        image_title: 'X（原 Twitter）图片'
         reset_image: 重置图片
-        switch_auto: '自动生成 Twitter 卡片'
-        title: Twitter标题
+        switch_auto: '自动生成 X（原 Twitter）卡片'
+        title: 'X（原 Twitter）标题'
       upload_button: 上传文件
     permissions:
-      configure_seo: 允许配置SEO
+      configure_seo: '配置 SEO'
     settings_page:
       menu:
-        health_check: 健康检查
+        health_check: 'SEO 检查'
         search_engine_information: 搜索引擎信息
-        seo_settings: SEO设置
-        set_up_ssl: '设置 SSL'
+        seo_settings: 'SEO 设置'
+        set_up_ssl: '配置 SSL'
         sitemap_information: 站点地图信息
   forum:
     controls:
-      configure_seo: 配置SEO
-      reset_seo: 重置SEO
-      update_seo: 更新SEO
-    profile_description: '用户 {username} 的个人资料 | 讨论数 {discussion_count} 场 | 评论数 {comment_count} 篇'
+      configure_seo: '配置 SEO'
+      reset_seo: '重置 SEO'
+      update_seo: '更新 SEO'
+    profile_description: '{username} 的个人资料 | {discussion_count} 个讨论 | {comment_count} 篇帖子'
     profile_title: '{username} 的个人资料'

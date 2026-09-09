@@ -5,52 +5,52 @@
 ramon-stickers:
   admin:
     settings:
-      hover_play_help: 开启后，帖子中的Lottie和TGS动画静止在第一帧，只有鼠标悬浮时才播放动画。
-      hover_play_label: 鼠标悬浮时播放动画
-      show_tooltip_help: 开启后，在帖子或贴纸选择器中鼠标悬浮时，贴纸名称将通过提示弹窗呈现。
-      show_tooltip_label: 鼠标悬浮时显示贴纸名称
+      hover_play_help: '启用后，帖子中的 Lottie 和 TGS 动画会停留在第一帧，只有鼠标悬停时才会播放。'
+      hover_play_label: 仅在悬停时播放动画
+      show_tooltip_help: 启用后，在帖子或贴纸选择器中将鼠标悬停在贴纸上时，会显示贴纸名称提示。
+      show_tooltip_label: 悬停时显示贴纸名称
     sticker_section:
       bulk_upload_button: 批量上传
-      bulk_upload_category_prompt: 指定批量上传贴纸包的分类名称：
-      bulk_upload_done: '上传完成：上传{uploaded}个, 失败{errors}个。'
-      bulk_upload_progress: '正在上传{current}/{total}...'
+      bulk_upload_category_prompt: 这些贴纸的分类名称：
+      bulk_upload_done: '完成：已上传 {uploaded} 个，上传失败 {errors} 个。'
+      bulk_upload_progress: '正在上传 {current}/{total}…'
       cancel_select_button: 取消
-      delete_selected_button: '删除（{count}个）'
-      delete_selected_confirm: '删除{count}个贴纸？该操作无法撤销。'
-      delete_selected_error: 某些贴图无法成功删除。请重试。
+      delete_selected_button: '删除（{count}）'
+      delete_selected_confirm: '确定删除选中的 {count} 个贴纸吗？此操作无法撤销。'
+      delete_selected_error: 部分贴纸无法删除，请重试。
       edit_sticker:
-        category_help: 仅支持小写字母、数字和下划线。特殊符号将被自动清除。
+        category_help: 只能使用小写字母、数字和下划线。特殊字符会自动清理。
         category_name_label: 分类名称
         delete_sticker_button: 删除贴纸
-        delete_sticker_confirmation: 确定删除这个贴纸？
-        external_anim_notice_body: JSON或TGS格式的动画贴图，必须部署在此论坛服务器域名上，才可以正常渲染。外部网址加载的贴图，用户无法看到动画效果，除非将贴图文件上传到同源路径。
-        external_anim_notice_title: 外部网址的动画贴图
+        delete_sticker_confirmation: 确定要删除此贴纸吗？
+        external_anim_notice_body: '动态贴纸（.json / .tgs）必须托管在本论坛域名下才能正常播放。从外部 URL 加载的文件将无法播放动画，请上传文件或改用同源路径。'
+        external_anim_notice_title: '使用外部 URL 的动态贴纸'
         modal_title: 添加贴纸
-        path_or_url_label: 路径或URL
-        save_error: 保存表情失败。请检查输入内容后重试。
+        path_or_url_label: '路径或 URL'
+        save_error: 无法保存贴纸，请检查填写内容后重试。
         saved_message: '=> core.admin.settings.saved_message'
-        sticker_category_label: 分类编码
+        sticker_category_label: 分类代码
         sticker_title_label: 贴纸名称
         submit_button: '=> core.ref.save_changes'
-        text_to_replace_label: '替换问题 （例如:sticker:）'
-        tgs_notice_body: TGS文件是Telegram动画贴图，可能被原作者声明了版权或分发限制。保存该贴图，即代表你拥有使用和分发此内容的完全权利，并承担全部法律责任。
-        tgs_notice_title: 授权提示（TGS文件）
+        text_to_replace_label: '贴纸代码（例如 :sticker:）'
+        tgs_notice_body: 'TGS 文件是 Telegram 动态贴纸格式，可能受到原作者版权或分发限制的约束。保存此贴纸即表示你确认拥有使用和分发该内容的权利，并愿意承担由此产生的全部法律责任。'
+        tgs_notice_title: '许可提醒 — TGS 文件'
         upload_button: 选择文件
-        upload_help: 支持Lottie动画JSON（.json），Telegram贴纸（.tgs），PNG，GIF，WebP，JPEG。
+        upload_help: '支持 Lottie JSON 动画（.json）、Telegram 贴纸（.tgs）、PNG、GIF、WebP、JPEG。'
         upload_label: 上传文件
-      export_button: 导出ZIP
+      export_button: '导出 ZIP'
       export_error: 导出失败，请重试。
       heading_title: 贴纸
       import_button: 导入
       import_error_message: '导入失败：{error}'
-      import_result: '完成：导入{imported}个，已存在{skipped}个。'
-      import_stickers_message: 从JSON文件导入贴纸元数据。贴纸文件不包含在此操作中，你需要提前上传贴纸文件。继续？
-      import_zip_message: 从ZIP文件（本插件导出的）导入贴纸包。贴纸文件会将被复制到/assets/stickers/，且不会覆盖现有贴纸。继续？
-      importing_message: 正在导入，请稍等。
+      import_result: '完成：已导入 {imported} 个，已跳过 {skipped} 个已有贴纸。'
+      import_stickers_message: '将从 JSON 文件中导入贴纸元数据。JSON 文件不包含贴纸文件，请确保相关文件已提前上传。是否继续？'
+      import_zip_message: '将从本扩展导出的 ZIP 文件中导入贴纸。贴纸文件会复制到 /assets/stickers/，已有记录不会被覆盖。是否继续？'
+      importing_message: 正在导入，请稍候…
       select_button: 选择
       sticker_list:
         load_more_button: '=> core.forum.post_stream.load_more_button'
-        move_category_error: 无法保存分类顺序。请重试。
+        move_category_error: 无法保存分类顺序，请重试。
   forum:
     composer:
       sticker_tooltip: 插入贴纸

@@ -8,8 +8,8 @@ ramon-audit:
       types:
         verified:
           user:
-            unverified: 认证已撤销
-            verified: 已认证用户
+            unverified: 用户认证已撤销
+            verified: 用户通过认证
 ramon-verified:
   admin:
     encryption:
@@ -18,302 +18,302 @@ ramon-verified:
       public_key:
         copied: 已复制
         copy_title: 复制公钥
-        help_broken: 移除此公钥将重新生成一对新的密钥，并永久删除磁盘上所有已加密的文件。
-        help_healthy: 已启用加密。新上传的文件将使用此密钥进行加密封存。移除此密钥将重新生成一对新的密钥，并永久删除磁盘上所有已加密的文件。
+        help_broken: 移除此公钥会生成新的密钥对，并永久删除磁盘上的所有加密文件。
+        help_healthy: 加密已启用。新上传的文件会使用此公钥加密。移除此公钥会生成新的密钥对，并永久删除磁盘上已有的所有加密文件。
         label: 当前公钥
-        remove_button: 移除并生成新的密钥对
+        remove_button: 移除并生成新密钥对
       regenerate_modal:
-        acknowledge: 我已理解：当前所有已加密的文档将被永久删除。
-        submit: 是的，重新生成
-        title: 是否生成新的密钥对？
-        warning: 此操作将永久删除当前磁盘上的所有加密文档。在没有原始私钥的情况下，明文内容无法恢复。受影响请求的验证记录会被保留，但对应的文档文件将被删除。
+        acknowledge: 我明白当前所有加密文件都将被永久删除。
+        submit: 是，重新生成
+        title: 生成新的密钥对？
+        warning: 此操作会永久删除磁盘上现有的所有加密文件。如果没有原私钥，其中的明文内容将无法恢复。受影响的认证申请仍会保留审计记录，但对应文件将被删除。
       reveal_modal:
         close: 关闭
-        confirm_hint: 请在关闭之前确认你已成功保存上述密钥。
-        confirm_saved: 我已将其保存到config.php，并确认该文件可被PHP正常读取。
+        confirm_hint: 关闭前，请勾选上方确认项，确认私钥已经保存。
+        confirm_saved: '我已将此配置保存到 config.php，并确认 PHP 可以读取该文件。'
         copied: 已复制！
-        copy_button: 复制代码片段
-        intro: 这是私钥唯一的一次显示。请立即将其粘贴到您论坛的config.php配置文件中，器不会保存该密钥的副本。
-        orphaned: '{count}份之前已加密的资料，将在后台执行删除操作。'
-        snippet_label: 将这一行添加到config.php配置文件中：
-        title: 保存你的私钥
-        warning_body: 如果在将其写入config.php配置文件之前丢失了该私钥，那么所有使用对应公钥加密的文档都将无法恢复。
-        warning_title: 千万别丢失此密钥。
-      section_help: 将上传的身份文件在静态存储状态下进行加密。私钥在此处生成，但必须手动将其粘贴到config.php中，服务器不会存储该私钥。如果未正确配置私钥，加密的文件将无法被解密。
+        copy_button: 复制配置
+        intro: '私钥只会显示这一次。请立即将其写入论坛的 config.php，扩展不会将私钥保存到设置中。'
+        orphaned: '正在后台删除 {count} 个此前加密的文件。'
+        snippet_label: '将以下配置加入 config.php 数组：'
+        title: 保存私钥
+        warning_body: '如果在写入 config.php 前丢失私钥，所有使用对应公钥加密的文件都将永久无法恢复。'
+        warning_title: 请妥善保存此私钥。
+      section_help: '对已上传的身份证明文件进行存储加密。私钥会在此处生成，但必须由你手动写入 config.php。扩展不会将私钥保存到设置中。如果 config.php 中没有私钥，已加密文件将无法解密。'
       section_title: 文件加密
       status:
         absent: 缺失
-        healthy: 已启用加密。新上传的文件将使用已配置的公钥进行加密封存，下载时将自动无感解密。
-        libsodium_missing: libsodium模块在当前PHP环境中不可用。需要安装该模块才能启用文件加密。
-        mismatch_body: 'config.php中的私钥与当前保存在设置中的公钥不匹配。加密看似已配置完成，但所有解密操作都会失败，现有的加密文档无法读取。请将 config.php 中的私钥替换为与当前公钥匹配的正确密钥，或删除下方的公钥以重新生成一对新密钥（注意：此操作将永久删除磁盘上的所有加密文档）。'
-        mismatch_title: 公钥和私钥不匹配
-        not_setup: 未启用加密。新上传的文件将通过无加密方式存储。
+        healthy: 加密已启用。新上传的文件会使用已配置的公钥加密，下载时会自动解密。
+        libsodium_missing: '当前 PHP 环境无法使用 libsodium，安装后才能启用文件加密。'
+        mismatch_body: 'config.php 中的私钥与当前设置中保存的公钥不匹配。虽然加密看似已配置，但所有解密操作都会失败，已有的加密文件也无法解密。请将 config.php 中的私钥替换为与当前公钥匹配的私钥，或移除下方公钥以生成新的密钥对；后者会永久删除磁盘上的所有加密文件。'
+        mismatch_title: 公钥与私钥不匹配
+        not_setup: 尚未配置加密。新上传的文件将以未加密形式保存。
         present: 已配置
         private_key_label: 私钥（config.php）
-        private_missing_body: '已配置公钥，但在 config.php 中未找到匹配的私钥。在恢复私钥之前，现有的加密文档将无法读取。请将下方内容添加到config.php中，或删除下面的公钥以重新生成密钥对（注意：此操作将永久删除磁盘上的所有加密文档）。'
-        private_missing_title: config.php中缺失私钥key
+        private_missing_body: '已配置公钥，但在 config.php 中找不到匹配的私钥。恢复私钥前，已有的加密文件将无法解密。请将下方配置写入 config.php，或移除下方公钥以生成新的密钥对；后者会永久删除磁盘上的所有加密文件。'
+        private_missing_title: 'config.php 中缺少私钥'
         public_key_label: 公钥
         unknown: 无法加载加密状态。
     permissions:
-      auto_verified_label: 自动接收认证勋章
-      request_label: 提交认证申请
-      self_revoke_label: 撤销他们已有的认证勋章
+      auto_verified_label: 自动获得认证徽章
+      request_label: 申请认证
+      self_revoke_label: 自行撤销认证
       verify_users_label: 直接认证用户
     preview:
-      helper: '实时预览 - 勋章将出现在用户名旁边。'
-      meta_sample: 2天前
+      helper: '实时预览 — 认证徽章在用户名旁的显示效果。'
+      meta_sample: '2 天前'
     requests:
       admin_note_label: 备注
       approve_button: 通过
-      approve_prompt: 可选的审核备注日志：
-      approve_success: 用户已通过认证。
-      auto_actions_hint: 在权限中进行管理
-      auto_via_group_unknown: 通过群组权限自动完成认证。
-      auto_via_groups: '通过群组认证的：{groups}'
-      decide_failed: 无法保存认证操作。请重试。
-      description: 审核并操作用户提交的认证申请。
-      document_label: 资料
-      document_preview_title: 资料预览
-      empty_approved: 没有通过认证的用户。
-      empty_pending: 没有等待审核的申请。
-      empty_rejected: 没有已被拒绝的申请。
-      empty_search: '没有用户符合筛选条件“{query}”。'
-      generate_keypair_failed: 无法生成密钥对。请重试。
-      handled_by: '已由{handlerName}处理 · {date}'
-      load_approved_failed: 无法加载已认证用户。请重试。
-      load_failed: 无法加载认证申请。请重试。
-      pagination_info: '第{page}页/共{lastPage}页 · 总{total}条'
-      pagination_next: 下一个
-      pagination_prev: 上一个
-      preview_failed: 无法加载资料预览。
-      preview_unavailable: 该文件格式无法预览。
-      reject_button: 拒绝
-      reject_prompt: 拒绝理由（将展示给用户）：
-      reject_success: 申请已被拒绝。
-      revoke_button: 撤销
-      revoke_prompt: 撤销理由（将展示在审核日志中）：
-      revoke_success: 认证已被撤销。
-      revoke_user_failed: 无法撤销认证。请重试。
+      approve_prompt: 审计日志备注（可选）：
+      approve_success: 用户已认证。
+      auto_actions_hint: 在「认证类型」中管理
+      auto_via_group_unknown: 通过用户组自动获得认证。
+      auto_via_groups: '通过以下用户组自动认证：{groups}'
+      decide_failed: 无法保存审核结果，请重试。
+      description: 审核并处理用户提交的认证申请。
+      document_label: 身份证明文件
+      document_preview_title: 文件预览
+      empty_approved: 暂无已认证用户。
+      empty_pending: 暂无待审核申请。
+      empty_rejected: 暂无已驳回申请。
+      empty_search: '没有找到与「{query}」匹配的已认证用户。'
+      generate_keypair_failed: 无法生成密钥对，请重试。
+      handled_by: '由 {handlerName} 处理 · {date}'
+      load_approved_failed: 无法加载已认证用户，请重试。
+      load_failed: 无法加载认证申请，请重试。
+      pagination_info: '第 {page} / {lastPage} 页 · 共 {total} 条'
+      pagination_next: 下一页
+      pagination_prev: 上一页
+      preview_failed: 无法加载文件预览。
+      preview_unavailable: 此文件格式无法预览。
+      reject_button: 驳回
+      reject_prompt: 驳回原因（用户可见）：
+      reject_success: 申请已驳回。
+      revoke_button: 撤销认证
+      revoke_prompt: 撤销原因（记录在审计日志中）：
+      revoke_success: 认证已撤销。
+      revoke_user_failed: 无法撤销认证，请重试。
       search_clear: 清除搜索
       search_placeholder: 搜索已认证用户…
       status_approved: 已通过
-      status_auto: 自动认证的
+      status_auto: 自动认证
       status_load_failed: 无法加载加密状态。
-      status_pending: 等待中
-      status_rejected: 已拒绝
+      status_pending: 待审核
+      status_rejected: 已驳回
       tab_approved: 已通过
-      tab_pending: 等待中
-      tab_rejected: 已拒绝
-      tier_filter_all: 所有级别
-      tier_filter_aria: 通过级别过滤
+      tab_pending: 待审核
+      tab_rejected: 已驳回
+      tier_filter_all: 全部类型
+      tier_filter_aria: 按认证类型筛选
       title: 认证申请
-      truncated: '还有{hidden}条申请未展示，重新设置筛选条件或前往已认证选项卡查看。'
-      view_document: 查看资料
+      truncated: '还有 {hidden} 条申请未显示，请进一步筛选或查看「已通过」标签页。'
+      view_document: 查看文件
     settings:
       badge_color_help: '选择颜色，或粘贴十六进制（如#1d9bf0），rgb()，rgba()，hsl()，hsla()值。'
       badge_color_label: 勋章颜色
       badge_color_reset: 清除
-      badge_size_help: '相对于周围文本的缩放倍数。1.0 表示与用户名一致；数值越大，徽章越突出。'
-      badge_size_label: 勋章大小
+      badge_size_help: '相对于周围文字的缩放倍数。1.0 与用户名大小一致，数值越大，徽章越醒目。'
+      badge_size_label: 徽章大小
       custom_color_help: 关闭：勋章使用论坛主色。开启：选择自定义颜色。
       custom_color_label: 使用自定义颜色
-      custom_svg_help: '上传SVG替换默认的推特风格勋章。通过fill="currentColor"使用上面设置的颜色。脚本及事件处理器将被自动移除。'
-      custom_svg_label: 自定义SVG
-      document_type_add: 添加资料类型
-      document_type_id_header: 身份证
-      document_type_label_header: 文本
-      document_type_label_placeholder: 显示文本
-      document_type_remove: 删除资料类型
-      document_types_empty: 没有完成配置的资料类型。用户上传资料时，将不会看到任何选项。
-      lock_avatar_help: 已认证账号无法修改头像。他们需要重新提交认证申请，才可以更新头像。
+      custom_svg_help: '上传 SVG 替换默认的 Twitter 风格徽章。请使用 fill="currentColor"，让徽章使用上方设置的颜色。脚本和事件处理器会被自动清除。'
+      custom_svg_label: '自定义 SVG'
+      document_type_add: 添加证件类型
+      document_type_id_header: ID
+      document_type_label_header: 名称
+      document_type_label_placeholder: 显示名称
+      document_type_remove: 移除证件类型
+      document_types_empty: 尚未配置证件类型。用户上传身份证明文件时将无法选择证件类型。
+      lock_avatar_help: 已认证用户无法更换头像。如需更新头像，必须重新提交认证申请。
       lock_avatar_label: 认证后锁定头像
-      requests_open_help: 关闭后，「提交认证申请」按钮将被隐藏，API接口也将拒绝新的申请。已有的申请仍然可进行审核通过或拒绝操作。
+      requests_open_help: '关闭后，「申请认证」按钮会被隐藏，API 也会拒绝新的申请。已有的待审核申请仍可通过或驳回。'
       requests_open_label: 接受新的认证申请
-      require_document_help: 用户提交认证申请时，必须上传认证资料（身份证、税号、护照等）。
-      require_document_label: 必须提交认证资料
-      retention_days_help: 设置认证申请处理完成后，资料暂存的天数。每日定时任务自动清除超过此天数的文件。最小1天，最大3650天。
+      require_document_help: '用户申请认证时必须上传身份证明文件，例如 RG、CPF、护照等。'
+      require_document_label: 必须提供身份证明文件
+      retention_days_help: '申请处理后保留文件的天数。每日定时任务会清理超过期限的文件。最少 1 天，最多 3650 天。'
       retention_days_label: 保留天数
-      retention_delete_after_days: 保留一定天数后删除文件
-      retention_delete_immediate: 处理完毕后立即删除文件
-      retention_help: 选择认证申请通过或拒绝后的已上传资料处理方式。部分论坛必须留存资料以备法务或审计之用；也有论坛因隐私法规要求，必须及时删除。
-      retention_keep: 永久保留文文件
-      retention_label: 资料留存
-      section_appearance: 样式
-      section_appearance_help: 自定义勋章在论坛的显示样式。
-      section_behaviour: 操作
-      section_behaviour_help: 设置用户通过认证后，必须提供或可修改的内容。
-      section_document_types: 资料类型
-      section_document_types_help: 管理用户在提交认证申请时，可以选择的资料类型。默认列表包含（身份证、税号、驾驶证和其它）。你可以修改名称或替换它们。
-      show_tooltip_help: 开启后，鼠标悬浮在勋章上时，将显示认证信息卡片。关闭时，则不会显示该卡片。
-      show_tooltip_label: 显示已认证信息弹窗
+      retention_delete_after_days: 在指定天数后删除文件
+      retention_delete_immediate: 处理后立即删除文件
+      retention_help: 选择认证申请通过或驳回后如何处理已上传的身份证明文件。部分社区因法律或审计要求需要保留文件，另一些则需要按照隐私法规删除文件。
+      retention_keep: 永久保留文件
+      retention_label: 文件保留策略
+      section_appearance: 外观
+      section_appearance_help: 自定义认证徽章在论坛中的显示效果。
+      section_behaviour: 认证规则
+      section_behaviour_help: 设置用户申请认证时必须提供的内容，以及认证后可以修改的内容。
+      section_document_types: 证件类型
+      section_document_types_help: 管理用户申请认证时可以选择的证件类型。默认列表（RG、CPF、护照、驾驶证、其他）基于巴西证件体系，你可以根据实际情况重命名或替换。
+      show_tooltip_help: 启用后，将鼠标悬停在认证徽章上时会显示认证详情。关闭后仅显示徽章。
+      show_tooltip_label: 显示认证信息卡片
       tiers:
-        add: 添加级别
-        add_first: 创建第一个级别
-        auto_groups_empty: 没有可用用户组。
-        auto_groups_help: 属于这些用户组的成员将自动获得此认证级别，无需人工审核。当用户同时属于多个不同等级的用户组时，以列表中靠前的等级为优先。
-        auto_groups_label: 自动被授予该认证级别的用户组
-        badge_dropzone_subtitle: 点击选择文件（最大8KB）
-        badge_dropzone_title: 上传SVG
-        badge_loaded: 勋章就绪
+        add: 添加类型
+        add_first: 创建第一个类型
+        auto_groups_empty: 没有可用的用户组。
+        auto_groups_help: 这些用户组中的成员无需人工审核即可获得此认证类型。当用户所属的多个用户组分别对应不同认证类型时，列表中排在最前的类型优先。
+        auto_groups_label: 自动获得此类型的用户组
+        badge_dropzone_subtitle: '点击选择文件（最大 8 KB）'
+        badge_dropzone_title: '上传 SVG'
+        badge_loaded: 徽章已就绪
         badge_remove: 移除
         badge_replace: 替换
-        badge_size_max: 最大8KB
-        badge_svg_too_large: SVG体积过大（最大8KB）。
+        badge_size_max: '最大 8 KB'
+        badge_svg_too_large: 'SVG 文件过大，最大支持 8 KB。'
         badge_switch_off: 已禁用
         badge_switch_on: 已启用
-        badge_toggle_help: 使用自定义的SVG图片替换全局已认证勋章，颜色也会自动匹配。
-        badge_toggle_label: 使用自定义勋章
-        collapse: 折叠
+        badge_toggle_help: '使用自定义 SVG 替换全局认证徽章，并应用此类型的颜色。'
+        badge_toggle_label: 使用自定义徽章
+        collapse: 收起
         color_label: 颜色
-        description_bold_title: 粗体高亮（级别颜色）
-        description_help: '鼠标悬浮在徽章上时显示的说明内容（弹窗）。最多 320 个字符。使用编辑器上方的按钮，可将部分文字高亮为该级别的颜色。'
-        description_italic_title: 斜体高亮
-        description_label: 描述（弹窗）
-        description_placeholder: 例如：该账号已由管理员授予认证。
-        description_toolbar_hint: 选择文本并点击按钮
+        description_bold_title: 加粗突出显示（类型颜色）
+        description_help: '将鼠标悬停在徽章上时，此说明会显示在认证信息卡片中。最多 320 个字符。可以使用下方按钮，以此认证类型的颜色突出显示文字。'
+        description_italic_title: 斜体突出显示
+        description_label: 说明（认证信息卡片）
+        description_placeholder: 例如：此账号已由管理员完成身份认证。
+        description_toolbar_hint: 选择文字后点击
         done: 完成
-        empty: 你还没有配置任何认证级别。创建一个认证级别，并开始认证用户。
-        empty_title: 暂未配置级别
-        id_help: '用于URL的标识符（slug）。只能使用小写字母、数字、下划线（_）和连字符（-），最长 32 个字符。创建后无法修改，否则需要重新分配用户等级。'
+        empty: 尚未配置任何认证类型。请先创建一个类型，再开始认证用户。
+        empty_title: 尚未配置认证类型
+        id_help: '类似固定链接名的标识符，只能使用小写字母、数字、_ 和 -，最多 32 个字符。创建后如要修改，必须重新分配用户。'
         id_label: ID
-        label_label: 显示名称
-        label_placeholder: 例如：一般认证、高级认证、黄金认证
-        learn_more_help: '使用https://网址指向你的认证政策。留空将不会在弹窗中显示链接。'
+        label_label: 名称
+        label_placeholder: 例如：已认证、金色认证、合作伙伴
+        learn_more_help: '填写指向认证政策的 https:// URL。留空则不会在认证信息卡片中显示链接。'
         learn_more_label: 「了解更多」链接
-        learn_more_open: 在新选项卡中打开链接
-        no_id: （暂无ID）
-        preview_hint: 鼠标悬浮于勋章上查看实际弹窗效果
+        learn_more_open: 在新标签页打开链接
+        no_id: '（无 ID）'
+        preview_hint: 将鼠标悬停在徽章上查看实际认证信息卡片
         preview_label: 预览
-        remove: 删除级别
-        remove_confirm: 删除这个等级吗？当前拥有该等级的用户将恢复为默认等级，直到被重新分配为止。
-        section_appearance: 样式
-        section_assignment: 自动授予
-        section_badge: 自定义勋章
-        section_help: 创建并配置论坛中可用的认证徽章（blue、gold、partner等）。每个等级都拥有独立的颜色、悬浮说明以及“了解更多”链接。当多个自动授予用户组同时生效时，等级顺序将决定优先显示的认证等级。
-        section_identity: 身份
-        section_popover: 弹窗内容
-        section_title: 认证级别
-        unnamed: （暂无名称）
+        remove: 移除类型
+        remove_confirm: 确定移除此认证类型吗？原本使用此类型的用户会暂时回退到默认类型，直到重新分配。
+        section_appearance: 外观
+        section_assignment: 自动分配
+        section_badge: 自定义徽章
+        section_help: 创建并配置论坛可用的认证类型，例如蓝色认证、金色认证、合作伙伴等。每个类型都可以设置独立颜色、认证信息说明和「了解更多」链接。当用户同时因多个用户组匹配到不同认证类型时，列表中的类型顺序决定优先级。
+        section_identity: 基本信息
+        section_popover: 认证信息卡片
+        section_title: 认证类型
+        unnamed: （未命名）
     tabs:
-      aria_label: 面板区域
+      aria_label: 面板分区
       general: 设置
-      requests: 申请
-      tiers: 级别
+      requests: 认证申请
+      tiers: 认证类型
   api:
-    already_handled: 该认证申请已处理。
-    already_pending: 改用户已有等待中的认证申请。
-    already_verified: 改用户已经通过认证。
-    avatar_locked: 你的账号是已认证账号，头像已被锁定。重新提交认证申请可更新头像。
-    bad_extension: 不支持的文件扩展名。
-    bad_mime: 不支持的文件类型。
+    already_handled: 此认证申请已经处理。
+    already_pending: 此用户已有一条待审核的认证申请。
+    already_verified: 此用户已经通过认证。
+    avatar_locked: 由于账号已认证，你的头像已被锁定。如需更新，请重新提交认证申请。
+    bad_extension: 不支持此文件扩展名。
+    bad_mime: 不支持此文件类型。
     badge_svg:
-      bad_extension: 上传的文件必须为SVG扩展名。
-      bad_mime: 此MIME类型不是SVG上传所支持的。
-      missing: 已认证勋章信息中，没有已上传的SVG文件。
-      too_large: SVG文件体积过大（最大256KB）。
-      upload_failed: SVG文件上传失败。请重试。
-    document_required: 提交认证申请必须添加认证资料。
+      bad_extension: '上传的文件必须使用 .svg 扩展名。'
+      bad_mime: '不支持此 SVG 文件的 MIME 类型。'
+      missing: '未在「verified-badge」字段中上传 SVG 文件。'
+      too_large: 'SVG 文件过大，最大支持 256 KB。'
+      upload_failed: 'SVG 上传失败，请重试。'
+    document_required: 申请认证必须提供身份证明文件。
     encryption:
-      acknowledge_loss_required: 我已确认：在生成新的密钥对之前，所有现有的加密文档将被删除。
-      decryption_failed: 此加密文件无法解密。config.php文件中配置的私钥与保存的公钥不匹配，或者文件已损坏。
-      libsodium_missing: libsodium模块在当前PHP环境中不可用。
-      private_key_missing: 该文档已加密，但本服务器的config.php配置文件中未配置对应的私钥。请将其添加到「verified-private-key」项下，或重新生成密钥对（该操作将删除所有已加密的文档）。
-    file_too_large: 资料过大（最大8MB）。
-    no_file: 没有上传的资料。
+      acknowledge_loss_required: 生成新的密钥对前，必须确认现有的所有加密文件都会被删除。
+      decryption_failed: '此文件已加密，但无法解密。config.php 中的私钥可能与已保存的公钥不匹配，或文件已经损坏。'
+      libsodium_missing: '当前 PHP 环境无法使用 libsodium。'
+      private_key_missing: '此文件已加密，但当前服务器的 config.php 中未配置私钥。请在 ''verified-private-key'' 键下添加私钥，或重新生成密钥对；重新生成会删除所有加密文件。'
+    file_too_large: '文件过大，最大支持 8 MB。'
+    no_file: 未上传身份证明文件。
     not_found: 没有认证申请。
-    not_verified: 改用户没有认证。
-    requests_closed: 现在不接受新的认证申请。
-    revoked_default_note: 管理员撤销的认证。
-    self_revoked_note: 用户撤销的认证（修改头像申请）。
-    upload_failed: 资料无法保存。请重试。
-    user_missing: 关联用户已不存在。
-    verified_by_admin_note: 管理员直接操作的认证。
+    not_verified: 此用户尚未认证。
+    requests_closed: 目前暂不接受新的认证申请。
+    revoked_default_note: 认证已由管理员撤销。
+    self_revoked_note: 用户因申请更换头像自行撤销认证。
+    upload_failed: 无法保存文件，请重试。
+    user_missing: 关联的用户已不存在。
+    verified_by_admin_note: 已由管理员直接认证。
   email:
     verified:
       html:
-        body: '<strong>{username}</strong>，你好。<br><br>你在<strong>{forumTitle}</strong>的账号已通过管理员认证审核。认证勋章将显示在你的用户名旁边。'
-        preview: '你在{forumTitle} 的账号已通过认证。'
+        body: '你好，<strong>{username}</strong>：<br><br>你的 <strong>{forumTitle}</strong> 账号已由管理员完成认证。你的用户名旁现在已开始显示认证徽章。'
+        preview: '你的 {forumTitle} 账号已通过认证。'
       plain:
-        body: "{username}，你好。\n\n你在{forumTitle}的账号已通过管理员认证审核。认证勋章将显示在你的用户名旁边。\n"
+        body: "你好，{username}：\n\n你的 {forumTitle} 账号已由管理员完成认证。你的用户名旁现在已开始显示认证徽章。\n"
       subject: 你的账号已通过认证
   forum:
     avatar:
-      locked_alert: 你的账号是已认证账号，头像已被锁定。
-      locked_help: 已认证账号无法修改头像。重新提交认证申请可更新头像。
-      locked_label: 头像锁定
-      locked_tooltip: 你的账号是已认证账号，头像已被锁定。重新提交认证申请可更新头像。
-      request_change_button: 申请修改头像
-      request_change_confirm: 此操作将撤销你当前的认证，然后你将可以更新头像。之后，你需要重新提交认证申请。是否继续？
-      request_change_failed: 无法撤销你的认证。请重试。
-      request_change_success: 你的认证已被撤销。你现在可以更新头像，然后重新提交认证申请。
+      locked_alert: 由于账号已认证，你的头像已被锁定。
+      locked_help: 已认证账号无法更换头像。如需更新，请重新提交认证申请。
+      locked_label: 头像已锁定
+      locked_tooltip: 由于账号已认证，你的头像已被锁定。如需更换，请重新提交认证申请。
+      request_change_button: 申请更换头像
+      request_change_confirm: 此操作会撤销你当前的认证，以便更换头像。更换完成后需要重新提交认证申请。是否继续？
+      request_change_failed: 无法撤销认证，请重试。
+      request_change_success: 你的认证已撤销，现在可以更换头像。更换完成后请重新提交认证申请。
     notifications:
-      user_verified_preference: 有人验证我的账号
+      user_verified_preference: 我的账号通过认证时
       user_verified_text: 你的账号已通过认证。
     request_modal:
-      bad_type: 不支持的文件类型。
-      choose_file: 点击选择资料
-      choose_file_hint: 'PNG，JPG，WEBP或PDF · 最大8MB'
-      document_help: PNG，JPG，WEBP或PDF。最大8MB。资料保密存储，仅管理员可见。
-      document_label: 认证资料
-      document_required: 必须提供一个认证资料。
-      document_type_cpf: 税号
+      bad_type: 不支持此文件类型。
+      choose_file: 点击选择文件
+      choose_file_hint: 'PNG、JPG、WEBP 或 PDF · 最大 8 MB'
+      document_help: '支持 PNG、JPG、WEBP 或 PDF，最大 8 MB。文件不会公开，仅管理员可以查看。'
+      document_label: 身份证明文件
+      document_required: 必须提供身份证明文件。
+      document_type_cpf: 税号（CPF）
       document_type_driver: 驾驶证
-      document_type_label: 资料类型
-      document_type_other: 其它
+      document_type_label: 证件类型
+      document_type_other: 其他
       document_type_passport: 护照
-      document_type_rg: 身份证
-      file_too_large: 资料过大（最大8MB）。
-      intro: 提交账号认证的事由说明，以便管理员审核。
-      reason_label: 为什么该账号需要认证？
-      reason_placeholder: '可选 - 请提供有助于认证的背景信息（如职位、公开资料、所属机构等）'
-      remove_file: 删除资料
+      document_type_rg: 身份证件（RG）
+      file_too_large: '文件过大，最大支持 8 MB。'
+      intro: 请说明申请认证的理由，管理员会审核你的申请。
+      reason_label: 申请认证的理由
+      reason_placeholder: '可选 — 提供有助于审核的背景信息，例如特殊身份、公开资料、所属组织等'
+      remove_file: 移除文件
       submit_button: 提交申请
       success: 认证申请已提交！
       title: 申请认证
-      upload_failed: 上传失败。请重试。
-      uploaded: '已添加：{name}'
-      uploaded_short: 已添加资料
-      uploading: 资料上传中…
+      upload_failed: 上传失败，请重试。
+      uploaded: '已附加：{name}'
+      uploaded_short: 已附加文件
+      uploading: 正在上传文件…
     settings:
-      avatar_locked_label: 头像锁定
-      avatar_locked_sublabel: 已认证账号无法修改头像。重新提交认证申请可更新头像。
-      heading: 认证
-      pending_label: 认证审核中
-      pending_sublabel: 管理员将进行审核。
-      request_button: 提交认证申请
-      verified_label: 你的账号已完成认证
-      verified_sublabel: 管理员已确认你的标识。
+      avatar_locked_label: 头像已锁定
+      avatar_locked_sublabel: 已认证账号无法更换头像。如需更新，请重新提交认证申请。
+      heading: 账号认证
+      pending_label: 认证申请审核中
+      pending_sublabel: 管理员会尽快处理你的申请。
+      request_button: 申请认证
+      verified_label: 你的账号已认证
+      verified_sublabel: 你的身份已由管理员确认。
     user_controls:
       revoke_button: 撤销认证
-      revoke_failed: 无法撤销认证。请重试。
-      revoke_prompt: 撤销理由（审核日志中可见）：
-      revoke_success: 撤销认证成功。
+      revoke_failed: 无法撤销认证，请重试。
+      revoke_prompt: 撤销原因（记录在审计日志中）：
+      revoke_success: 认证已撤销。
       verify_button: 认证用户
-      verify_failed: 无法认证用户。请重试。
-      verify_prompt: 可选的审核备注日志：
-      verify_success: 用户认证已完成。
+      verify_failed: 无法认证此用户，请重试。
+      verify_prompt: 审计日志备注（可选）：
+      verify_success: 用户已认证。
   gdpr:
-    anonymize_description: 提交的认证资料已经删除。理由说明和管理员备注已从认证申请中移除，但审核记录（状态和日期）将留存，避免其它数据关联查询时的一致性。
-    delete_description: 已永久删除你的所有认证申请和上传的认证资料。你的认证状态已重置。
-    export_description: 认证申请，你提交的认证资料（身份证、税号、护照等），以及你当前的认证状态。包含所有你作为管理员进行处理的认证申请。
+    anonymize_description: 你提交的身份证明文件会被删除。认证申请中的原因说明和管理员备注会被清除，但会保留审计记录中的状态和日期，以确保引用这些数据的其他论坛记录保持一致。
+    delete_description: 你的所有认证申请和已上传的身份证明文件都会被永久删除，认证状态也会被重置。
+    export_description: 包括你的认证申请、提交的身份证明文件（RG、CPF、护照等）和当前认证状态，以及你作为管理员处理过的认证申请。
   lib:
     errors:
-      clipboard: 无法复制到粘贴板。
-      generic: 发生错误。请重试。
-      network: 网络错误。检查网络连接并重试。
+      clipboard: 无法复制到剪贴板。
+      generic: 出现错误，请重试。
+      network: 网络错误，请检查网络连接后重试。
     popover:
-      headline: '该账号具有 <strong>已认证标识</strong>。'
+      headline: 此账号的<strong>身份已通过认证</strong>。
       learn_more: 了解更多
       pill: 已认证
-      verified_no_date: 已自动认证账号
-      verified_on: '已认证{date}'
+      verified_no_date: 已通过自动认证
+      verified_on: '{date}通过认证'
     tier_prompt:
       hint: 输入认证级别的ID（例如1或blue）。
       intro: 选择认证级别：
       invalid: 认证级别无效。认证已被取消。
-      no_tiers: 暂未配置级别。从管理后台》Verified插件中添加认证级别后，再进行认证。
+      no_tiers: 尚未配置认证类型。请先在后台「认证」页面添加类型，再为用户进行认证。
     tooltip: 已认证账号
-    tooltip_with_date: '已认证账号 · 于{date}'
+    tooltip_with_date: '已认证账号 · 自 {date} 起'
     verification_prompt:
-      note_placeholder: 可选（记载于审核日志中）
-      tier_label: 认证级别
+      note_placeholder: '可选 — 将记录到审计日志'
+      tier_label: 认证类型

@@ -2,612 +2,624 @@
 # Use https://weblate.rob006.net/projects/flarum2/ramon-point-system/zh_Hans/ for translation.
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
+flarum-gdpr:
+  lib:
+    data:
+      pointsystem:
+        anonymize_description: 管理员在手动调整积分时填写的自由文本备注会被清除。积分余额、积分流水、已兑换物品和交易记录会继续保留，以确保论坛中的统计数据保持一致。
+        delete_description: 你的积分余额、全部积分流水、所有已兑换物品，以及你参与过的所有交易都会被永久删除。
+        export_description: 你的积分余额和累计积分、完整的积分收支流水、你兑换过的所有奖励物品，以及你参与过的所有交易。
 ramon-point-system:
   admin:
     all_trades:
       col_id: '#'
-      col_initiator: 发起人
+      col_initiator: 发起方
       col_offer: 交易内容
-      col_recipient: 接收人
+      col_recipient: 接收方
       col_status: 状态
-      col_updated: 更新
-      empty: 暂无符合条件的交易。
-      filter_all: 所有状态
+      col_updated: 更新时间
+      empty: 没有符合当前筛选条件的交易。
+      filter_all: 全部状态
       filter_cancelled: 已取消
       filter_completed: 已完成
       filter_pending: 进行中
-      help: 已只读方式，查看系统所有用户的所有交易，以及交易人员和内容详情。
-      initiator_offer: 来自发起人
-      items_short: '{count, plural, one {#个道具} other {#个道具}}'
-      list_heading: 交易中心
-      list_help: 按交易时间倒序排列，可以通过筛选功能，只浏进行中或未达成的交易。
+      help: 查看系统中所有用户之间的交易。此页面只读，可查看交易双方及各自提供的内容。
+      initiator_offer: 发起方提供
+      items_short: '{count, plural, other {# 件物品}}'
+      list_heading: 交易
+      list_help: 按最近活动时间排序。可以按状态筛选，以便查看争议或尚未完成的交易。
       next: 下一页
-      page_x_of_y: '第{x}页/共{y}页'
+      page_x_of_y: '第 {x} / {y} 页'
       prev: 上一页
-      recipient_offer: 来自接收人
+      recipient_offer: 接收方提供
       refresh: 刷新
       status_cancelled: 已取消
       status_completed: 已完成
       status_pending: 进行中
-      title: 所有交易
+      title: 全部交易
     availability:
-      allowed_groups: 用户组限制
-      allowed_groups_help: 当选择一个或多个用户组后，只有这些用户组的用户可以兑换此道具。留空表示无用户组限制。
-      available_from: 可兑换的开始时间
-      available_until: 可兑换的结束时间
-      claims_so_far: 已兑换数量：
-      dates_help: 留空表示无时间限制。开始和结束时间均为可选设置项。
+      allowed_groups: 限制用户组
+      allowed_groups_help: 勾选至少一个用户组后，只有这些用户组中的用户可以兑换此物品。全部不勾选则不限制。
+      available_from: 开始时间
+      available_until: 结束时间
+      claims_so_far: 已兑换：
+      dates_help: 留空则不限制时间，开始和结束时间都可以单独设置。
       groups_loading: 正在加载用户组…
-      is_listed: 在道具商店中公开展示
-      is_listed_help: 关闭后，该道具将不会展示在道具商店中，只能由管理员发放给指定的用户。
-      legend: '可用限制&兑换限制'
-      max_claims: 最大可兑换数量（总计）
-      max_claims_help: 兑换数量达到限制值后，自动锁定。
-      max_claims_placeholder: 无限制
-      unlisted_tag: 已隐藏
+      is_listed: 在积分商城公开显示
+      is_listed_help: 关闭后，此物品不会显示在积分商城。适合只想赠送给指定用户的物品。
+      legend: 可用范围与权限
+      max_claims: 最大兑换次数（总计）
+      max_claims_help: 达到此兑换次数后，该物品将无法继续兑换。
+      max_claims_placeholder: 不限
+      unlisted_tag: 隐藏
     avatar:
-      edit_title: '编辑头像边框–{name}'
-      existing: 已有边框
+      edit_title: '编辑头像框 — {name}'
+      existing: 现有头像框
       field_description: 描述
-      field_image: 边框图片
-      field_image_help: 推荐：256×256像素的透明PNG、APNG或GIF。最大4MB。
-      field_image_url: 图片URL
-      field_image_url_help: '粘贴图片的https://网址。这能节省服务器磁盘占用，但必须保障图片网址可访问，否则头像边框将无法显示。'
+      field_image: 头像框图片
+      field_image_help: '建议使用 256×256 的透明 PNG、APNG 或 GIF，最大 4 MB。'
+      field_image_url: '图片 URL'
+      field_image_url_help: '粘贴图片的 HTTPS 直链。使用远程图片可以节省服务器磁盘空间，但图片源必须持续可访问，否则头像框将无法显示。'
       field_name: 名称
       field_price: 价格
-      help: 上传PNG/GIF/WebP/APNG头像框，可悬浮覆盖在用户头像上（Discord风格）。
-      none: 暂无已上传的边框。
+      help: '上传悬浮在用户头像上的 PNG / GIF / WebP / APNG 头像框，效果类似 Discord。'
+      none: 暂无头像框。
       replace_image: 替换图片（可选）
       source_file: 上传文件
       source_label: 图片来源
-      source_url: 使用图片URL
-      title: 头像边框装饰
-      upload: 上传边框
-      upload_title: 上传新边框
-      uploaded: 边框上传成功。
+      source_url: '使用图片 URL'
+      title: 头像框
+      upload: 上传头像框
+      upload_title: 上传新头像框
+      uploaded: 头像框已上传。
     cancel: 取消
-    confirm_delete: 确定删除吗？该操作无法撤回。
+    confirm_delete: 确定删除此物品吗？此操作无法撤销。
     cover:
-      edit_title: '编辑个人资料封面–{name}'
-      existing: 已有封面
+      edit_title: '编辑封面 — {name}'
+      existing: 现有封面
       field_description: 描述
       field_image: 图片
-      field_image_help: 最大6MB。动画格式：GIF、APNG，WebP。
+      field_image_help: '最大 6 MB。支持的动态格式：GIF、APNG、WebP。'
       field_name: 名称
       field_price: 价格（积分）
-      help: 购买用户个人资料横幅装饰。支持静态或动画格式的PNG、JPG、GIF、WebP或APNG。
+      help: 可在积分商城兑换的个人资料封面，支持静态和动态格式（PNG、JPG、GIF、WebP、APNG）。
       none: 暂无封面。
       replace_image: 替换图片
       title: 个人资料封面
       upload: 上传
       upload_title: 添加新封面
-      uploaded: 封面上传成功
+      uploaded: 封面已上传
     delete: 删除
     disable: 禁用
     edit: 编辑
     enable: 启用
     grant:
-      action_button: 授予
-      help: 将此道具直接授予用户。用户将免费获得该道具，不会扣除积分。
-      ignore_limit: 忽略最大可兑换数量限制
-      ignore_limit_help: 如该道具有最大可兑换数量限制，普通授予操作也会消耗此数量。选择此项后，本次授予将跳过该限制。
-      submit: 授予
-      success: '{item}已成功授予{name}。'
-      title: '向用户授予{name}'
-      user_not_found: 没有与此名称匹配的用户。
-      username_help: 输入用户名或显示名称。
+      action_button: 赠送
+      help: 直接将此物品赠送给用户，无需消耗积分。
+      ignore_limit: 忽略最大兑换次数限制
+      ignore_limit_help: 物品设置最大兑换次数后，正常赠送仍会计入该次数。勾选此项可让本次赠送不受限制。
+      submit: 赠送
+      success: '已将「{item}」赠送给 {name}。'
+      title: '将「{name}」赠送给用户'
+      user_not_found: 没有找到匹配该名称的用户。
+      username_help: 输入准确的用户名或显示名称。
       username_label: 用户名
-      username_placeholder: 例如「zizaime」
+      username_placeholder: 例如：ramon
     groups:
       add: 添加
-      choose_group: –选择一个用户组–
+      choose_group: '— 选择用户组 —'
       col_group: 用户组
-      col_mode: 解锁方式
-      col_points: 总计扩分阈值
+      col_mode: 加入方式
+      col_points: 累计积分门槛
       col_price: 价格
       col_status: 状态
-      create: 添加用户组
-      existing: 已配置的用户组
+      create: 添加用户组加入方案
+      existing: 已配置方案
       field_group: 用户组
-      field_is_auto: 总计积分达到阈值后自动加入
-      field_is_auto_help: 用户总计积分达到下列阈值后，自动加入该用户组，无须购买。
-      field_is_purchasable: 可直接购买
-      field_is_purchasable_help: 用户使用积分余额购买并加入该用户组，忽略总计积分。
+      field_is_auto: 达到累计积分后自动加入
+      field_is_auto_help: 成员的累计积分达到下方门槛后，会立即加入此用户组，无需购买。
+      field_is_purchasable: 允许购买
+      field_is_purchasable_help: 无论累计积分多少，成员都可以使用积分余额支付下方价格并立即加入。
       field_points: 所需积分（兑换时从余额扣除）
-      field_points_required: 所需总计积分（自动加入阈值）
-      field_price: 价格（购买时从余额中扣除）
-      help: 用户满足条件（总计积分达到阈值）即可自动加入用户组。用户也可以直接使用余额购买用户组。每个用户组，都支持这两种解锁方式。
-      none: 暂无已配置的用户组。
-      title: 用户组道具
+      field_points_required: 自动加入所需累计积分
+      field_price: 价格（购买时从积分余额扣除）
+      help: 成员可以在累计积分达到门槛后自动加入用户组，也可以使用积分余额直接购买加入资格。同一用户组可以同时启用这两种加入方式。
+      none: 暂无用户组加入方案。
+      title: 用户组加入方案
     manual:
       balance: 余额
-      bulk_awarded: 已更新用户
-      bulk_confirm: 确定吗？该操作将向所有论坛用户发放积分。
+      bulk_awarded: 已更新用户数
+      bulk_confirm: 确定继续吗？此操作会影响论坛中的所有用户。
       bulk_confirm_no: 取消
-      bulk_confirm_yes: 确定并执行
+      bulk_confirm_yes: 是，应用到所有用户
       bulk_errors: 错误
-      bulk_help: 批量执行全体用户积分发放或扣除。负数将扣除用户积分余额。
-      bulk_queued: '已为{total}用户生成队列任务。积分调整将在后台进行，队列任务很快即可处理完毕。'
-      bulk_result: 批量操作结果
-      bulk_submit: 向所有用户发放
-      bulk_success: 批量调整执行完成。
-      bulk_title: 全体用户批量发扣
+      bulk_help: 为所有已注册用户批量发放或扣除积分。负数会减少积分余额。
+      bulk_queued: '已将 {total} 位用户的积分调整任务加入队列。队列进程会在后台陆续完成处理。'
+      bulk_result: 批量处理结果
+      bulk_submit: 应用到所有用户
+      bulk_success: 批量积分调整已应用。
+      bulk_title: 批量调整所有用户积分
       field_amount: 数量
-      field_amount_help: 正数为发放，负数为从余额扣除（不影响总计）。
-      field_reason: 理由（可选）
+      field_amount_help: 填写正数可发放积分，填写负数只会扣除积分余额，累计积分保持不变。
+      field_reason: 原因（可选）
       field_username: 用户名
-      help: 手动为用户发放或扣除积分。数值为负表示从余额中扣除。
-      lifetime: 总计
-      result: 调整后余额
+      help: 手动增加或扣除用户积分。填写负数会从积分余额中扣除。
+      lifetime: 累计积分
+      result: 新余额
       submit: 应用
-      success: 调整成功。
+      success: 积分调整已应用。
       title: 发放或扣除积分
-      user_not_found: 没有找到用户。
+      user_not_found: 未找到用户。
     name:
-      create: 创建装饰
-      create_title: 创建新装饰
-      created: 装饰创建成功。
-      edit_title: '编辑用户名装饰–{name}'
-      existing: 已有装饰
-      field_css: 自定义CSS（可选）
-      field_css_help: '支持两种模式。模式1：直接将CSS属性应用于用户名（例如「color: gold; font-weight: 700;」）。模式2：将&符号作为选择器占位符的完整CSS，支持 @keyframes、伪元素以及多规则。'
+      create: 创建样式
+      create_title: 创建新的用户名样式
+      created: 样式已创建。
+      edit_title: '编辑用户名样式 — {name}'
+      existing: 现有样式
+      field_css: '自定义 CSS（可选）'
+      field_css_help: '支持两种模式。模式 1：填写直接应用到用户名的属性列表，例如 color: gold; font-weight: 700;。模式 2：使用完整 CSS，并以 & 作为选择器占位符；支持 @keyframes、伪元素和多条规则。'
       field_description: 描述
       field_name: 名称
       field_preset: 预设
       field_price: 价格
-      help: 选择烈焰、冰晶、彩虹等预设装饰，或设置自定义CSS。
-      none: 暂无已创建的装饰。
+      help: '选择预设效果（火焰、冰霜、霓虹、渐变等），或编写自己的 CSS。'
+      none: 暂无用户名样式。
       preset: 预设
-      preset_blur: 🌫模糊
-      preset_breath: 🌸花朵
-      preset_custom: 🛠自定义（CSS）
-      preset_fire: 🔥烈焰
-      preset_galaxy: 🌌银河
-      preset_glass: 🪟玻璃
-      preset_glitch: 👾诡异
-      preset_gold: 🥇金牌
-      preset_gold-pulse: ✨闪亮
-      preset_hearts: 💖爱心
-      preset_huecycle: 🎨色盘
-      preset_ice: ❄️冰晶
-      preset_lightning: ⚡雷电
-      preset_matrix: 🟢元素
-      preset_mercury: 🪞睡醒
-      preset_neon: 💡灯泡
-      preset_rainbow: 🌈彩虹
-      preset_royal: 👑皇冠
-      preset_shine: 💫明星
-      preset_sparkle: ✦灵感
-      preset_stamp: 🔖印章
-      preset_toxic: ☣剧毒
-      preset_typer: ⌨️键盘
-      preset_underline: '〰 波浪'
-      preset_vhs: 📼磁带
-      preset_wave: 🌊波浪
+      preset_blur: '🌫 模糊'
+      preset_breath: '🌸 呼吸'
+      preset_custom: '🛠 自定义（CSS）'
+      preset_fire: '🔥 火焰'
+      preset_galaxy: '🌌 银河'
+      preset_glass: '🪟 玻璃'
+      preset_glitch: '👾 故障'
+      preset_gold: '🥇 黄金'
+      preset_gold-pulse: '✨ 黄金脉冲'
+      preset_hearts: '💖 爱心'
+      preset_huecycle: '🎨 色相循环'
+      preset_ice: '❄️ 冰霜'
+      preset_lightning: '⚡ 闪电'
+      preset_matrix: '🟢 矩阵'
+      preset_mercury: '🪞 水银'
+      preset_neon: '💡 霓虹'
+      preset_rainbow: '🌈 彩虹'
+      preset_royal: '👑 皇家'
+      preset_shine: '💫 闪耀'
+      preset_sparkle: '✦ 星光'
+      preset_stamp: '🔖 印章'
+      preset_toxic: '☣ 剧毒'
+      preset_typer: '⌨️ 打字机'
+      preset_underline: '〰 下划线'
+      preset_vhs: '📼 VHS'
+      preset_wave: '🌊 波浪'
       preview: 实时预览
-      title: 用户名装饰
+      title: 用户名样式
     permissions:
-      claim: 兑换道具
-      manage: 管理积分体系
-      trade: 向其他用户赠送装饰
-      view_others: 查看其它用户的积分
-      view_shop: 查看道具
+      claim: 兑换奖励
+      manage: 管理积分系统
+      trade: 与其他用户交易装扮
+      view_others: 查看其他用户的积分
+      view_shop: 查看积分商城
     post_hl:
       create: 创建高亮
-      create_title: 创建高亮
-      created: 高亮创建成功。
-      edit_title: '编辑帖子高亮–{name}'
-      existing: 已有高亮
-      field_css: 自定义CSS（可选）
-      field_css_help: '使用「&」选择器占位符（匹配帖子容器）。'
+      create_title: 创建新的帖子高亮
+      created: 高亮已创建。
+      edit_title: '编辑帖子高亮 — {name}'
+      existing: 现有高亮
+      field_css: '自定义 CSS（可选）'
+      field_css_help: '使用 `&` 作为选择器占位符，对应帖子容器。'
       field_description: 描述
       field_name: 名称
       field_preset: 预设
       field_price: 价格
-      help: 在帖子用户旁边，显示边框、光晕或彩带。选择预设或设置自定义CSS。
-      none: 暂无已创建的高亮。
+      help: '在用户帖子周围应用边框、发光或缎带效果。可以选择内置预设，也可以编写自定义 CSS。'
+      none: 暂无帖子高亮。
       preset: 预设
-      preset_custom: 🛠自定义（CSS）
-      preset_dashed-accent: ✂强调色虚线
-      preset_glow-blue: 💎宝石蓝
-      preset_glow-green: 🌿自然绿
-      preset_glow-purple: 🔮尊贵紫
-      preset_gold-border: 🥇金牌边框
-      preset_gradient-edge: 🌈幻彩边缘
-      preset_ribbon-gold: 🎗金丝带
-      preset_ribbon-red: 🎀红蝴蝶
-      preset_shadow-soft: 🌫柔光阴影
-      preset_silver-border: 🥈银牌边框
+      preset_custom: '🛠 自定义（CSS）'
+      preset_dashed-accent: '✂ 强调虚线'
+      preset_glow-blue: '💎 蓝色发光'
+      preset_glow-green: '🌿 绿色发光'
+      preset_glow-purple: '🔮 紫色发光'
+      preset_gold-border: '🥇 金色边框'
+      preset_gradient-edge: '🌈 渐变边缘'
+      preset_ribbon-gold: '🎗 金色缎带'
+      preset_ribbon-red: '🎀 红色缎带'
+      preset_shadow-soft: '🌫 柔和阴影'
+      preset_silver-border: '🥈 银色边框'
       title: 帖子高亮
     rules:
-      auto_group_enabled: 启用自动用户组分级
-      auto_group_enabled_help: 当用户总计积分达到预定值时，将自动升级到指定的用户组。
-      avatar_deco_enabled: 启用头像边框
-      avatar_deco_enabled_help: 总开关。在所有显示头像的位置，展示用户已佩戴的头像边框。
-      avatar_deco_in_lists: 话题列表中的头像边框
-      avatar_deco_in_lists_help: 在话题列表内部的头像上，显示头像边框。如需简洁的列表样式，可关闭此设置。
+      auto_awards_enabled: 按行为自动发放积分
+      auto_awards_enabled_help: 关闭后，下方自动奖励规则将停止运行，发起讨论、回复、点赞、每日登录和注册均不会再自动获得积分。其他功能仍可使用：管理人员仍可手动发放积分，用户也仍可消费、交易和兑换。用户打开「如何获得积分？」时，会看到积分由管理人员手动发放的说明。
+      auto_group_enabled: 启用自动用户组
+      auto_group_enabled_help: 当用户的累计积分达到指定门槛时，自动将其加入对应用户组。
+      avatar_deco_enabled: 启用头像框
+      avatar_deco_enabled_help: 总开关。在显示用户头像的地方应用其当前装备的头像框。
+      avatar_deco_in_lists: 在讨论列表中显示头像框
+      avatar_deco_in_lists_help: 在讨论列表中的头像上应用头像框。关闭后可让列表界面更加简洁。
       cover_deco_enabled: 启用个人资料封面
-      cover_deco_enabled_help: 主开关。在用户个人资料页面和用户卡片中，展示已佩戴的封面横幅图片。
-      currency_icon: 积分图标Class
-      currency_icon_help: 'FontAwesome的Class，例如fas fa-coins。'
+      cover_deco_enabled_help: 总开关。在用户个人资料和用户卡片中显示其当前装备的封面。
+      currency_icon: 积分图标类名
+      currency_icon_help: 'Font Awesome 类名，例如 fas fa-coins。'
       currency_name: 积分名称
-      currency_name_help: 积分的复数文本（中文不适用）。
-      daily_login_bonus: 登录有礼
-      daily_login_bonus_help: 用户每天第一次登录自动获得。
-      deco_in_lists: 话题列表中展示装饰
-      deco_in_lists_help: 在话题列表条目中用户名上展示装饰。
-      deco_in_posts: 跟帖中展示装饰
-      deco_in_posts_help: 在帖子和回帖中展示头像和用户名装饰。
-      deco_in_user_card: 用户卡/个人资料中展示装饰
-      deco_in_user_card_help: 鼠标悬浮在用户个人资料卡上时展示装饰。
-      earn_help_extra: 关于「如何获取积分」的补充说明
-      earn_help_extra_help: 可选。展示在道具商店页面的规则列表下方，介绍论坛活动和其它手动发放积分相关内容。仅支持纯文本，HTML代码将被过滤。
-      enabled: 启用积分体系
-      enabled_help: 核心开关。关闭后，用户将无法赚取积分。
-      help: 设置积分体系和属性，启用或停用不同类型的装饰，以及不同论坛互动的积分规则。
-      hide_badges_with_avatar_deco: 佩戴头像边框时隐藏用户勋章
-      hide_badges_with_avatar_deco_help: 开启后，如果用户佩戴了头像装饰，为了保持界面清爽，原本显示在头像旁边的管理员/版主/自定义勋章将被隐藏。
-      lifetime_enabled: 追踪和展示总计积分
-      lifetime_enabled_help: 总计积分是用户获得积分的累计数量。总计积分不会像余额那样，因为使用或扣除而减少。它代表用户的贡献总和。关闭后，总计积分仅在后台运行，以保障积分体系中的自动用户组功能可用），但是不会在道具商店、个人资料和头部展示。
-      name_deco_enabled: 启用用户名装饰
-      name_deco_enabled_help: 主开关。在用户名文本上，展示用户已佩戴的样式。
-      notify_bonus_only: 仅奖励（每日登陆和注册）
-      notify_bonus_only_help: 仅提示低频积分奖励。用户主动操作的话题、回帖和点赞积分通知，不进行提示。关闭此设置，将提示所有自动获取积分的记录。
-      notify_on_award: 自动获取积分通知
-      points_per_discussion: 发帖积分
-      points_per_discussion_help: 每发表一个话题所赚取的积分。
-      points_per_like_given: 点赞积分
-      points_per_like_given_help: 依赖flarum/likes插件。鼓励互动。
-      points_per_like_received: 集赞积分
-      points_per_like_received_help: 依赖flarum/likes插件。
-      points_per_post: 回帖积分
-      points_per_post_help: 每发表一个回帖（非自己所发）所赚取的积分。
-      points_per_registration: 注册有礼
-      points_per_registration_help: 用户注册自动获得。
-      points_short: 积分单位名称
-      points_short_help: 显示在积分数字后面。如pts，点，코인等，默认为pts。
+      currency_name_help: 积分名称，例如「金币」「宝石」。
+      daily_login_bonus: 每日登录奖励
+      daily_login_bonus_help: 每天首次检测到用户登录时发放。
+      deco_in_lists: 在讨论列表中显示装扮
+      deco_in_lists_help: 在讨论列表项中的用户名上应用装扮。
+      deco_in_posts: 在帖子中显示装扮
+      deco_in_posts_help: 在帖子和回复中应用头像框及用户名装扮。
+      deco_in_user_card: '在用户卡片 / 个人资料中显示装扮'
+      deco_in_user_card_help: 在用户个人资料卡片和悬浮卡片中应用装扮。
+      earn_help_extra: 「如何获得积分」补充说明
+      earn_help_extra_help: '可选。显示在积分商城「如何获得积分」面板的规则列表下方，可用于说明活动、比赛或其他手动发放积分的方式。仅支持纯文本，HTML 会被转义。'
+      enabled: 启用积分系统
+      enabled_help: 总开关。关闭后，无论自动规则还是手动操作都不会再发放积分。其他功能仍可使用：现有余额会保留，用户仍可在积分商城兑换物品、进行交易，已装备的装扮也会继续显示。用户打开「如何获得积分？」时，会看到论坛当前暂不发放积分的提示。
+      help: 配置积分系统、装扮开关、积分单位以及各项行为奖励。
+      hide_badges_with_avatar_deco: 装备头像框时隐藏用户徽章
+      hide_badges_with_avatar_deco_help: 启用后，装备头像框的用户，其头像旁的版主、管理员和自定义徽章会被隐藏，以保持头像框区域整洁。
+      lifetime_enabled: 记录并显示累计积分
+      lifetime_enabled_help: 累计积分记录用户历史上获得过的积分总和。与积分余额不同，积分被消费或扣除时，累计积分不会减少，可用于反映用户的累计贡献。关闭后，系统仍会在后台继续记录累计积分，以保证自动用户组正常工作，但不会在积分商城、个人资料或帖子页头中显示。
+      name_deco_enabled: 启用用户名装扮
+      name_deco_enabled_help: 总开关。将用户当前装备的样式应用到其显示名称。
+      notify_bonus_only: 仅通知每日登录和注册奖励
+      notify_bonus_only_help: 只保留每日登录和注册这类低频奖励通知，并跳过讨论、回复和点赞奖励。这些行为通常是成员刚刚主动完成的，再发通知提供的信息有限。关闭此项则会通知每一次自动积分奖励。
+      notify_on_award: 通知自动积分奖励
+      notify_on_award_help: 默认关闭，因为在活跃论坛中，每次发帖或点赞都发送通知会产生大量干扰。开启后可使用下方选项减少通知数量。
+      points_per_discussion: 发起新讨论获得积分
+      points_per_discussion_help: 用户发起新讨论时获得的积分。
+      points_per_like_given: 每次点赞获得积分
+      points_per_like_given_help: '需要 flarum/likes，可鼓励用户参与互动。'
+      points_per_like_received: 每次收到点赞获得积分
+      points_per_like_received_help: '需要 flarum/likes。'
+      points_per_post: 每条回复获得积分
+      points_per_post_help: 用户每发布一条回复时获得的积分（首帖除外）。
+      points_per_registration: 注册奖励
+      points_per_registration_help: 用户注册时一次性发放。
+      points_short: 积分单位简称
+      points_short_help: 显示在数值后的短单位，例如「pts」「点」「코인」。默认为「pts」。
       post_hl_deco_enabled: 启用帖子高亮
-      post_hl_deco_enabled_help: 主开关。在用户帖子上显示已佩戴的高亮装饰（边框/光晕/彩条）。
-      save: 保存变更
-      section_award_notifications_title: 每个操作都触发通知
-      section_awards_help: 定义用户进行不同论坛互动时，所赚取的积分数量。
-      section_awards_title: 积分赚取规则设置
-      section_currency_help: 设置积分的显示名称和图标。
-      section_currency_title: 属性设置
-      section_decorations_help: 每种装饰类型均可独立开启或关闭。在此处禁用的装饰类别，将不会在道具中心展示，不禁用对应的API请求。
-      section_decorations_title: 装饰类型设置
-      section_general_help: 积分功能的全局开关和主要功能开关。
-      section_general_title: 基础设置
-      section_placement_help: 设置积分勋章和装饰的佩戴展示方式。
-      section_placement_title: 装饰展示设置
-      show_in_post_header: 在帖子头部展示积分
-      show_in_post_header_help: 在帖子的用户名旁边展示积分小勋章。
-      show_in_user_profile: 在用户个人资料展示积分
-      show_in_user_profile_help: 在用户个人资料或用户卡中展示积分勋章。
-      title: 全局设置
-      title_deco_enabled: 启用自定义标题
-      title_deco_enabled_help: 主开关。在帖子的用户名旁边，展示已佩戴的标题勋章。
-      trade_enabled: 启用赠送
-      trade_enabled_help: 赠送功能的主开关。禁用后，赠送按钮和赠送页面将对所有用户不可见，等待中的赠送仍然可以取消。通过权限页面中的`向其他用户赠送装饰`权限选项，可以控制用户组的赠送权限。
-      unsaved: '{count}处待保存变更'
-      user_submissions_enabled: 允许用户上传装饰
-      user_submissions_enabled_help: 启用后，注册用户可以自主提交装饰设计。用户提交内容位于待审核队列，必须审核通过后，才会进入道具中心。网址只适用于头像边框和个人资料封面装饰类型，文件上传仍需管理员操作。
+      post_hl_deco_enabled_help: 总开关。使用当前装备的高亮样式装饰用户的帖子，例如边框、发光或缎带。
+      save: 保存更改
+      section_award_notifications_help: '自动规则发放积分时通知用户。通知会显示在通知中心；安装 flarum/realtime 后，还会通过 WebSocket 实时推送。每位成员仍可在自己的通知设置中关闭此类通知。'
+      section_award_notifications_title: 自动积分奖励通知
+      section_awards_help: 设置用户完成各类论坛行为时获得多少积分。
+      section_awards_title: 各项行为奖励积分
+      section_currency_help: 设置积分名称和图标在论坛中的显示方式。
+      section_currency_title: 积分单位
+      section_decorations_help: '每类装扮都可以单独关闭。关闭后会隐藏积分商城中的对应标签页，并拒绝该类型的 API 请求。'
+      section_decorations_title: 装扮类型
+      section_general_help: 控制积分系统及主要子功能的全局开关。
+      section_general_title: 常规
+      section_placement_help: 设置积分徽章和已装备装扮在论坛界面中的显示位置。
+      section_placement_title: 显示位置
+      show_in_post_header: 在帖子页头显示积分
+      show_in_post_header_help: 在帖子中每位用户的名称旁显示一个积分徽章。
+      show_in_user_profile: 在用户个人资料中显示积分
+      show_in_user_profile_help: 在用户个人资料和用户卡片中显示积分徽章。
+      title: 设置
+      title_deco_enabled: 启用自定义头衔
+      title_deco_enabled_help: 总开关。在帖子中用户名称旁显示其当前装备的头衔徽章。
+      trade_enabled: 启用用户间交易
+      trade_enabled_help: 交易功能总开关。关闭后，所有用户的「交易」按钮和交易页面都会隐藏，但仍可取消已有的待完成交易。哪些用户组可以交易，则由「权限」页面中的「与其他用户交易装扮」权限控制。
+      unsaved: '{count} 项未保存更改'
+      user_submissions_enabled: 允许用户提交装扮
+      user_submissions_enabled_help: '启用后，已注册用户可以提交自己的装扮设计。所有投稿都需要经过管理员审核，通过后才会进入积分商城。头像框和个人资料封面仅支持提交图片 URL，文件上传仍仅限管理员使用。'
     save: 保存
     submissions:
       approve: 通过
-      approved_alert: '由「{name}」审核通过。'
-      by: 提交人
-      empty: 暂无待审核申请。
-      help: 用户提交的装饰设计需要审核。审核通过的，设置价格并发布到道具商城；审核不通过的，道具商城不会显示（只显示在提交者的待处理列表中）。
-      image_url: 打开图片网址
+      approved_alert: '已通过「{name}」。'
+      by: 投稿者
+      empty: 当前没有待审核投稿。
+      help: 这里显示等待审核的用户装扮投稿。审核通过时设置价格并将物品加入积分商城，驳回后不会出现在目录中，但投稿者仍可看到自己的投稿记录。
+      image_url: '打开图片 URL'
       price_label: 价格（积分）
-      queue_heading: 列表
+      queue_heading: 审核队列
       refresh: 刷新
-      reject: 拒绝
-      rejected_alert: '由「{name}」审核拒绝。'
-      show_custom_css: 显示原始CSS
-      title: 待确认装饰
+      reject: 驳回
+      rejected_alert: '已驳回「{name}」。'
+      show_custom_css: '查看提交的 CSS'
+      title: 待审核投稿
     tabs:
-      all_trades: 所有交易
-      avatar: 头像边框
+      all_trades: 全部交易
+      avatar: 头像框
       cover: 个人资料封面
       groups: 自动用户组
-      manual: 发放或扣除
-      name: 名称样式
+      manual: '发放 / 扣除'
+      name: 用户名样式
       post_hl: 帖子高亮
-      rules: 积分和规则
-      submissions: 待确认装饰
+      rules: 积分与规则
+      submissions: 待审核投稿
       title: 自定义头衔
       users: 用户
     title:
       create: 创建头衔
       create_title: 创建新头衔
-      created: 标题创建成功。
-      existing: 已有头衔
-      field_color: 主色
-      field_color_help: '用于渲染头衔勋章背景色的CSS颜色值（#hex，rgb()或颜色名称）。'
-      field_css: 自定义CSS（可选）
-      field_css_help: '与名称装饰相同，支持属性列表和带有「&」占位符的完整CSS。'
+      created: 头衔已创建。
+      existing: 现有头衔
+      field_color: 强调色
+      field_color_help: 'CSS 颜色值（#hex、rgb() 或颜色名称），用于控制徽章背景色调。'
+      field_css: '自定义 CSS（可选）'
+      field_css_help: '与用户名样式相同，支持属性列表或使用 `&` 占位符的完整 CSS。'
       field_description: 描述
-      field_name: 名称（管理员文本）
+      field_name: 名称（后台标识）
       field_price: 价格
-      field_title_text: 可见勋章文本
-      field_title_text_help: 用户可见内容（最长60字符）。此内容将展示在用户名旁边，需要剪短。
-      help: 在用户名旁边显示勋章短文本（例如「种子用户」或「水贴能手」）。可为每种头衔设置不同的颜色和可选择的自定义CSS。
-      none: 暂无已创建的标题。
+      field_title_text: 显示的徽章文字
+      field_title_text_help: '用户实际看到的文字，最多 60 个字符。建议保持简短，因为它会显示在用户名旁。'
+      help: '显示在用户名旁的短徽章文字，例如「元老」「赞助者」。每个头衔都可以单独设置颜色，也可以使用自定义 CSS。'
+      none: 暂无自定义头衔。
       title: 自定义头衔
     trade_detail:
-      cancelled_at: 已取消
+      cancelled_at: 取消时间
       close: 关闭
-      completed_at: 已完成
-      confirm_revert: 确认回滚此交易？原交易中的道具和积分，将分别退还到原所有者。此操作无法撤销。
-      error_item_re_traded: 原交易完成后，其中一个道具发生了变化（再交易、赠送或管理员操作），无法强制回滚。使用发放/扣除功能，人工操作关联道具。
-      error_revert: 此交易无法回滚。
-      family_avatar: 头像边框
+      completed_at: 完成时间
+      confirm_revert: 确定撤销此交易吗？物品会归还原所有者，积分也会退还。此操作无法撤销。
+      error_item_re_traded: '此交易中的某件物品后来已经被再次交易、赠送或由管理员转移。此时自动撤销并不安全，请通过「发放 / 赠送」手动处理受影响的物品。'
+      error_revert: 无法撤销此交易。
+      family_avatar: 头像框
       family_cover: 个人资料封面
-      family_name: 名称样式
+      family_name: 用户名样式
       family_post_hl: 帖子高亮
       family_title: 自定义头衔
-      initiator: 发起人
-      no_items: 交易内容不包含道具
-      recipient: 接收人
-      revert: 回滚交易
-      revert_not_completed: 只有已完成的交易才能回滚。进行中和已取消的交易，其状态都不是已完成。
-      reverted_alert: 交易回滚成功。道具和积分均已退还到原所有者。
+      initiator: 发起方
+      no_items: 未提供物品
+      recipient: 接收方
+      revert: 撤销交易
+      revert_not_completed: 只有已完成的交易可以撤销。进行中或已取消的交易无法执行此操作。
+      reverted_alert: 交易已撤销，物品和积分均已归还原所有者。
       status_cancelled: 已取消
       status_completed: 已完成
       status_pending: 进行中
       title: 交易详情
-      title_with: 交易序号
-      updated_at: 更新
+      title_with: '交易 #{id}'
+      updated_at: 更新时间
     users:
       apply: 应用
       col_balance: 余额
       col_groups: 用户组
-      col_lifetime: 总计
+      col_lifetime: 累计积分
       col_user: 用户
-      filter_all: 所有用户
+      filter_all: 全部用户
       filter_positive: 有余额
-      filter_zero: 无余额
-      help: 查看所有用户的积分余额和历史总计。
+      filter_zero: 余额为零
+      help: 查看所有用户当前的积分余额和累计积分。
       next: 下一页
-      no_results: 没有符合条件的用户。
-      page_x_of_y: '第{x}页/共{y}页'
+      no_results: 没有匹配的用户。
+      page_x_of_y: '第 {x} / {y} 页'
       prev: 上一页
-      search_placeholder: 搜索用户名或邮箱
+      search_placeholder: 按用户名或邮箱搜索
       sort_balance: 按余额排序
-      sort_lifetime: 按总计排序
+      sort_lifetime: 按累计积分排序
       sort_username: 按用户名排序
-      title: 用户和积分
+      title: 用户与积分
   forum:
     award_modal:
-      add: 添加
-      added: '向{name}发放{amount}个积分。'
-      amount_help: 增加余额和总计积分；扣除余额（总计积分不变）。
+      add: 增加
+      added: '已向 {name} 发放 {amount} 积分。'
+      amount_help: 增加积分会同时增加积分余额和累计积分；扣除积分只会减少余额，累计积分保持不变。
       amount_label: 数量
       current_balance: 当前余额
-      current_lifetime: 历史总额
-      reason_label: 理由（可选）
-      reason_placeholder: 例如：论坛贡献
-      remove: 移除
-      removed: '移除{name}的{amount}个积分。'
-      title: '管理{name}的积分'
+      current_lifetime: 累计积分
+      reason_label: 原因（可选）
+      reason_placeholder: 例如：优质贡献
+      remove: 扣除
+      removed: '已扣除 {name} 的 {amount} 积分。'
+      title: '管理 {name} 的积分'
     badge:
-      tooltip: '{balance} {currency} （总计：{lifetime}）'
+      tooltip: '{balance} {currency}（累计：{lifetime}）'
     confirm:
-      after_purchase: 购买后余额
+      after_purchase: 兑换后余额
       cancel: 取消
       confirm: 确认
       current_balance: 当前余额
       price: 价格
-      title: 确认购买
-      title_cover: 确认购买
-      title_purchase: 购买此用户组？
-      title_tier: 加入该用户组？
+      title: 确认兑换
+      title_cover: 确认兑换
+      title_purchase: 购买此用户组的加入资格？
+      title_tier: 加入此用户组？
     how_to_earn:
-      close: 已知晓
-      footer: 积分将在操作后立即生成。管理员也可以手动发放。
-      intro: 下列所有操作将自动获得积分。
-      no_rules: 自动赚积分功能已关闭，只能手动发放。
-      open: 如何获取积分？
-      rule_daily_login: 每天首次登陆
-      rule_discussion: 发起话题
-      rule_like_given: 为别人点赞
-      rule_like_received: 获得别人点赞
-      rule_post: 回帖
-      rule_registration: 注册
-      system_off: 该论坛当前暂无法赚取积分。你的现有积分，仍然可以在商店中使用。
-      title: 如何获取积分
+      close: 知道了
+      footer: '积分会在上述行为完成后立即发放。管理人员也可以按需发放{unit}。'
+      intro: 通过以下方式自动获得积分。
+      no_rules: 当前未启用自动积分奖励，积分由管理人员手动发放。
+      open: 如何获得积分？
+      rule_daily_login: 每天首次登录
+      rule_discussion: 发起讨论
+      rule_like_given: 点赞其他人的帖子
+      rule_like_received: 帖子收到点赞
+      rule_post: 回复讨论
+      rule_registration: 注册账号
+      system_off: 论坛目前暂不发放积分。你的积分余额不会受影响，仍可在积分商城使用。
+      title: 如何获得积分
     my_decorations:
-      avatar: 头像边框
-      back_to_shop: 返回商店
+      avatar: 头像框
+      back_to_shop: 返回积分商城
       cover: 个人资料封面
       custom_title: 自定义头衔
-      equip: 佩戴
-      name: 名称样式
-      none: 你暂未获得此类装饰。
+      equip: 装备
+      name: 用户名样式
+      none: 你还没有此类装扮。
       post_hl: 帖子高亮
       preview: 实时预览
-      submit_cta: 提交我的装饰
-      tab_all: 所有
-      title: 我的装饰
-      toggle_nav_label: 开启或关闭装饰中心菜单
-      unequip: 取消佩戴
+      submit_cta: 提交自己的装扮
+      tab_all: 全部
+      title: 我的装扮
+      toggle_nav_label: 展开或收起装扮菜单
+      unequip: 取消装备
     nav:
-      my_decorations: 我的装饰
-      shop: 道具商店
+      my_decorations: 我的装扮
+      shop: 积分商城
     notifications:
       admin_fallback: 一位管理员
-      earned_daily_login: '你今日登陆获取了{amount}积分'
-      earned_discussion: '你发布话题获取了{amount}积分'
-      earned_like_given: '你点赞获取了{amount}积分'
-      earned_like_received: '别人点赞你的帖子，你获取了{amount}积分'
-      earned_other: '你获取了{amount}积分'
-      earned_post: '你发布回帖获取了{amount}积分'
-      earned_preference_label: 别人转赠了积分给你
-      earned_registered: '你加入论坛获取了{amount}积分'
-      item_family_avatar: 头像边框
+      earned_daily_login: '你因每日登录获得了 {amount} 积分'
+      earned_discussion: '你因发起讨论获得了 {amount} 积分'
+      earned_like_given: '你因点赞帖子获得了 {amount} 积分'
+      earned_like_received: '你获得了 {amount} 积分 — 有人点赞了你的帖子'
+      earned_other: '你获得了 {amount} 积分'
+      earned_post: '你因回复获得了 {amount} 积分'
+      earned_preference_label: 我获得积分时
+      earned_registered: '你因注册账号获得了 {amount} 积分'
+      item_family_avatar: 头像框
       item_family_cover: 个人资料封面
-      item_family_name: 名称样式
+      item_family_name: 用户名样式
       item_family_post_highlight: 帖子高亮
       item_family_title: 自定义头衔
-      item_granted: '{admin}向你授予了{family}「{item}」'
-      points_added: '{admin}向你发放了{amount}个积分'
-      points_removed: '{admin}移除了你的{amount}个积分'
-      tier_claimed: '你已加入{name}用户组！'
-      tier_excerpt: '阈值：永久{points}个积分'
-      trade_accepted: '{name}确认了交易，等待你确认后，交易将完成'
-      trade_completed: '与{name}的交易已完成'
-      trade_requested: '{name}希望与你进行交易'
+      item_granted: '{admin} 向你赠送了{family}「{item}」'
+      points_added: '{admin} 向你发放了 {amount} 积分'
+      points_removed: '{admin} 扣除了你的 {amount} 积分'
+      tier_claimed: '你已加入「{name}」用户组！'
+      tier_excerpt: '门槛：累计 {points} 积分'
+      trade_accepted: '{name} 已确认交易，你也确认后即可完成'
+      trade_completed: '与 {name} 的交易已完成'
+      trade_requested: '{name} 向你发起了交易'
     session_dropdown:
-      my_decorations: 我的装饰
-      trades: 交易中心
+      my_decorations: 我的装扮
+      trades: 交易
     shop:
-      badge_ends_in_days: '{count, plural, one {#天后结束} other {#天后结束}}'
-      badge_ends_in_hours: '{count, plural, one {#小时后结束} other {#小时后结束}}'
-      badge_remaining: '{count, plural, one {剩余#个} other {剩余#个}}'
-      badge_starts_on: '开始于{date}'
-      by_creator: '由{name}创作'
+      badge_ends_in_days: '{count, plural, other {# 天后结束}}'
+      badge_ends_in_hours: '{count, plural, other {# 小时后结束}}'
+      badge_remaining: '{count, plural, other {剩余 # 份}}'
+      badge_starts_on: '{date} 开始'
+      by_creator: '作者：{name}'
       claim: 兑换
-      claim_failed: 无法兑换此道具。
-      claimed: '{name}兑换成功！'
-      creator_tooltip: '该道具由{name}设计'
-      empty: 暂无可用的内容。
-      equip: 佩戴
-      equip_failed: 无法佩戴此道具。
-      equipped: 已佩戴
-      equipped_alert: '{name}佩戴成功'
-      equipped_label: 已佩戴
-      lifetime: 总计
+      claim_failed: 无法兑换此物品。
+      claimed: '已兑换「{name}」！'
+      creator_tooltip: '由 {name} 设计'
+      empty: 当前暂无可兑换的物品。
+      equip: 装备
+      equip_failed: 无法装备此物品。
+      equipped: 已装备
+      equipped_alert: '已装备「{name}」'
+      equipped_label: 已装备
+      lifetime: 累计积分
       login_to_claim: 登录
-      must_login: 登陆兑换道具
-      my_decorations: 我的装饰
+      must_login: 登录后才能兑换
+      my_decorations: 我的装扮
       not_enough: 积分不足
-      not_found: 没有找到页面。
-      subtitle: 消费积分购买装饰和道具。
-      tab_avatar: 头像边框
+      not_found: 页面不存在。
+      subtitle: 使用积分兑换装扮和其他权益。
+      tab_avatar: 头像框
       tab_cover: 个人资料封面
-      tab_name: 名称样式
+      tab_name: 用户名样式
       tab_post_hl: 帖子高亮
       tab_tiers: 用户组
       tab_title: 自定义头衔
-      tier_buy: 购买用户组
-      tier_buy_cost: 余额积分
+      tier_buy: 购买加入资格
+      tier_buy_cost: 购买所需积分
       tier_claim: 加入用户组
-      tier_claim_failed: 无法兑换此用户组。
+      tier_claim_failed: 无法加入该用户组。
       tier_claimed: 已加入
-      tier_claimed_alert: '已加入{name}！'
-      tier_cost: 加入所需的积分
-      tier_locked: 已锁定
+      tier_claimed_alert: '已加入「{name}」！'
+      tier_cost: 加入所需积分
+      tier_locked: 未解锁
       tier_not_enough: 积分不足
-      tier_points: 总计积分
-      tier_threshold: 解锁所需总计积分
-      tiers_empty: 暂无可用的用户组。
-      tiers_help: 当你的总计积分达到阈值时，将自动加入该用户组。你也可以直接使用余额购买此用户组。
+      tier_points: 累计积分
+      tier_threshold: 解锁所需累计积分
+      tiers_empty: 暂无可加入的用户组。
+      tiers_help: 达到累计积分门槛后可自动解锁用户组，也可以直接使用积分余额购买加入资格。
       tiers_title: 用户组
-      title: 道具商店
-      toggle_nav_label: 开启或关闭道具中心菜单
-      your_balance: 你的余额
+      title: 积分商城
+      toggle_nav_label: 展开或收起积分商城菜单
+      truncated: '当前只显示前 {count} 项。请在后台精简目录，或切换到其他分类查看。'
+      your_balance: 积分余额
     submit:
       color_label: 强调色（可选）
-      custom_css_help: '可选。使用「&」符号作为选择器占位符。CSS将在保存时自动优化。'
-      custom_css_label: 自定义CSS（可选）
+      custom_css_help: '可选。使用 `&` 作为选择器占位符，保存时会自动清理 CSS。'
+      custom_css_label: '自定义 CSS（可选）'
       description_label: 描述（可选）
-      family_avatar: 头像边框
+      family_avatar: 头像框
       family_cover: 个人资料封面
-      family_name: 名称样式
+      family_name: 用户名样式
       family_post_hl: 帖子高亮
       family_title: 自定义头衔
-      image_file_help: 支持最大4MB的PNG/GIF/WebP/APNG。后续管理员上传时，会执行相同的校验。
+      image_file_help: '支持 PNG / GIF / WebP / APNG，最大 4 MB。文件会使用与管理员上传相同的规则进行验证。'
       image_file_label: 图片文件
-      image_url_help: '直接链接到PNG/GIF/WebP/APNG图片的https://网址。'
-      image_url_label: 图片网址
-      intro: 创作你的装饰。提交后，管理员将进行审核。审核通过的装饰，将展示在道具商店中。
-      moderation_notice: 你的申请将提交至管理员，审核通过后方可显示在道具商店。
+      image_url_help: '填写指向 PNG / GIF / WebP / APNG 的 HTTPS 直链。'
+      image_url_label: '图片 URL'
+      intro: 设计你自己的装扮。提交后由管理员审核，通过后会出现在积分商城；未通过则会被驳回。
+      moderation_notice: 提交内容需经管理员审核，通过后才会出现在积分商城。
       name_label: 名称
-      name_placeholder: 例如「自由の我」
-      preset_label: 预设（可选参照）
+      name_placeholder: 例如：「日落渐变」
+      preset_label: 预设（可作为起点）
       source_file: 上传文件
       source_label: 图片来源
-      source_url: 使用图片网址
+      source_url: '使用图片 URL'
       submit: 提交
-      submitted_alert: 申请提交成功。管理员将进行审核。
-      title_text_label: 勋章显示文本
-      title_text_placeholder: 例如「自由の偶」
-      title_with: '提交新{family}'
+      submitted_alert: 已提交，管理员会尽快审核。
+      title_text_label: 显示的徽章文字
+      title_text_placeholder: 例如：「元老」
+      title_with: '提交新的{family}'
     trade:
       accept: 确认
-      accepted_waiting_alert: 你已确认你的交易内容。在对方确认之前，交易将处于进行中状态。你现在可以关闭此窗口并随时返回查看。
-      add_item: 添加道具
+      accepted_waiting_alert: 你已确认自己的交易内容。等待对方确认期间，可以关闭此窗口并稍后回来继续。
+      add_item: 添加物品
       balance: 你的余额
       cancel: 取消交易
       close_final: 关闭
-      close_keep: 关闭窗口（保留交易）
+      close_keep: 关闭（保留交易）
       completed_alert: 交易已完成。
-      confirm_cancel: 确认取消此交易吗？
-      error_accept_failed: 无法确认此交易。
-      error_cancel_failed: 无法取消此交易。
-      error_cannot_trade_with_self: 无法与自己进行交易。
-      error_duplicate_with_other_side: 对方已经添加此道具。
-      error_initiator_insufficient_points: 你没有足够的积分支付此交易。
-      error_insufficient_points: 交易已被拒绝：其中一方所持有的积分，不足以支付交易。
-      error_item_equipped: 佩戴中的道具，无法进行交易。在我的装饰页面中，取消佩戴后，重试操作。
-      error_item_unavailable: 交易已被拒绝：交易内容中的一个道具，已不在所声明的所有者名下。刷新或重新发起交易。
-      error_load: 无法加载此交易。
-      error_no_target: 尚未选择用户。
-      error_not_both_accepted: 对方拒绝了交易。重新检查交易内容后，可再次发起交易。
-      error_not_owned: 你尚未拥有此道具。
-      error_open_failed: 无法打开此交易。
-      error_patch_failed: 无法更新此交易。
-      error_recipient_insufficient_points: 对方没有足够的积分。
-      error_recipient_owns_item: 交易已被拒绝：对方已有你赠送的某一种道具。删除该道具后重试。
-      error_refresh_failed: 无法刷新此交易。
-      error_too_many: 交易中所包含的道具过多。
-      finalizing_in: 正在处理交易中…
-      no_items_yet: 可选。如果你想要给对方赠送积分或者白嫖对方道具，留空即可。
-      persist_hint: 交易已自动保存。可随时关闭窗口后，通过交易列表重新继续操作交易。
-      picker_empty: 无其它可添加的道具。
-      remove_item: 删除
-      status_both_accepted: 双方均已确认，正在处理中…
-      status_cancelled: 交易已被取消。
+      confirm_cancel: 确定取消此交易吗？
+      error_accept_failed: 无法确认交易。
+      error_cancel_failed: 无法取消交易。
+      error_cannot_trade_with_self: 不能与自己交易。
+      error_duplicate_with_other_side: 对方已经添加了该物品。
+      error_initiator_insufficient_points: 你的积分余额不足，无法按原定积分数额完成交易。
+      error_insufficient_points: 交易被拒绝：你或对方的积分余额已不足，无法完成交易。
+      error_item_equipped: 已装备的物品不能交易。请先在「我的装扮」中取消装备后重试。
+      error_item_unavailable: 交易被拒绝：某件物品已不在当前记录的所有者库存中。请刷新后重新设置交易内容。
+      error_load: 无法加载交易。
+      error_no_target: 未选择用户。
+      error_not_both_accepted: 对方已取消确认。请重新检查交易内容并再次确认。
+      error_not_owned: 你并未拥有该物品。
+      error_open_failed: 无法打开交易。
+      error_patch_failed: 无法更新交易内容。
+      error_recipient_insufficient_points: 对方的积分余额不足，无法按原定积分数额完成交易。
+      error_recipient_owns_item: 交易被拒绝：对方已经拥有你提供的某件物品。请将其从交易中移除后重试。
+      error_refresh_failed: 无法刷新交易。
+      error_too_many: 交易中添加的物品过多。
+      finalizing_in: 正在完成交易…
+      no_items_yet: 物品可不添加。你可以只提供积分，也可以暂时不提供任何内容。
+      persist_hint: 你提供的内容会自动保存，可随时关闭。交易会保留在交易列表中，再次打开时仍会保持原样。
+      picker_empty: 没有更多可添加的物品。
+      remove_item: 移除
+      status_both_accepted: 双方均已确认，正在完成交易…
+      status_cancelled: 交易已取消。
       status_completed: 交易已完成！
-      status_pending: 添加道具或积分。双方点击确认后完成交易。
-      their_offer: '{name}的交易内容'
+      status_pending: 添加物品或积分后，双方都确认即可完成交易。
+      their_offer: '{name} 提供'
       their_points: 对方提供的积分
-      title_loading: 打开交易…
-      title_with: '与{name}的交易'
-      unaccept: 拒绝
-      your_offer: 你的交易内容
+      title_loading: 正在打开交易…
+      title_with: '与 {name} 交易'
+      unaccept: 取消确认
+      your_offer: 你提供
       your_points: 你提供的积分
     trades_page:
       history_empty: 暂无已完成或已取消的交易。
-      history_heading: 已关闭的交易
-      items_short: '{count, plural, one {#个道具} other {#个道具}}'
-      load_failed: 无法加载你的交易。确认网络连接后重试。
-      no_permission: 你所在的用户组没有交易权限。联系管理员咨询确认。
+      history_heading: 历史交易
+      items_short: '{count, plural, other {# 件物品}}'
+      load_failed: 无法加载交易记录。请检查网络连接后重试。
+      no_permission: 你所在的用户组无权发起交易。如果需要调整，请联系管理员。
       open: 打开
       pending_empty: 暂无进行中的交易。
       pending_heading: 进行中的交易
       retry: 重试
       start_cancel: 取消
-      start_clear: 清空搜索
-      start_help: 输入用户名（或显示名称）查找目标交易用户。
+      start_clear: 清除搜索
+      start_help: 输入你想与之交易的用户名或显示名称。
       start_new: 发起交易
-      start_not_found: 没有找到此用户。
-      start_search_failed: 无法搜索用户。检查网络连接后重试。
-      start_submit: 进入交易页面
+      start_not_found: 没有找到匹配该名称的用户。
+      start_search_failed: 无法搜索用户。请检查网络连接后重试。
+      start_submit: 打开交易窗口
       start_title: 发起新交易
       start_username_label: 用户名
-      start_username_placeholder: 例如：zizaime
+      start_username_placeholder: 例如：ramon
       status_cancelled: 已取消
       status_completed: 已完成
       status_pending: 进行中
-      subtitle: 与其它用户交易装饰道具和积分。双方均确认交易后，方可完成。
-      their_side: 对方的交易内容
-      title: 交易中心
-      your_side: 你的交易内容
+      subtitle: 与其他用户交易装扮和积分。双方都确认后，交易才会完成。
+      their_side: 对方提供
+      title: 交易
+      your_side: 你提供
     user_controls:
       award_points: 管理积分
-      trade: 交易中心
+      trade: 交易
     user_profile:
-      trades_link: 交易
+      trades_link: 交易记录

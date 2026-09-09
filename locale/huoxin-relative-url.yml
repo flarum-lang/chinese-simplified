@@ -4,6 +4,6 @@
 
 huoxin-relative-url:
   admin:
-    internal_domains_help: 包含这些域名的链接将被自动转换为相对路径。
+    internal_domains_help: 使用这些域名的链接将转换为相对路径。
     internal_domains_label: 内部域名
-    internal_domains_placeholder: "每行一个域名。\n仅限域名，请勿包含 http/https。\n例如：\nforum1.org\nforum2.org\nforum3.org\n"
+    internal_domains_placeholder: "每行一个域名。\n仅填写域名，不要包含 http/https。\n例如：\nforum1.org\nforum2.org\nforum3.org\n"

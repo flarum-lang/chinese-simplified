@@ -8,187 +8,196 @@ ramon-backup:
       actions:
         generate: 生成密钥对
         generate_failed: 无法生成密钥对。
-      clipboard_failed: 复制失败。你的浏览器禁止了粘贴板权限。请手动复制。
-      clipboard_unavailable: 你的浏览器不支持复制到粘贴板。请手动复制。
+      clipboard_failed: 复制失败，浏览器阻止了剪贴板访问。请手动选择并复制此内容。
+      clipboard_unavailable: 你的浏览器不允许访问剪贴板，请手动选择并复制此内容。
       public_key:
         copied: 已复制！
         copy_title: 复制公钥
-        help_broken: 加密已配置完成，但无法解密。详情查阅上方提示。
-        help_healthy: 新备份将使用此密钥加密。任何人均可使用此私钥解密备份。
+        help_broken: 加密已经配置，但当前无法解密，请查看上方警告。
+        help_healthy: 新的加密备份会绑定此公钥，持有匹配私钥的人可以解密这些备份。
         label: 当前公钥
-        remove_button: 重置密钥对
+        remove_button: 轮换密钥对
       regenerate_modal:
-        acknowledge: 我确认需要重置。
+        acknowledge: 我已了解，并希望继续轮换。
         submit: 生成新密钥对
-        title: 重置加密密钥对
-        warning: 生成新的密钥对，将导致所有使用旧公钥加密的备份，无法在此服务器上解密（如果你持有旧私钥，你仍然可以在其它地方解密）。新生成的备份将使用新密钥加密。
+        title: 轮换加密密钥对
+        warning: 生成新的密钥对后，所有使用旧公钥加密的备份将在此服务器上无法读取；如果你保存了旧私钥，仍可在外部解密这些备份。之后创建的新备份将使用新公钥加密。
       reveal_modal:
-        close: 我已妥善保存私钥
+        close: 我已保存私钥
         copied: 已复制！
-        copy_button: 复制代码
-        intro: 新的密钥对已生成。私钥部分仅在下方展示一次，以后无法重新再次展示。复制私钥到你的config.php配置文件中。
-        snippet_label: 将这一行添加到config.php配置文件中：
+        copy_button: 复制代码片段
+        intro: '新的密钥对已生成。下面的私钥只会显示一次，请将其粘贴到 config.php。以后无法再次显示。'
+        snippet_label: '将以下内容添加到 config.php：'
         title: 保存你的私钥
-        warning_body: 如果你丢失此密钥，所有使用该公钥加密的备份将无法解密。
-        warning_title: 千万别丢失此密钥
-      section_help: 使用非对称密钥对加密新备份。公钥存储在数据库中，私钥必须粘贴到config.php配置文件中，Web进程不会持有任何未被明确提供的密钥。
+        warning_body: 如果私钥丢失，所有使用对应公钥加密的备份都将永久无法读取。
+        warning_title: 请妥善保存此私钥
+      section_help: '使用非对称密钥对加密新备份。公钥保存在数据库中，私钥必须写入 config.php，Web 进程只会使用明确配置给它的私钥。'
       section_title: 加密
       status:
         absent: 缺失
-        healthy: 加密已配置完成。在备份弹窗中勾选「加密」后，新生成的备份将自动加密。
-        libsodium_missing: 服务器上的libsodium模块不可用。无法启用加密。
-        load_failed: 无法从服务器加载加密状态。
-        mismatch_body: config.php配置文件中的私钥与数据库中存储的公钥不匹配。现有加密备份无法在此服务器上解密。请恢复原始私钥，或更换为新的密钥对（这不会改变现有加密文件，但在当前环境中将无法读取）。
-        mismatch_title: 密钥不匹配
-        not_setup: 暂未生成加密密钥对。除非每次手动设置，否则所有备份将无加密存储。
-        present: 当前
-        private_key_label: 私钥（conifg.php）
-        private_missing_body: 已生成公钥，但对应的私钥未在config.php配置文件中。在恢复私钥之前，现有加密备份无法在此处解密。
-        private_missing_title: 私钥缺失
+        healthy: 加密已配置。创建备份时勾选「加密」后，新备份将自动加密。
+        libsodium_missing: '此服务器 libsodium 模块不可用，无法启用加密。'
+        load_failed: 无法从服务器获取加密状态。
+        mismatch_body: 'config.php 中的私钥与数据库中保存的公钥不匹配。此服务器无法解密已有的加密备份。请恢复原来的私钥，或轮换为新的密钥对。轮换不会修改已有的加密备份，但已有备份将无法再当前服务器上解密。'
+        mismatch_title: 密钥对不匹配
+        not_setup: 尚未生成加密密钥对。除非在每次导出时主动启用加密，否则备份将以未加密形式保存。
+        present: 已配置
+        private_key_label: 私钥（config.php）
+        private_missing_body: '已经生成公钥，但 config.php 中没有与之匹配的私钥。在恢复对应私钥之前，此服务器无法解密已有的加密备份。'
+        private_missing_title: 缺少私钥
         public_key_label: 公钥
         retry: 重试
-        unknown: 无法加载加密状态。
+        unknown: 无法获取加密状态。
     errors:
-      boundary_body: 发生意外错误。其它面板可正常工作，如果问题持续发生，请重试或刷新页面。
+      boundary_body: 发生未知错误。面板的其他部分仍可正常使用，请尝试重试。如果问题持续存在，请刷新页面。
       boundary_retry: 重试
-      boundary_title: 无法渲染这部分内容。
+      boundary_title: 无法显示此内容。
       cancel_default: 取消
       confirm_default: 确认
-      generic: 发生了一些错误。请重试。
+      generic: 出现错误，请重试。
     export_modal:
       cancel_button: 取消
-      cancel_failed_warn: 弹窗已关闭，但服务器可能仍在持有备份任务锁。请稍后检查备份列表。如果出现卡住的旧任务，请重试或联系支持。
+      cancel_failed_warn: 弹窗已关闭，但服务器可能仍持有导出任务锁。请稍后检查备份列表；如果仍存在卡住的任务，请重试或联系支持人员。
       close_button: 关闭
-      completed: 备份创建成功。
-      content_assets: 资产（已上传文件）
-      content_assets_help: 路径public/assets/——头像、附件以及用户上传的所有内容。
+      completed: 备份已创建。
+      content_assets: 资源文件（上传文件）
+      content_assets_help: 'public/assets/ — 包括头像、附件以及用户上传的其他文件。'
       content_db: 数据库
-      content_db_help: 所有数据表——用户、帖子、设置等。打包文件包含DROP/CREATE语句，以便可以完整恢复。
-      content_extensions: 插件
-      content_extensions_help: 打包一个或多个已安装插件的源文件（路径workbench/或vendor/）。勾选该选项，并在下方选择需要的插件。
-      content_storage: 存储（缓存、会话、日志）
-      content_storage_help: 通常会被跳过：包含可在运行时重新生成的文件，在不同安装环境之间通常不具备可移植性。
-      contents_title: 打包内容
+      content_db_help: '包含所有数据表，例如用户、帖子、设置等。数据库转储包含 DROP / CREATE 语句，以便完整恢复。'
+      content_extensions: 扩展
+      content_extensions_help: '打包一个或多个已安装扩展的源码文件（来自 workbench/ 或 vendor/）。勾选后，可在下方选择要包含的扩展。'
+      content_storage: 存储目录（缓存、会话、日志）
+      content_storage_help: 通常可以跳过：其中主要是可重新生成的运行时文件，而且很少适合在不同安装环境之间迁移。
+      contents_title: 包含内容
       encryption_enable: 加密此备份
-      encryption_external: 使用其它公钥加密（转移用）
-      encryption_external_help: 粘贴目标服务器的公钥。用于在不共享私钥的情况下，准备将备份恢复到其他服务器。
-      encryption_help: 使用libsodium混合加密。文件包使用每个归档单独生成的对称密钥加密，然后该密钥再用公钥进行打包。
+      encryption_external: 使用其他公钥加密（用于迁移）
+      encryption_external_help: 粘贴目标服务器的公钥。适合准备要恢复到其他服务器的备份，无需共享私钥。
+      encryption_help: '使用 libsodium 混合加密。备份主体使用独立生成的对称密钥加密，再使用公钥封装这个对称密钥。'
       encryption_title: 加密
-      extensions_group_unknown: 其它
-      extensions_group_vendor: 路径Vender（Composer托管）
-      extensions_group_workbench: 路径Workbench（本地开发）
-      extensions_load_failed: 无法加载插件列表。
-      extensions_none: 该论坛尚未安装插件。
+      extensions_group_unknown: 其他
+      extensions_group_vendor: 'Vendor（由 Composer 管理）'
+      extensions_group_workbench: Workbench（本地开发）
+      extensions_load_failed: 无法加载扩展列表。
+      extensions_none: '当前 Flarum 未安装任何扩展。'
       extensions_select_all: 全选
       extensions_select_none: 全不选
       extensions_tag_unknown: 未知
-      extensions_tag_vendor: Vendor
-      extensions_tag_workbench: Workbench
-      files_count: '已完成{done}/总文件数量{total}'
-      intro: 选择打包内容。打包后将生成一个单独的.flarum文件，可以下载、转移或异地备份。
-      phase_bundle: 打包文件中…
-      phase_db_dump: 备份数据库中…
-      phase_done: 完成
+      extensions_tag_vendor: vendor
+      extensions_tag_workbench: workbench
+      files_count: '{done} / {total} 个文件'
+      intro: '选择要打包的内容。最终会生成一个 .flarum 文件，可用于下载、迁移或异地保存。'
+      phase_bundle: 正在打包文件…
+      phase_db_dump: 正在导出数据库…
+      phase_done: 已完成
       phase_error: 错误
-      phase_error_network: 备份过程中与服务器连接中断。任务可能仍在服务器上运行。请稍后检查备份列表。
-      phase_finalize: 收尾中…
-      phase_scan: 扫描中…
+      phase_error_network: 备份过程中与服务器的连接中断。任务可能仍在服务器上运行，请稍后检查备份列表。
+      phase_finalize: 正在完成…
+      phase_scan: 正在扫描…
       start_button: 开始备份
-      start_failed: 无法启动备份。
-      target_help: '此备份将恢复到哪里？如果目标数据库引擎与当前引擎不同，请选择目标引擎。系统将按该引擎生成 SQL，以便你可以从MySQL迁移到PostgreSQL（或其它），无需手动转换。'
+      start_failed: 无法开始备份。
+      target_help: '选择恢复此备份的目标数据库引擎。如果目标实例与当前实例使用不同的数据库，请选择目标引擎。系统会直接生成适配该引擎的 SQL，因此可在 MySQL、PostgreSQL 等受支持的数据库之间迁移，无需手动转换。'
       target_mariadb: 'MariaDB 10.3+'
       target_mysql: 'MySQL 5.7+ / 8.0.30+'
       target_postgres: 'PostgreSQL 10+'
-      target_same: 与当前安装环境相同（无需转换）
+      target_same: 与当前实例相同（不转换）
       target_sqlite: 'SQLite 3.35+'
       target_title: 目标数据库
       title: 创建备份
-      warnings_help: 部分字段使用的数据类型，在所选目标数据库引擎中不存在直接对应类型。备份本身仍可正常完成，但目标字段的校验规则或行为可能无法完全一致。在将此备份用于迁移前，请务必检查下方各项说明。
-      warnings_title: '{count}条转换警告|{count}条转换警告'
+      warnings_help: 部分列使用的数据类型在所选目标数据库中没有完全对应的类型。备份仍会正常完成，但转换后的列在校验或实际行为上可能与原数据库不完全一致。将此备份用于迁移前，请逐条检查下方说明。
+      warnings_title: '{count, plural, other {# 个转换警告}}'
     import_modal:
       cancel_button: 取消
-      cancel_failed_warn: 弹窗已关闭，但服务器可能仍在应用更改。请在重试前先确认服务器状态。
-      choose_file: 点击选择一个.flarum文件
+      cancel_failed_warn: 弹窗已关闭，但服务器可能仍在应用更改。再次尝试前，请先确认服务器当前状态。
+      choose_file: '点击选择 .flarum 文件'
       close_button: 关闭
-      completed: 还原成功。
-      confirm_body: 归档中的数据表将覆盖当前数据表。文件将被写入其原始路径。
-      confirm_check: 我已确认。使用备份内容覆盖当前数据。
-      confirm_title: 覆盖现有数据
-      done_body: 所有选定文件已恢复。数据库未被修改，因此你当前的会话保持不变。
-      done_title: 还原成功
-      extensions_composer_note: '打包中包含composer.json和composer.lock文件，将在恢复时覆盖目标项目根目录。恢复完成后请运行「composer install」来生成vendor扩展。'
+      completed: 恢复完成。
+      confirm_body: 归档中的数据表会替换当前数据表，文件则写回其原始路径。
+      confirm_check: 我已了解。使用此备份替换当前数据。
+      confirm_title: 替换现有数据
+      done_body: 所有选中的文件均已恢复。数据库没有被修改，因此当前会话保持不变。
+      done_title: 恢复完成
+      extensions_composer_note: 'composer.json 会与当前服务器的文件合并，而不是直接覆盖，因此不会移除当前已安装的软件包。composer.lock 不会应用，因为其他服务器的锁文件可能会移除只存在于当前环境的软件包。恢复完成后，请运行 composer install，以安装备份中由 Composer 管理的扩展。'
       extensions_tag_unknown: 未知
-      extensions_tag_vendor: Vendor
-      extensions_tag_workbench: Workbench
-      inspect_title: 打包详情
-      inspecting_archive: 正在检查打包内容…
-      key_help: 该归档已加密。请粘贴匹配的base64私钥。它将仅保存在当前浏览器会话中，并且只发送一次到服务器用于恢复。
-      key_hint_local: 留空则使用此服务器config.php配置文件中私钥。
+      extensions_tag_vendor: vendor
+      extensions_tag_workbench: workbench
+      incomplete_body: 恢复流程已经执行到最后，但部分选中的内容未能写入。在确认迁移完成前，请先检查下方详情。
+      incomplete_title: 恢复未完全完成
+      inspect_title: 归档详情
+      inspecting_archive: 正在检查归档文件…
+      key_help: '此归档文件已加密。请粘贴匹配的 Base64 编码私钥；私钥只会保留在当前浏览器会话中，并在恢复时仅向服务器发送一次。'
+      key_hint_local: '留空则使用当前服务器 config.php 中配置的私钥。'
       key_title: 私钥
-      logout_body: 数据库恢复已替换本服务器的「users」和「sessions」表，因此你当前登录的账号在此环境中已不存在。请使用导入论坛的账号重新登录以继续。
-      logout_button: 刷新并登录
-      logout_step_login: 使用原站管理员凭据登录
-      logout_step_reload: '请刷新下面的页面以清除过期的会话 Cookie'
-      logout_title: 你以退出登录
+      logout_body: '恢复数据库后，当前服务器的 `users` 和 `sessions` 数据表已被替换，因此你原先登录的账号已不再存在于恢复后的数据中。请使用源论坛的账号凭据重新登录后继续。'
+      logout_button: 重新加载并登录
+      logout_step_login: 使用来源论坛的管理员账号登录
+      logout_step_reload: '重新加载页面，清除失效的会话 Cookie'
+      logout_title: 你已退出登录
       meta_contents: 包含内容
-      meta_flarum: Flarum版本
-      meta_size: 文件体积
-      meta_source_url: 原站地址
+      meta_flarum: 'Flarum 版本'
+      meta_size: 归档大小
+      meta_source_url: '来源 URL'
       meta_when: 创建时间
-      phase_done: 完成
+      phase_done: 已完成
       phase_error: 错误
-      phase_error_network: 恢复过程中与服务器连接中断。服务器可能仍在写入数据。请稍等片刻，并在重试前先检查数据库状态。
+      phase_error_network: 恢复过程中与服务器的连接中断。服务器可能仍在写入数据，请稍后检查数据库状态后再重试。
       phase_extract: 正在解压…
-      phase_finalize: 收尾中…
-      phase_inspect: 正在校验打包内容…
-      phase_restore: 正在还原数据库…
-      phase_rewrite: 正在重定向URL…
-      reload_button: 刷新页面
-      reload_required: 论坛数据已被覆盖。请刷新页面以继续使用新的会话。你之前的登录状态可能也已被覆盖。
-      section_assets: 资产
-      section_count: '文件总数{count}'
+      phase_finalize: 正在完成…
+      phase_inspect: 正在检查归档文件…
+      phase_reconcile: 正在整合项目文件…
+      phase_restore: 正在恢复数据库…
+      phase_rewrite: '正在重写 URL…'
+      phase_verify: 正在检查论坛能否正常启动…
+      reload_button: 重新加载页面
+      reload_required: 论坛数据已被替换。请重新加载页面，以新的会话继续操作。原有登录会话也可能已经失效。
+      root_extend_warning: '根目录的 extend.php 会在 Flarum 错误处理器启用前加载。如果其中引用了当前服务器未安装的类，论坛可能直接出现空白的 HTTP 500 错误。替换前，当前文件会先复制为 .bak- 备份，恢复完成后，系统还会检查其中是否存在无法加载的类。'
+      section_assets: 资源文件
+      section_count: '{count} 个文件'
       section_db: 数据库
-      section_extensions: 插件
-      section_storage: 存储
-      selection_help: 选择要应用的备份部分。任何未勾选的内容在恢复时都会被跳过，相应的文件/数据库变更不会被应用。
-      selection_title: 选择恢复内容
-      start_button: 还原
-      start_failed: 无法启动还原。
+      section_extensions: 扩展
+      section_preserve_settings: 保留当前服务器的邮件、队列和集成设置
+      section_root_extend: '使用备份中的文件替换根目录 extend.php'
+      section_storage: 存储目录
+      selection_help: 选择要从此备份恢复的部分。取消勾选的内容会在恢复时直接跳过，对应文件或数据库更改都不会应用。
+      selection_title: 恢复内容
+      server_state_help: '有些配置属于当前服务器本身，而不是备份中的论坛，例如 SMTP 凭据、队列驱动、集成令牌以及根目录的 extend.php。以下选项决定恢复后保留哪些当前服务器配置。'
+      server_state_title: 当前服务器自身配置
+      start_button: 恢复
+      start_failed: 无法开始恢复。
       title: 导入备份
-      upload_button: 上传并开始校验
+      upload_button: 上传并检查
       upload_failed: 上传失败。
-      upload_idle_timeout: 上传停滞（超过一分钟未传输数据）。请检查网络后重试。
-      uploading_pct: '正在上传…{pct}%'
-      url_rewrite_note: 数据库中指向原服务器的URL将会自动重写为当前服务器的URL。
-      warning_body: 导入备份将覆盖数据库并替换文件。请先确保你已经为当前安装环境做好了最新备份。
-      warning_title: 该操作将覆盖数据
+      upload_idle_timeout: 上传已停滞（超过一分钟没有发送数据）。请检查网络后重试。
+      uploading_pct: '正在上传… {pct}%'
+      url_rewrite_note: '数据库中指向来源服务器的 URL 会自动重写为当前服务器的 URL。'
+      warning_body: 导入备份会覆盖数据库并替换文件。请先确认当前实例已有一份最新备份。
+      warning_title: 此操作将替换现有数据
     list:
       col_contents: 内容
-      col_size: 体积
+      col_size: 大小
       col_status: 加密
-      col_when: 时间
-      confirm_delete: 永久删除该备份？将从服务器中删除该.flarum文件。
-      confirm_delete_title: 确认删除该备份？
-      content_assets: 资产
+      col_when: 创建时间
+      confirm_delete: '确定要永久删除此备份吗？服务器上的 .flarum 文件也会一并删除。'
+      confirm_delete_title: 确定要删除此备份吗？
+      content_assets: 资源文件
       content_db: 数据库
-      content_extensions: 插件
-      content_storage: 存储
-      delete_failed: 无法删除该备份。
+      content_extensions: 扩展
+      content_storage: 存储目录
+      delete_failed: 无法删除备份。
       delete_title: 删除
-      deleted: 备份删除完成。
+      deleted: 备份已删除。
       download_title: 下载
-      empty: 暂无备份。点击「创建备份」开始操作。
+      empty: 暂无备份。点击「创建备份」生成一个。
       encrypted: 已加密
       load_failed: 无法加载备份列表。
       plain: 未加密
       retry: 重试
-      target_for: '面向{engine}'
-      target_tooltip: '该备份的SQL是面向{engine}生成的，只能还原到{engine}安装环境。'
+      target_for: '适用于 {engine}'
+      target_tooltip: '此备份中的 SQL 针对 {engine} 生成，请恢复到使用 {engine} 的 Flarum 实例。'
     panel:
-      actions_help: 将论坛打包为可移动副本，进行还原或迁移到其它安装环境。
-      actions_title: '备份&迁移'
+      actions_help: '创建可移植的论坛备份，用于恢复或在不同 Flarum 实例之间迁移数据。'
+      actions_title: 备份与迁移
       create_button: 创建备份
       import_button: 导入备份
-      list_title: 已有备份
+      list_title: 已保存的备份
     permissions:
       manage_label: 管理备份

@@ -7,17 +7,17 @@ ramon-avocado:
     footer_settings:
       footer_company: 公司信息
       footer_company_description: 公司描述
-      footer_company_description_placeholder: 简要描述您的公司或论坛…
-      footer_company_logo_url: '公司 Logo 地址'
+      footer_company_description_placeholder: 简单介绍一下你的公司或论坛…
+      footer_company_logo_url: '公司 Logo URL'
       footer_company_name: 公司名称
-      footer_copyright_text: 版权文本
+      footer_copyright_text: 版权信息
       footer_enabled: 启用自定义页脚
       footer_footer_bottom: 页脚底部
       footer_links_config: 页脚链接配置
-      footer_links_help_json: '以 JSON 格式配置页脚链接列。每列应包含标题（title）以及包含标签（label）和链接（url）的对象列表。'
+      footer_links_help_json: '使用 JSON 格式配置页脚链接栏。每一栏应包含标题，以及由 label 和 url 组成的链接列表。'
       footer_show_social: 显示社交媒体链接
-      footer_social: 社交媒体链接
-      footer_social_help_json: '以 JSON 格式配置社交媒体链接。可使用的键包括：facebook、twitter、linkedin、instagram、youtube。'
+      footer_social: 社交链接
+      footer_social_help_json: '使用 JSON 格式配置社交媒体链接。可用键：facebook、twitter、linkedin、instagram、youtube。'
       section_team: 团队页面
       team_desc_label: 页面描述
       team_desc_placeholder: 认识为论坛作出贡献的伙伴们。
@@ -27,307 +27,307 @@ ramon-avocado:
       team_groups_help: 所选群组的成员将展示在团队页面中。
       team_groups_label: 要显示的群组
       team_title_label: 页面标题
-    loading: 加载中…
+    loading: 正在加载…
     search_tags: 搜索标签…
     settings:
-      auth_image_help: 显示在登录、注册和找回密码弹窗右侧面板的背景图片。
-      auth_image_label: 认证弹窗图片
-      banner_image_help: 上传显示在论坛顶部的横幅（Hero）图片。
+      auth_image_help: 设置登录、注册和忘记密码弹窗右侧区域显示的背景图片。
+      auth_image_label: 登录注册弹窗图片
+      banner_image_help: 上传显示在论坛顶部的横幅图片。
       banner_image_label: 横幅图片
-      bookmarks_enabled_help: 在卡片，书签页面，备忘，提醒和提醒通知等功能处展示保存书签按钮。关闭此设置将隐藏所有保存书签按钮，并禁用相关API；已保存的书签数据仍然保留。
-      bookmarks_enabled_label: 启用书签系统
-      bookmarks_fof_notice: '检测到已启用FoF Bookmarks，因此Avocado会将自身的书签功能交由FoF Bookmarks管理：主题中仅显示一个“已保存”菜单项和一个保存按钮，保存内容将写入FoF Bookmarks。启用FoF Bookmarks后，备注和提醒功能将不可用；Avocado中原有的保存数据会被保留，停用FoF Bookmarks后将恢复显示。'
-      cakeday_enabled_help: 在用户注册的周年纪念日期间，用户名旁边（话题卡片，回帖和用户卡片）将显示一个🎂图标。
-      cakeday_enabled_label: 显示账号纪念日徽章
-      categories_heading_label: 分类栏目标题
-      clock_format_12: '12小时制（下午2:30）'
-      clock_format_24: '24小时制（14:30）'
-      clock_format_auto: 自动（基于用户浏览器）
-      clock_format_help: 用于提醒功能中：「提醒我」功能中的时间选择控件和已存书签卡片中展示的时间。自动则使用访问者的浏览器设置。
+      bookmarks_enabled_help: '提供卡片收藏按钮、「收藏」页面、备注、提醒及提醒通知。关闭后会隐藏所有相关功能并禁用 API 接口，但已保存的数据会保留。'
+      bookmarks_enabled_label: 启用收藏系统
+      bookmarks_fof_notice: 'FoF Bookmarks 已启用，因此 Avocado 会将自身的收藏系统交由它接管：主题只会显示一个「收藏」菜单项和一个收藏按钮，收藏操作会写入 FoF Bookmarks。启用期间无法使用备注和提醒；Avocado 中已有的收藏数据会继续保留，禁用 FoF Bookmarks 后即可恢复使用。'
+      cakeday_enabled_help: '在账号注册周年当天，于用户名旁显示 🎂（讨论卡片、帖子和用户卡片中均会显示）。'
+      cakeday_enabled_label: 显示注册周年徽章
+      categories_heading_label: 板块栏目标题
+      clock_format_12: '12 小时制（2:30 PM）'
+      clock_format_24: '24 小时制（14:30）'
+      clock_format_auto: 自动（跟随访客浏览器）
+      clock_format_help: 用于提醒功能，包括「提醒我」中的小时选择器，以及收藏卡片上显示的时间。「自动」会跟随每位访客的浏览器设置。
       clock_format_label: 时间格式
-      colored_border_style_full: 全边框
-      colored_border_style_help: 为话题卡片添加与主标签颜色相同的颜色边框。
-      colored_border_style_label: 话题卡片边框样式
-      colored_border_style_left: 左边框
+      colored_border_style_full: 完整边框
+      colored_border_style_help: 使用主标签颜色为讨论卡片添加彩色边框。
+      colored_border_style_label: 讨论卡片边框样式
+      colored_border_style_left: 左侧边框
       colored_border_style_none: 无
-      colored_enabled_help: 将当前标签或话题的配色，自动应用为全站的按钮、链接和其它元素强调色。
-      colored_enabled_label: 启用自动强调色
-      custom_auth_modal_help: 展示自定义的登陆、注册和重置密码弹窗面板。关闭此设置则使用Flarum默认弹窗。
-      custom_auth_modal_label: 使用自定义登陆和注册弹窗
-      custom_default_avatar_help: 为没有上传头像的用户上传自定义默认头像图片。
+      colored_enabled_help: 将当前标签或讨论的颜色应用于论坛中的主要按钮、链接及其他界面强调元素。
+      colored_enabled_label: 启用颜色强调
+      custom_auth_modal_help: '在登录、注册和忘记密码弹窗中使用自定义侧栏设计。关闭后使用 Flarum 默认弹窗。'
+      custom_auth_modal_label: '使用自定义登录 / 注册弹窗'
+      custom_default_avatar_help: 为没有设置头像的用户上传自定义默认头像图片。
       custom_default_avatar_label: 自定义默认头像
-      custom_hero_enabled_help: 使用自定义HTML内容，替换默认横幅内容，包含：图标、标题、描述、登录/注册按钮。横幅容器、背景图片和遮罩层不变。与默认横幅一样，自定义横幅仅对访客可见。
-      custom_hero_enabled_label: 使用自定义横幅（Hero）内容（HTML）
-      custom_hero_html_help: HTML内容将嵌入横幅遮罩层，替换.AvocadoHome-heroBannerContent内容。支持使用内链「<style>」标签。
-      custom_hero_html_label: 自定义横幅HTML
-      custom_hero_html_placeholder: "<div class=\"AvocadoHome-heroBannerContent\">\n  <h1 class=\"AvocadoHome-heroBannerTitle\">欢迎访问</h1>\n  <p class=\"AvocadoHome-heroBannerDesc\">这里可以时任何你需要展示的内容：链接、图片、按钮等</p>\n</div>"
-      custom_loading_spinner_help: 使用SVG加载动画替换默认的文字加载指示。
-      custom_loading_spinner_label: 个性化加载动画
+      custom_hero_enabled_help: '使用自己的 HTML 替换默认横幅内容（图标、标题、描述、登录/注册按钮）。横幅容器、背景图片和遮罩层仍会保留。与默认横幅一样，仅向访客显示。'
+      custom_hero_enabled_label: 使用自定义横幅内容（HTML）
+      custom_hero_html_help: '注入到横幅遮罩层中的 HTML（替换 .AvocadoHome-heroBannerContent）。支持内联 style 标签。'
+      custom_hero_html_label: '自定义横幅 HTML'
+      custom_hero_html_placeholder: "<div class=\"AvocadoHome-heroBannerContent\">\n  <h1 class=\"AvocadoHome-heroBannerTitle\">欢迎！</h1>\n  <p class=\"AvocadoHome-heroBannerDesc\">你想放什么都可以——链接、图片、按钮。</p>\n</div>"
+      custom_loading_spinner_help: 使用动画加载图标替换论坛启动页面默认的文字加载提示。
+      custom_loading_spinner_label: 自定义加载动画
       disc_style_default: 默认
-      disc_style_editorial: 编辑式（讨论轴线）
-      disc_style_help: "默认使用当前页面的标准布局。选择「编辑式」后，阅读区域会加宽，并在头像所在列贯穿一条细线，将整个讨论串联起来。每个头像都会作为节点排列在线上，而不同时间段之间则以带标签的时间节点加以区分。两种布局使用相同的页头。编辑式布局仅适用于桌面设备。在手机和平板电脑上，无论选择哪种布局，均保持当前页面样式。\n"
-      disc_style_label: 话题页面样式
+      disc_style_editorial: 编辑式排版（对话轴线）
+      disc_style_help: "默认使用当前的讨论页样式。「编辑式排版」会加宽阅读区域，并在头像栏中用一条细线串联整个对话，每个头像作为细线上的节点，时间间隔则显示为带时间标签的小节点。两种样式的页头保持一致。仅桌面端生效。无论选择哪种样式，手机和平板布局不变。\n"
+      disc_style_label: 讨论页面样式
       featured_tags_empty: 未找到标签。
-      featured_tags_help: 所选标签将在首页和标签页中以星标徽章突出显示。
-      featured_tags_label: 精选标签
-      fixed_avatar_effect_help: 在桌面端阅读长帖时，保持帖子头像悬停在侧边。
-      fixed_avatar_effect_label: 启用头像固定效果
-      following_heading_label: 关注话题标题
-      hero_deco_divider_help: 在两个装饰图标之间，显示一个分隔图标（类似竞技网站中「vs」符号）。
-      hero_deco_divider_icon_help: '分隔符图标的Font Awesome类名称，如：「fas fa-times」或「fas fa-circle」。'
-      hero_deco_divider_icon_label: 分隔符的类名称
-      hero_deco_divider_label: 在装饰标签之间显示分隔符
-      hero_decoration_icon_count_help: 当设置为1个图标时，显示第一个子标签。当设置为2个图标时，第二个子标签图标将显示在第一个图标右边。
+      featured_tags_help: 选中的板块会在首页和板块页面以星标突出显示。
+      featured_tags_label: 精选板块
+      fixed_avatar_effect_help: 在桌面端阅读较长回复时，让帖子头像保持固定显示。
+      fixed_avatar_effect_label: 启用固定头像效果
+      following_heading_label: 关注讨论标题
+      hero_deco_divider_help: 在两个装饰图标之间显示一个图标，例如竞技网站可使用「VS」符号。
+      hero_deco_divider_icon_help: '分隔图标使用的 Font Awesome 类名，例如「fas fa-times」或「fas fa-circle」。'
+      hero_deco_divider_icon_label: 分隔图标类名
+      hero_deco_divider_label: 在装饰图标之间显示分隔图标
+      hero_decoration_icon_count_help: '1 个图标使用第一个子标签；2 个图标还会显示第二个子标签的图标，并向左错开。'
       hero_decoration_icon_count_label: 装饰图标数量
-      hero_decoration_icon_count_one: 1个图标（第一个子标签）
-      hero_decoration_icon_count_two: 2个图标（第一个和第二个子标签）
-      hero_decoration_icon_help: 在话题横幅头部右侧，将副标签图标显示为大尺寸装饰性元素。
-      hero_decoration_icon_label: 在话题横幅中显示副标签图标
-      hero_decoration_icon_opacity_help: '设置装饰性图标的不透明度百分比。100 = 完全不透明，0 = 完全不可见。'
-      hero_decoration_icon_opacity_label: 图标不透明度（0-100）
-      hero_image_position_help: 'CSS background-position 属性值，例如 ''center top'' 或 ''50% 20%''。'
+      hero_decoration_icon_count_one: '1 个图标（第一个子标签）'
+      hero_decoration_icon_count_two: '2 个图标（第一和第二个子标签）'
+      hero_decoration_icon_help: 在讨论页头右侧以大型装饰元素显示次级标签图标。
+      hero_decoration_icon_label: 在讨论横幅中显示次级标签装饰图标
+      hero_decoration_icon_opacity_help: '以百分比设置装饰图标的不透明度。100 = 完全不透明，0 = 不可见。'
+      hero_decoration_icon_opacity_label: 图标不透明度（0–100）
+      hero_image_position_help: 'CSS background-position 的值，例如「center top」或「50% 20%」。'
       hero_image_position_label: 横幅图片位置
-      hero_image_tags_help: 当用户在新讨论中添加这些标签之一时，编辑器将显示一个可选的图片上传字段。上传的图片将作为话题横幅背景图，并显示为首页展示区的首张图片。
-      hero_image_tags_label: 需要横幅图片的标签
-      hide_links_for_guests_help: 阻止游客点击帖子中的链接。点击时显示登录/注册提示，而非直接跳转。
-      hide_links_for_guests_label: 对游客隐藏链接
-      loading_spinner_style_label: 动画样式
-      logo_enabled_help: '在页眉中显示自定义 Logo。'
+      hero_image_tags_help: 用户在新讨论中添加这些标签中的任意一个后，编辑器会显示一个可选的图片上传项。上传的图片会作为讨论横幅背景，并作为首页展示区域中的首张图片。
+      hero_image_tags_label: 显示横幅图片上传项的标签
+      hide_links_for_guests_help: '阻止访客直接打开帖子中的链接。点击链接时改为显示登录 / 注册提示。'
+      hide_links_for_guests_label: 对访客隐藏链接
+      loading_spinner_style_label: 加载动画样式
+      logo_enabled_help: '在顶部导航中显示自定义 Logo。'
       logo_enabled_label: '启用自定义 Logo'
-      logo_svg_help: '为您的论坛上传自定义 SVG 格式 Logo。'
-      logo_svg_label: 'SVG 格式 Logo'
-      popular_heading_label: 热点话题标题
-      post_badge_position_below: 在用户名下方（独占一行）
-      post_badge_position_default: Flarum默认（关闭：徽章叠加在头像上）
-      post_badge_position_help: "成员组徽章在帖子中的显示位置。第一项会关闭自定义徽章，恢复为 Flarum 默认的圆形徽章，并与头像重叠显示。其他选项会将每个徽章显示为胶囊形标签，并在图标旁显示用户组名称。无论是否启用固定头像效果，此设置均可正常使用。手机端始终采用紧凑的叠加显示方式。\n"
-      post_badge_position_inline: 在用户名旁边
-      post_badge_position_label: 帖子中群组徽章的展示位置
-      post_badge_position_side: 在头像下方（左侧边栏）
-      post_badge_position_side_icons: 在头像下方（仅图标堆叠）
-      post_cta_position_1: 第一条帖子之后
-      post_cta_position_2: 第二条帖子之后
-      post_cta_position_3: 第三条帖子之后
-      post_cta_position_4: 第四条帖子之后
-      post_cta_position_5: 第五条帖子之后
-      post_cta_position_help: 在对应帖子和后贴之间放置CTA横幅。
-      post_cta_position_label: CTA横幅位置（在第几条帖子后面）
-      presence_enabled_help: 在话题横幅中显示带有用户头像的「N人正在浏览」指示器，依赖Realtime插件。不会展示已设置「不展示在线状态」的用户。
-      presence_enabled_label: 显示正在阅览话题的用户
-      search_v1_help: '显示内联搜索下拉框而非 V2 弹窗样式。'
+      logo_svg_help: '上传论坛使用的自定义 SVG Logo。'
+      logo_svg_label: 'Logo SVG'
+      popular_heading_label: 热门讨论标题
+      post_badge_position_below: 用户名下方（独占一行）
+      post_badge_position_default: 'Flarum 默认（关闭自定义样式 — 圆形徽章叠在头像上）'
+      post_badge_position_help: "设置成员的用户组徽章在帖子中的显示位置。Flarum 默认是圆形徽章并叠加在头像上。其他选项会将每个徽章显示为胶囊样式，在图标旁显示用户组名称。无论是否启用固定头像效果都可使用。手机端始终使用紧凑的叠加样式。\n"
+      post_badge_position_inline: 用户名旁
+      post_badge_position_label: 帖子中用户组徽章位置
+      post_badge_position_side: 头像下方（左侧栏）
+      post_badge_position_side_icons: '头像下方 — 仅图标，横向排列'
+      post_cta_position_1: '第 1 篇帖子之后'
+      post_cta_position_2: '第 2 篇帖子之后'
+      post_cta_position_3: '第 3 篇帖子之后'
+      post_cta_position_4: '第 4 篇帖子之后'
+      post_cta_position_5: '第 5 篇帖子之后'
+      post_cta_position_help: 将引导横幅插入此帖与下一篇帖子之间。
+      post_cta_position_label: 引导位置（显示在哪篇帖子之后）
+      presence_enabled_help: '在讨论横幅中实时显示「N 人正在阅读」及读者头像。需要 Realtime 扩展；关闭「公开在线状态」的用户永远不会显示。'
+      presence_enabled_label: 显示正在阅读讨论的用户
+      search_v1_help: '使用行内搜索下拉框，而不是 V2 搜索弹窗。'
       search_v1_label: '启用 V1 搜索栏样式'
       section_auth: 登录与注册
-      section_bookmarks: 书签
-      section_cakeday: 纪念日
-      section_colored: 自动强调色
-      section_discussion: 话题页面
+      section_bookmarks: 收藏
+      section_cakeday: 注册周年
+      section_colored: 颜色强调
+      section_discussion: 讨论页面
       section_footer: 页脚
-      section_hero_image_tags: 话题横幅图片
+      section_hero_image_tags: 讨论横幅图片
       section_homepage: 首页
       section_logo: Logo
       section_posts: 帖子
-      section_presence: 即时阅览
+      section_presence: 正在阅读
       section_search: 搜索
       section_team: 团队页面
-      section_titles_heading: 栏目标题
-      section_titles_help: 自定义首页栏目标题。留空则使用语言包中的默认标题。
+      section_titles_heading: 首页栏目标题
+      section_titles_help: 自定义首页各栏目的标题。留空则使用语言包中的默认文本。
       section_user_card: 用户卡片
-      show_action_icons_help: '在点赞和回复按钮上显示 Font Awesome 图标。'
+      show_action_icons_help: '在「点赞」和「回复」操作按钮上显示 Font Awesome 图标。'
       show_action_icons_label: 在点赞和回复按钮上显示图标
-      show_auth_buttons_help: 在页眉次级导航中为游客显示药丸样式的登录和注册按钮。
-      show_auth_buttons_label: 为游客在页眉显示登录/注册按钮
-      show_guest_cta_help: 为游客显示引导注册/登录的鼓励信息。
-      show_guest_cta_label: 显示游客引导信息
-      show_online_count_help: 在在线用户头像旁边，显示「X人在线」文本。
-      show_online_count_label: 显示在线用户数文本
-      show_online_users_help: 在界面上显示当前在线用户的数量。
+      show_auth_buttons_help: 在页面顶部导航栏中为访客显示胶囊样式的「登录」和「注册」按钮。
+      show_auth_buttons_label: '为访客显示登录 / 注册按钮'
+      show_guest_cta_help: 向访客显示加入社区的引导信息。
+      show_guest_cta_label: 显示访客引导
+      show_online_count_help: '在线用户头像旁显示「X 人在线」文字。'
+      show_online_count_label: 显示在线人数文字
+      show_online_users_help: 显示当前在线的用户数量。
       show_online_users_label: 显示在线用户数
-      show_post_cta_help: 在讨论的第一条帖子后面显示登录/注册卡片，仅对游客可见。
-      show_post_cta_label: 在首条帖子后向游客显示“参与讨论”引导
-      show_share_help: 为每条帖子添加分享操作按钮。
-      show_share_label: 在帖子中显示分享按钮
-      showcase_count_help: 在热点栏显示1到5个话题卡片。
-      showcase_count_label: 热点卡片数量
-      showcase_enabled_help: 在首页以卡片滑块的方式，呈现所选标签的话题。
-      showcase_enabled_label: 启用热点/作品栏目
-      showcase_heading_help: 自定义热点栏目标题。留空则使用默认标题。
-      showcase_heading_label: 热点栏标题
-      showcase_image_style_default: 紧凑（默认）
-      showcase_image_style_full: 全幅
-      showcase_image_style_help: 选择图片展示样式：紧凑或全部高度。
+      show_post_cta_help: '在讨论中的指定帖子后显示登录 / 注册引导卡片，仅访客可见。'
+      show_post_cta_label: 在帖子后向访客显示加入引导
+      show_share_help: 为每篇帖子添加「分享」操作按钮。
+      show_share_label: 在帖子上显示分享按钮
+      showcase_count_help: '在展示区域中显示 1 至 5 张讨论卡片。'
+      showcase_count_label: 展示项目数量
+      showcase_enabled_help: 在首页展示轮播，其中包含所选标签下的讨论。
+      showcase_enabled_label: '启用展示 / 作品集区域'
+      showcase_heading_help: 自定义展示区域的标题。留空则使用默认标题。
+      showcase_heading_label: 展示区域标题
+      showcase_image_style_default: 默认（紧凑）
+      showcase_image_style_full: 完整图片
+      showcase_image_style_help: 选择紧凑图片或完整高度图片。
       showcase_image_style_label: 卡片图片样式
-      showcase_tag_help: 这些标签的话题将以卡片滑块的方式展示在首页。
-      showcase_tag_label: 热点/作品标签
-      spinner_custom_code_help: 使用SVG或HTML作为加载动画。
-      spinner_custom_code_label: 自定义动画代码
-      spinner_option_avocado: 牛油果
+      showcase_tag_help: 这些标签下的讨论会出现在首页的轮播中。
+      showcase_tag_label: '展示 / 作品集标签'
+      spinner_custom_code_help: '粘贴任意 SVG 或 HTML，作为加载动画使用。'
+      spinner_custom_code_label: 自定义加载动画代码
+      spinner_option_avocado: Avocado
       spinner_option_b2: 旋转
-      spinner_option_css_orbital: 方块碎片（CSS）
+      spinner_option_css_orbital: 方块环绕（CSS）
       spinner_option_custom: 自定义
       spinner_option_ditie: 地铁在线
-      spinner_option_flarum: Flarum图标
-      spinner_option_orbital: 方块碎片
+      spinner_option_flarum: Flarum
+      spinner_option_orbital: 方块环绕
       spinner_option_pl3: 脉冲
       tag_picker_placeholder: 选择标签…
       team_desc_label: 页面描述
-      team_desc_placeholder: 认识为论坛运营管理所付出的伙伴们。
-      team_enabled_help: '在 /team 团队页面展示所选群组的成员。'
+      team_desc_placeholder: 认识一下社区背后的伙伴们。
+      team_enabled_help: '显示 /team 页面，并列出所选用户组中的成员。'
       team_enabled_label: 启用团队页面
-      team_groups_empty: 没有群组。
-      team_groups_help: 所选群组的成员将会展示在团队页面中。
-      team_groups_label: 要显示的群组
+      team_groups_empty: 未找到用户组。
+      team_groups_help: 所选用户组中的成员会显示在团队页面中。
+      team_groups_label: 显示的用户组
       team_title_label: 页面标题
-      team_title_placeholder: 运营团队
-      threads_style_help: '采用类似Threads App的风格，将话题显示为一个卡片，回帖锁进并带有左边框线条。'
-      threads_style_label: 启用会话式话题布局
-      user_card_enabled_help: 当鼠标悬停在用户名或头像上时，显示Discourse风格的迷你用户卡片，包括个性签名、徽章、状态等内容。
-      user_card_enabled_label: 启用用户悬停卡片
+      team_title_placeholder: 我们的团队
+      threads_style_help: '将首帖显示为卡片，并通过左侧边线缩进回复，呈现类似 Threads 应用的布局。'
+      threads_style_label: '启用 Threads 风格讨论布局'
+      user_card_enabled_help: '鼠标悬停在头像或用户名上时，显示类似 Discourse 的迷你个人资料卡片，包括简介、徽章、统计数据和操作按钮。'
+      user_card_enabled_label: 启用用户悬浮卡片
   api:
-    discussion_not_found: 没有搜索到话题。
-    file_not_readable: 已上传文件不可读。
-    file_too_large: '文件太大（最大{max}）。'
-    invalid_discussion_id: 话题ID无效。
+    discussion_not_found: 未找到讨论。
+    file_not_readable: 无法读取上传的文件。
+    file_too_large: '文件过大（最大 {max}）。'
+    invalid_discussion_id: '讨论 ID 无效。'
     invalid_note: 备注无效。
     invalid_reminder_date: 提醒日期无效。
-    no_file_uploaded: 尚无已上传文件。
-    note_too_long: 备注太长。
-    reminder_must_be_future: 提醒必需在未来时间。
-    reminder_too_far: 提醒时间距离当前太长。
-    svg_forbidden_declaration: SVG中包含有禁止的DOCTYPE和ENTITY声明内容。
-    svg_invalid: 上传文件必须是SVG。
-    svg_parse_failed: SVG无效：无法转换XML。
-    unsupported_image_type: 不支持的图片类型。
+    no_file_uploaded: 未上传文件。
+    note_too_long: 备注过长。
+    reminder_must_be_future: 提醒时间必须晚于当前时间。
+    reminder_too_far: 提醒时间距离现在过远。
+    svg_forbidden_declaration: 'SVG 中包含禁止使用的 DOCTYPE 或 ENTITY 声明。'
+    svg_invalid: '上传的文件必须是有效的 SVG。'
+    svg_parse_failed: 'SVG 无效：无法解析 XML。'
+    unsupported_image_type: 不支持此图片类型。
   forum:
     actions:
       share: 分享
     back: 返回
     bookmarks:
-      edit: 编辑书签
-      empty: 尚未保存任何话题为书签。
-      empty_posts: 尚未将任何帖子存为书签。
-      guest_prompt: 登陆后可讲话题存为书签并随时找到它们。
+      edit: 编辑收藏
+      empty: 你还没有收藏任何讨论。
+      empty_posts: 你还没有收藏任何帖子。
+      guest_prompt: 登录后即可收藏讨论，方便以后回来查看。
       modal_cancel: 取消
       modal_save: 保存
-      modal_title: 书签收藏
+      modal_title: 收藏
       note_label: 备注
-      note_placeholder: 收藏这个书签的目的什么？（可选）
+      note_placeholder: 为什么收藏这个？（可选）
       reminder_am: 上午
-      reminder_custom: 选择日期时间
+      reminder_custom: 选择日期和时间
       reminder_date_label: 日期
-      reminder_hour_label: 时
-      reminder_invalid: 所选时间为过去时间。只能选择将来的时间。
-      reminder_invalid_date: 选择提醒日期。
-      reminder_label: 提醒
-      reminder_later: 今天稍晚一点（4小时内）
+      reminder_hour_label: 小时
+      reminder_invalid: 所选日期和时间已经过去，请选择未来的时间。
+      reminder_invalid_date: 请选择提醒日期。
+      reminder_label: 提醒我
+      reminder_later: '今天晚些时候（4 小时后）'
       reminder_meridiem_label: 上午或下午
-      reminder_minute_label: 分
-      reminder_none: 不创建提醒
+      reminder_minute_label: 分钟
+      reminder_none: 不提醒
       reminder_pm: 下午
-      reminder_tomorrow: 明天早上
+      reminder_tomorrow: 明天上午
       reminder_week: 下周
-      save: 存为书签
-      title: 已存书签
-      toggle_error: 无法更新已存书签列表。请重试。
-      unsave: 从已存书签中移除
-      update_error: 无法更新书签收藏。请重试。
+      save: 收藏
+      title: 收藏
+      toggle_error: 无法更新收藏列表，请重试。
+      unsave: 取消收藏
+      update_error: 无法更新收藏，请重试。
     cakeday:
-      aria: 帐号周年纪念日
-      tooltip_plural: '帐号周年纪念起：{years}周年！'
-      tooltip_singular: 帐号周年纪念起：1周年！
+      aria: 注册周年
+      tooltip_plural: '注册周年 — 今天是加入本站 {years} 周年！'
+      tooltip_singular: '注册周年 — 今天是加入本站 1 周年！'
     discussion:
-      hero_image_add: 添加图片
-      hero_image_remove: 移除图片
-      hero_image_remove_confirm: 确定移除该话题的横幅图片？
-      hero_image_replace: 替换图片
+      hero_image_add: 添加横幅图片
+      hero_image_remove: 移除横幅图片
+      hero_image_remove_confirm: 确定要移除此讨论的横幅图片吗？
+      hero_image_replace: 更换横幅图片
       participant_plural: 人参与
       participant_singular: 人参与
-      post_plural: 条回复
-      post_singular: 条回复
+      post_plural: 篇帖子
+      post_singular: 篇帖子
     discussions:
-      empty: 没有话题。
+      empty: 没有找到讨论。
       home: 返回首页
       load_more: 加载更多
-      title: 所有话题
+      title: 全部讨论
     header:
       back: 返回
       back_home: 返回首页
       or: 或
       search: 搜索
     home:
-      all_categories: 全部分类
-      all_title: 所有话题
+      all_categories: 全部板块
+      all_title: 全部讨论
       back_home: 首页
       badge_following: 已关注
       badge_sticky: 置顶
-      badge_unread_tooltip: '{count}条未读帖子'
-      bypass_tag_requirements: 跳过标签数量限制
-      categories_heading: 分类
-      choose_primary_tag_plural: '选择{count}个主标签'
-      choose_primary_tag_singular: 选择1个主标签
-      choose_secondary_tag_plural: '选择{count}个副标签'
-      choose_secondary_tag_singular: 选择1个副标签
+      badge_unread_tooltip: '{count} 篇未读帖子'
+      bypass_tag_requirements: 绕过标签要求
+      categories_heading: 板块
+      choose_primary_tag_plural: '选择 {count} 个主标签'
+      choose_primary_tag_singular: '选择 1 个主标签'
+      choose_secondary_tag_plural: '选择 {count} 个次级标签'
+      choose_secondary_tag_singular: '选择 1 个次级标签'
       choose_tags: 选择标签
       composer_body_placeholder: 分享你的想法…
       composer_close: 关闭
       composer_edit: 编辑
       composer_hero_image_label: 横幅图片（可选）
-      composer_hero_image_picked: 已选图片
+      composer_hero_image_picked: 已选择图片
       composer_hero_image_remove: 移除图片
-      composer_hero_image_upload_failed: 无法上传横幅图片。你可以在话题页面中重新上传。
+      composer_hero_image_upload_failed: 无法上传横幅图片，你可以稍后在讨论页面重试。
       composer_post: 发布讨论
       composer_preview: 预览
-      composer_preview_empty: 无内容可预览。
-      composer_submitting: 发布中…
-      composer_title_placeholder: 话题标题…
-      discussion_plural_card: '{count} 个话题'
-      discussion_singular: 个话题
-      discussion_singular_card: 个话题
-      discussions: 个话题
+      composer_preview_empty: 暂无可预览的内容。
+      composer_submitting: 正在发布…
+      composer_title_placeholder: 讨论标题…
+      discussion_plural_card: '{count} 个讨论'
+      discussion_singular: 个讨论
+      discussion_singular_card: '1 个讨论'
+      discussions: 讨论
       filter_tags: 筛选标签
-      following_heading: 我的关注
+      following_heading: 关注
       like: 点赞
-      like_count_plural: '{count} 次赞'
-      like_count_singular: '1 次赞'
+      like_count_plural: '{count} 个赞'
+      like_count_singular: '1 个赞'
       log_in: 登录
       more: 更多
       nav_label: 导航
       nav_more: 更多
       nav_more_label: 显示更多导航链接
-      new_discussion: 发布话题
+      new_discussion: 发起讨论
       no_tags_found: 未找到标签
       or: 或
-      popular_heading: 热门话题
-      popular_no_discussions: 暂无话题。
-      post_plural: '{count} 个帖子'
-      post_singular: 个帖子
+      popular_heading: 热门讨论
+      popular_no_discussions: 暂无讨论。
+      post_plural: '{count} 篇帖子'
+      post_singular: '1 篇帖子'
       replies: 回复
       reply_count_plural: '{count} 条回复'
       reply_count_singular: '1 条回复'
       reply_label: 回复
-      reply_plural: 条回复
-      reply_singular: 条回复
+      reply_plural: '{count} 条回复'
+      reply_singular: '1 条回复'
       see_all: 查看全部
-      see_other_replies: '查看另外 {count} 条回复'
-      see_other_reply_singular: '查看另外 {count} 条回复'
-      showcase_heading: 展示
+      see_other_replies: '查看其他 {count} 条回复'
+      see_other_reply_singular: '查看其他 {count} 条回复'
+      showcase_heading: 作品展示
       sign_up: 注册
-      sort_trending: 趋势
-      start_discussion: 分享一下你正在做的事情…
-      today_time: '今天 ，{time}'
+      sort_trending: 热门趋势
+      start_discussion: 告诉大家你最近在忙什么…
+      today_time: '今天 {time}'
       untitled: 无标题
       view: 查看
       view_post: 查看帖子
-      ws_update_plural: '{count}条新话题'
-      ws_update_singular: 1条新话题
-      yesterday_time: '昨天 ，{time}'
+      ws_update_plural: '{count} 个新讨论'
+      ws_update_singular: '1 个新讨论'
+      yesterday_time: '昨天 {time}'
     link:
-      login_to_view: 登陆查看链接
+      login_to_view: 登录后查看链接
     link_cta:
-      placeholder: 登录以查看链接
+      placeholder: 登录后查看链接
     loading: 正在加载…
     messages:
       deleted_message: 消息已删除
     notifications:
-      bookmark_reminder_text: 已存话题的提醒
+      bookmark_reminder_text: 你收藏的讨论到了提醒时间
     online_users:
       online: 在线
     post:
@@ -335,84 +335,84 @@ ramon-avocado:
       op_badge: 楼主
     post_cta:
       or: 或
-      text: 喜欢正在看的内容？加入讨论吧！
+      text: 喜欢这里的内容？加入讨论吧！
     presence:
-      reading_now: '{count}人正在阅读'
+      reading_now: '{count} 人正在阅读'
     profile:
-      joined: '加入于{date}'
-      member_since: '于{date}加入'
-      scroll_left: 向左滑动
-      scroll_right: 向右滑动
+      joined: '加入于 {date}'
+      member_since: '自 {date} 成为成员'
+      scroll_left: 向左滚动
+      scroll_right: 向右滚动
     search:
-      clear: 清空
+      clear: 清除
       close: 关闭（Esc）
-      enter_search_term: 输入关键词以查找用户。
-      esc_key: ESC键
+      enter_search_term: 请输入搜索词以查找用户。
+      esc_key: ESC
       filtered_by: 筛选条件
-      hero_sub: 搜索话题、回帖和用户
+      hero_sub: 搜索讨论、帖子和成员
       hero_title: 你在找什么？
-      no_discussions_filter: 没有满足筛选条件的话题。
-      no_discussions_query: '没有「{q}」相关的话题。'
-      no_posts_found: '未找到与“{q}”匹配的帖子。'
-      no_posts_match: 没有符合筛选条件的帖子。
-      no_users_found: '没有找到与“{q}”相关的用户。'
-      placeholder: 搜索讨论、帖子或用户…
-      placeholder_hero: 搜索…
-      posts_filtered_by: 筛选结果
-      posts_for: 的帖子
+      no_discussions_filter: 没有符合当前筛选条件的讨论。
+      no_discussions_query: '没有找到与「{q}」匹配的讨论。'
+      no_posts_found: '没有找到与「{q}」匹配的帖子。'
+      no_posts_match: 没有符合当前筛选条件的帖子。
+      no_users_found: '没有找到与「{q}」匹配的用户。'
+      placeholder: 搜索…
+      placeholder_hero: 搜索论坛…
+      posts_filtered_by: 筛选后的帖子
+      posts_for: 帖子：
       posts_title: 帖子搜索
       results: 搜索结果
-      results_for: 结果
+      results_for: 搜索结果：
       search_button: 搜索
-      sort_latest: 最新
+      sort_latest: 最近更新
       sort_newest: 最新发布
       sort_oldest: 最早发布
       sort_relevance: 相关度
-      sort_top: 热门
-      tab_discussions: 话题
-      tab_posts: 回帖
+      sort_top: 回复最多
+      tab_discussions: 讨论
+      tab_posts: 帖子
       tab_users: 用户
       tip: '提示：输入前缀 '
-      tip_suffix: ' 可以根据标签进行筛选'
+      tip_suffix: ' 可按标签筛选'
       title: 搜索
     settings:
-      notify_bookmark_reminder_label: 书签提醒
+      notify_bookmark_reminder_label: 收藏提醒
     tag_picker:
       remove: 移除标签
     tags:
-      all_discussions: 所有话题
-      discussion_plural: 个话题
-      discussion_singular: 个话题
-      empty: 该分类暂无话题。
+      all_discussions: 全部讨论
+      discussion_plural: 个讨论
+      discussion_singular: 个讨论
+      empty: 此板块暂无讨论。
       featured: 精选
       home: 首页
       load_more: 加载更多
       login_to_view: 登录以查看链接
-      not_found: 没有找到此标签。
+      not_found: 未找到该标签。
       other_tags_label: 其他标签
-      title: 分类
+      title: 板块
     team:
-      disabled: 当前页面不可用。
-      discussions: 个话题
-      empty: 没有成员。
-      member_plural: 成员
+      disabled: 此页面当前不可用。
+      discussions: 讨论
+      empty: 未找到成员。
+      member_plural: 位成员
       member_since: 加入于
-      member_singular: 成员
-      no_bio: 论坛成员。
-      posts: 个帖子
-      title: 论坛团队
+      member_singular: 位成员
+      no_bio: 社区成员。
+      posts: 帖子
+      title: 我们的团队
     user:
-      discussions_empty: 暂无话题。
-      likes_empty: 暂无赞贴。
+      discussions_empty: 暂无讨论。
+      likes_empty: 暂无点赞过的帖子。
       load_more: 加载更多
       mentions_empty: 暂无提及。
       online: 在线
-      posts_empty: 暂无回复。
+      posts_empty: 暂无帖子。
     user_card:
-      discussions: 话题
+      discussions: 讨论
       joined_label: 加入于
-      last_seen: '查阅{time}次'
-      message: 消息
+      last_seen: '最后在线 {time}'
+      message: 私信
       online: 在线
-      posts: 回帖
-      view_profile: 查看用户资料
+      posts: 帖子
+      view_profile: 查看个人资料

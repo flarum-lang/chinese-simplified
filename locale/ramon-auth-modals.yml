@@ -5,12 +5,12 @@
 ramon-auth-modals:
   admin:
     settings:
-      image_help: 在登录、注册和忘记密码弹窗的左侧面板，展示背景图片。
-      image_label: 认证弹窗图片
+      image_help: 设置登录、注册和忘记密码弹窗右侧区域显示的背景图片。
+      image_label: 登录注册弹窗图片
       section_header: 顶部按钮
-      section_image: 弹窗背景图片
-      show_header_buttons_help: 在顶部次级导航栏中，为游客显示登录和注册按钮。
-      show_header_buttons_label: 在顶部为游客显示登录/注册按钮
+      section_image: 弹窗背景
+      show_header_buttons_help: 在顶部次级导航中为访客显示胶囊样式的「登录」和「注册」按钮。
+      show_header_buttons_label: '为访客显示登录 / 注册按钮'
   forum:
     header:
-      or: 或者
+      or: 或

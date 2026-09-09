@@ -597,7 +597,7 @@ core:
       kilo_text: 千
       mega_text: 百万
     series:
-      glue_text: '， '
+      glue_text: ，
       three_text: '{first}、{second} 与 {third}'
       two_text: '{first} 和 {second}'
     username:

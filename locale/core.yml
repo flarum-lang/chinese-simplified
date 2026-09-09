@@ -895,7 +895,7 @@ core:
       users:
         heading: '=> core.ref.users'
     series:
-      glue_text: '， '
+      glue_text: ，
       three_text: '{first}、{second} 和 {third}'
       two_text: '{first} 和 {second}'
     user_selection_modal:

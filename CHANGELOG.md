@@ -158,6 +158,7 @@ CHANGELOG
 * [`acpl/my-tags`](https://github.com/android-com-pl/my-tags)
 * [`antoinefr/flarum-ext-money`](https://github.com/AntoineFr/flarum-ext-money)
 * [`datitisev/flarum-backup`](https://flarum.org/extension/datitisev/flarum-backup)
+* [`datitisev/flarum-post-galleries`](https://github.com/dsevillamartin/flarum-post-galleries)
 * [`datlechin/flarum-bbcode-hide-content`](https://github.com/datlechin/flarum-bbcode-hide-content)
 * [`datlechin/flarum-birthdays`](https://github.com/datlechin/flarum-birthdays)
 * [`datlechin/flarum-copy-links`](https://github.com/datlechin/flarum-copy-links)
@@ -392,7 +393,6 @@ CHANGELOG
 * [`datitisev/flarum-ext-dashboard`](https://github.com/dsevillamartin/flarum-ext-dashboard)
 * [`datitisev/flarum-discussion-agree-message`](https://github.com/dsevillamartin/flarum-discussion-agree-message)
 * `datitisev-maintenance`
-* [`datitisev/flarum-post-galleries`](https://github.com/dsevillamartin/flarum-post-galleries)
 * `datitisev-webhooks-pro`
 * [`datlechin/flarum-add-like-controls`](https://github.com/datlechin/flarum-add-like-controls)
 * [`datlechin/flarum-birthdays-widget`](https://github.com/datlechin/flarum-birthdays-widget)

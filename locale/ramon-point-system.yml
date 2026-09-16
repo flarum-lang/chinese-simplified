@@ -421,7 +421,7 @@ ramon-point-system:
       intro: 通过以下方式自动获得积分。
       no_rules: 当前未启用自动积分奖励，积分由管理人员手动发放。
       open: 如何获得积分？
-      rule_daily_login: 每天首次登录
+      rule_daily_login: 每日首次登录
       rule_discussion: 发起讨论
       rule_like_given: 点赞其他人的帖子
       rule_like_received: 帖子收到点赞
@@ -534,7 +534,7 @@ ramon-point-system:
       image_file_label: 图片文件
       image_url_help: '填写指向 PNG / GIF / WebP / APNG 的 HTTPS 直链。'
       image_url_label: '图片 URL'
-      intro: 设计你自己的装扮。提交后由管理员审核，通过后会出现在积分商城；未通过则会被驳回。
+      intro: 设计你自己的装扮。提交后由管理员审核，通过后会出现在积分商城，未通过则会被驳回。
       moderation_notice: 提交内容需经管理员审核，通过后才会出现在积分商城。
       name_label: 名称
       name_placeholder: 例如：「日落渐变」

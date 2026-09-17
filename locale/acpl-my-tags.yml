@@ -5,8 +5,8 @@
 acpl-my-tags:
   admin:
     settings:
-      enable-placeholder: 用户无关注标签时显示关注提示
+      enable-placeholder: 用户未关注任何标签时显示提示
   forum:
     index:
       my_tags: 我的标签
-      placeholder: 您还没有关注任何标签。<a>查看全部标签</a>
+      placeholder: 你还没有关注任何标签。<a>查看全部标签</a>

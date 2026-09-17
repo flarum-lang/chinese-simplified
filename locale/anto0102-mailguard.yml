@@ -4,11 +4,11 @@
 
 anto0102-mailguard:
   admin:
-    check_mx_help: 如果启用，则会阻止不存在或无法接收电子邮件的域名（无论允许/拒绝列表如何设置）。
-    check_mx_label: '验证 MX/DNS 记录'
-    domains_help: 输入域名时无需输入@符号。例如：gmail.com
-    domains_label: 电子邮件域名（每行一个）
-    message_help: 向尝试使用被屏蔽的电子邮件域名注册的用户显示此消息。
-    message_label: 拒收信息
-    mode_help: '允许 = 仅允许列出的域名注册。拒绝 = 阻止列出的域名注册。'
+    check_mx_help: 启用此项，禁止使用无法解析或未配置邮件服务的域名注册，此检查不受黑白名单设置影响。
+    check_mx_label: '验证 MX / DNS 记录'
+    domains_help: '填写不带 @ 的域名，例如 gmail.com'
+    domains_label: 邮箱域名（每行一个）
+    message_help: 当用户使用被禁止的邮箱域名注册时显示的提示信息。
+    message_label: 拒绝提示
+    mode_help: Allow：仅允许列表中的域名注册。Deny：禁止列表中的域名注册。
     mode_label: 域过滤模式

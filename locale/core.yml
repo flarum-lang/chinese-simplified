@@ -232,7 +232,7 @@ core:
       title: 权限
       view_forum_label: 浏览论坛（讨论和用户）
       view_hidden_groups_label: 查看隐藏的用户组徽章
-      view_last_seen_at_label: 查看用户上次在线时间
+      view_last_seen_at_label: 始终查看用户最后在线时间
       view_post_ips_label: '查看 IP 地址'
     permissions_controls:
       allow_indefinitely_button: 无限制

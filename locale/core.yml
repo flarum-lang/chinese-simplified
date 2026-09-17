@@ -411,7 +411,7 @@ core:
       title: 权限
       view_forum_label: 浏览论坛（讨论和用户）
       view_hidden_groups_label: 查看隐藏的用户组徽章
-      view_last_seen_at_label: 查看用户上次在线时间
+      view_last_seen_at_label: 始终查看用户最后在线时间
       view_post_ips_label: '查看 IP 地址'
     permissions_controls:
       allow_indefinitely_button: 无限制
@@ -491,13 +491,13 @@ core:
     greeting: '{displayName}，你好！'
     informational:
       default_title: 通知
-      footer: '你收到此邮件，是因为内容与你的 [{forumTitle}]({forumUrl}) 账号相关。'
-      footer_plain: '你收到此邮件，是因为内容与你的 {forumTitle} 账号相关。'
+      footer: '此邮件发送至 {userEmail}，是因为内容与你的 [{forumTitle}]({forumUrl}) 账号相关。'
+      footer_plain: '此邮件发送至 {userEmail}，是因为内容与你的 {forumTitle} 账号相关。'
     notification:
       default_title: 通知
       footer:
-        main_text: '你收到此邮件，是因为你已订阅 [{forumTitle}]({forumUrl}) 的“{type}”通知。'
-        main_text_plain: '你收到此邮件，是因为你已订阅 {forumTitle} 的“{type}”通知。'
+        main_text: '此邮件发送至 {email}，是因为你已订阅 [{forumTitle}]({forumUrl}) 的“{type}”通知。'
+        main_text_plain: '此邮件发送至 {email}，是因为你已订阅 {forumTitle} 的“{type}”通知。'
         settings_text: '你可以 [在此]({settingsLink}) 管理通知设置。'
         settings_text_plain: '你可以在此管理通知设置：{settingsLink}'
         unsubscribe_text: '如不想再接收此类通知，可 [在此退订]({unsubscribeLink})。'
@@ -795,7 +795,7 @@ core:
     error:
       circular_dependencies_message: '检测到循环依赖关系：{extensions}，已中止操作。请禁用其中一个扩展后重试。'
       db_error_message: 数据库查询失败。某个扩展程序可能与当前使用的数据库驱动不兼容。
-      dependent_extensions_message: '无法禁用「{extension」。请先禁用以下依赖它的扩展：{extensions}'
+      dependent_extensions_message: '无法禁用「{extension}」。请先禁用以下依赖它的扩展：{extensions}'
       extension_initialiation_failed_message: '初始化「{extension}」失败，详情请查看浏览器控制台。'
       extension_runtime_failed_message: '「{extension}」在运行时发生错误，详情请查看浏览器控制台。'
       generic_cross_origin_message: 跨域请求时出现问题，请刷新页面重试。

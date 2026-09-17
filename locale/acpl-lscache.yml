@@ -4,22 +4,22 @@
 
 acpl-lscache:
   admin:
-    cache_enabled_help: 请查看<a>信息页面</a>，了解如何测试缓存。注意：站点的所有缓存内容均会在禁用缓存时清除。
-    cache_enabled_label: '开启 LSCache'
+    cache_enabled_help: '请查看<a>信息页面</a>，了解如何测试缓存。注意：站点的所有缓存内容均会在关闭 LSCache 时清除。'
+    cache_enabled_label: '启用 LSCache'
     cache_exclude_help: '指定禁止缓存的页面路由，一行一个。例如 <code>mypage?aa=</code> 可以禁止缓存 <code>/mypath/mypage?aa=bb</code> 页面。要匹配字符串开头，请以 <code>^</code> 作为前缀。要进行完全匹配，请以 <code>$</code> 作为后缀。'
-    cache_exclude_label: 禁用缓存路由名单
+    cache_exclude_label: 排除缓存路径
     clearing_cache_listener_label: '清除 Flarum 缓存时同步清除 LSCache'
     drop_qs_help: "指定进行缓存匹配时要去除的查询参数字符串，一行一个。可防止对带有 UTM 代码等无用查询参数的页面进行冗余缓存，例如 <code>fbclid</code> 或者 <code>utm*</code>，这些查询参数仅用于跟踪，与页面内容无关。此功能需要 LSWS v5.2.3 或更高版本。<a>关于删除查询参数</a>。<br></br>\n⚠️ 此设置会修改 .htaccess 文件。\n"
     drop_qs_label: 删除查询参数
     permissions:
       purge: '=> acpl-lscache.ref.purge_cache'
-    public_cache_ttl_help: '设置公共网页缓存的有效时间，以秒为单位。默认值是 604800 秒（一个星期）。'
-    public_cache_ttl_label: 公共缓存默认生存时间
+    public_cache_ttl_help: '设置公共页面的缓存时长，单位为秒。默认值为 604800 秒（1 周）。'
+    public_cache_ttl_label: '默认公共缓存 TTL'
     purge_all: '=> acpl-lscache.ref.purge_cache'
-    purge_on_discussion_update_help: '指定讨论帖发生变化时要清除的页面路由或缓存标签，一行一个。路由以 <code>/</code> 开头，例如 <code>/rankings</code>。标签应以 <code>tag=</code> 开头，例如 <code>tag=rankings</code>。要清除多个路由，请在 .htaccess 中添加正则表达式规则，并在此处填写表达式，<a>了解更多</a>。默认情况下，会清除主页或发生变化的讨论帖缓存。'
-    purge_on_discussion_update_label: '讨论更新时清除 URL 和缓存标签'
+    purge_on_discussion_update_help: '填写讨论更新时需要清除的 URL 或缓存标签，每行一项。URL 必须以 <code>/</code> 开头，例如 <code>/rankings</code>；缓存标签必须以 <code>tag=</code> 开头，例如 <code>tag=rankings</code>。如果需要匹配多个路由，请在 .htaccess 中通过正则表达式为这些路由添加缓存标签，然后在此填写对应标签，<a>了解更多</a>。默认情况下，首页和被更新讨论的缓存会自动清除。'
+    purge_on_discussion_update_label: '讨论更新时清除指定 URL 或缓存标签'
     serve_stale_help: 启用此项，在新缓存生成前，临时向客户端提供旧缓存内容，以减少服务器负载。否则，需要等待缓存更新完成后发送给客户端，这可能会增加客户端的等待时间。注意，该选项可能会提供过时的缓存内容，如果无法接受，请不要启用本设置。
-    serve_stale_label: 提供过期内容
+    serve_stale_label: 提供过期缓存
     status_codes_cache_help: '指定 HTTP 状态码以及该页面的缓存时间（秒），两者用空格分隔，每行一个。'
     status_codes_cache_label: '默认 HTTP 状态码页面缓存时间'
     test_failed_alert: '您的服务器似乎不支持 LSCache。请检查服务器配置。检测到的服务器：<b>{server}</b>，检测到的 LiteSpeed 类型：<b>{type}</b>。'

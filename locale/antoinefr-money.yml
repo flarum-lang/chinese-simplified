@@ -5,33 +5,33 @@
 antoinefr-money:
   admin:
     automoderator:
-      action_name: 奖励货币
+      action_name: 发放货币
       metric_name: 货币
     autoremove:
-      - 货币只增不减
-      - 隐藏或恢复主题/帖子时（默认）
-      - 删除主题/帖子时
+      - 永不扣除货币
+      - 讨论或帖子被隐藏/恢复时（默认）
+      - 讨论或帖子被删除时
     permissions:
-      disable_money_label: 禁用奖励
-      edit_money_label: 调整货币
+      disable_money_label: 禁用货币
+      edit_money_label: 编辑用户货币
     settings:
-      autoremove: 重新计算货币
-      cascaderemove: 当讨论被删除时移除帖子的奖励
-      helpextensionlikes: '需要 <code>flarum/likes</code> 扩展程序'
-      helpmoneyname: '使用 <code>[money]</code> 来包含价值'
-      helppostminimumlength: 输入0来禁用
-      ignore_notifying_users: 当检查回复的字数时，只关注内容部分
-      moneyfordiscussion: 发贴一次可获得
-      moneyforlike: 获得点赞时可获得
+      autoremove: 自动计算货币
+      cascaderemove: 删除讨论时扣除其中回复获得的货币
+      helpextensionlikes: '需要启用 <code>flarum/likes</code> 扩展'
+      helpmoneyname: '使用 <code>[money]</code> 插入货币数值'
+      helppostminimumlength: '设为 0 可禁用长度限制'
+      ignore_notifying_users: 仅统计正文内容字数
+      moneyfordiscussion: 发起讨论可获得
+      moneyforlike: 被赞时可获得
       moneyforpost: 回帖一次可获得
       moneyname: 货币名称
-      noshowzero: '若值为 0 则不显示'
-      postminimumlength: 帖子长度需达到最低要求才能获得货币奖励
+      noshowzero: '数值为 0 时不显示'
+      postminimumlength: 获得货币所需回帖最短长度
       title: 设置
   forum:
     modal:
       current: 当前：
       submit_button: '=> core.ref.save_changes'
-      title: '{username} 的货币数'
+      title: '{username} 的货币'
     user_controls:
-      money_button: 修改货币
+      money_button: 编辑货币

@@ -5,4 +5,35 @@
 captchala-flarum:
   admin:
     settings:
-      app_key_label: 软件密钥
+      app_key_help: '必填，前往 CaptchaLa 控制台 <a>dash.captcha.la</a> 获取。'
+      app_key_label: 'App Key'
+      app_secret_help: 仅供服务端使用，不会暴露给浏览器。
+      app_secret_label: 'App Secret'
+      forgot: '=> core.forum.forgot_password.title'
+      lang_help: '填写 BCP-47 语言标签（例如 ja、pt-BR），或填写「auto」以跟随访客的浏览器语言。'
+      lang_label: 语言
+      post: 保护新讨论和回复
+      product_help: '选择验证面板的展示模式。bind 会将验证面板绑定到提交按钮。'
+      product_label: 验证组件模式
+      product_options:
+        bind: 绑定到提交按钮
+        embed: 内嵌组件
+        float: 悬浮组件
+        popup: 弹窗
+      signin: '=> core.forum.log_in.title'
+      signup: '=> core.forum.sign_up.title'
+    test:
+      button: 测试连接
+      failure: '连接失败：{reason}'
+      help_text: "验证已保存的 App Key / App Secret 是否可以连接 CaptchaLa 后端。\n运行测试前请先保存更改。\n"
+      success: 连接正常。
+      title: 测试连接
+  forum:
+    powered_by: 'CaptchaLa 安全防护'
+  lib:
+    error: '验证 CAPTCHA 时发生错误，请重试。'
+    not_completed: '请先完成 CAPTCHA 验证。'
+    rejected: 'CAPTCHA 验证失败，请重试。'
+    unknown_error: 发生未知错误，请重试。
+validation:
+  captchala: 'CAPTCHA 验证未通过。'

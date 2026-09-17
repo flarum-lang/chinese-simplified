@@ -5,4 +5,9 @@
 asyntai-chatbot:
   admin:
     settings:
+      hide_for_members_help: 已登录成员不会看到聊天小组件。
+      hide_for_members_label: 仅向游客显示
+      script_url_help: "留空则使用默认地址：https://widget.asyntai.com/static/js/chat-widget.js\n"
+      script_url_label: 脚本地址（可选）
+      widget_id_help: "粘贴 Asyntai 控制台提供的代码片段，或仅填写小组件 ID。留空可关闭聊天功能。你可以在 asyntai.com 的「Setup & Integration」页面找到该 ID。\n"
       widget_id_label: 'Asyntai 小组件 ID'

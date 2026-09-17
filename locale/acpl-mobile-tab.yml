@@ -9,11 +9,11 @@ acpl-mobile-tab:
     create_new_item_button: 创建新项目
     edit_item:
       delete_button: 删除
-      delete_item_confirmation: 您确定要删除此项目吗？
+      delete_item_confirmation: 确定要删除此项目吗？
       icon: 图标
-      icon_help: '输入任何 <a>FontAwesome</a> 图标类的名称，包括 <code>fas fa-</code> 前缀。'
-      is_internal_checkbox: 是否为内部链接？
-      label: 标签
+      icon_help: '输入任意 <a>FontAwesome</a> 图标类名，包括 <code>fas fa-</code> 前缀。'
+      is_internal_checkbox: 内部链接
+      label: 名称
       label_placeholder: 我的自定义项目
       modal_title: 编辑项目
       open_new_tab_checkbox: 在新标签页中打开链接
@@ -21,20 +21,20 @@ acpl-mobile-tab:
       submit_button: 保存
       url: URL
     scroll_settings:
-      threshold_help: 从当前位置滚动以切换显示状态的距离。
-      threshold_label: '滚动阈值 (px)'
-      toggle_label: 滚动时切换显示状态
+      threshold_help: 向上或向下滚动达到此距离后，显示或隐藏底部导航栏。
+      threshold_label: 触发滚动距离（px）
+      toggle_label: 滚动时自动隐藏底部导航栏
   lib:
     item:
       all_discussions: 讨论
       categories: 分类
-      fof-byobu: 私密
+      fof-byobu: 私密讨论
       home: 首页
       log_in: 登录
-      messages: 消息
-      new_discussion: 新的讨论
+      messages: 私信
+      new_discussion: 发起讨论
       notifications: 通知
-      profile: 个人资料
+      profile: 我的
       search: 搜索
-      session: 会话
+      session: 头像菜单
       tags: 标签

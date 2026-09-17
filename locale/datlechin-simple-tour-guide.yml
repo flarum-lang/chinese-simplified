@@ -4,5 +4,145 @@
 
 datlechin-simple-tour-guide:
   admin:
+    devices:
+      any: 所有设备
+      desktop: 仅桌面端
+      mobile: 仅移动端
+    devices_label: 适用设备
+    move_down: 下移
+    move_up: 上移
+    permissions:
+      reset_tour_guide: 重置用户导览记录
+    placement:
+      auto: 自动选择位置
+      bottom: 元素下方
+      left: 元素左侧
+      right: 元素右侧
+      top: 元素上方
     settings:
+      allow_close_help: '允许用户通过关闭按钮或 Esc 键提前退出导览。退出后会记录为已体验导览。'
+      allow_close_label: 允许提前退出
+      heading: 设置
+      show_in_settings_help: 允许用户重新体验导览，无需管理人员手动重置。
+      show_in_settings_label: 在用户设置页显示导览
+      show_progress_help: 在按钮旁显示当前导览进度。
       show_progress_label: 显示进度
+    start_mode:
+      auto: 自动开始
+      manual: 由用户手动开始
+    stats:
+      completion_rate: 完成率
+      dismissed: 提前退出
+      dropoff_heading: 退出位置
+      dropoff_help: 统计提前退出的用户离开时所在的步骤。
+      finished: 已完成
+      heading: 使用情况
+      none: 还没有人体验此导览
+      taken: 已体验
+    step_modal:
+      advance_on_click_help: 使用此元素作为本步骤的「下一步」按钮，同时保留元素本身的点击操作。
+      advance_on_click_label: 点击此元素后继续
+      clicks_target_help: 可用于打开后续步骤需要指向的菜单或其他界面元素。
+      clicks_target_label: 进入下一步前自动点击此元素
+      create_title: 新建步骤
+      delete_button: 删除步骤
+      delete_confirmation: 确定要从此导览中删除这个步骤吗？
+      description_help: 与帖子格式一致。只要启用了对应扩展，就支持链接、粗体、图片等内容。
+      description_label: 说明
+      description_placeholder: 步骤说明
+      devices_help: 页头元素在手机上通常无法匹配，因为移动端页头可能会变为抽屉菜单。
+      edit_title: '编辑「{title}」'
+      enabled_label: 启用
+      pick_button: 选择
+      placement_help: 设置提示卡片相对于目标元素的位置。空间不足时会自动调整。
+      placement_label: 显示位置
+      save_button: 保存
+      target_help: 此步骤指向的页面元素。留空则不指向任何元素，步骤会单独显示在屏幕中央。
+      target_invalid: 'CSS 选择器无效。'
+      target_label: 目标元素
+      target_matches: '{count, plural, =0 {在当前页面未匹配到任何元素} other {匹配到 # 个元素}}'
+      target_placeholder: 'CSS 选择器，例如 #home-link'
+      test_button: 测试
+      title_label: 标题
+      title_placeholder: 步骤标题
+      translations_help: 选择语言并填写翻译。留空的内容会使用上方的默认文案。
+      translations_label: 翻译
+      translations_pick: 选择语言
+    steps:
+      add_button: 添加步骤
+      controls_label: '「{title}」操作'
+      copy_title: '{title}（副本）'
+      duplicate_action: 复制
+      flags:
+        advance_on_click: 点击此元素后继续
+        clicks_target: 进入下一步前自动点击此元素
+        desktop: 仅桌面端
+        disabled: 已关闭
+        mobile: 仅移动端
+        translated: '{count, plural, other {已翻译为 # 种语言}}'
+      heading: '「{title}」步骤'
+      no_target: 独立显示在屏幕中央
+      none: 暂无步骤，此导览无法运行。
+    tour_modal:
+      audience_help: 不勾选则向所有人展示。
+      audience_label: 适用用户
+      create_title: 新建导览
+      delete_button: 删除导览
+      delete_confirmation: 确定要删除此导览吗？导览步骤和用户体验记录也会一并删除
+      edit_title: '编辑「{title}」'
+      enabled_label: 启用
+      key_help: 用于在导出文件和链接中标识此导览。已有用户体验导览后，请不要改动。
+      key_label: 标识符
+      max_age_help: 单位为天。留空则不限制账号注册时长。
+      max_age_label: 账号注册天数上限
+      route_help: '此导览所属的页面路由，例如 index 或 discussion。留空则固定在页面顶部，不受页面切换影响。'
+      route_label: 页面
+      route_placeholder: 任意页面
+      save_button: 保存
+      start_mode_help: 自动导览会为符合条件的用户自动运行一次；手动导览则需要用户从设置页面点击开始。
+      start_mode_label: 开始方式
+      title_help: 仅供后台备注，用户不会看到。
+      title_label: 名称
+    tours:
+      add_button: 新建导览
+      controls_label: '「{title}」操作'
+      copy_title: '{title}（副本）'
+      disabled: 已关闭
+      duplicate_button: 复制此导览
+      edit_action: 编辑
+      export_button: 导出为文件
+      heading: 导览
+      import_button: 导入
+      import_done: 导览已导入。导入后默认关闭，请检查无误后再启用。
+      import_invalid: 此文件不是有效的导览文件。
+      no_steps_warning: 暂无步骤，无法运行
+      none: 暂无导览。
+      preview_button: 预览
+      preview_navigate: '前往 {route}，在此页面开始预览。'
+      step_count: '{count, plural, =0 {无步骤} other {# 个步骤}}'
+  forum:
+    click_to_continue: 点击此处继续
+    close_button: 退出导览
+    done_button: 完成
+    next_button: 下一步
+    picker:
+      browse: 浏览页面
+      cancel: 取消
+      matches: '{count, plural, =0 {无匹配项} other {# 个匹配项}}'
+      nothing_yet: 请选择页面元素
+      picking: 点击此步骤要指向的元素
+      resume: 继续选择
+      testing: 正在定位匹配的元素
+    preview_notice: 预览模式，操作不会被记录。
+    previous_button: 上一步
+    progress: '{current} / {total}'
+    settings:
+      heading: 导览
+      none: 暂无可体验的导览
+      nothing_here: '当前页面没有「{title}」导览内容，请前往对应页面后再试。'
+      take: 开始导览
+      take_again: 再次体验
+      waiting: '前往「{title}」对应页面以开始导览。'
+    user_controls:
+      reset_tour_guide: 重新显示导览
+      reset_tour_guide_confirmation: 下次访问时重新向此用户显示导览

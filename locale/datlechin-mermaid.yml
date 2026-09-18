@@ -6,3 +6,15 @@ datlechin-mermaid:
   admin:
     settings:
       description: '尚未进行任何设置。Mermaid 图表会在用 ```mermaid 代码块括起来的范围内自动渲染。'
+      font_family_help: '填写任意 CSS 字体设置，例如："Inter", system-ui, sans-serif。留空则使用论坛帖子正文的字体。'
+      font_family_label: 字体族
+      font_family_placeholder: 继承论坛字体
+      theme_help: 设置图表的显示模式。「跟随论坛」自动适配论坛的浅色和深色模式。
+      theme_label: 图表主题
+      theme_options:
+        auto: 'Mermaid 浅色 / 深色'
+        dark: 'Mermaid 深色'
+        default: 'Mermaid 默认'
+        flarum: 跟随论坛
+        forest: 'Mermaid 森林'
+        neutral: 'Mermaid 中性'

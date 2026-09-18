@@ -5,20 +5,20 @@
 datlechin-more-discussions:
   admin:
     settings:
-      block_name_help: '讨论列表的标题（默认 <code>最新讨论</code>)）'
-      block_name_label: 列表标题
-      discussion_limit_help: '列表讨论帖数量（默认 <code>5</code>）'
-      discussion_limit_label: 讨论数量上限
-      discussion_related_help: '通过标题搜索相关结果。<b>警告：</b>此功能严重影响网站的性能，尤其是大型网站。请结合 <b>clarkwinkelmann/flarum-ext-scout</b> 扩展程序使用以改善性能。'
-      discussion_related_label: 相关结果
-      filter_by_help: '列表排序方式（默认 <code>最新回复</code>）'
+      block_name_help: '设置区块标题，默认为 <code>最新讨论</code>'
+      block_name_label: 区块名称
+      discussion_limit_help: '设置显示的讨论数量，默认为 <code>5</code>'
+      discussion_limit_label: 讨论数量
+      discussion_related_help: '根据当前讨论的标题搜索相关讨论。<b>警告：</b>此功能可能显著影响网站性能，尤其是在大型论坛中。建议搭配 <b>clarkwinkelmann/flarum-ext-scout</b> 扩展使用，以改善搜索性能。'
+      discussion_related_label: 显示相关讨论
+      filter_by_help: '设置讨论的排序方式，默认为 <code>最新</code>'
       filter_by_label: 排序方式
       filter_dropdown:
-        hot: '趋势（需要 fof/gamification）'
-        latest: 最新回复
+        hot: '热门（需要 fof/gamification）'
+        latest: 最新
         newest: 新鲜出炉
         oldest: 陈年旧帖
-        top: 热门讨论
-        votes: '高票欢迎（需要 fof/gamification）'
+        top: 最多回复
+        votes: '赞同最多（需要 fof/gamification）'
   forum:
-    block_default_name: 最新讨论
+    block_default_name: 新鲜出炉

@@ -19,6 +19,7 @@ CHANGELOG
 * [`dashzeveg/flarum-ads-manager`](https://github.com/dashzeveg/flarum-ads-manager)
 * [`dashzeveg/flarum-custom-head`](https://github.com/dashzeveg/flarum-custom-head)
 * [`datlechin/flarum-debugbar`](https://github.com/datlechin/flarum-debugbar)
+* [`datlechin/flarum-link-clicks`](https://github.com/datlechin/flarum-link-clicks)
 * [`datlechin/flarum-mermaid`](https://github.com/datlechin/flarum-mermaid)
 * [`datlechin/flarum-passkey`](https://github.com/datlechin/flarum-passkey)
 * [`ekumanov/flarum-ext-forum-widgets`](https://github.com/ekumanov/flarum-ext-forum-stats-widget)

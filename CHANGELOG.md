@@ -22,6 +22,7 @@ CHANGELOG
 * [`datlechin/flarum-passkey`](https://github.com/datlechin/flarum-passkey)
 * [`ekumanov/flarum-ext-forum-widgets`](https://github.com/ekumanov/flarum-ext-forum-stats-widget)
 * [`ekumanov/flarum-ext-inline-audio`](https://github.com/ekumanov/flarum-ext-inline-audio)
+* [`ekumanov/flarum-ext-markdown-tables`](https://github.com/ekumanov/flarum-ext-markdown-tables)
 * [`ekumanov/flarum-ext-new-posts-notice`](https://github.com/ekumanov/flarum-ext-new-posts-notice)
 * [`ernestdefoe/aurora`](https://github.com/ernestdefoe/aurora)
 * [`ernestdefoe/calendar`](https://github.com/ernestdefoe/calendar)

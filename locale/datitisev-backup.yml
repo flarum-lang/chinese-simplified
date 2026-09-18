@@ -7,91 +7,91 @@ datitisev-backup:
     adapter-settings-modal:
       aliyun:
         access-id:
-          description: '您的身份认证访问令牌 ID'
+          description: '用于身份验证的 Access ID'
           label: 'Access ID'
         access-key:
-          description: 您的身份认证访问令牌密钥
+          description: '用于身份验证的 Access Key'
           label: 'Access Key'
         bucket:
-          description: 要使用的存储桶。
-          label: '存储桶 (Bucket)'
+          description: '用于存储备份的 Bucket 名称。'
+          label: Bucket
         endpoint:
-          description: '存储终端的 URL。'
-          label: '终端 (Endpoint)'
+          description: '存储服务的地域节点 URL。'
+          label: 地域节点
         path-prefix:
-          description: 可选的文件默认路径前缀。
+          description: 可选的默认文件路径前缀。
           label: 路径前缀
       aws:
         bucket:
-          description: '要上传到的 S3 存储桶。'
-          label: '存储桶 (Bucket)'
+          description: '用于上传备份的 S3 Bucket。'
+          label: Bucket
         credentials-key:
-          description: 'AWS 凭据 Key'
-          label: Key
+          description: 'AWS 凭证中的访问密钥 ID'
+          label: '访问密钥 ID'
         credentials-secret:
-          description: 'AWS 凭据私钥'
-          label: '私钥 (Secret)'
+          description: 'AWS 凭证中的秘密访问密钥'
+          label: 秘密访问密钥
         path-prefix:
-          description: 可选的文件默认路径前缀。
+          description: 可选的默认文件路径前缀。
           label: 路径前缀
         region:
-          description: 存储桶所属区域。
+          description: 'Bucket 所在区域。'
           label: 区域
         version:
-          description: 指定版本或留空以使用最新版本。
+          description: '指定 API 版本，留空则使用最新版本。'
           label: 版本
       azure:
         container:
-          description: 'Azure 容器'
+          description: 'Azure 存储容器'
           label: 容器
         endpoint:
-          description: '您的 Azure 存储连接字符串。'
+          description: 'Azure 存储的连接字符串。'
           label: 连接字符串
         path-prefix:
-          description: 可选的文件默认路径前缀。
+          description: 可选的默认文件路径前缀。
           label: 路径前缀
       dropbox:
         help:
           obtain-access-code-button: '打开 Dropbox'
-          obtain-access-code-label: '获取访问代码（需要 App Key）'
-          obtain-refresh-token-button: 使用代码
-          obtain-refresh-token-label: '使用访问代码获取刷新令牌（需要 App Key 和 Secret）'
-          obtain-refresh-token-success: 刷新令牌获取成功并已更新至上方！请保存更改以存储它。
+          obtain-access-code-label: '获取授权码（需要 App Key）'
+          obtain-refresh-token-button: 使用授权码
+          obtain-refresh-token-label: '使用授权码获取刷新令牌（需要 App Key 和 App Secret）'
+          obtain-refresh-token-success: 已成功获取刷新令牌并填入上方字段！请保存更改以应用此令牌。
         key:
           label: 'App Key'
         refresh-token:
-          description: '使用下方的字段获取刷新令牌，或手动参考指引：https://www.codemzy.com/blog/dropbox-long-lived-access-refresh-token#how-can-i-get-a-refresh-token-manually。'
-          label: '刷新令牌 (Refresh Token)'
+          description: '可以使用下方字段获取刷新令牌，也可以按照 https://www.codemzy.com/blog/dropbox-long-lived-access-refresh-token#how-can-i-get-a-refresh-token-manually 的说明手动获取。'
+          label: 刷新令牌
         secret:
           label: 'App Secret'
       ftp:
         host:
-          description: '要连接的 FTP 主机名，例如：<em>ftp.yourdomain.local</em>。'
+          description: '远程服务器的主机名，例如 <em>ftp.yourdomain.local</em>。'
           label: 远程主机名
         passive:
-          description: '是否为 FTP 连接使用被动模式。'
+          description: '是否使用 FTP 被动模式连接。'
           toggle: 被动模式
         password:
-          description: '用于 FTP 服务器身份验证的密码。'
+          description: 用于登录远程服务器的密码。
           label: 密码
         port:
-          description: 'FTP 端口（默认为 21）。'
+          description: 'FTP 端口，默认为 21。'
           label: 端口
         root:
-          description: 存储备份的远程根路径（子目录）。
+          description: 用于存储备份的远程根路径（子目录）。
           label: 根路径
         ssl:
-          description: '是否使用加密的 SSL 连接到服务器。'
+          description: '是否使用加密的 SSL 连接服务器。'
           toggle: SSL
         timeout:
-          description: '等待 FTP 服务器连接的秒数。'
+          description: 等待连接远程服务器的最长时间，单位为秒。
           label: 超时时间
         username:
-          description: '用于 FTP 服务器身份验证的用户名。'
+          description: 用于登录远程服务器的用户名。
           label: 用户名
       gdrive:
         client-id:
-          description: "按照 https://github.com/ivanvermeyen/laravel-google-drive-demo/blob/master/README/1-getting-your-dlient-id-and-secret.md 的说明创建 Google 项目并获取 Client ID 和 Client Secret。\n"
+          description: "按照 https://github.com/ivanvermeyen/laravel-google-drive-demo/blob/master/README/1-getting-your-dlient-id-and-secret.md 中的说明创建 Google 项目并获取 Client ID 和 Client Secret。\n"
           label: 'Client ID'
         client-secret:
           description: ' '
@@ -101,56 +101,60 @@ datitisev-backup:
           label: '文件夹 ID'
         help:
           test_button: 测试连接
-          test_success_alert: '成功连接到 Google Drive！请保存更改以存储设置。'
+          test_success_alert: '已成功连接 Google Drive！请保存更改以应用设置。'
         refresh-token:
-          description: "按照 https://github.com/ivanvermeyen/laravel-google-drive-demo/blob/master/README/2-getting-your-refresh-token.md 的说明取回您的 Google oAuth 应用程序刷新令牌。\n"
-          label: '刷新令牌 (Refresh Token)'
+          description: "按照 https://github.com/ivanvermeyen/laravel-google-drive-demo/blob/master/README/2-getting-your-refresh-token.md 中的说明获取 Google OAuth 应用的刷新令牌。\n"
+          label: 刷新令牌
+        use-display-paths:
+          description: "Google Drive 支持文件版本记录。启用后，将使用文件路径而不是随机生成的 ID 作为文件标识。关闭时，同一文件夹中可以存在多个同名文件而不会冲突；启用后，写入已存在的路径会覆盖原文件。<br/> <b>注意：</b>启用此选项后，请将文件夹 ID 改为该文件夹的显示路径，否则会创建一个以文件夹 ID 命名的新文件夹。\n"
+          label: 使用显示路径（允许覆盖）
+          toggle: 使用显示路径
       local:
         target:
-          description: 指定用于存储备份的本地目录。
+          description: 指定用于保存备份的本地目录。
           label: 目标路径
-      name_label: 'Location 名称'
+      name_label: 存储位置名称
       sftp:
         host: '=> datitisev-backup.admin.adapter-settings-modal.ftp.host'
         passphrase:
-          description: 私钥的密码短语（如果有）。
-          label: '密码短语 (Passphrase)'
+          description: 私钥的密码短语，如有设置请填写。
+          label: 私钥密码短语
         password: '=> datitisev-backup.admin.adapter-settings-modal.ftp.password'
         port:
-          description: 'SFTP 端口（默认为 22）。'
+          description: 'SFTP 端口，默认为 22。'
           label: 端口
         private-key:
-          description: '验证 SFTP 连接时使用的私钥路径（建议使用绝对路径）。'
-          label: '私钥 (Private Key)'
+          description: '用于 SFTP 身份验证的私钥路径，建议填写绝对路径。'
+          label: 私钥
         root: '=> datitisev-backup.admin.adapter-settings-modal.ftp.root'
         timeout: '=> datitisev-backup.admin.adapter-settings-modal.ftp.timeout'
         use-agent:
-          description: '是否使用 SSH 代理来验证连接（默认为否）。'
-          toggle: '使用代理 (Agent)'
+          description: '是否使用 SSH Agent 进行身份验证，默认关闭。'
+          toggle: '使用 SSH Agent'
         username: '=> datitisev-backup.admin.adapter-settings-modal.ftp.username'
-      timestamp_help: "指定备份文件名中时间戳的格式。默认为 <code>U</code>（Unix 时间戳）。使用 <a>PHP 日期格式化</a>。不安全的文件名字符将被清理。文件名格式将为 <code>{forum}-[格式化后的时间戳].zip</code>。\n"
-      timestamp_label: 文件名时间戳格式
+      timestamp_help: "设置备份文件名中的时间戳格式。默认值为 <code>U</code>（Unix 时间戳），格式遵循 <a>PHP 日期格式</a>。文件名中的不安全字符会被自动替换，最终格式为 <code>{forum}-[格式化时间戳].zip</code>。\n"
+      timestamp_label: 备份文件名时间戳格式
       title: '配置 {adapter}'
     adapters:
-      aliyun: '阿里云 (Aliyun)'
-      aws: '亚马逊 AWS S3'
-      azure: '微软 Azure'
+      aliyun: 阿里云
+      aws: 'Amazon AWS S3'
+      azure: 'Microsoft Azure'
       dropbox: Dropbox
       ftp: FTP
       gdrive: 'Google Drive'
       local: 本地存储
       sftp: SFTP
-    create_button: 添加新适配器
+    create_button: 添加存储位置
     delete_button: 删除
-    delete_confirmation: '确定要删除“{name}”（{adapter}）吗？'
+    delete_confirmation: '确定要删除「{name}」（{adapter}）吗？'
     nav:
-      description: 存储论坛的副本。
+      description: 保存论坛的备份副本。
       label: 备份
     required-package-modal:
-      content: "为了使用此驱动程序，您需要安装一个特定的软件包。您可以通过在 Flarum 安装目录下运行以下 composer 命令来安装：<code>composer require {package}</code>。\n"
-      title: '{adapter} 所需的软件包'
-    required_package_button: 安装
+      content: "使用此存储方式需要安装指定的软件包。请在 Flarum 安装目录中运行以下命令：<code>composer require {package}</code>\n"
+      title: '{adapter} 需要安装额外依赖'
+    required_package_button: 安装依赖
     settings:
-      database_bin_path_help: "如果您的数据库二进制文件（如 mysqldump, pg_dump）不在系统的 PATH 中，可以在此处指定它们所在的目录。请确保包含末尾的斜杠（例如 <code>/usr/local/mysql/bin/</code>）。\n"
-      database_bin_path_label: （可选）数据库二进制文件路径
+      database_bin_path_help: "如果 mysqldump、pg_dump 等数据库命令行工具未加入系统环境变量 PATH，可以在此指定其所在目录。目录路径末尾请保留斜杠，例如 <code>/usr/local/mysql/bin/</code>。\n"
+      database_bin_path_label: 数据库命令行工具目录（可选）
     settings_button: 配置

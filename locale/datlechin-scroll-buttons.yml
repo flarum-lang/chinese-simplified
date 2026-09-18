@@ -4,7 +4,7 @@
 
 datlechin-flarum-scroll-buttons:
   admin:
-    scroll_to_bottom_help: 显示回到页面底部按钮
-    scroll_to_bottom_label: 返回底部
+    scroll_to_bottom_help: 显示滚动到页面底部按钮
+    scroll_to_bottom_label: 滚动到底部
     scroll_to_top_help: 显示回到页面顶部按钮
     scroll_to_top_label: 返回顶部

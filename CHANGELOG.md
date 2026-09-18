@@ -28,6 +28,7 @@ CHANGELOG
 * [`ekumanov/flarum-ext-inline-audio`](https://github.com/ekumanov/flarum-ext-inline-audio)
 * [`ekumanov/flarum-ext-markdown-tables`](https://github.com/ekumanov/flarum-ext-markdown-tables)
 * [`ekumanov/flarum-ext-new-posts-notice`](https://github.com/ekumanov/flarum-ext-new-posts-notice)
+* [`ekumanov/flarum-ext-post-search`](https://github.com/ekumanov/flarum-ext-post-search)
 * [`ernestdefoe/aurora`](https://github.com/ernestdefoe/aurora)
 * [`ernestdefoe/calendar`](https://github.com/ernestdefoe/calendar)
 * [`ernestdefoe/connect`](https://github.com/ernestdefoe/connect)

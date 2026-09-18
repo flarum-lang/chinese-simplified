@@ -22,6 +22,7 @@ CHANGELOG
 * [`datlechin/flarum-link-clicks`](https://github.com/datlechin/flarum-link-clicks)
 * [`datlechin/flarum-mermaid`](https://github.com/datlechin/flarum-mermaid)
 * [`datlechin/flarum-passkey`](https://github.com/datlechin/flarum-passkey)
+* [`datlechin/flarum-placements`](https://github.com/datlechin/flarum-placements)
 * [`ekumanov/flarum-ext-forum-widgets`](https://github.com/ekumanov/flarum-ext-forum-stats-widget)
 * [`ekumanov/flarum-ext-inline-audio`](https://github.com/ekumanov/flarum-ext-inline-audio)
 * [`ekumanov/flarum-ext-markdown-tables`](https://github.com/ekumanov/flarum-ext-markdown-tables)

@@ -4,5 +4,5 @@
 
 ekumanov-new-posts-notice:
   forum:
-    new_posts_plural: "在您撰写期间新增了 {count} 条回复。\n\n确定 → 仍然发布回复\n取消 → 先查看新回复（草稿将被保留）"
-    new_posts_single: "在您撰写期间新增了 1 条回复。\n\n确定 → 仍然发布回复\n取消 → 先查看新回复（草稿将被保留）"
+    new_posts_plural: "你撰写回复期间新增了 {count} 条回复。\n\n确定 → 仍然发布回复\n取消 → 先查看这些回复（草稿会保留）"
+    new_posts_single: "你撰写回复期间新增了 1 条回复。\n\n确定 → 仍然发布回复\n取消 → 先查看这条回复（草稿会保留）"

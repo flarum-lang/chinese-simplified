@@ -3,9 +3,89 @@
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
 datlechin-keyboard-shortcuts:
+  admin:
+    allow_customization_help: 关闭后，所有用户只能使用下方设置的快捷键。
+    allow_customization_label: 允许用户自定义快捷键
+    behaviour_heading: 行为设置
+    bindings_heading: 快捷键
+    bindings_help: '选择一个快捷键，然后按下要绑定的按键。紧接着再按一个按键即可组成按键序列，例如「按 G 后再按 H」。'
+    column_binding: 按键
+    column_shortcut: 快捷键
+    enabled_by_default_help: 用户可以在自己的设置页面关闭键盘快捷键。
+    enabled_by_default_label: 默认启用键盘快捷键
+    filter_clear_label: 清除筛选
+    filter_placeholder: 筛选快捷键
+    no_results: '没有与「{query}」匹配的快捷键。'
+    reset_title: 重置键盘快捷键
+    sequence_timeout_help: '设置多段快捷键等待下一次按键的时间，例如「按 G 后再按 H」。超过此时间后，将重新开始识别按键序列。'
+    sequence_timeout_label: 按键序列等待时间（毫秒）
+  forum:
+    customize:
+      group_has_conflict: 此分组中有多个快捷键冲突。
+      help: '按下要绑定的按键。紧接着再按一个按键即可组成按键序列，例如「按 G 后再按 H」。'
+      reset_all_button: 恢复论坛默认设置
+      saved_message: 键盘快捷键已保存。
+      submit_button: 保存快捷键
+      title: 自定义快捷键
+      unsaved: '{count, plural, other {# 项未保存的更改}}'
+    modal:
+      customize_button: 自定义
+      enabled_label: 已启用键盘快捷键
+      filter_clear_label: 清除搜索
+      filter_placeholder: 搜索快捷键
+      no_results: '没有与「{query}」匹配的快捷键。'
+      title: 键盘快捷键
+    settings:
+      customize_button: 自定义快捷键
+      enabled_label: 使用键盘快捷键
+      heading: 键盘快捷键
+      help: '在论坛任意位置按 {key} 即可查看快捷键列表。'
+      view_button: 查看快捷键
   lib:
+    binding_or: 或
+    binding_then: 然后
+    groups:
+      composer: 编辑器
+      discussion: 讨论
+      discussionList: 讨论列表
+      global: 任意位置
+      navigation: 前往
+    recorder:
+      clear_label: 禁用此快捷键
+      conflict: '{shortcuts} 也使用了此按键。'
+      prompt: 请按下按键…
+      recording_status: 正在等待按键。
+      reset_label: 恢复默认设置
+      start_label: 设置新的快捷键
+      stop_label: 停止录入
     shortcuts:
-      mark_all_as_read: 全部已读
+      back: 返回
+      first_post: 跳转到最早内容
+      flags: '打开 / 关闭小黑屋'
+      follow: '关注 / 取消关注'
+      go_home: 全部讨论
+      go_notifications: 通知中心
+      go_profile: 个人主页
+      go_settings: 我的设置
+      help: 查看快捷键
+      last_post: 跳转到最新回复
+      login: 登录
+      mark_all_as_read: 全部标记为已读
+      minimize_composer: 最小化编辑器
+      new_discussion: 发起讨论
+      next_discussion: 下一个讨论
+      next_post: 下一篇帖子
+      notifications: '打开 / 关闭通知中心'
+      open_discussion: 打开选中的讨论
+      pin_nav: '固定 / 取消固定讨论列表'
+      previous_discussion: 上一个讨论
+      previous_post: 上一篇帖子
+      refresh: 刷新列表
+      rename_discussion: 重命名讨论
       reply: 回复
-      search: 查找
+      search: 搜索
+      session: '打开 / 关闭头像菜单'
       signup: 注册
+      toggle_full_screen: 切换全屏
+      toggle_theme: 切换显示模式
+    unbound: 未设置

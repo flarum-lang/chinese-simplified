@@ -31,6 +31,7 @@ CHANGELOG
 * [`ekumanov/flarum-ext-post-search`](https://github.com/ekumanov/flarum-ext-post-search)
 * [`ernestdefoe/aurora`](https://github.com/ernestdefoe/aurora)
 * [`ernestdefoe/calendar`](https://github.com/ernestdefoe/calendar)
+* [`ernestdefoe/cascade`](https://github.com/ernestdefoe/cascade)
 * [`ernestdefoe/connect`](https://github.com/ernestdefoe/connect)
 * [`ernestdefoe/cross-references`](https://github.com/ernestdefoe/cross-references)
 * [`ernestdefoe/digest-mail`](https://github.com/ernestdefoe/digest-mail)

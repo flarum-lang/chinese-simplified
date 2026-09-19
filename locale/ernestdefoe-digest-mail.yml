@@ -404,6 +404,9 @@ ernestdefoe-digest-mail:
       won_by: '中奖者：{winners}'
     header_badge: '{frequency}摘要'
     heading: '{period}社区动态'
+    heading_daily: 今日新鲜事
+    heading_monthly: 本月动态
+    heading_weekly: 本周新鲜事
     leaderboard:
       biggest_mover: '{period}进步最大'
       change_down: '下降 {n}'

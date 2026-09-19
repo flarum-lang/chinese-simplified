@@ -38,6 +38,7 @@ CHANGELOG
 * [`ernestdefoe/discussion-participants`](https://github.com/ernestdefoe/discussion-participants)
 * [`ernestdefoe/flarum-facebook-post`](https://github.com/ernestdefoe/flarum-facebook-post)
 * [`ernestdefoe/federation`](https://github.com/ernestdefoe/federation)
+* [`ernestdefoe/garrison`](https://github.com/ernestdefoe/garrison)
 * [`ernestdefoe/giveaways`](https://github.com/ernestdefoe/giveaways)
 * [`ernestdefoe/google-fonts`](https://github.com/ernestdefoe/google-fonts)
 * [`ernestdefoe/group-messages`](https://github.com/ernestdefoe/group-messages)

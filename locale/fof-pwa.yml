@@ -50,6 +50,7 @@ fof-pwa:
         heading: 其他
         push_notif_preference_default_to_email_label: 根据邮件通知默认启用推送通知
         push_notif_preference_default_to_email_text: 开启后，凡是默认启用邮件通知的用户，也会默认启用推送通知。关闭后，所有推送通知默认均为关闭状态。
+        push_notification_ttl_label: '通知推送 TTL'
         share_buttons_label: 启用分享按钮
         share_buttons_text: 开启后，会在讨论、帖子和用户页面中添加「分享」按钮。
         user_max_subscriptions_label: 每个用户最多推送订阅数

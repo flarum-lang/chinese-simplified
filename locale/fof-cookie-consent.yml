@@ -25,7 +25,7 @@ fof-cookie-consent:
         box: 方框
         box_inline: 行内方框
         box_wide: 宽方框
-        cloud: 炫富
+        cloud: 悬浮
         cloud_inline: 行内悬浮
       learnMoreLinkUrl: 链接地址
       learnMoreLinkUrl_help: 留空则不显示「了解更多」链接。

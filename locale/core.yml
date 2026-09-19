@@ -14,18 +14,18 @@ core:
           label: 配置覆盖
         forced_style_help: '强制所有图标使用指定的 Font Awesome 样式，例如 `fa-duotone fa-light` 或 `fa-regular`。此设置会覆盖核心和扩展程序指定的图标样式，但不会影响品牌图标。请确保当前图标来源支持所选样式：内置的 Font Awesome Free 对 `fas` 实心样式以外的样式支持有限，强制使用其他样式可能导致大量图标无法显示。Font Awesome Pro CDN 或 Kit 支持全部样式。留空则禁用此设置。'
         forced_style_label: 强制图标样式
-        kit_url_help: '您的 Font Awesome Kit 脚本的 URL（来自于 kit.fontawesome.com）'
+        kit_url_help: '你的 Font Awesome Kit 脚本 URL（来自于 kit.fontawesome.com）'
         kit_url_label: 'Kit 链接'
         preview:
           button: 预览图标
           fa5_fa6_label: 'FA5 / FA6 别名'
           fa7_label: 'FA7 类名'
-          help: '验证您的 FontAwesome 配置。图标是否正常显示，表示对应版本是否可用。'
+          help: '验证你的 FontAwesome 配置。图标是否正常显示，表示对应版本是否可用。'
           label: 图标预览
           pro_label: '仅限 Pro 版本'
         section_label: 'FontAwesome 图标'
         source_cdn: CDN
-        source_help: '选择 FontAwesome 图标的来源。论坛默认使用 Flarum 内置字体，您可以通过 CDN 或 FontAwesome Kit 自定义图标。'
+        source_help: '选择 FontAwesome 图标的来源。论坛默认使用 Flarum 内置字体，你可以通过 CDN 或 FontAwesome Kit 自定义图标。'
         source_kit: 'FontAwesome Kit'
         source_label: 图标源
         source_local: 本地（自带）
@@ -33,15 +33,15 @@ core:
         bisect:
           begin_button_text: 开始排查
           continue_button_text: 继续排查
-          help: 通过二分查找法，帮助您定位导致错误的扩展。使用此功能时，论坛会自动开启「普通维护模式」，直至排查结束。
+          help: 通过二分查找法，帮助你定位导致错误的扩展。使用此功能时，论坛会自动开启「普通维护模式」，直至排查结束。
           label: 排查扩展
         bisect_modal:
-          description: "继续操作会自动开启「普通维护模式」，直至排查结束。在每一步中，系统都会禁用部分扩展程序，直到找到导致问题的扩展程序。因此，如果您发现论坛功能缺失，亦或是样式变化，这是正常现象，请勿担心。请不要关闭当前页面，每操作一步，请在新标签页尝试复现问题。如果不慎关闭当前页面，您可以随时返回这里。\n"
+          description: "继续操作会自动开启「普通维护模式」，直至排查结束。在每一步中，系统都会禁用部分扩展程序，直到找到导致问题的扩展程序。因此，如果你发现论坛功能缺失，亦或是样式变化，这是正常现象，请勿担心。请不要关闭当前页面，每操作一步，请在新标签页尝试复现问题。如不慎关闭当前页面，你可以随时返回这里。\n"
           end_button: 关闭并跳转到扩展页面
           issue_question: 问题仍然存在吗？
           issue_question_help: 请在尝试新标签页中复现问题，并根据实际情况选择回答。
           no_button: 不存在
-          result_description: "扩展排查完毕，论坛已退出维护模式。根据您在各步骤中的反馈，导致问题的扩展是：\n"
+          result_description: "扩展排查完毕，论坛已退出维护模式。根据各步骤反馈，导致问题的扩展是：\n"
           start_button: 开始排查
           steps_left: '剩余步骤：{steps}'
           stop_button: 停止排查
@@ -50,7 +50,7 @@ core:
           yes_button: 存在
         config_override:
           help: '此处的设置可以被修改保存。如需生效，请将 <code>config.php</code> 文件中的 <code>offline</code> 设置为 <code>0</code>。'
-          label: '您的 <code>config.php</code> 文件正在覆盖这些设置。'
+          label: '你的 <code>config.php</code> 文件正在覆盖这些设置。'
         help: 开启维护模式，防止用户访问论坛。
         options:
           high: '深度维护。任何人都无法访问论坛（只能通过 config.php 开启）'
@@ -158,7 +158,7 @@ core:
       display_name_heading: 用户外显名称
       display_name_text: 选择外显名称的类型，默认为用户名。
       forum_description_heading: 论坛描述
-      forum_description_text: '简要介绍您的论坛，该内容将用于 Meta 标签，并可能显示在搜索引擎的结果中。'
+      forum_description_text: '简要介绍你的论坛，该内容将用于 Meta 标签，并可能显示在搜索引擎的结果中。'
       forum_title_heading: 论坛名称
       home_page_heading: 论坛首页
       home_page_text: 选择用户访问论坛时默认进入的页面。
@@ -286,7 +286,7 @@ core:
       abandoned_with_replacement: '此扩展已被 {replacement} 替代，请考虑迁移。'
       configure_scopes: 添加标签配置
       confirm_purge: '此操作将清除该扩展的所有数据库记录及相关资源，但不会卸载扩展；如需卸载，请通过 Composer 操作。确定要继续吗？'
-      database_driver_mismatch: 此扩展不支持您配置的数据库驱动。
+      database_driver_mismatch: 此扩展不支持你配置的数据库驱动。
       deprecated: 已弃用
       disabled: 关闭
       enable_to_see: 启用扩展以查看和修改设置。
@@ -433,7 +433,7 @@ core:
       general:
         heading: 常规
     settings:
-      saved_message: 您的修改已保存。
+      saved_message: 你的修改已保存。
       select_dropdown_custom_label: 自定义
       submit_button: '=> core.ref.save_changes'
     upload_image:
@@ -514,12 +514,12 @@ core:
       confirm_password_placeholder: '=> core.ref.confirm_password'
       confirmation_message: '=> core.ref.confirmation_email_sent'
       dismiss_button: '=> core.ref.okay'
-      incorrect_password_message: 您输入的密码不正确。
+      incorrect_password_message: 你输入的密码不正确。
       submit_button: '=> core.ref.save_changes'
       title: '=> core.ref.change_email'
     change_password:
       send_button: 发送重置密码邮件
-      text: 点击按钮发送重置链接到您的邮箱以重置密码。
+      text: 点击按钮发送重置链接到你的邮箱以重置密码。
       title: '=> core.ref.change_password'
     composer:
       close_tooltip: 关闭
@@ -535,7 +535,7 @@ core:
       title_placeholder: 标题
     composer_edit:
       discard_confirmation: 更改尚未保存，确定要丢弃吗？
-      edited_message: 您的修改已保存。
+      edited_message: 你的修改已保存。
       post_link: '编辑 {discussion} 的 #{number}'
       submit_button: '=> core.ref.save_changes'
       view_button: '=> core.ref.view'
@@ -547,7 +547,7 @@ core:
       view_button: '=> core.ref.view'
     discussion_controls:
       cannot_reply_button: 回复已关闭
-      cannot_reply_text: 您没有权限回帖。
+      cannot_reply_text: 你没有权限回帖。
       delete_button: '=> core.ref.delete'
       delete_confirmation: 确定要永久删除这个讨论吗？
       delete_forever_button: '=> core.ref.delete_forever'

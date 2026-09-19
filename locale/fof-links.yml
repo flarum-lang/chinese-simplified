@@ -6,36 +6,71 @@ fof-links:
   admin:
     edit_link:
       delete_link_button: 删除链接
-      delete_link_confirmation: 确定要删除此链接吗？
+      delete_link_confirmation: '确定要删除「{title}」吗？'
       icon_additional_text: '如需使用品牌图标，请改用 <code>fab fa-</code> 前缀。'
       icon_label: '=> core.ref.icon'
       icon_text: '=> core.ref.icon_text'
       internal_link: 站内高亮链接
       open_newtab: 在新标签页中打开
+      options_label: 选项
       submit_button: '=> core.ref.save_changes'
       title: '=> fof-links.ref.create_link'
+      title_child: '创建 {parent} 子链接'
       title_label: '=> fof-links.ref.title'
       title_placeholder: '=> fof-links.ref.title'
+      type:
+        external:
+          help: 非本论坛地址。
+          label: 站外
+        heading: 链接用途
+        internal:
+          help: 无需重新加载页面即可打开。
+          label: 站内
+        label:
+          help: 无点击效果，可用于给下拉链接组起标题。
+          label: 不跳转
       url_description: 留空则仅作为文字标签显示。
+      url_help:
+        external: '填写完整地址，包括 <code>https://</code>。'
+        internal: '填写 {baseUrl} 后面的地址部分，并以斜杠开头。'
       url_label: '=> fof-links.ref.url'
       url_placeholder: '=> fof-links.ref.url'
-      use_rel_me: '添加 <code>rel="me"</code> 属性，用于在其他网站验证身份'
+      url_placeholder.external: 'https://example.com'
+      url_placeholder.internal: /tags
+      use_rel_me: '添加 <code>rel="me"</code> 属性'
+      use_rel_me_help: 用于让目标网站验证此论坛由你所有。
       visibility:
         guest-only:
-          help: '仅 {guest} 可以看到此链接。请调整上方权限为「{everyone}」。'
+          help: '已登录用户不会看到此链接。请调整上方权限为「{everyone}」。'
           label: '仅限 {guest}'
-        help: '链接默认仅对 <code>{admin}</code> 用户可见。你可以调整权限，设置哪些用户可以看到此链接。'
-        help-disabled: 保存链接后才能修改可见范围。
+        help: '链接默认仅 {admin} 可见，你可以调整权限扩大可见范围。'
+        help-disabled: 保存链接后，才能修改可见范围。
         label: 可见范围
     links:
+      add_child_accessible_label: '在 {title} 下添加链接'
+      audience_everyone: 所有人可见
       create_button: '=> fof-links.ref.create_link'
+      description: 链接会按此处顺序显示在论坛导航栏中。
+      edit_accessible_label: '编辑 {title}'
+      flag:
+        guest_only: 仅游客
+        new_tab: 新标签页
+        rel_me: 'rel="me"'
       links: '=> fof-links.ref.links'
-      preconfigured: 论坛链接已预先配置，无法在此编辑。
+      moved: '{title} 已移动到第 {position} 位，共 {total} 项。'
+      moved_under: '{title} 已移动到 {parent} 下的第 {position} 位，共 {total} 项。'
+      no_url: 无链接，仅作为标签显示
+      preconfigured: 本站链接已通过代码配置，无法在此编辑。
+      reorder_accessible_label: '调整 {title} 的顺序。使用方向键可将其上移、下移、移入上方链接，或移出当前层级。'
+      reorder_help: 拖动手柄可调整顺序，或拖到另一个链接上，创建层级。手柄获得焦点后，也可以使用键盘方向键完成操作。
+      reorder_loading: 正在准备，请稍后…
     settings:
-      show_icons_only_on_tablet: 平板设备仅显示图标
+      heading: 设置
+      show_icons_only_on_tablet: 平板屏幕仅显示图标
+      show_icons_only_on_tablet_help: '屏幕宽度在 768px 至 991px 之间时隐藏链接标题，以节省导航栏空间。此功能不影响屏幕阅读器读出标题。'
   forum:
     header:
-      toggle_dropdown_accessible_label: 展开或收起链接菜单
+      toggle_dropdown_accessible_label: '显示 {title} 下的链接'
   ref:
     create_link: 创建链接
     links: 导航栏链接

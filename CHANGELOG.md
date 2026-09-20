@@ -165,7 +165,7 @@ CHANGELOG
 * [`acpl/mobile-tab`](https://github.com/android-com-pl/mobile-tab) (31 added, 7 removed)
 * [`acpl/my-tags`](https://github.com/android-com-pl/my-tags) (2 changed)
 * [`antoinefr/flarum-ext-money`](https://github.com/AntoineFr/flarum-ext-money) (5 added, 15 changed)
-* [`datitisev/flarum-backup`](https://flarum.org/extension/datitisev/flarum-backup) (22 added, 45 changed, 28 removed)
+* [`datitisev/flarum-backup`](https://flarum.org/extension/datitisev/flarum-backup) (17 added, 45 changed, 28 removed)
 * [`datitisev/flarum-post-galleries`](https://github.com/dsevillamartin/flarum-post-galleries) (1 changed)
 * [`datlechin/flarum-bbcode-hide-content`](https://github.com/datlechin/flarum-bbcode-hide-content) (3 added, 2 changed)
 * [`datlechin/flarum-birthdays`](https://github.com/datlechin/flarum-birthdays) (1 added, 18 changed, 2 removed)

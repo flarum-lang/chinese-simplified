@@ -5,20 +5,20 @@ CHANGELOG
 1.6.1 (XXXX-XX-XX)
 ------------------
 
-**例行更新**:
+**General changes**:
 
-* 更新核心翻译.
-* 更新验证器翻译.
+* Updated Flarum core translations (37 added, 69 changed).
+* Updated validation translations (1 added).
 
 
-**新增翻译**:
+**Added support for new extensions**:
 
 * [`asyntai/flarum-chatbot`](https://github.com/asyntai/flarum-chatbot)
 * [`blazite/flarum-turnstile`](https://github.com/flectar/flarum-ext-turnstile)
 * [`club-1/flarum-ext-content-permissions`](https://github.com/club-1/flarum-ext-content-permissions)
 * [`dalez/flarum-identityagent`](https://github.com/zDaleZ/flarum-identityagent)
-* [`datlechin/flarum-ai-summarize`](https://github.com/datlechin/flarum-ai-summarize)
 * [`datlechin/flarum-ai`](https://github.com/datlechin/flarum-ai)
+* [`datlechin/flarum-ai-summarize`](https://github.com/datlechin/flarum-ai-summarize)
 * [`datlechin/flarum-passkey`](https://github.com/datlechin/flarum-passkey)
 * [`ekumanov/flarum-ext-inline-audio`](https://github.com/ekumanov/flarum-ext-inline-audio)
 * [`ekumanov/flarum-ext-new-posts-notice`](https://github.com/ekumanov/flarum-ext-new-posts-notice)
@@ -58,43 +58,43 @@ CHANGELOG
 * [`walsgit/flarum-discussion-cards`](https://github.com/WalsGit/flarum-discussion-cards)
 
 
-**更新翻译**:
+**Updated translations for extensions**:
 
-* [`acpl/mobile-tab`](https://github.com/android-com-pl/mobile-tab)
-* [`afrux/online-users-widget`](https://github.com/afrux/online-users-widget)
-* [`afrux/top-posters-widget`](https://github.com/afrux/top-posters-widget)
-* [`antoinefr/flarum-ext-money`](https://github.com/AntoineFr/flarum-ext-money)
-* [`askvortsov/flarum-pwa`](https://github.com/askvortsov1/flarum-pwa)
-* [`blomstra/s3-assets`](https://github.com/blomstra/flarum-ext-s3-assets)
-* [`clarkwinkelmann/flarum-ext-emojionearea`](https://github.com/clarkwinkelmann/flarum-ext-emojionearea)
-* [`datlechin/flarum-link-preview`](https://github.com/datlechin/flarum-link-preview)
-* [`flarum/extension-manager`](https://github.com/flarum/extension-manager)
-* [`flarum/nicknames`](https://github.com/flarum/nicknames)
-* [`flarum/suspend`](https://github.com/flarum/suspend)
-* [`flarum/tags`](https://github.com/flarum/tags)
-* [`fof/anti-spam`](https://github.com/FriendsOfFlarum/anti-spam)
-* [`fof/ban-ips`](https://github.com/FriendsOfFlarum/ban-ips)
-* [`fof/byobu`](https://github.com/FriendsOfFlarum/byobu)
-* [`fof/default-user-preferences`](https://github.com/FriendsOfFlarum/default-user-preferences)
-* [`fof/doorman`](https://github.com/FriendsOfFlarum/doorman)
-* [`fof/drafts`](https://github.com/FriendsOfFlarum/drafts)
-* [`fof/filter`](https://github.com/FriendsOfFlarum/filter)
-* [`fof/follow-tags`](https://github.com/FriendsOfFlarum/follow-tags)
-* [`fof/oauth`](https://github.com/FriendsOfFlarum/oauth)
-* [`fof/polls`](https://github.com/FriendsOfFlarum/polls)
-* [`fof/sentry`](https://github.com/FriendsOfFlarum/sentry)
-* [`fof/sitemap`](https://github.com/FriendsOfFlarum/sitemap)
-* [`fof/upload`](https://github.com/FriendsOfFlarum/upload)
-* [`yippy/flarum-ext-auth-ldap`](https://github.com/Yippy/flarum-ext-auth-ldap)
+* [`acpl/mobile-tab`](https://github.com/android-com-pl/mobile-tab) (5 changed)
+* [`afrux/online-users-widget`](https://github.com/afrux/online-users-widget) (3 added)
+* [`afrux/top-posters-widget`](https://github.com/afrux/top-posters-widget) (1 added)
+* [`antoinefr/flarum-ext-money`](https://github.com/AntoineFr/flarum-ext-money) (3 added)
+* [`askvortsov/flarum-pwa`](https://github.com/askvortsov1/flarum-pwa) (1 changed)
+* [`blomstra/s3-assets`](https://github.com/blomstra/flarum-ext-s3-assets) (1 changed)
+* [`clarkwinkelmann/flarum-ext-emojionearea`](https://github.com/clarkwinkelmann/flarum-ext-emojionearea) (11 added)
+* [`datlechin/flarum-link-preview`](https://github.com/datlechin/flarum-link-preview) (2 added, 15 changed)
+* [`flarum/extension-manager`](https://github.com/flarum/extension-manager) (17 added, 2 changed)
+* [`flarum/nicknames`](https://github.com/flarum/nicknames) (1 added)
+* [`flarum/suspend`](https://github.com/flarum/suspend) (1 added)
+* [`flarum/tags`](https://github.com/flarum/tags) (8 added, 1 changed)
+* [`fof/anti-spam`](https://github.com/FriendsOfFlarum/anti-spam) (1 changed)
+* [`fof/ban-ips`](https://github.com/FriendsOfFlarum/ban-ips) (2 added)
+* [`fof/byobu`](https://github.com/FriendsOfFlarum/byobu) (1 added)
+* [`fof/default-user-preferences`](https://github.com/FriendsOfFlarum/default-user-preferences) (4 added)
+* [`fof/doorman`](https://github.com/FriendsOfFlarum/doorman) (36 added)
+* [`fof/drafts`](https://github.com/FriendsOfFlarum/drafts) (2 added)
+* [`fof/filter`](https://github.com/FriendsOfFlarum/filter) (1 added, 2 changed)
+* [`fof/follow-tags`](https://github.com/FriendsOfFlarum/follow-tags) (3 added)
+* [`fof/oauth`](https://github.com/FriendsOfFlarum/oauth) (5 added)
+* [`fof/polls`](https://github.com/FriendsOfFlarum/polls) (1 added)
+* [`fof/sentry`](https://github.com/FriendsOfFlarum/sentry) (27 added, 15 changed)
+* [`fof/sitemap`](https://github.com/FriendsOfFlarum/sitemap) (11 added)
+* [`fof/upload`](https://github.com/FriendsOfFlarum/upload) (3 added)
+* [`yippy/flarum-ext-auth-ldap`](https://github.com/Yippy/flarum-ext-auth-ldap) (5 added, 1 changed)
 
 
-全部变化：[v1.6.0...v1.6.1](https://github.com/flarum-lang/chinese-simplified/compare/v1.6.0...v1.6.1)
+All changes: [v1.6.0...1.6.1](https://github.com/flarum-lang/chinese-simplified/compare/v1.6.0...1.6.1).
 
 
 1.6.0 (XXXX-XX-XX)
 ------------------
 
-全部变化：[v1.5.0...v1.6.0](https://github.com/flarum-lang/chinese-simplified/compare/v1.5.0...v1.6.0)
+All changes: [v1.5.0...v1.6.0](https://github.com/flarum-lang/chinese-simplified/compare/v1.5.0...v1.6.0).
 
 
 1.5.0 (2024-10-29)

@@ -115,23 +115,18 @@ datitisev-backup:
           label: 目标路径
       name_label: 存储位置名称
       sftp:
-        host: '=> datitisev-backup.admin.adapter-settings-modal.ftp.host'
         passphrase:
           description: 私钥的密码短语，如有设置请填写。
           label: 私钥密码短语
-        password: '=> datitisev-backup.admin.adapter-settings-modal.ftp.password'
         port:
           description: 'SFTP 端口，默认为 22。'
           label: 端口
         private-key:
           description: '用于 SFTP 身份验证的私钥路径，建议填写绝对路径。'
           label: 私钥
-        root: '=> datitisev-backup.admin.adapter-settings-modal.ftp.root'
-        timeout: '=> datitisev-backup.admin.adapter-settings-modal.ftp.timeout'
         use-agent:
           description: '是否使用 SSH Agent 进行身份验证，默认关闭。'
           toggle: '使用 SSH Agent'
-        username: '=> datitisev-backup.admin.adapter-settings-modal.ftp.username'
       timestamp_help: "设置备份文件名中的时间戳格式。默认值为 <code>U</code>（Unix 时间戳），格式遵循 <a>PHP 日期格式</a>。文件名中的不安全字符会被自动替换，最终格式为 <code>{forum}-[格式化时间戳].zip</code>。\n"
       timestamp_label: 备份文件名时间戳格式
       title: '配置 {adapter}'

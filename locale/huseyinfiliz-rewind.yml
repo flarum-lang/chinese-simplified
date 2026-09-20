@@ -111,7 +111,6 @@ huseyinfiliz-rewind:
       best_answers_leaderboard: 最佳答案榜
       best_answers_leaderboard_desc: 帮助他人最多的成员
       busiest_month: 最忙碌的月份
-      busiest_month_desc: '{month} 是大家最活跃的一个月'
       busiest_month_label: 最忙月份
       discussions: 话题总数
       hot_discussion: 热门话题
@@ -124,7 +123,6 @@ huseyinfiliz-rewind:
       new_members_slide: 新伙伴
       peak_hour_label: 高峰时段
       peak_hours: 高峰时段
-      peak_hours_desc: '每天 {hour} 点是大家最常在线的时候'
       posts: 帖子总数
       reactions: 互动
       star_post: 明星帖子
@@ -251,7 +249,7 @@ huseyinfiliz-rewind:
       generating: 正在生成，请稍候…
       hero_subtitle: 回顾你这一年里的社区足迹
       hero_title: 年度回顾
-      my_rewind: '我的 {year} 年度回顾'
+      my_rewind: 我的年度回顾
       no_snapshot: '你尚未生成 {year} 的年度回顾。'
       not_available: 当前无法使用年度回顾。
       personal_title: 我的年度回顾

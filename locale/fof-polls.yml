@@ -78,7 +78,7 @@ fof-polls:
       date_placeholder: 投票截止时间（可选）
       delete: '=> core.ref.delete'
       edit_title: 编辑投票
-      empty_answers: '{count, plural, other {有 {count} 个选项为空，请填写或删除。}}'
+      empty_answers: '{count, plural, other {有 # 个选项为空，请填写或删除。}}'
       error: '=> core.lib.error.generic_message'
       hide_votes_label: 投票结束前隐藏票数
       hide_votes_label_help: 投票发起者始终可以查看票数。
@@ -126,7 +126,7 @@ fof-polls:
       scheduled_label: '定于 {date} 发布'
       start_poll_button: 发起全站投票
       submit_button: 投票
-      total_votes: '{count, plural, other {共 {count} 票}}'
+      total_votes: '{count, plural, other {共 # 票}}'
     poll_controls:
       cancel_schedule_label: 取消定时发布
       cancel_schedule_success: 已取消定时发布。
@@ -200,7 +200,7 @@ fof-polls:
       no-recent-polls: 近期没有结束的投票。
     tooltip:
       badge: 投票
-      votes: '{count, plural, other {{count} 票}}'
+      votes: '{count, plural, other {# 票}}'
     upload_image:
       remove_button: 删除图片
       upload_button: 上传图片

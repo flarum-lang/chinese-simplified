@@ -24,7 +24,6 @@ ralkage-account-lockout:
       locked_timed: 账户已被临时锁定，请稍后再试。
   forum:
     log_in:
-      attempts_remaining: '还剩 {attempts} 次尝试机会。'
       locked_manual: 账户已被管理员锁定。
       locked_timed: '账户已被临时锁定，请 {minutes} 分钟后重试。'
     unlock_modal:

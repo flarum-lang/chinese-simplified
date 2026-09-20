@@ -90,10 +90,10 @@ resofire-digest-mail:
       tallying: 正在统计结果，敬请期待公告！
       voting_closed: 投票已结束
     badges:
-      earned_count_plural: '本{周期}获得 {count} 次'
-      earned_count_singular: '本{周期}获得 {count} 次'
-      intro: '本{周期}内获得勋章的成员。'
-      most_earned: '本{周期}获得最多'
+      earned_count_plural: '本{period}获得 {count} 次'
+      earned_count_singular: '本{period}获得 {count} 次'
+      intro: '本{period}内获得勋章的成员。'
+      most_earned: '本{period}获得最多'
       rarest: 颁发的稀有勋章
       rarest_count_plural: '仅有 {count} 位成员拥有此勋章'
       rarest_count_singular: '仅有 {count} 位成员拥有此勋章'
@@ -105,11 +105,11 @@ resofire-digest-mail:
       unsubscribe: 更改频率或取消订阅
     gamepedia:
       cta: '浏览 Gamepedia'
-      most_discussed: '本{周期}讨论最多的游戏'
+      most_discussed: '本{period}讨论最多的游戏'
       newly_added: 最近新增
-    heading: '过去{周期}内发生了什么'
+    heading: '过去{period}内发生了什么'
     leaderboard:
-      biggest_mover: '本{周期}上升最快'
+      biggest_mover: '本{period}上升最快'
       col_member: 成员
       col_move: 变化
       col_rank: '#'
@@ -133,9 +133,9 @@ resofire-digest-mail:
       upcoming_note: 不要错过竞猜机会——截止时间见下方。
     resofire_gamepedia:
       cta: '浏览 Gamepedia'
-      most_discussed: '本{周期}讨论最多的游戏'
+      most_discussed: '本{period}讨论最多的游戏'
       newly_added: 最近新增
-      top_genres: '本{周期}热门游戏类型'
+      top_genres: '本{period}热门游戏类型'
     sections:
       active_discussions: 活跃讨论
       badges: 勋章
@@ -151,7 +151,7 @@ resofire-digest-mail:
       discussions: 讨论
       new_members: 新成员
       posts: 帖子
-    subject: '{forum} —— 您的{频率}摘要'
+    subject: '{forum} —— 您的{frequency}摘要'
   forum:
     onboarding:
       modal_body: 定期将论坛中的精选讨论、新成员和热门动态整理成摘要，直接发送到您的收件箱。

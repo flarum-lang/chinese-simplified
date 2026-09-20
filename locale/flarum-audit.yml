@@ -4,5 +4,116 @@
 
 flarum-audit:
   admin:
+    header:
+      title: 审计
+    limitedSettings:
+      configure: 配置
+      introduction: 选择「查看部分审计日志」权限用户可见的日志类型
+      requiresExtension: '需要先启用扩展「{extension}」'
+      title: 配置可见类型
     permissions:
-      view: 查看审查日志
+      view: 查看审计日志
+      viewLimited: 查看部分审计日志
+    settings:
+      limitedIpAddress: '查看 IP 地址'
+  forum:
+    link:
+      actor-audit: 用户操作记录
+      all-audit: 审计日志
+      discussion-audit: 审计日志
+      user-audit: 账号变更记录
+    modal:
+      actor-title: 用户操作记录
+      all-title: 审计日志
+      discussion-title: 讨论审计日志
+      user-title: 账号变更记录
+  lib:
+    browser:
+      audit_log_cleared: '清除了审计日志中的 {deleted_count} 条记录'
+      cache_cleared: 手动清除了缓存
+      client:
+        access_token: 访问令牌
+        api_key: 'API 密钥'
+        cli: 命令行
+        session: 网页会话
+        unknown: 未知客户端
+      controls:
+        filterAction: 筛选同一操作类型
+        filterActor: 筛选同一操作者
+        filterClient: 筛选同一客户端类型
+        filterDiscussion: 筛选同一讨论
+        filterIp: '筛选同一 IP'
+        filterUser: 筛选同一受影响用户
+        hideRaw: 隐藏原始日志
+        showRaw: 显示原始日志
+      deletedResource:
+        discussion: '讨论 #{id}'
+        group: '用户组 #{id}'
+        post: '帖子 #{id}'
+        tag: '标签 #{id}'
+        user: '用户 #{id}'
+      discussion:
+        created: '发起了讨论 {discussion}'
+        deleted: '删除了讨论 {discussion}'
+        hidden: '隐藏了讨论 {discussion}'
+        renamed: '将讨论标题从“{old_title}”修改为“{new_title}”'
+        restored: '恢复了讨论 {discussion}'
+      empty: 暂无审计记录
+      extension:
+        disabled: '禁用了扩展 {package}'
+        enabled: '启用了扩展 {package}'
+        uninstalled: '卸载了扩展 {package}'
+      filterApply: 应用
+      filterClear: 清除筛选
+      filterPlaceholder: 筛选日志
+      filters:
+        action: '操作类型，例如 action:post.created。'
+        actor: '执行操作的用户。对于系统或未登录操作，可使用 actor:guest。'
+        client: 请求的发起方式。
+        discussion: '查询影响指定讨论的操作，使用讨论 ID 筛选。'
+        ip: '发起操作的 IP 地址。'
+        user: 操作所影响的用户，使用用户名筛选。
+      filtersHint: 筛选条件：
+      genericResource:
+        comment: 回复
+        post: 帖子
+      help:
+        multiple: '使用英文逗号分隔多个筛选条件，可匹配其中任意一个，例如 action:post.created,post.deleted'
+        negate: '在筛选条件前加减号可排除匹配项，例如 -client:cli'
+        toggle: 搜索帮助
+      loadMore: 加载更多
+      noReason: （无原因）
+      noValue: （无值）
+      permissionGroup:
+        everyone: '=> core.admin.permissions_controls.everyone_button'
+        members: '=> core.admin.permissions_controls.members_button'
+      permission_changed: '将 {permission} 权限的用户组从 {old_groups} 调整为 {new_groups}'
+      post:
+        created: '在 {discussion} 中发布了 {post}'
+        deleted: '删除了 {postuser} 在 {discussion} 中发布的 {post}'
+        hidden: '隐藏了 {postuser} 在 {discussion} 中发布的 {post}'
+        restored: '恢复了 {postuser} 在 {discussion} 中发布的 {post}'
+        revised: '修改了 {postuser} 在 {discussion} 中发布的 {post}'
+      refresh: 刷新
+      setting_changed: '修改了设置 {key}'
+      setting_changed_with_values: '修改了设置 {key}：{old_value} → {new_value}'
+      user:
+        activated: '手动激活了 {username} 的账号'
+        activated_with_email: '通过确认链接激活了 {username} 的账号'
+        avatar_changed: '更换了 {username} 的头像'
+        avatar_removed: '移除了 {username} 的头像'
+        created: '为 {username} 创建了账号'
+        deleted: '删除了用户 {username}'
+        email_change_requested: '请求将 {username} 的邮箱变更为 {new_email}'
+        email_changed: '修改了 {username} 的邮箱：{old_email} → {new_email}'
+        groups_changed: '修改了 {username} 的用户组：{old_groups} → {new_groups}'
+        logged_in: '登录了 {username} 的账号'
+        logged_in_with_provider: '通过 {provider} 登录了 {username} 的账号'
+        logged_out: '登出了 {username} 的账号'
+        password_change_requested: '请求修改 {username} 的密码'
+        password_changed: '修改了 {username} 的密码'
+        password_reset_attempted: '请求重置 {username} 的密码'
+        password_reset_attempted_unmatched: '请求重置未注册邮箱 {email} 的密码'
+        provider_connected: '为 {username} 的账号绑定了 {provider}'
+        username_changed: '修改了 {username} 的用户名：{old_username} → {new_username}'
+      withoutActor: '=> core.group.guest'

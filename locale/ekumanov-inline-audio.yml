@@ -3,5 +3,11 @@
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
 ekumanov-inline-audio:
+  admin:
+    settings:
+      auto_play: 点击文件名后立即开始播放
+      show_download_button: 在播放条上显示下载按钮
+      show_right_click_download: 允许右键点击文件名保存文件
+      strip_upload_prefix: 隐藏上传文件名中的数字前缀（例如「1774205518-685373-song.mp3」→「song.mp3」）
   forum:
     bbcode_description: '嵌入一个音频播放器：[player]URL[/player]'

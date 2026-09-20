@@ -7,7 +7,9 @@ forumaker-magicread:
     settings:
       enable_counter: 编辑器中实时字符计数器
       enable_pagination: 讨论区内分页功能
+      enable_readmore: 在个人资料页启用“阅读更多”预览
       section_main: 设置
   forum:
     counter:
       label: 字符
+    read_more: 阅读更多

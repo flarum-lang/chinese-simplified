@@ -9,6 +9,13 @@ blomstra-gdpr:
         anonymize_description: '生成新的随机头像替换并删除原始 Boring 头像。'
         delete_description: '删除 Boring 头像。'
         export_description: '在导出文件中包含生成的 Boring 头像。'
+flarum-gdpr:
+  lib:
+    data:
+      boringavatar:
+        anonymize_description: '删除现有的 Boring Avatar，并重新随机生成一个新的。'
+        delete_description: '删除 Boring Avatar。'
+        export_description: '将 Boring Avatar 头像添加至导出的压缩包中。'
 ianm-boring-avatars:
   admin:
     settings:

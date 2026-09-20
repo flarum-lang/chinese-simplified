@@ -64,7 +64,7 @@ yippy-auth-ldap:
         not_found: '无法找到 {server} 账号。'
         password_expired: 密码已过期。
       core_csrf_token_mismatch: '=> core.views.error.csrf_token_mismatch'
-      csrf_token_mismatch: 您已经长时间未活动，请刷新页面并重试。
+      csrf_token_mismatch: 您已经长时间未活动，请刷新页面并重试
       domains:
         empty_base_dn: '域名 {domain_index} 未设置基本辨识名称（DNs），请修改扩展程序设置。'
         empty_host: '域名 {domain_index} 未设置任何域名或服务器 IP 地址，请修改扩展程序设置。'

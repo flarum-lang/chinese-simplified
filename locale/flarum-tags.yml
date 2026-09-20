@@ -9,52 +9,52 @@ flarum-tags:
     edit_tag:
       color_label: '=> core.ref.color'
       delete_tag_button: 删除标签
-      delete_tag_confirmation: 确定要删除此标签？此操作不会删除标签下的主题帖。
+      delete_tag_confirmation: 确定要删除此标签吗？标签下的讨论不会被删除。
       description_label: 描述
-      hide_label: 从“全部主题”中隐藏
+      hide_label: 从「全部讨论」中隐藏
       icon_label: '=> core.ref.icon'
       icon_text: '=> core.ref.icon_text'
       name_label: '=> flarum-tags.ref.name'
       name_placeholder: '=> flarum-tags.ref.name'
-      slug_label: 英文名称（Slug）
+      slug_label: 固定链接名
       submit_button: '=> core.ref.save_changes'
-      title: 新建标签
+      title: 创建标签
     nav:
-      tags_button: 节点标签
-      tags_text: 管理论坛标签列表。
+      tags_button: '=> flarum-tags.ref.tags'
+      tags_text: 管理用于整理讨论的标签。
     permissions:
       allow_edit_tags_label: 允许编辑标签
       bypass_tag_counts_label: 不受标签数量限制
       restrict_by_tag_heading: 按标签配置
-      tag_discussions_label: 更改标签
+      tag_discussions_label: 编辑讨论标签
     settings:
       button_text: '=> flarum-tags.ref.choose_tags'
     tag_settings:
       range_separator_text: ' 至 '
       required_primary_heading: 主标签数量限制
-      required_primary_text: 设置每个主题帖需添加的主标签数量。
+      required_primary_text: 设置每个讨论可添加的主标签数量上限和下限。
       required_secondary_heading: 次标签数量限制
-      required_secondary_text: 设置每个主题帖需添加的次标签数量。
+      required_secondary_text: 设置每个讨论可添加的次标签数量上限和下限。
       title: 标签设置
     tags:
-      about_tags_text: 使用标签对主题帖分类。主标签类似于传统论坛的板块，可以分成两级。次标签无层级无顺序，可作为次板块。鼠标拖动标签即可排序或调整层级位置。
-      create_primary_tag_button: 新建主标签
-      create_secondary_tag_button: 新建次标签
+      about_tags_text: 标签用于对讨论进行分类。主标签类似传统论坛的板块，可分为两级；次标签无层级、无顺序，适合更细致的分类。拖动标签即可调整排序或层级。
+      create_primary_tag_button: 创建主标签
+      create_secondary_tag_button: 创建次标签
       edit_tag_label: '编辑标签 {tag}'
       primary_heading: 主标签
       secondary_heading: 次标签
       settings_heading: 设置
   forum:
     all_tags:
-      meta_description_text: 全部标签
+      meta_description_text: 所有标签
       meta_title_text: '=> flarum-tags.ref.tags'
     choose_tags:
       bypass_requirements: 跳过标签选择
       choose_primary_placeholder: '{count, plural, one {选择主标签    } other {最多选择 # 个主标签}}'
       choose_secondary_placeholder: '{count, plural, one {选择一个次标签} other {最多选择 # 个次标签}}'
-      edit_title: '更改「{title}」的节点标签'
+      edit_title: '编辑「{title}」的标签'
       submit_button: '=> core.ref.okay'
-      title: 添加标签
+      title: 为你的讨论选择标签
     composer_discussion:
       choose_tags_link: '=> flarum-tags.ref.choose_tags'
     discussion_controls:
@@ -62,29 +62,29 @@ flarum-tags:
     header:
       back_to_tags_tooltip: 返回标签列表
     index:
-      more_link: 更多标签...
+      more_link: 更多…
       tags_link: '=> flarum-tags.ref.tags'
-      untagged_link: 移除标签
+      untagged_link: 无标签
     post_stream:
-      added_and_removed_tags_text: '{username} 于 {time} 添加 {tagsAdded}，并移除 {tagsRemoved}。'
-      added_tags_text: '{username} 于 {time} 添加 {tagsAdded}'
-      removed_tags_text: '{username} 于 {time} 移除 {tagsRemoved}'
-      tags_text: '{tags} 标签'
+      added_and_removed_tags_text: '{username} 于 {time} 添加了 {tagsAdded}，并移除了 {tagsRemoved}'
+      added_tags_text: '{username} 于 {time} 添加了 {tagsAdded}'
+      removed_tags_text: '{username} 于 {time} 移除了 {tagsRemoved}'
+      tags_text: '{count, plural, one {{tags} 标签} other {{tags} 标签}}'
     tag:
-      meta_description_text: '{tag} 标签下的所有主题'
+      meta_description_text: '带有「{tag}」标签的所有讨论'
   lib:
     deleted_tag_text: 已删除
     tag_selection_modal:
-      bypass_requirements: 忽略标签选择
-      choose_primary_placeholder: '{count, plural, one {请选择一个主标签} other {请选择 # 个主标签}}'
+      bypass_requirements: 忽略标签要求
+      choose_primary_placeholder: '{count, plural, one {选择 1 个主标签} other {选择 # 个主标签}}'
       choose_secondary_placeholder: '=> flarum-tags.ref.choose_tags_placeholder'
       choose_tags_placeholder: '=> flarum-tags.ref.choose_tags_placeholder'
       submit_button: '=> core.ref.okay'
       title: '=> flarum-tags.ref.choose_tags'
   ref:
     choose_tags: 选择标签
-    choose_tags_placeholder: '{count, plural, one {请再选择一个标签} other {请再选择 # 个标签}}'
-    name: 标签名称
+    choose_tags_placeholder: '{count, plural, one {还需选择 1 个标签} other {还需选择 # 个标签}}'
+    name: 名称
     tags: 标签
   validation:
     attributes:

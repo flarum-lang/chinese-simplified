@@ -2,77 +2,84 @@
 # Use https://weblate.rob006.net/projects/flarum/fof-anti-spam/zh_Hans/ for translation.
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
+flarum-audit:
+  lib:
+    browser:
+      registration:
+        blocked: '拦截了 {username}（{email}）从 {ip} 发起的注册'
+      user:
+        marked_as_spammer: '将 {username} 标记为垃圾用户'
 fof-anti-spam:
   admin:
     blocked_registrations:
-      attempted-at: 尝试在
-      button: 拦截记录
-      delete_entry: 删除条目
-      email: 邮箱
-      help: "本页显示所有被 StopForumSpam 服务拦截的注册信息，您可以查看详情或删除记录。\n"
+      attempted-at: 尝试时间
+      button: 已拦截注册
+      delete_entry: 删除记录
+      email: 邮箱地址
+      help: "此页面列出了所有被 StopForumSpam 服务拦截的注册。你可以查看每次注册的详细信息，也可以根据需要从数据库中删除记录。\n"
       ip: 'IP 地址'
-      login-provider: 登录提供程序
-      login-provider-data: 登录提供程序数据
+      login-provider: 登录提供商
+      login-provider-data: 登录服务商
       no-records: 暂无拦截记录。
       sfs-data: 'StopForumSpam 数据'
-      title: 拦截记录
+      title: 已拦截注册
       username: 用户名
     permissions:
-      spamblock_users_label: 标记垃圾账号
+      spamblock_users_label: 标记垃圾用户
     settings:
       button: 设置
       default-actions:
-        delete_discussions_help: 启用此项，永久删除主题帖，否则隐藏主题帖。
-        delete_discussions_label: 删除主题帖
-        delete_posts_help: 启用此项，永久删除帖子，否则隐藏帖子。
+        delete_discussions_help: 永久删除此用户发起的所有讨论。关闭此项，改为软删除。
+        delete_discussions_label: 删除讨论
+        delete_posts_help: 永久删除此用户发布的所有帖子。关闭此项，改为软删除。
         delete_posts_label: 删除帖子
-        delete_user_help: 启用此项，永久删除账号，否则停用帐号。
-        delete_user_label: 删除账号
-        heading: 默认操作
-        introduction: 当用户被标记为垃圾邮件发送者时，版主可以从各种操作中选择如何处理特定用例。这些设置允许您预设通常会采取的操作，以加快过程，但也允许根据需要进行更改。
-        move_discussions_to_tags_help: 移除帖子的所有标签，并统一移动到指定标签旗下，「删除主题贴」禁用时生效。如需保留原始标签，请清空下方标签配置。
-        move_discussions_to_tags_label: 归档标签
+        delete_user_help: 永久删除此用户。关闭此项，改为封禁用户。
+        delete_user_label: 删除用户
+        heading: 默认处理操作
+        introduction: 标记垃圾用户时，管理人员可以根据实际情况选择不同的处理方式。提前配置好下方设置可以加快处理流程。
+        move_discussions_to_tags_help: 将此用户发起的所有讨论移动至指定标签。清空标签选择则保留讨论原有标签。启用「删除讨论」后，此设置不生效。
+        move_discussions_to_tags_label: 移动讨论至标签
       stopforumspam:
         api_key_instructions_text: '<register>注册 StopForumSpam</register>，并<key>获取 API 密钥</key>。'
         api_key_label: 'API 密钥'
-        api_key_text: '向 StopForumSpam 共享垃圾账号信息，改善检测服务。'
-        confidence_help: 百分比等级，根据检测数据生成。等于或高于这个数字时，禁止客户端注册账号。
+        api_key_text: '向 StopForumSpam 共享垃圾用户信息，帮助其他论坛共同防范。'
+        confidence_help: 百分比指标，根据检测数据得出。达到或超过此值时，无论命中数是否达到，都会直接禁止注册。
         confidence_label: 置信度
-        email_hash_help: '传递邮件地址的 MD5 值。'
-        email_hash_label: 使用散列后的邮箱地址
-        email_label: 邮箱地址滥用检查
-        frequency_help: "所以已启用检查的触发次数。\n例如：如果电子邮件有 1 次命中，而 IP 有 2 次命中，共记 3 次命中。如果阈值设置为 3 或更低，则阻止注册。\n"
-        frequency_label: 阈值
+        email_hash_help: '开启后，查询 StopForumSpam 时只会发送邮箱地址的 MD5 哈希值，不会发送原始邮箱地址。但是会导致无法使用黑名单、地址规范化和混淆识别等检查，可能降低垃圾注册的识别效果。'
+        email_hash_label: 哈希邮箱地址
+        email_label: 检查邮箱
+        frequency_help: "将已启用检查项的命中次数累加，达到此值时，将拦截注册。\n例如邮箱命中 1 次、IP 命中 2 次，合计 3 次。命中数设为 3 或更低时，此次注册将被拦截。\n"
+        frequency_label: 命中数
         heading: StopForumSpam
-        introduction: "使用 <a>StopForumSpam</a> 检查服务，禁止<code>置信度</code>或<code>频率</code>不符合要求的客户端注册账号。\n\n此检查涵盖 <code>fof/oauth</code> 和 <code>fof/passport</code> 的 SSO 注册渠道。其它 SSO 提供程序应该也受支持，但未经测试。\n"
-        ip_label: 'IP 地址滥用检查'
-        region_closest_label: 最近
+        introduction: "新用户注册时，通过 <a>StopForumSpam</a> 数据库检查填写的信息。当 <code>confidence</code> 或 <code>frequency</code> 达到设定阈值时，会阻止用户完成注册。\n\n同时支持检查 <code>fof/oauth</code> 和 <code>fof/passport</code> 进行的 SSO 注册。其他 SSO 服务理论上也支持，但未经测试。\n"
+        ip_label: '检查 IP 地址'
+        region_closest_label: 最近区域
         region_europe_label: 欧洲
         region_us_label: 美国
-        regional_endpoint_help: 默认情况下，我们会使用最近的服务器，以最快的速度检测数据。根据不同国家或地区的法律法规，你可能需要指定数据处理服务器。
-        regional_endpoint_label: 地域
-        report_blocked_registrations_help: '「注册时检查」功能成功拦截注册时，向 StopForumSpam 报告检测数据，用于进一步校验。此功能需要配置 StopForumSpam API 密钥。'
-        report_blocked_registrations_label: 报告拦截信息
-        sfs_lookup_help: '用户注册时，使用 StopForumSpam 服务检查。如果存在注册信息（用户名、IP 地址、电子邮件），且 SFS 置信度不符上面配置的等级，则阻止完成注册。'
-        sfs_lookup_label: 注册时检查
-        username_label: 用户名滥用检查
+        regional_endpoint_help: 默认使用最近的服务器，以获得最佳检查速度。根据不同国家或地区的法律法规，你可能需要指定数据处理服务器。
+        regional_endpoint_label: 访问区域
+        report_blocked_registrations_help: '开启后，被「检查新用户注册」拦截的注册会自动上报至 StopForumSpam，帮助完善恶意行为识别。使用此功能前，请先配置 StopForumSpam API 密钥（见下方）。'
+        report_blocked_registrations_label: 共享拦截信息
+        sfs_lookup_help: '用户注册时，使用 StopForumSpam 服务检查注册信息和置信度，若命中数和置信度满足设置的条件，则禁止注册。'
+        sfs_lookup_label: 检查新用户注册
+        username_label: 检查用户名
   forum:
     message:
       stopforumspam:
-        blocked: 不安全的注册信息，无法完成注册。
+        blocked: 网络环境异常。
     spammer_modal:
-      hard_delete_discussions_help: 启用此项，永久删除主题帖，否则隐藏主题帖。
-      hard_delete_discussions_label: 删除主题帖
-      hard_delete_posts_help: 启用此项，永久删除帖子（评论和回复等），否则隐藏帖子。
+      hard_delete_discussions_help: 永久删除此用户发起的所有讨论。关闭此项，改为隐藏。
+      hard_delete_discussions_label: 删除讨论
+      hard_delete_posts_help: 永久删除此用户发布的所有帖子（包括回复等）。关闭此项，改为隐藏。
       hard_delete_posts_label: 删除帖子
-      hard_delete_user_help: 启用此项，永久删除账号，否则停用帐号。
+      hard_delete_user_help: 永久删除此用户。关闭此项，改为封禁。
       hard_delete_user_label: 删除用户
-      intro: 标记垃圾账号时，会根据已启用的扩展采取多个处置方式。
-      move_discussions_tag_help: 移除主题帖的所有标签，并统一移动到指定标签旗下。如需保留原始标签，请清空标签配置。
-      move_discussions_tag_label: 隔离主题帖
-      process_button: 执行
-      report_to_sfs_help: '向 StopForumSpam 共享垃圾账号基本信息（用户名、电子邮件、IP 地址），扩充垃圾账号数据库。'
-      report_to_sfs_label: '报告到 StopForumSpam'
-      title: '标记垃圾账号 {username}'
+      intro: 将用户标记为垃圾用户时，系统会根据论坛已安装的扩展执行以下操作。
+      move_discussions_tag_help: 将此用户发起的所有讨论移动至指定的标签，并清除原标签。关闭此项，保留原标签。
+      move_discussions_tag_label: 移动讨论至隔离标签
+      process_button: 处理
+      report_to_sfs_help: '将此用户的用户名、邮箱和 IP 地址上报至 StopForumSpam，帮助其他使用 StopForumSpam 的论坛识别并拦截该用户。'
+      report_to_sfs_label: '上报至 StopForumSpam'
+      title: '将 {username} 标记为垃圾用户'
     user_controls:
-      spammer_button: 垃圾账号
+      spammer_button: 垃圾用户

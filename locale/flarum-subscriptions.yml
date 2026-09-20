@@ -6,36 +6,36 @@ flarum-subscriptions:
   email:
     new_post:
       body: "{recipient_display_name}，您好！\n\n您关注的主题《{title}》，【{poster_display_name}】发表了新内容\n\n点击下方链接即可查看完整内容。\n{url}\n\n---\n\n{content}\n\n---\n\n在您已读前，您不会再收到任何关于这个主题的通知。\n"
-      subject: '【新帖】{title}'
+      subject: '【新内容】{title}'
   forum:
     badge:
-      following_tooltip: '=> flarum-subscriptions.ref.following'
-      ignoring_tooltip: '=> flarum-subscriptions.ref.ignoring'
+      following_tooltip: 正在关注
+      ignoring_tooltip: 忽略
     discussion_controls:
       follow_button: '=> flarum-subscriptions.ref.follow'
       unfollow_button: 取消关注
-      unignore_button: 取消忽视
+      unignore_button: 取消忽略
     following:
-      meta_title_text: '=> flarum-subscriptions.ref.following'
+      meta_title_text: 我的关注
     index:
       following_link: 我的关注
     notifications:
-      new_post_text: '{username} 回复了你关注的主题'
+      new_post_text: '{username} 发布了新内容'
     settings:
-      follow_after_reply_label: 自动关注我回复的主题
-      notify_for_all_posts_label: 通知每一个新帖，而非仅最后一个
-      notify_new_post_label: 我关注的主题有新回复
+      follow_after_reply_label: 自动关注我参与的讨论
+      notify_for_all_posts_label: 通知所有新帖。关闭后每个讨论未读期间仅通知一次
+      notify_new_post_label: 我关注的讨论有新内容
     sub_controls:
       follow_button: '=> flarum-subscriptions.ref.follow'
       following_button: '=> flarum-subscriptions.ref.following'
-      following_text: 当有人回复此主题时通知我。
+      following_text: 接收所有回复通知。
       ignoring_button: '=> flarum-subscriptions.ref.ignoring'
-      ignoring_text: 不接收任何通知并从主题列表中隐藏此主题。
+      ignoring_text: 不接收任何通知，并从讨论列表中隐藏。
       not_following_button: 不关注
-      not_following_text: 仅当有人提及我时通知我。
-      notify_alert_tooltip: 有新回复时通知提醒
-      notify_email_tooltip: 有新回复时发送邮件
+      not_following_text: 仅当有人提及我时通知。
+      notify_alert_tooltip: 有新回复时接收站内通知
+      notify_email_tooltip: 有新回复时接收邮件通知
   ref:
     follow: 关注
     following: 关注中
-    ignoring: 忽视中
+    ignoring: 忽略中

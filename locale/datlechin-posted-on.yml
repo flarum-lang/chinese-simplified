@@ -5,6 +5,6 @@
 datlechin-posted-on:
   forum:
     post:
-      posted_on_text: '使用 {posted_on} 发表'
+      posted_on_text: '使用 {posted_on} 发布'
     settings:
       privacy_disclose_posted_on_label: 允许其他人查看我的发帖设备

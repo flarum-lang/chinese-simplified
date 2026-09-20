@@ -5,15 +5,17 @@
 flarum-sticky:
   admin:
     permissions:
-      sticky_discussions_label: 置顶主题
+      sticky_discussions_label: 置顶讨论
+    settings:
+      pin_sticky_on_all_discussions_label: 置顶讨论
   forum:
     badge:
       sticky_tooltip: '=> flarum-sticky.ref.sticky'
     discussion_controls:
-      sticky_button: 置顶主题
+      sticky_button: '=> flarum-sticky.ref.sticky'
       unsticky_button: 取消置顶
     post_stream:
-      discussion_stickied_text: '{username} 于 {time} 置顶此帖'
-      discussion_unstickied_text: '{username} 于 {time} 取消置顶'
+      discussion_stickied_text: '{username} 于 {time} 置顶了讨论'
+      discussion_unstickied_text: '{username} 于 {time} 取消置顶讨论'
   ref:
     sticky: 置顶

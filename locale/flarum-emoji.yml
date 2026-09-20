@@ -6,4 +6,4 @@ flarum-emoji:
   forum:
     composer:
       emoji_tooltip: 表情
-      type_to_search_text: '搜索 Emoji 表情'
+      type_to_search_text: 继续输入以搜索表情

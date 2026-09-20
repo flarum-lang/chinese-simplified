@@ -10,7 +10,7 @@ core:
 fof-discussion-views:
   admin:
     permissions:
-      reset_views_label: 设置主题浏览量
+      reset_views_label: 设置讨论浏览量
     settings:
       ignore_crawlers: 忽略爬虫访问
   forum:
@@ -18,5 +18,5 @@ fof-discussion-views:
       resetviews_button: 设置浏览量
     modal_resetviews:
       label: 设为浏览量
-      submit: 提交
-      title: 重置主题浏览量
+      submit: 保存
+      title: 重置讨论浏览量

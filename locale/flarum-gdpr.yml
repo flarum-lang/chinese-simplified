@@ -10,49 +10,49 @@ flarum-gdpr:
         delete_description: 删除操作
         export_description: 导出操作
         extension: 扩展程序
-        help_text: "下表所列为当前所有注册的数据类型，以及关联的导出、匿名化和删除操作规范。扩展程序应当向 <code>blomstra/gdpr</code> 主动注册其处理并且符合 GDPR 法规的数据类型。\n<code>user</code> 表中存储的数据另行处理，详见下一章节。\n"
+        help_text: "以下是当前已注册的数据类型，以及各类型对应的导出、匿名化和删除操作。如果扩展程序处理了受 GDPR 约束的数据，应通过 <code>flarum/gdpr</code> 注册相应的数据类型。\n存储在 <code>user</code> 表中的数据会单独处理，详见下方的用户表数据。\n"
         title: 数据类型
         type: 类型
-      description: 'GDPR 数据统一管控'
+      description: '查看 GDPR 操作及集成状态'
       heading: 'GDPR 数据概览'
       settings:
         extension_settings_button: 'GDPR 设置'
         heading: 'GDPR 设置'
-        help_text: '想要设置 GDPR？请前往扩展程序页面。'
+        help_text: 请前往扩展程序设置页面。
       user_table_data:
         column: 列
         extension: 扩展程序
-        help_text: "多数情况下，我们会自动处理导出和抹除时的 <code>用户</code>表数据。\n然而，会存在一些特殊情况，如下。\n"
+        help_text: "通常情况下，我们会在数据导出和擦除时，自动处理添加到 <code>user</code> 表中的列。\n但也存在一些特殊情况，具体如下。\n"
         'no': 否
         nullable: 可为空
         pii: 个人身份信息
-        pii_tooltip: 该列被视为个人身份信息，在匿名化场景（例如匿名化事件载荷）中将被隐藏。
-        redacted_on_export: 导出时隐藏
-        redacted_on_export_tooltip: '生成用户数据导出时，该列的值会被清空（设为 null）。该列仍会出现在导出文件中，但值为 null。'
+        pii_tooltip: 此列数据属于个人身份信息，会在匿名化场景中进行脱敏处理。
+        redacted_on_export: 导出时抹除
+        redacted_on_export_tooltip: '导出用户数据时，会保留此列，但此列的值会被清空设为 null。'
         title: 用户表数据
         type: 类型
         'yes': 是
     nav:
       gdpr_button: 'GDPR 集成'
     permissions:
-      process_erasure: 处理账号抹除请求
-      process_export_for_others: 处理其他用户的数据导出请求
-      see_anonymized_user_badges: 查看匿名用户徽章
+      process_erasure: 处理数据擦除请求
+      process_export_for_others: 为其他用户请求并接收导出数据
+      see_anonymized_user_badges: 查看匿名化用户徽章
     settings:
-      allow_anonymization: 允许请求账号匿名化
-      allow_anonymization_help: '默认选项，适用于绝大多数社区。此模式下，帖子或评论将在 GDPR 允许的范围内尽可能保留，但会删除一切可用于标识用户的信息。'
-      allow_deletion: 允许请求删除账号
-      allow_deletion_help: 更严格的选项，请谨慎使用。此模式下，所有帖子或评论都将被删除，用户也将从数据库中删除。
-      default_anonymous_username: 用户名匿名化
-      default_anonymous_username_help: '使用自定义模板替换匿名化用户的用户名，末尾会自动拼接匿名化请求的 ID，效果：<code>匿名用户123</code>。'
-      default_erasure: 默认抹除请求
-      default_erasure_help: 申请抹除账号的默认类型是？
+      allow_anonymization: 允许匿名化处理
+      allow_anonymization_help: '默认选项，推荐大多数社区使用。采用此方式时，会在 GDPR 允许的范围内尽可能保留帖子和回复，同时移除所有可识别用户身份的信息。'
+      allow_deletion: 允许删除处理
+      allow_deletion_help: 更加严格的处理方式。采用此方式时，所有帖子和回复都会被删除，用户也将从数据库中移除。请谨慎使用。
+      default_anonymous_username: 匿名化用户的默认用户名
+      default_anonymous_username_help: '用户被匿名化后，其用户名将替换为此值，并添加匿名化请求 ID 后缀，例如 <code>已注销123</code>。'
+      default_erasure: 默认处理方式
+      default_erasure_help: 处理数据擦除请求时的默认方案。
       default_erasure_options:
         anonymization: 匿名化
         deletion: 删除
       gdpr_page:
-        help_text: '重要！请先前往 GDPR 概览页面了解数据类型和数据处理规范等内容，然后再配置数据管控方式。'
-        title: 数据管控
+        help_text: '重要：请先了解目前集成了哪些数据，以及这些数据在匿名化和删除时会如何处理。前往 GDPR 数据概览，可以查看各类数据的处理方式，以及哪些扩展程序已注册相应的数据处理方式。'
+        title: 数据集成与处理方式
     userlist:
       columns:
         gdpr_actions:
@@ -60,10 +60,10 @@ flarum-gdpr:
   email:
     confirm_erasure:
       body: "{display_name}，您好！\n\n有人（希望是你）刚刚请求抹除帐号 `{display_name}`。\n\n要确认执行这个操作，请点击下方链接。\n\n{erasure_confirm_url}\n"
-      subject: 确认抹除你的账号
+      subject: 确认账号数据擦除请求
     erasure_cancelled:
       body: "{display_name}，您好！\n\n我们已经终止了您删除账号的请求。\n\n您现在可以正常使用了。\n"
-      subject: 帐号抹除请求已取消
+      subject: 账号数据擦除请求已取消
     erasure_completed:
       anonymization:
         body: "{display_name}，您好！\n\n我们已经匿名化了您的账号。感谢您的使用，再见。\n"
@@ -73,75 +73,75 @@ flarum-gdpr:
         subject: 帐号已删除
     export_available:
       body: "{display_name}，您好！\n\n您请求导出账号 {username} 的数据，相关内容已准备就绪，您可以点击下方链接下载：\n\n{url}\n\n本次导出的数据将在 {destroys_at} 失效。\n"
-      subject: 数据导出已就绪
+      subject: 数据导出已准备好
   forum:
     badges:
-      anonymized_user: 匿名用户
+      anonymized_user: 已注销
     delete_user:
-      delete_button: 抹除
-      modal_delete_button: 使用默认操作抹除
-      text: "确定要擦除 {username} 的帐号吗？\n\n此操作不可撤消。\n"
-      title: '抹除 {username} 的帐号'
-    erasure_request_confirmed: '您已经确认申请抹除账号。我们会按 GDPR 要求，在 30 天内完成处理。'
+      delete_button: 擦除
+      modal_delete_button: 按默认方式擦除
+      text: "确定要擦除 {username} 的帐号数据吗？\n\n此操作无法撤消。\n"
+      title: '擦除 {username} 的账号数据'
+    erasure_request_confirmed: '你已确认账号数据擦除请求。根据 GDPR 要求，我们将在 30 天内处理。'
     erasure_requests:
-      empty_text: 暂无需要处理的帐号抹除请求
-      item_text: '{name} 申请抹除账号'
-      title: 帐号抹除请求
-      tooltip: 帐号抹除请求
-    export_file: '导出数据-{username}-{email}-{date}-{forumTitle}-{url}'
+      empty_text: 暂无账号数据擦除请求
+      item_text: '{name} 请求擦除账号数据'
+      title: 账号数据擦除请求
+      tooltip: 账号数据擦除请求
+    export_file: '用户数据导出：{username}（{email}），生成于 {date}，来源：{forumTitle}（{url}）'
     notification:
-      export-ready: '{username} 的导出数据现已可下载。'
+      export-ready: '{username} 的数据导出已准备好，请下载。'
     process_erasure:
       anonymization_button: 匿名化用户
-      comments_label: 回复（可选）
-      confirm: '确定要使用 {mode} 模式擦除 {name} 的帐号？'
+      comments_label: 备注（可选）
+      confirm: '确定要以“{mode}”方式擦除 {name} 的账号数据吗？'
       confirmed_at: '确认时间：{date}'
       deletion_button: 删除用户
-      eligible_at: '符合自动处理条件：{date}'
+      eligible_at: '自动处理时间：{date}'
       requested_at: '请求时间：{date}'
-      text: '{name} 申请抹除帐号。'
-      title: 处理账号抹除请求
+      text: '{name} 请求擦除账号数据。'
+      title: 处理数据擦除请求
     request_erasure:
       cancel_button: 取消请求
       password_label: 确认密码
-      reason: '您的理由：{reason}'
-      reason_label: 理由（可选）
-      request_button: 请求抹除
+      reason: '申请理由：{reason}'
+      reason_label: 申请理由（可选）
+      request_button: 提交请求
       status:
-        awaiting_user_confirmation: "我们已向您发送了一封确认申请抹除账号的电子邮件。\n"
-        user_confirmed: "您已经确认申请抹除账号。我们会按 GDPR 要求，在 30 天内完成处理。\n"
-      text: '收到您的请求后，我们的管理员会按 GDPR 要求，在 30 天内完成处理。'
-      title: 申请抹除账号
+        awaiting_user_confirmation: "确认邮件已发送，请通过邮件确认你的账号数据擦除请求。\n"
+        user_confirmed: "你已确认账号数据擦除请求。根据 GDPR 要求，我们将在 30 天内处理。\n"
+      text: '确认请求后，根据 GDPR 要求，我们会在 30 天内进行处理。'
+      title: 请求擦除账号数据
     settings:
       data:
         heading: 个人数据
       export_data_button: 导出数据
-      export_data_help: 将帐号相关的所有信息导出为压缩包副本，包含帖子、回复和个人资料详情。
-      request_erasure_button: 抹除帐号
-      request_erasure_help: 永久删除帐号和相关数据。此操作不可逆，继续操作前请确保您已保存重要数据。
+      export_data_help: 申请导出所有账号数据，包括帖子、回复和个人资料等。
+      request_erasure_button: 擦除账号数据
+      request_erasure_help: 申请删除账号数据，此操作无法撤销。请提前备份希望保留的内容。
   lib:
     data:
       avatar:
         delete_description: 从文件系统删除用户头像。
-        export_description: 从文件系统获取用户头像，并导出。
-      default_user_action: 无需操作，由默认的用户表数据处理方式自动处理。
+        export_description: 导出文件系统中的用户头像。
+      default_user_action: 无额外操作，由默认的用户表处理机制处理。
       discussions:
-        export_description: 导出用户发起的所有主题帖，数据仅限于标题和创建日期。
+        export_description: 导出用户发起的所有讨论，仅包含标题和创建日期。
       forum:
         export_description: 导出论坛名称、URL、用户名、邮箱和当前日期。
-      no_action: 不采取操作。
+      no_action: 不执行任何操作。
       posts:
-        anonymize_description: '删除用户发布的所有帖子中的 IP 地址信息。'
+        anonymize_description: '移除用户所有帖子中的 IP 地址。'
         delete_description: 删除用户发布的所有帖子。
-        export_description: '导出用户发表的所有帖子，数据仅限于文本内容、创建日期、IP 地址和主题帖 ID。'
+        export_description: '导出用户发布的所有帖子，仅包含内容、创建日期、IP 地址和讨论 ID。'
       tokens:
         delete_description: 删除用户创建的所有令牌。
-        export_description: 导出用户创建的所有令牌，数据仅限于创建日期和令牌类型。
+        export_description: 导出用户创建的所有令牌，仅包含创建日期和令牌类型。
       user:
-        anonymize_description: 将用户表中的所有列设置为空，不可为空的列将设置为默认值或特殊值；更改密码；将个人设置恢复默认值；移除所有用户组。
-        delete_description: 从数据库中删除用户。
-        export_description: '导出用户表中的数据，除了用户 id 和密码。'
+        anonymize_description: '将用户表中的所有列设为 null。不可为空的列会设为默认值或特殊值，同时修改密码、恢复个人设置默认值并移除所有用户组。'
+        delete_description: 从数据库中删除该用户。
+        export_description: '导出用户表中的数据，包括除 id 和 password 外的所有列。'
     request_data:
-      request_button: 申请归档
-      text: "所有数据会打包到一个压缩包内，准备完成后，您将收到带有下载链接的通知。链接有效期为一天。\n"
-      title: '申请 {username} 的数据'
+      request_button: 申请数据
+      text: "所有数据会打包到一个压缩包内，准备完成后，你将收到一条包含下载链接的通知。链接有效期为 24 小时。\n"
+      title: '请求 {username} 的数据'

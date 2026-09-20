@@ -5,11 +5,11 @@
 fof-impersonate:
   admin:
     permissions:
-      login: 以其他用户身份登录
+      login: 切换为其他用户
     settings:
       no_settings_available: '当前没有更多选项可用。请尝试安装插件 fof/moderator-notes'
-      require_reason: 要求在登录他人账户前输入理由
-      title: 'FoF 身份模拟'
+      require_reason: 切换为其他用户前必须填写理由
+      title: 'FoF 身份切换'
   forum:
     modal:
       impersonate_username: '以 {username} 身份登录'
@@ -21,10 +21,10 @@ fof-impersonate:
       impersonate_button: 以该用户身份登录
   lib:
     modal:
-      impersonate_username: '以「{username}」身份登录'
+      impersonate_username: '切换为 {username}'
       label: '能力越大，责任越大。直到下次登出前，你将以用户「{username}」的身份登录。'
-      placeholder_optional: （可选）切换到此用户的理由
-      placeholder_required: 继续操作前，请提供理由
-      title: 以其他用户身份登录
+      placeholder_optional: （可选）填写切换为此用户的理由
+      placeholder_required: 继续前必须填写切换为此用户的理由
+      title: 切换用户身份
     user_controls:
-      impersonate_button: 以用户身份登录
+      impersonate_button: 切换为此用户

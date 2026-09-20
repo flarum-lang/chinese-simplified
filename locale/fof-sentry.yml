@@ -6,48 +6,48 @@ fof-sentry:
   admin:
     sections:
       backend_performance: 后端性能监控
-      backend_performance_help: '追踪 PHP 后端性能并进行性能剖析。通过设置采样率来控制运行开销。'
+      backend_performance_help: '监控 PHP 后端性能并进行性能分析。可通过采样率控制额外运行开销。'
       database_monitoring: 数据库查询监控
-      database_monitoring_help: 监控数据库查询性能，检测慢查询和N+1问题。仅在启用后端性能监控时生效。
+      database_monitoring_help: '监控数据库查询性能，检测慢查询和 N+1 查询问题。仅在启用后端性能监控时生效。'
       frontend_monitoring: 前端（JavaScript）监控
-      frontend_monitoring_help: '跟踪 JavaScript 错误和前端性能。请注意，启用某些功能会增加代码包大小。'
-      general: 一般设置
-      general_help: '配置您的 Sentry DSN 和 环境设置。'
-      user_context: 用户场景
-      user_context_help: '配置上传至 Sentry 错误日志中的用户上下文隐私数据。'
+      frontend_monitoring_help: '监控 JavaScript 错误和前端性能。请注意，启用部分功能后会增加前端资源体积。'
+      general: 常规设置
+      general_help: '配置 Sentry DSN 和运行环境。'
+      user_context: 用户上下文
+      user_context_help: '设置随错误报告发送到 Sentry 的用户信息。'
     sentry_settings: 'Sentry 设置'
     settings:
-      db_n_plus_one_detection_help: '通过跟踪重复的查询模式，自动检测 N+1 查询问题。当代码在循环中多次执行相同的查询，而不是使用适当的连接或预加载时，就会出现 N+1 查询问题。这有助于识别重要性能瓶颈。'
+      db_n_plus_one_detection_help: '通过追踪重复的查询模式自动检测 N+1 查询问题。N+1 查询通常是代码在循环中重复执行相同查询，而没有使用合理的关联查询或预加载所导致，可造成明显的性能瓶颈。'
       db_n_plus_one_detection_label: '启用 N+1 查询检测'
-      db_n_plus_one_threshold_help: '查询模式需要重复出现的次数才能被标记为潜在的 N+1 问题。灵敏度级别：5-10（激进，可能出现误报），10-20（平衡，推荐），20+（保守，仅标记严重问题）。默认值：10。'
-      db_n_plus_one_threshold_label: N+1检测阈值
-      db_query_sample_rate_help: '性能监控中需要跟踪的数据库查询百分比（0-100%）。影响级别：100%（跟踪所有查询，最大程度提高可见性，但开销较高），50%（跟踪一半查询，平衡性能和可见性），10-25%（跟踪部分查询，开销较低，但仍能发现问题），0%（仅跟踪慢查询，开销最低）。注意：无论此设置如何，慢查询（超过阈值的查询）始终会被跟踪。建议：在高流量网站上使用 10-25% 的设置，以降低性能影响和 Sentry 数据成本。'
-      db_query_sample_rate_label: 查询采样率
-      db_slow_query_threshold_help: '查询时间超过此阈值（以毫秒为单位）的查询将被标记为慢查询，并自动进行跟踪，不受采样率限制。严重程度级别：中等（1-2 倍阈值）、高（2-5 倍阈值）、严重（5 倍以上阈值）。默认值：1000 毫秒（1 秒）。可降低至 500 毫秒以实现更积极的检测。'
+      db_n_plus_one_threshold_help: '设置同一种查询模式重复多少次后视为潜在的 N+1 问题。灵敏度参考：5–10（较敏感，可能产生误报）、10–20（均衡，推荐）、20 以上（较保守，只检测较严重的问题）。默认值为 10。'
+      db_n_plus_one_threshold_label: 'N+1 检测阈值'
+      db_query_sample_rate_help: '设置性能监控中需要追踪的数据库查询比例（0–100%）。100%：追踪全部查询，可见性最高但额外开销较大；50%：追踪一半查询，较为均衡；10–25%：抽样追踪，开销较低但仍能发现多数问题；0%：仅追踪慢查询，额外开销最低。注意：超过慢查询阈值的查询始终会被记录，不受此设置影响。对于高流量站点，建议使用 10–25%，以降低性能影响和 Sentry 数据成本。'
+      db_query_sample_rate_label: 数据库查询采样率
+      db_slow_query_threshold_help: '执行时间超过此阈值的查询将被标记为慢查询，并无视采样率自动记录。严重程度：中等（阈值的 1–2 倍）、高（2–5 倍）、严重（5 倍以上）。默认值为 1000 ms（1 秒）；如需更积极地检测慢查询，可降低至 500 ms。'
       db_slow_query_threshold_label: 慢查询阈值（毫秒）
-      db_track_bindings_help: '在查询跟踪中包含实际参数值（例如，“SELECT * FROM users WHERE id = 123”，而不是“SELECT * FROM users WHERE id = ?”）。优点：可以查看导致查询缓慢的具体值，并识别有问题的数据库模式。安全和隐私警告：此功能可能会在 Sentry 中暴露敏感用户数据。密码和哈希值（32 个或更多十六进制字符）会自动屏蔽。长字符串（100 个或更多字符）会被截断。启用此功能前，请仔细检查您的隐私政策。建议：仅在测试/开发环境中启用，在生产环境中禁用。'
-      db_track_bindings_label: 跟踪查询参数值
-      dsn_backend_help: '可选的独立 DSN，专用于后端 (PHP) 错误。这有助于为后端错误使用不同的 Sentry 项目，通过 Relay 进行路由以提高性能，或将前端和后端错误跟踪分开。如果未设置，则将使用上面的主要 DSN。'
-      dsn_backend_label: 'Sentry DSN (仅后端)'
-      dsn_help: '您的 Sentry 数据源名称——用于前端和后端错误报告的主要连接 URL。您可以从 Sentry 项目设置中获取此信息。重要提示：如果您使用的是 Relay DSN，请禁用“用户反馈”功能，因为它需要直接访问 Sentry。'
+      db_track_bindings_help: '在查询追踪中记录实际参数值。例如记录「SELECT * FROM users WHERE id = 123」，而不是「SELECT * FROM users WHERE id = ?」。这样可以查看导致慢查询的具体值，并发现异常的数据模式。安全与隐私警告：此功能可能会将敏感用户数据发送到 Sentry。密码和长度为 32 位以上的十六进制哈希会自动脱敏，超过 100 个字符的长文本会被截断。启用前请检查你的隐私政策。建议仅在预发布或开发环境启用，生产环境关闭。'
+      db_track_bindings_label: 记录查询参数值
+      dsn_backend_help: '可选。为后端（PHP）错误单独设置 DSN。可用于将后端错误发送到其他 Sentry 项目、通过 Relay 提升性能，或分离前后端错误监控。留空则前后端均使用上方的主 DSN。'
+      dsn_backend_label: 'Sentry DSN（仅后端）'
+      dsn_help: 'Sentry 数据源名称（DSN），用于连接 Sentry，是前端和后端错误上报的主要地址。可在 Sentry 项目设置中获取。注意：如果使用 Relay DSN，请关闭「用户反馈」，因为该功能需要直接连接 Sentry。'
       dsn_label: 'Sentry DSN'
-      environment_help: 为所有事件添加环境名称标签（例如，“生产环境”、“预发布环境”、“开发环境”）。这有助于您按环境筛选错误，并为每个环境设置不同的告警规则。
+      environment_help: 为所有事件标记运行环境名称，例如「production」「staging」或「development」。便于按部署环境筛选错误，并为不同环境设置不同的告警规则。
       environment_label: 'Sentry 环境'
-      javascript_console_help: '将 console.log、console.info、console.warn 和 console.error 调用记录为事件轨迹。查看导致错误的事件序列，并调试复杂的用户交互。注意：此功能会增加数据量。请在生产环境中谨慎使用。'
-      javascript_console_label: 将控制台消息捕获为跟踪记录
-      javascript_help: '将论坛前端的 JavaScript 错误捕获并报告到 Sentry。它会跟踪未捕获的异常、Promise 拒绝、控制台错误和网络故障。如果您只需要跟踪后端错误，请禁用此功能。'
-      javascript_label: '启用 JavaScript 错误反馈'
-      javascript_replays_error_sample_rate: 前端错误重放采样率
-      javascript_replays_error_sample_rate_help: '仅在发生错误时才记录会话的百分比。比完整会话回放更高效——它会记录错误发生前最多 1 分钟的内容，并持续记录直到会话结束。非常适合调试生产环境中的问题。包大小：增加约 150 KB。建议：在生产环境中设置为 10-25%。'
-      javascript_replays_session_sample_rate: 用户会话重放采样率
-      javascript_replays_session_sample_rate_help: '从会话开始记录用户操作的百分比。可捕获鼠标移动、点击、滚动、页面导航和表单交互（并对个人身份信息进行屏蔽）。您可以查看用户的所有操作，以便重现错误。程序包大小：增加约 150 KB。建议：考虑到存储成本，在生产环境中建议使用 1-5%。'
-      javascript_trace_sample_rate: 前端性能监测采样率
-      javascript_trace_sample_rate_help: '页面加载跟踪百分比（0 表示禁用，100 表示跟踪所有页面加载）。此功能可跟踪页面加载时间、资源加载、API 请求和导航计时。包大小：增加约 30 KB。建议：在生产环境中设置为 10-25%。'
-      monitor_performance_help: '后端请求的追踪百分比（0 表示禁用，100 表示追踪所有请求）。性能追踪包括请求/响应时间、数据库查询和扩展加载时间。建议：生产环境中设置为 10-25%，预生产环境中设置为 100%。较低的值可以减少数据量和 Sentry 成本。'
+      javascript_console_help: '将 console.log、console.info、console.warn 和 console.error 记录为事件轨迹（Breadcrumbs），以便查看错误发生前的事件顺序，排查复杂的用户操作问题。注意：此功能会增加数据量，生产环境请酌情启用。'
+      javascript_console_label: 将控制台消息记录为事件轨迹
+      javascript_help: '捕获论坛前端的 JavaScript 错误并上报至 Sentry，包括未捕获异常、Promise 拒绝、控制台错误和网络请求失败。如果只需要监控后端错误，请关闭此项。'
+      javascript_label: '启用 JavaScript 错误上报'
+      javascript_replays_error_sample_rate: 错误触发回放采样率
+      javascript_replays_error_sample_rate_help: '设置发生错误时才进行录制的会话比例。相比完整会话回放更加高效，可回溯错误发生前最多 1 分钟，并持续录制至会话结束，非常适合排查生产环境问题。资源体积约增加 150 KB。建议生产环境使用 10–25%。'
+      javascript_replays_session_sample_rate: 会话回放采样率
+      javascript_replays_session_sample_rate_help: '设置从会话开始即进行录制的用户会话比例。可记录鼠标移动、点击、滚动、页面导航和表单操作，并对个人身份信息进行遮盖，帮助还原用户操作过程。资源体积约增加 150 KB。由于会产生较高存储成本，建议生产环境使用 1–5%。'
+      javascript_trace_sample_rate: 前端性能监控采样率
+      javascript_trace_sample_rate_help: '设置需要追踪的页面加载比例（0 = 关闭，100 = 全部追踪）。可监控页面加载时间、资源加载、API 请求和页面导航性能。资源体积约增加 30 KB。建议生产环境使用 10–25%。'
+      monitor_performance_help: '设置需要追踪的后端请求比例（0 = 关闭，100 = 全部追踪）。性能追踪包括请求和响应耗时、数据库查询及扩展加载时间。建议：生产环境从 10–25% 开始，预发布环境可设为 100%。较低的采样率可以减少数据量和 Sentry 使用成本。'
       monitor_performance_label: 后端性能监控采样率
-      profile_rate_help: '要进行性能分析的跟踪事务百分比（相对于上述监控率）。例如：如果监控率为 10%，性能分析率为 50%，则所有请求中有 5% 会进行性能分析。性能分析提供详细的函数级性能数据。性能影响：性能分析会增加开销并延长响应时间。请参阅<a>Sentry 的优化指南</a>。{icon} <bold>需要 Excimer 扩展程序（仅限 Linux）。目前状态：{icon}。</bold>'
+      profile_rate_help: '设置在已追踪事务中进行性能分析的比例，相对于上方的性能监控采样率计算。例如：性能监控设为 10%，性能分析设为 50%，则所有请求中约有 5% 会进行性能分析。性能分析可提供函数级别的详细性能数据，但会增加额外开销并延长响应时间。详见 <a>Sentry 性能优化指南</a>。{icon} <bold>需要 Excimer 扩展（仅支持 Linux）。当前状态：{icon}。</bold>'
       profile_rate_label: 后端性能分析采样率
-      send_user_emails_help: '启用此功能后，用户的电子邮件地址将包含在所有 Sentry 事件中，以便联系用户和筛选错误。隐私注意事项：启用此功能前，请检查您的隐私政策。无论此设置如何，用户 ID、用户名和用户组信息始终包含在内。'
-      send_user_emails_label: 在错误报告中包含用户电子邮件地址
-      user_feedback_help: '启用此功能后，用户在遇到错误后会看到一个反馈表单，以便他们描述遇到的问题。该表单会自动填写用户的用户名、电子邮件地址（如果已启用）和所属用户组信息。这有助于建立与遇到问题的用户之间的直接沟通渠道。此功能需要使用直接的 Sentry DSN（而非 Relay DSN）。'
+      send_user_emails_help: '开启后，所有 Sentry 事件都会包含用户邮箱地址，便于联系用户和筛选错误。隐私提示：启用前请检查你的隐私政策。无论此项是否开启，用户 ID、用户名和所属用户组都会发送到 Sentry。'
+      send_user_emails_label: 在报告中包含用户邮箱地址
+      user_feedback_help: '开启后，用户遇到错误时会看到反馈表单，可以描述当时发生的情况。表单会自动填入用户名、邮箱（如已启用）和所属用户组，为遇到问题的用户提供直接反馈渠道。需要使用可直接连接 Sentry 的 DSN，不支持 Relay DSN。'
       user_feedback_label: 启用用户反馈对话框

@@ -3,6 +3,106 @@
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
 datlechin-passkey:
+  admin:
+    group_modal:
+      require_passkey: 要求此用户组使用通行密钥
+      require_passkey_help: 成员在注册通行密钥前，会持续看到横幅提醒。
+    settings:
+      attestation_direct: 直接
+      attestation_indirect: 间接
+      attestation_label: 证明传递方式
+      attestation_none: 无（推荐）
+      description: 配置论坛的通行密钥登录功能。
+      related_origins_help: '允许执行通行密钥注册或认证流程的其他源（Origin）。需配合 /.well-known/webauthn 下的 W3C Related Origins 文档使用。'
+      related_origins_label: 相关源（每行一个）
+      rp_id_help: '用于限定通行密钥适用范围的 DNS 名称。留空则从请求主机名自动检测。修改后，所有现有通行密钥都将失效。'
+      rp_id_label: '依赖方 ID'
+      rp_name_help: 浏览器显示通行密钥提示时向用户展示的名称。默认使用论坛标题。
+      rp_name_label: 依赖方显示名称
+      throttle_label: '同一 IP 每分钟允许的登录尝试次数'
+      title: 通行密钥
+      user_verification_discouraged: 不建议（仅需触碰，安全性较低）
+      user_verification_label: 用户验证
+      user_verification_preferred: '首选（设备支持时要求生物识别或 PIN）'
+      user_verification_required: '必须（始终要求生物识别或 PIN）'
+  email:
+    backup_state:
+      body: "你好，{username}：\n\n你在 {forum} 的通行密钥「{device}」同步状态现已变为：{state}。\n\n如果这是由你自己触发的（例如在新设备上登录 iCloud 钥匙串或密码管理器），可以忽略此邮件。如果不是，请登录并前往「安全」页检查。此通行密钥可能已被复制到其他设备。\n\n{forum}\n"
+      subject: '你在 {forum} 的通行密钥同步状态已变化'
+      synced: 已同步到云端密码管理器
+      unsynced: 仅存储在一台设备上
+    bulk_revoked:
+      actor_admin: 一名站点管理人员代你移除了这些通行密钥。
+      actor_self: 此次撤销由你从「安全」页发起。
+      body: "你好，{username}：\n\n你的 {forum} 账号中的全部 {count} 个通行密钥刚刚被移除。{actor}\n\n如果这不是你预期的操作，请使用密码登录并前往「安全」页检查。如已无法登录，请前往登录页面重置密码。\n\n{forum}\n"
+      subject: '你的 {forum} 账号中的所有通行密钥均已移除'
+    counter_regression:
+      body: "你好，{username}：\n\n使用你的通行密钥「{device}」登录 {forum} 时失败，因为该凭证报告的签名计数器低于我们记录的值。这通常表明该凭证可能已被复制到另一台设备。\n\n此次登录已被拒绝。建议你使用密码登录，撤销此通行密钥并重新注册一个新的通行密钥。如果其他设备上也配置了同一凭证，请同时从这些设备的密码管理器中将其移除。\n\n{forum}\n"
+      subject: '检测到你的 {forum} 通行密钥可能被复制'
+    revoked:
+      actor_admin: 一名站点管理人员代你移除了该通行密钥。
+      actor_self: 此次撤销由你从「安全」页发起。
+      body: "你好，{username}：\n\n你的 {forum} 账号中的通行密钥「{device}」刚刚被移除。{actor}\n\n如果这不是你预期的操作，你的账号可能存在安全风险。请登录并前往「安全」页检查剩余的通行密钥。如已无法登录，请前往登录页面重置密码。\n\n{forum}\n"
+      subject: '你的 {forum} 账号有一个通行密钥已被移除'
   forum:
     log_in:
+      cancelled: 已取消使用通行密钥登录。
+      failed: 无法验证通行密钥，请重试。
+      passkey_unsupported: 此浏览器不支持通行密钥。
+      security_error: 当前站点来源与配置的依赖方不匹配，请联系管理员检查通行密钥设置。
       sign_in_with_passkey: 使用通行密钥登录
+      throttled: 通行密钥登录尝试次数过多，请等待一分钟后重试。
+      unsupported: 此设备无法使用本站要求的通行密钥类型。
+      verifying: 正在验证通行密钥…
+    required:
+      body: 你所在的用户组要求注册通行密钥后才能继续。
+      set_up: 立即设置
+    settings:
+      add_button: 添加通行密钥
+      add_modal:
+        cancel_button: 取消
+        device_name_label: 通行密钥名称
+        device_name_placeholder: '例如 iPhone、MacBook、YubiKey'
+        register_button: 添加
+        title: 添加通行密钥
+      alerts:
+        bulk_revoke_succeeded: 所有通行密钥均已撤销。
+        registration_already_exists: 此设备已为你的账号注册过通行密钥。请先撤销现有通行密钥，或改用其他设备。
+        registration_failed: 无法注册通行密钥，请重试。
+        registration_security_error: 当前站点来源与配置的依赖方不匹配，请联系管理员检查通行密钥设置。
+        registration_succeeded: 通行密钥已添加
+        registration_unsupported: 此设备无法注册本站要求的通行密钥类型。
+        rename_succeeded: 通行密钥已重命名。
+        revoke_succeeded: 通行密钥已撤销。
+      bulk_revoke_button: 全部撤销
+      bulk_revoke_modal:
+        body: '确定要撤销全部 {count} 个通行密钥吗？撤销后将无法使用这些通行密钥登录。'
+      description: 通行密钥可让你通过设备或硬件安全密钥登录，无需输入密码。
+      heading: 通行密钥
+      list:
+        added_label: 添加时间
+        device_only: 仅此设备
+        empty: 你还没有添加通行密钥。
+        last_used_label: 最后使用
+        never_used: 从未使用
+        rename_button: 重命名
+        revoke_button: 撤销
+        synced: 已同步
+      rename_modal:
+        cancel_button: 取消
+        save_button: 保存
+        title: 重命名通行密钥
+      revoke_modal:
+        body: '确定要撤销「{device}」吗？撤销后将无法使用此通行密钥登录。'
+        cancel_button: 取消
+        confirm_button: 撤销
+        title: 撤销通行密钥
+    suggest:
+      body: 下次登录更快捷，无需再记住密码。你的设备会创建一个仅适用于本站的通行密钥。
+      not_now: 暂不
+      set_up: 设置通行密钥
+      title: 设置通行密钥
+  gdpr:
+    anonymize_description: 撤销此用户的所有通行密钥。
+    delete_description: 删除此用户的所有通行密钥。
+    export_description: '包括每个已注册通行密钥的设备名称、最后使用时间、IP 地址和身份验证器元数据。公钥可用于标识凭证，但无法用于伪造登录。'

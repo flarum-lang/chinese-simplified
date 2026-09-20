@@ -5,4 +5,26 @@
 ernestdefoe-aurora:
   admin:
     settings:
-      gradient_start: '主渐变 — 起始颜色'
+      accent_color: 强调色
+      animate_background: 启用极光背景动画
+      glassmorphism: 启用玻璃拟态效果（毛玻璃面板）
+      glow: 启用发光效果
+      gradient_end: '主渐变色 — 结束颜色'
+      gradient_start: '主渐变色 — 起始颜色'
+  forum:
+    palette:
+      apply: '应用「{palette}」配色方案'
+      aurora: 极光
+      button_label: 选择配色方案
+      ember: 余烬
+      forest: 森林
+      nebula: 星云
+      ocean: 海洋
+      palette: 配色方案
+      sunset: 日落
+      title: 配色方案
+    widgets:
+      discussions: 讨论
+      members: 成员
+      online: 当前在线
+      posts: 帖子

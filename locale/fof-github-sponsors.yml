@@ -8,8 +8,12 @@ fof-github-sponsors:
       organization: 组织
       user: 用户
     settings:
-      account_type_label: 账户类型
+      account_type_help: '选择要同步赞助者的 GitHub 账号类型：个人用户账号或组织账号。'
+      account_type_label: 账号类型
+      api_token_help: '前往 <a>https://github.com/settings/tokens/new</a> 创建个人访问令牌，并授予 <code>user</code> 和 <code>read:org</code> 权限。此令牌用于从 GitHub 获取赞助者信息。'
       api_token_label: 'API 令牌'
       desc: '从 <a>https://github.com/settings/tokens/new</a> 获取您的 API 令牌。本扩展需要 <code>user</code> 和 <code>read:org</code> 权限。'
-      group_label: 用户组分配
-      login_label: 登录
+      group_help: '选择赞助者要加入的 Flarum 用户组。用户成为赞助者时会自动加入，停止赞助后会自动移出。'
+      group_label: 分配用户组
+      login_help: '填写 GitHub 用户名（个人账号）或组织名称（组织账号）。系统将同步此账号的赞助者。'
+      login_label: 账号名称

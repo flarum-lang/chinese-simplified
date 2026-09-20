@@ -5,20 +5,20 @@
 fof-share-social:
   admin:
     settings:
-      canonical-urls: '分享时使用 Canonical URL（标准网址）'
-      default-option: 默认分享选项
-      default-option-help: "使用下拉选项打开默认分享。\n「系统分享」需要浏览器支持，否则会使用基础模式。\n"
-      plain-copy: 支持复制纯文本地址
+      canonical-urls: '分享时使用规范 URL'
+      default-option: 默认分享方式
+      default-option-help: "分享窗口改为下拉按钮。\n如果选择「系统分享」，仅在浏览器支持时显示；否则仍使用原来的分享窗口。\n"
+      plain-copy: 显示复制纯链接选项
   forum:
     discussion:
       share_button: 分享
-      share_dropdown_accessible_label: 启用主题分享
+      share_dropdown_accessible_label: 展开或收起讨论分享菜单
     modal:
       copy_button: 复制
-      title: 分享到
+      title: 分享
   lib:
     networks:
-      facebook: 脸书
+      facebook: Facebook
       linkedin: 领英
       my_mail: 'My World'
       native: 系统分享
@@ -26,7 +26,7 @@ fof-share-social:
       qq: QQ
       qzone: 'QQ 空间'
       reddit: Reddit
-      telegram: 电报
-      twitter: 推特
+      telegram: Telegram
+      twitter: 'X（原 Twitter）'
       vkontakte: VKontakte
       whatsapp: WhatsApp

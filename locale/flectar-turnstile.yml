@@ -6,14 +6,19 @@ flectar-turnstile:
   admin:
     settings:
       forgot: '=> core.forum.forgot_password.title'
-      help_text: '<a>点击此处</a>，前往 Cloudflare 账号控制台生成 Turnstile 密钥。'
-      secret_key: 私钥
+      help_text: '<a>点击此处</a>，前往 Cloudflare 生成 Turnstile 密钥。'
+      secret_key: 密钥
       signin: '=> core.forum.log_in.title'
       signup: '=> core.forum.sign_up.title'
-      site_key: 站点公钥
+      site_key: 站点密钥
   forum:
-    error: 人机验证错误，请重试。
+    error: 人机验证发生错误，请重试。
     not_loaded_error: '无法加载 Cloudflare Turnstile 验证服务，请关闭广告拦截器并刷新重试。'
-    validation_error: 请完成Turnstile验证。
+    validation_error: '请完成 Turnstile 验证。'
 validation:
-  turnstile: 我们无法确认您是否为机器人，请刷新页面并重试。
+  custom:
+    turnstile:
+      required: '请完成 Turnstile 验证。'
+    turnstileToken:
+      required: '请完成 Turnstile 验证。'
+  turnstile: 无法确认你是否为机器人，请刷新页面后重试。

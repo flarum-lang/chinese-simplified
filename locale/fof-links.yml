@@ -9,7 +9,7 @@ fof-links:
       delete_link_confirmation: 确定要删除这个链接吗？
       everyone-label: 所有人
       guests-label: 访客
-      icon_additional_text: '如果你想要使用一个品牌图标，请使用前缀 <code>fab fa-</code>。'
+      icon_additional_text: '如需使用品牌图标，请改用 <code>fab fa-</code> 前缀。'
       icon_label: '=> core.ref.icon'
       icon_text: '=> core.ref.icon_text'
       internal_link: 这是内部链接吗？勾选后，当用户访问此链接时，此链接会在导航栏高亮。
@@ -33,9 +33,9 @@ fof-links:
       create_button: '=> fof-links.ref.create_link'
       links: '=> fof-links.ref.links'
     settings:
-      show_icons_only_on_tablet: 仅在平板设备上显示图标
+      show_icons_only_on_tablet: 平板屏幕仅显示图标
   ref:
-    create_link: 新建链接
+    create_link: 创建链接
     links: 导航栏链接
     title: 标题
-    url: 链接
+    url: URL

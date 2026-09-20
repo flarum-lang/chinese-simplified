@@ -7,30 +7,30 @@ datitisev-backup:
     adapter-settings-modal:
       aliyun:
         access-id:
-          description: '您的身份认证访问令牌 ID'
+          description: '用于身份验证的 Access ID'
           label: 'Access ID'
         access-key:
-          description: 您的身份认证访问令牌密钥
+          description: '用于身份验证的 Access Key'
           label: 'Access Key'
         bucket:
-          description: 要使用的存储桶。
-          label: 桶
+          description: '用于存储备份的 Bucket 名称。'
+          label: Bucket
         endpoint:
-          description: '存储终端的 URL。'
-          label: 终端
+          description: '存储服务的地域节点 URL。'
+          label: 地域节点
         path-prefix:
           description: 可选的默认文件路径前缀。
           label: 路径前缀
       aws:
         bucket:
-          description: '要上传到的 S3 存储桶。'
-          label: 桶
+          description: '用于上传备份的 S3 Bucket。'
+          label: Bucket
         credentials-key:
-          description: 'AWS 凭据密钥'
-          label: Key
+          description: 'AWS 凭证中的访问密钥 ID'
+          label: '访问密钥 ID'
         credentials-secret:
-          description: 'AWS 凭据私钥'
-          label: 私钥
+          description: 'AWS 凭证中的秘密访问密钥'
+          label: 秘密访问密钥
         credentials:
           key:
             description: 'AWS credentials key'
@@ -42,14 +42,14 @@ datitisev-backup:
           description: 可选的默认文件路径前缀。
           label: 路径前缀
         region:
-          description: 存储桶的区域。
+          description: 'Bucket 所在区域。'
           label: 区域
         version:
-          description: 指定一个版本或留空表示最新版本。
+          description: '指定 API 版本，留空则使用最新版本。'
           label: 版本
       azure:
         container:
-          description: 'Azure 容器'
+          description: 'Azure 存储容器'
           label: 容器
         endpoint:
           description: '存储终端的 URL。'
@@ -60,48 +60,48 @@ datitisev-backup:
           label: 'Access Token'
         help:
           obtain-access-code-button: '打开 Dropbox'
-          obtain-access-code-label: '获取访问代码（需要 App Key）'
-          obtain-refresh-token-button: 使用代码
-          obtain-refresh-token-label: '使用访问代码获取刷新令牌（需要 App Key 和 Secret）'
-          obtain-refresh-token-success: 刷新令牌获取成功，请保存。
+          obtain-access-code-label: '获取授权码（需要 App Key）'
+          obtain-refresh-token-button: 使用授权码
+          obtain-refresh-token-label: '使用授权码获取刷新令牌（需要 App Key 和 App Secret）'
+          obtain-refresh-token-success: 已成功获取刷新令牌并填入上方字段！请保存更改以应用此令牌。
         key:
           label: 'App Key'
         refresh-token:
-          description: '在下方获取刷新令牌，或根据指引手动生成：https://www.codemzy.com/blog/dropbox-long-lived-access-refresh-token#how-can-i-get-a-refresh-token-manually'
+          description: '可以使用下方字段获取刷新令牌，也可以按照 https://www.codemzy.com/blog/dropbox-long-lived-access-refresh-token#how-can-i-get-a-refresh-token-manually 的说明手动获取。'
           label: 刷新令牌
         secret:
           label: 'App Secret'
       ftp:
         host:
-          description: '要连接到的 FTP 主机名，例如 <em>ftp.yourdomain.local</em>。'
+          description: '远程服务器的主机名，例如 <em>ftp.yourdomain.local</em>。'
           label: 远程主机名
         passive:
           description: '是否使用被动 FTP 连接到服务器。'
           toggle: 被动连接
         password:
-          description: '要在 FTP 服务器上进行身份验证的密码。'
+          description: 用于登录远程服务器的密码。
           label: 密码
         port:
-          description: 'FTP 端口（默认 21）。'
+          description: 'FTP 端口，默认为 21。'
           label: 端口
         private-key:
           description: 'FTP 连接认证时使用的私钥的路径（最好是绝对路径）。'
           label: 私钥
         root:
-          description: 存储备份的远程根路径（子目录）。
+          description: 用于存储备份的远程根路径（子目录）。
           label: 根路径
         ssl:
-          description: '是否使用加密 SSL 连接到服务器。'
+          description: '是否使用加密的 SSL 连接服务器。'
           toggle: SSL
         timeout:
-          description: '等待与 FTP 服务器连接的秒数。'
+          description: 等待连接远程服务器的最长时间，单位为秒。
           label: 超时时间
         username:
-          description: '要在 FTP 服务器上进行身份验证的用户名。'
+          description: 用于登录远程服务器的用户名。
           label: 用户名
       gdrive:
         client-id:
-          description: "根据指引创建 Google Project 并获取 Client ID 和 Client Secret：https://github.com/ivanvermeyen/laravel-google-drive-demo/blob/master/README/1-getting-your-dlient-id-and-secret.md\n"
+          description: "按照 https://github.com/ivanvermeyen/laravel-google-drive-demo/blob/master/README/1-getting-your-dlient-id-and-secret.md 中的说明创建 Google 项目并获取 Client ID 和 Client Secret。\n"
           label: 'Client ID'
         client-secret:
           description: ' '
@@ -115,23 +115,23 @@ datitisev-backup:
             label: 'Client Secret'
         folder:
           description: 'https://drive.google.com/drive/u/0/folders/ID'
-          label: 'Folder ID'
+          label: '文件夹 ID'
         help:
           test_button: 测试连接
-          test_success_alert: '成功连接 Google Drive，请保存设置。'
+          test_success_alert: '已成功连接 Google Drive！请保存更改以应用设置。'
         refresh-token:
-          description: "按照 @ https://github.com/ivanvermeyen/laravel-google-drive-demo/blob/master/README/2-getting-your-refresh-token.md 的指引，取回您的 Google oAuth 应用程序刷新令牌。\n"
+          description: "按照 https://github.com/ivanvermeyen/laravel-google-drive-demo/blob/master/README/2-getting-your-refresh-token.md 中的说明获取 Google OAuth 应用的刷新令牌。\n"
           label: 刷新令牌
       local:
         target:
-          description: 指定用于存储备份的本地目录。
+          description: 指定用于保存备份的本地目录。
           label: 目标路径
-      name_label: 'Location 名称'
+      name_label: 存储位置名称
       title: '配置 {adapter}'
     adapters:
       aliyun: 阿里云
-      aws: '亚马逊 AWS S3'
-      azure: '微软 Azure'
+      aws: 'Amazon AWS S3'
+      azure: 'Microsoft Azure'
       dospaces: 'Digital Ocean Spaces'
       dropbox: Dropbox
       ftp: FTP
@@ -142,16 +142,16 @@ datitisev-backup:
       sftp: SFTP
       webdav: Webdav
       zip: 'Zip Archive'
-    create_button: 新建适配器
+    create_button: 添加存储位置
     delete_button: 删除
-    delete_confirmation: '确定要删除「{name}」（{adapter}）'
+    delete_confirmation: '确定要删除「{name}」（{adapter}）吗？'
     nav:
-      description: 存储您的论坛副本。
+      description: 保存论坛的备份副本。
       label: 备份
     required-package-modal:
-      content: "为了使用这个驱动程序，您需要安装一个特定的软件包。您可以通过 Flarum 安装目录下运行 <code>composer require {package}</code> 命令来安装。\n"
-      title: '{adapter} 所需的软件包'
-    required_package_button: 安装
+      content: "使用此存储方式需要安装指定的软件包。请在 Flarum 安装目录中运行以下命令：<code>composer require {package}</code>\n"
+      title: '{adapter} 需要安装额外依赖'
+    required_package_button: 安装依赖
     settings_button: 配置
     you-need-for:
       aliyun: aliyuncs/aliyun-oss-flysystem

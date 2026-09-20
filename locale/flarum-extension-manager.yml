@@ -7,21 +7,21 @@ flarum-extension-manager:
     auth_config:
       add_label: 添加认证
       add_modal:
-        host_label: 主机
+        host_label: 主机地址
         host_placeholder: 示例：packages.example.com
-        submit_button: 提交
+        submit_button: 添加
         token_label: 令牌
-        type_label: 类型
+        type_label: 认证类型
         unchanged_token_placeholder: （未修改）
-      delete_confirmation: 确定要删除此认证吗？
-      delete_label: 删除认证
-      edit_label: 编辑认证
+      delete_confirmation: 确定要删除此认证方式吗？
+      delete_label: 删除认证方式
+      edit_label: 编辑认证方式
       fields:
-        host: 主机
+        host: 主机地址
         token: 令牌
-      no_auth_methods_configured: 暂无认证配置。可选，您可以在此配置认证方式以从私有仓库安装扩展程序。
-      remove_button_label: 移除认证
-      title: 认证
+      no_auth_methods_configured: 尚未配置认证方式。如需从私有仓库安装软件包，请在此配置。
+      remove_button_label: 移除认证方式
+      title: 认证方式
       types:
         bearer: 'HTTP Bearer'
         github-oauth: 'GitHub OAuth'
@@ -29,61 +29,61 @@ flarum-extension-manager:
         gitlab-token: 'GitLab 令牌'
     composer:
       add_repository_label: 添加仓库
-      delete_repository_confirmation: 确定要删除此仓库，以及从此来源安装的扩展程序吗？
+      delete_repository_confirmation: 确定要删除此仓库吗？从此仓库安装的所有扩展程序都将被移除。
       delete_repository_label: 删除仓库
       edit_repository_label: 编辑仓库
       minimum_stability:
-        help: 允许安装的包类型。如非必要，请不要修改此设置。
+        help: 设置允许安装的软件包版本类型。如非必要，请勿修改此设置。
         label: 稳定性约束
         options:
-          alpha: 'Alpha 测试'
-          beta: 'Beta 测试'
-          dev: 开发版本
-          rc: 候选版本
-          stable: 稳定（推荐）
+          alpha: 'Alpha 测试版'
+          beta: 'Beta 测试版'
+          dev: 开发版
+          rc: 候选发布版
+          stable: 稳定版（推荐）
       repositories:
         add_modal:
           name_label: 名称
-          submit_button: 提交
+          submit_button: 添加
           type_label: 类型
           url: URL
-        help: "添加第三方公共或私有仓库。请不要添加不受信任的仓库，以免你的服务器遭受恶意代码执行。\n"
+        help: "添加第三方公共或私有仓库。此为高级功能，请添加可信任的仓库，以免服务器被执行恶意代码。\n"
         label: 仓库
         types:
-          composer: composer
-          path: path
-          vcs: vcs
+          composer: 'Composer 仓库或软件源'
+          path: 本地路径
+          vcs: 版本控制仓库（VCS）
       title: Composer
     exceptions:
       composer_command_failure: '执行失败。请前往 storage/logs/composer 查看 Composer 日志。'
-      extension_already_installed: 此扩展程序已被安装。
-      extension_not_directly_dependency: 有其他扩展程序依赖于此扩展程序，无法直接移除。
+      extension_already_installed: 扩展程序已安装。
+      extension_not_directly_dependency: 有其他扩展程序依赖此扩展，无法直接移除。
       extension_not_installed: 未找到扩展程序。
       guessed_cause:
         extension_incompatible_with_instance: '此扩展程序可能不兼容当前 Flarum 版本。'
-        extension_not_found: 不存在的扩展程序。
-        extensions_incompatible_with_new_major: "部分已安装的扩展程序不兼容最新大版本，请等候相应作者发布兼容性更新，或暂时卸载以继续操作。\n"
+        extension_not_found: 未找到此扩展程序，此扩展可能不存在。
+        extensions_incompatible_with_new_major: "部分已安装的扩展程序与最新主版本不兼容。请等待作者发布兼容性更新，或暂时卸载以继续操作。\n"
     extensions:
       check_why_it_failed_updating: 为什么无法更新到最新版本？
-      install: 安装扩展程序
+      install: 安装新扩展
       install_help: "请填写扩展包名称以继续。你可以使用格式 <code>vendor/package-name:version</code> 来指定<semantic_link>语义版本</semantic_link>。访问 {link} 浏览扩展。\n"
       proceed: 安装
       remove: 卸载
-      successful_install: '{extension} 已成功安装，正在跳转……'
-      successful_remove: 扩展程序已卸载。
-      successful_update: '{extension} 已成功更新，正在跳转……'
+      successful_install: '{extension} 安装成功，正在跳转…'
+      successful_remove: 扩展程序卸载成功。
+      successful_update: '{extension} 更新成功，正在跳转…'
       update: 更新
-      update_hard_label: 硬更新
-      update_soft_label: 软更新
+      update_hard_label: 忽略版本约束更新
+      update_soft_label: 按版本约束更新
     file_permissions: "扩展程序管理器需要以下文件和目录的读写权限：composer.json、composer.lock、vendor、storage、storage/.composer\n"
     major_updater:
-      description: "Flarum 大版本更新并不向后兼容，因此您当前安装的部分扩展，以及手动修改的内容可能并兼容 Flarum 新版本。继续操作前，请确保备份数据库和文件。\n"
-      dry_run: 测试运行
-      dry_run_help: 测试运行可以模拟更新来确认当前配置是否可以安全更新，但并不意味着您手动修改的内容兼容新版本。
+      description: "Flarum 主版本更新不保证向后兼容，因此部分已安装的扩展程序和手动修改的内容可能无法在新版本中正常工作。继续操作前请务必备份数据库和文件。\n"
+      dry_run: 模拟更新
+      dry_run_help: 模拟更新可用于检查当前环境能否安全升级，但无法保证你手动修改或自定义的内容也能在新版本中能生效。
       failure:
-        desc: 更新上个大版本失败，部分已安装的扩展程序不兼容。
-        why: 查看更多
-      title: '可用的大版本更新：Flarum {version}'
+        desc: 主版本更新失败，部分已安装的扩展程序不兼容。
+        why: 查看详情
+      title: 'Flarum {version} 主版本更新可用'
       update: 更新
     minor_update_confirmation:
       content: 此操作会同时更新其它可用的扩展程序或依赖包。
@@ -93,51 +93,51 @@ flarum-extension-manager:
       queue:
         columns:
           details: 详情
-          elapsed_time: 完成于
+          elapsed_time: 耗时
           operation: 操作
-          package: 包
-          peak_memory_used: 最高内存占用
+          package: 软件包
+          peak_memory_used: 峰值内存占用
           status: 状态
         none: 暂无任务。
         operations:
-          extension_install: 安装扩展程序
-          extension_remove: 移除扩展程序
-          extension_update: 更新扩展程序
+          extension_install: 安装扩展
+          extension_remove: 卸载扩展
+          extension_update: 更新扩展
           update_check: 检查更新
           update_global: 更新所有软件包
-          update_major: 大版本更新
+          update_major: 主版本更新
           update_minor: 小版本更新
-          why_not: 分析软件包无法更新原因
+          why_not: 分析无法更新原因
         output_modal:
           cause_unknown: 未知
           command: 'Composer 命令'
-          guessed_cause: 原因
+          guessed_cause: 可能原因
           output: 输出
         refresh: 刷新任务列表
         statuses:
           failure: 失败
-          pending: 队列
+          pending: 等待中
           running: 正在执行
           success: 成功
-        task_just_started: 任务已刚刚
+        task_just_started: 任务刚刚开始
         title: 队列
     settings:
-      access_warning: 谨慎分配管理员账号，随意安装扩展程序可能带来安全漏洞。
-      debug_mode_warning: 正在使用调试模式。扩展管理器无法正确安装和更新本地开发包，请使用命令行操作。
+      access_warning: 请谨慎分配管理后台访问权限。恶意利用扩展管理器安装软件包，可能带来安全风险。
+      debug_mode_warning: 正在使用调试模式，扩展程序管理器无法安装或更新本地开发软件包。此类操作请改用命令行。
       queue_jobs: 在后台队列中执行操作
       queue_jobs_help: "请确保用于队列的 PHP 版本为 {php_version}，并正确配置 <a href='{folder_perms_link}'>目录权限</a>。更多内容请参阅 <a href='{basic_impl_link}'>基本队列</a> 和 <a href='{adv_impl_link}'>高级队列</a> 的实现。\n"
       task_retention_days: 任务保留天数
-      task_retention_days_help: "暂存已完成的任务到数据库。超期一段时间后自动删除，设置为 0 表示永不删除。\n"
+      task_retention_days_help: "暂存已完成的任务到数据库。超期一定期限后自动删除，设置为 0 表示永不删除。\n"
       title: '=> core.ref.settings'
-    update_successful: 'Flarum 已成功更新。'
+    update_successful: 'Flarum 更新成功。'
     updater:
       check_for_updates: 检查更新
       flarum: 'Flarum 核心'
-      global_update_successful: 成功更新所有包。
-      last_update_checked_at: '上次更新检查： '
-      run_global_update: 运行全局更新
+      global_update_successful: 所有软件包更新成功。
+      last_update_checked_at: '上次检查更新： '
+      run_global_update: 更新全部
       up_to_date: 已全部更新到最新版本！
-      updater_help: '检查 Flarum 和扩展程序更新。'
+      updater_help: '检查 Flarum 和扩展程序是否有可用更新。'
       updater_title: 更新
     why_not_modal:
       title: 为什么无法更新

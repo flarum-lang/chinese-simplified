@@ -5,44 +5,44 @@
 datlechin-birthdays:
   admin:
     permissions:
-      edit_own_birthday_label: 修改个人生日
+      edit_own_birthday_label: 编辑自己的出生日期
       view_birthday_label: 查看生日
     settings:
-      date_format_help: '请使用 <a>dayjs</a> 日期格式，留空以使用默认设置。'
+      date_format_help: '使用 <a>dayjs</a> 日期格式。留空则使用默认格式。'
       date_format_label: 日期格式
-      date_none_year_label: 忽略年份
-      min_age_help: 最低注册年龄
+      date_none_year_label: 不含年份的日期格式
+      min_age_help: 设置允许注册的最低年龄
       min_age_label: 最低年龄
-      required_help: 请先启用「允许注册时设置生日」
-      required_label: 强制注册时设置生日
-      set_on_registration_label: 允许注册时设置生日
+      required_help: 请先启用「允许注册时填写出生日期」
+      required_label: 必须填写出生日期
+      set_on_registration_label: 允许注册时填写出生日期
   api:
-    invalid_age_message: '很抱歉，您的年龄必须大于 {minAge} 岁。'
-    invalid_dob_message: 无效的出生日期
+    invalid_age_message: '你的年龄必须至少为 {minAge} 岁。'
+    invalid_dob_message: 出生日期无效
   forum:
     change_dob:
       date_of_birth_text: '=> datlechin-birthdays.ref.date_of_birth'
       submit_button: '=> core.ref.save_changes'
-      title: 编辑生日
+      title: 编辑出生日期
     edit_user:
       dob_heading: '=> datlechin-birthdays.ref.date_of_birth'
     header:
       edit_dob_button: 编辑生日
     nav:
-      nav_item: 新的一岁！
+      nav_item: 今天生日
     page:
-      discussion_count: '{count, plural, one {主题：#} other {主题：#}}'
-      post_count: '{count, plural, one {回帖：#} other {回帖：#}}'
+      discussion_count: '{count, plural, other {讨论：#}}'
+      post_count: '{count, plural, other {帖子：#}}'
     settings:
-      change_dob_label: 修改生日
+      change_dob_label: 修改出生日期
       dob_heading: '=> datlechin-birthdays.ref.date_of_birth'
-      show_dob_date_label: 显示生日的月份和具体日期
-      show_dob_year_help: 这将公开您的年龄。
-      show_dob_year_label: 显示生日的年份
+      show_dob_date_label: 显示出生月日
+      show_dob_year_help: 启用后，其他人将能看到你的年龄。
+      show_dob_year_label: 显示出生年份
     sign_up:
       dob_placeholder: '=> datlechin-birthdays.ref.date_of_birth'
     user:
       age_text: '年龄：{age}'
       birthday_text: '生日：{date}'
   ref:
-    date_of_birth: 生日
+    date_of_birth: 出生日期

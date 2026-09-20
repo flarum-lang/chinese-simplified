@@ -2,6 +2,18 @@
 # Use https://weblate.rob006.net/projects/flarum/fof-masquerade/zh_Hans/ for translation.
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
+flarum-audit:
+  lib:
+    browser:
+      masquerade:
+        profile_updated: '更新了 {username} 的扩展资料'
+flarum-gdpr:
+  lib:
+    data:
+      masqueradeanswers:
+        anonymize_description: '=> flarum-gdpr.lib.data.masqueradeanswers.delete_description'
+        delete_description: 删除用户账号中的所有扩展资料。
+        export_description: 导出用户填写的扩展资料。
 fof-masquerade:
   admin:
     buttons:
@@ -10,48 +22,49 @@ fof-masquerade:
       edit-field: 保存更改
     fields:
       add: '添加字段 {field}'
-      description: 字段描述
-      description-help: "可选描述，用来解释这个字段的用途/需求。\n"
-      edit: '编辑字段 {field}'
-      force-user-to-completion: 强制用户填写资料
+      delete-confirmation: '确定要删除字段「{field}」吗？此操作无法撤销。'
+      description: 字段说明
+      description-help: "可选。用于说明此字段的用途或填写要求。\n"
+      edit: '编辑字段「{field}」'
+      force-user-to-completion: 强制用户完善资料
       icon: 图标
-      icon-help: "在字段名称前显示一个图标。可用的图标详情，请前往 <a>FontAwesome 官网</a>。图标名称包含前缀 \"fa-\"，例如 \"fas fa-info\"。\n"
-      name: 字段名
-      name-help: "公开可见（不可翻译）的字段名。\n"
-      on_bio: 在用户个人简介中显示此字段的答案
-      option-comma-warning: '选项名不能包含任何半角逗号 (",")。'
-      option-new: 添加选项
+      icon-help: "在用户填写的内容前显示图标。可用图标请参阅 <a>FontAwesome 网站</a>。请填写带「fa-」前缀的图标名称，例如「fas fa-info」。\n"
+      name: 字段名称
+      name-help: "公开显示的字段名称，不支持翻译。\n"
+      on_bio: 在用户简介中显示此字段内容
+      option-comma-warning: '选项名称不能包含英文逗号（,）。'
+      option-new: 新增选项
       options: 选项
       prefix: 字段前缀
       prefix-help: "在用户为该字段填写的值前添加前缀。\n"
-      required: 标记字段为必填项
-      title: 字段
+      required: 设为必填
+      title: 资料字段
       type: 类型
-      validation: 验证
-      validation-help: "检查支持的 <a>Laravel 验证规则</a>. 例如： \"string|min:5\" 或 \"url\"。\n"
+      validation: 验证规则
+      validation-help: "请参阅支持的 <a>Laravel 验证规则</a>，例如「string|min:5」或「url」。\n"
     general-options: 常规选项
     permissions:
-      edit-others-profile: 编辑他人资料页签
-      have-profile: 使用个人资料页签
-      view-profile: 查看个人资料页签
+      edit-others-profile: 编辑其他用户的扩展资料
+      have-profile: 填写扩展资料
+      view-profile: 查看扩展资料
     types:
       advanced: 高级
-      boolean: 是/否单选按钮
-      email: 电子邮件
-      select: 下拉列表
-      url: 网址
+      boolean: 复选框
+      email: 邮箱
+      select: 下拉菜单
+      url: URL
   forum:
     alerts:
-      profile-completed: 填写完成！<a>转到首页</a>
-      profile-completion-required: "请完善下方必填的个人资料。\n"
+      profile-completed: 资料已完善！<a>前往首页</a>
+      profile-completion-required: "请完善下方必填资料。\n"
     buttons:
-      edit-profile: 编辑个人资料
+      edit-profile: 编辑资料
       save-profile: 保存
-      view-profile: 个人资料
+      view-profile: 查看资料
     fields:
       boolean:
         'no': 否
         'yes': 是
       select:
-        none-optional: 未选择选项（可选）
-        none-required: 请选择一个选项（必选）
+        none-optional: 未选择（可选）
+        none-required: 请选择一项（必填）

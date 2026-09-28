@@ -931,7 +931,7 @@ core:
     icon: 图标
     icon_text: '请输入完整的 <a>FontAwesome</a> 图标类名，<em>不要省略</em>样式前缀，例如 <code>fas fa-flag</code> 或 <code>fa-solid fa-flag</code>。'
     invalid_login_message: 登录信息有误。
-    latest: 最新
+    latest: 最新回复
     light_hc_mode_label: 浅色高对比度
     light_mode_label: 浅色
     load_more: 加载更多

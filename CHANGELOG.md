@@ -114,7 +114,7 @@ CHANGELOG
 * [`linkrobins/countdown-widget`](https://github.com/linkrobins/countdown-widget) (88% complete)
 * [`linkrobins/discussion-banners`](https://github.com/linkrobins/flarum-discussion-banners) (100% complete)
 * [`linkrobins/font-sizer`](https://github.com/linkrobins/font-sizer) (100% complete)
-* [`linkrobins/flarum-forage`](https://github.com/linkrobins/flarum-forage) (100% complete)
+* [`linkrobins/flarum-forage`](https://github.com/linkrobins/flarum-forage)
 * [`linkrobins/html-widget`](https://github.com/linkrobins/html-widget) (81% complete)
 * [`linkrobins/link-gate`](https://github.com/linkrobins/flarum-link-gate) (100% complete)
 * [`linkrobins/markdown-widget`](https://github.com/linkrobins/markdown-widget) (100% complete)

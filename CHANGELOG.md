@@ -111,7 +111,7 @@ CHANGELOG
 * [`linkrobins/birdseye`](https://github.com/linkrobins/birdseye) (100% complete)
 * [`linkrobins/flarum-chirp`](https://github.com/linkrobins/chirp) (98% complete)
 * [`linkrobins/clipboard`](https://github.com/linkrobins/clipboard) (100% complete)
-* [`linkrobins/countdown-widget`](https://github.com/linkrobins/countdown-widget) (100% complete)
+* [`linkrobins/countdown-widget`](https://github.com/linkrobins/countdown-widget) (88% complete)
 * [`linkrobins/discussion-banners`](https://github.com/linkrobins/flarum-discussion-banners) (100% complete)
 * [`linkrobins/font-sizer`](https://github.com/linkrobins/font-sizer) (100% complete)
 * [`linkrobins/flarum-forage`](https://github.com/linkrobins/flarum-forage) (100% complete)

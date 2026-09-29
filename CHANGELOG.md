@@ -165,7 +165,7 @@ CHANGELOG
 * [`fof/masquerade`](https://github.com/FriendsOfFlarum/masquerade) (5 added, 27 changed, 93% complete)
 * [`fof/merge-discussions`](https://github.com/FriendsOfFlarum/merge-discussions) (20 changed, 100% complete)
 * [`fof/moderator-notes`](https://github.com/FriendsOfFlarum/moderator-notes) (17 changed, 100% complete)
-* [`fof/oauth`](https://github.com/FriendsOfFlarum/oauth) (5 added, 26 changed, 100% complete)
+* [`fof/oauth`](https://github.com/FriendsOfFlarum/oauth) (5 added, 26 changed, 96% complete)
 * [`fof/open-collective`](https://github.com/FriendsOfFlarum/open-collective) (6 added, 4 changed, 100% complete)
 * [`fof/pages`](https://github.com/FriendsOfFlarum/pages) (10 changed, 100% complete)
 * [`fof/polls`](https://github.com/FriendsOfFlarum/polls) (61 added, 44 changed, 100% complete)

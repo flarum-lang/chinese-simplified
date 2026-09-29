@@ -108,7 +108,7 @@ CHANGELOG
 * [`linkrobins/auto-lock`](https://github.com/linkrobins/auto-lock) (100% complete)
 * [`linkrobins/auto-verify`](https://github.com/linkrobins/auto-verify) (100% complete)
 * [`linkrobins/badge-labels`](https://github.com/linkrobins/flarum-badge-labels) (100% complete)
-* [`linkrobins/birdseye`](https://github.com/linkrobins/birdseye) (100% complete)
+* [`linkrobins/birdseye`](https://github.com/linkrobins/birdseye) (97% complete)
 * [`linkrobins/flarum-chirp`](https://github.com/linkrobins/chirp) (98% complete)
 * [`linkrobins/clipboard`](https://github.com/linkrobins/clipboard) (100% complete)
 * [`linkrobins/countdown-widget`](https://github.com/linkrobins/countdown-widget) (88% complete)

@@ -115,6 +115,7 @@ CHANGELOG
 * [`huoxin/relative-url`](https://github.com/huoxin233/flarum-ext-relative-url) (100% complete)
 * [`huseyinfiliz/awards`](https://github.com/huseyinfiliz/awards) (100% complete)
 * [`huseyinfiliz/flarum-diff`](https://github.com/huseyinfiliz/flarum-diff) (100% complete)
+* [`huseyinfiliz/discussion-ban`](https://github.com/huseyinfiliz/discussion-ban) (100% complete)
 * [`huseyinfiliz/leaderboard`](https://github.com/huseyinfiliz/leaderboard) (97% complete)
 * [`huseyinfiliz/modern-footer`](https://github.com/huseyinfiliz/modern-footer) (94% complete)
 * [`huseyinfiliz/notificationhub`](https://github.com/huseyinfiliz/notificationhub) (95% complete)

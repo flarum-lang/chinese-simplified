@@ -7,86 +7,89 @@ huseyinfiliz-leaderboard:
     modals:
       cancel: 取消
       close: 关闭
-      none_selected: 未选择任何项
+      none_selected: 未选择
       save: 保存
-      select_groups: 选择群组
+      select_groups: 选择用户组
       select_tags: 选择标签
+    permissions:
+      view_leaderboard: 查看排行榜
     settings:
-      already_running: 重新计算已在进行中。请等待其完成。
-      excluded_groups_help: 所选群组中的用户将被排除在排行榜之外。
-      excluded_groups_label: 排除的群组
-      excluded_tags_help: 带有选定标签的讨论将不会获得积分。
+      already_running: 已有重新统计任务正在进行，请等待完成。
+      excluded_groups_help: 所选用户组中的用户不会出现在排行榜中。
+      excluded_groups_label: 排除的用户组
+      excluded_tags_help: 带有所选标签的讨论不会获得积分。
       excluded_tags_label: 排除的标签
-      extension_not_enabled: 此扩展未启用。
+      extension_not_enabled: 此扩展未启用
       leaderboard_name_label: 排行榜名称
       points_badge_earned_label: 获得徽章的积分
-      points_best_answer_label: 最佳答案的积分
-      points_changed_notice: 积分值已更改。同步积分以应用新值。
-      points_daily_login_label: 每日登录的积分
-      points_discussion_started_label: 发起讨论的积分
-      points_downvote_received_label: 收到踩的积分
-      points_label_label: 积分标签
-      points_like_given_label: 给出赞的积分
-      points_like_received_label: 收到赞的积分
-      points_post_created_label: 发表回复的积分
-      points_reaction_given_label: 给出表情的积分
-      points_reaction_received_label: 收到表情的积分
-      points_upvote_received_label: 收到顶的积分
-      recalculate_points_button: 重新计算所有活动
-      recalculate_points_confirm: 这将重新扫描所有源数据并从头开始重建积分记录。在大型论坛上可能需要一些时间。
-      recalculate_points_failed: 重新计算失败。您可以再试一次。
-      recalculate_points_help: 重新扫描所有源数据（讨论、帖子、点赞等），删除孤立记录，添加缺失记录，并重建所有总计。在更改标签排除项或数据似乎不同步时使用此功能。
-      recalculate_points_retry: 再试一次
-      recalculate_points_success: 所有活动已成功重新计算。
-      recalculate_points_title: 重新计算所有活动
-      recalculate_points_warning: 重新计算进行中时，请勿关闭此页面或离开。如果中断，操作将失败。
+      points_best_answer_label: 获得最佳回复的积分
+      points_changed_notice: 积分数值已更改，请同步积分以应用新数值。
+      points_daily_login_label: 每日登录获得的积分
+      points_discussion_started_label: 发起讨论获得的积分
+      points_downvote_received_label: 收到反对票获得的积分
+      points_label_label: 积分名称
+      points_like_given_label: 点赞他人获得的积分
+      points_like_received_label: 收到点赞获得的积分
+      points_post_created_label: 回复获得的积分
+      points_reaction_given_label: 作出反应获得的积分
+      points_reaction_received_label: 收到反应获得的积分
+      points_upvote_received_label: 收到赞成票获得的积分
+      recalculate_points_button: 重新统计所有活动
+      recalculate_points_confirm: 这将重新扫描所有来源数据，并从头重建积分记录。大型论坛可能需要较长时间。
+      recalculate_points_failed: 重新统计失败，请重试
+      recalculate_points_help: 重新扫描所有来源数据（讨论、帖子、点赞等），删除无效记录、补充缺失记录，并重建所有积分总数。修改标签排除项或发现数据不同步时使用。
+      recalculate_points_retry: 重试
+      recalculate_points_success: 所有活动已重新统计。
+      recalculate_points_title: 重新统计所有活动
+      recalculate_points_warning: 重新统计期间请勿关闭或离开此页面，否则操作将失败。
       recalculate_totals_button: 同步积分
-      recalculate_totals_help: 使用当前积分值重新计算所有用户积分总计。在更改积分值后使用此功能。
-      recalculate_totals_success: 积分已成功同步。
+      recalculate_totals_help: 根据当前积分设置重新计算所有用户的积分总数。修改积分数值后使用。
+      recalculate_totals_success: 积分已同步
       recalculate_totals_title: 同步积分
       section_badges: 徽章
-      section_best_answer: 最佳答案
-      section_core: 核心积分
+      section_best_answer: 最佳回复
+      section_core: 基础积分
       section_gamification: 游戏化
-      section_likes: 赞
-      section_reactions: 表情
-      sync_step_badge_earned: 正在扫描徽章...
-      sync_step_best_answer: 正在扫描最佳答案...
-      sync_step_discussion_started: 正在扫描讨论...
-      sync_step_like_given: 正在扫描发出的赞...
-      sync_step_like_received: 正在扫描收到的赞...
-      sync_step_post_created: 正在扫描帖子...
-      sync_step_reaction_given: 正在扫描发出的表情...
-      sync_step_reaction_received: 正在扫描收到的表情...
-      sync_step_rebuild_totals: 正在重建总计...
-      sync_step_vote_received: 正在扫描投票...
-      tags_changed_notice: 标签排除项已更改。重新计算所有活动以更新历史数据。
+      section_likes: 点赞
+      section_reactions: 反应
+      sync_step_badge_earned: 正在扫描徽章…
+      sync_step_best_answer: 正在扫描最佳回复…
+      sync_step_discussion_started: 正在扫描讨论…
+      sync_step_like_given: 正在扫描送出的点赞…
+      sync_step_like_received: 正在扫描收到的点赞…
+      sync_step_post_created: 正在扫描帖子…
+      sync_step_reaction_given: 正在扫描作出的反应…
+      sync_step_reaction_received: 正在扫描收到的反应…
+      sync_step_rebuild_totals: 正在重建积分总数…
+      sync_step_vote_received: 正在扫描投票…
+      tags_changed_notice: 标签排除项已更改，请重新统计所有活动以更新历史数据。
     tabs:
       exclusions: 排除项
-      general: 通用
+      general: 常规
       maintenance: 维护
       points: 积分
   forum:
     contenders:
-      title: 顶级竞争者
+      title: 领先用户
     honorable:
       title: 荣誉提名
     list:
       load_more: 显示更多
-      no_results: 此期间无结果。
+      no_results: 此期间暂无排名
       points: '{points} {label}'
       rank: 排名
     period:
-      all: 所有时间
-      daily: 每日
-      monthly: 每月
-      quarterly: 每季度
-      weekly: 每周
-      yearly: 每年
+      all: 总榜
+      daily: 日榜
+      monthly: 月榜
+      quarterly: 季度榜
+      weekly: 周榜
+      yearly: 年榜
+    permission_denied: 你没有权限查看排行榜
     podium:
-      first: 第1名
-      second: 第2名
+      first: '第 1 名'
+      second: '第 2 名'
       stat_badges: 徽章
-      stat_comments: 评论
+      stat_comments: 回复
       stat_discussions: 讨论
-      third: 第3名
+      third: '第 3 名'

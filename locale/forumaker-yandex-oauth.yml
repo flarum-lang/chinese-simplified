@@ -7,12 +7,12 @@ fof-oauth:
     settings:
       providers:
         yandex:
-          client_id_label: 'Client ID'
-          client_secret_label: 'Client Secret'
-          description: '在 https://oauth.yandex.ru 创建应用'
+          client_id_label: '客户端 ID'
+          client_secret_label: 客户端密钥
+          description: '前往 https://oauth.yandex.ru 创建应用'
   forum:
     log_in:
-      with_yandex_button: '通过 Yandex 登录'
+      with_yandex_button: '使用 Yandex 账号登录'
     providers:
       yandex: Yandex
   lib:

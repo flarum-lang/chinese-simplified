@@ -5,18 +5,25 @@
 forumaker-magic-dice:
   admin:
     settings:
-      clearOnEdit: 编辑帖子时重新生成随机数
+      clearOnEdit: 编辑帖子时重新掷骰
+      icons:
+        color: 颜色
+        d10: d10
+        d20: d20
+        d6: d6
+        icon: 图标类
+        preview: 预览
       section_main: 设置
   forum:
     composer:
       rollDie: 魔法骰子
     settings:
       diceSkin:
-        circle: 轨道
+        circle: 环形
         classic: 经典
         gradient: 日落
         hc: 高对比度
         heading: 骰子样式
         neon: 霓虹
     tooltip:
-      preview: 保存后随机掷骰
+      preview: 保存时随机掷骰

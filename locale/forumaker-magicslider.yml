@@ -31,3 +31,36 @@ capy-magic-slider:
       section_display: 显示
       section_mobile: 移动端
       section_slides: 幻灯片
+forumaker-magicslider:
+  admin:
+    settings:
+      add_slide: 添加轮播项
+      autoplay: 自动轮播间隔
+      autoplay_help: '设为 0 可关闭自动轮播，单位为秒'
+      clicks: 此轮播项的点击次数
+      confirm_delete: 确定要删除此轮播项吗？
+      delete: 删除
+      disable_desktop: 桌面端隐藏轮播图
+      disable_desktop_help: '在宽度超过 768px 的屏幕上隐藏'
+      disable_mobile: 移动端隐藏轮播图
+      disable_mobile_help: '在宽度不超过 768px 的屏幕上隐藏'
+      drag: 拖动调整顺序
+      fit_to_layout: 与页面主体等宽
+      fit_to_layout_help: 启用后，轮播图宽度将与标签页或主题列表的主要内容区域保持一致
+      height: 高度
+      height_help: 设置此设备类型下的固定高度
+      hide_on_tag_pages: 在标签页隐藏轮播图
+      hide_on_tag_pages_help: '在标签页显示 Flarum 默认的标签横幅，不展示轮播图'
+      image_placeholder: '图片 URL'
+      link_placeholder: '链接 URL'
+      new_tab: 在新标签页中打开
+      padding: 外边距
+      padding_help: 轮播图四周的留白
+      radius: 圆角
+      radius_help: 设置轮播图的圆角大小
+      section_behavior: 显示设置
+      section_desktop: 桌面端
+      section_mobile: 移动端
+      section_slides: 轮播内容
+      upload: 选择文件
+      upload_error: 图片上传失败

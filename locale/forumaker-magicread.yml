@@ -5,11 +5,25 @@
 forumaker-magicread:
   admin:
     settings:
-      enable_counter: 编辑器中实时字符计数器
-      enable_pagination: 讨论区内分页功能
-      enable_readmore: 在个人资料页启用“阅读更多”预览
+      enable_counter: 编辑器实时统计字符数
+      enable_counter_help: 在编辑器输入框右上角显示字符数
+      enable_discussion_pager: 分页导航替代时间轴
+      enable_discussion_pager_help: 移除原生时间轴，在页面顶部和底部添加分页导航，并禁用无限滚动
+      enable_pagination: 时间轴添加分页导航
+      enable_pagination_help: 保留原生时间轴，并在下方添加页码选择器
+      enable_readmore: 个人资料页折叠长帖
+      enable_readmore_help: 在个人资料页折叠较长的帖子，并添加按钮供用户展开全文
       section_main: 设置
+      section_pagination: 分页
   forum:
     counter:
-      label: 字符
+      label: 字符数
+    pager:
+      first: 返回第一页
+      go: 前往
+      input_label: 跳转到指定页
+      last: 前往最后一页
+      next: 下一页
+      page: 页码
+      prev: 上一页
     read_more: 阅读更多

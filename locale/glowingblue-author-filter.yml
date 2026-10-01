@@ -5,15 +5,15 @@
 glowingblue-author-filter:
   admin:
     settings:
-      intro: 没有<code>搜索用户</code>权限的用户将无法看到搜索框。
+      intro: '没有 <code>搜索用户</code> 权限的用户将看不到搜索框。若要向所有用户开放，请将该权限设为 <code>所有人</code>，也可以按需设置为其他权限级别。'
       min_length: 最小搜索关键词字符数
-      result_count: 最大搜索建议数
+      result_count: 最大搜索建议结果数
   forum:
     index_page:
       filter_user:
         accessible_label: 筛选作者
         all: 全部
         label: '筛选作者：{text}'
-        no_results: 未找到任何内容
+        no_results: 没有结果
         remove_filter: 清除作者筛选
-        search_label: 搜索中……
+        search_label: 搜索中…

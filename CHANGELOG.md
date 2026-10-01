@@ -113,7 +113,7 @@ CHANGELOG
 * [`forumfortress/flarum`](https://github.com/forum-fortress/flarum) (100% complete)
 * [`glowingblue/author-filter`](https://github.com/glowingblue/flarum-ext-author-filter) (100% complete)
 * [`huoxin/relative-url`](https://github.com/huoxin233/flarum-ext-relative-url) (100% complete)
-* [`huseyinfiliz/awards`](https://github.com/huseyinfiliz/awards) (100% complete)
+* [`huseyinfiliz/awards`](https://github.com/huseyinfiliz/awards) (97% complete)
 * [`huseyinfiliz/flarum-diff`](https://github.com/huseyinfiliz/flarum-diff) (100% complete)
 * [`huseyinfiliz/discussion-ban`](https://github.com/huseyinfiliz/discussion-ban) (100% complete)
 * [`huseyinfiliz/language-detection`](https://github.com/huseyinfiliz/language-detection) (100% complete)

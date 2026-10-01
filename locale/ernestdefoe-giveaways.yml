@@ -22,6 +22,12 @@ ernestdefoe-giveaways:
     enter_min_posts: '至少需要发布 {count} 篇帖子才能参与。'
     enter_too_new: 你的账号注册时间尚未达到此抽奖活动的参与要求。
     prize_required: 必须填写奖品。
+    skill_already_forfeited: 由于技能测试题未作答，此奖品已重新抽取。
+    skill_answer_missing: 请回答技能测试题后再领取奖品。
+    skill_answer_required: 请正确回答你的技能测试题。
+    skill_answer_wrong: 答案不正确，再检查一遍题目吧。
+    skill_answer_wrong_attempts: '答案不正确。在重新抽奖前，你还剩 {count} 次机会。'
+    skill_forfeited: 这是最后一次机会，奖品已重新抽取。下次好运！
     title_required: 必须填写标题。
   forum:
     active_heading: 正在进行
@@ -35,7 +41,10 @@ ernestdefoe-giveaways:
       name_placeholder: 分类名称
       none: 暂无分类。
     claim: 确认领奖
+    claim_answer_placeholder: 你的答案
+    claim_attempts_left: '还剩 {count} 次机会。次数用尽后，奖品将重新抽取。'
     claim_next_steps: 领取方式
+    claim_skill_intro: 领取奖品前，请先回答以下技能测试题：
     claim_success: 已确认领奖！🎉
     claimed: 已确认领奖
     confirm_delete: 确定要删除此抽奖活动及其全部参与记录吗？
@@ -56,6 +65,7 @@ ernestdefoe-giveaways:
     enter_success: 参与成功，祝你好运！
     entered: 已参与！
     entrants: '{count} 人参与'
+    fairness_forfeit_help: 有中奖者因未正确回答技能测试题失去领奖资格。替补中奖者非重新开奖产生，而是由同一开奖种子选出的下一位参与者，因此仍可根据上方的种子和参与名单复现结果。
     fairness_help: '参与名单哈希是开奖时完整参与名单的 SHA-256 指纹。结合开奖种子，可以完整复现中奖者的选取结果。'
     fairness_intro: 本次开奖结果可被所有人验证，并确认中奖者名单无篡改。
     fairness_label: 公平公正可验证
@@ -77,6 +87,15 @@ ernestdefoe-giveaways:
       post_bonus_label: 发帖奖励机会
       prize_label: 奖品
       prize_placeholder: 中奖者可以获得什么？
+      rules_help: 完整内容会单独显示在抽奖活动页面中。如果当地规定要求公布活动规则，请在此填写，支持换行。
+      rules_label: 正式规则
+      rules_placeholder: 参与资格、中奖者选取方式和时间、参与截止时间、中奖通知方式、中奖概率、主办方信息等…
+      skill_answer_help: 根据相关法律法规，有些地区不允许纯随机抽奖。因此你可以要求中奖者必须正确答题才能领取奖品。答案不区分大小写，并忽略空格和千位分隔符。
+      skill_answer_label: 正确答案
+      skill_attempts_help: '设置中奖者最多可答错多少次。超过次数后，奖品将转给开奖种子选出的下一位参与者。设为 0 则可无限重试，奖品不会重新抽取。'
+      skill_attempts_label: 失去资格前可答错次数
+      skill_question_label: 技能测试题（可选）
+      skill_question_placeholder: '例如：12 + 7 × 2 等于多少？'
       starts_label: 开始时间（可选）
       submit: 保存抽奖活动
       title_label: 标题
@@ -98,16 +117,24 @@ ernestdefoe-giveaways:
     req_min_age: '账号注册至少满 {count} 天'
     req_min_posts: '至少发布 {count} 篇帖子'
     requirements_label: 参与要求
+    rules_intro: 以下为抽奖活动开始时公布的完整规则。
+    rules_label: 正式规则
     saved: 抽奖活动已保存。
     seed_label: 开奖种子
+    skill_attempts_note: '如果中奖者答错 {count} 次，奖品将按开奖种子选出的顺序转给下一位参与者。'
+    skill_question_label: 技能测试题
+    skill_question_note: 中奖者必须正确回答此题，才能获得奖品。
     starts_in: '{time} 后开始'
     status_active: 进行中
     status_cancelled: 已取消
     status_drawn: 已开奖
     subheading: 参与抽奖，赢取好礼。开奖过程公平且可验证。
     unclaimed: 尚未确认
+    winner_forfeited: 已失去资格，奖品已重新抽取
     winners_count: '{count} 位中奖者'
     winners_label: 中奖者
+    you_forfeited: 奖品已重新抽取
+    you_forfeited_sub: 你未能在规定次数内正确回答技能测试题，因此奖品已转给开奖种子选出的下一位参与者。
     you_won: 你中奖了！🎉
     you_won_sub: '恭喜你获得 {prize}！请确认领奖，以便主办方安排发放。'
     your_entries: '你有 {count} 次抽奖机会'

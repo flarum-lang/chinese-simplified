@@ -5,29 +5,54 @@
 acpl-mobile-tab:
   admin:
     active_items: 已启用项目
-    available_items: 可用项目
-    create_new_item_button: 创建新项目
+    available_items: 可用导航项
+    available_items_help: 将导航项从此列表拖到任意方案中，即可添加到底部导航栏。
+    create_new_item_button: 创建新导航项
     edit_item:
       delete_button: 删除
-      delete_item_confirmation: 确定要删除此项目吗？
+      delete_item_confirmation: 确定要删除此导航项吗？
+      help: 需要链接以外的功能？有关自定义导航项和行为，请参阅<a>开发者文档</a>。
       icon: 图标
       icon_help: '输入任意 <a>FontAwesome</a> 图标类名，包括 <code>fas fa-</code> 前缀。'
       is_internal_checkbox: 内部链接
       label: 名称
-      label_placeholder: 我的自定义项目
-      modal_title: 编辑项目
+      label_placeholder: 我的自定义导航项
+      modal_title: 编辑导航项
       open_new_tab_checkbox: 在新标签页中打开链接
       path: 路径
       submit_button: 保存
+      type:
+        external:
+          help: 打开外部地址。
+          label: 前往其他网站
+        heading: 链接用途
+        internal:
+          help: 无需重新加载页面即可打开。
+          label: 前往本站页面
       url: URL
+      url_help:
+        external: '填写完整地址，包括 <code>https://</code>。'
+        internal: '填写 {baseUrl} 后面的地址部分，并以斜杠开头。'
     scroll_settings:
       threshold_help: 向上或向下滚动达到此距离后，显示或隐藏底部导航栏。
       threshold_label: 触发滚动距离（px）
       toggle_label: 滚动时自动隐藏底部导航栏
+    variants:
+      create: 创建方案
+      delete: 删除方案
+      delete_confirmation: 确定要删除此方案吗？此操作无法撤销。
+      empty_help: 将导航项拖到这里，即可添加到此方案。
+      enabled: 启用
+      heading: 底部导航栏方案
+      help: '系统会从上到下依次检查各方案。用户将看到自己有权查看的第一个已启用方案。请将更宽泛的方案放在最后，例如：#1 管理员、#2 版主、#3 注册用户、#4 所有人。将方案留空，可对所选用户组完全隐藏底部导航栏。'
+      number: '#{number}'
+      reorder: 调整方案顺序
+      visible_to: 可见用户
   lib:
     item:
       all_discussions: 讨论
       categories: 分类
+      flags: 举报
       fof-byobu: 私密讨论
       home: 首页
       log_in: 登录

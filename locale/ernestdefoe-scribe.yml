@@ -14,28 +14,50 @@ ernestdefoe-scribe:
     composer:
       apply: 应用
       clear_colour: 清除颜色
+      clear_highlight: 清除高亮
       image_placeholder: 图片地址…
+      info_title_placeholder: 标题…
       link_placeholder: 粘贴或输入链接…
       remove_link: 移除链接
+      spoiler_title_placeholder: 剧透标题…
       toolbar_label: 格式
+    reply_gate:
+      locked: 此内容回复后可见。
   lib:
     buttons:
+      add_column: 添加列
+      add_row: 添加行
+      align: 对齐
+      align_center: 居中对齐
+      align_justify: 两端对齐
+      align_left: 左对齐
+      align_right: 右对齐
       bold: 粗体
       bullet_list: 无序列表
       code: 行内代码
       code_block: 代码块
+      delete_column: 删除列
+      delete_row: 删除行
       heading: 标题
+      heading1: 大标题
+      heading4: 小标题
       highlight: 高亮
       horizontal_rule: 分隔线
       image: 图片
+      info_box: 信息框
       italic: 斜体
       link: 链接
       ordered_list: 有序列表
       quote: 引用
       redo: 重做
+      reply_gate: 回复后可见
+      spoiler: 剧透
       strike: 删除线
       subheading: 副标题
+      subscript: 下标
+      superscript: 上标
       table: 表格
       text_color: 文字颜色
+      toggle_header_cell: 切换表头单元格
       underline: 下划线
       undo: 撤销

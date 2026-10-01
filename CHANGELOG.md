@@ -46,6 +46,7 @@ CHANGELOG
 * [`ernestdefoe/hero-builder`](https://github.com/ernestdefoe/hero-builder) (100% complete)
 * [`ernestdefoe/importer`](https://github.com/ernestdefoe/importer) (100% complete)
 * [`ernestdefoe/janitor`](https://github.com/ernestdefoe/janitor) (100% complete)
+* [`ernestdefoe/logo-manager`](https://github.com/ernestdefoe/logo-manager) (100% complete)
 * [`ernestdefoe/maintenance`](https://github.com/ernestdefoe/maintenance) (100% complete)
 * [`ernestdefoe/mobile-tab`](https://github.com/ernestdefoe/mobiletab) (100% complete)
 * [`ernestdefoe/onair`](https://github.com/ernestdefoe/onair) (100% complete)

@@ -66,6 +66,7 @@ CHANGELOG
 * [`ernestdefoe/typesense`](https://github.com/ernestdefoe/typesense) (100% complete)
 * [`ernestdefoe/verbatim`](https://github.com/ernestdefoe/verbatim) (100% complete)
 * [`ernestdefoe/wardrobe`](https://github.com/ernestdefoe/wardrobe) (100% complete)
+* [`ernestdefoe/warren`](https://github.com/ernestdefoe/warren) (100% complete)
 * [`flarum/audit`](https://github.com/flarum/audit) (100% complete)
 * `flarum-com-database-queue`
 * [`flarum/gdpr`](https://github.com/flarum/gdpr) (100% complete)

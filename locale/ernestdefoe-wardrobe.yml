@@ -18,5 +18,5 @@ ernestdefoe-wardrobe:
     theme:
       follow_forum: 使用默认主题
       heading: 主题
-      help: 选择你喜欢的论坛外观
+      help: 选择你喜欢的论坛外观。
       save_failed: 无法保存主题设置，请重试。

@@ -14,28 +14,28 @@ huseyinfiliz-stickiest:
       badge_icon_text: 图标文本
       display_tag_sticky_label: 在“全部讨论”列表中显示标签置顶
       display_tag_sticky_text: 它们将作为普通讨论显示，不会固定在顶部。
-      show_sticky_highlight_help: 启用后，置顶讨论将在列表中显示彩色左边框和背景高亮。
-      show_sticky_highlight_label: 显示置顶高亮
-      show_tag_sticky_help: 禁用后，标签置顶的讨论仅在查看对应标签时显示。
-      show_tag_sticky_label: 在全部讨论中显示标签置顶
-      stickiest_icon_help: 'Font Awesome 图标类（例如：fas fa-star）'
-      stickiest_icon_label: 超级置顶徽章图标
+      show_sticky_highlight_help: 启用后，讨论列表中的置顶讨论会显示彩色的左侧边框高亮和淡色背景。
+      show_sticky_highlight_label: 突出显示置顶讨论
+      show_tag_sticky_help: 关闭后，标签置顶的讨论只会在对应标签页中显示为置顶。
+      show_tag_sticky_label: 在「全部讨论」中显示标签置顶
+      stickiest_icon_help: 'Font Awesome 图标类，例如 fas fa-star'
+      stickiest_icon_label: 超级置顶图标
   forum:
     badge:
       stickiest_tooltip: 超级置顶
-      sticky_tooltip: 已设为置顶
+      sticky_tooltip: 置顶
       super_sticky_tooltip: 已设为超级置顶
       super_tag_sticky_tooltip: 已设为超级标签置顶
-      tag_sticky_tooltip: 已设为标签置顶
+      tag_sticky_tooltip: 标签置顶
     discussion_controls:
       sticky_button: 置顶
     post_stream:
       discussion_common_stickied_text: '{username} 取消了该讨论的超级置顶。'
       discussion_stickied_text: 此讨论已被置顶
-      discussion_stickiest_text: '{username} 将该讨论设为超级置顶。'
+      discussion_stickiest_text: '{username} 将讨论设为超级置顶'
       discussion_super_stickied_text: '{username} 将该讨论设为超级置顶。'
       discussion_unstickied_text: 此讨论已被取消置顶
-      discussion_unstickiest_text: '{username} 取消了该讨论的超级置顶。'
+      discussion_unstickiest_text: '{username} 取消了讨论的超级置顶'
     stickiest_modal:
       sticky_label: 引用置顶
       sticky_text: 置顶讨论在“全部讨论”列表中未读时会显示在顶部，在查看所属标签时始终置顶。
@@ -48,14 +48,14 @@ huseyinfiliz-stickiest:
       title: '设置置顶：{title}'
     sticky_modal:
       select_tags: 选择标签
-      stickiest_help: 在所有页面始终固定在最顶部。
+      stickiest_help: 在所有位置始终固定在最顶部。
       stickiest_label: 超级置顶
-      sticky_help: 未读时在“全部讨论”中置顶，在标签页始终置顶。
+      sticky_help: 在「全部讨论」中对未读讨论置顶，在标签页中始终置顶。
       sticky_label: 置顶
       submit_button: 保存更改
-      tag_sticky_help: 仅在选定标签页面中置顶显示。
+      tag_sticky_help: 仅在所选标签页中置顶。
       tag_sticky_label: 标签置顶
-      title: '置顶设置：{title}'
+      title: '置顶「{title}」'
   ref:
     sticky: 已设为置顶
     super_sticky: 超级置顶

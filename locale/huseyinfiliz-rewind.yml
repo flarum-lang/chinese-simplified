@@ -10,277 +10,323 @@ huseyinfiliz-rewind:
       close: 关闭
       community_title: 生成社区年度回顾
       confirm: 确认
-      delete_confirm: 确认删除
-      delete_title: 删除年度回顾数据
-      deleted: '已删除 {count} 条年度回顾数据。'
-      done: '已完成 — 已处理 {count} 项。'
-      group_label: 用户组（可选）
-      invalid_year: '年份必须是 2000 到当前生效年份之间的整数。'
-      nothing: '没有需要处理的内容 — 已是最新状态。'
-      start: 开始生成
-      users_title: 批量生成用户年度回顾
-      warning: 警告：此操作不可逆。
+      delete_confirm: 删除
+      delete_title: 删除用户年度回顾
+      deleted: '已删除 {count} 份年度回顾。'
+      done: '已完成，共处理 {count} 项。'
+      group_label: 用户组
+      invalid_year: '年份必须为 2000 至当前年度之间的整数。'
+      nothing: 无需处理，当前数据已是最新。
+      start: 开始
+      users_title: 补缺用户年度回顾
+      warning: 操作进行期间请勿关闭此页面。
       year_label: 年份
     permissions:
       generate: 生成自己的年度回顾
-      moderate: 管理所有人的年度回顾（生成/删除）
-      view_forum: 查看年度回顾
+      moderate: 管理年度回顾
+      view_forum: 查看年度回顾页面
     settings:
-      active_year_label: 当前生效的年份
-      community_comparison_help: 启用后，用户的年度回顾幻灯片将显示各项指标与社区平均水平的对比。需要先生成社区年度回顾。
-      community_comparison_label: 与社区平均值比较
+      active_year_label: 当前年度
+      community_comparison_help: 启用后，个人年度回顾会显示各项数据与社区平均水平的对比。需要先生成社区年度回顾。
+      community_comparison_label: 比较社区均值
       community_slide_badge_leaderboard: 徽章榜
-      community_slide_best_answers_leaderboard: 最佳答案榜
-      community_slide_busiest_month: 最忙碌的月份
+      community_slide_best_answers_leaderboard: 最佳回复榜
+      community_slide_busiest_month: 最活跃月份
       community_slide_most_active_user: 最活跃用户
       community_slide_most_loved: 最受喜爱
       community_slide_new_members: 新成员
       community_slide_peak_hour: 高峰时段
       community_slide_star_post: 明星帖子
       community_slide_top_contributors: 活跃贡献者
-      community_slide_top_discussion: 热门话题
-      community_slide_top_tag: 热门标签
-      community_slide_total_words: 社区总字数
-      community_slide_year-overview: 年度概览
-      delete_rewinds_button: 删除回顾数据
-      delete_rewinds_help: 删除指定年份的所有用户回顾数据。
-      delete_rewinds_title: 删除回顾数据
+      community_slide_top_discussion: 热门讨论
+      community_slide_top_tag: 最热门标签
+      community_slide_total_words: 发言字数
+      community_slide_year-overview: 年度数据
+      delete_rewinds_button: 删除年度回顾
+      delete_rewinds_help: 按年份删除用户年度回顾数据，也可以按用户组筛选。
+      delete_rewinds_title: 删除用户年度回顾
       enabled_label: 启用年度回顾
-      generate_community_button: 立即生成社区回顾
-      generate_community_help: 计算当前生效年份的全社区统计数据。如果启用了社区对比功能，建议在生成用户年度回顾之前先执行此操作。
-      generate_community_title: 生成社区回顾
-      generate_users_button: 批量生成用户回顾
-      generate_users_help: 为所有尚未生成年度回顾快照的用户生成快照。可选择年份，并可按用户组进行筛选。
-      generate_users_title: 批量生成用户回顾
-      invalid_active_year: '生效年份必须是 2000 到 2100 之间的整数。'
+      generate_community_button: 批量生成
+      generate_community_help: 统计当前年度的全社区数据。如果启用了「比较社区均值」，请在生成个人年度回顾前先执行此操作。
+      generate_community_title: 生成社区年度回顾
+      generate_users_button: 批量生成
+      generate_users_help: 为尚未生成年度回顾的用户生成回顾快照。选择年份后，还可以按用户组筛选。
+      generate_users_title: 补缺用户年度回顾
+      invalid_active_year: '年份必须为 2000 至 2100 之间的整数。'
+      render_mode_blade: '自定义 Blade 模板（storage/rewind/views/）'
+      render_mode_slideshow: '故事式互动幻灯片（Mithril + Anime.js）'
       section_achievements: 成就
       section_content: 内容
       section_core: 核心数据
-      section_people: 人际关系
-      section_social: 社交互动
-      show_menu_link_label: 在用户菜单中显示“年度回顾”链接
+      section_people: 用户
+      section_social: 互动
+      show_menu_link_label: 在用户菜单中显示年度回顾入口
       slide_active_days: 活跃天数
-      slide_badges_earned: 获得的徽章
-      slide_best_answers: 最佳答案
-      slide_best_friend: 最佳好友
+      slide_badges_earned: 徽章
+      slide_best_answers: 最佳回复
+      slide_best_friend: 最佳拍档
       slide_best_friend_mentions: 提及
       slide_best_post: 最佳帖子
-      slide_discussion_count: 发起话题数量
-      slide_likes_given: 给出的点赞
-      slide_likes_received: 收到的点赞
+      slide_discussion_count: 讨论
+      slide_likes_given: 送出的赞
+      slide_likes_received: 收到的赞
       slide_most_active_month: 最活跃月份
       slide_night_owl: 活跃时段
-      slide_post_count: 发帖数量
+      slide_post_count: 帖子
       slide_top_emojis: 常用表情
       slide_top_tag: 最常用标签
       slide_top_words: 常用词
-      slide_word_count: 总字数
-      slides_community: 社区幻灯片
-      slides_help: 选择在年度回顾中展示哪些页面。所有数据始终都会被收集—只是隐藏的不会被显示出来。
-      slides_user: 个人幻灯片
+      slide_word_count: 发言字数
+      slides_community: 社区年度回顾
+      slides_help: 选择年度回顾中要显示的幻灯片。所有数据都会照常统计，隐藏的幻灯片只是不显示。
+      slides_user: 个人年度回顾
+      templates_examples_title: 示例代码
+      templates_help: '你可以将 Blade 模板文件放入论坛的 storage 目录，自由定制年度回顾。storage/ 中的自定义模板不会被 Composer 更新覆盖。'
+      templates_storage_help: '如需覆盖模板，请在 Flarum 根目录的「storage/rewind/views/」中创建对应的 .blade.php 文件：'
+      templates_storage_locations: 存储位置
+      templates_title: 模板
+      templates_variables_help: '所有计算得到的数据都会直接以变量形式传入 Blade 模板。点击任意代码片段即可复制。'
+      templates_variables_title: '可用 Blade 变量与速查表'
+      year_presentation_modes_help: '选择每个年度使用内置的互动动画幻灯片，还是自定义 Blade 模板。'
+      year_presentation_modes_title: 各年度展示方式
     tabs:
       advanced: 高级
-      general: 通用
+      general: 常规
       slides: 幻灯片
+      templates: 模板
+    templates:
+      already_exists: 'storage/rewind/views/ 中已存在同名自定义模板。'
+      back_to_list: 返回模板列表
+      create_button: 创建自定义模板
+      create_help: '内置默认模板会复制到 storage 中的此位置，供你自定义。'
+      create_modal_title: 创建自定义模板
+      create_submit: 创建模板
+      created_success: 模板已创建。
+      delete: 删除
+      delete_confirm: '确定要删除 {filename} 吗？删除后，年度回顾会自动改用内置默认模板。'
+      deleted_success: 自定义模板已删除，已恢复使用内置默认模板。
+      edit: 编辑
+      editor_tip: '提示：按 Ctrl+S / Cmd+S 保存，按 Tab 缩进 4 个空格。'
+      empty_help: '你可以为个人年度回顾、社区年度回顾或错误页面创建自定义模板。创建时会将内置模板复制到 storage 目录供你编辑。'
+      help: '直接在管理后台管理和自定义年度回顾 Blade 模板。storage/rewind/views/ 中的自定义模板会覆盖内置默认模板。'
+      no_templates_found: 暂无自定义模板，当前使用内置默认模板。
+      save_changes: 保存更改
+      saved_success: 模板已保存。
+      scope_default: '用于非指定年度模板的所有年份，例如 user.blade.php'
+      scope_default_title: 默认备用模板
+      scope_label: 模板适用范围
+      scope_year: '仅用于指定年度，例如 user_2026.blade.php'
+      scope_year_title: 指定年度模板
+      target_file: 目标文件位置
+      title: 模板
+      type_community: 社区年度回顾（community.blade.php）
+      type_error: 错误页面（error.blade.php）
+      type_label: 模板类型
+      type_user: 个人年度回顾（user.blade.php）
+      unsaved_changes: 有未保存的更改
+      view_variables: '可用 Blade 变量与速查表'
+      year_label: 目标年份
   forum:
     community:
-      coming_soon: 社区年度回顾尚未生成，敬请期待！
-      generate_button: 生成社区回顾
-      most_active_user: 最活跃用户
-      new_users: 新加入成员
-      no_activity: 本年暂无社区活动数据
-      not_generated: 社区回顾尚未生成。
-      post_count_label: '{count} 帖子'
-      regenerate: 重新生成
-      regenerate_confirm: 确定要重新生成社区年度回顾吗？
+      coming_soon: 社区年度回顾还没有生成，敬请期待。
+      generate_button: 生成社区年度回顾
+      most_active_user: 最活跃成员
+      new_users: 新成员
+      no_activity: 今年的活跃数据不足
+      not_generated: 社区年度回顾尚未生成。
+      post_count_label: '{count} 篇帖子'
+      regenerate: 重新生成社区年度回顾
+      regenerate_confirm: 这将覆盖今年现有的社区年度回顾快照数据，确定继续吗？
       regenerate_short: 重新生成
-      title: 社区年度回顾
-      top_discussion: 最热话题
-      top_tag: 热门标签
-      total_discussions: 总话题数
-      total_posts: 总帖数
-      view_slideshow: 观看幻灯片
+      title: 社区年度亮点
+      top_discussion: 最活跃讨论
+      top_tag: 最热门标签
+      total_discussions: 发起的讨论
+      total_posts: 帖子总数
+      view_slideshow: 查看幻灯片
       watch_slideshow: '观看 {year} 社区年度回顾'
-      watch_slideshow_desc: 以幻灯片形式观看你的年度数据
+      watch_slideshow_desc: 用故事的方式回顾这一年的社区两点
     community_slideshow:
-      avg_per_post: 平均每帖字数
-      badge_leaderboard: 徽章榜
-      badge_leaderboard_desc: 徽章最多的活跃成员
+      avg_per_post: 平均每帖
+      badge_leaderboard: 徽章达人
+      badge_leaderboard_desc: 获得徽章最多的成员
       badges_awarded: 颁发的徽章
-      best_answers: 最佳答案
-      best_answers_leaderboard: 最佳答案榜
-      best_answers_leaderboard_desc: 帮助他人最多的成员
-      busiest_month: 最忙碌的月份
-      busiest_month_label: 最忙月份
-      discussions: 话题总数
-      hot_discussion: 热门话题
-      hot_discussion_desc: 讨论最激烈的话题
+      best_answers: 最佳回复
+      best_answers_leaderboard: 问题终结者
+      best_answers_leaderboard_desc: 获得最佳回复最多的成员
+      busiest_month: 最活跃月份
+      busiest_month_desc: '这个月最活跃，共发布 {count} 篇帖子'
+      busiest_month_label: 最活跃月份
+      discussions: 讨论
+      hot_discussion: 热门讨论
+      hot_discussion_desc: '此讨论共有 {count} 篇帖子'
       intro_label: 这一年，我们一起走过
       most_loved: 最受喜爱
-      most_loved_desc: 获得最多点赞的内容
+      most_loved_desc: 今年获得点赞最多的成员
       new_members: 新成员
-      new_members_desc: '这一年共有 {count} 位新朋友加入'
-      new_members_slide: 新伙伴
-      peak_hour_label: 高峰时段
-      peak_hours: 高峰时段
-      posts: 帖子总数
-      reactions: 互动
+      new_members_desc: '这一年有 {count} 位新朋友加入社区'
+      new_members_slide: 新成员
+      peak_hour_label: 活跃高峰
+      peak_hours: 活跃高峰
+      peak_hours_desc: 这个时段发布的帖子最多
+      posts: 帖子
+      reactions: 反应
       star_post: 明星帖子
-      star_post_desc: 本年度最受瞩目的帖子
-      summary_title: 社区年度回顾
+      star_post_desc: 今年获得点赞最多的帖子
+      summary_title: '{year} 社区年度亮点'
       title: 社区年度回顾
       top_contributor_label: 贡献最多
-      top_contributors: 贡献榜
-      top_contributors_desc: 感谢这些让社区保持活力的成员
-      top_tag: 热门标签
-      top_tag_desc: 今年最常用的标签
-      top_tag_label: 热门标签
-      total_words: 社区总字数
-      total_words_desc: 大家一起敲下了无数文字
+      top_contributors: 活跃贡献者
+      top_contributors_desc: 感谢你们让社区保持活力
+      top_tag: 最热门标签
+      top_tag_desc: '共有 {count} 个讨论使用了此标签'
+      top_tag_label: 最热门标签
+      total_words: 写作字数
+      total_words_desc: 全社区共同写下
       total_words_label: 总字数
-      words: 字
-      year_in_numbers: 年度数字
+      words: 字数
+      year_in_numbers: 年度数据
     metrics:
       active_days:
-        description: '活跃天数共计 {count} 天'
+        description: '有 {count} 个不同的日子在社区里'
         messages:
-          tier_1: 偶尔来看看
-          tier_2: 从不缺席的存在
-          tier_3: 大半时间都在活跃
-          tier_4: 简直成了社区的一分子
+          tier_1: 偶尔出现，也次次有意义
+          tier_2: 从不缺席
+          tier_3: 大多数日子都有你的身影
+          tier_4: 你都快住在社区里了
           tier_5: 每周必到，雷打不动
         title: 活跃天数
       badges_earned:
         description: '这一年你获得了 {count} 枚徽章'
-        no_data: 今年还没有获得任何徽章
-        title: 获得的徽章
+        no_data: 今年没有获得徽章
+        title: 徽章
       best_answers:
-        description: '{count} 次回答被采纳为答案'
+        description: '有 {count} 个回答被采纳为最佳回复'
         messages:
-          tier_1: 乐于助人
-          tier_2: 答案的首选来源
-          tier_3: 社区大神
-        title: 最佳答案
+          tier_1: 帮别人找到了答案
+          tier_2: 大家有问题都来找你
+          tier_3: 社区里的专家
+        title: 最佳回复
       best_friend:
-        description: '{display_name} 给你的帖子点了 {count} 个赞'
+        description: '{display_name} 给你的帖子点了 {count} 次赞'
         message: 形影不离
-        no_data: 暂无最佳好友数据
-        stat_likes_given: 你给对方点赞
-        stat_likes_received: 赞了你
-        stat_mentions_from: 提及了你
-        stat_mentions_to: 你提及了
-        title: 最佳好友
+        no_data: 暂无最佳拍档数据
+        stat_likes_given: 你赞了对方
+        stat_likes_received: 对方赞了你
+        stat_mentions_from: 对方提及你
+        stat_mentions_to: 你提及对方
+        title: 最佳拍档
       best_friend_mentions:
         description: '你提及了 {display_name} {count} 次'
-        mentioned_you: '对方提及你 {count} 次'
-        no_data: 暂无互相提及的互动
+        mentioned_you: '对方提及你 × {count}'
+        no_data: 暂无提及数据
         title: 提及
-        you_mentioned: '你提及对方 {count} 次'
+        you_mentioned: '你提及对方 × {count}'
       best_post:
-        description_likes: '在{discussion_title}中获得 {count} 个赞'
-        description_replies: '在{discussion_title}中获得 {count} 条回复'
-        no_data: 今年暂无突出帖子
+        description_likes: '在「{discussion_title}」中获得 {count} 个赞'
+        description_replies: '在「{discussion_title}」中获得 {count} 条回复'
+        no_data: 今年没有特别突出的帖子
         title: 最佳帖子
       community_compare:
-        above: '是社区平均水平的 {times} 倍'
-        above_average: 高于平均
-        average: 与社区平均水平持平
-        below_average: 低于平均水平
+        above: '达到社区平均水平的 {times} 倍'
+        above_average: 高于社区平均水平
+        average: 接近社区平均水平
+        below_average: 低于社区平均水平
       discussion_count:
         description: '发起了 {count} 个新讨论'
         messages:
-          tier_1: 每一次对话，都始于某个勇敢开口的人
-          tier_2: 话题制造机，总能带起节奏
+          tier_1: 每场讨论，都始于有人勇敢开口
+          tier_2: 灵感迸发
           tier_3: 社区的中流砥柱
-        title: 发起话题
+        title: 讨论
       likes_given:
-        description: '在论坛中共送出了 {count} 个赞'
+        description: '这一年你在社区里送出 {count} 个赞'
         messages:
-          tier_1: 不吝啬赞美
-          tier_2: 点赞小天使
-          tier_3: 点赞狂魔，温暖大使
-        title: 给出的点赞
+          tier_1: 偶尔一个赞，也很用心
+          tier_2: 把善意洒满社区
+          tier_3: 社区头号应援团
+        title: 送出的赞
       likes_received:
-        description: '今年共收获 {count} 个赞'
+        description: '这一年你收获了 {count} 个赞'
         messages:
-          tier_1: 字字入心
-          tier_2: 内容深受欢迎
-          tier_3: 人见人爱
-        title: 收到的点赞
+          tier_1: 你的话引起了共鸣
+          tier_2: 大家真的很喜欢你写的内容
+          tier_3: 这里的人都很喜欢你
+        title: 收到的赞
       most_active_month:
-        description: '最活跃月份，共 {count} 篇帖子'
-        title: 最活跃的月份
+        description: '这个月最活跃，共发布 {count} 篇帖子'
+        title: 最活跃月份
       night_owl:
-        description: 这个时段发帖最多
-        description_owl: 这个时段发帖最多
-        title: 夜猫子时段
+        description: 你通常在这个时段发帖
+        description_owl: 你通常在这个时段发帖
+        title: 夜猫子
       post_count:
-        description: '在论坛中贡献了 {count} 篇帖子'
+        description: '这一年你发布了 {count} 篇帖子'
         messages:
           tier_1: 开山之作
-          tier_2: 论坛因你而动
+          tier_2: 社区因你而动
           tier_3: 无人不知
-          tier_4: 论坛少了你，可就冷清了
-          tier_5: 不眠不休啊？
-        title: 发帖量
+          tier_4: 不可或缺
+          tier_5: 不眠不休
+        title: 帖子
       top_emojis:
-        description: 最常使用的表情
+        description: 你最常使用的表情
         title: 常用表情
       top_tag:
-        description: '最常使用的标签，共 {count} 篇帖子'
+        description: '你在这个标签下最活跃，共发布 {count} 篇帖子'
         no_data: 暂无标签数据
         title: 最常用标签
       top_words:
-        description: 高频词
+        description: 你最常使用的词
         title: 常用词
       word_count:
-        description: '累计撰写了约 {count} 字'
+        description: '大约写了 {count} 个词'
         messages:
           tier_1: 言简意赅
-          tier_2: 乐于分享
-          tier_3: 一部短篇的量
-          tier_4: 托尔斯泰看了都沉默
-          tier_5: 托尔斯泰都会为你骄傲
-        title: 累计字数
+          tier_2: 确实有不少话想说
+          tier_3: 都够写一本短篇小说了
+          tier_4: 这字数，《战争与和平》看了都得服
+          tier_5: 托尔斯泰都以你为傲
+        title: 字数
     page:
-      admin_notice: 年度回顾当前对普通用户不可见。请从管理后台启用，以使其公开。
-      empty_public: 该用户没有公开的年度回顾快照。
-      generate_button: 生成我的回顾
+      admin_notice: 年度回顾目前尚未向普通用户开放，请前往管理后台启用公开。
+      empty_public: 此用户没有公开的年度回顾。
+      generate_button: 生成我的年度回顾
       generating: 正在生成，请稍候…
       hero_subtitle: 回顾你这一年里的社区足迹
-      hero_title: 年度回顾
+      hero_title: '{year} 年度回顾'
       my_rewind: 我的年度回顾
-      no_snapshot: '你尚未生成 {year} 的年度回顾。'
-      not_available: 当前无法使用年度回顾。
-      personal_title: 我的年度回顾
+      no_snapshot: '你还没有生成 {year} 年度回顾。'
+      not_available: 年度回顾暂不可用。
+      personal_title: 你的个人年度回顾
       title: 年度回顾
-      view_button: 观看回顾
+      view_button: 查看我的年度回顾
     profile:
       controls:
-        confirm_delete: 确定要删除这一年的回顾吗？
+        confirm_delete: 确定要删除此年度回顾吗？
         delete: 删除
         make_private: 设为私密
         make_public: 设为公开
         regenerate: 重新生成
       generate_for_year: '生成 {year} 年度回顾'
-      no_activity: 该年份没有活动记录
-      not_yet_available: 暂未生成
-      private_badge: 仅自己可见
+      no_activity: 活跃数据不足
+      not_yet_available: 暂不可用
+      private_badge: 私密
       public_badge: 公开
       tab: 年度回顾
-      tap_to_watch: 点击观看
-      year_card: '{year} 回顾'
+      tap_to_watch: 点按观看
+      year_card: '{year} 年度回顾'
     slideshow:
       close: 关闭
-      link_copied: 链接已复制到剪贴板！
-      no_data: 活动数据太少，无法生成回顾
+      link_copied: 链接已复制
+      no_data: 活跃数据不足，无法生成年度回顾
       not_available: 年度回顾不可用
       share: 分享
-      summary_title: '{year} 年度回顾'
-      tap_to_start: '点击开始 →'
-      visibility_status_private: 仅自己可见
-      visibility_status_public: 公开可见
-      visibility_tap_hide: 轻触设为私密
-      visibility_tap_show: 轻触设为公开
+      summary_title: '你的 {year} 年度数据'
+      tap_to_start: '点按开始 →'
+      visibility_status_private: 私密
+      visibility_status_public: 公开
+      visibility_tap_hide: 点击设为私密
+      visibility_tap_show: 点击设为公开
     user_menu:
-      rewind_link: 年度回顾
+      rewind_link: '{year} 年度回顾'

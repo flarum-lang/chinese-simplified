@@ -77,14 +77,30 @@ class NoticePage extends (flarum_admin_components_ExtensionPage__WEBPACK_IMPORTE
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var flarum_admin_app__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! flarum/admin/app */ "flarum/admin/app");
 /* harmony import */ var flarum_admin_app__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(flarum_admin_app__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _NoticePage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./NoticePage */ "./src/admin/NoticePage.tsx");
+/* harmony import */ var flarum_admin_components_ExtensionPage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! flarum/admin/components/ExtensionPage */ "flarum/admin/components/ExtensionPage");
+/* harmony import */ var flarum_admin_components_ExtensionPage__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(flarum_admin_components_ExtensionPage__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var flarum_common_components_LinkButton__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! flarum/common/components/LinkButton */ "flarum/common/components/LinkButton");
+/* harmony import */ var flarum_common_components_LinkButton__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(flarum_common_components_LinkButton__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var flarum_common_extend__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! flarum/common/extend */ "flarum/common/extend");
+/* harmony import */ var flarum_common_extend__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(flarum_common_extend__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _NoticePage__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./NoticePage */ "./src/admin/NoticePage.tsx");
 
 
-flarum_admin_app__WEBPACK_IMPORTED_MODULE_0___default().initializers.add('flarum-lang/chinese-simplified', app => {
-  console.log('[chinese]');
 
+
+
+flarum_admin_app__WEBPACK_IMPORTED_MODULE_0___default().initializers.add('flarum-lang-chinese-simplified', app => {
   // Register extension settings page
-  app.registry.for('flarum-lang-chinese-simplified').registerPage(_NoticePage__WEBPACK_IMPORTED_MODULE_1__["default"]);
+  app.registry.for('flarum-lang-chinese-simplified').registerPage(_NoticePage__WEBPACK_IMPORTED_MODULE_4__["default"]);
+  (0,flarum_common_extend__WEBPACK_IMPORTED_MODULE_3__.extend)((flarum_admin_components_ExtensionPage__WEBPACK_IMPORTED_MODULE_1___default().prototype), 'infoItems', function (items) {
+    items.add('flarum-lang-chinese-simplified-extensions-hub', flarum_common_components_LinkButton__WEBPACK_IMPORTED_MODULE_2___default().component({
+      href: `https://discuss.flarum.org.cn/extensions/${this.extension.name}`,
+      icon: 'fas fa-puzzle-piece',
+      external: true,
+      target: '_blank',
+      rel: 'noopener noreferrer'
+    }, '扩展中心'), Math.min(0, ...Object.values(items.toObject()).map(item => item.priority)) - 1);
+  });
 });
 
 /***/ },
@@ -141,6 +157,28 @@ module.exports = flarum.reg.get('core', 'common/components/Icon');
 
 "use strict";
 module.exports = flarum.reg.get('core', 'common/components/Link');
+
+/***/ },
+
+/***/ "flarum/common/components/LinkButton"
+/*!*************************************************************************!*\
+  !*** external "flarum.reg.get('core', 'common/components/LinkButton')" ***!
+  \*************************************************************************/
+(module) {
+
+"use strict";
+module.exports = flarum.reg.get('core', 'common/components/LinkButton');
+
+/***/ },
+
+/***/ "flarum/common/extend"
+/*!**********************************************************!*\
+  !*** external "flarum.reg.get('core', 'common/extend')" ***!
+  \**********************************************************/
+(module) {
+
+"use strict";
+module.exports = flarum.reg.get('core', 'common/extend');
 
 /***/ }
 

@@ -310,8 +310,8 @@ CHANGELOG
 * [`sycho/flarum-private-facade`](https://github.com/SychO9/flarum-private-facade) (13 changed, 100% complete)
 * [`sycho/flarum-profile-cover`](https://github.com/SychO9/flarum-profile-cover) (9 changed, 100% complete)
 * [`walsgit/recycle-bin`](https://github.com/WalsGit/recycle-bin) (34 added, 35 changed, 2 removed, 100% complete)
-* [`yippy/flarum-ext-auth-ldap`](https://github.com/Yippy/flarum-ext-auth-ldap) (6 added, 3 changed, 100% complete)
-* [`yippy/flarum-tag-with-themes`](https://github.com/Yippy/flarum-tag-with-themes) (16 added, 39 changed, 100% complete)
+* [`yippy/flarum-ext-auth-ldap`](https://github.com/Yippy/flarum-ext-auth-ldap) (6 added, 47 changed, 100% complete)
+* [`yippy/flarum-tag-with-themes`](https://github.com/Yippy/flarum-tag-with-themes) (16 added, 41 changed, 100% complete)
 
 
 **Removed support for outdated extensions**:

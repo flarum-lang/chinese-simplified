@@ -4,17 +4,17 @@
 
 sycho-profile-cover:
   admin:
-    max_size: 个人资料背景图片的最大大小（KB）
+    max_size: 个人资料封面图片大小上限（KB）
     permission:
-      set_cover: 设置个人资料背景
-    thumbnails: 创建缩略图
+      set_cover: 设置个人资料封面
+    thumbnails: 生成缩略图
   forum:
     added:
       error: 无法上传图片。
-      success: 背景图更换成功。
-    cover: 背景图
-    edit_cover: 编辑背景图
-    notice: '最大图片大小：{size}'
+      success: 封面已更新。
+    cover: 封面
+    edit_cover: 编辑封面
+    notice: '最大文件大小：{size}'
     removed:
-      error: 无法移除背景图，请稍后再试。
-      success: 背景图已移除。
+      error: 无法移除封面，请稍后再试。
+      success: 封面已移除。

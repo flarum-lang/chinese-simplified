@@ -5,70 +5,104 @@
 tryhackx-advanced-pages:
   admin:
     edit_page:
+      allow_scripts_help: '默认关闭。启用后，页面中的内联和外部 script 脚本都会在访客浏览器中运行。此设置并非沙箱：即使关闭，原始 HTML 仍可能通过 onerror 等内联事件属性执行 JavaScript。请仅发布完全可信的 HTML/PHP 页面。'
+      allow_scripts_label: '允许执行 script 标签'
       cancel_button: 取消
-      content_label: 页面内容
+      content_label: 内容
       content_type_label: 内容类型
       create_title: 创建页面
+      custom_breadcrumbs_css_help: '设置此页面及其所有子页面的面包屑样式，或将其隐藏。使用 .AdvancedPages-breadcrumbs，例如 display:none 可完全隐藏。'
+      custom_breadcrumbs_css_label: '自定义面包屑 CSS'
       delete_button: 删除
-      delete_confirmation: 确定要删除此页面吗？此操作不可撤销。
+      delete_confirmation: 确定要删除此页面吗？此操作无法撤销。
       delete_title: 删除页面
-      discard_button: 放弃
+      discard_button: 放弃更改
       edit_title: 编辑页面
-      is_hidden_label: 隐藏（不在列表中显示）
-      is_published_label: 已发布
-      is_restricted_label: 仅限特定用户组访问
+      is_hidden_label: 隐藏（仅管理员可见）
+      is_published_label: 发布
+      is_restricted_label: 仅登录用户可见
       keep_editing_button: 继续编辑
-      meta_description_label: 'SEO 描述'
-      newline_flarum: 'Flarum 模式（两个换行为新段落）'
+      meta_description_label: 'Meta 描述（SEO）'
+      newline_flarum: Flarum（默认，多次换行按一次处理）
       newline_mode_label: 换行模式
-      newline_preserve: 保留换行
-      php_warning: '警告：页面内容中可以使用 PHP 代码，请谨慎操作。'
+      newline_preserve: 保留（所有换行均保留）
+      parent_help: '可选。将此页面设为另一页面的子页面，可建立层级结构，例如 /p/docs/getting-started。选择父页面后会自动建议对应的 URL 路径，仍可自行修改。'
+      parent_label: 父页面
+      parent_none: '— 无（顶级页面）—'
+      php_warning: 'PHP 页面会在服务器端执行代码。请仅在了解安全风险的情况下创建。错误只会写入日志，不会向访客显示。'
+      pin_icon_help: '导航链接使用的 Font Awesome 类名，例如「fas fa-book」或「far fa-file-alt」。留空则使用默认图标。'
+      pin_icon_label: 导航图标（可选）
+      pin_short_name_help: 页面标题过长时，可设置较短的导航名称。留空则使用页面标题。
+      pin_short_name_label: 导航简称（可选）
+      pin_to_nav_help: 将此页面显示在论坛侧边栏导航中，与「全部讨论」「成员」等并列。顺序与页面列表一致，并遵循页面的可见范围。
+      pin_to_nav_label: 固定到侧边栏导航
       preview: 预览
       raw: 源码
-      slug_label: 别名
-      submit_button: 保存
-      title_label: 页面标题
-      type_text: 富文本
-      unsaved_message: 您有未保存的更改，确定要离开吗？
-      unsaved_title: 未保存的更改
-      visible_groups_help: 只有这些用户组可以看到此页面。
+      redirect_immediate_help: '启用后，访客会立即跳转到目标地址（HTTP 重定向）；关闭后，页面会短暂显示，并在约 1 秒后自动跳转。两种方式都会先计入访问。'
+      redirect_immediate_label: 立即重定向
+      redirect_url_help: '访客访问此页面后将跳转到该地址。可填写完整的 https:// 地址（如 https://example.com），或本站以 / 开头的路径（如 /tags）。将页面固定到导航后，会显示为导航链接，点击也会计入浏览量。'
+      redirect_url_label: '重定向 URL'
+      slug_label: 'URL 路径'
+      submit_button: 保存页面
+      title_label: 标题
+      type_redirect: 重定向
+      type_text: 纯文本
+      unsaved_message: 有未保存的更改，确定要丢弃吗？
+      unsaved_title: 更改未保存
+      visible_groups_help: 全部勾选则所有人可见。取消勾选某些用户组可限制其访问。管理员始终可以访问。
       visible_groups_label: 可见用户组
     pages:
       actions_column: 操作
       create_button: 创建页面
       draft: 草稿
+      drag_hint: 拖动可调整顺序；拖到另一页面上可设为其子页面
       edit_button: 编辑
-      empty: 暂未创建页面。
+      empty: 暂无页面
       everyone: 所有人
       groups_column: 可见用户组
       hidden: 隐藏
       published: 已发布
-      restricted: 受限
-      slug_column: 别名
+      restricted: 需登录
+      slug_column: URL
       status_column: 状态
       title_column: 标题
       type_column: 类型
+      views_column: 浏览量
     permissions:
+      create_bbcode_label: 创建页面：BBCode
+      create_markdown_label: 创建页面：Markdown
+      create_redirect_label: 创建页面：重定向
+      create_text_label: 创建页面：纯文本
       manage_pages_label: 管理高级页面
       view_spoilers_label: 查看剧透内容
     settings:
-      bbcode_center: '[center] 居中'
-      bbcode_help: '启用或禁用页面渲染中的自定义 BBCode 标签。修改后需要清除格式化器缓存（执行命令：php flarum cache:clear）。'
-      bbcode_spoiler: '[spoiler] — 剧透 / 可折叠详情'
-      bbcode_table: '[table] [tr] [th] [td] — 用于创建表格的 BBCode 标签'
-      bbcode_url: '[url] — 增强链接解析（支持 Flarum 默认不支持的部分网址格式）'
-      forum_help: '覆盖常规论坛帖子中剧透的显示方式。需要清除格式化程序缓存（php-flarum-cache:clear）。'
-      forum_title: 论坛整合
-      replace_forum_spoiler: 将Flarum的默认扰流板替换为高级页面扰流板样式（详细信息/摘要）
-      title: 高级页面设置
+      bbcode_center: '[center] — 文字居中'
+      bbcode_help: '启用或禁用页面使用的自定义 BBCode 标签。修改后需清除格式化器缓存（php flarum cache:clear）。'
+      bbcode_spoiler: '[spoiler] — 剧透 / 折叠内容'
+      bbcode_table: '[table] [tr] [th] [td] — 表格'
+      bbcode_url: '[url] — 扩展 URL 解析（支持 Flarum 默认不接受的 URL）'
+      code_buttons_in_posts: 在论坛帖子代码块中显示「选择」「复制」按钮
+      forum_help: '可替换普通论坛帖子中的剧透样式。修改后需清除格式化器缓存（php flarum cache:clear）。'
+      forum_title: 论坛集成
+      replace_forum_spoiler: '使用 Advanced Pages 的 details/summary 折叠样式替换 Flarum 默认剧透样式'
+      title: 'BBCode 设置'
     support:
-      button: 获取支持
-      copy: 复制信息
-      description: 感谢使用高级页面插件！如有问题，请复制下方信息并联系支持。
-      thanks: 感谢您的支持！
-      title: 支持与帮助
+      button: 支持开发
+      copy: 复制地址
+      description: 如果这个扩展对你有帮助，可考虑小额捐赠，支持后续开发和维护。
+      thanks: 感谢你的支持！
+      title: 支持此扩展
   forum:
+    code:
+      copied: 已复制
+      copy: 复制
+      select: 选择
     page:
-      loading: 加载中...
-      not_found_message: 您访问的页面未找到。
+      loading: 加载中…
+      not_found_message: 你访问的页面不存在，或你无权查看
       not_found_title: 页面不存在
+    redirect:
+      countdown: '{seconds} 秒后跳转…'
+      invalid: 此页面未设置有效的重定向地址。
+    spoiler:
+      locked: 你无权查看剧透内容。

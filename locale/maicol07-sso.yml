@@ -6,28 +6,29 @@ maicol07-sso:
   admin:
     settings:
       client_api_key: 'API 密钥'
-      client_api_key_help: 'Flarum 应用程序的 API 密钥。'
-      client_name: 客户端名称
-      client_name_help: 'Flarum 应用程序的名称'
+      client_api_key_help: '该 Flarum 实例的 API 密钥。'
+      client_name: 名称
+      client_name_help: 'Flarum 实例名称'
       client_password_token: 密码令牌
-      client_password_token_help: '一个随机的密码令牌，用于 Flarum 应用程序的注册。'
+      client_password_token_help: '用于在该 Flarum 实例注册用户的随机密码令牌。'
       client_url: URL
-      client_url_help: 'Flarum 应用程序的 URL'
+      client_url_help: 'Flarum 实例 URL'
       client_verify_ssl: '验证 SSL'
-      client_verify_ssl_help: '在向 Flarum 应用程序发送请求时验证 SSL（推荐）。'
-      cookies_prefix: 'Cookie 前缀'
-      jwt_iss: 'Issuer Domain'
-      jwt_section_subtitle: 'JWT Addon 设置'
-      jwt_signer_key: 'Signer key'
-      jwt_signing_algorithm: 签名方式
-      login_url: 登录链接
-      logout_url: 退出登录链接
-      manage_account_btn_open_in_new_tab: 在新标签页中打开账户管理
-      manage_account_url: 管理账户连接
-      provider_mode: '其他 Flarum 站点如需使用本站账号登录，请启用此项以切换到服务提供商模式（Flarum 站点间的单点登录）。此功能会禁用当前站点的其他第三方账号登录。'
+      client_verify_ssl_help: '向该 Flarum 实例发送请求时验证其 SSL 证书（推荐）。'
+      cookies_prefix: 'Cookie 名称前缀'
+      jwt_iss: 签发方域名
+      jwt_section_subtitle: 'JWT 附加功能设置'
+      jwt_signer_key: 签名密钥
+      jwt_signing_algorithm: 签名算法
+      login_url: 登录网址
+      logout_url: 退出登录网址
+      manage_account_btn_open_in_new_tab: 在新标签页打开账号管理页面
+      manage_account_url: 账号管理网址
+      provider_mode: '如果要让其他 Flarum 实例使用本站账号登录，请启用服务提供方模式（Flarum 实例间单点登录）。启用后，将停用本站与其他网站之间的常规 SSO 功能。'
       remove_login_btn: 移除登录按钮
       remove_signup_btn: 移除注册按钮
-      signup_url: 注册链接
-      title: 单点登录（SSO）设置
+      signup_url: 注册网址
+      title: 'SSO - 单点登录设置'
   forum:
     manage_account_btn: 管理账号
+    no_login_url_error: '未设置登录网址，请检查 SSO 设置。'

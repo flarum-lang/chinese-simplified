@@ -6,24 +6,28 @@ michaelbelgium-mybb-to-flarum:
   admin:
     content:
       convert_button: 迁移
-      description_text: '将 MyBB 论坛迁移到 Flarum 实例。请填写相关信息，然后点击「迁移」。'
+      description_text: '将 MyBB 论坛迁移到当前 Flarum 实例。填写必填信息后，点击「迁移」。'
       form:
         general:
           migrate_categories_label: 迁移板块
-          migrate_threadsPosts_label: 迁移主题帖和回帖
+          migrate_threadsPosts_label: 迁移讨论帖和回帖
           migrate_userGroups_label: 迁移用户组
           migrate_users_label: 迁移用户
           title: 常规选项
         mybb:
-          db_label: 数据库名
+          db_label: 数据库名称
           host_label: 数据库主机
           password_label: 数据库密码
-          prefix_label: 表前缀
+          path:
+            help_text: 'MyBB 安装目录的绝对路径，例如：/var/www/mybb。'
+            label: 'MyBB 绝对路径'
+          prefix_label: 数据表前缀
           title: 'MyBB 设置'
           user_label: 数据库用户
         options:
+          debug_mode_label: 启用日志记录
           migrate_attachments_label: 迁移附件
           migrate_avatars_label: 迁移头像
-          migrate_soft_posts_label: 迁移软删除回帖
-          migrate_soft_threads_label: 迁移软删除主题帖
-          title: 其他选择
+          migrate_soft_posts_label: 迁移软删除的回帖
+          migrate_soft_threads_label: 迁移软删除的讨论帖
+          title: 其他选项

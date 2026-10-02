@@ -15,6 +15,8 @@ linkrobins-support:
       view_banned_button: 查看申诉受限用户
     categories:
       appeal_badge: 申诉
+      assignee_all_staff: 所有支持人员
+      column_assignee: 处理人
       column_name: 名称
       column_slug: 固定链接名
       column_tickets: 工单
@@ -35,6 +37,12 @@ linkrobins-support:
       error_save: 无法保存分类，请检查各字段后重试。
       field_color: 颜色
       field_color_help: '用于分类徽章的十六进制颜色，例如 #3b82f6。'
+      field_default_assignee: 新工单指派给
+      field_default_assignee_error: 无法加载支持人员列表，你的设置保持不变。
+      field_default_assignee_help: 此分类中的新工单会自动指派给所选人员，并且只有所选人员会收到通知。选择「不指定处理人」则会通知所有支持人员，由最先回复的人接手工单。
+      field_default_assignee_loading: 正在加载支持人员…
+      field_default_assignee_none: '不指定处理人 — 通知所有支持人员'
+      field_default_assignee_unavailable: '{name}（已不是支持人员）'
       field_description: 描述
       field_icon: 图标
       field_icon_help: 'Font Awesome 类名，例如 fas fa-life-ring。'
@@ -57,6 +65,15 @@ linkrobins-support:
       appeal_bans: 申诉限制
       categories: 工单分类
       rate_limits: 频率限制
+    navigation:
+      forum_nav: 在支持页面显示论坛导航
+      forum_nav_help: 启用后，支持页面的工单筛选上方还会显示「全部讨论」「关注」和「标签」。默认关闭，支持页面只显示工单相关内容。
+      heading: 导航
+      in_account_menu: 在头像菜单中显示「支持」入口
+      in_account_menu_help: 显示在头像菜单中，与「个人主页」和「设置」等入口并列。
+      in_sidebar: 在论坛侧边栏显示「支持」入口
+      in_sidebar_help: 与「全部讨论」和「标签」等入口并列显示。无论是否启用，只有登录用户可以使用支持功能，访客无法提交工单。
+      intro: 设置「支持」入口的显示位置，以及支持页面侧边栏中显示的内容。
     permissions:
       force_delete_tickets: 永久删除支持工单
       handle_tickets: 处理支持工单
@@ -79,6 +96,7 @@ linkrobins-support:
     assign_staff_only: 工单只能指派给支持人员。
     cannot_reply: 你无法回复此工单。
     category_required: 必须选择分类。
+    default_assignee_staff_only: 分类的默认处理人只能是支持人员。
     login_required: 必须先登录。
     login_required_edit: 必须登录后才能编辑回复。
     login_required_reply: 必须登录后才能回复。
@@ -97,6 +115,8 @@ linkrobins-support:
     ticket_required: 必须指定工单。
     ticket_soft_delete_first: 工单必须先删除，才能永久移除。
   email:
+    assigned_body: '{name} 将此支持工单指派给了你。'
+    assigned_subject: '已指派给你：{subject}'
     fallback_ticket: 你的支持工单
     from_a_user: 一位用户
     from_support: 支持人员
@@ -106,6 +126,8 @@ linkrobins-support:
     new_ticket_body: '{name} 刚刚提交了新的{type}：'
     new_ticket_subject: '[支持] 新工单：{subject}'
     open_ticket: 查看工单
+    status_changed_body: '你的支持工单已标记为「{status}」。'
+    status_changed_subject: '[{subject}] 已标记为「{status}」'
     ticket_type_appeal: 申诉工单
     ticket_type_general: 支持工单
     view_ticket: 查看工单
@@ -192,11 +214,16 @@ linkrobins-support:
     nav: 支持
     new_ticket: 新建工单
     notifications:
+      assigned: '{name} 将工单指派给了你'
+      assigned_generic: 有工单已指派给你
       new_appeal: '{name} 提交了新的申诉'
       new_ticket: '{name} 提交了新的支持工单'
+      reopened_by_owner: '{name} 重新开启了自己的工单'
       reply_from: '{name} 回复了你的工单'
       reply_generic: 支持人员回复了你的工单
       someone: 一位用户
+      status_changed: '你的工单已标记为「{status}」'
+      status_changed_generic: '工单已标记为「{status}」'
     reply:
       deleted_notice: 此回复已删除。
       discard_confirm: 有未保存的更改，确定要放弃吗？
@@ -210,8 +237,10 @@ linkrobins-support:
       post_reply: 发表回复
       posting: 正在发布…
     settings:
+      notify_assigned_label: 有支持工单指派给我
       notify_new_reply_label: 有人回复我的支持工单
       notify_new_ticket_label: 有新的支持工单提交（工作人员）
+      notify_status_changed_label: 支持工单状态发生变化
     show:
       assigned_to: 处理人
       cannot_reply: 你无法回复此工单。

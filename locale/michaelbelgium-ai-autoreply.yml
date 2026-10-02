@@ -5,26 +5,26 @@
 michaelbelgium-ai-autoreply:
   admin:
     permissions:
-      use_chatgpt_assistant_label: 使用AI助手
+      use_chatgpt_assistant_label: '使用 AI 助手'
     settings:
-      api_key_help: '从<a>{platform}</a>取得API密钥。'
+      api_key_help: '前往 <a>{platform}</a> 获取 API 密钥。'
       api_key_label: 'API 密钥'
-      enable_on_discussion_started_help: '如果启用此选项，AI将只会在讨论开始时启用，如果禁用此选项，讨论将演变为原帖作者（OP）与 AI 助手之间的对话模式，助手将回复作者的每一条帖子。'
-      enable_on_discussion_started_label: 在讨论开始时启用
-      enabled_tags_help: 选择助手将在哪些标签下生成回复。
-      enabled_tags_label: 标签
-      max_tokens_help: '<a>什么是Tokens？如何计算Tokens数量？</a>'
-      max_tokens_label: 最大Tokens数
-      model_help: '了解更多关于<a>{platform} 模型</a>的信息（默认：<code>{model}</code>）。'
+      enable_on_discussion_started_help: '启用后，AI 只会在讨论发起时回复一次。关闭后，讨论会变成讨论发起者与 AI 助手之间的持续对话，讨论发起者之后每次发帖，AI 都会回复。'
+      enable_on_discussion_started_label: 仅回复讨论首帖
+      enabled_tags_help: '选择 AI 助手会在哪些标签下自动回复。'
+      enabled_tags_label: 生效标签
+      max_tokens_help: '<a>什么是 Token？如何计算 Token 数量？</a>'
+      max_tokens_label: '最大 Token 数'
+      model_help: '查看 <a>{platform} 模型</a>的详细信息（默认：<code>{model}</code>）。'
       model_label: 模型
-      platform_help: 选择要使用的AI平台。
-      platform_label: 平台
-      system_prompt_help: 向助手提供背景信息和指令，例如指定特定的目标或角色。
-      system_prompt_label: 系统Prompt
-      system_prompt_placeholder: 你是一个有用的人工智能助手在一个基于Flarum的网络论坛里。
-      temperature_help: '控制随机性。范围通常在 0 到 2 之间，但某些平台可能有其他范围。'
-      temperature_label: 温度
-      user_prompt_badge_help: 将显示在AI助理用户下方的内容。
-      user_prompt_badge_label: AI助手助手用户标识
-      user_prompt_help: '请输入用于发布 AI 生成内容的指定用户 ID。'
-      user_prompt_label: 用户助手
+      platform_help: '选择用于生成回复的 AI 平台。'
+      platform_label: 'AI 平台'
+      system_prompt_help: '设置 AI 助手的背景信息和行为指令，例如指定其身份、目标或回复方式。'
+      system_prompt_label: 系统提示词
+      system_prompt_placeholder: '你是 Flarum 论坛中的一名乐于助人的助手。'
+      temperature_help: '控制生成结果的随机程度。通常取值范围为 0 至 2，但部分平台可能有所不同。'
+      temperature_label: 温度值
+      user_prompt_badge_help: '显示在 AI 助手用户名下方的文字。'
+      user_prompt_badge_label: 'AI 助手标识'
+      user_prompt_help: '填写用于发布 AI 回复的用户账号 ID。'
+      user_prompt_label: 'AI 助手账号'

@@ -54,7 +54,8 @@ linkrobins-wiki:
       intro: '设置 Wiki 入口在论坛侧边栏中的位置，以及 Wiki 页面使用的宽度。'
       nav_position_below_all: 「全部讨论」下方
       nav_position_bottom: 列表底部
-      nav_position_help: '设置 Wiki 入口在侧边栏导航中的位置。默认显示在主要导航区域；启用「标签」扩展时，位于「标签」入口下方。'
+      nav_position_help: '设置 Wiki 入口在论坛侧边栏中的位置，与「全部讨论」及其他扩展添加的入口并列。选择「不显示」会同时从侧边栏和移动端菜单中移除入口，但仍可通过 /wiki 路由访问 Wiki。'
+      nav_position_hidden: 不显示
       nav_position_label: 'Wiki 入口位置'
       nav_position_sections: 主要导航区域（默认）
       nav_position_top: 列表顶部
@@ -70,6 +71,21 @@ linkrobins-wiki:
       intro: 在每篇文章下方显示同一分类中的其他文章。
       limit_help: '设置最多显示多少篇相关文章，可设置为 1 至 20。'
       limit_label: 显示数量
+    reports:
+      article_gone: 文章已删除
+      deleted_user: 账号已删除
+      empty: 暂无反馈
+      heading: 反馈
+      hide_resolved: 隐藏已处理
+      intro: '读者反馈需要 Wiki 编辑注意的文章。已处理反馈仍会在此处作为历史记录展示。'
+      reason_duplicate: 内容重复
+      reason_inaccurate: 内容不准确
+      reason_off_topic: 不应收录
+      reason_other: 其他问题
+      reason_outdated: 内容已过时
+      reopen: 重新打开
+      resolve: 标记为已处理
+      show_resolved: 显示已处理
     toc:
       enabled_help: '开启后，每篇文章会根据 #、## 和 ### 标题生成目录，并固定显示在侧边，阅读滚动时保持可见。'
       enabled_label: 在文章中显示目录
@@ -85,6 +101,7 @@ linkrobins-wiki:
     comment_soft_delete_first: 评论必须先删除，才能永久移除。
     content_required: 必须填写文章内容。
     faq_too_many: '每篇文章最多可添加 {max} 条常见问题。'
+    report_already_open: '你已经反馈过此文章，Wiki 编辑会进一步处理。'
     slug_invalid: 此固定链接名为保留值，请选择一个不全是数字的名称。
     slug_taken: 已有其他文章使用此固定链接名。
     title_required: 必须填写文章标题。
@@ -94,6 +111,7 @@ linkrobins-wiki:
       delete: 删除
       delete_forever: 永久删除
       edit: 编辑
+      report: 反馈问题
       restore: 恢复
       save_changes: 保存更改
     comments:
@@ -166,6 +184,19 @@ linkrobins-wiki:
       no_categories: 暂无分类。
       untitled: 未命名
     nav: Wiki
+    report:
+      detail_label: 还有什么要补充的吗？（可选）
+      failed: 反馈发送失败，请重试。
+      intro: 'Wiki 编辑会看到此反馈及对应文章。'
+      reason_duplicate: 与其他文章重复
+      reason_inaccurate: 内容不准确
+      reason_label: 这篇文章有什么问题？
+      reason_off_topic: 不应收录于此
+      reason_other: 其他问题
+      reason_outdated: 内容已过时
+      sent: '感谢反馈，Wiki 编辑会进一步处理。'
+      submit: 提交反馈
+      title: 反馈文章问题
     search:
       all_button: '在 Wiki 中搜索「{query}」'
       button: 搜索
@@ -176,6 +207,7 @@ linkrobins-wiki:
       results_heading: '「{query}」的搜索结果'
     show:
       by: '作者： '
+      created_tooltip: '撰写于 {date}'
       deleted_notice: '此文章已删除，仅 Wiki 编辑可见。'
       diff_from_previous: 与上一版本的差异
       diff_initial: 初始版本
@@ -186,6 +218,7 @@ linkrobins-wiki:
       history: '修订历史（{count}）'
       initial_version: 创建
       last_edited: '最后编辑： '
+      last_edited_tooltip: '由 {name} 于 {date} 最后编辑'
       load_more_history: 加载更早的修订记录
       no_history: 暂无修订记录。
       related_heading: 相关文章

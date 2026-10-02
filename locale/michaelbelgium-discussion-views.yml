@@ -5,38 +5,38 @@
 core:
   forum:
     index_sort:
-      popular_button: 最多翻阅
-      unpopular_button: 最少翻阅
+      popular_button: 热门
+      unpopular_button: 冷门
 michaelbelgium-discussion-views:
   admin:
     permissions:
-      reset_views_label: 重置主题浏览量
-      view_number_label: 查看主题浏览量
+      reset_views_label: 重置讨论浏览量
+      view_number_label: 查看讨论浏览量
     settings:
       abbr_numbers_label: 缩写浏览量
-      abbr_numbers_text: '启用此项以缩写计数（如 1000 = 1 千）'
-      ignore_crawlers_label: 忽略机器人/爬虫
+      abbr_numbers_text: '启用后，较大的浏览量将以缩写形式显示（例如 1000 显示为 1K）'
+      ignore_crawlers_label: 忽略机器人和爬虫
       ignore_crawlers_text: 爬虫和机器人不计入浏览量
-      max_viewcount_label: 「足迹」列表最多展示人数
-      max_viewcount_text: 展示条目上限（侧边栏和页脚足迹列表）
-      show_filter_label: 添加「最多翻阅/最少翻阅」排序项
-      show_footer_viewlist_label: 在帖子页脚展示「足迹」
-      show_footer_viewlist_text: 在首帖底部展示访客列表
-      show_viewlist_label: 在主题帖展示「足迹」
-      show_viewlist_text: 启用主题帖侧边栏列表视图
-      title: 主题浏览量设置
-      track_guests_label: 记录未登录访客
-      track_unique_label: 记录首次查阅（UV）
-      track_unique_text: '基于 IP 计算浏览量'
+      max_viewcount_label: 「足迹」列表展示人数上限
+      max_viewcount_text: 设置浏览者列表最多显示多少人，同时适用于首帖底部和侧边栏
+      show_filter_label: '启用热门 / 冷门排序'
+      show_footer_viewlist_label: 在首帖底部展示「足迹」
+      show_footer_viewlist_text: 在讨论首帖底部显示浏览者列表
+      show_viewlist_label: 展示「足迹」
+      show_viewlist_text: 在讨论侧边栏显示最近浏览者列表
+      title: 讨论浏览量设置
+      track_guests_label: 统计未登录访客
+      track_unique_label: '按 IP 去重浏览量'
+      track_unique_text: '根据 IP 地址去重统计浏览量'
   forum:
     discussion_controls:
       resetviews_button: 重置浏览量
     modal_resetviews:
-      label: '这将清除这个主题的 {count, plural, one {{count}} other {{count}}} 浏览量，确定继续吗？'
-      submit_button: 确定清除
-      title: 重置主题浏览量
+      label: '这将清除该讨论的 {count} 次浏览记录。确定继续吗？'
+      submit_button: 确定，全部清除
+      title: 重置讨论浏览量
     post:
-      modal_title_text: 足迹
+      modal_title_text: 最近浏览此讨论的用户
       others_link: '=> core.ref.some_others'
       viewed_by: '{users} 来过。'
       you: '=> core.ref.you'

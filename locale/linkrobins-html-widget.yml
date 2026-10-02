@@ -5,9 +5,11 @@
 linkrobins-html-widget:
   admin:
     settings:
+      allowed_iframe_hosts_help: '可选，每行填写一个域名。仅保留 src 属于白名单域名的 iframe，例如 www.youtube.com。支持 *.vimeo.com 通配符允许所有子域名。留空则移除所有 iframe。另请注意只允许 http 或 https 链接嵌入。'
+      allowed_iframe_hosts_label: '允许的 iframe 域名'
       background_help: 可选。设置小组件的背景颜色，留空则跟随当前主题。
       background_label: 背景颜色
-      body_help: '支持 HTML，显示前会进行安全过滤。script 标签、事件处理属性、javascript: URL，以及 iframe 等不安全元素都会被移除。'
+      body_help: '支持纯 HTML，显示前会进行安全过滤。script 标签、事件处理属性和 javascript: URL，以及不属于下方白名单中的 iframe 也会被移除。'
       body_label: 'HTML 内容'
       icon_help: '显示在标题旁的 Font Awesome 类名，例如 fas fa-bullhorn。留空则不显示图标。'
       icon_label: 图标类名

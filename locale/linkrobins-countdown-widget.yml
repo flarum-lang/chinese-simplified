@@ -5,8 +5,9 @@
 linkrobins-countdown-widget:
   admin:
     settings:
-      description_label: 描述
-      description_placeholder: '营业时间上午 9 点'
+      description_help: 可选。以小号文字显示在标题下方，可用于填写日期范围、地点或其他补充信息。
+      description_label: 说明
+      description_placeholder: '上午 9 点开放'
       done_message_help: 倒计时归零后显示的内容。留空时默认显示庆祝表情。
       done_message_label: 结束提示
       done_message_placeholder: '🎉 正式上线！'

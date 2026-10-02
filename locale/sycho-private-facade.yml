@@ -5,21 +5,21 @@
 sycho-private-facade:
   admin:
     settings:
-      force_redirect: 未登录时强制跳转到注册登录页
+      force_redirect: 未登录时重定向登录/注册页
       header_layout:
         options:
-          hide_secondary_items: 隐藏次要元素（搜索、登录注册按钮）
-          show_header: 展示横幅
-          show_only_logo: '仅展示 Logo'
-        title: 横幅样式
-      illustration_path: 壁纸
-      primary_color_bg: 使用主色调背景
-      route_exclusions: 禁止重定向到登录注册页的路由。
-      screen_banner_description: 屏幕消息
-      screen_banner_heading: 屏幕横幅
-      screen_banner_title: 屏幕标题
-      url_exclusions: '禁止重定向到登录注册页的 URL。'
-      use_welcome_hero_text: 使用欢迎横幅文本
+          hide_secondary_items: 隐藏右侧项目（搜索、登录和注册按钮）
+          show_header: 显示完整顶部导航栏
+          show_only_logo: '仅显示 Logo'
+        title: 顶部导航栏布局
+      illustration_path: 页面插图
+      primary_color_bg: 使用论坛主色作为背景
+      route_exclusions: 不重定向的路由
+      screen_banner_description: 横幅说明
+      screen_banner_heading: 登录/注册页横幅
+      screen_banner_title: 横幅标题
+      url_exclusions: '不重定向的 URL'
+      use_welcome_hero_text: 复用论坛欢迎横幅文案
   forum:
     log_in_label: '=> core.ref.log_in'
     or_label: 或

@@ -7,9 +7,9 @@ sycho-move-posts:
     permissions:
       move_posts: '=> sycho-move-posts.ref.move_posts'
     settings:
-      group_sequential_posts: 将多个连续的移动事件帖合并为一个。
-      moved_first_post_content: 首贴替补内容
-      moved_first_post_content_help: "移动讨论中仅有的一个帖子后，会在原帖位置显示下方的文本提示用户访问新的位置，你可以在下方编辑该提示内容。\n"
+      group_sequential_posts: 将连续的帖子移动记录合并为一条
+      moved_first_post_content: 移动首帖后的填充内容
+      moved_first_post_content_help: "如果讨论中只有一个帖子，移动该帖后，原讨论的首帖会使用此提示指向新讨论。你可以在此修改提示内容。\n"
   forum:
     badge:
       first_moved_tooltip: 已移动
@@ -18,31 +18,31 @@ sycho-move-posts:
     error:
       move_old_post_to_newer_discussion: '=> sycho-move-posts.ref.status.old_to_new_move'
     modal:
-      check: 检查操作类型
+      check: 检查移动方式
       destination: 目标讨论
-      discussion_help: 新讨论将直接使用源讨论的标签，你可以在移动后进行修改。
+      discussion_help: 新讨论会沿用原讨论的标签，创建后可再修改。
       discussion_name: '=> core.forum.composer_discussion.title_placeholder'
       new_discussion: 新建讨论
-      selected_posts: '{count, plural, one {已选中 1 个帖子} other {已选中 {count} 个帖子}}'
+      selected_posts: '已选择 {count} 个帖子'
       status:
-        complex_move: '复杂移动类型，帖子将移动到目标讨论的中间，目标讨论帖子的 URL 也会因受到影响而发生变更。'
+        complex_move: 复杂移动：所选帖子会插入目标讨论的现有帖子之间，相关帖子的原链接均会随之改变。
         old_to_new_move: '=> sycho-move-posts.ref.status.old_to_new_move'
-        simple_move: 简单移动类型，帖子将追加到目标讨论的末尾。
+        simple_move: 简单移动：所选帖子会追加到目标讨论末尾。
       submit: 移动
       title: '=> sycho-move-posts.ref.move_posts'
     notifications:
-      post_moved_text: '你的帖子已被移动到「{targetDiscussionTitle}」。'
+      post_moved_text: '你的帖子已被移动到「{targetDiscussionTitle}」'
     post:
-      move: 移动
-      moving: 等待移动
-      unmove: 取消选中
+      move: 选择移动
+      moving: 待移动
+      unmove: 取消选择
     post_stream:
-      post_moved: '{count, plural, one {{username} 移动一个帖子至「{target_discussion}」} other {{username} 移动 {count} 个帖子至「{target_discussion}」}}'
+      post_moved: '{username} 将 {count} 个帖子移动到了「{target_discussion}」'
   lib:
     discussion:
       first_post:
-        default_content: "*此贴已被移动至**「[%DISCUSSION_NAME%](%POST_LINK%)」**。*\n"
+        default_content: "*此帖已移至 **「[%DISCUSSION_NAME%](%POST_LINK%)」**。*\n"
   ref:
     move_posts: 移动帖子
     status:
-      old_to_new_move: 不能移动旧帖子至较新的讨论。
+      old_to_new_move: 无法将更早发布的帖子移入较新的讨论。

@@ -6,21 +6,21 @@ sycho-github-milestone:
   admin:
     all: '=> sycho-github-milestone.ref.all'
     closed: '=> sycho-github-milestone.ref.closed'
-    default_filter: 默认过滤条件
-    milestone: 'Milestone ID'
+    default_filter: 默认筛选
+    milestone: '里程碑 ID'
     open: '=> sycho-github-milestone.ref.open'
-    repository: 'GitHub 存储库'
+    repository: 'GitHub 仓库'
   forum:
     all: '=> sycho-github-milestone.ref.all'
     closed: '=> sycho-github-milestone.ref.closed'
-    complete: '<strong>{progress}%</strong> 已完成'
-    empty_list: '没有可显示的问题 (Issue) 或合并请求 (PR)。'
-    last_updated: '最新进展 {time}'
+    complete: '已完成 <strong>{progress}%</strong>'
+    empty_list: 没有可显示的议题或合并请求。
+    last_updated: '最后更新于 {time}'
     load_more: '=> core.forum.discussion_list.load_more_button'
     open: '=> sycho-github-milestone.ref.open'
-    tasks_done: '{number} / {total}'
+    tasks_done: '已完成 {number}/{total}'
     title: 里程碑
   ref:
-    all: 所有
+    all: 全部
     closed: 已关闭
     open: 进行中

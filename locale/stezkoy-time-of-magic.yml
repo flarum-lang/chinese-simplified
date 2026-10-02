@@ -4,107 +4,151 @@
 
 stezkoy-time-of-magic:
   admin:
+    allow_user_disable_description: 用户可在个人设置中关闭下落类特效。
+    allow_user_disable_label: 允许用户关闭下落特效
     back_to_top_color_label: 返回顶部按钮颜色
-    back_to_top_description: 显示一个可以滚动到顶部的悬浮按钮。
-    back_to_top_icon_label: FontAwesome图标类名
-    back_to_top_label: 回到顶部按钮
-    back_to_top_shape_description: 使用带有圆角的四方形按钮，而不是圆形。
-    back_to_top_shape_label: 四方形
-    background_description: 在明暗主题中均可用的微弱背景图案。
+    back_to_top_description: 显示返回顶部的悬浮按钮。
+    back_to_top_icon_color_label: 返回顶部图标颜色
+    back_to_top_icon_label: 'Font Awesome 图标类名'
+    back_to_top_label: 返回顶部按钮
+    back_to_top_shape_description: 使用圆角方形按钮替代圆形按钮。
+    back_to_top_shape_label: 圆角方形按钮
+    background_description: 适用于浅色和深色模式的浅淡背景图案。
     background_diagonal: 斜线
     background_dots: 圆点
-    background_grid: 方格
+    background_grid: 网格
     background_hexagon: 六边形
     background_label: 背景图案
     background_none: 无
     background_waves: 波浪
-    click_spark_color_label: 点击光效颜色
-    click_spark_description: 在点击的位置展示魔幻粒子效果。
-    click_spark_label: 点击光效
+    bg_parallax_description: 背景图案会随鼠标轻微移动。需先启用上方的背景图案。
+    bg_parallax_label: 背景视差
+    click_burst_description: 点击时从点击位置向外散开表情粒子。
+    click_burst_items_label: 爆散粒子（表情，以空格分隔）
+    click_burst_label: 点击爆散
+    click_spark_color_label: 火花颜色
+    click_spark_description: 点击时在点击位置散开粒子。
+    click_spark_label: 点击火花
     clovers_density_description: 屏幕上的四叶草数量。
     clovers_density_label: 四叶草密度
-    clovers_description: 旋转的四叶草幸运草，带来幸福美好。
-    clovers_label: 幸运四叶
-    color_description: '留空则使用论坛颜色。例如：#E7672E, #00a185, red, rgb(255,0,0)。'
-    color_placeholder: '例如：#00a185'
-    confetti_density_description: 屏幕上的彩纸密度。
-    confetti_density_label: 彩纸密度
-    confetti_description: 缤纷彩纸飘落，烘托节日气氛。
-    confetti_label: 缤纷彩纸
-    density_heavy: 强烈
-    density_light: 轻微
-    density_medium: 适中
-    description: 为Flarum站点增加魔法般的交互体验。
-    eggs_density_description: 屏幕上的蛋蛋数量。
-    eggs_density_label: 蛋蛋密度
-    eggs_description: 为全站增加可爱的蛋蛋。
-    eggs_label: 可爱扭蛋
+    clovers_description: 显示旋转的四叶草，适合圣帕特里克节。
+    clovers_label: 四叶草
+    color_description: '留空则使用论坛主色。支持 #E7672E、#00a185、red、rgb(255,0,0) 等 CSS 颜色。'
+    color_placeholder: '例如 #00a185'
+    confetti_density_description: 屏幕上的彩纸屑数量。
+    confetti_density_label: 彩纸屑密度
+    confetti_description: 显示彩色纸屑飘落效果。
+    confetti_label: 彩纸屑
+    cursor_dust_color_label: 光点颜色
+    cursor_dust_description: 鼠标周围偶尔出现细小光点。
+    cursor_dust_label: 鼠标光点
+    cursor_flashlight_description: 页面覆盖柔和暗层，并在鼠标周围形成亮区。更适合深色主题。
+    cursor_flashlight_label: 鼠标聚光灯
+    cursor_trail_description: 鼠标移动时留下逐渐消散的粒子。
+    cursor_trail_label: 鼠标轨迹
+    custom_count_description: '1–100 个。'
+    custom_count_label: 粒子数量
+    custom_down_description: 粒子向下飘落，类似雪花或彩纸屑。
+    custom_down_label: 自定义特效（下落）
+    custom_effects_description: 自定义向上或向下飘动的粒子特效，也可用于定时计划。
+    custom_effects_title: 自定义特效
+    custom_emoji_link: '前往 emojipedia.org 查找表情'
+    custom_items_label: 表情
+    custom_items_placeholder: '例如 🎈 🎉 🌟'
+    custom_up_description: 粒子向上飘动，类似萤火虫。
+    custom_up_label: 自定义特效（上升）
+    density_heavy: 高
+    density_light: 低
+    density_medium: 中
+    description: '为 Flarum 添加各种视觉特效。'
+    eggs_density_description: 屏幕上的彩蛋数量。
+    eggs_density_label: 彩蛋密度
+    eggs_description: 显示跳动的复活节彩蛋。
+    eggs_label: 复活节彩蛋
     fireflies_density_description: 屏幕上的萤火虫数量。
     fireflies_density_label: 萤火虫密度
-    fireflies_description: 夏日夜空中缓缓飞跃的萤火虫。
-    fireflies_label: 萤火闪亮
+    fireflies_description: 显示缓缓向上飘动的发光萤火虫。
+    fireflies_label: 萤火虫
+    fog_description: 显示缓慢飘动的半透明雾团。
+    fog_label: 雾气
     hearts_density_description: 屏幕上的爱心数量。
     hearts_density_label: 爱心密度
-    hearts_description: 向上飞腾的爱心，让情人节充满爱意。
-    hearts_label: 爱心飞天
+    hearts_description: 显示向上飘动的爱心，适合情人节。
+    hearts_label: 漂浮爱心
     lanterns_density_description: 屏幕上的灯笼数量。
     lanterns_density_label: 灯笼密度
-    lanterns_description: 从天而降的灯笼，飞龙和红包等中国春节祝福。
-    lanterns_label: 中国年
+    lanterns_description: 显示红灯笼、龙和吉祥饰物等春节元素。
+    lanterns_label: 春节
     leaves_density_description: 屏幕上的落叶数量。
     leaves_density_heavy: 大量
     leaves_density_label: 落叶密度
     leaves_density_light: 少量
     leaves_density_medium: 适中
-    leaves_description: 为全站添加秋叶散落效果。
-    leaves_label: 满天落叶
+    leaves_description: 全站显示落叶效果。
+    leaves_label: 落叶
     petals_density_description: 屏幕上的花瓣数量。
     petals_density_label: 花瓣密度
-    petals_description: 为全站增加春日花瓣飘落效果。
-    petals_label: 春日花瓣
+    petals_description: 全站显示飘落的樱花花瓣。
+    petals_label: 樱花
     progress_bar_color_label: 进度条颜色
-    progress_bar_description: 页面滚动时，在页头下方显示窄进度条。
-    progress_bar_label: 进度条
+    progress_bar_description: 滚动页面时，在顶部导航栏下方显示细进度条。
+    progress_bar_label: 滚动进度条
     rain_density_description: 屏幕上的雨滴数量。
     rain_density_heavy: 大雨
-    rain_density_label: 雨滴数量
+    rain_density_label: 雨滴密度
     rain_density_light: 小雨
     rain_density_medium: 中雨
-    rain_description: 为全站添加雨滴掉落效果。
-    rain_label: 雨滴掉落
-    scheduler_add_button: 添加计划任务
+    rain_description: 全站显示下落的雨滴。
+    rain_label: 雨滴
+    scheduler_add_button: 添加计划
     scheduler_cancel_button: 取消
-    scheduler_delete_button: 删除计划任务
-    scheduler_delete_confirm: 确认删除该计划任务？
-    scheduler_description: 在指定的时间区间内，自动开启特效。具有计划任务的特效，即便主开关为关闭，也将会自动开启。
-    scheduler_edit_button: 编辑计划任务
-    scheduler_effects_label: 效果
-    scheduler_empty: 暂无计划任务。点击「添加计划任务」新建。
-    scheduler_enabled_label: 已启用
-    scheduler_end_label: 结束
-    scheduler_modal_add_title: 添加计划任务
-    scheduler_modal_edit_title: 编辑计划任务
+    scheduler_confirm_button: 删除
+    scheduler_confirm_title: 确认删除
+    scheduler_delete_button: 删除计划
+    scheduler_delete_confirm: 确定要删除此计划吗？
+    scheduler_description: 在指定时间段自动启用下落类特效。计划生效时，即使手动开关关闭，对应特效仍会显示。
+    scheduler_edit_button: 编辑计划
+    scheduler_effects_label: 特效
+    scheduler_empty: 暂无计划。点击「添加计划」新建。
+    scheduler_enabled_label: 启用
+    scheduler_end_label: 结束时间
+    scheduler_modal_add_title: 添加计划
+    scheduler_modal_edit_title: 编辑计划
     scheduler_modal_save: 保存
-    scheduler_no_effects: 尚未选择效果
-    scheduler_start_label: 开启
-    scheduler_status_active: 立即激活
-    scheduler_status_inactive: 未激活
+    scheduler_no_effects: 未选择特效
+    scheduler_start_label: 开始时间
+    scheduler_status_active: 当前生效
+    scheduler_status_inactive: 未生效
     scheduler_title_label: 标题
-    scheduler_title_placeholder: 例如：春节
-    scheduler_untitled: 未命名的计划任务
+    scheduler_title_placeholder: 例如：新年
+    scheduler_untitled: 未命名计划
+    scheduler_validation_dates_required: 请设置开始和结束时间。
+    scheduler_validation_effects_required: 请至少选择一个特效。
+    scheduler_validation_end_before_start: 结束时间必须晚于开始时间。
     scrollbar_color_label: 滚动条颜色
-    scrollbar_description: 使用预设的窄滚动条替代默认样式。
+    scrollbar_description: 将默认滚动条替换为细款样式。
     scrollbar_label: 自定义滚动条
-    section_effects: 效果
+    section_effects: 特效
     section_interface: 界面
-    section_scheduler: 任务计划
+    section_scheduler: 定时计划
+    site_tint_color_label: 蒙层颜色
+    site_tint_description: 为整个页面叠加半透明色层。设置颜色后生效。
+    site_tint_label: 页面色彩蒙层
     snow_density_description: 屏幕上的雪花数量。
     snow_density_heavy: 大雪
     snow_density_label: 雪花密度
     snow_density_light: 小雪
     snow_density_medium: 中雪
-    snow_description: 为全站添加喜庆的雪花飘落效果。
-    snow_label: 雪花飘落
-    swap_layout_description: 将侧边栏移到右侧，帖子列表移到左侧。
-    swap_layout_label: 侧边栏和内容区域互换
-    title: 魔法时光
+    snow_description: 全站显示飘雪效果。
+    snow_label: 飘雪
+    starfield_description: 显示一层闪烁的星空。
+    starfield_label: 星空
+    swap_layout_description: 将侧边栏移至右侧，帖子区域移至左侧。
+    swap_layout_label: 互换侧边栏与内容区
+    title: 魔法时刻
+    trail_items_label: 轨迹粒子（表情/字符，以空格分隔）
+  forum:
+    disable_effects_description: 隐藏论坛中的雪花、落叶、雨滴等下落特效。
+    disable_effects_label: 关闭下落特效
+    effects_section_description: 调整你的社区视觉特效。
+    effects_section_heading: 特效

@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Weblate 页面进度与审阅助手
 // @namespace    http://tampermonkey.net/
-// @version      2026-10-02.1
+// @version      2026-10-02.2
 // @description  显示 Weblate 页面进度，并提供本地审阅标记、备注、导航与备份
 // @author       ChatGPT, Golden
 // @match        https://weblate.rob006.net/languages/zh_Hans/flarum/
@@ -1855,6 +1855,13 @@
     updateComponentStats();
     updateScrollProgress();
     updateCurrentComponent();
+
+    // 全部组件已译完时，只恢复排序，不自动定位或高亮上次审阅的组件。
+    // 仍有未译完组件时，保留原有的位置恢复和审阅导航。
+    const hasIncompleteTranslations = getComponentRows().some((row) => getComponentStatus(row).incomplete);
+    if (!hasIncompleteTranslations) {
+      return;
+    }
 
     /*
      * 排序完成后再恢复最后一次审阅组件。

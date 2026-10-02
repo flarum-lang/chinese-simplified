@@ -5,192 +5,192 @@
 ralkage-ad-management:
   admin:
     ads:
-      alt_text: '替换文本 (Alt)'
+      alt_text: 替代文字
       approve: 批准
-      approve_image: 批准图片修改
+      approve_image: 批准图片更换
       confirm_delete: 确定要删除此广告吗？
       content: 'HTML/JS 内容'
-      content_help: '适用于 HTML 或 AdSense 类型。请在此处粘贴广告代码。'
+      content_help: '适用于 HTML 和 AdSense 类型的广告。请在此粘贴广告代码。'
       create: 创建广告
       edit: 编辑广告
-      empty: 未找到广告内容。
+      empty: 暂无广告
       end_date: 结束日期
       filter:
-        active: 运行中
+        active: 已启用
         all: 全部
-        inactive: 已停止
+        inactive: 已停用
         pending_review: 待审核
         rejected: 已拒绝
-      group_visibility: 用户组可见性
-      group_visibility_help: '以逗号分隔的用户组 ID。留空则对所有效户显示。'
-      height: '高度 (px)'
+      group_visibility: 可见用户组
+      group_visibility_help: '填写用户组 ID，用英文逗号分隔。留空则对所有用户组显示。'
+      height: 高度（px）
       image_url: '图片 URL'
-      is_active: 启用状态
+      is_active: 启用
       link_url: 跳转链接
-      max_clicks: 最大点击量
-      max_clicks_help: 点击次数达到此数值后广告将自动停用。留空则无限制。
-      max_image_changes: 最大图片修改次数
-      max_impressions: 最大展示量
-      max_impressions_help: 展示次数达到此数值后广告将自动停用。留空则无限制。
+      max_clicks: 最大点击次数
+      max_clicks_help: 达到此点击次数后，广告将自动停用。留空则不限制。
+      max_image_changes: 图片更换次数上限
+      max_impressions: 最大展示次数
+      max_impressions_help: 达到此展示次数后，广告将自动停用。留空则不限制。
       name: 广告名称
       owner: 广告主
-      owner_help: 广告所有者的用户名。留空则无归属。
-      pending_badge: '待审核 ({count})'
-      pending_image_badge: 图片待审
+      owner_help: 填写广告主的用户名。留空则不指定广告主。
+      pending_badge: '待审核（{count}）'
+      pending_image_badge: 图片待审核
       priority: 优先级
-      priority_help: '数值越高，广告显示越靠前。默认为 0。'
+      priority_help: '优先级越高的广告越靠前展示。默认为 0。'
       reject: 拒绝
-      reject_image: 拒绝图片修改
-      select_zone: 选择一个广告位...
+      reject_image: 拒绝图片更换
+      select_zone: 选择广告位…
       start_date: 开始日期
       stats:
         clicks: 点击量
-        ctr: '点击率 (CTR)'
+        ctr: 点击率
         impressions: 展示量
       status: 状态
       statuses:
-        active: 运行中
-        inactive: 已停止
+        active: 已启用
+        inactive: 已停用
         pending_review: 待审核
         rejected: 已拒绝
-      title: 广告列表
+      title: 广告
       type: 广告类型
       types:
         adsense: 'Google AdSense'
-        html: '自定义 HTML'
-        image: 图片广告
-      width: '宽度 (px)'
-      zone: 所属广告位
+        html: HTML
+        image: 图片
+      width: 宽度（px）
+      zone: 广告位
     analytics:
-      clicks_by_day: 每日点击趋势
-      clicks_header: 点击数
+      clicks_by_day: 每日点击量
+      clicks_header: 点击量
       ctr: 点击率
       date: 日期
-      no_data: 当前周期内暂无统计数据。
-      period: 统计周期
-      period_clicks: 周期内点击量
+      no_data: 此时段暂无统计数据。
+      period: 统计时段
+      period_clicks: 所选时段点击量
       periods:
         30d: '最近 30 天'
         7d: '最近 7 天'
         90d: '最近 90 天'
-      select_ad: 选择一条广告...
+      select_ad: 选择广告…
       title: 数据分析
-      total_clicks: '累计点击量 (全时段)'
-      total_impressions: '累计展示量 (全时段)'
+      total_clicks: 累计点击量
+      total_impressions: 累计展示量
     cancel: 取消
     nav:
       title: 广告管理
     permissions:
       no_ads: 免广告（隐藏所有广告）
       submit_ad: 提交广告
-    save: 保存设置
+    save: 保存
     settings:
       adsense_publisher_id: 'Google AdSense 发布商 ID'
-      adsense_publisher_id_help: '您的 AdSense 发布商 ID（例如：ca-pub-1234567890）。'
+      adsense_publisher_id_help: '你的 AdSense 发布商 ID，例如 ca-pub-1234567890。'
       allowed_image_formats: 允许的图片格式
-      allowed_image_formats_help: '以逗号分隔的扩展名列表（例如：jpg,jpeg,png,webp,gif）。'
-      between_posts_interval: 帖子显示间隔
-      between_posts_interval_help: '在讨论页中每隔 N 个帖子显示一次广告。设为 0 则禁用。'
-      compression_method: 压缩方法
-      compression_method_help: 'PHP GD 为内置方案。reSmush.it 使用外部 API 进行无损优化（需开启 curl）。'
+      allowed_image_formats_help: '填写允许上传的图片文件扩展名，用英文逗号分隔，例如 jpg,jpeg,png,webp,gif。'
+      between_posts_interval: 广告间隔帖子数
+      between_posts_interval_help: '在讨论中每隔 N 个帖子显示一次广告。设为 0 可禁用。'
+      compression_method: 压缩方式
+      compression_method_help: 'PHP GD 为服务器内置方式；reSmush.it 使用外部 API 进行无损优化，需要 curl。'
       compression_quality: 压缩质量
-      compression_quality_help: '压缩后的图片质量 (1-100)。数值越低文件越小。推荐值：80-90。'
-      default_max_image_changes: 默认最大图片修改次数
-      default_max_image_changes_help: '广告主允许修改广告图片的最高次数。设为 0 表示无限制。'
+      compression_quality_help: '设置图片压缩后的质量（1-100）。数值越低，文件越小。建议 80-90。'
+      default_max_image_changes: 默认图片更换次数上限
+      default_max_image_changes_help: '广告主最多可以更换广告图片的次数。设为 0 则不限制。'
       enable_compression: 启用图片压缩
-      enable_compression_help: 自动压缩上传的广告图片以减小文件体积。
-      expiration_body_template: 正文模板
-      expiration_reminder_days: 到期提醒（天）
-      expiration_reminder_days_help: '在广告到期前若干天向广告主发送邮件提醒。设为 0 则禁用。'
-      expiration_subject_template: 主题模板
-      expiration_templates_title: 广告到期邮件模板
+      enable_compression_help: 自动压缩上传的广告图片以减小文件大小。
+      expiration_body_template: 邮件正文模板
+      expiration_reminder_days: 到期提醒（提前天数）
+      expiration_reminder_days_help: '在广告到期前多少天向广告主发送邮件提醒。设为 0 可禁用。'
+      expiration_subject_template: 邮件主题模板
+      expiration_templates_title: 到期提醒邮件模板
       image_settings_title: 图片设置
-      notifications_info: '若要发送通知，请添加 Cron 任务：php flarum ad-management:send-notifications'
+      notifications_info: '如需发送通知，请添加定时任务：php flarum ad-management:send-notifications'
       notifications_title: 邮件通知
-      performance_body_template: 正文模板
-      performance_subject_template: 主题模板
-      performance_templates_title: 表现报告邮件模板
-      require_image_approval: 修改图片需要审核
-      require_image_approval_help: 启用后，广告主提交的图片修改将进入审核队列，经管理员批准后才会生效。
-      send_performance_reports: 发送表现报告
-      send_performance_reports_help: 在发送通知邮件时包含表现摘要（展示量、点击量、点击率）。
-      show_sponsored_label: 显示“赞助”标签
-      show_sponsored_label_help: 在广告下方显示标识。取消勾选可将其完全隐藏。
-      sponsored_label_text: 赞助标签文本
-      sponsored_label_text_help: 自定义标签内容（例如“广告”）。留空则使用系统默认翻译。
-      templates_placeholders_expiry: '可用占位符：{forum_title}, {forum_url}, {owner_name}, {owner_username}, {ad_name}, {days_left}, {expiry_date}, {impressions}, {clicks}。留空则使用默认模板。'
-      templates_placeholders_performance: '可用占位符：{forum_title}, {forum_url}, {owner_name}, {owner_username}, {ad_count}, {total_impressions}, {total_clicks}, {ctr}, {ad_lines}。留空则使用默认模板。'
-      track_clicks: 追踪点击次数
-      track_clicks_help: 统计用户点击广告的次数。
-      track_impressions: 追踪展示次数
-      track_impressions_help: 统计每条广告的曝光次数。
+      performance_body_template: 邮件正文模板
+      performance_subject_template: 邮件主题模板
+      performance_templates_title: 效果报告邮件模板
+      require_image_approval: 图片更换需审核
+      require_image_approval_help: 启用后，广告主提交的新图片需经管理员审核后才会正式替换。
+      send_performance_reports: 发送效果报告
+      send_performance_reports_help: 发送通知邮件时附带广告效果汇总，包括展示量、点击量和点击率。
+      show_sponsored_label: 显示「赞助」标签
+      show_sponsored_label_help: 在广告下方显示标签。关闭此项则隐藏。
+      sponsored_label_text: 赞助标签文字
+      sponsored_label_text_help: 自定义标签文字，例如「广告」。留空则使用默认翻译。
+      templates_placeholders_expiry: '可插入数据：{forum_title}、{forum_url}、{owner_name}、{owner_username}、{ad_name}、{days_left}、{expiry_date}、{impressions}、{clicks}。留空则使用默认模板。'
+      templates_placeholders_performance: '可插入数据：{forum_title}、{forum_url}、{owner_name}、{owner_username}、{ad_count}、{total_impressions}、{total_clicks}、{ctr}、{ad_lines}。留空则使用默认模板。'
+      track_clicks: 统计点击量
+      track_clicks_help: 记录用户点击广告的次数。
+      track_impressions: 统计展示量
+      track_impressions_help: 统计每则广告的曝光次数。
     tabs:
-      ads: 广告列表
-      analytics: 数据统计
-      settings: 常规设置
+      ads: 广告
+      analytics: 数据分析
+      settings: 设置
       zones: 广告位
     zones:
       ads_count: 广告数
-      confirm_delete: 确定要删除此广告位吗？该位置下的所有广告也将被一并删除。
+      confirm_delete: 确定要删除此广告位吗？旗下所有广告也会一并删除。
       create: 创建广告位
       default_badge: 默认
       description: 描述
-      dimensions: 尺寸限制
-      display_mode: 显示模式
-      display_mode_help: “轮播”模式下每次页面导航随机显示一个广告；“堆叠”模式下同时显示该位置的所有广告。
+      dimensions: 尺寸
+      display_mode: 展示方式
+      display_mode_help: 随机轮换：每次页面跳转随机显示一则广告；全部堆叠：同时显示该广告位中的所有广告。
       display_modes:
-        rotate: 随机轮播
+        rotate: 随机轮换
         stack: 全部堆叠
       edit: 编辑广告位
-      is_active: 已激活
-      label: 显示标签
-      max_height: '最大高度 (px)'
-      max_width: '最大宽度 (px)'
-      name: 标识名称
-      name_help: 唯一标识符（仅限小写字母，不得包含空格）。用于标签调用。
-      position: 显示位置
+      is_active: 启用
+      label: 显示名称
+      max_height: 最大高度（px）
+      max_width: 最大宽度（px）
+      name: 广告位标识
+      name_help: 唯一标识，只能使用小写字母且不能包含空格，用于广告位标签。
+      position: 展示位置
       positions:
-        above_footer: '页脚上方 (Above Footer)'
-        below_header: '页眉下方 (Below Header)'
-        between_posts: '帖子之间 (Between Posts)'
-        custom: '自定义位置 (Custom)'
-        footer: '页脚 (Footer)'
-        header: '页眉 (Header)'
-        sidebar: '侧边栏 (Sidebar)'
-      shortcode_help: 将此标签粘贴到任何帖子或讨论中，即可在正文内联显示该广告位的广告。
-      shortcode_title: 帖子短代码：
-      sort_order: 排序权重
-      title: 广告位管理
+        above_footer: 页脚上方
+        below_header: 顶部导航栏下方
+        between_posts: 帖子之间
+        custom: 自定义
+        footer: 页脚内
+        header: 顶部导航栏上方
+        sidebar: 侧边栏
+      shortcode_help: 将此广告代码粘贴到帖子中，即可在正文内显示指定广告位的广告。
+      shortcode_title: 广告代码：
+      sort_order: 排序
+      title: 广告位
       zone_tag: '广告位标签：{tag}'
   forum:
     ad:
-      sponsored: 赞助商
+      sponsored: 赞助
     ads:
-      alt_text: '替换文字 (Alt Text)'
-      image_url: 图片链接
-      link_url: 点击跳转链接
+      alt_text: 替代文字
+      image_url: '图片 URL'
+      link_url: 跳转链接
       name: 广告名称
-      select_zone: 选择广告位...
-      zone: 投放位置
+      select_zone: 选择广告位…
+      zone: 广告位
     nav:
       my_ads: 我的广告
     page:
       cancel: 取消
       clicks: '{count} 次点击'
       ctr: '{value}% 点击率'
-      edit_image: 修改图片
-      empty: 您目前还没有发布任何广告。
-      image_changes_remaining: '剩余可修改次数：{count}'
+      edit_image: 更换图片
+      empty: 你还没有发布广告。
+      image_changes_remaining: '还可更换图片 {count} 次'
       impressions: '{count} 次展示'
-      no_changes_remaining: 修改次数已耗尽
-      stats: 数据统计
+      no_changes_remaining: 已无法继续更换图片
+      stats: 数据
       status:
-        active: 运行中
+        active: 投放中
         expired: 已过期
-        inactive: 已停止
+        inactive: 已停用
         pending: 待审核
         rejected: 已拒绝
-        scheduled: 计划中
-      submit_ad: 提交新广告
-      submit_pending_notice: 您的广告在上线前将由管理员进行审核。
-      title: 我的广告管理
+        scheduled: 待投放
+      submit_ad: 提交广告
+      submit_pending_notice: 你的广告将在管理员审核通过后开始投放。
+      title: 我的广告

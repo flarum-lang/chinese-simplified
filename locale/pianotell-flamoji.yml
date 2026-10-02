@@ -6,26 +6,47 @@ pianotell-flamoji:
   admin:
     custom_emojis_section:
       edit_emoji:
+        category_label: 分类
+        category_placeholder: 例如：梗图
+        category_text: 可选。用于在分类页签中集中查看同分类的自定义表情。留空则归入默认的「自定义」分类。
         delete_emoji_button: 删除表情
-        delete_emoji_confirmation: 确认删除此表情吗？
+        delete_emoji_confirmation: 确定要删除此表情吗？
         emoji_title_label: 表情名称
+        emoji_title_text: 显示在选择器预览中，并用于搜索匹配。可留空。
+        intro_text: 自定义表情使用图片，用户可通过输入表情代码插入。表情代码和图片为必填项，名称和分类可不填。
         modal_title: 添加表情
-        path_or_url_label: 路径或网址
+        path_or_url_label: '路径或 URL'
+        path_or_url_text: '填写表情图片所在位置，可以是完整 URL（https://…），也可以是论坛相对路径（/assets/…）。此项必填。请自行上传图片文件到对应的服务器文件夹内。'
         saved_message: '=> core.admin.settings.saved_message'
+        shortcode_invalid: '短代码必须由冒号包围，且只能包含字母、数字以及 _ + - 字符，例如 :myemoji_partyparrot:。'
         submit_button: '=> core.ref.save_changes'
-        text_to_replace_label: 替换文本
+        text_to_replace_label: 表情代码
+        text_to_replace_text: '成员输入此代码即可插入表情。表情代码必须由冒号包围，且只能使用字母、数字以及 _ + - 字符，例如 :myemoji_partyparrot:。此项必填且不能重复。建议为表情代码添加统一前缀，避免与标准表情冲突。'
       emoji_list:
         add_button: 添加表情
         edit_button: 编辑表情
         load_more_button: '=> core.forum.post_stream.load_more_button'
-      export_json_button: 导出JSON
+        rename_cancel_button: 取消
+        rename_save_button: 保存
+        uncategorized: 未分类
+      export_json_button: '导出 JSON'
       heading_title: 自定义表情
-      import_emojis_message: 此操作只导入表情配置。表情包图片需要手动上传。
-      import_json_button: 导入JSON
+      import_emojis_message: 此操作只会导入表情配置，表情图片需手动上传。
+      import_json_button: '导入 JSON'
+      import_legacy_shortcodes: '已导入 {count} 个表情代码不符合 :word: 格式的表情：{shortcodes}。这些表情代码可正常使用，但建议改为标准格式。'
+      import_override_confirm: 确定，替换现有表情。
+      import_override_mode: 覆盖模式（替换现有表情）
+      import_override_warning: 警告：这将删除当前所有自定义表情！
+      upload_json_button: '上传 JSON'
     settings:
-      auto_hide_label: 自动隐藏
-      auto_hide_text: 选择表情后自动隐藏选择器。
+      auto_hide_label: 选择后自动隐藏
+      auto_hide_text: 选择表情后自动关闭表情选择器。
       category_settings_heading: 分类设置
+      cdn_advanced_text: '默认配置固定使用与本扩展构建时相同的 emoji-mart 版本，并提供对应的 SRI 哈希。修改 URL 后，请同时更新与该资源匹配的 SRI 哈希；也可以将哈希留空以关闭完整性校验。表情数据的版本还必须与表情雪碧图保持一致，否则可能导致表情显示异常。将 URL 留空，可强制从本地加载对应资源。'
+      cdn_data_sri_label: '数据 SRI 哈希（可选）'
+      cdn_data_url_label: 'CDN 数据 URL'
+      cdn_js_sri_label: 'JavaScript SRI 哈希（可选）'
+      cdn_js_url_label: 'CDN JavaScript URL'
       emoji_categories:
         activity: '=> pianotell-flamoji.ref.emoji_categories.activity'
         flags: '=> pianotell-flamoji.ref.emoji_categories.flags'
@@ -35,36 +56,40 @@ pianotell-flamoji:
         people: '=> pianotell-flamoji.ref.emoji_categories.people'
         places: '=> pianotell-flamoji.ref.emoji_categories.places'
         symbols: '=> pianotell-flamoji.ref.emoji_categories.symbols'
-      emoji_settings_heading: 表情包设置
-      frequent_rows_label: 常用表情栏
-      frequent_rows_text: 设置显示在选择顶部的最近常用表情行数（1-10）。
-      general_ui_settings_heading: 一般UI设置
+      emoji_settings_heading: 表情设置
+      frequent_rows_label: 常用表情行数
+      frequent_rows_text: '设置表情选择器顶部显示的最近或常用表情行数，可设置为 1 至 10 行。'
+      general_ui_settings_heading: 界面设置
       picker_set_auto: 自动
       picker_set_label: 表情风格
-      picker_set_native: 系统
-      picker_set_text: 选择器中表情的呈现风格。选择「自动」时，为Flarum表情插件的推特表情风格（当启用时）；否则显示为系统字体风格。选择器与帖子中的呈现风格一致。
+      picker_set_native: 系统原生
+      picker_set_text: '设置选择器中表情的呈现风格。「自动」会与 Flarum Emoji 扩展保持一致使用 Twemoji。如未启用该扩展则使用操作系统原生表情，以防止选择器与帖子的显示效果不一致。'
       picker_set_twemoji: 推特表情
       prepopulate_recents_label: 预设常用表情
       prepopulate_recents_text: 启用该设置后，在用户选择任意表情之前，常用表情栏将展示默认的常用表情。如关闭该设置，常用表情栏默认为空，逐渐填充为用户选择的表情。
       show_category_buttons_label: 显示分类按钮
-      show_category_buttons_text: 在选项器顶部，单独显示一行分类图标。当只有一两个分类时，可禁用此项。
-      show_preview_label: 显示预览栏
-      show_preview_text: 在选择器下方显示表情的名称、短代码和肤色设置器。
-      show_recents_label: 保存并展示常用表情
-      show_recents_text: 在选择器顶部，显示常用表情选项卡。用户的常用表情，仅存储在浏览器本地。
+      show_category_buttons_text: 在表情选择器顶部显示分类图标。只有一两个分类时，可关闭此项。
+      show_preview_label: 显示预览区域
+      show_preview_text: 在表情选择器下方显示预览区域，其中包含表情名称、表情代码和肤色选择器。
+      show_recents_label: 显示并保存常用表情
+      show_recents_text: 在表情选择器顶部显示「常用」分类。用户的常用记录仅存储在浏览器本地。
       show_search_label: 显示搜索框
-      show_search_text: 在选择器顶部显示搜索框。
+      show_search_text: 在表情选择器顶部显示搜索框。
       show_variants_label: 显示肤色变体
-      show_variants_text: 部分表情具有肤色变体。当所选表情有肤色变体时，将会显示肤色弹窗供用户选择。
-      specify_categories_label: 选择分类
-      specify_categories_text: 选择器只显示勾选的分类。
+      show_variants_text: 部分表情支持不同肤色。选择这类表情时会弹出肤色选项供用户选择。贴纸模式下此设置无效，因为自定义表情不支持肤色变体。
+      specify_categories_label: 指定显示分类
+      specify_categories_text: 在此指定要显示的分类，表情选择器将只显示勾选的分类。
+      sticker_mode_label: 贴纸模式
+      sticker_mode_text: 将自定义表情展示为大尺寸贴纸。只有自定义表情可以放大，启用后选择器中将只展示自定义表情。默认关闭。
+      use_cdn_label: '通过 CDN 加载 Emoji-Mart'
+      use_cdn_text: '从第三方 CDN（如 jsDelivr）加载 emoji-mart 库和表情数据，而不是从论坛服务器加载。默认关闭。如果 CDN 加载失败，或子资源完整性（SRI）校验未通过，表情选择器会自动改用扩展自带的本地资源。若论坛启用了内容安全策略（CSP），还需要允许从相应的外部来源加载这些资源。'
   forum:
     composer:
       emoji_picker_label: 表情选择器
       emoji_tooltip: 插入表情
-      picker_load_error: 无法加载表情选择器。请重试。
+      picker_load_error: 无法加载表情选择器，请重试。
       picker_load_retry: 重试
-      picker_loading: 表情加载中…
+      picker_loading: 正在加载表情…
     emoji-mart:
       add_custom: 添加自定义表情
       categories:
@@ -79,26 +104,26 @@ pianotell-flamoji:
         places: '=> pianotell-flamoji.ref.emoji_categories.places'
         symbols: '=> pianotell-flamoji.ref.emoji_categories.symbols'
       category_search: 搜索结果
-      no_emojis_found_message: 没有表情
-      no_emojis_found_title: 不好了！
+      no_emojis_found_message: 没有找到表情
+      no_emojis_found_title: 糟糕！
       pick: 选择一个表情
       search_placeholder: 搜索
       skin_tone_choose: 选择默认肤色
       skin_tone_dark: 深色
       skin_tone_default: 默认
       skin_tone_light: 浅色
-      skin_tone_medium: 普通
-      skin_tone_medium_dark: 便深色
+      skin_tone_medium: 中等
+      skin_tone_medium_dark: 偏深色
       skin_tone_medium_light: 偏浅色
   ref:
     emoji_categories:
       activity: 活动
       custom: 自定义
       flags: 旗帜
-      foods: 食物和饮品
-      frequent: 常用表情
-      nature: 动物和自然
-      objects: 物体
-      people: 笑脸和人物
-      places: 旅行和地点
+      foods: 食物与饮料
+      frequent: 常用
+      nature: 动物与自然
+      objects: 物品
+      people: 笑脸与人物
+      places: 旅行与地点
       symbols: 符号

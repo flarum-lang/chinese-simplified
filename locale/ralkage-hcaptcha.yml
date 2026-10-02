@@ -5,17 +5,17 @@
 ralkage-hcaptcha:
   admin:
     permissions:
-      post_without_hcaptcha: '发布主题和回帖时无需 hCaptcha 验证码'
+      post_without_hcaptcha: '发起讨论和回帖时无需 hCaptcha'
     settings:
-      dark_mode_help: '为 hCaptcha 组件启用深色主题。如果您的论坛采用深色主题，请启用此选项。'
+      dark_mode_help: '为 hCaptcha 验证组件使用深色外观。如果论坛使用深色显示模式，请启用此项。'
       dark_mode_label: 深色模式
-      enable_login_help: '在用户登录时启用 hCaptcha 验证，有助于防止暴力破解攻击。'
-      enable_login_label: 登陆时启用
-      help_text: '<a>点击此处</a> 获取 hCaptcha 秘钥。'
+      enable_login_help: '用户登录时必须完成 hCaptcha 人机验证，有助于防止暴力破解攻击。'
+      enable_login_label: 登录时要求人机验证
+      help_text: '点击<a>此处</a>获取 hCaptcha。'
       secret_key_label: 密钥
       site_key_label: 站点密钥
       type_label: 'hCaptcha 类型'
   forum:
-    error: '提交 h-captcha 验证码时出错，请重试。'
+    error: '提交 hCaptcha 验证时发生错误，请重试。'
 validation:
   hcaptcha: 'hCaptcha 验证失败。'

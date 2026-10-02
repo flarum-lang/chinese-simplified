@@ -966,7 +966,7 @@ core:
     start_a_discussion: 发起讨论
     title_az: 标题（正序）
     title_za: 标题（倒序）
-    top: 最多回复
+    top: 回帖最多
     username: 用户名
     username_or_email_placeholder: 用户名或邮箱
     users: 用户

@@ -5,35 +5,36 @@
 ralkage-account-lockout:
   admin:
     permissions:
-      unlock_users_label: 解锁用户账户
+      unlock_users_label: 解锁被锁定的账号
     settings:
-      lockout_duration_help: '临时锁定时长，0 表示永久锁定。'
-      lockout_duration_label: 锁定持续时间（分钟）
-      lockout_mode_help: 临时锁定或永久锁定。
-      lockout_mode_label: 锁定模式
-      max_attempts_help: 锁定前允许的失败登录次数。
-      max_attempts_label: 最大尝试次数
+      lockout_duration_help: 账号锁定持续时长。仅适用于定时解锁。
+      lockout_duration_label: 锁定时长（分钟）
+      lockout_mode_help: 定时：等待指定时长后自动解锁。手动：需要管理员或版主手动解锁。
+      lockout_mode_label: 锁定方式
+      max_attempts_help: 账号被锁定前允许连续登录失败的次数。
+      max_attempts_label: 连续登录失败次数上限
     users:
       lock_status_column: 锁定状态
-      locked_tooltip: 此账户已被锁定
+      locked_tooltip: 此账号已锁定
       unlock_button: 解锁
-      unlock_confirmation: '确定要解锁 {username}账户吗？'
+      unlock_confirmation: '确定要解锁 {username} 的账号吗？'
   api:
     error:
-      locked_manual: 账户已被管理员锁定，无法登录。
-      locked_timed: 账户已被临时锁定，请稍后再试。
+      locked_manual: 账号已锁定，请联系管理员。
+      locked_timed: '账号已锁定，请在 {minutes} 分钟后重试。'
   forum:
     log_in:
-      locked_manual: 账户已被管理员锁定。
-      locked_timed: '账户已被临时锁定，请 {minutes} 分钟后重试。'
+      attempts_remaining: '登录信息有误。账号将在连续登录失败 {max} 次后被锁定，还剩 {remaining} 次机会。'
+      locked_manual: 此账号已被锁定，请联系管理员。
+      locked_timed: '由于登录失败次数过多，此账号已被锁定。请在 {minutes} 分钟后重试。'
     unlock_modal:
       failed_attempts: '登录失败 {count} 次'
-      locked_since: '锁定时间 {date}'
-      locked_until: '锁定至 {date}'
-      manually_locked: 此账户已被手动锁定，需要管理员或版主才能解锁。
-      title: 账户锁定详情
-      unlock_button: 解锁
+      locked_since: '锁定于 {date}'
+      locked_until: '将于 {date} 自动解锁'
+      manually_locked: 此账号不会自动解锁，需要管理员或版主手动解锁。
+      title: '解锁 {username}'
+      unlock_button: 解锁账号
     user_badge:
-      locked_tooltip: 账户已被锁定
+      locked_tooltip: 账号已锁定
     user_controls:
-      unlock_button: 解锁账户
+      unlock_button: 解锁

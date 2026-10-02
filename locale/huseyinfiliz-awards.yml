@@ -64,6 +64,8 @@ huseyinfiliz-awards:
       select_category: 选择类别
       title: 管理候选
       vote_adjustment_title: 票数调整
+      website_url: '网站 / 链接地址'
+      website_url_help: '候选项的外部链接，必须以 http:// 或 https:// 开头'
     permissions:
       manage: 管理评选
       view: 查看评选
@@ -112,6 +114,7 @@ huseyinfiliz-awards:
       no_categories: 此评选暂无类别
       no_nominees: 此类别暂无候选项
     error:
+      already_voted: 你已经为此候选项投过票。
       cannot_delete_processed_suggestion: 只能取消待审核的推荐
       not_available: 此评选尚未开放
       other_not_allowed: 此类别不接受用户推荐
@@ -142,6 +145,8 @@ huseyinfiliz-awards:
       all_categories: 全部类别
       categories: 类别
       title: 评选
+    nominee:
+      open_link: 在新标签页中打开链接
     notification:
       results_published: '「{awardName}」的评选结果已公布'
     other:

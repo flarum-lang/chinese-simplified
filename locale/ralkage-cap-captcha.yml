@@ -5,15 +5,15 @@
 ralkage-cap-captcha:
   admin:
     settings:
-      api_endpoint_help: '您的 Cap 独立实例 URL（包含 site key），例如：https://cap.example.com/your-site-key/'
-      api_endpoint_label: 'Cap API Endpoint'
-      protect_login_help: '在登录表单中显示 Cap 组件。'
-      protect_login_label: 登录时启用验证码
-      protect_registration_help: '在注册表单中显示 Cap 组件。'
-      protect_registration_label: 注册时启用验证码
-      secret_key_help: '从 Cap 管理面板中获取的 Secret Key。'
-      secret_key_label: 'Cap Secret Key'
+      api_endpoint_help: '填写包含站点密钥的 Cap Standalone 实例地址，例如 https://cap.example.com/your-site-key/'
+      api_endpoint_label: 'Cap API 地址'
+      protect_login_help: '在登录窗口中显示 Cap 验证组件。'
+      protect_login_label: 登录时要求人机验证
+      protect_registration_help: '在注册窗口中显示 Cap 验证组件。'
+      protect_registration_label: 注册时要求人机验证
+      secret_key_help: '填写 Cap 控制台中该站点密钥对应的密钥。'
+      secret_key_label: 'Cap 密钥'
   api:
-    invalid_captcha: 验证码校验失败。请重新验证并重试。
+    invalid_captcha: 人机验证失败，请完成验证后重试。
   forum:
-    captcha_required: 请完成验证码校验以验证身份。
+    captcha_required: 请完成人机验证后继续。

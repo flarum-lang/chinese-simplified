@@ -4,26 +4,26 @@
 
 migratetoflarum-fake-data:
   api:
-    no-discussions-matched: 讨论不存在
-    no-users-matched: 用户不存在
+    no-discussions-matched: 没有匹配的讨论
+    no-users-matched: 没有匹配的用户
   forum:
     generator:
-      title: 生成虚假回复
+      title: 生成模拟回复
     link:
-      generate-replies: 生成虚假回复
+      generate-replies: 生成模拟回复
   lib:
     generator:
-      bulk-mode: 复用
-      bulk-mode-description: 随机生成单条数据，并应用于全部条目
-      date: 种子日期
-      date-interval-placeholder: '间隔（默认 1 秒）'
-      date-start-placeholder: 起始日期（默认当天）
-      discussion-count: 讨论生成数量
-      discussion-tags: 讨论标签
+      bulk-mode: 批量复用
+      bulk-mode-description: 生成一次数据，并重复用于所有条目
+      date: 日期生成设置
+      date-interval-placeholder: '时间间隔（默认 1 秒）'
+      date-start-placeholder: 起始日期（默认当前时间）
+      discussion-count: 讨论生成数
+      discussion-tags: 新讨论的标签
       discussion-tags-none: 无
       discussion-tags-random: 随机
-      post-count: 回帖生成数量
-      refresh: 完成并刷新页面
-      reset: 生成成功！点击重置表单
+      post-count: 回帖生成数
+      refresh: 关闭并刷新页面
+      reset: 数据生成完成！点击重置表单
       send: 生成数据
-      user-count: 用户生成数量
+      user-count: 用户生成数

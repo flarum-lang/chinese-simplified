@@ -4,6 +4,23 @@
 
 ramon-avocado:
   admin:
+    edit_tag:
+      svg_current: '已设置 SVG 图标'
+      svg_drop_hint: '或点击按钮选择文件 · 最大 {max} KB'
+      svg_drop_title: '将 .svg 文件拖到这里'
+      svg_invalid: '这不是 SVG 文件，请上传有效的 .svg 文件。'
+      svg_label: 'SVG 图标'
+      svg_mono_help: '使用当前颜色为图标着色，与默认 Font Awesome 图标效果一样。关闭后保留 SVG 自带的颜色。'
+      svg_mono_title: 跟随文字颜色
+      svg_remove_button: '移除 SVG'
+      svg_replace_button: 替换
+      svg_replace_hint: '拖入另一个 .svg 文件即可替换。'
+      svg_size_help: '很多 SVG 四周带有留白，若图形相较其他图标显得太小，可进行适当调大。这里只会放大图形本身，图标占用的空间不变。'
+      svg_size_reset: 重置
+      svg_size_title: 图标大小
+      svg_text: '上传 .svg 文件。设置后会替换上方的 Font Awesome 图标，并在所有显示标签图标的位置使用。'
+      svg_too_large: 'SVG 文件过大（最大 {max} KB）。'
+      svg_upload_button: 选择文件
     footer_settings:
       footer_company: 公司信息
       footer_company_description: 公司描述
@@ -40,6 +57,15 @@ ramon-avocado:
       cakeday_enabled_help: '在账号注册周年当天，于用户名旁显示 🎂（讨论卡片、帖子和用户卡片中均会显示）。'
       cakeday_enabled_label: 显示注册周年徽章
       categories_heading_label: 板块栏目标题
+      changelog_description_label: 页面描述
+      changelog_description_placeholder: 新增了什么、修复了什么、移除了什么——逐个版本记录。
+      changelog_enabled_help: '显示 /changelog 页面，将标签视为产品，标签中的讨论视为版本发布记录。需要 Tags 扩展。'
+      changelog_enabled_label: 启用更新日志页面
+      changelog_tags_help: '这里选择的每个标签都会成为一份独立的更新日志（如 Alega、Avocado 或其他扩展）。其中每个讨论代表一次版本发布，该标签的子标签则作为变更类型，如「新增」「修复」「移除」「安全」等，并沿用各自标签的颜色和图标。谁可以发布由标签权限决定。在此选择产品后，编辑器还会显示封面图片上传功能。'
+      changelog_tags_label: 产品
+      changelog_title_label: 页面标题
+      changelog_title_placeholder: 更新日志
+      changelog_version_help: 发布版本时，可在编辑器中的封面图片旁填写「版本」字段，例如「v2.4.0」。封面可以使用上传的图片，也可以使用标签颜色生成的横幅。未填写版本的发布则按日期列出。
       clock_format_12: '12 小时制（2:30 PM）'
       clock_format_24: '24 小时制（14:30）'
       clock_format_auto: 自动（跟随访客浏览器）
@@ -73,6 +99,12 @@ ramon-avocado:
       fixed_avatar_effect_help: 在桌面端阅读较长回复时，让帖子头像保持固定显示。
       fixed_avatar_effect_label: 启用固定头像效果
       following_heading_label: 关注讨论标题
+      group_access: 访问
+      group_appearance: 外观
+      group_community: 社区
+      group_discussions: 讨论
+      group_home: 首页
+      groups_aria: 设置分组
       hero_deco_divider_help: 在两个装饰图标之间显示一个图标，例如竞技网站可使用「VS」符号。
       hero_deco_divider_icon_help: '分隔图标使用的 Font Awesome 类名，例如「fas fa-times」或「fas fa-circle」。'
       hero_deco_divider_icon_label: 分隔图标类名
@@ -113,20 +145,31 @@ ramon-avocado:
       post_cta_position_label: 引导位置（显示在哪篇帖子之后）
       presence_enabled_help: '在讨论横幅中实时显示「N 人正在阅读」及读者头像。需要 Realtime 扩展；关闭「公开在线状态」的用户永远不会显示。'
       presence_enabled_label: 显示正在阅读讨论的用户
+      search_clear: 清除搜索
+      search_empty: 未找到设置。
+      search_placeholder: 搜索设置…
       search_v1_help: '使用行内搜索下拉框，而不是 V2 搜索弹窗。'
       search_v1_label: '启用 V1 搜索栏样式'
       section_auth: 登录与注册
       section_bookmarks: 收藏
       section_cakeday: 注册周年
+      section_changelog: 更新日志
       section_colored: 颜色强调
+      section_disc_hero_icon: 讨论横幅图标
       section_discussion: 讨论页面
       section_footer: 页脚
+      section_guests: 访客
       section_hero_image_tags: 讨论横幅图片
+      section_home_banner: 首页横幅
+      section_home_categories: 精选板块
       section_homepage: 首页
       section_logo: Logo
+      section_online: 在线用户
       section_posts: 帖子
       section_presence: 正在阅读
       section_search: 搜索
+      section_showcase: 作品展示
+      section_tag_icon_svg: 标签图标（SVG）
       section_team: 团队页面
       section_titles_heading: 首页栏目标题
       section_titles_help: 自定义首页各栏目的标题。留空则使用语言包中的默认文本。
@@ -159,7 +202,7 @@ ramon-avocado:
       showcase_tag_label: '展示 / 作品集标签'
       spinner_custom_code_help: '粘贴任意 SVG 或 HTML，作为加载动画使用。'
       spinner_custom_code_label: 自定义加载动画代码
-      spinner_option_avocado: Avocado
+      spinner_option_avocado: 牛油果
       spinner_option_b2: 旋转
       spinner_option_css_orbital: 方块环绕（CSS）
       spinner_option_custom: 自定义
@@ -167,6 +210,10 @@ ramon-avocado:
       spinner_option_flarum: Flarum
       spinner_option_orbital: 方块环绕
       spinner_option_pl3: 脉冲
+      tag_icon_svg_help: '在「编辑标签」弹窗中添加 SVG 字段。设置后，所有显示标签图标的位置都会使用 SVG 替换 Font Awesome 图标，包括更新日志中的变更类型。SVG 会在保存时进行安全过滤。启用后请刷新管理后台。'
+      tag_icon_svg_label: '允许使用 SVG 作为标签图标'
+      tag_icon_svg_standalone_notice: '已启用 Tag Icon SVG 扩展，SVG 图标将由该扩展处理，此项设置不会生效。如需由本主题接管，请禁用该扩展。已保存的图标不会丢失。'
+      tag_icon_svg_tags_notice: '此功能需要 Tags 扩展，当前未启用。'
       tag_picker_placeholder: 选择标签…
       team_desc_label: 页面描述
       team_desc_placeholder: 认识一下社区背后的伙伴们。
@@ -195,6 +242,8 @@ ramon-avocado:
     svg_forbidden_declaration: 'SVG 中包含禁止使用的 DOCTYPE 或 ENTITY 声明。'
     svg_invalid: '上传的文件必须是有效的 SVG。'
     svg_parse_failed: 'SVG 无效：无法解析 XML。'
+    tag_icon_svg_invalid: '无法读取 SVG 图标，请确认图标文件是否有效。'
+    tag_icon_svg_too_large: 'SVG 图标过大（最大 {max} KB）。'
     unsupported_image_type: 不支持此图片类型。
   forum:
     actions:
@@ -233,6 +282,48 @@ ramon-avocado:
       aria: 注册周年
       tooltip_plural: '注册周年 — 今天是加入本站 {years} 周年！'
       tooltip_singular: '注册周年 — 今天是加入本站 1 周年！'
+    changelog:
+      all_products: 全部产品
+      all_types: 全部类型
+      composer_body_placeholder: 填写版本说明…
+      composer_submit: 发布版本
+      composer_title: 发布新版本
+      composer_title_placeholder: 版本标题…
+      cover_auto: 自动
+      cover_auto_help: 从产品颜色渐变到第一个变更类型的颜色。
+      cover_change: 封面颜色
+      cover_color: 标签配色封面
+      cover_from_tags: 从标签取色（选择一个或多个）
+      cover_off: 无封面（使用标签默认样式）
+      cover_preset_ember: 余烬
+      cover_preset_forest: 森林
+      cover_preset_ocean: 海洋
+      cover_preset_slate: 石板灰
+      cover_preset_sunset: 日落
+      cover_preset_violet: 紫罗兰
+      cover_presets: 预设
+      cover_tags_count: '{count} 种标签颜色'
+      cover_title: 封面颜色
+      description: 新增了什么、修复了什么、移除了什么——逐个版本记录。
+      edit_release: 编辑版本
+      empty: 暂无已发布版本。
+      empty_filtered: 暂无此类型的版本。
+      error: 无法加载更新日志。
+      hide_notes: 收起版本说明
+      latest: 最新
+      load_more: 加载更多
+      new_release: 发布新版本
+      not_found: 未找到产品。
+      notes_failed: 无法加载版本说明。
+      notes_loading: 正在加载版本说明…
+      products_label: 产品
+      read_notes: 查看版本说明
+      replies: '{count} 条回复'
+      retry: 重试
+      title: 更新日志
+      types_label: 按类型筛选
+      version_label: 版本
+      version_placeholder: '版本（例如 v2.4.0）'
     discussion:
       hero_image_add: 添加横幅图片
       hero_image_remove: 移除横幅图片
@@ -377,6 +468,11 @@ ramon-avocado:
       title: 搜索
     settings:
       notify_bookmark_reminder_label: 收藏提醒
+    support:
+      category_label: 工单分类
+      category_placeholder: 选择分类
+      new_ticket_heading: 新建工单
+      status_changed: 将工单标记为
     tag_picker:
       remove: 移除标签
     tags:

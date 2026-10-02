@@ -12,7 +12,7 @@ ramon-chat:
       upload_failed: 无法上传该图片。
       use_bot: 改用机器人发送
       user_active: 播报当前由此成员发送。
-      user_help: '选择一个账号后，播报会变成由该成员发送的普通消息，不再显示机器人名称、头像或 BOT 标记。'
+      user_help: '选择一个账号后，自动播报会改为以该成员身份发送普通消息，不再显示机器人名称、头像或 BOT 标记。'
       user_label: 改用成员身份发送
       user_search: 搜索用户
     permissions:
@@ -20,8 +20,15 @@ ramon-chat:
       bypass_slow_mode: 不受慢速模式限制
       create_channel: 创建频道
       create_thread: 从回复中创建话题串
-      edit_channel: 编辑频道
+      edit_channel: 编辑任意频道
+      edit_own_channels: 编辑自己创建的频道设置
       flag_message: 举报消息
+      global_heading: 聊天：全局权限
+      global_heading_help: 适用于所有频道，不受「谁可以创建和管理频道」设置影响。
+      inspect_channels: 隐身查看频道：不显示在成员列表中，不发送加入或退出提示，也不触发通知
+      manage_own_channels: 管理自己创建的频道（成员、频道版主、关闭、归档、删除、移除消息）
+      members_heading: 聊天：成员自建频道
+      members_heading_help: 仅在允许成员创建并管理自己的频道时生效。这些权限只适用于成员自建频道；其他频道仍使用上方的全局权限。
       mention_channel_wide: '使用 @here 和 @all'
       moderate: 管理聊天
       pin_message: 置顶和取消置顶消息
@@ -30,14 +37,39 @@ ramon-chat:
       start_direct: 发起私信
       upload: 在聊天中上传文件
       use: 使用聊天
+    sections:
+      announcer_help: 设置聊天系统自动播报内容时以谁的身份发送，例如播报绑定板块中的新讨论。
+      announcer_title: 播报机器人
+      appearance_help: 设置聊天在顶部导航栏和抽屉面板中显示的名称和图标。
+      appearance_title: 外观
+      channels_help: 设置谁可以创建和管理频道，以及新频道的默认行为。
+      channels_title: 频道
+      messages_help: 设置消息长度、发送频率和编辑时限。
+      messages_title: 消息
+      other_help: 其他扩展添加的聊天设置。
+      other_title: 其他设置
+      realtime_help: 设置实时消息的推送方式和新消息提示音。
+      realtime_title: 实时推送与声音
+      retention_help: 设置消息的保留时长。超过期限的消息会由每晚运行的清理任务删除。
+      retention_title: 消息保留
+      uploads_help: 设置是否允许消息附带文件，以及文件大小上限。
+      uploads_title: 上传
+      webhooks_help: '提供兼容 Slack 的接口，供外部服务向频道发送消息。URL 仅在创建 Webhook 或轮换密钥时显示一次。'
+      webhooks_title: '传入 Webhook'
     settings:
       allow_archiving_channels: 允许归档频道
+      allow_archiving_channels_help: 已关闭的频道可以归档为一篇讨论，并保留聊天记录。
       allow_uploads: 允许在聊天中上传文件
+      allow_uploads_help: 允许在消息中添加附件。可在下方权限中设置哪些用户组可以上传。
       behaviour_title: 功能设置
       bot_avatar_help: '机器人头像图片的 URL。留空则显示名称首字。'
       bot_avatar_label: 机器人头像
       bot_name_help: 聊天系统自动发送消息时显示的作者名称，例如新讨论播报。
       bot_name_label: 机器人名称
+      channel_ownership: 频道创建和管理
+      channel_ownership_admin: 仅管理员
+      channel_ownership_help: 允许成员自行管理频道后，下方权限会分为两组。「聊天：全局权限」适用于所有频道；「聊天：成员自建频道」只适用于成员创建并管理的频道，包括频道的创建、管理和编辑，以及成员可以在其中执行的操作。频道主可以任命频道版主，二者都不受所在频道的慢速模式限制。管理员及拥有聊天管理权限的用户仍可管理所有频道。
+      channel_ownership_members: 成员可以创建并管理自己的频道
       channel_retention_days: 频道消息保留天数
       channel_retention_help: '板块频道中的消息保留多少天。0 表示永久保留。'
       dm_retention_days: 私信保留天数
@@ -46,8 +78,11 @@ ramon-chat:
       icon_label: 聊天图标
       limits_title: 限制与安全
       max_message_length: 消息最长长度
+      max_message_length_help: 全论坛的消息长度上限。各频道只能单独设置更短的上限。
       max_messages_per_second: 每位用户每秒消息发送上限
+      max_messages_per_second_help: '用户发送消息超过此频率时，超出的消息会被拒绝。设为 0 可关闭限制。'
       max_upload_size: 文件大小上限（字节）
+      max_upload_size_help: '例如，10485760 字节等于 10 MB。'
       message_edit_window_help: '消息发布后允许作者编辑多长时间。0 表示不限制。'
       message_edit_window_minutes: 消息可编辑时限（分钟）
       min_message_length: 消息最短长度
@@ -64,6 +99,7 @@ ramon-chat:
       sound_help: 未在查看的频道收到新消息时播放。
       sound_none: 关闭
       threading_default: 新频道默认启用话题串
+      threading_default_help: 新频道默认开启话题串，之后仍可在各频道中单独开关。
       title: 聊天
       title_help: 显示在顶部按钮和抽屉面板中。留空则使用「聊天」。
       title_label: 聊天名称
@@ -79,6 +115,8 @@ ramon-chat:
       webhook_regenerate: 重新生成密钥
       webhook_url: URL
       webhook_username: 发送身份
+      webhooks_enabled: '启用传入 Webhook'
+      webhooks_enabled_help: '关闭后，所有 Webhook URL 都会停止接收请求，即使单个 Webhook 本身处于启用状态。此设置与本页其他设置一并保存。'
       webhooks_help: '兼容 Slack 的接口，可将外部消息发送到指定频道。'
       webhooks_title: '传入 Webhook'
     webhooks:
@@ -87,6 +125,7 @@ ramon-chat:
       delete: 删除
       delete_confirm: '确定删除此 Webhook 吗？所有使用其 URL 的服务都将停止工作。'
       deliveries: '{count, plural, other {# 次投递}}'
+      disabled: '传入 Webhook 已关闭。请先开启上方开关并保存设置，再管理 Webhook。'
       empty: '暂无 Webhook。'
       failed: 无法保存此更改。
       help: '外部服务可以通过一个私密 URL 向频道发送消息。URL 只会在创建 Webhook 或轮换密钥时显示一次。'
@@ -95,7 +134,7 @@ ramon-chat:
       rotate: 轮换密钥
       rotate_confirm: '轮换密钥后，所有使用旧 URL 的服务都会失效。确定继续吗？'
       title: '传入 Webhook'
-      url_once: '请立即复制此 URL，之后不会再次显示。'
+      url_once: '请立即复制此 URL，之后将不再显示。'
   api:
     archive_discussion_not_found: 该讨论不存在，或你无权访问。
     archive_empty: 此频道归档时没有任何消息。
@@ -112,6 +151,7 @@ ramon-chat:
     invalid_reaction: 无效的表情回应。
     invalid_reply_target: 不能回复其他频道中的消息。
     invalid_thread_target: 该话题串不属于此频道。
+    invite_not_found: 这里没有待处理的频道邀请。
     members_empty: 请至少选择一位要添加的用户。
     members_too_many: '{max, plural, other {一次最多可添加 # 位用户。}}'
     message_empty: 不能发送空消息。
@@ -145,17 +185,24 @@ ramon-chat:
       unknown_author: 某人
   forum:
     add_members:
-      added: '{count, plural, other {已将 # 位用户添加到频道。}}'
+      added: '已向 {names} 发出邀请（共 {count} 人）。'
       deselect: '从选择中移除 {username}'
       empty: 未找到用户，或所有匹配的用户都已是频道成员。
-      failed: 无法添加这些用户。
-      hint: 至少输入两个字符以搜索用户。
+      failed: 无法向这些用户发送邀请。
+      hint: 输入至少两个字符以搜索用户。
+      intro: '你邀请的用户都会收到通知，他们可以自行决定是否加入 {channel}。'
+      invited_badge: 已邀请
+      member_badge: 成员
+      no_results: '没有与「{query}」匹配的用户。'
       search_failed: 暂时无法搜索用户。
-      search_placeholder: 搜索用户
+      search_placeholder: 按名称搜索
       searching: 正在搜索…
-      submit: 添加
-      submit_count: '添加 {count} 位'
-      title: 添加成员
+      selected_count: '已选择 {count} 人'
+      submit: 邀请
+      submit_count: '邀请 {count} 人'
+      suggested: 最近活跃
+      title: 邀请成员
+      you_badge: 你
     bookmarks:
       empty: 你还没有收藏任何消息。
       no_text: （仅附件）
@@ -173,6 +220,8 @@ ramon-chat:
       filter_closed: 已关闭
       filter_mine: 我的频道
       filter_open: 开放
+      inspecting: 隐身查看中
+      invited: 已受邀
       joined: 已加入
       load_failed: 无法加载频道列表。
       messages: '{count, plural, other {# 条消息}}'
@@ -184,16 +233,24 @@ ramon-chat:
       subtitle_join_only: 查找要加入的频道。
       title: 浏览频道
     channel:
+      accept_invite: 接受邀请
       archived: 此频道已归档。
       archived_link: 查看归档聊天记录
       close_pinned: 关闭置顶消息
       closed: 此频道已关闭，无法发送新消息。
+      decline_invite: 拒绝
+      decline_invite_confirm: 确定要拒绝此邀请吗？邀请你的人会收到通知。
       edit: 编辑频道
+      invite_accepted: 你已加入此频道。
+      invite_declined: 你已拒绝此邀请。
+      invite_failed: 无法处理此邀请。
+      invited: 你已收到加入此频道的邀请。
+      invited_by: '{username} 邀请你加入此频道。'
       join: 加入频道
       join_failed: 无法加入频道。
-      join_hidden: 隐身加入
+      join_hidden: 隐身查看频道
       join_to_post: 加入此频道后即可发送消息。
-      joined_hidden: 你已隐身加入，不会出现在成员列表中。
+      joined_hidden: 你正在隐身查看此频道，不会出现在成员列表中，进入或离开频道时也不会发送系统提示。
       leave: 退出频道
       leave_confirm: 确定退出此频道吗？以后仍可重新加入，历史记录也会保留。
       leave_failed: 无法退出频道。
@@ -206,6 +263,7 @@ ramon-chat:
       scroll_to_latest: 跳转到最新消息
       search_in_channel: 搜索此频道
       threading_enabled: 已启用话题串功能
+      threads: 此频道的话题串
       view_all_pinned: '查看全部 {count} 条置顶消息'
       view_info: 频道详情
     composer:
@@ -219,6 +277,7 @@ ramon-chat:
       placeholder: '发送消息到 {channel}'
       placeholder_closed: 此频道已关闭
       placeholder_thread: 回复话题串
+      remove_upload: 移除附件
       send: 发送
       send_ctrl_enter: 发送（Ctrl+Enter）
       send_enter: 发送（Enter）
@@ -297,12 +356,18 @@ ramon-chat:
       auto_join_on_reply: 回复此板块的用户自动加入
       auto_join_on_reply_help_bound: '用户首次回复 {category} 中的讨论时会自动加入此频道；如果之后主动退出，不会再次自动加入。'
       auto_join_on_reply_help_none: 只有频道绑定到板块后，此设置才会生效。
+      cancel_invite: '撤回对 {username} 的邀请'
+      cancel_invite_confirm: '确定要撤回对 {username} 的邀请吗？对方收到的通知也会被移除。'
       category: 板块
       close_channel: 关闭频道
       composer: 消息编辑器
       delete_channel: 删除频道
       delete_confirm: 删除频道后无法恢复，仍要删除吗？
+      demote_moderator: '取消 {username} 的频道版主身份'
       description: 描述
+      invite_cancelled: '已撤回对 {username} 的邀请。'
+      invited_badge: 已邀请
+      invited_heading: '待回应的邀请（{count}）'
       level_always: 每条消息
       level_always_help: 此频道中的每条消息都会触发通知。
       level_mentions: 仅提及
@@ -311,13 +376,19 @@ ramon-chat:
       level_never_help: 此频道不会发送通知，但侧边栏仍会显示未读消息。
       member_removed: '已将 {username} 移出频道。'
       member_search: 筛选成员
+      moderator_badge: 频道版主
+      moderator_demoted: '{username} 已不再是频道版主。'
+      moderator_help: 频道版主可以添加或移除成员、删除消息、管理话题串，并且不受本频道慢速模式限制。只有你可以任免频道版主。
+      moderator_promoted: '{username} 已成为频道版主。'
       mute: 静音此频道
       mute_help: 静音频道不会显示未读徽标。
       no_members: 没有匹配的成员。
       notification_level: 通知内容
       notifications: 通知
+      owner_badge: 频道主
       post_discussions: 播报此板块的新讨论
       post_discussions_help_bound: '{category} 中每有新讨论发布，都会在频道中自动播报。'
+      promote_moderator: '将 {username} 设为频道版主'
       remove_member: '移除 {username}'
       remove_member_confirm: '确定将 {username} 移出此频道吗？'
       reopen_channel: 重新开放频道
@@ -373,6 +444,7 @@ ramon-chat:
         channel_closed: 频道已关闭。
         channel_reopened: 频道已重新开放。
         discussion_started: '{username} 发起了讨论：{title}'
+        user_accepted_invite: '{actor} 邀请 {username} 加入了频道'
         user_added: '{actor} 将 {username} 添加到了频道。'
         user_joined: '{username} 加入了频道。'
         user_left: '{username} 退出了频道。'
@@ -434,7 +506,10 @@ ramon-chat:
       threading_help: 回复可以另开话题串继续交流，而不会打断频道中的主对话。
       visibility: 谁可以看到此频道
     notifications:
-      channel_invite: '{username} 将你添加到了 {channel}'
+      channel_invite: '{username} 邀请你加入 {channel}'
+      channel_invite_declined: '{username} 拒绝了加入 {channel} 的邀请'
+      invite_accept: 接受
+      invite_decline: 拒绝
       message_flagged: '{username} 举报了 {channel} 中的一条消息'
       someone: 某人
     revisions:
@@ -443,6 +518,7 @@ ramon-chat:
       title: 编辑历史
       unknown_editor: 未知
     search:
+      clear: 清除搜索
       close: 关闭搜索
       empty: 没有匹配的消息。
       in_channel: '在 {channel} 中'
@@ -462,7 +538,8 @@ ramon-chat:
       channel_wide_mentions: '接收 @here 和 @all 通知'
       email_notifications: 通过邮件接收聊天提及通知
       enabled: 为我的账号启用聊天
-      notify_channel_invite: 有人将我添加到聊天频道
+      notify_channel_invite: 有人邀请我加入聊天频道
+      notify_channel_invite_declined: 有人拒绝我发出的频道邀请
       notify_message_flagged: 有人举报聊天消息
       open_in_drawer: 在抽屉面板中打开聊天，而不是全屏显示
       sound: 通知声音
@@ -480,6 +557,7 @@ ramon-chat:
       no_channels: 你还没有加入任何频道。
       search: 搜索
     stream:
+      date_format: LL
       jump_to_latest: 跳转到最新消息
       new_messages: 新消息
       today: 今天
@@ -488,6 +566,7 @@ ramon-chat:
       close: 关闭话题串面板
       no_replies: 暂无回复，来留下第一条回复吧。
       no_threads: 你还没有关注任何话题串。
+      no_threads_in_channel: 此频道还没有话题串。选择任意消息的「在话题串中回复」即可发起一个话题串。
       replies: '{count, plural, other {# 条回复}}'
       set_title: 设置话题串标题
       title: 话题串
@@ -508,6 +587,7 @@ ramon-chat:
       delete_description: 你的聊天消息和附件将被删除，同时删除你的表情回应、草稿和频道成员关系。
       export_description: 你的聊天消息、消息附件信息，以及你曾加入的频道。
   notifications:
-    chat_channel_invite: '{username} 将你添加到了 {channel}'
+    chat_channel_invite: '{username} 邀请你加入 {channel}'
+    chat_channel_invite_declined: '{username} 拒绝了加入 {channel} 的邀请'
     chat_mention: '{username} 在 {channel} 中提到了你'
     chat_message: '{username} 在 {channel} 中发送了消息'

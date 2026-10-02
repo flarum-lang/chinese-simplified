@@ -10,10 +10,10 @@ tryhackx-cover-studio:
     cover_height_label: 个人主页封面高度（px）
     cover_height_mobile_label: 移动端封面高度（px）
     default:
-      avatar_empty: 尚未设置默认头像，请上传图片或从共享媒体中选择。
+      avatar_empty: 尚未设置默认头像，请上传图片或从共享媒体中选择
       avatar_title: 默认头像
       change_button: 更换图片
-      cover_empty: 尚未设置默认封面，请上传图片或从共享媒体中选择。
+      cover_empty: 尚未设置默认封面，请上传图片或从共享媒体中选择
       cover_title: 默认封面
       generic_error: 出错了，请重试
       media_button: 从共享媒体选择

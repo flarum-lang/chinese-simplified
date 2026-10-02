@@ -4,84 +4,203 @@
 
 walsgit_discussion_cards:
   admin:
+    console:
+      imageMigrationServiceCleanupFail: '❌ 清理失败：已找到 {filename}，但无法删除：{error}'
+      imageMigrationServiceCleanupSuccess: '✅ 清理：已找到并删除 {filename}'
+      imageMigrationServiceGeneralImageFail: '❌ 全局默认图片迁移失败，无法迁移 {filename}： '
+      imageMigrationServiceGeneralImageSuccess: '✅ 全局默认图片已从 assets/{filename} 迁移至 {newfilepath}'
+      imageMigrationServiceNoCleanup: '⏭️ 有 {failedMigrations} 项迁移失败，已跳过清理'
+      imageMigrationServiceStep1: '—[步骤 1/3] 迁移全局默认图片…'
+      imageMigrationServiceStep2: '—[步骤 2/3] 迁移标签默认图片…'
+      imageMigrationServiceStep3: '—[步骤 3/3] 清理…'
+      imageMigrationServiceTagImageFail: '❌ 标签 {tagid} 的默认图片迁移失败，无法迁移 {filename}： '
+      imageMigrationServiceTagImageSuccess: '✅ 标签 {tagid} 的默认图片已从 assets/{filename} 迁移至 {newfilepath}'
+      imageMigrationServiceUnknownError: 未知错误
+      migrateImagesEnd: '✅ 迁移完成，共迁移 {count} 张图片'
+      migrateImagesError: '❌ 错误： '
+      migrateImagesStart: '➡ 正在迁移旧版 Discussion Cards 默认图片…'
+      purgeImagesAlreadyRunning: 图片清理任务已在运行
+      purgeImagesDelete: '正在删除文件：{file}'
+      purgeImagesDirectoryNotFound: '找不到目录 {directory}'
+      purgeImagesDryRun: '已启用模拟模式（dry run），不会删除任何文件'
+      purgeImagesEnd: 讨论卡片图片清理完成
+      purgeImagesFileSkipped: '已跳过文件：{file}'
+      purgeImagesInvalidArguments: '参数无效（添加 --help 查看用法）'
+      purgeImagesLockAcquired: 已获取锁
+      purgeImagesLockReleased: 已释放锁
+      purgeImagesScan: 正在扫描未使用的卡片图片…
+      purgeImagesStart: '➡ 正在清理讨论卡片图片…'
+      purgeImagesSummary: '➡ 清理汇总：删除 {deleted} 个，跳过 {skipped} 个，更新 {updated} 个讨论'
+      regenerateImagesCancelled: '❌ 操作已取消'
+      regenerateImagesConfirmAll: '⚠️ 确定要重新生成所有讨论的卡片图片吗？这可能耗时较长并占用大量资源（Y/N）'
+      regenerateImagesError: '❌ 处理讨论 #{id} 时出错：{message}'
+      regenerateImagesInvalidTagOption: '--tag 后必须跟一个或多个以逗号分隔的标签 ID（数字）和/或带引号的标签别名，例如："slug-1", "slug-2"。'
+      regenerateImagesNothingToDo: 没有需要处理的讨论
+      regenerateImagesStart: '➡ 开始处理 {count} 个讨论…'
+      regenerateImagesStartAll: '➡ 开始处理全部 {count} 个讨论…'
+      regenerateImagesStartAllWithout: '➡ 开始处理 {count} 个缺少图片的讨论…'
+      regenerateImagesSummary: '➡ 重新生成汇总{mode}：共处理 {total} 个，成功 {success} 个，失败 {errors} 个'
     errors:
-      desktopCardWidth: '桌面端主卡片宽度必须是介于 10 到 100 之间的数字'
-      primaryCards: '主卡片数量必须是一个正数（0 或更大）'
-      tabletCardWidth: '平板端主卡片宽度必须是介于 10 到 100 之间的数字'
+      adminImageNoPath: 服务未返回文件名
+      adminImageProcessingError: '处理图片时出错： '
+      adminImageUnauthorizedMethod: 不允许使用此方法
+      debugModalDiscussionId: '讨论 ID 必须为大于或等于 1 的正整数'
+      deleteFilenameRequired: 无法删除：缺少文件名
+      deleteTargetNotFound: '无内容可删除：找不到目标文件 {file}'
+      desktopCardWidth: '桌面端主卡片宽度必须为 10 到 100 之间的数字'
+      fileSize: '文件大小不能超过 2 MB'
+      filenameInvalidOrigin: '无法生成文件名：无法识别上下文 {origin}'
+      filenameTagidMissing: '无法生成文件名：缺少标签 ID'
+      imageProcessingFailed: 图片处理失败
+      imageProcessingSourceNotFound: '图片处理：找不到源图片 {path}'
+      invalidFile: 文件无效
+      invalidMime: 不支持此文件格式。支持：JPEG、PNG、GIF、BMP、WebP
+      listCardsCount: '「列表卡片数量」必须为 0 到 20 之间的<em>数字</em>（0 表示全部）'
+      noFileUploaded: 未上传文件
+      primaryCards: '主卡片数量必须为 0 或正数'
+      tabletCardWidth: '平板端主卡片宽度必须为 10 到 100 之间的数字'
+      tagImageNoTagId: '未提供标签 ID'
+      tagImageUnsupportedMethod: '不支持的方法（{method}）'
+      tagSettingsNoTagId: '未提供标签 ID'
+      useListCards: '值必须为 null、0 或 1'
     settings:
       general:
-        allowRepostLinks_help: '如果启用此选项（与 Repost 扩展一起），以网址开头的主题，点击卡片标题时将打开该URL，而像往常一样，点击卡片的任何其他部分将打开讨论。'
-        allowRepostLinks_label: '允许卡片上的 Repost 链接行为'
-        allowedTags_help: 讨论卡片将在所的选标签的页面显示。
+        allowRepostLinks_help: '同时启用 Repost 扩展后，若讨论首帖以 URL 开头，点击卡片标题会打开该 URL；点击卡片其他位置仍会打开讨论。'
+        allowRepostLinks_label: '启用 Repost 链接跳转'
+        allowedTags_help: 在所选标签页启用讨论卡片。
         allowedTags_label: 选择标签
-        blogExtension_notActivated: '{icon} 需要激活此扩展才能使这些设置生效。'
-        blogExtension_notInstalled: '{icon} 需要安装并激活此扩展才能使这些设置生效。'
-        blogExtension_title_end: ' 扩展后，您可以设置以下 (2) 个选项：'
-        blogExtension_title_start: '安装并激活 '
-        cardOptions_info: 设置卡片上应显示哪些数据/信息。
-        cardOptions_title: 卡片选项
-        defaultImage_info: '在此处可以修改在讨论的首条消息中未找到图片时，卡片上使用的默认图片。<u>重要</u>：<em>请注意，更改图片将丢弃您所做的任何其他未保存的设置更改，并会自动重新加载页面。请在更改图片之前保存您的更改</em>（或者反过来😉）。可接受格式：JPG、PNG、GIF、BMP 或 WebP 文件。理想分辨率：400px x 225px（所有上传的图片都将转换为 PNG 文件并调整宽度为 400px，宽度更小的图片除外，它们将保持初始分辨率，并且不会被放大）。根据您文件的分辨率，图片在卡片上显示时可能会被裁剪和/或拉伸。'
-        defaultImage_title: 默认图片
-        desktopCardWidth_help: '设置在桌面端主卡片的宽度（百分比）。（介于 10 到 100 之间）'
+        blogExtension_notActivated: '{icon} 需要启用此扩展后，这些设置才会生效。'
+        blogExtension_notInstalled: '{icon} 需要安装并启用此扩展后，这些设置才会生效。'
+        blogExtension_title_end: ' 后，可以使用以下 2 项设置：'
+        blogExtension_title_start: '安装并启用 '
+        cardOptions_info: 设置卡片上显示的信息。
+        cardOptions_title: 卡片内容
+        defaultImage_info: '当讨论首帖中没有图片时使用的全局默认图片。<u>重要</u>：<em>更换图片会丢弃其他尚未保存的设置并自动刷新页面，请先保存。</em>支持 JPG、PNG、GIF、BMP、WebP，建议分辨率为 400×225 px。上传后会转换为 WebP 并缩放至 400 px 宽；宽度不足 400 px 时保持原尺寸，不会放大。根据图片比例，卡片中可能出现裁切或拉伸。'
+        defaultImage_title: 全局默认图片
+        desktopCardWidth_help: 设置桌面端主卡片宽度百分比（10–100）
         desktopCardWidth_label: 桌面端主卡片宽度
-        markReadCards_help: 如果激活，已读主题的标题和文本将显示得更浅。
-        markReadCards_label: 区分已读/未读主题的卡片
-        onIndexPage_help: 如果激活，则<em>所有讨论</em>页面将显示卡片。
-        onIndexPage_label: 在索引页上激活卡片
-        otherOptions_info: 以下选项需要安装并激活其他扩展才能工作。<strong>注意：请在激活每个选项之前，阅读<u>所有</u>信息并完成所需的步骤</strong>。
-        otherOptions_title: 需要其他扩展的选项
-        previewText_help: 如果激活，将在卡片上显示首条消息的开头作为预览。
-        previewText_label: 预览文本
-        primaryCardOptions_info: '设置如何使用主卡片（在启用讨论卡片的每个页面顶部显示的更大卡片）。设置为 0 表示不使用。'
-        primaryCardOptions_title: 主卡片选项
-        primaryCards_help: '在每个使用讨论卡片的页面顶部显示的较大卡片的数量。（0 或更大的正数）'
+        listCardOptions_info: 设置讨论列表中的小尺寸卡片。
+        listCardOptions_title: 列表卡片设置
+        listCardsCount_help: '设置以小尺寸卡片显示的<em>讨论列表项</em>数量。设为 0 表示全部，最多 20 个'
+        listCardsCount_label: 列表卡片数量
+        listCards_help: '将讨论列表项显示为卡片（小于主卡片）。关闭后使用 Flarum 默认讨论列表样式'
+        listCards_label: 讨论列表使用卡片
+        markReadCards_help: 启用后，已读讨论的标题和文字会显示得更淡。
+        markReadCards_label: 区分已读和未读讨论
+        onIndexPage_help: 启用后，「全部讨论」页会显示讨论卡片。
+        onIndexPage_label: 在「全部讨论」页启用卡片
+        otherOptions_info: 以下设置需要安装并启用对应扩展才能生效。<strong>启用前</strong>请<u>阅读</u>各项说明并完成所需配置。
+        otherOptions_title: 需要其他扩展的设置
+        otherOptions_warningLabel: '警告：部分扩展尚不兼容 Flarum 2'
+        otherOptions_warningText: '以下大多数扩展尚未适配 Flarum 2，目前无法与 Discussion Cards 配合使用。当前仅 <strong>fof/discussion-views</strong> 已适配并受本版本<em>支持</em>。其他扩展即使推出 Flarum 2 版本，也请等待 Discussion Cards 后续版本确认兼容后再启用相关选项。兼容状态会随版本更新；<em>全部支持后将不展示此提示</em>。长期未适配且无替代方案的扩展可能停止支持。'
+        previewText_help: 显示首帖开头的内容作为卡片预览。
+        previewText_label: 显示预览文字
+        primaryCardOptions_info: 设置页面顶部的大尺寸主卡片。
+        primaryCardOptions_title: 主卡片设置
+        primaryCards_help: '页面顶部显示的主卡片数量。设为 0 表示不显示。'
         primaryCards_label: 主卡片数量
-        repostExtension_notActivated: '{icon} 需要安装并激活此扩展才能使此设置生效。'
-        repostExtension_notInstalled: '{icon} 需要安装并激活此扩展才能使此设置生效。'
-        repostExtension_title_end: ' 扩展后，您可以设置以下 (1) 个选项：'
-        repostExtension_title_start: '安装并激活 '
-        showAuthor_help: 如果激活，将在卡片上显示讨论的作者。
+        repostExtension_notActivated: '{icon} 需要启用此扩展后，此设置才会生效。'
+        repostExtension_notInstalled: '{icon} 需要安装并启用此扩展后，此设置才会生效。'
+        repostExtension_title_end: ' 后，可以使用以下 1 项设置：'
+        repostExtension_title_start: '安装并启用 '
+        showAuthor_help: 显示讨论发起者。
         showAuthor_label: 显示作者
-        showBadges_help: 如果激活，将在卡片的左上角显示徽章。
+        showBadges_help: 在卡片左上角显示徽章。
         showBadges_label: 显示徽章
-        showLastPostInfo_help: 如果启用此选项，它将在卡片上预览文本下方（如果未激活预览文本，则在标签下方）显示讨论的最后回帖者的用户名和日期。
-        showLastPostInfo_label: 显示最后回帖信息
-        showRepliesOnRight_help: '如果启用此选项，它将把回复数（或者，如果有未读回复则显示带 * 的未读回复数）放在（非主）卡片标题的右侧（在大屏幕上，而不是默认的图片左下角）。'
-        showRepliesOnRight_label: '在卡片标题右侧显示回复数（或者，如果有未读回复则显示带 * 的未读回复数）'
-        showReplies_help: '如果激活，将在卡片上显示回复数量（或者，如果有未读回复则显示带 * 的未读回复数量）（并在主卡片上显示部分讨论参与者的头像）。'
-        showReplies_label: 显示回复数/未读回复数
-        showViews_help: 如果启用此选项，将在卡片上显示浏览量。
+        showLastPostInfo_help: 在卡片底部显示最后回复者和回复时间。
+        showLastPostInfo_label: 显示最后回复信息
+        showRepliesOnRight_help: 启用后，大屏设备上的非主卡片会在标题右侧显示回复数或未读回复数，而不是默认的图片左下角。
+        showRepliesOnRight_label: '在标题右侧显示回复数 / 未读回复数'
+        showReplies_help: 显示回复数或未读回复数；主卡片还会显示部分参与者头像。
+        showReplies_label: '显示回复数 / 未读回复数'
+        showViews_help: 在卡片中显示浏览量。
         showViews_label: 显示浏览量
-        showViews_title_end: ' 扩展后，您可以设置以下 (1) 个选项：'
+        showViews_title_end: ' 后，可以使用以下 1 项设置：'
         showViews_title_or: ' 或 '
-        showViews_title_start: '安装并激活 '
-        tabletCardWidth_help: '设置在平板端主卡片的宽度（百分比）。（介于 10 到 100 之间）'
+        showViews_title_start: '安装并启用 '
+        tabletCardWidth_help: 设置平板端主卡片宽度百分比（10–100）
         tabletCardWidth_label: 平板端主卡片宽度
-        useBlogImages_help: '如果启用此选项，每篇博客文章的卡片图片将设置为：博客文章的特色图片；如果没有，则设为博客内容中找到的第一张图片；如果没有，则设为博客扩展的默认图片；如果没有，则设为讨论卡片的标签默认图片；如果没有，则设为讨论卡片的主默认图片。请注意，如果您在 Flarum Blog 扩展设置中选择重定向博客标签，那么用作博客标签的标签的自定义设置当然将被忽略。'
-        useBlogImages_label: 使用博客的默认和特色图片
-        useBlogSummary_help: 如果此选项和预览文本都启用，博客文章的卡片将显示博客文章摘要的开头作为预览文本，而不是博客文章正文的开头。
-        useBlogSummary_label: 使用博客文章的摘要作为预览文本
-        viewsExtension_notActivated: '{icon} 需要激活 Discussion Views 扩展才能使此设置生效。'
-        viewsExtension_notInstalled: '{icon} 需要安装并激活其中一个扩展才能使此设置生效。'
-        where_info: 设置要使用讨论卡的位置。
-        where_title: 在哪里？
+        tempExtension_Message: '{icon} Discussion Cards 尚未完全支持此扩展，请等待后续版本'
+        useBlogImages_help: '博客文章的卡片图片按以下顺序选取：特色图片 → 正文首张图片 → Blog 扩展默认图片 → Discussion Cards 标签默认图片 → Discussion Cards 全局默认图片。若在 Flarum Blog 中启用了博客标签重定向，作为博客标签使用的标签自定义设置会被忽略。'
+        useBlogImages_label: 使用博客默认图片和特色图片
+        useBlogSummary_help: 同时启用此项和预览文字后，博客文章卡片会显示摘要开头，而不是正文开头。
+        useBlogSummary_label: 使用博客摘要作为预览文字
+        viewsExtension_notActivated: '{icon} 需要启用 Discussion Views 扩展后，此设置才会生效。'
+        viewsExtension_notInstalled: '{icon} 需要安装并启用上述任一扩展后，此设置才会生效。'
+        where_info: 设置在哪些页面使用讨论卡片。
+        where_title: 显示位置
+      statsToolsBanner:
+        debugModal_copyButton: 复制到剪贴板
+        debugModal_copyError: 无法复制调试信息
+        debugModal_copySuccess: 调试信息已复制
+        debugModal_discussionDebugCheckBtn: 检查讨论
+        debugModal_discussionDebugCheckingMessage: '正在分析讨论 #{discussionId} 的卡片图片选择逻辑…（等待结果）'
+        debugModal_discussionDebugHelpText: '用于检查指定讨论选择了哪张卡片图片以及选择原因。输入讨论 ID，然后点击「检查讨论」。'
+        debugModal_discussionDebugLabel: '讨论 ID'
+        debugModal_discussionDebugTitle: 讨论卡片图片选择测试
+        debugModal_title: 'Discussion Cards 调试信息'
+        purgeImagesModal_deleteAllBtnText: 删除所有图片
+        purgeImagesModal_deleteAllHelp: '删除服务器上的所有讨论卡片图片。点击下方按钮将运行：<code>php flarum discussion-cards:purge-images --all</code>'
+        purgeImagesModal_deleteAllLabel: 清理所有讨论卡片图片
+        purgeImagesModal_deleteUnusedBtnText: 删除未使用的图片
+        purgeImagesModal_deleteUnusedHelp: '删除服务器上未被任何讨论卡片使用的图片。点击下方按钮将运行：<code>php flarum discussion-cards:purge-images</code>'
+        purgeImagesModal_deleteUnusedLabel: 清理未使用的卡片图片
+        purgeImagesModal_error: 清理图片时出错。
+        purgeImagesModal_helpText: "可在此删除服务器上的讨论卡片图片。更多清理选项请运行：<code>php flarum discussion-cards:purge-images --help</code>\n<strong>警告：删除后无法恢复！</strong> 全局默认图片和标签默认图片不会在这里删除；如需删除，请分别使用扩展设置或标签设置中的移除按钮。"
+        purgeImagesModal_runningCommand: "正在执行命令…\n"
+        purgeImagesModal_success: 图片已清理
+        purgeImagesModal_title: 清理图片
+        purgeImagesModal_unknownError: 未知错误
+        refreshStats: 图片统计已更新
+        regenerateImagesModal_error: 重新生成图片时出错。
+        regenerateImagesModal_helpText: '可在此重新生成讨论卡片图片。如需处理其他数量或全部讨论，请使用专用 CLI 命令。详情请 '
+        regenerateImagesModal_helpTextUrlTitle: '<strong>查看 Wiki</strong>'
+        regenerateImagesModal_regenerateLTNOBtnText: '重新生成最近活跃、热门、最新和最早各 20 个讨论的卡片图片'
+        regenerateImagesModal_regenerateLTNOHelp: '重新选择并生成最近活跃、热门、最新和最早各 20 个讨论的卡片图片。同时属于多个类别的讨论只处理一次。点击下方按钮将运行：<code>php flarum discussion-cards:regenerate-images -l -t -N -o</code>。'
+        regenerateImagesModal_regenerateLTNOLabel: '重新生成最近活跃、热门、最新和最早各 20 个讨论的卡片图片'
+        regenerateImagesModal_regenerateLatestBtnText: '重新生成最近 20 个讨论的卡片图片'
+        regenerateImagesModal_regenerateLatestHelp: '重新选择并生成最近 20 个讨论的卡片图片。点击下方按钮将运行：<code>php flarum discussion-cards:regenerate-images</code>。'
+        regenerateImagesModal_regenerateLatestLabel: '重新生成最近 20 个讨论的卡片图片'
+        regenerateImagesModal_regenerateWithoutBtnText: '生成缺失的卡片图片（最多 20 个）'
+        regenerateImagesModal_regenerateWithoutHelp: '为尚未设置卡片图片、当前显示占位图的讨论选择并生成图片（首帖图片或默认图片）。每次最多处理 20 个讨论。点击下方按钮将运行：<code>php flarum discussion-cards:regenerate-images -a -w 20</code>。'
+        regenerateImagesModal_regenerateWithoutLabel: 为缺少卡片图片的讨论生成图片
+        regenerateImagesModal_runningCommand: "正在执行重新生成命令…\n"
+        regenerateImagesModal_success: 图片已重新生成
+        regenerateImagesModal_title: 重新生成图片
+        regenerateImagesModal_unknownError: 未知错误
+        statDiscussionImagesTitle: 讨论卡片图片
+        statDiscussionsWithoutImagesTitle: 无图片的讨论
+        statTotalImagesTitle: 图片总数
+        statUnusedImagesTitle: 未使用的图片
+        toolsMenuDebug: 调试信息
+        toolsMenuLabel: 工具
+        toolsMenuPurgeImages: 清理图片
+        toolsMenuRegenerateImages: 重新生成图片
+        toolsMenuUpdateStats: 更新统计
     tag_modal:
-      desktopCardWidth_help: '设置在桌面端主卡片的宽度（百分比）（全局设置：{default}%，最小值：10% ，最大值：100%）。'
+      desktopCardWidth_help: '设置桌面端主卡片宽度百分比（全局设置：{default}%，最小 10%，最大 100%）。'
       desktopCardWidth_label: 桌面端主卡片宽度
-      intro_text: 在此处，您可以为当前标签的页面设置不同的讨论卡片选项。
-      primaryCards_help: '页面顶部显示的较大卡片的数量（全局设置：{default}，最小值：0）。'
+      intro_text: 设置当前标签页的讨论卡片。
+      listCardsCount_help: '设置以小尺寸卡片显示的<em>讨论列表项</em>数量。设为 0 表示全部，最多 20 个'
+      listCardsCount_label: 列表卡片数量
+      primaryCards_help: '页面顶部显示的主卡片数量（全局设置：{default}，最小值：0）。'
       primaryCards_label: 主卡片数量
       submit_button: 保存
-      tabletCardWidth_help: '设置在平板端主卡片的宽度（百分比）（全局设置：{default}%，最小值：10% ，最大值：100%）。'
+      tabletCardWidth_help: '设置平板端主卡片宽度百分比（全局设置：{default}%，最小 10%，最大 100%）。'
       tabletCardWidth_label: 平板端主卡片宽度
-      title: '讨论卡片设置 - '
+      title: '讨论卡片设置： '
+      useListCards_help: '将讨论列表项显示为卡片（小于主卡片）。关闭后使用 Flarum 默认讨论列表样式'
+      useListCards_label: 讨论列表使用卡片
+      useListCards_title: 列表卡片设置
     tags:
-      activation_button: 激活此标签
-      deactivation_button: 停用此标签
-      defaultImage_info: 设置或修改此标签页面的默认卡片图片。有关可接受的文件格式和分辨率的详细信息，请参阅讨论卡片的通用设置。
+      activation_button: 为此标签启用
+      deactivation_button: 为此标签停用
+      defaultImage_info: '设置或更换此标签页使用的默认卡片图片。支持的文件格式和分辨率要求见 Discussion Cards 常规设置。'
       defaultImage_title: 默认图片
       options_button: 其他讨论卡片设置
       options_heading: 讨论卡片
   forum:
-    replies: '{count} 回复'
-    unreadReplies: '{count} 未读回复'
+    console:
+      postUpdateCardImageError: 'Discussion Cards> 更新此讨论的卡片图片时出错： '
+    replies: '回复：{count}'
+    unreadReplies: '未读回复：{count}'

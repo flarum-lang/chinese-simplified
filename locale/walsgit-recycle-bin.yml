@@ -6,88 +6,89 @@ walsgit-recycle-bin:
   admin:
     actions: 操作
     author: 作者
-    bulk_actions: '已选讨论操作： '
-    bulk_delete_label: 删除所选讨论帖
-    bulk_post_actions: '已选回复操作： '
-    bulk_post_delete_label: 删除所选回复
-    bulk_post_restore_label: 还原所选回复
-    bulk_restore_label: 还原所选讨论帖
-    created_at: 创建于
+    bulk_actions: '所选讨论操作： '
+    bulk_delete_label: 永久删除所选讨论
+    bulk_post_actions: '所选帖子操作： '
+    bulk_post_delete_label: 永久删除所选帖子
+    bulk_post_restore_label: 恢复所选帖子
+    bulk_restore_label: 恢复所选讨论
+    created_at: 创建时间
     delete_discussion:
-      confirmation: 确定要<u>永久删除</u>这个讨论吗？此操作不可撤销：
-      delete_button: 永久删除此讨论
-      success: 已永久删除讨论帖
+      confirmation: 确定要<u>永久删除</u>此讨论吗？此操作无法撤销：
+      delete_button: 永久删除讨论
+      success: 讨论已永久删除
       title: 永久删除
     delete_post:
-      confirmation: 确定要<u>永久删除</u>此回复吗？（操作不可逆）：
-      delete_button: 永久删除此回复
-      success: 已永久删除回复
+      confirmation: 确定要<u>永久删除</u>此帖子吗？此操作无法撤销。所在讨论：
+      delete_button: 永久删除帖子
+      success: 帖子已永久删除
       title: 永久删除
-    delete_post_tooltip: 删除回复
-    delete_tooltip: 删除讨论
+    delete_post_tooltip: '永久删除帖子 #{postId}'
+    delete_tooltip: '永久删除讨论 #{discussionId}'
     discussion_id: ID
     discussion_link_tooltip: 查看讨论
     discussion_title: 讨论标题
     discussions_bin: 讨论回收站
-    empty_list: 回收站中暂无讨论。
+    empty_list: 回收站中暂无讨论
     grid:
-      invalid_column_content: 内容无效！
-    hidden_at: 隐藏于
+      invalid_column_content: 内容无效
+    hidden_at: 隐藏时间
     hidden_discussions: 已隐藏讨论
     mass_delete_modal:
-      submit_button: 永久删除讨论帖
-      success: 已永久删除所选讨论帖
-      text_end: ' 个已选择的讨论帖吗？'
-      text_start: '确定要<u>永久删除</u>这 '
-      title: 永久删除讨论帖
+      submit_button: 永久删除所选讨论
+      success: 所选讨论已永久删除
+      text_end: ' 个讨论吗？'
+      text_start: '确定要<u>永久删除</u>选中的 '
+      title: 永久删除所选讨论
     mass_delete_post_modal:
-      submit_button: 永久删除回复
-      success: 已永久删除所选回复
-      text_end: ' 个已选择的回复吗？'
-      text_start: '确定要<u>永久删除</u>这 '
-      title: 永久删除回复
-    mass_help_text: 执行批量还原或删除后，请耐心等待页面自动刷新
+      submit_button: 永久删除所选帖子
+      success: 所选帖子已永久删除
+      text_end: ' 个帖子吗？'
+      text_start: '确定要<u>永久删除</u>选中的 '
+      title: 永久删除所选帖子
+    mass_help_text: 批量恢复或删除后，请等待页面刷新
     mass_restore_modal:
-      submit_button: 还原讨论帖
-      success: 已成功还原所选讨论帖
-      text_end: ' 个已选择的讨论帖吗？'
-      text_start: '确定要还原这 '
-      title: 还原所选讨论帖
+      submit_button: 恢复所选讨论
+      success: 所选讨论已恢复
+      text_end: ' 个讨论吗？'
+      text_start: '确定要恢复选中的 '
+      title: 恢复所选讨论
     mass_restore_post_modal:
-      submit_button: 还原回复
-      success: 已成功还原所选回复
-      text_end: ' 个已选择的回复吗？'
-      text_start: '确定要还原这 '
-      title: 还原所选回复
+      submit_button: 恢复所选帖子
+      success: 所选帖子已恢复
+      text_end: ' 个帖子吗？'
+      text_start: '确定要恢复选中的 '
+      title: 恢复所选帖子
     pagination:
       back_button: 上一页
       first_page_button: 第一页
-      go_to_page_textbox_a11y_label: 跳转到页码
+      go_to_page_textbox_a11y_label: 跳转到指定页
       last_page_button: 最后一页
       next_button: 下一页
-      page_counter: '第 {current} 页 / 共 {total} 页'
+      page_counter: '第 {current} / {total} 页'
     post:
       id: ID
-      open_post: 查看回复
-      title: 回复内容
-    posts_bin: 回复回收站
+      open_post: 查看帖子
+      title: 帖子内容
+    posts_bin: 帖子回收站
     restore_discussion:
-      confirmation: 确定要还原这个讨论帖吗：
-      restore_button: 还原此讨论
-      success: 已成功还原讨论帖
-      title: 还原讨论
+      confirmation: 确定要恢复此讨论吗：
+      restore_button: 恢复讨论
+      success: 讨论已恢复
+      title: 恢复讨论
     restore_post:
-      confirmation: '确定要还原此回复吗？所属讨论： '
-      restore_button: 还原此回复
-      success: 已成功还原回复
-      title: 还原回复
-    restore_post_tooltip: 还原回复
-    restore_tooltip: 还原讨论
-    search_help_text: 支持搜索讨论标题及讨论内容关键词
-    search_placeholder: 搜索讨论帖
-    search_post_help_text: 在已隐藏的回复中搜索关键词
-    search_post_placeholder: 搜索回复内容
+      confirmation: '确定要恢复此帖子吗？所在讨论： '
+      restore_button: 恢复帖子
+      success: 帖子已恢复
+      title: 恢复帖子
+    restore_post_tooltip: '恢复帖子 #{postId}'
+    restore_tooltip: '恢复讨论 #{discussionId}'
+    search_help_text: 搜索讨论标题和帖子内容中的关键词
+    search_placeholder: 搜索讨论…
+    search_post_help_text: 搜索已隐藏帖子中的关键词
+    search_post_placeholder: 搜索帖子…
     total_hidden_discussions: 已隐藏讨论总数
-    total_hidden_posts: 已隐藏回复总数
-    unknown_date: 未知日期
+    total_hidden_posts: 已隐藏帖子总数
+    unknown_date: 日期未知
+    unknown_user: 未知用户
     unknownn_user: 未知用户

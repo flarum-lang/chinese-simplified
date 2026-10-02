@@ -6,97 +6,97 @@ flarum-gdpr:
   lib:
     data:
       twofactordata:
-        delete_description: 删除所有与双重认证相关的数据。
-        export_description: 导出双重认证状态和加密的备用代码。
+        delete_description: '删除所有与 2FA 相关的数据。'
+        export_description: '导出 2FA 状态和加密的救援代码。'
 ianm-twofactor:
   admin:
     edit_group:
-      2fa_help: 要求此用户组成员启用双重认证。
-      2fa_label: 需要双重认证
-      admin_2fa_help: '{adminName} 成员必须始终启用双重认证。'
+      2fa_help: 要求此用户组的成员为账号启用双重身份验证（2FA）。
+      2fa_label: '要求启用 2FA'
+      admin_2fa_help: '属于 {adminName} 的成员必须始终启用 2FA。'
     permissions:
-      manage_others_label: 管理其他用户的双重认证
-      see_two_factor_status_label: 查看其他用户的双重认证状态
+      manage_others_label: '管理其他用户的 2FA'
+      see_two_factor_status_label: '查看其他用户的 2FA 状态'
     settings:
-      forum_logo_qr: 展示论坛标志
-      forum_logo_qr_help: 在双重认证配置二维码中间展示论坛标志。
-      forum_logo_qr_width: 论坛标志宽度
-      forum_logo_qr_width_help: '在双重认证配置二维码展示的论坛标志宽度，最大值为 200。'
+      forum_logo_qr: '二维码嵌入论坛 Logo'
+      forum_logo_qr_help: '在启用 2FA 时显示的二维码中嵌入论坛 Logo，方便用户确认正在扫描的是本论坛的二维码。'
+      forum_logo_qr_width: '二维码论坛 Logo 宽度'
+      forum_logo_qr_width_help: '设置配置 2FA 时二维码中论坛 Logo 的宽度，最大为 200。'
       groups:
-        help: 要求此用户组成员启用双重认证，且不可关闭。
-        title: 双重认证用户组
-      logo_qr: 二维码标志
-      logo_qr_help: 留空使用论坛标志，或上传图片。
+        help: 要求这些用户组的成员为账号启用双重身份验证（2FA），且不可关闭。
+        title: '必须启用 2FA 的用户组'
+      logo_qr: '二维码 Logo'
+      logo_qr_help: '如已上传 Logo，将在二维码中使用此 Logo。留空则使用论坛 Logo。'
       tokens:
-        also_kill_developer_tokens: 同时终止开发者令牌
-        also_kill_developer_tokens_help: 同时终止不活跃达到指定天数的开发者令牌。
-        heading: 访问令牌
-        help: 你可以在此处管理与访问令牌相关的其他操作，以增强安全性。
-        kill_inactive_tokens: 终止不活跃的令牌
-        kill_inactive_tokens_age_days: 终止指定天数内不活跃的令牌
-        kill_inactive_tokens_age_days_help: 在访问令牌不活跃达到指定天数后将其删除。
-        kill_inactive_tokens_help: 自动终止在指定时间段内不活跃的访问令牌。
+        also_kill_developer_tokens: 同时删除开发者访问令牌
+        also_kill_developer_tokens_help: 同时删除超过指定时间未使用的开发者访问令牌。
+        heading: 登录会话与访问令牌
+        help: 管理长期未活动的登录会话和开发者访问令牌，进一步提升账号安全。
+        kill_inactive_tokens: 自动结束长期未活动的登录会话
+        kill_inactive_tokens_age_days: 会话最长闲置时间（天）
+        kill_inactive_tokens_age_days_help: 登录会话连续闲置超过此天数后将被自动结束。
+        kill_inactive_tokens_help: 超过指定时间未活动的登录会话会自动失效，对应设备需要重新登录。
   email:
     body:
-      status_changed: "{recipient_display_name}，您好！\n\n您在 {forum_url} 的账号双重认证 {type}。\n\n此操作如非您本人所为，请立即联系论坛管理员。\n"
+      status_changed: "你好，{recipient_display_name}：\n\n你在 {forum_url} 的账号双重身份验证已变更：{type}。\n\n如非本人操作，请立即联系论坛管理员。\n"
     status_type:
       device_changed: 验证设备已更换
       disabled: 已关闭
       enabled: 已启用
     subject:
-      status_changed: '双重认证 {type}'
+      status_changed: '你的账号双重身份验证已变更：{type}'
   forum:
     log_in:
-      two_factor_placeholder: 验证码
-      two_factor_required_message: 请输入正确的验证码。
+      two_factor_placeholder: '2FA 验证码，例如 123456'
+      two_factor_required_message: '请输入正确的 2FA 验证码。'
     security:
       backup_codes: 救援代码
-      backup_codes_instruction: '一次性救援代码只显示一次，请妥善保存。在验证器 APP 无法使用时，可以使用救援代码登录账号。'
-      backup_codes_remaining: 救援代码：
+      backup_codes_instruction: 仅显示一次，请妥善保存。如果无法使用主要验证方式，可以使用救援代码访问账号。
+      backup_codes_remaining: 剩余救援代码：
       cancel_button: 取消
-      cannot_disable: 根据管理员要求，您无法关闭双重认证。
-      cannot_disable_tooltip: 无法关闭双重认证
+      cannot_disable: '系统当前要求保持 2FA 开启，无法关闭。'
+      cannot_disable_tooltip: '无法关闭 2FA'
       change_device_button: 更换设备
-      change_device_description: 将双重认证迁移到新设备
+      change_device_description: '将 2FA 转移到新设备'
       change_device_heading: 更换验证设备
       change_device_title: 更换设备
-      confirm_disable_2fa_text: 确定要关闭双重认证吗？
-      confirm_disable_2fa_text_other_user: '确定要为 {username} 关闭双重认证，并销毁救援代码吗。'
-      confirm_disable_2fa_title: 确认关闭双重认证
+      confirm_disable_2fa_text: 确定要关闭双重身份验证吗？
+      confirm_disable_2fa_text_other_user: '确定要为 {username} 关闭双重身份验证吗？这将删除其所有救援代码，并关闭该账号的 2FA。'
+      confirm_disable_2fa_title: 关闭双重身份验证
       continue_button: 继续
       device_changed_confirmation: 验证设备已成功更换。
-      disable_2fa_button: 关闭双重认证
-      enable_2fa_button: 启用双重认证
-      enable_2fa_modal_text: '请使用验证器 APP 扫描下方二维码，并输入动态验证码以启用双重认证。'
-      enter_current_token: 输入当前设备验证码
-      enter_new_token: 输入新设备验证码
+      disable_2fa_button: '关闭 2FA'
+      enable_2fa_button: '启用 2FA'
+      enable_2fa_modal_text: '使用验证器 App 扫描下方二维码，然后输入 App 生成的验证码以启用 2FA。'
+      enter_current_token: 输入当前设备的验证码
+      enter_new_token: 输入新设备的验证码
       enter_token: 输入验证码
-      loading_qr: 正在加载二维码……
-      manual_entry_instruction: 请将秘钥导入验证器，并输入动态验证码以启用双重认证。
-      manual_tab: 手动导入
+      loading_qr: 正在加载二维码…
+      manual_entry_instruction: '将提供的密钥输入验证器，然后填写应用生成的验证码以启用 2FA。'
+      manual_tab: 手动设置
       new_backup_codes: 新的救援代码
-      ok_button: 好的
-      qr_code_alt: 双重认证二维码
+      ok_button: 确定
+      qr_code_alt: 双重身份验证二维码
       qr_tab: 扫描二维码
-      saved_backup_codes_button: 已保存救援代码
-      scan_new_device_qr: 请使用新的验证设备扫描此二维码。
-      scan_qr_instruction: '请使用验证器 APP 扫描下方二维码，并输入动态验证码以启用双重认证。'
-      two_factor_apps: '请使用 {google}、{authy}、{microsoft}、Bitwarden 等免费应用程序。'
-      two_factor_disabled: 双重认证已关闭。
-      two_factor_enabled: 双重认证已启用。
-      two_factor_enabled_confirmation: 双重认证已启用。
-      two_factor_heading: 双重认证
-      two_factor_help: '双重认证 (2FA) 为您提供额外的账户安全保护，在登录时，您需要输入密码，以及验证器 APP 生成的动态验证码。双重认证可以在密码泄露的情况下，有效保护您的账号。'
+      saved_backup_codes_button: 我已保存救援代码
+      scan_new_device_qr: 使用新设备上的验证器应用扫描此二维码。
+      scan_qr_instruction: '使用验证器 App 扫描上方二维码，然后输入 App 生成的验证码以启用 2FA。'
+      two_factor_apps: '{google}、{authy}、{microsoft} 等验证器应用均可免费使用。'
+      two_factor_disabled: '此账号尚未启用 2FA。'
+      two_factor_enabled: '此账号已启用 2FA。'
+      two_factor_enabled_confirmation: 已成功为你的账号启用双重身份验证。
+      two_factor_heading: 2FA
+      two_factor_help: '双重身份验证（2FA）可以在密码之外再增加一道安全验证。启用后，登录或执行某些敏感操作时，还需要输入验证器 App 生成的动态验证码。即使密码泄露，没有这个每 30 秒更新一次的验证码，他人也无法访问你的账号。'
       two_factor_title: 状态：
       verify_button: 验证
-      verify_current_device_message: 请输入当前验证设备中的验证码以验证身份。
-      verify_new_device_message: 请输入新设备中的验证码以完成更换。
+      verify_current_device_message: 请输入当前验证设备生成的验证码，以验证你的身份。
+      verify_new_device_message: 输入新设备生成的验证码以完成更换。
     user_2fa:
-      alert_message: 请启用双重认证以继续使用账号。
+      alert_message: '请启用 2FA 以继续使用账号。'
   views:
     reset_password:
-      two_factor_token_label: 验证码
+      two_factor_token_label: '2FA 验证码'
     two_factor_token:
       oauth_session_expired: 'OAuth 会话已过期，请重新登录。'
-      submit_button: 确定
-      title: 双重认证
+      submit_button: 提交验证码
+      title: 双重身份验证

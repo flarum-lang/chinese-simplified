@@ -102,5 +102,6 @@ linkrobins-chirp:
       chirp_channel_busy_message: '所有 Chirp 频道都已有直播语音房。请先结束其中一场，或添加更多频道以同时运行更多直播。'
       chirp_channels_exhausted_message: '所有 Chirp 频道都已用于常驻语音频道，请前往 linkrobins.com 添加更多频道。'
       chirp_not_configured_message: '此论坛尚未配置 Chirp，管理员需要先填写频道密钥。'
+      chirp_site_full_message: '论坛语音人数已达 Chirp 套餐上限。请等有人退出语音后再试。'
       chirp_slots_full_message: 当前所有麦位都已占用。你可以继续收听，等有人下麦后再上麦。
       chirp_speak_denied_message: 此房间由主持人决定谁可以上麦，请先举手申请或继续收听。

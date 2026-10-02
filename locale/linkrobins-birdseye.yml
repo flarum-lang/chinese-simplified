@@ -14,7 +14,7 @@ linkrobins-birdseye:
       geo_ip_prefix_help: '如果代理未提供国家或地区请求头，系统会在 72 小时缓冲区中保留截断后的 IP 前缀（不会保存完整 IP 地址），以便在本地识别访客所在国家或地区。关闭后，对于没有代理提供国家或地区信息的访问，将不再统计国家或地区数据。'
       geo_ip_prefix_label: '通过匿名化 IP 前缀识别国家或地区'
       geoip_db_path_help: '填写此服务器上的 MaxMind 数据库完整路径，例如免费的 GeoLite2-Country.mmdb（需使用你自己的账号从 maxmind.com 下载）。仅在受信任的代理请求头未提供国家或地区信息时使用，所有查询都会在本服务器完成。'
-      geoip_db_path_label: 国家或地区数据库文件（可选）
+      geoip_db_path_label: 国家和地区数据库文件（可选）
       weekly_digest_help: 每周一向管理员发送上周摘要，包括访客、浏览量、帖子、注册、热门讨论和热门搜索。邮件通过论坛自身的邮件系统发送，分析数据不会发送给第三方服务。
       weekly_digest_label: 每周邮件摘要
   email:
@@ -53,6 +53,8 @@ linkrobins-birdseye:
       col_views: 浏览量
       col_visitors: 访客
       countries: 国家和地区
+      country_lookup_note: 未配置
+      country_lookup_unconfigured: '当前未记录访客所在国家或地区，因此地图无法展示。Birdseye 会优先从受信任的代理请求头（如 CF-IPCountry）读取访客所在国家或地区，若无法读取，则使用本地 MaxMind 国家和地区数据库查询。目前这两项均未配置，请在下方设置国家和地区数据库文件，或将受信任的国家或地区请求头设置为你的代理实际发送的请求头。配置后，国家或地区数据会从下一次处理的每日统计中开始出现。已经汇总的历史数据无法补录。'
       devices: 设备
       direct: '直接访问 / 未知'
       export: '导出为 CSV'

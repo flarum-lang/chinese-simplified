@@ -9,7 +9,7 @@ fof-oauth:
         reddit:
           client_id_label: '客户端 ID'
           client_secret_label: 客户端密钥
-          description: '前往 Reddit {link} 注册你的论坛'
+          description: '前往 Reddit 注册你的论坛：{link}'
   forum:
     log_in:
       with_reddit_button: '=> fof-oauth.forum.log_in.with_button'

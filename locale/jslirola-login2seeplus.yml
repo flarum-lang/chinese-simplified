@@ -8,12 +8,15 @@ jslirola-login2seeplus:
     hide: 隐藏
     image: 图片
     link: 链接
+    link_hide: 隐藏整个链接
+    link_mask: 仅隐藏链接地址（保留链接文字）
+    link_off: 不隐藏
     post:
-      title: '隐藏超过此长度的内容（<em>-1</em> 表示显示全部）'
-    title: '登录后可见 Plus'
+      title: '隐藏超过此长度的帖子内容（设为 <em>-1</em> 则全部可见）'
+    title: 'Login2SeePlus - 登录可见 Plus'
   forum:
-    code: 代码登录后可见
-    image: 图片登录后可见
-    link: 链接登录后可见
-    post: '此内容 {login} 或 {register} 后可见'
-    post_login: '{login}以查看全部内容'
+    code: 登录以查看代码
+    image: 登录以查看图片
+    link: 登录以查看链接
+    post: '完整内容{login}或{register}后可见'
+    post_login: '完整内容{login}后可见'

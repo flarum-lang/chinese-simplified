@@ -185,7 +185,11 @@ CHANGELOG
 * [`stezkoy/flarum-pagify`](https://github.com/Stezkoy/flarum-pagify) (100% complete)
 * [`stezkoy/flarum-telegram-notify`](https://github.com/Stezkoy/flarum-telegram-notify) (100% complete)
 * [`stezkoy/flarum-time-of-magic`](https://github.com/Stezkoy/flarum-time-of-magic) (100% complete)
-* [`tryhackx/flarum-advanced-pages`](https://github.com/TryHackX/flarum-advanced-pages) (66% complete)
+* [`tapao/auto-ai-moderation`](https://github.com/Tapao-NonSen/Auto-AI-Moderation) (100% complete)
+* [`tapao/custom-landing-page`](https://github.com/Tapao-NonSen/Custom-Landing-Page) (100% complete)
+* [`tapao/line-notification`](https://github.com/Tapao-NonSen/LINE-Notification) (100% complete)
+* [`tryhackx/flarum-advanced-pages`](https://github.com/TryHackX/flarum-advanced-pages) (100% complete)
+* [`tryhackx/flarum-cover-studio`](https://github.com/TryHackX/flarum-cover-studio) (100% complete)
 * [`walsgit/flarum-discussion-cards`](https://github.com/WalsGit/flarum-discussion-cards) (39% complete)
 
 
@@ -300,6 +304,7 @@ CHANGELOG
 * [`sycho/flarum-github-milestone`](https://github.com/SychO9/flarum-github-milestone) (1 added, 7 changed, 1 removed, 100% complete)
 * [`sycho/flarum-move-posts`](https://github.com/SychO9/flarum-move-posts) (16 changed, 100% complete)
 * [`sycho/flarum-private-facade`](https://github.com/SychO9/flarum-private-facade) (13 changed, 100% complete)
+* [`sycho/flarum-profile-cover`](https://github.com/SychO9/flarum-profile-cover) (9 changed, 100% complete)
 * [`walsgit/recycle-bin`](https://github.com/WalsGit/recycle-bin) (33 added, 32 changed, 2 removed, 98% complete)
 * [`yippy/flarum-ext-auth-ldap`](https://github.com/Yippy/flarum-ext-auth-ldap) (6 added, 3 changed, 100% complete)
 * [`yippy/flarum-tag-with-themes`](https://github.com/Yippy/flarum-tag-with-themes) (16 added, 39 changed, 100% complete)

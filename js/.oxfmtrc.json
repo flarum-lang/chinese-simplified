@@ -1,0 +1,26 @@
+{
+  "$schema": "./node_modules/oxfmt/configuration_schema.json",
+  "printWidth": 120,
+  "singleQuote": true,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "sortPackageJson": false,
+  "sortImports": {
+    "groups": [
+      "mithril",
+      "builtin",
+      "external",
+      ["internal", "subpath"],
+      ["parent", "sibling", "index"],
+      "style",
+      "unknown"
+    ],
+    "customGroups": [
+      {
+        "groupName": "mithril",
+        "elementNamePattern": ["mithril", "mithril-*", "mithril/**"]
+      }
+    ]
+  },
+  "ignorePatterns": ["node_modules/", "dist/", "dist-typings/", "package-lock.json"]
+}

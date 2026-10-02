@@ -2,3 +2,4 @@ yarn.lock
 .yarn
 .pnp.loader.mjs
 .pnp.cjs
+dist-typings/

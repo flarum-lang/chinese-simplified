@@ -1,0 +1,24 @@
+name: Flarum Lang Chinese Simplified JS
+
+on: [workflow_dispatch, push, pull_request]
+
+jobs:
+  run:
+    uses: flarum/framework/.github/workflows/REUSABLE_frontend.yml@2.x
+    with:
+      enable_bundlewatch: false
+      enable_prettier: true
+      enable_typescript: true
+      enable_tests: false
+      format_script: 'format-check'
+      check_typings_script: 'check-typings'
+      test_script: 'test'
+      build_script: 'build'
+      build_typings_script: 'build-typings'
+
+      frontend_directory: ./js
+      backend_directory: .
+      js_package_manager: pnpm
+      main_git_branch: 2.x
+    secrets:
+      bundlewatch_github_token: ${{ secrets.BUNDLEWATCH_GITHUB_TOKEN }}

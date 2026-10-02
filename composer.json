@@ -26,6 +26,11 @@
   "require": {
     "flarum/core": "^2.0"
   },
+  "autoload": {
+    "psr-4": {
+      "Flarum\\Lang\\ChineseSimplified\\": "src/"
+    }
+  },
   "replace": {
     "littlegolden/flarum-lang-simplified-chinese": "*",
     "ffans/lang-simplified-chinese": "*"
@@ -48,8 +53,10 @@
       "code": "zh-Hans",
       "title": "简体中文"
     },
-    "branch-alias": {
-      "dev-master": "1.x-dev"
+    "volta": {
+      "php": "8.3.33"
     }
-  }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
 }

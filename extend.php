@@ -8,56 +8,20 @@
  * file that was distributed with this source code.
  */
 
-return new Flarum\Extend\LanguagePack();
-
-// TODO: cleanup this (or restore and adjust scripts for Flarum 2.x)
-/*
 use Flarum\Extend;
-use Flarum\Extend\LanguagePack;
-use Flarum\Frontend\Document;
-use Flarum\Settings\SettingsRepositoryInterface;
+use Flarum\Lang\ChineseSimplified\Frontend\AddFonts;
 
-$extKey = 'flarum-lang-chinese-simplified';
-$settings = resolve(SettingsRepositoryInterface::class);
-$useGoogleFonts = $settings->get($extKey.'.use_google_fonts');
+return [
+    new Extend\LanguagePack(),
 
-function is_mobile() {
-    $user_agent = $_SERVER['HTTP_USER_AGENT'];
-    $mobile_agents = ['Mobile', 'Android', 'Silk/', 'Kindle', 'BlackBerry', 'Opera Mini', 'Opera Mobi'];
+    (new Extend\Settings())
+        ->default('flarum-lang-chinese-simplified.use_google_fonts', '0'),
 
-    foreach ($mobile_agents as $agent) {
-        if (stripos($user_agent, $agent) !== false) {
-            return true;
-        }
-    }
-    return false;
-}
-
-$insertFonts = function (Document $document) use ($extKey) {
-    if (!is_mobile()) {
-        $document->head[] = '<link rel="stylesheet" href="/assets/extensions/'. $extKey .'/google-fonts/google-fonts.css">';
-    }
-};
-
-$extends = [
     (new Extend\Frontend('admin'))
-        ->js(__DIR__.'/js/dist/admin.js')
-        ->css(__DIR__.'/less/admin.less'),
+        ->js(__DIR__ . '/js/dist/admin.js')
+        ->css(__DIR__ . '/less/admin.less')
+        ->content(AddFonts::class),
 
-    new LanguagePack,
+    (new Extend\Frontend('forum'))
+        ->content(AddFonts::class),
 ];
-
-if ($useGoogleFonts) {
-    $extends[] = (new Extend\Frontend('forum'))
-        ->content(function (Document $document) use ($insertFonts) {
-            $insertFonts($document);
-        });
-
-    $extends[] = (new Extend\Frontend('admin'))
-        ->content(function (Document $document) use ($insertFonts) {
-            $insertFonts($document);
-        });
-}
-
-return $extends;
-*/

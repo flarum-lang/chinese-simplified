@@ -292,7 +292,7 @@ core:
       enable_to_see: 启用扩展以查看和修改设置。
       enabled: 开启
       info_links:
-        discuss: 主题帖
+        discuss: 英文社区
         documentation: 文档
         donate: 捐助
         source: 源代码

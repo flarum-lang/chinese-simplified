@@ -4,85 +4,85 @@
 
 ianm-html-head:
   admin:
-    create_button: 新建
+    create_button: 创建
     help:
-      cache: '渲染后的 HTML 在保存时即被缓存。任何更改都会立即生效，无需清除整站缓存。'
-      intro: '添加自定义标签并将其注入到论坛的 HTML 中。会被缓存并高效地提供服务——每次页面加载都不会产生数据库查询。'
-      location: '每个条目均可选择注入到 <head> 标签内，或 <body> 结束标签之前。'
-      pages: 每个条目均可选择作用于论坛前台、管理后台，或两者皆可。
-      preconnect: '指向外部域名的链接标签和脚本标签会自动生成预连接（preconnect）和 DNS 预获取（dns-prefetch）提示，从而在浏览器实际请求资源之前提前建立连接。'
+      cache: 'HTML 会在保存时完成渲染并缓存。更改会立即生效，无需清除整站缓存。'
+      intro: '向论坛 HTML 中注入自定义标签。添加的条目会被缓存以优化加载速度，页面加载时无需查询数据库。'
+      location: '条目可以注入到 head 中或 body 末尾。'
+      pages: 每个条目都可以应用于论坛前台、管理后台或两者。
+      preconnect: '指向外部源的 link 和 script 标签会自动生成 preconnect 和 dns-prefetch 提示，让浏览器提前建立连接。'
     modal:
-      create_title: 新建元素
-      description_help: 用于内部识别的简短说明。
+      create_title: 创建注入项
+      description_help: 仅你可见的备注，不用于注入。
       description_label: 描述
-      edit_title: 编辑元素
+      edit_title: 编辑注入项
       header_label: 自定义头部元素
       link:
-        as_help: '仅当 rel="preload" 或 rel="modulepreload" 时使用。'
-        as_label: 资源类型（as）
-        crossorigin_help: '设置是否使用 CORS 请求。'
-        crossorigin_label: 跨域设置（crossorigin）
+        as_help: '告诉浏览器预加载资源的类型，以便设置正确的请求头。使用 rel=preload 时必须填写。'
+        as_label: 'as=""'
+        crossorigin_help: 从其他域名加载字体或脚本时通常需要此属性，以便浏览器正确处理跨域连接。资源来自其他源时请启用。
+        crossorigin_label: '添加 crossorigin="anonymous"'
         extras_add: 添加
-        extras_label: 额外属性
+        extras_label: 其他属性
         extras_remove: 移除
-        fetchpriority_default: 默认
-        fetchpriority_help: 指示浏览器相对优先级。
-        fetchpriority_label: 获取优先级（fetchpriority）
-        href_label: 链接地址（href）
-        rel_label: 关系（rel）
+        fetchpriority_default: 浏览器默认
+        fetchpriority_help: 告诉浏览器此资源的相对加载优先级。high：优先加载，例如首屏大图或关键样式表；low：稍后加载，例如首屏以下的资源。留空则由浏览器自行决定。
+        fetchpriority_label: 'fetchpriority=""'
+        href_label: 'href=""（URL）'
+        rel_label: 'rel=""'
       location:
-        foot: '底部（</body> 前）'
-        head: 头部（<head>）
-      location_help: '选择插入到 <head> 标签内，或 <body> 结束标签前。'
-      location_label: 插入位置
+        foot: 'body 末尾'
+        head: head
+      location_help: 'Head：在页面渲染前加载，适合样式和关键 meta 信息。body 末尾：在页面内容加载后执行，适合非关键脚本。'
+      location_label: 注入位置
       meta:
-        content_label: 内容（content）
-        name_label: 名称（name）
-        property_label: 属性（property）
-        variant_label: 类型
+        content_label: 内容
+        name_label: 'name=""'
+        property_label: 'property=""（Open Graph）'
+        variant_label: 属性类型
       pages:
         admin: 管理后台
         forum: 论坛前台
-      pages_label: 生效页面
-      preview_empty: （无内容）
+      pages_label: 应用于
+      preview_empty: 填写上方字段后即可预览
       preview_label: 预览
       raw:
-        content_label: '原始 HTML 内容'
-        help_text: '直接输入任意 HTML 代码，会原样输出。'
+        content_label: HTML
+        help_text: '可直接输入原始 HTML。系统会自动为其中的跨源 link 和 script 标签生成 preconnect 提示。条目的排序和启用状态照常生效，但 fetchpriority、defer 等特定类型的选项无法使用。如有需要，请改用对应的结构化类型。'
       save_button: 保存
       script:
-        async_help: 下载后立即执行，不阻塞解析。
-        async_label: 异步执行（async）
-        crossorigin_help: '设置模块或脚本的 CORS 行为。'
-        crossorigin_label: 跨域设置（crossorigin）
-        defer_help: '解析完 HTML 后再执行。'
-        defer_label: 延迟执行（defer）
-        external_label: 外部脚本
+        async_help: 脚本下载完成后立即执行，不保证执行顺序，适合统计分析等相互独立的脚本。
+        async_label: async
+        crossorigin_help: '从其他域名加载且需要 CORS 跨域访问的脚本需要此属性。'
+        crossorigin_label: 'crossorigin="anonymous"'
+        defer_help: 页面解析完成后再执行脚本，不会阻塞页面渲染，适合大多数脚本。
+        defer_label: defer
+        external_label: 外部脚本（src）
         inline_content_label: 脚本内容
         inline_label: 内联脚本
-        module_help: '作为 ES 模块加载。'
-        module_label: '模块（type="module"）'
-        src_label: 脚本地址（src）
+        module_help: '如果脚本提供方要求使用 type="module"，请启用此项。模块脚本会在页面解析后加载，不会阻塞页面。'
+        module_label: 'type="module"'
+        src_label: 'src=""（URL）'
       style:
-        inline_help: '直接写入 CSS 规则。'
-        inline_label: 内联样式
+        inline_help: 会全局应用于此条目所选的所有页面。请尽量缩小选择器范围，以免影响其他内容。
+        inline_label: 'CSS 内容'
       text: 请确保语法正确，因为在<head>标签中提供不正确的数据可能会使论坛出错。保存后，请使用开关按钮启用头部元素。
       type:
-        link: 链接资源（Link）
-        meta: 元标签（Meta）
-        raw: 原始内容（Raw）
-        script: 脚本（Script）
-        style: 样式（Style）
-      type_label: 元素类型
+        link: 'Link 链接标签'
+        meta: 'Meta 元标签'
+        raw: '纯 HTML 内容'
+        script: 'Script 脚本标签'
+        style: 'Style 样式标签'
+      type_label: 类型
     table:
       active_label: 启用
       delete_button: 删除
-      delete_confirm: 确定要删除此头部元素吗？
+      delete_confirm: 确定要删除此条目吗？
       description_label: 描述
-      drag_handle: 拖拽排序
+      drag_handle: 拖动调整顺序
       edit_button: 编辑
-      empty_text: 尚无条目
+      empty_text: 暂无条目，请创建
       header_label: 头部
-      location_label: 位置
-      pages_label: 页面范围
+      location_label: 注入位置
+      pages_label: 应用页面
       type_label: 类型

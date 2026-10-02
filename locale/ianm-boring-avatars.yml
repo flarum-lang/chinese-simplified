@@ -6,23 +6,23 @@ flarum-gdpr:
   lib:
     data:
       boringavatar:
-        anonymize_description: '删除现有的 Boring Avatar，并重新随机生成一个新的。'
-        delete_description: '删除 Boring Avatar。'
-        export_description: '将 Boring Avatar 头像添加至导出的压缩包中。'
+        anonymize_description: '删除当前 Boring Avatars 头像，并重新生成一个随机头像。'
+        delete_description: '删除 Boring Avatars 头像。'
+        export_description: '将 Boring Avatars 头像加入导出的 ZIP 文件。'
 ianm-boring-avatars:
   admin:
     settings:
-      color1: '基本色 1'
-      color2: '基本色 2'
-      color3: '基本色 3'
-      color4: '基本色 4'
-      color5: '基本色 5'
-      driver_not_active_warning: 'Boring Avatars不是当前激活的头像驱动。'
-      driver_not_active_warning_link: 前往常规设置去激活。
-      identifier: 种子
-      identifier_display_name: 外显昵称
-      identifier_email: 电子邮箱
-      identifier_help: "基于指定类型的值生成头像。\n"
+      color1: '颜色 1'
+      color2: '颜色 2'
+      color3: '颜色 3'
+      color4: '颜色 4'
+      color5: '颜色 5'
+      driver_not_active_warning: '尚未使用 Boring Avatars 头像生成功能。'
+      driver_not_active_warning_link: 请前往「常规」页面启用。
+      identifier: 用户标识
+      identifier_display_name: 外显名称
+      identifier_email: 邮箱
+      identifier_help: "用于为每位用户生成唯一头像。\n"
       identifier_id: '用户 ID'
       theme: 风格
-      theme_help: "选择要生成的头像风格。\n"
+      theme_help: "选择 Boring Avatars 使用的头像风格。\n"

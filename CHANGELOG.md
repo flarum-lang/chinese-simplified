@@ -43,7 +43,7 @@ CHANGELOG
 * [`ernestdefoe/google-fonts`](https://github.com/ernestdefoe/google-fonts) (100% complete)
 * [`ernestdefoe/group-messages`](https://github.com/ernestdefoe/group-messages) (100% complete)
 * [`ernestdefoe/hashtags`](https://github.com/ernestdefoe/hashtags) (100% complete)
-* [`ernestdefoe/hero-builder`](https://github.com/ernestdefoe/hero-builder) (100% complete)
+* [`ernestdefoe/hero-builder`](https://github.com/ernestdefoe/hero-builder) (91% complete)
 * [`ernestdefoe/importer`](https://github.com/ernestdefoe/importer) (100% complete)
 * [`ernestdefoe/janitor`](https://github.com/ernestdefoe/janitor) (100% complete)
 * [`ernestdefoe/logo-manager`](https://github.com/ernestdefoe/logo-manager) (100% complete)

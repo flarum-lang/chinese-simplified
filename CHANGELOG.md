@@ -248,7 +248,7 @@ CHANGELOG
 * [`fof/discussion-thumbnail`](https://github.com/FriendsOfFlarum/discussion-thumbnail) (1 changed, 100% complete)
 * [`fof/disposable-emails`](https://github.com/FriendsOfFlarum/disposable-emails) (1 changed, 100% complete)
 * [`fof/doorman`](https://github.com/FriendsOfFlarum/doorman) (70 added, 30 removed, 100% complete)
-* [`fof/drafts`](https://github.com/FriendsOfFlarum/drafts) (6 added, 25 changed, 100% complete)
+* [`fof/drafts`](https://github.com/FriendsOfFlarum/drafts) (6 added, 25 changed, 97% complete)
 * [`fof/filter`](https://github.com/FriendsOfFlarum/filter) (1 added, 20 changed, 2 removed, 100% complete)
 * [`fof/follow-tags`](https://github.com/FriendsOfFlarum/follow-tags) (29 added, 24 changed, 8 removed, 100% complete)
 * [`fof/formatting`](https://github.com/FriendsOfFlarum/formatting) (6 changed, 100% complete)

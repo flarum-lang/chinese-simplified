@@ -281,7 +281,7 @@ CHANGELOG
 * [`fof/split`](https://github.com/FriendsOfFlarum/split) (2 added, 8 changed, 100% complete)
 * [`fof/subscribed`](https://github.com/FriendsOfFlarum/subscribed) (26 changed, 1 removed, 100% complete)
 * [`fof/terms`](https://github.com/FriendsOfFlarum/terms) (5 added, 33 changed, 2 removed, 100% complete)
-* [`fof/upload`](https://github.com/FriendsOfFlarum/upload) (81 added, 112 changed, 17 removed, 100% complete)
+* [`fof/upload`](https://github.com/FriendsOfFlarum/upload) (81 added, 112 changed, 17 removed, 99% complete)
 * [`fof/user-bio`](https://github.com/FriendsOfFlarum/user-bio) (1 added, 6 changed, 100% complete)
 * [`fof/user-directory`](https://github.com/FriendsOfFlarum/user-directory) (3 added, 18 changed, 100% complete)
 * [`fof/username-request`](https://github.com/FriendsOfFlarum/username-request) (7 added, 42 changed, 100% complete)

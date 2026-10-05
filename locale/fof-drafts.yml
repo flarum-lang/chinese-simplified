@@ -63,6 +63,7 @@ fof-drafts:
         draft_autosave_interval_button: 更新频率
         draft_autosave_interval_invalid: '请输入大于 4 的整数。'
         draft_autosave_interval_label: 自动保存频率（秒）
+        draft_autosave_interval_saved_message: 自动保存间隔时间已更新。
         drafts_heading: 草稿
   ref:
     schedule_draft: 定时发布

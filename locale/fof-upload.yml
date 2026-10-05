@@ -78,6 +78,7 @@ fof-upload:
         toggle: 禁用
       imgur:
         client_id: 'Imgur 客户端 ID'
+        deprecated: 'Imgur 已不再发放 API 客户端 ID，因此该适配器已被弃用，并将在未来的版本中移除。请将这些文件类型迁移到其他存储适配器提供商。'
         title: 'Imgur 图片存储设置'
         tos: '你有责任确保论坛用户遵守 Imgur 的<a>服务条款</a>'
       inspect-mime: '测试文件 MIME 类型'
@@ -274,6 +275,7 @@ fof-upload:
         show_confirmation: '确定要将「{fileName}」设为公开吗？设为公开后，文件可以通过 URL 被任何人访问，所有用户也可以通过媒体管理器分享它。'
         show_fail: '无法将文件「{fileName}」设为公开'
         show_success: 文件已设为公开
+      load_error: '.无法加载这些文件,请重试。'
       load_more_files_btn: 加载更多文件
       loading: 正在加载文件…
       modal_empty_desktop: 暂无文件。点击按钮或将文件拖到此处上传。

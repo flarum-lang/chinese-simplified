@@ -164,7 +164,7 @@ CHANGELOG
 * [`ramon/auth-modals`](https://github.com/ram0ng1/auth-modals) (100% complete)
 * [`ramon/avocado`](https://github.com/ram0ng1/avocado) (92% complete)
 * [`ramon/backup`](https://github.com/ram0ng1/backup) (100% complete)
-* [`ramon/chat`](https://github.com/ram0ng1/chat) (81% complete)
+* [`ramon/chat`](https://github.com/ram0ng1/chat) (80% complete)
 * [`ramon/classifieds`](https://github.com/ram0ng1/classifieds) (100% complete)
 * [`ramon/colored`](https://github.com/ram0ng1/colored)
 * [`ramon/guest-cta`](https://github.com/ram0ng1/guest-cta) (100% complete)

@@ -5,34 +5,54 @@
 forumaker-magicbb:
   admin:
     permissions:
+      bypass_like: 无需点赞即可查看隐藏内容
+      bypass_reply: 无需回复即可查看隐藏内容
       use_iframe: '允许 iframe 嵌入'
     sections:
       content: 内容按钮
-      features: 功能
+      features: 其他功能
+      hide: 隐藏内容按钮
       images: 图片按钮
       text: 文本按钮
     settings:
+      bb_anchor: 锚点与跳转
+      bb_anchor_help: 在帖子中设置锚点，并添加跳转到锚点的链接
       bb_audio: 音频
       bb_center: 居中
-      bb_color: 颜色
+      bb_color: 文字颜色
+      bb_hide_like: 点赞可见
+      bb_hide_like_help: 隐藏内容，用户点赞该帖子后即可查看
+      bb_hide_login: 登录可见
+      bb_hide_login_help: 向访客隐藏内容，登录后即可查看
+      bb_hide_reply: 回复可见
+      bb_hide_reply_help: 隐藏内容，用户回复该主题后即可查看
       bb_iframe: 'iframe 嵌入'
-      bb_iframe_help: '允许嵌入来自任何来源的 iframe。请谨慎使用——嵌入内容可能包含外部脚本。🧹 修改此设置后请清除 Flarum 缓存'
-      bb_image: 'FoF 上传'
-      bb_image_help: '居中显示的大图片会自动调整为帖子宽度的 60%，侧边对齐的图片最大为帖子宽度的 40%'
+      bb_iframe_help: '允许嵌入任意来源的 iframe。请谨慎使用，嵌入的内容可能包含外部脚本。🧹 更改此设置后，请清除 Flarum 缓存'
+      bb_image: 图片对齐
+      bb_image_help: '将图片和其他行内媒体放入对齐容器中。居中显示时，媒体宽度缩放至帖子宽度的 60%；靠左或靠右显示时，最大为 40%'
       bb_info: 提示框
       bb_justify: 两端对齐
       bb_spoiler: 剧透
       bb_table: 表格
-      toolbar_group: '合并 MagicBB 按钮'
-      toolbar_group_help: '启用后，所有 MagicBB 按钮将在编辑器中合并为一个按钮'
+      toolbar_group: '收起 MagicBB 按钮'
+      toolbar_group_help: '启用后，编辑器中的所有 MagicBB 按钮都会收进一个按钮中'
   forum:
     composer:
-      audio_button: 添加音频
+      anchor_button: 锚点
+      audio_button: 音频
       center_button: 居中对齐
-      color_button: 添加颜色
-      image_button: 添加智能图片
-      info_button: 添加提示框
+      color_button: 文字颜色
+      hide_like_button: 点赞后可见
+      hide_login_button: 登录后可见
+      hide_reply_button: 回复后可见
+      image_button: 图片对齐
+      info_button: 提示框
+      jump_button: 跳转链接
       justify_button: 两端对齐
       more_button: 更多
-      spoiler_button: 添加剧透
-      table_button: 插入表格
+      spoiler_button: 剧透
+      table_button: 表格
+    hide:
+      like_to_see_simple: 此内容点赞后可见
+      login_to_see_simple: 此内容登录后可见
+      reply_to_see_simple: 此内容回复后可见

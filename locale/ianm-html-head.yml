@@ -4,7 +4,7 @@
 
 ianm-html-head:
   admin:
-    create_button: 新建
+    create_button: 创建
     modal:
       create_title: 新建元素
       description_label: 描述

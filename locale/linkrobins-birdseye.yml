@@ -13,7 +13,7 @@ linkrobins-birdseye:
       country_header_label: 受信任的国家或地区请求头
       geo_ip_prefix_label: '通过匿名化 IP 前缀识别国家或地区'
       geoip_db_path_help: '填写此服务器上的 MaxMind 数据库完整路径，例如免费的 GeoLite2-Country.mmdb（需使用你自己的账号从 maxmind.com 下载）。仅在受信任的代理请求头未提供国家或地区信息时使用，所有查询都会在本服务器完成。'
-      geoip_db_path_label: 国家或地区数据库文件（可选）
+      geoip_db_path_label: 国家和地区数据库文件（可选）
       weekly_digest_help: 每周一向管理员发送上周摘要，包括访客、浏览量、帖子、注册、热门讨论和热门搜索。邮件通过论坛自身的邮件系统发送，分析数据不会发送给第三方服务。
       weekly_digest_label: 每周邮件摘要
   email:

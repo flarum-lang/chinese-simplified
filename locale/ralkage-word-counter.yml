@@ -5,4 +5,4 @@
 ralkage-word-counter:
   forum:
     composer:
-      word_counter: '{words, plural, other {{words} 个单词}}, {chars, plural, other {{chars} 个字符}}'
+      word_counter: '{words} 个词，{chars} 个字符'

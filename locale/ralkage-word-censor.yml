@@ -5,11 +5,11 @@
 ralkage-word-censor:
   admin:
     settings:
-      replacement_help: '用于替换敏感词中每个字符的符号。默认：*'
+      replacement_help: '用于替换屏蔽词的符号。默认：*'
       replacement_label: 替换字符
-      word_list_help: 每行输入一个词组或短语。在向用户显示时，这些词语将被替换字符遮盖。
-      word_list_label: 敏感词列表
+      word_list_help: 每行填写一个词或短语。帖子中如果出现这些字词，会使用指定的字符替换显示。
+      word_list_label: 敏感词
   forum:
     settings:
-      word_censor_help: 开启后，帖子中的预设词语将被过滤。禁用此项可查看未经过滤的原文内容。
-      word_censor_label: 开启词语过滤
+      word_censor_help: 启用后，屏蔽帖子中出现的敏感词。关闭后可查看未经屏蔽的原始内容。
+      word_censor_label: 屏蔽敏感词

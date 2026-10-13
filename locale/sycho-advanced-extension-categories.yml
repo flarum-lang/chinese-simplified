@@ -5,14 +5,14 @@
 sycho-ace:
   admin:
     categories:
-      disabled: 禁用
-      enabled: 启用
-      none: A-Z
+      disabled: 已停用
+      enabled: 已启用
+      none: A–Z
     category_selection:
-      label: 分类
+      label: 分类方式
       options:
         availability: 启用状态
         default: 默认
-        none: 无
-        vendor: 供应商
-    extensions: 扩展程序
+        none: 不分类
+        vendor: 开发者
+    extensions: 扩展

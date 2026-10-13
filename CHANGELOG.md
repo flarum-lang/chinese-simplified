@@ -2,6 +2,91 @@ CHANGELOG
 =========
 
 
+1.6.2 (XXXX-XX-XX)
+------------------
+
+**General changes**:
+
+* Updated Flarum core translations (1 changed).
+
+
+**Added support for new extensions**:
+
+* [`forumfortress/flarum`](https://github.com/forum-fortress/flarum) (96% complete)
+* [`huseyinfiliz/language-detection`](https://github.com/huseyinfiliz/language-detection) (100% complete)
+* [`peopleinside/flarum-ext-antiflood`](https://github.com/PeopleInside/flarum-ext-antiflood) (100% complete)
+* [`peopleinside/fla-powcaptcha`](https://github.com/PeopleInside/fla-powcaptcha) (100% complete)
+* [`tapao/auto-ai-moderation`](https://github.com/Tapao-NonSen/Auto-AI-Moderation) (100% complete)
+* [`tapao/custom-landing-page`](https://github.com/Tapao-NonSen/Custom-Landing-Page) (80% complete)
+* [`tapao/line-notification`](https://github.com/Tapao-NonSen/LINE-Notification) (95% complete)
+* [`tryhackx/flarum-homepage-blocks`](https://github.com/TryHackX/flarum-homepage-blocks) (62% complete)
+* [`tryhackx/flarum-magnet-link`](https://github.com/TryHackX/flarum-magnet-link) (98% complete)
+* [`tryhackx/flarum-thumb-sliders`](https://github.com/TryHackX/flarum-thumb-sliders) (100% complete)
+* [`tryhackx/flarum-topic-rating`](https://github.com/TryHackX/flarum-topic-rating) (93% complete)
+
+
+**Updated translations for extensions**:
+
+* [`ekumanov/flarum-ext-inline-audio`](https://github.com/ekumanov/flarum-ext-inline-audio) (1 changed, 100% complete)
+* [`fof/oauth`](https://github.com/FriendsOfFlarum/oauth) (2 added, 1 changed, 98% complete)
+* [`fof/polls`](https://github.com/FriendsOfFlarum/polls) (3 changed, 100% complete)
+* [`forumaker/magicbb`](https://github.com/forumaker/magicbb) (19 added, 13 changed, 100% complete)
+* [`forumaker/magicread`](https://github.com/forumaker/magicread) (13 added, 4 changed, 100% complete)
+* [`forumaker/magicslider`](https://github.com/forumaker/magicslider) (27 added, 93% complete)
+* [`glowingblue/author-filter`](https://github.com/glowingblue/flarum-ext-author-filter) (4 changed, 100% complete)
+* [`glowingblue/password-strength`](https://github.com/glowingblue/flarum-ext-password-strength) (5 changed, 100% complete)
+* [`huseyinfiliz/awards`](https://github.com/huseyinfiliz/awards) (153 changed, 100% complete)
+* [`huseyinfiliz/flarum-diff`](https://github.com/huseyinfiliz/flarum-diff) (40 changed, 100% complete)
+* [`huseyinfiliz/leaderboard`](https://github.com/huseyinfiliz/leaderboard) (57 changed, 100% complete)
+* [`huseyinfiliz/modern-footer`](https://github.com/huseyinfiliz/modern-footer) (19 changed, 96% complete)
+* [`huseyinfiliz/notificationhub`](https://github.com/huseyinfiliz/notificationhub) (3 added, 29 changed, 100% complete)
+* [`huseyinfiliz/sticky-title`](https://github.com/huseyinfiliz/sticky-title) (5 added, 15 changed, 100% complete)
+* [`ianm/boring-avatars`](https://github.com/imorland/flarum-ext-boring-avatars) (13 changed, 100% complete)
+* [`ianm/follow-users`](https://github.com/imorland/follow-users) (28 changed, 100% complete)
+* [`ianm/html-head`](https://github.com/imorland/html-head) (1 changed, 100% complete)
+* [`ianm/log-viewer`](https://github.com/imorland/flarum-ext-log-viewer) (11 changed, 100% complete)
+* [`ianm/oauth-reddit`](https://github.com/imorland/flarum-ext-oauth-reddit) (2 changed, 100% complete)
+* [`ianm/online-guests`](https://github.com/imorland/flarum-ext-online-guests-widget) (3 changed, 100% complete)
+* [`ianm/syndication`](https://github.com/imorland/syndication) (26 changed, 100% complete)
+* [`ianm/twofactor`](https://github.com/imorland/flarum-ext-twofactor) (60 changed, 100% complete)
+* [`jslirola/flarum-ext-login2seeplus`](https://github.com/jslirola/flarum-ext-login2seeplus) (7 changed, 100% complete)
+* [`linkrobins/birdseye`](https://github.com/linkrobins/birdseye) (1 changed, 98% complete)
+* [`linkrobins/flarum-chirp`](https://github.com/linkrobins/chirp) (1 added, 100% complete)
+* [`maicol07/flarum-ext-sso`](https://github.com/maicol07/flarum-ext-sso) (1 added, 18 changed, 100% complete)
+* [`michaelbelgium/flarum-ai-autoreply`](https://github.com/MichaelBelgium/flarum-ai-autoreply) (20 changed, 100% complete)
+* [`michaelbelgium/flarum-discussion-views`](https://github.com/MichaelBelgium/flarum-discussion-views) (21 changed, 100% complete)
+* [`michaelbelgium/mybb-to-flarum`](https://github.com/MichaelBelgium/mybb_to_flarum) (7 changed, 100% complete)
+* [`michaelbelgium/flarum-profile-views`](https://github.com/MichaelBelgium/flarum-profile-views) (5 changed, 100% complete)
+* [`migratetoflarum/fake-data`](https://github.com/migratetoflarum/fake-data) (15 changed, 100% complete)
+* [`pianotell/flarum-ext-flamoji`](https://github.com/PrimateCoder/flarum-flamoji) (25 added, 35 changed, 100% complete)
+* [`quasimo/flarum-ext-llms-txt`](https://github.com/Quasimo/flarum-ext-llms-txt) (16 changed, 100% complete)
+* [`ralkage/flarum-ext-account-lockout`](https://github.com/Ralkage/flarum-ext-account-lockout) (1 added, 20 changed, 100% complete)
+* [`ralkage/flarum-ext-ad-management`](https://github.com/Ralkage/flarum-ext-ad-management) (114 changed, 100% complete)
+* [`ralkage/flarum-ext-cap-captcha`](https://github.com/Ralkage/flarum-ext-cap-captcha) (10 changed, 100% complete)
+* [`ralkage/flarum-ext-civility-filter`](https://github.com/Ralkage/flarum-ext-civility-filter) (82 changed, 100% complete)
+* [`ralkage/flarum-hcaptcha`](https://github.com/Ralkage/flarum-hcaptcha) (6 changed, 100% complete)
+* [`ralkage/flarum-ext-linked-accounts`](https://github.com/Ralkage/flarum-ext-linked-accounts) (25 changed, 100% complete)
+* [`ralkage/flarum-ext-profile-messages`](https://github.com/Ralkage/flarum-ext-profile-messages) (1 added, 31 changed, 100% complete)
+* [`ralkage/flarum-ext-word-censor`](https://github.com/Ralkage/flarum-ext-word-censor) (5 changed, 100% complete)
+* [`ralkage/flarum-ext-word-counter`](https://github.com/Ralkage/flarum-ext-word-counter) (1 changed, 100% complete)
+* [`resofire/blog-cards`](https://github.com/ResofireV2/blog-cards) (11 changed, 100% complete)
+* [`resofire/digest-mail`](https://github.com/ResofireV2/digest-mail) (51 changed, 100% complete)
+* [`resofire/menu-control`](https://github.com/ResofireV2/menu-control) (13 changed, 100% complete)
+* [`rob006/flarum-ext-last-post-avatar`](https://github.com/rob006-software/flarum-ext-last-post-avatar) (7 changed, 100% complete)
+* [`sycho/flarum-advanced-extension-categories`](https://github.com/SychO9/flarum-advanced-extension-categories) (7 changed, 100% complete)
+* [`sycho/flarum-github-milestone`](https://github.com/SychO9/flarum-github-milestone) (6 changed, 100% complete)
+* [`sycho/flarum-private-facade`](https://github.com/SychO9/flarum-private-facade) (13 changed, 100% complete)
+* [`sycho/flarum-profile-cover`](https://github.com/SychO9/flarum-profile-cover) (9 changed, 100% complete)
+* [`tryhackx/flarum-advanced-pages`](https://github.com/TryHackX/flarum-advanced-pages) (36 changed, 100% complete)
+* [`walsgit/flarum-discussion-cards`](https://github.com/WalsGit/flarum-discussion-cards) (112 added, 60 changed, 100% complete)
+* [`walsgit/recycle-bin`](https://github.com/WalsGit/recycle-bin) (1 added, 60 changed, 100% complete)
+* [`yippy/flarum-ext-auth-ldap`](https://github.com/Yippy/flarum-ext-auth-ldap) (51 changed, 100% complete)
+* [`yippy/flarum-tag-with-themes`](https://github.com/Yippy/flarum-tag-with-themes) (58 changed, 100% complete)
+
+
+All changes: [1.6.1...1.6.2](https://github.com/flarum-lang/chinese-simplified/compare/1.6.1...1.6.2).
+
+
 1.6.1 (2026-10-08)
 ------------------
 

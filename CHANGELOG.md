@@ -19,10 +19,10 @@ CHANGELOG
 * [`tapao/auto-ai-moderation`](https://github.com/Tapao-NonSen/Auto-AI-Moderation) (100% complete)
 * [`tapao/custom-landing-page`](https://github.com/Tapao-NonSen/Custom-Landing-Page) (80% complete)
 * [`tapao/line-notification`](https://github.com/Tapao-NonSen/LINE-Notification) (95% complete)
-* [`tryhackx/flarum-homepage-blocks`](https://github.com/TryHackX/flarum-homepage-blocks) (62% complete)
+* [`tryhackx/flarum-homepage-blocks`](https://github.com/TryHackX/flarum-homepage-blocks)
 * [`tryhackx/flarum-magnet-link`](https://github.com/TryHackX/flarum-magnet-link) (98% complete)
-* [`tryhackx/flarum-thumb-sliders`](https://github.com/TryHackX/flarum-thumb-sliders) (100% complete)
-* [`tryhackx/flarum-topic-rating`](https://github.com/TryHackX/flarum-topic-rating) (93% complete)
+* [`tryhackx/flarum-thumb-sliders`](https://github.com/TryHackX/flarum-thumb-sliders)
+* [`tryhackx/flarum-topic-rating`](https://github.com/TryHackX/flarum-topic-rating)
 
 
 **Updated translations for extensions**:
@@ -77,7 +77,7 @@ CHANGELOG
 * [`sycho/flarum-github-milestone`](https://github.com/SychO9/flarum-github-milestone) (6 changed, 100% complete)
 * [`sycho/flarum-private-facade`](https://github.com/SychO9/flarum-private-facade) (13 changed, 100% complete)
 * [`sycho/flarum-profile-cover`](https://github.com/SychO9/flarum-profile-cover) (9 changed, 100% complete)
-* [`tryhackx/flarum-advanced-pages`](https://github.com/TryHackX/flarum-advanced-pages) (36 changed, 100% complete)
+* [`tryhackx/flarum-advanced-pages`](https://github.com/TryHackX/flarum-advanced-pages) (36 changed)
 * [`walsgit/flarum-discussion-cards`](https://github.com/WalsGit/flarum-discussion-cards) (112 added, 60 changed, 100% complete)
 * [`walsgit/recycle-bin`](https://github.com/WalsGit/recycle-bin) (1 added, 60 changed, 100% complete)
 * [`yippy/flarum-ext-auth-ldap`](https://github.com/Yippy/flarum-ext-auth-ldap) (51 changed, 100% complete)

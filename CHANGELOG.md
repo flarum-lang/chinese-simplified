@@ -7,9 +7,12 @@ CHANGELOG
 
 **Added support for new extensions**:
 
+* [`clarkwinkelmann/flarum-ext-likes-received`](https://github.com/clarkwinkelmann/flarum-ext-likes-received) (100% complete)
 * [`clarkwinkelmann/flarum-ext-prominent-post-numbers`](https://github.com/clarkwinkelmann/flarum-ext-prominent-post-numbers) (100% complete)
 * [`clarkwinkelmann/flarum-ext-selective-mediaembed`](https://github.com/clarkwinkelmann/flarum-ext-selective-mediaembed) (80% complete)
 * [`fof/discussion-language`](https://github.com/FriendsOfFlarum/discussion-language) (59% complete)
+* [`fof/mason`](https://github.com/FriendsOfFlarum/mason) (65% complete)
+* [`ianm/gravatar`](https://github.com/imorland/gravatar) (100% complete)
 
 
 All changes: [2.0.0...2.0.1](https://github.com/flarum-lang/chinese-simplified/compare/2.0.0...2.0.1).

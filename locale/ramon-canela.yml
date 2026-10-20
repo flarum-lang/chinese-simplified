@@ -595,7 +595,7 @@ ramon-canela:
         top_periods_title: 按时间范围查看热门讨论
       font_help: '用于整个论坛的字体。主题内置Inter和Plus Jakarta Sans，适用于拉丁文字；系统字体无需下载，并支持所有文字系统。'
       font_inter: Inter：主题默认字体
-      font_jakarta: 'Plus Jakarta Sans'
+      font_jakarta: 'Plus Jakarta Sans（雅加达城市字体）'
       font_label: 论坛字体
       font_notice: 更改字体会重新编译论坛CSS，因此保存需要几秒钟。
       font_system: 系统字体
@@ -1261,7 +1261,7 @@ ramon-canela:
         name: 知恩回馈
       welcome:
         description: 收到点赞
-        long_description: 首次收到帖子点赞时授予此徽章。恭喜！你的社区成员觉得你发布的内容有趣、精彩或实用。
+        long_description: 首次收到帖子点赞时授予此徽章。恭喜！你的社区成员觉得你发布的内容有趣、精彩或实用！
         name: 欢迎消息
     badges_admin:
       already_granted: 此用户已拥有此徽章，且该徽章不可重复授予。
@@ -1557,7 +1557,7 @@ ramon-canela:
         input_placeholder: 添加描述
       channel_edit_name_slug_modal:
         input_placeholder: 添加名称
-        slug_description: 频道URL中会使用别名，而不是频道名称。
+        slug_description: 频道URL中使用别名，而不是频道名称
         slug_label: URL别名
       channel_info:
         back_to_channel: 返回
@@ -2377,7 +2377,7 @@ ramon-canela:
       flag_other: 其他原因
       flag_submit: 举报帖子
       flag_title: 感谢你维护社区的文明氛围！
-      forgot_password: 忘记密码了？
+      forgot_password: 忘记密码
       forgot_submit: 重置密码
       forgot_title: 重置密码
       identification: 邮箱/用户名
@@ -2691,7 +2691,7 @@ ramon-canela:
       polls:
         votes: '{count, plural, =0 {票} one {票} other {票}}'
       ramon_chat:
-        continue_in: 继续浏览：
+        continue_in: 继续浏览
       reactions:
         like_reaction: 点赞
         picker: 选择回应

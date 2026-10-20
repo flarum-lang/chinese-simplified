@@ -13,6 +13,7 @@ CHANGELOG
 * [`fof/discussion-language`](https://github.com/FriendsOfFlarum/discussion-language) (59% complete)
 * [`fof/mason`](https://github.com/FriendsOfFlarum/mason) (65% complete)
 * [`ianm/gravatar`](https://github.com/imorland/gravatar) (100% complete)
+* [`ramon/canela`](https://github.com/ram0ng1/canela) (1% complete)
 
 
 All changes: [2.0.0...2.0.1](https://github.com/flarum-lang/chinese-simplified/compare/2.0.0...2.0.1).

@@ -2,56 +2,3001 @@
 # Use https://weblate.rob006.net/projects/flarum2/ramon-canela/zh_Hans/ for translation.
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
+ernestdefoe-wardrobe:
+  admin:
+    settings:
+      flarum_title: 默认
+  forum:
+    theme:
+      flarum: 默认
+fof-oauth:
+  forum:
+    providers:
+      passkey: 通行密钥
+forumaker-profile-cover:
+  forum:
+    added:
+      error: 无法上传图片
+      success: 个人资料封面已更新
+    cover: 编辑封面
+    edit_cover: 编辑封面
+    notice: '最大尺寸：{size}。建议格式：21:9，至少1600×400像素。'
+    position_label: 封面位置
+    removed:
+      error: 移除封面失败，请重试
+      success: 个人资料封面已移除
+    save_position_button: 保存位置
+linkrobins-wiki:
+  api:
+    article_not_found: 未找到文章。
+    article_required: 必须指定一篇文章。
+    article_soft_delete_first: 必须先删除文章，才能永久移除。
+    comment_required: 评论内容不能为空。
+    comment_soft_delete_first: 必须先删除评论，才能永久移除。
+    content_required: 必须填写文章内容。
+    faq_too_many: '一篇文章最多可包含{max}个常见问题条目。'
+    report_already_open: 你已举报此文章。编辑者会查看。
+    slug_invalid: 此URL别名已被保留。请选择非纯数字的别名。
+    slug_taken: 已有其他文章使用此URL别名。
+    title_required: 必须填写文章标题。
+  forum:
+    action:
+      cancel: 取消
+      delete: 删除
+      delete_forever: 永久删除
+      edit: 编辑
+      report: 举报
+      restore: 恢复
+      save_changes: 保存更改
+    comments:
+      confirm_delete: 删除此评论？
+      confirm_delete_forever: 永久删除此评论？此操作无法撤销。
+      deleted: 此评论已删除。
+      discard_confirm: 你有一条尚未提交的评论。要放弃吗？
+      empty: 还没有评论。
+      empty_error: 请先输入内容。
+      error_delete: 无法删除评论。
+      error_edit: 无法保存评论。
+      error_post: 无法发布评论。
+      heading: '评论（{count}）'
+      load_more: 加载更多评论
+      placeholder: 写评论…
+      post: 发布评论
+    common:
+      date_at_time: '{date} {time}'
+    compose:
+      body_label: 内容
+      body_placeholder: 撰写文章。支持Markdown。
+      body_placeholder_click: 点击开始撰写文章…
+      body_placeholder_edit: 点击继续编辑…
+      category_label: 分类
+      discard_confirm: 你有一篇未保存的文章。要放弃吗？
+      draft_help: 发布前，只有你和Wiki编辑者可以查看草稿。
+      draft_label: 保存为草稿
+      faq_add: 添加问题
+      faq_answer_placeholder: 答案。支持Markdown。
+      faq_heading: 常见问题
+      faq_help: 可选的问题和答案会显示在文章下方。答案支持Markdown。
+      faq_question_placeholder: 问题
+      faq_remove: 移除问题
+      no_category: 无分类
+      position_help: 文章在分类中的排序位置，数字越小越靠前。留空则排在已排序文章之后，并按最新优先显示。
+      position_label: 排序位置
+      position_placeholder: 例如：1
+      slug_help: 用于文章网址。留空则根据标题自动生成。
+      slug_label: URL别名
+      slug_placeholder: 例如：getting-started
+      submit_create: 发布文章
+      submit_update: 保存更改
+      title: 新建文章
+      title_edit: 编辑文章
+      title_label: 标题
+      title_placeholder: 文章标题
+    confirm:
+      delete_forever: 永久删除此文章及其历史记录？此操作无法撤销。
+      soft_delete: 删除此文章？编辑者之后可以恢复。
+    errors:
+      delete_article: 无法删除文章。
+      delete_article_forever: 无法永久删除文章。
+      empty_body: 请先撰写文章正文，再提交。
+      load_article: 无法加载此文章。它可能已被删除，或你无权查看。
+      load_articles: 无法加载文章。
+      restore_article: 无法恢复文章。
+      submit: 无法保存文章。
+      title_required: 请输入标题。
+      unknown: 未知错误。
+      upload: 无法上传文件。
+      upload_no_files: 上传未返回任何文件，请重试。
+    index:
+      deleted_badge: 已删除
+      draft_badge: 草稿
+      empty: 没有可显示的文章。
+      empty_own: '还没有文章。点击"新建文章"开始撰写。'
+      index_label: 索引
+      new_article: 新建文章
+      new_article_tooltip: 撰写新文章
+      no_categories: 还没有分类。
+      see_all_lead: 查看此分类中的全部
+      uncategorised: 其他
+      untitled: 无标题
+    nav: Wiki
+    report:
+      detail_label: 还有什么要补充的吗？（可选）
+      failed: 无法发送，请重试。
+      intro: 编辑者会看到此举报及文章内容。
+      reason_duplicate: 与其他文章重复
+      reason_inaccurate: 内容不准确
+      reason_label: 哪里有问题？
+      reason_off_topic: 内容不应放在这里
+      reason_other: 其他原因
+      reason_outdated: 内容已过时
+      sent: 谢谢。编辑者会查看此内容。
+      submit: 发送举报
+      title: 举报此文章
+    search:
+      all_button: '在Wiki中搜索"{query}"'
+      empty: '没有文章匹配"{query}"。'
+      heading: Wiki
+      placeholder: 搜索Wiki
+      results_heading: '"{query}"的搜索结果'
+    show:
+      by: '作者： '
+      created_tooltip: '撰写于{date}'
+      deleted_notice: 此文章已删除。只有编辑者可以查看。
+      diff_from_previous: 与上一版本的差异
+      diff_initial: 初始版本
+      diff_none: 内容没有变化。
+      diff_title: 标题
+      draft_notice: 此文章是草稿。只有你和Wiki编辑者可以查看。
+      faq_heading: 常见问题
+      history: '历史记录（{count}）'
+      initial_version: 已创建
+      last_edited: '最后编辑者： '
+      last_edited_tooltip: '由{name}于{date}最后编辑'
+      load_more_history: 加载更早的修订记录
+      no_history: 暂无修订记录。
+      related_heading: 相关文章
+      toc_heading: 目录
 ramon-canela:
   admin:
     backgrounds:
+      empty: 尚未上传图片；上传前将使用纯色背景。
+      gradient: 无图标的染色渐变
       image: 图片
+      image_help: JPG、PNG、WebP或GIF。图片会转换为最长边不超过2560×1600的WebP，并覆盖整个窗口，显示在内容下方。
+      plain: 纯色背景，不染色
       remove: 移除
-      replace: 替换图谱
+      replace: 替换图片
+      same: 与论坛相同
+      solid: 纯色染色背景
+      tinted: 带模糊图标的染色渐变（默认）
       upload: 上传图片
+      upload_error: 无法上传图片。
     preview:
       apply: 应用
-      dirty: 变更尚未应用
-      discard: 取消
+      dirty: 更改尚未应用
+      discard: 放弃
       preview_forum: 预览
-      preview_login: 预览登陆
-      preview_signup: 预览注册
+      preview_login: 预览登录页面
+      preview_signup: 预览注册页面
     settings:
-      colors_link: 修改外观颜色
-      font_inter: Inter：主题默认
+      ai:
+        access_title: 访问权限和限制
+        allowed_groups_help: '"成员"指所有邮箱已验证的用户。管理员始终可以使用。'
+        allowed_groups_label: '谁可以使用机器人、助手和"询问AI"'
+        anthropic_key_help: '在console.anthropic.com → API Keys中创建。密钥保存在服务器上，不会发送给论坛。'
+        anthropic_key_label: 'Anthropic API密钥'
+        anthropic_model_help: 供机器人、摘要和会改写内容的助手模式（解释、自定义提示词）使用。Sonnet兼顾质量和成本；Opus能力最强。
+        bot_enabled_help: /ai/conversations页面：可向AI提问，侧边栏显示对话列表，支持角色设定和流式回答。对于获准使用相关工具的角色设定，AI可以搜索和阅读论坛内容（仅限当前用户有权查看的内容），并引用讨论。
+        bot_enabled_label: AI机器人（对话）
+        bot_header_icon_help: 点击后打开对话；在对话页面中点击会返回用户之前所在的位置。
+        bot_header_icon_label: 页眉中的机器人图标
+        bot_sidebar_link_help: 位于社区区块中。
+        bot_sidebar_link_label: '侧边栏中的"AI机器人"链接'
+        daily_limit_help: 向机器人提问、使用助手和生成摘要各计一次。0表示不限次数。管理员不受限制。
+        daily_limit_label: 每人每日请求次数
+        default_persona_help: '在"新问题"和搜索中的"询问AI"里预先选中的角色设定。'
+        default_persona_label: 默认角色设定
+        embeddings_help: 'Anthropic没有向量嵌入API：请使用兼容OpenAI的服务（OpenAI、Voyage、Mistral、Ollama…）。如需一次性生成全部向量，请运行"php flarum canela:ai-embeddings --all"。'
+        embeddings_key_label: API密钥
+        embeddings_model_label: 模型
+        embeddings_title: 向量嵌入
+        embeddings_url_label: 向量嵌入API网址
+        enabled_help: '关闭后，论坛中不会显示AI功能，AI API也会返回404。'
+        enabled_label: 启用AI
+        fast_model_help: 用于简短任务：对话标题、校对、翻译、标题和标签建议、列表摘要。
+        fast_model_label: 快速模型
+        features_title: 功能
+        gists_enabled_help: '在最活跃的讨论中，以AI撰写的单句摘要替代帖子摘录。由调度程序每小时生成一次（通过cron运行"php flarum schedule:run"），每次最多生成20条，每条调用一次快速模型。'
+        gists_enabled_label: 列表摘要句
+        helper_enabled_help: '编辑器工具栏中的✨按钮：可校对、翻译、简化、解释、生成表格、使用自定义提示词、建议标题和标签，并预览更改后选择"确认/放弃"。'
+        helper_enabled_label: 编辑器中的AI助手
+        key_clear: 删除已保存的密钥
+        key_saved: ••••••••（密钥已保存；输入新值即可替换）
+        model_label: 主模型
+        not_configured: '未设置API密钥时，论坛会隐藏AI功能。请在下方设置服务提供商，然后使用"测试连接"。'
+        openai_fast_help: 留空则使用主模型。
+        openai_key_help: '密钥会通过"Authorization: Bearer"发送。本地服务器可能不需要密钥。'
+        openai_key_label: API密钥
+        openai_url_help: '填写截至/v1的地址；主题会在其后添加/chat/completions。例如：https://api.openai.com/v1、https://openrouter.ai/api/v1、http://localhost:11434/v1。'
+        openai_url_label: API基础URL
+        persona_add: 新建角色设定
+        persona_description: 描述（显示在选择器中）
+        persona_enabled: 启用
+        persona_id: 标识符（字母、数字、_和-）
+        persona_name: 名称
+        persona_new_name: 新建角色设定
+        persona_off: 关闭
+        persona_prompt: 系统提示词
+        persona_read: 可以阅读讨论
+        persona_remove: 移除角色设定
+        persona_restore: 恢复默认值
+        persona_search: 可以搜索论坛
+        persona_web: 可以搜索网络（仅限Anthropic；每次搜索都会计费）
+        personas_help: 每个角色设定都包含名称、描述、系统提示词和可使用的工具。用户可在提问框下方选择角色设定。
+        personas_title: 角色设定
+        provider_anthropic: Anthropic（Claude）
+        provider_help: '默认使用Anthropic（Claude）。"兼容OpenAI"适用于OpenAI及其他使用相同API的服务（OpenRouter、Groq、Mistral、DeepSeek、Ollama、LM Studio…）。'
+        provider_label: 服务提供商
+        provider_openai: 兼容OpenAI
+        provider_title: 服务提供商和模型
+        related_enabled_help: 在讨论末尾显示主题最相关的讨论。需要设置向量嵌入API并启用此功能；系统每小时生成向量，并在首次访问每个讨论时生成。
+        related_enabled_label: 相关讨论（向量嵌入）
+        requires_provider: '请先在"服务提供商和模型"卡片中设置服务提供商和密钥。'
+        requires_related: '请在功能卡片中启用"相关讨论"。'
+        schema_missing: 'AI数据表尚未创建：请运行"php flarum migrate"。在此之前，相关功能会保持隐藏。'
+        search_enabled_help: '搜索框会变为"搜索或询问AI"，搜索弹窗会提供"询问AI：<query>"，点击后打开对话。'
+        search_enabled_label: 在搜索中询问AI
+        summary_enabled_help: '点击讨论摘要中的"生成摘要"按钮会打开面板并显示流式生成的摘要。摘要会保存，所有能查看讨论的人都能阅读；讨论有新回复时会标记为过期，并显示"重新生成"。'
+        summary_enabled_label: 讨论摘要
+        summary_groups_help: 任何能查看讨论的人都能阅读已生成的摘要，包括访客。
+        summary_groups_label: 谁可以生成讨论摘要
+        summary_min_posts_help: 帖子较少的讨论不会显示此按钮。
+        summary_min_posts_label: 生成摘要所需的最少帖子数
+        test_button: 测试连接
+        translation_daily_limit_help: 每篇翻译的帖子、每批标题和每批语言检测各计一次。额度用完后，论坛会显示原文，直到次日重置。0表示不限次数。
+        translation_daily_limit_label: 每日调用次数（整个论坛）
+        translation_enabled_help: 首次阅读时，AI会翻译与读者语言不同的帖子和标题，并保存结果供所有人查看。日期旁的文A按钮可切换译文和原文。每篇翻译后的帖子都会调用一次快速模型。
+        translation_enabled_label: 自动翻译
+        translation_locales_help: 读者语言取自其偏好设置（访客使用论坛语言）。未勾选语言的读者始终看到原文。
+        translation_locales_label: 要翻译成的语言
+        translation_public_only_help: 只翻译访客也能看到的内容。关闭后，也会将受限标签的内容交给模型（绝不会翻译私信或隐藏帖子）。
+        translation_public_only_label: 仅限公开内容
+        translation_titles_help: 同时翻译讨论列表和讨论页面中的标题，每个页面只调用一次。
+        translation_titles_label: 翻译标题
+      auth:
+        background_help: 分屏布局会在左侧面板中显示图片；其他背景样式则显示在表单后方。
+        background_label: 登录和注册页面背景
+        layout_card: 背景上的单张卡片（默认）
+        layout_discourse: Discourse：不显示卡片，社交登录按钮位于表单旁
+        layout_help: 所有这些页面都不显示页眉，只显示论坛徽标。启用社交登录时，社交登录按钮会排在表单前面（Discourse样式则显示在表单旁）。
+        layout_label: 布局
+        layout_split: 分屏：左侧显示彩色面板
+        pages_help: 页眉中的“登录”和“注册”按钮会打开/login和/signup页面，类似Discourse。关闭后会打开弹窗。
+        pages_label: 完整页面登录和注册
+        panel_login_text: 登录页面文字
+        panel_login_title: 登录页面标题
+        panel_signup_text: 注册页面文字
+        panel_signup_title: 注册页面标题
+        subtitle_label: 副标题（可选）
+        text_default: 留空：使用默认文字
+        texts_login: 登录页面文字
+        texts_panel: 分屏面板
+        texts_signup: 注册页面文字
+        title_label: 标题
+      auth_pages_modals_help: 回复、点赞、关注等需要登录的按钮也会打开登录和注册页面，而不是弹窗。关闭后，只有页眉中的按钮会转到独立页面。
+      auth_pages_modals_label: 所有链接都转到独立页面
+      badges:
+        badges_enabled_help: 'Discourse自动徽章（首次点赞、优质回复、周年纪念…）、/badges页面、个人资料的徽章标签页以及"已获得…"通知。关闭后，相关内容都不会显示，API也会返回404。'
+        badges_enabled_label: 徽章
+        badges_max_likes_per_day_help: Flarum不会限制点赞次数；“点赞用尽”“更高的爱”和“爱意满满”会统计用户每天至少送出这么多点赞的日期（Discourse默认值为50）。
+        badges_max_likes_per_day_label: '"点赞用尽"徽章的每日点赞数'
+        badges_summary_help: 个人资料“摘要”标签页中的徽章区块。
+        badges_summary_label: 摘要中的精选徽章
+        badges_user_card_help: 点击头像打开的卡片上最多显示三个精选徽章（金、银、铜）。
+        badges_user_card_label: 在用户卡片上显示徽章
+        col_badge: 徽章
+        col_enabled: 开启
+        col_granted: 授予时间
+        col_type: 类型
+        create: 创建徽章
+        edit: 编辑
+        edit_title: 编辑徽章
+        field_allow_title: 可用作头衔
+        field_badge: 徽章
+        field_description: 描述
+        field_enabled: 启用
+        field_enabled_help: 关闭后，徽章会从论坛中隐藏、停止授予，现有授予记录也不会显示。
+        field_grouping: 分组
+        field_icon: '图标（Font Awesome）'
+        field_icon_help: '样式和名称，例如"fas fa-star"或"far fa-heart"。'
+        field_image: 图片（URL）
+        field_image_help: 可选：使用图片替代图标。请提供正方形图片的http(s)地址。
+        field_listable: 在徽章页面显示
+        field_long_description: 详细描述
+        field_manual: 由管理员手动授予
+        field_multiple: 可向同一用户重复授予
+        field_name: 名称
+        field_reason: 理由（可选）
+        field_reason_placeholder: 简短文字或帖子链接
+        field_type: 类型
+        field_user: 用户
+        field_user_placeholder: 用户名
+        grant_badge: 授予徽章
+        grant_done: '已授予{username}。'
+        grant_none: 没有徽章允许手动授予。请创建一个启用了此选项的自定义徽章。
+        grant_submit: 授予
+        grant_title: 授予徽章
+        grants_none: 没有人获得此徽章。
+        grants_title: '"{badge}"的授予记录'
+        grouping_community: 社区
+        grouping_getting_started: 入门
+        grouping_other: 其他
+        grouping_posting: 发帖
+        grouping_trust_level: 信任等级
+        level_1: '1 · 基础'
+        level_2: '2 · 成员'
+        level_3: '3 · 活跃成员'
+        level_4: '4 · 领袖'
+        level_4_help: 不会自动授予：只能由管理员通过个人资料的管理菜单授予。手动选择等级也会将其锁定（系统不会再升级或降级）。
+        load_more: 加载更多
+        name_placeholder: 徽章名称
+        needs_migration: '运行php flarum migrate后，会显示图片、"可用作头衔"、手动授予选项和授予理由。'
+        new_badge: 新徽章
+        new_title: 新徽章
+        no_likes: 未安装flarum/likes时，不计入点赞要求。
+        remove: 移除
+        remove_custom_confirm: '删除徽章"{badge}"及其{count}条授予记录？此操作无法撤销。'
+        remove_system_confirm: '移除系统徽章"{badge}"？这会删除其{count}条授予记录。只有使用"恢复系统徽章"才能重新创建（不会恢复旧记录，规则会在下次运行时重新授予）。'
+        removed: 徽章已移除。
+        request_failed: 操作失败，请重试。
+        requires_badges: 信任等级要求徽章已关闭（见上方“徽章和信任等级”卡片）。
+        requires_trust_levels: 信任等级已关闭（见上方“徽章和信任等级”卡片）。
+        restore_confirm: 重新创建已删除的系统徽章？现有徽章（无论是否编辑过）都会保持原样。
+        restore_system: 恢复系统徽章
+        restored: '{count, plural, =0 {没有缺失的系统徽章。} one {已恢复#个系统徽章。} other {已恢复#个系统徽章。}}'
+        revoke: 撤销
+        revoke_confirm: '要撤销{username}的此徽章吗？'
+        run_done: 完成。
+        run_help: 'canela:badges命令由Flarum调度程序每天运行一次（通过cron执行php flarum schedule:run）。首次运行会为论坛历史活动授予徽章，但不会通知任何人。此按钮会立即单独运行徽章任务。'
+        run_now: 立即授予徽章
+        save: 保存
+        section_main: 徽章和信任等级
+        section_manager: 管理徽章
+        section_requirements: 信任等级要求
+        section_table: 徽章
+        source_core: 未启用主题统计时，阅读数据取自Flarum的阅读状态（每个人阅读每个讨论的位置）；访问天数按注册天数计算，且不统计阅读时长。
+        source_stats: 阅读数据由主题的统计信息衡量：访问天数、阅读时长、浏览的讨论数和阅读的帖子数均为实际数据，类似Discourse。
+        system_notice: 系统徽章：编辑后自动规则仍会继续运行。
+        table_failed: 无法加载徽章。是否已运行主题迁移？
+        table_help: 关闭徽章后，它会从/badges页面和个人资料中移除，也不会再授予新徽章；现有授予记录仍会保存，重新启用后会恢复显示。
+        tag_custom: 自定义
+        tag_manual: 手动
+        tag_system: 系统
+        tag_unlisted: 不在列表中
+        tl1_requires_read_posts_label: 阅读的帖子
+        tl1_requires_time_spent_mins_label: 阅读时长
+        tl1_requires_topics_entered_label: 浏览的讨论
+        tl2_requires_days_visited_label: 访问天数
+        tl2_requires_likes_given_label: 送出的点赞
+        tl2_requires_likes_received_label: 收到的点赞
+        tl2_requires_read_posts_label: 阅读的帖子
+        tl2_requires_time_spent_mins_label: 阅读时长
+        tl2_requires_topic_reply_count_label: 回复他人发起的讨论
+        tl2_requires_topics_entered_label: 浏览的讨论
+        tl3_promotion_min_duration_label: 降级前的宽限期
+        tl3_requires_days_visited_label: 时间范围内的访问天数
+        tl3_requires_likes_given_label: 时间范围内送出的点赞
+        tl3_requires_likes_received_label: 时间范围内收到的点赞
+        tl3_requires_max_flagged_label: 举报帖子上限
+        tl3_requires_posts_read_all_time_label: 阅读的帖子（全部时间）
+        tl3_requires_posts_read_cap_label: 帖子阅读量上限
+        tl3_requires_posts_read_label: 阅读的帖子（在该时间范围内创建）
+        tl3_requires_topics_replied_to_label: 时间范围内回复过的讨论
+        tl3_requires_topics_viewed_all_time_label: 浏览的讨论（全部时间）
+        tl3_requires_topics_viewed_cap_label: 讨论浏览量上限
+        tl3_requires_topics_viewed_label: 浏览的讨论（在该时间范围内创建）
+        tl3_time_period_label: 评估时间范围
+        trust_levels_enabled_help: '根据下方卡片中的要求计算新手、基础、成员、活跃成员和领袖等级。等级会显示在个人资料中，并可获得信任等级徽章。领袖只能手动授予：在个人资料的管理菜单中选择"更改信任等级…"。'
+        trust_levels_enabled_label: 信任等级
+        type_bronze: 铜
+        type_gold: 金
+        type_silver: 银
+        unavailable: 此论坛缺少该规则所统计的数据（扩展已关闭或主题功能不可用）。
+        unit_days: 天
+        unit_minutes: 最少
+        unit_percent: '%'
+        view_grants: 查看授予记录
+      bookmarks:
+        bookmarks_enabled_help: '成员可以为帖子添加书签，以便日后查看，并可设置名称和提醒。所有书签都显示在个人资料的"书签"标签页中。关闭后，按钮会隐藏，API也会像此功能不存在一样响应；现有书签会保留。'
+        bookmarks_enabled_label: 书签
+        bookmarks_topic_button_help: '在讨论控制菜单（底部的"…"菜单）中添加"为讨论添加书签"。该操作会为首帖添加书签，类似Discourse。'
+        bookmarks_topic_button_label: 为讨论添加书签
+        bookmarks_user_menu_help: '在头像菜单的"个人资料"下方添加"书签"快捷入口。'
+        bookmarks_user_menu_label: 用户菜单项
+        reminders_notice: 'Flarum调度程序每五分钟发送提醒；服务器必须每分钟通过cron运行"php flarum schedule:run"。未设置cron时，书签仍可用，但不会发送提醒。'
+        title: 书签
+      categories_layout_boxes: 卡片：显示颜色、描述和子标签
+      categories_layout_help: 设置所有标签页面的显示方式。
+      categories_layout_label: 布局
+      categories_layout_list: 列表：以表格显示标签及其最新讨论
+      category_hero_children_help: 页眉下方会以可点击的卡片显示子标签。
+      category_hero_children_label: 将子标签显示为卡片
+      category_hero_help: 在标签页中，列表上方显示包含图标、颜色、名称和描述的页眉。
+      category_hero_label: 标签页的大型页眉
+      chat:
+        admins_always: 管理员始终可以使用。
+        channels_only_title: 聊天频道
+        channels_title: 频道和私信
+        chars: 字符
+        chat_allowed_groups_help: 可以看到聊天的用户组。每个人仍可在自己的设置中关闭聊天。
+        chat_allowed_groups_label: 谁可以使用聊天
+        chat_create_channel_groups_help: 除管理员外，哪些人可以创建频道。频道可以关联标签，此时只有能查看该标签的人才能看到频道。
+        chat_create_channel_groups_label: 谁可以创建公开频道
+        chat_dm_enabled_help: '两人或群组之间的私人对话，可通过"新消息"或个人资料中的"聊天"按钮开启。'
+        chat_dm_enabled_label: 私信
+        chat_dm_groups_help: 'Discourse的"direct_message_enabled_groups"设置。'
+        chat_dm_groups_label: 谁可以发起私信
+        chat_dm_max_users_help: 群聊最多参与人数，包含创建者。
+        chat_dm_max_users_label: 每段对话的参与人数
+        chat_dm_retention_days_help: 私信同样适用。设为0则永久保留。
+        chat_dm_retention_days_label: 私信保留期限
+        chat_enabled_help: Discourse聊天功能：公开频道（独立频道或关联标签）、私信、主题串、回应、提及和图片，并提供页眉图标、角落抽屉及/chat页面。关闭后，论坛中所有聊天功能都会隐藏，API也会像功能不存在一样响应；消息仍会保留。
+        chat_enabled_label: 聊天
+        chat_max_message_length_help: 以字符数计。Discourse默认值为6000。
+        chat_max_message_length_label: 消息长度上限
+        chat_moderator_groups_help: 他们可以删除和恢复他人消息、置顶消息，以及关闭、归档或删除频道。私信不设版务管理；任何人都不能查看他人的对话。
+        chat_moderator_groups_label: 谁可以管理聊天
+        chat_pins_enabled_help: 版主可在每个频道置顶最多20条消息（私信中由任意参与者置顶），置顶消息会显示在对话顶部栏中。
+        chat_pins_enabled_label: 置顶消息
+        chat_poll_seconds_help: 未启用WebSocket时，打开的对话每隔多少秒请求一次新消息。
+        chat_poll_seconds_label: 非实时模式下的间隔
+        chat_retention_days_help: 超过此期限的公开频道消息会每天永久删除一次。设为0则永久保留。
+        chat_retention_days_label: 频道消息保留期限
+        chat_sidebar_help: '标签下方的"频道"和"私信"侧边栏区块，包含未读消息和提及提示。'
+        chat_sidebar_label: 侧边栏区块
+        chat_threads_enabled_help: 回复消息会在侧边栏中打开单独的对话串。每个频道仍可在其设置中开启或关闭主题串。
+        chat_threads_enabled_label: 主题串
+        chat_upload_max_kb_help: 每个文件的限制。
+        chat_upload_max_kb_label: 图片大小上限
+        chat_uploads_enabled_help: '可通过编辑器"+"按钮、粘贴或拖放图片（JPG、PNG、GIF和WebP），并像头像一样进行验证。图片存储在public/assets/canela-chat中。'
+        chat_uploads_enabled_label: 消息中的图片
+        days: 天
+        limits_title: 消息、上传和保留期限
+        needs_chat: 启用聊天后即可配置此项。
+        realtime_off: '未安装flarum/realtime时，聊天会每隔几秒向服务器请求新消息。此功能仍可使用，但会有轻微延迟并增加请求次数。要实现实时聊天，请启用flarum/realtime并运行"php flarum realtime:serve"。'
+        realtime_on: '消息通过flarum/realtime WebSocket实时送达（必须运行"php flarum realtime:serve"）。如果服务中断，聊天会改为每隔几秒向服务器请求消息。'
+        replaced_by_ramon_chat: ramon/chat已启用：它会取代主题聊天，而主题聊天将保持关闭。主题会适配其外观和侧边栏。
+        retention_notice: '清理任务由Flarum调度程序运行（每分钟通过cron执行"php flarum schedule:run"），也会删除未发送为消息的已上传图片。'
+        title: 聊天
+      colors_current: 当前主色
+      colors_help: 此主题没有自带颜色：整个配色方案都取自Flarum的主色，就像Discourse的Horizon主题使用辅助色一样。浅色和深色模式下，染色背景、选中状态、链接和焦点环都由主色派生。
+      colors_link: 在“外观”中更改颜色
+      community:
+        about_contact_email_help: '显示在"联系我们"区域中。此邮箱公开可见，请使用工作人员邮箱。'
+        about_contact_email_label: 联系邮箱
+        about_contact_url_help: '联系表单或页面的完整地址（https://…）。'
+        about_contact_url_label: 联系页面
+        about_enabled_help: 'Discourse风格的论坛介绍页面，显示自定义文字、联系方式、工作人员和网站统计数据。会在侧边栏的"更多"菜单中添加链接。'
+        about_enabled_label: 关于页面（/about）
+        about_pages_add: 添加页面…
+        about_pages_down: 下移
+        about_pages_help: 可添加任意数量的fof/pages页面作为“关于”和“社区指南”旁的标签页，每个页面均采用规则布局：标题、区块索引和卡片。
+        about_pages_icon: 图标（可选）
+        about_pages_label: 标签名称
+        about_pages_list_help: '每个页面都会按照列表顺序显示为“关于”和“社区指南”之后的标签页，地址为/about/id-slug，并采用与“社区指南”相同的布局。标签名称为空时使用页面标题；图标使用Font Awesome类名。fof/pages中的隐藏或受限页面仅对有权查看的人显示。'
+        about_pages_missing: '页面#{id}（未找到）'
+        about_pages_none_left: 所有fof/pages页面都已列出
+        about_pages_remove: 从“关于”区域移除
+        about_pages_up: 上移
+        about_show_staff_help: '"我们的管理员"和"我们的版主"列表。无法查看隐藏用户组的人不会看到这些用户组。'
+        about_show_staff_label: 显示工作人员
+        about_show_stats_help: 过去24小时、7天、30天及全部时间的讨论数、帖子数、注册数、活跃用户数和点赞数。
+        about_show_stats_label: 显示网站统计
+        about_text_help: 显示在标题下方。支持Markdown和BBCode（取决于论坛启用的格式）；如果文字包含HTML标签，则会直接作为HTML使用，不进行格式化。
+        about_text_label: 关于文字
+        directory_enabled_help: Discourse风格的表格，按时间段显示每位用户收到和送出的点赞数、讨论数、回复数及最后上线时间，并支持按列排序。
+        directory_enabled_label: 用户页面（/u）
+        directory_guests_help: '默认情况下，只有拥有"查看用户列表"权限（在权限中设置）的人才能查看目录和用户组成员。启用后，访客也可以查看，私密论坛除外。'
+        directory_guests_label: 访客也可以查看
+        directory_notice: 启用Likes扩展后会显示点赞列；启用主题统计后会显示访问和已读帖子数据。按最后上线时间排序遵循核心设置中查看用户在线状态的权限。
+        groups_activity_help: 用户组页面中成员最近发布的帖子。
+        groups_activity_label: 动态标签页
+        groups_enabled_help: 每个用户组显示一张卡片，包含图标、颜色和成员数；每个用户组也有单独页面显示其成员。隐藏用户组仅对有权查看的人显示。
+        groups_enabled_label: 用户组页面（/g）
+        groups_profile_links_help: 个人资料卡片上的用户组标签会链接到/g/group-name。
+        groups_profile_links_label: 个人资料中的用户组链接到用户组页面
+        guidelines_enabled_help: '论坛社区规则，会显示在关于页面旁边的标签页和侧边栏"更多"菜单中。/faq会指向同一页面，类似Discourse。只有下方文字或fof/pages页面有内容时才会显示。'
+        guidelines_enabled_label: 社区指南页面（/guidelines）
+        guidelines_page_create: '使用当前文字创建"社区指南"页面'
+        guidelines_page_help: 选择页面后，/guidelines会显示该页面内容（并遵循fof/pages自身的可见性设置），不再使用下方文字。之后请在fof/pages中编辑内容。若文字为空，新建页面时会套用主题模板，该模板参考了Discourse社区指南。
+        guidelines_page_label: fof/pages页面
+        guidelines_page_none: 无：使用下方文字
+        guidelines_text_help: 支持Markdown和BBCode；包含HTML标签时会按HTML处理。如果文字为空且没有fof/pages页面，社区指南页面将不会显示。
+        guidelines_text_label: 社区指南文字
+        legal_notice: '如果此处和FoF Terms中都没有地址，则不会显示该标签页。其他FoF Terms政策会以各自名称显示为标签页。'
+        privacy_url_help: '"隐私政策"标签页和/privacy会指向此处。如果FoF Terms中有名称包含"privacy"的政策，则优先使用该政策。'
+        privacy_url_label: 隐私政策地址
+        section_about: 关于页面
+        section_about_pages: 关于区域页面
+        section_directory: 用户目录
+        section_groups: 用户组
+        section_legal: 社区指南、条款和隐私
+        section_legal_links: 条款和隐私
+        stats_notice: 统计数据仅包含公开内容，并每30分钟重新计算一次。
+        tos_url_help: '"服务条款"标签页和/tos会指向此处。如果FoF Terms中有名称包含"terms"的政策，则优先使用该政策。'
+        tos_url_label: 服务条款地址
+        view_page: 在论坛中查看页面
+      composer:
+        drafts_help: '启用FoF Drafts扩展后，主题会以Discourse方式显示草稿：停止输入两秒后自动保存新讨论和回复；回复讨论时会恢复其草稿；关闭含文字的编辑器时会询问要放弃还是保留；“发起讨论”按钮会新增带列表的⌄菜单。草稿也会显示在用户菜单和个人资料的“草稿”标签页中。'
+        drafts_label: 草稿（fof/drafts）
+        drafts_note: 草稿由fof/drafts存储（drafts表），并由其处理权限和定时发布。编辑帖子不会创建草稿。
+        emoji_help: 工具栏中的表情按钮会打开选择器，提供搜索、分类、最近使用和肤色选项。启用Emoji扩展后，表情会以该扩展的图片显示。
+        emoji_label: 表情选择器
+        emoji_notice: 'Emoji扩展已关闭：选择器会使用系统表情，主题会提供":名称"自动补全。'
+        enabled_help: 总开关：关闭后，编辑器会恢复为不含下方功能的Flarum默认样式。
+        enabled_label: Discourse编辑器功能
+        hashtags_help: '在编辑器中输入#会建议标签并插入链接；帖子中的这些链接（以及Mentions扩展的标签提及）会显示为带标签符号的胶囊。'
+        hashtags_label: 标签主题标签
+        hashtags_mentions_notice: '启用Mentions扩展后，编辑器中的#由该扩展处理（标签提及）；主题只会将提及显示为Discourse风格的主题标签。'
+        linked_topic_help: '在回复编辑器中，"↩ ▾"菜单可将回复转为新讨论，保留相同文字和标签，并添加返回原讨论的链接。'
+        linked_topic_label: 将回复另存为关联讨论
+        preview_help: 桌面设备上，编辑器右侧会显示格式化后的帖子。任何人都可以点击编辑器角落的«按钮隐藏预览。
+        preview_label: 并排预览
+        requires_composer: 编辑器功能已关闭（见上方“Discourse编辑器”卡片）。
+        section_drafts: 草稿
+        section_editor: Discourse编辑器
+        section_hashtags: '#标签'
+        similar_help: '撰写新讨论标题时（至少三个词），会显示"你的讨论与以下内容相似…"，并列出最多五个相关讨论。'
+        similar_label: 相似讨论
+      content_card_help: 列表、讨论和个人资料会显示在背景上的圆角卡片中。关闭后，内容将铺满整个区域，不带边框。
+      content_card_label: 将内容放在卡片中
+      content_width_90: 90%
+      content_width_caption: 1440px屏幕
+      content_width_custom: 自定义
+      content_width_default: 默认
+      content_width_full: 全宽
+      content_width_help: 内容卡片（列表、讨论、个人资料）的最大宽度；在讨论中，帖子列会随之扩展。默认值为1110px，类似Discourse；90%和全宽会随屏幕调整。预览会在1440px屏幕上显示真实论坛效果。
+      content_width_label: 内容宽度
+      content_width_preview_discussion: 讨论
+      content_width_preview_index: 首页
+      content_width_reset: 默认
+      content_width_wide: 宽
+      content_width_wider: 更宽
+      embedded_replies_help: '点击每篇帖子的"N条回复"会在其下方展开回复，并在上方显示被引用的帖子，类似Discourse。'
+      embedded_replies_label: 嵌入式回复
+      extras:
+        banner_enabled_help: 每个页面的内容上方都会显示一条横幅，并带有关闭按钮。关闭横幅的人不会再看到它，直到文字发生变化。
+        banner_enabled_label: 显示横幅
+        banner_reshow: 向曾关闭横幅的人重新显示
+        banner_reshow_done: 横幅将再次向所有人显示。
+        banner_text_help: 支持Markdown、BBCode和表情符号，类似帖子。要使用HTML，请以HTML标签（p、div…）开头。文字为空时不显示横幅。
+        banner_text_label: 横幅文字
+        banner_title: 公告横幅
+        bulk_select_enabled_help: 列表栏中的按钮会启用每个讨论的复选框和操作栏，可执行标为已读、置顶、关闭、更改标签、隐藏和删除。仅当用户有权管理列表中的部分讨论时才会显示；每项操作只会应用于用户有权限的讨论。
+        bulk_select_enabled_label: 版主批量选择
+        bulk_title: 批量选择
+        history_notice: 只有启用此功能期间进行的编辑才会记录。关闭后不会保存新记录，论坛中也不再显示历史记录；已保存的数据仍会保留在数据库中。只有有权编辑隐藏帖子的用户才能查看其历史版本。
+        history_title: 编辑历史记录
+        post_history_enabled_help: 每次编辑都会保留之前的文字。帖子上的“已编辑”会变成铅笔图标并显示修订次数，点击后可并排或行内比较不同版本。
+        post_history_enabled_label: 保存并显示编辑历史记录
+        print_title: 打印讨论
+        print_topic_enabled_help: 将所有帖子载入简洁视图（不含侧边栏、页眉或时间线），然后打开浏览器的打印对话框，也可以在其中另存为PDF。
+        print_topic_enabled_label: 讨论控制菜单中的“打印”项
+        search_notice: '也可以在搜索框中输入筛选快捷语：in:title、in:likes、in:bookmarks和min-posts:5，以及Flarum自带的筛选语（author:、tag:、is:locked…）。'
+        search_page_enabled_help: Discourse风格的/search页面：提供讨论、帖子、标签和用户标签页，以及高级筛选器（作者、主要标签、标签、仅标题、已点赞、状态、日期、最少帖子数）和排序。搜索弹窗会添加“高级搜索”链接。
+        search_page_enabled_label: 高级搜索页面
+        search_title: 搜索页面
+        text_size_enabled_help: 每个人都可以在设置中选择较小、正常、较大或最大字号。选择仅应用于当前设备（保存在浏览器中），类似Discourse。
+        text_size_enabled_label: 选择文字大小
+        text_size_title: 文字大小
+        top_periods_enabled_help: 热门标签页提供“全部时间/年/季度/月/周/今天”选项，只显示在对应时间范围内创建的讨论。
+        top_periods_enabled_label: 热门标签页的时间范围选择器
+        top_periods_title: 按时间范围查看热门讨论
+      font_help: '用于整个论坛的字体。主题内置Inter和Plus Jakarta Sans，适用于拉丁文字；系统字体无需下载，并支持所有文字系统。'
+      font_inter: Inter：主题默认字体
       font_jakarta: 'Plus Jakarta Sans'
       font_label: 论坛字体
-      font_notice: 修改字体需要重新编译论坛CSS，稍后生效。
+      font_notice: 更改字体会重新编译论坛CSS，因此保存需要几秒钟。
       font_system: 系统字体
+      forum_background_help: 内容和侧边栏后方显示的背景。染色渐变（可带或不带模糊图标）和染色纯色背景会采用主色，类似Horizon；纯色背景则保持中性灰色。
       forum_background_label: 论坛背景
+      gaps:
+        mention_cards_help: 点击@提及会打开用户卡片，而不是前往个人资料页面。
+        notifications_title: 通知作者
+      group_ai: 人工智能
       group_appearance: 外观
       group_community: 社区
-      group_header: '页眉&快捷键'
-      group_home: 主页
-      group_list: 话题列表
+      group_composer: 编辑器和搜索
+      group_header: 页眉和快捷操作
+      group_home: 首页
+      group_list: 讨论列表
       group_profile: 个人资料
       group_sidebar: 侧边栏
-      group_topic: 话题
+      group_topic: 讨论
+      groups_aria: 设置分组
+      header_search_help: 页眉中间的胶囊形搜索框，类似Discourse。关闭后，页眉将恢复Flarum默认搜索框。
+      header_search_label: 页眉中间的搜索框
+      hot_days_help: '统计时间范围为{min}到{max}天。'
+      hot_days_label: 热门讨论的统计天数
+      integrations:
+        links_sidebar_help: 'FoF Links链接会从页眉移至侧边栏区块，类似Discourse自定义链接。'
+        links_sidebar_label: 侧边栏链接
+        marketplace_help: 在主题卡片中显示商店页面（店铺、商品、购物车、结账、订单、下载、卖家面板、课程和方案），并使用与页眉相同的标题样式、主题按钮、字段、标签页和弹窗、由主色派生的颜色及Lucide图标。
+        marketplace_label: 在主题中采用ramon/marketplace商店样式
+        marketplace_sidebar_help: '将商店链接（Marketplace、购物车、订单、下载、愿望清单…）放在可折叠的侧边栏区块中，取代悬停"商店"时打开的菜单。'
+        marketplace_sidebar_label: '侧边栏中的"商店"区块'
+        messages_help: '在flarum/messages基础上提供Discourse风格功能：个人资料收件箱（最新、已发送、新消息、未读、归档）、按对象归档、消息标题、回应和"退出对话"。'
+        messages_label: Discourse私信
+        polls_help: 采用Discourse投票网格的投票：显示结果条，并在旁边突出显示投票数。
+        polls_label: 投票
+        profile_cover_help: '使用该扩展的封面替代主题自带封面：显示在个人资料横幅中、用户卡片后方（如有缩略图），并采用其编辑器中选择的位置。编辑器可从个人资料"…"菜单和设置中打开。主题自带图片仍会保留，关闭此选项后即可恢复。'
+        profile_cover_label: 个人资料封面（forumaker/profile-cover）
+        ramon_chat_help: 将ramon/chat扩展呈现为Discourse聊天：不带第二栏的页面、抽屉、消息、编辑器、主题串和频道页面。启用此扩展后，主题自带聊天会让位给它。
+        ramon_chat_label: Discourse风格的聊天（ramon/chat）
+        ramon_chat_notifications_help: 用户菜单中的独立聊天通知标签页（邀请、提及和版务通知）。
+        ramon_chat_notifications_label: '用户菜单中的"聊天"标签页'
+        ramon_chat_sidebar_help: '主题侧边栏中的"频道"和"私信"区块（含"我的主题串""搜索"和"已保存"）；聊天页面不再显示自己的频道栏。'
+        ramon_chat_sidebar_label: 侧边栏中的频道
+        ramon_chat_user_button_help: '通过用户卡片和个人资料中的"聊天"按钮打开私信，而不是从"…"菜单中选择。启用flarum/messages时无效，因为私信会使用其中的"消息"功能。'
+        ramon_chat_user_button_label: '用户卡片和个人资料中的"聊天"按钮'
+        reactions_help: 在帖子操作栏中显示表情回应摘要，类似discourse-reactions。
+        reactions_label: 回应
+        solved_help: '在帖子操作栏中显示"✓解决方案"，并在首帖下方显示已采纳答案，类似discourse-solved。'
+        solved_label: 已采纳的解决方案
+        thumbnails_help: '在讨论列表标题旁显示FoF Discussion Thumbnail图片，取代Discourse自带的缩略图位置。'
+        thumbnails_label: 列表中的缩略图
+        upload_progress_help: '通过FoF Upload发送文件时，编辑器会显示"正在上传…"进度条，类似Discourse。'
+        upload_progress_label: 上传进度
+        verified_help: 'ramon/verified徽章会紧跟在姓名后方，并按文本行尺寸显示，类似Discourse用户图标；适用于帖子标题、嵌入式帖子、"回复对象"、用户卡片和个人资料。'
+        verified_label: 已验证徽章
+        wiki_help: '采用Discourse风格显示linkrobins/wiki：索引采用讨论列表布局，文章作为首帖显示（含摘要和历史记录），使用讨论编辑器撰写（含草稿、高级选项和常见问题），侧边栏社区区块中提供"Wiki"链接。'
+        wiki_label: 主题风格的Wiki
+      keyboard_shortcuts_help: 'Discourse快捷键：/搜索，c发起新讨论，r回复，j和k浏览列表，g h返回首页，=展开或收起侧边栏，?显示完整快捷键列表。在输入框中打字时，这些快捷键不会生效。'
       keyboard_shortcuts_label: 键盘快捷键
-      pill_buttons_label: 药丸式按钮
-      requires_fof_drafts: '依赖项FoF Drafts插件处于禁用状态。'
-      requires_tags: 依赖项Tags插件处于禁用状态。
+      list_excerpts_help: 在标题下方显示置顶讨论首帖的开头内容。
+      list_excerpts_label: 置顶讨论摘要
+      list_header_help: 列表上方显示讨论、回复、浏览量和动态的行。
+      list_header_label: 列标题
+      list_heat_help: 当数值明显高于其他项时，将其显示为橙色或红色，类似Discourse热度图。
+      list_heat_label: 突出显示较高的数值
+      list_infinite_scroll_help: '列表接近底部时会自动加载下一页，类似Discourse。关闭后会保留Flarum的"加载更多"按钮。'
+      list_infinite_scroll_label: 无限滚动
+      list_posters_help: 每个讨论旁显示作者和最后一位回复者的头像，类似Discourse的发帖者列。
+      list_posters_label: 参与者头像
+      list_status_icons_colored: 彩色：每个图标使用各自的颜色
+      list_status_icons_help: 在列表和讨论中，标题旁显示置顶图钉、关注星标及其他状态图标。
+      list_status_icons_label: 标题前的图标
+      list_status_icons_muted: 当前：灰色，类似Discourse
+      list_views_help: 每个讨论的浏览次数，由“讨论浏览量”卡片统计。
+      list_views_label: 浏览量列
+      loader:
+        color_help: 未选择颜色时，将使用主题强调色（主色，或标签页中的标签颜色）。在按钮中，指示器会跟随按钮文字颜色。
+        color_label: 颜色
+        color_primary: 使用主题颜色
+        custom_apply: 应用SVG
+        custom_clear: 移除
+        custom_empty: 粘贴或上传SVG以使用此设计。在此之前，论坛会继续使用Flarum的旋转图标。
+        custom_help: 粘贴动画SVG代码或上传.svg文件（最大64KB）。保存前，服务器会清理文件：移除脚本、事件和外部链接；保留CSS和SMIL动画。
+        custom_label: SVG代码
+        custom_not_svg: 文件似乎不是SVG。
+        custom_too_big: 文件大于64KB。
+        custom_upload: 上传SVG文件
+        help: 内容加载时显示的指示器，适用于列表、帖子、个人资料、弹窗、菜单、按钮、编辑器、扩展和首次加载页面。将Flarum的灰色圆环替换为动画SVG。
+        keywords: '加载 加载器 旋转图标 预加载 指示器 svg 动画 动画效果 旋转'
+        notice: 更改指示器会重新编译论坛CSS，因此保存需要几秒钟。
+        preview: 预览
+        size_help: '相对于Flarum旋转图标的大小，范围为{min}%到{max}%。在按钮中，指示器会跟随文字大小。'
+        size_label: 尺寸
+        style_avocado: 牛油果
+        style_bars: 条形
+        style_custom: 自定义SVG
+        style_default: Flarum默认样式
+        style_dots: 圆点
+        style_label: 设计
+        style_orbital: 轨道
+        style_pulse: 脉冲
+        style_ring: Discourse圆环
+        tint_help: SVG会仅保留轮廓，并使用下方颜色着色（在按钮中使用文字颜色）。关闭后，文件会保留自身颜色。
+        tint_label: 使用指示器颜色着色
+        title: 加载指示器
+      loading_slider_help: '切换页面时，屏幕顶部会显示一条细进度条，直到页面加载完成，类似Discourse，而不是显示Flarum的"正在加载…"提示。'
+      loading_slider_label: 顶部加载进度条
+      logo_colored_help: 上传的徽标会仅保留轮廓，并使用强调色着色（在标签页和讨论中使用标签颜色）。建议使用SVG或透明背景的PNG。
+      logo_colored_label: 为徽标着色
+      lucide_icons_help: '使用Lucide细线条绘制界面图标（搜索、铃铛、回复、点赞、菜单等），类似meta.discourse.org。关闭后会恢复实心Font Awesome图标。Meta未替换的图标（品牌图标及部分标签和用户组选用的图标）仍使用Font Awesome。'
+      lucide_icons_label: Discourse图标（Lucide）
+      metoo:
+        enabled_help: '首帖下方显示"✋我也遇到了"胶囊，类似Discourse Meta：遇到相同问题的人可以点击，括号中会显示人数，并自动关注讨论。作者和已关闭的讨论会显示只读按钮；访客会被引导登录。关闭后，按钮会隐藏，API会返回404；现有标记会保留。'
+        enabled_label: '首帖上的"我也遇到了"按钮'
+        follow_help: '点击"我也遇到了"后，用户会关注讨论（Subscriptions扩展），以便收到解决方案通知，类似Discourse的"跟踪"。已关注的人保持原状；取消标记不会取消关注。'
+        follow_label: 点击后关注讨论
+        hide_solved_help: '选出最佳答案（FoF Best Answer）后，按钮会隐藏；移除解决方案后会重新显示。这是Discourse的默认行为。关闭后，已解决的讨论仍会显示按钮（插件的"多个解决方案"模式）。'
+        hide_solved_label: 讨论解决后隐藏
+        no_best_answer_notice: '未启用FoF Best Answer扩展时，没有讨论会被视为已解决：所有勾选的讨论都会显示按钮。'
+        tags_all: 所有标签
+        tags_clear: 清除（全部）
+        tags_help: '勾选适用的支持标签（Discourse Meta上的Support、Bug…）。未勾选时适用于所有讨论。勾选父标签也会包含其子标签。'
+        tags_label: 按钮显示位置
+        tags_loading: 正在加载标签…
+        tags_some: '{count, plural, one {已选择#项} other {已选择#项}}'
+        title: 我也遇到了
+      nav_categories_link_help: 打开所有标签页面的标签页。
+      nav_categories_link_label: 标签标签页
+      nav_dropdowns_help: 标签页左侧的菜单，可按主要标签和次要标签筛选列表，类似Discourse。
+      nav_dropdowns_label: 标签菜单
+      nav_hot_help: 最近几天发起的讨论中，回复数最多的讨论。
+      nav_hot_label: 热门标签页
+      nav_sticky_help: 滚动列表时，标签栏会固定在页眉下方，类似Horizon。meta.discourse.org不会固定标签栏。
+      nav_sticky_label: 固定标签栏
+      nav_unread_help: 包含访客尚未阅读回复的讨论。仅向已登录成员显示。
+      nav_unread_label: 未读标签页
+      new_replies_bar_help: '有人在讨论中阅读时收到实时回复，会看到"有N条新回复"提示栏，点击后可跳转到新回复，类似Discourse。'
+      new_replies_bar_label: 新回复提示
+      palette_accent: 强调色
+      palette_accent_low: 柔和强调色
+      palette_background: 染色背景
+      palette_dark: 深色
+      palette_light: 浅色
+      palette_link: 链接
+      palette_ring: 焦点环
+      palette_selected: 选中状态
+      pill_buttons_help: 按钮两端完全呈圆弧形，类似Horizon。关闭后，按钮只带轻微圆角。
+      pill_buttons_label: 胶囊形按钮
+      post_actions_help: '每篇帖子的操作栏中显示点赞、复制链接、书签、回复和展开其余内容的"…"按钮，类似Discourse。关闭后会恢复Flarum的控制菜单。'
+      post_actions_label: Discourse帖子操作栏
+      post_style_direct: 带时间线（牛油果样式）
+      post_style_discourse: Discourse（默认）
+      post_style_help: '启用时间线后，帖子本身保持Discourse样式，但会添加一条类似牛油果主题的垂直线，连接相邻帖子的头像、贯穿事件通知，并用圆圈标记时间间隔（如"一个月后"）。平板及更宽屏幕适用；手机上帖子样式保持不变。'
+      post_style_label: 帖子样式
+      profile:
+        blocked_by_master: '请在"扩展个人资料"卡片中启用额外字段。'
+        characters_suffix: 字符
+        cover_forumaker_notice: forumaker/profile-cover已启用：个人资料封面由该扩展提供（“集成”→“个人资料封面”）。卡片背景仍由主题管理；如果未设置主题卡片背景，则使用该封面的缩略图。此处上传的封面仍会保留，但在扩展接管期间不会显示。
+        cover_notice: 外部地址必须使用https。访客的浏览器会直接从其他网站加载图片。
+        profile_bio_help: '在个人资料和用户卡片中显示的简短文字。支持链接、**粗体**、*斜体*和`代码`；不支持HTML。'
+        profile_bio_label: 关于我（简介）
+        profile_bio_max_length_help: '长度范围为{min}到{max}个字符。'
+        profile_bio_max_length_label: 简介长度上限
+        profile_birthday_help: 可选的出生日期。除非用户选择显示年份，否则其他人只能看到月和日。
+        profile_birthday_label: 生日
+        profile_cover_help: 个人资料顶部的宽幅封面和用户卡片背景，类似Discourse。未设置图片时，封面会使用用户颜色。
+        profile_cover_label: 个人资料图片
+        profile_cover_upload_help: 图片会缩小尺寸（封面最长边2000px，卡片最长边900px），转换为WebP并存储在assets/canela-covers中。关闭后，只接受https图片地址。
+        profile_cover_upload_label: 允许上传图片
+        profile_enabled_help: Discourse风格的个人资料字段：每个人都可以介绍自己、所在地和近况。关闭后，这些字段会从论坛和API中隐藏，但已填写的内容会保留。
+        profile_enabled_label: 个人资料扩展字段
+        profile_location_help: 个人资料中显示带地图图标的城市或地区。
+        profile_location_label: 所在地
+        profile_status_help: '在帖子姓名旁、用户卡片和页眉头像上显示表情符号和短语（"🌴周五前休假"）。用户可选择何时自动清除状态。'
+        profile_status_label: 带表情符号的状态
+        profile_title_help: 简短头衔（最多60个字符），显示在个人资料、用户卡片和帖子姓名旁边。
+        profile_title_label: 姓名下方的头衔
+        profile_title_self_help: 关闭后，只有有权编辑用户的人员（版主）可以设置头衔，以体现工作人员身份。
+        profile_title_self_label: 每个人自行设置头衔
+        profile_website_help: http或https地址，在新标签页中打开并标记为nofollow。
+        profile_website_label: 网站
+        section_cover: 封面和卡片背景
+        section_main: 扩展个人资料
+        section_status: 用户状态
+        section_title: 用户头衔
+      ramon_chat_features:
+        auto_join_help: '后来获得访问权限的用户会加入设置为"自动添加用户"的频道（每人每天最多加入一次）。'
+        auto_join_label: 按需加入自动频道
+        backend_off: '主题的"ramonchat"功能未启用（extend/.enabled）。'
+        bell_help: 被关注频道中的提及（仅向过去5分钟内活跃的人发送@here）和新消息会生成通知；阅读频道后会将通知标为已读。
+        bell_label: 铃铛通知
+        collapse_deleted_help: '在单行中显示"已删除N条消息"，并提供"查看全部"。'
+        collapse_deleted_label: 合并连续的已删除消息
+        delete_confirm_help: '删除频道时要求输入频道名称，而不是点击"确定"。'
+        delete_confirm_label: 输入频道名称以删除
+        description: 'Discourse聊天具备但ramon/chat缺少的功能：铃铛通知、一键回应、"新消息"、收藏频道、消息链接、无WebSocket时的"正在输入"等；无需更改扩展本身。'
+        dm_guard_help: 拒绝向无法使用聊天或已关闭聊天的用户发送私信，并应用下方的参与人数上限。
+        dm_guard_label: 私信规则
+        dm_max_help: 包含发起对话的人。ramon/chat最多支持20人。
+        dm_max_label: 每条私信的参与人数
+        drawer_shortcut_help: 打开或关闭聊天抽屉，类似Discourse。
+        drawer_shortcut_label: '抽屉快捷键"-"'
+        group_channels: 频道和私信
+        group_messages: 消息
+        group_moderation: 管理
+        group_name_help: 任何参与者都可以重命名群组对话。
+        group_name_label: 群聊名称
+        group_reader: 读者功能
+        header_indicator_help: 每位读者可选择聊天按钮统计的内容：所有新消息、私信和提及、仅提及，或不显示数量。
+        header_indicator_label: 可配置的页眉指示器
+        long_press_help: 长按消息会从屏幕底部打开操作菜单。
+        long_press_label: 手机上的长按操作
+        mention_warning_help: '在编辑器@列表中，频道外的用户会标注为"不是频道成员"。'
+        mention_warning_label: 非成员提示
+        new_message_help: '私信和群组私信对话框（搜索用户、人数计数、群组名称），以及"+"按钮。'
+        new_message_label: '"新消息"'
+        paste_upload_help: 粘贴或拖到编辑器中的图片和文件会作为附件上传。
+        paste_upload_label: 粘贴和拖放图片
+        permalink_help: '操作菜单中的"复制链接"，以及打开对话并定位到该消息的地址。'
+        permalink_label: 消息链接
+        pin_indicator_help: 读者尚未打开置顶消息时，置顶消息栏会显示圆点。
+        pin_indicator_label: 未查看的置顶消息
+        preferences_help: '启用聊天、声音、页眉指示器、发送快捷键、一键回应、抽屉、提及邮件，以及"忽略频道范围的提及"。'
+        preferences_label: '设置中的"聊天"区块'
+        quick_reactions_help: 在👍旁显示读者最常用的三种回应（或自行选择的回应）。
+        quick_reactions_label: 一键回应
+        restore_help: 已删除消息通知中的按钮，供有权恢复的人使用。
+        restore_label: 恢复已删除的消息
+        retention_help: 在频道信息中显示消息保留时长。
+        retention_label: 消息保留提示
+        review_flags_help: 被举报的聊天消息会按日期加入主题审核队列（页面、侧边栏和用户菜单），与帖子并列显示。仅对有权查看举报或管理聊天的人显示。
+        review_flags_label: '在"审核"中查看聊天举报'
+        self_dm_help: 与自己的对话，可用来记笔记。
+        self_dm_label: '与自己私聊（"记点东西"）'
+        starred_help: 页眉和频道信息中的星标；收藏的频道会置顶显示在侧边栏中。
+        starred_label: 收藏的频道
+        tag_cleanup_help: 删除标签时也会删除其频道。
+        tag_cleanup_label: 删除标签时删除其频道
+        title: 额外聊天功能（ramon/chat）
+        typing_poll_help: 未启用flarum/realtime时，打开对话的用户每3秒向服务器请求一次状态。
+        typing_poll_label: '无WebSocket时显示"正在输入"'
+      requires_fof_drafts: '需要启用FoF Drafts扩展。'
+      requires_sidebar: 侧边栏已关闭（见上方“侧边栏”卡片）。
+      requires_tags: 需要启用Tags扩展。
+      search_clear: 清除搜索
+      search_empty: 未找到设置。
+      search_placeholder: 搜索设置…
       section_buttons: 按钮
+      section_categories_page: 标签页面
+      section_category_hero: 标签页页眉
       section_colors: 颜色
       section_font: 字体
-      section_header_search: 页脚搜索框
-      section_logo: Logo
+      section_header_search: 页眉搜索
+      section_icons: 图标
+      section_list_columns: 列表列
+      section_logo: 徽标
+      section_nav: 列表标签页
+      section_nav_categories: 标签筛选器
       section_shortcuts: 键盘快捷键
       section_sidebar: 侧边栏
       section_sidebar_tags: 标签
-      section_surfaces: '背景&卡片'
+      section_suggested: 推荐讨论
+      section_surfaces: 背景和卡片
+      section_topic_footer: 讨论底部区域
+      section_topic_map: 讨论摘要
+      section_topic_timeline: 时间线
+      section_user_card: 用户卡片
+      section_user_page: 个人资料页面
       section_welcome_banner: 欢迎横幅
-      show_title_with_logo_label: 在Logo旁边展示论坛名称
-      sidebar_categories_label: 主标签分区
-      sidebar_enabled_label: 展示侧边栏
-      sidebar_footer_label: 侧边栏页脚
-      sidebar_new_topic_label: 「发布新话题」按钮
+      shell:
+        active_count: '已启用{active}/{total}项功能'
+        auth_backend_off: 服务器尚未加载/login和/signup页面（extend/auth.php），因此这些按钮仍会打开弹窗。
+        autosave: 所有内容都会自动保存
+        depends_on: '依赖于"{name}"，但该项已关闭。'
+        extension_disabled: '需要{name}扩展；该扩展已安装但未启用。'
+        extension_missing: '需要{name}扩展；该扩展尚未安装。'
+        go_enable: 前往设置
+        group_ai_desc: 服务提供商、机器人、编辑器助手、摘要和相关讨论。
+        group_appearance_desc: 颜色、字体、界面背景、按钮、图标、横幅和提示消息。
+        group_community_desc: 关于、指南、用户、用户组、徽章、信任等级和邀请。
+        group_composer_desc: Discourse编辑器、草稿、主题标签和高级搜索。
+        group_integrations: 集成
+        group_integrations_desc: 为第三方扩展提供Discourse风格界面。每个扩展都需要启用对应的扩展才能使用。
+        group_list_desc: 首页、标签页、列、标签和讨论列表计数器。
+        group_messages: 消息和聊天
+        group_messages_desc: 私信和实时聊天。
+        group_moderation: 管理
+        group_moderation_desc: 版务工具：批量操作、编辑历史记录和作者通知。
+        group_navigation: 页眉和侧边栏
+        group_navigation_desc: 页眉搜索和菜单、登录、键盘快捷键及Discourse侧边栏。
+        group_people: 个人资料和用户
+        group_people_desc: 个人资料页面、用户卡片、扩展字段和动态。
+        group_system: 自动消息
+        group_system_desc: 系统用户及其自动发送的消息：欢迎消息、信任等级、工作人员、举报和封禁。
+        group_topic_desc: 帖子、时间线、讨论摘要、底部区域和阅读功能。
+        hidden_title: 因依赖项已关闭而隐藏
+        locked: 不可用
+        needs: '需要"{name}"'
+        'off': 关闭
+        'on': 开启
+        open_extension: 打开扩展
+        requires_extension: '需要{name}扩展'
+        save_error: 无法保存
+        saved: 已保存
+        saved_all: 更改已保存
+        saving: 正在保存…
+        search_results: '"{query}"的搜索结果'
+      show_title_with_logo_help: 在“外观”中上传徽标后，只有启用此选项才会在徽标旁显示标题。未上传徽标时，标题始终显示。
+      show_title_with_logo_label: 在徽标旁显示论坛标题
+      sidebar_categories_help: 主要标签及其颜色或图标，以及“所有标签”链接。
+      sidebar_categories_label: 标签区块
+      sidebar_enabled_help: 左侧栏显示导航和标签，类似Discourse。关闭后，论坛将恢复Flarum默认导航。
+      sidebar_enabled_label: 显示侧边栏
+      sidebar_footer_help: 侧边栏底部的按钮：浅色或深色主题、新讨论和键盘快捷键。
+      sidebar_footer_label: 侧边栏底部区域
+      sidebar_new_topic_help: 侧边栏顶部的按钮，用于打开编辑器并发起新讨论。
+      sidebar_new_topic_label: '"发起讨论"按钮'
+      sidebar_open_default_help: 尚未通过页眉按钮展开或收起侧边栏的访客会看到此默认状态。之后会优先采用每位访客的选择，并保存在其浏览器中。
       sidebar_open_default_label: 默认展开
-      sidebar_tags_label: 副标签分区
-      sidebar_tags_limit_label: 侧边栏中的副标签数量
-      welcome_banner_label: 展示欢迎横幅
+      sidebar_tags_help: 次要标签以及“所有标签”链接。
+      sidebar_tags_label: 次要标签区块
+      sidebar_tags_limit_help: '在"所有标签"链接前列出多少个次要标签，范围为{min}到{max}。'
+      sidebar_tags_limit_label: 侧边栏中的次要标签
+      stats:
+        activity_notice: 只有标签页可见且有人正在使用页面时，才会统计阅读时长。启用此功能当天起，相关数值从零开始；讨论浏览量统计需要启用浏览量功能。
+        days_suffix: 天
+        heat_help: '设置列表浏览量列的热度颜色（Discourse热度图）。需要在讨论列表中启用"突出显示较高的数值"。'
+        heat_title: 浏览量列高亮
+        hours_suffix: 小时
+        links_notice: 每个人（访客按IP计算）每24小时对每个链接最多计一次；机器人不计入。仅统计帖子中的外部链接。
+        section_activity: 个人资料动态
+        section_counts: 新内容和未读数量
+        section_links: 链接点击
+        section_views: 讨论浏览量
+        stats_activity_enabled_help: 在个人资料摘要中显示访问天数、阅读时长（总计和最近60天）、已读帖子数、浏览讨论数以及送出和收到的点赞数，类似Discourse。
+        stats_activity_enabled_label: 记录动态
+        stats_counts_enabled_help: '已登录用户会在列表标签页中看到"新内容（3）"和"未读（2）"；有新内容时，侧边栏所有讨论旁也会显示圆点。'
+        stats_counts_enabled_label: 显示数量
+        stats_links_enabled_help: '统计帖子中每个外部链接的点击次数，类似Discourse：点击数会显示在链接旁、讨论摘要的"热门链接"中，以及个人资料摘要的"热门链接"中。'
+        stats_links_enabled_label: 统计链接点击次数
+        stats_new_days_help: '此时间范围内创建且用户尚未打开的讨论。设为0则统计注册以来或上次"全部标记为已读"以来的所有讨论。范围为{min}到{max}；Discourse使用2天。'
+        stats_new_days_label: 讨论保持为新内容的天数
+        stats_view_window_hours_help: '每个IP或用户每隔N小时计一次新的讨论浏览量；新的一天开始后始终会重新计数，类似Discourse（topic_view_duration_hours）。范围为{min}到{max}小时；Discourse使用8小时。'
+        stats_view_window_hours_label: 再次统计同一用户前的小时数
+        stats_views_enabled_help: 统计每个讨论的打开次数，类似Discourse。该数值会显示在列表的“浏览量”列中，并可按浏览量排序。
+        stats_views_enabled_label: 统计浏览量
+        topic_views_heat_high_help: 浏览量达到此数值后，浏览量字段会强烈高亮。Discourse使用3500。
+        topic_views_heat_high_label: 强烈高亮起始值
+        topic_views_heat_low_help: 浏览量达到此数值后，浏览量字段会轻微高亮。Discourse使用1000。
+        topic_views_heat_low_label: 轻度高亮起始值
+        topic_views_heat_medium_help: 浏览量达到此数值后，浏览量字段会中度高亮。Discourse使用2000。
+        topic_views_heat_medium_label: 中度高亮起始值
+        views_notice: '类似Discourse：每个账户每天对每个讨论计一次浏览量（访客按IP计算），并受上方小时数限制；只有有权查看讨论的人才会计入，爬虫不计入。不会存储已登录用户的IP；访客IP只以加盐编码形式保存，不会存储IP本身。每日数据会保留，用于讨论摘要中的"最近浏览量"图表。'
+        views_suffix: 次浏览量
+      suggested_count_help: '推荐讨论的数量，范围为{min}到{max}。'
+      suggested_count_label: 讨论数量
+      suggested_topics_help: 在讨论末尾简短列出可继续阅读的其他讨论，优先推荐相同标签下的讨论。
+      suggested_topics_label: 显示推荐讨论
+      tinted_background_help: 内容和侧边栏后方的背景会淡淡地染上主色，类似Horizon。关闭后，背景将保持中性灰色。
+      tinted_background_label: 使用主色为背景着色
+      toast_auto_close_help: '角落提示消息（如"已保存""链接已复制"…）会在几秒后消失，并显示计时条，类似Discourse提示消息。关闭后，提示消息会一直显示，直到手动关闭。'
+      toast_auto_close_label: 自动关闭提示消息
+      topic_event_posts_help: '在讨论中显示Flarum的通知，例如"锁定了讨论"和"置顶了讨论"。Discourse不会以这种方式显示这些通知。'
+      topic_event_posts_label: 事件帖子
+      topic_footer_help: 在最后一条帖子后显示回复、分享和关注按钮，类似Discourse。关注功能需要Subscriptions扩展。
+      topic_footer_label: 讨论末尾的按钮
+      topic_footer_notifications_help: '底部按钮下方显示"正在关注"按钮和通知级别说明。桌面设备上的时间线铃铛已提供相同功能；手机和平板上始终显示底部按钮，因为那里没有其他入口。'
+      topic_footer_notifications_label: 在底部区域显示关注选项（桌面设备）
+      topic_map_help: 首帖下方显示摘要，包含创建日期、最后回复时间、回复数和参与者。
+      topic_map_label: 讨论摘要
+      topic_reply_to_style_avocado: 姓名下方显示连线（牛油果样式）
+      topic_reply_to_style_discourse: Discourse（默认：标题右侧显示↩姓名）
+      topic_reply_to_style_help: '设置回复帖如何显示其回复对象。在Discourse样式中，只有被回复的帖子不是上一条帖子时，才会在标题右侧显示"↩姓名"。牛油果样式会在每条回复的姓名下方显示"↳回复给[头像]姓名"。点击后会显示被回复的帖子。'
+      topic_reply_to_style_label: '帖子中的"回复对象"'
+      topic_sticky_avatar_help: 长帖滚动时，作者头像会跟随滚动并保持可见，直到帖子结束，类似牛油果主题。仅限桌面设备。
+      topic_sticky_avatar_label: 帖子中的固定头像
+      topic_timeline_help: 右侧的栏会标示你在讨论中的位置，并可跳转到任意帖子。
+      topic_timeline_label: 帖子旁的时间线
+      user_activity_reactions_help: 在“动态”下以单个列表显示用户发出的点赞和回应，取代“点赞”页面，并附上表情符号和帖子摘要。只有有权查看回应者的人才能看到回应。
+      user_activity_reactions_label: 回应标签页
+      user_activity_read_help: 在“动态”下按时间倒序显示用户读过的讨论。只有该用户和管理员可以查看。
+      user_activity_read_label: 已读标签页
+      user_activity_solved_help: 在“动态”下显示被选为最佳答案的用户回复。
+      user_activity_solved_label: 已解决标签页
+      user_activity_votes_help: 在“动态”下显示用户参与投票的帖子。其他人只能看到公开投票者的投票。
+      user_activity_votes_label: 投票标签页
+      user_card_help: 紧凑的卡片，显示头像、统计信息和个人资料链接。点击用户头像或姓名即可打开，无需离开当前页面。
+      user_card_label: 用户卡片
+      user_cover_help: 大头像和姓名后方的宽幅背景，类似Discourse。
+      user_cover_label: 个人资料顶部封面
+      user_menu_help: 点击页眉头像会打开一个面板，其中包含通知、回复、点赞、消息、书签、聊天、审核和个人资料标签页（取代Flarum的铃铛和会话菜单）。
+      user_menu_label: Discourse用户菜单
+      user_stats_help: 姓名下方显示加入日期、上次访问时间、帖子数和讨论数。只有启用Likes扩展时才显示点赞数。
+      user_stats_label: 统计信息
+      user_summary_help: 首个标签页显示用户的数据，以及热门讨论和回复。
+      user_summary_label: 摘要标签页
+      welcome_banner_guests_only_help: 已登录成员会直接进入列表；横幅仅面向首次访问的访客。
+      welcome_banner_guests_only_label: 仅访客可见
+      welcome_banner_help: 横幅会在染色背景上显示“外观”中的欢迎标题和消息，类似Horizon。关闭后，页面会直接显示列表。
+      welcome_banner_label: 显示欢迎横幅
+      welcome_banner_search_help: 横幅中间的大型搜索框，点击后打开论坛搜索。
+      welcome_banner_search_label: 横幅中的搜索框
+    sysmsg:
+      custom:
+        add: 添加消息
+        anniversary_help: 由Flarum调度程序在注册周年纪念日发送，且只适用于创建此消息之后的周年纪念日。
+        choose: 请选择…
+        delay_help: '由Flarum调度程序发送（通过cron运行php flarum schedule:run），且只发送给创建此消息之后注册的用户。'
+        delay_label: 延迟天数
+        delay_suffix: 天后发送（0表示立即发送）
+        empty: 尚无自定义消息。
+        enabled: 启用
+        help: 除Discourse默认消息外，还可以设置自定义消息，并选择发送时机（账号激活、加入群组若干天后、信任等级、徽章、首帖、账号周年纪念、账号验证）。每位用户只会收到每条消息一次。
+        level_1: '1 - 基础'
+        level_2: '2 - 成员'
+        level_3: '3 - 活跃成员'
+        level_4: '4 - 领袖'
+        remove: 删除
+        remove_confirm: 删除此自动消息？
+        title: 自定义消息
+        title_label: 消息名称（仅管理员可见）
+        trigger_activated: 账号已激活
+        trigger_anniversary: 账号周年纪念
+        trigger_badge: 已获得徽章
+        trigger_first_post: 已发布首帖
+        trigger_group: 已加入用户组
+        trigger_trust_level: 已达到信任等级
+        trigger_verified: 账号已验证（ramon/verified）
+        when: 时间
+        which: 条件
+        years_label: 账号年数
+        years_suffix: 账号注册周年
+      fields:
+        body: 正文
+        default_hint: 留空则使用默认文字（字段中显示为灰色的文字），并按收件人的语言发送。
+        restore_default: 恢复默认值
+        subject: 主题
+        use_default: 根据默认内容编辑
+        variables: '变量：{list}'
+      flags_agreed_and_post_deleted:
+        body: "你好，\n\n这是%{site_name}发送的自动消息，通知你[你的帖子](%{base_url}%{url})已被移除。\n\n%{flag_reason}\n\n社区成员举报了此帖子，工作人员决定将其移除。\n\n```\n%{flagged_post_raw_content}\n```\n\n详情请查看我们的[社区指南](%{guidelines_url})。"
+        help: 工作人员隐藏或删除含有举报的帖子时发送。需要Flags扩展（flarum/flags）。
+        subject: 工作人员已移除被举报的帖子
+        title: 被举报的帖子已移除
+      silenced_by_staff:
+        body: "你好，\n\n这是%{site_name}发送的自动消息，通知你账号已被暂停，暂停期限至%{suspended_till}。\n\n%{reason}\n\n你仍可浏览论坛，但在暂停结束前无法参与互动。如有疑问，请联系[工作人员](%{base_url}/about)。"
+        help: 工作人员暂停账号时发送。需要Suspend扩展（flarum/suspend）。
+        subject: 账号已暂停
+        title: 账号已暂停
+      tl2_promotion_message:
+        body: "我们已将你的信任等级提升一级！\n\n达到信任等级2，说明你已阅读并积极参与社区，成为这里的一员。\n\n欢迎继续参与社区；有你在这里，我们很高兴。"
+        help: 用户升至信任等级2（成员）时发送。需要启用信任等级。
+        subject: 恭喜你提升了信任等级！
+        title: 信任等级2
+      unsilenced:
+        body: "你好，\n\n这是%{site_name}发送的自动消息，通知你账号的暂停状态已解除。\n\n你现在可以重新发起讨论和回复了。感谢你的耐心等待。"
+        help: 暂停解除时发送。需要Suspend扩展（flarum/suspend）。
+        subject: 你的账号已恢复正常
+        title: 暂停已解除
+      user_added_to_group_as_member:
+        body: '你已成为[%{group_name}](%{base_url}%{group_path})用户组的成员。'
+        help: 用户加入管理员和版主以外的用户组时发送。默认关闭，类似Discourse。
+        subject: '你已加入%{group_name}用户组'
+        title: 加入用户组
+      welcome_invite:
+        body: "感谢接受邀请并加入%{site_name}，欢迎！\n\n- 我们已为你创建新账号**%{username}**。你可以在[设置](%{user_preferences_url})中更改姓名或密码。\n\n我们始终倡导[文明友善的社区行为](%{guidelines_url})。\n\n祝你在这里度过愉快时光！"
+        help: 用于通过邀请链接加入的用户，替代常规欢迎消息。
+        subject: '欢迎加入%{site_name}！'
+        title: 邀请注册欢迎消息
+      welcome_staff:
+        body: "一位工作人员已授予你%{role}身份。\n\n你将获得工作人员工具；权力越大，责任越大。如果你刚开始担任版主，请阅读[社区指南](%{guidelines_url})。"
+        help: 用户加入管理员或版主用户组时发送。
+        subject: '恭喜你获得%{role}身份！'
+        title: 加入工作人员团队
+      welcome_tl1_user:
+        body: "你好！我们看到你最近读了不少内容，真棒，所以已将你的信任等级提升一级！\n\n很高兴你愿意花时间参与社区，也希望进一步了解你。欢迎[完善个人资料](%{user_url})，或[发起新讨论](%{base_url})。"
+        help: 用户升至信任等级1（基础）时发送。需要启用信任等级。
+        subject: 感谢你花时间参与社区
+        title: 信任等级1
+      welcome_user:
+        body: "感谢加入%{site_name}，欢迎你！\n\n我们始终倡导[文明友善的社区行为](%{guidelines_url})。\n\n祝你在这里度过愉快时光！"
+        help: 发送给刚激活账号的人（已确认邮箱，或注册时邮箱已确认）。每人仅发送一次。
+        subject: '欢迎加入%{site_name}！'
+        title: 欢迎消息
+    system_user:
+      bio: 这不是一个真实的人，而是用于系统通知和其他系统任务的全局用户。
+      create: 创建系统用户
+      created_as: '系统用户：{name}'
+      help: '类似Discourse的"system"用户：它会发送自动通知（书签提醒和徽章）及下方的自动消息。它是论坛中的普通用户，拥有个人资料、头像和简介，但永远不会登录：没有登录、密码、密码重置或会话。任何人都不能给它发消息，它也不会出现在用户目录中。'
+      messages_notice: 自动消息属于私信：需要启用Messages扩展（flarum/messages）。
+      missing: 尚未设置系统用户。没有系统用户时，自动通知不会显示发送者，也不会发送自动消息。
+      needs_user: 请先创建系统用户（见上方卡片）。
+      no_replies_notice: 与系统用户的对话是单向的：收件人无法回复，因为没有人会查看它的收件箱。
+      open_profile: 打开个人资料
+      profile_hint: 像其他用户一样，在其个人资料中更改头像、名称和简介。
+      title: 系统用户
+      unlink: 解除关联
+      unlink_confirm: 要解除系统用户关联吗？账户会保留，但通知将不再显示发送者；在创建或关联其他系统用户之前，也不会发送自动消息。
+  api:
+    ai:
+      errors:
+        aborted: 回复已中断。
+        auth: 'AI API密钥未获接受，请联系论坛管理员。'
+        bad_request: AI服务拒绝了请求。如果问题持续，请联系论坛管理员。
+        generic: AI暂时无法回答，请稍后重试。
+        invalid_mode: 未知的AI操作。
+        invalid_title: 名称长度必须为1到120个字符。
+        limit_reached: 你已达到今天的AI请求上限，请明天再试。
+        message_length: '消息长度必须为{min}到{max}个字符。'
+        network: 无法连接AI服务，请重试。
+        no_content: 请先添加内容，再执行AI操作。
+        no_prompt: 输入自定义提示词。
+        not_configured: 此论坛尚未配置AI。
+        overloaded: AI服务负载过高，请稍后重试。
+        rate_limit: AI请求过多，请稍等片刻后重试。
+        refused: AI无法处理此请求。
+        server: AI服务发生错误，请重试。
+        truncated: 回复过长，已被截断。
+      personas:
+        creative_description: 专注创意任务、不使用外部集成的AI机器人
+        creative_name: 创意助手
+        creative_prompt: 你是一位创意助手：帮助撰写、构思和修改文字，并以丰富的想象力和良好的品味探索各种可能性。
+        forum_researcher_description: 专注于深入研究论坛内容的机器人
+        forum_researcher_name: 论坛研究员
+        forum_researcher_prompt: 你是一位严谨的论坛研究员。针对每个问题，使用不同关键词进行多次搜索，阅读最相关的讨论，并撰写完整、有条理的回答，附上每篇参考讨论的链接。若论坛中没有相关信息，请明确说明。
+        general_description: 可执行各种任务的通用AI机器人
+        general_name: 论坛助手
+        general_prompt: 你是一位乐于助人、友好且直接的助手。请回答各种问题。如果问题与论坛、讨论或社区有关，请先搜索论坛再回答。
+        researcher_description: 搜索和阅读网页的AI机器人
+        researcher_name: 网络研究员
+        researcher_prompt: 你是一位研究员。请搜索网络，使用最新信息回答问题，并附上来源链接。
+    badges:
+      admired:
+        description: 在300篇帖子中各收到至少5个赞
+        long_description: 在300篇不同的帖子中各收到至少5个赞时授予此徽章。太棒了！社区成员很欣赏你持续带来的高质量贡献。
+        name: 备受赞赏
+      aficionado:
+        description: 连续访问100天
+        long_description: 连续访问100天时授予此徽章。已经超过三个月了！
+        name: 忠实用户
+      anniversary:
+        description: 活跃成员满一年，且至少发布过一篇帖子
+        long_description: 成为成员满一年且这一年中至少发布过一篇帖子时授予此徽章。感谢你一直参与并为社区做出贡献；没有你，我们做不到这一切。
+        name: 周年纪念
+      appreciated:
+        description: 在20篇帖子中各收到至少1个赞
+        long_description: 在20篇不同的帖子中各收到至少一个赞时授予此徽章。社区成员很喜欢你为这些对话带来的贡献！
+        name: 备受认可
+      autobiographer:
+        description: 填写了个人资料
+        long_description: 填写用户资料并选择头像后授予此徽章。让社区了解你的身份和兴趣，能让交流更紧密、更有意义。欢迎加入！
+        name: 自我介绍者
+      basic_user:
+        description: 已获得社区的基本功能权限
+        long_description: 达到信任等级1时授予此徽章。感谢你花时间留下来，阅读一些讨论，了解我们的社区。
+        name: 基础
+      crazy_in_love:
+        description: '有20天在一天内送出{max}个赞'
+        long_description: '在20个不同的日子里，每天送出{max}个赞时授予此徽章。太棒了！你是持续鼓励社区成员的典范！'
+        name: 爱意满满
+      devotee:
+        description: 连续访问365天
+        long_description: 连续访问365天时授予此徽章。太棒了，整整一年！
+        name: 忠实拥护者
+      editor:
+        description: 首次编辑帖子
+        long_description: 首次编辑自己的帖子时授予此徽章。我们鼓励编辑：你可以改进格式、修正小错误，或补充最初遗漏的内容。继续完善你的帖子吧！
+        name: 编辑者
+      empathetic:
+        description: 有500篇获赞帖子，并送出1000个赞
+        long_description: 有500篇帖子获赞，并回赠至少1000个赞时授予此徽章。太棒了！你是慷慨互赏的典范。
+        name: 富有同理心
+      enthusiast:
+        description: 连续访问10天
+        long_description: 连续访问10天时授予此徽章。感谢你坚持参与社区，超过一周了！
+        name: 热心参与者
+      first_emoji:
+        description: 在帖子中使用了表情符号
+        long_description: 首次在帖子中添加表情符号时授予此徽章。你可以用表情符号表达各种情绪，包括开心、难过、生气等。
+        name: 首次使用表情符号
+      first_flag:
+        description: 举报了帖子
+        long_description: 首次举报帖子时授予此徽章。举报能帮助大家共同维护友善的交流环境。如果你发现任何需要版主处理的帖子，请随时举报。
+        name: 首次举报
+      first_like:
+        description: 为帖子点了赞
+        long_description: 首次为帖子点赞时授予此徽章。点赞是让社区成员知道你觉得某篇帖子有趣、实用、精彩或好玩的好方法。把这份喜爱传递出去吧！
+        name: 首次点赞
+      first_link:
+        description: 添加了指向其他讨论的链接
+        long_description: 首次链接到其他讨论时授予此徽章。为讨论添加链接能展示它们之间的联系，帮助其他读者发现相关对话。欢迎自由分享链接！
+        name: 首次添加链接
+      first_mention:
+        description: 在帖子中提及了用户
+        long_description: 首次在帖子中提及某人的@用户名时授予此徽章。每次提及都会通知对方，让其看到你的帖子。输入@符号即可提及任何用户。
+        name: 首次提及用户
+      first_quote:
+        description: 引用了帖子
+        long_description: 首次在回复中引用帖子时授予此徽章。在回复中引用之前帖子的相关内容，有助于保持讨论连贯、切题。尽情引用吧！
+        name: 首次引用
+      gives_back:
+        description: 有100篇获赞帖子，并送出100个赞
+        long_description: 有100篇帖子获赞，并回赠至少100个赞时授予此徽章。感谢你将这份善意传递下去！
+        name: 回馈社区
+      good_post:
+        description: 一条回复收到25个赞
+        long_description: 你的回复获得25个赞时授予此徽章。你的回复很出色，让讨论对所有人都更有吸引力！
+        name: 精彩回复
+      good_topic:
+        description: 一场讨论收到25个赞
+        long_description: 你的讨论获得25个赞时授予此徽章。你发起了一场热烈的讨论，社区成员积极参与并乐在其中！
+        name: 热门讨论
+      great_post:
+        description: 一条回复收到50个赞
+        long_description: 你的回复获得50个赞时授予此徽章。太棒了！你的回复鼓舞人心、引人入胜、妙趣横生或见解深刻，深受社区喜爱。
+        name: 卓越回复
+      great_topic:
+        description: 一场讨论收到50个赞
+        long_description: 你的讨论获得50个赞时授予此徽章。你发起了一场引人入胜的讨论，社区成员享受了由此展开的热烈交流！
+        name: 卓越讨论
+      higher_love:
+        description: '有5天在一天内送出{max}个赞'
+        long_description: '在5个不同的日子里，每天送出{max}个赞时授予此徽章。感谢你每天花时间积极支持优质讨论！'
+        name: 爱意升级
+      leader:
+        description: 由工作人员选为社区榜样
+        long_description: 达到信任等级4时授予此徽章。工作人员选你作为社区领袖；你的言行也为社区其他成员树立了积极榜样。
+        name: 领袖
+      member:
+        description: 已获得长期参与者的信任
+        long_description: 达到信任等级2时授予此徽章。感谢你持续数周参与社区，真正成为我们的一员。
+        name: 成员
+      new_user_of_the_month:
+        description: 首月表现出色、贡献突出
+        long_description: 每月为两位新用户授予此徽章，表彰他们在首月的出色贡献；评选依据是有多少人点赞了他们的帖子。
+        name: 本月新用户
+      nice_post:
+        description: 一条回复收到10个赞
+        long_description: 你的回复获得10个赞时授予此徽章。你的回复给社区成员留下了深刻印象，也推动了讨论继续进行！
+        name: 优质回复
+      nice_topic:
+        description: 一场讨论收到10个赞
+        long_description: 你的讨论获得10个赞时授予此徽章。你发起了一场社区成员喜欢的有趣讨论！
+        name: 精彩讨论
+      out_of_love:
+        description: '一天内送出{max}个赞'
+        long_description: '一天内送出{max}个赞时授予此徽章。花点时间为喜欢的帖子点赞，能鼓励社区成员今后创作更多精彩讨论。'
+        name: 点赞不停
+      reader:
+        description: 阅读了回复数超过100条的讨论中的每条回复
+        long_description: 首次阅读回复数超过100条的长讨论时授予此徽章。认真阅读有助于理解讨论、了解不同观点，并促成更有趣的交流。
+        name: 阅读者
+      regular:
+        description: 已获得稳定贡献者的信任
+        long_description: 达到信任等级3时授予此徽章。感谢你数月来一直活跃于社区。你现在是最活跃的读者之一，也是可靠的贡献者，让我们的社区更加出色。
+        name: 活跃成员
+      respected:
+        description: 在100篇帖子中各收到至少2个赞
+        long_description: 在100篇不同的帖子中各收到至少2个赞时授予此徽章。你为社区对话做出了许多贡献，大家越来越尊重你。
+        name: 受人尊敬
+      thank_you:
+        description: 有20篇获赞帖子，并送出10个赞
+        long_description: 有20篇帖子获赞，并回赠至少10个赞时授予此徽章。当别人为你的帖子点赞时，你也愿意花时间为他人的帖子点赞。
+        name: 知恩回馈
+      welcome:
+        description: 收到点赞
+        long_description: 首次收到帖子点赞时授予此徽章。恭喜！你的社区成员觉得你发布的内容有趣、精彩或实用。
+        name: 欢迎消息
+    badges_admin:
+      already_granted: 此用户已拥有此徽章，且该徽章不可重复授予。
+      badge_not_found: 此徽章不存在。
+      badge_not_grantable: 无法手动授予此徽章（系统徽章由自动规则授予）。
+      invalid_reason: '理由最多可包含500个字符；链接必须以http://或https://开头。'
+      name_taken: 已存在同名徽章。
+      user_not_found: 未找到此用户名对应的用户。
+    invites:
+      too_many: 你拥有的有效邀请过多。请先删除一个，再生成其他邀请。
+    loader:
+      invalid_svg: 文件不是有效的SVG，或清理后大于64KB。
+    messages:
+      invite_empty: 选择要邀请的人。
+      invite_group_already: '{group}已在此消息对话中。'
+      invite_group_invalid: 无法向此用户组发送消息。
+      recipients_limit: '抱歉，你最多只能向{max}位收件人发送消息。'
+    profile:
+      invalid_birthday: 请选择1900年至昨天之间的出生日期。
+      invalid_image_url: 图片必须是https地址，且不能包含空格、引号或括号。
+      invalid_status_emoji: 状态只能包含一个表情符号。
+      invalid_status_until: 状态清除时间必须设为未来时间。
+      invalid_website: '网站地址必须以http://或https://开头。'
+  forum:
+    age:
+      days: '{count}天'
+      hours: '{count}小时'
+      minutes: '{count}分钟'
+      now: 现在
+    ai:
+      bot:
+        back_to_forum: 返回论坛
+        cancel_streaming: 停止回复
+        conversation_menu: 对话选项
+        delete: 删除
+        delete_confirm: 要删除此对话吗？此操作无法撤销。
+        disclaimer: 生成式AI可能会出错。请核实重要信息。
+        exit: 退出AI机器人
+        header: 有什么可以帮你？
+        last_30_days: 过去30天
+        last_7_days: 过去7天
+        load_more: 加载更多
+        log_in: 请登录后与AI机器人对话。
+        new: 新问题
+        not_allowed: 你无权使用AI机器人。
+        page_title: AI对话
+        persona_label: 智能体：
+        placeholder: 提个问题…
+        remaining: '{count, plural, =0 {你今天的请求次数已用完。} one {你今天还可请求#次。} other {你今天还可请求#次。}}'
+        rename: 重命名
+        rename_prompt: 新的对话名称：
+        scroll_to_bottom: 滚动到底部
+        shortcut_link: AI机器人
+        shortcut_title: 与AI机器人开始对话
+        sidebar_empty: 机器人对话记录会显示在这里。
+        submit: 提交问题
+        title: AI机器人
+        today: 今天
+        untitled: AI对话
+      errors:
+        generic: AI暂时无法回答，请稍后重试。
+      helper:
+        changes: 建议的修改
+        confirm: 确认
+        copied: 已复制！
+        copy: 复制
+        custom_prompt_placeholder: 输入自定义提示词…
+        custom_prompt_submit: 发送提示词
+        discard: 放弃
+        explain: 解释
+        explain_title: AI说明
+        generate_titles: 建议讨论标题
+        loading: AI正在生成
+        markdown_table: 生成Markdown表格
+        no_content_error: 请先添加内容，再执行AI操作
+        no_suggestions: 没有可用的建议
+        proofread: 校对文字
+        regen: 重试
+        simplify: 简化
+        suggest_tags: 建议标签
+        translate: '翻译为{language}'
+        trigger: 询问AI
+      related:
+        activity: 动态
+        replies: 回复
+        title: 相关讨论
+        topic: 讨论
+      search:
+        ask_prefix: 询问AI：
+        badge: 人工智能
+        placeholder: 搜索或询问AI
+      summary:
+        close: 关闭摘要面板
+        empty: 此讨论尚无摘要。
+        generate: 生成摘要
+        in_progress: 正在使用AI生成讨论摘要
+        model_used: '使用的AI：{model}'
+        outdated: 摘要已过期
+        outdated_posts: '{count, plural, one {（缺少#篇帖子）} other {（缺少#篇帖子）}}'
+        regenerate: 重新生成
+        summarized_on: '由AI于{date}生成摘要'
+        title: 讨论摘要
+      tools:
+        read: 阅读讨论
+        read_missing: 尝试读取不可用的讨论
+        searched: '搜索"{query}"：{count, plural, =0 {没有结果} one {#条结果} other {#条结果}}'
+      translation:
+        click_to_show_original: 点击查看原文。
+        click_to_show_translation: 点击查看译文。
+        disclaimer: AI生成的译文可能不准确。
+        original_language: '此帖子原文使用{language}撰写。'
+        show_original_all: 显示原文
+        show_translated_all: 显示译文
+        title_original_language: '此标题原文使用{language}撰写。'
+        translating: 正在翻译…
+    auth:
+      back_to_login: 返回登录
+      forgot_heading: 重置密码
+      forgot_page_title: 重置密码
+      login_page_title: 登录
+      or: 或
+      panel_login_text: 登录后即可关注对话、回复并及时了解重要动态。
+      panel_login_title: 很高兴再次见到你
+      panel_signup_text: 创建账号，参与讨论、关注主题并接收通知。
+      panel_signup_title: 加入社区
+      reset_confirm_password: 确认新密码
+      reset_heading: 重置密码
+      reset_help: 为账号设置新密码（至少8个字符）。
+      reset_new_password: 新密码
+      reset_submit: 保存新密码
+      signup_page_title: 注册
+    badges:
+      all_badges: 所有徽章
+      awarded: '{count, plural, one {已授予{number}次} other {已授予{number}次}}'
+      granted_ago: '于{ago}授予'
+      granted_on: '于{date}授予'
+      groupings:
+        community: 社区
+        getting_started: 入门
+        other: 其他
+        posting: 发帖
+        trust_level: 信任等级
+      load_more: 加载更多
+      more: '+{count}'
+      more_badges: 更多徽章
+      multiple_grant: 可重复获得
+      nav: 徽章
+      no_recipients: 还没有人获得此徽章。
+      none: 这里还没有徽章。
+      not_found: 此徽章不存在或已关闭。
+      notification: '已获得"{badge}"'
+      notification_setting: 获得徽章时
+      owned: 你已获得此徽章
+      page_title: 徽章
+      recipients: 获得者
+      summary_heading: 精选徽章
+      trust_level: 信任等级
+      trust_level_label: '信任等级：{level}'
+      trust_level_modal:
+        control: 更改信任等级…
+        level_label: 等级
+        locked_help: 信任等级已锁定：系统不会提升或降低此用户的等级。
+        locked_label: 锁定信任等级
+        submit: 保存
+        title: '{username}的信任等级'
+        unlocked_help: 信任等级未锁定：系统可根据要求提升或降低此用户的等级。
+      trust_levels:
+        basic: 基础用户
+        leader: 领袖
+        member: 成员
+        newuser: 新用户
+        regular: 活跃成员
+      types:
+        bronze: 铜
+        gold: 金
+        silver: 银
+      unavailable: 此论坛已关闭徽章功能。
+      user_none: '{username}尚未获得任何徽章。'
+    bookmarks:
+      alerts:
+        added: 帖子已添加书签。
+        removed: 书签已删除。
+        set_reminder: 设置提醒
+      modal:
+        cancel: 取消
+        create_title: 创建书签
+        custom_date: 提醒日期
+        custom_time: 提醒时间
+        delete: 删除
+        edit_title: 编辑书签
+        existing_reminder: '将在{date}提醒你查看此书签。'
+        invalid_date: 请选择未来的日期和时间。
+        name_label: 名称
+        name_placeholder: 为书签命名，方便记住它的用途
+        reminder_label: 提醒我
+        save: 保存
+      notification:
+        text: '书签提醒：{title}'
+      page:
+        actions: 书签操作
+        clear_reminder: 清除提醒
+        column_date: 已添加书签
+        column_topic: 讨论
+        delete: 删除
+        delete_confirm: 此书签已设置提醒。仍要删除吗？
+        edit: 编辑
+        empty: 你还没有书签。
+        empty_help: 点击任意帖子的书签图标，即可将其保存在这里；还可以为书签命名和设置提醒。
+        load_more: 加载更多
+        nav: 书签
+        no_results: '没有找到与“{query}”匹配的书签。'
+        private: 书签是私密的：只有个人资料所有者能查看自己的书签。
+        reminder_future: '提醒时间：{date}'
+        reminder_past: '提醒已于{date}发送'
+        search_placeholder: 搜索书签…
+        title: 书签
+      post:
+        add: 为此帖子添加书签
+        edit: 编辑书签
+        reminder: '提醒时间：{date}'
+      presets:
+        custom: 选择日期和时间
+        later_today: 今天晚些时候
+        next_month: 下个月
+        next_week: 下周
+        none: 不设提醒
+        tomorrow: 明天
+      settings:
+        notify_reminder_label: 在我选择的时间提醒我查看书签
+      topic:
+        add: 为讨论添加书签
+        edit: 编辑讨论书签
+    categories:
+      category: 标签
+      latest: 最新
+      tags_all: 所有标签
+      tags_none: 还没有次要标签。
+      tags_sort_by: 排序方式
+      tags_sort_count: 计数
+      tags_sort_name: 名称
+      tags_title: 次要标签
+      topics: 讨论
+    chat:
+      about_view:
+        associated_category: 关联标签
+        description: 描述
+        name: 名称
+      ago:
+        days: '{count}天'
+        hours: '{count}小时'
+        minutes: '{count}分钟'
+        now: 现在
+      all_loaded: 显示所有消息
+      aria_roles:
+        composer: 聊天编辑器
+      browse:
+        filter_all: 全部
+        filter_archived: 已归档
+        filter_closed: 已关闭
+        filter_input_placeholder: 按名称搜索频道
+        filter_open: 打开
+        title: 频道
+      browse_all_channels: 浏览所有频道
+      cancel: 取消
+      cancel_reply: 取消回复
+      channel:
+        empty_state:
+          direct_message_title: '与{name}开始对话'
+          joined_tip: 抢先发帖，开启对话。
+          members_here: '{count, plural, one {这里有#位成员} other {这里有#位成员}}'
+          title: '这里是{channelName}的开头'
+        memberships_count: '{count, plural, one {#位成员} other {#位成员}}'
+        no_memberships: 此频道没有成员
+        no_memberships_found: 未找到成员
+        preview_card:
+          guest_title: '加入{channelName}开始聊天'
+          join_body: 加入后即可发帖和回复，频道也会显示在你的列表中。
+          no_access_body: 此频道暂不接受新成员。
+          no_access_title: '你无法加入{channelName}'
+      channel_archive:
+        confirm: '要归档{channelTitle}频道吗？归档后会变为只读：无法发送新消息，也无法编辑或删除已有消息。'
+        instructions_plain: 归档频道会将其设为只读。无法发送新消息，也无法编辑或删除已有消息。
+      channel_close:
+        instructions: 关闭频道后，非工作人员用户无法发送新消息或编辑已有消息。
+      channel_delete:
+        confirm: 我了解后果，仍要删除频道
+        confirm_channel_name: 输入频道名称
+        instructions: '删除{name}频道及其聊天记录。所有消息和相关数据（例如回应和上传的文件）都会被永久删除。如果你想保留频道记录并停止使用频道，可以改为归档。请在下方输入频道名称以确认。'
+        process_started: 频道已删除。
+        title: 删除频道
+      channel_edit_description_modal:
+        description: 介绍此频道的用途
+        input_placeholder: 添加描述
+      channel_edit_name_slug_modal:
+        input_placeholder: 添加名称
+        slug_description: 频道URL中会使用别名，而不是频道名称。
+        slug_label: URL别名
+      channel_info:
+        back_to_channel: 返回
+        tabs:
+          members: 成员
+          settings: 设置
+      channel_list:
+        title: 频道
+      channel_open:
+        instructions: 重新开放频道后，所有用户都可以发送消息并编辑自己的已有消息。
+      channel_settings:
+        archive_channel: 归档频道
+        close_channel: 关闭频道
+        delete_channel: 删除频道
+        edit: 编辑
+        join: 加入
+        leave: 退出
+        leave_channel: 退出频道
+        leave_groupchat_info: 退出此群聊后，你将无法再访问该群聊，也不会收到相关通知。若要重新加入，需要由群聊成员再次邀请。
+        open_channel: 打开频道
+        star_channel: 收藏频道
+      channel_status:
+        archived_header: 频道已归档
+        closed_header: 频道已关闭
+        open_header: 频道已开放
+        read_only_header: 频道为只读状态
+      chat_channels: 频道
+      chat_message_separator:
+        today: 今天
+        yesterday: 昨天
+      close: 关闭
+      close_full_page: 退出全屏聊天
+      collapse: 收起聊天抽屉
+      composer:
+        send: 发送
+        toggle_toolbar: 切换工具栏
+      copy_link: 复制链接
+      copy_text: 复制文字
+      create_channel:
+        choose_category:
+          hint: 可选。关联标签后，只有能查看该标签的人才能看到此频道。
+          label: 选择标签
+          none: 选择一个…
+        create: 创建频道
+        description: 描述
+        name: 频道名称
+        threading:
+          label: 启用主题串
+        title: 新建频道
+      delete: 删除
+      deleted: '{count, plural, one {一条消息已删除。[查看]} other {#条消息已删除。[查看全部]}}'
+      deleted_by: '由{username}于{time}删除'
+      deleted_chat_username: 已删除
+      deleted_message: 已删除的消息
+      direct_message_creator:
+        add_to_channel: 添加到频道
+        selected_user_title: '取消选择{username}'
+        title: 新消息
+      direct_messages:
+        close: 关闭频道
+        new_group: 开始对话
+        sidebar_title: 私信
+        title: 私信
+      disabled_for_you: 你已关闭聊天。请前往“设置”→“聊天”重新启用。
+      edit: 编辑
+      edited: 已编辑
+      emoji: 插入表情符号
+      empty_state:
+        my_threads: 你还没有主题串。你参与的主题串会显示在这里。
+        title: 未找到频道
+      enable: 启用聊天
+      errors:
+        cannot_dm: 抱歉，你无法发送私信。
+        description_too_long: '描述最多可包含{count}个字符。'
+        invalid_emoji: 回应无效。
+        invalid_status: 此频道无法恢复到该状态。
+        message_empty: 消息不能为空。
+        message_too_long: '消息过长，最多只能包含{count}个字符。'
+        name_required: 请为频道命名。
+        name_too_long: '名称最多可包含{count}个字符。'
+        reply_not_found: 你回复的消息已不存在。
+        slug_taken: 已存在使用此URL别名的频道。
+        tag_not_found: 未找到标签。
+        thread_not_found: 此主题串已不存在。
+        too_fast: 你发送消息太快了，请稍等几秒。
+        too_many_pins: '一个频道最多可置顶{count}条消息。'
+        too_many_reactions: '一条消息最多可有{count}种不同回应。'
+        too_many_users: '一段对话最多可有{count}位参与者。'
+        user_cannot_chat: '{username}已关闭聊天'
+        user_not_found: 未找到用户。
+      expand: 展开聊天抽屉
+      header_indicator_preference:
+        all_new: 所有新消息
+        dm_and_mentions: 私信、提及和已关注的主题串
+        never: 从不
+        only_mentions: 仅限提及
+        title: 在页眉中显示动态指示器
+      heading: 聊天
+      ignore_channel_wide_mention:
+        description: '@here和@all提及不会通知你。'
+        title: 忽略频道范围的提及
+      invalid_access: 你无权查看此聊天频道
+      join: 加入
+      last_visit: 上次访问
+      link_copied: 链接已复制到剪贴板
+      load_more: 加载更多
+      log_in_to_chat: 请登录后使用聊天。
+      members_view:
+        add_member: 添加成员
+        back_to_settings: 返回设置
+        filter_placeholder: 查找成员
+      mention_all: 通知频道中的所有人
+      mention_here: 通知当前所有活跃用户
+      mention_warning:
+        invitations_sent: '{count, plural, one {邀请已发送} other {邀请已发送}}'
+        not_member: 不是频道成员
+      message_actions: 消息操作
+      message_too_long: '消息过长，最多只能包含{count}个字符。'
+      more_message_actions: 更多操作
+      my_threads:
+        title: 我的主题串
+      new_message_modal:
+        add_user_long: '按住Shift并点击或按Shift+Enter：添加@{username}'
+        create_group_placeholder: 群聊名称（可选）
+        create_new_group_chat: 创建群聊
+        default_search_placeholder: '#频道名称、@某人或其他内容'
+        new_group_chat: 新建群聊
+        no_items: 没有项目
+        participants_counter: '{selection_count}/{max}位参与者'
+        user_search_placeholder: …添加更多成员
+      no_direct_message_channels: 你尚未加入任何私信频道。
+      no_direct_message_channels_cta: 开始对话
+      no_pinned_messages: 此频道没有置顶消息。
+      no_public_channels: 你尚未加入任何频道。
+      no_public_channels_cta: 浏览频道
+      notification_levels:
+        always: 所有动态
+        mention: 仅限提及
+        never: 从不
+      notifications:
+        direct_message: 一条私信
+        direct_message_from: '{username}给你发送了一条私信'
+        mention: '{username}在{channel}中提及了你'
+        mention_all: '{username}在{channel}中使用了@all'
+        mention_here: '{username}在{channel}中使用了@here'
+        message_in: '{username}在{channel}中发帖'
+        settings_mention: 有人在聊天中提及我
+        settings_message: 我收到聊天私信
+      open: 打开聊天
+      open_full_page: 全屏打开聊天
+      pin_message: 置顶消息
+      pinned: 已置顶
+      pinned_bar:
+        title: 已置顶
+      pinned_messages:
+        pinned_by_user: '由{username}置顶'
+        pinned_by_you: 由你置顶
+        title: 置顶消息
+      placeholder_channel: '在{channelName}中聊天'
+      placeholder_group: 在群组中聊天
+      placeholder_new_message_disallowed:
+        archived: 频道已归档，目前无法发送新消息。
+        closed: 频道已关闭，目前无法发送新消息。
+        read_only: 频道为只读状态，目前无法发送新消息。
+      placeholder_self: 记点东西
+      placeholder_silenced: 你目前无法发送消息。
+      placeholder_thread: 在主题串中聊天
+      placeholder_users: '与{commaSeparatedNames}聊天'
+      quick_reaction_type:
+        options:
+          custom: 自定义回应
+          frequent: 常用回应
+        title: 快速回应方式
+      react: 使用表情回应
+      reactions:
+        add: '用{emoji}回应'
+        counted: '{count, plural, one {回应：{emoji}，#人} other {回应：{emoji}，#人}}'
+        multiple_users: '{commaSeparatedUsernames}和{username}用{emoji}回应了'
+        multiple_users_and_more: '{count, plural, one {{commaSeparatedUsernames}和另外#人用{emoji}回应了} other {{commaSeparatedUsernames}和另外#人用{emoji}回应了}}'
+        only_you: '你用{emoji}回应了'
+        remove: '移除{emoji}回应'
+        single_user: '{username}用{emoji}回应了'
+        you_and_multiple_users: '你、{commaSeparatedUsernames}和{username}用{emoji}回应了'
+        you_and_single_user: '你和{username}用{emoji}回应了'
+        you_multiple_users_and_more: '{count, plural, one {你、{commaSeparatedUsernames}和另外#人用{emoji}回应了} other {你、{commaSeparatedUsernames}和另外#人用{emoji}回应了}}'
+      remove_upload: 移除文件
+      reply: 回复
+      replying_indicator:
+        many_users: '{commaSeparatedUsernames}和另外{count}人正在输入'
+        multiple_users: '{commaSeparatedUsernames}和{lastUsername}正在输入'
+        single_user: '{username}正在输入'
+      restore: 恢复已删除的消息
+      retention_reminders:
+        indefinitely_long_plain: 此频道中的消息会永久保留。
+        long: '{count, plural, one {此频道中的消息会保留#天。} other {此频道中的消息会保留#天。}}'
+      retry_staged_message:
+        action: 重新发送？
+        title: 网络错误
+      save: 保存
+      scroll_to_bottom: 滚动到底部
+      scroll_to_new_messages: 查看新消息
+      search:
+        no_results: 未找到结果
+        short_title: 搜索
+        sort:
+          latest: 最新
+          relevance: 相关度
+        title: 搜索聊天
+      search_view:
+        filter_placeholder: 搜索消息
+        results_list_label: 聊天消息搜索结果
+      send_shortcut:
+        enter: Enter（Shift+Enter换行）
+        meta_enter: Ctrl/⌘+Enter（Enter换行）
+        title: 发送消息的快捷键
+      settings:
+        admin_title: 管理员
+        auto_join_users_info: '能查看{category}标签的人打开论坛时，会自动加入此频道。'
+        auto_join_users_info_no_category: 能查看此频道的人打开论坛时，会自动加入此频道。
+        auto_join_users_label: 自动添加用户
+        channel_threading_description: 启用主题串后，回复聊天消息会开启单独的对话串，与主频道并行显示。
+        channel_threading_label: 主题串
+        channel_wide_mentions_description: '允许用户通过@all通知#{channel}的所有成员，或通过@here仅通知当前活跃成员'
+        channel_wide_mentions_label: 允许使用@all和@here提及
+        history_label: 历史记录
+        info_title: 频道信息
+        mute: 将频道设为静音
+        notification_level: 发送通知
+        saved: 已保存
+        settings_title: 设置
+      sound:
+        title: 聊天通知音效
+      sounds:
+        bell: 铃声
+        ding: 叮咚
+        none: 无
+      start_conversation: 聊天
+      text_copied: 文字已复制到剪贴板
+      thread:
+        close: 关闭主题串
+        label: 主题串
+        notifications:
+          regular:
+            description: 有人在此主题串中@提及你时，你会收到通知。
+            title: 普通
+          tracking:
+            description: 主题串列表和频道中会显示此主题串的新回复数。有人在此主题串中@提及你时，你会收到通知。
+            title: 跟踪
+          watching:
+            description: 每有一条新回复，你都会收到通知，并且会显示新回复数。
+            title: 关注
+        participants_other_count: '+{count}'
+        replies: '{count, plural, one {#条回复} other {#条回复}}'
+        settings: 设置
+      threads:
+        list: 主题串
+        none: 你尚未参与此频道中的任何主题串。
+        open: 打开主题串
+      title_capitalized: 聊天
+      unpin_message: 取消置顶消息
+      upload: 附加文件
+      upload_errors:
+        failed: 失败
+        too_large: 太大
+      upload_to_channel: '上传到{title}'
+      you: 你
+    community:
+      about:
+        activity:
+          activeUsers: '{count, plural, one {{formatted}位活跃用户} other {{formatted}位活跃用户}}'
+          likes: '{count, plural, one {{formatted}个赞} other {{formatted}个赞}}'
+          posts: '{count, plural, one {{formatted}个帖子} other {{formatted}个帖子}}'
+          topics: '{count, plural, one {{formatted}个讨论} other {{formatted}个讨论}}'
+          users: '{count, plural, one {{formatted}次注册} other {{formatted}次注册}}'
+        activity_title: 网站动态
+        admin_count: '{count, plural, one {#位管理员} other {#位管理员}}'
+        contact_text: 如果本站发生重大问题或紧急事件，请联系我们：
+        contact_title: 联系我们
+        created: '创建于{date}'
+        created_ago: '创建于{ago}'
+        last_7_days: 过去7天内
+        members: '{count, plural, one {#位成员} other {#位成员}}'
+        moderator_count: '{count, plural, one {#位版主} other {#位版主}}'
+        our_admins: 我们的管理员
+        our_moderators: 我们的版主
+        period:
+          all: 全部时间
+          day: 过去24小时
+          month: 过去30天
+          week: 过去7天
+        stat:
+          activeUsers: 活跃用户
+          likes: 点赞
+          posts: 帖子
+          topics: 讨论
+          users: 用户
+        stats_title: 网站统计
+        title: 关于
+      groups:
+        back: 所有用户组
+        closed: 已关闭
+        empty: 暂无用户组可显示。
+        filter_placeholder: 所有用户组
+        hidden: 隐藏
+        members: '{count, plural, one {#位成员} other {#位成员}}'
+        members_forbidden: 你无权查看用户组成员。
+        members_login: 请登录后查看此用户组的成员。
+        no_activity: 此用户组的成员还没有发布任何帖子。
+        no_members: 此用户组还没有成员。
+        not_found: 此用户组不存在，或你无权查看。
+        tab_activity: 动态
+        tab_members: 成员
+        tabs_label: 用户组区块
+        title: 用户组
+      guidelines:
+        title: 社区指南
+      legal:
+        privacy: 隐私政策
+        tos: 服务条款
+      load_error: 无法加载此页面，请稍后重试。
+      load_more: 加载更多
+      unavailable: 此页面不可用。
+      users:
+        column:
+          daysVisited: 访问
+          lastSeenAt: 最后上线
+          likesGiven: 送出
+          likesReceived: 收到
+          postCount: 回复
+          postsRead: 已读
+          topicCount: 创建的讨论
+          username: 用户名
+        empty: 暂无用户可显示。
+        forbidden: 你无权查看用户列表。
+        login_required: 请登录后查看用户列表。
+        no_results: 未找到此用户名的用户。
+        period:
+          all: 全部时间
+          daily: 今天
+          monthly: 月
+          quarterly: 季度
+          weekly: 周
+          yearly: 年
+        period_label: 时间范围
+        search_placeholder: 按用户名筛选
+        title: 用户
+        total: '{count, plural, one {#位用户} other {#位用户}}'
+    composer:
+      drafts:
+        close_text: 你写的内容可以保存为草稿，稍后在此设备或其他设备上继续编辑。
+        close_title: 你想如何处理帖子？
+        delete: 删除草稿
+        discard: 放弃
+        empty: 你没有草稿。
+        keep_editing: 继续编辑
+        load_more: 加载更多
+        menu_label: 打开草稿
+        nav: 草稿
+        reply_title: '回复：{title}'
+        resume: 继续编辑
+        save_for_later: 将草稿留待以后编辑
+        sidebar: 我的草稿
+        status_error: 无法保存草稿
+        status_saved: 草稿已保存
+        status_saving: 正在保存…
+        type_message: 消息
+        type_new_topic: 新讨论
+        type_reply: 回复
+        unavailable: 讨论不可用
+        untitled: （无标题）
+        view_all: '查看全部（{count}）'
+      emoji:
+        autocomplete_header: 输入内容以搜索表情符号
+        button: 表情符号
+        close: 关闭
+        groups:
+          activities: 活动
+          flags: 旗帜
+          food: 食物和饮料
+          nature: 动物和自然
+          objects: 物品
+          people: 人物
+          recent: 最近使用
+          smileys: 笑脸和情绪
+          symbols: 符号
+          travel: 旅行和地点
+        hint: 选择表情符号
+        no_results: 未找到表情符号。
+        search_placeholder: 搜索表情符号…
+        title: 表情选择器
+        tone_label: 肤色
+        tones:
+          - 默认
+          - 浅肤色
+          - 中浅肤色
+          - 中等肤色
+          - 中深肤色
+          - 深肤色
+      hashtags:
+        autocomplete_header: 标签
+      linked_topic:
+        continuation: '继续讨论：{link}'
+        menu_label: 回复操作
+        new_topic: 将回复另存为关联讨论
+        reply: 回复讨论
+      preview:
+        hide: 隐藏预览
+        label: 预览
+        show: 显示预览
+      shell:
+        action_create_topic: 发起讨论
+        action_edit: 正在编辑帖子
+        action_new_topic: 发起讨论
+        action_reply: 讨论
+        add_poll: 创建投票
+        body_placeholder: 在此输入。
+        body_placeholder_bbcode: 在此输入。使用BBCode设置格式。
+        body_placeholder_formats: '在此输入。使用{formats}设置格式。'
+        body_placeholder_markdown: 在此输入。使用工具栏或Markdown设置格式。
+        body_placeholder_markdown_bbcode: 在此输入。使用Markdown或BBCode设置格式。
+        body_placeholder_markdown_upload: 在此输入。使用工具栏或Markdown设置格式。拖放或粘贴图片。
+        body_placeholder_upload: 在此输入。拖放或粘贴图片。
+        bold_label: B
+        cancel_edit: 取消编辑
+        category_placeholder: 主要标签…
+        create_topic_desc: 发起新讨论
+        discard: 放弃
+        drag_images: 拖放或粘贴图片。
+        edit_poll: 编辑投票
+        max_primary_tags: '{count, plural, one {已达到1个主要标签的上限。请移除当前标签后再更改。} other {已达到#个主要标签的上限。请移除一个标签后再选择其他标签。}}'
+        max_secondary_tags: '{count, plural, one {已达到1个次要标签的上限（子标签也计入）。} other {已达到#个次要标签的上限（子标签也计入）。}}'
+        more_options: 选项
+        no_category: （无标签）
+        no_results: 未找到匹配项。
+        no_tags: 没有可用标签。
+        or: 或
+        remove_tag: 移除标签
+        reply_as_new_topic_desc: 发起与此讨论相关的新讨论
+        reply_to_topic_desc: 回复讨论，而不是回复某一条帖子
+        save_and_close: 保存并关闭
+        saved_draft: 帖子草稿尚未发布。点击以继续编辑。
+        search_placeholder: 搜索…
+        submit_edit: 保存编辑
+        submit_new_topic: 发布讨论
+        submit_reply: 回复
+        switch_to_markdown: 切换到Markdown编辑器
+        switch_to_rich: 显示格式化文本
+        tags_placeholder: 可选标签…
+        title_placeholder: 在此输入标题或粘贴链接
+        toggle_direction: 切换方向
+      similar:
+        close: 关闭
+        title: 你的讨论与以下内容相似…
+    extras:
+      banner:
+        dismiss: 关闭公告
+        label: 公告
+      bulk:
+        bar_label: 所选讨论的操作
+        clear: 清除
+        delete: 永久删除
+        delete_confirm: '{count, plural, one {要永久删除#个讨论吗？} other {要永久删除#个讨论吗？}}此操作无法撤销。'
+        done: '{count, plural, =0 {未更改任何讨论。} one {已更改#个讨论。} other {已更改#个讨论。}}'
+        failed: '{count, plural, one {#项失败。} other {#项失败。}}'
+        hide: 删除
+        hide_confirm: '{count, plural, one {要删除#个讨论吗？} other {要删除#个讨论吗？}}之后可以恢复。'
+        hint: 勾选讨论（按住Shift并点击可选择一段范围）。
+        lock: 关闭
+        mark_read: 标记为已读
+        restore: 恢复
+        select_all: '全选（{count}）'
+        select_one: '选择“{title}”'
+        selected: '{count, plural, =0 {未选择讨论} one {已选择#项} other {已选择#项}}'
+        skipped: '{count, plural, one {已跳过#项（无权限或状态已相同）。} other {已跳过#项（无权限或状态已相同）。}}'
+        sticky: 置顶
+        tags: 更改标签
+        toggle_off: 退出选择模式
+        toggle_on: 选择讨论
+        unlock: 打开
+        unsticky: 取消置顶
+      gambits:
+        bookmarks_key: 书签
+        in_group: 位于
+        likes_key: 点赞
+        min_posts_hint: 讨论中的最少帖子数量
+        min_posts_key: 最少帖子数
+        title_key: 标题
+      history:
+        added: '{count, plural, one {+#个词} other {+#个词}}'
+        after: 此版本
+        before: 上一版本
+        content_hidden: 此帖子已隐藏；只有有权编辑它的人才能查看各版本的文字。
+        created_by: '由{name}于{date}撰写'
+        deleted_user: 已删除的用户
+        edited_by: '由{name}于{date}编辑'
+        failed: 无法加载此帖子的历史记录。
+        first: 第一个版本
+        last: 当前版本
+        mode_inline: 行内
+        mode_label: 对比模式
+        mode_side: 并排
+        next: 下一个版本
+        open: '{count, plural, one {#次修订} other {#次修订}}：查看历史记录'
+        original: '原始版本（共{total}个）'
+        pager_label: 浏览修订记录
+        position: '版本{from} → {to}（共{total}个）'
+        previous: 上一个版本
+        removed: '{count, plural, one {−#个词} other {−#个词}}'
+        title: 历史记录
+      print:
+        button: 打印
+        close: 关闭
+        preparing: 正在准备打印讨论…
+        print_again: 打印
+      search:
+        advanced: 高级筛选
+        clear: 清除搜索
+        failed: 无法完成搜索，请稍后重试。
+        filter_after: 晚于
+        filter_author: 发布者
+        filter_author_placeholder: 用户名
+        filter_before: 早于
+        filter_bookmarked: 我添加书签的
+        filter_category: 主要标签
+        filter_category_any: 任意主要标签
+        filter_in_title: 仅搜索标题
+        filter_liked: 我点赞的
+        filter_min_posts: 最少帖子数
+        filter_mine: 我发布的
+        filter_posted: 发布时间
+        filter_status: 状态
+        filter_tag_remove: '移除标签{name}'
+        filter_tags: 包含标签
+        filter_tags_add: 添加标签…
+        filter_unread: 未读
+        filter_where: 筛选条件
+        input_label: 搜索词
+        input_placeholder: 搜索
+        load_more: 更多结果
+        meta_title: 搜索
+        meta_title_query: '搜索：{query}'
+        modal_link: '高级搜索 →'
+        need_more: 输入搜索词。
+        no_results: 未找到结果。
+        posts_filters_note: 搜索帖子时只能按作者、一个标签、点赞和书签筛选；其他筛选条件仅适用于讨论。
+        result_count: '{count}{more}{count, plural, one {条结果} other {条结果}}'
+        result_for: 范围
+        sort_by: 排序方式
+        sort_latest_post: 最新帖子
+        sort_latest_topic: 最新讨论
+        sort_likes: 最多点赞
+        sort_relevance: 相关度
+        sort_views: 最多浏览
+        start: 输入搜索内容，或打开高级筛选。
+        status_any: 不限
+        status_closed: 已关闭
+        status_open: 打开
+        status_sticky: 已置顶
+        submit: 搜索
+        tab_categories: 标签
+        tab_posts: 帖子
+        tab_topics: 讨论
+        tab_users: 用户
+        tabs_label: 搜索内容
+        title: 搜索
+      text_size:
+        heading: 界面
+        help: 仅应用于此设备。
+        label: 文字大小
+        larger: 较大
+        largest: 最大
+        normal: 普通
+        smaller: 较小
+      top_periods:
+        all: 全部时间
+        daily: 今天
+        label: 时间范围
+        monthly: 月
+        quarterly: 季度
+        weekly: 周
+        yearly: 年
+    gaps:
+      category_notifications:
+        hidden: 静音并隐藏
+        hidden_description: 除了不接收通知外，此标签下的讨论还会从“最新”列表中隐藏。
+        muted: 静音
+        muted_description: 你不会收到此标签下讨论的任何通知。
+        normal: 普通
+        normal_description: 有人@提及你或回复你时通知你。
+        toggle: '标签通知：{level}'
+        watching: 关注
+        watching_description: 自动关注此标签下的所有讨论，并接收每篇新帖的通知。
+        watching_first_post: 关注首帖
+        watching_first_post_description: 此标签下每个新讨论的首帖都会通知你。
+      code:
+        copied: 已复制！
+        copy: 将代码复制到剪贴板
+        fullscreen: 全屏显示代码
+        view_code: 查看代码
+      dismiss:
+        confirm_new: 要将此列表中的新讨论标记为已读吗？
+        confirm_unread: 要将此列表中的所有讨论标记为已读吗？
+        new: 关闭
+        unread: 关闭
+      heading_anchor: 标题链接
+      invites:
+        create: 生成链接（并复制）
+        delete: 删除邀请
+        expires: '有效期至{date}'
+        expires_days: 有效天数
+        help: 生成邀请链接并发送给你想邀请的人。通过链接注册的人会显示为由你邀请，你也会收到通知。
+        invited_by: '{username}邀请你加入论坛。'
+        max_redemptions: 可邀请人数
+        none: 你还没有生成邀请。
+        share_button: 邀请
+        sidebar: 邀请
+        sign_up_closed: 此论坛已关闭注册；只有管理员重新开放注册后，邀请链接才会生效。
+        title: 邀请加入论坛
+        uses: '已使用{used}次，共可使用{max}次'
+        yours: 你的邀请
+      jump:
+        of: '共{count, plural, one {#篇帖子} other {#篇帖子}}'
+        post_label: 帖子
+        submit: 前往
+        title: 跳转到…
+      last_visit: 上次访问
+      lightbox:
+        close: 关闭（Esc）
+        counter: '第{current}项，共{total}项'
+        download: 下载
+        next: 下一个（右方向键）
+        open: 原始图片
+        previous: 上一个（左方向键）
+        title: 图片
+        zoom: 缩放（Z键）
+      notifications:
+        invite_accepted: '{username}接受了你的邀请'
+        invite_accepted_setting: 有人通过我的邀请加入
+        post_edited: '{username}编辑了你的帖子'
+        post_edited_setting: 有人编辑了我的帖子
+        topic_linked: '{username}链接到了你的讨论'
+        topic_linked_setting: 有人链接到了我的讨论
+      read_state:
+        last_visit: 上次访问
+        unread: 帖子未读
+      share:
+        copied: 链接已复制。
+        copy: 复制
+        instructions: 分享此讨论的链接：
+        link_label: 链接
+        networks:
+          email: 通过电子邮件发送
+          facebook: 分享到Facebook
+          linkedin: 分享到LinkedIn
+          reddit: 分享到Reddit
+          telegram: 分享到Telegram
+          whatsapp: 分享到WhatsApp
+          x: 分享到X
+        post_instructions: 分享此帖子的链接：
+        post_title: '分享帖子#{number}'
+        title: 分享讨论
+      sidebar:
+        custom_title: 链接
+        faq: 常见问题
+        home: 首页
+        my_messages: 我的消息
+        new_in_category: 此标签下有新讨论或未读讨论
+        privacy: 隐私
+        review: 审核
+        tos: 服务条款
+      spoiler:
+        reveal: 剧透：点击展开
+      table:
+        expand: 展开表格
+        view_table: 查看表格
+      timeline:
+        back: 返回
+        back_description: 返回你上次阅读到的未读帖子
+      title_editor:
+        cancel: 取消
+        edit: 编辑标题
+        label: 讨论标题
+        save: 保存
+        tags: 标签
+    header:
+      advanced_search: 打开高级搜索
+      language: '语言：{name}'
+    hero:
+      subcategories: 子标签
+    links:
+      clicks: '{count, plural, one {#次点击} other {#次点击}}'
+    list:
+      activity: 动态
+      created_at: '创建时间：{date}'
+      last_reply_at: '最新回复：{date}'
+      mark_read: 点击标记为已读
+      most_recent_poster: 最近回复者
+      new_topic: 新讨论
+      original_poster: 楼主
+      read_more: 阅读更多
+      relevant_poster: 最相关的帖子
+      replies: 回复
+      replies_a11y: '{count, plural, one {#条回复} other {#条回复}}'
+      topic: 讨论
+      unread_count: '{count, plural, one {#条未读回复} other {#条未读回复}}'
+      views: 浏览量
+      views_a11y: '{count, plural, one {#次浏览} other {#次浏览}}'
+    marketplace:
+      all: 全部
+      categories: 商店分类
+      shop_messages: 商店消息
+    messages:
+      composer:
+        action_new: 创建消息
+        action_new_desc: 创建新私信
+        action_reply: 消息
+        action_topic: 发起讨论
+        action_topic_desc: 发起新讨论
+        actions_label: 编辑器操作
+        no_results: 未找到匹配项
+        recipients_missing: 请至少添加一位收件人。
+        remove_recipient: '移除{username}'
+        reply_as_message: 以私信形式回复
+        reply_as_message_desc: 给讨论作者发送新私信
+        searching: 正在搜索…
+        staff_keyword: 工作人员
+        submit: 发送消息
+        submit_reply: 回复
+        title_placeholder: 标题
+        type_to_search: 输入内容以搜索
+        users_placeholder: 添加用户或用户组
+      empty:
+        body_1: '想跳出常规讨论流程，与某人进行私下对话？点击对方头像，然后使用{icon}消息按钮发送消息。'
+        body_2: 如需帮助，你可以<a>给工作人员发消息</a>。
+        title: 你没有消息
+      events:
+        invited_group: '{who}于{when}受邀'
+        invited_user: '{who}于{when}受邀'
+        removed_user: '{who}于{when}被移除'
+        user_left: '{who}于{when}退出了此消息对话'
+      invite:
+        help: 输入你想邀请参加此讨论的用户的用户名。
+        placeholder: 选择…
+        submit: 发送邀请
+        success: 我们已邀请该用户参与此消息对话。
+        success_group: 我们已邀请该用户组参与此消息对话。
+        title: 邀请
+      list:
+        new_message: 新消息
+        unread_count: '{count, plural, one {#条未读消息} other {#条未读消息}}'
+      nav:
+        all: 所有收件箱
+        archive: 归档
+        inbox: 最新
+        inbox_box: 收件箱
+        label: 消息收件箱
+        new: 新建
+        new_message: 新消息
+        new_with_count: '新消息（{count}）'
+        sent: 已发送
+        unread: 未读
+        unread_with_count: '未读（{count}）'
+      notifications:
+        muted: 静音
+        muted_description: 你不会收到此消息的任何通知。
+        muted_reason: 你已忽略此讨论的所有通知。
+        regular: 普通
+        regular_description: 有人@提及你或回复你时通知你。
+        regular_reason: 有人@提及你或回复你时通知你。
+        tracking: 跟踪
+        tracking_description: 此消息会显示新回复数。有人@提及你或回复你时，你会收到通知。
+        tracking_reason: 由于你正在跟踪此讨论，因此会显示新回复数。
+        watching: 关注
+        watching_description: 此消息有新回复时，你会收到通知，并且会显示新回复数。
+        watching_reason: 由于你正在关注此讨论，因此会收到通知。
+      page:
+        nav: 消息
+        title: 消息
+      reactions:
+        notification: '{username}回应了你的消息'
+        react: 回应
+        reactors_title: 回应
+        unreact: 移除回应
+      sidebar:
+        my_messages: 我的消息
+        unread: '{count, plural, one {#条新消息或未读消息} other {#条新消息或未读消息}}'
+      topic:
+        archive: 归档
+        archive_help: 将消息移至归档
+        copy_link: 将此帖子的链接复制到剪贴板
+        defer: 稍后处理
+        defer_help: 标记为未读
+        footer_label: 消息操作
+        glyph: 这是一条私信
+        leave: 退出
+        leave_confirm: 确定要退出此消息对话吗？
+        map_label: 消息参与者
+        move_to_inbox: 移至收件箱
+        move_to_inbox_help: 将消息移回收件箱
+        remove_confirm: '确定要从此消息对话中移除{name}吗？'
+        remove_user: 移除用户
+        replies: '{count, plural, one {条回复} other {条回复}}'
+        reply: 回复
+        share: 分享此讨论的链接
+        views: '{count, plural, one {#次浏览} other {#次浏览}}'
+      untitled: 消息
+      user:
+        message: 消息
+    metoo:
+      author_title: 你发起了此讨论
+      closed_title: 此讨论已关闭
+      label: 我也遇到了
+      label_with_count: '{label}（{count}）'
+      title: 我也遇到了这个问题
+    modals:
+      flag_off_topic: 偏离主题
+      flag_other: 其他原因
+      flag_submit: 举报帖子
+      flag_title: 感谢你维护社区的文明氛围！
+      forgot_password: 忘记密码了？
+      forgot_submit: 重置密码
+      forgot_title: 重置密码
+      identification: 邮箱/用户名
+      login_title: 欢迎回来
+      no_account: 还没有账号？
+      sign_up: 注册
+      signup_title: 创建账号
+    motion:
+      link_copied: 链接已复制！
+    nav:
+      all_categories: 所有标签
+      all_subcategories: '查看{name}中的全部'
+      all_tags: 所有次要标签
+      categories: 标签
+      categories_link: 标签
+      filter_for_more: 筛选更多内容…
+      hot: 热门
+      label: 讨论列表导航
+      latest: 最新
+      more: 更多排序方式
+      new_topic: 发起讨论
+      newest: 新建
+      no_results: 未找到结果。
+      no_subcategory: 无子标签
+      no_tags: 没有次要标签
+      remove_filter: 移除筛选条件
+      search_placeholder: 搜索…
+      sort_label: 选择列表
+      subcategories: 子标签
+      tags: 次要标签
+      top: 顶部
+      unread: 未读
+    preview:
+      banner: 预览：尚未应用任何更改。此版本仅你自己能在当前标签页中看到。
+      close: 关闭
+    profile:
+      birthday:
+        today: 今天生日快乐！
+      moderation:
+        clear_images: 移除封面和卡片背景
+        clear_status: 清除状态
+      settings:
+        bio_help: '支持链接、**粗体**、*斜体*和`代码`。'
+        bio_label: 关于我
+        bio_placeholder: 简单介绍一下自己。
+        birthday_help: 除非你选择显示年份，否则其他人只能看到月和日。
+        birthday_label: 生日
+        birthday_show_year: 显示年份（以及你的年龄）
+        card_help: 有人点击你的头像时，打开的卡片会在姓名后方显示此背景。
+        card_label: 用户卡片背景
+        cover_edit: 编辑封面
+        cover_forumaker_help: 个人资料顶部的宽幅图片；如果未单独选择背景，也会显示在用户卡片后方。编辑器可用于上传、移除图片，以及选择要显示的图片区域。
+        cover_help: 个人资料顶部的宽幅图片。可上传文件或粘贴图片的https地址。
+        cover_label: 个人资料封面
+        discard: 放弃更改
+        heading: 个人资料
+        image_too_large: '图片大于{max}。请选择较小的图片。'
+        location_label: 所在地
+        location_placeholder: 例如：里斯本，葡萄牙
+        no_image: 无图片
+        remove_image: 移除图片
+        save: 保存个人资料
+        saved: 个人资料已保存。
+        status_clear: 清除状态
+        status_clear_after: 清除时间
+        status_custom_required: 选择状态消失的日期和时间。
+        status_label: 状态
+        status_placeholder: 例如：休假中、开会中、回复较慢
+        title_help: 显示在个人资料姓名下方和帖子姓名旁边。
+        title_label: 标题
+        title_locked: 你的头衔由版主设置。
+        title_placeholder: 例如：版主、摄影师、开发者
+        upload: 上传图片
+        website_label: 网站
+      status:
+        choose_emoji: 选择表情符号
+        clear_1h: 1小时后
+        clear_30m: 30分钟后
+        clear_4h: 4小时后
+        clear_custom: 选择日期和时间
+        clear_never: 不清除
+        clear_today: 今天
+        clear_week: 本周
+        custom_emoji: 其他表情符号
+        label: 状态
+        no_emoji: 无表情符号
+        until: '截至{when}'
+    ramon_chat:
+      group_name:
+        help: 所有参与者都会看到新名称。留空则恢复为参与者姓名。
+      new_message:
+        open: 打开对话
+        search_placeholder: 搜索用户
+      notifications:
+        settings_message: 我关注的聊天对话有新消息
+      pins:
+        unseen: 有一条置顶消息尚未查看
+      preferences:
+        email_mentions: 有人在聊天中提及时给我发邮件
+        open_in_drawer: 在抽屉中打开聊天
+        open_in_drawer_help: 关闭后，聊天按钮会打开完整页面。
+        quick_custom_help: 用空格分隔表情符号名称（heart、tada、eyes…）。👍已有独立按钮。
+        sound_default: 论坛音效
+      review:
+        delete_confirm: 要删除此聊天消息吗？其举报也会从队列中移除。
+        delete_message: 删除消息
+        dismiss: 关闭举报
+        done_deleted: 消息已删除。
+        done_dismissed: 举报已关闭。
+        filter_chat: 聊天
+        message_deleted: 消息已删除。
+        type: 被举报的聊天消息
+        view_in_chat: 在聊天中查看
+      star:
+        remove: 取消收藏频道
+    review:
+      agree: 同意…
+      agree_and_hide: 同意并隐藏帖子
+      agree_and_keep: 同意并保留帖子
+      agree_and_keep_hidden: 同意并保持隐藏
+      approve_post: 批准帖子
+      delete_confirm: 要删除此帖子吗？此操作无法撤销。
+      delete_post: 删除帖子
+      disagree: 不同意
+      disagree_and_restore: 不同意并恢复帖子
+      done_agreed: 已同意举报。帖子已保留。
+      done_agreed_hidden: 已同意举报。帖子已隐藏。
+      done_approved: 帖子已批准。
+      done_deleted: 帖子已删除。
+      done_disagreed: 已驳回举报。
+      done_ignored: 已忽略举报。
+      done_rejected: 帖子已拒绝。
+      empty: 没有待审核内容。
+      filter_all: 全部
+      filter_flagged: 被举报的帖子
+      filter_label: 类型
+      filter_queued: 待处理帖子
+      flag_date: 时间
+      flag_type: 原因
+      flagged_by: 举报者
+      hidden_label: 隐藏
+      ignore: 忽略
+      load_more: 加载更多
+      queued_reason: 此帖子正在等待版主批准，批准后其他人才能看到。
+      reason_inappropriate: 不当内容
+      reason_off_topic: 偏离主题
+      reason_other: 其他原因
+      reason_spam: 垃圾信息
+      reject_confirm: 要拒绝此帖子吗？帖子会被删除。
+      reject_post: 拒绝帖子
+      show_less: 收起
+      show_more: 显示更多
+      status_pending: 待处理
+      title: 审核
+      type_flagged: 被举报的帖子
+      type_queued: 待处理帖子
+      view_post: 查看帖子
+    search_menu:
+      clear_recent: 清除最近搜索记录
+      clear_search: 清除搜索
+      close: 关闭搜索
+      enter_hint: 或按Enter键
+      in: 位于
+      in_topics_posts: 在所有讨论和帖子中搜索
+      mobile_enter_hint: 或点击“搜索”
+      more: 更多
+      no_results: 未找到结果。
+      open_advanced: 打开高级搜索
+      results: 结果
+      tips:
+        author: 按帖子作者筛选
+        category_tag: 按标签筛选
+        full_search: 打开完整页面搜索
+        in: '按元数据筛选（例如{examples}）'
+      title: 搜索
+      too_short: 搜索词太短。
+    shortcuts:
+      actions:
+        back: 返回
+        bookmark_post: 为帖子添加书签
+        bookmark_topic: 为讨论添加书签
+        bookmarks: 书签
+        bulk_item: 选择讨论（批量选择）
+        bulk_toggle: 切换批量选择
+        categories: 标签
+        create: 发起新讨论
+        delete_post: 删除帖子
+        dismiss: 关闭新内容或未读提示
+        drafts: 草稿
+        edit_post: 编辑帖子
+        first_last_post: 第一篇/最后一篇帖子
+        first_unread: 第一篇未读帖子
+        flag_post: 举报帖子
+        focus_composer: 返回编辑器
+        help: 显示键盘快捷键
+        home: 首页
+        jump_to_post: 跳转到帖子
+        latest: 最新
+        like_post: 为帖子点赞
+        log_out: 退出登录
+        messages: 消息
+        mute_topic: 将讨论设为静音
+        new: 新建
+        next_prev_section: 上一个/下一个区块
+        next_prev_topic: 下一个/上一个讨论
+        next_prev_topic_jump: 列表中的上一个/下一个讨论
+        notifications: 通知
+        open_topic: 打开所选讨论
+        pin_topic: 置顶/取消置顶讨论
+        print: 打印讨论
+        profile: 个人资料
+        quote_post: 引用帖子
+        regular_topic: 讨论的普通通知
+        reply: 回复讨论
+        reply_linked: 将回复另存为关联讨论
+        reply_post: 回复帖子
+        reply_topic: 回复讨论
+        search: 搜索
+        search_global: 搜索（输入时也可用）
+        settings: 设置
+        share_post: 分享帖子
+        share_topic: 分享讨论
+        show_incoming: 显示新讨论或有更新的讨论
+        sidebar: 切换侧边栏
+        suggested: 第一个推荐讨论
+        top: 顶部
+        topic_menu: 打开讨论菜单
+        unread: 未读
+        user_menu: 打开用户菜单
+        watch_topic: 关注讨论
+      groups:
+        actions: 操作
+        application: 应用程序
+        jump_to: 跳转到
+        navigation: 导航
+      no_results: 未找到快捷键。
+      or: 或
+      search_placeholder: 按组合键或说明搜索快捷键
+      title: 键盘快捷键
+    sidebar:
+      admin: 管理员
+      all_categories: 所有标签
+      all_tags: 所有标签
+      categories: 标签
+      color_mode:
+        auto: 自动
+        dark: 深色
+        light: 浅色
+        title: 颜色模式
+      customize_categories: 自定义标签
+      customize_community: 自定义
+      customize_community_help: '取消勾选要移至"更多"中的项目。此选择仅适用于当前浏览器。'
+      customize_filter: 筛选…
+      customize_reset: 恢复默认值
+      customize_save: 保存
+      customize_tags: 自定义次要标签
+      keyboard_shortcuts: 键盘快捷键
+      label: 侧边栏
+      more: 更多
+      my_messages: 我的消息
+      my_posts: 我的帖子
+      new_topic: 发起讨论
+      notifications: 通知
+      palette:
+        default: 默认
+        high_contrast: 高对比度
+        title: 调色板
+      settings: 设置
+      tags: 次要标签
+      theme:
+        save_failed: 无法切换主题，请重试。
+        title: 主题
+      toggle: 切换侧边栏
+      topics: 所有讨论
+    stats:
+      activity:
+        days_visited: 访问天数
+        likes_given: 送出的点赞
+        likes_received: 收到的点赞
+        posts_read: 阅读的帖子
+        time_read: 阅读时长
+        topics_viewed: 浏览的讨论
+      duration:
+        days: '{count}天'
+        hours: '{count}小时'
+        minutes: '{count}分钟'
+        seconds: '{count}秒'
+      new_count: '{count, plural, one {#个新讨论} other {#个新讨论}}'
+      sidebar_dot: '有新内容：{new}个新讨论，{unread}个未读讨论'
+      unread_count: '{count, plural, one {#个有未读回复的讨论} other {#个有未读回复的讨论}}'
+      views:
+        chart_error: 图表渲染失败，请重试。
+        menu_title: 最近浏览量
+        no_views: 暂无浏览量统计，请稍后再来查看。
+        predicted_views: 预计浏览量
+        short_millions: '{number}百万'
+        short_thousands: '{number}千'
+        view_explainer: '每位独立访客每隔{hours}小时计一次浏览。'
+        views: 浏览量
+        views_long: '{count, plural, one {此讨论已被浏览{number}次} other {此讨论已被浏览{number}次}}'
+        views_lowercase: '{count, plural, one {次浏览} other {次浏览}}'
+      views_sort: 最多浏览
+    system_user:
+      conversation_note: 自动系统消息。无法回复。
+      no_replies: 这是自动系统对话：回复不会送达。
+    tag_modal:
+      edit_title: 编辑标签
+      primary_heading: 主要标签
+      secondary_heading: 次要标签
+    thirdparty:
+      polls:
+        votes: '{count, plural, =0 {票} one {票} other {票}}'
+      ramon_chat:
+        continue_in: 继续浏览：
+      reactions:
+        like_reaction: 点赞
+        picker: 选择回应
+        react_with: '使用{reaction}回应'
+        remove: 移除你的回应
+        summary: '{count, plural, one {#个回应：查看回应者} other {#个回应：查看回应者}}'
+      solved:
+        accepted: 解决方案
+        accepted_bar: 解决方案
+        accepted_by: '由{username}于{ago}采纳为解决方案'
+        accepted_title: 已采纳为解决方案
+        collapse: 收起答案
+        expand: 展开完整答案
+        jump: 前往答案
+        mark: 标记为解决方案
+        title: 解决方案
+        unmark: 点击取消标记
+      upload:
+        uploading: '{count, plural, one {正在上传文件…} other {正在上传#个文件…}}'
+      wiki:
+        advanced: 高级选项
+        all_categories: 所有分类
+        author_role: 作者
+        back_to_wiki: 返回Wiki
+        categories: 分类
+        category_placeholder: 分类…
+        clear_search: 清除搜索
+        close: 关闭
+        column_article: 文章
+        comment_action: 评论
+        comment_edit: 正在编辑评论
+        created: 已创建
+        edited_by: '由{name}编辑'
+        edits_title: '最后编辑时间：{date}'
+        empty_category: 此分类还没有文章
+        empty_error: 请检查网络连接并重试。
+        empty_search: 尝试其他关键词或按分类浏览。
+        empty_title: 这里还没有文章
+        hero_articles: '{count, plural, one {#篇文章} other {#篇文章}}'
+        hero_categories: '{count, plural, one {#个分类} other {#个分类}}'
+        hero_description: 由社区撰写并持续更新的指南、参考资料和解答。
+        history_failed: 无法加载此文章的修订记录。
+        history_title: 修订历史
+        more: 更多操作
+        next: 下一页
+        not_found: 文章不可用
+        pager_label: 同一分类中的文章
+        previous: 上一页
+        retry: 重试
+        revisions: '{count, plural, one {次修订} other {次修订}}'
+        see_all: 查看全部
+        share: 分享文章
+        updated: 已更新
+    topic:
+      author_filter:
+        show_all: 显示全部
+        showing: '正在显示@{username}发布的{count, plural, one {#篇帖子} other {#篇帖子}}'
+      embedded:
+        go_to_post: 前往帖子
+      footer:
+        aria_label: 讨论操作
+        bookmark: 书签
+        bookmarked: 已添加书签
+        flag: 举报
+        mark_unread: 标记为未读
+        more: 更多讨论操作
+        reply: 回复
+        share: 分享
+      link_copied: 链接已复制到剪贴板。
+      map:
+        aria_label: 讨论摘要
+        frequent_posters: 活跃发帖者
+        likes: '{count, plural, one {个赞} other {个赞}}'
+        links: '{count, plural, one {个链接} other {个链接}}'
+        most_liked: 获赞最多的回复
+        popular_links: 热门链接
+        posts: '{count, plural, one {#篇帖子} other {#篇帖子}}'
+        replies: '{count, plural, one {条回复} other {条回复}}'
+        show_more_links: 显示更多
+        users: '{count, plural, one {位用户} other {位用户}}'
+        views: '{count, plural, one {次浏览} other {次浏览}}'
+      new_replies: '{count, plural, one {有#条新回复} other {有#条新回复}}'
+      notifications:
+        muted: 静音
+        muted_description: 你不会收到此讨论的任何通知，而且此讨论不会出现在“最新”列表中。
+        muted_reason: 你不会收到此讨论的任何通知。
+        normal: 普通
+        normal_description: 有人@提及你或回复你时通知你。
+        normal_reason: 有人@提及你或回复你时通知你。
+        toggle: '讨论通知：{level}'
+        watching: 关注
+        watching_description: 每有新回复，你都会收到通知，并且会显示新回复数。
+        watching_reason: 由于你正在关注此讨论，因此会收到通知。
+      post:
+        cannot_like: 你无法为此帖子点赞
+        go_to_quoted: 前往被引用的帖子
+        hide_hidden: 隐藏已删除帖子的内容
+        in_reply_to: 回复对象：点击显示帖子
+        like: 为此帖子点赞
+        like_guest: 注册或登录后即可为此帖子点赞
+        mention_unavailable: 帖子不可用
+        more_replies: '{count, plural, one {再显示#条回复} other {再显示#条回复}}'
+        more_short: 更多操作
+        remove_reply: 移除回复关系
+        replies: '{count, plural, one {#条回复} other {#条回复}}'
+        reply: 回复
+        reply_to_label: 回复对象
+        share: 将此帖子的链接复制到剪贴板
+        share_short: 复制链接
+        show_hidden: 查看已删除帖子的内容
+        show_less: 收起
+        show_more: 显示更多
+        unlike: 取消点赞
+        who_liked: 点赞者
+      suggested:
+        activity: 动态
+        related_title: 相关讨论
+        replies: 回复
+        tab_related: 相关
+        tab_suggested: 推荐
+        title: 推荐讨论
+        topic: 讨论
+        views: 浏览量
+      timeline:
+        ago: '{age}前'
+        unread: '{count, plural, one {#条未读} other {#条未读}}'
+      user_card:
+        discussions: 讨论
+        joined: 加入时间
+        last_seen: 最后出现时间
+        likes_received: 点赞
+        more: 更多操作
+        online: 当前在线
+        posts: 帖子
+        posts_in_topic: '讨论中有{count, plural, one {#篇帖子} other {#篇帖子}}'
+        read: 已读
+        read_recently: '{time}前'
+        solutions: 解决方案
+        view_profile: 查看个人资料
+    user:
+      age_ago:
+        days: '{count, plural, one {#天前} other {#天前}}'
+        hours: '{count, plural, one {#小时前} other {#小时前}}'
+        minutes: '{count, plural, one {#分钟前} other {#分钟前}}'
+        now: 刚刚
+      nav:
+        activity: 动态
+        discussions: 讨论
+        posts: 帖子
+        reactions: 回应
+        reactions_empty: 还没有回应。
+        read: 已读
+        scroll_left: 向左滚动标签页
+        scroll_right: 向右滚动标签页
+        solved: 已解决
+        votes: 投票
+      preferences:
+        auto_track_heading: 自动跟踪
+        avatar: 个人资料图片
+        avatar_change: 更换图片
+        avatar_help: 建议使用正方形图片。也可以将文件拖到图片区域。
+        email: 邮箱
+        email_confirmed: 已确认
+        email_help: 仅你和工作人员可见；不会显示在个人资料中。
+        email_primary: 主要
+        email_resend: 重新发送确认邮件
+        email_resent: 确认邮件已发送
+        email_unconfirmed: 未确认
+        empty: 此标签页暂无可调整的选项。
+        nav: 偏好设置
+        nav_menu_default: 论坛默认设置
+        nav_menu_edit: 自定义
+        nav_menu_heading: 侧边栏
+        nav_menu_help: 选择在侧边栏中显示哪些标签。此设置仅适用于当前设备。
+        nav_menu_picked: '{count, plural, one {已选择#项} other {已选择#项}}'
+        password_heading: 密码
+        password_help: 你会收到一封包含密码重置链接的邮件。
+        tabs:
+          account: 账号
+          chat: 聊天
+          interface: 界面
+          navigation-menu: 导航菜单
+          notifications: 通知
+          other: 其他
+          profile: 个人资料
+          security: 安全
+          tracking: 跟踪
+          users: 已忽略的用户
+        username: 用户名
+        username_help: '这是你个人资料地址中的名称；其他人发帖时会用@{username}提及你。'
+      stats:
+        groups: 用户组
+        joined: 加入时间
+        last_post: 最后一篇帖子
+        online: 当前在线
+        posts: 帖子
+        seen: 最后出现时间
+        topics: 讨论
+      summary:
+        days_member: '成为成员{count, plural, one {天} other {天}}'
+        days_visited: '{count, plural, one {访问天数} other {访问天数}}'
+        empty_likes: 还没有点赞。
+        empty_links: 还没有点击过链接。
+        empty_replied: 还没有回复。
+        likes_given_short: 送出
+        likes_received_short: 收到
+        more_replies: 更多回复
+        more_topics: 更多讨论
+        most_liked: 获赞最多
+        most_liked_by: 最常点赞者
+        most_replied_to: 获回复最多
+        nav: 摘要
+        no_replies: 还没有回复。
+        no_topics: 还没有讨论。
+        posts_created: 发布的帖子
+        posts_read: 阅读的帖子
+        recent_time_read: 近期阅读时长
+        replies: '{count, plural, =0 {没有回复} one {#条回复} other {#条回复}}'
+        replies_column: 回复
+        solutions: 解决方案
+        stats_heading: 统计信息
+        time_read: 阅读时长
+        top_categories: 热门标签
+        top_links: 热门链接
+        top_replies_heading: 热门回复
+        top_topics_heading: 热门讨论
+        topics: 讨论
+        topics_created: 创建的讨论
+        topics_viewed: 浏览的讨论
+    usermenu:
+      badge:
+        new_messages: '{count, plural, one {#条新私信} other {#条新私信}}'
+        new_reviewables: '{count, plural, one {#项待审核内容} other {#项待审核内容}}'
+        unread: '{count, plural, one {#项未读内容} other {#项未读内容}}'
+      dismiss: 关闭
+      dismiss_bookmarks_tooltip: 将所有未读书签提醒标记为已读
+      dismiss_messages_tooltip: 将所有未读私信通知标记为已读
+      dismiss_notifications_tooltip: 将所有未读通知标记为已读
+      empty:
+        bookmarks_body: '点击{icon}按钮为帖子添加书签，帖子就会显示在这里，方便日后查看。你也可以设置提醒！'
+        bookmarks_title: 你还没有添加书签
+        chat_body_1: 有人直接给你发消息或在聊天中<b>@提及</b>你时，你会在此面板中收到通知。你长时间未登录时，也会通过邮件收到通知。
+        chat_body_2: 点击任意聊天频道顶部的标题，可设置该频道的通知。更多信息请查看<a>通知偏好设置</a>。
+        chat_title: 你还没有聊天通知
+        generic: 此列表中没有项目。
+        likes_body_1: 有人为你的帖子点赞时，你会在这里收到通知，了解哪些内容对其他人有价值。你为他人的帖子点赞时，对方也会看到相同的通知！
+        likes_body_2: 点赞通知不会通过邮件发送；你可以在<a>通知偏好设置</a>中调整网站上的点赞通知。
+        likes_title: 你还没有收到点赞
+        messages_body_1: '想跳出常规讨论流程，与某人进行私下对话？点击对方头像，然后使用{icon}消息按钮发送消息。'
+        messages_body_2: 如需帮助，你可以<a>给工作人员发消息</a>。
+        messages_title: 你没有消息
+        notifications_body_1: 有人回复你的讨论或帖子、<b>@提及</b>你或引用你的内容，或回复你正在关注的讨论时，相关动态会显示在此面板中。你长时间未登录时，也会通过邮件收到通知。
+        notifications_body_2: '查找{icon}，设置要接收通知的特定讨论和标签。更多信息请查看<a>通知偏好设置</a>。'
+        notifications_title: 你还没有通知
+        other_body: 可能与你相关的其他动态会显示在此面板中，例如有人链接到或编辑了你的帖子。
+        other_title: 你还没有其他通知
+        page_body_1: 有人回复你的讨论或帖子、<b>@提及</b>你或引用你的内容，或回复你正在关注的讨论时，你会收到相关动态通知。你长时间未登录时，也会通过邮件收到通知。
+        page_title: 你还没有通知
+      page:
+        all: 全部
+        chat: 聊天
+        likes: 点赞
+        other: 其他
+        private: 通知是私密的：只有你能在自己的个人资料中看到。
+        replies: 回复
+        title: 通知
+      profile:
+        activity: 动态
+        dark_mode: 深色模式
+        light_mode: 浅色模式
+        messages: 消息
+        set_custom_status: 设置自定义状态
+        summary: 摘要
+      sr_menu_tabs: 用户菜单标签页
+      tabs:
+        all_notifications: 所有通知
+        bookmarks: 书签
+        bookmarks_with_unread: '{count, plural, one {书签 - #个未读书签} other {书签 - #个未读书签}}'
+        chat_notifications: 聊天通知
+        chat_notifications_with_unread: '{count, plural, one {聊天通知 - #条未读通知} other {聊天通知 - #条未读通知}}'
+        likes: 点赞
+        likes_with_unread: '{count, plural, one {点赞 - #个未读点赞} other {点赞 - #个未读点赞}}'
+        messages: 私信
+        messages_with_unread: '{count, plural, one {私信 - #条未读消息} other {私信 - #条未读消息}}'
+        other_notifications: 其他通知
+        other_notifications_with_unread: '{count, plural, one {其他通知 - #条未读通知} other {其他通知 - #条未读通知}}'
+        profile: 个人资料
+        replies: 回复
+        replies_with_unread: '{count, plural, one {回复 - #条未读回复} other {回复 - #条未读回复}}'
+        review_queue: 审核队列
+        review_queue_with_unread: '{count, plural, one {审核队列 - #项待审核} other {审核队列 - #项待审核}}'
+      toggle: 用户菜单
+      view_all: 查看全部
+      view_all_bookmarks: 查看所有书签
+      view_all_messages: 查看所有私信
+      view_all_notifications: 查看所有通知
+      view_all_reviewables: 查看所有审核项目
+  views:
+    not_found:
+      home: 返回首页
+      page_title: 未找到页面
+      placeholder: 按标题或关键词搜索讨论…
+      popular_topics: 热门讨论
+      recent_topics: 最近的讨论
+      search_button: 搜索
+      search_title: 不妨试试搜索？
+      see_more: 更多
+      title: 哎呀！此页面不存在或为私密页面。

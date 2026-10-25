@@ -11,7 +11,7 @@ stezkoy-audex:
     badge_widget_off: '小组件 — 不可用'
     badge_widget_off_help: 'forum-widgets-core 未启用，此脚本块暂不会显示。'
     cancel_button: 取消
-    code_help: '代码会原样写入页面。若未包含 script 标签，则按 JavaScript 处理并自动添加 script 标签。若 JavaScript 字符串中出现闭合 script 标签，请写成 <\/script>。'
+    code_help: '代码会原样写入页面。若未包含 script 标签，则按 JavaScript 处理并自动添加 script 标签。若 JavaScript 字符串中出现闭合 script 标签，请在斜杠前加反斜杠进行转义。'
     code_label: 脚本代码
     confirm_delete: '确定删除脚本块「{name}」吗？此操作无法撤销。'
     delete_button: 删除

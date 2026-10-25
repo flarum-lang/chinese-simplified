@@ -4,5 +4,5 @@
 
 dashzeveg-custom-head:
   admin:
-    custom_head_help: '填写要插入论坛页面 <head> 区域的自定义 HTML。'
+    custom_head_help: '填写要插入论坛页面 head 区域的自定义 HTML。'
     custom_head_label: '自定义 HTML 头部'

@@ -7,7 +7,10 @@ CHANGELOG
 
 **Updated translations for extensions**:
 
+* [`dashzeveg/flarum-custom-head`](https://github.com/dashzeveg/flarum-custom-head) (1 changed, 100% complete)
+* [`ianm/html-head`](https://github.com/imorland/html-head) (1 changed, 95% complete)
 * [`ramon/canela`](https://github.com/ram0ng1/canela) (2631 added, 27 changed, 94% complete)
+* [`stezkoy/flarum-audex`](https://github.com/Stezkoy/flarum-audex) (1 changed, 100% complete)
 
 
 All changes: [2.0.1...2.0.2](https://github.com/flarum-lang/chinese-simplified/compare/2.0.1...2.0.2).

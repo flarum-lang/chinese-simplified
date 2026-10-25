@@ -11,7 +11,7 @@ ianm-html-head:
       edit_title: 编辑元素
       header_label: 自定义头部元素
       save_button: 保存
-      text: 请确保语法正确，因为在<head>标签中提供不正确的数据可能会使论坛出错。保存后，请使用开关按钮启用头部元素。
+      text: '请确保语法正确，因为在 head 标签中提供不正确的数据可能会使论坛出错。保存后，请使用开关按钮启用头部元素。'
     table:
       active_label: 启用
       delete_button: 删除

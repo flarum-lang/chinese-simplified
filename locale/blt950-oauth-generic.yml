@@ -13,9 +13,9 @@ fof-oauth:
           description: '根据自定义 OAuth2 提供程序完成登录设置。'
           display_name_parameter_label: 外显名称参数
           email_address_parameter_label: 邮箱地址参数
-          force_email_label: '<歧义> 强制邮箱地址（0 是，1 否）'
-          force_name_label: '<歧义> 外显名称（0 是，1 否）'
-          force_userid_label: '<歧义> 强制用户ID（0 是，1 否）'
+          force_email_label: '强制邮箱地址（0 = 否，1 = 是）'
+          force_name_label: '强制显示名称（0 = 否，1 = 是）'
+          force_userid_label: '强制用户 ID（0 = 否，1 = 是）'
           id_parameter_label: '用户 ID 参数'
           scopes_label: Scope
           token_endpoint_label: 令牌服务接口端点

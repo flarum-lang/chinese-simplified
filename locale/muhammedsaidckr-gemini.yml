@@ -11,7 +11,7 @@ muhammedsaidckr-gemini:
       api_key_label: 'API 密钥'
       enable_on_discussion_started_help: 发布主题时，基于首贴内容生成一个回复。
       enable_on_discussion_started_label: 发布主题时启用
-      enabled_tags_help: '<歧义>选择用于生成回复的标签。'
+      enabled_tags_help: 选择用于生成回复的标签。
       enabled_tags_label: 生效标签
       model_help: 选择要使用的模型。
       model_label: 模型

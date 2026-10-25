@@ -2,6 +2,25 @@ CHANGELOG
 =========
 
 
+1.6.3 (XXXX-XX-XX)
+------------------
+
+**General changes**:
+
+* Updated Flarum core translations (1 changed).
+
+
+**Updated translations for extensions**:
+
+* [`blt950/oauth-generic`](https://github.com/blt950/flarum-ext-oauth-generic) (3 changed, 100% complete)
+* [`clarkwinkelmann/flarum-ext-jwt-cookie-login`](https://github.com/clarkwinkelmann/flarum-ext-jwt-cookie-login) (3 changed, 100% complete)
+* [`ianm/html-head`](https://github.com/imorland/html-head) (1 changed, 100% complete)
+* [`muhammedsaidckr/flarum-gemini`](https://github.com/muhammedsaidckr/flarum-gemini) (1 changed, 100% complete)
+
+
+All changes: [1.6.2...1.6.3](https://github.com/flarum-lang/chinese-simplified/compare/1.6.2...1.6.3).
+
+
 1.6.2 (2026-10-24)
 ------------------
 

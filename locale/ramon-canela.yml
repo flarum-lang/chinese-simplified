@@ -268,6 +268,8 @@ ramon-canela:
         background_help: 分屏布局会在左侧面板中显示图片；其他背景样式则显示在表单后方。
         background_label: 登录和注册页面背景
         layout_card: 背景上的单张卡片（默认）
+        layout_card_help: 登录和注册页面在屏幕上的布局，以及表单后方显示的内容。
+        layout_card_title: 布局与背景
         layout_discourse: Discourse：不显示卡片，社交登录按钮位于表单旁
         layout_help: 所有这些页面都不显示页眉，只显示论坛徽标。启用社交登录时，社交登录按钮会排在表单前面（Discourse样式则显示在表单旁）。
         layout_label: 布局
@@ -280,6 +282,8 @@ ramon-canela:
         panel_signup_title: 注册页面标题
         subtitle_label: 副标题（可选）
         text_default: 留空：使用默认文字
+        texts_card_help: 各页面的标题和副标题。留空则使用主题默认文案。
+        texts_card_title: 文案
         texts_login: 登录页面文字
         texts_panel: 分屏面板
         texts_signup: 注册页面文字
@@ -563,8 +567,37 @@ ramon-canela:
       content_width_reset: 默认
       content_width_wide: 宽
       content_width_wider: 更宽
+      cooked:
+        backend_off: 服务器尚未加载脚注和目录语法后端（extend/cooked.php）。
+        footnotes_help: '脚注写法：在帖子末尾使用“text[^1]”和“[^1]: the note”，也可以使用行内脚注“^[the note]”。编号会以小号上标显示，点击后会在提示框中打开脚注。编辑器⊕菜单中会出现“脚注”选项。关闭后，脚注会保留为“[1]”和“[1]: text”。'
+        footnotes_title: 脚注
+        toc_auto_tags_help: '这些标签下的讨论即使没有[toc]，只要首帖包含足够多的标题，也会自动显示目录。'
+        toc_auto_tags_label: 自动显示目录的标签
+        toc_help: '在首帖中加入[toc]（编辑器⊕菜单中有“插入目录”），标题就会显示在时间线栏中，当前标题会高亮，并提供“跳转到末尾”。下方按钮可在“目录”和“时间线”之间切换，选择会保存在浏览器中。手机上，目录显示在时间线面板中。'
+        toc_min_headings_help: 首帖中的标题少于此数量时，不显示目录。
+        toc_min_headings_label: 最少标题数
+        toc_title: 目录
       embedded_replies_help: '点击每篇帖子的"N条回复"会在其下方展开回复，并在上方显示被引用的帖子，类似Discourse。'
       embedded_replies_label: 嵌入式回复
+      events:
+        backend_off: 服务器尚未加载活动后端（extend/events.php）。
+        events_chat_help: 活动创建器会提供“活动聊天”选项：为该活动创建专属的ramon/chat频道，并关联讨论标签；标记为“参加”的用户会加入该频道。
+        events_chat_label: 活动聊天
+        events_docked_chat_help: 桌面端会在讨论右侧以全高栏显示活动频道。手机和平板上，活动卡片会提供聊天链接。
+        events_docked_chat_label: 在讨论旁显示聊天
+        events_enabled_help: 在编辑器⊕菜单中选择“创建活动”，即可将活动添加到首帖：设置日期、时间、时区、重复规则、直播地址、地点和参与人数上限。帖子会显示活动卡片，包含“参加”“感兴趣”和“不参加”选项、参与者以及“添加到日历”（Google日历和.ics）。关闭后，卡片会改为文字显示，API也会像此功能不存在一样响应。
+        events_list_badge_help: 在讨论列表标题旁和讨论页标题中显示活动日期（如“3天后”“2天前”）。
+        events_list_badge_label: 列表和标题中的日期
+        events_reminder_minutes_help: 每次活动开始前多少分钟向标记为“参加”的用户发送提醒。设为0可关闭提醒。
+        events_reminder_minutes_label: 活动开始前提醒
+        events_tag_any: 任何标签
+        events_tag_help: 只有在此标签下发起讨论时才会显示“创建活动”按钮；只有此标签下的讨论会显示活动卡片、出现在“即将开始的活动”中并发送提醒。凡是有权在该标签下发起讨论的人都可以创建活动（遵循标签自身的权限设置）。选择“任何标签”后，所有讨论均适用。
+        events_tag_label: 活动标签
+        events_upcoming_help: 侧边栏中的“活动”链接、/events页面（列表和日历），以及活动标签列表顶部的下一场活动日期。
+        events_upcoming_label: 即将开始的活动
+        minutes: 分钟
+        reminders_notice: '提醒由Flarum计划任务每五分钟发送一次：服务器必须配置cron，每分钟运行一次“php flarum schedule:run”。'
+        title: 活动
       extras:
         banner_enabled_help: 每个页面的内容上方都会显示一条横幅，并带有关闭按钮。关闭横幅的人不会再看到它，直到文字发生变化。
         banner_enabled_label: 显示横幅
@@ -650,6 +683,10 @@ ramon-canela:
         upload_progress_label: 上传进度
         verified_help: 'ramon/verified徽章会紧跟在姓名后方，并按文本行尺寸显示，类似Discourse用户图标；适用于帖子标题、嵌入式帖子、"回复对象"、用户卡片和个人资料。'
         verified_label: 已验证徽章
+        widgets_help: 将扩展的小组件以卡片形式显示在列表右侧的栏中，风格与主题一致。原本放在页面侧边栏（主题会隐藏该侧边栏）的小组件也会移到这一栏。关闭后保留扩展原有的外观和位置。
+        widgets_label: 小组件（fof/forum-widgets-core）
+        widgets_width_help: 桌面端列表旁小组件栏的宽度（200至480px）。列表占用剩余空间。
+        widgets_width_label: 栏宽度
         wiki_help: '采用Discourse风格显示linkrobins/wiki：索引采用讨论列表布局，文章作为首帖显示（含摘要和历史记录），使用讨论编辑器撰写（含草稿、高级选项和常见问题），侧边栏社区区块中提供"Wiki"链接。'
         wiki_label: 主题风格的Wiki
       keyboard_shortcuts_help: 'Discourse快捷键：/搜索，c发起新讨论，r回复，j和k浏览列表，g h返回首页，=展开或收起侧边栏，?显示完整快捷键列表。在输入框中打字时，这些快捷键不会生效。'
@@ -749,6 +786,8 @@ ramon-canela:
       post_style_discourse: Discourse（默认）
       post_style_help: '启用时间线后，帖子本身保持Discourse样式，但会添加一条类似牛油果主题的垂直线，连接相邻帖子的头像、贯穿事件通知，并用圆圈标记时间间隔（如"一个月后"）。平板及更宽屏幕适用；手机上帖子样式保持不变。'
       post_style_label: 帖子样式
+      post_username_first_help: 帖子中先以粗体显示用户名，再显示昵称。关闭后则先显示昵称。
+      post_username_first_label: 用户名优先
       profile:
         blocked_by_master: '请在"扩展个人资料"卡片中启用额外字段。'
         characters_suffix: 字符
@@ -815,6 +854,8 @@ ramon-canela:
         paste_upload_label: 粘贴和拖放图片
         permalink_help: '操作菜单中的"复制链接"，以及打开对话并定位到该消息的地址。'
         permalink_label: 消息链接
+        pin_bar_help: 此栏会跟随当前查看的聊天内容，并在有多个置顶消息时显示指示标记；点击可依次切换。“×”只会为当前用户隐藏此栏，面板则按聊天顺序列出置顶消息及置顶者。
+        pin_bar_label: 置顶消息栏
         pin_indicator_help: 读者尚未打开置顶消息时，置顶消息栏会显示圆点。
         pin_indicator_label: 未查看的置顶消息
         preferences_help: '启用聊天、声音、页眉指示器、发送快捷键、一键回应、抽屉、提及邮件，以及"忽略频道范围的提及"。'
@@ -874,6 +915,8 @@ ramon-canela:
         go_enable: 前往设置
         group_ai_desc: 服务提供商、机器人、编辑器助手、摘要和相关讨论。
         group_appearance_desc: 颜色、字体、界面背景、按钮、图标、横幅和提示消息。
+        group_auth: 登录与注册
+        group_auth_desc: 登录和注册页面的显示时机、布局、背景与文案。
         group_community_desc: 关于、指南、用户、用户组、徽章、信任等级和邀请。
         group_composer_desc: Discourse编辑器、草稿、主题标签和高级搜索。
         group_integrations: 集成
@@ -1270,6 +1313,9 @@ ramon-canela:
       invalid_reason: '理由最多可包含500个字符；链接必须以http://或https://开头。'
       name_taken: 已存在同名徽章。
       user_not_found: 未找到此用户名对应的用户。
+    events:
+      full: 活动参与人数已达上限。
+      invalid_status: 回应必须为参加、感兴趣或不参加。
     invites:
       too_many: 你拥有的有效邀请过多。请先删除一个，再生成其他邀请。
     loader:
@@ -1373,6 +1419,16 @@ ramon-canela:
         click_to_show_translation: 点击查看译文。
         disclaimer: AI生成的译文可能不准确。
         original_language: '此帖子原文使用{language}撰写。'
+        prefs:
+          auto_translate: 自动翻译其他语言的主题和帖子
+          cancel: 取消
+          interface_language: 界面语言
+          remove: '移除{language}'
+          save: 保存更改
+          title: 内容语言偏好
+          understood_help: 这些语言的主题和帖子不会被翻译。界面语言始终视为已掌握的语言。
+          understood_label: 我看得懂的语言
+          understood_placeholder: 选择…
         show_original_all: 显示原文
         show_translated_all: 显示译文
         title_original_language: '此标题原文使用{language}撰写。'
@@ -1447,6 +1503,8 @@ ramon-canela:
         set_reminder: 设置提醒
       modal:
         cancel: 取消
+        context: '{author}在“{title}”中的帖子'
+        context_deleted_user: 已删除的用户
         create_title: 创建书签
         custom_date: 提醒日期
         custom_time: 提醒时间
@@ -1455,7 +1513,7 @@ ramon-canela:
         existing_reminder: '将在{date}提醒你查看此书签。'
         invalid_date: 请选择未来的日期和时间。
         name_label: 名称
-        name_placeholder: 为书签命名，方便记住它的用途
+        name_placeholder: 例如：稍后阅读，晚点回复…
         reminder_label: 提醒我
         save: 保存
       notification:
@@ -1711,10 +1769,14 @@ ramon-canela:
       pin_message: 置顶消息
       pinned: 已置顶
       pinned_bar:
+        jump_to_pinned: 跳转到置顶消息
         title: 已置顶
       pinned_messages:
+        close: 关闭置顶消息
+        dismiss: 为我隐藏置顶消息栏
         pinned_by_user: '由{username}置顶'
         pinned_by_you: 由你置顶
+        show: 显示置顶消息栏
         title: 置顶消息
       placeholder_channel: '在{channelName}中聊天'
       placeholder_group: 在群组中聊天
@@ -1958,6 +2020,7 @@ ramon-canela:
           - 深肤色
       hashtags:
         autocomplete_header: 标签
+        tag_count: '（x{count}）'
       linked_topic:
         continuation: '继续讨论：{link}'
         menu_label: 回复操作
@@ -2011,6 +2074,89 @@ ramon-canela:
       similar:
         close: 关闭
         title: 你的讨论与以下内容相似…
+    events:
+      add_google: 添加到Google日历
+      add_ics: 下载日历文件（.ics）
+      all_events: 所有活动
+      builder:
+        chat: 活动聊天
+        chat_help: 为活动创建专属聊天频道；标记为“参加”的用户会加入该频道，桌面端会在讨论旁显示该频道。
+        create: 插入活动
+        create_title: 创建活动
+        description: 简介
+        edit_title: 编辑活动
+        end: 结束时间
+        error_end: 结束时间必须晚于开始时间。
+        error_start: 请选择开始日期。
+        location: 地点
+        max: 参与人数上限
+        max_placeholder: 不限人数
+        name: 活动名称
+        name_placeholder: 留空则使用讨论标题
+        recurrence: 重复
+        recurrence_every_day: 每天
+        recurrence_every_four_weeks: 每四周
+        recurrence_every_month: 每月（同一星期几）
+        recurrence_every_two_weeks: 每两周
+        recurrence_every_week: 每周
+        recurrence_every_weekday: 每个工作日（周一至周五）
+        recurrence_none: 不重复
+        remove: 删除活动
+        save: 保存活动
+        start: 开始时间
+        status: 类型
+        status_public: 公开活动（可回应）
+        status_public_help: 所有能查看讨论的人都可以选择参加、感兴趣或不参加。
+        status_standalone: 公告（不可回应）
+        status_standalone_help: 仅显示日期和详情，不显示回应按钮。
+        time: 时间
+        timezone: 时区
+        until: 结束于
+        url: 直播或会议地址
+      capacity: '名额：{going}/{max}'
+      created_by: 创建者
+      ended_notice: 此活动已结束。
+      full: 名额已满
+      going: 参加
+      happening_now: 正在进行
+      interested: 感兴趣
+      invitees_title: '参与者：{title}'
+      join_livestream: '加入直播（{host}）'
+      local_time: 你的时区
+      login_to_rsvp: 登录后回应
+      more: 更多选项
+      next_month: 下个月
+      no_invitees: 还没有人参加。
+      no_upcoming: 暂无活动安排。
+      not_going: 不参加
+      notification:
+        setting: 我参加的活动即将开始时提醒我
+        text: '{name}将于{when}开始'
+      open_chat: 在活动频道中聊天
+      page_title: 活动
+      previous_month: 上个月
+      recurrence:
+        every_day: 每天
+        every_four_weeks: '每四周的{weekday}'
+        every_month: '每月第{position}个{weekday}'
+        every_two_weeks: '每两周的{weekday}'
+        every_week: '每周{weekday}'
+        every_weekday: 每个工作日
+      remove_answer: 撤销选择
+      see_invitees: 查看参与者
+      sidebar: 活动
+      status:
+        ended: 已结束
+        public: 公开活动
+        standalone: 公告
+      tabs:
+        going: 参加
+        interested: 感兴趣
+        not_going: 不参加
+      today: 今天
+      upcoming_title: 即将开始的活动
+      view_calendar: 日历
+      view_list: 列表
     extras:
       banner:
         dismiss: 关闭公告
@@ -2123,6 +2269,7 @@ ramon-canela:
         tab_users: 用户
         tabs_label: 搜索内容
         title: 搜索
+        too_short: '{count, plural, one {至少输入#个字符。} other {至少输入#个字符。}}'
       text_size:
         heading: 界面
         help: 仅应用于此设备。
@@ -2139,6 +2286,9 @@ ramon-canela:
         quarterly: 季度
         weekly: 周
         yearly: 年
+    footnotes:
+      add: 脚注
+      placeholder: 脚注
     gaps:
       category_notifications:
         hidden: 静音并隐藏
@@ -2630,6 +2780,7 @@ ramon-canela:
       customize_categories: 自定义标签
       customize_community: 自定义
       customize_community_help: '取消勾选要移至"更多"中的项目。此选择仅适用于当前浏览器。'
+      customize_drag: '调整{item}的顺序：拖动，或使用方向键'
       customize_filter: 筛选…
       customize_reset: 恢复默认值
       customize_save: 保存
@@ -2745,6 +2896,12 @@ ramon-canela:
         see_all: 查看全部
         share: 分享文章
         updated: 已更新
+    toc:
+      insert: 插入目录
+      jump_end: 跳转到末尾
+      show_timeline: 时间线
+      show_toc: 目录
+      title: 目录
     topic:
       author_filter:
         show_all: 显示全部
@@ -2815,6 +2972,7 @@ ramon-canela:
         title: 推荐讨论
         topic: 讨论
         views: 浏览量
+      tagged_post: '{count, plural, one {{tags}标签} other {{tags}标签}}'
       timeline:
         ago: '{age}前'
         unread: '{count, plural, one {#条未读} other {#条未读}}'
@@ -2991,6 +3149,7 @@ ramon-canela:
       view_all_reviewables: 查看所有审核项目
   views:
     not_found:
+      hint: 地址可能输入有误，或内容已被删除或受到访问限制。
       home: 返回首页
       page_title: 未找到页面
       placeholder: 按标题或关键词搜索讨论…

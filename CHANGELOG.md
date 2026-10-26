@@ -5,6 +5,11 @@ CHANGELOG
 2.0.2 (XXXX-XX-XX)
 ------------------
 
+**Added support for new extensions**:
+
+* [`tpokorra/flarum-ext-post-notification`](https://github.com/tpokorra/flarum-ext-post-notification) (100% complete)
+
+
 **Updated translations for extensions**:
 
 * [`dashzeveg/flarum-custom-head`](https://github.com/dashzeveg/flarum-custom-head) (1 changed, 100% complete)

@@ -2,6 +2,25 @@ CHANGELOG
 =========
 
 
+2.0.2 (2026-10-28)
+------------------
+
+**Added support for new extensions**:
+
+* [`tpokorra/flarum-ext-post-notification`](https://github.com/tpokorra/flarum-ext-post-notification) (100% complete)
+
+
+**Updated translations for extensions**:
+
+* [`dashzeveg/flarum-custom-head`](https://github.com/dashzeveg/flarum-custom-head) (1 changed, 100% complete)
+* [`ianm/html-head`](https://github.com/imorland/html-head) (1 changed, 95% complete)
+* [`ramon/canela`](https://github.com/ram0ng1/canela) (2778 added, 27 changed, 91% complete)
+* [`stezkoy/flarum-audex`](https://github.com/Stezkoy/flarum-audex) (1 changed, 100% complete)
+
+
+All changes: [2.0.1...2.0.2](https://github.com/flarum-lang/chinese-simplified/compare/2.0.1...2.0.2).
+
+
 2.0.1 (2026-10-20)
 ------------------
 

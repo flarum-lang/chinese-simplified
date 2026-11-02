@@ -2,6 +2,17 @@ CHANGELOG
 =========
 
 
+2.0.3 (XXXX-XX-XX)
+------------------
+
+**Added support for new extensions**:
+
+* [`huseyinfiliz/private-profile`](https://github.com/huseyinfiliz/private-profile) (3% complete)
+
+
+All changes: [2.0.2...2.0.3](https://github.com/flarum-lang/chinese-simplified/compare/2.0.2...2.0.3).
+
+
 2.0.2 (2026-10-28)
 ------------------
 

@@ -2,6 +2,17 @@ CHANGELOG
 =========
 
 
+1.6.4 (2026-11-23)
+------------------
+
+**General changes**:
+
+* Updated Day.js translations.
+
+
+All changes: [1.6.3...1.6.4](https://github.com/flarum-lang/chinese-simplified/compare/1.6.3...1.6.4).
+
+
 1.6.3 (2026-11-02)
 ------------------
 

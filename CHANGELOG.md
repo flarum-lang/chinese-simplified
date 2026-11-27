@@ -2,6 +2,18 @@ CHANGELOG
 =========
 
 
+2.0.5 (XXXX-XX-XX)
+------------------
+
+**Added support for new extensions**:
+
+* [`clarkwinkelmann/flarum-ext-popular-discussion-badge`](https://github.com/clarkwinkelmann/flarum-ext-popular-discussion-badge) (100% complete)
+* [`clarkwinkelmann/flarum-ext-who-read`](https://github.com/clarkwinkelmann/flarum-ext-who-read) (96% complete)
+
+
+All changes: [2.0.4...2.0.5](https://github.com/flarum-lang/chinese-simplified/compare/2.0.4...2.0.5).
+
+
 2.0.4 (2026-11-23)
 ------------------
 

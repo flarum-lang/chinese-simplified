@@ -1,55 +1,41 @@
 {
-  "name": "flarum-lang/chinese-simplified",
-  "description": "Chinese language pack for Flarum.",
-  "keywords": [
-    "flarum",
-    "locale",
-    "extension",
-    "Chinsese",
-    "中文",
-    "简体中文"
-  ],
-  "type": "flarum-extension",
-  "license": "MIT",
-  "authors": [
-    {
-      "name": "Flarum Fans",
-      "email": "littlegoldenjin@gmail.com",
-      "homepage": "https://github.com/FFans"
-    }
-  ],
-  "support": {
-    "source": "https://github.com/flarum-lang/chinese-simplified",
-    "issues": "https://github.com/flarum-lang/chinese-simplified/issues",
-    "forum": "https://discuss.flarum.org/d/22690"
-  },
-  "require": {
-    "flarum/core": "^2.0"
-  },
-  "replace": {
-    "littlegolden/flarum-lang-simplified-chinese": "*",
-    "ffans/lang-simplified-chinese": "*"
-  },
-  "extra": {
-    "flarum-extension": {
-      "title": "简体中文",
-      "category": "language",
-      "icon": {
-        "image": "icon.svg",
-        "backgroundColor": "#fff",
-        "backgroundSize": "cover",
-        "backgroundPosition": "center"
-      }
-    },
-    "extiverse": {
-      "discuss": "https://discuss.flarum.org/d/22690"
-    },
-    "flarum-locale": {
-      "code": "zh-Hans",
-      "title": "简体中文"
-    },
-    "branch-alias": {
-      "dev-master": "1.x-dev"
-    }
-  }
+	"name": "flarum-lang/chinese-simplified",
+	"description": "Chinese (Simplified) Language Pack for Flarum",
+	"type": "flarum-extension",
+	"keywords": [
+		"flarum-locale"
+	],
+	"homepage": "https://github.com/flarum-lang/chinese-simplified",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "thatsgolden",
+			"homepage": "https://github.com/thatsgolden",
+			"role": "Maintainer"
+		}
+	],
+	"support": {
+		"issues": "https://github.com/flarum-lang/chinese-simplified/issues",
+		"forum": "https://discuss.flarum.org/d/22690",
+		"source": "https://github.com/flarum-lang/chinese-simplified"
+	},
+	"require": {
+		"flarum/core": "^2.0"
+	},
+	"extra": {
+		"flarum-extension": {
+			"title": "Chinese (Simplified)",
+			"category": "language",
+			"icon": {
+				"image": "icon.svg",
+				"backgroundColor": "#fff",
+				"backgroundSize": "cover",
+				"backgroundPosition": "center"
+			}
+		},
+		"flarum-locale": {
+			"code": "zh-Hans",
+			"title": "简体中文"
+		}
+	}
 }
